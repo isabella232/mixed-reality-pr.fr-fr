@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 10/02/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, conception, modèles d’application, contrôles, style, HoloLens, interaction, éléments UX, comportements, blocs de construction
-ms.openlocfilehash: cece64194100e35ea836a23a645079e64332ec32
-ms.sourcegitcommit: ccc7c9ee0bb65e1bc672482592ebfddbba40d7da
+ms.openlocfilehash: cebcb99124ed71ed170210f2de9ce2f24bcb514d
+ms.sourcegitcommit: 53a00690f32a0a629ed23aefaae5a888f669dcb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "92113523"
+ms.locfileid: "92138020"
 ---
 # <a name="core-concepts-overview"></a>Vue d’ensemble des concepts de base
 
@@ -19,10 +19,6 @@ ms.locfileid: "92113523"
 
 
 Avant de plonger dans la conception, il est utile de comprendre quelques concepts fondamentaux. Chaque rubrique ci-dessous est un facteur sous-jacent qui affecte fondamentalement et contribue à la qualité de l’expérience de réalité mixte que vous créez pour votre utilisateur. 
-
-
-
-[ ![ Types d’applications de réalité mixte](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md) ** [types d’applications de réalité mixte](types-of-mixed-reality-apps.md)**
 
 :::row:::
     :::column:::
@@ -50,13 +46,13 @@ Avant de plonger dans la conception, il est utile de comprendre quelques concept
 
 :::row:::
     :::column:::
-       Mappage spatial de [ ![ mappage spatial](images/surfacereconstruction.jpg)](spatial-mapping.md) ** [Spatial mapping](spatial-mapping.md)**
+        [ ![ Ancres spatiales](images/azurespatialanchors.jpg)](spatial-anchors.md) ** [Spatial anchors](spatial-anchors.md)**
     :::column-end:::
     :::column:::
-       
+        Mappage spatial de [ ![ mappage spatial](images/surfacereconstruction.jpg)](spatial-mapping.md) ** [Spatial mapping](spatial-mapping.md)**
     :::column-end:::
     :::column:::
-       [ ![ Ancres spatiales](images/azurespatialanchors.jpg)](spatial-anchors.md) ** [Spatial anchors](spatial-anchors.md)**
+        [ ![ Types d’applications de réalité mixte](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md) ** [types d’applications de réalité mixte](types-of-mixed-reality-apps.md)**
     :::column-end:::
 :::row-end:::
 
