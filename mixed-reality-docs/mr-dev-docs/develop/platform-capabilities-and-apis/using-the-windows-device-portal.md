@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portail d’appareil Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 398b9ee312c8d49e3468980e5e2c1be556c17162
-ms.sourcegitcommit: 252b52f7541a6e15aa33322286855af8a3924fc1
+ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
+ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862989"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92011483"
 ---
 # <a name="using-the-windows-device-portal"></a>Utilisation du portail d’appareil Windows
 
@@ -374,3 +374,20 @@ Cliquez ou appuyez sur la zone située sous le **clavier virtuel** pour permettr
 ## <a name="device-portal-rest-apis"></a>API REST du portail d’appareil
 
 Dans le portail d’appareil, tout repose sur les [API REST](device-portal-api-reference.md) que vous pouvez utiliser pour accéder aux données et contrôler votre appareil par programmation, si vous le souhaitez.
+
+## <a name="troubleshooting"></a>Dépannage
+
+### <a name="how-to-fix-the-its-lonely-here-message"></a>Comment résoudre le message « Nous n’avons aucun élément à vous proposer ici »
+
+> [!NOTE]
+> En passant de HoloLens 2 à HoloLens (1ère génération), les pages peuvent se retrouver vides si elles ont été utilisées sur HoloLens 2 avant d’être utilisées sur HoloLens (1ère génération).
+
+![Message « Nous n’avons aucun élément à vous proposer ici » dans la page du portail d’appareil](images/using-windows-portal-img-19.png)
+
+1. Sélectionnez **Réinitialiser la disposition** dans le menu en haut à gauche :
+
+![Sélection de Réinitialiser la disposition dans le menu du portail d’appareil](images/using-windows-portal-img-20.png)
+
+2. Cliquez sur **Réinitialiser la disposition** sous le titre **Réinitialiser l’espace de travail**. La page du portail s’actualise automatiquement et affiche votre contenu.
+
+![Sélection de Réinitialiser la disposition dans la page Réinitialiser l’espace de travail](images/using-windows-portal-img-21.png)
