@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56238f302074bb4de21acbc0575f4ab913cb84b1
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174422"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293120"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Contrôleurs de mouvement dans Windows Mixed Reality
 
@@ -42,7 +42,6 @@ La plupart des casques sont précouplés directement sur le casque, mais certain
 4. Suivez les instructions affichées à l’écran.
 
 > [!NOTE]
-
 > * Pour les contrôleurs qui se couplent directement à votre PC, vous devez les mettre en mode de jumelage en les mettant sous tension, puis en appuyant sur le bouton d’appariement dans le compartiment de la batterie jusqu’à ce que les lumières commencent à clignoter.  
 > * Les contrôleurs de mouvement ne prennent en charge que l’appariement à un ordinateur ou à un PC à la fois. Si vous devez les utiliser avec un autre casque, vous devez passer par le processus d’appariement. Consultez [configurer la réalité mixte Windows](set-up-windows-mixed-reality.md)
 

@@ -3,20 +3,20 @@ title: Votre foyer de réalité mixte
 description: Comment naviguer et vous téléporter dans Windows Mixed Reality, lancer des applications et des jeux, personnaliser la page d’hébergement et modifier les paramètres visuels, audio et vocaux.
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, famille, naviguer, découvrir, applications, jeux
-ms.openlocfilehash: f8a525ad0c278517950c06c821d2b7936ec584a7
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174283"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293088"
 ---
-# <a name="your-mixed-reality-home"></a>Votre foyer de réalité mixte
+# <a name="your-windows-mixed-reality-home"></a>Votre accueil Windows Mixed Reality
 
-## <a name="what-is-the-mixed-reality-home"></a>Qu’est-ce que la réalité mixte
+## <a name="what-is-the-windows-mixed-reality-home"></a>Présentation de Windows Mixed Reality
 
 Windows Mixed Reality est le premier système d’exploitation spatial. Au lieu d’utiliser un écran plat et une interface 2D, il utilise notre capacité instinctual pour naviguer dans l’espace à trois dimensions. Chaque place a un objectif et le contenu a un contexte. De la même façon que votre ordinateur démarre au niveau de l’interface de bureau et que votre téléphone commence par un écran d’accueil, Windows Mixed Reality démarre à la réalité mixte. Il s’agit d’un environnement que vous pouvez parcourir et personnaliser pour créer votre propre environnement. C’est le canevas des milliers d’applications disponibles dans le Microsoft Store. Vous pouvez effectuer un multitâche avec ces applications, comme vous n’avez jamais pu le faire avant, en 3D, où l’espace est presque illimité.
 
-## <a name="move-through-the-mixed-reality-home"></a>Parcourir la page d’hébergement de la réalité mixte
+## <a name="move-through-the-windows-mixed-reality-home"></a>Parcourir la page d’hébergement de la réalité mixte Windows
 
 * **Parcours physique :** Si vous avez configuré votre casque avec une limite d’espace et que vous avez suffisamment d’espace disponible pour vous déplacer en toute sécurité, vous pouvez effectuer des étapes physiques pour déplacer de courtes distances dans votre foyer. Une étape dans le monde réel est approximativement une étape de l’expérience virtuelle.
 * **Téléportage (à l’aide de contrôleurs de mouvement) :** Vous pouvez rapidement accéder à un emplacement par téléportage. À l’aide des contrôleurs de mouvement, vous pouvez vous téléporter en poussant le joystick droit ou gauche vers l’avant, en vous recherchant à la direction voulue, puis en libérant le stick analogique.
@@ -28,7 +28,7 @@ Windows Mixed Reality est le premier système d’exploitation spatial. Au lieu 
 
 ## <a name="launch-an-app"></a>lancer une application
 
-1. À partir de la page d’accueil de la réalité mixte, appuyez sur le bouton Windows de votre contrôleur pour lancer le menu Démarrer.
+1. À partir de votre page d’accueil Windows Mixed Reality, appuyez sur le bouton Windows de votre contrôleur pour lancer le menu Démarrer.
 2. Sélectionnez l’application que vous souhaitez lancer.
 3. Placez l’application là où vous souhaitez l’utiliser, et elle sera lancée.
 4. À partir de maintenant, vous pouvez simplement cliquer sur le modèle 3D pour lancer l’application.
@@ -49,11 +49,11 @@ Windows Mixed Reality est le premier système d’exploitation spatial. Au lieu 
 2. Lancez Microsoft Store.
 3. Recherchez une application ou un jeu de votre choix, puis cliquez sur « obtenir » ou « acheter ».
 
-Vous pouvez également utiliser l’application « nouveau pour vous » pour rechercher du contenu, qui apparaît en tant que sac d’achat dans votre foyer de réalité mixte.
+Vous pouvez également utiliser l’application « nouveau pour vous » pour rechercher du contenu, qui apparaît en tant que sac d’achat dans votre page d’hébergement Windows Mixed Reality.
 
 ## <a name="what-is-the-new-for-you-app"></a>Qu’est-ce que l’application « nouvelle pour vous » ?
 
-Vous remarquerez peut-être qu’il existe un sac Microsoft Store dans votre foyer de réalité mixte. En cliquant dessus, vous affichez des applications nouvelles et passionnantes que vous pouvez télécharger et/ou acheter.
+Vous remarquerez peut-être qu’il existe un conteneur Microsoft Store dans votre page d’hébergement Windows Mixed Reality. En cliquant dessus, vous affichez des applications nouvelles et passionnantes que vous pouvez télécharger et/ou acheter.
 
 ## <a name="personalize-my-home"></a>Personnaliser ma page d’hébergement
 
@@ -68,12 +68,12 @@ Accédez à **paramètres > > de réalité mixte environnement > réinitialiser 
 ## <a name="uninstall-windows-mixed-reality"></a>Désinstaller Windows Mixed Reality
 
 1. Débranchez votre casque
-2. Fermer le portail de réalité mixte
+2. Fermer le portail Windows Mixed Reality
 3. Accédez à **paramètres > > de la réalité mixte désinstaller >** désinstaller le ![ panneau Paramètres Windows pour désinstaller la réalité mixte](images/1050px-uninstall2.png)
 
 ## <a name="turn-off-the-boundary"></a>Désactiver la limite
 
-Accédez au portail de réalité mixte et ouvrez le menu dans le coin supérieur gauche de l’écran. Sélectionnez **exécuter configurer > limite de salle**. Activez le bouton bascule. Vous devez rester assis à votre bureau si vous désactivez la limite.
+Accédez au portail Windows Mixed Reality et ouvrez le menu dans le coin supérieur gauche de l’écran. Sélectionnez **exécuter configurer > limite de salle**. Activez le bouton bascule. Vous devez rester assis à votre bureau si vous désactivez la limite.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Son spatial dans le Windows Mixed Reality
 

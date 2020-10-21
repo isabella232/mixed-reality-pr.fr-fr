@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, compatible, compatibilité, prise en main, configuration, PC, configuration système requise
 appliesto:
 - Windows 10
-ms.openlocfilehash: c76f670230a4a19b53b7e8f938b13e79bb7c8db7
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174448"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293054"
 ---
 # <a name="before-you-start"></a>Avant de commencer
 
@@ -52,7 +52,7 @@ Vérifiez que votre ordinateur est connecté à Internet. Vous devrez téléchar
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Vérifiez que vous disposez d’un pilote graphique compatible.
 
-Votre ordinateur doit disposer d’un pilote graphique WDDM 2,2 ou version ultérieure pour terminer la configuration de la réalité mixte. Si ce n’est pas déjà le cas, essayez les sources suivantes :
+Votre ordinateur doit disposer d’un pilote graphique WDDM 2,2 ou version ultérieure pour pouvoir effectuer l’installation de Windows Mixed Reality. Si ce n’est pas déjà le cas, essayez les sources suivantes :
 
 * Recherchez les dernières mises à jour de pilotes critiques à l’aide de Windows Update (**> paramètres Windows > mise à jour et sécurité > vérification des mises à jour**)
 * Recherchez les dernières mises à jour de pilote facultatives :
@@ -64,7 +64,7 @@ Votre ordinateur doit disposer d’un pilote graphique WDDM 2,2 ou version ulté
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>Assurez-vous que vous disposez des adaptateurs requis
 
-Il se peut que votre PC compatible Windows Mixed Reality ne dispose pas des ports HDMI et USB 3,0 de taille intégrale nécessaires pour connecter votre casque immersif. Ou vous aurez peut-être besoin d’un adaptateur Bluetooth pour répondre aux exigences du portail de réalité mixte.  Si c’est le cas, vous aurez besoin d’adaptateurs pour connecter votre casque et vos contrôleurs de mouvement. Vous trouverez la liste des types d’adaptateurs dont vous pouvez avoir besoin et des recommandations sur les modèles d’adaptateur spécifiques [ici](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+Il se peut que votre PC compatible Windows Mixed Reality ne dispose pas des ports HDMI et USB 3,0 de taille intégrale nécessaires pour connecter votre casque immersif. Ou vous aurez peut-être besoin d’un adaptateur Bluetooth pour répondre aux exigences du portail Windows Mixed Reality.  Si c’est le cas, vous aurez besoin d’adaptateurs pour connecter votre casque et vos contrôleurs de mouvement. Veillez à consulter la liste des [types d’adaptateurs dont vous pouvez avoir besoin, ainsi que des recommandations sur des modèles d’adaptateur spécifiques](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Vérifiez que vous avez des périphériques d’entrée.
 
@@ -76,7 +76,7 @@ Windows Mixed Reality est conçu pour fonctionner de façon optimale avec les co
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>Vérifiez que vous disposez d’un grand espace ouvert
 
-Si vous souhaitez vous déplacer tout en utilisant Windows Mixed Reality, vous devez disposer d’un grand espace ouvert.  Pendant l’installation, vous êtes invité à choisir entre « assiste » ou « toutes les expériences ». Choisissez « toutes les expériences » et configurez une limite si vous souhaitez vous déplacer.
+Si vous souhaitez vous déplacer tout en utilisant Windows Mixed Reality, vous devez disposer d’un grand espace ouvert.  Pendant l’installation, vous êtes invité à choisir entre « assiste » ou « toutes les expériences ». Choisissez « toutes les expériences » et configurez une limite si vous souhaitez vous déplacer. Passez en revue les [instructions relatives à l’intégrité, à la sécurité et au confort des écouteurs immersifs](wmr-health-safety-comfort.md) pour comprendre les besoins en espace.
 
 ### <a name="seated-and-standing-no-boundary"></a>Assis et debout (aucune limite)
 

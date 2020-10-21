@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, casque, configuration, prise en main
 appliesto:
 - Windows 10
-ms.openlocfilehash: 46b40a09c88013515911026cbd03a6fc6d19e1ca
-ms.sourcegitcommit: 2cdc2e38990fff24972d98f9e74f0dabacbffa7d
+ms.openlocfilehash: 16c06e14566671e44b1424447b02493ba1ff1a83
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92153503"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92292980"
 ---
 # <a name="plug-in-your-headset"></a>Brancher votre casque
 
@@ -32,10 +32,11 @@ Identifiez le port de sortie HDMI sur votre ordinateur et branchez le câble HDM
 À moins que vous n’achetiez un casque Samsung HMD Odyssey, une réverbération HP ou une réverbération HP G2 (qui a intégré AKG casque et un microphone intégré à deux baies), vous devez connecter un casque (de préférence avec un microphone en ligne) qui peut se brancher à la prise jack audio de 3,5 mm de votre casque.
 
 ## <a name="common-issues"></a>Problèmes courants
+
 * Vous avez branché le câble HDMI avant de brancher le câble USB 3,0.  Assurez-vous de brancher le câble USB 3,0 **avant** de brancher le câble HDMI.
 * Vous avez branché une carte Bluetooth à côté du câble USB de votre HMD.  Si vous utilisez un adaptateur Bluetooth, **ne branchez pas** le câble USB de votre casque en regard de cette carte, car les interférences radio résultantes peuvent avoir un impact négatif sur les performances de Bluetooth.
 * Vous avez branché votre câble HDMI à votre port iGPU HDMI au lieu de votre port HDMI dGPU (pour les PC avec les deux). Certains PC de bureau disposent d’une unité de traitement graphique (iGPU) intégrée et d’une unité de traitement graphique (dGPU) discrète. les ports iGPU sont souvent désactivés. Si votre ordinateur dispose d’un dGPU, votre casque doit être branché dans le dGPU.  
-* Si votre ordinateur n’a pas de port HDMI, vous aurez peut-être besoin d’un adaptateur. [Affichez la liste complète des adaptateurs recommandés ici](recommended-adapters-for-windows-mixed-reality-capable-pcs.md). 
+* Si votre ordinateur n’a pas de port HDMI, vous aurez peut-être besoin d’un adaptateur. [Affichez la liste complète des adaptateurs recommandés ici](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 * Vous connectez votre casque à un appareil surface. Veuillez lire [à l’aide de surface avec Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#windows-mixed-reality-and-surface).
 
 ## <a name="see-also"></a>Voir aussi
