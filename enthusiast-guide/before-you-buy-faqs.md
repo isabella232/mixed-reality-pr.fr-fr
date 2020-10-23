@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, pré-vente, recherche, achat, avant l’achat
 appliesto:
 - Windows 10
-ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293034"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434614"
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 
@@ -31,15 +31,11 @@ ms.locfileid: "92293034"
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quels fabricants vendent des appareils Windows Mixed Reality ?
 
-**Réponse rapide :** Des casques et des contrôleurs de mouvement sont actuellement disponibles sur Acer, ASUS, Samsung et HP. Voir <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Réponse rapide :** Les casques et les contrôleurs de mouvement sont actuellement disponibles à partir de HP. Consultez <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>Où puis-je acheter des contrôleurs de mouvement autonomes ?
 
 **Réponse rapide :** Malheureusement, nous n’avons pas conscience que les détaillants vendent des contrôleurs de mouvement autonomes pour l’instant.
-
-### <a name="what-is-the-price-point"></a>Quel est le niveau de prix ?
-
-**Réponse rapide :** La tarification du casque et du contrôleur varie en fonction du fabricant et du détaillant. Consultez <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro> pour les appareils de réalité mixte actuellement en vente auprès de Microsoft.
 
 ### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Quelle est la différence entre un PC Windows Mixed Reality et un PC Windows Mixed Reality ?
 
@@ -47,7 +43,7 @@ ms.locfileid: "92293034"
 
 ### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Pourquoi la « réalité mixte » s’affiche-t-elle quand les appareils semblent être dotés d’une « réalité virtuelle » ?
 
-**Réponse rapide :** La réalité mixte fait référence au spectre complet de l’informatique spatiale, de la réalité et des hologrammes augmentés à la réalité virtuelle. La plateforme de réalité mixte Microsoft prend en charge la réalité virtuelle et la réalité augmentée. Nous prenons actuellement en charge deux types d’appareils avec une technologie similaire sur ce spectre : les casques HoloLens (AR) et Windows Mixed Reality (VR) avec des contrôleurs de mouvement.
+**Réponse rapide :** La réalité mixte fait référence au spectre complet de l’informatique spatiale, de la réalité et des hologrammes augmentés à la réalité virtuelle. La plateforme Windows Mixed Reality prend en charge les appareils sur la réalité virtuelle et la réalité augmentée (AR). Nous prenons actuellement en charge deux types d’appareils avec une technologie similaire sur ce spectre : les casques HoloLens (AR) et Windows Mixed Reality (VR) avec des contrôleurs de mouvement.
 
 En savoir plus sur la réalité mixte ici : <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
@@ -71,7 +67,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Le suivi à l’intérieur des contrôleurs de mouvement peut-il avoir un impact sur mon jeu en raison de l’angle de l’appareil photo ?
 
- À l’instar des casques, les contrôleurs de mouvement Windows Mixed Reality ne nécessitent pas de configuration de capteurs de suivi externe. Au lieu de cela, les contrôleurs sont suivis par des capteurs dans le casque lui-même. Si l’utilisateur déplace les contrôleurs du champ de vue du casque, dans la plupart des cas, Windows continue à déduire les positions des contrôleurs et à les fournir à l’application. Lorsque le contrôleur a perdu le suivi visuel suffisamment longtemps, les positions du contrôleur sont découpées à des positions de précision approximatives. À ce stade, le système va verrouiller le contrôleur à l’utilisateur, en effectuant le suivi de la position de l’utilisateur lors de son déplacement, tout en exposant l’orientation réelle du contrôleur à l’aide de ses capteurs d’orientation internes. De nombreuses applications qui utilisent des contrôleurs pour pointer et activer des éléments d’interface utilisateur peuvent fonctionner normalement tout en disposant d’une précision approximative sans que l’utilisateur ne puisse même le remarquer. La meilleure façon de vous en faire une idée est de l’essayer vous-même. Essayez de visiter un Microsoft Store près de chez vous et découvrez-le ! En attendant, voici une vidéo avec des exemples de contenu immersif qui fonctionne avec les contrôleurs de mouvement dans différents États de suivi :
+ À l’instar des casques, les contrôleurs de mouvement Windows Mixed Reality ne nécessitent pas de configuration de capteurs de suivi externe. Au lieu de cela, les contrôleurs sont suivis par des capteurs dans le casque lui-même. Si l’utilisateur déplace les contrôleurs du champ de vue du casque, dans la plupart des cas, Windows continue à déduire les positions des contrôleurs et à les fournir à l’application. Lorsque le contrôleur a perdu le suivi visuel suffisamment longtemps, les positions du contrôleur sont découpées à des positions de précision approximatives. À ce stade, le système va verrouiller le contrôleur à l’utilisateur, en effectuant le suivi de la position de l’utilisateur lors de son déplacement, tout en exposant l’orientation réelle du contrôleur à l’aide de ses capteurs d’orientation internes. De nombreuses applications qui utilisent des contrôleurs pour pointer et activer des éléments d’interface utilisateur peuvent fonctionner normalement tout en disposant d’une précision approximative sans que l’utilisateur ne puisse même le remarquer. La meilleure façon de vous en faire une idée est de l’essayer vous-même.
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>En quoi Windows Mixed Reality est-il différent de Samsung Gear VR ?
 
@@ -307,7 +303,7 @@ Les détails techniques répertoriés ci-dessus sont référencés à partir des
 
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>La plateforme Windows Mixed Reality prend-elle en charge le matériel et le matériel vive ?
 
-**Réponse rapide :** Windows Mixed Reality fonctionne uniquement avec les contrôleurs/casques Windows mixtes de réalité approuvés. Voir <https://www.microsoft.com/en-us/store/b/virtualreality>
+**Réponse rapide :** Windows Mixed Reality fonctionne uniquement avec les contrôleurs/casques Windows mixtes de réalité approuvés. Consultez <https://www.microsoft.com/en-us/store/b/virtualreality>
 
 ## <a name="motion-controllers"></a>Contrôleurs de mouvement
 
@@ -315,7 +311,7 @@ Les détails techniques répertoriés ci-dessus sont référencés à partir des
 
 **Réponse rapide :** Les contrôleurs de mouvement Windows Mixed Reality utilisent Bluetooth. En fonction du casque, les contrôleurs de mouvement sont associés à la radio Bluetooth sur le casque (s’ils sont équipés) ou à la radio Bluetooth sur votre PC.
 
-* Certains casques pour Windows Mixed Reality, y compris les reréverbérations Acer OJO 500, Samsung Odyssey + et HP, intègrent des radios Bluetooth intégrées à utiliser avec les contrôleurs de mouvement. Les contrôleurs de mouvement fournis avec ces casques sont précouplés au casque en usine et n’exigent pas que votre ordinateur dispose d’une radio Bluetooth distincte.
+* Certains casques pour Windows Mixed Reality, y compris les fonctionnalités de la technologie Bluetooth Acer OJO 500, Samsung Odyssey +, HP reaction G2 et les radios Bluetooth intégrées à utiliser avec les contrôleurs de mouvement. Les contrôleurs de mouvement fournis avec ces casques sont précouplés au casque en usine et n’exigent pas que votre ordinateur dispose d’une radio Bluetooth distincte.
 * D’autres écouteurs Windows Mixed Reality devront être associés à une radio Bluetooth sur votre PC.
 
 ### <a name="are-windows-mixed-reality-motion-controllers-cross-compatible-between-windows-mixed-reality-headsets"></a>Les contrôleurs de mouvement Windows Mixed Real sont-ils compatibles entre les casques de Windows Mixed Reality ?
@@ -336,11 +332,11 @@ Les détails techniques répertoriés ci-dessus sont référencés à partir des
 
 ### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>Windows Mixed Reality fonctionne-t-il avec mes contrôleurs tactiles Oculus ou vos contrôleurs/contrôleurs à HTC.
 
-**Réponse rapide :** Non, Windows Mixed Reality fonctionne uniquement avec les casques/contrôleurs approuvés. Voir <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Réponse rapide :** Non, Windows Mixed Reality fonctionne uniquement avec les casques/contrôleurs approuvés. Consultez <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-work-with-my-steamvr-knuckle-controllers"></a>Windows Mixed Reality fonctionne-t-il avec mes contrôleurs Knuckle SteamVR ?
 
-**Réponse rapide :** Non, Windows Mixed Reality fonctionne uniquement avec les casques/contrôleurs approuvés. Voir <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Réponse rapide :** Non, Windows Mixed Reality fonctionne uniquement avec les casques/contrôleurs approuvés. Consultez <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-support-my-xbox-one-controller-with-the-wireless-xbox-adapter"></a>Windows Mixed Reality prendra-t-il en charge mon contrôleur Xbox One avec l’adaptateur Xbox sans fil ?
 

@@ -3,12 +3,12 @@ title: Configurer Windows Mixed Reality
 description: Comment configurer vos contrôleurs de mouvement Windows Mixed Reality, la voix et l’audio, et définir la limite de votre espace pour un espace de lecture sécurisé.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, prise en main, configuration, contrôleur de mouvement, contrôleur, voix, audio, assis, debout, limite, pilotes graphiques, Microsoft Edge, chrome
-ms.openlocfilehash: 71775ba03cb143b83f1a4514f62f20df903df96d
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: cd59fd34dd00edc98d209681cc1239895c36ada2
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174467"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434632"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurer Windows Mixed Reality
 
@@ -86,7 +86,7 @@ Aucune étape supplémentaire n’est requise si vous choisissez cette option.
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>Quelle est la taille maximale de la limite ?
 
-La taille de limite maximale actuellement prise en charge dans Windows Mixed Reality est 18x18ft (5.7 x 5.7 m) ou 13ft (4m) RADIUS à partir du centre.  La taille de la limite dépend du point d’ancrage et de la distance du point d’ancrage que vous pouvez déplacer avant de risquer la stabilité de la limite.  Windows Mixed Reality est basé sur une abstraction en phase de la plateforme, l’étape étant l’espace que vous déplacez dans, et cette étape dépend d’une seule ancre (qui, presque toutes les applications, est également prise en charge, c’est la manière dont la vive et la Oculus fonctionnent, car elles n’ont qu’un seul système de coordonnées).  Cela est important, c’est qu’avec le suivi à l’intérieur, lorsque vous éloignez davantage d’un point d’ancrage, le suivi du casque est fiable pour maintenir la limite stable.  Lorsque la limite est destinée à éviter les obstacles physiques, elle devient de plus en plus un problème en plus du centre que vous recherchez.  Deux facteurs ont pris la décision sur la taille limite maximale ; la distance maximale à laquelle les casques Windows mixtes de réalité peuvent fournir la meilleure expérience de mise à l’échelle de l’espace avec une limite et la longueur du câble du casque, qui, pour la plupart des casques Windows mixtes, est 10Ft (3M). 
+La taille de limite maximale actuellement prise en charge dans Windows Mixed Reality est 18x18ft (5.7 x 5.7 m) ou 13ft (4m) RADIUS à partir du centre.  La taille de la limite dépend du point d’ancrage et de la distance du point d’ancrage que vous pouvez déplacer avant de risquer la stabilité de la limite.  Windows Mixed Reality est basé sur une abstraction en phase de la plateforme, l’étape étant l’espace que vous déplacez dans, et cette étape dépend d’une seule ancre (qui, presque toutes les applications, est également prise en charge, c’est la manière dont la vive et la Oculus fonctionnent, car elles n’ont qu’un seul système de coordonnées).  Cela est important, c’est qu’avec le suivi à l’intérieur, lorsque vous éloignez davantage d’un point d’ancrage, le suivi du casque est fiable pour maintenir la limite stable.  Lorsque la limite est destinée à éviter les obstacles physiques, elle devient de plus en plus un problème en plus du centre que vous recherchez.  Deux facteurs ont pris la décision sur la taille limite maximale ; la distance maximale à laquelle les casques Windows mixtes de réalité peuvent fournir la meilleure expérience de mise à l’échelle de l’espace avec une limite et la longueur du câble du casque, qui, pour la plupart des casques Windows mixtes, est 10Ft (3M).
 
 ## <a name="set-up-speech"></a>Configurer la reconnaissance vocale
 
@@ -112,7 +112,7 @@ La résolution native de votre casque est indiquée ici.
 
 Si vous connectez un casque avec des affichages de plus haute résolution (par exemple, des casques avec 4320x2160 affiche) sur votre PC, vous verrez un paramètre pour ajuster la résolution d’affichage de la réalité mixte.
 
-* Ce paramètre fournit l’option pour que la pile de composition Windows Mixed realisation soit rendue en mode natif (par exemple, sur 4320x2160), ou pour que la pile de composition soit rendue à une résolution et une mise à l’échelle inférieures (par exemple, le rendu à 2880x1440 et la mise à l’échelle vers 4320x2160.
+* Ce paramètre permet à la pile de composition de la réalité Windows mixed de s’afficher en mode natif (par exemple, sur 4320x2160) ou de rendre la pile de composition restituée à une résolution et une mise à l’échelle inférieures (par exemple, le rendu à 2880x1440 et la mise à l’échelle vers 4320x2160).
 * Le paramètre par défaut est le rendu natif (par exemple, l’option **4320 x 2160 (meilleure qualité)** ) pour fournir la meilleure qualité visuelle possible à partir de votre casque.
 * Si votre ordinateur ne répond pas à la configuration matérielle minimale requise pour votre casque avec des affichages de résolution plus élevée et/ou si vous constatez des problèmes de performances graphiques, vous pouvez essayer d’utiliser l’option de **mise à l’échelle automatique (meilleures performances)** .
 
@@ -131,9 +131,7 @@ Ce paramètre avancé remplace l’expérience du taux d’actualisation de l’
 * **90Hz**
 
 >[!Note]
->Le paramètre de taux d’actualisation automatique pour la réverbération de HP G2 est 90Hz
-
-Certaines fonctionnalités de Windows Mixed Reality, y compris la version préliminaire du portail de réalité mixte et un plus grand casque d’affichage, sont uniquement disponibles avec l’expérience 90Hz.
+>Lors de la configuration initiale du casque de réverbération G2, l’expérience est remplacée par 90Hz pour garantir le. meilleure expérience.  Si nécessaire, vous pouvez redéfinir cette valeur sur automatique.
 
 ### <a name="input-switching"></a>Basculement d’entrée
 
@@ -180,5 +178,5 @@ La saisie de la réalité mixte est aussi facile que le fait de replacer le casq
 * [Résolution des problèmes liés à l’installation](installation_errors.md)
 * [Résolution des problèmes d’installation](set-up-questions.md)
 * [Découvrir la réalité mixte](learn-mixed-reality.md)
-* [Fonctionnement des contrôleurs de mouvement](controllers-in-wmr.md)
+* [Contrôleurs de mouvement](controllers-in-wmr.md)
 * [Fonctionnement du suivi intérieur-extérieur](tracking-system.md)

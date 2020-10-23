@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, compatible, compatibilité, prise en main, configuration, PC, configuration système requise
 appliesto:
 - Windows 10
-ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 84001a46826ada06e315f1707ee9516c3da063bd
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293054"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434575"
 ---
 # <a name="before-you-start"></a>Avant de commencer
 
@@ -35,10 +35,12 @@ Pour plus d’informations sur les problèmes de compatibilité des PC, cliquez 
 
 ## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>Vérifiez que la version 1709 ou une version ultérieure de Windows 10 est installée
 
-Vous devez exécuter la version 1709 de Windows 10 (la mise à jour des créateurs de automne) ou une version plus récente pour utiliser Windows Mixed Reality. Les versions compatibles de Windows 10 sont les suivantes :
-* Windows 10 version 1709 (automne Creators Update, Build 16299)
-* Windows 10 version 1803 (mise à jour de printemps, Build 17134)
-* Windows 10 version 1809 (mise à jour d’octobre, Build 17763)
+Vous devez exécuter Windows 10 version 1903 ou ultérieure pour utiliser Windows Mixed Reality. Les versions compatibles de Windows 10 sont les suivantes :
+
+* Windows 10 version 1903
+* Windows 10 version 1909
+* Windows 10 version 2004
+* Windows 10 version 20H2
 
 Pour voir la version de Windows 10 que votre appareil est en cours d’exécution, sélectionnez le bouton **Démarrer** , puis sélectionnez **paramètres > système > à propos de**.
 
@@ -48,7 +50,7 @@ Pour plus d’informations sur la façon de maintenir votre ordinateur à jour, 
 
 ## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>Vérifier que votre ordinateur est connecté à Internet
 
-Vérifiez que votre ordinateur est connecté à Internet. Vous devrez télécharger des pilotes et d’autres logiciels supplémentaires pour que Windows Mixed realisation soit opérationnel.  Si votre Wi-Fi connexion réseau est définie sur contrôlé, remplacez-la par non contrôlé. [Plus d’informations](https://support.microsoft.com/en-us/help/4028458/windows-metered-connections-in-windows-10)
+Vérifiez que votre ordinateur est connecté à Internet. Vous devrez télécharger des pilotes et d’autres logiciels supplémentaires pour que Windows Mixed realisation soit opérationnel.
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Vérifiez que vous disposez d’un pilote graphique compatible.
 
@@ -64,15 +66,11 @@ Votre ordinateur doit disposer d’un pilote graphique WDDM 2,2 ou version ulté
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>Assurez-vous que vous disposez des adaptateurs requis
 
-Il se peut que votre PC compatible Windows Mixed Reality ne dispose pas des ports HDMI et USB 3,0 de taille intégrale nécessaires pour connecter votre casque immersif. Ou vous aurez peut-être besoin d’un adaptateur Bluetooth pour répondre aux exigences du portail Windows Mixed Reality.  Si c’est le cas, vous aurez besoin d’adaptateurs pour connecter votre casque et vos contrôleurs de mouvement. Veillez à consulter la liste des [types d’adaptateurs dont vous pouvez avoir besoin, ainsi que des recommandations sur des modèles d’adaptateur spécifiques](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+Il se peut que votre PC compatible Windows Mixed Reality ne dispose pas des ports HDMI et USB 3,0 de taille intégrale nécessaires pour connecter votre casque immersif. Ou vous aurez peut-être besoin d’un adaptateur Bluetooth pour répondre aux exigences du portail Windows Mixed Reality.  Si c’est le cas, vous aurez besoin d’adaptateurs pour connecter votre casque et vos contrôleurs de mouvement. Veillez à consulter la liste des [types d’adaptateurs dont vous pouvez avoir besoin, ainsi que certaines recommandations sur des modèles d’adaptateur spécifiques](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Vérifiez que vous avez des périphériques d’entrée.
 
 Windows Mixed Reality est conçu pour fonctionner de façon optimale avec les contrôleurs de mouvement Windows Mixed Reality, qui fournissent des interactions précises et précises sans avoir besoin d’installer le matériel sur vos murs. Toutefois, vous pouvez également utiliser un contrôleur Xbox ou une souris et un clavier.
-
-## <a name="get-headphones-if-your-headset-didnt-come-with-them"></a>Recevez un casque si votre casque n’y est pas arrivé
-
-À moins que vous n’achetiez des casques Samsung HMD Odyssey, HP réverbération ou HP réverbération G2 (qui comportent un casque AKG intégré et un microphone intégré à deux baies), vous devez obtenir un casque audio avec une paire de casque qui peut se brancher à la prise jack audio headset’s 3,5 mm de votre HMD.
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>Vérifiez que vous disposez d’un grand espace ouvert
 

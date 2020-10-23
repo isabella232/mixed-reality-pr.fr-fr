@@ -3,12 +3,12 @@ title: Fonctionnement du suivi intérieur-extérieur
 description: Informations sur le système de suivi à l’intérieur de l’appareil photo, utilisé dans les casques de Windows Mixed Reality.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, Inside-Out, Inside Out, Tracking, Camera
-ms.openlocfilehash: a91b5fba399e9bb328fd579811a64aee03b49efd
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174336"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434604"
 ---
 # <a name="inside-out-tracking"></a>Suivi interne
 
@@ -72,6 +72,6 @@ Le système de suivi stocke des données d’environnement afin qu’il puisse r
 
 ## <a name="see-also"></a>Voir aussi
 * [Résolution des problèmes liés au système de suivi](tracking.md)
-* [Fonctionnement des contrôleurs de mouvement](controller-in-wmr.md)
+* [Contrôleurs de mouvement](controller-in-wmr.md)
 * [Votre accueil Windows Mixed Reality](your-mixed-reality-home.md)
 * [Utilisation de jeux et d’applications dans Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

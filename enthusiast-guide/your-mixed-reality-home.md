@@ -3,18 +3,18 @@ title: Votre foyer de réalité mixte
 description: Comment naviguer et vous téléporter dans Windows Mixed Reality, lancer des applications et des jeux, personnaliser la page d’hébergement et modifier les paramètres visuels, audio et vocaux.
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, famille, naviguer, découvrir, applications, jeux
-ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293088"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434625"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Votre accueil Windows Mixed Reality
 
 ## <a name="what-is-the-windows-mixed-reality-home"></a>Présentation de Windows Mixed Reality
 
-Windows Mixed Reality est le premier système d’exploitation spatial. Au lieu d’utiliser un écran plat et une interface 2D, il utilise notre capacité instinctual pour naviguer dans l’espace à trois dimensions. Chaque place a un objectif et le contenu a un contexte. De la même façon que votre ordinateur démarre au niveau de l’interface de bureau et que votre téléphone commence par un écran d’accueil, Windows Mixed Reality démarre à la réalité mixte. Il s’agit d’un environnement que vous pouvez parcourir et personnaliser pour créer votre propre environnement. C’est le canevas des milliers d’applications disponibles dans le Microsoft Store. Vous pouvez effectuer un multitâche avec ces applications, comme vous n’avez jamais pu le faire avant, en 3D, où l’espace est presque illimité.
+Windows Mixed Reality est le premier système d’exploitation spatial. Au lieu d’utiliser un écran plat et une interface 2D, il utilise notre capacité instinctual pour naviguer dans l’espace à trois dimensions. Chaque place a un objectif et le contenu a un contexte. De la même façon que votre ordinateur démarre au niveau de l’interface de bureau et que votre téléphone commence par un écran d’accueil, Windows Mixed Reality démarre à la réalité mixte. Il s’agit d’un environnement que vous pouvez parcourir et personnaliser pour créer votre propre environnement. C’est le canevas des milliers d’applications disponibles dans le Microsoft Store ou SteamVR. Vous pouvez effectuer un multitâche avec ces applications, comme vous n’avez jamais pu le faire avant, en 3D, où l’espace est presque illimité.
 
 ## <a name="move-through-the-windows-mixed-reality-home"></a>Parcourir la page d’hébergement de la réalité mixte Windows
 
@@ -26,7 +26,7 @@ Windows Mixed Reality est le premier système d’exploitation spatial. Au lieu 
   * Une fonctionnalité pratique est appelée « accrocher à l’application » qui vous permet d’accéder à la position idéale pour interagir avec les fenêtres d’application. Il vous suffit de pointer l’arc de téléporting vers une fenêtre et de laisser passer. Le système vous place automatiquement à l’emplacement idéal pour profiter du contenu de cette fenêtre ciblée.
 * La **marche virtuelle :** Vous pouvez virtuellement déplacer en continu en déappuyant sur le stick analogique (vous devez le toucher) sur vos contrôleurs de mouvement ou votre boîtier d’emboîtier, puis en passant à la direction souhaitée.
 
-## <a name="launch-an-app"></a>lancer une application
+## <a name="launch-an-app"></a>Lancer une application
 
 1. À partir de votre page d’accueil Windows Mixed Reality, appuyez sur le bouton Windows de votre contrôleur pour lancer le menu Démarrer.
 2. Sélectionnez l’application que vous souhaitez lancer.
@@ -73,7 +73,7 @@ Accédez à **paramètres > > de réalité mixte environnement > réinitialiser 
 
 ## <a name="turn-off-the-boundary"></a>Désactiver la limite
 
-Accédez au portail Windows Mixed Reality et ouvrez le menu dans le coin supérieur gauche de l’écran. Sélectionnez **exécuter configurer > limite de salle**. Activez le bouton bascule. Vous devez rester assis à votre bureau si vous désactivez la limite.
+Accédez au portail de réalité mixte et ouvrez le menu dans le coin supérieur gauche de l’écran. Sélectionnez **exécuter configurer > limite de salle**. Activez le bouton bascule. Vous devez rester assis à votre bureau si vous désactivez la limite.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Son spatial dans le Windows Mixed Reality
 

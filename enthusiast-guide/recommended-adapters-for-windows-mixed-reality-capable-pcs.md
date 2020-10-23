@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, adaptateur, dongle, HDMI, USB, DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: bcdc25c0f6e678666a713d01aaa4fb15da31e90c
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: ea0cd3c87fecda310ec72ba50d8f5982d1782b31
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174407"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434591"
 ---
 # <a name="recommended-adapters"></a>Adaptateurs recommandés
 > [!NOTE]
@@ -74,7 +74,7 @@ Ces tableaux vous aideront à déterminer si vous avez besoin d’adaptateurs US
     <th style="border: 1px solid black; background-color: lightgrey">USB 3,0 type-C</th>
   </tr>
   <tr style="border: 1px solid black">
-    <td rowspan="8" style="text-align: center;  vertical-align: middle; border: 1px solid black">Non prise en charge</td>
+    <td rowspan="8" style="text-align: center;  vertical-align: middle; border: 1px solid black">Non pris en charge</td>
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
@@ -263,7 +263,7 @@ Ces tableaux vous aideront à déterminer si vous avez besoin d’adaptateurs US
 
 Si votre casque a été relâché après 2018, les adaptateurs ne sont pas nécessaires et les contrôleurs sont associés au casque.
 
-Les appareils livrés avec 2017 ou une version antérieure ont besoin d’un adaptateur pour les contrôleurs. Si votre ordinateur n’inclut pas de Bluetooth pour associer les [contrôleurs de mouvement Windows Mixed Reality](controllers-in-wmr.md), vous pouvez utiliser un adaptateur comme l’adaptateur micro-adaptateur USB Bluetooth 4,0 à faible énergie.
+Les appareils livrés avec 2017 ou une version antérieure ont besoin d’un adaptateur pour les contrôleurs. Si votre ordinateur n’inclut pas de Bluetooth pour associer les [contrôleurs de mouvement Windows Mixed Reality](controllers-in-wmr.md#Pair-motion-controllers), vous pouvez utiliser un adaptateur comme l’adaptateur micro-adaptateur USB Bluetooth 4,0 à faible énergie.
 
 > [!NOTE]
 > Microsoft ne fabrique, ne teste, ne certifie pas et ne garantit pas la fonctionnalité, la fiabilité ou la qualité des adaptateurs. Pour toute question, problème ou problème avec n’importe quel adaptateur, contactez le vendeur ou le fabricant de votre adaptateur.
