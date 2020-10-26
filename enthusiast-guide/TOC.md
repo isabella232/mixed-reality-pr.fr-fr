@@ -16,14 +16,14 @@
 ### [FAQ sur la configuration de Windows Mixed Reality](wmr-setup-faq.md)
 
 ## Utilisation de Windows Mixed Reality
-### [Découvrir la réalité mixte](learn-mixed-reality.md)
-### [Votre accueil Windows Mixed Reality](your-mixed-reality-home.md)
+### [Expérience d’apprentissage dans Mixed Reality](learn-mixed-reality.md)
+### [Votre accueil réalité mixte](your-mixed-reality-home.md)
 ### [Contrôleurs dans Windows Mixed Reality](controllers-in-wmr.md)
 ### [Utilisation d’entrées vocales](using-speech-in-wmr.md)
-### [Jeux, vidéos 360 et applications](using-games-and-apps-in-windows-mixed-reality.md)
-### [SteamVR](using-steamvr-with-windows-mixed-reality.md)
-### [Utilisation de Microsoft Edge](using-microsoft-edge.md)  
-### [WebVR](webvr.md)
+### [Utilisation de jeux, de vidéos 360 et d’applications](using-games-and-apps-in-windows-mixed-reality.md)
+### [Utilisation de SteamVR](using-steamvr-with-windows-mixed-reality.md)
+### [Utilisation de Microsoft Edge](using-microsoft-edge.md)
+### [Qu’est-ce que WebVR](webvr.md)
 ### [FAQ sur l’utilisation de Windows Mixed Reality](using-wmr-faq.md)
 
 ## Questions fréquentes (FAQ) sur la résolution des problèmes

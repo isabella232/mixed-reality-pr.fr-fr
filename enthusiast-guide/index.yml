@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Documentation Windows Mixed Reality VR
-summary: Informations pour les clients intermédiaires à avancés qui souhaitent savoir comment tirer le meilleur parti de Windows Mixed Reality.
+summary: Vivez des sensations fortes avec la réalité mixte dans les jeux, les voyages et le streaming. Ici, vous pouvez apprendre à démarrer et à progresser avec la réalité virtuelle dans Windows Mixed Reality.
 brand: windows
 metadata:
   title: Documentation Windows Mixed Reality VR
-  description: Informations pour les clients intermédiaires à avancés qui souhaitent savoir comment tirer le meilleur parti de Windows Mixed Reality.
+  description: Vivez des sensations fortes avec la réalité mixte dans les jeux, les voyages et le streaming. Ici, vous pouvez apprendre à démarrer et à progresser avec la réalité virtuelle dans Windows Mixed Reality
   services: guidance
   ms.service: guidance
   ms.topic: hub-page
@@ -12,38 +12,90 @@ metadata:
   ms.technology: enthusiast-guide
   author: mattwojo
   ms.author: mattwoj
-  ms.openlocfilehash: b791970df40711c298501b2db09cff8ec342de8a
-  ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+  ms.openlocfilehash: 3c485d7214da9109d8f1120e88cb02449b386cff
+  ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/19/2020
-  ms.locfileid: "92174384"
+  ms.lasthandoff: 10/24/2020
+  ms.locfileid: "92499574"
 highlightedContent:
   items:
-  - title: Avant d’acheter
+  - title: À propos de la réalité virtuelle Windows Mixed Reality
+    itemType: overview
+    url: vr-journey.md
+  - title: Comment acheter un casque
+    itemType: learn
+    url: https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?rtc=1
+  - title: Comprendre la configuration matérielle requise
     itemType: learn
     url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
-  - title: Découvrir
+  - title: Bien démarrer avec la réalité virtuelle
     itemType: get-started
-    url: before-you-start.md
-  - title: Découvrir la réalité mixte
-    itemType: how-to-guide
-    url: learn-mixed-reality.md
-  - title: Windows Mixed Reality Academy
-    itemType: video
-    url: https://developer.microsoft.com/en-us/windows/mixed-reality/academy
+    url: set-up-windows-mixed-reality.md
+  - title: Guide de sécurité et d’intégrité
+    itemType: concept
+    url: wmr-health-safety-comfort.md
+  - title: Vue d’ensemble des logiciels Mixed Reality et historique des versions
+    itemType: concept
+    url: mixed-reality-software.md
+conceptualContent:
+  title: Démarrer avec Windows Mixed Reality
+  summary: Retrouvez des informations supplémentaires sur les logiciels, le matériel et le dépannage Mixed Reality.
+  items:
+  - title: Guides pratiques
+    links:
+    - url: plug-in-your-headset.md
+      itemType: quickstart
+      text: Brancher votre casque
+    - url: install-windows-mixed-reality.md
+      itemType: quickstart
+      text: Installer le logiciel Windows Mixed Reality
+    - url: learn-mixed-reality.md
+      itemType: quickstart
+      text: Exécuter l’expérience d’apprentissage
+    - url: using-games-and-apps-in-windows-mixed-reality.md
+      itemType: quickstart
+      text: Utiliser des jeux et des applications
+  - title: Références
+    links:
+    - url: your-mixed-reality-home.md
+      itemType: concept
+      text: Votre accueil réalité mixte
+    - url: controllers-in-wmr.md
+      itemType: concept
+      text: Contrôleurs de mouvement dans Windows Mixed Reality
+    - url: using-steamvr-with-windows-mixed-reality.md
+      itemType: concept
+      text: SteamVR avec Windows Mixed Reality
+    - url: using-speech-in-wmr.md
+      itemType: concept
+      text: Fonctions vocales avec Windows Mixed Reality
+  - title: Dépannage
+    links:
+    - url: troubleshooting-windows-mixed-reality.md
+      itemType: concept
+      text: FAQ général
+    - url: filing-feedback.md
+      itemType: concept
+      text: Envoyer des bogues et des commentaires
+    - url: error-codes.md
+      itemType: concept
+      text: Codes d’erreur
+    - url: installation_errors.md
+      itemType: concept
+      text: Erreurs d'installation
 additionalContent:
   sections:
   - title: Plus de ressources
-    summary: Explorez des liens connexes vers du dépannage, de la documentation sur le développement et des forums.
+    summary: Explorez les liens connexes vers d’autres ressources, de la documentation sur le développement et des forums.
     items:
-    - title: Dépannage
-      summary: Dépannage de A à Z pour tous les aspects de Windows Mixed Reality
-      url: installation_errors.md
-    - title: Commentaires
-      summary: Découvrez d’autres articles pour explorer plus en détail Windows Mixed Reality, comme fournir des commentaires utiles ou savoir comment fonctionnent les sous-systèmes.
-      url: filing-feedback.md
-    - title: Documentation sur le développement
+    - title: Suivi intérieur-extérieur
+      summary: Apprendre le fonctionnement du suivi intérieur-extérieur
+      url: tracking-system.md
+    - title: Vue d’ensemble des logiciels Mixed Reality
+      summary: Vue d’ensemble des logiciels Mixed Reality et historique des versions
+      url: mixed-reality-software.md
+    - title: Développer dans Windows Mixed Reality
       summary: Documentation sur le développement et la conception
-      url: https://developer.microsoft.com/windows/mixed-reality
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity
   footer: Un problème sur notre site ? [Dites-le nous !](https://forums.hololens.com/categories/using-windows-mixed-reality)
