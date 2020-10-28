@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, pré-vente, recherche, achat, avant l’achat
 appliesto:
 - Windows 10
-ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
+ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434614"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92907441"
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 
@@ -21,17 +21,17 @@ ms.locfileid: "92434614"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Où puis-je acheter un PC ou un casque pour Windows Mixed Reality ?
 
-**Réponse rapide :** Vous pouvez acheter un PC ou un casque pour Windows Mixed Reality sur un détaillant local agréé ou en ligne auprès de divers détaillants, y compris les Microsoft Store. Trouver un PC ou un casque Windows Mixed Reality Ready : <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Réponse rapide :** Vous pouvez acheter un PC ou un casque pour Windows Mixed Reality sur un détaillant local agréé ou en ligne auprès de divers détaillants, y compris les Microsoft Store. Trouver un PC ou un casque Windows Mixed Reality Ready : <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>Où puis-je essayer Windows Mixed Reality ?
 
-**Réponse rapide :** Vous pouvez essayer Windows Mixed Reality sur un [réacteur Microsoft](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) près de chez vous.  
-* Recherchez votre réacteur Microsoft local : <https://www.microsoft.com/en-us/store/locations/all-locations>
+**Réponse rapide :** Vous pouvez essayer Windows Mixed Reality sur un [réacteur Microsoft](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) près de chez vous.
+
 * Recherchez les événements du réacteur Microsoft sur Meetup.com : <https://www.meetup.com/pro/microsoft-reactor>
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quels fabricants vendent des appareils Windows Mixed Reality ?
 
-**Réponse rapide :** Les casques et les contrôleurs de mouvement sont actuellement disponibles à partir de HP. Consultez <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Réponse rapide :** Les casques et les contrôleurs de mouvement sont actuellement disponibles à partir de HP. Voir <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>Où puis-je acheter des contrôleurs de mouvement autonomes ?
 
@@ -51,7 +51,7 @@ En savoir plus sur la réalité mixte ici : <https://docs.microsoft.com/windows
 
 **Réponse rapide :** Le suivi des casques dans Windows Mixed Reality (les caméras de suivi se trouvent dans le casque) et la configuration plug-and-Play avec Windows 10.
 
-**Plus de détails**: Windows Mixed Reality offre plusieurs fonctionnalités, y compris une configuration facile (sans avoir besoin de capteurs externes pour assurer le suivi et vos contrôleurs), votre choix de casques pour vous permettre de vous familiariser avec votre point de vue et vos casques, des casques disposant de solutions compétitives et une expérience utilisateur unique qui propose une interface spatiale qui vous permet d’Microsoft Store utiliser
+**Plus de détails** : Windows Mixed Reality offre plusieurs fonctionnalités, y compris une configuration facile (sans avoir besoin de capteurs externes pour assurer le suivi et vos contrôleurs), votre choix de casques pour vous permettre de vous familiariser avec votre point de vue et vos casques, des casques disposant de solutions compétitives et une expérience utilisateur unique qui propose une interface spatiale qui vous permet d’Microsoft Store utiliser
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>La réalité mixte signifie-t-elle que les caméras internes sont en mode passthrough ? Pouvez-vous expérimenter la réalité augmentée en plus de la réalité virtuelle ?
 
@@ -99,7 +99,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 <td> Jusqu’à 90Hz </td>
 <td> 100 ° </td>
 <td> connecteur 3,5 mm </td>
-<td> None </td>
+<td> Aucun </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Portable Acer</a> </td>
@@ -125,7 +125,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 <td> Jusqu’à 90Hz </td>
 <td> 95 ° </td>
 <td> connecteur 3,5 mm </td>
-<td> None </td>
+<td> Aucun </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">ASUS</a> </td>
@@ -138,7 +138,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 <td> Jusqu’à 90Hz </td>
 <td> 105 ° </td>
 <td> connecteur 3,5 mm </td>
-<td> None </td>
+<td> Aucun </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">Ordinateurs</a> </td>
@@ -151,7 +151,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 <td> Jusqu’à 90Hz </td>
 <td> 105 ° </td>
 <td> connecteur 3,5 mm </td>
-<td> None </td>
+<td> Aucun </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -177,7 +177,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 <td> Jusqu’à 90Hz </td>
 <td> 105 ° </td>
 <td> connecteur 3,5 mm </td>
-<td> None </td>
+<td> Aucun </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">Hewlett</a> </td>
@@ -190,7 +190,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 <td> Jusqu’à 90Hz </td>
 <td> 105 ° </td>
 <td> connecteur 3,5 mm </td>
-<td> None </td>
+<td> Aucun </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -203,7 +203,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 <td> Jusqu’à 90Hz </td>
 <td> 105 ° </td>
 <td> connecteur 3,5 mm </td>
-<td> None </td>
+<td> Aucun </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -216,7 +216,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 <td> Jusqu’à 90Hz </td>
 <td> 110 ° </td>
 <td> Intégré </td>
-<td> None </td>
+<td> Aucun </td>
 <td style="text-align: center;">Mécanique</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
@@ -242,7 +242,7 @@ Pour en savoir plus sur le suivi de l’intérieur, cliquez ici : <https://docs
 <td> Jusqu’à 90Hz </td>
 <td> 105 ° </td>
 <td> connecteur 3,5 mm </td>
-<td> None </td>
+<td> Aucun </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
@@ -257,7 +257,7 @@ Les détails techniques répertoriés ci-dessus sont référencés à partir des
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>Les casques de réalité mixte ont-ils un ajustement IPD ?
 
-**Réponse rapide :** En fonction du casque, certains casques de réalité mixte sont dotés de l’ajustement IPD mécanique. D’autres casques composent l’ajustement logiciel intégré, qui améliore la distorsion de l’image et la précision de la profondeur en fonction de votre IPD. Les utilisateurs peuvent définir leurs paramètres IPD personnalisés via des **paramètres > la réalité mixte > l’affichage du casque > l’étalonnage**.
+**Réponse rapide :** En fonction du casque, certains casques de réalité mixte sont dotés de l’ajustement IPD mécanique. D’autres casques composent l’ajustement logiciel intégré, qui améliore la distorsion de l’image et la précision de la profondeur en fonction de votre IPD. Les utilisateurs peuvent définir leurs paramètres IPD personnalisés via des **paramètres > la réalité mixte > l’affichage du casque > l’étalonnage** .
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>Les casques de réalité mixte ont-ils été ajustés ?
 
@@ -303,7 +303,7 @@ Les détails techniques répertoriés ci-dessus sont référencés à partir des
 
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>La plateforme Windows Mixed Reality prend-elle en charge le matériel et le matériel vive ?
 
-**Réponse rapide :** Windows Mixed Reality fonctionne uniquement avec les contrôleurs/casques Windows mixtes de réalité approuvés. Consultez <https://www.microsoft.com/en-us/store/b/virtualreality>
+**Réponse rapide :** Windows Mixed Reality fonctionne uniquement avec les contrôleurs/casques Windows mixtes de réalité approuvés. Voir <https://www.microsoft.com/en-us/store/b/virtualreality>
 
 ## <a name="motion-controllers"></a>Contrôleurs de mouvement
 
@@ -332,11 +332,11 @@ Les détails techniques répertoriés ci-dessus sont référencés à partir des
 
 ### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>Windows Mixed Reality fonctionne-t-il avec mes contrôleurs tactiles Oculus ou vos contrôleurs/contrôleurs à HTC.
 
-**Réponse rapide :** Non, Windows Mixed Reality fonctionne uniquement avec les casques/contrôleurs approuvés. Consultez <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Réponse rapide :** Non, Windows Mixed Reality fonctionne uniquement avec les casques/contrôleurs approuvés. Voir <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-work-with-my-steamvr-knuckle-controllers"></a>Windows Mixed Reality fonctionne-t-il avec mes contrôleurs Knuckle SteamVR ?
 
-**Réponse rapide :** Non, Windows Mixed Reality fonctionne uniquement avec les casques/contrôleurs approuvés. Consultez <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Réponse rapide :** Non, Windows Mixed Reality fonctionne uniquement avec les casques/contrôleurs approuvés. Voir <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-support-my-xbox-one-controller-with-the-wireless-xbox-adapter"></a>Windows Mixed Reality prendra-t-il en charge mon contrôleur Xbox One avec l’adaptateur Xbox sans fil ?
 
