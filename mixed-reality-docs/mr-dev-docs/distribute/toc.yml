@@ -1,0 +1,19 @@
+# - name: Overview 
+- name: Lanceurs d’applications 3D
+  items:
+    - name: Guide de conception
+      href: 3d-app-launcher-design-guidance.md
+    - name: "Créer des modèles\_3D à utiliser dans la page d’accueil"
+      href: creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
+    - name: "Implémentation des lanceurs d’applications\_3D"
+      items:
+        - name: Applications UWP
+          href: implementing-3d-app-launchers.md
+        - name: Applications Win32
+          href: implementing-3d-app-launchers-win32.md
+    - name: "Permettre le placement d’objets\_3D dans l’accueil réalité mixte"
+      href: enable-placement-of-3d-models-in-the-home.md
+- name: Achats dans l'application
+  href: in-app-purchases.md
+- name: "Envoi d’une application au Microsoft\_Store"
+  href: submitting-an-app-to-the-microsoft-store.md
