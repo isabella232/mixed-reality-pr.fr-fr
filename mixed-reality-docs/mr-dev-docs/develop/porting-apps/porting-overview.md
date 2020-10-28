@@ -13,6 +13,6 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92638496"
 ---
-# <a name="porting-overview"></a><span data-ttu-id="397f3-104">Vue d’ensemble du Portage</span><span class="sxs-lookup"><span data-stu-id="397f3-104">Porting overview</span></span>
+# <a name="porting-overview"></a><span data-ttu-id="8ef04-104">Vue d’ensemble du Portage</span><span class="sxs-lookup"><span data-stu-id="8ef04-104">Porting overview</span></span>
 
-<span data-ttu-id="397f3-105">[//TODO : image d’en-tête requise]</span><span class="sxs-lookup"><span data-stu-id="397f3-105">[//TODO: Need header image]</span></span>
+<span data-ttu-id="8ef04-105">[//TODO : image d’en-tête requise]</span><span class="sxs-lookup"><span data-stu-id="8ef04-105">[//TODO: Need header image]</span></span>

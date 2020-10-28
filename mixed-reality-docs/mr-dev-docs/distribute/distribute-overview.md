@@ -13,6 +13,6 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92638516"
 ---
-# <a name="distribution-overview"></a><span data-ttu-id="a0785-104">Présentation de la distribution</span><span class="sxs-lookup"><span data-stu-id="a0785-104">Distribution overview</span></span>
+# <a name="distribution-overview"></a><span data-ttu-id="d3806-104">Présentation de la distribution</span><span class="sxs-lookup"><span data-stu-id="d3806-104">Distribution overview</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a0785-105">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="a0785-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d3806-105">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="d3806-105">See also</span></span>
