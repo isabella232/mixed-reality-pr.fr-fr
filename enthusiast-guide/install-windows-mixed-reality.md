@@ -1,5 +1,5 @@
 ---
-title: Installer le logiciel Windows Mixed Reality
+title: Installer le logiciel Windows Mixed Reality
 description: Après avoir branché votre casque Windows Mixed Reality, utilisez l’application de portail de réalité mixte pour commencer et télécharger les fonctionnalités Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
@@ -8,14 +8,17 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, prise en main, configuration, portail de réalité mixte
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e04f29f834b2220f51f1748aa59e4188d8ad38d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680686"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915564"
 ---
-# <a name="install-windows-mixed-reality-software"></a>Installer le logiciel Windows Mixed Reality
+# <a name="install-windows-mixed-reality-software"></a>Installer le logiciel Windows Mixed Reality
+
+> [!div class="nextstepaction"]
+> [Procurez-vous le portail de réalité mixte](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
 
 ## <a name="launch-mixed-reality-portal"></a>Lancer le portail de réalité mixte
 
@@ -92,4 +95,4 @@ Vous verrez un message « préparation à l’installation » sur votre écran
 * [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
 * [Résolution des problèmes d’installation](installation_errors.md)
 * [Résolution des problèmes d’installation](set-up-questions.md)
-* [Configurer Windows Mixed Reality](set-up-windows-mixed-reality.md)
+* [Configurer Windows Mixed Reality](set-up-windows-mixed-reality.md)
