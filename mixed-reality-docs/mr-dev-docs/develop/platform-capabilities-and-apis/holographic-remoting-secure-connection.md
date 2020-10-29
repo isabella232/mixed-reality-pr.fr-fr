@@ -1,0 +1,68 @@
+---
+title: Établissement d’une connexion sécurisée avec la communication à distance holographique
+description: Cette page explique comment établir une connexion chiffrée sécurisée lors de l’utilisation de la communication à distance holographique.
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 03/11/2020
+ms.topic: article
+keywords: HoloLens, communication à distance, communication à distance holographique
+ms.openlocfilehash: 4006a317ed2ecfd7a1e67336a80a4e536d45e554
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91679243"
+---
+# <a name="establishing-a-secure-connection-with-holographic-remoting"></a>Établissement d’une connexion sécurisée avec la communication à distance holographique
+
+>[!IMPORTANT]
+>Ce guide est spécifique à la communication à distance holographique sur HoloLens 2.
+
+Cette page explique comment établir une connexion chiffrée sécurisée lors de l’utilisation de la communication à distance holographique.
+
+Lors de la diffusion en continu de contenu vers HoloLens 2 sur un réseau non sécurisé, tel qu’un WiFi ouvert ou Internet, il est fortement recommandé d’utiliser une connexion chiffrée.
+
+>[!IMPORTANT]
+>Même en cas d’utilisation d’un WiFi local approuvé à l’aide d’une connexion chiffrée, vous devez prendre en compte.
+
+Pour pouvoir utiliser une connexion chiffrée, vous devez implémenter à la fois un [lecteur personnalisé](holographic-remoting-create-player.md) et une [application distante personnalisée](holographic-remoting-create-host.md).
+
+Le chiffrement est effectué à l’aide de l’implémentation TLS des plateformes sous-jacentes.
+
+## <a name="basics-of-an-encrypted-connection"></a>Principes de base d’une connexion chiffrée
+
+Les objets suivants doivent être implémentés pour permettre l’échange de certificats.
+
+>[!TIP]
+>L’implémentation d’interfaces WinRT peut facilement être effectuée à l’aide de C++/WinRT. Le chapitre [créer des API avec C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) décrit cela en détail.
+
+>[!IMPORTANT]
+>L' ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` intérieur du package NuGet contient une documentation détaillée sur l’API liée aux connexions sécurisées.
+
+1) Objet de certificat, qui doit implémenter l' ```ICertificate``` interface.
+
+    * Retourne le contenu binaire du certificat pfx à l’aide de la ```GetCertificatePfx``` méthode. Identique au contenu binaire d’un fichier. pfx.
+    * Retourne le nom d’objet du certificat à l’aide de ```GetSubjectName``` .
+    * Retournez le mot de passe pfx via ```GetPfxPassword``` . Retourne une chaîne vide pour un fichier PFX non protégé.
+
+2) Fournisseur de certificats implémentant l' ```ICertificateProvider``` interface qui fournit un certificat lorsqu’il est demandé par le biais de la ```GetCertificate``` méthode.
+
+3) Validateur de certificat implémentant l' ```ICertificateValidator``` interface. Sa tâche consiste à vérifier les certificats entrants.
+    * La ```PerformSystemValidation``` méthode doit retourner ```true``` lorsque la plateforme sous-jacente doit valider la chaîne de certificats entrants, ```false``` sinon.
+    * ```ValidateCertificate``` est appelé par le contexte client pour demander la validation d’un certificat. Cette méthode accepte la chaîne de certificats (avec le premier certificat étant le sujet du certificat), le nom du serveur avec lequel la connexion est établie et si un contrôle de révocation doit être forcé. Le résultat de la validation du système sera fourni si la validation du système sous-jacent a été demandée. Pour continuer le traitement ```CertificateValidated``` avec le résultat approprié ou ```Cancel``` pour annuler la validation, vous devez appeler sur le passé ```ICertificateValidationCallback``` .
+
+En outre, pour permettre l’échange d’un jeton sécurisé, les objets suivants doivent être implémentés.
+
+1) Fournisseur d’authentification qui implémente l' ```IAuthenticationProvider``` interface. Sa ```GetToken``` méthode est appelée par le contexte client pour demander un jeton pour l’authentification du client. Pour continuer ```TokenReceived``` à fournir le jeton d’authentification et poursuivre le processus de connexion, ou ```Cancel``` pour annuler le processus, il doit être appelé sur le passé ```IAuthenticationProviderCallback``` .
+2) Récepteur d’authentification qui implémente l' ```IAuthenticationReceiver``` interface. Sa tâche consiste à valider les jetons entrants.
+    * La ```GetRealm``` méthode doit retourner le nom du domaine d’authentification.
+    * La ```ValidateToken``` méthode est appelée par le contexte réseau du serveur pour demander la validation d’un jeton d’authentification client. Pour continuer, appelez ```ValidationCompleted``` pour signaler la fin de la validation ou ```Cancel``` pour rejeter la connexion cliente. La connexion cliente est acceptée ou rejetée en fonction du résultat de validation passé à ```ValidationCompleted``` . 
+
+Une fois ces objets implémentés ```ListenSecure``` , ils doivent être appelés à la place de ```Listen``` et non du contexte ```ConnectSecure``` ```Connect``` distant et du contexte de joueur, respectivement. ```ListenSecure``` requiert un fournisseur de certificats et un récepteur d’authentification supplémentaires sur ```Listen``` . ```ConnectSecure``` requiert un fournisseur d’authentification supplémentaire et un validateur de certificat sur ```Connect``` .
+
+## <a name="see-also"></a>Voir aussi
+* [Écriture d’une application de communication à distance holographique](holographic-remoting-create-host.md)
+* [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
+* [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)
+* [Termes du contrat de licence de la communication à distance holographique](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)
