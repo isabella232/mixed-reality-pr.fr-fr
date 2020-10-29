@@ -1,0 +1,28 @@
+- name: Bien démarrer avec la réalité mixte
+  href: get-started-with-mr.md
+- name: "Qu’est-ce que la réalité mixte\_?"
+  href: mixed-reality.md
+- name: "Qu’est-ce qu’un hologramme\_?"
+  href: hologram.md
+- name: Développer votre processus de conception
+  href: case-study-expanding-the-design-process-for-mixed-reality.md
+- name: Matériel HoloLens
+  items:
+    - name: "Informations détaillées sur le casque HoloLens\_2"
+      href: 'https://docs.microsoft.com/hololens/hololens2-hardware'
+    - name: "Informations détaillées sur le matériel HoloLens (1ère\_génération)"
+      href: 'https://docs.microsoft.com/hololens/hololens1-hardware'
+- name: Casques immersifs
+  items:
+    - name: Informations détaillées sur les casques immersifs
+      href: immersive-headset-hardware-details.md
+    - name: Exploration de la page d’accueil Windows Mixed Reality
+      href: navigating-the-windows-mixed-reality-home.md
+    - name: Guide pour les passionnés de RV
+      href: 'https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/'
+    - name: Divertissement basé sur l’emplacement
+      href: location-based-experiences.md
+- name: Ressources communautaires
+  href: community.md
+- name: Accessoires matériels
+  href: hardware-accessories.md
