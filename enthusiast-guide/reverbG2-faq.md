@@ -1,0 +1,75 @@
+---
+title: FAQ sur les réverbérations HP G2
+description: Questions fréquentes sur l’utilisation du casque de réverbération HP G2
+ms.author: v-hferrone
+ms.date: 09/15/2020
+ms.topic: article
+keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
+appliesto:
+- Windows 10
+ms.openlocfilehash: 82f9accc8e24574faf7c826aff1908bea7350b08
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049471"
+---
+# <a name="hp-reverb-g2-frequently-asked-questions"></a><span data-ttu-id="44738-104">Forum aux questions sur les réverbérations HP G2</span><span class="sxs-lookup"><span data-stu-id="44738-104">HP Reverb G2 Frequently Asked Questions</span></span>
+
+## <a name="is-there-a-specific-order-i-should-follow-to-connect-my-headset-cables-to-a-pc"></a><span data-ttu-id="44738-105">Y a-t-il un ordre spécifique que je dois suivre pour connecter les câbles du casque à un PC</span><span class="sxs-lookup"><span data-stu-id="44738-105">Is there a specific order I should follow to connect my headset cables to a PC</span></span>
+
+<span data-ttu-id="44738-106">HP recommande :</span><span class="sxs-lookup"><span data-stu-id="44738-106">HP Recommends:</span></span>
+
+- <span data-ttu-id="44738-107">Connectez d’abord le câble à 6 mètres au casque avant de vous connecter au PC ou à l’alimentation.</span><span class="sxs-lookup"><span data-stu-id="44738-107">Connect the 6-meter cable to the headset first before connecting to the PC or power supply.</span></span>
+- <span data-ttu-id="44738-108">Laissez le câble à 6 mètres connecté au casque après l’installation initiale.</span><span class="sxs-lookup"><span data-stu-id="44738-108">Leave the 6-meter cable connected to the headset after initial installation.</span></span>
+- <span data-ttu-id="44738-109">Lorsque le casque n’est pas utilisé, déconnectez l’adaptateur d’alimentation du câble à 6 mètres.</span><span class="sxs-lookup"><span data-stu-id="44738-109">When the headset is not in use, disconnect the power adapter from the 6-meter cable.</span></span>
+
+## <a name="what-should-i-do-to-get-a-crisper-image"></a><span data-ttu-id="44738-110">Que dois-je faire pour obtenir une image plus claire ?</span><span class="sxs-lookup"><span data-stu-id="44738-110">What should I do to get a crisper image</span></span>
+
+<span data-ttu-id="44738-111">Voici quelques opérations que vous pouvez essayer si vous estimez que votre affichage semble un peu flou :</span><span class="sxs-lookup"><span data-stu-id="44738-111">There are a few things you can try if you feel that your display looks a little blurry:</span></span>
+
+- <span data-ttu-id="44738-112">Assurez-vous que votre casque est bien en tête pour que vos yeux soient centrés sur les lentilles.</span><span class="sxs-lookup"><span data-stu-id="44738-112">Make sure that your headset is on your head correctly so that your eyes are centered with regards to the lenses.</span></span>
+- <span data-ttu-id="44738-113">Essayez d’ajuster l’IPD (distance interpupillary).</span><span class="sxs-lookup"><span data-stu-id="44738-113">Try to adjust the IPD (interpupillary distance).</span></span> <span data-ttu-id="44738-114">Notez que la réverbération G2 utilise une IPD matérielle.</span><span class="sxs-lookup"><span data-stu-id="44738-114">Note that Reverb G2 uses a hardware IPD.</span></span> <span data-ttu-id="44738-115">Pour le modifier, recherchez l’ajustement IPD sur votre casque.</span><span class="sxs-lookup"><span data-stu-id="44738-115">To change it, look for IPD adjustment on your headset.</span></span>
+- <span data-ttu-id="44738-116">Si vous avez besoin de lunettes ou de contacts, ceux-ci sont toujours requis.</span><span class="sxs-lookup"><span data-stu-id="44738-116">If you need glasses or contacts, they are still required.</span></span>
+- <span data-ttu-id="44738-117">Vérifiez vos lentilles si elles doivent être nettoyées (en tissu microfiber uniquement – aucun fluide).</span><span class="sxs-lookup"><span data-stu-id="44738-117">Check your lenses if they need to be cleaned (microfiber cloth only – no fluids).</span></span>
+- <span data-ttu-id="44738-118">En raison de la conception avancée du casque, il peut y avoir des fantômes d’image mineurs au cours des premières minutes lors du démarrage de l’appareil alors que les écrans plats ont la possibilité de chauffer.</span><span class="sxs-lookup"><span data-stu-id="44738-118">Due to the advanced design of the headset there may be some minor image ghosting in the first few minutes when starting the device while cold until the LCDs have the opportunity to warm up.</span></span>
+
+## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a><span data-ttu-id="44738-119">J’obtiens une erreur 7-14 «un problème s’est produit lors de la connexion au casque</span><span class="sxs-lookup"><span data-stu-id="44738-119">I am getting a 7-14 “Something Went Wrong” error when I plug in my headset</span></span>
+
+<span data-ttu-id="44738-120">Si vous constatez une erreur 7-14 « une erreur s’est produite », procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="44738-120">If you are seeing a 7-14 “something went wrong” error, please try the following steps:</span></span>
+
+- <span data-ttu-id="44738-121">Assurez-vous que les pilotes les plus récents sont installés.</span><span class="sxs-lookup"><span data-stu-id="44738-121">Make sure that you have the most recent drivers installed.</span></span>
+- <span data-ttu-id="44738-122">Essayez de brancher le câble sur un port USB-3,0 différent.</span><span class="sxs-lookup"><span data-stu-id="44738-122">Try plugging the cable into a different USB-3.0 port.</span></span>
+- <span data-ttu-id="44738-123">Utilisez le C USB sur un adaptateur inclus pour essayer d’autres ports.</span><span class="sxs-lookup"><span data-stu-id="44738-123">Please use the USB C to A adapter included to try different ports.</span></span>
+
+<span data-ttu-id="44738-124">Essayez de brancher le câble sur un autre concentrateur USB.</span><span class="sxs-lookup"><span data-stu-id="44738-124">Try plugging the cable into a different USB Hub.</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="44738-125">HP recommande d’utiliser uniquement des contrôleurs USB intégrés à la carte mère avec des appareils G2 de réverbération.</span><span class="sxs-lookup"><span data-stu-id="44738-125">HP recommends using only USB controllers built into the motherboard with Reverb G2 devices.</span></span>
+> <span data-ttu-id="44738-126">Si vous ne parvenez pas à vous connecter à votre appareil, contactez le [support technique HP](https://support.hp.com/us-en)</span><span class="sxs-lookup"><span data-stu-id="44738-126">If you are unable to connect your device, please contact [HP Support](https://support.hp.com/us-en)</span></span>
+
+## <a name="i-am-getting-a-13-14-something-went-wrong-error-when-my-pc-resumes-from-hibernate-s4"></a><span data-ttu-id="44738-127">J’obtiens une erreur 13-14 « une erreur s’est produite » lorsque mon PC sort de la veille prolongée (S4)</span><span class="sxs-lookup"><span data-stu-id="44738-127">I am getting a 13-14 “Something Went Wrong” error when my PC resumes from hibernate (S4)</span></span>
+
+<span data-ttu-id="44738-128">Parfois, pendant le processus de reprise, la carte vidéo ne peut pas établir de connexion. par conséquent, le fait de déconnecter le type C de votre PC et de le rebrancher peut vous aider à établir une connexion.</span><span class="sxs-lookup"><span data-stu-id="44738-128">Sometimes during the resume process, the video card cannot establish a connection, so unplugging the USB Type C from your PC and plugging it back in may help to establish a connection.</span></span>
+
+## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a><span data-ttu-id="44738-129">Le portail de réalité mixte indique « Impossible d’exécuter une réalité mixte sur ce casque », mais cela fonctionnait correctement avec mon casque WMR précédent</span><span class="sxs-lookup"><span data-stu-id="44738-129">The Mixed Reality Portal says “Can't run mixed reality on this headset” but this worked fine with my previous WMR headset</span></span>
+
+<span data-ttu-id="44738-130">Cela peut se produire si votre réverbération HP G2 requiert un PC plus puissant pour garantir une expérience optimale.</span><span class="sxs-lookup"><span data-stu-id="44738-130">This may happen because your HP Reverb G2 requires a more powerful PC to ensure the best experience.</span></span> <span data-ttu-id="44738-131">Pour plus d’informations, consultez la [Configuration minimale requise](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) pour les PC</span><span class="sxs-lookup"><span data-stu-id="44738-131">For more information, please review the minimum [PC requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)</span></span>
+
+## <a name="it-looks-like-my-left-display-is-stretched-and-the-right-display-is-off-centered-and-half-black"></a><span data-ttu-id="44738-132">Il semble que mon affichage à gauche soit étiré, et l’affichage à droite est décentré et demi-noir</span><span class="sxs-lookup"><span data-stu-id="44738-132">It looks like my left display is stretched, and the right display is off-centered and half black</span></span>
+
+<span data-ttu-id="44738-133">Cela peut se produire lorsque votre casque n’est pas en cours d’exécution à la résolution native.</span><span class="sxs-lookup"><span data-stu-id="44738-133">This can happen when your headset is not running at the native resolution.</span></span> <span data-ttu-id="44738-134">En raison de la nature des affichages haute résolution dans le HMD de réverbération HP G2, tous les systèmes ne seront pas en mesure d’afficher la résolution native.</span><span class="sxs-lookup"><span data-stu-id="44738-134">Due to the nature of the high-resolution displays in the HP Reverb G2 HMD, not all systems will be able to render the native resolution.</span></span> <span data-ttu-id="44738-135">Un correctif est disponible dans un futur Windows Update qui traitera le problème de rendu lorsque le casque n’est pas à la résolution native.</span><span class="sxs-lookup"><span data-stu-id="44738-135">There is a fix coming in a future Windows Update that will address the rendering issue when the headset is not at the native resolution.</span></span>
+
+<span data-ttu-id="44738-136">Il existe plusieurs raisons pour lesquelles votre système ne peut pas être rendu à la résolution native :</span><span class="sxs-lookup"><span data-stu-id="44738-136">There are a few reasons why your system is not able to render at the native resolution:</span></span>
+
+- <span data-ttu-id="44738-137">Le DisplayPort sur le système n’est peut-être pas compatible avec 1,3 ou ne prend peut-être pas en charge les 4 couloirs.</span><span class="sxs-lookup"><span data-stu-id="44738-137">The DisplayPort on the system might not be 1.3 compatible, or it might not support all 4 lanes.</span></span>
+- <span data-ttu-id="44738-138">Si vous utilisez un adaptateur, il est possible qu’il ne soit pas compatible avec HBR3 ou qu’il ne prenne pas en charge les 4 couloirs.</span><span class="sxs-lookup"><span data-stu-id="44738-138">If you are using an adapter, it might not support be HBR3 compatible, or it might not support all 4 lanes.</span></span>
+- <span data-ttu-id="44738-139">Si votre système possède un GPU hybride, cela peut limiter la bande passante disponible pour le DisplayPort.</span><span class="sxs-lookup"><span data-stu-id="44738-139">If your system has a hybrid GPU, that might be limiting the bandwidth available to the DisplayPort.</span></span>
+
+## <a name="why-are-my-hp-motion-controller-models-not-showing-up-correctly-in-a-game"></a><span data-ttu-id="44738-140">Pourquoi mes modèles de contrôleur de mouvement HP ne s’illustrent pas correctement dans un jeu</span><span class="sxs-lookup"><span data-stu-id="44738-140">Why are my HP Motion Controller models not showing up correctly in a game</span></span>
+
+<span data-ttu-id="44738-141">Si de nombreux jeux fonctionnent immédiatement avec les contrôleurs de mouvement HP, certains jeux ont des dépendances avec les fonctionnalités des contrôleurs existants et peuvent donc présenter des problèmes :</span><span class="sxs-lookup"><span data-stu-id="44738-141">While many games will work immediately with HP Motion Controllers, some games have dependencies on existing controllers features and might therefore have some issues:</span></span>
+
+- <span data-ttu-id="44738-142">Modèle incorrect affiché : la résolution requiert une mise à jour du jeu.</span><span class="sxs-lookup"><span data-stu-id="44738-142">Wrong model displayed: fixing this requires a game update.</span></span> <span data-ttu-id="44738-143">En règle générale, cela ne bloque pas les fonctionnalités du jeu, mais peut entraîner des confusions, voire des artefacts visuels.</span><span class="sxs-lookup"><span data-stu-id="44738-143">Usually, this does not block any features of the game but might lead to confusion or even visual artifacts.</span></span>
+- <span data-ttu-id="44738-144">Dépendance sur le pavé tactile ou plus généralement sur la disposition d’entrée du contrôleur.</span><span class="sxs-lookup"><span data-stu-id="44738-144">Dependency on the Touchpad or more generally on the controller's input layout.</span></span> <span data-ttu-id="44738-145">SteamVR permet de créer des liaisons personnalisées pour aider à contourner ce type de problème :</span><span class="sxs-lookup"><span data-stu-id="44738-145">SteamVR allows to create custom bindings to help circumvent this kind of issue:</span></span>
+    - <span data-ttu-id="44738-146">Windows Mixed Reality for SteamVR comprend des liaisons personnalisées pour certains jeux.</span><span class="sxs-lookup"><span data-stu-id="44738-146">Windows Mixed Reality for SteamVR includes custom bindings for some games.</span></span> <span data-ttu-id="44738-147">Ces liaisons sont utilisées automatiquement lorsque le jeu est démarré et aucune action de l’utilisateur n’est nécessaire.</span><span class="sxs-lookup"><span data-stu-id="44738-147">These bindings are used automatically when the game is started, and no user action is needed.</span></span>
