@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 62b6b61f74abfd77ba61563639ff719576551f07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680235"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044435"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>FAQ sur l’utilisation de Windows Mixed Reality
 
@@ -61,7 +61,7 @@ Si vos contrôleurs de mouvement ne fonctionnent pas correctement, ne vous conne
     * Prêt : les contrôleurs sont tous définis.
     * Suivi perdu : le portail de réalité mixte ne trouve pas vos contrôleurs. Tenez-les devant votre casque et redémarrez-les en appuyant sur le bouton **Windows** pendant 4 secondes, puis de nouveau pendant 2 secondes.
     * Batterie faible : remplacez les piles du contrôleur.
-* Si vous utilisez le Wi-Fi, essayez de connecter votre ordinateur à un réseau Wi-Fi de 5 GHz pour réduire les interférences sans fil. 
+* Si vous utilisez le Wi-Fi, essayez de connecter votre PC à un réseau Wi-Fi 5 GHz pour réduire les interférences sans fil. 
 * Pour les nouveaux casques associés directement aux contrôleurs, sélectionnez l’option **« ... »** dans le **portail de réalité mixte** et choisissez **configurer les contrôleurs** . Cela vous permet de vous connecter à l’application du casque pour associer les contrôleurs au casque.  
 * Pour les casques plus anciens qui ne disposent pas de Bluetooth intégré, les contrôleurs doivent être couplés directement :  
     * Sélectionnez Paramètres > appareils > Bluetooth & d’autres appareils sur votre ordinateur et assurez-vous que les contrôleurs sont répertoriés comme couplés.Si ce n’est pas le cas, vous devez les apparier. 
@@ -95,7 +95,7 @@ Si le plancher semble inactif (par exemple, vous avez l’impression que vous ê
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>J’ai reçu un message indiquant qu’il faut brancher et charger mon PC. Pourquoi ?
 
-Si vous utilisez un ordinateur portable, Windows Mixed Reality fonctionne mieux lorsque l’ordinateur est entièrement chargé et branché. 
+Si vous utilisez un ordinateur portable, Windows Mixed Reality fonctionne mieux lorsque l’ordinateur est entièrement chargé et branché.
 
 ## <a name="how-do-i-uninstall-windows-mixed-reality"></a>Comment faire désinstaller Windows Mixed Reality ?
 
@@ -106,14 +106,14 @@ Quand vous êtes prêt à recommencer à utiliser votre casque, connectez-le et 
 > [!NOTE]
 > Si vous voyez un message indiquant « nous n’avons pas pu terminer la suppression de Windows Mixed Reality », cela signifie que certains fichiers, y compris les informations relatives à votre environnement, peuvent toujours se trouver sur votre ordinateur. Cela peut poser des problèmes si vous décidez de réinstaller Windows Mixed Reality ultérieurement.
 > 
-> Pour savoir comment supprimer manuellement les informations Windows Mixed Reality restantes de votre PC, consultez **[cet article](troubleshooting-windows-mixed-reality.md#how-to-uninstall-windows-mixed-reality)** . 
+> Pour savoir comment supprimer manuellement les informations Windows Mixed Reality restantes de votre PC, consultez **[cet article](installation_errors.md)** .
 
-## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Mon Wi-Fi ralentit quand j’utilise Windows Mixed Reality
+## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Mon Wi-Fi ralentit lorsque j’utilise Windows Mixed Reality
 
 Si vous utilisez une connexion Wi-Fi 2,4 GHz, vos contrôleurs de mouvement peuvent ralentir votre Wi-Fi. Essayez l’une des opérations suivantes :
 
 <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
-* Basculez vers une connexion Wi-Fi 5 GHz, le cas échéant. [En savoir plus](https://support.microsoft.com/help/4000461)
+* Basculez vers une connexion Wi-Fi 5 GHz, si celle-ci est disponible. [En savoir plus](https://support.microsoft.com/help/4000461)
 * Utilisez un adaptateur Bluetooth distinct pour connecter vos contrôleurs de mouvement à votre PC. [Voir les adaptateurs recommandés](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## <a name="what-is-the-experience-options-setting"></a>Qu’est-ce que le paramètre options d’expérience ?
