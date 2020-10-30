@@ -8,28 +8,26 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 75d8ade12d5534a1eb86f36bcdd590539a6811b5
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+ms.openlocfilehash: a1ab7ae441796eafde9f085a744015c972cb4b6b
+ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683175"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93036265"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Obtenir de l’aide sur la compatibilité des ordinateurs dans Windows Mixed Reality
 
-Quand vous configurez Windows Mixed Reality ou que vous exécutez l’application [Windows Mixed Reality PC Check](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) sur votre ordinateur, vous obtenez un rapport indiquant si votre PC est prêt à être exécuté. Voici quelques détails sur ce que vous pouvez voir.
+Quand vous configurez Windows Mixed Reality ou que vous exécutez l’application [Windows Mixed Reality PC Check](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) sur votre ordinateur, vous obtenez un rapport indiquant si votre PC est prêt à être exécuté. Nous avons réparti des détails spécifiques sur ce que vous pouvez voir dans les sections ci-dessous.
 
-Pour vous assurer que vous pouvez exécuter la réalité mixte, veuillez consulter la [Configuration minimale requise pour la compatibilité matérielle du PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
+Avant de poursuivre, assurez-vous que votre ordinateur répond à la [Configuration minimale requise pour la compatibilité matérielle](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) de l’ordinateur pour exécuter la réalité mixte.
 
 ## <a name="youre-good-to-go"></a>Vous êtes bien
 
-Bonne nouvelle : votre PC peut exécuter Windows Mixed Reality. Mais gardez à l’esprit qu’il y a toujours une variation entre le matériel informatique et la configuration. l’expérience de la réalité mixte peut donc ne pas être la même sur tous les PC.
+Bonne nouvelle, votre ordinateur peut exécuter Windows Mixed Reality ! Gardez à l’esprit qu’il existe toujours une variation entre le matériel informatique et la configuration. l’expérience de la réalité mixte peut donc ne pas être la même sur tous les PC.
 
 ## <a name="supports-some-features"></a>Prend en charge certaines fonctionnalités
 
-Votre ordinateur doit pouvoir exécuter certaines expériences Windows Mixed Reality, mais peut ne pas fournir la meilleure expérience possible. Les graphiques peuvent avoir un décalage, certaines applications et certains jeux peuvent ne pas fonctionner correctement, et certains peuvent ne pas s’exécuter du tout. 
-
-Voici les messages que vous pouvez voir, et la procédure à suivre :
+Votre ordinateur est en mesure d’exécuter des expériences Windows Mixed Reality, mais il peut ne pas offrir la meilleure expérience possible. Les inconvénients possibles incluent les graphiques en retard, les performances des applications et des jeux, avec certaines applications et certains jeux qui ne peuvent pas s’exécuter du tout. Nous avons listé les messages que vous pouvez voir et la procédure à suivre ci-dessous :
 
 ### <a name="this-pc-has-an-integrated-graphics-card-with-single-channel-ram"></a>Cet ordinateur dispose d’une carte graphique intégrée avec une RAM à canal unique
 
@@ -45,7 +43,7 @@ PCIe correspond à *périphérique Peripheral Interconnect Express* . Il s’agi
 
 ### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>Le pilote graphique de ce PC peut ne pas fonctionner correctement avec Windows Mixed Reality
 
-Si vous rencontrez des problèmes, essayez de télécharger un nouveau pilote graphique à l’aide de Windows Update ( **Démarrez les paramètres > > mettre à jour & sécurité > Rechercher les mises à jour** ), ou accédez au site Web du fabricant du fabricant de votre ordinateur ou de la carte graphique.
+Essayez de télécharger un nouveau pilote graphique à l’aide de Windows Update en sélectionnant **Démarrer les paramètres de > > mettre à jour & sécurité > Rechercher les mises à jour** ou accéder au fabricant du PC ou au site Web du fabricant de la carte graphique.
 
 > [!div class="nextstepaction"]
 > [Rechercher les mises à jour](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -54,7 +52,7 @@ Si cela ne fonctionne pas, vous devez ajouter une [carte graphique compatible](w
 
 ### <a name="this-pcs-processor-might-not-work-well-with-windows-mixed-reality"></a>Le processeur de ce PC peut ne pas fonctionner correctement avec Windows Mixed Reality
 
-Le processeur de ce PC peut ne pas fonctionner correctement avec Windows Mixed Reality, car il ne dispose pas de suffisamment de cœurs. Si Windows Mixed Reality ne s’exécute pas correctement, remplacez le processeur par un processeur [compatible](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) ou basculez sur un [PC compatible](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+Le processeur de votre PC peut ne pas fonctionner correctement avec Windows Mixed Reality, car il ne dispose pas de suffisamment de cœurs. Si Windows Mixed Reality ne s’exécute pas correctement, remplacez le processeur par un processeur [compatible](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) ou basculez sur un [PC compatible](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### <a name="this-pc-might-not-have-a-compatible-usb-configuration"></a>Ce PC n’a peut-être pas de configuration USB compatible
 
@@ -79,7 +77,7 @@ Bluetooth 4,0 est requis pour les contrôleurs de mouvement de réalité mixte s
 
 ### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a>En fonction de votre casque, vous aurez peut-être besoin d’un adaptateur Bluetooth pour utiliser les contrôleurs de mouvement.
 
-Certains casques intègrent Bluetooth afin que les contrôleurs puissent s’associer directement aux casques. D’autres nécessitent une radio Bluetooth sur le PC (ou un dongle distinct) pour utiliser les contrôleurs de mouvement. [Voir les adaptateurs recommandés](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+Certains casques intègrent la technologie Bluetooth, ce qui permet aux contrôleurs de s’associer directement aux casques. D’autres nécessitent une radio Bluetooth sur le PC (ou un dongle distinct) pour utiliser les contrôleurs de mouvement. Pour plus d’informations, [consultez la page adaptateurs recommandés](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) .
 
 ### <a name="this-pc-doesnt-have-a-self-powered-usb-port"></a>Ce PC ne dispose pas d’un port USB auto-alimenté
 
@@ -91,7 +89,7 @@ Ce PC devrait fonctionner, mais un processeur Intel hautes performances offrira 
 
 ## <a name="cant-run-windows-mixed-reality"></a>Impossible d’exécuter Windows Mixed Reality
 
-Voici les messages que vous pouvez voir, et la procédure à suivre :
+Si vous ne pouvez pas exécuter Windows Mixed Reality, reportez-vous à la liste des messages que vous pouvez voir et aux solutions possibles ci-dessous :
 
 ### <a name="this-pcs-graphics-card-wont-work-with-windows-mixed-reality"></a>La carte graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality
 
@@ -99,7 +97,7 @@ La carte graphique de ce PC n’est pas compatible avec Windows Mixed Reality. V
 
 ### <a name="this-pcs-graphics-driver-wont-work-with-windows-mixed-reality"></a>Le pilote graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality
 
-Le pilote graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality. Essayez de télécharger un nouveau pilote graphique à l’aide de Windows Update ( **Démarrez les paramètres > > mettre à jour & sécurité > vérifier les mises à jour** ) ou accédez au fabricant du PC ou au site Web du fabricant de la carte graphique. 
+Le pilote graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality. Essayez de télécharger un nouveau pilote graphique à l’aide de Windows Update en sélectionnant **démarrer > paramètres > mettre à jour & sécurité > Rechercher les mises à jour** ou accéder au fabricant du PC ou au site Web du fabricant de la carte graphique. 
 
 > [!div class="nextstepaction"]
 > [Rechercher les mises à jour](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -112,7 +110,7 @@ Le processeur de ce PC ne prend pas en charge les instructions AVX/POPCNT. Pour 
 
 ### <a name="this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality"></a>Cet ordinateur ne dispose pas de suffisamment d’espace disque libre pour exécuter Windows Mixed Reality
 
-Windows Mixed Reality requiert 10 Go d’espace disque libre pour l’installation et des performances optimales. Libérez de l’espace sur votre lecteur, puis recommencez l’installation.
+Windows Mixed Reality requiert 10 Go d’espace disque libre pour l’installation et des performances optimales. Libérez de l’espace sur votre lecteur, puis réessayez de configurer à partir du début.
 
 ### <a name="this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality"></a>Ce PC exécute une édition de Windows qui ne prend pas en charge Windows Mixed Reality
 
@@ -128,7 +126,7 @@ Vous avez besoin d’un port USB 3,0 pour connecter un casque Windows Mixed Real
 
 ### <a name="you-cant-run-this-app-via-remote-desktop"></a>Vous ne pouvez pas exécuter cette application via le Bureau à distance
 
-Pour utiliser Windows Mixed Reality, vous disposez d’un ordinateur avec un moniteur connecté. Si vous utilisez une machine virtuelle ou si vous n’avez pas de moniteur, essayez d’utiliser une carte graphique virtuelle. Il s’agit d’un appareil qui se connecte au DisplayPort du PC et émule un écran d’ordinateur. 
+Pour utiliser Windows Mixed Reality, vous avez besoin d’un PC avec un moniteur connecté. Si vous utilisez une machine virtuelle ou si vous n’avez pas de moniteur, essayez d’utiliser une carte graphique virtuelle. Il s’agit d’un appareil qui se connecte au DisplayPort du PC et émule un écran d’ordinateur. 
 
 ## <a name="getting-the-best-performance"></a>Obtenir des performances optimales
 
