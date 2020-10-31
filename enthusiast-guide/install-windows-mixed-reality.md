@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, prise en main, configuration, portail de réalité mixte
 appliesto:
 - Windows 10
-ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: a9333e9f4d80ea73724e2530f2e94c3d0e32d0d4
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915564"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132103"
 ---
 # <a name="install-windows-mixed-reality-software"></a>Installer le logiciel Windows Mixed Reality
 
@@ -51,9 +51,10 @@ Si vous rencontrez des problèmes ou si vous recevez un message d’erreur lors 
 
 **Assurez-vous que votre PC reconnaît votre casque**
 
-Si le redémarrage ne fonctionne pas, assurez-vous que votre casque est reconnu par votre PC. Sélectionnez Démarrer, tapez gestionnaire de périphériques dans la zone de recherche, puis sélectionnez-le dans la liste. Développez appareils de réalité mixte et vérifiez si votre casque est listé. 
+Si le redémarrage ne fonctionne pas, assurez-vous que votre casque est reconnu par votre PC. Sélectionnez Démarrer, tapez gestionnaire de périphériques dans la zone de recherche, puis sélectionnez-le dans la liste. Développez appareils de réalité mixte et vérifiez si votre casque est listé.
 
 S’il n’est pas listé, essayez ce qui suit :
+
 * Branchez le casque sur les différents ports du PC, le cas échéant.
 * Recherchez les dernières mises à jour logicielles à partir de [Windows Update](https://support.microsoft.com/help/12373).
 * Désinstallez et réinstallez Windows Mixed Reality :
@@ -91,8 +92,9 @@ Vous verrez un message « préparation à l’installation » sur votre écran
 ![Préparation à la configuration](images/1050px-gettingsetup.png)
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Demander à la communauté](https://answers.microsoft.com)
 * [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
 * [Résolution des problèmes d’installation](installation_errors.md)
-* [Résolution des problèmes d’installation](set-up-questions.md)
+* [Résolution des problèmes d’installation](wmr-setup-faq.md)
 * [Configurer Windows Mixed Reality](set-up-windows-mixed-reality.md)

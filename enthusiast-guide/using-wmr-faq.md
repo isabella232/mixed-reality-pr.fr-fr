@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: 9c31f772baa434a4c14157ae91c97454f1910a3c
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044435"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131823"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>FAQ sur l’utilisation de Windows Mixed Reality
 
@@ -40,7 +40,7 @@ Windows Mixed Reality est conçu pour émettre du son via votre casque immersif 
 
 ## <a name="speech-commands-arent-working"></a>Les commandes vocales ne fonctionnent pas
 
-Pour utiliser les commandes vocales, les paramètres de langue et de voix de votre ordinateur doivent être définis sur une [langue et une langue Windows Mixed Reality prises en charge](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality). Pour vérifier votre région et votre langue Windows, sélectionnez **paramètres > heure & langue > région & langue** . Pour vérifier la langue de votre voix, sélectionnez **paramètres > heure & langue > la reconnaissance vocale** .
+Pour utiliser les commandes vocales, les paramètres de langue et de voix de votre ordinateur doivent être définis sur une [langue et une langue Windows Mixed Reality prises en charge](other-questions.md#what-languages-are-supported-in-windows-mixed-reality). Pour vérifier votre région et votre langue Windows, sélectionnez **paramètres > heure & langue > région & langue** . Pour vérifier la langue de votre voix, sélectionnez **paramètres > heure & langue > la reconnaissance vocale** .
 
 Si votre casque n’a pas de MIC intégré, attachez un casque avec un micro au casque ou sur votre PC. Pour que le commutateur d’entrée MIC soit automatiquement relié à votre casque lorsque votre casque y est directement connecté, sélectionnez **paramètres > réalité mixte > audio et discours** , et assurez-vous que **lorsque j’utilise mon casque, basculez vers le micro du casque** est activé.
 

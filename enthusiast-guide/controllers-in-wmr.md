@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: d1cf8e56d19ef9ae62d9f83811e843f34b1c2d8c
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: 892236c632d21620e48ced55d594bd059704a423
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434578"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132053"
 ---
-# <a name="motion-controllers-in-windows-mixed-reality"></a>Contrôleurs de mouvement dans Windows Mixed Reality
+# <a name="motion-controllers-in-windows-mixed-reality"></a>Contrôleurs de mouvement dans Windows Mixed Reality
 
 Les contrôleurs de mouvement sont des accessoires matériels qui permettent aux utilisateurs de prendre des mesures en réalité mixte. L’un des avantages des contrôleurs de mouvement par rapport aux gestes est que les contrôleurs ont une position précise dans l’espace, ce qui permet une interaction fine avec les objets numériques. Pour les casques immersifs Windows Mixed Reality, les contrôleurs de mouvement constituent la principale façon dont les utilisateurs effectuent des actions dans leur environnement.
 
@@ -28,8 +28,8 @@ Vous pouvez également utiliser un contrôleur Xbox, une souris, un clavier ou u
 La plupart des casques sont précouplés directement sur le casque, mais certains casques précoces nécessitent que les contrôleurs de mouvement soient couplés à votre PC avec Bluetooth 4,0. Lorsque vous connectez votre casque immersif pour la première fois, vous allez passer à l’activation de vos contrôleurs de mouvement au cours de l’installation. Mais si vous devez les recoupler ultérieurement, voici comment procéder :
 
 1. Lancez le **portail de réalité mixte** avec votre casque connecté.  
-2. Dans le coin inférieur gauche, sélectionnez **... > configurer les contrôleurs**.
-3. Insérez 2 piles AA dans chaque contrôleur et mettez votre contrôleur en mode d’appariement (consultez les instructions dans la [section contrôleurs de mouvement de paire](controllers-in-wmr.md#Pair-motion-controllers)
+2. Dans le coin inférieur gauche, sélectionnez **... > configurer les contrôleurs** .
+3. Insérez 2 piles AA dans chaque contrôleur et mettez votre contrôleur en mode d’appariement (consultez les instructions dans la [section contrôleurs de mouvement de paire](controllers-in-wmr.md#pair-motion-controllers)
 4. Suivez les instructions affichées à l’écran.
 
 > [!NOTE]
@@ -45,7 +45,7 @@ La plupart des casques sont précouplés directement sur le casque, mais certain
 > 
 > Si vous avez un contrôleur Xbox câblé, connectez-le à votre PC.
 > 
-> Certains jeux et applications utilisent le contrôleur Xbox différemment de la façon dont il est utilisé dans la réalité mixte. Pour utiliser le contrôleur pour un jeu ou une application, sélectionnez **utiliser comme boîtier** de commande dans la barre de l’application ou dites « utiliser en tant que boîtier ». Pour rétablir la réalité mixte du contrôleur, sélectionnez **utiliser comme boîtier**d’emboîter, à nouveau ou par exemple, « utiliser avec le point de regard ».  
+> Certains jeux et applications utilisent le contrôleur Xbox différemment de la façon dont il est utilisé dans la réalité mixte. Pour utiliser le contrôleur pour un jeu ou une application, sélectionnez **utiliser comme boîtier** de commande dans la barre de l’application ou dites « utiliser en tant que boîtier ». Pour rétablir la réalité mixte du contrôleur, sélectionnez **utiliser comme boîtier** d’emboîter, à nouveau ou par exemple, « utiliser avec le point de regard ».  
 
 ## <a name="pair-motion-controllers"></a>Contrôleurs de mouvement de paire
 
@@ -59,7 +59,7 @@ Retirez la couverture de la batterie de vos contrôleurs et recherchez le petit 
     ![Appariement du contrôleur de mouvement](images/connect_controller.png)
 
 Lancez le **portail de réalité mixte** avec votre casque connecté.  
-Dans le coin inférieur gauche, sélectionnez **... > configurer les contrôleurs**.
+Dans le coin inférieur gauche, sélectionnez **... > configurer les contrôleurs** .
 Suivez les instructions à l'écran.
 
 ### <a name="pair-motion-controllers-to-pc"></a>Associer les contrôleurs de mouvement au PC
@@ -95,8 +95,8 @@ Voici comment contourner la réalité mixte avec les contrôleurs de mouvement, 
 | --- | --- | --- | --- |
 | Porte | Appuyez sur le stick analogique, puis pointez le contrôleur à l’endroit où vous souhaitez aller. Relâchez le stick analogique. | Appuyez sur le stick analogique gauche vers l’avant, puis recherchez l’emplacement où vous souhaitez aller. Relâchez le stick analogique. | Cliquez et maintenez le bouton droit, puis pointez la souris à l’endroit où vous souhaitez aller. Relâchez le bouton. |
 | Sélectionnez | Pointez sur le contrôleur, puis tirez le déclencheur ou cliquez sur le pavé tactile. | Pointez avec le regard sur la cible, puis appuyez sur A. | Pointez la souris, puis cliquez sur le bouton gauche. |
-| Ouverture du menu Démarrer | Appuyez sur le bouton **Windows** . | Appuyez sur le bouton **Xbox** . | Appuyez sur la **touche du logo Windows**. |
-| Conserver une application immersif | Appuyez sur le bouton **Windows** . Ensuite, dans le menu actions rapides, sélectionnez page d’hébergement de la **réalité mixte** . | Appuyez sur le bouton **Xbox** . Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides. | Appuyez sur la **touche du logo Windows**. Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides qui s’affiche. |
+| Ouverture du menu Démarrer | Appuyez sur le bouton **Windows** . | Appuyez sur le bouton **Xbox** . | Appuyez sur la **touche du logo Windows** . |
+| Conserver une application immersif | Appuyez sur le bouton **Windows** . Ensuite, dans le menu actions rapides, sélectionnez page d’hébergement de la **réalité mixte** . | Appuyez sur le bouton **Xbox** . Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides. | Appuyez sur la **touche du logo Windows** . Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides qui s’affiche. |
 | Faire pivoter | Déplacer le stick analogique vers la gauche ou vers la droite. | Déplacez le levier droit vers la gauche ou la droite. | Non disponible. |
 | Sauvegarder | Déplacez le stick analogique vers l’arrière. | Déplacez le levier gauche vers l’arrière. | Non disponible. |
 | Marcher | Poussez le stick analogique vers le bas, puis appuyez dessus dans la direction que vous souhaitez parcourir. | Poussez le levier gauche vers le bas, puis appuyez dessus dans la direction que vous souhaitez parcourir. | Non disponible. |
@@ -151,8 +151,10 @@ Faites-nous part de vos commentaires dans le hub de commentaires à l’aide de 
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Demander à la communauté](https://answers.microsoft.com)
-* [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
-* [Dépannage](troubleshooting-windows-mixed-reality.md)
+- [Contrôleurs HP dans Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [Contrôleurs HP inréel](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Demander à la communauté](https://answers.microsoft.com)
+- [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
+- [Dépannage](troubleshooting-windows-mixed-reality.md)
 
 Vous rencontrez des problèmes avec vos contrôleurs de mouvement ? [Obtenir de l’aide](motion-controller-problems.md)

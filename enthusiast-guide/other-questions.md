@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, désinstallation de Windows Mixed Reality, langues prises en charge
 appliesto:
 - Windows 10
-ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: a49008cb7d6a51385cb0d4ece7dfae3018aefe88
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044461"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131863"
 ---
 # <a name="other-questions"></a>Autres questions
 
@@ -29,7 +29,7 @@ Recherchez et exécutez « dxdiag » :
     * Utilisez Windows Update pour mettre à jour le pilote.
     * Si cette mise à jour ne résout pas le problème, accédez au site Web du fabricant et installez la dernière mise à jour du pilote. 
     * Si une mise à jour n’est pas disponible pour votre GPU, WMR peut ne pas être pris en charge sur votre appareil. Si vous pensez que c’est le cas, contactez le [support technique](https://support.microsoft.com).
-    
+
 Si le programme d’installation de Windows Mixed Reality indique que votre carte graphique ne répond pas aux exigences et que vous pensez qu’elle le fait, vérifiez que votre casque est branché à la bonne carte.
 
 ## <a name="my-samsung-odyssey-or-odyssey-headset-firmware-update-is-stuck"></a>Ma mise à jour du microprogramme Samsung Odyssey ou Odyssey + du casque est bloquée.
@@ -37,6 +37,7 @@ Si le programme d’installation de Windows Mixed Reality indique que votre cart
 Samsung possède et publie les mises à jour du microprogramme du casque fournies par le biais de ses applications « Samsung HMD Odyssey Setup » et « Samsung HMD Odyssey + Setup » Device Companion. Pour plus d’informations et pour obtenir de l’aide sur les problèmes de mise à jour du microprogramme Samsung, contactez le service client Samsung.
 
 Si le processus de mise à jour du microprogramme est bloqué et qu’il n’y a pas eu de progression depuis plus de cinq minutes :
+
 * Débranchez temporairement tous vos autres périphériques USB et recommencez la mise à jour du microprogramme.
 * Connectez votre casque Samsung à un port USB 3,0 différent sur votre PC.
 * Désactivez et/ou désinstallez les logiciels installés qui peuvent interférer avec les mises à jour du microprogramme, tels que le App Center AORUS du gigaoctet.
@@ -46,27 +47,31 @@ Si le processus de mise à jour du microprogramme est bloqué et qu’il n’y a
 Lancez l’application de bureau dans le bouton casque à partir de **Windows > toutes les applications > Bureau** pour accéder à votre ordinateur de bureau en réalité mixte.
 
 ## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>Comment puis-je voir plusieurs analyses en réalité mixte ?
-Par défaut, l’application de bureau bascule automatiquement pour afficher l’analyse avec le focus. Si vous souhaitez voir toutes vos analyses en réalité mixte : 
+
+Par défaut, l’application de bureau bascule automatiquement pour afficher l’analyse avec le focus. Si vous souhaitez voir toutes vos analyses en réalité mixte :
+
 * Cliquez sur l’icône surveiller dans l’angle supérieur gauche de l’application.
 * Désactivez « analyse automatique du commutateur ».
 * Sélectionnez l’analyse que vous souhaitez afficher.
 * Lancez une autre instance de l’application de bureau.
 * Sélectionnez l’analyse que vous souhaitez afficher sur cette instance.
 * Répétez cette opération pour toutes vos analyses physiques.
-Notez que vous devrez resélectionner le moniteur à afficher sur chaque application de bureau chaque fois que vous redémarrez la réalité mixte. 
+Notez que vous devrez resélectionner le moniteur à afficher sur chaque application de bureau chaque fois que vous redémarrez la réalité mixte.
 
-## <a name="my-desktop-app-only-shows-a-black-screen"></a>Mon application de bureau affiche uniquement un écran noir.
+## <a name="my-desktop-app-only-shows-a-black-screen"></a>Mon application de bureau affiche uniquement un écran noir
+
 Si votre ordinateur dispose d’un GPU hybride NVIDIA, le problème peut être causé par un appareil NVIDIA exécutant le runtimebroker.exe sur le GPU discret au lieu de l’appareil intégré. Pour résoudre ce problème, suivez ces instructions sous «[Comment faire créer des paramètres de Optimus pour un nouveau programme](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)». pour ajouter C:\windows\system32\runtimebroker.exe et le forcer à s’exécuter sur le processeur « intégré Graphics ». 
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Mon Wi-Fi ralentit lorsque j’utilise Windows Mixed Reality.
 
 Si vous utilisez une connexion Wi-Fi 2,4 GHz, vos contrôleurs de mouvement peuvent ralentir votre Wi-Fi. Essayez l’une des opérations suivantes :
-* Basculez vers une connexion Wi-Fi 5 GHz, si celle-ci est disponible. [Plus d’informations](https://support.microsoft.com/en-us/help/4000461)
-* Utilisez un adaptateur Bluetooth distinct pour connecter vos contrôleurs de mouvement à votre PC. Voir les [adaptateurs recommandés](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
+
+* Basculez vers une connexion Wi-Fi 5 GHz, si celle-ci est disponible. [En savoir plus](https://support.microsoft.com/help/4000461)
+* Utilisez un adaptateur Bluetooth distinct pour connecter vos contrôleurs de mouvement à votre PC. Voir les [adaptateurs recommandés](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>J’ai reçu un message indiquant qu’il faut brancher et charger mon PC. Pourquoi ?
 
-Si vous utilisez un ordinateur portable, Windows Mixed Reality fonctionne mieux lorsque l’ordinateur est entièrement chargé et branché. 
+Si vous utilisez un ordinateur portable, Windows Mixed Reality fonctionne mieux lorsque l’ordinateur est entièrement chargé et branché.
 
 ## <a name="what-is-the-experience-options-setting"></a>Qu’est-ce que le paramètre options d’expérience ?
 
@@ -75,9 +80,10 @@ Ce paramètre ( **paramètres > réalité mixte > affichage du casque > options 
 * 60Hz : définit la fréquence d’actualisation sur 60 Hz et désactive certaines fonctionnalités, telles que la capture vidéo et la version préliminaire dans le portail de réalité mixte.
 * 90Hz : définit la fréquence d’actualisation sur 90Hz.
 
-## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Quelles sont les langues prises en charge dans Windows Mixed Reality ?
+## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Langues prises en charge dans Windows Mixed Reality
 
 Windows Mixed Reality est disponible dans les langues suivantes :
+
 * Chinois simplifié (Chine)
 * Anglais (Australie)
 * Anglais (Canada)

@@ -1,64 +1,172 @@
 ---
-title: Établissement d’une connexion sécurisée avec la communication à distance holographique
-description: Cette page explique comment établir une connexion chiffrée sécurisée lors de l’utilisation de la communication à distance holographique.
-author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 03/11/2020
+title: Activation de la sécurité de connexion pour la communication à distance holographique
+description: Cette page explique comment configurer la communication à distance holographique pour utiliser des connexions chiffrées et authentifiées entre le lecteur et les applications distantes.
+author: markkeinz
+ms.author: makei
+ms.date: 10/29/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, communication à distance holographique
-ms.openlocfilehash: 4006a317ed2ecfd7a1e67336a80a4e536d45e554
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: fcacac76e65fa884433afca9f568c5c0211dd570
+ms.sourcegitcommit: 979967d6841d8fa64cf1d6cf3ae532b736ed3bd1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679243"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102298"
 ---
-# <a name="establishing-a-secure-connection-with-holographic-remoting"></a>Établissement d’une connexion sécurisée avec la communication à distance holographique
+# <a name="enabling-connection-security-for-holographic-remoting"></a>Activation de la sécurité de connexion pour la communication à distance holographique
 
 >[!IMPORTANT]
 >Ce guide est spécifique à la communication à distance holographique sur HoloLens 2.
 
-Cette page explique comment établir une connexion chiffrée sécurisée lors de l’utilisation de la communication à distance holographique.
+Cette page vous donne une vue d’ensemble de la sécurité réseau pour la communication à distance holographique. Vous trouverez des informations sur
 
-Lors de la diffusion en continu de contenu vers HoloLens 2 sur un réseau non sécurisé, tel qu’un WiFi ouvert ou Internet, il est fortement recommandé d’utiliser une connexion chiffrée.
+* la sécurité dans le contexte de la communication à distance holographique et la raison pour laquelle vous pouvez en avoir besoin
+* mesures recommandées en fonction de différents cas d’utilisation
+* implémentation de la sécurité dans votre solution de communication à distance holographique
+
+## <a name="overview"></a>Vue d’ensemble
+
+La communication à distance holographique échange des informations sur un réseau. Si aucune mesure de sécurité n’est en place, les adversaires sur le même réseau peuvent compromettre l’intégrité de la communication ou accéder aux informations confidentielles.
+
+La sécurité est désactivée pour les exemples d’applications et le lecteur de communication à distance holographique dans le Windows Store. Cela rend les exemples plus faciles à comprendre. Il vous aide également à commencer plus rapidement avec le développement.
+
+Toutefois, pour les tests de champ ou la production, nous vous recommandons vivement d’activer la sécurité dans votre solution de communication à distance holographique.
+
+La sécurité dans la communication à distance holographique, lorsqu’elle est configurée correctement pour votre cas d’utilisation, vous offre les garanties suivantes :
+
+* **Authenticité :** le joueur et l’application distante peuvent vérifier que l’autre côté est bien celui qu’ils revendiquent
+* **Confidentialité :** aucun tiers ne peut lire les informations échangées entre le joueur et l’application distante
+* **Intégrité :** Player et Remote peuvent détecter toute modification en transit de leur communication
+
+>[!TIP]
+>Pour pouvoir utiliser les fonctionnalités de sécurité, vous devez implémenter à la fois un [lecteur personnalisé](holographic-remoting-create-player.md) et une [application distante personnalisée](holographic-remoting-create-host.md).
+
+## <a name="planning-the-security-implementation"></a>Planification de l’implémentation de la sécurité
+
+Lorsque vous activez la sécurité dans la communication à distance holographique, la bibliothèque de communication à distance active automatiquement le chiffrement et les contrôles d’intégrité de toutes les données échangées sur le réseau.
+
+Le fait de garantir une authentification appropriée nécessite néanmoins des tâches supplémentaires. Ce que vous devez faire exactement dépend de votre cas d’utilisation, et le reste de cette section concerne la procédure à suivre.
 
 >[!IMPORTANT]
->Même en cas d’utilisation d’un WiFi local approuvé à l’aide d’une connexion chiffrée, vous devez prendre en compte.
+> Cet article ne peut fournir que des conseils généraux. Si vous n’êtes pas sûr, pensez à consulter un expert en sécurité qui peut vous fournir des conseils spécifiques à votre cas d’utilisation.
 
-Pour pouvoir utiliser une connexion chiffrée, vous devez implémenter à la fois un [lecteur personnalisé](holographic-remoting-create-player.md) et une [application distante personnalisée](holographic-remoting-create-host.md).
+Tout d’abord : lorsque vous décrivez des connexions réseau, les termes _client_ et _serveur_ sont utilisés. Le serveur est le côté qui écoute les connexions entrantes sur une adresse de point de terminaison connue et le client est celui qui se connecte au point de terminaison du serveur.
 
-Le chiffrement est effectué à l’aide de l’implémentation TLS des plateformes sous-jacentes.
+>[!NOTE]
+> Les rôles client et serveur ne sont pas liés au fait qu’une application joue le rôle d’un lecteur ou d’un serveur distant. Tandis que les exemples ont le joueur dans le rôle de serveur, il est facile d’inverser les rôles si cela s’avère mieux adapté à votre cas d’utilisation.
 
-## <a name="basics-of-an-encrypted-connection"></a>Principes de base d’une connexion chiffrée
+### <a name="planning-the-server-to-client-authentication"></a>Planification de l’authentification de serveur à client
 
-Les objets suivants doivent être implémentés pour permettre l’échange de certificats.
+Le serveur utilise des certificats numériques pour prouver son identité au client. Le client valide le certificat du serveur au cours de la phase de négociation de connexion. Si le client n’approuve pas le serveur, il met fin à la connexion à ce stade.
+
+La manière dont le client valide le certificat de serveur, ainsi que les types de certificats de serveur qui peuvent être utilisés, dépendent de votre cas d’utilisation.
+
+**Cas d’utilisation 1 :** Le nom d’hôte du serveur n’est pas fixe, ou le serveur n’est pas traité par le nom d’hôte.
+
+Dans ce cas d’utilisation, il n’est pas pratique (voire possible) d’émettre un certificat pour le nom d’hôte du serveur. La recommandation ici consiste à valider l’empreinte numérique du certificat à la place. Comme pour une empreinte humaine, l’empreinte numérique identifie de façon unique un certificat.
+
+Il est important de communiquer l’empreinte numérique au client hors bande. Cela signifie que vous ne pouvez pas l’envoyer sur la même connexion réseau que celle utilisée pour la communication à distance. Au lieu de cela, vous pouvez l’entrer manuellement dans la configuration du client ou demander au client d’analyser un code QR.
+
+**Cas d’utilisation 2 :** Le serveur peut être atteint sur un nom d’hôte stable.
+
+Dans ce cas d’utilisation, le serveur a un nom d’hôte spécifique, et vous savez que ce nom n’est pas susceptible de changer. Vous pouvez ensuite utiliser un certificat émis pour le nom d’hôte du serveur. L’approbation est établie en fonction du nom d’hôte et de la chaîne d’approbation du certificat.
+
+Si vous choisissez cette option, le client doit connaître le nom d’hôte du serveur et le certificat racine à l’avance.
+
+### <a name="planning-the-client-to-server-authentication"></a>Planification de l’authentification client à serveur
+
+Les clients s’authentifient auprès du serveur à l’aide d’un jeton de forme libre. Ce que ce jeton doit contenir dépend à nouveau de votre cas d’utilisation :
+
+**Cas d’utilisation 1 :** Il vous suffit de vérifier l’identité de l’application cliente.
+
+Dans ce cas d’utilisation, un secret partagé peut suffire. Ce secret doit être suffisamment complexe pour qu’il ne puisse pas être deviné.
+
+Un secret partagé correct est un GUID aléatoire, qui est entré manuellement à la fois dans la configuration du serveur et du client. Pour en créer un, vous pouvez, par exemple, utiliser la `New-Guid` commande dans PowerShell.
+
+Assurez-vous que ce secret partagé n’est jamais communiqué via des canaux non sécurisés. La bibliothèque de communication à distance garantit que le secret partagé est toujours envoyé chiffré et uniquement aux homologues approuvés.
+
+**Cas d’utilisation 2 :** Vous devez également vérifier l’identité de l’utilisateur de l’application cliente.
+
+Un secret partagé ne sera pas suffisant pour couvrir ce cas d’utilisation. Au lieu de cela, vous pouvez utiliser des jetons créés par un fournisseur d’identité. Un flux de travail d’authentification à l’aide d’un fournisseur d’identité ressemble à ceci :
+
+* Le client autorise le fournisseur d’identité et demande un jeton
+* Le fournisseur d’identité génère un jeton et l’envoie au client.
+* Le client envoie ce jeton au serveur via la communication à distance holographique
+* Le serveur valide le jeton du client par rapport au fournisseur d’identité
+
+La [plateforme Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/)est un exemple de fournisseur d’identité.
+
+Comme dans le cas d’usage précédent, assurez-vous que ces jetons ne sont pas envoyés via des canaux non sécurisés ou qu’ils sont exposés autrement.
+
+## <a name="implementing-holographic-remoting-security"></a>Implémentation de la sécurité de la communication à distance holographique
+
+N’oubliez pas que vous devez implémenter des applications à distance et de lecteur personnalisées si vous souhaitez activer la sécurité de la connexion. Vous pouvez utiliser les exemples fournis comme points de départ pour vos propres applications.
+
+Pour activer la sécurité, appelez `ListenSecure()` au lieu de `Listen()` , et `ConnectSecure()` au lieu de `Connect()` pour établir la connexion de communication à distance.
+
+Ces appels nécessitent que vous fournissiez des implémentations de certaines interfaces pour fournir et valider des informations relatives à la sécurité :
+
+* Le serveur doit implémenter un fournisseur de certificats et un validateur d’authentification
+* Le client doit implémenter un fournisseur d’authentification et un validateur de certificat.
+
+Toutes les interfaces ont une fonction qui vous demande d’agir, qui reçoit un objet de rappel comme paramètre. À l’aide de cet objet, vous pouvez facilement implémenter la gestion asynchrone de la requête. Conservez une référence à cet objet et appelez la fonction d’achèvement lorsque l’action asynchrone est terminée. La fonction d’achèvement peut être appelée à partir de n’importe quel thread.
 
 >[!TIP]
 >L’implémentation d’interfaces WinRT peut facilement être effectuée à l’aide de C++/WinRT. Le chapitre [créer des API avec C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) décrit cela en détail.
 
 >[!IMPORTANT]
->L' ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` intérieur du package NuGet contient une documentation détaillée sur l’API liée aux connexions sécurisées.
+>L' `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` intérieur du package NuGet contient une documentation détaillée sur l’API liée aux connexions sécurisées.
 
-1) Objet de certificat, qui doit implémenter l' ```ICertificate``` interface.
+### <a name="implementing-a-certificate-provider"></a>Implémentation d’un fournisseur de certificats
 
-    * Retourne le contenu binaire du certificat pfx à l’aide de la ```GetCertificatePfx``` méthode. Identique au contenu binaire d’un fichier. pfx.
-    * Retourne le nom d’objet du certificat à l’aide de ```GetSubjectName``` .
-    * Retournez le mot de passe pfx via ```GetPfxPassword``` . Retourne une chaîne vide pour un fichier PFX non protégé.
+Les fournisseurs de certificats fournissent à l’application serveur le certificat à utiliser. L’implémentation se compose de deux parties :
 
-2) Fournisseur de certificats implémentant l' ```ICertificateProvider``` interface qui fournit un certificat lorsqu’il est demandé par le biais de la ```GetCertificate``` méthode.
+1) Objet de certificat qui implémente l' `ICertificate` interface :
 
-3) Validateur de certificat implémentant l' ```ICertificateValidator``` interface. Sa tâche consiste à vérifier les certificats entrants.
-    * La ```PerformSystemValidation``` méthode doit retourner ```true``` lorsque la plateforme sous-jacente doit valider la chaîne de certificats entrants, ```false``` sinon.
-    * ```ValidateCertificate``` est appelé par le contexte client pour demander la validation d’un certificat. Cette méthode accepte la chaîne de certificats (avec le premier certificat étant le sujet du certificat), le nom du serveur avec lequel la connexion est établie et si un contrôle de révocation doit être forcé. Le résultat de la validation du système sera fourni si la validation du système sous-jacent a été demandée. Pour continuer le traitement ```CertificateValidated``` avec le résultat approprié ou ```Cancel``` pour annuler la validation, vous devez appeler sur le passé ```ICertificateValidationCallback``` .
+    * `GetCertificatePfx()` doit retourner le contenu binaire d’un `PKCS#12` magasin de certificats. Un `.pfx` fichier contenant `PKCS#12` des données, son contenu peut être utilisé directement ici.
+    * `GetSubjectName()` doit retourner le nom convivial qui identifie le certificat à utiliser. Si aucun nom convivial n’est assigné au certificat, cette fonction doit retourner le nom du sujet du certificat.
+    * `GetPfxPassword()` doit retourner le mot de passe requis pour ouvrir le magasin de certificats (ou une chaîne vide si aucun mot de passe n’est requis).
 
-En outre, pour permettre l’échange d’un jeton sécurisé, les objets suivants doivent être implémentés.
+2) Un fournisseur de certificats qui implémente l' `ICertificateProvider` interface :
+    * `GetCertificate()` doit construire un objet de certificat et le retourner en appelant `CertificateReceived()` sur l’objet de rappel.
 
-1) Fournisseur d’authentification qui implémente l' ```IAuthenticationProvider``` interface. Sa ```GetToken``` méthode est appelée par le contexte client pour demander un jeton pour l’authentification du client. Pour continuer ```TokenReceived``` à fournir le jeton d’authentification et poursuivre le processus de connexion, ou ```Cancel``` pour annuler le processus, il doit être appelé sur le passé ```IAuthenticationProviderCallback``` .
-2) Récepteur d’authentification qui implémente l' ```IAuthenticationReceiver``` interface. Sa tâche consiste à valider les jetons entrants.
-    * La ```GetRealm``` méthode doit retourner le nom du domaine d’authentification.
-    * La ```ValidateToken``` méthode est appelée par le contexte réseau du serveur pour demander la validation d’un jeton d’authentification client. Pour continuer, appelez ```ValidationCompleted``` pour signaler la fin de la validation ou ```Cancel``` pour rejeter la connexion cliente. La connexion cliente est acceptée ou rejetée en fonction du résultat de validation passé à ```ValidationCompleted``` . 
+### <a name="implementing-an-authentication-validator"></a>Implémentation d’un validateur d’authentification
 
-Une fois ces objets implémentés ```ListenSecure``` , ils doivent être appelés à la place de ```Listen``` et non du contexte ```ConnectSecure``` ```Connect``` distant et du contexte de joueur, respectivement. ```ListenSecure``` requiert un fournisseur de certificats et un récepteur d’authentification supplémentaires sur ```Listen``` . ```ConnectSecure``` requiert un fournisseur d’authentification supplémentaire et un validateur de certificat sur ```Connect``` .
+Les validateurs d’authentification reçoivent le jeton d’authentification envoyé par le client et répondent avec le résultat de la validation.
+
+Implémentez l' `IAuthenticationReceiver` interface comme suit :
+
+* `GetRealm()` doit retourner le nom du domaine d’authentification (un domaine HTTP utilisé pendant l’établissement de la connexion à distance).
+* `ValidateToken()` doit valider le jeton d’authentification du client et appeler `ValidationCompleted()` sur l’objet de rappel avec le résultat de la validation.
+
+### <a name="implementing-an-authentication-provider"></a>Implémentation d’un fournisseur d’authentification
+
+Les fournisseurs d’authentification génèrent ou récupèrent le jeton d’authentification à envoyer au serveur.
+
+Implémentez l' `IAuthenticationProvider` interface comme suit :
+
+* `GetToken()` doit générer ou récupérer le jeton d’authentification à envoyer. Une fois que le jeton est prêt, appelez la `TokenReceived()` méthode sur l’objet de rappel.
+
+### <a name="implementing-a-certificate-validator"></a>Implémentation d’un validateur de certificat
+
+Les validateurs de certificats reçoivent la chaîne de certificats envoyée par le serveur et déterminent si le serveur peut être approuvé.
+
+Pour valider des certificats, vous pouvez utiliser la logique de validation du système sous-jacent. Cette validation du système peut soit prendre en charge votre propre logique de validation, soit la remplacer entièrement. Si vous ne transmettez pas votre propre validateur de certificat lors de la demande d’une connexion sécurisée, la validation du système sera automatiquement utilisée.
+
+Sur Windows, la validation système recherche les éléments suivants :
+
+* Intégrité de la chaîne de certificats : les certificats forment une chaîne cohérente qui se termine au niveau d’un certificat racine approuvé
+* Validité du certificat : le certificat du serveur est dans son intervalle de validité et est émis pour l’authentification du serveur.
+* Révocation : le certificat n’a pas été révoqué
+* Nom correspondance : le nom d’hôte du serveur correspond à l’un des noms d’hôte pour lequel le certificat a été émis
+
+Implémentez l' `ICertificateValidator` interface comme suit :
+
+ * `PerformSystemValidation()` doit retourner `true` si une validation système telle que décrite ci-dessus doit être effectuée. Dans ce cas, le résultat de la validation du système est passé en tant qu’entrée à la `ValidateCertificate()` méthode.
+* `ValidateCertificate()` doit valider la chaîne de certificats, puis appeler `CertificateValidated()` sur le rappel passé avec le résultat final de la validation. Cette méthode accepte la chaîne de certificats, le nom du serveur avec lequel la connexion est établie, et indique si un contrôle de révocation doit être forcé. Si la chaîne de certificats contient plusieurs certificats, le premier est le certificat du sujet.
+
+>[!NOTE]
+>Si votre cas d’utilisation requiert une autre forme de validation (voir le cas d’utilisation de certificat #1 ci-dessus), ignorez entièrement la validation du système. Utilisez plutôt une API ou une bibliothèque qui peut gérer des certificats X. 509 encodés DER pour décoder la chaîne de certificats et effectuer les vérifications nécessaires à votre cas d’usage.
 
 ## <a name="see-also"></a>Voir aussi
 * [Écriture d’une application de communication à distance holographique](holographic-remoting-create-host.md)

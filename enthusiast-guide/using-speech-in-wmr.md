@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: cd7a1ba20fa695bf5c13adef301f63491b1ca586
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680243"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131953"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Utilisation de la reconnaissance vocale dans Windows Mixed Reality
 
@@ -36,7 +36,7 @@ Dans la page d’hébergement de la réalité Windows Mixed, si vous voyez un mo
 
 Utilisez-les dans la réalité mixte de Windows pour accélérer la prise en main. Certaines commandes utilisent le curseur en regard, que vous allez afficher en disant « sélectionner ».
 
-| Action à réaliser | Disons cela |
+| Pour | Disons cela |
 | --- | --- |
 | Sélectionnez | Dites « sélectionner » pour afficher le curseur en regard. Ensuite, tournez votre tête pour positionner le curseur sur l’élément que vous souhaitez sélectionner et dites « sélectionner » à nouveau. |
 | Ouverture du menu Démarrer | Aller à démarrer |
@@ -54,7 +54,7 @@ Utilisez-les dans la réalité mixte de Windows pour accélérer la prise en mai
 
 Pointez sur un objet 3D, une fenêtre d’hologramme ou une fenêtre d’application pour utiliser les commandes suivantes :
 
-| Action à réaliser | Disons cela |
+| Pour | Disons cela |
 | --- | --- |
 | Augmentez la taille des | Plus |
 | Réduire la taille | Grande |
@@ -66,7 +66,7 @@ Pointez sur un objet 3D, une fenêtre d’hologramme ou une fenêtre d’applica
 
 Pointez sur une fenêtre d’application ou un objet 3D pour utiliser ces commandes :
 
-| Action à réaliser | Disons cela |
+| Pour | Disons cela |
 | --- | --- |
 | Fermer une application ou un objet 3D | Fermer |
 | Ajuster un point (redimensionner ou déplacer) | Réglage |
@@ -81,16 +81,16 @@ Pointez sur une fenêtre d’application ou un objet 3D pour utiliser ces comman
 
 Pointez le regard du menu Démarrer pour utiliser ces commandes :
 
-| Action à réaliser | Disons cela |
+| Pour | Disons cela |
 | --- | --- |
 | Accéder à la liste de toutes les applications | Toutes les applications |
 | Monter ou descendre sur le début ou sur l’ensemble des applications | Page vers le haut/bas |
 | Revenir au menu Démarrer à partir de toutes les applications | Revenir |
 | Prendre une photo | Appareil photo |
 | Prendre une vidéo | Vidéo |
-| Afficher la vue du casque dans le portail de réalité mixte sur votre bureau | PRÉVERSION |
+| Afficher la vue du casque dans le portail de réalité mixte sur votre bureau | Préversion |
 | Ouvrir le contrôle du volume au démarrage | Modifier le volume |
-| Muet | Muet |
+| Désactiver le son | Désactiver le son |
 | Réactiver le son | Réactiver le son |
 | Fermer le menu Démarrer | Fermer ou annuler |
 
@@ -98,7 +98,7 @@ Pointez le regard du menu Démarrer pour utiliser ces commandes :
 
 Dites « Hey Cortana », puis utilisez l’une des commandes suivantes :
 
-| Action à réaliser | Disons cela |
+| Pour | Disons cela |
 | --- | --- |
 | Découvrez ce que vous pouvez prononcer avec Cortana | Que puis-je dire ? |
 | Augmenter/diminuer le volume | Activer/désactiver le volume |
@@ -114,7 +114,7 @@ Dites « Hey Cortana », puis utilisez l’une des commandes suivantes :
 | Définir un rappel | Définir un rappel |
 
 > [!NOTE]
-> * Cortana n’est pas disponible dans toutes les régions et tous les langages. [Plus d’informations](https://support.microsoft.com/help/4026948)
+> * Cortana n’est pas disponible dans toutes les régions et tous les langages. [En savoir plus](https://support.microsoft.com/help/4026948)
 > * Si Cortana ne répond pas à « Hey Cortana », sélectionnez **paramètres > confidentialité > vocale** et faites en sorte que la reconnaissance vocale en ligne soit activée.
 > * Si vous désactivez Cortana, les commandes vocales « Hey Cortana » ne sont pas disponibles, mais vous pouvez toujours utiliser d’autres commandes (telles que « SELECT » et « de téléchargement »).
 
@@ -123,11 +123,11 @@ Dites « Hey Cortana », puis utilisez l’une des commandes suivantes :
 Basculez en mode dictée chaque fois que le clavier est actif pour une méthode facile à taper. Sélectionnez microphone sur le clavier, ou simplement « démarrer la dictée », pour commencer.
 
 > [!NOTE]
-> Le clavier de la réalité mixte n’est disponible qu’en anglais, mais vous pouvez utiliser la dictée dans l’une des [langues Windows Mixed Reality](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality)prises en charge.
+> Le clavier de la réalité mixte n’est disponible qu’en anglais, mais vous pouvez utiliser la dictée dans l’une des [langues Windows Mixed Reality](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)prises en charge.
 
-### <a name="keyboard-dictation-commands"></a>Commandes de dictée du clavier 
+### <a name="keyboard-dictation-commands"></a>Commandes de dictée du clavier
 
-| Action à réaliser | Disons cela |
+| Pour | Disons cela |
 | --- | --- |
 | Fermer le clavier | Fermer |
 | Démarrer la dictée | Démarrer la dictée |
@@ -136,6 +136,7 @@ Basculez en mode dictée chaque fois que le clavier est actif pour une méthode 
 | Sélectionnez tout dans la zone dictée. | Sélectionner tout |
 
 ### <a name="punctuation"></a>Ponctuation
+
 Vous devez indiquer les noms de la ponctuation que vous souhaitez utiliser. Par exemple, vous pouvez indiquer « Bonjour la **virgule** à quoi êtes-vous de **point d’interrogation** ».
 
 Voici les mots clés de ponctuation que vous pouvez utiliser :
@@ -146,12 +147,12 @@ Voici les mots clés de ponctuation que vous pouvez utiliser :
 * Ouvrir un ou plusieurs guillemets, fermer un ou plusieurs guillemets
 * Mot-dièse, émoticônes/émoticônes, mécontent, cligner
 * Dollar, pourcentage
- 
-Il est parfois utile d’épeler des éléments comme les adresses de messagerie. Par exemple, pour dicter example@outlook.com , vous devez indiquer « E X A M P L E at Outlook point com ».
 
+Il est parfois utile d’épeler des éléments comme les adresses de messagerie. Par exemple, pour dicter example@outlook.com , vous devez indiquer « E X A M P L E at Outlook point com ».
 
 Pour arrêter la dictée, sélectionnez **terminé** .
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Demander à la communauté](https://answers.microsoft.com)
 * [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)

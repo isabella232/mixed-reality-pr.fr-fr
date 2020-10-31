@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, didacticiel, prise en main
 appliesto:
 - Windows 10
-ms.openlocfilehash: 94b23785861ad70630a14d26668164fdf699fcce
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92292991"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132063"
 ---
 # <a name="learn-mixed-reality"></a>Découvrir la réalité mixte
 
@@ -45,7 +45,7 @@ Pour en savoir plus sur la façon de contourner la réalité mixte avec les cont
 
 ## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a>Utiliser les commandes vocales et Cortana dans la page d’hébergement de Windows Mixed Reality
 
-[Découvrez les commandes vocales que vous pouvez utiliser dans la page d’hébergement Windows Mixed Reality](https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality)
+[Découvrez les commandes vocales que vous pouvez utiliser dans la page d’hébergement Windows Mixed Reality](https://support.microsoft.com/help/4041322/windows-10-speech-in-windows-mixed-reality)
 
 ## <a name="show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktops-screen"></a>Afficher un aperçu de ce que je vois dans mon casque sur l’écran de mon bureau
 
@@ -54,5 +54,5 @@ Appuyez simplement sur l’icône de **lecture** en bas de l’application porta
 ## <a name="see-also"></a>Voir aussi
 
 * [Résolution des problèmes liés à l’installation](installation_errors.md)
-* [Résolution des problèmes d’installation](set-up-questions.md)
+* [Résolution des problèmes d’installation](wmr-setup-faq.md)
 * [Votre foyer de réalité mixte](your-mixed-reality-home.md)

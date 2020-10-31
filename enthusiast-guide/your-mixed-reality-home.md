@@ -3,12 +3,12 @@ title: Votre foyer de réalité mixte
 description: Comment naviguer et vous téléporter dans Windows Mixed Reality, lancer des applications et des jeux, personnaliser la page d’hébergement et modifier les paramètres visuels, audio et vocaux.
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, famille, naviguer, découvrir, applications, jeux
-ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: ce4774f4a8f752d5e508d8daa66c050b2a6f28ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434625"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132113"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Votre accueil Windows Mixed Reality
 
@@ -73,7 +73,7 @@ Accédez à **paramètres > > de réalité mixte environnement > réinitialiser 
 
 ## <a name="turn-off-the-boundary"></a>Désactiver la limite
 
-Accédez au portail de réalité mixte et ouvrez le menu dans le coin supérieur gauche de l’écran. Sélectionnez **exécuter configurer > limite de salle**. Activez le bouton bascule. Vous devez rester assis à votre bureau si vous désactivez la limite.
+Accédez au portail de réalité mixte et ouvrez le menu dans le coin supérieur gauche de l’écran. Sélectionnez **exécuter configurer > limite de salle** . Activez le bouton bascule. Vous devez rester assis à votre bureau si vous désactivez la limite.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Son spatial dans le Windows Mixed Reality
 
@@ -84,7 +84,7 @@ La page d’hébergement de la réalité Windows Mixed comprend une simulation d
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Résolution des problèmes de Windows Mixed Reality](set-up-questions.md#my-controllers-arent-showing-in-my-windows-mixed-reality-home)
+* [Résolution des problèmes de Windows Mixed Reality](wmr-setup-faq.md#my-motion-controllers-arent-working)
 * [Utilisation de jeux et d’applications dans Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
 * [Fonctionnement du suivi intérieur-extérieur](tracking-system.md)
 * [Fonctionnement des contrôleurs de mouvement](controllers-in-wmr.md)
