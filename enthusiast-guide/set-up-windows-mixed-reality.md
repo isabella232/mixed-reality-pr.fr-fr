@@ -3,12 +3,12 @@ title: Configurer Windows Mixed Reality
 description: Comment configurer vos contrôleurs de mouvement Windows Mixed Reality, la voix et l’audio, et définir la limite de votre espace pour un espace de lecture sécurisé.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, prise en main, configuration, contrôleur de mouvement, contrôleur, voix, audio, assis, debout, limite, pilotes graphiques, Microsoft Edge, chrome
-ms.openlocfilehash: cd59fd34dd00edc98d209681cc1239895c36ada2
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: 95ca5b8d86e26061e565a74efa36e49cc3d1b92b
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434632"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132143"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurer Windows Mixed Reality
 
@@ -40,7 +40,7 @@ Si vous avez un casque sans radio intégrée, vous devrez configurer vos contrô
 
 Si vous envisagez uniquement d’utiliser un boîtier et une souris Xbox, vous n’avez pas besoin de coupler vos contrôleurs.  Si vous envisagez d’utiliser des contrôleurs, vous devez probablement les coupler.
 
-**Remarque**: les contrôleurs de mouvement Windows Mixed Reality nécessitent Bluetooth 4,0. Si votre ordinateur ne dispose pas de Bluetooth intégré, vous devez brancher une carte USB Bluetooth qui prend en charge Bluetooth 4,0 pour activer vos contrôleurs de mouvement. Si vous utilisez la radio intégrée dans votre casque, vous n’avez pas besoin d’un adaptateur Bluetooth.
+**Remarque** : les contrôleurs de mouvement Windows Mixed Reality nécessitent Bluetooth 4,0. Si votre ordinateur ne dispose pas de Bluetooth intégré, vous devez brancher une carte USB Bluetooth qui prend en charge Bluetooth 4,0 pour activer vos contrôleurs de mouvement. Si vous utilisez la radio intégrée dans votre casque, vous n’avez pas besoin d’un adaptateur Bluetooth.
 
 ![Familiarisez-vous avec vos contrôleurs de mouvement](images/get_to_know_controllers.png)
 
@@ -100,7 +100,7 @@ Vous pouvez activer les commandes Cortana à l’intérieur de la réalité mixt
 
 ## <a name="adjusting-your-headsets-display-settings"></a>Réglage des paramètres d’affichage de votre casque
 
-Windows Mixed Reality choisit automatiquement les paramètres d’affichage qui équilibrent la qualité et les performances, en fonction de la configuration matérielle de votre PC. Pour ajuster ces paramètres, accédez à **paramètres > la réalité mixte > l’affichage du casque**.
+Windows Mixed Reality choisit automatiquement les paramètres d’affichage qui équilibrent la qualité et les performances, en fonction de la configuration matérielle de votre PC. Pour ajuster ces paramètres, accédez à **paramètres > la réalité mixte > l’affichage du casque** .
 
 ### <a name="visuals"></a>Visuels
 
@@ -126,7 +126,7 @@ Ce paramètre permet d’ajuster l’étalonnage IPD des casques avec la prise e
 
 Ce paramètre avancé remplace l’expérience du taux d’actualisation de l’affichage du casque par défaut.
 
-* **Automatique (par défaut)**: sélectionne automatiquement l’expérience 60 Hz ou 90Hz en fonction de la configuration matérielle de votre PC.
+* **Automatique (par défaut)** : sélectionne automatiquement l’expérience 60 Hz ou 90Hz en fonction de la configuration matérielle de votre PC.
 * **60Hz**
 * **90Hz**
 
@@ -138,7 +138,7 @@ Ce paramètre avancé remplace l’expérience du taux d’actualisation de l’
 Ce paramètre contrôle le comportement de Windows Mixed Reality en réponse au capteur de présence de votre casque :
 
 * **Basculer automatiquement à l’aide du capteur de présence du casque** (par défaut) : Windows dirige automatiquement l’entrée (clavier, souris...) vers Windows Mixed Reality chaque fois que vous enportez votre casque. Vous pouvez le remplacer à tout moment avec Win + Y.
-* **Basculer manuellement à l’aide de la touche Windows + Y**: Windows n’utilise pas le capteur de présence du casque pour détecter le moment où vous enportez votre casque. Vous devez utiliser Win + Y pour basculer votre entrée entre votre ordinateur de bureau et Windows Mixed Reality.
+* **Basculer manuellement à l’aide de la touche Windows + Y** : Windows n’utilise pas le capteur de présence du casque pour détecter le moment où vous enportez votre casque. Vous devez utiliser Win + Y pour basculer votre entrée entre votre ordinateur de bureau et Windows Mixed Reality.
 
 Ce paramètre est disponible sur Windows 10, version 1903 ou ultérieure.
 
@@ -165,7 +165,7 @@ Pour utiliser le nouveau Microsoft Edge basé sur le chrome dans Windows Mixed R
 - Les sites Web ouverts dans Windows Mixed Reality sont perdus lorsque le portail de réalité mixte se ferme, bien que les fenêtres Microsoft Edge restent là où elles ont été placées dans la page d’hébergement de la réalité mixte.
 - L’audio des fenêtres Microsoft Edge n’est pas spatial.
 - Correction de la version d’extension de visionneuse 360 2.3.8 : l’ouverture d’une vidéo 360 à partir de YouTube dans Windows Mixed Reality peut entraîner la déformation de la vidéo dans le casque. Le redémarrage de Edge doit mettre à jour l’extension de visionneuse 360 de façon invisible pour résoudre ce problème. Vous pouvez vérifier la version de l’extension que vous avez en entrant `edge://system/` dans la barre d’adresses et en sélectionnant le bouton « développer » en regard de « extensions ».
-- Pendant les sessions Windows Mixed Reality, les moniteurs virtuels s’affichent sous la forme de moniteurs physiques génériques dans les **paramètres > système > écran**.
+- Pendant les sessions Windows Mixed Reality, les moniteurs virtuels s’affichent sous la forme de moniteurs physiques génériques dans les **paramètres > système > écran** .
 
 ## <a name="launching-mixed-reality-after-the-first-time"></a>Lancement de la réalité mixte après la première exécution
 
@@ -176,7 +176,7 @@ La saisie de la réalité mixte est aussi facile que le fait de replacer le casq
 * [Demander à la communauté](https://answers.microsoft.com)
 * [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
 * [Résolution des problèmes liés à l’installation](installation_errors.md)
-* [Résolution des problèmes d’installation](set-up-questions.md)
+* [Résolution des problèmes d’installation](wmr-setup-faq.md)
 * [Découvrir la réalité mixte](learn-mixed-reality.md)
 * [Contrôleurs de mouvement](controllers-in-wmr.md)
 * [Fonctionnement du suivi intérieur-extérieur](tracking-system.md)
