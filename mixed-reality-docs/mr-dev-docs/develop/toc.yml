@@ -2,6 +2,8 @@
   href: development.md
 - name: Services cloud Azure
   href: mixed-reality-cloud-services.md
+- name: Vue d’ensemble de la formation à la réalité mixte
+  href: mr-learning-overview.md
 - name: Installer les outils
   href: install-the-tools.md
 - name: Applications de portage
