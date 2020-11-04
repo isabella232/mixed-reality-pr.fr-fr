@@ -1,20 +1,16 @@
 ---
-ms.openlocfilehash: 514062ea4b0343eae6d4e0b05097b4c65ca3de22
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+ms.openlocfilehash: 11533175057217bddcc7e121a524da1f26d2764e
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91989568"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915538"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
 ![Unity](../images/unity_logo_banner.png)<br>
 
 Avec Unity, créez une application de réalité mixte multiplateforme dotée de fonctionnalités complètes. Consultez la [vue d’ensemble du développement Unity](../unity/unity-development-overview.md) afin de vous familiariser avec le développement Unity pour HoloLens ou les casques immersifs Windows Mixed Reality.
-
-## <a name="what-does-unity-offer"></a>Que propose Unity ?
-
-Unity, l’une des principales plateformes de développement en temps réel du marché, est un écosystème comprenant une [plateforme d’apprentissage](https://unity.com/products/learn-premium) dédiée, un [magasin de ressources](https://assetstore.unity.com/), une [documentation complète](https://docs.unity3d.com/Manual/index.html) et une communauté florissante. Le code d’exécution sous-jacent de Unity est écrit en C++, mais tous les scripts de développement sont en C#. Quel que soit le type de projet qui vous intéresse, qu’il s’agisse de créer des jeux, des films, des animations ou encore de restituer des concepts architecturaux ou d’ingénierie dans un monde virtuel, Unity a l’infrastructure qu’il vous faut.
 
 ## <a name="available-hardware-platforms"></a>Plateformes matérielles disponibles
 
@@ -66,10 +62,6 @@ Nous mettons à votre disposition plusieurs [exemples d’applications](../unity
 
 Avec Unreal, créez une application de réalité mixte multiplateforme dotée de fonctionnalités complètes. Consultez la [vue d’ensemble du développement Unreal](../unreal/unreal-development-overview.md) afin de vous familiariser avec le développement Unreal pour HoloLens.
 
-## <a name="what-does-unreal-offer"></a>Que propose Unreal ?
-
-Unreal Engine 4 est un puissant moteur de création open source qui inclut une prise en charge complète de la réalité mixte en C++ et Blueprints. À compter d’Unreal Engine 4.25, la prise en charge d’HoloLens est complète et prête pour la production.
-
 ## <a name="available-hardware-platforms"></a>Plateformes matérielles disponibles
 
 Quand vous créez des applications de réalité mixte avec Unreal Engine, plusieurs options s’offrent à vous concernant le matériel, l’émulateur et la diffusion en streaming. Bien que notre documentation pour développeurs porte sur les appareils HoloLens, vous pouvez très bien packager vos projets Unreal en tant qu’applications de bureau x64 et les exécuter sur des casques immersifs.
@@ -96,7 +88,7 @@ Quand vous créez des applications de réalité mixte avec Unreal Engine, plusie
 
 ## <a name="cloud-services"></a>Services cloud
 
-Lors de la création d’applications de réalité mixte dans un environnement Unreal, vous avez accès à un service cloud puissant appelé **Azure Spatial Anchors**, que vous pouvez utiliser pour ajouter, conserver et partager du contenu holographique sur différents appareils. 
+Lors de la création d’applications de réalité mixte dans un environnement Unreal, vous avez accès à un service cloud puissant appelé **Azure Spatial Anchors** , que vous pouvez utiliser pour ajouter, conserver et partager du contenu holographique sur différents appareils. 
 
 Azure Spatial Anchors est abordé lors du [parcours de développement Unreal](../unreal/unreal-development-overview.md), qui est le **chemin fortement recommandé pour l’apprentissage de la réalité mixte avec Unreal**. Comme vous êtes déjà sur ce parcours, vous pouvez simplement continuer à lire et à suivre le grand bouton bleu au bas de l’article. Toutefois, si vous en êtes à une étape de développement plus avancée et souhaitez tout de suite vous plonger dans le vif du sujet, consultez notre [vue d’ensemble des services cloud](../mixed-reality-cloud-services.md) ou accédez directement aux [ressources de services](../unreal/unreal-development-overview.md#5-adding-services).
 
@@ -122,10 +114,6 @@ L’API WebXR Device est une spécification ouverte qui vous permet d’expérim
 
 Créez des applications de réalité mixte avec une ligne directe aux API Windows Mixed Reality. Consultez la [vue d’ensemble du développement natif](../native/directx-development-overview.md) afin de vous familiariser avec le développement d’applications en mode natif avec OpenXR ou WinRT (hérité) pour HoloLens 2 ou les casques immersifs Windows Mixed Reality. L’API Windows Mixed Reality prend en charge les applications écrites en C++ et en C#, ce qui vous permet de créer votre propre framework ou intergiciel (middleware) dans l’un ou l’autre de ces langages.
 
-## <a name="what-does-openxr-offer"></a>Que propose OpenXR ?
-
-OpenXR est une norme d’API ouverte et libre de redevance proposée par Khronos. Elle permet aux moteurs d’accéder en mode natif à une large gamme d’appareils de fabricants qui couvrent le spectre de réalité mixte. Vous pouvez développer avec OpenXR sur HoloLens 2 ou un casque immersif Windows Mixed Reality sur le bureau. Si vous n’avez pas accès à un casque, des émulateurs pour HoloLens 2 et les casques Windows Mixed Reality sont disponibles.
-
 ## <a name="available-hardware-platforms"></a>Plateformes matérielles disponibles
 
 Quand vous créez des applications de réalité mixte avec OpenXR, plusieurs options s’offrent à vous concernant le matériel, l’émulateur et la diffusion en streaming. 
@@ -147,7 +135,7 @@ Quand vous créez des applications de réalité mixte avec OpenXR, plusieurs opt
 
 |  Outil/SDK  |  Description  |
 | --- | --- |
-| [Outils de développement OpenXR](../native/openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Fournit une scène de démonstration qui illustre plusieurs fonctionnalités d’OpenXR, ainsi qu’une page d’état du système qui donne des informations clés sur le runtime actif et le casque actuel. |
+| [Outils de développement OpenXR](../native/openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) | Fournit une scène de démonstration qui illustre plusieurs fonctionnalités d’OpenXR, ainsi qu’une page d’état du système qui donne des informations clés sur le runtime actif et le casque actuel. |
 | [Spécification OpenXR](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html) |  Décrit ce qu’est OpenXR, liste les fonctionnalités proposées et explique comment l’implémenter dans vos propres projets. |
 | [Chargeur OpenXR](../native/openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Découvre le runtime OpenXR actif sur l’appareil et donne accès aux fonctions de base et aux fonctions d’extension qu’il implémente. |
 
@@ -157,3 +145,6 @@ N’hésitez pas à explorer l’exemple d’application pour vous faire une id�
 
 <!-- Go to actual GH link for more samples -->
 * [BasicXrApp](https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp) - Illustre un exemple OpenXR simple composé de deux fichiers projet Visual Studio : l’un pour une application de bureau Win32 et l’autre pour une application HoloLens 2 UWP.
+
+Vous pouvez également regarder une vidéo de 60 minutes sur BasicXrApp, qui vous montre tous les composants clés de l’API OpenXR dans Visual Studio :
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
