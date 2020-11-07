@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: mappage spatial, HoloLens, réalité mixte, reconstruction de surface, maille
-ms.openlocfilehash: 83c235cb7a5111be2b7e01d6c5864c1d06e9c6dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680470"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340667"
 ---
 # <a name="spatial-mapping"></a>Mappage spatial
 
@@ -256,9 +256,9 @@ Chaque application qui utilise le mappage spatial doit envisager de fournir une 
 
 La nature de cette expérience d’analyse peut varier considérablement en fonction des besoins de chaque application, mais deux principes principaux doivent guider sa conception.
 
-Tout d’abord, une **communication claire avec l’utilisateur est la préoccupation principale** . L’utilisateur doit toujours savoir si les exigences de l’application sont respectées. Lorsqu’ils ne sont pas satisfaits, l’utilisateur doit immédiatement savoir pourquoi c’est le cas et il doit être rapidement dirigé pour prendre les mesures appropriées.
+Tout d’abord, une **communication claire avec l’utilisateur est la préoccupation principale**. L’utilisateur doit toujours savoir si les exigences de l’application sont respectées. Lorsqu’ils ne sont pas satisfaits, l’utilisateur doit immédiatement savoir pourquoi c’est le cas et il doit être rapidement dirigé pour prendre les mesures appropriées.
 
-Deuxièmement, **les applications doivent tenter d’équilibrer l’efficacité et la fiabilité** . Lorsqu’il est possible de le faire de façon **fiable** , les applications doivent analyser automatiquement les données de mappage spatiale pour économiser le temps utilisateur. Lorsqu’il n’est pas possible de le faire de manière fiable, les applications doivent à la place permettre à l’utilisateur de fournir rapidement à l’application les informations supplémentaires dont il a besoin.
+Deuxièmement, **les applications doivent tenter d’équilibrer l’efficacité et la fiabilité**. Lorsqu’il est possible de le faire de façon **fiable** , les applications doivent analyser automatiquement les données de mappage spatiale pour économiser le temps utilisateur. Lorsqu’il n’est pas possible de le faire de manière fiable, les applications doivent à la place permettre à l’utilisateur de fournir rapidement à l’application les informations supplémentaires dont il a besoin.
 
 Pour faciliter la conception de l’expérience d’analyse, prenez en compte les possibilités suivantes applicables à votre application :
 
@@ -368,6 +368,13 @@ Voici quelques exemples de différents types de traitement de maillage qui peuve
 ## <a name="troubleshooting"></a>Dépannage
 * Pour que les maillages de surface soient correctement orientés, chaque GameObject doit être actif avant d’être envoyé à SurfaceObserver pour que sa maille soit construite. Dans le cas contraire, les mailles s’affichent dans votre espace mais subissent une rotation à des angles inhabituels.
 * Le GameObject qui exécute le script qui communique avec le SurfaceObserver doit être défini sur l’origine. Dans le cas contraire, tous les GameObjects que vous créez et envoyez au SurfaceObserver pour que leurs maillages soient construits auront un décalage égal au décalage de l’objet de jeu parent. Cela peut faire apparaître plusieurs mètres dans vos mails, ce qui rend très difficile le débogage de ce qui se passe.
+
+## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
+
+Si vous suivez le [parcours de découverte](../discover/get-started-with-mr.md) que nous avons disposé, vous êtes au cœur de l’exploration des principes fondamentaux de la réalité mixte. À partir de là, vous pouvez passer à la rubrique suivante : 
+
+> [!div class="nextstepaction"]
+> [Suggérer l’échelle d’un objet : échelle](../design/scale.md)
 
 ## <a name="see-also"></a>Voir aussi
 * [Systèmes de coordonnées](coordinate-systems.md)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: a1ab7ae441796eafde9f085a744015c972cb4b6b
-ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+ms.openlocfilehash: 5b24edd88a55bedea2d288f27363714cbfe768b4
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93036265"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340587"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Obtenir de l’aide sur la compatibilité des ordinateurs dans Windows Mixed Reality
 
@@ -39,7 +39,7 @@ Les cartes graphiques intégrées offrent la meilleure expérience Windows Mixed
 
 ### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a>Cet ordinateur possède une configuration graphique hybride avec une liaison PCIe incompatible
 
-PCIe correspond à *périphérique Peripheral Interconnect Express* . Il s’agit de la connexion utilisée par un PC pour communiquer avec une carte graphique. Votre configuration peut fonctionner, mais si vous rencontrez des problèmes, vous devrez basculer vers un [PC compatible](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+PCIe correspond à *périphérique Peripheral Interconnect Express*. Il s’agit de la connexion utilisée par un PC pour communiquer avec une carte graphique. Votre configuration peut fonctionner, mais si vous rencontrez des problèmes, vous devrez basculer vers un [PC compatible](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>Le pilote graphique de ce PC peut ne pas fonctionner correctement avec Windows Mixed Reality
 
@@ -64,7 +64,7 @@ Si vous rencontrez des problèmes lors de l’exécution de Windows Mixed Realit
 1. Sélectionnez **Démarrer** , puis tapez « gestionnaire de périphériques » dans la zone de **recherche** .
 2. Sélectionnez **Device Manager** dans les résultats.
 3. Développez la catégorie des contrôleurs de bus série universels, examinez les périphériques listés et désinstallez tous les pilotes incompatibles.
-    * Si la liste comprend un élément « contrôleur hôte eXtensible » qui ne contient pas « Microsoft » à la fin du nom de l’appareil, ce pilote n’est pas compatible avec Windows Mixed Reality. Vous devez le désinstaller. Pour désinstaller un pilote, cliquez avec le bouton droit sur l’appareil dans la liste et sélectionnez **désinstaller l’appareil** . Activez la case à cocher **supprimer le logiciel de pilote pour cet appareil** , puis sélectionnez **désinstaller** .
+    * Si la liste comprend un élément « contrôleur hôte eXtensible » qui ne contient pas « Microsoft » à la fin du nom de l’appareil, ce pilote n’est pas compatible avec Windows Mixed Reality. Vous devez le désinstaller. Pour désinstaller un pilote, cliquez avec le bouton droit sur l’appareil dans la liste et sélectionnez **désinstaller l’appareil**. Activez la case à cocher **supprimer le logiciel de pilote pour cet appareil** , puis sélectionnez **désinstaller**.
     * Si la liste comprend un élément « contrôleur hôte eXtensible » qui comprend « eTRON » dans le nom, ce contrôleur USB n’est pas compatible avec Windows Mixed Reality. Vous devez utiliser un port USB différent sur le PC ou acheter un autre contrôleur d’hôte USB 3,0.
 4. Redémarrez votre PC.
 5. Revenez à Device Manager et localisez à nouveau l’élément contrôleur hôte eXtensible. Si vous voyez maintenant « Microsoft » à la fin du nom de l’appareil, vous êtes prêt à aller. Si ce n’est pas le cas, répétez les étapes de désinstallation pour supprimer toutes les autres versions non-Microsoft du pilote.
@@ -73,7 +73,7 @@ Si vous rencontrez des problèmes lors de l’exécution de Windows Mixed Realit
 
 ### <a name="this-pc-doesnt-have-bluetooth-40-for-controllers"></a>Ce PC ne dispose pas de Bluetooth 4,0 pour les contrôleurs
 
-Bluetooth 4,0 est requis pour les contrôleurs de mouvement de réalité mixte sur certains casques. Vous pouvez toujours utiliser Windows Mixed Reality avec un contrôleur Xbox ou à l’aide de la souris et du clavier, ou vous pouvez utiliser un adaptateur Bluetooth USB pour connecter les contrôleurs de mouvement à votre PC. [Voir les adaptateurs recommandés](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+2018 et les nouveaux casques de la réalité Windows Mixed disposent déjà du Bluetooth intégré, mais si vous disposez d’un casque plus ancien, Bluetooth 4,0 est requis pour les contrôleurs de mouvement de réalité mixte. Vous pouvez toujours utiliser Windows Mixed Reality avec un contrôleur Xbox ou à l’aide de la souris et du clavier, ou vous pouvez utiliser un adaptateur Bluetooth USB pour connecter les contrôleurs de mouvement à votre PC. [Voir les adaptateurs recommandés](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a>En fonction de votre casque, vous aurez peut-être besoin d’un adaptateur Bluetooth pour utiliser les contrôleurs de mouvement.
 
@@ -83,21 +83,13 @@ Certains casques intègrent la technologie Bluetooth, ce qui permet aux contrôl
 
 Un port USB 3,0 auto-alimenté est nécessaire pour connecter un casque Windows Mixed Reality. Connectez un concentrateur USB 3,0 alimenté au PC et utilisez-le pour connecter votre casque.
 
-### <a name="this-pc-should-work-but-youll-have-the-best-experience-with-a-high-performance-intel-processor"></a>Ce PC devrait fonctionner, mais vous bénéficierez d’une expérience optimale avec un processeur Intel® hautes performances.
-
-Ce PC devrait fonctionner, mais un processeur Intel hautes performances offrira la meilleure expérience. Nous vous recommandons de disposer d’un processeur Intel® Core™ ou 7e GEN Intel® Core™ i5.
-
-## <a name="cant-run-windows-mixed-reality"></a>Impossible d’exécuter Windows Mixed Reality
-
-Si vous ne pouvez pas exécuter Windows Mixed Reality, reportez-vous à la liste des messages que vous pouvez voir et aux solutions possibles ci-dessous :
-
 ### <a name="this-pcs-graphics-card-wont-work-with-windows-mixed-reality"></a>La carte graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality
 
 La carte graphique de ce PC n’est pas compatible avec Windows Mixed Reality. Vous devez ajouter une [carte graphique compatible](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) ou basculer vers un [PC compatible](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### <a name="this-pcs-graphics-driver-wont-work-with-windows-mixed-reality"></a>Le pilote graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality
 
-Le pilote graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality. Essayez de télécharger un nouveau pilote graphique à l’aide de Windows Update en sélectionnant **démarrer > paramètres > mettre à jour & sécurité > Rechercher les mises à jour** ou accéder au fabricant du PC ou au site Web du fabricant de la carte graphique. 
+Le pilote graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality. Essayez de télécharger un nouveau pilote graphique à l’aide de Windows Update en sélectionnant **démarrer > paramètres > mettre à jour & sécurité > Rechercher les mises à jour** ou accéder au fabricant du PC ou au site Web du fabricant de la carte graphique.
 
 > [!div class="nextstepaction"]
 > [Rechercher les mises à jour](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -106,7 +98,7 @@ Si cela ne fonctionne pas, vous devez ajouter une [carte graphique compatible](w
 
 ### <a name="this-pcs-processor-wont-work-with-windows-mixed-reality"></a>Le processeur de ce PC ne fonctionnera pas avec Windows Mixed Reality
 
-Le processeur de ce PC ne prend pas en charge les instructions AVX/POPCNT. Pour exécuter Windows Mixed Reality, vous devez le remplacer par une [carte graphique compatible](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) ou basculer vers un [PC compatible](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+Le processeur de ce PC ne prend pas en charge les instructions AVX/POPCNT. Pour exécuter Windows Mixed Reality, vous devez le remplacer par une [carte graphique compatible](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) ou basculer vers un PC compatible.
 
 ### <a name="this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality"></a>Cet ordinateur ne dispose pas de suffisamment d’espace disque libre pour exécuter Windows Mixed Reality
 
@@ -126,7 +118,7 @@ Vous avez besoin d’un port USB 3,0 pour connecter un casque Windows Mixed Real
 
 ### <a name="you-cant-run-this-app-via-remote-desktop"></a>Vous ne pouvez pas exécuter cette application via le Bureau à distance
 
-Pour utiliser Windows Mixed Reality, vous avez besoin d’un PC avec un moniteur connecté. Si vous utilisez une machine virtuelle ou si vous n’avez pas de moniteur, essayez d’utiliser une carte graphique virtuelle. Il s’agit d’un appareil qui se connecte au DisplayPort du PC et émule un écran d’ordinateur. 
+Pour utiliser Windows Mixed Reality, vous avez besoin d’un PC avec un moniteur connecté. Si vous utilisez une machine virtuelle ou si vous n’avez pas de moniteur, essayez d’utiliser une carte graphique virtuelle. Il s’agit d’un appareil qui se connecte au DisplayPort du PC et émule un écran d’ordinateur.
 
 ## <a name="getting-the-best-performance"></a>Obtenir des performances optimales
 

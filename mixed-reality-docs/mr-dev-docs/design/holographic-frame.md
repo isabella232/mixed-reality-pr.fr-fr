@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, Windows Mixed Reality, holographique Frame, champ of View
-ms.openlocfilehash: 516d9255fbc8067f42e17125d41240c9ba49a33b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680810"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340637"
 ---
 # <a name="holographic-frame"></a>Image holographique
 
@@ -21,7 +21,7 @@ Les utilisateurs voient le monde de la réalité mixte par le biais d’une fen�
 
 Souvent, les concepteurs estiment que la nécessité de limiter l’étendue de leur expérience à ce que l’utilisateur peut voir immédiatement, en sacrifiant l’échelle du monde réel, pour s’assurer que l’utilisateur voit un objet dans son intégralité. De même, les concepteurs avec des applications complexes surchargent souvent le frame holographique avec du contenu, ce qui complique les utilisateurs avec des interactions difficiles et des interfaces encombrées. Les concepteurs qui créent du contenu de réalité mixte n’ont pas besoin de limiter leur expérience directement devant l’utilisateur et dans leur vue immédiate. Si le monde physique autour de l’utilisateur est mappé, toutes ces surfaces doivent être considérées comme un canevas potentiel pour le contenu numérique et les interactions. La conception correcte des interactions et du contenu au sein d’une expérience devrait inciter l’utilisateur à se déplacer dans son espace, à orienter son attention sur le contenu de la clé et à mieux voir le potentiel de la réalité mixte.
 
-La technique la plus importante pour encourager le déplacement et l’exploration au sein d’une application est peut-être de **permettre aux utilisateurs de s’adapter à l’expérience** . Donnez aux utilisateurs une période de temps « sans tâche » avec l’appareil. Cela peut être aussi simple que de placer un objet dans l’espace et de permettre aux utilisateurs de le déplacer ou de présenter une présentation de l’expérience. Cette fois-ci, vous devez disposer de toutes les tâches critiques ou de mouvements spécifiques (tels que l’air), à la place pour permettre aux utilisateurs d’afficher le contenu via l’appareil avant d’exiger l’interactivité ou de progresser dans les étapes de l’application. S’il s’agit de la première fois qu’un utilisateur est associé à l’appareil, ce point est particulièrement important, car il se familiarise avec l’affichage du contenu via le cadre holographique et la nature des hologrammes.
+La technique la plus importante pour encourager le déplacement et l’exploration au sein d’une application est peut-être de **permettre aux utilisateurs de s’adapter à l’expérience**. Donnez aux utilisateurs une période de temps « sans tâche » avec l’appareil. Cela peut être aussi simple que de placer un objet dans l’espace et de permettre aux utilisateurs de le déplacer ou de présenter une présentation de l’expérience. Cette fois-ci, vous devez disposer de toutes les tâches critiques ou de mouvements spécifiques (tels que l’air), à la place pour permettre aux utilisateurs d’afficher le contenu via l’appareil avant d’exiger l’interactivité ou de progresser dans les étapes de l’application. S’il s’agit de la première fois qu’un utilisateur est associé à l’appareil, ce point est particulièrement important, car il se familiarise avec l’affichage du contenu via le cadre holographique et la nature des hologrammes.
 
 ### <a name="large-objects"></a>Objets volumineux
 
@@ -139,9 +139,16 @@ Comme une expérience immersive, ces utilisateurs ont été encouragés à se pe
 
 La représentation réaliste de l’oreille a fourni un point focal puissant, avec des techniques subtiles pour que l’utilisateur ait l’impression d’être là, en parlant. Quand l’utilisateur se déplace sur l’expérience, il passe à votre seuil avant de revenir à un État neutre si l’utilisateur se déplace trop loin au-delà de sa périphérie. Si l’utilisateur regarde complètement l’oreille (par exemple, pour regarder quelque part dans la scène), puis revenir à l’oreille, la position directionnelle du narrateur sera de nouveau axée sur l’utilisateur. Les techniques telles que celle-ci fournissent un bon sens d’immersion et créent un point focal dans le cadre holographique, réduisant ainsi le déplacement excessif et promouvant le confort de l' [utilisateur](comfort.md).
 
+## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
+
+Si vous suivez le [parcours de découverte](../discover/get-started-with-mr.md) que nous avons disposé, vous êtes au cœur de l’exploration des principes fondamentaux de la réalité mixte. À partir de là, vous pouvez passer à la rubrique suivante : 
+
+> [!div class="nextstepaction"]
+> [Faire en sorte que les objets holographiques semblent réels : mappage spatial](../design/spatial-mapping.md)
+
 ## <a name="see-also"></a>Voir aussi
 * [Interactions instinctuelles](interaction-fundamentals.md)
 * [Confort](comfort.md)
-* [Mise à l’échelle](scale.md)
+* [Mettre à l'échelle](scale.md)
 * [Suivre de la tête et stabiliser](gaze-and-dwell.md)
 * [Stabilité des hologrammes](../develop/platform-capabilities-and-apis/hologram-stability.md)

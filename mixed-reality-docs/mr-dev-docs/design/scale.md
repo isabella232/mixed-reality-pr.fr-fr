@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, style, Design
-ms.openlocfilehash: a9a02d681986df3d73c7990fc975e659e5326981
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679427"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340657"
 ---
 # <a name="scale"></a>Scale
 
@@ -79,6 +79,18 @@ Cela peut toutefois créer quelques artefacts possibles dans l’expérience :
 <br>
 
 ---
+
+## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
+
+Si vous suivez le [parcours de découverte](../discover/get-started-with-mr.md) que nous avons disposé, vous êtes à la fin de votre incursion initiale en fondations de réalité mixte. Vous pouvez consulter ce que les partenaires de l’industrie font avec la réalité mixte dans le monde réel : 
+
+> [!div class="nextstepaction"]
+> [Découvrir comment les partenaires de l’industrie utilisent la réalité mixte](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
+
+Ou passez à l’étape de conception :
+
+> [!div class="nextstepaction"]
+> [Commencez votre parcours de conception](../design/design.md)
 
 ## <a name="see-also"></a>Voir aussi
 * [Couleurs, éclairage et matériaux](../color,-light-and-materials.md)

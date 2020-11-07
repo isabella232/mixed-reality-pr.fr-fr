@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, étude de cas, vision, scénarios
-ms.openlocfilehash: 9e142d72866079e34e6f4a8df78b79d6f846275e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680999"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340677"
 ---
 # <a name="case-study---the-pursuit-of-more-personal-computing"></a>Étude de cas : la poursuite de l’informatique plus personnelle
 
@@ -148,14 +148,26 @@ Le divertissement est de nombreuses façons de pousser les limites de la réalit
 
 ## <a name="start-building-today"></a>Commencez à créer dès aujourd’hui
 
-Il est difficile de savoir à quoi ressemblera le plus loin de la réalité mixte pour les consommateurs, mais qui se concentrent sur des problèmes uniques, se familiarise avec le matériel réel et **expérimente *aujourd’hui* avec l’intersection entre la réalité mixte, la voix et l’intelligence artificielle est clé** . Microsoft s’est tout simplement mis en route avec la réalité mixte, mais l’apprentissage des succès réalisés par les entreprises vous aidera à créer les expériences de demain.
+Il est difficile de savoir à quoi ressemblera le plus loin de la réalité mixte pour les consommateurs, mais qui se concentrent sur des problèmes uniques, se familiarise avec le matériel réel et **expérimente *aujourd’hui* avec l’intersection entre la réalité mixte, la voix et l’intelligence artificielle est clé**. Microsoft s’est tout simplement mis en route avec la réalité mixte, mais l’apprentissage des succès réalisés par les entreprises vous aidera à créer les expériences de demain.
+
+## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
+
+Si vous suivez le [parcours de découverte](../discover/get-started-with-mr.md) que nous avons disposé, vous êtes au cœur de l’exploration des principes fondamentaux de la réalité mixte. À partir de là, vous pouvez passer à la rubrique suivante : 
+
+> [!div class="nextstepaction"]
+> [Immersif, ergonomique, instinctif et autonome](https://www.microsoft.com//hololens/hardware)
+
+Ou passez à l’expérience de base de la réalité mixte :
+
+> [!div class="nextstepaction"]
+> [Faire en sorte que l’utilisateur soit toujours à l’aise : confort](../design/comfort.md)
 
 ## <a name="about-the-author"></a>À propos de l’auteur
 
 <table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60" padding-left="0px"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
-<td style="border-style: none"><b>Marquer Vitazko</b><br>Concepteur UX @Microsoft</td>
+<td style="border-style: none"><b>Marquer Vitazko</b><br>Concepteur d’expérience utilisateur @Microsoft</td>
 </tr>
 </table>
  

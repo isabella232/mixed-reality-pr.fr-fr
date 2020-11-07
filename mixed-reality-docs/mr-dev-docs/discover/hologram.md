@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, hologrammes, conception, interaction
-ms.openlocfilehash: f5c42d197316169a99e388e40bf97a03682630ce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5e0ef2768b6e79136f8144492d6825107a6ed88e
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682602"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340697"
 ---
 # <a name="what-is-a-hologram"></a>Qu’est-ce qu’un hologramme ?
 
@@ -73,7 +73,7 @@ Si vous avez un emplacement particulier où vous souhaitez un hologramme, vous p
 Certains hologrammes suivent l’utilisateur à la place. Ces hologrammes se déplacent eux-mêmes par rapport à l’utilisateur, quel que soit l’endroit où ils parcourent. Vous pouvez même choisir de placer un hologramme avec vous pendant un certain temps, puis le placer sur le mur une fois que vous êtes dans une autre pièce.
 
 **Bonnes pratiques**
-* Certains scénarios peuvent exiger que les hologrammes restent facilement détectables ou visibles tout au long de l’expérience. Il existe deux approches de haut niveau pour ce type de positionnement. Appelons-les **« éléments verrouillés** » et **« verrouillés en corps »** .
+* Certains scénarios peuvent exiger que les hologrammes restent facilement détectables ou visibles tout au long de l’expérience. Il existe deux approches de haut niveau pour ce type de positionnement. Appelons-les **« éléments verrouillés** » et **« verrouillés en corps »**.
    * Le contenu verrouillé en affichage est positionné de façon « verrouillée » sur l’écran de l’appareil. Cela est délicat pour plusieurs raisons, notamment un sentiment de « clingyness » innaturel qui rend beaucoup d’utilisateurs frustrés et souhaitant les « secouer ». En général, de nombreux concepteurs ont trouvé mieux qu’ils évitent le verrouillage du contenu.
    * L’approche verrouillée par le corps est beaucoup plus forgivable. Le verrouillage du corps est lorsqu’un hologramme est attaché au corps ou au vecteur de pointage de l’utilisateur, mais est positionné dans l’espace 3D autour de l’utilisateur. De nombreuses expériences ont adopté un comportement de verrouillage du corps où l’hologramme « suit » les utilisateurs pointant vers le regard, ce qui permet à l’utilisateur de faire pivoter son corps et de parcourir l’espace sans perdre l’hologramme. L’incorporation d’un délai permet d’obtenir un mouvement d’hologramme plus naturel. Par exemple, une interface utilisateur principale du système d’exploitation Windows holographique utilise une variation sur le verrouillage du corps qui suit le point d’arrêt de l’utilisateur avec un délai léger et élastique, tandis que l’utilisateur change de tête.
 * Placez l’hologramme à une distance confortable, généralement d’environ 1-2 mètres de l’en-tête.
@@ -126,6 +126,17 @@ Les hologrammes peuvent également être bloqués par des objets réels. Par exe
 
 ---
 
+## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
+
+Si vous suivez le [parcours de découverte](get-started-with-mr.md) que nous avons disposé, vous êtes au cœur de l’exploration des principes fondamentaux de la réalité mixte. À partir de là, vous pouvez passer à la rubrique suivante : 
+
+> [!div class="nextstepaction"]
+> [Une nouvelle vision du travail](https://dynamics.microsoft.com//mixed-reality/overview/)
+
+Ou accédez à :
+
+> [!div class="nextstepaction"]
+> [À la recherche d’une informatique plus personnelle](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
 
 ## <a name="see-also"></a>Voir aussi
 * [Développer votre processus de conception](case-study-expanding-the-design-process-for-mixed-reality.md)
