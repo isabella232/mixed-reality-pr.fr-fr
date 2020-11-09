@@ -27,9 +27,9 @@
 ### [FAQ sur l’utilisation de Windows Mixed Reality](using-wmr-faq.md)
 
 ## Résolution des problèmes et questions fréquentes (FAQ)
+### [Vue d’ensemble des questions fréquentes (FAQ)](troubleshooting-windows-mixed-reality.md)
 ### [Envoyer des bogues et des commentaires](filing-feedback.md)
 ### [Codes d’erreur](error-codes.md)
-### [FAQ général](troubleshooting-windows-mixed-reality.md)
 ### [Erreurs d'installation](installation_errors.md)
 ### [Limites](boundary-questions.md)
 ### [Connectivité du casque](headset-connectivity.md)
