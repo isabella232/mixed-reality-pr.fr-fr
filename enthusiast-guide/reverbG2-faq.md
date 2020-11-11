@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
 appliesto:
 - Windows 10
-ms.openlocfilehash: 82f9accc8e24574faf7c826aff1908bea7350b08
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049471"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482397"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Forum aux questions sur les réverbérations HP G2
 
@@ -73,3 +73,16 @@ Si de nombreux jeux fonctionnent immédiatement avec les contrôleurs de mouveme
 - Modèle incorrect affiché : la résolution requiert une mise à jour du jeu. En règle générale, cela ne bloque pas les fonctionnalités du jeu, mais peut entraîner des confusions, voire des artefacts visuels.
 - Dépendance sur le pavé tactile ou plus généralement sur la disposition d’entrée du contrôleur. SteamVR permet de créer des liaisons personnalisées pour aider à contourner ce type de problème :
     - Windows Mixed Reality for SteamVR comprend des liaisons personnalisées pour certains jeux. Ces liaisons sont utilisées automatiquement lorsque le jeu est démarré et aucune action de l’utilisateur n’est nécessaire.
+
+## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>Mes jeux SteamVR ne semblent pas fonctionner correctement avec les contrôleurs de mouvement HP
+
+Alors que les développeurs travaillent à mettre à jour leurs jeux pour la compatibilité avec HP Motion Controller, nous avons fourni des liaisons de contrôleur personnalisées pour la plupart des jeux les plus populaires sur la vapeur. Avec « Windows Mixed Reality for SteamVR » entièrement mis à jour vers la version 1.2.444, ces liaisons doivent être récupérées automatiquement lorsque votre jeu est en cours d’exécution. Toutefois, si votre jeu ne semble pas inscrire vos actions pour l’instant, vous pouvez rechercher manuellement des profils de liaison personnalisés à l’aide du menu des paramètres SteamVR.
+Pour
+
+- Ouvrez le menu SteamVR en appuyant sur le bouton de menu du contrôleur de mouvement approprié
+- Sélectionnez l’icône « Paramètres » dans le coin inférieur droit du menu SteamVR
+- Sélectionnez l’onglet « contrôleurs ».
+- Sélectionnez l’option gérer les liaisons de contrôleur.
+
+À partir de là, vous pouvez modifier la liaison de votre contrôleur actif en « personnalisé », ce qui permet d’ouvrir l’option permettant d’essayer les liaisons de jeux de la communauté partagée.
+Si aucune liaison de jeu personnalisée n’a encore été partagée pour ce jeu (ou si vous n’êtes pas satisfait de celles que vous avez essayées), vous pouvez également créer vos propres liaisons de jeu personnalisées et même aider le reste de la communauté en les partageant après quelques sessions de jeu.
