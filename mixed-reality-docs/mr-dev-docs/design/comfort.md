@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Réalité mixte, conception, confort, HoloLens 2, HoloLens (1ère génération)
-ms.openlocfilehash: 6528dca71a1e0cd92b621cab8b1b7ba547fcb71e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698352"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340647"
 ---
 # <a name="comfort"></a>Confort
 
@@ -40,17 +40,17 @@ L’affichage des casques HoloLens est configuré sur une distance optique d’e
 
 ### <a name="best-practices-for-hololens-1st-gen-and-hololens-2"></a>Bonnes pratiques pour HoloLens (1re génération) et HoloLens 2
 
-Pour un confort optimal, **l’hologramme doit être placé à une distance comprise entre 1,25 m et 5 m** . Dans tous les cas, les concepteurs doivent tenter de structurer les scènes de contenu en vue d’encourager les utilisateurs à interagir à 1 m ou plus du contenu (par exemple, en ajustant les [paramètres de taille du contenu et de positionnement par défaut](gaze-and-commit.md)). 
+Pour un confort optimal, **l’hologramme doit être placé à une distance comprise entre 1,25 m et 5 m**. Dans tous les cas, les concepteurs doivent tenter de structurer les scènes de contenu en vue d’encourager les utilisateurs à interagir à 1 m ou plus du contenu (par exemple, en ajustant les [paramètres de taille du contenu et de positionnement par défaut](gaze-and-commit.md)). 
 
 Même si le contenu doit parfois être affiché à une distance inférieure à 1 m, nous vous déconseillons de présenter les hologrammes à une distance inférieure à 40 cm. Par conséquent, nous vous recommandons de commencer à **faire disparaître le contenu situé à 40 cm et à placer un plan de découpage du rendu à 30 cm** pour éviter que des objets ne soient plus proches.
 
-Les objets qui changent de profondeur sont plus susceptibles d’entraîner une gêne que les objets stationnaires, en raison du conflit vergence-accommodation. De même, le fait de demander aux utilisateurs de changer rapidement de focus (par exemple, en raison d’un hologramme qui nécessite une interaction directe) peut provoquer une gêne visuelle et une fatigue. Par conséquent, **il est important de réduire la fréquence à laquelle les utilisateurs voient du contenu qui change de profondeur ou à laquelle ils doivent changer rapidement de focus entre un hologramme proche et un hologramme éloigné** . 
+Les objets qui changent de profondeur sont plus susceptibles d’entraîner une gêne que les objets stationnaires, en raison du conflit vergence-accommodation. De même, le fait de demander aux utilisateurs de changer rapidement de focus (par exemple, en raison d’un hologramme qui nécessite une interaction directe) peut provoquer une gêne visuelle et une fatigue. Par conséquent, **il est important de réduire la fréquence à laquelle les utilisateurs voient du contenu qui change de profondeur ou à laquelle ils doivent changer rapidement de focus entre un hologramme proche et un hologramme éloigné**. 
 
 ### <a name="additional-considerations-for-hololens-2-and-near-interaction-distances"></a>Autres considérations sur HoloLens 2 et les distances d’interaction proches
 
-Lorsque vous concevez du contenu pour une interaction directe (proche) dans HoloLens 2, ou **dans des applications où le contenu doit être placé à une distance inférieure à 1 mètre, il est important de garantir le confort visuel de l’utilisateur** . Les risques de gêne dus au conflit vergence-accommodation augmentent de façon exponentielle lorsque la distance d’affichage diminue. De plus, l’utilisateur peut constater que l’image devient plus floue à mesure que le contenu avec lequel il interagit se rapproche. Il est donc recommandé de tester l’affichage du contenu dans la zone de positionnement optimal des hologrammes, mais également à une distance plus proche (inférieure à 1 mètre du plan de découpage) afin de garantir un affichage net et confortable. 
+Lorsque vous concevez du contenu pour une interaction directe (proche) dans HoloLens 2, ou **dans des applications où le contenu doit être placé à une distance inférieure à 1 mètre, il est important de garantir le confort visuel de l’utilisateur**. Les risques de gêne dus au conflit vergence-accommodation augmentent de façon exponentielle lorsque la distance d’affichage diminue. De plus, l’utilisateur peut constater que l’image devient plus floue à mesure que le contenu avec lequel il interagit se rapproche. Il est donc recommandé de tester l’affichage du contenu dans la zone de positionnement optimal des hologrammes, mais également à une distance plus proche (inférieure à 1 mètre du plan de découpage) afin de garantir un affichage net et confortable. 
 
-**Nous vous recommandons de créer un « budget profondeur » pour les applications, dans lequel vous évaluerez le nombre de fois qu’un utilisateur doit s’attendre à voir du contenu proche (à une distance inférieure à 1 mètre) et à voir des changements de profondeur** . Par exemple, vous pouvez limiter ces situations à 25 % du temps. Si le budget profondeur est dépassé, nous vous recommandons de procéder à de nombreux tests utilisateur pour garantir une utilisation confortable. 
+**Nous vous recommandons de créer un « budget profondeur » pour les applications, dans lequel vous évaluerez le nombre de fois qu’un utilisateur doit s’attendre à voir du contenu proche (à une distance inférieure à 1 mètre) et à voir des changements de profondeur**. Par exemple, vous pouvez limiter ces situations à 25 % du temps. Si le budget profondeur est dépassé, nous vous recommandons de procéder à de nombreux tests utilisateur pour garantir une utilisation confortable. 
 
 En général, nous recommandons également de procéder à de nombreux tests pour garantir que les demandes d’interaction (rapidité de mouvement, accessibilité, etc.) restent confortables pour les utilisateurs à des distances d’interaction plus proches. 
 
@@ -100,7 +100,7 @@ Il existe un large éventail d’outils qui peuvent être utilisés pour évalue
 
 ## <a name="self-motion-and-user-locomotion"></a>Mouvement propre et locomotion utilisateur
 
-La seule limitation est liée à la taille de votre espace physique. Si vous souhaitez permettre aux utilisateurs d’aller plus loin dans l’environnement virtuel qu’ils ne le peuvent dans l’espace physique où ils se trouvent, vous devez implémenter une forme de mouvement purement virtuel. Toutefois, un mouvement virtuel prolongé qui ne correspond pas au mouvement physique réel de l’utilisateur peut parfois provoquer des vertiges et des nausées. Ceci est dû au fait que les *signaux visuels* obtenus par les mouvements propres effectués dans le *monde virtuel* sont en conflit avec les [signaux vestibulaires](https://en.wikipedia.org/wiki/Vestibular_system) obtenus par les mouvements propres effectués dans le *monde réel* .
+La seule limitation est liée à la taille de votre espace physique. Si vous souhaitez permettre aux utilisateurs d’aller plus loin dans l’environnement virtuel qu’ils ne le peuvent dans l’espace physique où ils se trouvent, vous devez implémenter une forme de mouvement purement virtuel. Toutefois, un mouvement virtuel prolongé qui ne correspond pas au mouvement physique réel de l’utilisateur peut parfois provoquer des vertiges et des nausées. Ceci est dû au fait que les *signaux visuels* obtenus par les mouvements propres effectués dans le *monde virtuel* sont en conflit avec les [signaux vestibulaires](https://en.wikipedia.org/wiki/Vestibular_system) obtenus par les mouvements propres effectués dans le *monde réel*.
 
 Heureusement, il existe des astuces d’implémentation de la locomotion utilisateur qui permettent d’éviter ce problème :
 * Permettez toujours à l’utilisateur de contrôler ses mouvements. Les mouvements propres inattendus sont particulièrement problématiques.
@@ -162,6 +162,13 @@ L’angle de regard optimal (de repos) est situé entre 10 et 20 degrés en d
 ## <a name="arm-positions"></a>Positions des bras
 
 Une fatigue musculaire peut s’installer si les utilisateurs sont censés garder une main levée pendant toute la durée de l’expérience. Les clics aériens répétés peuvent également se révéler fatigants s’ils doivent être effectués sur une longue période. Nous vous recommandons donc d’éviter les expériences qui exigent des gestes répétés ou maintenus. Pour cela, vous pouvez intégrer de courtes pauses ou proposer une combinaison de saisies gestuelles et vocales pour interagir avec l’application.
+
+## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
+
+Si vous suivez le [parcours de découverte](../discover/get-started-with-mr.md) que nous avons établi, vous êtes au cœur de l’exploration des concepts de base de la réalité mixte. À partir de là, vous pouvez passer au sujet suivant : 
+
+> [!div class="nextstepaction"]
+> [Comment l’utilisateur voit le monde : image holographique](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>Voir aussi
 * [Pointage du regard](gaze-and-commit.md)

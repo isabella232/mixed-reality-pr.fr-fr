@@ -1,18 +1,18 @@
 ---
 title: Tutoriels de démarrage - 9. Utilisation des commandes vocales
-description: Découvrez comment utiliser Mixed Reality Toolkit (MRTK) pour créer une application de réalité mixte.
+description: Ce cours vous montre comment utiliser les commandes vocales avec Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: d9ddf3d234b68dfe4ce3ab5c9272566479edd71d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c5d7297b8c8153270cd6ccf40eff64eab4afb49e
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698454"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353507"
 ---
 # <a name="9-using-speech-commands"></a>9. Utilisation des commandes vocales
 
@@ -38,8 +38,8 @@ Dans le menu Unity, sélectionnez Mixed Reality Toolkit > Utilities > **Configur
 
 Dans la fenêtre de hiérarchie, sélectionnez l’objet **MixedRealityToolkit** puis, dans la fenêtre de l’inspecteur, sélectionnez l’onglet MixedRealityToolkit > **Input** et effectuez les étapes suivantes :
 
-* Développez la section **Speech** .
-* Clonez le **DefaultMixedRealitySpeechCommandsProfile** et donnez-lui un nom approprié, par exemple _GettingStarted_MixedRealitySpeechCommandsProfile_ .
+* Développez la section **Speech**.
+* Clonez le **DefaultMixedRealitySpeechCommandsProfile** et donnez-lui un nom approprié, par exemple _GettingStarted_MixedRealitySpeechCommandsProfile_.
 * Vérifiez que **Start Behaviour** (Comportement de démarrage) est défini sur **Auto Start** (Démarrage automatique).
 
 ![Création de commandes vocales](images/mr-learning-base/base-09-section2-step1-1.png)
@@ -108,11 +108,11 @@ Développez **Element 2** et configurez-le comme suit :
 * Cliquez sur la petite icône **+** pour ajouter un événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .
 * Dans la liste déroulante **No Function** , sélectionnez **BoundingBox** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
-* Vérifiez que la case de l’argument est **décochée** .
+* Vérifiez que la case de l’argument est **décochée**.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .
 * Dans la liste déroulante **No Function** , sélectionnez **ObjectManipulator** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
-* Vérifiez que la case de l’argument est **décochée** .
+* Vérifiez que la case de l’argument est **décochée**.
 
 ![Configurer l’élément de mot clé 2](images/mr-learning-base/base-09-section3-step1-6.png)
 
