@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Réalité mixte, Conférence, sommet, développeur, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 7d840c3f4f12f679dc7ca7622f906f3282ec785b
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: af9055c4e6074c4d4b10b4f0a6ac135c858b57a7
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386415"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549112"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mi-développement de la réalité mixte-Japon
 
@@ -29,14 +29,12 @@ Nous sommes impatients de vous joindre au jour de développement de la réalité
 
 ## <a name="registration"></a>Inscription
 
-[Inscrivez-vous maintenant](https://mixedrealityprod.microsoftcrmportals.com/MRDDRegistration/)
-
-Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev Days au Japon.  L’événement est gratuit et est conservé en ligne dans les événements en direct de Microsoft Teams.  Nous demandez à ce que les participants s’inscrivent afin que nous puissions envoyer des mises à jour par courrier électronique à mesure que l’événement se rapproche et que vous pouvez participer aux éléments interactifs de l’événement.
-
+Bientôt disponible
 
 ## <a name="schedule---subject-to-change"></a>Planification-sujet à modifier
 
 **Toutes les heures sont de l’heure d’hiver du Japon (UTC + 9)** 
+
 
 
 ### <a name="december-16th"></a>16 décembre
@@ -44,28 +42,28 @@ Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev
 |---------|---------|---------|---------|---------|
 |10:00-10:50am|Ouverture du discours|TBD|JA/FR|N/A|
 |10:50am-11:00|**Saut**||||
-|11:00-11:25am|*Session 1* Qu’est-ce que la réalité mixte ?Que pouvez-vous faire avec HL2 ?Empilement Tech|TBD|JA|100|
-|11:30-11:55am|*Session 2* Mise à jour de l’élan du marché du Japon pour les clients et les partenaires études de cas|TBD|JA|200|
-|12:14:00-12:50pm|*Session déjeuner* Panel : discussion gratuite interactive, Q et A, MRTK + Oculus Quest 2|TBD|JA|200|
+|11:00-11:25am|*Session 1* Qu’est-ce que la réalité mixte ?Que pouvez-vous faire avec HL2 ?Empilement Tech|Atsushi Suzuki|JA|100|
+|11:30-11:55am|*Session 2* Mise à jour de l’élan du marché du Japon pour les clients et les partenaires études de cas|Tetsu Muranaka|JA|200|
+|12:14:00-12:50pm|*Session déjeuner* Panel : discussion gratuite interactive, Q et A, MRTK + Oculus Quest 2|Madoka Chiyoda + MVP Microsoft|JA|200|
 |12:50pm-1:14:00|**Saut**||||
-|1:14:00-1:25pm|*Session 3* Vue d’ensemble du développement HoloLens 2|TBD|JA|200|
-|1:30-1:55pm|*Session 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|TBD|JA|300|
-|2:14:00-2:20pm|*Session 5* Prise en main de l’analyseur HoloLens 2 et du moteur inréel (MRTK-inreal)|TBD|FR|300|
-|2:30-2:55pm|*Session 6* Conception d’application MR (recommandation pour la création de l’interface utilisateur/expérience utilisateur pour l’application HL2)|TBD|FR|300|
+|1:14:00-1:25pm|*Session 3* Vue d’ensemble du développement HoloLens 2|Madoka Chiyoda|JA|200|
+|1:30-1:55pm|*Session 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Parc Yoon|JA|300|
+|2:14:00-2:20pm|*Session 5* Prise en main de l’analyseur HoloLens 2 et du moteur inréel (MRTK-inreal)|Cameron micka|FR|300|
+|2:30-2:55pm|*Session 6* Conception d’application MR (recommandation pour la création de l’interface utilisateur/expérience utilisateur pour l’application HL2)|Daniel Escudero|FR|300|
 |2:55pm-3:15|**Saut**||||
 |3:15-3:40pm|*Session 7* Ancres d’objets Azure|TBD|FR|300|
-|3:17h45-4:22h00|*Session 8* Rendu distant Azure|TBD|JA|300|
+|3:17h45-4:22h00|*Session 8* Rendu distant Azure|Atsushi Suzuki|JA|300|
 |4:15-4:40pm|*Session 9* Ancres spatiales Azure|TBD|FR|300|
-|4:17h45-5:22h00|*Session 10* Outil de verrouillage universel|TBD|FR|300|
-|5:15-5:40pm|*Session 11* Présentation approfondie d’Azure Kinect DK, étude de cas|TBD|JA|400|
-|5:17h45-6:14:00|Fermeture|TBD|JA|N/D|
-||||||
+<!--|4:17h45-5:22h00|*Session 10* Unity + PiXYZ|(Unity Japan)|JA|200|-->
+|4:17h45-5:22h00|*Session 10* TBD|TBD|JA|200|
+|5:15-5:40pm|*Session 11* Présentation approfondie d’Azure Kinect DK, étude de cas|Shinji Chiba|JA|400|
+|5:17h45-6:14:00|Fermeture|Madoka Chiyoda|JA|N/D|
 
 #### <a name="contributors-english-subtitle-reviewers"></a>Contributeurs (réviseurs de sous-titres en anglais)
 
 Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura ( [@takabrz1](https://twitter.com/takabrz1) ), Akihiro Ueyama ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shinya Tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Forum Aux Questions (FAQ)
 Cette section sera fréquemment mise à jour à mesure que nous recevrons d’autres questions.
 
 **Q** -qui devrait assister au développement de la réalité mixte le jour **a** -cet événement est inclus dans l’espace de la réalité mixte. Alors que la majeure partie du contenu sera axée sur les développeurs, nous savons également qu’il existe du contenu intéressant pour un large éventail de rôles au-delà des développeurs. N’oubliez pas de vérifier la planification des mises à jour pour voir le type de contenu que nous fournissons.  
