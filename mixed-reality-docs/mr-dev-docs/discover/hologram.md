@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, hologrammes, conception, interaction
-ms.openlocfilehash: c26cbbaa011c9e7ec92ea45dfd9491dbd178a025
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386235"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631467"
 ---
 # <a name="what-is-a-hologram"></a>Qu’est-ce qu’un hologramme ?
 
@@ -128,11 +128,8 @@ Les hologrammes peuvent également être bloqués par des objets réels. Par exe
 
 ## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
 
-Si vous suivez le [parcours de découverte](get-started-with-mr.md) que nous avons disposé, vous êtes au cœur de l’exploration des principes fondamentaux de la réalité mixte. À partir de là, vous pouvez passer à la rubrique suivante : 
+Si vous suivez le [parcours de découverte](get-started-with-mr.md) que nous avons établi, vous êtes au cœur de l’exploration des concepts de base de la réalité mixte. À partir de là, vous pouvez passer au sujet suivant : 
 
 > [!div class="nextstepaction"]
 > [Développer votre processus de conception](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-## <a name="see-also"></a>Voir aussi
-* [Son spatial](../design/spatial-sound.md)
-* [Couleurs, éclairage et matériaux](../color,-light-and-materials.md)

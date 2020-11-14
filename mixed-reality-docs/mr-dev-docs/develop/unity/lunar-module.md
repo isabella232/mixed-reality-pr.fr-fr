@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, exemples d’applications, conception, HoloLens
-ms.openlocfilehash: 4ab408d23ca932e73c0939f8a5cdc48184666f78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679755"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573253"
 ---
 # <a name="lunar-module"></a>Module lunaire
 
@@ -19,6 +19,11 @@ ms.locfileid: "91679755"
 >Cet article présente un exemple exploratoire que nous avons créé dans les [laboratoires de conception de réalité mixte](https://github.com/Microsoft/MRDesignLabs_Unity), un endroit où nous partageons nos connaissances et des suggestions concernant le développement d’applications de réalité mixte. Nos articles et code liés à la conception évoluent à mesure que nous effectuons de nouvelles découvertes.
 
 Le [module lunaire](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft. Avec ce projet, vous pouvez apprendre à étendre les gestes de base HoloLens avec le suivi à deux mains et l’entrée du contrôleur Xbox, créer des objets qui sont réactifs dans le mappage de surface et la recherche de plan, et implémenter des systèmes de menus simples. Tous les composants du projet peuvent être utilisés dans vos expériences d’application de réalité mixte.
+
+## <a name="demo-video"></a>Vidéo de démonstration 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
+
+Enregistré avec HoloLens 2 à l’aide de la capture de réalité mixte
 
 ## <a name="rethinking-classic-experiences-for-windows-mixed-reality"></a>Repenser les expériences classiques pour Windows Mixed Reality
 
@@ -38,7 +43,7 @@ Pourquoi Atari et tellement d’autres sociétés de jeux décident-elles de rep
 
 Un enfant qui se passe au travers d’une arcade sera naturellement intrigué par le dernier ordinateur flashiest. Mais la Lander lunaire présente un nouveau mécanicien en entrée qui s’est retiré de la foule.
 
-Le Lander lunaire utilise deux boutons pour faire pivoter l’expédition vers la gauche et vers la droite, et un **levier de Poussée** pour contrôler la quantité de poussée produite par le navire. Ce levier offre aux utilisateurs un certain niveau de finesse qu’une manette de jeu normale ne peut pas fournir. Il s’agit également d’un composant commun aux cockpits aéronautiques modernes. Atari souhaitait que les Lander lunaires plongent dans le sentiment qu’ils étaient en cours de pilotage d’un module lunaire. Ce concept est appelé **immersion tactile** .
+Le Lander lunaire utilise deux boutons pour faire pivoter l’expédition vers la gauche et vers la droite, et un **levier de Poussée** pour contrôler la quantité de poussée produite par le navire. Ce levier offre aux utilisateurs un certain niveau de finesse qu’une manette de jeu normale ne peut pas fournir. Il s’agit également d’un composant commun aux cockpits aéronautiques modernes. Atari souhaitait que les Lander lunaires plongent dans le sentiment qu’ils étaient en cours de pilotage d’un module lunaire. Ce concept est appelé **immersion tactile**.
 
 L’immersion tactile est l’expérience des commentaires sensorielles suite à l’exécution d’actions répétitives. Dans ce cas, l’action répétitive consistant à ajuster le levier de limitation et la rotation que nos yeux voient et nos oreilles entendre, permet de connecter le joueur à l’action de débarquement d’un navire sur la surface de la lune. Ce concept peut être lié au concept psychologique de « Flow ». Lorsqu’un utilisateur est entièrement absorbé dans une tâche qui a le bon mélange de stimulation et de récompense, ou en fait plus simplement, il est « dans la zone ».
 
@@ -62,7 +67,7 @@ Le fait de demander à l’utilisateur d’apprendre le schéma d’entrée, de 
 
 L’entrée de base HoloLens n’a que deux gestes : le [robinet et le toucher de l’air](../../design/gaze-and-commit.md#composite-gestures). Les utilisateurs n’ont pas besoin de mémoriser des nuances contextuelles ou une liste de mouvements spécifiques qui rendent l’interface de la plateforme polyvalente et facile à apprendre. Alors que le système peut uniquement exposer ces deux gestes, HoloLens en tant qu’appareil est en mesure de suivre deux mains à la fois. Notre Ode à la Lander lunaire est une [application immersive](../../design/app-model.md) , ce qui signifie que nous avons la possibilité d’étendre l’ensemble de base des gestes pour tirer parti de deux mains et ajouter nos propres moyens de navigation pour les modules lunaires.
 
-En recherchant le schéma de contrôle d’origine, **nous avions besoin de résoudre la Poussée et la rotation** . L’inconvénient est la rotation dans le nouveau contexte ajoute un axe supplémentaire (techniquement deux, mais l’axe Y est moins important pour le débarquement). Les deux mouvements d’expédition distincts se prêtent naturellement à être mappés à chaque main :
+En recherchant le schéma de contrôle d’origine, **nous avions besoin de résoudre la Poussée et la rotation**. L’inconvénient est la rotation dans le nouveau contexte ajoute un axe supplémentaire (techniquement deux, mais l’axe Y est moins important pour le débarquement). Les deux mouvements d’expédition distincts se prêtent naturellement à être mappés à chaque main :
 
 ![Appuyer et faire glisser le geste pour faire pivoter les Lander sur les trois axes](images/module-handdrag.gif)<br>
 *Appuyer et faire glisser le geste pour faire pivoter les Lander sur les trois axes*
@@ -73,7 +78,7 @@ Le levier sur la machine d’arcade d’origine est mappé à une échelle de va
 
 **Rotation**
 
-C’est un peu plus délicat. Le fait de disposer de boutons de « rotation » holographiques permet d’effectuer une expérience terrible. Comme il n’y a pas de contrôle physique à exploiter, le comportement doit provenir de la manipulation d’un objet représentant le Lander ou du Lander lui-même. Nous avons obtenu une méthode qui utilise le tap-and-Drag qui permet à un utilisateur de « pousser » et de l’extraire dans le sens où il souhaite le faire face. À chaque fois qu’un utilisateur appuie et maintient, le point dans l’espace où le mouvement a été initié devient l’origine de la rotation. Le fait de faire glisser à partir de l’origine convertit le delta de la translation de la main (X, Y, Z) et l’applique au delta des valeurs de rotation de Lander. Ou plus simplement, le *fait de faire glisser le curseur vers la gauche <-> vers la droite, vers le haut < > vers le bas, vers l’arrière < de retour dans les espaces fait pivoter le navire en conséquence* .
+C’est un peu plus délicat. Le fait de disposer de boutons de « rotation » holographiques permet d’effectuer une expérience terrible. Comme il n’y a pas de contrôle physique à exploiter, le comportement doit provenir de la manipulation d’un objet représentant le Lander ou du Lander lui-même. Nous avons obtenu une méthode qui utilise le tap-and-Drag qui permet à un utilisateur de « pousser » et de l’extraire dans le sens où il souhaite le faire face. À chaque fois qu’un utilisateur appuie et maintient, le point dans l’espace où le mouvement a été initié devient l’origine de la rotation. Le fait de faire glisser à partir de l’origine convertit le delta de la translation de la main (X, Y, Z) et l’applique au delta des valeurs de rotation de Lander. Ou plus simplement, le *fait de faire glisser le curseur vers la gauche <-> vers la droite, vers le haut < > vers le bas, vers l’arrière < de retour dans les espaces fait pivoter le navire en conséquence*.
 
 Étant donné que le HoloLens peut effectuer le suivi de deux mains, la rotation peut être assignée à la main droite alors que la Poussée est contrôlée par la gauche. Finesse est le facteur déterminant pour la réussite de ce jeu. L' *aspect* de ces interactions est la priorité la plus élevée absolue. En particulier dans le contexte d’une immersion tactile. Un navire qui réagit trop rapidement serait inutilement difficile à prendre en main, tandis que l’un d’eux trop lent obligerait l’utilisateur à « pousser et tirer » sur le navire pour une durée beaucoup plus délicate.
 
@@ -81,12 +86,12 @@ C’est un peu plus délicat. Le fait de disposer de boutons de « rotation »
 
 Tandis que les gestes de main sur le HoloLens fournissent une nouvelle méthode de contrôle précis, il y a toujours un certain nombre de commentaires tactiles « vrai » que vous pouvez obtenir à partir des contrôles analogiques. La connexion d’un contrôleur de jeu Xbox permet de rétablir ce sens de la physique tout en tirant parti des bâtons de contrôle afin de conserver un contrôle affiné.
 
-Il existe plusieurs façons d’appliquer le schéma de contrôle relativement simple au contrôleur Xbox. Étant donné que nous essayons de rester aussi près que possible de la configuration de l’arcade d’origine, la carte de **Poussée** est la mieux adaptée au bouton de déclenchement. Ces boutons sont des contrôles analogiques, ce qui signifie qu’ils ont plus de simples États *on et OFF* , ils répondent en fait au degré de pression qui leur est posé. Cela nous donne une construction similaire comme **levier de Poussée** . Contrairement au jeu d’origine et au mouvement manuel, ce contrôle réduit la poussée du navire une fois qu’un utilisateur a cessé de placer de la pression sur le déclencheur. Il donne toujours à l’utilisateur le même degré de finesse que le jeu d’arcade d’origine.
+Il existe plusieurs façons d’appliquer le schéma de contrôle relativement simple au contrôleur Xbox. Étant donné que nous essayons de rester aussi près que possible de la configuration de l’arcade d’origine, la carte de **Poussée** est la mieux adaptée au bouton de déclenchement. Ces boutons sont des contrôles analogiques, ce qui signifie qu’ils ont plus de simples États *on et OFF* , ils répondent en fait au degré de pression qui leur est posé. Cela nous donne une construction similaire comme **levier de Poussée**. Contrairement au jeu d’origine et au mouvement manuel, ce contrôle réduit la poussée du navire une fois qu’un utilisateur a cessé de placer de la pression sur le déclencheur. Il donne toujours à l’utilisateur le même degré de finesse que le jeu d’arcade d’origine.
 
 ![Le stick analogique gauche est mappé sur le lacet et le rouleau, le Stick à droite est mappé à la tonalité et au rouleau](images/thumbsticksidebyside.gif)<br>
 *Le stick analogique gauche est mappé sur le lacet et le roulis ; le joystick droit est mappé à la tonalité et au rouleau*
 
-Le double Thumbsticks se prête naturellement à contrôler la rotation de l’expédition. Malheureusement, il y a 3 axes sur lesquels le navire peut pivoter et deux Thumbsticks qui prennent tous deux en charge deux axes. Cette incompatibilité signifie que l’un des deux contrôleurs est un axe ; ou il existe un chevauchement des axes pour le Thumbsticks. La première solution s’est terminée avec le sentiment « cassé », car Thumbsticks fusionne fondamentalement leurs valeurs X et Y locales. La dernière solution nécessitait des tests pour trouver les axes redondants les plus naturels. L’exemple final utilise le *lacet* et le *rouleau* (axes Y et x) pour le stick analogique gauche, ainsi que la hauteur et la *largeur* *(axes* Z et x) pour le stick analogique droit. Cela a pensé que la *Roll* la plus naturelle semble être parfaitement couplée avec le *lacet* et le *tangage* . En guise de note, l’utilisation de Thumbsticks pour le *Roll* se produit également pour doubler la valeur de rotation ; Il est assez amusant de faire en sorte que les Lander fassent des boucles.
+Le double Thumbsticks se prête naturellement à contrôler la rotation de l’expédition. Malheureusement, il y a 3 axes sur lesquels le navire peut pivoter et deux Thumbsticks qui prennent tous deux en charge deux axes. Cette incompatibilité signifie que l’un des deux contrôleurs est un axe ; ou il existe un chevauchement des axes pour le Thumbsticks. La première solution s’est terminée avec le sentiment « cassé », car Thumbsticks fusionne fondamentalement leurs valeurs X et Y locales. La dernière solution nécessitait des tests pour trouver les axes redondants les plus naturels. L’exemple final utilise le *lacet* et le *rouleau* (axes Y et x) pour le stick analogique gauche, ainsi que la hauteur et la *largeur* *(axes* Z et x) pour le stick analogique droit. Cela a pensé que la *Roll* la plus naturelle semble être parfaitement couplée avec le *lacet* et le *tangage*. En guise de note, l’utilisation de Thumbsticks pour le *Roll* se produit également pour doubler la valeur de rotation ; Il est assez amusant de faire en sorte que les Lander fassent des boucles.
 
 Cet exemple d’application montre comment la reconnaissance spatiale et l’immersion tactile peuvent considérablement changer une expérience grâce aux modalités d’entrée extensible de Windows Mixed Reality. Alors que les Lander lunaires peuvent être proches de 40 ans d’âge, les concepts exposés avec ce petit petit-est en temps réel. En imaginant le futur, pourquoi ne pas regarder le passé ?
 
@@ -99,11 +104,12 @@ Vous trouverez des scripts et des prefabs pour l’exemple d’application de mo
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Addison Linville" width="60" height="60" src="images/addisonlinville-tile-60px.jpg"></td>
-<td style="border-style: none"><b>ADDISON Linville</b><br>Concepteur UX @Microsoft</td>
+<td style="border-style: none"><b>ADDISON Linville</b><br>Concepteur d’expérience utilisateur @Microsoft</td>
 </tr>
 </table>
 
 ## <a name="see-also"></a>Voir aussi
-* [Contrôleurs de mouvement](../../design/motion-controllers.md)
-* [Suivre de la tête et valider](../../design/gaze-and-commit.md)
-* [Types d’applications de réalité mixte](../../design/types-of-mixed-reality-apps.md)
+* [Hub d’exemples MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(téléchargement à partir du Microsoft Store dans HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Surfaces](sampleapp-surfaces.md) - [(téléchargement à partir du Microsoft Store dans HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [Tableau périodique des éléments 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

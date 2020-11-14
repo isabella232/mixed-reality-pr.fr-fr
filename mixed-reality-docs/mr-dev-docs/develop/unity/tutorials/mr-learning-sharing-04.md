@@ -1,18 +1,18 @@
 ---
 title: Tutoriels sur les fonctionnalités multi-utilisateurs - 4. Partage de mouvements d’objet avec plusieurs utilisateurs
-description: Suivez ce cours pour apprendre à implémenter des expériences partagées multi-utilisateurs dans une application HoloLens 2.
+description: Suivez ce cours pour découvrir comment partager des mouvements d’objets avec plusieurs utilisateurs dans une application HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: b080522e25d933aeb979c3d9a851beaaac4da57f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698801"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353417"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Partage de mouvements d’objet avec plusieurs utilisateurs
 
@@ -29,31 +29,31 @@ Dans cette section, vous allez préparer la scène en ajoutant le préfabriqué 
 
 Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** , puis faites glisser le préfabriqué **TableAnchor** sur l’objet **SharedPlayground** dans la fenêtre Hierarchy afin de l’ajouter à votre scène en tant qu’enfant de l’objet SharedPlayground :
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+![Unity avec le préfabriqué nouvellement ajouté TableAnchor sélectionné](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>Configuration de PUN pour instancier les objets
 
 Dans cette section, vous allez configurer le projet de façon à utiliser l’expérience Rover Explorer créée pendant les [tutoriels de démarrage](mr-learning-base-01.md) et définir où il sera instancié.
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** .
+Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources**.
 
-Dans la fenêtre Hierarchy, développez l’objet **NetworkLobby** et sélectionnez l’objet enfant **NetworkRoom** . Ensuite, dans la fenêtre Inspector, localisez le composant **Photon Room (Script)** et configurez-le comme suit :
+Dans la fenêtre Hierarchy, développez l’objet **NetworkLobby** et sélectionnez l’objet enfant **NetworkRoom**. Ensuite, dans la fenêtre Inspector, localisez le composant **Photon Room (Script)** et configurez-le comme suit :
 
 * Dans le champ **Rover Explorer Prefab** , attribuez le préfabriqué **RoverExplorer_Complete_Variant** à partir du dossier Resources.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
+![Unity avec le composant Photon Room partiellement configuré](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 
-L’objet enfant **NetworkRoom** étant toujours sélectionné, dans la fenêtre Hierarchy, développez l’objet **TableAnchor** . Ensuite, dans la fenêtre Inspector, localisez le composant **Photon Room (Script)** et configurez-le comme suit :
+L’objet enfant **NetworkRoom** étant toujours sélectionné, dans la fenêtre Hierarchy, développez l’objet **TableAnchor**. Ensuite, dans la fenêtre Inspector, localisez le composant **Photon Room (Script)** et configurez-le comme suit :
 
 * Affectez au champ **Rover Explorer Location** l’objet enfant TableAnchor > **Table** à partir de la fenêtre Hierarchy.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
+![Unity avec le composant Photon Room configuré](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
 
 ## <a name="trying-the-experience-with-shared-object-movement"></a>Essai de l’expérience avec le mouvement d’objet partagé
 
 Vous pouvez à présent générer le projet Unity et le déployer sur votre HoloLens. De retour dans Unity, si vous appuyez sur le bouton Play pour passer en mode Game pendant que l’application s’exécute sur votre HoloLens, vous voyez l’objet se déplacer dans Unity quand vous le déplacez dans HoloLens :
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
+![Animation montrant Unity avec des objets en réseau](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
 
 ## <a name="congratulations"></a>Félicitations
 

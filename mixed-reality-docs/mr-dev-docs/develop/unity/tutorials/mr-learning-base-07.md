@@ -1,18 +1,18 @@
 ---
 title: Tutoriels de démarrage - 7. Interaction avec les objets 3D
-description: Ce cours montre comment utiliser Mixed Reality Toolkit (MRTK) pour créer une application de réalité mixte.
+description: Ce cours vous montre comment utiliser Mixed Reality Toolkit (MRTK) pour interagir avec des objets 3D.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 0cedd731fc795341532a8a330f4fdcce9fba47b0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697615"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353517"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interaction avec les objets 3D
 
@@ -53,7 +53,7 @@ Dans la fenêtre de hiérarchie, développez l’objet RoverExplorer > **RoverPa
 * Le composant **NearInteractionGrabbable**
 * Le composant **Part Assembly Controller (Script)**
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-1.png)
+![Unity avec RoverAssembly et tous les objets de composant du Rover sélectionnés, et les composants ajoutés](images/mr-learning-base/base-07-section1-step1-1.png)
 
 > [!TIP]
 > Pour sélectionner plusieurs objets qui ne sont pas les uns à côté des autres, appuyez sur la touche Ctrl et maintenez-la enfoncée pendant que vous utilisez la souris pour sélectionner un objet.
@@ -68,47 +68,47 @@ Toujours avec les objets de pièces de Rover et l’objet RoverAssembly sélecti
 
 * Dans la liste déroulante **Two Handed Manipulation Type** (Type de manipulation à deux mains), décochez Scale (Mise à l’échelle) afin que seuls **Move** (Déplacer) et **Rotate** (Faire pivoter) soient activés.
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
+![Unity avec Two Handed Manipulation Type configuré](images/mr-learning-base/base-07-section1-step1-2.png)
 
 > [!NOTE]
 > À ce stade, vous avez activé la manipulation d’objet pour tous les objets de pièces de Rover et l’objet RoverAssembly.
 
 Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** pour localiser les clips audio :
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-3.png)
+![Fenêtre de projet Unity avec le dossier Audio sélectionné](images/mr-learning-base/base-07-section1-step1-3.png)
 
 Dans la fenêtre de hiérarchie, resélectionnez tous les **objets de pièces de Rover** puis, dans la fenêtre de l’inspecteur, utilisez le bouton **Add Component** pour ajouter le composant **Audio Sources** et configurez-le comme suit :
 
-* Affectez le clip audio **MRTK_Scale_Start** au champ **AudioClip** .
+* Affectez le clip audio **MRTK_Scale_Start** au champ **AudioClip**.
 * Décochez la case **Play On Awake** (Lire en cas d’activité)
-* Affectez la valeur 1 à **Spatial Blend** .
+* Affectez la valeur 1 à **Spatial Blend**.
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-4.png)
+![Unity avec tous les objets de composant du Rover sélectionnés, et le composant Audio Source ajouté et configuré](images/mr-learning-base/base-07-section1-step1-4.png)
 
 Dans la fenêtre de hiérarchie, développez l’objet RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** pour révéler tous les objets d’indicateur de placement, puis sélectionnez la première pièce de Rover, RoverParts > **Camera_Part** , et configurez le composant **Part Assembly Controller (Script)** comme suit :
 
 * Assignez l’objet **Camera_PlacementHint** au champ **Location To Place** (Emplacement).
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-5.png)
+![Unity avec composant Camera_Part PartAssemblyController configuré](images/mr-learning-base/base-07-section1-step1-5.png)
 
 **Répétez** cette étape pour chacun des objets de pièces de Rover restants et l’objet RoverAssembly afin de configurer le composant **Part Assembly Controller (Script)** comme suit :
 
-* Pour **Generator_Part** , assignez l’objet **Generator_PlacementHint** au champ **Location To Place** .
-* Pour **Lights_Part** , assignez l’objet **Lights_PlacementHint** au champ **Location To Place** .
-* Pour **UHFAntenna_Part** , assignez l’objet **UHFAntenna_PlacementHint** au champ **Location To Place** .
-* Pour **Spectrometer_Part** , assignez l’objet **Spectrometer_PlacementHint** au champ **Location To Place** .
-* Pour **RoverAssembly** , assignez l’objet lui-même (c’est-à-dire le même objet **RoverAssembly** ), au champ **Location To Place** .
+* Pour **Generator_Part** , assignez l’objet **Generator_PlacementHint** au champ **Location To Place**.
+* Pour **Lights_Part** , assignez l’objet **Lights_PlacementHint** au champ **Location To Place**.
+* Pour **UHFAntenna_Part** , assignez l’objet **UHFAntenna_PlacementHint** au champ **Location To Place**.
+* Pour **Spectrometer_Part** , assignez l’objet **Spectrometer_PlacementHint** au champ **Location To Place**.
+* Pour **RoverAssembly** , assignez l’objet lui-même (c’est-à-dire le même objet **RoverAssembly** ), au champ **Location To Place**.
 
 Dans la fenêtre de hiérarchie, sélectionnez l’objet de bouton RoverExplorer > Buttons > **Reset** puis, dans la fenêtre de l’inspecteur, configurez l’événement **OnClick ()** comme suit :
 
 * Assignez l’objet **RoverAssembly** au champ **None (Object)** .
 * Dans la liste déroulante **No Function** , sélectionnez **PartAssemblyController** > **ResetPlacement ()** pour définir cette fonction en tant qu’action à exécuter lorsque l’événement est déclenché.
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
+![Unity avec l’événement OnClick de l’objet de bouton Reset configuré](images/mr-learning-base/base-07-section1-step1-6.png)
 
 Si vous basculez maintenant en mode Game, vous pouvez utiliser l’interaction proche ou lointaine pour placer les pièces sur le Rover. Une fois que la pièce est proche de l’indicateur de placement correspondant, elle s’imbrique en place et devient partie intégrante du Rover. Pour réinitialiser les placements, vous pouvez appuyer sur le bouton Reset :
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-7.png)
+![Vue partagée du mode Play d’Unity avec le bouton Reset enfoncé](images/mr-learning-base/base-07-section1-step1-7.png)
 
 Pour en savoir plus sur le composant Object Manipulator et ses propriétés associées, vous pouvez consulter le guide [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) dans le [portail de la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -125,7 +125,7 @@ Dans la fenêtre de hiérarchie, sélectionnez l’objet **RoverExplorer** puis,
 
 Ensuite, **décochez** la case à côté des deux composants afin qu’ils soient **désactivés** par défaut :
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
+![Unity avec l’objet RoverExplorer sélectionné, et des composants ajoutés et désactivés](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
 > La visualisation des cadres englobants est créée au moment de l’exécution, et n’est donc pas visible avant l’entrée en mode Game.
@@ -138,32 +138,32 @@ Dans la fenêtre de hiérarchie, développez l’objet Menu > **ButtonCollection
 * Affectez la valeur **Enable** à **Main Label Text** (Texte de l'étiquette principale).
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
 * Dans la liste déroulante **No Function** , sélectionnez **BoundingBox** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
-* Vérifiez que la case de l’argument est **cochée** .
+* Vérifiez que la case de l’argument est **cochée**.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
 * Dans la liste déroulante **No Function** , sélectionnez **ObjectManipulator** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
-* Vérifiez que la case de l’argument est **cochée** .
-* Conservez « cube avec cadre englobant » comme **icône** .
+* Vérifiez que la case de l’argument est **cochée**.
+* Conservez « cube avec cadre englobant » comme **icône**.
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-2.png)
+![Unity avec l’objet de bouton BoundingBox_Enable sélectionné et le composant Button Config Helper configuré](images/mr-learning-base/base-07-section2-step1-2.png)
 
 Renommez **BoundingBox_Disable** les quatrième et dernier bouton puis, dans la fenêtre de l’inspecteur, configurez le composant **Button Config Helper (Script)** comme suit :
 
-* Affectez la valeur **Disable** à **Main Label Text** .
+* Affectez la valeur **Disable** à **Main Label Text**.
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
 * Dans la liste déroulante **No Function** , sélectionnez **BoundingBox** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
-* Vérifiez que la case de l’argument est **décochée** .
+* Vérifiez que la case de l’argument est **décochée**.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
 * Dans la liste déroulante **No Function** , sélectionnez **ObjectManipulator** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
-* Vérifiez que la case de l’argument est **décochée** .
+* Vérifiez que la case de l’argument est **décochée**.
 * Remplacez l’ **icône** par « cube avec cadre englobant ».
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-3.png)
+![Unity avec l’objet de bouton BoundingBox_Disable sélectionné et le composant Button Config Helper configuré](images/mr-learning-base/base-07-section2-step1-3.png)
 
 Si vous basculez maintenant en mode Game et que vous activez le cadre englobant en cliquant sur le bouton Enable, vous pouvez utiliser l’interaction proche ou lointaine pour déplacer, faire pivoter et mettre à l’échelle le cadre englobant, et utiliser le bouton Disable pour désactiver le cadre englobant :
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-4.png)
+![Vue partagée du mode Play d’Unity avec le cadre englobant manipulé](images/mr-learning-base/base-07-section2-step1-4.png)
 
 Pour plus d’informations sur le composant Bounding Box et ses propriétés associées, vous pouvez consulter le guide [Bounding Box](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) dans le [portail de la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 

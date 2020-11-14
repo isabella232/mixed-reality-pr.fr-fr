@@ -1,18 +1,18 @@
 ---
 title: Tutoriels Azure Spatial Anchors - 4. Affichage du feedback Azure Spatial Anchors
-description: Suivez ce cours pour découvrir comment implémenter Azure Spatial Anchors dans une application de réalité mixte.
+description: Suivez ce cours pour découvrir comment afficher le feedback Azure Spatial Anchors dans une application de réalité mixte.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: c36fa20ae6438aee92d5d853febd683e01e81ea7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698004"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353337"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Affichage du feedback Azure Spatial Anchors
 
@@ -25,9 +25,9 @@ Dans ce tutoriel, vous allez voir comment fournir aux utilisateurs un feedback s
 
 ## <a name="setting-up-asa-feedback-panel"></a>Apprendre à configurer un panneau de feedback ASA
 
-Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **Instructions** > **TextContent** . Sélectionnez **3D Object** > **Text - TextMeshPro** pour créer un objet de texte TextMeshPro en tant qu’enfant de l’objet Instructions > TextContent :
+Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **Instructions** > **TextContent**. Sélectionnez **3D Object** > **Text - TextMeshPro** pour créer un objet de texte TextMeshPro en tant qu’enfant de l’objet Instructions > TextContent :
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-1.png)
+![Unity avec l’objet TextMeshPro nouvellement créé sélectionné](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
 > Pour faciliter l’utilisation de votre scène, désactivez <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> pour l’objet ParentAnchor en cliquant sur l’icône œil à gauche de l’objet. Ceci masque l’objet dans la fenêtre Scene sans changer sa visibilité dans le jeu.
@@ -44,13 +44,13 @@ Choisissez ensuite les propriétés de police de sorte que le texte s’ajuste c
 * Pour le composant TextMeshPro - Text, configurez la valeur de **Font Size** sur 0.17.
 * Pour le composant TextMeshPro - Text, configurez la valeur de **Alignment** sur Center et Middle.
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
+![Unity avec un objet Feedback configuré](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
 Dans la fenêtre Hierarchy, sélectionnez l’objet **Feedback** , puis, dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le composant **Anchor Feedback Script (Script)** et le configurer de la façon suivante :
 
 * Affectez l’objet **Feedback** au champ **Feedback Text** du composant **Anchor Feedback Script (Script)** .
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-3.png)
+![Unity avec le composant Anchor Feedback Script configuré](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
 ## <a name="congratulations"></a>Félicitations
 

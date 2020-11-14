@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Windows Mixed Reality, conception, processus, étude de cas
-ms.openlocfilehash: f08115879d09d0be7ef8cae12ea0a4c15991a576
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386245"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631507"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Réfléchir différemment pour la réalité mixte
 Lorsque Microsoft a lancé HoloLens (1ère génération) à une audience de développeurs hâtif dans 2016, l’équipe s’est déjà associée à des Studios à l’intérieur et à l’extérieur de Microsoft pour créer les expériences de lancement de l’appareil. Ces équipes ont appris sur le tas, trouvant des opportunités et des défis dans le nouveau domaine de la conception de réalité mixte.
@@ -130,11 +130,10 @@ Les fournitures d’art simples et bon marché sont essentielles pour fournir au
 
 ## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
 
-Si vous suivez le [parcours de découverte](get-started-with-mr.md) que nous avons disposé, vous êtes au cœur de l’exploration des principes fondamentaux de la réalité mixte. À partir de là, vous pouvez passer à la rubrique suivante : 
+Félicitations, vous avez terminé le cœur du parcours de découverte de la réalité mixte ! Vous pouvez revenir à la page de [parcours](get-started-with-mr.md) principale de la découverte et [découvrir comment les partenaires de l’industrie utilisent la réalité mixte](get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality) et [explorent le HoloLens](get-started-with-mr.md#explore-hololens-and-mixed-reality-services), ou commencez vos voyages de conception ou de développement :
 
 > [!div class="nextstepaction"]
-> [Confort de l’utilisateur](../design/comfort.md)
+> [Commencez votre parcours de conception](../design/design.md)
 
-## <a name="see-also"></a>Voir aussi
-* [Étude de cas-ma première année dans l’équipe de conception HoloLens](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)
-* [Étude de cas : AfterNow, prototypage, création de processus](https://developer.microsoft.com/windows/mixed-reality/case_study_-_afternow's_process_-_envisioning,_prototyping,_building)
+> [!div class="nextstepaction"]
+> [Démarrez votre parcours de développement](../develop/development.md)

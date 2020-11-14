@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, ancres spatiales Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 2c10d7458fc956cb8974319cd5355260179f10b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697836"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353247"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Intégration d’Azure Spatial Anchors
 
-Dans ce tutoriel, vous allez découvrir comment utiliser **Azure Spatial Anchors** . Vous allez stocker l’emplacement d’un **objet suivi** en tant qu’ancre spatiale Azure. Une fois que vous avez interrogé l’ancre, une flèche s’affiche pour vous guider vers la localisation.
+Dans ce tutoriel, vous allez découvrir comment utiliser **Azure Spatial Anchors**. Vous allez stocker l’emplacement d’un **objet suivi** en tant qu’ancre spatiale Azure. Une fois que vous avez interrogé l’ancre, une flèche s’affiche pour vous guider vers la localisation.
 
 ## <a name="objectives"></a>Objectifs
 
@@ -26,7 +26,7 @@ Dans ce tutoriel, vous allez découvrir comment utiliser **Azure Spatial Anchors
 
 ## <a name="understanding-azure-spatial-anchors"></a>Présentation d’Azure Spatial Anchors
 
- **Azure Spatial Anchors** fait partie de la famille Azure Cloud Services. Sa fonction est d’enregistrer les emplacements d’ancrage. Les emplacements d’ancrage enregistrés peuvent être récupérés à partir du cloud d’après l’ *ID d’ancre* . Ces emplacements d’ancrage peuvent être partagés et sollicités par des appareils multiplateformes tels que des appareils HoloLens, iOS et Android.
+ **Azure Spatial Anchors** fait partie de la famille Azure Cloud Services. Sa fonction est d’enregistrer les emplacements d’ancrage. Les emplacements d’ancrage enregistrés peuvent être récupérés à partir du cloud d’après l’ *ID d’ancre*. Ces emplacements d’ancrage peuvent être partagés et sollicités par des appareils multiplateformes tels que des appareils HoloLens, iOS et Android.
 
 Apprenez-en davantage sur [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview).
 
@@ -39,19 +39,19 @@ Découvrez comment créer une [ressource Spatial Anchors](https://docs.microsoft
 
 Dans cette section, vous allez découvrir comment configurer la scène et apporter les modifications nécessaires.
 
-Dans la fenêtre Project, accédez à **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager** .
+Dans la fenêtre Project, accédez à **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![Unity avec le préfabriqué AnchorManager sélectionné](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 Dans le dossier **Manager** , glissez-déposez le préfabriqué **Anchor Manager** vers la hiérarchie de la scène.
 
 Sélectionnez **Anchor Manager** GameObject dans la hiérarchie et, dans la section Inspector, vous trouverez **Spatial Anchor Manager** (Script). Recherchez l’ID de compte et le champ de clé, puis ajoutez les informations d’identification que vous avez créées dans la section Prérequis à l’étape précédente.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step2-1.png)
+![Unity avec le préfabriqué AnchorManager nouvellement ajouté toujours sélectionné](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
-À présent, recherchez l’objet **Scene Controller** dans la hiérarchie de votre scène et sélectionnez-le. Vous verrez l’inspecteur **Scene Controller** .
+À présent, recherchez l’objet **Scene Controller** dans la hiérarchie de votre scène et sélectionnez-le. Vous verrez l’inspecteur **Scene Controller**.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step3-1.png)
+![Unity avec le composant de script SceneController configuré](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
 Vous remarquerez que le champ **Anchor Manager** du composant **Scene Controller** est vide. Glissez-déposez l’ **Anchor Manager** de la hiérarchie de la scène vers ce champ et enregistrez la scène.
 
@@ -72,7 +72,7 @@ Exécutez l’application et cliquez sur **Set Object** (Définir un objet) dans
 
 Indiquez le **nom** de l’objet que vous souhaitez enregistrer, puis cliquez sur **Set Object** pour continuer. Pour ajouter des informations supplémentaires sur l’objet, sélectionnez l’ **image** et décrivez l’objet.
 
-Pour enregistrer l’emplacement, cliquez sur **Save Location** .
+Pour enregistrer l’emplacement, cliquez sur **Save Location**.
 
 Vous verrez un **pointeur d’ancrage** que vous pouvez déplacer et positionner à l’emplacement que vous souhaitez enregistrer. Après cela, une fenêtre contextuelle de confirmation s’affiche. Si vous souhaitez confirmer et enregistrer l’emplacement, cliquez sur **Yes**  ; dans le cas contraire, vous pouvez changer l’emplacement en cliquant sur **No** et en sélectionnant à nouveau l’emplacement.
 
@@ -86,7 +86,7 @@ Une fois que vous avez enregistré correctement l’emplacement d’ancrage, vou
 
 Quand vous cliquez sur **Search Object** , une nouvelle fenêtre s’affiche, dans laquelle vous devez indiquer le nom de l’objet à rechercher.
 
-Entrez le nom de l’objet et cliquez sur **Search Object** . Si l’objet a été enregistré précédemment et se trouve dans la base de données, vous obtiendrez la fiche de l’objet avec tous les détails de l’objet que vous avez enregistré.
+Entrez le nom de l’objet et cliquez sur **Search Object**. Si l’objet a été enregistré précédemment et se trouve dans la base de données, vous obtiendrez la fiche de l’objet avec tous les détails de l’objet que vous avez enregistré.
 
 Vous pouvez maintenant cliquer sur **Show Location** (Afficher l’emplacement) pour rechercher l’objet. Quand vous cliquez sur **Show Location** , le système interroge le stockage cloud afin de connaître l’adresse de l’objet.
 

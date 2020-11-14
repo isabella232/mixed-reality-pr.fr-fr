@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR,
-ms.openlocfilehash: def16b5bff13fec13ce0ebb503ec88dfca22e0b8
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293066"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573213"
 ---
 # <a name="start-your-vr-journey"></a>Commencer votre parcours de réalité virtuelle
 
@@ -41,7 +41,7 @@ Une fois que vous avez votre appareil, vous devez l’installer et le configurer
 
 |  Point de contrôle  |  Résultat  |
 | --- | --- |
-| [Configurer Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Familiarisez-vous avec vos contrôleurs, vos limites de salle, vos entrées vocales et Microsoft Edge sur votre nouvel appareil VR |
+| [Configurer Windows Mixed Reality](set-up-windows-mixed-reality.md) | Familiarisez-vous avec vos contrôleurs, vos limites de salle, vos entrées vocales et Microsoft Edge sur votre nouvel appareil VR |
 | [FAQ sur l’installation de Windows Mixed Reality](wmr-setup-faq.md) | Obtenir des réponses et résoudre les problèmes liés aux problèmes connus lors de la configuration de Windows Mixed Reality |
 | [Instructions relatives à l’intégrité, à la sécurité et au confort](wmr-health-safety-comfort.md) | Recommandations pour rester sécurisé lors de l’utilisation de Windows Mixed Reality avant d’utiliser votre casque  |
 

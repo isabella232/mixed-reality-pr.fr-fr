@@ -6,21 +6,26 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, conception, exemple d’application, contrôles
-ms.openlocfilehash: 2f7120aaf92a6e3d7b6ace301aae7392b67fa00b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 82ffa19b27c1d2687b67df659cb3bb50544748fc
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682503"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573263"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tableau périodique des éléments
 
 >[!NOTE]
 >Cet article présente un exemple exploratoire que nous avons créé dans les [laboratoires de conception de réalité mixte](https://github.com/Microsoft/MRDesignLabs_Unity), un endroit où nous partageons nos connaissances et des suggestions concernant le développement d’applications de réalité mixte. Nos articles et code liés à la conception évoluent à mesure que nous effectuons de nouvelles découvertes.
 
-[La table périodique des éléments](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft. Avec ce projet, vous pouvez apprendre à disposer un tableau d’objets dans l’espace 3D avec différents types de surface à l’aide d’une **[collection d’objets](../../design/object-collection.md)** . Découvrez également comment créer des objets interactifs qui répondent aux entrées standard de HoloLens. Vous pouvez utiliser les composants de ce projet pour créer votre propre expérience d’application de réalité mixte.
+[La table périodique des éléments](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft. Avec ce projet, vous pouvez apprendre à disposer un tableau d’objets dans l’espace 3D avec différents types de surface à l’aide d’une **[collection d’objets](../../design/object-collection.md)**. Découvrez également comment créer des objets interactifs qui répondent aux entrées standard de HoloLens. Vous pouvez utiliser les composants de ce projet pour créer votre propre expérience d’application de réalité mixte.
 
 ![Table period de l’application Elements](images/640px-periodictable-hero.jpg)
+
+## <a name="demo-video"></a>Vidéo de démonstration 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
+
+Enregistré avec HoloLens 2 à l’aide de la capture de réalité mixte
 
 ## <a name="about-the-app"></a>À propos de l’application
 
@@ -60,52 +65,31 @@ La [collection d’objets](../../design/object-collection.md) est un objet qui v
 
 ![Collection d’objets](images/640px-periodictable-collections.jpg)
 
-### <a name="fitbox"></a>Fitbox
-
-Par défaut, les hologrammes sont placés à l’emplacement où l’utilisateur est Gazing au moment où l’application est lancée. Cela entraîne parfois des résultats indésirables, tels que des hologrammes placés derrière un mur ou au milieu d’une table. Un fitbox permet à un utilisateur d’utiliser du regard pour déterminer l’emplacement où l’hologramme sera placé. Il est créé avec une texture d’image PNG simple qui peut être facilement personnalisée avec vos propres images ou objets 3D.
-
-![Fitbox](../../design/images/450px-periodictable-fitbox.jpg)
-
 ## <a name="technical-details"></a>Détails techniques
 
 Vous trouverez scripts and prefabs pour la table Periodic de l’application Elements sur le GitHub de conception de la [réalité mixte](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable).
 
-## <a name="application-examples"></a>Exemples d’applications
+## <a name="porting-story-for-hololens-2"></a>Portage de l’histoire pour HoloLens 2
 
-Voici quelques idées de ce que vous pouvez créer en tirant parti des composants de ce projet.
+Lisez l’article sur la façon dont la table périodique de l’application d’éléments a été mise à jour avec les interactions instinctual de HoloLens 2.
 
-### <a name="stock-data-visualization-app"></a>Application de visualisation des données boursières
+[Tableau périodique des éléments 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 
-En utilisant les mêmes contrôles et le même modèle d’interaction que la table périodique de l’exemple d’éléments, vous pouvez créer une application qui visualise les données boursières. Cet exemple utilise le contrôle de collection d’objets pour présenter les données boursières dans une forme sphérique. Vous pouvez imaginer un affichage détaillé où des informations supplémentaires sur chaque stock peuvent être affichées d’une manière intéressante.
 
-![Exemple d’application : Finance (1 sur 3)](images/640px-periodictable-applicationexamples-finance1.jpg)
 
-![Exemple d’application : Finance (2 sur 3)](images/640px-periodictable-applicationexamples-finance2.jpg)
-
-![Exemple d’application : Finance (3 sur 3)](images/640px-periodictable-applicationexamples-finance3.jpg)<br>
-*Exemple de la façon dont la collection d’objets utilisée dans la table périodique de l’exemple d’application Elements peut être utilisée dans une application finance*
-
-### <a name="sports-app"></a>Application sportive
-
-Voici un exemple de visualisation de données sportives à l’aide de la collection d’objets et d’autres composants de la table périodique de l’exemple d’application d’éléments.
-
-![Exemple d’application : sports (1 sur 3)](images/640px-periodictable-applicationexamples-sports0.jpg)
-
-![Exemple d’application : sports (2 sur 3)](images/640px-periodictable-applicationexamples-sports1.jpg)
-
-![Exemple d’application : sports (3 sur 3)](images/640px-periodictable-applicationexamples-sports3.jpg)<br>
-*Exemple de la façon dont la collection d’objets utilisée dans la table périodique de l’exemple d’éléments appcould doit être utilisée dans une application sportive*
 
 ## <a name="about-the-author"></a>À propos de l’auteur
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>Dong Yoon Park</b><br>Concepteur UX @Microsoft</td>
+<td style="border-style: none"><b>Dong Yoon Park</b><br>Concepteur d’expérience utilisateur @Microsoft</td>
 </tr>
 </table>
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Objet avec interaction possible](../../design/interactable-object.md)
-* [Collection d’objets](../../design/object-collection.md)
+* [Hub d’exemples MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(téléchargement à partir du Microsoft Store dans HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Surfaces](sampleapp-surfaces.md) - [(téléchargement à partir du Microsoft Store dans HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [Tableau périodique des éléments 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

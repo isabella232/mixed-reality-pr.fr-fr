@@ -1,20 +1,20 @@
 ---
-title: Tutoriels sur les fonctionnalités multiutilisateurs - 1. Introduction
-description: Suivez ce cours pour apprendre à implémenter des expériences partagées multi-utilisateurs dans une application HoloLens 2.
+title: Tutoriels sur les fonctionnalités multiutilisateurs - 1. Présentation des tutoriels sur les fonctionnalités multi-utilisateurs
+description: Suivez ce cours pour découvrir comment implémenter des expériences multi-utilisateurs partagées dans une application HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 179ed341ffc2e34b94da887dd4c52d33bec6834e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0a94bd7c939315f8c407b1f238c124e6c0c6a964
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698802"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353407"
 ---
-# <a name="1-introduction"></a>1. Introduction
+# <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. Présentation des tutoriels sur les fonctionnalités multi-utilisateurs
 
 ## <a name="overview"></a>Vue d’ensemble
 

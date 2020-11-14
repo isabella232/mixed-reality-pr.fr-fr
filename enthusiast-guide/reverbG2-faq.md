@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
 appliesto:
 - Windows 10
-ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
-ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
+ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94498284"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573203"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Forum aux questions sur les réverbérations HP G2
 
@@ -36,13 +36,15 @@ Voici quelques opérations que vous pouvez essayer si vous estimez que votre aff
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>J’obtiens une erreur 7-14 «un problème s’est produit lors de la connexion au casque
 
+Le code d’erreur 7-14 signifie que certains des composants USB2 requis n’ont pas été trouvés.  En raison du câble très long de la réverbération de HP G2, certaines des tolérances pour les signaux USB sont plus strictes.  Cela signifie qu’un port sur votre ordinateur peut fonctionner plus efficacement qu’un autre.
+
 Si vous constatez une erreur 7-14 « une erreur s’est produite », procédez comme suit :
 
-- Assurez-vous que les pilotes les plus récents sont installés.
-- Essayez de brancher le câble sur un port USB-3,0 différent.
-- Utilisez le C USB sur un adaptateur inclus pour essayer d’autres ports.
-
-Essayez de brancher le câble sur un autre concentrateur USB.  
+- Assurez-vous que les pilotes les plus récents sont installés pour votre casque et votre contrôleur USB.
+- Vérifiez que vous utilisez un pilote USB Microsoft. Il doit y avoir un « Microsoft » dans le nom de l’appareil « contrôleur hôte eXtensible ».
+- Essayez de brancher le câble sur un port USB-3,0 différent sur votre ordinateur. (Essayez le type USB-C et tapez-A ports)
+- Utilisez le C USB inclus sur un adaptateur inclus pour essayer différents ports.
+- Essayez de brancher le casque sur votre ordinateur via un concentrateur USB.
 
 > [!NOTE]
 > HP recommande d’utiliser uniquement des contrôleurs USB intégrés à la carte mère avec des appareils G2 de réverbération.

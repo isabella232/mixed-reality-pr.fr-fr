@@ -1,5 +1,5 @@
 ---
-title: Tutoriels de démarrage - 1. Introduction
+title: Tutoriels de démarrage - 1. Présentation des tutoriels de démarrage
 description: Ce cours montre comment utiliser Mixed Reality Toolkit (MRTK) pour créer une application de réalité mixte à partir de rien.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 6d6be08aa532de22a30e70274859eda466a78204
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 992d864d7e016c3d0906366d10993ff0559afc06
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697764"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416897"
 ---
-# <a name="1-introduction"></a>1. Introduction
+# <a name="1-introduction-to-the-getting-started-tutorials"></a>1. Présentation des tutoriels de démarrage
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -44,13 +44,13 @@ Les tutoriels de cette série se suivent, il est donc important de respecter l�
 * PC Windows 10 configuré avec les [outils appropriés installés](../../install-the-tools.md)
 * [SDK Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 ou ultérieur
 * Appareil HoloLens 2 [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2019.3.15 installé et le module de prise en charge de la build d’applications de plateforme Windows universelle ajouté
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2019 LTS installé et le module de prise en charge de la build d’applications de plateforme Windows universelle ajouté
 
 > [!CAUTION]
 > La version MRTK recommandée pour cette série de tutoriels est MRTK 2.4.0.
 
 > [!CAUTION]
-> La version Unity recommandée pour cette série de tutoriels est Unity 2019.3.15. Elle remplace toutes les versions Unity requises qui sont indiquées dans les prérequis ci-dessus.
+> La version d’Unity recommandée pour cette série de tutoriels est Unity 2019 LTS. Elle remplace toutes les versions Unity requises qui sont indiquées dans les prérequis ci-dessus.
 
 > [!div class="nextstepaction"]
 > [Tutoriel suivant : 2. Initialisation de votre projet et déploiement de votre première application](mr-learning-base-02.md)
