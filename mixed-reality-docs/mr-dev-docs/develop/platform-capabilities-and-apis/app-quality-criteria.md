@@ -5,13 +5,13 @@ author: cjdgit
 ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
-keywords: critères de qualité des applications, réalité mixte, application de réalité mixte
-ms.openlocfilehash: 96d446e1f6f5649f842d674ea4692d619894cc32
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: critères de qualité des applications, réalité mixte, application de réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: c18f4e8470f7f183fdf250472fd3a977f925dfbf
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679319"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677988"
 ---
 # <a name="app-quality-criteria"></a>Critères de qualité des applications
 
@@ -176,7 +176,7 @@ Un mauvais alignement des hologrammes avec des objets physiques (s’ils sont de
 
 |  La meilleure  |  Présente |  Échec |
 --- | --- | ---
-| Les hologrammes s’alignent sur la surface généralement dans la plage de centimètres en pouces. Si une plus grande précision est requise, l’application doit fournir un moyen efficace de collaboration au sein de la spécification de l’application souhaitée. | N/D | Les hologrammes apparaissent non alignés avec l’objet cible physique en rompant le plan de surface ou en s’éloignant de l’aire. Si la précision est requise, les hologrammes doivent répondre aux spécifications de proximité du scénario. | 
+| Les hologrammes s’alignent sur la surface généralement dans la plage de centimètres en pouces. Si une plus grande précision est requise, l’application doit fournir un moyen efficace de collaboration au sein de la spécification de l’application souhaitée. | NA | Les hologrammes apparaissent non alignés avec l’objet cible physique en rompant le plan de surface ou en s’éloignant de l’aire. Si la précision est requise, les hologrammes doivent répondre aux spécifications de proximité du scénario. | 
 
 ### <a name="how-to-measure"></a>Comment mesurer
 

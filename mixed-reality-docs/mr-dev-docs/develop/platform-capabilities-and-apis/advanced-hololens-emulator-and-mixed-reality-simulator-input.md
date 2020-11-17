@@ -5,13 +5,13 @@ author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
-keywords: HoloLens, émulateur, simulation, Windows Mixed Reality
-ms.openlocfilehash: 7a9bcfe8534c97d1ac9d9f67ba3e76dff941e7b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, émulateur, simulation, Windows Mixed Reality, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: 59e163c61b620fb1e203fe651d22cc45c2074d19
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679322"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679618"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Entrées avancées dans l’émulateur HoloLens et le simulateur de réalité mixte
 
@@ -22,29 +22,29 @@ La plupart des utilisateurs de l’émulateur auront uniquement besoin d’utili
 Pour commencer à contrôler l’entrée virtuelle dans l’émulateur HoloLens et le simulateur Windows Mixed Reality, vous devez d’abord comprendre quelques concepts.
 
 Motion fait référence au contrôle et à la modification de la position et de l’orientation d’un événement dans la scène. Pour un objet contrôlable ciblé, motion est contrôlé avec la rotation et la translation (mouvement) sur trois axes.
-* **Lacet** : tournez à gauche ou à droite.
-* Pas de **hauteur** : activer ou désactiver.
-* **Roll** : Roll-to-Side.
-* **X** : déplacer vers la gauche ou vers la droite.
-* **Y** : monter ou descendre.
-* **Z** : déplacer vers l’avant ou vers l’arrière.
+* **Lacet**: tournez à gauche ou à droite.
+* Pas de **hauteur**: activer ou désactiver.
+* **Roll**: Roll-to-Side.
+* **X**: déplacer vers la gauche ou vers la droite.
+* **Y**: monter ou descendre.
+* **Z**: déplacer vers l’avant ou vers l’arrière.
 
 Les entrées de contrôleur de mouvement et de mouvement sont mappées de près à la façon dont elles sont les appareils physiques :
-* **Action** : cela simule l’action d’appuyer sur le index sur le curseur ou d’extraire le bouton d’action d’un contrôleur. Par exemple, l’entrée d’action peut être utilisée pour simuler le mouvement d’appui sur l’air, pour faire défiler le contenu et pour appuyer et maintenir.
-* **[Bloom](../../design/system-gesture.md#bloom)Geste ou page d’habitation/** : le geste de système et de réseau HoloLens ou le bouton d’hébergement d’un contrôleur est utilisé pour retourner à l’interpréteur de commandes et effectuer des actions système.
+* **Action**: cela simule l’action d’appuyer sur le index sur le curseur ou d’extraire le bouton d’action d’un contrôleur. Par exemple, l’entrée d’action peut être utilisée pour simuler le mouvement d’appui sur l’air, pour faire défiler le contenu et pour appuyer et maintenir.
+* **[Bloom](../../design/system-gesture.md#bloom)Geste ou page d’habitation/**: le geste de système et de réseau HoloLens ou le bouton d’hébergement d’un contrôleur est utilisé pour retourner à l’interpréteur de commandes et effectuer des actions système.
 
 Les mains ont une représentation riche dans HoloLens 2.  En plus de faire l’objet d’un suivi/non suivi, et d’être utilisable pour la conduite de mouvements, les mains disposent désormais d’un modèle de squelette articulé qui leur est adapté et exposé au développeur.  Cela présente 26 points suivis sur chaque main.  
-* **Joint** : l’un des vingt positions suivies pour une main donnée. Un point est alors associé à l’espace 3D.
-* **Pose** : collection complète de tous les joints dans une main. À ce stade, il s’agit d’une collection de 26 jointures. 
+* **Joint**: l’un des vingt positions suivies pour une main donnée. Un point est alors associé à l’espace 3D.
+* **Pose**: collection complète de tous les joints dans une main. À ce stade, il s’agit d’une collection de 26 jointures. 
 
 À ce stade, nous n’exposent pas le contrôle direct de chaque position conjointe individuellement par le biais de l’interface utilisateur de l’émulateur, même si vous pouvez les définir via l’API de simulation. Au lieu de cela, nous disposons d’un ensemble de jeux représentatifs utiles que l’émulateur vous permet de basculer entre.
 
 Vous pouvez également contrôler l’état de l’entrée de capteur simulé :
-* **Réinitialisation** : tous les capteurs simulés sont retournés à leurs valeurs par défaut.  À partir de l’émulateur HoloLens 2, une réinitialisation peut être étendue à l’un ou aux deux mains en faisant passer la ou les mains souhaitées à l’aide de la ou des touches de modification appropriées ou des boutons (gauche et/ou droit Alt, ou de gauche et/ou de droite sur le boîtier de sélection).
-* **Suivi** : parcourt les modes de suivi positionnel. Cela comprend :
-  * **Valeur par défaut** : le système d’exploitation choisit le mode de suivi le plus approprié en fonction des demandes effectuées sur le système.
-   * **Orientation** : force le suivi de l’orientation uniquement, quelles que soient les demandes effectuées sur le système.
-   * **Positional** : force le suivi positionnel, quelles que soient les demandes effectuées sur le système.
+* **Réinitialisation**: tous les capteurs simulés sont retournés à leurs valeurs par défaut.  À partir de l’émulateur HoloLens 2, une réinitialisation peut être étendue à l’un ou aux deux mains en faisant passer la ou les mains souhaitées à l’aide de la ou des touches de modification appropriées ou des boutons (gauche et/ou droit Alt, ou de gauche et/ou de droite sur le boîtier de sélection).
+* **Suivi**: parcourt les modes de suivi positionnel. notamment :
+  * **Valeur par défaut**: le système d’exploitation choisit le mode de suivi le plus approprié en fonction des demandes effectuées sur le système.
+   * **Orientation**: force le suivi de l’orientation uniquement, quelles que soient les demandes effectuées sur le système.
+   * **Positional**: force le suivi positionnel, quelles que soient les demandes effectuées sur le système.
 
 ## <a name="types-of-input"></a>Types d’entrée
 
@@ -85,7 +85,7 @@ Le tableau suivant décrit les options de ciblage et la manière d’activer cha
 
 | Object | Modificateur de clavier | Modificateur de contrôleur | Modificateur de l’interface utilisateur de l’émulateur |
 |----------|----------|----------|----------|
-| body | (par défaut) | (par défaut) | (par défaut) |
+| Corps | (par défaut) | (par défaut) | (par défaut) |
 | Head | Contenir H | (Non disponible) | (Non disponible) |
 | Main gauche/contrôleur | Maintenir le bouton gauche ALT | Bouton conserver l’épaule gauche | Punaise gauche | 
 | Main droite/contrôleur | Maintenir le bouton droit Alt | Bouton de maintien de l’épaule de droite | Clic droit |

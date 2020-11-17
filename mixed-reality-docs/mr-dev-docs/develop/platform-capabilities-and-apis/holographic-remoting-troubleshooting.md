@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: Windows Mixed Reality, hologrammes, accès distant holographique, rendu à distance, rendu réseau, HoloLens, hologrammes distants, dépannage, aide
-ms.openlocfilehash: 593b242326b83d4596d22a7e1a39ef18c26bc67a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, hologrammes, accès distant holographique, rendu à distance, rendu réseau, HoloLens, hologrammes distants, dépannage, aide, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 9577f9f028987be71fdb9cd839f86980db350f02
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679246"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679578"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Résolution des problèmes de communication à distance holographique
 

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality, conception, contrôles, police, typographie, UI, UX
-ms.openlocfilehash: 21409115ed1e9aa9103e1e77ea4aacc0881e1262
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, conception, contrôles, police, typographie, UI, UX, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682435"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677358"
 ---
 # <a name="text-in-unity"></a>Texte dans Unity
 
@@ -100,17 +100,17 @@ La matière de police par défaut d’Unity ne prend pas en charge l’occlusion
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, vous explorez actuellement les composants de base de MRTK. À partir de là, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Entrée vocale](voice-input-in-unity.md)
 
-Ou accédez aux API et fonctionnalités de la plateforme de réalité mixte :
+Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 > [!div class="nextstepaction"]
 > [Expériences partagées](shared-experiences-in-unity.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
 
 ## <a name="see-also"></a>Voir aussi

@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: photo, vidéo, hololens, appareil photo, Unity, localisable
-ms.openlocfilehash: dfbbcc21db1247a7250e5049bfd1c4f89976ac15
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: photo, vidéo, hololens, appareil photo, Unity, localisable, PVC, caméra vidéo photo, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, webcam, capture de photos, capture vidéo
+ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957799"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678598"
 ---
 # <a name="locatable-camera-in-unity"></a>Appareil photo localisable dans Unity
 
@@ -128,7 +128,7 @@ Lors de la capture de données dans un Texture2D, le processus est très similai
 
 Suivez le processus de configuration ci-dessus.
 
-Dans *OnPhotoModeStarted* , capturez un frame en mémoire.
+Dans *OnPhotoModeStarted*, capturez un frame en mémoire.
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **Espace de noms :** *UnityEngine. XR. WSA. Webcam*<br>
 **Type :** *VideoCapture*
 
-*VideoCapture* fonctionne de façon très similaire à la *PhotoCapture* . Les deux seules différences sont que vous devez spécifier une valeur d’images par seconde (FPS) et vous ne pouvez enregistrer directement sur le disque qu’en tant que fichier. MP4. Les étapes d’utilisation de *VideoCapture* sont les suivantes :
+*VideoCapture* fonctionne de façon très similaire à la *PhotoCapture*. Les deux seules différences sont que vous devez spécifier une valeur d’images par seconde (FPS) et vous ne pouvez enregistrer directement sur le disque qu’en tant que fichier. MP4. Les étapes d’utilisation de *VideoCapture* sont les suivantes :
 1. Créer un objet *VideoCapture*
 2. Créer un objet *CameraParameters* avec les paramètres souhaités
 3. Démarrer le mode vidéo via *StartVideoModeAsync*
@@ -309,7 +309,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons disposé, vous êtes en train d’explorer les fonctionnalités de la plateforme de réalité mixte et les API. À partir de là, vous pouvez passer au sujet suivant :
+Si vous suivez le parcours du point de contrôle de développement Unity que nous avons disposé, vous êtes en train d’explorer les fonctionnalités de la plateforme de réalité mixte et les API. À partir de là, vous pouvez passer à la rubrique suivante :
 
 > [!div class="nextstepaction"]
 > [Point de focus](focus-point-in-unity.md)

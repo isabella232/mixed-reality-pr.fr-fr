@@ -5,15 +5,15 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/08/2020
 ms.topic: article
-keywords: hologrammes, stabilité, hololens
+keywords: hologrammes, stabilité, hololens, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, fréquence d’images, rendu, reprojection, séparation des couleurs
 appliesto:
 - HoloLens
-ms.openlocfilehash: 21a9f7cff655ff35d32e3ca701219d4a1e41a0e2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 081a080c73a1c78eb762b94291027cf7ebcbed45
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679299"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679598"
 ---
 # <a name="hologram-stability"></a>Stabilité des hologrammes
 
@@ -26,13 +26,13 @@ Pour obtenir des hologrammes stables, HoloLens dispose d’un pipeline de stabil
 La qualité des hologrammes est un résultat d’un bon environnement et d’un développement d’applications correct. Les applications qui s’exécutent à une constante 60 images par seconde dans un environnement où HoloLens peut suivre l’environnement garantissent la synchronisation de l’hologramme et du système de coordonnées correspondant. Du point de vue de l’utilisateur, les hologrammes destinés à être stationnaires ne seront pas déplacés par rapport à l’environnement.
 
 La terminologie suivante peut vous aider lorsque vous identifiez des problèmes liés à l’environnement, à des taux de rendu incohérents ou peu élevés, ou à tout autre.
-* **Justesse.** Une fois que l’hologramme est verrouillé et placé dans le monde réel, il doit rester à l’endroit où il est placé par rapport à l’environnement environnant et indépendamment du mouvement de l’utilisateur ou des modifications de l’environnement faible et épars. Si un hologramme s’affiche plus tard dans un emplacement inattendu, il s’agit d’un problème de *précision* . De tels scénarios peuvent se produire si deux salles distinctes paraissent identiques.
+* **Précision.** Une fois que l’hologramme est verrouillé et placé dans le monde réel, il doit rester à l’endroit où il est placé par rapport à l’environnement environnant et indépendamment du mouvement de l’utilisateur ou des modifications de l’environnement faible et épars. Si un hologramme s’affiche plus tard dans un emplacement inattendu, il s’agit d’un problème de *précision* . De tels scénarios peuvent se produire si deux salles distinctes paraissent identiques.
 * **Instabilité.** Les utilisateurs observent le bougé comme un tremblement haute fréquence d’un hologramme, ce qui peut se produire lorsque le suivi de l’environnement se dégrade. Pour les utilisateurs, la solution exécute le [Paramétrage du capteur](../../sensor-tuning.md).
 * **Judder.** Une faible fréquence de rendu entraîne des mouvements inégaux et des images double d’hologrammes. Judder est particulièrement visible dans les hologrammes avec motion. Les développeurs doivent conserver une [constante de 60 fps](hologram-stability.md#frame-rate).
 * **Cession.** Les utilisateurs voient la dérive lorsqu’un hologramme s’éloigne de l’endroit où il a été placé à l’origine. La dérive se produit lorsque les hologrammes sont placés loin des [ancres spatiales](../../design/spatial-anchors.md), en particulier dans les parties de l’environnement qui ne sont pas entièrement mappées. La création d’hologrammes proches des ancres spatiales réduit la probabilité de dérive.
 * **Jumpiness.** Quand un hologramme « sort » ou « saute » à son emplacement, parfois. Jumpiness peut se produire lorsque le suivi ajuste les hologrammes pour correspondre à la compréhension mise à jour de votre environnement.
 * **Jeter.** Lorsqu’un hologramme apparaît sur le Sway correspondant au mouvement de la tête de l’utilisateur. Cet événement se produit lorsque l’application n’a pas été [entièrement implémentée et que](hologram-stability.md#reprojection)la vue HoloLens n’est pas [étalonnée](../../calibration.md) pour l’utilisateur actuel. L’utilisateur peut réexécuter l’application d' [étalonnage](../../calibration.md) pour résoudre le problème. Les développeurs peuvent mettre à jour le plan de stabilisation pour améliorer la stabilité.
-* **Séparation des couleurs.** Les affichages dans HoloLens sont des affichages séquentiels de couleur, qui sont des canaux de couleur Flash rouge-vert-bleu-vert à 60 Hz (les champs de couleur individuels sont affichés à 240 Hz). Chaque fois qu’un utilisateur effectue le suivi d’un hologramme mobile avec ses yeux, les bords de début et de fin de l’hologramme sont séparés dans leurs couleurs constitutives, ce qui produit un effet arc-en-ciel. Le degré de séparation dépend de la vitesse de l’hologramme. Dans certains cas plus rares, le déplacement des têtes s’effectue rapidement tout en regardant un hologramme stationnaire, ce qui se traduit par une *[séparation des couleurs](hologram-stability.md#color-separation)* .
+* **Séparation des couleurs.** Les affichages dans HoloLens sont des affichages séquentiels de couleur, qui sont des canaux de couleur Flash rouge-vert-bleu-vert à 60 Hz (les champs de couleur individuels sont affichés à 240 Hz). Chaque fois qu’un utilisateur effectue le suivi d’un hologramme mobile avec ses yeux, les bords de début et de fin de l’hologramme sont séparés dans leurs couleurs constitutives, ce qui produit un effet arc-en-ciel. Le degré de séparation dépend de la vitesse de l’hologramme. Dans certains cas plus rares, le déplacement des têtes s’effectue rapidement tout en regardant un hologramme stationnaire, ce qui se traduit par une *[séparation des couleurs](hologram-stability.md#color-separation)*.
 
 ## <a name="frame-rate"></a>Fréquence d’images
 
@@ -91,7 +91,7 @@ Il existe quatre types principaux de reprojection
 * **Aucun :** Si l’application n’a aucun effet, la reprojection planaire est utilisée avec le plan de stabilisation fixe à 2 mètres dans la direction du point de regard de l’utilisateur, ce qui produit généralement des résultats sous-standard.
 
 Les applications doivent prendre des mesures spécifiques pour activer les différents types de reprojection
-* **Reprojection de profondeur :** L’application soumet son tampon de profondeur au système pour chaque frame rendu.  Sur Unity, la reprojection de profondeur s’effectue à l’aide de l’option de **mémoire tampon de profondeur partagée** dans le volet **Windows Mixed Reality Settings** sous **gestion du plug-in XR** .  Les applications DirectX appellent CommitDirect3D11DepthBuffer.  L’application ne doit pas appeler SetFocusPoint.
+* **Reprojection de profondeur :** L’application soumet son tampon de profondeur au système pour chaque frame rendu.  Sur Unity, la reprojection de profondeur s’effectue à l’aide de l’option de **mémoire tampon de profondeur partagée** dans le volet **Windows Mixed Reality Settings** sous **gestion du plug-in XR**.  Les applications DirectX appellent CommitDirect3D11DepthBuffer.  L’application ne doit pas appeler SetFocusPoint.
 * **Reprojection planaire :** Sur chaque image, les applications indiquent au système l’emplacement d’un plan à stabiliser.  Les applications Unity appellent SetFocusPointForFrame et doivent avoir une **mémoire tampon de profondeur partagée** désactivée.  Les applications DirectX appellent SetFocusPoint et ne doivent pas appeler CommitDirect3D11DepthBuffer.
 * **Reprojection plan automatique :** Pour activer, l’application doit envoyer son tampon de profondeur au système comme pour la reprojection de profondeur.  Sur HoloLens 2, l’application doit ensuite SetFocusPoint avec un point de 0, 0 pour chaque trame.  Pour la génération de HoloLens 1, l’application ne doit pas appeler SetFocusPoint.
 
@@ -146,7 +146,7 @@ La seule chose la plus importante qu’un développeur puisse faire pour stabili
 
 **Meilleures pratiques** Il n’existe pas de méthode universelle pour configurer le plan de stabilisation et il est spécifique à l’application. Notre recommandation principale est d’expérimenter et de voir ce qui convient le mieux à votre scénario. Toutefois, essayez d’aligner le plan de stabilisation avec autant de contenu que possible, car tout le contenu de ce plan est parfaitement stabilisé.
 
-Par exemple :
+Exemple :
 * Si vous disposez uniquement d’un contenu planaire (lecture de l’application de lecture vidéo), alignez le plan de stabilisation avec le plan qui contient votre contenu.
 * Si trois petites sphères sont verrouillées dans le monde, faites en sorte que le plan de stabilisation soit « coupé » par le biais des centres de tous les sphères actuellement dans la vue de l’utilisateur.
 * Si votre scène a du contenu à des profondeurs sensiblement différentes, privilégiez les autres objets.

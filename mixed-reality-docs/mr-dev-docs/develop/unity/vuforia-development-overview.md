@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
-keywords: Vuforia, marqueurs, coordonnées, frame de référence, suivi
-ms.openlocfilehash: 270588bb317b0c083500dfaaca80c075a35410b9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Vuforia, marqueurs, coordonnées, cadre de référence, suivi, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, Unity, HoloLens, suivi des appareils, mode de performances, portail des développeurs Vuforia
+ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680603"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679668"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Utilisation du moteur Vuforia avec Unity
 
@@ -46,7 +46,7 @@ Le développement d’une application de moteur Vuforia pour HoloLens est fondam
 1.  Télécharger l' [exemple de moteur Vuforia pour HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) à partir du magasin d’actifs Unity
 2.  Appliquer les [options de moteur Unity recommandées pour l’alimentation et les performances](performance-recommendations-for-unity.md)
 3.  Ajoutez les exemples de scènes aux **scènes** dans la **Build.**
-4.  Dans **paramètres de build** , basculez la plateforme de build vers **UWP** en cliquant sur le bouton Ajouter des **scènes en cours** .
+4.  Dans **paramètres de build**, basculez la plateforme de build vers **UWP** en cliquant sur le bouton Ajouter des **scènes en cours** .
 ![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
 5.  Cliquez sur le bouton **paramètres du lecteur** .  
    * Sélectionnez l’icône **UWP** et développez la section **paramètres XR** .
@@ -58,7 +58,7 @@ Le développement d’une application de moteur Vuforia pour HoloLens est fondam
 6.  Développez la section **paramètres de publication** .
    * Sous **fonctionnalités** , assurez-vous que **client Internet, webcam, microphone** et **SpatialPerception** sont sélectionnés.
    * **Remarque : SpatialPerception** doit être sélectionné uniquement si vous avez l’intention d’utiliser l’API observateur de surface.
-   * Sous **familles d’appareils prises en charge** , assurez-vous qu' **holographique** est sélectionné. 
+   * Sous **familles d’appareils prises en charge**, assurez-vous qu' **holographique** est sélectionné. 
 7.  Développez la section **résolution et présentation** .
    * Désactivez **exécuter en arrière-plan** afin que le moteur Vuforia s’interrompt lorsque l’application est placée en arrière-plan et peut accéder à nouveau à l’appareil photo lors de la reprise de l’application. 
    * Dans la liste déroulante **orientation par défaut** , assurez-vous que l’option **paysage gauche** est sélectionnée.

@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
-keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, réalité mixte, déployer sur un appareil, PC, documentation
+keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, réalité mixte, déployer sur un appareil, PC, documentation, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: abd5e5c28ec5e66c4f73df8edf5e0ac0212d170a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679815"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679118"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Déployer sur l’appareil dans Unreal
 
@@ -30,11 +30,11 @@ Les deux options vous obligent à configurer votre HoloLens pour utiliser le por
 
 ![Options de liste déroulante de lancement](images/unreal/launch-dropdown.png)
 
-2. Ouvrez le **Device Manager** . Notez que votre HoloLens ne s’affiche pas automatiquement dans la liste des appareils.
+2. Ouvrez le **Device Manager**. Notez que votre HoloLens ne s’affiche pas automatiquement dans la liste des appareils.
 
 3. Développez la section **Ajouter un appareil non répertorié** .
 
-4. Sélectionnez **HoloLens** en tant que **plateforme** .
+4. Sélectionnez **HoloLens** en tant que **plateforme**.
 
 5. Entrez l’adresse IP et les informations de port de vos appareils, séparées par un signe deux-points ( :) comme identificateur d’appareil. Par exemple, « 127.0.0.1:10 080 » (en cas de connexion via USB). Utilisez les informations d’identification du nom d’utilisateur et du mot de passe du portail de l’appareil.
 
@@ -59,4 +59,4 @@ Si vous suivez le parcours du point de contrôle de développement inréel que n
 > [!div class="nextstepaction"]
 > [Services avancés](unreal-development-overview.md#5-adding-services)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement inréels](unreal-development-overview.md#4-deploying-to-a-device) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unreal](unreal-development-overview.md#4-deploying-to-a-device) à tout moment.

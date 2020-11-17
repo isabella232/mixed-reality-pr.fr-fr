@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: Partage, ancrer, WorldAnchor, MR partageant 250, WorldAnchorTransferBatch, SpatialPerception, Azure, ancres spatiales Azure, ASA
-ms.openlocfilehash: 324aecdc89b4996625ce93514616c32d2d064ffa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Partage, ancrer, WorldAnchor, MR partageant 250, WorldAnchorTransferBatch, SpatialPerception, Azure, ancres spatiales Azure, ASA, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: c9f432a2ef26e28a2329f9fd191f680a4148ca7e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679823"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678458"
 ---
 # <a name="shared-experiences-in-unity"></a>Expériences partagées dans Unity
 
@@ -38,12 +38,12 @@ Si vous suivez le parcours du point de contrôle de développement Unity que nou
 > [!div class="nextstepaction"]
 > [Appareil photo localisable](locatable-camera-in-unity.md)
 
-Ou passez directement au déploiement de votre application sur un appareil ou un émulateur :
+Ou accéder directement au déploiement de votre application sur un appareil ou un émulateur :
 
 > [!div class="nextstepaction"]
 > [Déployer sur HoloLens ou sur des casques immersifs Windows Mixed Reality](../platform-capabilities-and-apis/using-visual-studio.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-platform-capabilities-and-apis) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-platform-capabilities-and-apis) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
 * [Expériences partagées dans Mixed Reality](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

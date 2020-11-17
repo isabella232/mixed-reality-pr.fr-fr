@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens, persistance, Unity
-ms.openlocfilehash: bb1a9b0544f9325a60c86c7424b7b451b6b4335b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, persistance, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682459"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678528"
 ---
 # <a name="persistence-in-unity"></a>Persistance dans Unity
 
@@ -109,17 +109,17 @@ Une fois que vous êtes opérationnel avec les ancres spatiales Azure, vous pouv
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au module suivant :
 
 > [!div class="nextstepaction"]
 > [Mappage spatial](spatial-mapping-in-unity.md)
 
-Ou accédez aux API et fonctionnalités de la plateforme de réalité mixte :
+Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 > [!div class="nextstepaction"]
 > [Expériences partagées](shared-experiences-in-unity.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
 * [Persistance d’ancrage spatial](../../design/coordinate-systems.md#spatial-anchor-persistence)

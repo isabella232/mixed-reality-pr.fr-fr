@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
 ms.topic: article
-keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, réalité mixte, déployer sur un appareil, PC, documentation
+keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, réalité mixte, déployer sur un appareil, PC, documentation, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5c029e91bb33192b02dd32aca224a23fc4b5289d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f5abfca4d5f85fd65aee77857d94a989122df310
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679686"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678948"
 ---
 # <a name="the-making-of-kippys-escape"></a>La création de l’échappement de kippy
 

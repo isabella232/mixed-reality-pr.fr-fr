@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: mouvements, contrôleurs de mouvement, Unity, point de regard, entrée
-ms.openlocfilehash: 6c41de0a0b5d2879b2f3a0be90c9456100599d2b
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+keywords: gestes, contrôleurs de mouvement, Unity, point d’entrée, point d’entrée, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886272"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678648"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Mouvements et contrôleurs de mouvement dans Unity
 
@@ -100,29 +100,29 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 
 Windows Mixed Reality prend en charge les contrôleurs de mouvement dans un large éventail de facteurs de forme, la conception de chaque contrôleur étant différente dans sa relation entre la position de l’utilisateur et la direction « avant » naturelle que les applications doivent utiliser pour pointer lors du rendu du contrôleur.
 
-Pour mieux représenter ces contrôleurs, il existe deux genres de poses que vous pouvez examiner pour chaque source d’interaction, le pose de la **poignée** et le **pointeur se posent** . Les coordonnées de pose de la poignée et du pointeur sont exprimées par toutes les API Unity dans les coordonnées universelles Unity universel.
+Pour mieux représenter ces contrôleurs, il existe deux genres de poses que vous pouvez examiner pour chaque source d’interaction, le pose de la **poignée** et le **pointeur se posent**. Les coordonnées de pose de la poignée et du pointeur sont exprimées par toutes les API Unity dans les coordonnées universelles Unity universel.
 
 ### <a name="grip-pose"></a>Poignée de pose
 
 La **poignée** représente l’emplacement de la paume d’une main détectée par un HoloLens ou la poche qui détient un contrôleur de mouvement.
 
-Sur les casques immersifs, le pose de la poignée est utilisé pour restituer **la main de l’utilisateur** ou **un objet détenu par l’utilisateur** , tel qu’un épée ou un pistolet. La poignée est également utilisée lors de la visualisation d’un contrôleur de mouvement, car le **modèle de rendu** fourni par Windows pour un contrôleur de mouvement utilise la poignée comme son origine et le centre de rotation.
+Sur les casques immersifs, le pose de la poignée est utilisé pour restituer **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**, tel qu’un épée ou un pistolet. La poignée est également utilisée lors de la visualisation d’un contrôleur de mouvement, car le **modèle de rendu** fourni par Windows pour un contrôleur de mouvement utilise la poignée comme son origine et le centre de rotation.
 
 La poignée est définie spécifiquement comme suit :
-* Position de la **poignée** : le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée. Sur le contrôleur de mouvement Windows Mixed Reality, cette position s’aligne généralement avec le bouton de saisie.
-* **Axe droit de l’orientation de la poignée** : lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
-* **Axe avant de l’orientation de la poignée** : quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
-* **Axe vers le haut de l’orientation** : l’axe vers le haut, impliqué dans les définitions Right et Forward.
+* Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée. Sur le contrôleur de mouvement Windows Mixed Reality, cette position s’aligne généralement avec le bouton de saisie.
+* **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
+* **Axe avant de l’orientation de la poignée**: quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
+* **Axe vers le haut de l’orientation**: l’axe vers le haut, impliqué dans les définitions Right et Forward.
 
-Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity ( *[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation* ) ou via l’API propre à Windows Mr ( *SourceState. SourcePose. TryGetPosition/rotation* , en demandant des données de pose pour le nœud de **poignée** ).
+Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity (*[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation*) ou via l’API propre à Windows Mr (*SourceState. SourcePose. TryGetPosition/rotation*, en demandant des données de pose pour le nœud de **poignée** ).
 
 ### <a name="pointer-pose"></a>Pose du pointeur
 
 Le **pointeur de pose** représente l’extrémité du contrôleur pointant vers l’avant.
 
-Le pointeur fourni par le système est le mieux utilisé pour raycast lorsque vous effectuez **le rendu du modèle de contrôleur lui-même** . Si vous effectuez le rendu d’un autre objet virtuel à la place du contrôleur, tel qu’un pistolet virtuel, vous devez pointer vers un rayon qui est le plus naturel pour cet objet virtuel, tel qu’un rayon qui traverse le canon du modèle de pistolet défini par l’application. Étant donné que les utilisateurs peuvent voir l’objet virtuel et non le contrôleur physique, le fait de pointer avec l’objet virtuel sera probablement plus naturel pour ceux qui utilisent votre application.
+Le pointeur fourni par le système est le mieux utilisé pour raycast lorsque vous effectuez **le rendu du modèle de contrôleur lui-même**. Si vous effectuez le rendu d’un autre objet virtuel à la place du contrôleur, tel qu’un pistolet virtuel, vous devez pointer vers un rayon qui est le plus naturel pour cet objet virtuel, tel qu’un rayon qui traverse le canon du modèle de pistolet défini par l’application. Étant donné que les utilisateurs peuvent voir l’objet virtuel et non le contrôleur physique, le fait de pointer avec l’objet virtuel sera probablement plus naturel pour ceux qui utilisent votre application.
 
-Actuellement, le pointeur de pose est disponible dans Unity uniquement par le biais de l’API propre à Windows MR, *sourceState. sourcePose. TryGetPosition/rotation* , en passant *InteractionSourceNode. pointeur* comme argument.
+Actuellement, le pointeur de pose est disponible dans Unity uniquement par le biais de l’API propre à Windows MR, *sourceState. sourcePose. TryGetPosition/rotation*, en passant *InteractionSourceNode. pointeur* comme argument.
 
 ## <a name="controller-tracking-state"></a>État du suivi du contrôleur
 
@@ -140,15 +140,15 @@ La meilleure façon de vous en faire une idée est de l’essayer vous-même. Co
 
 ### <a name="reasoning-about-tracking-state-explicitly"></a>Raisonnement sur le suivi de l’État explicitement
 
-Les applications qui souhaitent traiter différemment les positions en fonction de l’état de suivi peuvent aller plus loin et inspecter les propriétés de l’état du contrôleur, telles que *SourceLossRisk* et *PositionAccuracy* :
+Les applications qui souhaitent traiter différemment les positions en fonction de l’état de suivi peuvent aller plus loin et inspecter les propriétés de l’état du contrôleur, telles que *SourceLossRisk* et *PositionAccuracy*:
 
 <table>
 <tr>
 <th> État du suivi </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Précision approximative</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Approximatif </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -164,8 +164,8 @@ Ces États de suivi du contrôleur de mouvement sont définis comme suit :
 
 ## <a name="common-unity-apis-inputgetbuttongetaxis"></a>API Unity courantes (Input. GetButton/GetAxis)
 
-**Espace de noms :** *UnityEngine* , *UnityEngine. XR*<br>
-**Types** : *Input* , *XR. InputTracking*
+**Espace de noms :** *UnityEngine*, *UnityEngine. XR*<br>
+**Types**: *Input*, *XR. InputTracking*
 
 Unity utilise actuellement ses API *d’entrée. GetButton/Input. GetAxis* pour exposer l’entrée pour [le kit de développement logiciel (SDK) Oculus](https://docs.unity3d.com/Manual/OculusControllers.html), [le kit de développement logiciel (SDK) OpenVR et la](https://docs.unity3d.com/Manual/OpenVRControllers.html) réalité mixte Windows, y compris les contrôleurs mains et motion. Si votre application utilise ces API pour l’entrée, elle peut facilement prendre en charge des contrôleurs de mouvement sur plusieurs kits de développement logiciel (SDK) XR, y compris Windows Mixed Reality.
 
@@ -173,12 +173,12 @@ Unity utilise actuellement ses API *d’entrée. GetButton/Input. GetAxis* pour 
 
 Pour utiliser les API d’entrée Unity générales, vous commencez généralement par associer des boutons et des axes aux noms logiques dans le [Gestionnaire d’entrée Unity](https://docs.unity3d.com/Manual/ConventionalGameInput.html), en liant un bouton ou des ID d’axe à chaque nom. Vous pouvez ensuite écrire du code qui fait référence à ce nom d’axe/bouton logique.
 
-Par exemple, pour mapper le bouton de déclenchement du contrôleur de mouvement gauche à l’action envoyer, accédez à **modifier > paramètres du projet > entrée** dans Unity, puis développez les propriétés de la section envoyer sous axes. Modifiez le bouton **positif** ou la propriété **ALT positive du bouton** pour lire le bouton de la manette de jeu **14** , comme suit :
+Par exemple, pour mapper le bouton de déclenchement du contrôleur de mouvement gauche à l’action envoyer, accédez à **modifier > paramètres du projet > entrée** dans Unity, puis développez les propriétés de la section envoyer sous axes. Modifiez le bouton **positif** ou la propriété **ALT positive du bouton** pour lire le bouton de la manette de jeu **14**, comme suit :
 
 ![InputManager d’Unity](images/unity-input-manager.png)<br>
 *InputManager Unity*
 
-Votre script peut ensuite Rechercher l’action envoyer à l’aide de *Input. GetButton* :
+Votre script peut ensuite Rechercher l’action envoyer à l’aide de *Input. GetButton*:
 
 ```cs
 if (Input.GetButton("Submit"))
@@ -186,11 +186,11 @@ if (Input.GetButton("Submit"))
   // ...
 }
 ```
-Vous pouvez ajouter des boutons logiques en modifiant la propriété **taille** sous **axes** .
+Vous pouvez ajouter des boutons logiques en modifiant la propriété **taille** sous **axes**.
 
 ### <a name="getting-a-physical-buttons-pressed-state-directly"></a>Obtention directe d’un état enfoncé d’un bouton physique
 
-Vous pouvez également accéder manuellement aux boutons à l’aide de leur nom complet, en utilisant *Input. GetKey* :
+Vous pouvez également accéder manuellement aux boutons à l’aide de leur nom complet, en utilisant *Input. GetKey*:
 
 ```cs
 if (Input.GetKey("joystick button 8"))
@@ -201,7 +201,7 @@ if (Input.GetKey("joystick button 8"))
 
 ### <a name="getting-a-hand-or-motion-controllers-pose"></a>Obtention d’une main ou d’une pose de contrôleur de mouvement
 
-Vous pouvez accéder à la position et à la rotation du contrôleur, à l’aide de *XR. InputTracking* :
+Vous pouvez accéder à la position et à la rotation du contrôleur, à l’aide de *XR. InputTracking*:
 
 ```cs
 Vector3 leftPosition = InputTracking.GetLocalPosition(XRNode.LeftHand);
@@ -215,7 +215,7 @@ Notez que la relation entre cette poignée pose et que le pointeur pose (où l�
 ## <a name="windows-specific-apis-xrwsainput"></a>API spécifiques à Windows (XR. WSA. Entrée
 
 **Espace de noms :** *UnityEngine. XR. WSA. Input*<br>
-**Types** : *InteractionManager* , *InteractionSourceState* , *InteractionSource* , *InteractionSourceProperties* , *InteractionSourceKind* , *InteractionSourceLocation*
+**Types**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*
 
 Pour obtenir des informations plus détaillées sur l’entrée manuelle de Windows Mixed Reality (pour HoloLens) et les contrôleurs de mouvement, vous pouvez choisir d’utiliser les API d’entrée spatiale spécifiques à Windows sous l’espace de noms *UnityEngine. XR. WSA. Input* . Cela vous permet d’accéder à des informations supplémentaires, telles que la précision de la position ou le genre de source, vous permettant de distinguer les mains et les contrôleurs.
 
@@ -427,7 +427,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 ## <a name="high-level-composite-gesture-apis-gesturerecognizer"></a>API de mouvement composite de haut niveau (GestureRecognizer)
 
 **Espace de noms :** *UnityEngine. XR. WSA. Input*<br>
-**Types** : *GestureRecognizer* , *GestureSettings* , *InteractionSourceKind*
+**Types**: *GestureRecognizer*, *GestureSettings*, *InteractionSourceKind*
 
 Votre application peut également reconnaître les gestes composites de niveau supérieur pour les sources d’entrée spatiale, le TAP, le maintien, la manipulation et les gestes de navigation. Vous pouvez reconnaître ces gestes composites sur les [mains](../../design/gaze-and-commit.md#composite-gestures) et les [contrôleurs de mouvement](../../design/motion-controllers.md) à l’aide de GestureRecognizer.
 
@@ -441,7 +441,7 @@ Seules quelques étapes sont requises pour capturer des mouvements à l’aide d
 
 ### <a name="create-a-new-gesture-recognizer"></a>Créer un module de reconnaissance de mouvement
 
-Pour utiliser *GestureRecognizer* , vous devez avoir créé un *GestureRecognizer* :
+Pour utiliser *GestureRecognizer*, vous devez avoir créé un *GestureRecognizer*:
 
 ```cs
 GestureRecognizer recognizer = new GestureRecognizer();
@@ -449,7 +449,7 @@ GestureRecognizer recognizer = new GestureRecognizer();
 
 ### <a name="specify-which-gestures-to-watch-for"></a>Spécifier les gestes à surveiller
 
-Spécifiez les gestes qui vous intéressent via *SetRecognizableGestures ()* :
+Spécifiez les gestes qui vous intéressent via *SetRecognizableGestures ()*:
 
 ```cs
 recognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.Hold);
@@ -470,7 +470,7 @@ void Start()
 ```
 
 >[!NOTE]
->Les mouvements de navigation et de manipulation s’excluent mutuellement sur une instance d’un *GestureRecognizer* .
+>Les mouvements de navigation et de manipulation s’excluent mutuellement sur une instance d’un *GestureRecognizer*.
 
 ### <a name="start-capturing-gestures"></a>Démarrer la capture des mouvements
 
@@ -517,8 +517,8 @@ Pour afficher les contrôleurs de mouvement de votre application qui corresponde
 La levée d’objets dans la réalité virtuelle est un problème plus difficile, alors il peut sembler évident. Comme avec la plupart des interactions basées physiquement, lorsque la levée dans le jeu se fait de manière inattendue, elle est immédiatement évidente et s’arrête à l’immersion. Nous avons passé un peu de temps à réfléchir à la façon de représenter un comportement de levée de manière physique et à rencontrer quelques recommandations, activées par le biais de mises à jour de notre plateforme, que nous aimerions partager avec vous.
 
 Vous trouverez un exemple de la façon dont nous vous recommandons d’implémenter la levée [ici](https://github.com/keluecke/MixedRealityToolkit-Unity/blob/master/External/Unitypackages/ThrowingStarter.unitypackage). Cet exemple suit les quatre instructions suivantes :
-* **Utilisez la *vélocité* du contrôleur au lieu de la position** . Dans la mise à jour de novembre de Windows, nous avons introduit un changement de comportement dans l' [État de suivi positionnel « approximatif](../../design/motion-controllers.md#controller-tracking-state)». Dans cet État, les informations de vélocité sur le contrôleur continuent d’être signalées aussi longtemps que nous pensons qu’il s’agit d’une précision élevée, qui est souvent plus longue que la position reste une précision élevée.
-* **Incorporez la *vélocité angulaire* du contrôleur** . Cette logique est contenue dans le `throwing.cs` fichier de la `GetThrownObjectVelAngVel` méthode statique, dans le package lié ci-dessus :
+* **Utilisez la *vélocité* du contrôleur au lieu de la position**. Dans la mise à jour de novembre de Windows, nous avons introduit un changement de comportement dans l' [État de suivi positionnel « approximatif](../../design/motion-controllers.md#controller-tracking-state)». Dans cet État, les informations de vélocité sur le contrôleur continuent d’être signalées aussi longtemps que nous pensons qu’il s’agit d’une précision élevée, qui est souvent plus longue que la position reste une précision élevée.
+* **Incorporez la *vélocité angulaire* du contrôleur**. Cette logique est contenue dans le `throwing.cs` fichier de la `GetThrownObjectVelAngVel` méthode statique, dans le package lié ci-dessus :
    1. Comme la vélocité angulaire est conservée, l’objet levé doit conserver la même vélocité angulaire qu’au moment de la levée : `objectAngularVelocity = throwingControllerAngularVelocity;`
    2. Comme le centre de la masse de l’objet levé n’est probablement pas à l’origine de la poignée, il a probablement une vélocité différente de celle du contrôleur dans le cadre de référence de l’utilisateur. La partie de la rapidité de l’objet utilisée de cette façon est la vélocité tangentielle instantanée du centre de la masse de l’objet levé autour de l’origine du contrôleur. Cette vélocité tangentielle est le produit croisé de la vélocité angulaire du contrôleur avec le vecteur représentant la distance entre l’origine du contrôleur et le centre de la masse de l’objet levé.
 
@@ -529,10 +529,10 @@ Vous trouverez un exemple de la façon dont nous vous recommandons d’implémen
 
    3. La rapidité totale de l’objet levé est donc la somme de la vélocité du contrôleur et de cette vélocité tangentielle : `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
 
-* **Portez une attention particulière à l' *heure* à laquelle nous appliquons la vélocité** . Quand vous appuyez sur un bouton, il peut s’écouler jusqu’à 20 ms pour que cet événement se propage via Bluetooth au système d’exploitation. Cela signifie que si vous interrogez le changement d’état d’un contrôleur en l’appuyant sur non enfoncé, ou vice versa, le contrôleur vous pose les informations dont vous bénéficiez en effet. En outre, le contrôleur présenté par notre API d’interrogation est Forward prédit pour refléter une situation probable au moment où l’image sera affichée, ce qui pourrait être plus 20 ms à l’avenir. Cela est idéal pour le *rendu* des objets maintenus, mais il compose notre problème de temps pour *cibler* l’objet à mesure que nous calculons la trajectoire pour le moment où l’utilisateur a relâché sa levée. Heureusement, avec la mise à jour de novembre, lors de l’envoi d’un événement Unity comme *InteractionSourcePressed* ou *InteractionSourceReleased* , l’État comprend les données d’historique de la pose lorsque le bouton a été enfoncé ou relâché.  Pour optimiser le rendu du contrôleur et le ciblage du contrôleur lors des levées, vous devez utiliser correctement l’interrogation et l’événement, selon le cas :
-   * Pour le rendu de chaque trame par le **contrôleur** , votre application doit positionner les *gameobject* du contrôleur au niveau du contrôleur avant prédiction pour le temps des photons du frame actuel.  Vous recevez ces données à partir d’API d’interrogation Unity, telles que *[XR. InputTracking. GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html)* ou *[XR. WSA. Entrez. InteractionManager. GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html)* .
-   * Pour le **ciblage du contrôleur** sur une presse ou une mise en sortie, votre application doit raycast et calculer des trajectoires en fonction de la pose du contrôleur historique pour cet événement Press ou Release.  Vous recevez ces données à partir d’API d’événements Unity, telles que *[InteractionManager. InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html)* .
-* **Utilisez la poignée** . La rapidité et la vélocité angulaires sont rapportées par rapport à la pose de la poignée, et non à la pose du pointeur.
+* **Portez une attention particulière à l' *heure* à laquelle nous appliquons la vélocité**. Quand vous appuyez sur un bouton, il peut s’écouler jusqu’à 20 ms pour que cet événement se propage via Bluetooth au système d’exploitation. Cela signifie que si vous interrogez le changement d’état d’un contrôleur en l’appuyant sur non enfoncé, ou vice versa, le contrôleur vous pose les informations dont vous bénéficiez en effet. En outre, le contrôleur présenté par notre API d’interrogation est Forward prédit pour refléter une situation probable au moment où l’image sera affichée, ce qui pourrait être plus 20 ms à l’avenir. Cela est idéal pour le *rendu* des objets maintenus, mais il compose notre problème de temps pour *cibler* l’objet à mesure que nous calculons la trajectoire pour le moment où l’utilisateur a relâché sa levée. Heureusement, avec la mise à jour de novembre, lors de l’envoi d’un événement Unity comme *InteractionSourcePressed* ou *InteractionSourceReleased* , l’État comprend les données d’historique de la pose lorsque le bouton a été enfoncé ou relâché.  Pour optimiser le rendu du contrôleur et le ciblage du contrôleur lors des levées, vous devez utiliser correctement l’interrogation et l’événement, selon le cas :
+   * Pour le rendu de chaque trame par le **contrôleur** , votre application doit positionner les *gameobject* du contrôleur au niveau du contrôleur avant prédiction pour le temps des photons du frame actuel.  Vous recevez ces données à partir d’API d’interrogation Unity, telles que *[XR. InputTracking. GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html)* ou *[XR. WSA. Entrez. InteractionManager. GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html)*.
+   * Pour le **ciblage du contrôleur** sur une presse ou une mise en sortie, votre application doit raycast et calculer des trajectoires en fonction de la pose du contrôleur historique pour cet événement Press ou Release.  Vous recevez ces données à partir d’API d’événements Unity, telles que *[InteractionManager. InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html)*.
+* **Utilisez la poignée**. La rapidité et la vélocité angulaires sont rapportées par rapport à la pose de la poignée, et non à la pose du pointeur.
 
 La génération continuera à s’améliorer avec les futures mises à jour de Windows, et vous pouvez vous attendre à trouver plus d’informations ici.
 

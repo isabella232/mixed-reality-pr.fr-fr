@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: réalité mixte, découvrir, distribuer, index, page d’accueil, conception, développement, tutoriels, exemples d’applications, principes fondamentaux, études de cas, ressources, procédures HoloLens, projets open source
-ms.openlocfilehash: 34c78c277e0b184c0421c2bdd56ef13411a5bf29
-ms.sourcegitcommit: bd359c269add7ac76f0c2c26ca7caedba14749b1
+ms.openlocfilehash: 7c8fc83fd2b5542909fd2ea6ab4dca288175c56c
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94417834"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631517"
 ---
 # <a name="get-started-with-mixed-reality"></a>Bien démarrer avec la réalité mixte
 
@@ -143,11 +143,6 @@ Si vous êtes curieux de voir comment les différents matériels et services de 
 
 <br>
 
-
 >[!IMPORTANT]
 >L’ensemble de la documentation concernant le développement de réalité mixte est fournie à titre de référence uniquement. Votre application, son utilisation et ses effets sur les utilisateurs finaux sont sous votre entière responsabilité en tant que développeur de l’application. En cette qualité, vous devez vous assurer que votre application ne cause aucune gêne, aucune blessure ni aucun autre préjudice physique aux utilisateurs finaux, et veiller à fournir les avertissements et clauses d’exclusion de responsabilité appropriés. Vous devez suivre les étapes de développement et de publication fournies, et ce, à tout moment, afin de garantir que votre application est sécurisée et qu’elle respecte toutes les obligations citées dans votre [Contrat du développeur d’application passé avec Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
 
-## <a name="see-also"></a>Voir aussi
-* [Informations détaillées sur les casques immersifs](immersive-headset-hardware-details.md)
-* [Ressources de la communauté](community.md)
-* [Guide pour les passionnés de RV](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

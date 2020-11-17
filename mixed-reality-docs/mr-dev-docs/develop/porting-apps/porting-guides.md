@@ -5,13 +5,13 @@ author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
-keywords: port, Portage, Unity, intergiciel, Engine, UWP, Win32
-ms.openlocfilehash: 9822976ab7dac9ae7567e5f38ca44ceee646d098
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: port, Unity, inreal, middleware, Engine, UWP, Win32, Portage, HoloLens 1ère génération, casque de réalité mixte, casque Windows Mixed realisation, migration, Windows 10, mappage d’entrée,
+ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638540"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677728"
 ---
 # <a name="porting-guides"></a>Guides en matière de portage
 
@@ -23,7 +23,7 @@ Windows 10 offre une prise en charge directe des casques immersifs et holographi
 1. **Assurez-vous que votre ordinateur exécute la mise à jour des créateurs de automne Windows 10 (16299).** Nous vous déconseillons de recevoir des builds préliminaires à partir de la sonnerie d’inversion anticipée, car ces builds ne sont pas les plus stables pour le développement de la réalité mixte.
 2. **Effectuez une mise à niveau vers la dernière version de votre graphique ou de votre moteur de jeux.** Les moteurs de jeu doivent prendre en charge la version 10.0.15063.0 du kit de développement logiciel (SDK) Windows 10 (publiée en avril 2017) ou une version ultérieure.
 3. **Mettez à niveau les intergiciel, les plug-ins ou les composants.** Si votre application contient des composants, il est judicieux de procéder à une mise à niveau vers la dernière version.
-4. **Supprimer les dépendances sur les kits de développement logiciel en double** . En fonction de l’appareil ciblé par votre contenu, vous devez supprimer ou compiler de façon conditionnelle ce kit de développement logiciel (par exemple, SteamVR) afin de pouvoir cibler les API Windows à la place.
+4. **Supprimer les dépendances sur les kits de développement logiciel en double**. En fonction de l’appareil ciblé par votre contenu, vous devez supprimer ou compiler de façon conditionnelle ce kit de développement logiciel (par exemple, SteamVR) afin de pouvoir cibler les API Windows à la place.
 5. **Résoudre les problèmes de génération.** À ce stade, l’exercice de Portage est spécifique à votre application, à votre moteur et aux dépendances de composants dont vous disposez.
 
 ## <a name="common-porting-steps"></a>Étapes de Portage courantes

@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: Unity, son spatial, HRTF, taille de la salle
-ms.openlocfilehash: 9c5f71b2d9d13fa40f0d1674237d2da6c769e584
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, son spatial, HRTF, taille de la salle, casque de la réalité mixte, casque Windows Mixed realisation, casque de la réalité virtuelle, MRTK, boîte à outils de la réalité mixte, Spatializer, réverbération
+ms.openlocfilehash: db01fe81457d0f46b7f287458b4d48af4a98f2bc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679726"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678438"
 ---
 # <a name="spatial-sound-in-unity"></a>Son spatial dans Unity
 
@@ -19,14 +19,14 @@ Cette page contient des liens vers des ressources pour le son spatial dans Unity
 
 ## <a name="spatializer-options"></a>Options de Spatializer
 Les options Spatializer pour les applications de réalité mixte sont les suivantes :
-* *Spatializer MS HRTF* . Unity fournit cela dans le cadre du package facultatif *Windows Mixed Reality* .
+* *Spatializer MS HRTF*. Unity fournit cela dans le cadre du package facultatif *Windows Mixed Reality* .
   * Cela s’exécute sur le processeur dans une architecture à source unique à coût plus élevé.
   * Elle est fournie à des fins de compatibilité descendante avec les applications HoloLens d’origine.
-* *Microsoft Spatializer* . Celui-ci est disponible à partir du [dépôt github Microsoft Spatializer](https://github.com/microsoft/spatialaudio-unity).
+* *Microsoft Spatializer*. Celui-ci est disponible à partir du [dépôt github Microsoft Spatializer](https://github.com/microsoft/spatialaudio-unity).
   * Cela utilise une architecture à plusieurs sources moins onéreuse.
   * Sur HoloLens 2, cette valeur est déchargée sur un accélérateur matériel.
 
-Pour les nouvelles applications, nous vous recommandons *Microsoft Spatializer* .
+Pour les nouvelles applications, nous vous recommandons *Microsoft Spatializer*.
 
 ## <a name="enable-spatialization"></a>Activer Spatialization
 
@@ -34,7 +34,7 @@ Utilisez [NuGet pour Unity](https://github.com/GlitchEnzo/NuGetForUnity/releases
 * Attacher une **source audio** à un objet dans la hiérarchie
 * Cochez la case **Enable Spatialization**
 * Déplacez le curseur de **lissage spatial** sur « 1 »
-* Assurez-vous que l’audio spatial est activé sur votre station de travail de développeur. Activez-le en cliquant avec le bouton droit sur l’icône de volume dans la barre des tâches et en vous assurant que le son spatial est défini sur une valeur autre que « désactivé ». Pour obtenir la meilleure représentation de ce que vous entendez sur HoloLens 2, choisissez **Windows Sonic pour casque** .
+* Assurez-vous que l’audio spatial est activé sur votre station de travail de développeur. Activez-le en cliquant avec le bouton droit sur l’icône de volume dans la barre des tâches et en vous assurant que le son spatial est défini sur une valeur autre que « désactivé ». Pour obtenir la meilleure représentation de ce que vous entendez sur HoloLens 2, choisissez **Windows Sonic pour casque**.
 
 >[!NOTE]
 >Si vous recevez une erreur dans Unity sur l’impossibilité de charger le plug-in Microsoft. SpatialAudio. Spatializer. Unity, car l’une de ses dépendances est manquante, vérifiez que vous disposez de la dernière version du [Microsoft Visual C++ redistribuable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) installé sur votre ordinateur.
@@ -64,17 +64,17 @@ Pour obtenir des exemples de son spatial dans Unity, consultez :
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
 
-Ou accédez aux API et fonctionnalités de la plateforme de réalité mixte :
+Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 > [!div class="nextstepaction"]
 > [Expériences partagées](shared-experiences-in-unity.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
 * [Conception audio en réalité mixte](../../design/spatial-sound-design.md)

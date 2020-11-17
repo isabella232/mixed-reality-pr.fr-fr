@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, mrtk, design, exemple d’application, contrôles
-ms.openlocfilehash: 1c6cb4579bbd3d6124cf36b21226ffa803f39f00
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, conception, exemple d’application, contrôles, MRTK, kit de préversion de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: c20ea17b20c867d9bf1da0d5f6244e36f2abbf27
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573183"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678518"
 ---
 # <a name="surfaces"></a>Surfaces
 

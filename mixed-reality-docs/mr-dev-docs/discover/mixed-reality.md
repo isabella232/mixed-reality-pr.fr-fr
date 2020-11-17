@@ -7,18 +7,18 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: réalité mixte, holographique, AR, VR, MR, XR, réalité augmentée, réalité virtuelle, explication
 ms.localizationpriority: high
-ms.openlocfilehash: a55b05f8edfeedfff3313844428b9af4cf7a2fc0
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+ms.openlocfilehash: 44914decd9530a11d11127b43af527d995f6c252
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340707"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631487"
 ---
 # <a name="what-is-mixed-reality"></a>Qu’est-ce que la réalité mixte ?
 
 ![Pointer et valider avec les mains sur HoloLens 2](images/02_MixedRealitySlashMixedReality.png)
 
-Fusion des mondes physiques et numériques, la réalité mixte rend possible l’interaction entre l’homme, l’ordinateur et l’environnement. Cette nouvelle réalité est basée sur les progrès réalisés dans les domaines de la vision par ordinateur, du traitement graphique, de la technologie d’affichage et des systèmes d’entrée. Toutefois, le terme *réalité mixte* a été introduit en 1994 par Paul Milgram et Fumio Kishino dans un document intitulé «  [A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321) ». Ce document explorait le concept de «  *continuum de virtualité*  » et l’application de la catégorisation taxonomique aux écrans. Depuis, l’application de la réalité mixte s’étend bien au-delà des écrans pour inclure les domaines suivants :
+Fusion des mondes physiques et numériques, la réalité mixte rend possible l’interaction entre l’homme, l’ordinateur et l’environnement. Cette nouvelle réalité est basée sur les progrès réalisés dans les domaines de la vision par ordinateur, du traitement graphique, de la technologie d’affichage et des systèmes d’entrée. Toutefois, le terme *réalité mixte* a été introduit en 1994 par Paul Milgram et Fumio Kishino dans un document intitulé « [A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321) ». Ce document explorait le concept de « *continuum de virtualité* » et l’application de la catégorisation taxonomique aux écrans. Depuis, l’application de la réalité mixte s’étend bien au-delà des écrans pour inclure les domaines suivants :
 * Entrée environnementale
 * Son spatial
 * Localisations et positionnement dans les espaces réels et virtuels
@@ -43,7 +43,7 @@ Les avancées dans les capteurs et le traitement ont donné naissance à un nouv
 
 <br>
 
-La combinaison de ces trois éléments ( **traitement informatique, entrées humaines et entrées environnementales** ) permet la création de véritables expériences de réalité mixte. Un mouvement dans le monde physique peut se traduire par un mouvement dans le monde numérique. Les limites présentes dans le monde physique peuvent influencer des expériences applicatives, notamment la jouabilité, dans le monde numérique. Sans entrée environnementale, les expériences ne peuvent pas fusionner les réalités physique et numérique.<br>
+La combinaison de ces trois éléments (**traitement informatique, entrées humaines et entrées environnementales**) permet la création de véritables expériences de réalité mixte. Un mouvement dans le monde physique peut se traduire par un mouvement dans le monde numérique. Les limites présentes dans le monde physique peuvent influencer des expériences applicatives, notamment la jouabilité, dans le monde numérique. Sans entrée environnementale, les expériences ne peuvent pas fusionner les réalités physique et numérique.<br>
 
 <br>
 
@@ -62,7 +62,7 @@ La combinaison de ces trois éléments ( **traitement informatique, entrées hum
 
 ### <a name="augmented-vs-virtual-reality"></a>Réalité augmentée et réalité virtuelle
 
-Aujourd’hui, la plupart des téléphones portables du marché sont dotés de fonctionnalités de compréhension environnementale limitées voire inexistantes. Ils ne proposent pas d’expériences combinant réalité physique et réalité numérique. Les expériences qui superposent des graphiques sur des flux vidéo du monde physique sont du domaine de la *réalité augmentée*. Les expériences qui obstruent votre vue pour présenter une expérience numérique sont du domaine de la *réalité virtuelle*. Les expériences issues de la combinaisons de la réalité augmentée et de la réalité virtuelle forment la *réalité mixte*  :
+Aujourd’hui, la plupart des téléphones portables du marché sont dotés de fonctionnalités de compréhension environnementale limitées voire inexistantes. Ils ne proposent pas d’expériences combinant réalité physique et réalité numérique. Les expériences qui superposent des graphiques sur des flux vidéo du monde physique sont du domaine de la *réalité augmentée*. Les expériences qui obstruent votre vue pour présenter une expérience numérique sont du domaine de la *réalité virtuelle*. Les expériences issues de la combinaisons de la réalité augmentée et de la réalité virtuelle forment la *réalité mixte* :
 * À partir du monde physique, placer un objet numérique, comme un hologramme, et le faire apparaître comme s’il existait.
 * À partir du monde physique, créer une représentation numérique d’une autre personne (avatar) et montrer son emplacement quand elle laisse des notes. En d’autres termes, des expériences qui représentent une collaboration asynchrone à différents moments.
 * À partir d’un monde numérique, faire apparaître numériquement dans l’expérience les limites du monde physique, comme les murs et les meubles, pour aider les utilisateurs à éviter les objets physiques.
@@ -119,10 +119,4 @@ Si vous suivez le [parcours de découverte](get-started-with-mr.md) que nous avo
 > [!div class="nextstepaction"]
 > [Qu’est-ce qu’un hologramme ?](hologram.md)
 
-## <a name="see-also"></a>Voir aussi
-
-* [Qu’est-ce qu’un hologramme ?](hologram.md)
-* [Comprendre les principes de base de la réalité mixte](get-started-with-mr.md#understand-the-basics)
-* [Commencer à concevoir et à créer des prototypes](../design/design.md)
-* [Découvrir les outils et l’architecture](../develop/development.md)
 

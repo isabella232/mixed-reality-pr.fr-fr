@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial
-ms.openlocfilehash: cb9bfb03da864c78784c288f4d7c4190461cd838
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
+ms.openlocfilehash: c752f79f53b5167d674b9e778637357d97fb914a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293157"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678208"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>Activation et désactivation de Spatialization au moment de l’exécution
 

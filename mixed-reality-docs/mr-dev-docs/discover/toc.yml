@@ -6,6 +6,8 @@
   href: hologram.md
 - name: Développer votre processus de conception
   href: case-study-expanding-the-design-process-for-mixed-reality.md
+- name: Vue d’ensemble des études de cas
+  href: case-studies-overview.md
 - name: Matériel HoloLens
   items:
     - name: "Informations détaillées sur le casque HoloLens\_2"

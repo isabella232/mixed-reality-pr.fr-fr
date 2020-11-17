@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: DirectX, rendu holographique, native, application native, application WinRT, application WinRT, API de plateforme, moteur personnalisé, intergiciel
-ms.openlocfilehash: fb51dfe15de26b80db255f0daca69e913f9ad35c
-ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
+keywords: DirectX, rendu holographique, native, application native, WinRT, application WinRT, API de plateforme, moteur personnalisé, intergiciel, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: 0d5e364fdb4faac73f28649f5c009823a74ac595
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903127"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679648"
 ---
 # <a name="native-development-overview"></a>Vue d’ensemble du développement natif
 

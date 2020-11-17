@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial
-ms.openlocfilehash: abe78417dc231e6228d1942e03418ba699bc0938
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, mélangeur audio, réverbération SFX
+ms.openlocfilehash: d688955910d667edbdb79e63dab16587e66064a4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682258"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679698"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
 
@@ -21,19 +21,19 @@ Dans les chapitres précédents, nous avons ajouté Spatialization aux sons pour
 * Contrôle de la distance perçue du son à l’aide de la distance de l’écouteur à l’hologramme
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Ajouter un groupe de mixage et un effet de réverbération
-Dans le [Chapitre 2](unity-spatial-audio-ch2.md), nous avons ajouté un mélangeur. Le mélangeur comprend un **groupe** par défaut nommé **maître** . Étant donné que nous voulons uniquement appliquer un effet de réverbération à certains sons, nous allons ajouter un deuxième **groupe** pour ces sons. Pour ajouter un **groupe** , cliquez avec le bouton droit sur le groupe **principal** dans le **mélangeur audio** , puis choisissez **Ajouter un groupe enfant** :
+Dans le [Chapitre 2](unity-spatial-audio-ch2.md), nous avons ajouté un mélangeur. Le mélangeur comprend un **groupe** par défaut nommé **maître**. Étant donné que nous voulons uniquement appliquer un effet de réverbération à certains sons, nous allons ajouter un deuxième **groupe** pour ces sons. Pour ajouter un **groupe**, cliquez avec le bouton droit sur le groupe **principal** dans le **mélangeur audio** , puis choisissez **Ajouter un groupe enfant**:
 
 ![Ajouter un groupe enfant](images/spatial-audio/add-child-group.png)
 
 Dans cet exemple, nous avons nommé « effet Room » pour le nouveau groupe.
 
-Chaque **groupe** a son propre ensemble d’effets. Ajoutez un effet de réverbération au nouveau groupe en cliquant sur **Ajouter...** dans le nouveau groupe, puis en choisissant **réverbe SFX** :
+Chaque **groupe** a son propre ensemble d’effets. Ajoutez un effet de réverbération au nouveau groupe en cliquant sur **Ajouter...** dans le nouveau groupe, puis en choisissant **réverbe SFX**:
 
 ![Ajouter une réverbération SFX](images/spatial-audio/add-sfx-reverb.png)
 
-Dans la terminologie audio, le son original, unreverberated, est appelé le chemin à l' _état sec_ , et l’audio après le filtrage avec le filtre de réverbération est appelé le _chemin d’accès humide_ . Les deux chemins d’accès sont envoyés à la sortie audio, et leurs forces relatives dans ce mélange sont appelées la _combinaison humide/sèche_ . La combinaison humide/sèche affecte fortement le sens de la distance.
+Dans la terminologie audio, le son original, unreverberated, est appelé le chemin à l' _état sec_, et l’audio après le filtrage avec le filtre de réverbération est appelé le _chemin d’accès humide_. Les deux chemins d’accès sont envoyés à la sortie audio, et leurs forces relatives dans ce mélange sont appelées la _combinaison humide/sèche_. La combinaison humide/sèche affecte fortement le sens de la distance.
 
-Le **reverbe SFX** comprend des contrôles pour ajuster la combinaison humide/sèche dans l’effet. Étant donné que le plug-in **Microsoft Spatializer** gère le chemin d’accès à sec, nous allons utiliser la **réverbération SFX** uniquement pour le chemin d’accès humide. Dans le volet de l' **inspecteur** de votre **réverbération SFX** :
+Le **reverbe SFX** comprend des contrôles pour ajuster la combinaison humide/sèche dans l’effet. Étant donné que le plug-in **Microsoft Spatializer** gère le chemin d’accès à sec, nous allons utiliser la **réverbération SFX** uniquement pour le chemin d’accès humide. Dans le volet de l' **inspecteur** de votre **réverbération SFX**:
 * Définir la propriété de niveau Dry sur le paramètre le plus bas (-10000 Mo)
 * Définir la propriété Room sur le paramètre le plus élevé (0 Mo)
 
@@ -50,7 +50,7 @@ Il existe deux étapes pour activer la réverbération sur une source audio :
 
 Dans les étapes suivantes, nous allons ajuster notre script pour contrôler le routage audio et attacher un script de contrôle fourni avec le plug-in **Microsoft Spatializer** pour alimenter les données dans le verbe.
 
-Dans le volet de l' **inspecteur** pour le **Quad** , cliquez sur **Ajouter un composant** et ajoutez le script de niveau d’envoi de l’effet de **pièce** :
+Dans le volet de l' **inspecteur** pour le **Quad**, cliquez sur **Ajouter un composant** et ajoutez le script de niveau d’envoi de l’effet de **pièce** :
 
 ![Ajouter un script de niveau d’envoi](images/spatial-audio/add-send-level-script.png)
 
@@ -117,7 +117,7 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-Si vous supprimez les commentaires de ces lignes, vous ajoutez deux propriétés au volet de l' **inspecteur** pour le script. Pour les définir, dans le volet **inspecteur** du composant **spatial on off** du **Quad** :
+Si vous supprimez les commentaires de ces lignes, vous ajoutez deux propriétés au volet de l' **inspecteur** pour le script. Pour les définir, dans le volet **inspecteur** du composant **spatial on off** du **Quad**:
 * Définir la propriété **groupe d’effets** de la salle sur votre nouveau groupe de mixeur d’effets d’espace
 * Définir la propriété de **groupe maître** sur le groupe de mixages principaux
 

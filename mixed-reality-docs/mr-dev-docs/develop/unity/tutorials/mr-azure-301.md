@@ -1,17 +1,17 @@
 ---
-title: Traduction de m et Azure 301-traduction
+title: MR and Azure 301 - Traduction de langue
 description: Suivez ce cours pour apprendre à implémenter le API de traduction de texte Translator Text Azure dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, réalité mixte, Academy, Unity, didacticiel, API, texte de traducteur, hololens, immersif, VR
-ms.openlocfilehash: 2d5cf591d0dba3a3c516262dd9f78ec152afe2b5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, texte de traducteur, hololens, immersif, VR, traduction de langue, Windows 10, Visual Studio
+ms.openlocfilehash: 3f7d48df92ae5ed979c6fa8d69d348ce084d3fb9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681858"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679568"
 ---
 # <a name="mr-and-azure-301-language-translation"></a>Réalité mixte - Azure - Cours 301 : Traduction
 
@@ -69,8 +69,8 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 
 - Pour éviter de rencontrer des problèmes lors de la création de ce projet, il est fortement recommandé de créer le projet mentionné dans ce didacticiel dans un dossier racine ou dans un dossier racine (les chemins de dossiers longs peuvent entraîner des problèmes au moment de la génération).
 - Le code de ce didacticiel vous permet d’enregistrer à partir du périphérique microphone par défaut connecté à votre PC. Assurez-vous que le périphérique microphone par défaut est défini sur l’appareil que vous prévoyez d’utiliser pour capturer votre voix.
-- Pour permettre à votre PC d’activer la dictée, accédez à **paramètres > confidentialité > reconnaissance vocale, entrée manuscrite & frappe** et sélectionnez le bouton **activer les services vocaux et les suggestions de saisie** .
-- Si vous utilisez un microphone et un casque connectés à votre casque (ou intégrés à celui-ci), assurez-vous que l’option « lors de l’usure du casque, basculez vers casque MIC » est activée dans **paramètres > réalité mixte > audio et discours** .
+- Pour permettre à votre PC d’activer la dictée, accédez à **paramètres > confidentialité > reconnaissance vocale, entrée manuscrite & frappe** et sélectionnez le bouton **activer les services vocaux et les suggestions de saisie**.
+- Si vous utilisez un microphone et un casque connectés à votre casque (ou intégrés à celui-ci), assurez-vous que l’option « lors de l’usure du casque, basculez vers casque MIC » est activée dans **paramètres > réalité mixte > audio et discours**.
 
    ![Paramètres de réalité mixte](images/AzureLabs-Lab1-00-5.png)
 
@@ -88,22 +88,22 @@ Pour utiliser l’API Azure translator, vous devez configurer une instance du se
     > [!NOTE]
     > Si vous n’avez pas encore de compte Azure, vous devez en créer un. Si vous suivez ce didacticiel dans une situation de classe ou de laboratoire, demandez à votre formateur ou à l’un des prostructors de vous aider à configurer votre nouveau compte.
 
-2.  Une fois que vous êtes connecté, cliquez sur **nouveau** dans l’angle supérieur gauche et recherchez « API de traduction de texte Translator Text ». Sélectionnez **Entrée** .
+2.  Une fois que vous êtes connecté, cliquez sur **nouveau** dans l’angle supérieur gauche et recherchez « API de traduction de texte Translator Text ». Sélectionnez **Enter** (Entrer).
 
     ![Nouvelle ressource](images/AzureLabs-Lab1-02.png)
 
     > [!NOTE]
-    > Le mot **nouveau** peut avoir été remplacé par **créer une ressource** , dans les portails plus récents.
+    > Le mot **nouveau** peut avoir été remplacé par **créer une ressource**, dans les portails plus récents.
 
 3.  La nouvelle page fournit une description du service *API de traduction de texte Translator Text* . En bas à gauche de cette page, cliquez sur le bouton **créer** pour créer une association avec ce service.
 
     ![Créer un service API de traduction de texte Translator Text](images/AzureLabs-Lab1-03.png)
 
-4.  Une fois que vous avez cliqué sur **créer** :
+4.  Une fois que vous avez cliqué sur **créer**:
 
     1. Insérez le **nom** de votre choix pour cette instance de service.
     2. Sélectionnez un **abonnement** approprié.
-    3. Sélectionnez le **niveau tarifaire** approprié, s’il s’agit de la première fois que vous créez un *service traduction de texte Translator Text* , vous devez disposer d’un niveau gratuit (nommé F0).
+    3. Sélectionnez le **niveau tarifaire** approprié, s’il s’agit de la première fois que vous créez un *service traduction de texte Translator Text*, vous devez disposer d’un niveau gratuit (nommé F0).
     4. Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces laboratoires) sous un groupe de ressources commun).
 
         > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
@@ -114,7 +114,7 @@ Pour utiliser l’API Azure translator, vous devez configurer une instance du se
 
         ![Sélectionnez le bouton créer.](images/AzureLabs-Lab1-04.png)
 
-5.  Une fois que vous avez cliqué sur **créer** , vous devez attendre que le service soit créé, cette opération peut prendre une minute.
+5.  Une fois que vous avez cliqué sur **créer**, vous devez attendre que le service soit créé, cette opération peut prendre une minute.
 6.  Une notification s’affichera dans le portail une fois l’instance de service créée. 
 
     ![Notification de création de service Azure](images/AzureLabs-Lab1-05.png)
@@ -128,7 +128,7 @@ Pour utiliser l’API Azure translator, vous devez configurer une instance du se
     ![Page API de traduction de texte Translator Text service](images/AzureLabs-Lab1-07.png)
 
 9.  Dans ce didacticiel, votre application doit effectuer des appels à votre service, à l’aide de la clé d’abonnement de votre service. 
-10. À partir de la page *démarrage rapide* de votre service *traduction de texte Translator Text* , accédez à la première étape, *saisissez vos clés* , puis cliquez sur **clés** (vous pouvez également y parvenir en cliquant sur les touches de lien bleu, situées dans le menu de navigation services, indiqué par l’icône de clé). Cela permet de révéler vos *clés* de service.
+10. À partir de la page *démarrage rapide* de votre service *traduction de texte Translator Text* , accédez à la première étape, *saisissez vos clés*, puis cliquez sur **clés** (vous pouvez également y parvenir en cliquant sur les touches de lien bleu, situées dans le menu de navigation services, indiqué par l’icône de clé). Cela permet de révéler vos *clés* de service.
 11. Prenez une copie de l’une des clés affichées, car vous en aurez besoin plus tard dans votre projet. 
 
 ## <a name="chapter-2--set-up-the-unity-project"></a>Chapitre 2 : configurer le projet Unity
@@ -140,27 +140,27 @@ Configurez et testez votre casque immersif en réalité mixte.
 
 Voici une configuration standard pour le développement avec une réalité mixte et, par conséquent, est un bon modèle pour d’autres projets :
 
-1.  Ouvrez *Unity* et cliquez sur **nouveau** . 
+1.  Ouvrez *Unity* et cliquez sur **nouveau**. 
 
     ![Démarrez le nouveau projet Unity.](images/AzureLabs-Lab1-08.png)
 
-2.  Vous devez maintenant fournir un nom de projet Unity. Insérez **MR_Translation** . Assurez-vous que le type de projet est défini sur **3D** . Définissez l' *emplacement* approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet** .
+2.  Vous devez maintenant fournir un nom de projet Unity. Insérez **MR_Translation**. Assurez-vous que le type de projet est défini sur **3D**. Définissez l' *emplacement* approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
 
     ![Fournissez des détails pour le nouveau projet Unity.](images/AzureLabs-Lab1-09.png)
 
-3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio** . Accédez à **modifier > préférences** puis, dans la nouvelle fenêtre, accédez à **outils externes** . Remplacez l' **éditeur de script externe** par **Visual Studio 2017** . Fermez la fenêtre **Préférences** .
+3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à **modifier > préférences** puis, dans la nouvelle fenêtre, accédez à **outils externes**. Remplacez l' **éditeur de script externe** par **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
 
     ![Mettre à jour la préférence éditeur de script.](images/AzureLabs-Lab1-10.png)
 
-4.  Accédez ensuite à **fichier > paramètres de build** et basculez la plateforme sur **plateforme Windows universelle** , en cliquant sur le bouton **changer de plateforme** .
+4.  Accédez ensuite à **fichier > paramètres de build** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
 
     ![Fenêtre Paramètres de build, basculez plateforme vers UWP.](images/AzureLabs-Lab1-11.png)
 
 5.  Accédez à **fichier > paramètres de build** et assurez-vous que :
 
-    1. L' **appareil cible** est défini sur **n’importe quel appareil** .
+    1. L' **appareil cible** est défini sur **n’importe quel appareil**.
 
-        > Pour Microsoft HoloLens, définissez **appareil cible** sur *HoloLens* .
+        > Pour Microsoft HoloLens, définissez **appareil cible** sur *HoloLens*.
 
     2. Le **type de build** est **D3D**
     3. Le **SDK** est configuré sur le **dernier installé**
@@ -168,21 +168,21 @@ Voici une configuration standard pour le développement avec une réalité mixte
     5. La **génération et l’exécution** sont définies sur l' **ordinateur local**
     6. Enregistrez la scène et ajoutez-la à la Build.
 
-        1. Pour ce faire, sélectionnez **Ajouter des scènes ouvertes** . Une fenêtre d’enregistrement s’affiche.
+        1. Pour ce faire, sélectionnez **Ajouter des scènes ouvertes**. Une fenêtre d’enregistrement s’affiche.
 
             ![Cliquez sur le bouton Ajouter des scènes ouvertes](images/AzureLabs-Lab1-12.png)
 
-        2. Créez un dossier pour cela, ainsi que toute nouvelle scène, puis sélectionnez le bouton **nouveau dossier** pour créer un nouveau dossier, puis nommez-le **scenes** .
+        2. Créez un dossier pour cela, ainsi que toute nouvelle scène, puis sélectionnez le bouton **nouveau dossier** pour créer un nouveau dossier, puis nommez-le **scenes**.
 
             ![Créer un dossier de scripts](images/AzureLabs-Lab1-13.png)
 
-        3. Ouvrez le dossier **scenes** nouvellement créé, puis dans le champ *nom de fichier* :, tapez **MR_TranslationScene** , puis cliquez sur **Enregistrer** .
+        3. Ouvrez le dossier **scenes** nouvellement créé, puis dans le champ *nom de fichier*:, tapez **MR_TranslationScene**, puis cliquez sur **Enregistrer**.
 
             ![Donnez un nom à la nouvelle scène.](images/AzureLabs-Lab1-14.png)
 
             > Sachez que vous devez enregistrer vos scènes Unity dans le dossier *ressources* , car elles doivent être associées au projet Unity. La création du dossier scenes (et d’autres dossiers similaires) est un moyen classique de structurer un projet Unity.
 
-    7. Les paramètres restants, dans *paramètres de build* , doivent être laissés par défaut pour le moment.
+    7. Les paramètres restants, dans *paramètres de build*, doivent être laissés par défaut pour le moment.
 
 6. Dans la fenêtre *paramètres de build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* . 
 
@@ -198,29 +198,29 @@ Voici une configuration standard pour le développement avec une réalité mixte
 
             ![Mettez à jour d’autres paramètres.](images/AzureLabs-Lab1-16.png)
       
-    2. Dans l’onglet **paramètres de publication** , sous **fonctionnalités** , activez la case à cocher :
+    2. Dans l’onglet **paramètres de publication** , sous **fonctionnalités**, activez la case à cocher :
 
         1. **InternetClient**
         2. **Microphone**
 
             ![Mise à jour des paramètres de publication.](images/AzureLabs-Lab1-17.png)
 
-    3. Plus bas dans le volet, dans les **paramètres XR** (situés sous **paramètres de publication** ), cochez la **réalité virtuelle prise en charge** , assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
+    3. Plus bas dans le volet, dans les **paramètres XR** (situés sous **paramètres de publication**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
 
         ![Mettez à jour les paramètres X R.](images/AzureLabs-Lab1-18.png)
 
-8.  De retour dans les **paramètres de build** , les *projets Unity C#* ne sont plus grisés. Cochez la case en regard de cette option. 
+8.  De retour dans les **paramètres de build**, les *projets Unity C#* ne sont plus grisés. Cochez la case en regard de cette option. 
 9.  Fermez la fenêtre Build Settings.
-10. Enregistrez votre scène et votre projet ( **fichier > enregistrer la scène/le fichier > enregistrer le projet** ).
+10. Enregistrez votre scène et votre projet (**fichier > enregistrer la scène/le fichier > enregistrer le projet**).
 
 ## <a name="chapter-3--main-camera-setup"></a>Chapitre 3 – Configuration de l’appareil photo principal
 
 > [!IMPORTANT]
 > Si vous souhaitez ignorer le composant *Unity Set up* de ce cours et continuer directement dans le code, n’hésitez pas à [Télécharger ce fichier. pour Unity](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20301%20-%20Language%20translation/Azure-MR-301.unitypackage), à l’importer dans votre projet en tant que [*package personnalisé*](https://docs.unity3d.com/Manual/AssetPackages.html), puis à passer au [Chapitre 5](#chapter-5--create-the-results-class). Vous devrez toujours créer un projet Unity.
 
-1.  Dans le *volet hiérarchie* , vous trouverez un objet appelé **caméra principale** , cet objet représente le point de vue « Head » une fois que vous êtes « dans » votre application.
-2.  Avec le tableau de bord Unity devant vous, sélectionnez la **caméra principale gameobject** . Vous remarquerez que le *panneau Inspecteur* (généralement situé à droite dans le tableau de bord) affichera les différents composants de ce *gameobject* , avec la *transformation* en haut, suivi de l' *appareil photo* et d’autres composants. Vous devez réinitialiser la transformation de la caméra principale, afin qu’elle soit positionnée correctement.
-3.  Pour ce faire, sélectionnez l’icône d' **engrenage** en regard du composant *transformer* de l’appareil photo, puis sélectionnez **Réinitialiser** . 
+1.  Dans le *volet hiérarchie*, vous trouverez un objet appelé **caméra principale**, cet objet représente le point de vue « Head » une fois que vous êtes « dans » votre application.
+2.  Avec le tableau de bord Unity devant vous, sélectionnez la **caméra principale gameobject**. Vous remarquerez que le *panneau Inspecteur* (généralement situé à droite dans le tableau de bord) affichera les différents composants de ce *gameobject*, avec la *transformation* en haut, suivi de l' *appareil photo* et d’autres composants. Vous devez réinitialiser la transformation de la caméra principale, afin qu’elle soit positionnée correctement.
+3.  Pour ce faire, sélectionnez l’icône d' **engrenage** en regard du composant *transformer* de l’appareil photo, puis sélectionnez **Réinitialiser**. 
 
     ![Réinitialisez la transformation principale de l’appareil photo.](images/AzureLabs-Lab1-19.png)
  
@@ -232,14 +232,14 @@ Voici une configuration standard pour le développement avec une réalité mixte
 
         ![Informations de transformation pour l’appareil photo](images/AzureLabs-Lab1-20.png)
 
-5.  Ensuite, avec l’objet **caméra principal** sélectionné, consultez le bouton **Ajouter un composant** situé en bas du panneau de l' *inspecteur* . 
+5.  Ensuite, avec l’objet **caméra principal** sélectionné, consultez le bouton **Ajouter un composant** situé en bas du panneau de l' *inspecteur*. 
 6.  Sélectionnez ce bouton et effectuez une recherche (en tapant *source audio* dans le champ de recherche ou en parcourant les sections) du composant appelé **source audio** , comme indiqué ci-dessous, puis sélectionnez-le (en appuyant sur entrée).
-7.  Un composant *source audio* est ajouté à la **caméra principale** , comme illustré ci-dessous.
+7.  Un composant *source audio* est ajouté à la **caméra principale**, comme illustré ci-dessous.
 
     ![Ajoutez un composant source audio.](images/AzureLabs-Lab1-21.png)
 
     > [!NOTE]
-    > Pour Microsoft HoloLens, vous devrez également modifier les éléments suivants, qui font partie du composant **Camera** sur votre **caméra principale** :
+    > Pour Microsoft HoloLens, vous devrez également modifier les éléments suivants, qui font partie du composant **Camera** sur votre **caméra principale**:
     > - **Indicateurs d’effacement :** Couleur unie.
     > - **Arrière-plan** 'Black, alpha 0 ' – couleur hexadécimale : #00000000.
 
@@ -247,12 +247,12 @@ Voici une configuration standard pour le développement avec une réalité mixte
 
 Pour afficher l’entrée et la sortie de la traduction, vous devez créer une interface utilisateur de base. Pour ce cours, vous allez créer un objet d’interface utilisateur Canvas, avec plusieurs objets « Text » pour afficher les données.
 
-1.  Cliquez avec le bouton droit dans une zone vide du *panneau de hiérarchie* , sous **UI** , ajoutez une zone de **dessin** .
+1.  Cliquez avec le bouton droit dans une zone vide du *panneau de hiérarchie*, sous **UI**, ajoutez une zone de **dessin**.
 
     ![Ajoutez un nouvel objet d’interface utilisateur Canvas.](images/AzureLabs-Lab1-22.png)
 
-2.  Lorsque l’objet canevas est sélectionné, dans le *panneau Inspecteur* (dans le composant « Canvas »), changez le **mode de rendu** en **espace universel** . 
-3.  Ensuite, modifiez les paramètres suivants dans la *transformation Rect du panneau Inspecteur* :
+2.  Lorsque l’objet canevas est sélectionné, dans le *panneau Inspecteur* (dans le composant « Canvas »), changez le **mode de rendu** en **espace universel**. 
+3.  Ensuite, modifiez les paramètres suivants dans la *transformation Rect du panneau Inspecteur*:
 
     1. *Pos*  -   **X** 0 **Y** 0 **Z** 40
     2. *Largeur* -500
@@ -261,9 +261,9 @@ Pour afficher l’entrée et la sortie de la traduction, vous devez créer une i
 
         ![Mettez à jour la transformation Rect pour la zone de dessin.](images/AzureLabs-Lab1-23.png)
  
-4.  Cliquez avec le bouton droit sur le **canevas** dans le *panneau hiérarchie* , sous **interface utilisateur** , puis ajoutez un **panneau** . Ce **panneau** fournit un arrière-plan du texte que vous afficherez dans la scène.
-5.  Cliquez avec le bouton droit sur le **panneau** dans le *volet hiérarchie* , sous **interface utilisateur** , puis ajoutez un **objet texte** . Répétez le même processus jusqu’à ce que vous ayez créé quatre objets de texte d’interface utilisateur au total (Conseil : si le premier objet « texte » est sélectionné, vous pouvez simplement appuyer sur **« Ctrl + d »** pour le dupliquer, jusqu’à ce que vous en ayez quatre au total). 
-6.  Pour chaque **objet texte** , sélectionnez-le et utilisez les tableaux ci-dessous pour définir les paramètres dans le *panneau Inspecteur* .
+4.  Cliquez avec le bouton droit sur le **canevas** dans le *panneau hiérarchie*, sous **interface utilisateur**, puis ajoutez un **panneau**. Ce **panneau** fournit un arrière-plan du texte que vous afficherez dans la scène.
+5.  Cliquez avec le bouton droit sur le **panneau** dans le *volet hiérarchie*, sous **interface utilisateur**, puis ajoutez un **objet texte**. Répétez le même processus jusqu’à ce que vous ayez créé quatre objets de texte d’interface utilisateur au total (Conseil : si le premier objet « texte » est sélectionné, vous pouvez simplement appuyer sur **« Ctrl + d »** pour le dupliquer, jusqu’à ce que vous en ayez quatre au total). 
+6.  Pour chaque **objet texte**, sélectionnez-le et utilisez les tableaux ci-dessous pour définir les paramètres dans le *panneau Inspecteur*.
 
     1. Pour le composant de *transformation Rect* :
 
@@ -287,11 +287,11 @@ Pour afficher l’entrée et la sortie de la traduction, vous devez créer une i
 
         ![Entrez les valeurs correspondantes pour les étiquettes de l’interface utilisateur.](images/AzureLabs-Lab1-24.png)
 
-    3. En outre, définissez le style de police en **gras** . Cela rend le texte plus facile à lire.
+    3. En outre, définissez le style de police en **gras**. Cela rend le texte plus facile à lire.
 
         ![Police en gras.](images/AzureLabs-Lab1-25.png)
 
-7.  Pour chaque *objet texte de l’interface utilisateur* créé au [Chapitre 5](#chapter-5--create-the-results-class), créez un nouvel **objet texte de l’interface utilisateur** *enfant* . Ces enfants affichent la sortie de l’application. Pour créer des objets *enfants* , cliquez avec le bouton droit sur le parent souhaité (par exemple, *MicrophoneStatusLabel* ), puis sélectionnez **interface utilisateur** et **texte** .
+7.  Pour chaque *objet texte de l’interface utilisateur* créé au [Chapitre 5](#chapter-5--create-the-results-class), créez un nouvel **objet texte de l’interface utilisateur** *enfant* . Ces enfants affichent la sortie de l’application. Pour créer des objets *enfants* , cliquez avec le bouton droit sur le parent souhaité (par exemple, *MicrophoneStatusLabel*), puis sélectionnez **interface utilisateur** et **texte**.
 8.  Pour chacun de ces enfants, sélectionnez-les et utilisez les tableaux ci-dessous pour définir les paramètres dans le panneau de l’inspecteur.
 
     1. Pour le composant de **transformation Rect** :
@@ -316,7 +316,7 @@ Pour afficher l’entrée et la sortie de la traduction, vous devez créer une i
 
     ![aligner le texte.](images/AzureLabs-Lab1-26.png)
 
-10. Pour vous assurer que les objets texte de l' **interface utilisateur enfant** sont facilement lisibles, modifiez leur *couleur* . Pour ce faire, cliquez sur la barre (« noire » actuellement) en regard de la *couleur* . 
+10. Pour vous assurer que les objets texte de l' **interface utilisateur enfant** sont facilement lisibles, modifiez leur *couleur*. Pour ce faire, cliquez sur la barre (« noire » actuellement) en regard de la *couleur*. 
 
     ![Entrez les valeurs correspondantes pour les sorties de texte de l’interface utilisateur.](images/AzureLabs-Lab1-27.png)
  
@@ -325,11 +325,11 @@ Pour afficher l’entrée et la sortie de la traduction, vous devez créer une i
     ![Mettez à jour la couleur en bleu.](images/AzureLabs-Lab1-28.png)
  
 12. Vous trouverez ci-dessous l’aspect de l' **interface utilisateur** .
-    1.  Dans le *volet hiérarchie* :
+    1.  Dans le *volet hiérarchie*:
 
         ![Avoir une hiérarchie dans la structure fournie.](images/AzureLabs-Lab1-29.png)
 
-    2.  Dans les vues *scène* et *jeu* :
+    2.  Dans les vues *scène* et *jeu*:
 
         ![Avoir les vues scène et jeu dans la même structure.](images/AzureLabs-Lab1-30.png)
 
@@ -344,17 +344,17 @@ Le premier script que vous devez créer est la classe *results* , qui est charg�
 
 Pour créer cette classe : 
 
-1.  Cliquez avec le bouton droit dans le *panneau Projet* , puis **créez > dossier** . Nommez le dossier **scripts** . 
+1.  Cliquez avec le bouton droit dans le *panneau Projet*, puis **créez > dossier**. Nommez le dossier **scripts**. 
  
     ![Créer un dossier de scripts.](images/AzureLabs-Lab1-31.png)
 
     ![Ouvrez le dossier scripts.](images/AzureLabs-Lab1-32.png)
  
-2.  Avec le dossier **scripts** créer, double-cliquez dessus pour l’ouvrir. Ensuite, dans ce dossier, cliquez avec le bouton droit, puis sélectionnez **créer >** **script C#** . Nommez les *résultats* du script. 
+2.  Avec le dossier **scripts** créer, double-cliquez dessus pour l’ouvrir. Ensuite, dans ce dossier, cliquez avec le bouton droit, puis sélectionnez **créer >** **script C#**. Nommez les *résultats* du script. 
 
     ![Créez le premier script.](images/AzureLabs-Lab1-33.png)
  
-3.  Double-cliquez sur le nouveau script *results* pour l’ouvrir avec **Visual Studio** .
+3.  Double-cliquez sur le nouveau script *results* pour l’ouvrir avec **Visual Studio**.
 4.  Insérez les espaces de noms suivants :
 
     ```cs
@@ -438,11 +438,11 @@ Pour créer cette classe :
         }
     ```
 
-8.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity* .
+8.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
 
 ## <a name="chapter-6--create-the-microphonemanager-class"></a>Chapitre 6 : créer la classe *MicrophoneManager*
 
-La deuxième classe que vous allez créer est *MicrophoneManager* .
+La deuxième classe que vous allez créer est *MicrophoneManager*.
 
 Cette classe est chargée des opérations suivantes :
 
@@ -453,7 +453,7 @@ Cette classe est chargée des opérations suivantes :
 
 Pour créer cette classe : 
 1.  Double-cliquez sur le dossier **scripts** pour l’ouvrir. 
-2.  Cliquez avec le bouton droit dans le dossier **scripts** , puis cliquez sur **créer > script C#** . Nommez le script *MicrophoneManager* . 
+2.  Cliquez avec le bouton droit dans le dossier **scripts** , puis cliquez sur **créer > script C#**. Nommez le script *MicrophoneManager*. 
 3.  Double-cliquez sur le nouveau script pour l’ouvrir avec Visual Studio.
 4.  Mettez à jour les espaces de noms pour qu’ils soient identiques à ce qui suit, en haut de la classe *MicrophoneManager* :
 
@@ -567,14 +567,14 @@ Le dernier script que vous devez créer est la classe *Translator* .
 
 Cette classe est chargée des opérations suivantes :
 
--   Authentification de l’application avec *Azure* , en échange d’un **jeton d’authentification** .
+-   Authentification de l’application avec *Azure*, en échange d’un **jeton d’authentification**.
 -   Utilisez le **jeton d’authentification** pour envoyer du texte (reçu à partir de la classe *MicrophoneManager* ) à traduire.
 -   Recevoir le résultat traduit et le passer à la classe *results* pour le visualiser dans l’interface utilisateur.
 
 Pour créer cette classe : 
 1.  Accédez au dossier **scripts** que vous avez créé précédemment. 
-2.  Cliquez avec le bouton droit dans le **panneau Projet** , **créez > script C#** . Appelez le *traducteur* de script.
-3.  Double-cliquez sur le script du nouveau *convertisseur* pour l’ouvrir **avec Visual Studio** .
+2.  Cliquez avec le bouton droit dans le **panneau Projet**, **créez > script C#**. Appelez le *traducteur* de script.
+3.  Double-cliquez sur le script du nouveau *convertisseur* pour l’ouvrir **avec Visual Studio**.
 4.  Ajoutez les espaces de noms suivants au début du fichier :
 
     ```csharp
@@ -611,10 +611,10 @@ Pour créer cette classe :
     > [!NOTE]
     > - Les langages insérés dans l' **énumération** Languages sont simplement des exemples. N’hésitez pas à en ajouter d’autres si vous le souhaitez. l' [API prend en charge plus de 60 langues](https://docs.microsoft.com/azure/cognitive-services/translator/languages) (y compris Klingon) !
     > - Il existe une [page plus interactive couvrant les langues disponibles](https://www.microsoft.com/translator/business/languages/). Toutefois, sachez que la page semble fonctionner uniquement lorsque la langue du site est définie sur «» (et que le site Microsoft est susceptible de rediriger vers votre langue native). Vous pouvez modifier la langue du site en bas de la page ou en modifiant l’URL.
-    > - La valeur **authorizationKey** , dans l’extrait de code ci-dessus, doit être la **clé**  que vous avez reçue lorsque vous vous êtes abonné au *API de traduction de texte Translator Text Azure* . Ce sujet a été abordé dans le [Chapitre 1](#chapter-1--the-azure-portal).
+    > - La valeur **authorizationKey** , dans l’extrait de code ci-dessus, doit être la **clé**  que vous avez reçue lorsque vous vous êtes abonné au *API de traduction de texte Translator Text Azure*. Ce sujet a été abordé dans le [Chapitre 1](#chapter-1--the-azure-portal).
 
 6.  Vous devez maintenant ajouter du code pour les méthodes *éveillé ()* et *Start ()* . 
-7.  Dans ce cas, le code fait un appel à *Azure* à l’aide de la clé d’autorisation pour obtenir un *jeton* .
+7.  Dans ce cas, le code fait un appel à *Azure* à l’aide de la clé d’autorisation pour obtenir un *jeton*.
 
     ```csharp
         private void Awake() 
@@ -675,9 +675,9 @@ Pour créer cette classe :
     ```
 
     > [!WARNING]
-    > Si vous modifiez le nom de la méthode IEnumerator **GetTokenCoroutine ()** , vous devez mettre à jour les valeurs de chaîne d’appel *StartCoroutine* et *StopCoroutine* dans le code ci-dessus. En fonction de la [documentation Unity](https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html), pour arrêter une *Coroutine* spécifique, vous devez utiliser la méthode de valeur de chaîne.
+    > Si vous modifiez le nom de la méthode IEnumerator **GetTokenCoroutine ()**, vous devez mettre à jour les valeurs de chaîne d’appel *StartCoroutine* et *StopCoroutine* dans le code ci-dessus. En fonction de la [documentation Unity](https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html), pour arrêter une *Coroutine* spécifique, vous devez utiliser la méthode de valeur de chaîne.
 
-9.  Ensuite, ajoutez la Coroutine (avec une méthode de flux « support » juste en dessous) pour obtenir la traduction du texte reçu par la classe *MicrophoneManager* . Ce code crée une chaîne de requête à envoyer à l' *API de traduction de texte Translator Text Azure* , puis utilise la classe UnityWebRequest Unity interne pour effectuer un appel’obtenir’au point de terminaison avec la chaîne de requête. Le résultat est ensuite utilisé pour définir la traduction dans votre objet de résultats. Le code ci-dessous illustre l’implémentation :
+9.  Ensuite, ajoutez la Coroutine (avec une méthode de flux « support » juste en dessous) pour obtenir la traduction du texte reçu par la classe *MicrophoneManager* . Ce code crée une chaîne de requête à envoyer à l' *API de traduction de texte Translator Text Azure*, puis utilise la classe UnityWebRequest Unity interne pour effectuer un appel’obtenir’au point de terminaison avec la chaîne de requête. Le résultat est ensuite utilisé pour définir la traduction dans votre objet de résultats. Le code ci-dessous illustre l’implémentation :
 
     ```csharp
         /// <summary> 
@@ -708,19 +708,19 @@ Pour créer cette classe :
         }
     ```
 
-10. Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity* .
+10. Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
 
 ## <a name="chapter-8--configure-the-unity-scene"></a>Chapitre 8 – configurer la scène Unity
 
-1.  De retour dans l’éditeur Unity, cliquez et faites glisser la classe *results* *du* dossier **scripts** vers l’objet **Camera principal** dans le *panneau hiérarchie* .
-2.  Cliquez sur l' **appareil photo principal** et observez le panneau de l' *inspecteur* . Vous remarquerez que dans le composant *script* nouvellement ajouté, il y a quatre champs avec des valeurs vides. Il s’agit des références de sortie des propriétés dans le code. 
+1.  De retour dans l’éditeur Unity, cliquez et faites glisser la classe *results* *du* dossier **scripts** vers l’objet **Camera principal** dans le *panneau hiérarchie*.
+2.  Cliquez sur l' **appareil photo principal** et observez le panneau de l' *inspecteur*. Vous remarquerez que dans le composant *script* nouvellement ajouté, il y a quatre champs avec des valeurs vides. Il s’agit des références de sortie des propriétés dans le code. 
 3.  Faites glisser les objets de **texte** appropriés du volet de la *hiérarchie* vers ces quatre emplacements, comme indiqué dans l’image ci-dessous.
 
     ![Met à jour les références cibles avec les valeurs spécifiées.](images/AzureLabs-Lab1-34.png)
   
-4.  Ensuite, cliquez et faites glisser la classe *Translator* du dossier **scripts** vers l’objet **Camera principal** dans le *panneau hiérarchie* . 
-5.  Ensuite, cliquez et faites glisser la classe *MicrophoneManager* du dossier **scripts** vers l’objet **Camera principal** dans le *panneau hiérarchie* . 
-6.  Enfin, cliquez sur l' **appareil photo principal** et observez le panneau de l' *inspecteur* . Vous remarquerez que dans le script que vous avez glissé, il existe deux zones de liste déroulante qui vous permettent de définir les langues.
+4.  Ensuite, cliquez et faites glisser la classe *Translator* du dossier **scripts** vers l’objet **Camera principal** dans le *panneau hiérarchie*. 
+5.  Ensuite, cliquez et faites glisser la classe *MicrophoneManager* du dossier **scripts** vers l’objet **Camera principal** dans le *panneau hiérarchie*. 
+6.  Enfin, cliquez sur l' **appareil photo principal** et observez le panneau de l' *inspecteur*. Vous remarquerez que dans le script que vous avez glissé, il existe deux zones de liste déroulante qui vous permettent de définir les langues.
  
     ![Vérifiez que les langues de traduction prévues sont entrées.](images/AzureLabs-Lab1-35.png)
 
@@ -731,12 +731,12 @@ Pour créer cette classe :
 Assurez-vous que :
 
 - Tous les paramètres mentionnés dans le [Chapitre 1](#chapter-1--the-azure-portal) sont correctement définis. 
-- Les *résultats* , *Translator* et *MicrophoneManager* , les scripts sont attachés à l’objet **Camera principal** . 
+- Les *résultats*, *Translator* et *MicrophoneManager*, les scripts sont attachés à l’objet **Camera principal** . 
 - Vous avez placé votre **clé** de Service *Azure API de traduction de texte Translator Text* dans la variable **AuthorizationKey** dans le script du *traducteur* .  
 - Tous les champs du volet principal de l’inspecteur de l' *appareil photo* sont correctement affectés.
 - Votre microphone fonctionne lors de l’exécution de votre scène (dans le cas contraire, vérifiez que votre microphone attaché est l’appareil *par défaut* et que vous l’avez [configuré correctement dans Windows](https://support.microsoft.com/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10)).
 
-Vous pouvez tester le casque immersif en appuyant sur le bouton **lecture** dans l' *éditeur Unity* .
+Vous pouvez tester le casque immersif en appuyant sur le bouton **lecture** dans l' *éditeur Unity*.
 L’application doit fonctionner par le biais du casque immersif attaché.
 
 > [!WARNING]  
@@ -746,13 +746,13 @@ L’application doit fonctionner par le biais du casque immersif attaché.
 
 Tout ce qui est nécessaire pour la section Unity de ce projet est maintenant terminé. il est donc temps de la générer à partir d’Unity.
 
-1.  Accédez à **paramètres de build** : **fichier > paramètres de Build...**
-2.  Dans la fenêtre **paramètres de build** , cliquez sur **générer** .
+1.  Accédez à **paramètres de build**: **fichier > paramètres de Build...**
+2.  Dans la fenêtre **paramètres de build** , cliquez sur **générer**.
 
     ![Générez la scène Unity.](images/AzureLabs-Lab1-36.png)
   
-3.  Si ce n’est pas déjà le cas, Tick **Unity C# Projects** .
-4.  Cliquez sur **Générer** . Unity lance une fenêtre de l' *Explorateur de fichiers* , dans laquelle vous devez créer, puis sélectionner un dossier dans lequel générer l’application. Créez ce dossier maintenant, puis nommez-le *application* . Ensuite, avec le dossier d' *application* sélectionné, appuyez sur **Sélectionner un dossier** . 
+3.  Si ce n’est pas déjà le cas, Tick **Unity C# Projects**.
+4.  Cliquez sur **Générer**. Unity lance une fenêtre de l' *Explorateur de fichiers* , dans laquelle vous devez créer, puis sélectionner un dossier dans lequel générer l’application. Créez ce dossier maintenant, puis nommez-le *application*. Ensuite, avec le dossier d' *application* sélectionné, appuyez sur **Sélectionner un dossier**. 
 5.  Unity commence à générer votre projet dans le dossier de l' *application* . 
 6.  Une fois la génération de Unity terminée (cela peut prendre un certain temps), une fenêtre de l' *Explorateur de fichiers* s’ouvre à l’emplacement de votre Build (Vérifiez la barre des tâches, car elle ne s’affiche pas toujours au-dessus de votre Windows, mais vous informera de l’ajout d’une nouvelle fenêtre).
 
@@ -760,13 +760,13 @@ Tout ce qui est nécessaire pour la section Unity de ce projet est maintenant te
 
 Pour déployer votre application :
 
-1.  Accédez à votre nouvelle build Unity (le dossier de l' *application* ) et ouvrez le fichier solution avec *Visual Studio* .
-2.  Dans la configuration de la solution, sélectionnez **Déboguer** .
-3.  Dans la plateforme de la solution, sélectionnez **x86** , **ordinateur local** . 
+1.  Accédez à votre nouvelle build Unity (le dossier de l' *application* ) et ouvrez le fichier solution avec *Visual Studio*.
+2.  Dans la configuration de la solution, sélectionnez **Déboguer**.
+3.  Dans la plateforme de la solution, sélectionnez **x86**, **ordinateur local**. 
 
-    > Pour Microsoft HoloLens, il peut s’avérer plus facile de définir cette valeur sur *machine distante* , afin de ne pas être attaché à votre ordinateur. Toutefois, vous devez également effectuer les opérations suivantes :
-    > - Identifiez l' **adresse IP** de votre HoloLens, qui se trouve dans les *paramètres > réseau & Internet > les options avancées du Wi-Fi >* ; IPv4 est l’adresse que vous devez utiliser. 
-    > - Assurez-vous que le *mode développeur* est **activé** ; trouvé dans *paramètres > mettre à jour & > de sécurité pour les développeurs* .
+    > Pour Microsoft HoloLens, il peut s’avérer plus facile de définir cette valeur sur *machine distante*, afin de ne pas être attaché à votre ordinateur. Toutefois, vous devez également effectuer les opérations suivantes :
+    > - Connaître l' **adresse IP** de votre HoloLens, qui se trouve dans les *paramètres > réseau & Internet > Wi-Fi > options avancées*. IPv4 est l’adresse que vous devez utiliser. 
+    > - Assurez-vous que le *mode développeur* est **activé**; trouvé dans *paramètres > mettre à jour & > de sécurité pour les développeurs*.
 
     ![Déployez la solution à partir de Visual Studio.](images/AzureLabs-Lab1-37.png)
     

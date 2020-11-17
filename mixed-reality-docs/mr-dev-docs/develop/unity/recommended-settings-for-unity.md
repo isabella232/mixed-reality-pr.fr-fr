@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Unity, paramètres, réalité mixte
-ms.openlocfilehash: 0e0f8649525c84bdc479dbcee92f737e877a60ca
-ms.sourcegitcommit: e1de7caa7bd46afe9766186802fa4254d33d1ca6
+keywords: Unity, paramètres, réalité mixte, HoloLens, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, performances, paramètres de qualité, paramètres d’éclairage, mémoire tampon de profondeur, XR, perte de suivi
+ms.openlocfilehash: b560e75043cbf4a3cb93837938fdb65324cb16bb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92240750"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677368"
 ---
 # <a name="recommended-settings-for-unity"></a>Paramètres recommandés pour Unity
 
@@ -23,7 +23,7 @@ Unity fournit un ensemble d’options par défaut qui sont généralement le cas
 
 Il est important de modifier les **paramètres de qualité des Unity** pour votre environnement afin qu’ils soient **très faibles**. Cela permet de s’assurer que votre application exécute efficacement à la fréquence appropriée. Cela est extrêmement important pour le développement HoloLens. Pour le développement sur des casques immersifs, selon les spécifications du bureau qui alimente l’expérience VR, vous pouvez toujours obtenir une fréquence d’images sans les paramètres de qualité la plus basse.
 
-Dans Unity 2019 LTS +, vous pouvez définir le niveau de qualité du projet en accédant à **modifier**  >  **Project Settings**  >  la**qualité** des paramètres du projet et en définissant la **valeur par défaut** en cliquant sur la flèche vers le bas jusqu’au niveau de qualité **très faible** .
+Dans Unity 2019 LTS +, vous pouvez définir le niveau de qualité du projet en accédant à **modifier**  >  **Project Settings**  >  la **qualité** des paramètres du projet et en définissant la **valeur par défaut** en cliquant sur la flèche vers le bas jusqu’au niveau de qualité **très faible** .
 
 ### <a name="lighting-settings"></a>Paramètres d’éclairage
 
@@ -62,7 +62,7 @@ Pour obtenir une meilleure stabilité de l’hologramme à partir de la percepti
 Pour activer cette fonctionnalité dans votre projet Unity
 
 1) Ouvrez **Player XR Settings** (accédez à **Edit** > **Project Settings** > **Player** > **XR Settings**).
-2) Activez la case à cocher **activer le partage de tampons de profondeur** dans les kits de développement logiciel (SDK) **Virtual Real**  >  expansion**Windows Mixed realisation** (la case à cocher**Virtual Really Supported**
+2) Activez la case à cocher **activer le partage de tampons de profondeur** dans les kits de développement logiciel (SDK) **Virtual Real**  >  expansion **Windows Mixed realisation** (la case à cocher **Virtual Really Supported**
 
 En outre, il est recommandé de sélectionner **profondeur de 16 bits** sous le paramètre **format de profondeur** dans ce panneau, en particulier pour le développement HoloLens. La sélection de 16 bits comparée à 24 bits réduit considérablement les besoins en bande passante, car moins de données devront être déplacées/traitées.
 
@@ -106,7 +106,7 @@ HoloLens possède un processeur et un GPU de classe mobile, ce qui signifie que 
 
 Pour activer/désactiver l’écran de démarrage holographique :
 
-1) Aller à la page **modifier**les  >  **paramètres du projet**, page du  >  **lecteur**
+1) Aller à la page **modifier** les  >  **paramètres du projet**, page du  >  **lecteur**
 2) Cliquez sur l’onglet **Windows Store** et ouvrez la section **image de démarrage** .
 3) Appliquez l’image souhaitée sous la propriété **image de démarrage holographique Windows holographique >** .
     - Le fait de basculer l’option **afficher l’écran de démarrage Unity** active ou désactive l’écran de démarrage de la personnalisation Unity. Si vous ne disposez pas d’une licence Pro Unity, l’écran de démarrage de la personnalisation Unity s’affiche toujours.
@@ -114,10 +114,10 @@ Pour activer/désactiver l’écran de démarrage holographique :
 
 |  Afficher l’écran de démarrage Unity  |  Image de démarrage holographique  |  Comportement |
 |----------|----------|----------|
-|  Activé  |  None  |  Affiche l’écran de démarrage Unity par défaut pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
+|  Activé  |  Aucun  |  Affiche l’écran de démarrage Unity par défaut pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
 |  Activé  |  Custom  |  Affichez l’écran de démarrage personnalisé pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
-|  Off  |  None  |  Affichez le noir transparent (rien) jusqu’à ce que l’application soit chargée. |
-|  Off  |  Custom  |  Affichez l’écran de démarrage personnalisé pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
+|  Désactivé  |  Aucun  |  Affichez le noir transparent (rien) jusqu’à ce que l’application soit chargée. |
+|  Désactivé  |  Custom  |  Affichez l’écran de démarrage personnalisé pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
 
 Pour plus d’informations, consultez la [documentation de l’écran de démarrage d’Unity](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html) .
 
@@ -129,7 +129,7 @@ Si une perte de suivi se produit, le comportement par défaut d’Unity consiste
 
 Pour personnaliser l’image de suivi perdu :
 
-1) Aller à la page **modifier**les  >  **paramètres du projet**, page du  >  **lecteur**
+1) Aller à la page **modifier** les  >  **paramètres du projet**, page du  >  **lecteur**
 2) Cliquez sur l’onglet **Windows Store** et ouvrez la section **image de démarrage** .
 3) Appliquez l’image souhaitée sous la propriété image de la **perte de suivi de > Windows holographique** .
 
@@ -139,7 +139,7 @@ Certaines applications peuvent ne pas nécessiter de suivi (par exemple, des [ap
 
 Pour refuser le comportement de pause automatique :
 
-1) Accéder à la **page Modifier**les paramètres du  >  **projet**  >  **Player**
+1) Accéder à la **page Modifier** les paramètres du  >  **projet**  >  **Player**
 2) Cliquez sur l’onglet **Windows Store** et ouvrez la section **image de démarrage** .
 3) Modifiez la case à cocher **Windows holographique > en cas de suspension de perte de suivi et d’affichage d’image** .
 
@@ -147,13 +147,13 @@ Pour refuser le comportement de pause automatique :
 
 Pour définir un comportement personnalisé lorsque le suivi est perdu, gérez les [événements de perte de suivi](tracking-loss-in-unity.md)global.
 
-### <a name="capabilities"></a>Fonctions
+### <a name="capabilities"></a>Fonctionnalités
 
 Pour qu’une application tire parti de certaines fonctionnalités, elle doit déclarer les fonctionnalités appropriées dans son manifeste. Les déclarations de manifeste peuvent être effectuées dans Unity afin qu’elles soient incluses dans chaque exportation de projet suivante.
 
 Les fonctionnalités peuvent être activées pour une application de réalité mixte en :
 
-1) Aller à la page **modifier**les  >  **paramètres du projet**, page du  >  **lecteur**
+1) Aller à la page **modifier** les  >  **paramètres du projet**, page du  >  **lecteur**
 2) Cliquez sur l’onglet **Windows Store** , ouvrez la section **paramètres de publication** et recherchez la liste des **fonctionnalités** .
 
 Les fonctionnalités applicables pour activer les API couramment utilisées pour les applications holographiques sont les suivantes :

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, conception, exemple d’application, contrôles
-ms.openlocfilehash: 82ffa19b27c1d2687b67df659cb3bb50544748fc
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, conception, exemple d’application, contrôles, MRTK, kit de préversion de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573263"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677678"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tableau périodique des éléments
 

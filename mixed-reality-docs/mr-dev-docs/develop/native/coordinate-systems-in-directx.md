@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Réalité mixte, localisateur spatial, frame de référence spatiale, système de coordonnées spatiales, étape spatiale, exemple de code, stabilisation d’image, point d’ancrage spatial, magasin d’ancrage spatial, perte de suivi, procédure pas à pas
-ms.openlocfilehash: 5ae60d5696d40a07ad350d0de097eb2f82f1dde1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Réalité mixte, localisateur spatial, frame de référence spatiale, système de coordonnées spatiales, étape spatiale, exemple de code, stabilisation d’image, ancrage spatial, magasin d’ancrage spatial, perte de suivi, procédure pas à pas, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 4ab97df0d0ce87f86b3b561edb544d503e479e96
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679379"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679658"
 ---
 # <a name="coordinate-systems-in-directx"></a>Systèmes de coordonnées dans DirectX
 
 > [!NOTE]
-> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)** .
+> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
 Les [systèmes de coordonnées](../../design/coordinate-systems.md) constituent la base de la compréhension spatiale offerte par les API Windows Mixed Reality.
 
@@ -593,14 +593,14 @@ Ces sections décrivent ce que nous avons modifié dans le modèle d’applicati
 
 Tout d’abord, nous avons modifié le modèle pour stocker un SpatialLocatorAttachedFrameOfReference au lieu d’un SpatialStationaryFrameOfReference :
 
-À partir de **HolographicTagAlongSampleMain. h** :
+À partir de **HolographicTagAlongSampleMain. h**:
 
 ```
    // A reference frame attached to the holographic camera.
    Windows::Perception::Spatial::SpatialLocatorAttachedFrameOfReference^   m_referenceFrame;
 ```
 
-À partir de **HolographicTagAlongSampleMain. cpp** :
+À partir de **HolographicTagAlongSampleMain. cpp**:
 
 ```
    // In this example, we create a reference frame attached to the device.
@@ -629,7 +629,7 @@ Ce SpatialPointerPose contient les informations nécessaires pour positionner l�
 
 Pour des raisons de confort de l’utilisateur, nous utilisons l’interpolation linéaire (« Lerp ») pour lisser la modification de position de sorte qu’elle se produise sur une période donnée. L’utilisateur est plus à l’aise avec le verrouillage de l’hologramme. Lerping la position de la balise, le long de l’hologramme, nous permet également de stabiliser l’hologramme en amortissant le mouvement. Si ce n’est pas le cas, l’utilisateur voit l’instabilité de l’hologramme en raison de ce qui est normalement considéré comme des mouvements imperceptibles de la tête de l’utilisateur.
 
-À partir de **StationaryQuadRenderer ::P ositionhologram** :
+À partir de **StationaryQuadRenderer ::P ositionhologram**:
 
 ```
    const float& dtime = static_cast<float>(timer.GetElapsedSeconds());
@@ -656,7 +656,7 @@ Pour des raisons de confort de l’utilisateur, nous utilisons l’interpolation
 >[!NOTE]
 >Dans le cas d’un panneau de débogage, vous pouvez choisir de repositionner l’hologramme sur le côté afin qu’il n’obstrue pas votre vue. Voici un exemple de ce que vous pouvez faire.
 
-Pour **StationaryQuadRenderer ::P ositionhologram** :
+Pour **StationaryQuadRenderer ::P ositionhologram**:
 
 ```
        // If you're making a debug view, you might not want the tag-along to be directly in the
@@ -673,7 +673,7 @@ Pour **StationaryQuadRenderer ::P ositionhologram** :
 
 Il n’est pas suffisant de positionner simplement l’hologramme, qui dans ce cas est un quadruple. Nous devons également faire pivoter l’objet pour faire face à l’utilisateur. Notez que cette rotation se produit dans l’espace universel, car ce type de billboarding permet à l’hologramme de conserver une partie de l’environnement de l’utilisateur. L’affichage de l’espacement d’affichage n’est pas aussi agréable, car l’hologramme est verrouillé à l’orientation d’affichage. dans ce cas, vous devez également interpoler entre les matrices de vue de gauche et de droite afin d’acquérir une transformation d’affichage de l’espace d’affichage qui n’interrompt pas le rendu stéréo. Ici, nous allons faire pivoter sur les axes X et Z pour faire face à l’utilisateur.
 
-À partir de **StationaryQuadRenderer :: Update** :
+À partir de **StationaryQuadRenderer :: Update**:
 
 ```
    // Seconds elapsed since previous frame.
@@ -720,7 +720,7 @@ Il n’est pas suffisant de positionner simplement l’hologramme, qui dans ce c
 
 Pour cet exemple, nous choisissons également d’afficher l’hologramme dans le système de coordonnées du SpatialLocatorAttachedReferenceFrame, où nous avons positionné l’hologramme. (Si nous avions décidé d’effectuer le rendu à l’aide d’un autre système de coordonnées, nous aurions besoin d’acquérir une transformation du système de coordonnées de l’appareil de référence associé à l’appareil vers ce système de coordonnées.)
 
-À partir de **HolographicTagAlongSampleMain :: Render** :
+À partir de **HolographicTagAlongSampleMain :: Render**:
 
 ```
    // The view and projection matrices for each holographic camera will change

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, casques immersifs, application, UWP, envoyer, envoi, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising
-ms.openlocfilehash: 1ea3a125bed26cabbf617585c0e87399c772e24a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631477"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678788"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Envoi d’une application au Microsoft Store
 
@@ -67,9 +67,9 @@ Vous serez invité à définir la version cible et la version minimale de Window
 
 ### <a name="specifying-target-device-families"></a>Spécification des familles d’appareils cibles
 
-Les applications Windows Mixed Reality (à la fois pour [HoloLens](../hololens-hardware-details.md) et les [casques immersifs](../discover/immersive-headset-hardware-details.md)) font partie du plateforme Windows universelle, donc tout package d’application avec une cabine de famille d’appareils **Windows. Universal** [target](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) s’exécute sur des PC HoloLens ou Windows 10 avec des casques immersifs. Si vous ne spécifiez pas de famille d’appareils cibles dans votre manifeste d’application, vous pouvez ouvrir par inadvertance votre application sur des appareils Windows 10 inattendus. Suivez les étapes ci-dessous pour spécifier la famille d’appareils Windows 10 prévue, puis [double-Vérifiez que les familles d’appareils appropriées sont définies lorsque vous téléchargez votre package d’application dans l’espace partenaires pour l’envoi de Microsoft Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Les applications Windows Mixed Reality (à la fois pour [HoloLens](../hololens-hardware-details.md) et les [casques immersifs](../discover/immersive-headset-hardware-details.md)) font partie du plateforme Windows universelle. ainsi, tout package d’application avec une [famille de périphériques cibles](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) **universels Windows** peut s’exécuter sur des PC HoloLens ou Windows 10 avec des casques immersifs. Si vous ne spécifiez pas de famille d’appareils cibles dans votre manifeste d’application, vous pouvez ouvrir par inadvertance votre application sur des appareils Windows 10 inattendus. Suivez les étapes ci-dessous pour spécifier la famille d’appareils Windows 10 prévue, puis [double-Vérifiez que les familles d’appareils appropriées sont définies lorsque vous téléchargez votre package d’application dans l’espace partenaires pour l’envoi de Microsoft Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
-* Pour définir ce champ dans Visual Studio, cliquez avec le bouton droit sur **Package. appxmanifest** et sélectionnez **afficher le code** , puis recherchez le champ nom du **TargetDeviceFamily** . Par défaut, elle doit ressembler à l’entrée suivante :
+* Pour définir ce champ dans Visual Studio, cliquez avec le bouton droit sur **Package. appxmanifest** et sélectionnez **afficher le code**, puis recherchez le champ nom du **TargetDeviceFamily** . Par défaut, elle doit ressembler à l’entrée suivante :
 
 ```
 <Dependencies>
@@ -77,7 +77,7 @@ Les applications Windows Mixed Reality (à la fois pour [HoloLens](../hololens-h
 </Dependencies>
 ```
 
-* Si vous créez une application **hololens** , vous pouvez vous assurer qu’elle n’est installée que sur hololens en affectant à la famille d’appareils cibles la valeur **Windows. holographique** : 
+* Si vous créez une application **hololens** , vous pouvez vous assurer qu’elle n’est installée que sur hololens en affectant à la famille d’appareils cibles la valeur **Windows. holographique**: 
 
 ```
 <Dependencies>
@@ -93,7 +93,7 @@ Les applications Windows Mixed Reality (à la fois pour [HoloLens](../hololens-h
 </Dependencies>
 ```
 
-* Si votre application est créée pour des **casques immersif Windows Mixed Reality** , vous pouvez vous assurer qu’elle n’est installée que sur les PC Windows 10 avec la mise à jour des créateurs de automne Windows 10 (nécessaire pour Windows Mixed Reality) en définissant la famille d’appareils cibles sur **Windows. Desktop** avec un **MinVersion** de 10.0.16299.0 :
+* Si votre application est créée pour des **casques immersif Windows Mixed Reality**, vous pouvez vous assurer qu’elle n’est installée que sur les PC Windows 10 avec la mise à jour des créateurs de automne Windows 10 (nécessaire pour Windows Mixed Reality) en définissant la famille d’appareils cibles sur **Windows. Desktop** avec un **MinVersion** de 10.0.16299.0 :
 
 ```
 <Dependencies>
@@ -101,7 +101,7 @@ Les applications Windows Mixed Reality (à la fois pour [HoloLens](../hololens-h
 </Dependencies>
 ```
 
-* Enfin, si votre application est destinée à s’exécuter à **la fois sur** les **casques et les casques immersifs de Windows Mixed Reality** , vous pouvez vous assurer que l’application n’est disponible que pour ces deux familles d’appareils et garantir que chaque cible possède la version minimale correcte de Windows, en incluant une ligne pour chaque famille d’appareils cibles avec son MinVersion respectif :
+* Enfin, si votre application est destinée à s’exécuter à **la fois sur** les **casques et les casques immersifs de Windows Mixed Reality**, vous pouvez vous assurer que l’application n’est disponible que pour ces deux familles d’appareils et garantir que chaque cible possède la version minimale correcte de Windows, en incluant une ligne pour chaque famille d’appareils cibles avec son MinVersion respectif :
 
 ```
 <Dependencies>
@@ -212,7 +212,7 @@ Utilisez les cases à cocher pour indiquer aux clients potentiels si votre appli
 
 Veillez à sélectionner des cases à cocher pour « matériel minimum » ou « matériel recommandé » pour les types d’entrée. 
 
-Par exemple : 
+Exemple : 
 * Si votre jeu nécessite des contrôleurs de mouvement, mais accepte les entrées vocales via le microphone, activez la case à cocher « matériel minimal » en regard de « contrôleurs de mouvement Windows Mixed Reality », mais la case à cocher « matériel recommandé » en regard de « microphone ». 
 * Si votre jeu peut être lu à l’aide d’un contrôleur Xbox, d’un boîtier d’accès ou de contrôleurs de mouvement, vous pouvez activer la case à cocher « matériel minimal » en regard de « contrôleur Xbox ou boîtier de commande », puis activer la case à cocher « matériel recommandé » en regard de « contrôleurs de mouvement Windows Mixed Reality », car les contrôleurs de
 
@@ -263,7 +263,7 @@ Ajouter « Windows Mixed Reality » aux termes de la recherche
 
 Dans de nombreux cas, vos consommateurs n’auront aucune expérience de la réalité virtuelle avant d’acheter un casque immersif Windows Mixed Reality. Ils peuvent ne pas savoir ce qu’il faut attendre des jeux intenses ou se familiariser avec leur propre seuil de confort dans des expériences immersifs. De nombreux clients peuvent également essayer un casque immersif Windows Mixed Reality sur des PC qui ne sont pas dotés de badges [Windows Mixed Reality PC](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines). En raison de ces considérations, nous vous recommandons vivement de proposer une [version d’évaluation gratuite](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) pour votre application ou votre jeu de réalité mixte payant.
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 * [Qu’est-ce que la réalité mixte ?](../discover/mixed-reality.md)
 * [Vue d’ensemble du développement](../develop/development.md)
 * [Vues d’applications](../design/app-views.md)

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
-keywords: Non réel, moteur 4, UE4, réverbération, réverbération G2, réverbération HP G2, réalité mixte, développement, contrôleurs de mouvement, entrée utilisateur, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux
-ms.openlocfilehash: c9d3ea3a8dd52ed0712f9df5c1a789121a68fd35
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: Le moteur non réel, les UE4, les réverbérations, les réverbérations G2, les régressions G2, la réalité mixte, le développement, les contrôleurs de mouvement, les entrées utilisateur, les fonctionnalités, le nouveau projet, l’émulateur, la documentation, les guides, les fonctionnalités, les hologrammes, le développement de jeux, le casque de la réalité mixte, le casque de réalité
+ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638719"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678928"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Contrôleurs de reréverbérations de HP G2 inréel 
 

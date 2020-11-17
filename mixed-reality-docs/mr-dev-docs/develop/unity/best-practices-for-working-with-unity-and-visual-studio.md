@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: déployer, Unity, Visual Studio, HoloLens, HoloLens 2, casque immersif
-ms.openlocfilehash: 4d145568190ea43cf2ec43442a1c3d5ca4d92251
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Déployez, Unity, Visual Studio, HoloLens, HoloLens 2, casque immersif, meilleures pratiques, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, UWP, Visual Studio Tools, SDK Windows
+ms.openlocfilehash: 5e00b24c7a36ae83a281800e2c7d8b2fc377f178
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679065"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678844"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Bonnes pratiques sur l’utilisation d’Unity et de Visual Studio
 
@@ -55,7 +55,7 @@ Les solutions Visual Studio UWP archivées dans le contrôle de code source peuv
 
 ## <a name="use-text-format-assets-for-easy-comparison-of-content-changes"></a>Utiliser des ressources au format texte pour faciliter la comparaison des modifications de contenu
 
-Le stockage des ressources au format texte facilite l’examen des différences de modification de contenu dans Visual Studio. Vous pouvez l’activer dans « modifier les paramètres du projet > l’éditeur de > » en modifiant le mode de **sérialisation des ressources** pour **forcer le texte** . Toutefois, la fusion de modifications de fichiers de ressources texte est sujette aux erreurs et n’est pas recommandée. envisagez donc d’activer des extractions binaires exclusives dans votre système de contrôle de code source.
+Le stockage des ressources au format texte facilite l’examen des différences de modification de contenu dans Visual Studio. Vous pouvez l’activer dans « modifier les paramètres du projet > l’éditeur de > » en modifiant le mode de **sérialisation des ressources** pour **forcer le texte**. Toutefois, la fusion de modifications de fichiers de ressources texte est sujette aux erreurs et n’est pas recommandée. envisagez donc d’activer des extractions binaires exclusives dans votre système de contrôle de code source.
 
 ## <a name="see-also"></a>Voir aussi
 - [Visual Studio Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)

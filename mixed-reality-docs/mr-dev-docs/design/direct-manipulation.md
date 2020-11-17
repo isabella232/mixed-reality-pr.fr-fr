@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Réalité mixte, pointage du regard, ciblage par pointage du regard, interaction, conception, à portée de main, HoloLens
-ms.openlocfilehash: 18e2a6128a5fa07fe2ddcd3c0eab192ccdedb4b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8141bc588247be15174d4a85992b74911ffc002e
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698286"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631537"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipulation directe avec les mains
 
@@ -34,7 +34,7 @@ La manipulation directe est basée sur l’affordance, ce qui la rend conviviale
 <tr>
      <td><strong>Modèle d’entrée</strong></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
      <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Casques immersifs</strong></a></td>
 </tr>
 <tr>
@@ -259,7 +259,7 @@ La manipulation basée sur l’affordance vous permet de manipuler l’objet 3D 
 
 La manipulation sans affordance n’attache pas l’affordance au cadre englobant. Les utilisateurs peuvent uniquement faire apparaître le rectangle englobant, puis interagir directement avec celui-ci. Si les utilisateurs se saisissent du rectangle englobant à une seule main, la translation et la rotation de l’objet sont associées au mouvement et à l’orientation de la main. Quand les utilisateurs se saisissent de l’objet à deux mains, ils peuvent le translater, le mettre à l’échelle et le faire pivoter en fonction des mouvements relatifs des deux mains.
 
-Une manipulation spécifique nécessite de la précision. Nous vous recommandons d’utiliser la **manipulation basée sur l’affordance** , car elle offre un haut niveau de granularité. Pour une manipulation flexible, nous vous recommandons d’utiliser la **manipulation sans affordance** , car elle offre une approche instantanée et ludique.
+Une manipulation spécifique nécessite de la précision. Nous vous recommandons d’utiliser la **manipulation basée sur l’affordance**, car elle offre un haut niveau de granularité. Pour une manipulation flexible, nous vous recommandons d’utiliser la **manipulation sans affordance**, car elle offre une approche instantanée et ludique.
 
 <br>
 
@@ -307,18 +307,18 @@ Vous avez peut-être remarqué que nous pouvons établir des parallèles au nive
 
 La manipulation directe peut paraître magique si elle fonctionne comme prévu. Mais elle peut également devenir frustrante si vous ne pouvez pas bouger votre main sans déclencher involontairement un hologramme. Le suivi oculaire peut vous aider à mieux identifier l’intention de l’utilisateur.
 
-* **Quand**  : Réduisez le déclenchements par inadvertance d’une réponse à une manipulation. L’eye-tracking permet de mieux comprendre l’engagement de l’utilisateur.
+* **Quand** : Réduisez le déclenchements par inadvertance d’une réponse à une manipulation. L’eye-tracking permet de mieux comprendre l’engagement de l’utilisateur.
 Par exemple, supposons que vous lisiez un texte holographique (instructions) quand vous tendez la main pour saisir votre outil de travail réel.
 
 En procédant ainsi, vous passez accidentellement votre main sur des boutons holographiques interactifs que vous n’aviez même pas remarqués auparavant (par exemple, situés en dehors du champ de vision de l’utilisateur (FoV)).
 
   Pour faire court : Si l’utilisateur n’a pas regardé un hologramme depuis un certain temps et si un événement tactile ou de saisie a été détecté, il est probable que l’utilisateur n’avait pas réellement l’intention d’interagir avec cet hologramme.
 
-* **Lequel**  :  En plus du traitement des activations correspondant à des faux positifs, il est également possible d’améliorer l’identification des hologrammes à saisir ou à pousser, car le point d’intersection n’est pas forcément clair selon votre perspective, surtout si plusieurs hologrammes sont proches les uns des autres.
+* **Lequel** :  En plus du traitement des activations correspondant à des faux positifs, il est également possible d’améliorer l’identification des hologrammes à saisir ou à pousser, car le point d’intersection n’est pas forcément clair selon votre perspective, surtout si plusieurs hologrammes sont proches les uns des autres.
 
   Bien que le suivi oculaire sur HoloLens 2 soit parfois limité au niveau de la précision avec laquelle il évalue votre regard, il peut être très utile pour les interactions rapprochées en raison de la disparité de la profondeur quand vous interagissez avec la saisie manuelle. Cela signifie qu’il est parfois difficile de déterminer si votre main est placée derrière ou devant un hologramme pour saisir avec précision un widget de manipulation, par exemple.
 
-* **Où**  : Utilisez les informations relatives à ce qu’un utilisateur regarde avec des mouvements rapides. Saisissez un hologramme et lancez-le à peu près vers l’emplacement souhaité.  
+* **Où** : Utilisez les informations relatives à ce qu’un utilisateur regarde avec des mouvements rapides. Saisissez un hologramme et lancez-le à peu près vers l’emplacement souhaité.  
 
     Bien que cela fonctionne parfois, les mouvements rapides de la main peuvent cibler des emplacements très imprécis. Toutefois, le suivi oculaire peut améliorer la précision du mouvement.
 
@@ -327,7 +327,7 @@ En procédant ainsi, vous passez accidentellement votre main sur des boutons hol
 ---
 
 ## <a name="manipulation-in-mrtk-mixed-reality-toolkit-for-unity"></a>Manipulation dans MRTK (Mixed Reality Toolkit) pour Unity
-Avec **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** , vous pouvez facilement obtenir un comportement de manipulation courant à l’aide du script **ObjectManipulator** . Avec ObjectManipulator, vous pouvez saisir et déplacer les objets directement avec les mains ou avec un rayon émanant de la main. Il prend également en charge les manipulations à deux mains pour la mise à l’échelle et la rotation des objets.
+Avec **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** , vous pouvez facilement obtenir un comportement de manipulation courant à l’aide du script **ObjectManipulator**. Avec ObjectManipulator, vous pouvez saisir et déplacer les objets directement avec les mains ou avec un rayon émanant de la main. Il prend également en charge les manipulations à deux mains pour la mise à l’échelle et la rotation des objets.
 
 * [MRTK - Manipulation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
 

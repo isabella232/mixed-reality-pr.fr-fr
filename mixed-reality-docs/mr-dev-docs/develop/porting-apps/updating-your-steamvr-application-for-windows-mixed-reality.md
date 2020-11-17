@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: SteamVR, compatibilité
-ms.openlocfilehash: 4a1439bed8743396cba13fa4d65debc62487ab46
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: SteamVR, compatibilité, Portage, HoloLens 1ère génération, casque de réalité mixte, casque Windows Mixed realisation, migration, Windows 10, vapeur, contrôleurs de mouvement, haptique
+ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638505"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677658"
 ---
 # <a name="updating-your-steamvr-application"></a>Mise à jour de votre application SteamVR
 Nous encourageons les développeurs à tester et à optimiser leurs expériences SteamVR pour qu’elles s’exécutent sur des casques Windows de réalité mixte. Cette documentation couvre les améliorations courantes que les développeurs peuvent apporter pour s’assurer que leur expérience s’exécute parfaitement sur Windows Mixed Reality.

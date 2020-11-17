@@ -1,17 +1,17 @@
 ---
-title: Notions de base de m. 101-finaliser le projet avec l’appareil
+title: MR Basics 101 - Projet complet avec appareil
 description: Suivez cette procédure pas à pas de codage à l’aide d’Unity, Visual Studio et HoloLens pour apprendre les principes fondamentaux de Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: réalité mixte, Windows Mixed Reality, HoloLens, hologramme, Academy, didacticiel
-ms.openlocfilehash: fc5df9296b0fc514d5247afb62493c09bb1dad9f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: réalité mixte, Windows Mixed Reality, HoloLens, hologramme, Academy, didacticiel, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
+ms.openlocfilehash: f2725db17a2991b956c777ee7106b7f094582f77
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680671"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677198"
 ---
 # <a name="mr-basics-101-complete-project-with-device"></a>Réalité mixte - Principes fondamentaux - Cours 101 : Projet complet avec appareil
 
@@ -47,11 +47,11 @@ Le didacticiel prendra environ 1 heure.
 
 ### <a name="project-files"></a>Fichiers projet
 
-* Téléchargez les [fichiers](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) requis par le projet.Requiert Unity 2017,2 ou une version ultérieure.
+* Téléchargez les [fichiers](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) requis par le projet. Requiert Unity 2017,2 ou une version ultérieure.
   * Si vous avez encore besoin de la prise en charge d’Unity 5,6, utilisez [cette version](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).
   * Si vous avez encore besoin de la prise en charge d’Unity 5,5, utilisez [cette version](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).
   * Si vous avez encore besoin de la prise en charge d’Unity 5,4, utilisez [cette version](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).
-* Désarchivez les fichiers sur votre bureau ou un autre emplacement facile à atteindre. Conservez le nom du dossier **origami** .
+* Désarchivez les fichiers sur votre bureau ou un autre emplacement facile à atteindre. Conservez le nom du dossier **origami**.
 
 >[!NOTE]
 >Si vous souhaitez examiner le code source avant le téléchargement, il est [disponible sur GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-101).
@@ -71,58 +71,58 @@ Dans ce chapitre, nous allons configurer notre premier projet Unity et effectuer
 ### <a name="instructions"></a>Instructions
 
 * Démarrez Unity.
-* Sélectionnez **Ouvrir** .
+* Sélectionnez **Ouvrir**.
 * Entrez l’emplacement du dossier **origami** que vous avez précédemment désinstallé.
-* Sélectionnez **origami** , puis cliquez sur **Sélectionner un dossier** .
-* Étant donné que le projet **origami** ne contient pas de scène, enregistrez la scène par défaut vide dans un nouveau fichier à l’aide de : **fichier**  /  **enregistrer la scène sous** .
+* Sélectionnez **origami** , puis cliquez sur **Sélectionner un dossier**.
+* Étant donné que le projet **origami** ne contient pas de scène, enregistrez la scène par défaut vide dans un nouveau fichier à l’aide de : **fichier**  /  **enregistrer la scène sous**.
 * Nommez le nouvel **origami** de scène et appuyez sur le bouton **Enregistrer** .
 
 #### <a name="setup-the-main-virtual-camera"></a>Configurer la caméra virtuelle principale
 
-* Dans **Hierarchy Panel** , sélectionnez **Main Camera** .
+* Dans **Hierarchy Panel**, sélectionnez **Main Camera**.
 * Dans l' **inspecteur** , définissez sa position de transformation sur **0, 0,** 0.
-* Recherchez la propriété **effacer les indicateurs** et remplacez la liste déroulante **skybox** par **couleur unie** .
+* Recherchez la propriété **effacer les indicateurs** et remplacez la liste déroulante **skybox** par **couleur unie**.
 * Cliquez sur le champ **Background** pour ouvrir un sélecteur de couleurs.
-* Définissez **R, G, B et A** sur **0** .
+* Définissez **R, G, B et A** sur **0**.
 
 #### <a name="setup-the-scene"></a>Configurer la scène
 
-* Dans le **volet hiérarchie** , cliquez sur **créer** et **créez un vide** .
-* Cliquez avec le bouton droit sur le nouveau **gameobject** , puis sélectionnez Renommer. Renommez GameObject en **OrigamiCollection** .
+* Dans le **volet hiérarchie**, cliquez sur **créer** et **créez un vide**.
+* Cliquez avec le bouton droit sur le nouveau **gameobject** , puis sélectionnez Renommer. Renommez GameObject en **OrigamiCollection**.
 * Dans le dossier **hologrammes** du panneau projet (développez actifs et sélectionnez hologrammes ou double-cliquez sur le dossier hologrammes dans le panneau projet) :
-  * Faites glisser **étape** dans la hiérarchie pour être un enfant de **OrigamiCollection** .
-  * Faites glisser **Sphere1** dans la hiérarchie pour être un enfant de **OrigamiCollection** .
-  * Faites glisser **Sphere2** dans la hiérarchie pour être un enfant de **OrigamiCollection** .
-* Cliquez avec le bouton droit sur l’objet **Light directionnel** dans le **panneau hiérarchie** , puis sélectionnez **supprimer** .
-* À partir du dossier **hologrammes** , faites glisser **Lights** à la racine du **panneau de hiérarchie** .
-* Dans la **hiérarchie** , sélectionnez **OrigamiCollection** .
-* Dans l' **inspecteur** , définissez la position de la transformation sur **0,-0,5, 2,0** .
+  * Faites glisser **étape** dans la hiérarchie pour être un enfant de **OrigamiCollection**.
+  * Faites glisser **Sphere1** dans la hiérarchie pour être un enfant de **OrigamiCollection**.
+  * Faites glisser **Sphere2** dans la hiérarchie pour être un enfant de **OrigamiCollection**.
+* Cliquez avec le bouton droit sur l’objet **Light directionnel** dans le **panneau hiérarchie** , puis sélectionnez **supprimer**.
+* À partir du dossier **hologrammes** , faites glisser **Lights** à la racine du **panneau de hiérarchie**.
+* Dans la **hiérarchie**, sélectionnez **OrigamiCollection**.
+* Dans l' **inspecteur**, définissez la position de la transformation sur **0,-0,5, 2,0**.
 * Appuyez sur le bouton de **lecture** dans Unity pour afficher un aperçu de vos hologrammes.
 * Les objets origami doivent apparaître dans la fenêtre d’aperçu.
 * Appuyez sur **lecture** une deuxième fois pour arrêter le mode aperçu.
 
 #### <a name="export-the-project-from-unity-to-visual-studio"></a>Exporter le projet d’Unity vers Visual Studio
 
-* Dans Unity, sélectionnez **fichier > paramètres de build** .
-* Sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme** .
-* Affectez à **SDK** la valeur **Universal 10** et **type de build** la valeur **D3D** .
-* Vérifiez les **projets Unity C#** .
+* Dans Unity, sélectionnez **fichier > paramètres de build**.
+* Sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme**.
+* Affectez à **SDK** la valeur **Universal 10** et **type de build** la valeur **D3D**.
+* Vérifiez les **projets Unity C#**.
 * Cliquez sur **Ajouter des scènes ouvertes** pour ajouter la scène.
-* Cliquez sur **Générer** .
+* Cliquez sur **Générer**.
 * Dans la fenêtre de l’Explorateur de fichiers qui s’affiche, créez un **nouveau dossier** nommé « App ».
 * Cliquez sur le **dossier** de l’application.
-* Appuyez sur **Sélectionner un dossier** .
+* Appuyez sur **Sélectionner un dossier**.
 * Lorsque Unity est terminé, une fenêtre de l’Explorateur de fichiers s’affiche.
 * Ouvrez le dossier de l' **application** .
-* Ouvrez (double-clic) **origami. sln** .
-* À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86** .
+* Ouvrez (double-clic) **origami. sln**.
+* À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
 * Cliquez sur la flèche en regard du bouton périphérique, puis sélectionnez **machine distante** à déployer sur Wi-Fi.
   * Définissez l' **adresse** sur le nom ou l’adresse IP de votre HoloLens. Si vous ne connaissez pas l’adresse IP de votre appareil, accédez à **paramètres > réseau & Internet > options avancées** ou demandez à Cortana **« Hey Cortana, qu’est-ce que mon adresse IP ? »**
   * Si HoloLens est attaché sur USB, vous pouvez sélectionner l' **appareil** à déployer sur USB.
-  * Laissez le **mode d’authentification** défini sur **universel** .
+  * Laissez le **mode d’authentification** défini sur **universel**.
   * Cliquez sur **Sélectionner**
 
-* Cliquez sur **Déboguer > exécuter sans débogage** ou appuyez sur **CTRL + F5** . S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler à Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+* Cliquez sur **Déboguer > exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler à Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 
 * Le projet Origami va maintenant générer, déployer sur votre HoloLens, puis exécuter.
 * Placez-vous sur HoloLens et recherchez vos nouveaux hologrammes.
@@ -140,17 +140,17 @@ Dans ce chapitre, nous allons présenter la première des trois façons d’inte
 ### <a name="instructions"></a>Instructions
 
 * Revenez à votre projet Unity et fermez la fenêtre Paramètres de build si elle est toujours ouverte.
-* Sélectionnez le dossier **hologrammes** dans le **panneau Projet** .
+* Sélectionnez le dossier **hologrammes** dans le **panneau Projet**.
 * Faites glisser l’objet **curseur** dans le volet de la **hiérarchie** au niveau de la racine.
 * Double-cliquez sur l’objet **curseur** pour l’examiner en détail.
 * Cliquez avec le bouton droit sur le dossier **scripts** dans le panneau projet.
 * Cliquez sur le sous-menu **créer** .
-* Sélectionnez **script C#** .
-* Nommez le script **WorldCursor** . Remarque : le nom respecte la casse. Vous n’avez pas besoin d’ajouter l’extension. cs.
-* Sélectionnez l’objet **curseur** dans le **panneau hiérarchie** .
-* Glissez-déplacez le script **WorldCursor** dans le panneau de l' **inspecteur** .
+* Sélectionnez **script C#**.
+* Nommez le script **WorldCursor**. Remarque : le nom respecte la casse. Vous n’avez pas besoin d’ajouter l’extension. cs.
+* Sélectionnez l’objet **curseur** dans le **panneau hiérarchie**.
+* Glissez-déplacez le script **WorldCursor** dans le panneau de l' **inspecteur**.
 * Double-cliquez sur le script **WorldCursor** pour l’ouvrir dans Visual Studio.
-* Copiez et collez ce code dans **WorldCursor.cs** et **Enregistrez All** .
+* Copiez et collez ce code dans **WorldCursor.cs** et **Enregistrez All**.
 
 ```cs
 using UnityEngine;
@@ -197,10 +197,10 @@ public class WorldCursor : MonoBehaviour
 }
 ```
 
-* Régénérez l’application à partir du **fichier > paramètres de build** .
+* Régénérez l’application à partir du **fichier > paramètres de build**.
 * Revenez à la solution Visual Studio utilisée précédemment pour le déploiement dans votre HoloLens.
 * Lorsque vous y êtes invité, sélectionnez « recharger tout ».
-* Cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5** .
+* Cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
 * Examinez maintenant la scène et observez comment le curseur interagit avec la forme d’objets.
 
 ## <a name="chapter-3---gestures"></a>Chapitre 3-mouvements
@@ -217,7 +217,7 @@ Dans ce chapitre, nous allons ajouter la prise en charge des [gestes](../../../d
 
 Nous allons commencer par créer un script, puis détecter le mouvement Select.
 
-* Dans le dossier **scripts** , créez un script nommé **GazeGestureManager** .
+* Dans le dossier **scripts** , créez un script nommé **GazeGestureManager**.
 * Faites glisser le script **GazeGestureManager** sur l’objet **OrigamiCollection** dans la hiérarchie.
 * Ouvrez le script **GazeGestureManager** dans Visual Studio et ajoutez le code suivant :
 
@@ -286,7 +286,7 @@ public class GazeGestureManager : MonoBehaviour
 }
 ```
 
-* Créez un autre script dans le dossier scripts, cette fois nommé **SphereCommands** .
+* Créez un autre script dans le dossier scripts, cette fois nommé **SphereCommands**.
 * Développez l’objet **OrigamiCollection** dans l’affichage des hiérarchies.
 * Faites glisser le script **SphereCommands** sur l’objet **Sphere1** dans le panneau hiérarchie.
 * Faites glisser le script **SphereCommands** sur l’objet **Sphere2** dans le panneau hiérarchie.
@@ -327,10 +327,10 @@ Dans ce chapitre, nous allons ajouter la prise en charge de deux [commandes voca
 
 ### <a name="instructions"></a>Instructions
 
-* Dans le dossier **scripts** , créez un script nommé **SpeechManager** .
+* Dans le dossier **scripts** , créez un script nommé **SpeechManager**.
 * Faites glisser le script **SpeechManager** sur l’objet **OrigamiCollection** dans la hiérarchie.
 * Ouvrez le script **SpeechManager** dans Visual Studio.
-* Copiez et collez ce code dans **SpeechManager.cs** et **Enregistrez All** :
+* Copiez et collez ce code dans **SpeechManager.cs** et **Enregistrez All**:
 
 ```cs
 using System.Collections.Generic;
@@ -434,8 +434,8 @@ public class SphereCommands : MonoBehaviour
 ```
 
 * Exportez, générez et déployez l’application dans votre HoloLens.
-* Examinez l’une des sphères et dites « **Drop Sphere** ».
-* Dites « **Réinitialiser le monde** » pour ramener les positions initiales.
+* Examinez l’une des sphères et dites «**Drop Sphere**».
+* Dites «**Réinitialiser le monde**» pour ramener les positions initiales.
 
 ## <a name="chapter-5---spatial-sound"></a>Chapitre 5-sons spatiaux
 
@@ -450,19 +450,19 @@ Dans ce chapitre, nous allons ajouter de la musique à l’application, puis dé
 ### <a name="instructions"></a>Instructions
 
 * Dans Unity, sélectionnez dans le menu supérieur **modifier > paramètres du projet > audio**
-* Dans le volet de l’inspecteur situé sur le côté droit, recherchez le paramètre de **plug-in Spatializer** , puis sélectionnez **MS HRTF Spatializer** .
+* Dans le volet de l’inspecteur situé sur le côté droit, recherchez le paramètre de **plug-in Spatializer** , puis sélectionnez **MS HRTF Spatializer**.
 * À partir du dossier **hologrammes** du panneau projet, faites glisser l’objet **ambiance** sur l’objet **OrigamiCollection** dans le panneau hiérarchie.
 * Sélectionnez **OrigamiCollection** et recherchez le composant **audio source** dans le panneau Inspecteur. Modifiez les propriétés suivantes :
   * Vérifiez la propriété **spatial** .
-  * Vérifiez la **lecture sur éveillé** .
+  * Vérifiez la **lecture sur éveillé**.
   * Remplacez **spatial Blend** par **3D** en faisant glisser le curseur vers la droite. La valeur doit passer de 0 à 1 lorsque vous déplacez le curseur.
   * Vérifiez la propriété **Loop** .
-  * Développez **paramètres audio 3D** , puis entrez **0,1** pour le **niveau Doppler** .
-  * Définissez **volume Rolloff** sur **Rolloff logarithmique** .
-  * Définissez **distance maximale** sur **20** .
-* Dans le dossier **scripts** , créez un script nommé **SphereSounds** .
+  * Développez **paramètres audio 3D**, puis entrez **0,1** pour le **niveau Doppler**.
+  * Définissez **volume Rolloff** sur **Rolloff logarithmique**.
+  * Définissez **distance maximale** sur **20**.
+* Dans le dossier **scripts** , créez un script nommé **SphereSounds**.
 * Glissez-déplacez **SphereSounds** vers les objets **Sphere1** et **Sphere2** dans la hiérarchie.
-* Ouvrez **SphereSounds** dans Visual Studio, mettez à jour le code suivant et **Enregistrez All** .
+* Ouvrez **SphereSounds** dans Visual Studio, mettez à jour le code suivant et **Enregistrez All**.
 
 ```cs
 using UnityEngine;
@@ -560,19 +560,19 @@ Nous allons maintenant utiliser le [mappage spatial](../../../design/spatial-map
 ### <a name="instructions"></a>Instructions
 
 * Dans Unity, cliquez sur le dossier **hologrammes** dans le panneau projet.
-* Faites glisser la ressource de **mappage spatial** à la racine de la **hiérarchie** .
+* Faites glisser la ressource de **mappage spatial** à la racine de la **hiérarchie**.
 * Cliquez sur l’objet **mappage spatial** dans la hiérarchie.
-* Dans le **panneau Inspecteur** , modifiez les propriétés suivantes :
+* Dans le **panneau Inspecteur**, modifiez les propriétés suivantes :
   * Cochez la case **dessiner des panneaux visuels** .
-  * Recherchez **matériel de dessin** , puis cliquez sur le cercle à droite. Tapez « **Wireframe** » dans le champ de recherche en haut. Cliquez sur le résultat, puis fermez la fenêtre. Lorsque vous effectuez cette opération, la valeur de Draw Material doit être définie sur Wireframe.
+  * Recherchez **matériel de dessin** , puis cliquez sur le cercle à droite. Tapez «**Wireframe**» dans le champ de recherche en haut. Cliquez sur le résultat, puis fermez la fenêtre. Lorsque vous effectuez cette opération, la valeur de Draw Material doit être définie sur Wireframe.
 * Exportez, générez et déployez l’application dans votre HoloLens.
 * Lorsque l’application s’exécute, un maillage filaire se superpose à votre monde réel.
 * Regardez comment une sphère enchaînée va tomber à l’étage, et à l’étage !
 
 Nous allons maintenant vous montrer comment déplacer le OrigamiCollection vers un nouvel emplacement :
 
-* Dans le dossier **scripts** , créez un script nommé **TapToPlaceParent** .
-* Dans la **hiérarchie** , développez le **OrigamiCollection** et sélectionnez l’objet **stage** .
+* Dans le dossier **scripts** , créez un script nommé **TapToPlaceParent**.
+* Dans la **hiérarchie**, développez le **OrigamiCollection** et sélectionnez l’objet **stage** .
 * Faites glisser le script **TapToPlaceParent** sur l’objet stage.
 * Ouvrez le script **TapToPlaceParent** dans Visual Studio et mettez-le à jour comme suit :
 
@@ -646,9 +646,9 @@ public class TapToPlaceParent : MonoBehaviour
 Nous allons maintenant vous montrer comment dévoiler le sous-monde holographique :
 
 * Dans le dossier **hologrammes** du panneau projet :
-  * Faites glisser le sous- **monde** dans la hiérarchie pour être un enfant de **OrigamiCollection** .
-* Dans le dossier **scripts** , créez un script nommé **HitTarget** .
-* Dans la **hiérarchie** , développez **OrigamiCollection** .
+  * Faites glisser le sous- **monde** dans la hiérarchie pour être un enfant de **OrigamiCollection**.
+* Dans le dossier **scripts** , créez un script nommé **HitTarget**.
+* Dans la **hiérarchie**, développez **OrigamiCollection**.
 * Développez l’objet **stage** et sélectionnez l’objet **cible** (ventilateur bleu).
 * Faites glisser le script **HitTarget** sur l’objet **cible** .
 * Ouvrez le script **HitTarget** dans Visual Studio et mettez-le à jour comme suit :

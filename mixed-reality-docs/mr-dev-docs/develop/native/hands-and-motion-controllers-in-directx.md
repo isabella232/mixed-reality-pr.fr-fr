@@ -5,18 +5,18 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: mains, contrôleurs de mouvement, DirectX, entrée, hologrammes
-ms.openlocfilehash: faa9abe224b554c45cf0175b62da40c297122ad1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: mains, contrôleurs de mouvement, DirectX, entrée, hologrammes, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 3dcf3767a537ccc64cb06c6f44d765425a5578b9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680379"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678058"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>Mains et contrôleurs de mouvement dans DirectX
 
 > [!NOTE]
-> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)** .
+> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
 Dans Windows Mixed Reality, les entrées de la main et du [contrôleur de mouvement](../../design/motion-controllers.md) sont gérées via les API d’entrée spatiale, qui se trouvent dans l’espace de noms [Windows. UI. Input. spatial](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial) . Cela vous permet de gérer facilement des actions courantes telles que la **sélection** de la même façon sur les deux mains et les contrôleurs de mouvement.
 
@@ -104,26 +104,26 @@ L’API SpatialInteractionSource prend en charge les contrôleurs et les systèm
 
 | Propriété | Description | Gestes HoloLens (1ère génération) | Contrôleurs de mouvement | Mains articulées|
 |--- |--- |--- |--- |--- |
-| [SpatialInteractionSource :: **main**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | La main droite ou gauche/le contrôleur. | Non pris en charge | Prise en charge | Prise en charge |
-| [SpatialInteractionSourceState :: **IsSelectPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | État actuel du bouton principal. | Robinet d’air | Déclencheur | Robinet à air lâche (pincement vertical) |
-| [SpatialInteractionSourceState :: **IsGrasped**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | État actuel du bouton de manipulation. | Non pris en charge | Bouton de manipulation | Pincer ou fermer la main |
-| [SpatialInteractionSourceState :: **IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | État actuel du bouton de menu.    | Non pris en charge | Bouton de menu | Non pris en charge |
-| [SpatialInteractionSourceLocation :: **position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | Emplacement XYZ de la main ou de la position de la poignée sur le contrôleur. | Emplacement Palm | Poignée de pose position | Emplacement Palm |
-| [SpatialInteractionSourceLocation :: **orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | Quaternion représentant l’orientation de la main ou de la poignée sur le contrôleur. | Non pris en charge | Poignée d’orientation de pose | Orientation Palm |
-| [SpatialPointerInteractionSourcePose :: **position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Origine du rayon de pointage. | Non pris en charge | Prise en charge | Prise en charge |
-| [SpatialPointerInteractionSourcePose :: **ForwardDirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Direction du rayon de pointage. | Non pris en charge | Prise en charge | Prise en charge |
+| [SpatialInteractionSource ::**main**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | La main droite ou gauche/le contrôleur. | Non pris en charge | Prise en charge | Prise en charge |
+| [SpatialInteractionSourceState ::**IsSelectPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | État actuel du bouton principal. | Robinet d’air | Déclencheur | Robinet à air lâche (pincement vertical) |
+| [SpatialInteractionSourceState ::**IsGrasped**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | État actuel du bouton de manipulation. | Non pris en charge | Bouton de manipulation | Pincer ou fermer la main |
+| [SpatialInteractionSourceState ::**IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | État actuel du bouton de menu.    | Non pris en charge | Bouton de menu | Non pris en charge |
+| [SpatialInteractionSourceLocation ::**position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | Emplacement XYZ de la main ou de la position de la poignée sur le contrôleur. | Emplacement Palm | Poignée de pose position | Emplacement Palm |
+| [SpatialInteractionSourceLocation ::**orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | Quaternion représentant l’orientation de la main ou de la poignée sur le contrôleur. | Non pris en charge | Poignée d’orientation de pose | Orientation Palm |
+| [SpatialPointerInteractionSourcePose ::**position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Origine du rayon de pointage. | Non pris en charge | Prise en charge | Prise en charge |
+| [SpatialPointerInteractionSourcePose ::**ForwardDirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Direction du rayon de pointage. | Non pris en charge | Prise en charge | Prise en charge |
 
 Certaines des propriétés ci-dessus ne sont pas disponibles sur tous les appareils, et l’API fournit un moyen de les tester. Par exemple, vous pouvez inspecter la propriété [SpatialInteractionSource :: IsGraspSupported](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) pour déterminer si la source fournit une action saisissante.
 
 ### <a name="grip-pose-vs-pointing-pose"></a>Poignée de pose et pose de pointage
 
-Windows Mixed Reality prend en charge les contrôleurs de mouvement dans un large éventail de facteurs de forme.  Il prend également en charge les systèmes de suivi articulés.  Tous ces systèmes ont des relations différentes entre la position de la main et la direction « avant » naturelle que les applications doivent utiliser pour le pointage ou le rendu des objets dans la main de l’utilisateur.  Pour prendre en charge tout cela, il existe deux types de poses 3D fournis pour le suivi des mains et les contrôleurs de mouvement.  La première est la poignée, qui représente la position de l’utilisateur.  Le deuxième point de pose, qui représente un rayon de pointage provenant de la main ou du contrôleur de l’utilisateur. Par conséquent, si vous souhaitez afficher **la main de l’utilisateur** ou **un objet détenu par l’utilisateur** , tel qu’un épée ou un pistolet, utilisez la poignée. Si vous souhaitez raycast du contrôleur ou de la main, par exemple lorsque l’utilisateur **pointe sur l’interface utilisateur** , utilisez le point de pose.
+Windows Mixed Reality prend en charge les contrôleurs de mouvement dans un large éventail de facteurs de forme.  Il prend également en charge les systèmes de suivi articulés.  Tous ces systèmes ont des relations différentes entre la position de la main et la direction « avant » naturelle que les applications doivent utiliser pour le pointage ou le rendu des objets dans la main de l’utilisateur.  Pour prendre en charge tout cela, il existe deux types de poses 3D fournis pour le suivi des mains et les contrôleurs de mouvement.  La première est la poignée, qui représente la position de l’utilisateur.  Le deuxième point de pose, qui représente un rayon de pointage provenant de la main ou du contrôleur de l’utilisateur. Par conséquent, si vous souhaitez afficher **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**, tel qu’un épée ou un pistolet, utilisez la poignée. Si vous souhaitez raycast du contrôleur ou de la main, par exemple lorsque l’utilisateur **pointe sur l’interface utilisateur** , utilisez le point de pose.
 
 Vous pouvez accéder à la **poignée** à l’aide de [SpatialInteractionSourceState ::P ropriétés :: TryGetLocation (...)](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties.trygetlocation#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_).  Il est défini comme suit :
-* Position de la **poignée** : le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée.
-* **Axe droit de l’orientation de la poignée** : lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
-* **Axe avant de l’orientation de la poignée** : quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
-* **Axe vers le haut de l’orientation** : l’axe vers le haut, impliqué dans les définitions Right et Forward.
+* Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée.
+* **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
+* **Axe avant de l’orientation de la poignée**: quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
+* **Axe vers le haut de l’orientation**: l’axe vers le haut, impliqué dans les définitions Right et Forward.
 
 Vous pouvez accéder à la **pose du pointeur** par le biais de [SpatialInteractionSourceState ::P ropriétés :: TryGetLocation (...) :: SourcePointerPose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation#Windows_UI_Input_Spatial_SpatialInteractionSourceLocation_SourcePointerPose) ou [SpatialInteractionSourceState :: TryGetPointerPose (...) :: TryGetInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose#Windows_UI_Input_Spatial_SpatialPointerPose_TryGetInteractionSourcePose_Windows_UI_Input_Spatial_SpatialInteractionSource_).
 
@@ -179,7 +179,7 @@ if (handPose)
 
 L’API de suivi articulé permet d’obtenir un maillage de handles de triangle entièrement déformable.  Ce maillage peut se déformer en temps réel, ainsi que le squelette de la main, et est utile pour la visualisation, ainsi que pour les techniques de physique avancées.  Pour accéder à la maille manuelle, vous devez d’abord créer un objet [HandMeshObserver](https://docs.microsoft.com//uwp/api/windows.perception.people.handmeshobserver) en appelant [TryCreateHandMeshObserverAsync](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync) sur [SpatialInteractionSource](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource).  Cette opération ne doit être effectuée qu’une seule fois par source, généralement la première fois que vous la voyez.  Cela signifie que vous appellerez cette fonction pour créer un objet HandMeshObserver chaque fois qu’une main entre dans l’angle de la montre.  Notez qu’il s’agit d’une fonction Async. vous devrez donc traiter un peu d’accès concurrentiel ici.  Une fois disponible, vous pouvez demander à l’objet HandMeshObserver pour la mémoire tampon d’index de triangle en appelant [GetTriangleIndices](https://docs.microsoft.com//uwp/api/windows.perception.people.handmeshobserver.gettriangleindices#Windows_Perception_People_HandMeshObserver_GetTriangleIndices_System_UInt16___).  Les index ne changent pas le frame sur le frame, ce qui vous permet de les obtenir et de les mettre en cache pendant la durée de vie de la source.  Les index sont fournis dans l’ordre d’enroulement dans le sens des aiguilles d’une montre.
 
-Le code suivant permet de tourner un std :: thread détaché pour créer l’observateur de maillage et d’extraire le tampon d’index une fois que l’observateur de maillage est disponible.  Il démarre à partir d’une variable appelée *CurrentState* , qui est une instance de [SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) représentant une main.
+Le code suivant permet de tourner un std :: thread détaché pour créer l’observateur de maillage et d’extraire le tampon d’index une fois que l’observateur de maillage est disponible.  Il démarre à partir d’une variable appelée *CurrentState*, qui est une instance de [SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) représentant une main.
 
 ```cpp
 using namespace Windows::Perception::People;

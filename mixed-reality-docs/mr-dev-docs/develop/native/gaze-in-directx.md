@@ -5,18 +5,18 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: œil-point d’intersection, suivi des têtes, suivi oculaire, DirectX, entrée, hologrammes
-ms.openlocfilehash: 06f725f3560d2c05e15c2e1362e820262986a192
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: œil-point d’interposition, point de présence, suivi de la tête, suivi des yeux, DirectX, entrée, hologrammes, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: 9ec54f5db33346c499582b54a0b3e36c129bf7ab
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679355"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678078"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Entrée en regard des points de regard et de pointage dans DirectX
 
 > [!NOTE]
-> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)** .
+> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
 Dans Windows Mixed Reality, l’entrée en regard de l’œil et de la tête est utilisée pour déterminer ce que l’utilisateur examine. Cela peut être utilisé pour piloter des modèles d’entrée principaux tels que le [point d’interposition et la validation](../../design/gaze-and-commit.md), ainsi que pour fournir le contexte pour les types d’interactions. Deux types de vecteurs de pointage sont disponibles par le biais de l’API : le point de regard et l’œil.  Les deux sont fournis sous la forme d’un rayon à trois dimensions avec une origine et une direction. Les applications peuvent ensuite raycast dans leurs scènes ou dans le monde réel, et déterminer ce que l’utilisateur cible.
 
@@ -84,7 +84,7 @@ Elle utilise la même API [SpatialPointerPose](https://docs.microsoft.com//uwp/a
 2. Activez la fonctionnalité « entrée de regard » dans le manifeste de votre package.
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>Demande d’accès à une entrée en regard des yeux
-Lorsque votre application démarre, appelez [EyesPose :: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) pour demander l’accès au suivi oculaire. Le système demande à l’utilisateur si nécessaire et retourne [GazeInputAccessStatus :: allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) une fois que l’accès a été accordé. Il s’agit d’un appel asynchrone, ce qui nécessite un peu de gestion supplémentaire. L’exemple suivant montre comment effectuer une opération de détachement d’un thread std :: thread pour attendre le résultat, qu’il stocke dans une variable membre appelée *m_isEyeTrackingEnabled* .
+Lorsque votre application démarre, appelez [EyesPose :: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) pour demander l’accès au suivi oculaire. Le système demande à l’utilisateur si nécessaire et retourne [GazeInputAccessStatus :: allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) une fois que l’accès a été accordé. Il s’agit d’un appel asynchrone, ce qui nécessite un peu de gestion supplémentaire. L’exemple suivant montre comment effectuer une opération de détachement d’un thread std :: thread pour attendre le résultat, qu’il stocke dans une variable membre appelée *m_isEyeTrackingEnabled*.
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -134,7 +134,7 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 
 ### <a name="declaring-the-gaze-input-capability"></a>Déclaration de la capacité *d’entrée en regard*
 
-Double-cliquez sur le fichier appxmanifest dans *Explorateur de solutions* .  Accédez ensuite à la section *fonctionnalités* et vérifiez la capacité *d’entrée de regard* . 
+Double-cliquez sur le fichier appxmanifest dans *Explorateur de solutions*.  Accédez ensuite à la section *fonctionnalités* et vérifiez la capacité *d’entrée de regard* . 
 
 ![Capacité d’entrée en regard](images/gaze-input-capability.png)
 

@@ -5,13 +5,13 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens, portail des appareils Windows, API
-ms.openlocfilehash: 6b8f99fbc6f1965639ceef218f5c516d2e6ba467
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, portail des appareils Windows, API, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679306"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677968"
 ---
 # <a name="device-portal-api-reference"></a>Informations de référence sur les API du portail d’appareil
 
@@ -159,7 +159,7 @@ Paramètres
 
 Récupération de l’étape thermique de l’appareil (0 normal, 1 chaud, 2 critique)
 
-## <a name="map-manager"></a>Gestionnaire de cartes
+## <a name="map-manager"></a>Map Manager
 
 **/api/holographic/mapmanager/mapFiles (récupération)**
 
@@ -297,7 +297,7 @@ Exemple :
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
 
-### <a name="other"></a>Autres
+### <a name="other"></a>Autre
 
 **/API/Holographic/mapmanager/resetmapandanchorsandsrdb (publication)**
 
@@ -355,7 +355,7 @@ Définit les paramètres de capture de la réalité mixte par défaut.  Certains
 
 Obtient l’état de capture de la réalité mixte dans le portail de périphériques Windows.
 
-***Réponse***
+**_Réponse_* _
 
 La réponse contient une propriété JSON indiquant si le portail de périphériques Windows enregistre ou non une vidéo.
 
@@ -363,7 +363,7 @@ La réponse contient une propriété JSON indiquant si le portail de périphéri
 {"IsRecording" : boolean}
 ```
 
-**/API/Holographic/MRC/thumbnail (récupération)**
+_ */API/Holographic/MRC/thumbnail (récupération)**
 
 Obtient l’image miniature pour le fichier spécifié.
 

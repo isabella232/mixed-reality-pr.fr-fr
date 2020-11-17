@@ -7,12 +7,12 @@ ms.date: 09/07/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mise à jour, outils, bien démarrer, principes de base, unity, visual studio, kit de ressources
-ms.openlocfilehash: fe949d7a61eb49098351d49f9fe9f7c1fd5699c8
-ms.sourcegitcommit: 5bf2121490b7b76135f52d41216330023745f54c
+ms.openlocfilehash: 8e123ec9de117b3c1c5959f2719481ae8094a9e6
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92001465"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482410"
 ---
 # <a name="install-the-tools"></a>Installer les outils
 
@@ -42,3 +42,4 @@ Nous vous recommandons d’installer le moteur de jeu Unity, qui est la méthode
 Maintenant que vous avez Windows 10, Visual Studio et le SDK Windows 10, nous allons choisir un moteur.
 
 [!INCLUDE[](includes/tools-overview.md)]
+

@@ -5,13 +5,13 @@ author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
-keywords: Explorateur Galaxy, étude de cas, projet, exemple
-ms.openlocfilehash: 1e04b27ff0382d87f8e6a15ae2b7b2284fa020e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Explorateur Galaxy, étude de cas, projet, exemple, MRTK, boîte à outils de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680771"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677628"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Création de l’Explorateur Galaxy pour HoloLens 2
 
@@ -96,7 +96,7 @@ Nous avons pensé aux commentaires visuels et audio que les utilisateurs seraien
 ![Visual intuitivité sur les planètes](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>Ajout de intuitivité pour la capture forcée
- 
+ 
 Une fois que nous avions le mécanisme de base de la manipulation forcée avec l’audio et l’intuitivité de Visual, nous avons vu comment sélectionner des planètes plus conviviales. Deux éléments principaux sont à prendre en compte : étant donné que le système solaire est une interface de déplacement 3D, les utilisateurs ont ajouté de la complexité pour apprendre à cibler les objets de manière cohérente. Cela a été aggravé par le fait que le rayon de la main est très rapide à la sélection d’un objet, ce qui fait que les planètes se déplacent très rapidement vers l’utilisateur.
 
 Nous l’avons envisagée avec une solution à trois branches. Le premier était assez intuitif : Ralentissez le processus de sélection afin que les planètes approchent l’utilisateur à un rythme plus naturel. Une fois la vitesse réglée, nous avons dû revisiter l’audio et l’intuitivité visuel, en ajoutant des commentaires audio supplémentaires à mesure que la planète était suivie vers l’utilisateur.
@@ -151,7 +151,7 @@ Maintenant que la composition visuelle de Jupiter a été définie, nous avons b
 Les flux de rotation individuels offraient une bonne impression visuelle, mais ils ne sont pas détaillés lorsqu’ils sont observés à la fin de la plage.
 
 La partie la plus attrayante était la belle zone rouge de Jupiter. nous avons donc créé un ensemble de mailles et de textures spécifiquement pour la présenter.
- 
+ 
 Nous avons utilisé un mécanisme similaire à celui des bandes de Jupiter : un ensemble de parties tournantes se compose les unes sur les autres, tout en étant regroupées sous sa « couche principale » pour s’assurer qu’elles restent en position, quelle que soit la vitesse de déplacement du reste.
 
 Lorsque les mailles ont été configurées et en place, différentes couches du vortex Storm ont été appliquées et chaque disque a ensuite été animé individuellement, le Centre se déplaçant plus rapidement, avec le reste progressivement ralenti lorsqu’il se déplace vers l’extérieur.
@@ -202,4 +202,4 @@ Non proposé : Tim Gerken (Lead Tech) et Oscar Saland (concepteur visuel).
 
 ### <a name="mixed-reality-studios"></a>Studios de réalité mixte
 
-Les équipes Microsoft Mixed Reality Studio, situées en Amérique, en Europe et en Asie-Pacifique, sont des experts de la conception de l’expérience utilisateur, de l’informatique holographique, des technologies AR/VR et du développement 3D. y compris la création de ressources 3D, DirectX, Unity et Unreal. Nous vous aidons à prévoir les futurs besoins, concevoir, créer et fournir des solutions, tout en permettant aux clients de créer un impact mesurable au sein de leur organisation. Les Studios travaillent en étroite collaboration avec plus de 22 000 professionnels des services Microsoft pour l’intégration, l’adoption, les opérations et le support des applications d’entreprise.
+Les équipes Microsoft Mixed Reality Studio, situées en Amérique, en Europe et en Asia-Pacific, sont des experts de la conception de l’expérience utilisateur, de l’informatique holographique, des technologies AR/VR et du développement 3D. y compris la création de ressources 3D, DirectX, Unity et Unreal. Nous vous aidons à prévoir les futurs besoins, concevoir, créer et fournir des solutions, tout en permettant aux clients de créer un impact mesurable au sein de leur organisation. Les Studios travaillent en étroite collaboration avec plus de 22 000 professionnels des services Microsoft pour l’intégration, l’adoption, les opérations et le support des applications d’entreprise.

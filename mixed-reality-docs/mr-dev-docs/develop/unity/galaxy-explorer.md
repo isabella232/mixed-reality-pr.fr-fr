@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Explorateur Galaxy, étude de cas, projet, exemple
-ms.openlocfilehash: 3d3995bb7e43f49423901a92ce7ec1e7b31f8f4d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Explorateur Galaxy, étude de cas, projet, exemple, MRTK, boîte à outils de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: a58d07cd50679154fe68d3b8b7d424ea6cfbf39e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681075"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678618"
 ---
 # <a name="galaxy-explorer"></a>Galaxy Explorer
 

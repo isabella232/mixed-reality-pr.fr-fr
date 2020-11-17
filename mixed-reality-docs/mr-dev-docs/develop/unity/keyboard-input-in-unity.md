@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: clavier, entrée, Unity, touchscreenkeyboard
-ms.openlocfilehash: 806051a4ea429a058b271a55d7f5fc41503e346b
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: clavier, entrée, Unity, touchscreenkeyboard, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: aa9bb3059a8d0cc5b829bf14d92928511259b7f9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293151"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677418"
 ---
 # <a name="keyboard-input-in-unity"></a>Saisie au clavier dans Unity
 
 **Espace de noms :** *UnityEngine*<br>
- **Type**: * [TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
+ **Type**: *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
 
 Alors que HoloLens prend en charge de nombreuses formes d’entrée, y compris les claviers Bluetooth, la plupart des applications ne peuvent pas supposer que tous les utilisateurs disposent d’un clavier physique disponible. Si votre application nécessite une entrée de texte, une forme de clavier à l’écran doit être fournie.
 
@@ -48,7 +48,7 @@ Six différentes vues du clavier sont disponibles :
 
 Le clavier du système HoloLens est uniquement disponible pour les applications Unity qui sont exportées avec le « type de build UWP » défini sur « XAML ». Vous effectuez des compromis lorsque vous choisissez « XAML » comme « type de build UWP » sur « D3D ». Si vous n’êtes pas familiarisé avec ces compromis, vous souhaiterez peut-être explorer une [solution d’entrée alternative](#alternative-keyboard-options) au clavier du système.
 1. Ouvrez le menu **fichier** et sélectionnez **paramètres de Build...**
-2. Assurez-vous que la **plateforme** est définie sur **Windows Store**, que le **Kit de développement logiciel (SDK)** est défini sur **Universal 10**et que vous définissez le **type de build UWP** sur **XAML**.
+2. Assurez-vous que la **plateforme** est définie sur **Windows Store**, que le **Kit de développement logiciel (SDK)** est défini sur **Universal 10** et que vous définissez le **type de build UWP** sur **XAML**.
 3. Dans la boîte de dialogue **paramètres de build** , cliquez sur le bouton **paramètres du lecteur..** .
 4. Sélectionner les **paramètres pour l’onglet Windows Store**
 5. Développer le groupe **autres paramètres**

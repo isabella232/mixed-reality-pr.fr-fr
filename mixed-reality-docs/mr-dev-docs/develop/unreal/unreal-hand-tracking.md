@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality, suivi manuel, non réel, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux
-ms.openlocfilehash: 5bc120f802c2160282befd1ce6cb8025be21cbaa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, suivi manuel, non réel, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678961"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679208"
 ---
 # <a name="hand-tracking-in-unreal"></a>Suivi de la main dans Unreal
 
@@ -68,7 +68,7 @@ Vous pouvez rechercher les valeurs numériques de chaque cas d’énumération d
  
 ### <a name="supporting-hand-tracking"></a>Prise en charge du suivi des mains
 
-Vous pouvez utiliser le suivi des mains dans les plans **en ajoutant le suivi de** la main à partir de la **> Windows Mixed Reality** :
+Vous pouvez utiliser le suivi des mains dans les plans **en ajoutant le suivi de** la main à partir de la **> Windows Mixed Reality**:
 
 ![Suivi de main BP](images/unreal/hand-tracking-bp.png)
 
@@ -115,7 +115,7 @@ Une fois que vous avez activé la source et ouvert un élément multimédia d’
 
 ![Animation des liens dynamiques](images/unreal/live-link-animation.png)
  
-La hiérarchie d’animation manuelle est la même que dans `EWMRHandKeypoint` . L’animation peut être reciblée à l’aide de **WindowsMixedRealityHandTrackingLiveLinkRemapAsset** :
+La hiérarchie d’animation manuelle est la même que dans `EWMRHandKeypoint` . L’animation peut être reciblée à l’aide de **WindowsMixedRealityHandTrackingLiveLinkRemapAsset**:
 
 ![Animation de lien dynamique 2](images/unreal/live-link-animation2.png)
  
@@ -128,7 +128,7 @@ Elle peut également être sous-classée dans l’éditeur :
 ![Maille manuelle](images/unreal/hand-mesh.png)
 
 Avant de pouvoir accéder aux données de maillage manuel, vous devez :
-- Sélectionnez votre ressource **ARSessionConfig** , développez les **paramètres AR-> World Mapping** Settings, puis cochez la case **générer des données de maillage à partir de la géométrie suivie** . 
+- Sélectionnez votre ressource **ARSessionConfig** , développez les **paramètres AR-> World Mapping** Settings, puis cochez la case **générer des données de maillage à partir de la géométrie suivie**. 
 
 Voici les paramètres de maillage par défaut :
 
@@ -196,14 +196,14 @@ Vous pouvez utiliser un Ray comme dispositif de pointage à la fois dans le C++ 
 
 Il est important de mentionner que, étant donné que les résultats de toutes les fonctions changent chaque image, elles sont toutes rendues accessibles. Pour plus d’informations sur les fonctions pures et impures ou pouvant être appelées, consultez Guide de l’utilisateur Blueprint sur les [fonctions](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)
 
-Pour utiliser des rayons de main dans des plans, recherchez l’une des actions sous **Windows Mixed Reality HMD** :
+Pour utiliser des rayons de main dans des plans, recherchez l’une des actions sous **Windows Mixed Reality HMD**:
 
 ![Rayons main BP](images/unreal/hand-rays-bp.png)
  
 Pour y accéder en C++, incluez- `WindowsMixedRealityFunctionLibrary.h` le au début de votre fichier de code appelant.
 
 ### <a name="enum"></a>Énumération
-Vous avez également accès aux cas d’entrée sous **EHMDInputControllerButtons** , qui peuvent être utilisés dans les projets :
+Vous avez également accès aux cas d’entrée sous **EHMDInputControllerButtons**, qui peuvent être utilisés dans les projets :
 
 ![Boutons du contrôleur d’entrée](images/unreal/input-controller-buttons.png)
 
@@ -326,7 +326,7 @@ static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrac
 
 Hololens 2 peut suivre les gestes spatiaux, ce qui signifie que vous pouvez capturer ces mouvements comme entrée. Vous trouverez plus d’informations sur les gestes dans le document sur l' [utilisation de base de HoloLens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage) .
 
-Vous pouvez trouver la fonction Blueprint dans sous **Windows Mixed Real Input spatial** , et la fonction C++ en ajoutant `WindowsMixedRealitySpatialInputFunctionLibrary.h` dans votre fichier de code appelant.
+Vous pouvez trouver la fonction Blueprint dans sous **Windows Mixed Real Input spatial**, et la fonction C++ en ajoutant `WindowsMixedRealitySpatialInputFunctionLibrary.h` dans votre fichier de code appelant.
 
 ![Capturer les gestes](images/unreal/capture-gestures.png)
 
@@ -407,14 +407,14 @@ const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureNam
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement inréel que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant : 
+Si vous suivez le parcours des points de contrôle de développement Unreal que nous avons mis en place, vous explorez actuellement les modules de base du MRTK. À partir de là, vous pouvez passer au module suivant : 
 
 > [!div class="nextstepaction"]
 > [Ancres spatiales locales](unreal-spatial-anchors.md)
 
-Ou accédez aux API et fonctionnalités de la plateforme de réalité mixte :
+Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 > [!div class="nextstepaction"]
 > [Caméra HoloLens](unreal-hololens-camera.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement inréels](unreal-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unreal](unreal-development-overview.md#2-core-building-blocks) à tout moment.

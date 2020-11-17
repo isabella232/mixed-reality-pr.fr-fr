@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: oeil-point de regard, point de regard, Unity, hologramme, réalité mixte
-ms.openlocfilehash: 8c1a6cb0847cd0e6e776c6d4e1f7c1efdc126279
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: œil-point de présence, point de présence, unité, hologramme, réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679774"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677508"
 ---
 # <a name="head-gaze-in-unity"></a>Tête-pointage dans Unity
 
@@ -58,17 +58,17 @@ Vous pouvez accéder au point de regard du [Gestionnaire d’entrée](https://mi
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, vous explorez actuellement les composants de base de MRTK. À partir de là, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Mouvements et contrôleurs de mouvement](gestures-and-motion-controllers-in-unity.md)
 
-Ou accédez aux API et fonctionnalités de la plateforme de réalité mixte :
+Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 > [!div class="nextstepaction"]
 > [Expériences partagées](shared-experiences-in-unity.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
 * [Appareil photo](camera-in-unity.md)

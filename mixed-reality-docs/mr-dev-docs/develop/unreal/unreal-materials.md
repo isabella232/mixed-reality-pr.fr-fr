@@ -1,19 +1,19 @@
 ---
-title: Recommandations matérielles non réelles
+title: Recommandations matérielles dans Unreal
 description: Vue d’ensemble des matériaux dans un moteur inréel.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Moteur 4, UE4, HoloLens, HoloLens 2, développement, matériaux, documentation, guides, fonctionnalités, hologrammes, développement de jeux non réels
-ms.openlocfilehash: bfce6e6bf8acd58821dba1213e1f1ab571d85a0c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, développement, matériaux, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679694"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678938"
 ---
-# <a name="material-recommendations-in-unreal"></a>Recommandations matérielles non réelles
+# <a name="material-recommendations-in-unreal"></a>Recommandations matérielles dans Unreal
 
 Les matériaux peuvent créer ou rompre les performances dans un moteur inréel. Cette page sert de démarrage rapide sur les paramètres de base que vous devez utiliser pour obtenir les meilleures performances.
 
@@ -73,7 +73,7 @@ Lorsque vous créez des paramètres, préférez utiliser des « paramètres sta
 
 Lors de la création d’instances de matériau, la préférence doit être accordée à une **constante d’instance matérielle** sur une instance de matériau dynamique. La **constante d’instance Material** est un matériau instancié qui effectue un calcul une seule fois, avant l’exécution.
 
-L’instance de matériau créée via le navigateur de contenu ( **cliquez avec le bouton droit > créer une instance de matériau** ) est une constante d’instance de matériau. L’instance de matériau Dynamic est créée à l’aide de code. Vous trouverez plus d’informations sur les instances de matériel dans la [documentation du moteur inreal](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
+L’instance de matériau créée via le navigateur de contenu (**cliquez avec le bouton droit > créer une instance de matériau**) est une constante d’instance de matériau. L’instance de matériau Dynamic est créée à l’aide de code. Vous trouverez plus d’informations sur les instances de matériel dans la [documentation du moteur inreal](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
 
 ![Création d’instances de matériau dans des conditions inréelles](images/unreal-materials-img-08.png)
 

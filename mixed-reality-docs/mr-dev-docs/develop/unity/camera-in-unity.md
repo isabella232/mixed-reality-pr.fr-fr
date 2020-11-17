@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendu holographique, holographique, immersif, point de focus, mémoire tampon de profondeur, orientation uniquement, positionnelle, opaque, transparent, clip
-ms.openlocfilehash: 7e606232f626c64407ced75481deb3055326f760
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendu holographique, holographique, immersif, point de focus, mémoire tampon de profondeur, orientation uniquement, positionnelle, opaque, transparent, clip, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679016"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677618"
 ---
 # <a name="camera-in-unity"></a>Appareil photo dans Unity
 
@@ -28,7 +28,7 @@ Toutefois, pour optimiser complètement la qualité visuelle et la [stabilité d
 
 Les paramètres par défaut du composant appareil photo Unity sont destinés aux applications 3D traditionnelles qui ont besoin d’un arrière-plan skybox, car ils n’ont pas de monde réel.
 
-* Quand vous exécutez sur un **[casque immersif](../../discover/immersive-headset-hardware-details.md)** , vous affichez tout ce que l’utilisateur voit, et vous souhaiterez probablement conserver le skybox.
+* Quand vous exécutez sur un **[casque immersif](../../discover/immersive-headset-hardware-details.md)**, vous affichez tout ce que l’utilisateur voit, et vous souhaiterez probablement conserver le skybox.
 * Toutefois, en cas d’exécution sur un **casque holographique** comme [HoloLens](../../hololens-hardware-details.md), le monde réel doit apparaître derrière tout ce que l’appareil photo rend. Pour ce faire, définissez l’arrière-plan de l’appareil photo sur transparent (dans HoloLens, le rendu noir est transparent) au lieu d’une texture skybox :
     1. Sélectionner la caméra principale dans le volet de la hiérarchie
     2. Dans le panneau Inspecteur, recherchez le composant Camera et modifiez la liste déroulante Clear Flags de skybox en Color unie
@@ -81,7 +81,7 @@ En partageant le tampon de profondeur de votre application sur Windows, chaque t
 
 Pour définir si votre application Unity fournira un tampon de profondeur à Windows :
 
-1. Accédez à **modifier** les  >  **paramètres du projet**  >  **lecteur**  >  **plateforme Windows universelle onglet**  >  **paramètres XR** .
+1. Accédez à **modifier** les  >  **paramètres du projet**  >  **lecteur**  >  **plateforme Windows universelle onglet**  >  **paramètres XR**.
 2. Développez l’élément du **Kit de développement logiciel (SDK) Windows Mixed Reality** .
 3. Activez ou désactivez la case à cocher **activer le partage de tampons de profondeur** .  Cette option est activée par défaut dans les nouveaux projets créés, car cette fonctionnalité a été ajoutée à Unity et elle est désactivée par défaut pour les projets plus anciens qui ont été mis à niveau.
 
@@ -93,17 +93,17 @@ Suivez le guide [pas à pas](https://microsoft.github.io/MixedRealityToolkit-Uni
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, vous explorez actuellement les composants de base de MRTK. À partir de là, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Pointage du regard](gaze-in-unity.md)
 
-Ou accédez aux API et fonctionnalités de la plateforme de réalité mixte :
+Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 > [!div class="nextstepaction"]
 > [Expériences partagées](shared-experiences-in-unity.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
 

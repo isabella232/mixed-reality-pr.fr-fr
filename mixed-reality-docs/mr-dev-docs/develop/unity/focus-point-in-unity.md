@@ -5,22 +5,22 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, point de focalisation, plan de focalisation, plan de stabilisation, point de stabilisation, reprojection, LSR, tampon de profondeur
-ms.openlocfilehash: 4d8c8a232d12a8d6f0a7694fbc0ed8f66395163a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, point de focalisation, plan de focalisation, plan de stabilisation, point de stabilisation, reprojection, LSR, mémoire tampon de profondeur, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: 48c0d26e89124b9dbfc1d108354fb6e751e51783
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678976"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678688"
 ---
 # <a name="focus-point-in-unity"></a>Point de focus dans Unity
 
 **Espace de noms :** *UnityEngine. XR. WSA*<br>
-**Type** : *HolographicSettings*
+**Type**: *HolographicSettings*
 
 Le [point de focus](../platform-capabilities-and-apis/hologram-stability.md#reprojection) peut être défini pour fournir à HoloLens une indication sur la façon d’effectuer la meilleure stabilisation sur les hologrammes actuellement affichés.
 
-Si vous souhaitez définir le point de focus dans Unity, vous devez définir chaque frame à l’aide de *HolographicSettings. SetFocusPointForFrame ()* . Si le point de focus n’est pas défini pour un frame, le plan de stabilisation par défaut est utilisé.
+Si vous souhaitez définir le point de focus dans Unity, vous devez définir chaque frame à l’aide de *HolographicSettings. SetFocusPointForFrame ()*. Si le point de focus n’est pas défini pour un frame, le plan de stabilisation par défaut est utilisé.
 
 > [!NOTE]
 > Par défaut, l’option « Activer le partage de tampon de profondeur » est définie pour les nouveaux projets Unity.  Avec cette option, une application Unity s’exécutant sur un casque de bureau immersif ou sur un HoloLens exécutant la mise à jour 2018 d’avril de Windows 10 (RS4) ou une version ultérieure envoie votre tampon de profondeur à Windows pour optimiser la stabilité de l’hologramme automatiquement, sans que votre application spécifie un point de focalisation :
@@ -57,12 +57,12 @@ Si vous suivez le parcours du point de contrôle de développement Unity que nou
 > [!div class="nextstepaction"]
 > [Perte de suivi](tracking-loss-in-unity.md)
 
-Ou passez directement au déploiement de votre application sur un appareil ou un émulateur :
+Ou accéder directement au déploiement de votre application sur un appareil ou un émulateur :
 
 > [!div class="nextstepaction"]
 > [Déployer sur HoloLens ou sur des casques immersifs Windows Mixed Reality](../platform-capabilities-and-apis/using-visual-studio.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-platform-capabilities-and-apis) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-platform-capabilities-and-apis) à tout moment.
 
 ### <a name="see-also"></a>Voir aussi
 * [Plan de stabilisation](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

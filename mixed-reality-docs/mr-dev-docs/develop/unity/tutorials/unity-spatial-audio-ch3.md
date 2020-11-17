@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial
-ms.openlocfilehash: cd684944bdd618dcf435ef91566d6d4f18aa87a3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, importation de vidéos, lecteur vidéo
+ms.openlocfilehash: 43297fc4148600cc820111e6c206313560224ac9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682314"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679718"
 ---
 # <a name="spatializing-audio-from-a-video"></a>Spatialisation du contenu audio d’une vidéo
 Dans ce troisième chapitre du module audio spatial des didacticiels HoloLens 2 Unity, vous allez :
@@ -35,12 +35,12 @@ Après ces ajustements, le volet de l' **inspecteur** du fichier vidéo se prés
 
 ![Volet de propriétés vidéo](images/spatial-audio/video-property-pane.png)
 
-Ensuite, ajoutez un objet **lecteur vidéo** à la **hiérarchie** en cliquant avec le bouton droit sur le volet **hiérarchie** et en choisissant **vidéo-> lecteur vidéo** :
+Ensuite, ajoutez un objet **lecteur vidéo** à la **hiérarchie** en cliquant avec le bouton droit sur le volet **hiérarchie** et en choisissant **vidéo-> lecteur vidéo**:
 
 ![Lecteur vidéo dans la hiérarchie](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>Lire une vidéo sur un Quadrangle
-L’objet **lecteur vidéo** a besoin d’un objet de jeu texturé sur lequel afficher la vidéo. Tout d’abord, ajoutez un **quadruple** à votre **hiérarchie** en cliquant avec le bouton droit sur le volet **hiérarchie** et en choisissant **objet 3D-> Quad** :
+L’objet **lecteur vidéo** a besoin d’un objet de jeu texturé sur lequel afficher la vidéo. Tout d’abord, ajoutez un **quadruple** à votre **hiérarchie** en cliquant avec le bouton droit sur le volet **hiérarchie** et en choisissant **objet 3D-> Quad**:
 
 ![Ajouter le Quad à la hiérarchie](images/spatial-audio/add-quad-to-hierarchy.png)
 
@@ -48,17 +48,17 @@ Pour vous assurer que le **Quad** s’affiche devant l’utilisateur au démarra
 
 ![Quadruple transformation](images/spatial-audio/quad-transform.png)
 
-Pour texturer le **Quad** avec une vidéo, créez une **texture de rendu** . Dans le volet **projet** , cliquez avec le bouton droit et choisissez **créer-> texture de rendu** :
+Pour texturer le **Quad** avec une vidéo, créez une **texture de rendu**. Dans le volet **projet** , cliquez avec le bouton droit et choisissez **créer-> texture de rendu**:
 
 ![Créer une texture de rendu](images/spatial-audio/create-render-texture.png)
 
-Dans le volet de l' **inspecteur** de la **texture de rendu** , définissez la propriété **Size** pour qu’elle corresponde à la résolution native de la vidéo de 1280 x 720. Ensuite, pour garantir de bonnes performances de rendu sur HoloLens 2, affectez à la propriété de la **mémoire tampon de profondeur** une **profondeur d’au moins 16 bits** . Après ces paramètres, le volet de l' **inspecteur** pour la **texture de rendu** se présente comme suit :
+Dans le volet de l' **inspecteur** de la **texture de rendu**, définissez la propriété **Size** pour qu’elle corresponde à la résolution native de la vidéo de 1280 x 720. Ensuite, pour garantir de bonnes performances de rendu sur HoloLens 2, affectez à la propriété de la **mémoire tampon de profondeur** une **profondeur d’au moins 16 bits**. Après ces paramètres, le volet de l' **inspecteur** pour la **texture de rendu** se présente comme suit :
 
 ![Propriétés de texture de rendu](images/spatial-audio/render-texture-properties.png)
 
-Ensuite, utilisez votre nouvelle **texture de rendu** comme texture pour le **Quad** :
+Ensuite, utilisez votre nouvelle **texture de rendu** comme texture pour le **Quad**:
 1. Faites glisser la **texture rendu** du volet **projet** sur le **quadruple** dans la **hiérarchie** .
-2. Pour garantir de bonnes performances sur HoloLens 2, dans le volet de l' **inspecteur** pour le **Quad** , sélectionnez le **nuanceur standard Mixed Reality Toolkit** .
+2. Pour garantir de bonnes performances sur HoloLens 2, dans le volet de l' **inspecteur** pour le **Quad**, sélectionnez le **nuanceur standard Mixed Reality Toolkit**.
 
 Avec ces paramètres, le composant de **texture** du volet de l' **inspecteur** pour le **Quad** ressemble à ce qui suit :
 
@@ -74,11 +74,11 @@ Le volet de l' **inspecteur** pour le **lecteur vidéo** ressemble maintenant à
 ![Propriétés du lecteur vidéo](images/spatial-audio/video-player-properties.png)
 
 ## <a name="spatialize-the-audio-from-the-video"></a>Spatialiser l’audio à partir de la vidéo
-Dans le volet de l' **inspecteur** pour le **Quad** , créez une **source audio** dans laquelle vous allez acheminer l’audio à partir de la vidéo :
+Dans le volet de l' **inspecteur** pour le **Quad**, créez une **source audio** dans laquelle vous allez acheminer l’audio à partir de la vidéo :
 * Cliquez sur **Ajouter un composant** en bas du volet.
 * Ajouter une **source audio**
 
-Ensuite, sur la **source audio** :
+Ensuite, sur la **source audio**:
 * Définir la **sortie** dans votre mélangeur
 * Vérifier la zone **spatiale**
 * Déplacez le curseur de **lissage spatial** sur 1 (3d)
@@ -87,7 +87,7 @@ Une fois ces modifications effectuées, le composant **source audio** sur le vol
 
 ![Inspecteur de source audio quadruple](images/spatial-audio/quad-audio-source-inspector.png)
 
-Pour configurer le **lecteur vidéo** de façon à acheminer son audio vers la **source audio** sur le **Quad** , ouvrez le volet de l' **inspecteur** pour le **lecteur vidéo** et :
+Pour configurer le **lecteur vidéo** de façon à acheminer son audio vers la **source audio** sur le **Quad**, ouvrez le volet de l' **inspecteur** pour le **lecteur vidéo** et :
 * Définir le **mode de sortie audio** sur « audio source »
 * Définissez la propriété **source audio** sur votre quadruple
 

@@ -1,17 +1,17 @@
 ---
-title: MR spatial 230-spatial Mapping
+title: MR Spatial 230 - Mappage spatial
 description: Suivez cette procédure pas à pas de codage à l’aide d’Unity, Visual Studio et HoloLens pour apprendre les concepts de mappage spatial.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, mappage spatial, reconstruction de surface, maille
-ms.openlocfilehash: 312ae8f36904fe902852018ab0f76052a17fe398
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, mappage spatial, reconstruction de surface, maille, HoloLens, Académie de la réalité mixte, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
+ms.openlocfilehash: dc96fbff43c21216e3b860f1dbbbaae330e1f176
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681059"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677188"
 ---
 # <a name="mr-spatial-230-spatial-mapping"></a>Réalité mixte - Fonctionnalités spatiales - Cours 230 : Mappage spatial
 
@@ -60,48 +60,48 @@ Le [mappage spatial](../../../design/spatial-mapping.md) combine le monde réel 
 
 ### <a name="notes"></a>Notes
 
-* Dans Visual Studio, l’option « Activer Uniquement mon code » doit être désactivée ( *décochée* ) sous outils > options > débogage pour atteindre les points d’arrêt dans votre code.
+* Dans Visual Studio, l’option « Activer Uniquement mon code » doit être désactivée (*décochée*) sous outils > options > débogage pour atteindre les points d’arrêt dans votre code.
 
 ## <a name="unity-setup"></a>Configuration de Unity
 
 >[!VIDEO https://www.youtube.com/embed/y2Y4LhK6TEM]
 
-* Démarrez **Unity** .
+* Démarrez **Unity**.
 * Sélectionnez **nouveau** pour créer un nouveau projet.
-* Nommez le projet **Planetarium** .
+* Nommez le projet **Planetarium**.
 * Vérifiez que le paramètre **3D** est sélectionné.
-* Cliquez sur **créer un projet** .
-* Une fois Unity lancé, accédez à **modifier > paramètres du projet > Player** .
+* Cliquez sur **créer un projet**.
+* Une fois Unity lancé, accédez à **modifier > paramètres du projet > Player**.
 * Dans le volet de l' **inspecteur** , recherchez et sélectionnez l’icône du **Windows Store** vert.
-* Développez **autres paramètres** .
+* Développez **autres paramètres**.
 * Dans la section **rendu** , activez la case à cocher **prise en charge de la réalité virtuelle** .
-* Vérifiez que **Windows holographique** apparaît dans la liste des kits de développement logiciel (SDK) de **réalité virtuelle** . Si ce n’est pas le cas, sélectionnez le **+** bouton en bas de la liste et choisissez **Windows holographique** .
-* Développez **paramètres de publication** .
+* Vérifiez que **Windows holographique** apparaît dans la liste des kits de développement logiciel (SDK) de **réalité virtuelle**. Si ce n’est pas le cas, sélectionnez le **+** bouton en bas de la liste et choisissez **Windows holographique**.
+* Développez **paramètres de publication**.
 * Dans la section **fonctionnalités** , vérifiez les paramètres suivants :
     * InternetClientServer
     * PrivateNetworkClientServer
     * Microphone
     * SpatialPerception
 * Accédez à **modifier > paramètres du projet > qualité**
-* Dans le volet de l' **inspecteur** , sous l’icône Windows Store, sélectionnez la flèche déroulante noire sous la ligne « default » et définissez le paramètre par défaut sur **très faible** .
-* Accédez à **ressources > importer un package > package personnalisé** .
+* Dans le volet de l' **inspecteur** , sous l’icône Windows Store, sélectionnez la flèche déroulante noire sous la ligne « default » et définissez le paramètre par défaut sur **très faible**.
+* Accédez à **ressources > importer un package > package personnalisé**.
 * Accédez au dossier **. ..\holographicacademy-holograms-230-SpatialMapping\Starting** .
-* Cliquez sur **Planetarium. pour Unity** .
-* Cliquez sur **Ouvrir** .
+* Cliquez sur **Planetarium. pour Unity**.
+* Cliquez sur **Ouvrir**.
 * Une fenêtre **Importer un package Unity** doit s’afficher. cliquez sur le bouton **Importer** .
 * Attendez que Unity importe toutes les ressources dont nous aurons besoin pour terminer ce projet.
-* Dans le panneau **hiérarchie** , supprimez l' **appareil photo principal** .
+* Dans le panneau **hiérarchie** , supprimez l' **appareil photo principal**.
 * Dans le panneau **projet** , dans le dossier **HoloToolkit-SpatialMapping-230\Utilities\Prefabs** , recherchez l’objet **Camera principal** .
 * Glissez-déplacez le Prefab d' **appareil photo principal** dans le panneau de **hiérarchie** .
 * Dans le panneau **hiérarchie** , supprimez l’objet de **lumière directionnelle** .
 * Dans le panneau **projet** , dans le dossier **hologrammes** , localisez l’objet **curseur** .
-* Faites glisser & déposez le **curseur** Prefab dans la **hiérarchie** .
+* Faites glisser & déposez le **curseur** Prefab dans la **hiérarchie**.
 * Dans le volet **hiérarchie** , sélectionnez l’objet **curseur** .
-* Dans le panneau **inspecteur** , cliquez sur la liste déroulante **couche** , puis sélectionnez **modifier les couches...** .
-* Nommez **User Layer 31** en « **SpatialMapping** ».
+* Dans le panneau **inspecteur** , cliquez sur la liste déroulante **couche** , puis sélectionnez **modifier les couches...**.
+* Nommez **User Layer 31** en «**SpatialMapping**».
 * Enregistrez la nouvelle scène : **fichier > enregistrer la scène sous...**
-* Cliquez sur **nouveau dossier** et nommez le dossier **scenes** .
-* Nommez le fichier « **Planetarium** » et enregistrez-le dans le dossier **scenes** .
+* Cliquez sur **nouveau dossier** et nommez le dossier **scenes**.
+* Nommez le fichier «**Planetarium**» et enregistrez-le dans le dossier **scenes** .
 
 ## <a name="chapter-1---scanning"></a>Chapitre 1-analyse
 
@@ -119,23 +119,23 @@ Le [mappage spatial](../../../design/spatial-mapping.md) combine le monde réel 
 
 **Création et déploiement (partie 1)**
 
-* Dans Unity, sélectionnez **fichier > paramètres de build** .
+* Dans Unity, sélectionnez **fichier > paramètres de build**.
 * Cliquez sur **Ajouter des scènes ouvertes** pour ajouter la scène **Planetarium** à la Build.
-* Sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme** .
-* Définissez le **SDK** sur le **type de build** **Universal 10** et UWP sur **D3D** .
-* Vérifiez les **projets Unity C#** .
-* Cliquez sur **Générer** .
+* Sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme**.
+* Définissez le **SDK** sur le **type de build** **Universal 10** et UWP sur **D3D**.
+* Vérifiez les **projets Unity C#**.
+* Cliquez sur **Générer**.
 * Créez un **dossier** nommé « App ».
 * Cliquez sur le dossier de l' **application** .
 * Appuyez sur le bouton **Sélectionner un dossier** .
 * Une fois la création d’Unity terminée, une fenêtre de l’Explorateur de fichiers s’affiche.
 * Double-cliquez sur le dossier de l' **application** pour l’ouvrir.
 * Double-cliquez sur **Planetarium. sln** pour charger le projet dans Visual Studio.
-* Dans Visual Studio, utilisez la barre d’outils supérieure pour changer la configuration en **Release** .
-* Remplacez la plateforme par **x86** .
-* Cliquez sur la flèche déroulante à droite de « ordinateur local », puis sélectionnez **ordinateur distant** .
-* Entrez l' [adresse IP de votre appareil](../../../connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) dans le champ adresse et changez le mode d’authentification en **protocole universel (protocole non chiffré)** .
-* Cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5** .
+* Dans Visual Studio, utilisez la barre d’outils supérieure pour changer la configuration en **Release**.
+* Remplacez la plateforme par **x86**.
+* Cliquez sur la flèche déroulante à droite de « ordinateur local », puis sélectionnez **ordinateur distant**.
+* Entrez l' [adresse IP de votre appareil](../../../connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) dans le champ adresse et changez le mode d’authentification en **protocole universel (protocole non chiffré)**.
+* Cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
 * Regardez le panneau de **sortie** dans Visual Studio pour l’état de génération et de déploiement.
 * Une fois votre application déployée, parcourez la salle. Vous verrez les surfaces environnantes couvertes par les maillages filaires noir et blanc.
 * Analysez votre environnement. Veillez à examiner les murs, les limites et les étages.
@@ -144,16 +144,16 @@ Le [mappage spatial](../../../design/spatial-mapping.md) combine le monde réel 
 
 Voyons maintenant comment le mappage spatial peut affecter les performances.
 
-* Dans Unity, sélectionnez **windows > Profiler** .
-* Cliquez sur **Ajouter profiler > GPU** .
-* Cliquez sur **> <Enter IP> du profileur actif** .
+* Dans Unity, sélectionnez **windows > Profiler**.
+* Cliquez sur **Ajouter profiler > GPU**.
+* Cliquez sur **> <Enter IP> du profileur actif**.
 * Entrez l' **adresse IP** de votre HoloLens.
-* Cliquez sur **Connecter** .
+* Cliquez sur **Connecter**.
 * Observez le nombre de millisecondes nécessaires au rendu d’une trame par le GPU.
 * Arrêtez l’exécution de l’application sur l’appareil.
-* Revenez à Visual Studio et ouvrez **SpatialMappingObserver.cs** . Vous le trouverez dans le dossier HoloToolkit\SpatialMapping du projet assembly-CSharp (universel Windows).
+* Revenez à Visual Studio et ouvrez **SpatialMappingObserver.cs**. Vous le trouverez dans le dossier HoloToolkit\SpatialMapping du projet Assembly-CSharp (Windows universel).
 * Recherchez la fonction **éveillé ()** , puis ajoutez la ligne de code suivante : **TrianglesPerCubicMeter = 1200 ;**
-* Redéployez le projet sur votre appareil, puis **reconnectez le profileur** . Observez la modification du nombre de millisecondes pour le rendu d’un frame.
+* Redéployez le projet sur votre appareil, puis **reconnectez le profileur**. Observez la modification du nombre de millisecondes pour le rendu d’un frame.
 * Arrêtez l’exécution de l’application sur l’appareil.
 
 **Enregistrer et charger dans Unity**
@@ -162,18 +162,18 @@ Enfin, nous allons enregistrer notre maillage d’espace et le charger dans Unit
 
 * Revenez à Visual Studio et supprimez la ligne **TrianglesPerCubicMeter** que vous avez ajoutée dans la fonction **éveillé ()** au cours de la section précédente.
 * Redéployez le projet sur votre appareil. Nous devons maintenant être en cours d’exécution avec des triangles **500** par mètre cube.
-* Ouvrez un navigateur et entrez dans votre adresseIP HoloLens pour accéder au **portail de périphériques Windows** .
+* Ouvrez un navigateur et entrez dans votre adresseIP HoloLens pour accéder au **portail de périphériques Windows**.
 * Sélectionnez l’option **vue 3D** dans le volet gauche.
 * Sous **reconstruction** de la surface, sélectionnez le bouton **mettre à jour** .
 * Regardez que les zones que vous avez analysées dans votre HoloLens s’affichent dans la fenêtre d’affichage.
 * Pour enregistrer l’analyse de votre salle, appuyez sur le bouton **Enregistrer** .
-* Ouvrez votre dossier **téléchargements** pour rechercher le modèle de salle enregistré **SRMesh. obj** .
+* Ouvrez votre dossier **téléchargements** pour rechercher le modèle de salle enregistré **SRMesh. obj**.
 * Copiez **SRMesh. obj** dans le dossier **composants** de votre projet Unity.
 * Dans Unity, sélectionnez l’objet **SpatialMapping** dans le panneau **hiérarchie** .
 * Localisez le composant **Observateur de surface d’objet (script)** .
 * Cliquez sur le cercle situé à droite de la propriété **modèle de salle** .
 * Recherchez et sélectionnez l’objet **SRMesh** , puis fermez la fenêtre.
-* Vérifiez que la propriété **modèle de salle** dans le panneau **inspecteur** a désormais la valeur **SRMesh** .
+* Vérifiez que la propriété **modèle de salle** dans le panneau **inspecteur** a désormais la valeur **SRMesh**.
 * Appuyez sur le bouton de **lecture** pour entrer en mode aperçu Unity.
 * Le composant SpatialMapping charge les maillages à partir du modèle de salle enregistré, afin que vous puissiez les utiliser dans Unity.
 * Basculez en vue **scène** pour voir l’ensemble de votre modèle d’espace affiché avec le nuanceur filaire.
@@ -469,7 +469,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 * Dans le panneau de la **hiérarchie** Unity, sélectionnez l’objet **SpatialProcessing** .
 * Dans le volet de l' **inspecteur** , recherchez les **maillages des surfaces du composant plans (script)** .
 * Remplacez la valeur de la propriété **dessiner des plans** par **Nothing** pour effacer la sélection.
-* Remplacez la propriété **dessiner des plans** par **Wall** , afin que seuls les plans muraux soient rendus.
+* Remplacez la propriété **dessiner des plans** par **Wall**, afin que seuls les plans muraux soient rendus.
 * Dans le panneau **projet** , cliquez sur le dossier **scripts** , double-cliquez sur **Placeable.cs** pour l’ouvrir dans Visual Studio.
 
 Le script **positionnable** est déjà associé aux affiches et à la boîte de projection créées après la recherche du plan. Tout ce que nous devons faire, c’est supprimer les marques de commentaire de code, et ce script va obtenir ce qui suit :
@@ -482,7 +482,7 @@ Le script **positionnable** est déjà associé aux affiches et à la boîte de 
 6. Réorienter l’hologramme pour qu’il s’aligne avec le type de surface (vertical ou horizontal) auquel il a une affinité.
 7. Placez en douceur l’hologramme sur la surface sélectionnée pour éviter le comportement de saut ou d’alignement.
 
-Supprimez les marques de commentaire de tout le code dans l’exercice de codage ci-dessous, ou utilisez cette solution terminée dans **Placeable.cs** :
+Supprimez les marques de commentaire de tout le code dans l’exercice de codage ci-dessous, ou utilisez cette solution terminée dans **Placeable.cs**:
 
 ```cs
 using System.Collections.Generic;
@@ -1094,9 +1094,9 @@ Tout d’abord, nous allons autoriser le maillage de mappage spatial à occultai
 Nous allons ensuite ajouter un comportement spécial à la terre, afin qu’elle soit en surbrillance en bleu chaque fois qu’elle est bloqués par un autre hologramme (comme le soleil) ou par le maillage de mappage spatial :
 
 * Dans le panneau **projet** , dans le dossier **hologrammes** , développez l’objet **SolarSystem** .
-* Cliquez sur **terre** .
+* Cliquez sur **terre**.
 * Dans le panneau **inspecteur** , recherchez le matériau de la terre (composant le plus bas).
-* Dans la **liste déroulante nuanceur** , remplacez le nuanceur par **personnalisé > OcclusionRim** . Cela permet d’afficher une surbrillance bleue autour de la terre chaque fois qu’elle est bloqués par un autre objet.
+* Dans la **liste déroulante nuanceur**, remplacez le nuanceur par **personnalisé > OcclusionRim**. Cela permet d’afficher une surbrillance bleue autour de la terre chaque fois qu’elle est bloqués par un autre objet.
 
 Enfin, nous allons activer un effet de vision x-ray pour les planètes dans notre système solaire. Nous devons modifier **PlanetOcclusion.cs** (qui se trouve dans le dossier Scripts\SolarSystem) afin d’obtenir les informations suivantes :
 
@@ -1208,7 +1208,7 @@ public class PlanetOcclusion : MonoBehaviour
 
 ## <a name="the-end"></a>La fin
 
-Félicitations ! Vous avez maintenant terminé le **mappage spatial 230 : spatial** .
+Félicitations ! Vous avez maintenant terminé le **mappage spatial 230 : spatial**.
 
 * Vous savez comment analyser votre environnement et charger des données de mappage spatiale sur Unity.
 * Vous comprenez les notions de base des nuanceurs et comment les documents peuvent être utilisés pour revisualiser le monde.

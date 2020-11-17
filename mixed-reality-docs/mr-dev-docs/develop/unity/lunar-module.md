@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, exemples d’applications, conception, HoloLens
-ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, exemples d’applications, conception, MRTK, kit de préversion de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: ad5c544b9c164ef0d85eb3217685d6f96bb86367
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573253"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677464"
 ---
 # <a name="lunar-module"></a>Module lunaire
 

@@ -5,13 +5,13 @@ author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, hologrammes, stabilisation, étude de cas
-ms.openlocfilehash: 4eb61cb37ef087dc5fbeb6b4ef6ca1c507719205
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, hologrammes, stabilisation, étude de cas, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679318"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679608"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Étude de cas : utilisation du plan de stabilisation pour réduire la turbulence holographique
 

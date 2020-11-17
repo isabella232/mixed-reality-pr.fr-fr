@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 'système de coordonnées, système de coordonnées spatiales, orientation : uniquement, à l’échelle assise, à l’échelle debout, à l’échelle de la pièce, à l’échelle mondiale, à 360 de degrés, assis, debout, salle, monde, échelle, position, orientation, Unity, Ancre, ancrage spatial, point d’ancrage universel, verrouillage universel, verrouillage du corps, verrouillage du corps, perte de suivi, localisation, limites, recentre'
-ms.openlocfilehash: 59fae57f3ca5048f4027ed96fca03255683c1fe3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: système de coordonnées, système de coordonnées spatiales, orientation uniquement, à l’échelle assise, à l’échelle debout, mise à l’échelle de l’espace, à l’échelle mondiale, 360 de degrés, assis, debout, salle, monde, échelle, position, orientation, Unity, Ancre, ancrage spatial, point d’ancrage universel, verrouillage universel, verrouillage universel, verrouillage du corps, verrouillage du corps, perte de suivi, localisabilité, limites, recentre, casque de réalité mixte, casque de réalité
+ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678988"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678678"
 ---
 # <a name="coordinate-systems-in-unity"></a>Systèmes de coordonnées dans Unity
 
@@ -24,7 +24,7 @@ La première étape de la création d’une expérience de réalité mixte dans 
 **Espace de noms :** *UnityEngine. XR*<br>
 **Type :** *XRDevice*
 
-Pour créer une expérience d' **orientation uniquement** ou de mise à l' **échelle assise** , vous devez définir Unity sur le type d’espace de suivi fixe. Définit le système de coordonnées universelles de Unity pour suivre le [cadre stationnaire de référence](../../design/coordinate-systems.md#spatial-coordinate-systems). Dans le mode de suivi fixe, le contenu placé dans l’éditeur juste devant l’emplacement par défaut de l’appareil photo (Forward is-Z) s’affiche devant l’utilisateur au lancement de l’application.
+Pour créer une expérience d' **orientation uniquement** ou de mise à l' **échelle assise**, vous devez définir Unity sur le type d’espace de suivi fixe. Définit le système de coordonnées universelles de Unity pour suivre le [cadre stationnaire de référence](../../design/coordinate-systems.md#spatial-coordinate-systems). Dans le mode de suivi fixe, le contenu placé dans l’éditeur juste devant l’emplacement par défaut de l’appareil photo (Forward is-Z) s’affiche devant l’utilisateur au lancement de l’application.
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -39,7 +39,7 @@ Pour une expérience purement en **orientation uniquement** telle qu’une visio
 InputTracking.disablePositionalTracking = true;
 ```
 
-Pour une expérience de mise à l' **échelle assiste** , pour permettre à l’utilisateur de recentrer plus tard l’origine assise, vous pouvez appeler [XR. Méthode InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) :
+Pour une expérience de mise à l' **échelle assiste**, pour permettre à l’utilisateur de recentrer plus tard l’origine assise, vous pouvez appeler [XR. Méthode InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) :
 
 ```cs
 InputTracking.Recenter();
@@ -50,7 +50,7 @@ InputTracking.Recenter();
 **Espace de noms :** *UnityEngine. XR*<br>
 **Type :** *XRDevice*
 
-Pour une expérience à l’échelle **permanente** ou à l’échelle de l' **espace** , vous devez placer du contenu par rapport à l’étage. Vous avez raison de l’étage de l’utilisateur à l’aide de la **[Phase spatiale](../../design/coordinate-systems.md#spatial-coordinate-systems)** , qui représente l’origine de l’utilisateur et la limite facultative de l’espace, configurées lors de la première exécution.
+Pour une expérience à l’échelle **permanente** ou à l’échelle de l' **espace**, vous devez placer du contenu par rapport à l’étage. Vous avez raison de l’étage de l’utilisateur à l’aide de la **[Phase spatiale](../../design/coordinate-systems.md#spatial-coordinate-systems)**, qui représente l’origine de l’utilisateur et la limite facultative de l’espace, configurées lors de la première exécution.
 
 Pour vous assurer que Unity fonctionne avec son système de coordonnées universel à l’étage, vous pouvez définir Unity sur le type d’espace de suivi RoomScale et vérifier que le jeu est correctement effectué :
 
@@ -170,17 +170,17 @@ Une fois que vous êtes opérationnel avec les ancres spatiales Azure, vous pouv
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Pointage du regard](gaze-in-unity.md)
 
-Ou accédez aux API et fonctionnalités de la plateforme de réalité mixte :
+Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 > [!div class="nextstepaction"]
 > [Expériences partagées](shared-experiences-in-unity.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
 * [Échelle de l’expérience](../../design/coordinate-systems.md#mixed-reality-experience-scales)

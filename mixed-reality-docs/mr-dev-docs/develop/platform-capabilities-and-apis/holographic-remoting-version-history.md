@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, communication à distance, communication à distance holographique
-ms.openlocfilehash: 844a5dc36b480791296f17db067cd71ece307a2b
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+keywords: HoloLens, communication à distance, accès distant holographique, historique des versions, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011433"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677848"
 ---
 # <a name="holographic-remoting-version-history"></a>Historique des versions de la communication à distance holographique
 

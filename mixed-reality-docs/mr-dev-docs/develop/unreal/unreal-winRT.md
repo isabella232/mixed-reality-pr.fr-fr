@@ -5,13 +5,13 @@ author: fieldsJacksonG
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, démarrage, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux
-ms.openlocfilehash: 09d90af95d9433772563fdc292f31d118b3dd846
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, prise en main, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, WinRT, DLL
+ms.openlocfilehash: fd50e5ecd3186fc8852936affbfedc3d5fd4de75
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573293"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679808"
 ---
 # <a name="winrt-in-unreal"></a>WinRT dans Unreal
 
@@ -46,7 +46,7 @@ Au cours de votre développement HoloLens, vous devrez peut-être écrire une fo
 3. Avant d’ajouter du code, vous devez mettre à jour les propriétés du projet pour vous assurer que le code WinRT dont vous avez besoin peut être compilé : 
     * Cliquez avec le bouton droit sur le projet HoloLensWinrtDLL et sélectionnez **Propriétés** .  
     * Remplacez la liste déroulante **configuration** par **toutes les configurations** et le menu déroulant **plateforme** à **toutes les plateformes** .  
-    * Sous **Propriétés de Configuration> C/C++> toutes les options** :
+    * Sous **Propriétés de Configuration> C/C++> toutes les options**:
         * Ajouter **await** à **des options supplémentaires** pour nous assurer que nous pouvons attendre des tâches asynchrones  
         * Remplacez la **norme du langage c++** par la norme **ISO C++ 17 (/std : C++ 17)** pour inclure tout code WinRT
 
@@ -87,7 +87,7 @@ public:
 > [!NOTE]
 > Tout le code WinRT est stocké dans **HoloLensWinrtDLL. cpp** , si bien que non réel n’essaie pas d’inclure de code WinRT lors du référencement de l’en-tête. 
 
-3. Toujours dans **HoloLensWinrtDLL. cpp** , ajoutez un corps de fonction pour OpenFileDialogue () et tout le code pris en charge : 
+3. Toujours dans **HoloLensWinrtDLL. cpp**, ajoutez un corps de fonction pour OpenFileDialogue () et tout le code pris en charge : 
 
 ```cpp
 // sgm is declared outside of OpenFileDialogue so it doesn't
@@ -180,12 +180,12 @@ La liaison et l’utilisation d’une DLL dans unreally requièrent un projet C+
 > [!NOTE]
 > Une solution a été créée dans le même répertoire que le fichier uproject, avec un nouveau script de compilation nommé source/ConsumeWinRT/ConsumeWinRT. Build. cs.
 
-2. Ouvrez la solution, recherchez le dossier **Games/ConsumeWinRT/source/ConsumeWinRT** , puis ouvrez **ConsumeWinRT.Build.cs** :
+2. Ouvrez la solution, recherchez le dossier **Games/ConsumeWinRT/source/ConsumeWinRT** , puis ouvrez **ConsumeWinRT.Build.cs**:
 
 ![Ouverture du fichier ConsumeWinRT.build.cs](images/unreal-winrt-img-05.png)
 
 ### <a name="linking-the-dll"></a>Liaison de la DLL
-1. Dans **ConsumeWinRT.Build.cs** , ajoutez une propriété pour rechercher le chemin d’accès include pour la dll (répertoire contenant HoloLensWinrtDLL. h). La DLL se trouve dans un répertoire enfant du chemin d’accès include. cette propriété sera donc utilisée comme répertoire racine binaire :
+1. Dans **ConsumeWinRT.Build.cs**, ajoutez une propriété pour rechercher le chemin d’accès include pour la dll (répertoire contenant HoloLensWinrtDLL. h). La DLL se trouve dans un répertoire enfant du chemin d’accès include. cette propriété sera donc utilisée comme répertoire racine binaire :
 
 ```cs
 using System.IO;
@@ -283,11 +283,11 @@ void AWinrtActor::OpenFileDialogue()
 
 ![Placement de la WinrtActor dans la scène](images/unreal-winrt-img-06.png)
 
-2. Dans le **monde entier** , recherchez le **WindrtActor** précédemment déposé dans la scène et faites-le glisser vers le plan de niveau : 
+2. Dans le **monde entier**, recherchez le **WindrtActor** précédemment déposé dans la scène et faites-le glisser vers le plan de niveau : 
 
 ![Glissement du WinrtActor dans le plan de niveau](images/unreal-winrt-img-07.png)
 
-3. Dans le plan de niveau, faites glisser le nœud de sortie à partir de WinrtActor, recherchez la **boîte de dialogue Ouvrir le fichier** , puis routez le nœud à partir de n’importe quelle entrée d’utilisateur.  Dans ce cas, la boîte de dialogue Ouvrir un fichier est appelée à partir d’un événement vocal : 
+3. Dans le plan de niveau, faites glisser le nœud de sortie à partir de WinrtActor, recherchez la **boîte de dialogue Ouvrir le fichier**, puis routez le nœud à partir de n’importe quelle entrée d’utilisateur.  Dans ce cas, la boîte de dialogue Ouvrir un fichier est appelée à partir d’un événement vocal : 
 
 ![Configuration des nœuds dans le plan de niveau](images/unreal-winrt-img-08.png)
 

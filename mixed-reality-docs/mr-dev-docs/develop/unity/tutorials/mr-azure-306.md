@@ -1,17 +1,17 @@
 ---
-title: RM et Azure 306-streaming video
+title: MR and Azure 306 - Streaming de vidéo
 description: Suivez ce cours pour apprendre à implémenter Azure Media Services dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, réalité mixte, Academy, Unity, didacticiel, API, Media Services, streaming video, 360, immersif, VR
-ms.openlocfilehash: bf58c0c7a972e35b7330b15412174464ba28ac6d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Azure, réalité mixte, Academy, Unity, didacticiel, API, Media Services, streaming video, 360, immersif, VR, Windows 10, Visual Studio
+ms.openlocfilehash: 1d53b260b2c4b00ff6bf985646a45948472a56a5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678993"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679518"
 ---
 # <a name="mr-and-azure-306-streaming-video"></a>Réalité mixte - Azure - Cours 306 : Diffusion de vidéos en streaming
 
@@ -31,7 +31,7 @@ Dans ce cours, vous allez apprendre comment connecter vos Azure Media Services �
 
 Une fois ce cours terminé, vous disposerez d’une application de casque d’immersion en réalité mixte, capable d’effectuer les opérations suivantes :
 
-1. Récupérez une vidéo de 360 degrés à partir d’un **stockage Azure** , via **Azure Media Service** .
+1. Récupérez une vidéo de 360 degrés à partir d’un **stockage Azure**, via **Azure Media Service**.
 
 2. Affichez la vidéo Récupérée de 360 degrés dans une scène Unity.
 
@@ -75,7 +75,7 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 
 ## <a name="chapter-1---the-azure-portal-creating-the-azure-storage-account"></a>Chapitre 1-portail Azure : création du compte de stockage Azure
 
-Pour utiliser le **service de stockage Azure** , vous devez créer et configurer un **compte de stockage** dans le portail Azure.
+Pour utiliser le **service de stockage Azure**, vous devez créer et configurer un **compte de stockage** dans le portail Azure.
 
 1.  Connectez-vous au [portail Azure](https://portal.azure.com).
 
@@ -86,7 +86,7 @@ Pour utiliser le **service de stockage Azure** , vous devez créer et configurer
 
     ![Configuration du compte de stockage Azure](images/AzureLabs-Lab6-02.png)
 
-3.  Dans l’onglet **comptes de stockage** , cliquez sur **Ajouter** .
+3.  Dans l’onglet **comptes de stockage** , cliquez sur **Ajouter**.
 
     ![Configuration du compte de stockage Azure](images/AzureLabs-Lab6-03.png)
 
@@ -94,17 +94,17 @@ Pour utiliser le **service de stockage Azure** , vous devez créer et configurer
 
     1.  Insérez un **nom** pour votre compte. n’oubliez pas que ce champ accepte uniquement des chiffres et des lettres minuscules.
 
-    2.  Pour **modèle de déploiement,** sélectionnez **Resource Manager** .
+    2.  Pour **modèle de déploiement,** sélectionnez **Resource Manager**.
 
-    3.  Pour **type de compte** , sélectionnez **stockage (à usage général v1)** .
+    3.  Pour **type de compte**, sélectionnez **stockage (à usage général v1)**.
 
-    4.  Pour **performances** , sélectionnez **standard *.**
+    4.  Pour **performances**, sélectionnez **standard *.**
 
-    5.  Pour **la réplication** , sélectionnez **stockage localement redondant (LRS)** .
+    5.  Pour **la réplication** , sélectionnez **stockage localement redondant (LRS)**.
 
-    6.  Laissez le **transfert sécurisé requis** comme **désactivé** .
+    6.  Laissez le **transfert sécurisé requis** comme **désactivé**.
 
-    7.  Sélectionnez un **Abonnement** .
+    7.  Sélectionnez un **Abonnement**.
 
     8.  Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure.
 
@@ -114,7 +114,7 @@ Pour utiliser le **service de stockage Azure** , vous devez créer et configurer
 
     ![Configuration du compte de stockage Azure](images/AzureLabs-Lab6-04.png)
 
-6.  Une fois que vous avez cliqué sur **créer** , vous devez attendre que le service soit créé, cette opération peut prendre une minute.
+6.  Une fois que vous avez cliqué sur **créer**, vous devez attendre que le service soit créé, cette opération peut prendre une minute.
 
 7.  Une notification s’affichera dans le portail une fois l’instance de service créée.
 
@@ -126,11 +126,11 @@ Pour utiliser le **service de stockage Azure** , vous devez créer et configurer
 
 Pour utiliser Azure Media Service, vous devez configurer une instance du service à mettre à la disposition de votre application (où le détenteur du compte doit être un administrateur).
 
-1.  Dans le portail Azure, cliquez sur **créer une ressource** dans le coin supérieur gauche et recherchez **Media Service,** puis appuyez sur **entrée** . La ressource à laquelle vous souhaitez appliquer actuellement une icône rose ; Cliquez sur cette valeur pour afficher une nouvelle page.
+1.  Dans le portail Azure, cliquez sur **créer une ressource** dans le coin supérieur gauche et recherchez **Media Service,** puis appuyez sur **entrée**. La ressource à laquelle vous souhaitez appliquer actuellement une icône rose ; Cliquez sur cette valeur pour afficher une nouvelle page.
 
     ![Le portail Azure](images/AzureLabs-Lab6-06.png)
 
-2.  La nouvelle page fournit une description du **service multimédia** . En bas à gauche de cette invite, cliquez sur le bouton **créer** pour créer une association avec ce service.
+2.  La nouvelle page fournit une description du **service multimédia**. En bas à gauche de cette invite, cliquez sur le bouton **créer** pour créer une association avec ce service.
 
     ![Le portail Azure](images/AzureLabs-Lab6-07.png)
 
@@ -138,7 +138,7 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
     1.  Insérez le nom de votre **compte** souhaité pour cette instance de service.
 
-    2.  Sélectionnez un **Abonnement** .
+    2.  Sélectionnez un **Abonnement**.
 
     3. Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces laboratoires) sous un groupe de ressources commun). 
     
@@ -150,11 +150,11 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
     6.  Vous devrez également confirmer que vous avez compris les conditions générales appliquées à ce service.
 
-    7.  Cliquez sur **Créer** .
+    7.  Cliquez sur **Créer**.
 
         ![Le portail Azure](images/AzureLabs-Lab6-08.png)
 
-4.  Une fois que vous avez cliqué sur **créer** , vous devez attendre que le service soit créé, cette opération peut prendre une minute.
+4.  Une fois que vous avez cliqué sur **créer**, vous devez attendre que le service soit créé, cette opération peut prendre une minute.
 
 5.  Une notification s’affichera dans le portail une fois l’instance de service créée.
 
@@ -168,7 +168,7 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
 8.  Dans la page nouveau service multimédia, dans le volet de gauche, cliquez sur le lien **ressources** , qui est à mi-chemin.
 
-9.  Sur la page suivante, dans le coin supérieur gauche de la page, cliquez sur **Télécharger** .
+9.  Sur la page suivante, dans le coin supérieur gauche de la page, cliquez sur **Télécharger**.
 
     ![Le portail Azure](images/AzureLabs-Lab6-11.png)
 
@@ -185,7 +185,7 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
     ![Le portail Azure](images/AzureLabs-Lab6-13.png)
 
-12. Cliquez sur le texte ci-dessus ( **yourservicename-Assets** ) pour revenir à la page **composants** .
+12. Cliquez sur le texte ci-dessus (**yourservicename-Assets**) pour revenir à la page **composants** .
 
 13. Vous remarquerez que votre vidéo a été chargée avec succès. Cliquez dessus.
 
@@ -207,9 +207,9 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
         ![Le portail Azure](images/AzureLabs-Lab6-16.png)
 
-16. Cliquez sur le bouton **Créer** .
+16. Cliquez sur le bouton **Créer**.
 
-17. Vous remarquerez une barre avec un **travail d’encodage ajouté** , cliquez sur cette barre et un panneau s’affichera avec la progression de l’encodage affichée.
+17. Vous remarquerez une barre avec un **travail d’encodage ajouté**, cliquez sur cette barre et un panneau s’affichera avec la progression de l’encodage affichée.
 
     ![Le portail Azure](images/AzureLabs-Lab6-17.png)
 
@@ -228,12 +228,12 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
     ![Le portail Azure](images/AzureLabs-Lab6-21.png)
 
-20. Vous verrez votre vidéo avec une autre, qui est de **type de ressource _MP4 à débit binaire multiple_** .
+20. Vous verrez votre vidéo avec une autre, qui est de **type de ressource _MP4 à débit binaire multiple_**.
 
     ![Le portail Azure](images/AzureLabs-Lab6-22.png)
 
     > [!NOTE] 
-    > Vous remarquerez peut-être que la nouvelle ressource, avec votre vidéo initiale, est *inconnue* et a une valeur de « 0 » octets pour sa **taille** , actualisez simplement votre fenêtre pour qu’elle soit mise à jour.
+    > Vous remarquerez peut-être que la nouvelle ressource, avec votre vidéo initiale, est *inconnue* et a une valeur de « 0 » octets pour sa **taille**, actualisez simplement votre fenêtre pour qu’elle soit mise à jour.
 
 21. Cliquez sur ce nouvel élément multimédia.
 
@@ -243,9 +243,9 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
     ![Le portail Azure](images/AzureLabs-Lab6-24.png)
 
-23. Vous serez invité à définir un **localisateur** , qui est le point d’entrée, dans les fichiers de vos ressources. Pour votre scénario, définissez les propriétés suivantes :
+23. Vous serez invité à définir un **localisateur**, qui est le point d’entrée, dans les fichiers de vos ressources. Pour votre scénario, définissez les propriétés suivantes :
 
-    1.  **Type**  >  de localisateur **Progressive** .
+    1.  **Type**  >  de localisateur **Progressive**.
 
     2.  La **Date** et l' **heure** seront définies pour vous, à partir de la date actuelle, à une heure future (100 ans dans le cas présent). Laissez tel quel ou modifiez-le pour l’adapter à vos besoins.
 
@@ -256,7 +256,7 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
     ![Le portail Azure](images/AzureLabs-Lab6-25.png)
 
-25. Votre vidéo est maintenant publiée et peut être diffusée en continu à l’aide de son point de terminaison. Plus loin dans la page, il s’agit d’une section de **fichiers** . C’est là que se trouvent les différentes versions encodées de votre vidéo. Sélectionnez la résolution la plus élevée possible (dans l’image ci-dessous est le fichier 1920x960), puis un panneau à droite s’affiche. Vous y trouverez une **URL de téléchargement** . Copiez ce **point de terminaison** , car vous allez l’utiliser ultérieurement dans votre code.
+25. Votre vidéo est maintenant publiée et peut être diffusée en continu à l’aide de son point de terminaison. Plus loin dans la page, il s’agit d’une section de **fichiers** . C’est là que se trouvent les différentes versions encodées de votre vidéo. Sélectionnez la résolution la plus élevée possible (dans l’image ci-dessous est le fichier 1920x960), puis un panneau à droite s’affiche. Vous y trouverez une **URL de téléchargement**. Copiez ce **point de terminaison** , car vous allez l’utiliser ultérieurement dans votre code.
 
     ![Le portail Azure](images/AzureLabs-Lab6-26.png)    
 
@@ -273,19 +273,19 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
 Ce qui suit est une configuration classique pour le développement avec la réalité mixte, et, par conséquent, est un bon modèle pour d’autres projets.
 
-1.  Ouvrez **Unity** et cliquez sur **nouveau** . 
+1.  Ouvrez **Unity** et cliquez sur **nouveau**. 
 
     ![Le portail Azure](images/AzureLabs-Lab6-28.png)
 
-2.  Vous devez maintenant fournir un nom de projet Unity, insérer **Mr \_ 360VideoStreaming.** . Assurez-vous que le type de projet est défini sur **3D** . Définissez l’emplacement approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet** .
+2.  Vous devez maintenant fournir un nom de projet Unity, insérer **Mr \_ 360VideoStreaming.**. Assurez-vous que le type de projet est défini sur **3D**. Définissez l’emplacement approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
 
     ![Le portail Azure](images/AzureLabs-Lab6-29.png)
 
-3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio.** Accédez à ***modifier* les *Préférences*** , puis à partir de la nouvelle fenêtre, accédez à **outils externes** . Remplacez l' **éditeur de script externe** par **Visual Studio 2017** . Fermez la fenêtre **Préférences** .
+3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio.** Accédez à **_modifier_ les *Préférences*** , puis à partir de la nouvelle fenêtre, accédez à **outils externes**. Remplacez l' **éditeur de script externe** par **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
 
     ![Le portail Azure](images/AzureLabs-Lab6-30.png)
 
-4.  Ensuite, accédez à ***fichier* *paramètres de build*** et basculez la plateforme sur **plateforme Windows universelle** , en cliquant sur le bouton **changer de plateforme** .
+4.  Ensuite, accédez à **_fichier_ *paramètres de build*** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
 
 5.  Assurez-vous également que :
 
@@ -319,11 +319,11 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
             ![Configuration du projet Unity](images/AzureLabs-Lab6-32.png)
 
-    2.  Plus bas dans le volet, dans les **paramètres XR** (situés sous **paramètres de publication** ), cochez la **réalité virtuelle prise en charge** , assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
+    2.  Plus bas dans le volet, dans les **paramètres XR** (situés sous **paramètres de publication**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
 
         ![Configuration du projet Unity](images/AzureLabs-Lab6-33.png)
 
-    3.  Dans l’onglet **paramètres de publication** , sous **fonctionnalités** , activez la case à cocher :
+    3.  Dans l’onglet **paramètres de publication** , sous **fonctionnalités**, activez la case à cocher :
 
         - **InternetClient**
 
@@ -331,55 +331,55 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
 8.  Une fois ces modifications effectuées, fermez la fenêtre **paramètres de build** .
 
-9.  Enregistrez votre projet * *fichier* * enregistrer le projet * *.
+9.  Enregistrez votre projet **fichier* * enregistrer le projet * *.
 
 
 
 ## <a name="chapter-4---importing-the-insideoutsphere-unity-package"></a>Chapitre 4-importation du package InsideOutSphere Unity
 
 > [!IMPORTANT]
-> Si vous souhaitez ignorer le composant *Unity Set up* de ce cours et continuer directement dans le code, n’hésitez pas à télécharger ce fichier [. pour Unity](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/Azure-MR-306.unitypackage), à l’importer dans votre projet en tant que [**package personnalisé**](https://docs.unity3d.com/Manual/AssetPackages.html), puis à passer au **Chapitre 5** . Vous devrez toujours créer un projet Unity.
+> Si vous souhaitez ignorer le composant *Unity Set up* de ce cours et continuer directement dans le code, n’hésitez pas à télécharger ce fichier [. pour Unity](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/Azure-MR-306.unitypackage), à l’importer dans votre projet en tant que [**package personnalisé**](https://docs.unity3d.com/Manual/AssetPackages.html), puis à passer au **Chapitre 5**. Vous devrez toujours créer un projet Unity.
 
 Pour ce cours, vous devez télécharger un package d’actifs Unity appelé [**InsideOutSphere. pour Unity**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/InsideOutSphere.unitypackage).
 
-Comment importer les **pour Unity** :
+Comment importer les **pour Unity**:
 
-1.  Avec le tableau de bord Unity devant vous, cliquez sur **ressources** dans le menu en haut de l’écran, puis sur **importer le package > package personnalisé** .
+1.  Avec le tableau de bord Unity devant vous, cliquez sur **ressources** dans le menu en haut de l’écran, puis sur **importer le package > package personnalisé**.
 
     ![Importation du package InsideOutSphere Unity](images/AzureLabs-Lab6-35.png)
 
-2.  Utilisez le sélecteur de fichiers pour sélectionner le package **InsideOutSphere. pour Unity** , puis cliquez sur **ouvrir** . La liste des composants de cet élément multimédia vous est présentée. Confirmez l’importation en cliquant sur **Importer** .
+2.  Utilisez le sélecteur de fichiers pour sélectionner le package **InsideOutSphere. pour Unity** , puis cliquez sur **ouvrir**. La liste des composants de cet élément multimédia vous est présentée. Confirmez l’importation en cliquant sur **Importer**.
 
     ![Importation du package InsideOutSphere Unity](images/AzureLabs-Lab6-36.png)
 
-3.  Une fois l’importation terminée, vous remarquerez que trois nouveaux dossiers, **matériaux** , **modèles** et **Prefabs** ont été ajoutés à votre dossier de **ressources** . Ce type de structure de dossiers est courant pour un projet Unity.
+3.  Une fois l’importation terminée, vous remarquerez que trois nouveaux dossiers, **matériaux**, **modèles** et **Prefabs** ont été ajoutés à votre dossier de **ressources** . Ce type de structure de dossiers est courant pour un projet Unity.
 
     ![Importation du package InsideOutSphere Unity](images/AzureLabs-Lab6-37.png)
 
     1.  Ouvrez le dossier **Models** , et vous verrez que le modèle **InsideOutSphere** a été importé.
 
-    2.  Dans le **dossier Materials** , vous trouverez la *Lambert1* de matériau **InsideOutSpheres** , ainsi qu’un document appelé *ButtonMaterial* , qui est utilisé par le GazeButton, que vous verrez bientôt.
+    2.  Dans le **dossier Materials** , vous trouverez la *Lambert1* de matériau **InsideOutSpheres** , ainsi qu’un document appelé *ButtonMaterial*, qui est utilisé par le GazeButton, que vous verrez bientôt.
 
-    3.  Le dossier **Prefabs** contient le Prefab **InsideOutSphere** qui contient à la fois le *modèle* **InsideOutSphere** et le *GazeButton* .
+    3.  Le dossier **Prefabs** contient le Prefab **InsideOutSphere** qui contient à la fois le *modèle* **InsideOutSphere** et le *GazeButton*.
 
-    4.  **Aucun code n’est inclus** , vous allez écrire le code en suivant ce cours.
+    4.  **Aucun code n’est inclus**, vous allez écrire le code en suivant ce cours.
 
 
-4.  Dans la **hiérarchie** , sélectionnez l’objet **Camera principal** et mettez à jour les composants suivants :
+4.  Dans la **hiérarchie**, sélectionnez l’objet **Camera principal** et mettez à jour les composants suivants :
 
-    1.  **Transformer**
+    1.  **Transformation**
 
-        1.  Position = **X** : 0, **Y** : 0, **Z** : 0.
+        1.  Position = **X**: 0, **Y**: 0, **Z**: 0.
 
-        2. Rotation = **X** : 0, **Y** : 0, **Z** : 0.
+        2. Rotation = **X**: 0, **Y**: 0, **Z**: 0.
 
-        3. Échelle **X** : 1, **Y** : 1, **Z** : 1.
+        3. Échelle **X**: 1, **Y**: 1, **Z**: 1.
 
     2.  **Appareil photo**
 
-        1. **Indicateurs d’effacement** : couleur unie.
+        1. **Indicateurs d’effacement**: couleur unie.
 
-        2.  **Plans de découpage** : près de 0,1, Far : 6.
+        2.  **Plans de découpage**: près de 0,1, Far : 6.
 
             ![Importation du package InsideOutSphere Unity](images/AzureLabs-Lab6-38.png)
 
@@ -387,11 +387,11 @@ Comment importer les **pour Unity** :
 
     ![Importation du package InsideOutSphere Unity](images/AzureLabs-Lab6-39.png)
 
-6.  Développez l’objet **InsideOutSphere** dans la **hiérarchie** en cliquant sur la petite flèche en regard de celui-ci. Vous verrez un objet **enfant** sous celui-ci appelé **GazeButton** . Ce sera utilisé pour modifier les scènes et, par conséquent, les vidéos.
+6.  Développez l’objet **InsideOutSphere** dans la **hiérarchie** en cliquant sur la petite flèche en regard de celui-ci. Vous verrez un objet **enfant** sous celui-ci appelé **GazeButton**. Ce sera utilisé pour modifier les scènes et, par conséquent, les vidéos.
 
     ![Importation du package InsideOutSphere Unity](images/AzureLabs-Lab6-40.png)
 
-7.  Dans la fenêtre de l’inspecteur, cliquez sur le composant transformer du **InsideOutSphere** , vérifiez que les propriétés suivantes sont définies :
+7.  Dans la fenêtre de l’inspecteur, cliquez sur le composant transformer du **InsideOutSphere**, vérifiez que les propriétés suivantes sont définies :
 
     |            |    TRANSFORMATION-POSITION   |           |
     | :---------:| :-----------------------: | :--------:|
@@ -430,7 +430,7 @@ La classe **VideoController** héberge les deux points de terminaison vidéo qui
 
 Pour créer cette classe :
 
-1.  Cliquez avec le bouton droit sur le **dossier Asset** , situé dans le panneau **projet** , puis cliquez sur **créer un dossier >** . Nommez le dossier **scripts** .
+1.  Cliquez avec le bouton droit sur le **dossier Asset**, situé dans le panneau **projet** , puis cliquez sur **créer un dossier >**. Nommez le dossier **scripts**.
 
     ![Créer la classe VideoController](images/AzureLabs-Lab6-43.png)
 
@@ -438,7 +438,7 @@ Pour créer cette classe :
 
 2.  Double-cliquez sur le dossier **scripts** pour l’ouvrir.
 
-3.  Cliquez avec le bouton droit dans le dossier, puis cliquez sur **créer > \# script C** . Nommez le script **VideoController** .
+3.  Cliquez avec le bouton droit dans le dossier, puis cliquez sur **créer > \# script C**. Nommez le script **VideoController**.
 
     ![Créer la classe VideoController](images/AzureLabs-Lab6-45.png)
 
@@ -606,13 +606,13 @@ Pour créer cette classe :
     ```
 
     > [!TIP] 
-    > La méthode **ChangeScene ()** utilise une fonctionnalité C pratique \# appelée *opérateur conditionnel* . Cela permet de vérifier les conditions, puis les valeurs retournées en fonction du résultat de la vérification, dans une instruction unique. Suivez ce [lien pour en savoir plus sur l’opérateur conditionnel](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
+    > La méthode **ChangeScene ()** utilise une fonctionnalité C pratique \# appelée *opérateur conditionnel*. Cela permet de vérifier les conditions, puis les valeurs retournées en fonction du résultat de la vérification, dans une instruction unique. Suivez ce [lien pour en savoir plus sur l’opérateur conditionnel](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
 
 11. Enregistrez vos modifications dans Visual Studio avant de revenir à Unity.
 
 12. De retour dans l’éditeur Unity, cliquez et faites glisser la classe **VideoController** [from] {. Underline} le dossier **scripts** vers l’objet **Camera principal** dans le panneau **hiérarchie** .
 
-13. Cliquez sur l' **appareil photo principal** et observez le panneau de l' **inspecteur** . Vous remarquerez que dans le composant script qui vient d’être ajouté, il existe un champ avec une valeur vide. Il s’agit d’un champ de référence qui cible les variables publiques dans votre code.
+13. Cliquez sur l' **appareil photo principal** et observez le panneau de l' **inspecteur**. Vous remarquerez que dans le composant script qui vient d’être ajouté, il existe un champ avec une valeur vide. Il s’agit d’un champ de référence qui cible les variables publiques dans votre code.
 
 14. Faites glisser l’objet **InsideOutSphere** du **volet** de la hiérarchie vers l’emplacement **Sphere** , comme indiqué dans l’image ci-dessous.
 
@@ -621,15 +621,15 @@ Pour créer cette classe :
 
 ## <a name="chapter-6---create-the-gaze-class"></a>Chapitre 6-créer la classe en regard
 
-Cette classe est chargée de créer un **Raycast** qui sera projeté à l’avance de la **caméra principale** , pour détecter l’objet que l’utilisateur examine. Dans ce cas, le **Raycast** doit déterminer si l’utilisateur regarde l’objet **GazeButton** dans la scène et déclencher un comportement.
+Cette classe est chargée de créer un **Raycast** qui sera projeté à l’avance de la **caméra principale**, pour détecter l’objet que l’utilisateur examine. Dans ce cas, le **Raycast** doit déterminer si l’utilisateur regarde l’objet **GazeButton** dans la scène et déclencher un comportement.
 
 Pour créer cette classe :
 
 1.  Accédez au dossier **scripts** que vous avez créé précédemment.
 
-2.  Cliquez avec le bouton droit dans le panneau **projet** , * *créer* un script * C * \# *. Nommez le script point de **regard** .
+2.  Cliquez avec le bouton droit dans le panneau **projet** , **créer* un script * C * \# *. Nommez le script point de **regard**.
 
-3.  Double-cliquez sur le nouveau script de ***regard*** pour l’ouvrir avec **Visual Studio 2017.**
+3.  Double-cliquez sur le nouveau script de **_regard_*pour l’ouvrir avec _* Visual Studio 2017.**
 
 4.  Assurez-vous que l’espace de noms suivant figure en haut du script et supprimez les autres :
 
@@ -737,33 +737,33 @@ Pour créer cette classe :
 
 L’objectif de ce chapitre est de configurer les deux scènes, chacune hébergeant une vidéo à diffuser. Vous allez dupliquer la scène que vous avez déjà créée, afin de ne pas avoir à la reconfigurer, bien que vous modifiiez ensuite la nouvelle scène, afin que l’objet *GazeButton* se trouve à un emplacement différent et ait une apparence différente. Il s’agit de montrer comment changer entre les scènes.
 
-1.  Pour ce faire, accédez à **fichier > enregistrer la scène sous...** . Une fenêtre d’enregistrement s’affiche. Cliquez sur le bouton **nouveau dossier** .
+1.  Pour ce faire, accédez à **fichier > enregistrer la scène sous...**. Une fenêtre d’enregistrement s’affiche. Cliquez sur le bouton **nouveau dossier** .
 
     ![Chapitre 7 : configurer les deux scènes d’Unity](images/AzureLabs-Lab6-49.png)
 
-2.  Nommez le dossier **scenes** .
+2.  Nommez le dossier **scenes**.
 
 3.  La fenêtre **enregistrer la scène** est toujours ouverte. Ouvrez le dossier **scenes** que vous venez de créer.
 
-4.  Dans le champ **nom de fichier :** , tapez **VideoScene1** , puis cliquez sur **Enregistrer** .
+4.  Dans le champ **nom de fichier :** , tapez **VideoScene1**, puis cliquez sur **Enregistrer**.
 
 5.  De retour dans Unity, ouvrez votre dossier **scenes** , puis cliquez sur votre fichier **VideoScene1** . À l’aide de votre clavier, appuyez sur **Ctrl + D** pour dupliquer cette scène
 
     > [!TIP]
-    > La commande **dupliquée** peut également être exécutée en accédant à **modifier > doublon** .
+    > La commande **dupliquée** peut également être exécutée en accédant à **modifier > doublon**.
 
 6.  Unity incrémente automatiquement le numéro de nom de la scène, mais vérifie tout de même qu’il correspond au code précédemment inséré.
 
-    >  Vous devez avoir **VideoScene1** et **VideoScene2** .
+    >  Vous devez avoir **VideoScene1** et **VideoScene2**.
 
-7.  Avec les deux scènes, accédez à **fichier > paramètres de build** . Une fois la fenêtre des **paramètres de build** ouverte, faites glisser vos scènes jusqu’à la section **scenes dans la build** .
+7.  Avec les deux scènes, accédez à **fichier > paramètres de build**. Une fois la fenêtre des **paramètres de build** ouverte, faites glisser vos scènes jusqu’à la section **scenes dans la build** .
 
     ![Chapitre 7 : configurer les deux scènes Unity](images/AzureLabs-Lab6-50.png)
 
     > [!TIP] 
     > Vous pouvez sélectionner les deux scènes dans votre dossier **scenes** tout en maintenant le bouton **CTRL** enfoncé, puis en cliquant avec le bouton gauche sur chaque scène et en faisant glisser les deux à la fois.
 
-8.  Fermez la fenêtre **paramètres de build** , puis double-cliquez sur **VideoScene2** .
+8.  Fermez la fenêtre **paramètres de build** , puis double-cliquez sur **VideoScene2**.
 
 9.  Une fois la deuxième scène ouverte, cliquez sur l’objet enfant **GazeButton** du **InsideOutSphere** et définissez sa transformation comme suit :
 
@@ -779,30 +779,30 @@ L’objectif de ce chapitre est de configurer les deux scènes, chacune héberge
     | :---------:| :-----------------------: | :--------:|
     |  **X** 1   |          **Y** 1          |  **Z** 1  |
 
-10. Avec l’enfant **GazeButton** toujours sélectionné, examinez l' **inspecteur** et le **filtre de maillage** . Cliquez sur la petite cible en regard du champ de référence de **maillage** :
+10. Avec l’enfant **GazeButton** toujours sélectionné, examinez l' **inspecteur** et le **filtre de maillage**. Cliquez sur la petite cible en regard du champ de référence de **maillage** :
 
     ![Chapitre 7 : configurer les deux scènes Unity](images/AzureLabs-Lab6-51.png)
 
-11. Une fenêtre contextuelle **Sélectionner le maillage** s’affiche. Double-cliquez sur la maille du **cube** dans la liste des **ressources** .
+11. Une fenêtre contextuelle **Sélectionner le maillage** s’affiche. Double-cliquez sur la maille du **cube** dans la liste des **ressources**.
 
     ![Chapitre 7 : configurer les deux scènes Unity](images/AzureLabs-Lab6-52.png)
 
-12. Le **filtre de maillage** est mis à jour et est maintenant un **cube** . Maintenant, cliquez sur l’icône d' **engrenage** en regard de **Sphere collision** , puis cliquez sur **supprimer le composant** pour supprimer le conflit de cet objet.
+12. Le **filtre de maillage** est mis à jour et est maintenant un **cube**. Maintenant, cliquez sur l’icône d' **engrenage** en regard de **Sphere collision** , puis cliquez sur **supprimer le composant** pour supprimer le conflit de cet objet.
 
     ![Chapitre 7 : configurer les deux scènes Unity](images/AzureLabs-Lab6-53.png)
 
-13. Avec la **GazeButton** toujours sélectionnée, cliquez sur le bouton **Ajouter un composant** situé en bas de l' **inspecteur** . Dans le champ de recherche, la **zone** type et le **conflit de zone** sont une option qui permet d’ajouter un **conflit Box** à votre objet **GazeButton** .
+13. Avec la **GazeButton** toujours sélectionnée, cliquez sur le bouton **Ajouter un composant** situé en bas de l' **inspecteur**. Dans le champ de recherche, la **zone** type et le **conflit de zone** sont une option qui permet d’ajouter un **conflit Box** à votre objet **GazeButton** .
 
     ![Chapitre 7 : configurer les deux scènes Unity](images/AzureLabs-Lab6-54.png)
 
-14. Le **GazeButton** est maintenant partiellement mis à jour. Toutefois, vous allez maintenant créer un nouveau **matériau** , afin qu’il soit complètement différent et qu’il soit plus facile à reconnaître en tant qu’objet différent que l’objet dans la première scène.
+14. Le **GazeButton** est maintenant partiellement mis à jour. Toutefois, vous allez maintenant créer un nouveau **matériau**, afin qu’il soit complètement différent et qu’il soit plus facile à reconnaître en tant qu’objet différent que l’objet dans la première scène.
 
-15. Accédez à votre dossier **Materials** , dans le **panneau Projet** . Dupliquez le matériel **ButtonMaterial** (appuyez sur **CTRL**  +  **D** sur le clavier ou cliquez sur le **matériau** , puis sélectionnez **dupliquer** dans l’option de menu **modifier** le fichier).
+15. Accédez à votre dossier **Materials** , dans le **panneau Projet**. Dupliquez le matériel **ButtonMaterial** (appuyez sur **CTRL**  +  **D** sur le clavier ou cliquez sur le **matériau**, puis sélectionnez **dupliquer** dans l’option de menu **modifier** le fichier).
 
     ![Chapitre 7--configurer les deux scènes d’Unity ](images/AzureLabs-Lab6-55.png)
      ![ chapitre 7--configurer les deux scènes d’Unity](images/AzureLabs-Lab6-56.png)
 
-16. Sélectionnez le nouveau matériel **ButtonMaterial** (nommé **ButtonMaterial 1** ) et, dans l' **inspecteur** , cliquez sur la fenêtre de couleur **Albedo** . Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner une autre couleur (choisissez celle qui vous plaît), puis fermer la fenêtre contextuelle. Le matériau sera sa propre instance et différent de l’original.
+16. Sélectionnez le nouveau matériel **ButtonMaterial** (nommé **ButtonMaterial 1**) et, dans l' **inspecteur**, cliquez sur la fenêtre de couleur **Albedo** . Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner une autre couleur (choisissez celle qui vous plaît), puis fermer la fenêtre contextuelle. Le matériau sera sa propre instance et différent de l’original.
 
     ![Chapitre 7 : configurer les deux scènes Unity](images/AzureLabs-Lab6-57.png)
 
@@ -824,17 +824,17 @@ Une fois que vous avez vérifié que l’éditeur n’a pas d’erreurs, vous ê
 
 Pour générer :
 
-1.  Enregistrez la scène en cours en cliquant sur **fichier > enregistrer** .
+1.  Enregistrez la scène en cours en cliquant sur **fichier > enregistrer**.
 
 2.  Cochez la case **\# projets Unity C** (cette opération est importante car elle vous permettra de modifier les classes une fois la génération terminée).
 
-3.  Accédez à **fichier > paramètres de build** , puis cliquez sur **Build** .
+3.  Accédez à **fichier > paramètres de build**, puis cliquez sur **Build**.
 
 4.  Vous serez invité à sélectionner le dossier dans lequel vous souhaitez générer la solution.
 
 5.  Créez un dossier **Builds** et, dans ce dossier, créez un autre dossier avec le nom approprié de votre choix.
 
-6.  Cliquez sur votre nouveau dossier, puis sur **Sélectionner un dossier** , afin de choisir ce dossier, pour commencer la build à cet emplacement.
+6.  Cliquez sur votre nouveau dossier, puis sur **Sélectionner un dossier**, afin de choisir ce dossier, pour commencer la build à cet emplacement.
 
     ![Chapitre 8--créer la solution UWP ](images/AzureLabs-Lab6-60.png)
      ![ chapitre 8--créer la solution UWP](images/AzureLabs-Lab6-61.png)
@@ -845,19 +845,19 @@ Pour générer :
 
 Une fois la génération terminée, une fenêtre de l' **Explorateur de fichiers** s’affiche à l’emplacement de votre Build. Ouvrez le dossier que vous avez nommé et créé, puis double-cliquez sur le fichier de solution (. sln) dans ce dossier pour ouvrir votre solution avec Visual Studio 2017.
 
-La seule chose à faire est de déployer votre application sur votre ordinateur (ou *ordinateur local* ).
+La seule chose à faire est de déployer votre application sur votre ordinateur (ou *ordinateur local*).
 
 Pour effectuer le déploiement sur l’ordinateur local :
 
-1.  Dans **Visual Studio 2017** , ouvrez le fichier solution qui vient d’être créé.
+1.  Dans **Visual Studio 2017**, ouvrez le fichier solution qui vient d’être créé.
 
-2.  Dans la **plateforme** de la solution, sélectionnez **x86, ordinateur local** .
+2.  Dans la **plateforme** de la solution, sélectionnez **x86, ordinateur local**.
 
-3.  Dans la **configuration** de la solution, sélectionnez **Déboguer** .
+3.  Dans la **configuration** de la solution, sélectionnez **Déboguer**.
 
     ![Chapitre 9--déployer sur l’ordinateur local](images/AzureLabs-Lab6-62.png)
 
-4.  Vous devez à présent restaurer les packages dans votre solution. Cliquez avec le bouton droit sur votre **solution** , puis cliquez sur **restaurer les packages NuGet pour la solution...**
+4.  Vous devez à présent restaurer les packages dans votre solution. Cliquez avec le bouton droit sur votre **solution**, puis cliquez sur **restaurer les packages NuGet pour la solution...**
 
     > [!NOTE] 
     > Cela est dû au fait que les packages créés par Unity doivent être ciblés pour fonctionner avec vos références d’ordinateurs locaux.

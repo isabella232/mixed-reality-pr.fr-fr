@@ -5,13 +5,13 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, mappage spatial, convertisseur, conflit, maillage, numérisation, composant
-ms.openlocfilehash: 15948870d3150614aefa071ce07cf51c29d284fc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, mappage spatial, convertisseur, conflit, maillage, numérisation, composant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682454"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677398"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mappage spatial dans Unity
 
@@ -64,7 +64,7 @@ Le mappage spatial nécessite également un MaxVersionTested d’au moins 10.0.1
 
 ## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>Prise en main des composants de mappage spatial intégrés à Unity
 
-Unity offre 2 composants pour ajouter facilement le mappage spatial à votre application, le **convertisseur de mappage spatial** et le **conflit de mappage spatial** .
+Unity offre 2 composants pour ajouter facilement le mappage spatial à votre application, le **convertisseur de mappage spatial** et le **conflit de mappage spatial**.
 
 ### <a name="spatial-mapping-renderer"></a>Convertisseur de mappage spatial
 
@@ -84,13 +84,13 @@ Vous pouvez ajouter les deux composants à votre application si vous souhaitez v
 
 Pour utiliser ces deux composants dans votre application Unity :
 1. Sélectionnez un GameObject au centre de la zone dans laquelle vous souhaitez détecter les maillages de surface spatiale.
-2. Dans la fenêtre de l’inspecteur, **Ajoutez le composant**  >  **XR**  >  **mappage spatial de conflit**   ou le **convertisseur de mappage spatial** .
+2. Dans la fenêtre de l’inspecteur, **Ajoutez le composant**  >  **XR**  >  **mappage spatial de conflit** ou le **convertisseur de mappage spatial**.
 
 Vous trouverez plus d’informations sur l’utilisation de ces composants sur le <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">site de documentation Unity</a>.
 
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Aller au-delà des composants de mappage spatial intégrés
 
-Ces composants facilitent le glisser-déplacer pour la prise en main du mappage spatial. Lorsque vous souhaitez aller plus loin, il existe deux chemins principaux à explorer :
+Ces composants facilitent le glisser-déplacer pour la prise en main du mappage spatial.  Lorsque vous souhaitez aller plus loin, il existe deux chemins principaux à explorer :
 * Pour effectuer votre propre traitement de maillage de niveau inférieur, consultez la section ci-dessous sur l’API de script de mappage spatial de bas niveau.
 * Pour effectuer une analyse de maillage de niveau supérieur, consultez la section ci-dessous sur la bibliothèque SpatialUnderstanding dans <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
@@ -99,7 +99,7 @@ Ces composants facilitent le glisser-déplacer pour la prise en main du mappage 
 Si vous avez besoin d’un contrôle plus élevé que celui obtenu à partir du convertisseur de mappage spatial et des composants de conflit de mappage spatial, vous pouvez utiliser les API de script de mappage spatial de bas niveau.
 
 **Espace de noms :** *UnityEngine. XR. WSA*<br>
-**Types** : *SurfaceObserver* , *SurfaceChange* , *SurfaceData* , *SurfaceId*
+**Types**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *SurfaceId*
 
 Voici un aperçu du déroulement suggéré pour une application qui utilise les API de mappage spatial.
 
@@ -479,17 +479,17 @@ Pour plus d’informations sur l’utilisation du mappage spatial avec Mixed Rea
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant : 
+Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, vous explorez actuellement les composants de base de MRTK. À partir de là, vous pouvez passer au composant suivant : 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
 
-Ou accédez aux API et fonctionnalités de la plateforme de réalité mixte :
+Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 > [!div class="nextstepaction"]
 > [Expériences partagées](shared-experiences-in-unity.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
 * [Systèmes de coordonnées](../../design/coordinate-systems.md)

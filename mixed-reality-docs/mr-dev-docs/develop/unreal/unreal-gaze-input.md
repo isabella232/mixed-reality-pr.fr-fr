@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi oculaire, entrée de regard, affichage monté en tête, moteur non réel
-ms.openlocfilehash: 477fbdc9c7ddb3b4e890e62150651d9227d4c19e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi des yeux, entrée de regard, affichage monté en tête, moteur non réel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679850"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679048"
 ---
 # <a name="gaze-input"></a>Entrée en regard
 
@@ -46,17 +46,17 @@ C’est tout ce dont vous avez besoin pour commencer à ajouter des entrées de 
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement inréel que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant : 
+Si vous suivez le parcours des points de contrôle de développement Unreal que nous avons mis en place, vous explorez actuellement les modules de base du MRTK. À partir de là, vous pouvez passer au module suivant : 
 
 > [!div class="nextstepaction"]
 > [Suivi de la main](unreal-hand-tracking.md)
 
-Ou accédez aux API et fonctionnalités de la plateforme de réalité mixte :
+Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 > [!div class="nextstepaction"]
 > [Caméra HoloLens](unreal-hololens-camera.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement inréels](unreal-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unreal](unreal-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
 * [Étalonnage](../../calibration.md)

@@ -5,18 +5,18 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrée spatiale, rendu, chaîne de permutation, Frame holographique, boucle de mise à jour, boucle de jeu, frame de référence, localisation, exemple de code, procédure pas à pas
-ms.openlocfilehash: d96362e7d5795449b608196e52bce55d0f16625b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrée spatiale, rendu, chaîne de permutation, Frame holographique, boucle de mise à jour, boucle de jeu, cadre de référence, localisation, exemple de code, procédure pas à pas, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: fa2c64901a7c4a09710a472509441d54a9e3a383
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680382"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679638"
 ---
 # <a name="getting-a-holographicspace"></a>Obtention d’un HolographicSpace
 
 > [!NOTE]
-> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)** .
+> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
 La classe <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> est votre portail dans le monde holographique. Il contrôle le rendu immersif, fournit des données d’appareil photo et donne accès aux API de raisonnement spatial. Vous allez en créer un pour le <a href="https://docs.microsoft.com/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> de votre application UWP ou le HWND de votre application Win32.
 
@@ -114,20 +114,20 @@ m_cameraAddedToken = m_holographicSpace.CameraAdded(
 
 Votre application doit également répondre aux événements **CameraRemoved** en libérant les ressources qui ont été créées pour cette caméra.
 
-À partir de **DeviceResources :: SetHolographicSpace** :
+À partir de **DeviceResources :: SetHolographicSpace**:
 
 ```cpp
 m_cameraRemovedToken = m_holographicSpace.CameraRemoved(
     std::bind(&AppMain::OnCameraRemoved, this, _1, _2));
 ```
 
-Les gestionnaires d’événements doivent effectuer un travail afin de garantir le bon déroulement du rendu holographique et de permettre à votre application de s’afficher. Pour plus d’informations, lisez le code et les commentaires suivants : vous pouvez rechercher **OnCameraAdded** et **OnCameraRemoved** dans votre classe principale pour comprendre comment le mappage de **m_cameraResources** est géré par **DeviceResources** .
+Les gestionnaires d’événements doivent effectuer un travail afin de garantir le bon déroulement du rendu holographique et de permettre à votre application de s’afficher. Pour plus d’informations, lisez le code et les commentaires suivants : vous pouvez rechercher **OnCameraAdded** et **OnCameraRemoved** dans votre classe principale pour comprendre comment le mappage de **m_cameraResources** est géré par **DeviceResources**.
 
 Pour le moment, nous nous concentrons sur AppMain et la configuration qu’il fait pour permettre à votre application de connaître les caméras holographiques. Dans ce souci, il est important de prendre note des deux conditions suivantes :
 
 1. Pour le gestionnaire d’événements **CameraAdded** , l’application peut fonctionner de manière asynchrone pour terminer la création de ressources et le chargement de ressources pour la nouvelle caméra holographique. Les applications qui prennent plus d’un cadre pour effectuer ce travail doivent demander un report et terminer le report après le chargement asynchrone. une [tâche ppl](https://docs.microsoft.com/cpp/parallel/concrt/parallel-patterns-library-ppl) peut être utilisée pour effectuer un travail asynchrone. Votre application doit s’assurer qu’elle est prête à être rendue sur cette caméra immédiatement lorsqu’elle quitte le gestionnaire d’événements, ou lorsqu’elle termine le report. Le fait de quitter le gestionnaire d’événements ou de terminer le report indique au système que votre application est maintenant prête à recevoir les images holographiques incluses dans cette caméra.
 
-2. Lorsque l’application reçoit un événement **CameraRemoved** , elle doit libérer toutes les références à la mémoire tampon d’arrière-plan et quitter immédiatement la fonction. Cela comprend les affichages de cible de rendu et toute autre ressource qui peut contenir une référence à [IDXGIResource](https://docs.microsoft.com/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). L’application doit également s’assurer que la mémoire tampon d’arrière-plan n’est pas jointe en tant que cible de rendu, comme indiqué dans **CameraResources :: ReleaseResourcesForBackBuffer** . Pour accélérer les choses, votre application peut libérer la mémoire tampon d’arrière-plan, puis lancer une tâche pour effectuer de façon asynchrone tout autre travail nécessaire pour détruire cette caméra. Le modèle d’application holographique comprend une tâche PPL que vous pouvez utiliser à cet effet.
+2. Lorsque l’application reçoit un événement **CameraRemoved** , elle doit libérer toutes les références à la mémoire tampon d’arrière-plan et quitter immédiatement la fonction. Cela comprend les affichages de cible de rendu et toute autre ressource qui peut contenir une référence à [IDXGIResource](https://docs.microsoft.com/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). L’application doit également s’assurer que la mémoire tampon d’arrière-plan n’est pas jointe en tant que cible de rendu, comme indiqué dans **CameraResources :: ReleaseResourcesForBackBuffer**. Pour accélérer les choses, votre application peut libérer la mémoire tampon d’arrière-plan, puis lancer une tâche pour effectuer de façon asynchrone tout autre travail nécessaire pour détruire cette caméra. Le modèle d’application holographique comprend une tâche PPL que vous pouvez utiliser à cet effet.
 
 >[!NOTE]
 >Si vous souhaitez déterminer à quel moment une caméra ajoutée ou supprimée s’affiche sur le frame, utilisez les propriétés **HolographicFrame** [AddedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.addedcameras) et [RemovedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.removedcameras) .
@@ -142,7 +142,7 @@ Les images de référence fixes sont conçues pour stabiliser les positions prè
 
 Le localisateur spatial représente le périphérique Windows Mixed Reality et suit le mouvement de l’appareil et fournit des systèmes de coordonnées qui peuvent être compris par rapport à son emplacement.
 
-À partir de **AppMain :: OnHolographicDisplayIsAvailableChanged** :
+À partir de **AppMain :: OnHolographicDisplayIsAvailableChanged**:
 
 ```cpp
 spatialLocator = SpatialLocator::GetDefault();
@@ -150,7 +150,7 @@ spatialLocator = SpatialLocator::GetDefault();
 
 Créez le frame de référence fixe une fois l’application lancée. Cela équivaut à définir un système de coordonnées universelles, avec l’origine placée à la position de l’appareil lorsque l’application est lancée. Ce frame de référence ne se déplace pas avec l’appareil.
 
-À partir de **AppMain :: SetHolographicSpace** :
+À partir de **AppMain :: SetHolographicSpace**:
 
 ```cpp
 m_stationaryReferenceFrame =

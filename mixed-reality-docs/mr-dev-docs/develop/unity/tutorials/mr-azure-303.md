@@ -5,13 +5,13 @@ author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, Language Understanding Intelligence Service, Luis, hololens, immersif, VR
-ms.openlocfilehash: 8477f326de55c11f1c4d17d808a815f01366be0d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, Language Understanding Intelligence Service, Luis, hololens, immersifive, VR, Windows 10, Visual Studio
+ms.openlocfilehash: 431858d369bc7007cc5eddbf0e75d9b74b7ba5d3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681450"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679498"
 ---
 # <a name="mr-and-azure-303-natural-language-understanding-luis"></a>MR et Azure 303 : compréhension du langage naturel (LUIS)
 
@@ -31,7 +31,7 @@ Dans ce cours, vous allez apprendre à intégrer Language Understanding dans une
 Une fois ce cours terminé, vous disposerez d’une application de casque immersif en réalité mixte, qui sera en mesure d’effectuer les opérations suivantes :
 
 1.  Capturez la parole d’entrée d’utilisateur à l’aide du microphone attaché au casque immersif. 
-2.  Envoyez la dictée capturée au *Language Understanding intelligent service Azure* ( *Luis* ). 
+2.  Envoyez la dictée capturée au *Language Understanding intelligent service Azure* (*Luis*). 
 3.  Utilisez LUIS Extract la signification des informations d’envoi, qui sera analysée et tentera de déterminer l’objectif de la demande de l’utilisateur.
 
 Le développement inclut la création d’une application dans laquelle l’utilisateur peut utiliser la voix et/ou le point de regard pour modifier la taille et la couleur des objets dans la scène. L’utilisation de contrôleurs de mouvement n’est pas couverte.
@@ -72,7 +72,7 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 ## <a name="before-you-start"></a>Avant de commencer
 
 1.  Pour éviter de rencontrer des problèmes lors de la création de ce projet, il est fortement recommandé de créer le projet mentionné dans ce didacticiel dans un dossier racine ou dans un dossier racine (les chemins de dossiers longs peuvent entraîner des problèmes au moment de la génération). 
-2.  Pour permettre à votre ordinateur d’activer la dictée, accédez à **Paramètres Windows > confidentialité > reconnaissance vocale, écriture manuscrite & typage** , puis appuyez sur le bouton **activer les services vocaux et les suggestions de saisie** .
+2.  Pour permettre à votre ordinateur d’activer la dictée, accédez à **Paramètres Windows > confidentialité > reconnaissance vocale, écriture manuscrite & typage** , puis appuyez sur le bouton **activer les services vocaux et les suggestions de saisie**.
 3.  Le code de ce didacticiel vous permet d’enregistrer à partir de l’ensemble du **périphérique microphone par défaut** sur votre ordinateur. Assurez-vous que le périphérique microphone par défaut est défini comme celui que vous souhaitez utiliser pour capturer votre voix.
 4.  Si votre casque dispose d’un microphone intégré, assurez-vous que l’option *« lors de l’usure du casque, basculez vers casque MIC »* est activée dans les paramètres du portail de la *réalité mixte* .
 
@@ -87,12 +87,12 @@ Pour utiliser le service de *Language Understanding* dans Azure, vous devez conf
     > [!NOTE]
     > Si vous n’avez pas encore de compte Azure, vous devez en créer un. Si vous suivez ce didacticiel dans une situation de classe ou de laboratoire, demandez à votre formateur ou à l’un des prostructors de vous aider à configurer votre nouveau compte.
 
-2.  Une fois que vous êtes connecté, cliquez sur **nouveau** dans l’angle supérieur gauche, recherchez *Language Understanding* , puis cliquez sur **entrée** . 
+2.  Une fois que vous êtes connecté, cliquez sur **nouveau** dans l’angle supérieur gauche, recherchez *Language Understanding*, puis cliquez sur **entrée**. 
 
     ![Créer une ressource LUIS](images/AzureLabs-Lab3-01.png)
 
     > [!NOTE]
-    > Le mot **nouveau** peut avoir été remplacé par **créer une ressource** , dans les portails plus récents.
+    > Le mot **nouveau** peut avoir été remplacé par **créer une ressource**, dans les portails plus récents.
  
 3.  La nouvelle page qui s’affiche à droite fournit une description du service Language Understanding. En bas à gauche de cette page, cliquez sur le bouton **créer** pour créer une instance de ce service.
 
@@ -101,8 +101,8 @@ Pour utiliser le service de *Language Understanding* dans Azure, vous devez conf
 4.  Une fois que vous avez cliqué sur créer :
 
     1. Insérez le **nom** de votre choix pour cette instance de service.
-    2. Sélectionnez un **Abonnement** .
-    3. Sélectionnez le **niveau tarifaire** approprié, s’il s’agit de la première fois que vous créez un *service Luis* , vous devez disposer d’un niveau gratuit (nommé F0). L’allocation gratuite doit être plus que suffisante pour ce cours.
+    2. Sélectionnez un **Abonnement**.
+    3. Sélectionnez le **niveau tarifaire** approprié, s’il s’agit de la première fois que vous créez un *service Luis*, vous devez disposer d’un niveau gratuit (nommé F0). L’allocation gratuite doit être plus que suffisante pour ce cours.
     4. Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces cours) dans un groupe de ressources commun. 
 
         > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
@@ -113,7 +113,7 @@ Pour utiliser le service de *Language Understanding* dans Azure, vous devez conf
 
         ![Créer un service LUIS-entrée utilisateur](images/AzureLabs-Lab3-03.png)
  
-5.  Une fois que vous avez cliqué sur **créer** , vous devez attendre que le service soit créé, cette opération peut prendre une minute.
+5.  Une fois que vous avez cliqué sur **créer**, vous devez attendre que le service soit créé, cette opération peut prendre une minute.
 6.  Une notification s’affichera dans le portail une fois l’instance de service créée. 
  
     ![Nouvelle image de notification Azure](images/AzureLabs-Lab3-04.png)
@@ -127,7 +127,7 @@ Pour utiliser le service de *Language Understanding* dans Azure, vous devez conf
     ![Accès aux clés LUIS](images/AzureLabs-Lab3-06.png)
 
 9.  Dans ce didacticiel, votre application doit effectuer des appels à votre service, à l’aide de la clé d’abonnement de votre service.
-10. À partir de la page *démarrage rapide* , de votre service *API Luis* , accédez à la première étape, *saisissez vos clés* , puis cliquez sur **clés** (vous pouvez également y parvenir en cliquant sur les touches de lien bleu, situées dans le menu de navigation services, indiqué par l’icône de clé). Cela permet de révéler vos *clés* de service.
+10. À partir de la page *démarrage rapide* , de votre service *API Luis* , accédez à la première étape, *saisissez vos clés*, puis cliquez sur **clés** (vous pouvez également y parvenir en cliquant sur les touches de lien bleu, situées dans le menu de navigation services, indiqué par l’icône de clé). Cela permet de révéler vos *clés* de service.
 11. Prenez une copie de l’une des clés affichées, car vous en aurez besoin plus tard dans votre projet. 
 12. Dans la page *service* , cliquez sur *Language Understanding portail* pour être redirigé vers la page Web que vous utiliserez pour créer votre nouveau service, au sein de l’application Luis. 
 
@@ -136,9 +136,9 @@ Pour utiliser le service de *Language Understanding* dans Azure, vous devez conf
 Dans cette section, vous allez apprendre à créer une application LUIS sur le portail LUIS. 
 
 > [!IMPORTANT]
-> N’oubliez pas que la configuration des *entités* , des *intentions* et des *énoncés* dans ce chapitre n’est que la première étape de la création de votre service Luis : vous devrez également reformer le service, plusieurs fois, afin de le rendre plus précis. La reformation de votre service est traitée dans le [dernier chapitre](#chapter-12--improving-your-luis-service) de ce cours. Assurez-vous donc de l’effectuer.
+> N’oubliez pas que la configuration des *entités*, des *intentions* et des *énoncés* dans ce chapitre n’est que la première étape de la création de votre service Luis : vous devrez également reformer le service, plusieurs fois, afin de le rendre plus précis. La reformation de votre service est traitée dans le [dernier chapitre](#chapter-12--improving-your-luis-service) de ce cours. Assurez-vous donc de l’effectuer.
 
-1.  Quand vous atteignez le *portail Language Understanding* , vous devrez peut-être vous connecter, si ce n’est déjà fait, avec les mêmes informations d’identification que votre portail Azure. 
+1.  Quand vous atteignez le *portail Language Understanding*, vous devrez peut-être vous connecter, si ce n’est déjà fait, avec les mêmes informations d’identification que votre portail Azure. 
 
     ![Page de connexion LUIS](images/AzureLabs-Lab3-07.png)
  
@@ -146,7 +146,7 @@ Dans cette section, vous allez apprendre à créer une application LUIS sur le p
 
     ![Page créer une application LUIS](images/AzureLabs-Lab3-08.png)
  
-3.  Une fois connecté, cliquez sur **mes applications** (si vous n’êtes pas actuellement dans cette section). Vous pouvez ensuite cliquer sur **créer une nouvelle application** .
+3.  Une fois connecté, cliquez sur **mes applications** (si vous n’êtes pas actuellement dans cette section). Vous pouvez ensuite cliquer sur **créer une nouvelle application**.
 
     ![LUIS-image de mon application](images/AzureLabs-Lab3-09.png)
  
@@ -156,22 +156,22 @@ Dans cette section, vous allez apprendre à créer une application LUIS sur le p
 
     ![LUIS-créer une application](images/AzureLabs-Lab3-10.png)
 
-7.  Une fois que vous avez **terminé** , vous accédez à la page de *génération* de votre nouvelle application *Luis* .
+7.  Une fois que vous avez **terminé**, vous accédez à la page de *génération* de votre nouvelle application *Luis* .
 8.  Voici quelques concepts importants à comprendre :
 
-    -   *Intentionnelle* , représente la méthode qui sera appelée à la suite d’une requête de l’utilisateur. Une *intention* peut avoir une ou plusieurs *entités* .
-    -   *Entité* , est un composant de la requête qui décrit les informations relatives à l' *intention* .
-    -   Les *énoncés* , sont des exemples de requêtes fournies par le développeur, que Luis utilise pour se former lui-même.
+    -   *Intentionnelle*, représente la méthode qui sera appelée à la suite d’une requête de l’utilisateur. Une *intention* peut avoir une ou plusieurs *entités*.
+    -   *Entité*, est un composant de la requête qui décrit les informations relatives à l' *intention*.
+    -   Les *énoncés*, sont des exemples de requêtes fournies par le développeur, que Luis utilise pour se former lui-même.
 
 Si ces concepts ne sont pas parfaitement clairs, ne vous inquiétez pas, car ce cours les clarifie plus en détail dans ce chapitre.
 
 Vous commencerez par créer les *entités* nécessaires à la création de ce cours.
 
-9.  Sur le côté gauche de la page, cliquez sur *entités* , puis sur **créer une entité** .
+9.  Sur le côté gauche de la page, cliquez sur *entités*, puis sur **créer une entité**.
 
     ![Créer une entité](images/AzureLabs-Lab3-11.png)
 
-10. Appelez la nouvelle *couleur* d’entité, définissez son type sur *simple* , puis appuyez sur **terminé** .
+10. Appelez la nouvelle *couleur* d’entité, définissez son type sur *simple*, puis appuyez sur **terminé**.
 
     ![Créer une entité simple-couleur](images/AzureLabs-Lab3-12.png)
  
@@ -185,12 +185,12 @@ Le résultat doit ressembler à l’image ci-dessous :
 
 ![Résultat de la création de l’entité](images/AzureLabs-Lab3-13.png)
  
-À ce stade, vous pouvez commencer à créer des *intentions* . 
+À ce stade, vous pouvez commencer à créer des *intentions*. 
 
 > [!WARNING]
 > Ne supprimez pas l’intention **None** .
 
-12. Sur le côté gauche de la page, cliquez sur **intentions** , puis sur **créer un nouvel objectif** .
+12. Sur le côté gauche de la page, cliquez sur **intentions**, puis sur **créer un nouvel objectif**.
 
     ![Créer des intentions](images/AzureLabs-Lab3-14.png)
 
@@ -208,7 +208,7 @@ Vous remarquerez qu’une zone de texte vous demande de taper 5 ou plusieurs *é
 > [!NOTE]
 > LUIS convertit tous les énoncés en minuscules.
 
-14. Insérez l' *énoncé* suivant dans la zone de texte supérieure (actuellement avec le type de texte *environ 5 exemples...* ) et appuyez sur **entrée** :
+14. Insérez l' *énoncé* suivant dans la zone de texte supérieure (actuellement avec le type de texte *environ 5 exemples...* ) et appuyez sur **entrée**:
 
 ```
 The color of the cylinder must be red
@@ -234,15 +234,15 @@ change the color of this object to blue
 
 Pour chaque énoncé que vous avez créé, vous devez identifier les mots qui doivent être utilisés par LUIS comme entités. Dans cet exemple, vous devez étiqueter toutes les couleurs en tant qu’entité de *couleur* et toutes les références possibles à une cible en tant qu’entité *cible* .
 
-15. Pour ce faire, essayez de cliquer sur le mot *Cylinder* dans le premier énoncé et sélectionnez *target (cible* ).
+15. Pour ce faire, essayez de cliquer sur le mot *Cylinder* dans le premier énoncé et sélectionnez *target (cible*).
 
     ![Identifier les cibles d’énoncé](images/AzureLabs-Lab3-16.png)
  
-16. Cliquez maintenant sur le mot *Red* dans le premier énoncé et sélectionnez *couleur* .
+16. Cliquez maintenant sur le mot *Red* dans le premier énoncé et sélectionnez *couleur*.
 
     ![Identifier les entités énoncées](images/AzureLabs-Lab3-17.png)
  
-17. Étiquetez également la ligne suivante, où *cube* doit être une *cible* et *noir* doit être une *couleur* . Notez également l’utilisation des mots *« This »* , *« IT »* et *« This Object »* , que nous fournissons, afin que les types de cibles non spécifiques soient également disponibles. 
+17. Étiquetez également la ligne suivante, où *cube* doit être une *cible* et *noir* doit être une *couleur*. Notez également l’utilisation des mots *« This »*, *« IT »* et *« This Object »*, que nous fournissons, afin que les types de cibles non spécifiques soient également disponibles. 
 
 18. Répétez le processus ci-dessus jusqu’à ce que tous les énoncés aient les entités étiquetées. Si vous avez besoin d’aide, consultez l’image ci-dessous.
 
@@ -252,9 +252,9 @@ Pour chaque énoncé que vous avez créé, vous devez identifier les mots qui do
     > - Pour un ensemble de deux ou de plusieurs mots, cliquez au début et à la fin de l’ensemble.
 
     > [!NOTE]
-    > Vous pouvez utiliser le bouton bascule de la *vue jetons* pour basculer entre les **entités/jetons** .
+    > Vous pouvez utiliser le bouton bascule de la *vue jetons* pour basculer entre les **entités/jetons**.
 
-19. Les résultats doivent être affichés dans les images ci-dessous, avec la **vue entités/jetons** :
+19. Les résultats doivent être affichés dans les images ci-dessous, avec la **vue entités/jetons**:
 
     ![Jetons & vues entités](images/AzureLabs-Lab3-18.png)
   
@@ -262,7 +262,7 @@ Pour chaque énoncé que vous avez créé, vous devez identifier les mots qui do
 
     ![Former LUIS](images/AzureLabs-Lab3-19.png)
  
-21. En guise d’exercice pour vous, créez une intention appelée **ChangeObjectSize** , en utilisant les entités *target* , Resize et *downsize* *Resize* .
+21. En guise d’exercice pour vous, créez une intention appelée **ChangeObjectSize**, en utilisant les entités *target*, Resize et *downsize* *Resize*.
 22. En suivant le même processus que l’intention précédente, insérez les huit (8) énoncés suivants pour la modification de la *taille* :
 
     ```
@@ -287,45 +287,45 @@ Pour chaque énoncé que vous avez créé, vous devez identifier les mots qui do
 
     ![Configurer les jetons/entités ChangeObjectSize](images/AzureLabs-Lab3-20.png) 
 
-24. Une fois que les deux intentions, **ChangeObjectColor** et **ChangeObjectSize** , ont été créées et formés, cliquez sur le bouton **publier** situé en haut de la page.
+24. Une fois que les deux intentions, **ChangeObjectColor** et **ChangeObjectSize**, ont été créées et formés, cliquez sur le bouton **publier** situé en haut de la page.
 
     ![Publier le service LUIS](images/AzureLabs-Lab3-21.png)
 
 25. Sur la page de *publication* , vous allez finaliser et publier votre application Luis afin que votre code puisse y accéder.
 
-    1. Définissez la *publication de* la liste déroulante sur **production** .
+    1. Définissez la *publication de* la liste déroulante sur **production**.
     2. Définissez le *fuseau horaire sur votre* fuseau horaire.
-    3. Cochez la case **inclure tous les scores d’intention prédits** .
-    4. Cliquez sur **publier dans l’emplacement de production** .
+    3. Cochez la case **inclure tous les scores d’intention prédits**.
+    4. Cliquez sur **publier dans l’emplacement de production**.
 
         ![Paramètres de publication](images/AzureLabs-Lab3-22.png)
 
-26. Dans la section *ressources et clés* :
+26. Dans la section *ressources et clés*:
 
     1.  Sélectionnez la région que vous définissez pour l’instance de service dans le portail Azure.
     2.  Vous remarquerez un élément **Starter_Key** ci-dessous, ignorez-le.
-    3.  Cliquez sur **Ajouter une clé** et insérez la *clé* obtenue dans le portail Azure lors de la création de votre instance de service. Si votre Azure et le portail LUIS sont enregistrés dans le même utilisateur, vous trouverez des menus déroulants pour le *nom du client* , le nom de l' *abonnement* et la *clé* que vous souhaitez utiliser (le nom que vous avez fourni précédemment dans le portail Azure est le même que celui que vous avez fourni précédemment).
+    3.  Cliquez sur **Ajouter une clé** et insérez la *clé* obtenue dans le portail Azure lors de la création de votre instance de service. Si votre Azure et le portail LUIS sont enregistrés dans le même utilisateur, vous trouverez des menus déroulants pour le *nom du client*, le nom de l' *abonnement* et la *clé* que vous souhaitez utiliser (le nom que vous avez fourni précédemment dans le portail Azure est le même que celui que vous avez fourni précédemment).
 
     > [!IMPORTANT] 
-    > Sous *point de terminaison* , prenez une copie du point de terminaison correspondant à la clé que vous avez insérée, vous allez bientôt l’utiliser dans votre code.
+    > Sous *point de terminaison*, prenez une copie du point de terminaison correspondant à la clé que vous avez insérée, vous allez bientôt l’utiliser dans votre code.
  
 ## <a name="chapter-3--set-up-the-unity-project"></a>Chapitre 3 : configurer le projet Unity
 
 Ce qui suit est une configuration classique pour le développement avec la réalité mixte, et, par conséquent, est un bon modèle pour d’autres projets.
 
-1.  Ouvrez *Unity* et cliquez sur **nouveau** . 
+1.  Ouvrez *Unity* et cliquez sur **nouveau**. 
 
     ![Démarrez le nouveau projet Unity.](images/AzureLabs-Lab3-24.png)
 
-2.  Vous devez maintenant fournir un nom de projet Unity, insérer **MR_LUIS** . Assurez-vous que le type de projet est défini sur **3D** . Définissez l' **emplacement** approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet** .
+2.  Vous devez maintenant fournir un nom de projet Unity, insérer **MR_LUIS**. Assurez-vous que le type de projet est défini sur **3D**. Définissez l' **emplacement** approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
 
     ![Fournissez des détails pour le nouveau projet Unity.](images/AzureLabs-Lab3-25.png)
  
-3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio** . Accédez à modifier > préférences puis, dans la nouvelle fenêtre, accédez à **outils externes** . Remplacez l' **éditeur de script externe** par **Visual Studio 2017** . Fermez la fenêtre **Préférences** .
+3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à modifier > préférences puis, dans la nouvelle fenêtre, accédez à **outils externes**. Remplacez l' **éditeur de script externe** par **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
 
     ![Mettre à jour la préférence éditeur de script.](images/AzureLabs-Lab3-26.png)
  
-4.  Accédez ensuite à **fichier > paramètres de build** et basculez la plateforme sur **plateforme Windows universelle** , en cliquant sur le bouton **changer de plateforme** .
+4.  Accédez ensuite à **fichier > paramètres de build** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
 
     ![Fenêtre Paramètres de build, basculez plateforme vers UWP.](images/AzureLabs-Lab3-27.png)
  
@@ -333,7 +333,7 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
     1. L' **appareil cible** est défini sur **n’importe quel appareil**
 
-        > Pour Microsoft HoloLens, définissez **appareil cible** sur *HoloLens* .
+        > Pour Microsoft HoloLens, définissez **appareil cible** sur *HoloLens*.
 
     2. Le **type de build** est **D3D**
     3. Le **SDK** est configuré sur le **dernier installé**
@@ -341,19 +341,19 @@ Ce qui suit est une configuration classique pour le développement avec la réal
     5. La **génération et l’exécution** sont définies sur l' **ordinateur local**
     6. Enregistrez la scène et ajoutez-la à la Build.
 
-        1. Pour ce faire, sélectionnez **Ajouter des scènes ouvertes** . Une fenêtre d’enregistrement s’affiche.
+        1. Pour ce faire, sélectionnez **Ajouter des scènes ouvertes**. Une fenêtre d’enregistrement s’affiche.
         
             ![Cliquez sur le bouton Ajouter des scènes ouvertes](images/AzureLabs-Lab3-28.png)
 
-        2. Créez un dossier pour cela, ainsi que toute nouvelle scène, puis sélectionnez le bouton **nouveau dossier** pour créer un nouveau dossier, puis nommez-le **scenes** .
+        2. Créez un dossier pour cela, ainsi que toute nouvelle scène, puis sélectionnez le bouton **nouveau dossier** pour créer un nouveau dossier, puis nommez-le **scenes**.
 
             ![Créer un dossier de scripts](images/AzureLabs-Lab3-29.png)
 
-        3. Ouvrez le dossier **scenes** nouvellement créé, puis dans le champ *nom de fichier* :, tapez **MR_LuisScene** , puis cliquez sur **Enregistrer** .
+        3. Ouvrez le dossier **scenes** nouvellement créé, puis dans le champ *nom de fichier*:, tapez **MR_LuisScene**, puis cliquez sur **Enregistrer**.
 
             ![Donnez un nom à la nouvelle scène.](images/AzureLabs-Lab3-30.png)
 
-    7. Les paramètres restants, dans *paramètres de build* , doivent être laissés par défaut pour le moment.
+    7. Les paramètres restants, dans *paramètres de build*, doivent être laissés par défaut pour le moment.
 
 6. Dans la fenêtre *paramètres de build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* . 
 
@@ -369,27 +369,27 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
             ![Mettez à jour d’autres paramètres.](images/AzureLabs-Lab3-32.png)
       
-    2. Dans l’onglet **paramètres de publication** , sous **fonctionnalités** , activez la case à cocher :
+    2. Dans l’onglet **paramètres de publication** , sous **fonctionnalités**, activez la case à cocher :
 
         1. **InternetClient**
         2. **Microphone**
 
             ![Mise à jour des paramètres de publication.](images/AzureLabs-Lab3-33.png)
 
-    3. Plus bas dans le volet, dans les **paramètres XR** (situés sous **paramètres de publication** ), cochez la **réalité virtuelle prise en charge** , assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
+    3. Plus bas dans le volet, dans les **paramètres XR** (situés sous **paramètres de publication**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
 
         ![Mettez à jour les paramètres X R.](images/AzureLabs-Lab3-34.png)
 
 8.  De retour dans les *paramètres de build* . les projets _C#_ ne sont plus grisés. Cochez la case en regard de cette option. 
 9.  Fermez la fenêtre Build Settings.
-10. Enregistrez votre scène et votre projet ( **fichier > enregistrer la scène/le fichier > enregistrer le projet** ).
+10. Enregistrez votre scène et votre projet (**fichier > enregistrer la scène/le fichier > enregistrer le projet**).
 
 ## <a name="chapter-4--create-the-scene"></a>Chapitre 4 : créer la scène
 
 > [!IMPORTANT]
 > Si vous souhaitez ignorer le composant *Unity Set up* de ce cours et continuer directement dans le code, n’hésitez pas à télécharger ce fichier [. pour Unity](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20303%20-%20Natural%20language%20understanding/Azure-MR-303.unitypackage), à l’importer dans votre projet en tant que [package personnalisé](https://docs.unity3d.com/Manual/AssetPackages.html), puis à passer au [Chapitre 5](#chapter-5--create-the-microphonemanager-class). 
 
-1.  Cliquez avec le bouton droit dans une zone vide du *panneau hiérarchie* , sous **objet 3D** , ajoutez un **plan** .
+1.  Cliquez avec le bouton droit dans une zone vide du *panneau hiérarchie*, sous **objet 3D**, ajoutez un **plan**.
 
     ![Créez un plan.](images/AzureLabs-Lab3-35.png)
 
@@ -407,18 +407,18 @@ Ce qui suit est une configuration classique pour le développement avec la réal
     ![Configuration de la hiérarchie de scène.](images/AzureLabs-Lab3-36.png)
  
 5.  Cliquez sur l' **appareil photo principal** pour le sélectionner, regardez dans le *panneau* de l’inspecteur, vous verrez l’objet Camera avec tous ses composants.
-6.  Cliquez sur le bouton **Ajouter un composant** situé en bas du panneau de l' *inspecteur* .
+6.  Cliquez sur le bouton **Ajouter un composant** situé en bas du panneau de l' *inspecteur*.
 
     ![Ajouter une source audio](images/AzureLabs-Lab3-37.png)
  
-7.  Recherchez le composant appelé *source audio* , comme indiqué ci-dessus.
-8.  Assurez-vous également que le composant *transformer* de l’appareil photo principal est défini sur (0, 0, 0). pour ce faire, appuyez sur l’icône d' **engrenage** en regard du composant *transformer* de l’appareil photo, puis sélectionnez **Réinitialiser** . Le composant *transformer* doit alors ressembler à ceci :
+7.  Recherchez le composant appelé *source audio*, comme indiqué ci-dessus.
+8.  Assurez-vous également que le composant *transformer* de l’appareil photo principal est défini sur (0, 0, 0). pour ce faire, appuyez sur l’icône d' **engrenage** en regard du composant *transformer* de l’appareil photo, puis sélectionnez **Réinitialiser**. Le composant *transformer* doit alors ressembler à ceci :
 
-    1.  La *position* est définie sur **0, 0, 0** .
+    1.  La *position* est définie sur **0, 0, 0**.
     2.  La *rotation* est définie sur **0, 0,** 0.
 
     > [!NOTE] 
-    > Pour Microsoft HoloLens, vous devez également modifier les éléments suivants, qui font partie du composant **Camera** , qui se trouve sur votre **caméra principale** :
+    > Pour Microsoft HoloLens, vous devez également modifier les éléments suivants, qui font partie du composant **Camera** , qui se trouve sur votre **caméra principale**:
     > - **Indicateurs d’effacement :** Couleur unie.
     > - **Arrière-plan** 'Black, alpha 0 ' – couleur hexadécimale : #00000000.
 
@@ -453,10 +453,10 @@ Ce qui suit est une configuration classique pour le développement avec la réal
     |       | Transformation- *position* |       |  \| |       | Transformation-mettre à l' *échelle* |       |
     |:-----:|:----------------------:|:-----:|:---:|:-----:|:-------------------:|:-----:|
     | **X** | **O**                  | **Z** |  \| | **X** | **O**               | **Z** |
-    | -2    | 6                      | 9     |  \| | 0,1   | 0,1                 | 0,1   | 
+    | -2    | 6                      | 9     |  \| | 0.1   | 0.1                 | 0.1   | 
 
-14. Remplacez la **taille de police** du composant de maillage de **texte** par **50** .
-15. Modifiez le *nom* de l’objet de **maillage de texte** en **texte de dictée** .
+14. Remplacez la **taille de police** du composant de maillage de **texte** par **50**.
+15. Modifiez le *nom* de l’objet de **maillage de texte** en **texte de dictée**.
 
     ![Créer un objet de texte 3D](images/AzureLabs-Lab3-38.png)
  
@@ -472,7 +472,7 @@ Ce qui suit est une configuration classique pour le développement avec la réal
  
 ## <a name="chapter-5--create-the-microphonemanager-class"></a>Chapitre 5 : créer la classe MicrophoneManager
 
-Le premier script que vous allez créer est la classe *MicrophoneManager* . À la suite de cela, vous allez créer le *LuisManager* , la classe des *comportements* et enfin la classe du *regard* (n’hésitez pas à créer tous ces éléments maintenant, bien qu’elle soit couverte à mesure que vous atteignez chaque chapitre).
+Le premier script que vous allez créer est la classe *MicrophoneManager* . À la suite de cela, vous allez créer le *LuisManager*, la classe des *comportements* et enfin la classe du *regard* (n’hésitez pas à créer tous ces éléments maintenant, bien qu’elle soit couverte à mesure que vous atteignez chaque chapitre).
 
 La classe *MicrophoneManager* est chargée des opérations suivantes :
 
@@ -482,13 +482,13 @@ La classe *MicrophoneManager* est chargée des opérations suivantes :
 
 Pour créer cette classe : 
 
-1.  Cliquez avec le bouton droit dans le *panneau Projet* , puis **créez > dossier** . Appelez le dossier **scripts** . 
+1.  Cliquez avec le bouton droit dans le *panneau Projet*, puis **créez > dossier**. Appelez le dossier **scripts**. 
 
     ![Créer un dossier de scripts.](images/AzureLabs-Lab3-40.png)
  
-2.  Après avoir créé le dossier **scripts** , double-cliquez dessus pour l’ouvrir. Ensuite, dans ce dossier, cliquez avec le bouton droit, **créez > script C#** . Nommez le script *MicrophoneManager* . 
+2.  Après avoir créé le dossier **scripts** , double-cliquez dessus pour l’ouvrir. Ensuite, dans ce dossier, cliquez avec le bouton droit, **créez > script C#**. Nommez le script *MicrophoneManager*. 
 
-3.  Double-cliquez sur *MicrophoneManager* pour l’ouvrir avec *Visual Studio* .
+3.  Double-cliquez sur *MicrophoneManager* pour l’ouvrir avec *Visual Studio*.
 4.  Ajoutez les espaces de noms suivants au début du fichier :
 
     ```csharp
@@ -582,10 +582,10 @@ Pour créer cette classe :
     > [!IMPORTANT]
     > Supprimez la méthode *Update ()* puisque cette classe ne l’utilisera pas.
 
-9.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity* .
+9.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
 
     > [!NOTE]
-    > À ce stade, vous remarquerez qu’une erreur s’affiche dans le panneau de la console de l' *éditeur Unity* . Cela est dû au fait que le code fait référence à la classe *LuisManager* que vous allez créer dans le chapitre suivant.
+    > À ce stade, vous remarquerez qu’une erreur s’affiche dans le panneau de la console de l' *éditeur Unity*. Cela est dû au fait que le code fait référence à la classe *LuisManager* que vous allez créer dans le chapitre suivant.
 
 ## <a name="chapter-6--create-the-luismanager-class"></a>Chapitre 6 : créer la classe LUISManager
 
@@ -598,7 +598,7 @@ Cette classe va désérialiser la réponse *JSON* et appeler les méthodes appro
 Pour créer cette classe : 
 
 1.  Double-cliquez sur le dossier **scripts** pour l’ouvrir. 
-2.  Cliquez avec le bouton droit dans le dossier **scripts** , puis cliquez sur **créer > script C#** . Nommez le script *LuisManager* . 
+2.  Cliquez avec le bouton droit dans le dossier **scripts** , puis cliquez sur **créer > script C#**. Nommez le script *LuisManager*. 
 3.  Double-cliquez sur le script pour l’ouvrir avec Visual Studio.
 4.  Ajoutez les espaces de noms suivants au début du fichier :
 
@@ -664,7 +664,7 @@ Pour créer cette classe :
         }
     ```
 
-9.  À présent, vous avez besoin des méthodes utilisées par cette application pour envoyer la dictée reçue de la classe *MicrophoneManager* à *Luis* , puis recevoir et désérialiser la réponse. 
+9.  À présent, vous avez besoin des méthodes utilisées par cette application pour envoyer la dictée reçue de la classe *MicrophoneManager* à *Luis*, puis recevoir et désérialiser la réponse. 
 10. Une fois que la valeur de l’intention, et les entités associées, ont été déterminées, elles sont passées à l’instance de la classe des *comportements* pour déclencher l’action prévue.
 
     ```csharp
@@ -768,10 +768,10 @@ Pour créer cette classe :
     > [!IMPORTANT]
     > Supprimez les méthodes *Start ()* et *Update ()* puisque cette classe ne les utilise pas.
 
-12. Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity* .
+12. Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
 
 > [!NOTE]
-> À ce stade, vous remarquerez que plusieurs erreurs apparaissent dans le panneau de la console de l' *éditeur Unity* . Cela est dû au fait que le code fait référence à la classe des *comportements* que vous allez créer dans le chapitre suivant.
+> À ce stade, vous remarquerez que plusieurs erreurs apparaissent dans le panneau de la console de l' *éditeur Unity*. Cela est dû au fait que le code fait référence à la classe des *comportements* que vous allez créer dans le chapitre suivant.
 
 ## <a name="chapter-7--create-the-behaviours-class"></a>Chapitre 7 : créer la classe des comportements
 
@@ -780,8 +780,8 @@ La classe des *comportements* déclenchera les actions à l’aide des entités 
 Pour créer cette classe : 
 
 1.  Double-cliquez sur le dossier **scripts** pour l’ouvrir. 
-2.  Cliquez avec le bouton droit dans le dossier **scripts** , puis cliquez sur **créer > script C#** . Nommez les *comportements* de script. 
-3.  Double-cliquez sur le script pour l’ouvrir avec *Visual Studio* .
+2.  Cliquez avec le bouton droit dans le dossier **scripts** , puis cliquez sur **créer > script C#**. Nommez les *comportements* de script. 
+3.  Double-cliquez sur le script pour l’ouvrir avec *Visual Studio*.
 4.  Ajoutez ensuite les variables suivantes à l’intérieur de la classe des *comportements* :
 
     ```csharp
@@ -907,7 +907,7 @@ Pour créer cette classe :
     > [!IMPORTANT]
     > Supprimez les méthodes *Start ()* et *Update ()* puisque cette classe ne les utilise pas.
 
-8.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity* .
+8.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
 
 ## <a name="chapter-8--create-the-gaze-class"></a>Chapitre 8 : créer la classe en regard
 
@@ -916,8 +916,8 @@ La dernière classe dont vous aurez besoin pour compléter cette application est
 Pour créer cette classe : 
 
 1.  Double-cliquez sur le dossier **scripts** pour l’ouvrir. 
-2.  Cliquez avec le bouton droit dans le dossier **scripts** , puis cliquez sur **créer > script C#** . Nommez le script point de *regard* . 
-3.  Double-cliquez sur le script pour l’ouvrir avec *Visual Studio* .
+2.  Cliquez avec le bouton droit dans le dossier **scripts** , puis cliquez sur **créer > script C#**. Nommez le script point de *regard*. 
+3.  Double-cliquez sur le script pour l’ouvrir avec *Visual Studio*.
 4.  Insérez le code suivant pour cette classe :
 
     ```csharp
@@ -964,28 +964,28 @@ Pour créer cette classe :
         }
     ```
  
-5.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity* .
+5.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
 
 ## <a name="chapter-9--completing-the-scene-setup"></a>Chapitre 9 : fin de la configuration de la scène
 
-1.  Pour terminer la configuration de la scène, faites glisser chaque script que vous avez créé à partir du dossier scripts vers l’objet **caméra principale** dans le *panneau hiérarchie* .
-2.  Sélectionnez l' **appareil photo principal** et examinez le panneau de l' *inspecteur* , vous devez être en mesure de voir chaque script joint, et vous remarquerez qu’il existe des paramètres sur chaque script qui doivent être définis.
+1.  Pour terminer la configuration de la scène, faites glisser chaque script que vous avez créé à partir du dossier scripts vers l’objet **caméra principale** dans le *panneau hiérarchie*.
+2.  Sélectionnez l' **appareil photo principal** et examinez le panneau de l' *inspecteur*, vous devez être en mesure de voir chaque script joint, et vous remarquerez qu’il existe des paramètres sur chaque script qui doivent être définis.
 
     ![Définition des cibles de référence de l’appareil photo.](images/AzureLabs-Lab3-41.png)
 
 3.  Pour définir correctement ces paramètres, suivez ces instructions :
 
-    1. *MicrophoneManager* :
+    1. *MicrophoneManager*:
 
-        - À partir du *panneau hiérarchie* , faites glisser l’objet **texte de dictée** dans la zone valeur du paramètre de **texte de dictée** .
+        - À partir du *panneau hiérarchie*, faites glisser l’objet **texte de dictée** dans la zone valeur du paramètre de **texte de dictée** .
 
-    2. *Comportements* , à partir du *volet hiérarchie* :
+    2. *Comportements*, à partir du *volet hiérarchie*:
 
         - Faites glisser l’objet **Sphere** dans la zone de la cible de référence *Sphere* .
         - Faites glisser le **cylindre** dans la zone de la cible de référence *cylindrique* .
         - Faites glisser le **cube** dans la zone de la cible de la référence du *cube* .
 
-    3. Point de *regard* :
+    3. Point de *regard*:
 
         - Définissez la *distance maximale* du point de regard sur **300** (si ce n’est pas déjà le cas). 
 
@@ -1002,7 +1002,7 @@ Assurez-vous que :
 -   Tous les scripts sont attachés à l’objet **Camera principal** . 
 -   Tous les champs du volet principal de l’inspecteur de l' *appareil photo* sont correctement affectés.
 
-1.  Appuyez sur le bouton **lecture** dans l' *éditeur Unity* . L’application doit s’exécuter au sein du casque immersif attaché.
+1.  Appuyez sur le bouton **lecture** dans l' *éditeur Unity*. L’application doit s’exécuter au sein du casque immersif attaché.
 
 2.  Essayez quelques énoncés, tels que :
 
@@ -1027,10 +1027,10 @@ Une fois que vous avez vérifié que l’application fonctionne dans l’éditeu
 
 Pour générer :
 
-1.  Enregistrez la scène en cours en cliquant sur **fichier > enregistrer** .
-2.  Accédez à **fichier > paramètres de build** .
+1.  Enregistrez la scène en cours en cliquant sur **fichier > enregistrer**.
+2.  Accédez à **fichier > paramètres de build**.
 3.  Cochez la case **projets Unity C#** (utile pour afficher et déboguer votre code une fois le projet UWP créé.
-4.  Cliquez sur **Ajouter des scènes ouvertes** , puis cliquez sur **générer** .
+4.  Cliquez sur **Ajouter des scènes ouvertes**, puis cliquez sur **générer**.
 
     ![Fenêtre Paramètres de build](images/AzureLabs-Lab3-43.png)
 
@@ -1046,19 +1046,19 @@ Pour générer :
 
 Pour déployer sur l’ordinateur local :
 
-1.  Dans *Visual Studio* , ouvrez le fichier solution créé dans le [chapitre précédent](#chapter-10--test-in-the-unity-editor).
-2.  Dans la **plateforme** de la solution, sélectionnez **x86** , **ordinateur local** .
-3.  Dans la **configuration** de la solution, sélectionnez **Déboguer** .
+1.  Dans *Visual Studio*, ouvrez le fichier solution créé dans le [chapitre précédent](#chapter-10--test-in-the-unity-editor).
+2.  Dans la **plateforme** de la solution, sélectionnez **x86**, **ordinateur local**.
+3.  Dans la **configuration** de la solution, sélectionnez **Déboguer**.
 
-    > Pour Microsoft HoloLens, il peut s’avérer plus facile de définir cette valeur sur *machine distante* , afin de ne pas être attaché à votre ordinateur. Toutefois, vous devez également effectuer les opérations suivantes :
-    > - Identifiez l' **adresse IP** de votre HoloLens, qui se trouve dans les *paramètres > réseau & Internet > les options avancées du Wi-Fi >* ; IPv4 est l’adresse que vous devez utiliser. 
-    > - Assurez-vous que le **mode développeur** est **activé** ; trouvé dans *paramètres > mettre à jour & > de sécurité pour les développeurs* .
+    > Pour Microsoft HoloLens, il peut s’avérer plus facile de définir cette valeur sur *machine distante*, afin de ne pas être attaché à votre ordinateur. Toutefois, vous devez également effectuer les opérations suivantes :
+    > - Connaître l' **adresse IP** de votre HoloLens, qui se trouve dans les *paramètres > réseau & Internet > Wi-Fi > options avancées*. IPv4 est l’adresse que vous devez utiliser. 
+    > - Assurez-vous que le **mode développeur** est **activé**; trouvé dans *paramètres > mettre à jour & > de sécurité pour les développeurs*.
 
     ![Déployer une application](images/AzureLabs-Lab3-46.png)
  
 4.  Accédez au **menu Générer** , puis cliquez sur **déployer la solution** pour chargement l’application sur votre ordinateur.
 5.  Votre application doit maintenant apparaître dans la liste des applications installées, prêtes à être lancées.
-6.  Une fois lancé, l’application vous invite à autoriser l’accès au _microphone_ . Utilisez les *contrôleurs de mouvement* ou l' *entrée vocale* , ou le *clavier* pour appuyer sur le bouton **Oui** . 
+6.  Une fois lancé, l’application vous invite à autoriser l’accès au _microphone_. Utilisez les *contrôleurs de mouvement* ou l' *entrée vocale*, ou le *clavier* pour appuyer sur le bouton **Oui** . 
 
 ## <a name="chapter-12--improving-your-luis-service"></a>Chapitre 12 : amélioration de votre service LUIS
 
@@ -1072,7 +1072,7 @@ Par exemple, vous avez peut-être formé LUIS pour comprendre l’augmentation e
 Une fois que vous avez utilisé votre application plusieurs fois, tout ce que vous avez dit est collecté par LUIS et disponible dans le portail LUIS.
 
 1.  Accédez à votre application de portail en suivant ce [lien](https://www.luis.ai/home)et connectez-vous.
-2.  Une fois que vous êtes connecté avec vos informations d’identification MS, cliquez sur le nom de votre *application* .
+2.  Une fois que vous êtes connecté avec vos informations d’identification MS, cliquez sur le nom de votre *application*.
 3.  Cliquez sur le bouton **vérifier les énoncés de point de terminaison** à gauche de la page.
 
     ![Passer en revue les énoncés](images/AzureLabs-Lab3-47.png)
@@ -1085,7 +1085,7 @@ Vous remarquerez certaines *entités* en surbrillance.
 
 En pointant sur chaque mot en surbrillance, vous pouvez examiner chaque énoncé et déterminer l’entité qui a été reconnue correctement, les entités qui sont incorrectes et les entités qui sont manquées.
 
-Dans l’exemple ci-dessus, il a été constaté que le mot « Spear » avait été mis en surbrillance comme cible. il est donc nécessaire de corriger l’erreur, ce qui se fait en pointant sur le mot avec la souris et en cliquant sur **Supprimer l’étiquette** .
+Dans l’exemple ci-dessus, il a été constaté que le mot « Spear » avait été mis en surbrillance comme cible. il est donc nécessaire de corriger l’erreur, ce qui se fait en pointant sur le mot avec la souris et en cliquant sur **Supprimer l’étiquette**.
 
 ![Vérifier l’image de l' ](images/AzureLabs-Lab3-49.png)
  ![ étiquette supprimer les énoncés](images/AzureLabs-Lab3-50.png)

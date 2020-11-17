@@ -1,19 +1,19 @@
 ---
-title: Mise à jour des applications UWP 2D pour la réalité mixte
+title: Mise à jour d’applications UWP 2D pour la réalité mixte
 description: Cet article décrit la mise à jour de votre application plateforme Windows universelle 2D existante pour qu’elle s’exécute sur HoloLens et les casques immersifs de Windows Mixed Reality.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: application 2D, UWP, application plate, HoloLens, casque immersif, modèle d’application, bouton précédent, barre d’application, PPP, résolution, mise à l’échelle
-ms.openlocfilehash: af262527c957dda57f0c8a3252a2f63207d6ca39
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: application 2D, UWP, application plate, HoloLens, casque immersif, modèle d’application, bouton précédent, barre d’application, PPP, résolution, mise à l’échelle, Portage, HoloLens 1ère génération, HoloLens 2, casque de réalité mixte, casque de réalité mixte, migration, Windows 10
+ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679139"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677798"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Mise à jour des applications UWP 2D pour la réalité mixte
+# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Mise à jour d’applications UWP 2D pour la réalité mixte
 
 Windows Mixed Reality permet à un utilisateur de voir des hologrammes comme s’ils se trouvent sur vous, dans votre monde physique ou numérique. À la base, HoloLens et les ordinateurs de bureau auxquels vous attachez des accessoires de casque sont des appareils Windows 10 ; Cela signifie que vous pouvez exécuter presque toutes les applications de plateforme Windows universelle (UWP) dans le Store en tant qu’applications 2D.
 
@@ -74,11 +74,11 @@ Si vous n’utilisez pas Visual Studio pour votre environnement de développemen
 ### <a name="run-in-the-hololens-emulator"></a>Exécuter dans l’émulateur HoloLens
 
 Maintenant que votre application UWP cible « Windows. Universal », nous allons générer votre application et l’exécuter dans l' [émulateur HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md).
-* Vérifiez que [l’émulateur HoloLens est installé](../install-the-tools.md).
+* Vérifiez que [l’émulateur HoloLens est installé](../install-the-tools.md) .
 * Dans Visual Studio, sélectionnez la configuration de build **x86** pour votre application
 
   ![Configuration de build x86 dans Visual Studio](../platform-capabilities-and-apis/images/x86setting.png)<br>
-* Sélectionnez **émulateur HoloLens** dans le menu déroulant cible de déploiement
+* Sélectionnez **Émulateur HoloLens** dans le menu déroulant de la cible de déploiement
 
   ![Émulateur HoloLens dans la liste cible de déploiement](images/deployemulator-500px.png)<br>
 * Sélectionnez **Déboguer > démarrer le débogage** pour déployer votre application et démarrer le débogage.
@@ -98,7 +98,7 @@ Pour accéder au bas de ce qui peut entraîner le non-démarrage de votre applic
 ### <a name="running-your-uwp-app-in-the-debugger"></a>Exécution de votre application UWP dans le débogueur
 
 Ces étapes vous guideront tout au long du débogage de votre application UWP à l’aide du débogueur Visual Studio.
-* Si vous ne l’avez pas déjà fait, ouvrez votre solution dans Visual Studio. Remplacez la cible par l' **émulateur HoloLens** et la configuration de build par **x86** .
+* Si vous ne l’avez pas déjà fait, ouvrez votre solution dans Visual Studio. Remplacez la cible par l' **émulateur HoloLens** et la configuration de build par **x86**.
 * Sélectionnez **Déboguer > démarrer le débogage** pour déployer votre application et démarrer le débogage.
 * Placez l’application dans le monde entier à l’aide de la souris, du clavier ou du contrôleur Xbox.
 * Visual Studio doit maintenant s’arrêter quelque part dans le code de votre application.
@@ -116,7 +116,7 @@ Maintenant que votre application UWP s’exécute sur des casques immersifs et/o
 
 ![À partir de la conception réactive](images/scale-500px.png)
 
-Windows 10 déplace toutes les conceptions visuelles des pixels de l’écran réel vers les **pixels effectifs** . Cela signifie que les développeurs conçoivent leur interface utilisateur en suivant les instructions de l’interface utilisateur de Windows 10 pour les pixels effectifs, et la mise à l’échelle de Windows garantit que ces pixels effectifs sont la bonne taille pour la convivialité sur les appareils, les résolutions, les PPP, etc. Consultez cette présentation [sur MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) pour en savoir plus, ainsi que sur cette présentation de la [Build](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx).
+Windows 10 déplace toutes les conceptions visuelles des pixels de l’écran réel vers les **pixels effectifs**. Cela signifie que les développeurs conçoivent leur interface utilisateur en suivant les instructions de l’interface utilisateur de Windows 10 pour les pixels effectifs, et la mise à l’échelle de Windows garantit que ces pixels effectifs sont la bonne taille pour la convivialité sur les appareils, les résolutions, les PPP, etc. Consultez cette présentation [sur MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) pour en savoir plus, ainsi que sur cette présentation de la [Build](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx).
 
 Même avec la capacité unique de placer des applications dans votre monde à un large éventail de distances, il est recommandé d’utiliser des distances d’affichage de type TV pour produire la meilleure lisibilité et l’interaction avec le point de vue des mouvements. En raison de cela, un ardoise virtuel dans la réalité mixte affiche votre vue UWP plate à l’adresse :
 
@@ -147,7 +147,7 @@ les vues 2D sont décorées avec une barre d’application au-dessus de leur con
 
 **Title :** affiche le *DisplayName* de la vignette associée à l’instance de l’application
 
-**Bouton précédent :** déclenche l’événement *[demandé](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* lorsque l’utilisateur clique dessus. La visibilité du bouton précédent est contrôlée par *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)* .
+**Bouton précédent :** déclenche l’événement *[demandé](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* lorsque l’utilisateur clique dessus. La visibilité du bouton précédent est contrôlée par *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
 
 ![Interface utilisateur de la barre d’application dans la vue d’application 2D](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *Interface utilisateur de la barre d’application dans la vue d’application 2D*

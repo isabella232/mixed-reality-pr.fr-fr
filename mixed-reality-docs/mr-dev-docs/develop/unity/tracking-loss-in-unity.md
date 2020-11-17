@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, perte de suivi, image de perte de suivi
-ms.openlocfilehash: 5aa17def844735088bcee6137a7b76a586107e44
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, perte de suivi, image de perte de suivi, interrogation, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 52b81069e6b9f94a2a6a4fb552be4234cf43d1f0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678980"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678418"
 ---
 # <a name="tracking-loss-in-unity"></a>Suivi des pertes dans Unity
 
@@ -25,19 +25,19 @@ Par défaut, la boucle de mise à jour de l’application, ainsi que tous les me
 
 ## <a name="manual-handling"></a>Gestion manuelle
 
-Pour gérer manuellement le suivi des pertes, vous devez accéder à **modifier** les  >  **paramètres**  >  **Player**  >  du projet plateforme Windows universelle de l' **onglet Paramètres**  >  de l' **image de démarrage**  >  **Windows holographique** et décocher « en cas de perte de suivi et d’affichage de l’image ». Après quoi, vous devez gérer les modifications de suivi avec les API spécifiées ci-dessous.
+Pour gérer manuellement le suivi des pertes, vous devez accéder à **modifier** les  >  **paramètres**  >  **Player**  >  du projet plateforme Windows universelle de l'**onglet Paramètres**  >  de l'**image de démarrage**  >  **Windows holographique** et décocher « en cas de perte de suivi et d’affichage de l’image ». Après quoi, vous devez gérer les modifications de suivi avec les API spécifiées ci-dessous.
 
 **Espace de noms :** *UnityEngine. XR. WSA*<br>
 **Type :** *WorldManager*
 
-* World Manager expose un événement pour détecter le suivi des pertes/gains ( *WorldManager. OnPositionalLocatorStateChanged* ) et une propriété pour interroger l’état actuel ( *WorldManager. State* )
+* World Manager expose un événement pour détecter le suivi des pertes/gains (*WorldManager. OnPositionalLocatorStateChanged*) et une propriété pour interroger l’état actuel (*WorldManager. State*)
 * Lorsque l’état de suivi n’est pas actif, l’appareil photo n’apparaît pas dans le monde virtuel, même lorsque l’utilisateur se traduit. Cela signifie que les objets ne correspondent plus à aucun emplacement physique et que tous les corps sont verrouillés.
 
 Lors du traitement des modifications de suivi, vous devez interroger la propriété d’état de chaque trame ou gérer l’événement *OnPositionalLocatorStateChanged* .
 
 ### <a name="polling"></a>Interrogation
 
-L’état le plus important est *PositionalLocatorState. active* , ce qui signifie que le suivi est entièrement fonctionnel. Tous les autres États entraînent uniquement des deltas de rotation vers la caméra principale. Par exemple :
+L’état le plus important est *PositionalLocatorState. active* , ce qui signifie que le suivi est entièrement fonctionnel. Tous les autres États entraînent uniquement des deltas de rotation vers la caméra principale. Exemple :
 
 ```cs
 void Update()

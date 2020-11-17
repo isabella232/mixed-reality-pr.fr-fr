@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality, non réel, moteur 4, UE4, HoloLens 2, voix, entrée vocale, reconnaissance vocale, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux
-ms.openlocfilehash: 88ab39de5f219691a6c3fe5b4ad3008d9614668e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, non réel, moteur 4, UE4, HoloLens 2, voix, entrée vocale, reconnaissance vocale, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 79a6043511cc4658ae2451dd8aa6350d8e8037fe
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682242"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678778"
 ---
 # <a name="voice-input-in-unreal"></a>Entrée vocale en non réel
 
@@ -21,8 +21,8 @@ Les entrées vocales en temps réel vous permettent d’interagir avec un hologr
 ## <a name="enabling-speech-recognition"></a>Activation de la reconnaissance vocale
 
 Pour activer la reconnaissance vocale sur HoloLens :
-1. Sélectionnez **paramètres du projet > plateforme > HoloLens > fonctionnalités** et activer le **microphone** . 
-2. Activez la reconnaissance vocale dans **paramètres > confidentialité > voix** et sélectionnez **anglais** .
+1. Sélectionnez **paramètres du projet > plateforme > HoloLens > fonctionnalités** et activer le **microphone**. 
+2. Activez la reconnaissance vocale dans **paramètres > confidentialité > voix** et sélectionnez **anglais**.
 
 > [!NOTE]
 > La reconnaissance vocale fonctionne toujours dans la langue d’affichage Windows configurée dans l’application **paramètres** . Il est recommandé d’activer également la **reconnaissance vocale en ligne** pour une qualité de service optimale.
@@ -35,7 +35,7 @@ L’entrée vocale ne nécessite pas d’API Windows Mixed Reality spéciales. I
 
 ## <a name="adding-speech-mappings"></a>Ajout de mappages vocaux
 La connexion vocale à l’action est une étape importante lors de l’utilisation de l’entrée vocale. Ces mappages surveillent l’application pour les mots clés vocaux qu’un utilisateur peut prononcer, puis déclenchent une action liée. Vous pouvez trouver des mappages de reconnaissance vocale en procédant comme suit :
-1. Sélectionnez **modifier > paramètres du projet** , faites défiler jusqu’à la section **moteur** , puis cliquez sur **entrée** .
+1. Sélectionnez **modifier > paramètres du projet**, faites défiler jusqu’à la section **moteur** , puis cliquez sur **entrée**.
 
 Pour ajouter un nouveau mappage de reconnaissance vocale pour une commande de saut :
 1. Cliquez sur l' **+** icône en regard d' **éléments de tableau** et remplissez les valeurs suivantes :
@@ -49,8 +49,8 @@ Pour ajouter un nouveau mappage de reconnaissance vocale pour une commande de sa
 
 Les mappages vocaux peuvent être utilisés en tant que composants d’entrée comme les mappages d’action ou d’axe ou en tant que nœuds de plan dans le graphique d’événements. Par exemple, vous pouvez lier la commande Jump pour imprimer deux journaux différents selon le moment où le mot est parlé :
 
-1. Double-cliquez sur un plan pour l’ouvrir dans le **graphique des événements** .
-2. **Cliquez avec le bouton droit** et recherchez le **nom d’action** de votre mappage de reconnaissance vocale (dans le cas présent **jumpWord** ), puis appuyez sur **entrée** . Cela ajoute un nœud **d’action d’entrée** au graphique.
+1. Double-cliquez sur un plan pour l’ouvrir dans le **graphique des événements**.
+2. **Cliquez avec le bouton droit** et recherchez le **nom d’action** de votre mappage de reconnaissance vocale (dans le cas présent **jumpWord**), puis appuyez sur **entrée**. Cela ajoute un nœud **d’action d’entrée** au graphique.
 3. Faites glisser et déposez le code PIN **appuyé** pour imprimer le nœud de **chaîne** comme indiqué dans l’image ci-dessous. Vous pouvez faire en sorte que le code confidentiel **libéré** soit vide. il n’exécutera rien pour les mappages vocaux.
  
 ![Action simple pour la voix](images/unreal/voice-input-img-03.png)
@@ -66,7 +66,7 @@ Si vous suivez le parcours du point de contrôle de développement inréel que n
 > [!div class="nextstepaction"]
 > [Caméra HoloLens](unreal-hololens-camera.md)
 
-Vous pouvez toujours revenir aux [points de contrôle de développement inréels](unreal-development-overview.md#2-core-building-blocks) à tout moment.
+Vous pouvez revenir aux [points de contrôle de développement Unreal](unreal-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
 * [Entrée vocale](../../design/voice-input.md)

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: mouvements, contrôleurs de mouvement, Unity, point de regard, entrée
-ms.openlocfilehash: b184cf1d9e6f35e3750015b51374058df79ed19d
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: gestes, contrôleurs de mouvement, Unity, point d’entrée, point d’entrée, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: 244d1ef27d9aa68d971fa8372bda301fccab0704
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683235"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677588"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Suivi des mains et des yeux dans Unity
 
