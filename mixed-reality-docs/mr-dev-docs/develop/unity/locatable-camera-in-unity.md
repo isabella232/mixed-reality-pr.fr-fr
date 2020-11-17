@@ -5,43 +5,43 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: photo, vidéo, hololens, appareil photo, Unity, localisable
-ms.openlocfilehash: dfbbcc21db1247a7250e5049bfd1c4f89976ac15
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: photo, vidéo, hololens, appareil photo, Unity, localisable, PVC, caméra vidéo photo, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, webcam, capture de photos, capture vidéo
+ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957799"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678598"
 ---
-# <a name="locatable-camera-in-unity"></a><span data-ttu-id="32ee4-104">Appareil photo localisable dans Unity</span><span class="sxs-lookup"><span data-stu-id="32ee4-104">Locatable camera in Unity</span></span>
+# <a name="locatable-camera-in-unity"></a><span data-ttu-id="7b85f-104">Appareil photo localisable dans Unity</span><span class="sxs-lookup"><span data-stu-id="7b85f-104">Locatable camera in Unity</span></span>
 
-## <a name="enabling-the-capability-for-photo-video-camera"></a><span data-ttu-id="32ee4-105">Activation de la fonctionnalité de Photo Video Camera</span><span class="sxs-lookup"><span data-stu-id="32ee4-105">Enabling the capability for Photo Video Camera</span></span>
+## <a name="enabling-the-capability-for-photo-video-camera"></a><span data-ttu-id="7b85f-105">Activation de la fonctionnalité de Photo Video Camera</span><span class="sxs-lookup"><span data-stu-id="7b85f-105">Enabling the capability for Photo Video Camera</span></span>
 
-<span data-ttu-id="32ee4-106">La fonctionnalité « WebCam » doit être déclarée pour qu’une application utilise l' [appareil photo](../platform-capabilities-and-apis/locatable-camera.md).</span><span class="sxs-lookup"><span data-stu-id="32ee4-106">The "WebCam" capability must be declared for an app to use the [camera](../platform-capabilities-and-apis/locatable-camera.md).</span></span>
-1. <span data-ttu-id="32ee4-107">Dans l’éditeur Unity, accédez aux paramètres du lecteur en accédant à la page « modifier les paramètres du projet > > Player ».</span><span class="sxs-lookup"><span data-stu-id="32ee4-107">In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page</span></span>
-2. <span data-ttu-id="32ee4-108">Cliquez sur l’onglet « Windows Store ».</span><span class="sxs-lookup"><span data-stu-id="32ee4-108">Click the "Windows Store" tab</span></span>
-3. <span data-ttu-id="32ee4-109">Dans la section « fonctionnalités de > des paramètres de publication », vérifiez les fonctionnalités de la **webcam** et du **microphone**</span><span class="sxs-lookup"><span data-stu-id="32ee4-109">In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities</span></span>
+<span data-ttu-id="7b85f-106">La fonctionnalité « WebCam » doit être déclarée pour qu’une application utilise l' [appareil photo](../platform-capabilities-and-apis/locatable-camera.md).</span><span class="sxs-lookup"><span data-stu-id="7b85f-106">The "WebCam" capability must be declared for an app to use the [camera](../platform-capabilities-and-apis/locatable-camera.md).</span></span>
+1. <span data-ttu-id="7b85f-107">Dans l’éditeur Unity, accédez aux paramètres du lecteur en accédant à la page « modifier les paramètres du projet > > Player ».</span><span class="sxs-lookup"><span data-stu-id="7b85f-107">In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page</span></span>
+2. <span data-ttu-id="7b85f-108">Cliquez sur l’onglet « Windows Store ».</span><span class="sxs-lookup"><span data-stu-id="7b85f-108">Click the "Windows Store" tab</span></span>
+3. <span data-ttu-id="7b85f-109">Dans la section « fonctionnalités de > des paramètres de publication », vérifiez les fonctionnalités de la **webcam** et du **microphone**</span><span class="sxs-lookup"><span data-stu-id="7b85f-109">In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities</span></span>
 
-<span data-ttu-id="32ee4-110">Une seule opération peut être effectuée avec la caméra à la fois.</span><span class="sxs-lookup"><span data-stu-id="32ee4-110">Only a single operation can occur with the camera at a time.</span></span> <span data-ttu-id="32ee4-111">Pour déterminer le mode (photo, vidéo ou aucun) dans lequel se trouve actuellement l’appareil photo, vous pouvez vérifier UnityEngine. XR. WSA. WebCam. mode.</span><span class="sxs-lookup"><span data-stu-id="32ee4-111">To determine which mode (photo, video, or none) the camera is currently in, you can check UnityEngine.XR.WSA.WebCam.Mode.</span></span>
+<span data-ttu-id="7b85f-110">Une seule opération peut être effectuée avec la caméra à la fois.</span><span class="sxs-lookup"><span data-stu-id="7b85f-110">Only a single operation can occur with the camera at a time.</span></span> <span data-ttu-id="7b85f-111">Pour déterminer le mode (photo, vidéo ou aucun) dans lequel se trouve actuellement l’appareil photo, vous pouvez vérifier UnityEngine. XR. WSA. WebCam. mode.</span><span class="sxs-lookup"><span data-stu-id="7b85f-111">To determine which mode (photo, video, or none) the camera is currently in, you can check UnityEngine.XR.WSA.WebCam.Mode.</span></span>
 
-## <a name="photo-capture"></a><span data-ttu-id="32ee4-112">Capture de photos</span><span class="sxs-lookup"><span data-stu-id="32ee4-112">Photo Capture</span></span>
+## <a name="photo-capture"></a><span data-ttu-id="7b85f-112">Capture de photos</span><span class="sxs-lookup"><span data-stu-id="7b85f-112">Photo Capture</span></span>
 
-<span data-ttu-id="32ee4-113">**Espace de noms :** *UnityEngine. XR. WSA. Webcam*</span><span class="sxs-lookup"><span data-stu-id="32ee4-113">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
-<span data-ttu-id="32ee4-114">**Type :** *PhotoCapture*</span><span class="sxs-lookup"><span data-stu-id="32ee4-114">**Type:** *PhotoCapture*</span></span>
+<span data-ttu-id="7b85f-113">**Espace de noms :** *UnityEngine. XR. WSA. Webcam*</span><span class="sxs-lookup"><span data-stu-id="7b85f-113">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
+<span data-ttu-id="7b85f-114">**Type :** *PhotoCapture*</span><span class="sxs-lookup"><span data-stu-id="7b85f-114">**Type:** *PhotoCapture*</span></span>
 
-<span data-ttu-id="32ee4-115">Le type *PhotoCapture* vous permet de prendre des photographies avec la caméra photo.</span><span class="sxs-lookup"><span data-stu-id="32ee4-115">The *PhotoCapture* type allows you to take still photographs with the Photo Video Camera.</span></span> <span data-ttu-id="32ee4-116">Le modèle général d’utilisation de *PhotoCapture* pour prendre une photo est le suivant :</span><span class="sxs-lookup"><span data-stu-id="32ee4-116">The general pattern for using *PhotoCapture* to take a photo is as follows:</span></span>
-1. <span data-ttu-id="32ee4-117">Créer un objet *PhotoCapture*</span><span class="sxs-lookup"><span data-stu-id="32ee4-117">Create a *PhotoCapture* object</span></span>
-2. <span data-ttu-id="32ee4-118">Créer un objet *CameraParameters* avec les paramètres souhaités</span><span class="sxs-lookup"><span data-stu-id="32ee4-118">Create a *CameraParameters* object with the settings you want</span></span>
-3. <span data-ttu-id="32ee4-119">Démarrer le mode photo via *StartPhotoModeAsync*</span><span class="sxs-lookup"><span data-stu-id="32ee4-119">Start Photo Mode via *StartPhotoModeAsync*</span></span>
-4. <span data-ttu-id="32ee4-120">Prenez la photo souhaitée</span><span class="sxs-lookup"><span data-stu-id="32ee4-120">Take the desired photo</span></span>
-    * <span data-ttu-id="32ee4-121">facultatif Interagir avec cette image</span><span class="sxs-lookup"><span data-stu-id="32ee4-121">(optional) Interact with that picture</span></span>
-5. <span data-ttu-id="32ee4-122">Arrêter le mode photo et nettoyer les ressources</span><span class="sxs-lookup"><span data-stu-id="32ee4-122">Stop Photo Mode and clean up resources</span></span>
+<span data-ttu-id="7b85f-115">Le type *PhotoCapture* vous permet de prendre des photographies avec la caméra photo.</span><span class="sxs-lookup"><span data-stu-id="7b85f-115">The *PhotoCapture* type allows you to take still photographs with the Photo Video Camera.</span></span> <span data-ttu-id="7b85f-116">Le modèle général d’utilisation de *PhotoCapture* pour prendre une photo est le suivant :</span><span class="sxs-lookup"><span data-stu-id="7b85f-116">The general pattern for using *PhotoCapture* to take a photo is as follows:</span></span>
+1. <span data-ttu-id="7b85f-117">Créer un objet *PhotoCapture*</span><span class="sxs-lookup"><span data-stu-id="7b85f-117">Create a *PhotoCapture* object</span></span>
+2. <span data-ttu-id="7b85f-118">Créer un objet *CameraParameters* avec les paramètres souhaités</span><span class="sxs-lookup"><span data-stu-id="7b85f-118">Create a *CameraParameters* object with the settings you want</span></span>
+3. <span data-ttu-id="7b85f-119">Démarrer le mode photo via *StartPhotoModeAsync*</span><span class="sxs-lookup"><span data-stu-id="7b85f-119">Start Photo Mode via *StartPhotoModeAsync*</span></span>
+4. <span data-ttu-id="7b85f-120">Prenez la photo souhaitée</span><span class="sxs-lookup"><span data-stu-id="7b85f-120">Take the desired photo</span></span>
+    * <span data-ttu-id="7b85f-121">facultatif Interagir avec cette image</span><span class="sxs-lookup"><span data-stu-id="7b85f-121">(optional) Interact with that picture</span></span>
+5. <span data-ttu-id="7b85f-122">Arrêter le mode photo et nettoyer les ressources</span><span class="sxs-lookup"><span data-stu-id="7b85f-122">Stop Photo Mode and clean up resources</span></span>
 
-### <a name="common-set-up-for-photocapture"></a><span data-ttu-id="32ee4-123">Configuration commune pour la PhotoCapture</span><span class="sxs-lookup"><span data-stu-id="32ee4-123">Common Set Up for PhotoCapture</span></span>
+### <a name="common-set-up-for-photocapture"></a><span data-ttu-id="7b85f-123">Configuration commune pour la PhotoCapture</span><span class="sxs-lookup"><span data-stu-id="7b85f-123">Common Set Up for PhotoCapture</span></span>
 
-<span data-ttu-id="32ee4-124">Pour les trois utilisations, commencez par les trois premières étapes ci-dessus.</span><span class="sxs-lookup"><span data-stu-id="32ee4-124">For all three uses, start with the same first 3 steps above</span></span>
+<span data-ttu-id="7b85f-124">Pour les trois utilisations, commencez par les trois premières étapes ci-dessus.</span><span class="sxs-lookup"><span data-stu-id="7b85f-124">For all three uses, start with the same first 3 steps above</span></span>
 
-<span data-ttu-id="32ee4-125">Commencez par créer un objet *PhotoCapture*</span><span class="sxs-lookup"><span data-stu-id="32ee4-125">Start by creating a *PhotoCapture* object</span></span>
+<span data-ttu-id="7b85f-125">Commencez par créer un objet *PhotoCapture*</span><span class="sxs-lookup"><span data-stu-id="7b85f-125">Start by creating a *PhotoCapture* object</span></span>
 
 ```cs
 PhotoCapture photoCaptureObject = null;
@@ -51,7 +51,7 @@ PhotoCapture photoCaptureObject = null;
    }
 ```
 
-<span data-ttu-id="32ee4-126">Stockez ensuite votre objet, définissez vos paramètres et démarrez le mode photo</span><span class="sxs-lookup"><span data-stu-id="32ee4-126">Next, store your object, set your parameters, and start Photo Mode</span></span>
+<span data-ttu-id="7b85f-126">Stockez ensuite votre objet, définissez vos paramètres et démarrez le mode photo</span><span class="sxs-lookup"><span data-stu-id="7b85f-126">Next, store your object, set your parameters, and start Photo Mode</span></span>
 
 ```cs
 void OnPhotoCaptureCreated(PhotoCapture captureObject)
@@ -70,7 +70,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
    }
 ```
 
-<span data-ttu-id="32ee4-127">À la fin, vous utiliserez également le même code de nettoyage présenté ici</span><span class="sxs-lookup"><span data-stu-id="32ee4-127">In the end, you will also use the same clean up code presented here</span></span>
+<span data-ttu-id="7b85f-127">À la fin, vous utiliserez également le même code de nettoyage présenté ici</span><span class="sxs-lookup"><span data-stu-id="7b85f-127">In the end, you will also use the same clean up code presented here</span></span>
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -80,13 +80,13 @@ void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="32ee4-128">Après ces étapes, vous pouvez choisir le type de photo à capturer.</span><span class="sxs-lookup"><span data-stu-id="32ee4-128">After these steps, you can choose which type of photo to capture.</span></span>
+<span data-ttu-id="7b85f-128">Après ces étapes, vous pouvez choisir le type de photo à capturer.</span><span class="sxs-lookup"><span data-stu-id="7b85f-128">After these steps, you can choose which type of photo to capture.</span></span>
 
-### <a name="capture-a-photo-to-a-file"></a><span data-ttu-id="32ee4-129">Capturer une photo dans un fichier</span><span class="sxs-lookup"><span data-stu-id="32ee4-129">Capture a Photo to a File</span></span>
+### <a name="capture-a-photo-to-a-file"></a><span data-ttu-id="7b85f-129">Capturer une photo dans un fichier</span><span class="sxs-lookup"><span data-stu-id="7b85f-129">Capture a Photo to a File</span></span>
 
-<span data-ttu-id="32ee4-130">L’opération la plus simple consiste à capturer directement une photo dans un fichier.</span><span class="sxs-lookup"><span data-stu-id="32ee4-130">The simplest operation is to capture a photo directly to a file.</span></span> <span data-ttu-id="32ee4-131">La photo peut être enregistrée au format JPG ou PNG.</span><span class="sxs-lookup"><span data-stu-id="32ee4-131">The photo can be saved as a JPG or a PNG.</span></span>
+<span data-ttu-id="7b85f-130">L’opération la plus simple consiste à capturer directement une photo dans un fichier.</span><span class="sxs-lookup"><span data-stu-id="7b85f-130">The simplest operation is to capture a photo directly to a file.</span></span> <span data-ttu-id="7b85f-131">La photo peut être enregistrée au format JPG ou PNG.</span><span class="sxs-lookup"><span data-stu-id="7b85f-131">The photo can be saved as a JPG or a PNG.</span></span>
 
-<span data-ttu-id="32ee4-132">Si vous avez correctement démarré le mode photo, prenez une photo et stockez-la sur le disque</span><span class="sxs-lookup"><span data-stu-id="32ee4-132">If you successfully started photo mode, take a photo and store it on disk</span></span>
+<span data-ttu-id="7b85f-132">Si vous avez correctement démarré le mode photo, prenez une photo et stockez-la sur le disque</span><span class="sxs-lookup"><span data-stu-id="7b85f-132">If you successfully started photo mode, take a photo and store it on disk</span></span>
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -105,7 +105,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="32ee4-133">Après avoir capturé la photo sur le disque, quittez le mode photo, puis nettoyez vos objets.</span><span class="sxs-lookup"><span data-stu-id="32ee4-133">After capturing the photo to disk, exit photo mode and then clean up your objects</span></span>
+<span data-ttu-id="7b85f-133">Après avoir capturé la photo sur le disque, quittez le mode photo, puis nettoyez vos objets.</span><span class="sxs-lookup"><span data-stu-id="7b85f-133">After capturing the photo to disk, exit photo mode and then clean up your objects</span></span>
 
 ```cs
 void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
@@ -122,13 +122,13 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-### <a name="capture-a-photo-to-a-texture2d"></a><span data-ttu-id="32ee4-134">Capturer une photo sur un Texture2D</span><span class="sxs-lookup"><span data-stu-id="32ee4-134">Capture a Photo to a Texture2D</span></span>
+### <a name="capture-a-photo-to-a-texture2d"></a><span data-ttu-id="7b85f-134">Capturer une photo sur un Texture2D</span><span class="sxs-lookup"><span data-stu-id="7b85f-134">Capture a Photo to a Texture2D</span></span>
 
-<span data-ttu-id="32ee4-135">Lors de la capture de données dans un Texture2D, le processus est très similaire à la capture sur le disque.</span><span class="sxs-lookup"><span data-stu-id="32ee4-135">When capturing data to a Texture2D, the process is extremely similar to capturing to disk.</span></span>
+<span data-ttu-id="7b85f-135">Lors de la capture de données dans un Texture2D, le processus est très similaire à la capture sur le disque.</span><span class="sxs-lookup"><span data-stu-id="7b85f-135">When capturing data to a Texture2D, the process is extremely similar to capturing to disk.</span></span>
 
-<span data-ttu-id="32ee4-136">Suivez le processus de configuration ci-dessus.</span><span class="sxs-lookup"><span data-stu-id="32ee4-136">Follow the set up process above.</span></span>
+<span data-ttu-id="7b85f-136">Suivez le processus de configuration ci-dessus.</span><span class="sxs-lookup"><span data-stu-id="7b85f-136">Follow the set up process above.</span></span>
 
-<span data-ttu-id="32ee4-137">Dans *OnPhotoModeStarted* , capturez un frame en mémoire.</span><span class="sxs-lookup"><span data-stu-id="32ee4-137">In *OnPhotoModeStarted* , capture a frame to memory.</span></span>
+<span data-ttu-id="7b85f-137">Dans *OnPhotoModeStarted*, capturez un frame en mémoire.</span><span class="sxs-lookup"><span data-stu-id="7b85f-137">In *OnPhotoModeStarted*, capture a frame to memory.</span></span>
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -144,7 +144,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="32ee4-138">Vous allez ensuite appliquer votre résultat à une texture et utiliser le code de nettoyage commun ci-dessus.</span><span class="sxs-lookup"><span data-stu-id="32ee4-138">You will then apply your result to a texture and use the common clean up code above.</span></span>
+<span data-ttu-id="7b85f-138">Vous allez ensuite appliquer votre résultat à une texture et utiliser le code de nettoyage commun ci-dessus.</span><span class="sxs-lookup"><span data-stu-id="7b85f-138">You will then apply your result to a texture and use the common clean up code above.</span></span>
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -163,11 +163,11 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
    }
 ```
 
-### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a><span data-ttu-id="32ee4-139">Capturer une photo et interagir avec les octets bruts</span><span class="sxs-lookup"><span data-stu-id="32ee4-139">Capture a Photo and Interact with the Raw bytes</span></span>
+### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a><span data-ttu-id="7b85f-139">Capturer une photo et interagir avec les octets bruts</span><span class="sxs-lookup"><span data-stu-id="7b85f-139">Capture a Photo and Interact with the Raw bytes</span></span>
 
-<span data-ttu-id="32ee4-140">Pour interagir avec les octets bruts d’un dans une trame de mémoire, suivez les mêmes étapes que ci-dessus et *OnPhotoModeStarted* comme pour la capture d’une photo à un Texture2D.</span><span class="sxs-lookup"><span data-stu-id="32ee4-140">To interact with the raw bytes of an in memory frame, follow the same set up steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D.</span></span> <span data-ttu-id="32ee4-141">La différence réside dans *OnCapturedPhotoToMemory* où vous pouvez récupérer les octets bruts et interagir avec eux.</span><span class="sxs-lookup"><span data-stu-id="32ee4-141">The difference is in *OnCapturedPhotoToMemory* where you can get the raw bytes and interact with them.</span></span>
+<span data-ttu-id="7b85f-140">Pour interagir avec les octets bruts d’un dans une trame de mémoire, suivez les mêmes étapes que ci-dessus et *OnPhotoModeStarted* comme pour la capture d’une photo à un Texture2D.</span><span class="sxs-lookup"><span data-stu-id="7b85f-140">To interact with the raw bytes of an in memory frame, follow the same set up steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D.</span></span> <span data-ttu-id="7b85f-141">La différence réside dans *OnCapturedPhotoToMemory* où vous pouvez récupérer les octets bruts et interagir avec eux.</span><span class="sxs-lookup"><span data-stu-id="7b85f-141">The difference is in *OnCapturedPhotoToMemory* where you can get the raw bytes and interact with them.</span></span>
 
-<span data-ttu-id="32ee4-142">Dans cet exemple, vous allez créer une *liste <Color>* qui peut être traitée ultérieurement ou appliquée à une texture par le biais de *setPixels ()*</span><span class="sxs-lookup"><span data-stu-id="32ee4-142">In this example, you will create a *List<Color>* which could be further processed or applied to a texture via *SetPixels()*</span></span>
+<span data-ttu-id="7b85f-142">Dans cet exemple, vous allez créer une *liste <Color>* qui peut être traitée ultérieurement ou appliquée à une texture par le biais de *setPixels ()*</span><span class="sxs-lookup"><span data-stu-id="7b85f-142">In this example, you will create a *List<Color>* which could be further processed or applied to a texture via *SetPixels()*</span></span>
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -200,20 +200,20 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
    }
 ```
 
-## <a name="video-capture"></a><span data-ttu-id="32ee4-143">Capture vidéo</span><span class="sxs-lookup"><span data-stu-id="32ee4-143">Video Capture</span></span>
+## <a name="video-capture"></a><span data-ttu-id="7b85f-143">Capture vidéo</span><span class="sxs-lookup"><span data-stu-id="7b85f-143">Video Capture</span></span>
 
-<span data-ttu-id="32ee4-144">**Espace de noms :** *UnityEngine. XR. WSA. Webcam*</span><span class="sxs-lookup"><span data-stu-id="32ee4-144">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
-<span data-ttu-id="32ee4-145">**Type :** *VideoCapture*</span><span class="sxs-lookup"><span data-stu-id="32ee4-145">**Type:** *VideoCapture*</span></span>
+<span data-ttu-id="7b85f-144">**Espace de noms :** *UnityEngine. XR. WSA. Webcam*</span><span class="sxs-lookup"><span data-stu-id="7b85f-144">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
+<span data-ttu-id="7b85f-145">**Type :** *VideoCapture*</span><span class="sxs-lookup"><span data-stu-id="7b85f-145">**Type:** *VideoCapture*</span></span>
 
-<span data-ttu-id="32ee4-146">*VideoCapture* fonctionne de façon très similaire à la *PhotoCapture* .</span><span class="sxs-lookup"><span data-stu-id="32ee4-146">*VideoCapture* functions very similarly to *PhotoCapture* .</span></span> <span data-ttu-id="32ee4-147">Les deux seules différences sont que vous devez spécifier une valeur d’images par seconde (FPS) et vous ne pouvez enregistrer directement sur le disque qu’en tant que fichier. MP4.</span><span class="sxs-lookup"><span data-stu-id="32ee4-147">The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as an .mp4 file.</span></span> <span data-ttu-id="32ee4-148">Les étapes d’utilisation de *VideoCapture* sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="32ee4-148">The steps to use *VideoCapture* are as follows:</span></span>
-1. <span data-ttu-id="32ee4-149">Créer un objet *VideoCapture*</span><span class="sxs-lookup"><span data-stu-id="32ee4-149">Create a *VideoCapture* object</span></span>
-2. <span data-ttu-id="32ee4-150">Créer un objet *CameraParameters* avec les paramètres souhaités</span><span class="sxs-lookup"><span data-stu-id="32ee4-150">Create a *CameraParameters* object with the settings you want</span></span>
-3. <span data-ttu-id="32ee4-151">Démarrer le mode vidéo via *StartVideoModeAsync*</span><span class="sxs-lookup"><span data-stu-id="32ee4-151">Start Video Mode via *StartVideoModeAsync*</span></span>
-4. <span data-ttu-id="32ee4-152">Démarrer l’enregistrement vidéo</span><span class="sxs-lookup"><span data-stu-id="32ee4-152">Start recording video</span></span>
-5. <span data-ttu-id="32ee4-153">Arrêter l’enregistrement de la vidéo</span><span class="sxs-lookup"><span data-stu-id="32ee4-153">Stop recording video</span></span>
-6. <span data-ttu-id="32ee4-154">Arrêter le mode vidéo et nettoyer les ressources</span><span class="sxs-lookup"><span data-stu-id="32ee4-154">Stop Video Mode and clean up resources</span></span>
+<span data-ttu-id="7b85f-146">*VideoCapture* fonctionne de façon très similaire à la *PhotoCapture*.</span><span class="sxs-lookup"><span data-stu-id="7b85f-146">*VideoCapture* functions very similarly to *PhotoCapture*.</span></span> <span data-ttu-id="7b85f-147">Les deux seules différences sont que vous devez spécifier une valeur d’images par seconde (FPS) et vous ne pouvez enregistrer directement sur le disque qu’en tant que fichier. MP4.</span><span class="sxs-lookup"><span data-stu-id="7b85f-147">The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as an .mp4 file.</span></span> <span data-ttu-id="7b85f-148">Les étapes d’utilisation de *VideoCapture* sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="7b85f-148">The steps to use *VideoCapture* are as follows:</span></span>
+1. <span data-ttu-id="7b85f-149">Créer un objet *VideoCapture*</span><span class="sxs-lookup"><span data-stu-id="7b85f-149">Create a *VideoCapture* object</span></span>
+2. <span data-ttu-id="7b85f-150">Créer un objet *CameraParameters* avec les paramètres souhaités</span><span class="sxs-lookup"><span data-stu-id="7b85f-150">Create a *CameraParameters* object with the settings you want</span></span>
+3. <span data-ttu-id="7b85f-151">Démarrer le mode vidéo via *StartVideoModeAsync*</span><span class="sxs-lookup"><span data-stu-id="7b85f-151">Start Video Mode via *StartVideoModeAsync*</span></span>
+4. <span data-ttu-id="7b85f-152">Démarrer l’enregistrement vidéo</span><span class="sxs-lookup"><span data-stu-id="7b85f-152">Start recording video</span></span>
+5. <span data-ttu-id="7b85f-153">Arrêter l’enregistrement de la vidéo</span><span class="sxs-lookup"><span data-stu-id="7b85f-153">Stop recording video</span></span>
+6. <span data-ttu-id="7b85f-154">Arrêter le mode vidéo et nettoyer les ressources</span><span class="sxs-lookup"><span data-stu-id="7b85f-154">Stop Video Mode and clean up resources</span></span>
 
-<span data-ttu-id="32ee4-155">Commencez par créer notre *VideoCapture* objet VideoCapture *VideoCapture m_VideoCapture = null ;*</span><span class="sxs-lookup"><span data-stu-id="32ee4-155">Start by creating our *VideoCapture* object *VideoCapture m_VideoCapture = null;*</span></span>
+<span data-ttu-id="7b85f-155">Commencez par créer notre *VideoCapture* objet VideoCapture *VideoCapture m_VideoCapture = null ;*</span><span class="sxs-lookup"><span data-stu-id="7b85f-155">Start by creating our *VideoCapture* object *VideoCapture m_VideoCapture = null;*</span></span>
 
 ```cs
 void Start ()
@@ -222,7 +222,7 @@ void Start ()
    }
 ```
 
-<span data-ttu-id="32ee4-156">Ensuite, configurez les paramètres que vous souhaitez utiliser pour l’enregistrement et démarrer.</span><span class="sxs-lookup"><span data-stu-id="32ee4-156">Next, set up the parameters you will want for the recording and start.</span></span>
+<span data-ttu-id="7b85f-156">Ensuite, configurez les paramètres que vous souhaitez utiliser pour l’enregistrement et démarrer.</span><span class="sxs-lookup"><span data-stu-id="7b85f-156">Next, set up the parameters you will want for the recording and start.</span></span>
 
 ```cs
 void OnVideoCaptureCreated (VideoCapture videoCapture)
@@ -252,7 +252,7 @@ void OnVideoCaptureCreated (VideoCapture videoCapture)
    }
 ```
 
-<span data-ttu-id="32ee4-157">Une fois démarré, commencez l’enregistrement.</span><span class="sxs-lookup"><span data-stu-id="32ee4-157">Once started, begin the recording</span></span>
+<span data-ttu-id="7b85f-157">Une fois démarré, commencez l’enregistrement.</span><span class="sxs-lookup"><span data-stu-id="7b85f-157">Once started, begin the recording</span></span>
 
 ```cs
 void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
@@ -267,7 +267,7 @@ void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="32ee4-158">Une fois l’enregistrement démarré, vous pouvez mettre à jour votre interface utilisateur ou les comportements pour activer l’arrêt.</span><span class="sxs-lookup"><span data-stu-id="32ee4-158">After recording has started, you could update your UI or behaviors to enable stopping.</span></span> <span data-ttu-id="32ee4-159">Ici, vous venez de consigner.</span><span class="sxs-lookup"><span data-stu-id="32ee4-159">Here you just log.</span></span>
+<span data-ttu-id="7b85f-158">Une fois l’enregistrement démarré, vous pouvez mettre à jour votre interface utilisateur ou les comportements pour activer l’arrêt.</span><span class="sxs-lookup"><span data-stu-id="7b85f-158">After recording has started, you could update your UI or behaviors to enable stopping.</span></span> <span data-ttu-id="7b85f-159">Ici, vous venez de consigner.</span><span class="sxs-lookup"><span data-stu-id="7b85f-159">Here you just log.</span></span>
 
 ```cs
 void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="32ee4-160">À un moment ultérieur, vous voudrez arrêter l’enregistrement.</span><span class="sxs-lookup"><span data-stu-id="32ee4-160">At a later point, you will want to stop the recording.</span></span> <span data-ttu-id="32ee4-161">Cela peut se produire à partir d’une entrée d’horloge ou d’utilisateur, par exemple.</span><span class="sxs-lookup"><span data-stu-id="32ee4-161">This could happen from a timer or user input, for instance.</span></span>
+<span data-ttu-id="7b85f-160">À un moment ultérieur, vous voudrez arrêter l’enregistrement.</span><span class="sxs-lookup"><span data-stu-id="7b85f-160">At a later point, you will want to stop the recording.</span></span> <span data-ttu-id="7b85f-161">Cela peut se produire à partir d’une entrée d’horloge ou d’utilisateur, par exemple.</span><span class="sxs-lookup"><span data-stu-id="7b85f-161">This could happen from a timer or user input, for instance.</span></span>
 
 ```cs
 // The user has indicated to stop recording
@@ -287,7 +287,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="32ee4-162">Une fois l’enregistrement arrêté, arrêtez le mode vidéo et nettoyez vos ressources.</span><span class="sxs-lookup"><span data-stu-id="32ee4-162">Once the recording has stopped, stop video mode and clean up your resources.</span></span>
+<span data-ttu-id="7b85f-162">Une fois l’enregistrement arrêté, arrêtez le mode vidéo et nettoyez vos ressources.</span><span class="sxs-lookup"><span data-stu-id="7b85f-162">Once the recording has stopped, stop video mode and clean up your resources.</span></span>
 
 ```cs
 void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -303,23 +303,23 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-## <a name="troubleshooting"></a><span data-ttu-id="32ee4-163">Dépannage</span><span class="sxs-lookup"><span data-stu-id="32ee4-163">Troubleshooting</span></span>
-* <span data-ttu-id="32ee4-164">Aucune résolution n’est disponible</span><span class="sxs-lookup"><span data-stu-id="32ee4-164">No resolutions are available</span></span>
-    * <span data-ttu-id="32ee4-165">Assurez-vous que la fonctionnalité **webcam** est spécifiée dans votre projet.</span><span class="sxs-lookup"><span data-stu-id="32ee4-165">Ensure the **WebCam** capability is specified in your project.</span></span>
+## <a name="troubleshooting"></a><span data-ttu-id="7b85f-163">Dépannage</span><span class="sxs-lookup"><span data-stu-id="7b85f-163">Troubleshooting</span></span>
+* <span data-ttu-id="7b85f-164">Aucune résolution n’est disponible</span><span class="sxs-lookup"><span data-stu-id="7b85f-164">No resolutions are available</span></span>
+    * <span data-ttu-id="7b85f-165">Assurez-vous que la fonctionnalité **webcam** est spécifiée dans votre projet.</span><span class="sxs-lookup"><span data-stu-id="7b85f-165">Ensure the **WebCam** capability is specified in your project.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="32ee4-166">Point de contrôle de développement suivant</span><span class="sxs-lookup"><span data-stu-id="32ee4-166">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="7b85f-166">Point de contrôle de développement suivant</span><span class="sxs-lookup"><span data-stu-id="7b85f-166">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="32ee4-167">Si vous suivez le parcours du point de contrôle de développement Unity que nous avons disposé, vous êtes en train d’explorer les fonctionnalités de la plateforme de réalité mixte et les API.</span><span class="sxs-lookup"><span data-stu-id="32ee4-167">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs.</span></span> <span data-ttu-id="32ee4-168">À partir de là, vous pouvez passer au sujet suivant :</span><span class="sxs-lookup"><span data-stu-id="32ee4-168">From here, you can proceed to the next topic:</span></span>
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="32ee4-169">Point de focus</span><span class="sxs-lookup"><span data-stu-id="32ee4-169">Focus point</span></span>](focus-point-in-unity.md)
-
-<span data-ttu-id="32ee4-170">Ou accéder directement au déploiement de votre application sur un appareil ou un émulateur :</span><span class="sxs-lookup"><span data-stu-id="32ee4-170">Or jump directly to deploying your app on a device or emulator:</span></span>
+<span data-ttu-id="7b85f-167">Si vous suivez le parcours du point de contrôle de développement Unity que nous avons disposé, vous êtes en train d’explorer les fonctionnalités de la plateforme de réalité mixte et les API.</span><span class="sxs-lookup"><span data-stu-id="7b85f-167">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs.</span></span> <span data-ttu-id="7b85f-168">À partir de là, vous pouvez passer à la rubrique suivante :</span><span class="sxs-lookup"><span data-stu-id="7b85f-168">From here, you can proceed to the next topic:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="32ee4-171">Déployer sur HoloLens ou sur des casques immersifs Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="32ee4-171">Deploy to HoloLens or Windows Mixed Reality immersive headsets</span></span>](../platform-capabilities-and-apis/using-visual-studio.md)
+> [<span data-ttu-id="7b85f-169">Point de focus</span><span class="sxs-lookup"><span data-stu-id="7b85f-169">Focus point</span></span>](focus-point-in-unity.md)
 
-<span data-ttu-id="32ee4-172">Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-platform-capabilities-and-apis) à tout moment.</span><span class="sxs-lookup"><span data-stu-id="32ee4-172">You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.</span></span>
+<span data-ttu-id="7b85f-170">Ou accéder directement au déploiement de votre application sur un appareil ou un émulateur :</span><span class="sxs-lookup"><span data-stu-id="7b85f-170">Or jump directly to deploying your app on a device or emulator:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="32ee4-173">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="32ee4-173">See Also</span></span>
-* [<span data-ttu-id="32ee4-174">Appareil photo localisable</span><span class="sxs-lookup"><span data-stu-id="32ee4-174">Locatable camera</span></span>](../platform-capab ilities-and-apis/locatable-camera.md)
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="7b85f-171">Déployer sur HoloLens ou sur des casques immersifs Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="7b85f-171">Deploy to HoloLens or Windows Mixed Reality immersive headsets</span></span>](../platform-capabilities-and-apis/using-visual-studio.md)
+
+<span data-ttu-id="7b85f-172">Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-platform-capabilities-and-apis) à tout moment.</span><span class="sxs-lookup"><span data-stu-id="7b85f-172">You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="7b85f-173">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="7b85f-173">See Also</span></span>
+* [<span data-ttu-id="7b85f-174">Appareil photo localisable</span><span class="sxs-lookup"><span data-stu-id="7b85f-174">Locatable camera</span></span>](../platform-capab ilities-and-apis/locatable-camera.md)
