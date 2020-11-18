@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, caméra, appareil photo/vidéo, capture de Réalité Mixte
-ms.openlocfilehash: e66583d46d64361621303e36a5fbcc209300f5d8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6302a64fcde2a16b6ae1cb570215629a3e6ea9e5
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697219"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573233"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Appareil photo/vidéo HoloLens dans Unreal
 
 ## <a name="overview"></a>Vue d’ensemble
 
-HoloLens propose un appareil photo/vidéo qui est utilisé pour la capture de Réalité Mixte, et qui peut également être utilisé par une application pour accéder à des visuels du monde réel.
+HoloLens propose un appareil photo/vidéo qui est utilisé pour la capture de Réalité Mixte, et qui peut également être utilisé par une application pour accéder à des visuels du monde réel. 
+
+> [!IMPORTANT]
+> L’appareil photo/vidéo n’est pas pris en charge avec la communication à distance holographique, mais il est possible d’utiliser une webcam connectée à votre PC pour simuler la fonctionnalité d’appareil photo/vidéo HoloLens.
 
 ## <a name="render-from-the-pv-camera-for-mrc"></a>Affichage à partir de l’appareil photo/vidéo pour la capture de Réalité Mixte
 
@@ -44,7 +47,7 @@ Unreal va ensuite gérer les requêtes de capture de Réalité Mixte pour effect
 ## <a name="using-the-pv-camera"></a>Utilisation de l’appareil photo/vidéo
 
 La texture de la webcam peut être récupérée dans le jeu au moment de l’exécution. Toutefois, vous devez l’activer dans l’éditeur **Edit > Project Settings** (Modifier > Paramètres du projet) :
-1. Accédez à **Platforms > HoloLens > Capabilities** (Plateformes > HoloLens > Fonctionnalités), puis cochez **Webcam** .
+1. Accédez à **Platforms > HoloLens > Capabilities** (Plateformes > HoloLens > Fonctionnalités), puis cochez **Webcam**.
     * Utilisez la fonction **StartCameraCapture** pour utiliser la webcam au moment de l’exécution, et la fonction **StopCameraCapture** pour arrêter l’enregistrement.
 
 ![Démarrer/Arrêter la caméra](images/unreal-camera-startstop.PNG)
@@ -52,18 +55,18 @@ La texture de la webcam peut être récupérée dans le jeu au moment de l’ex�
 ## <a name="rendering-an-image"></a>Affichage d’une image
 Pour afficher l’image de l’appareil photo :
 1. Créez une instance de matériau dynamique basée sur un matériau du projet, nommé **PVCamMat** dans la capture d’écran ci-dessous.  
-2. Définissez l’instance de matériau dynamique sur une variable **Material Instance Dynamic Object Reference** .  
+2. Définissez l’instance de matériau dynamique sur une variable **Material Instance Dynamic Object Reference**.  
 3. Définissez le matériau de l’objet de la scène qui affichera le flux de l’appareil sur cette nouvelle instance de matériau dynamique.
     * Démarrez un minuteur qui sera utilisé pour lier l’image de l’appareil au matériau.
 
 ![Rendu de la caméra](images/unreal-camera-render.PNG)
 
-4. Créez une fonction pour ce minuteur, dans ce cas **MaterialTimer** , puis appelez **GetARCameraImage** pour obtenir la texture à partir de la webcam.  
+4. Créez une fonction pour ce minuteur, dans ce cas **MaterialTimer**, puis appelez **GetARCameraImage** pour obtenir la texture à partir de la webcam.  
 5. Si la texture est correcte, définissez un paramètre de texture dans le nuanceur de cette image.  Sinon, redémarrez le minuteur de matériau.
 
 ![Texture de la caméra à partir de la webcam](images/unreal-camera-texture.PNG)
 
-5. Vérifiez que le matériau comprend un paramètre correspondant au nom situé dans **SetTextureParameterValue** , qui est lié à une entrée de couleur. Sans cela, l’image de l’appareil photo/vidéo ne pourra pas être affichée correctement.
+5. Vérifiez que le matériau comprend un paramètre correspondant au nom situé dans **SetTextureParameterValue**, qui est lié à une entrée de couleur. Sans cela, l’image de l’appareil photo/vidéo ne pourra pas être affichée correctement.
 
 ![Texture de la caméra](images/unreal-camera-material.PNG)
 

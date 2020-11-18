@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: réalité mixte, découvrir, distribuer, index, page d’accueil, conception, développement, tutoriels, exemples d’applications, principes fondamentaux, études de cas, ressources, procédures HoloLens, projets open source, concepts principaux, interaction
-ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
-ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
+ms.openlocfilehash: 19a83a132cca08573f1066a2f7b87bd383ca79f4
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94361722"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573273"
 ---
 # <a name="start-designing-and-prototyping"></a>Commencer à concevoir et à créer des prototypes
 
@@ -35,7 +35,7 @@ Comme tout parcours, votre aventure dans la conception d’applications de réal
 | [Développer votre processus de conception](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Découvrez un premier aperçu du processus de conception de réalité mixte, collecté auprès de concepteurs internes et externes à Microsoft. |
 | [Types d’applications de réalité mixte](types-of-mixed-reality-apps.md) | Décidez de l’emplacement de votre application sur le spectre de la réalité mixte. |
 | [Application Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Découvrez les bases de la conception d’une expérience utilisateur de réalité mixte en explorant comportements, conseils et recommandations en réalité mixte pour créer des applications HoloLens incroyables (disponibles en téléchargement sur le Microsoft Store dans HoloLens 2). |
-
+| [Hub d’exemples MRTK](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Découvrez les interactions spatiales et les composants de création UX courants pour la réalité mixte (disponibles en téléchargement sur le Microsoft Store dans HoloLens 2) |
 ### <a name="2-core-concepts"></a>2. Concepts principaux
 
 Que vous développiez pour la réalité virtuelle (VR) ou la réalité augmentée (AR), plusieurs concepts de base s’appliquent à la conception d’expériences immersives et fluides. Comprendre le point de vue des utilisateurs, positionner les objets et s’assurer que tout le monde est à l’aise et en sécurité constituent vos priorités principales à ce stade de votre parcours. À la fin de cette section, vous disposerez d’une fondation solide pour passer à la conception de l’interaction.

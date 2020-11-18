@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, stockage azure
 ms.localizationpriority: high
-ms.openlocfilehash: e01796dd99982bb749d59108bcc972e5bc361770
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 64e4aaadf13c03272a4fc9c552a7e4b31e82fdbb
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353327"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549102"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Intégration du stockage Azure
 
@@ -32,7 +32,7 @@ Apprenez-en davantage sur les [services de stockage Azure](https://docs.microsof
 
 ### <a name="azure-table-storage"></a>Stockage Table Azure
 
-Ce service nous permet de stocker des données de manière semblable à NoSQL. Dans ce projet, nous l’utiliserons pour stocker des informations sur l’ *objet suivi* , telles que nom, description, ID d’ancre spatiale et ainsi de suite.
+Ce service nous permet de stocker des données de manière semblable à NoSQL. Dans ce projet, nous l’utiliserons pour stocker des informations sur l’*objet suivi*, telles que nom, description, ID d’ancre spatiale et ainsi de suite.
 
 Dans le contexte de l’application de démonstration, vous avez besoin de deux tables : une pour stocker des informations sur le projet, avec des informations relatives à l’état des modèles entraînés (nous y reviendrons dans le tutoriel [Intégration d’Azure Custom Vision](mr-learning-azure-03.md)), et une autre pour stocker des informations sur les *objets suivis*.
 
@@ -74,18 +74,18 @@ Le composant **DataManager (script)** est responsable de la communication avec l
 
 Maintenant que tout est prêt, vous pouvez créer un *objet suivi*.
 
-Ouvrez l’application sur votre HoloLens et cliquez sur **Set Object** (Définir un objet). Vous verrez que l’objet *EnterObjectName* devient actif dans la hiérarchie. Dans ce menu, cliquez sur la *barre de recherche* et tapez le nom que vous voulez donner à l’ *objet suivi*. Après cela, cliquez sur le bouton **Set object**. Cela crée l’ *objet suivi* dans le stockage Table Azure, et vous verrez maintenant la **fiche d’objet**.
+Ouvrez l’application sur votre HoloLens et cliquez sur **Set Object** (Définir un objet). Vous verrez que l’objet *EnterObjectName* devient actif dans la hiérarchie. Dans ce menu, cliquez sur la *barre de recherche* et tapez le nom que vous voulez donner à l’*objet suivi*. Après cela, cliquez sur le bouton **Set object**. Cela crée l’*objet suivi* dans le stockage Table Azure, et vous verrez maintenant la **fiche d’objet**.
 
-Cette **fiche d’objet** est une représentation sous forme d’interface utilisateur de l’ *objet suivi*. Elle aura un rôle important à plusieurs reprises dans cette série de tutoriels.
+Cette **fiche d’objet** est une représentation sous forme d’interface utilisateur de l’*objet suivi*. Elle aura un rôle important à plusieurs reprises dans cette série de tutoriels.
 
 Cliquez maintenant sur la *zone de texte* de description et tapez « Car ». Après cela, cliquez sur le bouton **Enregistrer** pour enregistrer les modifications. Arrêtez l’application et réexécutez-la.
 
-Cette fois-ci, cliquez sur **Search Object** et tapez dans la *barre de recherche* le nom utilisé lors de la création de l’ *objet suivi*. Vous constaterez que la **fiche d’objet** avec toutes les données est récupérée à partir du **stockage Table Azure**.
+Cette fois-ci, cliquez sur **Search Object** et tapez dans la *barre de recherche* le nom utilisé lors de la création de l’*objet suivi*. Vous constaterez que la **fiche d’objet** avec toutes les données est récupérée à partir du **stockage Table Azure**.
 
 N’hésitez pas à fermer la **fiche d’objet** et à créer de nouveaux *objets suivis* et modifier leurs données.
 
 > [!TIP]
-> Si vous avez installé l’ [Explorateur Stockage Azure](https://azure.microsoft.com/features/storage-explorer/), accédez au tableau d’ *objets*. Vous verrez que l’ *objet suivi* créé y figure.
+> Si vous avez installé l’[Explorateur Stockage Azure](https://azure.microsoft.com/features/storage-explorer/), accédez au tableau d’*objets*. Vous verrez que l’*objet suivi* créé y figure.
 
 ## <a name="uploading-and-download-image-from-azure-blob-storage"></a>Chargement et téléchargement d’images à partir du stockage Blob Azure
 
@@ -96,7 +96,7 @@ Dans cette section, vous allez utiliser le stockage Blob Azure pour charger et t
 
 Ouvrez l’application sur votre HoloLens, cliquez sur **Set Object** et tapez le nom « Car » dans la *barre de recherche*. Vous devez maintenant voir la **fiche d’objet**. Cliquez sur le bouton **Camera** et vous serez invité à effectuer un clic aérien pour prendre une photo. Une fois la photo prise, un message vous informe du chargement. Après quelques instants, l’image doit apparaître à la place de l’espace réservé.
 
-Réexécutez l’application et recherchez l’ *objet suivi*. L’image chargée doit apparaître sous forme de miniature.
+Réexécutez l’application et recherchez l’*objet suivi*. L’image chargée doit apparaître sous forme de miniature.
 
 ## <a name="deleting-image-from-azure-blob-storage"></a>Suppression d’une image du stockage Blob Azure
 
@@ -104,11 +104,11 @@ Dans la section précédente, vous avez chargé de nouvelles images dans le stoc
 
 Ouvrez l’application sur votre HoloLens, cliquez sur **Set Object** et tapez le nom « Car » dans la *barre de recherche*. Vous devez maintenant voir la **fiche d’objet** avec l’image miniature. Cliquez sur le bouton **Delete**. Vous remarquerez que l’image miniature est remplacée par l’image d’espace réservé.
 
-À présent, réexécutez l’application et recherchez l’ *objet suivi* de la miniature que vous venez de supprimer. Vous ne devriez voir que l’image d’espace réservé.
+À présent, réexécutez l’application et recherchez l’*objet suivi* de la miniature que vous venez de supprimer. Vous ne devriez voir que l’image d’espace réservé.
 
 ## <a name="congratulations"></a>Félicitations
 
-Dans ce tutoriel, vous avez appris à utiliser les services de stockage Azure pour conserver des données non structurées (comme dans notre cas des **objets suivis** ) et des binaires sous forme d’images miniatures pour l’application de démonstration **HoloLens 2** sur le cloud.
+Dans ce tutoriel, vous avez appris à utiliser les services de stockage Azure pour conserver des données non structurées (comme dans notre cas des **objets suivis**) et des binaires sous forme d’images miniatures pour l’application de démonstration **HoloLens 2** sur le cloud.
 
 Dans le tutoriel suivant, vous allez voir comment utiliser Azure Custom Vision pour détecter les images associées à un *objet suivi*.
 
