@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Windows Mixed Reality, conception, coach, casque immersif, MRTK, mains, main
-ms.openlocfilehash: 10e5f3b025e4346d7c4075c2de7252c9ab217c93
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Windows Mixed Reality, conception, coach, casque immersif, MRTK, mains, assistance mains, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: d925f28b1d34b5a157e89fc0ea56a7b28fffbe8f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683245"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702345"
 ---
 # <a name="hand-coach"></a>Coach de main
 ![Exemple : autocar](images/HandCoach/MRTK_handCoach.jpg)<br>
@@ -84,7 +84,7 @@ Ne vous attendez pas à ce que les utilisateurs puissent écouter un ensemble d�
 
 ## <a name="can-i-create-my-own"></a>Puis-je créer mon propre ?
 
-Oui ! Nous vous encourageons à créer votre propre geste unique pour votre jeu et à contribuer à la communauté !
+Oui. Nous vous encourageons à créer votre propre geste unique pour votre jeu et à contribuer à la communauté !
 Nous avons fourni un fichier maya d’une main qui peut être utilisée pour votre application et qui peut être téléchargée ici : <a href="files/HandCoach_MRTK.zip"> télécharger HandCoach_MRTK.zip </a>
 
 ![Exemple de mains animées dans des Maya](images/HandCoach/MayaSelect_Gif.gif)<br>

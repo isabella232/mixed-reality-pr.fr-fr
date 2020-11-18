@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Mixed Reality, pointage du regard, ciblage avec le regard, interaction, conception
-ms.openlocfilehash: 76223dd375e76d943183bc745792e2cb9d3d0601
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: La réalité mixte, le point de présence, le regard, l’interaction, la conception, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de la réalité virtuelle, HoloLens, MRTK, le kit de configuration de la réalité mixte, la cible, le lissage
+ms.openlocfilehash: d913ac81e20962d38178223a050fdccfb51d8632
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679958"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702385"
 ---
 # <a name="head-gaze-and-commit"></a>Suivre de la tête et valider
 Le point de _regard et la validation de tête_ est un cas spécial du modèle d’entrée de pointage [et de validation](gaze-and-commit.md) qui implique le ciblage d’un objet avec la direction de la tête vers l’avant (direction de l’en-tête), puis l’action avec une entrée secondaire, telle que le robinet à main ou la commande vocale « Select ». 

@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, famille, environnements personnalisés, lieux, salle de falaise, Skyloft, utilisateur, créer
-ms.openlocfilehash: 69fac9fcc0b3d7f199f4277c5d1b5a0c7df5f8c2
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, famille, environnements personnalisés, lieux, salle de falaise, Skyloft, utilisateur, créer, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: 3b5862c6ba4ec1a0549b751cf2982247b6501201
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781528"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703015"
 ---
 # <a name="design-your-own-immersive-environments"></a>Concevoir vos propres environnements immersifs
 
@@ -53,11 +53,11 @@ Nous avons créé un exemple d’environnement qui illustre certaines des possib
 2. Exécutez le fichier **Fantasy_Island.exe** que vous venez de télécharger.
 
     > [!NOTE]
-    > Lorsque vous tentez d’exécuter un fichier. exe téléchargé à partir du Web (comme celui-ci), vous pouvez rencontrer une fenêtre contextuelle « Windows a protégé votre PC ». Pour exécuter Fantasy_Island.exe à partir de cette fenêtre contextuelle, sélectionnez **plus d’informations** , puis **Exécutez quand même** . Ce paramètre de sécurité est destiné à vous protéger contre le téléchargement de fichiers que vous ne souhaitez peut-être pas approuver. par conséquent, choisissez cette option uniquement lorsque vous faites confiance à la source du fichier.
+    > Lorsque vous tentez d’exécuter un fichier. exe téléchargé à partir du Web (comme celui-ci), vous pouvez rencontrer une fenêtre contextuelle « Windows a protégé votre PC ». Pour exécuter Fantasy_Island.exe à partir de cette fenêtre contextuelle, sélectionnez **plus d’informations** , puis **Exécutez quand même**. Ce paramètre de sécurité est destiné à vous protéger contre le téléchargement de fichiers que vous ne souhaitez peut-être pas approuver. par conséquent, choisissez cette option uniquement lorsque vous faites confiance à la source du fichier.
 
 3. Ouvrez l' **Explorateur de fichiers** et accédez au dossier environnements en collant ce qui suit dans la barre d’adresses : `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState` .
 4. Copiez l’exemple d’environnement que vous avez téléchargé dans ce dossier.
-5. Redémarrez le **portail de réalité mixte** . Cette opération actualise la liste des environnements dans le sélecteur emplacements.
+5. Redémarrez le **portail de réalité mixte**. Cette opération actualise la liste des environnements dans le sélecteur emplacements.
 6. Placez sur votre casque. Une fois que vous êtes dans la page d’accueil, ouvrez le **menu Démarrer** à l’aide du bouton Windows de votre contrôleur.
 7. Sélectionnez l’icône **emplacements** au-dessus de la liste des applications épinglées pour choisir un environnement d’hébergement.
 8. Vous trouverez l’environnement des îlots fantastiques que vous avez téléchargé dans la liste des emplacements. Sélectionnez **îlot imaginaire** pour accéder à votre nouvel environnement d’hébergement personnalisé.

@@ -1,19 +1,19 @@
 ---
-title: Point de regard
+title: Pointer du regard et fixer
 description: Présentation générale du modèle d’entrée (œil/tête) du regard et du point d’entrée
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: La réalité mixte, le regard, le point de présence, l’interaction, la conception, le suivi des yeux, le suivi des têtes
-ms.openlocfilehash: ee8b6487079a071fe84606949314f2dd315df45f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: La réalité mixte, le point de présence, l’interaction, la conception, le suivi des yeux, le suivi des têtes, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de réalité virtuelle, le HoloLens, le MRTK, la réalité mixte Toolkit
+ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680910"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702195"
 ---
-# <a name="gaze-and-dwell"></a>Point de regard
+# <a name="gaze-and-dwell"></a>Pointer du regard et fixer
 
 Quand les mains sont occupées avec des outils et des pièces, les mouvements peuvent être fastidieux, voire impossibles.
 Les commandes vocales peuvent également être peu fiables dans certains contextes, par exemple dans des conditions excessivement intenses.

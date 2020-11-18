@@ -1,19 +1,19 @@
 ---
-title: Conception de contenu pour l’affichage holographique
+title: Conception de contenu pour un affichage holographique
 description: Directives de conception et meilleures pratiques pour l’affichage holographique
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Conception d’interface utilisateur, affichage holographique, conception de contenu, thème sombre, thème clair
-ms.openlocfilehash: 627ffdd0a413ad3140c29e9b1c7bb69c9dc249cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Conception d’interface utilisateur, affichage holographique, conception de contenu, thème sombre, thème clair, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de la réalité mixte, conception, pixels
+ms.openlocfilehash: ea3fbda7aff80f0878521deb433c88b16abeab19
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680475"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702635"
 ---
-# <a name="designing-content-for-holographic-display"></a>Conception de contenu pour l’affichage holographique
+# <a name="designing-content-for-holographic-display"></a>Conception de contenu pour un affichage holographique
 
 ![Emplacement de la main ulnar](images/UX_Hero_DarkTheme.jpg)
 

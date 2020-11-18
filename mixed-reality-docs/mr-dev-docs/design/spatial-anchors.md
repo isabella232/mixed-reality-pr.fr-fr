@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: système de coordonnées, système de coordonnées spatiales, échelle mondiale, monde, échelle, position, orientation, ancre, ancre spatiale, verrouillage au monde, verrouillé au monde, partage
-ms.openlocfilehash: a1108aceb91ec80d20b4cac043477ee92527035b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: système de coordonnées, système de coordonnées spatiales, échelle universelle, monde, échelle, position, orientation, Ancre, ancrage spatial, verrouillage universel, verrouillage universel, persistance, partage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens
+ms.openlocfilehash: 92694023a3c7c7266b0f5d927180df20692b9d45
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679402"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703305"
 ---
 # <a name="spatial-anchors"></a>Ancres spatiales
 

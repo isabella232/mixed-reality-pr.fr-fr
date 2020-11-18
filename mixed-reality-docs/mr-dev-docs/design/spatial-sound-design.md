@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality, son spatial, design, style
-ms.openlocfilehash: 8bb48aad2d4582696241bc5444beabc88ca5a7d9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, son spatial, conception, style, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, kit de configuration de la réalité mixte, gestes, interactions, atténuation
+ms.openlocfilehash: 503a59eb6a71aea0e1ec043ca6e3196f821f211a
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680463"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703279"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>Comment utiliser le son dans des applications en réalité mixte
 
@@ -68,7 +68,7 @@ Les interactions vocales ont souvent des éléments visuels subtils. Utilisez de
 
 * Utilisez une tonalité positive pour les *confirmations* de commandes vocales. Les tonalités en hausse et les intervalles musicaux importants sont efficaces.
 * Utilisez une tonalité plus rapide et moins positive pour les *échecs* de commande vocale. Évitez les sons négatifs. Au lieu de cela, utilisez un son neutre plus percutant pour communiquer que l’application est en déplacement.
-* Si votre application comporte un mot de mise en éveil, utilisez un bref instant lorsque l’appareil *commence à écouter* . Utilisez un son de bouclage subtil pendant que l’application *est* à l’écoute.
+* Si votre application comporte un mot de mise en éveil, utilisez un bref instant lorsque l’appareil *commence à écouter*. Utilisez un son de bouclage subtil pendant que l’application *est* à l’écoute.
 
 ### <a name="notifications"></a>Notifications
 Les notifications communiquent les modifications d’état de l’application et d’autres événements qui ne sont pas initiés par l’utilisateur, tels que les saisies semi-automatiques de processus, les messages et les appels téléphoniques.
@@ -99,7 +99,7 @@ Spatialization est fourni avec un coût d’UC. De nombreuses applications ont a
 ### <a name="when-and-how-to-apply-distance-based-attenuation"></a>Quand et comment appliquer l’atténuation basée sur la distance
 Dans le monde physique, les sons qui sont plus éloignés sont plus calmes. Votre moteur audio peut modéliser cette atténuation en fonction de la distance source. Utilisez l’atténuation basée sur la distance lorsqu’elle communique les informations pertinentes.
 
-Les distances par rapport aux *indicateurs visuels* , aux *hologrammes animés* et à d’autres sons informatifs sont généralement pertinentes pour l’utilisateur. Utilisez l’atténuation basée sur la distance pour fournir intuitivement des piles.
+Les distances par rapport aux *indicateurs visuels*, aux *hologrammes animés* et à d’autres sons informatifs sont généralement pertinentes pour l’utilisateur. Utilisez l’atténuation basée sur la distance pour fournir intuitivement des piles.
 
 Ajustez la courbe d’atténuation pour chaque source en fonction de la taille des espaces de votre monde de réalité mixte. La courbe par défaut de votre moteur audio est souvent destinée à des espaces de très grande taille (jusqu’à demi-kilomètre).
 

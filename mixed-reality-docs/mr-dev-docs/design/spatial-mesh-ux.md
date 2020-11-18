@@ -4,13 +4,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: Réalité mixte, HoloLens, contrôles d’interface utilisateur, interaction, interface utilisateur, expérience utilisateur, conception UX, interface utilisateur spatiale, interaction spatiale, interface utilisateur 3D, expérience utilisateur 3D
-ms.openlocfilehash: 2c811edc14fbcc7c917fe9fa724f1cab23179a96
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Réalité mixte, HoloLens, contrôles d’interface utilisateur, interaction, interface utilisateur, expérience utilisateur, conception UX, interface utilisateur spatiale, interaction spatiale, interface utilisateur 3D, expérience utilisateur 3D, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de mise en réalité mixte
+ms.openlocfilehash: ec887f73b8561e0a91740d612227411683707364
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680466"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703295"
 ---
 # <a name="spatial-mesh"></a>Maillage spatial
 
@@ -26,11 +26,11 @@ Grâce à la visualisation de maillage spatial, l’utilisateur peut apprendre c
 ## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>Visualisation de maillage spatial dans MRTK (ensemble d’outils de réalité mixte) pour Unity
 MRTK fournit plusieurs documents pour la visualisation de maillage spatial.
 
-- **MRTK_Wireframe. mat, MRTK_Wireframe. mat** : matériau de maillage spatial statique par défaut qui affiche les contours de maillage sans animation. Ce document est utile à des fins de débogage, car il affiche les géométries entières du maillage spatial. Toutefois, il n’est pas recommandé pour la production.
+- **MRTK_Wireframe. mat, MRTK_Wireframe. mat**: matériau de maillage spatial statique par défaut qui affiche les contours de maillage sans animation. Ce document est utile à des fins de débogage, car il affiche les géométries entières du maillage spatial. Toutefois, il n’est pas recommandé pour la production.
 <br>
 <img src="images/SurfaceReconstruction.jpg" alt="Wireframe spatial mesh visualization" width="640px">
 
-- **MRTK_SurfaceReconstruction. mat** : ce matériau vous donne un effet d’impulsion animée sur le maillage spatial. Vous pouvez utiliser ce document pour visualiser l’environnement à un moment précis de votre expérience ou sur l’entrée d’air de l’utilisateur. Consultez la scène **PulseShaderExamples. Unity** pour obtenir des exemples.
+- **MRTK_SurfaceReconstruction. mat**: ce matériau vous donne un effet d’impulsion animée sur le maillage spatial. Vous pouvez utiliser ce document pour visualiser l’environnement à un moment précis de votre expérience ou sur l’entrée d’air de l’utilisateur. Consultez la scène **PulseShaderExamples. Unity** pour obtenir des exemples.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
 * Pour plus d’informations, consultez [MRTK-spatial awarenes](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) et [MRTK-Pulse Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html) .

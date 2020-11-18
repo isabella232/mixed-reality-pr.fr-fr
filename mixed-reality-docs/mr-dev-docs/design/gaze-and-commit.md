@@ -5,17 +5,17 @@ author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: La réalité mixte, le point de présence, le regard, l’interaction, la conception, le suivi des yeux, le suivi des têtes
-ms.openlocfilehash: 887d1a30a974bdd643889959a1fee55e96d7b16a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: La réalité mixte, le regard, le regard, l’interaction, la conception, le suivi des yeux, le suivi des têtes, le casque de réalité mixte, le casque Windows Mixed Reality, le casque de réalité virtuelle, HoloLens, MRTK et la réalité mixte Toolkit
+ms.openlocfilehash: a901e505d8e282e52078f5635627fbc2018a27b5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680939"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702405"
 ---
 # <a name="gaze-and-commit"></a>Pointer du regard et valider
 
-Le point de _regard et la validation_ est un modèle d’entrée fondamental étroitement lié à la façon dont nous interagissons avec nos ordinateurs à l’aide de la souris : _point & cliquez_ .
+Le point de _regard et la validation_ est un modèle d’entrée fondamental étroitement lié à la façon dont nous interagissons avec nos ordinateurs à l’aide de la souris : _point & cliquez_.
 Sur cette page, nous présentons deux types d’entrées de regard (pointer et Eye-regard) et différents types d’actions de validation. 
 Le point de _regard et la validation_ sont considérés comme un modèle d’entrée lointain avec manipulation indirecte.
 Cela signifie qu’il est préférable d’utiliser le contenu holographique qui est hors de portée.
@@ -133,7 +133,7 @@ Que vous utilisiez le point de regard ou le regard de votre modèle d’entrée 
 ---
 
 ## <a name="commit"></a>Commit
-Après avoir parlé des différentes façons de pointer vers une cible, nous _allons en parler_ plus sur la partie _validation_ dans le point de vue _et la validation_ .
+Après avoir parlé des différentes façons de pointer vers une cible, nous _allons en parler_ plus sur la partie _validation_ dans le point de vue _et la validation_.
 Après avoir ciblé un objet ou un élément d’interface utilisateur, l’utilisateur peut interagir ou cliquer dessus à l’aide d’une entrée secondaire. C’est ce que l’on appelle l’étape de validation du modèle d’entrée. 
 
 Les méthodes de validation suivantes sont prises en charge :

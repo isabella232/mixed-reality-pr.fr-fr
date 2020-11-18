@@ -5,13 +5,13 @@ author: hferrone
 ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
-keywords: Microsoft Store, HoloLens, casques immersifs, application, UWP, envoyer, envoi, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising
-ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+keywords: Microsoft Store, HoloLens, casques immersifs, application, UWP, envoyer, envoyer, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678788"
+ms.locfileid: "94703115"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Envoi d’une application au Microsoft Store
 
@@ -212,7 +212,7 @@ Utilisez les cases à cocher pour indiquer aux clients potentiels si votre appli
 
 Veillez à sélectionner des cases à cocher pour « matériel minimum » ou « matériel recommandé » pour les types d’entrée. 
 
-Exemple : 
+Par exemple : 
 * Si votre jeu nécessite des contrôleurs de mouvement, mais accepte les entrées vocales via le microphone, activez la case à cocher « matériel minimal » en regard de « contrôleurs de mouvement Windows Mixed Reality », mais la case à cocher « matériel recommandé » en regard de « microphone ». 
 * Si votre jeu peut être lu à l’aide d’un contrôleur Xbox, d’un boîtier d’accès ou de contrôleurs de mouvement, vous pouvez activer la case à cocher « matériel minimal » en regard de « contrôleur Xbox ou boîtier de commande », puis activer la case à cocher « matériel recommandé » en regard de « contrôleurs de mouvement Windows Mixed Reality », car les contrôleurs de
 

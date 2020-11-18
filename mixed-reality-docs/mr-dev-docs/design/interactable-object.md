@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur
-ms.openlocfilehash: 6458f4b1c80c8606d07d610f509ed610a0ca4268
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Réalité mixte, contrôles, interaction, signaux, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, audio
+ms.openlocfilehash: e298ce7fa46688a734c55a6674c03b89a4e7b5f3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679530"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703225"
 ---
 # <a name="interactable-object"></a>Objet avec interaction possible
 
@@ -67,7 +67,7 @@ Pour tous les objets que l’utilisateur peut interagir avec le point de vue du 
 
 Vous pouvez utiliser des techniques telles que la mise en surbrillance ou la mise à l’échelle pour fournir des signaux visuels pour l’état d’entrée de l’utilisateur. En réalité mixte, vous trouverez les exemples de visualisation des différents États d’entrée dans le menu Démarrer et avec les boutons de la barre d’application. 
 
-Voici à quoi ressemblent ces États sur un **bouton holographique** :
+Voici à quoi ressemblent ces États sur un **bouton holographique**:
 
 :::row:::
     :::column:::
@@ -93,12 +93,12 @@ Voici à quoi ressemblent ces États sur un **bouton holographique** :
 HoloLens 2 prend en charge l’entrée de suivi articulée qui vous permet d’interagir avec les objets. Sans commentaires haptique et perception parfaite de la profondeur, il peut parfois être difficile de savoir à quel moment votre main provient d’un objet ou si vous le touchez. Il est important de fournir suffisamment de signaux visuels pour communiquer l’état de l’objet et, en particulier, l’état de vos mains par rapport à cet objet.
 
 Utilisez les commentaires visuels pour communiquer les éléments suivants :
-* **Valeur par défaut (observation)** : état inactif par défaut de l’objet.
-* **Survol** : quand une main est proche d’un hologramme, modifiez les éléments visuels pour indiquer que la main cible l’hologramme. 
-* **Distance et point d’interaction** : comme la main s’approche d’un hologramme, concevoir des commentaires pour communiquer le point d’interaction projeté, ainsi que la distance entre l’objet et le doigt
-* **Début du contact** : modifiez les éléments visuels (Light, Color) pour signaler qu’une pression tactile s’est produite.
-* **Saisi** : modifier les éléments visuels (clair, couleur) quand l’objet est saisi
-* **Fin du contact** : modifier les éléments visuels (Light, Color) quand Touch est terminé
+* **Valeur par défaut (observation)**: état inactif par défaut de l’objet.
+* **Survol**: quand une main est proche d’un hologramme, modifiez les éléments visuels pour indiquer que la main cible l’hologramme. 
+* **Distance et point d’interaction**: comme la main s’approche d’un hologramme, concevoir des commentaires pour communiquer le point d’interaction projeté, ainsi que la distance entre l’objet et le doigt
+* **Début du contact**: modifiez les éléments visuels (Light, Color) pour signaler qu’une pression tactile s’est produite.
+* **Saisi**: modifier les éléments visuels (clair, couleur) quand l’objet est saisi
+* **Fin du contact**: modifier les éléments visuels (Light, Color) quand Touch est terminé
 
 <br>
 
@@ -189,10 +189,10 @@ Un [bouton sur HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity
 ### <a name="audio-cues"></a>Signaux audio
 
 Pour les interactions directes, les retours audio corrects peuvent améliorer considérablement l’expérience utilisateur. Utilisez les commentaires audio pour communiquer les éléments suivants :
-* **Début du contact** : émettre un signal sonore à la début de la saisie tactile
-* Fin du **contact** : émettre un signal sonore à l’extrémité tactile
+* **Début du contact**: émettre un signal sonore à la début de la saisie tactile
+* Fin du **contact**: émettre un signal sonore à l’extrémité tactile
 * **Début** de la manipulation : émettre un signal sonore lors du démarrage de la manipulation
-* Opérations de **manipulation** : émettre un signal sonore lorsque la sélection est terminée
+* Opérations de **manipulation**: émettre un signal sonore lorsque la sélection est terminée
 
 <br>
 
@@ -263,7 +263,7 @@ Lorsque vous créez des boutons pour une interaction directe, nous vous recomman
 
 ## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Objet interactif dans MRTK (ensemble d’outils de réalité mixte) pour Unity
 
-Dans **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** , vous pouvez utiliser le script en [**interaction**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) pour faire en sorte que les objets répondent à différents types d’États d’interaction d’entrée. Il prend en charge différents types de thèmes qui vous permettent de définir des États visuels en contrôlant des propriétés d’objet telles que la couleur, la taille, le matériau et le nuanceur.
+Dans **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, vous pouvez utiliser le script en [**interaction**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) pour faire en sorte que les objets répondent à différents types d’États d’interaction d’entrée. Il prend en charge différents types de thèmes qui vous permettent de définir des États visuels en contrôlant des propriétés d’objet telles que la couleur, la taille, le matériau et le nuanceur.
 
 * [Sur](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 * [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)

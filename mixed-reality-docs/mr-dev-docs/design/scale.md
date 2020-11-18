@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, style, Design
-ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Windows Mixed Reality, style, conception, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, échelle, hologrammes
+ms.openlocfilehash: e82211b0bee2214df7542d3129f95ea207f4b0e3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340657"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703375"
 ---
 # <a name="scale"></a>Scale
 
@@ -79,18 +79,6 @@ Cela peut toutefois créer quelques artefacts possibles dans l’expérience :
 <br>
 
 ---
-
-## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
-
-Si vous suivez le [parcours de découverte](../discover/get-started-with-mr.md) que nous avons disposé, vous êtes à la fin de votre incursion initiale en fondations de réalité mixte. Vous pouvez consulter ce que les partenaires de l’industrie font avec la réalité mixte dans le monde réel : 
-
-> [!div class="nextstepaction"]
-> [Découvrir comment les partenaires de l’industrie utilisent la réalité mixte](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
-
-Ou passez à l’étape de conception :
-
-> [!div class="nextstepaction"]
-> [Commencez votre parcours de conception](../design/design.md)
 
 ## <a name="see-also"></a>Voir aussi
 * [Couleurs, éclairage et matériaux](../color,-light-and-materials.md)

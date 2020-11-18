@@ -5,13 +5,13 @@ author: danielescudero
 ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
-keywords: Windows Mixed Reality, conception, processus, étude de cas
-ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Windows Mixed Reality, design, process, étude de cas, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, Bodystorming, les storyboards, les commentaires
+ms.openlocfilehash: 5f1cc6efd7d1fa8dda043575562bfaf94ea812a9
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631507"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702205"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Réfléchir différemment pour la réalité mixte
 Lorsque Microsoft a lancé HoloLens (1ère génération) à une audience de développeurs hâtif dans 2016, l’équipe s’est déjà associée à des Studios à l’intérieur et à l’extérieur de Microsoft pour créer les expériences de lancement de l’appareil. Ces équipes ont appris sur le tas, trouvant des opportunités et des défis dans le nouveau domaine de la conception de réalité mixte.

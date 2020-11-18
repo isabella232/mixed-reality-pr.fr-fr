@@ -5,20 +5,20 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, hologrammes, conception, interaction
-ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Windows Mixed Reality, HoloLens, hologrammes, conception, interaction, casque de réalité mixte, casque Windows Mixed Reality, qu’est-ce que la réalité augmente
+ms.openlocfilehash: 6407770a818bc294cf615201a837218173b963d0
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631467"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702245"
 ---
 # <a name="what-is-a-hologram"></a>Qu’est-ce qu’un hologramme ?
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-HoloLens vous permet de créer des **hologrammes** , des objets composés de lumière et de son qui s’affichent partout dans le monde, comme s’il s’agissait d’objets réels. Les hologrammes répondent à [vos](../design/gaze-and-commit.md)commandes de pointage, de [mouvement](../design/gaze-and-commit.md#composite-gestures) et de [voix](../design/voice-input.md)et peuvent interagir avec des [surfaces réelles](../design/spatial-mapping.md) autour de vous. Avec les hologrammes, vous pouvez créer des objets numériques qui font partie de votre monde.
+HoloLens vous permet de créer des **hologrammes**, des objets composés de lumière et de son qui s’affichent partout dans le monde, comme s’il s’agissait d’objets réels. Les hologrammes répondent à [vos](../design/gaze-and-commit.md)commandes de pointage, de [mouvement](../design/gaze-and-commit.md#composite-gestures) et de [voix](../design/voice-input.md)et peuvent interagir avec des [surfaces réelles](../design/spatial-mapping.md) autour de vous. Avec les hologrammes, vous pouvez créer des objets numériques qui font partie de votre monde.
 
 <br>
 

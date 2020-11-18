@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 04/20/2019
 ms.topic: article
-keywords: La réalité mixte, mains libres, point d’interposition, le regard, l’interaction et la conception
-ms.openlocfilehash: 47e2bd8fef52a36601d58f321def9c066db259e5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: En réalité mixte, mains libres, point de présence, regards, interaction, conception, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de fonctionnalités de réalité mixte, entrée vocale, convivialité
+ms.openlocfilehash: 7f4d3a0ec8d2e7435f54164006a8bd122b1ebcba
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680862"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702135"
 ---
 # <a name="hands-free"></a>Mains libres
 

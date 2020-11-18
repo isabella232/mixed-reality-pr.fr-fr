@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: mappage spatial, HoloLens, réalité mixte, reconstruction de surface, maille
-ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: mappage spatial, HoloLens, réalité mixte, reconstruction de surface, maille, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, présentation de la scène, maillage universel, occlusion, physique, navigation, observateur de surface, rendu, traitement de maillage
+ms.openlocfilehash: 448c64a6c19ee96d58be9a14f7ea4c34a755695e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340667"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703315"
 ---
 # <a name="spatial-mapping"></a>Mappage spatial
 
@@ -93,7 +93,7 @@ Il est important de noter que lorsqu’une application déduit la distance par r
 
 Les applications peuvent également utiliser la forme et la direction des surfaces pour guider le placement de l’hologramme. Une chaise holographique ne doit pas pénétrer dans les murs et doit être vidée avec le plancher même si elle est légèrement inégale. Ce genre de fonctionnalité s’appuie probablement sur l’utilisation de collisions physiques plutôt que simplement sur raycasts, mais des préoccupations similaires s’appliquent. Si l’hologramme est placé dans de nombreux petits polygones, comme les jambes d’un fauteuil, il peut être judicieux d’étendre la représentation physique de ces polygones à un plus large et plus lisse afin qu’ils soient plus en mesure de glisser les surfaces spatiales sans avec SnagIt..
 
-À l’extrême, l’entrée de l’utilisateur peut être simplifiée entièrement et les surfaces spatiales peuvent être utilisées pour effectuer un placement d’hologramme entièrement automatique. Par exemple, l’application peut placer un commutateur lumineux holographique quelque part sur le mur pour que l’utilisateur appuie sur. Les mêmes avertissements sur la prévisibilité s’appliquent doublement. Si l’utilisateur est en mesure de contrôler le placement des hologrammes, mais que l’application ne place pas toujours les hologrammes à l’endroit où ils s’attendent (si le commutateur lumineux apparaît quelque part que l’utilisateur ne peut pas atteindre), cette expérience est frustrante. Il peut s’avérer plus difficile d’effectuer un placement automatique nécessitant une correction utilisateur, plutôt que de demander simplement à l’utilisateur de toujours se positionner. étant donné que le positionnement automatique réussi est *attendu* , la correction manuelle semble être une charge !
+À l’extrême, l’entrée de l’utilisateur peut être simplifiée entièrement et les surfaces spatiales peuvent être utilisées pour effectuer un placement d’hologramme entièrement automatique. Par exemple, l’application peut placer un commutateur lumineux holographique quelque part sur le mur pour que l’utilisateur appuie sur. Les mêmes avertissements sur la prévisibilité s’appliquent doublement. Si l’utilisateur est en mesure de contrôler le placement des hologrammes, mais que l’application ne place pas toujours les hologrammes à l’endroit où ils s’attendent (si le commutateur lumineux apparaît quelque part que l’utilisateur ne peut pas atteindre), cette expérience est frustrante. Il peut s’avérer plus difficile d’effectuer un placement automatique nécessitant une correction utilisateur, plutôt que de demander simplement à l’utilisateur de toujours se positionner. étant donné que le positionnement automatique réussi est *attendu*, la correction manuelle semble être une charge !
 
 Notez également que la capacité d’une application à utiliser des surfaces spatiales pour le placement dépend largement de l' [expérience d’analyse](spatial-mapping.md#the-environment-scanning-experience)de l’application. Si une surface n’a pas été analysée, elle ne peut pas être utilisée pour le placement. Il revient à l’application de rendre cette opération claire pour l’utilisateur, afin de pouvoir analyser les nouvelles surfaces ou sélectionner un nouvel emplacement.
 
@@ -258,7 +258,7 @@ La nature de cette expérience d’analyse peut varier considérablement en fonc
 
 Tout d’abord, une **communication claire avec l’utilisateur est la préoccupation principale**. L’utilisateur doit toujours savoir si les exigences de l’application sont respectées. Lorsqu’ils ne sont pas satisfaits, l’utilisateur doit immédiatement savoir pourquoi c’est le cas et il doit être rapidement dirigé pour prendre les mesures appropriées.
 
-Deuxièmement, **les applications doivent tenter d’équilibrer l’efficacité et la fiabilité**. Lorsqu’il est possible de le faire de façon **fiable** , les applications doivent analyser automatiquement les données de mappage spatiale pour économiser le temps utilisateur. Lorsqu’il n’est pas possible de le faire de manière fiable, les applications doivent à la place permettre à l’utilisateur de fournir rapidement à l’application les informations supplémentaires dont il a besoin.
+Deuxièmement, **les applications doivent tenter d’équilibrer l’efficacité et la fiabilité**. Lorsqu’il est possible de le faire de façon **fiable**, les applications doivent analyser automatiquement les données de mappage spatiale pour économiser le temps utilisateur. Lorsqu’il n’est pas possible de le faire de manière fiable, les applications doivent à la place permettre à l’utilisateur de fournir rapidement à l’application les informations supplémentaires dont il a besoin.
 
 Pour faciliter la conception de l’expérience d’analyse, prenez en compte les possibilités suivantes applicables à votre application :
 
@@ -368,13 +368,6 @@ Voici quelques exemples de différents types de traitement de maillage qui peuve
 ## <a name="troubleshooting"></a>Dépannage
 * Pour que les maillages de surface soient correctement orientés, chaque GameObject doit être actif avant d’être envoyé à SurfaceObserver pour que sa maille soit construite. Dans le cas contraire, les mailles s’affichent dans votre espace mais subissent une rotation à des angles inhabituels.
 * Le GameObject qui exécute le script qui communique avec le SurfaceObserver doit être défini sur l’origine. Dans le cas contraire, tous les GameObjects que vous créez et envoyez au SurfaceObserver pour que leurs maillages soient construits auront un décalage égal au décalage de l’objet de jeu parent. Cela peut faire apparaître plusieurs mètres dans vos mails, ce qui rend très difficile le débogage de ce qui se passe.
-
-## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
-
-Si vous suivez le [parcours de découverte](../discover/get-started-with-mr.md) que nous avons disposé, vous êtes au cœur de l’exploration des principes fondamentaux de la réalité mixte. À partir de là, vous pouvez passer à la rubrique suivante : 
-
-> [!div class="nextstepaction"]
-> [Suggérer l’échelle d’un objet : échelle](../design/scale.md)
 
 ## <a name="see-also"></a>Voir aussi
 * [Systèmes de coordonnées](coordinate-systems.md)

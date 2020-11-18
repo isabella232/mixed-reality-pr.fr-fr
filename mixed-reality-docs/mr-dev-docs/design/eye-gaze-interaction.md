@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Suivi oculaire, réalité mixte, entrée, point de regard
-ms.openlocfilehash: 57b90142fc47b72030f9b767370fd84a5c7d5b14
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Suivi oculaire, réalité mixte, entrée, point de présence oculaire, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de la réalité mixte, conception, interactions
+ms.openlocfilehash: 59dded6ca23b9adc075dc02d642ce7761f93bcfb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679966"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702545"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interaction Eye-orientée vers le regard de HoloLens 2
 
@@ -70,7 +70,7 @@ Avec un grand nombre d’énergie, la responsabilité est importante.
 Bien qu’il soit possible d’utiliser des points de vue oculaire pour créer des expériences utilisateur satisfaisantes, il est également important de savoir ce qu’il n’est pas judicieux de prendre en compte. Ce qui suit présente certains *défis* à prendre en compte et comment les résoudre quand vous travaillez avec des entrées de regard : 
 
 - **Votre regard est « Always on »** Le moment où vous ouvrez vos couvercles oculaires, vos yeux commencent que sur les choses de l’environnement. En réagissant à chaque aspect que vous effectuez et en émettant accidentellement des actions, parce que vous avez examiné un peu trop de temps, vous risquez d’avoir une expérience insuffisante.
-Par conséquent, nous vous recommandons de combiner les yeux oculaires avec une *commande vocale* , un *mouvement manuel* , un *clic de bouton* ou un logement étendu pour déclencher la sélection d’une cible (pour plus d’informations, consultez [regard et validation](gaze-and-commit-eyes.md)).
+Par conséquent, nous vous recommandons de combiner les yeux oculaires avec une *commande vocale*, un *mouvement manuel*, un *clic de bouton* ou un logement étendu pour déclencher la sélection d’une cible (pour plus d’informations, consultez [regard et validation](gaze-and-commit-eyes.md)).
 Cette solution permet également à un mode dans lequel l’utilisateur peut effectuer des recherches librement sans être submergé par le déclenchement involontaire d’un événement. Ce problème doit également être pris en compte lors de la conception de commentaires visuels et auditifs lors de la recherche d’une cible.
 Essayez de ne pas saturer l’utilisateur avec des effets de fenêtres instantanées ou des sons de survol. La subtilité est essentielle. Nous étudierons quelques-unes des meilleures pratiques ci-dessous lorsque vous parlerez des [recommandations de conception](eye-gaze-interaction.md#design-recommendations).
 

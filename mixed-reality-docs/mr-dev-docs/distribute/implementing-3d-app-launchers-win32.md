@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D, logo, icône, modélisation, lanceur, lanceur 3D, vignette, cube actif, Win32
-ms.openlocfilehash: 4b22c78e651687c293a1e47ff8e4e9106de631bf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 3D, logo, icône, modélisation, lanceur, lanceur 3D, vignette, cube en direct, Win32, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, manifeste
+ms.openlocfilehash: 9a8680232bf1d8d333c26ca4e39075ee553782fb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679666"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703425"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>Implémenter des lanceurs d’applications 3D (applications Win32)
 

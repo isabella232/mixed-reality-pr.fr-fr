@@ -5,13 +5,13 @@ author: hak0n
 ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
-keywords: GGv, voix, Cortana, discours, entrée
-ms.openlocfilehash: 206fd1b304d1b0f376ec1d45a6d5ba852b0bc4f2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: GGv, voix, Cortana, voix, entrée, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, HoloLens, MRTK, Toolkit de réalité mixte, point de regard
+ms.openlocfilehash: f4f81383f942961857b088b05c4e8cac07ab7dfe
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680395"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703205"
 ---
 # <a name="voice-input"></a>Entrée vocale
 
@@ -19,13 +19,13 @@ ms.locfileid: "91680395"
 
 La voix est l’un des principaux types d’entrée sur HoloLens. Elle vous permet de directement commander un hologramme sans avoir à utiliser des gestes à la [main](gaze-and-commit.md#composite-gestures). Une entrée vocale peut être un moyen naturel de communiquer votre intention. La voix est particulièrement intéressante pour traverser les interfaces complexes, car elle permet aux utilisateurs de couper les menus imbriqués avec une commande.
 
-L’entrée vocale est alimentée par le [moteur](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) qui prend en charge la reconnaissance vocale dans toutes les autres _applications universelles Windows_ . Sur HoloLens, la reconnaissance vocale fonctionne toujours dans la langue d’affichage Windows configurée dans paramètres. 
+L’entrée vocale est alimentée par le [moteur](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) qui prend en charge la reconnaissance vocale dans toutes les autres _applications universelles Windows_. Sur HoloLens, la reconnaissance vocale fonctionne toujours dans la langue d’affichage Windows configurée dans paramètres. 
 
 <br>
 
 ## <a name="voice-and-gaze"></a>Voix et regard
 
-Lorsque vous utilisez des commandes vocales (tête ou œil), le point de regard est généralement utilisé comme mécanisme de ciblage, que ce soit avec un curseur (« Select ») ou pour canaliser implicitement votre commande vers une application que vous examinez. Pour ce faire, il n’est même pas nécessaire de faire apparaître un curseur pointant vers le regard _(« Regardez-le, dites-le »)_ . Bien entendu, certaines commandes vocales ne nécessitent pas de cible, telles que « aller à démarrer » ou « Hey Cortana ».
+Lorsque vous utilisez des commandes vocales (tête ou œil), le point de regard est généralement utilisé comme mécanisme de ciblage, que ce soit avec un curseur (« Select ») ou pour canaliser implicitement votre commande vers une application que vous examinez. Pour ce faire, il n’est même pas nécessaire de faire apparaître un curseur pointant vers le regard _(« Regardez-le, dites-le »)_. Bien entendu, certaines commandes vocales ne nécessitent pas de cible, telles que « aller à démarrer » ou « Hey Cortana ».
 
 <br>
 
@@ -159,7 +159,7 @@ Il existe un certain nombre de commandes vocales que vous pouvez prononcer Gazin
 * Plus grand | Enrichissement
 * Grande
 
-Sur HoloLens 2, vous pouvez également créer des interactions plus naturelles en association avec un regard en œil qui fournit implicitement des informations contextuelles sur ce à quoi vous faites référence. Par exemple, vous pouvez simplement regarder un hologramme et indiquer « placer _ce_ », puis passer à l’emplacement où vous souhaitez le placer et indiquer « sur _ce_ point ».
+Sur HoloLens 2, vous pouvez également créer des interactions plus naturelles en association avec un regard en œil qui fournit implicitement des informations contextuelles sur ce à quoi vous faites référence. Par exemple, vous pouvez simplement regarder un hologramme et indiquer « placer _ce_», puis passer à l’emplacement où vous souhaitez le placer et indiquer « sur _ce_ point ».
 Ou bien, vous pouvez consulter un composant holographique sur une machine complexe et indiquer : « Donnez-moi plus d’informations à _ce_ sujet ».
 
 
@@ -188,21 +188,21 @@ Il est recommandé d’ajouter des commandes vocales à toutes les expériences 
 ### <a name="best-practices"></a>Meilleures pratiques
 
 Voici quelques bonnes pratiques qui faciliteront la reconnaissance vocale.
-* **Utilisez des commandes concises**  : dans la mesure du possible, choisissez des mots clés de deux syllabes minimum. Les mots d’une syllabe comprennent souvent des voyelles qui peuvent être prononcées différemment selon l’accent de la personne. Exemple : « lire la vidéo » est préférable à « lire la vidéo actuellement sélectionnée »
+* **Utilisez des commandes concises** : dans la mesure du possible, choisissez des mots clés de deux syllabes minimum. Les mots d’une syllabe comprennent souvent des voyelles qui peuvent être prononcées différemment selon l’accent de la personne. Exemple : « lire la vidéo » est préférable à « lire la vidéo actuellement sélectionnée »
 * **Utilisation d’un vocabulaire simple** -exemple : « afficher la note » est préférable à « afficher le résumé »
-* **Utilisez des commandes non définitives**  : assurez-vous que les actions réalisables par les commandes de reconnaissance vocale peuvent être facilement annulées, en cas de déclenchement involontaire provoqué par une personne parlant près de l’utilisateur.
-* **Évitez les commandes avec des consonances similaires**  : évitez d’enregistrer plusieurs commandes vocales ayant une consonance très similaire. Exemple : « afficher plus » et « afficher le magasin » peuvent être très similaires.
-* **Désinscrivez votre application lorsque vous ne l’utilisez pas**  : lorsque l’état de votre application rend une commande de reconnaissance vocale non valide, désinscrivez l’application pour que les autres commandes ne soient pas confondues avec celle-ci.
-* **Testez les différents accents**  : testez votre application avec des utilisateurs ayant différents accents.
-* **Maintenez une certaine cohérence au sein des commandes vocales**  : si la commande « Retour » permet de retourner à la page précédente, gardez ce comportement dans toutes vos applications.
-* **Évitez d’utiliser des commandes du système**  : les commandes vocales suivantes sont réservées au système. Elles ne doivent pas être utilisées par les applications.
+* **Utilisez des commandes non définitives** : assurez-vous que les actions réalisables par les commandes de reconnaissance vocale peuvent être facilement annulées, en cas de déclenchement involontaire provoqué par une personne parlant près de l’utilisateur.
+* **Évitez les commandes avec des consonances similaires** : évitez d’enregistrer plusieurs commandes vocales ayant une consonance très similaire. Exemple : « afficher plus » et « afficher le magasin » peuvent être très similaires.
+* **Désinscrivez votre application lorsque vous ne l’utilisez pas** : lorsque l’état de votre application rend une commande de reconnaissance vocale non valide, désinscrivez l’application pour que les autres commandes ne soient pas confondues avec celle-ci.
+* **Testez les différents accents** : testez votre application avec des utilisateurs ayant différents accents.
+* **Maintenez une certaine cohérence au sein des commandes vocales** : si la commande « Retour » permet de retourner à la page précédente, gardez ce comportement dans toutes vos applications.
+* **Évitez d’utiliser des commandes du système** : les commandes vocales suivantes sont réservées au système. Elles ne doivent pas être utilisées par les applications.
    * « Hey Cortana »
    * « Sélectionner »
    * « Aller au début »
 
 ### <a name="advantages-of-voice-input"></a>Avantages de l’entrée vocale
 
-La voix est un moyen naturel de communiquer nos intentions. La voix est particulièrement intéressante pour les **parcours** d’interface, car elle peut aider les utilisateurs à franchir plusieurs étapes d’une interface (un utilisateur peut indiquer « revenir en arrière » lors de la consultation d’une page Web, au lieu de devoir cliquer sur le bouton précédent de l’application). Cette économie d’énergie a un **effet émotionnelle** puissant sur la perception de l’expérience de l’utilisateur et lui donne une petite quantité d’Superpower. L’utilisation de la voix est également pratique lorsque nous avons les mains occupées ou que nous effectuons **plusieurs tâches en même temps** . Sur les appareils où la saisie sur un clavier est difficile, la **dictée vocale** peut être un moyen efficace d’entrer du texte. Enfin, dans certains cas, lorsque la **plage de précision** du point de vue et du mouvement est limitée, la voix peut aider à lever l’ambiguïté de l’intention de l’utilisateur. 
+La voix est un moyen naturel de communiquer nos intentions. La voix est particulièrement intéressante pour les **parcours** d’interface, car elle peut aider les utilisateurs à franchir plusieurs étapes d’une interface (un utilisateur peut indiquer « revenir en arrière » lors de la consultation d’une page Web, au lieu de devoir cliquer sur le bouton précédent de l’application). Cette économie d’énergie a un **effet émotionnelle** puissant sur la perception de l’expérience de l’utilisateur et lui donne une petite quantité d’Superpower. L’utilisation de la voix est également pratique lorsque nous avons les mains occupées ou que nous effectuons **plusieurs tâches en même temps**. Sur les appareils où la saisie sur un clavier est difficile, la **dictée vocale** peut être un moyen efficace d’entrer du texte. Enfin, dans certains cas, lorsque la **plage de précision** du point de vue et du mouvement est limitée, la voix peut aider à lever l’ambiguïté de l’intention de l’utilisateur. 
 
 **Avantages de l’utilisation de la voix**
 * Gain de temps : l’objectif final est donc plus facile à atteindre.
@@ -237,7 +237,7 @@ Un défi associé à un grand nombre de commandes vocales est de savoir comment 
 
 ### <a name="voice-feedback-states"></a>Retours des commandes vocales
 
-Lorsque la voix est utilisée correctement, l’utilisateur **comprend ce qu’il peut dire et reçoit la confirmation** que le système a **bien compris sa commande** . Ce sont ces deux éléments qui donnent envie à l’utilisateur de choisir la voix comme méthode d’entrée principale. Voici un diagramme qui montre ce qui se passe au niveau du curseur lorsque l’entrée vocale est reconnue, et comment celle-ci est communiquée à l’utilisateur.
+Lorsque la voix est utilisée correctement, l’utilisateur **comprend ce qu’il peut dire et reçoit la confirmation** que le système a **bien compris sa commande**. Ce sont ces deux éléments qui donnent envie à l’utilisateur de choisir la voix comme méthode d’entrée principale. Voici un diagramme qui montre ce qui se passe au niveau du curseur lorsque l’entrée vocale est reconnue, et comment celle-ci est communiquée à l’utilisateur.
 
 
 :::row:::
@@ -264,7 +264,7 @@ Lorsque la voix est utilisée correctement, l’utilisateur **comprend ce qu’i
 ## <a name="top-things-users-should-know-about-speech-in-mixed-reality"></a>Points importants concernant la reconnaissance vocale dans la réalité mixte
 * Vous devez dire **« Sélectionner »** lorsque vous ciblez un bouton (vous pouvez l’utiliser n’importe où pour cliquer sur un bouton).
 * Dans certaines applications, vous pouvez prononcer le **nom de l’étiquette d’un bouton de la barre d’application** pour exécuter une action. Par exemple, lorsqu’il regarde une application, l’utilisateur peut prononcer la commande « Supprimer » pour supprimer cette application (cela vous évite d’avoir à la supprimer manuellement).
-* Vous pouvez activer Cortana à l’aide de la commande **« Hey Cortana »** . Vous pouvez lui poser des questions (« Hey Cortana, combien mesure la tour Eiffel ? »), lui demander d’ouvrir une application (« Hey Cortana, ouvre Netflix ») ou lui demander d’afficher le menu Démarrer (« Hey Cortana, ouvre le menu Démarrer »), et bien plus encore.
+* Vous pouvez activer Cortana à l’aide de la commande **« Hey Cortana »**. Vous pouvez lui poser des questions (« Hey Cortana, combien mesure la tour Eiffel ? »), lui demander d’ouvrir une application (« Hey Cortana, ouvre Netflix ») ou lui demander d’afficher le menu Démarrer (« Hey Cortana, ouvre le menu Démarrer »), et bien plus encore.
 
 ## <a name="common-questions-and-concerns-users-have-about-voice"></a>Questions et inquiétudes fréquentes concernant la reconnaissance vocale
 * Que puis-je dire ?
@@ -284,7 +284,7 @@ Pour les applications qui souhaitent tirer parti des options de traitement d’e
 
 Tout ce traitement audio est l’accélération matérielle, ce qui signifie que les fonctionnalités se déchargent beaucoup moins d’énergie que si le même traitement a été effectué sur l’UC HoloLens. Évitez d’exécuter un autre traitement d’entrée audio sur le processeur pour maximiser la durée de vie de la batterie du système et tirer parti du traitement des entrées audio déchargées et intégrées.
 
-## <a name="languages"></a>Languages
+## <a name="languages"></a>Langages
 
 HoloLens 2 [prend en charge plusieurs langues](https://docs.microsoft.com/hololens/hololens2-language-support). N’oubliez pas que les commandes vocales s’exécutent toujours dans la langue d’affichage du système même si plusieurs claviers sont installés ou si les applications essaient de créer un module de reconnaissance vocale dans une autre langue.
 
@@ -299,7 +299,7 @@ Pour la version 2017 de Windows Mixed Reality Edition, la logique de gestion des
 ---
 
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Entrée vocale dans MRTK (ensemble d’outils de réalité mixte) pour Unity
-Avec **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** , vous pouvez facilement affecter une commande vocale à n’importe quel objet. Utilisez le **profil d’entrée vocale** de MRTK pour définir vos mots clés. En affectant le script **SpeechInputHandler** , vous pouvez faire en sorte qu’un objet réponde aux mots clés définis dans le profil d’entrée vocal. SpeechInputHandler fournit également une étiquette de confirmation vocale pour améliorer la confiance de l’utilisateur.
+Avec **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, vous pouvez facilement affecter une commande vocale à n’importe quel objet. Utilisez le **profil d’entrée vocale** de MRTK pour définir vos mots clés. En affectant le script **SpeechInputHandler** , vous pouvez faire en sorte qu’un objet réponde aux mots clés définis dans le profil d’entrée vocal. SpeechInputHandler fournit également une étiquette de confirmation vocale pour améliorer la confiance de l’utilisateur.
 
 * [Commande MRTK-Voice](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
 

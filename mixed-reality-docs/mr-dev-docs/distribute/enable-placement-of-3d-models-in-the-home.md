@@ -5,15 +5,15 @@ author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
-keywords: 3D, modèle, place à la terre, lieu, monde, modélisation, Hébergement de la réalité mixte, Web, application
-ms.openlocfilehash: 4ea720fd9fc404d4730733b6b65df13acdf1a51a
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D, modèle, place à la terre, lieu, monde, modélisation, Hébergement de réalité mixte, Web, application, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781563"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703185"
 ---
-# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Activer le placement des modèles 3D dans la réalité mixte
+# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Permettre le placement d’objets 3D dans l’accueil réalité mixte
 
 > [!NOTE]
 > Cette fonctionnalité a été ajoutée dans le cadre de la [mise à jour 2018 de Windows 10 avril](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Les versions antérieures de Windows ne sont pas compatibles avec cette fonctionnalité.
@@ -88,7 +88,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 
 ## <a name="considerations-for-immersive-vr-headsets"></a>Considérations relatives aux casques immersifs (VR)
 
-* Pour les casques immersifs, le portail de réalité mixte n’a pas besoin d’être en cours d’exécution avant d’appeler le *protocole Add Model* . Dans ce cas, le *protocole Add Model* lance le portail de réalité mixte et place l’objet directement là où le casque regarde une fois que vous arrivez dans la zone d’hébergement de la réalité mixte. 
+* Pour les casques immersifs, le portail de réalité mixte n’a pas besoin d’être en cours d’exécution avant d’appeler le *protocole Add Model*. Dans ce cas, le *protocole Add Model* lance le portail de réalité mixte et place l’objet directement là où le casque regarde une fois que vous arrivez dans la zone d’hébergement de la réalité mixte. 
 * Quand vous appelez le *protocole Add Model* à partir du bureau avec le portail de réalité mixte déjà en cours d’exécution, assurez-vous que le casque est « éveillé ». Si ce n’est pas le cas, le positionnement échoue. 
 
 ## <a name="see-also"></a>Voir aussi

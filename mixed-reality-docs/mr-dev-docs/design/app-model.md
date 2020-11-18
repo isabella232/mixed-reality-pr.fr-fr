@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: UWP, modèle d’application, cycle de vie, suspendre, reprendre, vignette, vues, contrats
-ms.openlocfilehash: 67b883517ae17422bf7c27227c33882cf8a9f7ef
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UWP, modèle d’application, cycle de vie, suspendre, reprendre, vignette, vues, contrats, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: 332556a5118f0c69a83654d345119995e4262cb5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680042"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703105"
 ---
 # <a name="app-model"></a>Modèle d’application
 
@@ -20,7 +20,7 @@ Windows Mixed Reality utilise le modèle d’application fourni par le [platefor
 ![applications 2D organisées dans la page d’hébergement de la réalité Windows Mixed dans une zone de petit-déjeuner](images/20160112-055908-hololens-500px.jpg)<br>
 *Applications avec une vue 2D organisée dans la page d’hébergement de Windows Mixed Reality*
 
-## <a name="app-lifecycle"></a>Cycle de vie d’application
+## <a name="app-lifecycle"></a>Cycle de vie de l’application
 
 Le cycle de vie d’une application de réalité mixte implique des concepts d’application standard tels que le placement, le lancement, l’arrêt et la suppression.
 
@@ -169,7 +169,7 @@ Par défaut, les extensions suivantes sont prises en charge localement :
 
 |  Application  |  Extensions | 
 |----------|----------|
-|  Photos  |  BMP, GIF, jpg, png, AVI, MOV, MP4, WMV | 
+|  Photo  |  BMP, GIF, jpg, png, AVI, MOV, MP4, WMV | 
 |  Microsoft Edge  |  htm, html, PDF, SVG, XML | 
 
 ### <a name="app-contracts-and-windows-mixed-reality-extensions"></a>Contrats d’application et extensions Windows Mixed Reality

@@ -5,15 +5,15 @@ author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, Color, Light, Materials
-ms.openlocfilehash: 76237b1b08df98850a4989987ed608dae29b6b5c
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Windows Mixed Reality, design, Color, Light, Materials, mixed realing casque, Windows Mixed Reality casque, Virtual realer casque, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 9333be5316f5b3ba317aac3ef8591c0dd65370d4
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683215"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702785"
 ---
-# <a name="color-light-and-materials"></a>Couleurs, éclairage et matériaux
+# <a name="color-light-and-materials"></a>Couleur, lumière et matériaux
 ![Couleurs, éclairage et matériaux](images/RemoteRendering.jpg)
 
 La conception de contenu pour la réalité mixte nécessite d’accorder une attention particulière à la couleur, à l’éclairage et aux matériaux de chacune des ressources visuelles utilisées dans votre expérience. Ces décisions peuvent être utilisées à des fins esthétiques, comme l’utilisation de la lumière et du matériau pour définir la tonalité d’un environnement immersif, et des fonctions fonctionnelles, comme l’utilisation de couleurs saisissantes pour alerter les utilisateurs d’une action imminente. Chacune de ces décisions doit être pesée par rapport aux opportunités et contraintes de l’appareil cible de votre expérience.

@@ -5,17 +5,17 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: système de coordonnées, système de coordonnées spatiales, orientation uniquement, à l’échelle assiste, à l’échelle debout, à l’échelle du monde, à l’échelle mondiale, à 360 degrés, assis, debout, à la chambre, au monde, à l’échelle, à la position, à l’orientation, à l’État fixe, à l’étage, à l’ancrage, à la persistance, au partage, à la perte du Cloud
-ms.openlocfilehash: bf7641d13302620a32aac260332c3be694ea324b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: système de coordonnées, système de coordonnées spatiales, orientation uniquement, à l’échelle assise, à l’échelle debout, à l’échelle de la pièce, à l’échelle mondiale, 360 degré, assis, debout, chambre, monde, échelle, position, orientation, stationnaire, attaché, étage, Ancre, ancrage spatial, verrouillage universel, verrouillage universel, verrouillage du corps, verrouillage du corps, limites, persistance, partage, perte de suivi, Ancre spatiale Cloud, casque de réalité mixte, casque de réalité Windows, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: afffffae5d23309b2ab9124b9f74b7818fd4adf6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680502"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702535"
 ---
 # <a name="coordinate-systems"></a>Systèmes de coordonnées
 
-À leur cœur, les applications de réalité mixte placent des [hologrammes](../discover/hologram.md) dans votre monde qui ressemblent à des objets réels. Cela implique de positionner et d’orienter précisément ces hologrammes à des endroits du monde qui sont significatifs pour l’utilisateur, qu’il s’agisse de son espace physique ou d’un domaine virtuel que vous avez créé. Lorsque vous pensez à la position et à l’orientation de vos hologrammes, ou à toute autre géométrie telle que les positions [de rayons ou](gaze-and-commit.md) de [main](hands-and-tools.md), Windows fournit divers systèmes de coordonnées réalistes dans lesquels cette géométrie peut être exprimée, appelée **systèmes de coordonnées spatiales** .
+À leur cœur, les applications de réalité mixte placent des [hologrammes](../discover/hologram.md) dans votre monde qui ressemblent à des objets réels. Cela implique de positionner et d’orienter précisément ces hologrammes à des endroits du monde qui sont significatifs pour l’utilisateur, qu’il s’agisse de son espace physique ou d’un domaine virtuel que vous avez créé. Lorsque vous pensez à la position et à l’orientation de vos hologrammes, ou à toute autre géométrie telle que les positions [de rayons ou](gaze-and-commit.md) de [main](hands-and-tools.md), Windows fournit divers systèmes de coordonnées réalistes dans lesquels cette géométrie peut être exprimée, appelée **systèmes de coordonnées spatiales**.
 
 <br>
 
@@ -105,7 +105,7 @@ Notez que le cadre de la phase de référence n’est pas encore pris en charge 
 
 Toutes les applications graphiques 3D utilisent des [systèmes de coordonnées cartésiens](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) pour expliquer les positions et les orientations des objets dans les mondes virtuels qu’elles affichent. Ces systèmes de coordonnées établissent 3 axes perpendiculaires pour positionner les objets : un axe X, Y et Z.
 
-En [réalité mixte](../discover/mixed-reality.md), vos applications ont une raison d’être des systèmes de coordonnées physiques et virtuels. Windows appelle un système de coordonnées qui a une signification réelle dans le système physique de **coordonnées spatiales** .
+En [réalité mixte](../discover/mixed-reality.md), vos applications ont une raison d’être des systèmes de coordonnées physiques et virtuels. Windows appelle un système de coordonnées qui a une signification réelle dans le système physique de **coordonnées spatiales**.
 
 Les systèmes de coordonnées spatiales expriment leurs valeurs de coordonnées en mètres. Cela signifie que les objets placés 2 unités à l’écart de l’axe X, Y ou Z apparaîtront à 2 mètres l’un de l’autre lorsqu’ils sont rendus en réalité mixte. Cela vous permet de rendre facilement les objets et les environnements à l’échelle du monde réel.
 
@@ -115,9 +115,9 @@ Dans les deux types de systèmes de coordonnées, l’axe X positif pointe vers 
 
 ## <a name="building-an-orientation-only-or-seated-scale-experience"></a>Création d’une expérience d’orientation seule ou de mise à l’échelle installée
 
-La clé du [rendu](../develop/platform-capabilities-and-apis/rendering.md) holographique est la modification de la vue de l’application de ses hologrammes à mesure que l’utilisateur se déplace, afin de faire correspondre le mouvement de l’en-tête prédit. Vous pouvez créer des expériences à l' **échelle assises** qui respectent les modifications apportées à la position des têtes et à l’orientation des têtes de l’utilisateur à l’aide d’un **cadre stationnaire de référence** .
+La clé du [rendu](../develop/platform-capabilities-and-apis/rendering.md) holographique est la modification de la vue de l’application de ses hologrammes à mesure que l’utilisateur se déplace, afin de faire correspondre le mouvement de l’en-tête prédit. Vous pouvez créer des expériences à l' **échelle assises** qui respectent les modifications apportées à la position des têtes et à l’orientation des têtes de l’utilisateur à l’aide d’un **cadre stationnaire de référence**.
 
-Une partie du contenu doit ignorer les mises à jour de position de l’en-tête, à tout moment résolu à un titre et à une distance choisis. L’exemple principal est la vidéo de 360 degrés : étant donné que la vidéo est capturée à partir d’une perspective fixe unique, l’illusion de la position de la vue doit être déplacée par rapport au contenu, même si l’orientation de la vue doit changer à mesure que l’utilisateur regarde. Vous pouvez générer une telle **expérience d’orientation uniquement** à l’aide d’un **cadre de référence attaché** .
+Une partie du contenu doit ignorer les mises à jour de position de l’en-tête, à tout moment résolu à un titre et à une distance choisis. L’exemple principal est la vidéo de 360 degrés : étant donné que la vidéo est capturée à partir d’une perspective fixe unique, l’illusion de la position de la vue doit être déplacée par rapport au contenu, même si l’orientation de la vue doit changer à mesure que l’utilisateur regarde. Vous pouvez générer une telle **expérience d’orientation uniquement** à l’aide d’un **cadre de référence attaché**.
 
 ### <a name="stationary-frame-of-reference"></a>Cadre de référence stationnaire
 
@@ -137,17 +137,17 @@ Lorsque le casque ne peut pas déterminer où il se trouve dans le monde, un cad
 
 ## <a name="building-a-standing-scale-or-room-scale-experience"></a>Création d’une expérience de mise à l’échelle permanente ou à l’échelle de l’espace
 
-Pour aller au-delà de la mise à l’échelle sur un casque immersif et créer une expérience à l' **échelle debout** , vous pouvez utiliser le **cadre de la phase de référence** .
+Pour aller au-delà de la mise à l’échelle sur un casque immersif et créer une expérience à l' **échelle debout**, vous pouvez utiliser le **cadre de la phase de référence**.
 
 Pour fournir une **expérience** de mise à l’échelle de l’espace, en permettant aux utilisateurs de se déplacer dans la limite de 5 mètres qu’ils prédéfinis, vous pouvez également vérifier les limites du niveau **intermédiaire** .
 
 ### <a name="stage-frame-of-reference"></a>Cadre de la phase de référence
 
-Lors de la configuration initiale d’un casque immersif, l’utilisateur définit une **étape** , qui représente la salle dans laquelle il expérimentera la réalité mixte. L’étape définit au minimum un **État d’origine** , un système de coordonnées spatiales centré à la position de plancher choisie par l’utilisateur et l’orientation vers l’avant, où il envisage d’utiliser l’appareil. En plaçant le contenu dans ce système de coordonnées au niveau du plan de plancher Y = 0, vous pouvez vous assurer que vos hologrammes apparaissent confortablement à l’étage lorsque l’utilisateur est debout, ce qui permet aux utilisateurs de bénéficier d’une expérience à l' **échelle debout** .
+Lors de la configuration initiale d’un casque immersif, l’utilisateur définit une **étape**, qui représente la salle dans laquelle il expérimentera la réalité mixte. L’étape définit au minimum un **État d’origine**, un système de coordonnées spatiales centré à la position de plancher choisie par l’utilisateur et l’orientation vers l’avant, où il envisage d’utiliser l’appareil. En plaçant le contenu dans ce système de coordonnées au niveau du plan de plancher Y = 0, vous pouvez vous assurer que vos hologrammes apparaissent confortablement à l’étage lorsque l’utilisateur est debout, ce qui permet aux utilisateurs de bénéficier d’une expérience à l' **échelle debout**.
 
 ### <a name="stage-bounds"></a>Limites de la phase
 
-L’utilisateur peut également définir des limites au niveau de la **phase** , une zone de la pièce dans laquelle elles ont été désactivées pour se déplacer dans la réalité mixte. Dans ce cas, l’application peut créer une expérience de mise à l’échelle de l' **espace** , à l’aide de ces limites pour s’assurer que les hologrammes sont toujours placés là où l’utilisateur peut les joindre.
+L’utilisateur peut également définir des limites au niveau de la **phase**, une zone de la pièce dans laquelle elles ont été désactivées pour se déplacer dans la réalité mixte. Dans ce cas, l’application peut créer une expérience de mise à l’échelle de l' **espace**, à l’aide de ces limites pour s’assurer que les hologrammes sont toujours placés là où l’utilisateur peut les joindre.
 
 Étant donné que le cadre de la phase de référence fournit un système de coordonnées fixe unique dans lequel placer le contenu relatif à l’étage, il s’agit du chemin le plus simple pour le portage des applications à l’échelle du sol et à l’échelle de l’espace développée pour les casques de réalité virtuelle. Toutefois, comme pour ces plateformes VR, un seul système de coordonnées peut uniquement stabiliser le contenu dans environ un diamètre de 5 mètres (16 pieds de page), avant que les effets du bras de levier n’entraînent une évolution notable du contenu du centre. Pour aller au-delà de 5 mètres, les ancres spatiales sont nécessaires.
 

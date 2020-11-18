@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Shell, système d’exploitation, plateforme, maison, maison, accueil, environnement, démarrer, menu Démarrer, menu Accueil, pin, application, lancer des applications, placer des applications, téléporter, déplacer, naviguer
-ms.openlocfilehash: 1f2ec91edca100e9253a6c8e65f4b3f9d2b2feeb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Shell, système d’exploitation, plateforme, maison, maison, accueil, environnement, démarrer, menu Démarrer, menu Accueil, pin, application, lancer des applications, placer des applications, téléporter, déplacer, naviguer, casque de réalité mixte, casque de réalité virtuelle, présentation de la réalité virtuelle
+ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681211"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703445"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Exploration de la page d’accueil Windows Mixed Reality
 
@@ -48,11 +48,11 @@ Les applications peuvent également être lancées via une API app-to-App ou via
 
 ## <a name="moving-and-adjusting-apps"></a>Déplacement et ajustement d’applications
 
-Sélectionnez **ajuster** dans la barre de l’application pour afficher les contrôles permettant de déplacer, de mettre à l’échelle et de faire pivoter le contenu de réalité mixte. Lorsque vous avez terminé, sélectionnez **terminé** .
+Sélectionnez **ajuster** dans la barre de l’application pour afficher les contrôles permettant de déplacer, de mettre à l’échelle et de faire pivoter le contenu de réalité mixte. Lorsque vous avez terminé, sélectionnez **terminé**.
 
 ![La ardoise du magasin en mode ajustement (cadre bleu). Remarque : la barre d’application (haut) a changé pour inclure les boutons « terminé » et « supprimer ».](images/adjust-500px.png)
 
-Différentes applications peuvent avoir des options supplémentaires dans la barre des applications. Par exemple, Microsoft Edge possède des options de *défilement* , de *glisser-déplacer* et de *Zoom* . 
+Différentes applications peuvent avoir des options supplémentaires dans la barre des applications. Par exemple, Microsoft Edge possède des options de *défilement*, de *glisser-déplacer* et de *Zoom* . 
 
 ![Barre d’application pour les applications 2D s’exécutant sur HoloLens](images/holobar-500px.png)
 
@@ -60,9 +60,9 @@ Le bouton **précédent** permet de revenir aux écrans affichés précédemment
 
 ## <a name="getting-around-your-home"></a>L’approche de votre foyer
 
-Avec **HoloLens** , vous vous déplacez dans l’espace physique pour vous déplacer dans votre foyer.
+Avec **HoloLens**, vous vous déplacez dans l’espace physique pour vous déplacer dans votre foyer.
 
-Avec les **casques immersifs** , vous pouvez également vous familiariser avec vos PlaySpace pour vous déplacer dans une zone similaire dans le monde virtuel. Pour vous déplacer sur des distances plus longues, vous pouvez utiliser le stick analogique sur votre contrôleur pour « parcourir » virtuellement, ou vous pouvez utiliser la *téléportage* pour passer immédiatement plus de distances.
+Avec les **casques immersifs**, vous pouvez également vous familiariser avec vos PlaySpace pour vous déplacer dans une zone similaire dans le monde virtuel. Pour vous déplacer sur des distances plus longues, vous pouvez utiliser le stick analogique sur votre contrôleur pour « parcourir » virtuellement, ou vous pouvez utiliser la *téléportage* pour passer immédiatement plus de distances.
 
 ![Téléporting dans la page d’hébergement Windows Mixed Reality](images/teleportation-500px.png)
 
@@ -122,7 +122,7 @@ Vous pouvez également utiliser des commandes vocales pour vous familiariser ave
 Windows Mixed Reality possède un certain nombre d’applications intégrées, telles que :
 * **Microsoft Store** pour accéder aux applications et aux Jeux
 * **Hub de commentaires** pour envoyer des commentaires sur les applications système et système
-* **Paramètres** pour configurer les paramètres système ( [y compris la mise en réseau](../connecting-to-wi-fi-on-hololens.md) et les mises à jour système)
+* **Paramètres** pour configurer les paramètres système ([y compris la mise en réseau](../connecting-to-wi-fi-on-hololens.md) et les mises à jour système)
 * **Microsoft Edge** pour parcourir les sites Web
 * **Photos** pour afficher et partager des photos et des vidéos
 * **Étalonnage** (hololens uniquement) pour l’adaptation de l’expérience HoloLens à l’utilisateur actuel

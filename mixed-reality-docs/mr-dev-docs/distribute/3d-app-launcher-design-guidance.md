@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, conception, mode de lancement d’application 3D, casque immersif, cube actif
-ms.openlocfilehash: 884d05b8b8ef7e15f5c65a411cf500b0d4dc598c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, conception, mode de lancement d’application 3D, casque immersif, cube en direct, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, UWP, Win32, éclairage, couleur
+ms.openlocfilehash: a501b4bdc86df17f6d005c2f7ccf4fe6a94a4b43
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680698"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703475"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>Guide de conception de lanceur d’applications 3D
 

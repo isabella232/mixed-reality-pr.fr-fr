@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: son spatial, son surround, audio 3D, son 3D, son spatial
-ms.openlocfilehash: fb3517307dccd7e41c39c012c69f1e1d141fa218
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: son spatial, son surround, audio 3D, son 3D, audio spatial, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, kit de fonctions de réalité mixte, études de cas, acoustiques
+ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680447"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703255"
 ---
 # <a name="audio-in-mixed-reality"></a>Audio en réalité mixte
 L’audio est un élément essentiel de la conception et de la productivité dans la réalité mixte. Le son peut :
@@ -91,8 +91,8 @@ La prise en charge de Windows HRTFs est disponible pour les moteurs audio tiers 
 * Un [plug-in de moteur audio Unity](../develop/unity/spatial-sound-in-unity.md)
 * Un [plug-in de moteur audio Wwise](https://www.audiokinetic.com/products/plug-ins/msspatial/)
 
-## <a name="acoustics"></a>Acoustiques
-Le son spatial est plus que la direction. Les autres dimensions incluent l’occlusion, l’obstruction, la réverbération, le portail et la modélisation source. Ces dimensions sont collectivement appelées « *acoustiques* ». Sans acoustiques, les sons spatiaux n’ont pas de distance perçue.
+## <a name="acoustics"></a>Acoustique
+Le son spatial est plus que la direction. Les autres dimensions incluent l’occlusion, l’obstruction, la réverbération, le portail et la modélisation source. Ces dimensions sont collectivement appelées « *acoustiques*». Sans acoustiques, les sons spatiaux n’ont pas de distance perçue.
 
 Les traitements acoustiques vont du plus simple au plus complexe. Vous pouvez utiliser un verbe simple qui est pris en charge par n’importe quel moteur audio pour envoyer des sons spatiales dans l’environnement de l’écouteur. Les systèmes acoustiques, tels que les [acoustiques de projet](https://aka.ms/acoustics)  , offrent un traitement des acoustiques plus riche et plus attrayant. Les acoustiques de projet peuvent modéliser l’effet des murs, des portes et d’autres géométries de scène sur un son. C’est une option efficace pour les cas où la géométrie de scène appropriée est connue au moment du développement.
 

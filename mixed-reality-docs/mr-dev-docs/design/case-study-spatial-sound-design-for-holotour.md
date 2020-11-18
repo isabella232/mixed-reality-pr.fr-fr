@@ -5,13 +5,13 @@ author: jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, HoloTour, son spatial, étude de cas
-ms.openlocfilehash: 6cf2d18661924276f1ea75efb88e29acd4709f37
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, HoloLens, HoloTour, son spatial, étude de cas, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, audio
+ms.openlocfilehash: 31e38f6f5ce309bba11515ab09303593af0a328b
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679998"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702835"
 ---
 # <a name="case-study-spatial-sound-design-for-holotour"></a>Étude de cas : conception de son spatial pour HoloTour
 

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, Controls, UI, UX
-ms.openlocfilehash: 751a8fe9a196f894ac0ef9e3dcca64dec1c97498
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, conception, contrôles, UI, UX, indicateur de progression, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de temps de réalité mixte
+ms.openlocfilehash: 93cdd7054c05af9f8621e091fa3d4b59d9e65ee3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679451"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703385"
 ---
 # <a name="progress-indicator"></a>Indicateur de progression
 
@@ -27,7 +27,7 @@ Un contrôle de progression offre un retour à l’utilisateur lorsqu’une long
 
 ## <a name="types-of-progress"></a>Types de progression
 
-Il est important de fournir les informations de l’utilisateur sur ce qui se passe. Dans la réalité mixte, les utilisateurs peuvent être facilement gênés par un environnement ou des objets physiques si votre application ne donne pas de bons commentaires visuels. Pour les situations qui prennent quelques secondes, telles que le chargement des données ou la mise à jour d’une scène, il est judicieux d’afficher un indicateur visuel. Il existe deux options pour montrer à l’utilisateur qu’une opération est en cours d’exécution : une **barre de progression** ou un **anneau de progression** .
+Il est important de fournir les informations de l’utilisateur sur ce qui se passe. Dans la réalité mixte, les utilisateurs peuvent être facilement gênés par un environnement ou des objets physiques si votre application ne donne pas de bons commentaires visuels. Pour les situations qui prennent quelques secondes, telles que le chargement des données ou la mise à jour d’une scène, il est judicieux d’afficher un indicateur visuel. Il existe deux options pour montrer à l’utilisateur qu’une opération est en cours d’exécution : une **barre de progression** ou un **anneau de progression**.
 
 :::row:::
     :::column:::

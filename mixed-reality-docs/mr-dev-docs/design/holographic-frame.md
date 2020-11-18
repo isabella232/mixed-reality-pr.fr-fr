@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
-keywords: HoloLens, Windows Mixed Reality, holographique Frame, champ of View
-ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: HoloLens, Windows Mixed Reality, cadre holographique, champ de vision, angle de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, interactions, navigation, menu
+ms.openlocfilehash: c1786af43bacc414b5ffcf6f59753d7f8fa92fef
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340637"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702215"
 ---
 # <a name="holographic-frame"></a>Image holographique
 
@@ -138,13 +138,6 @@ Comme une expérience immersive, ces utilisateurs ont été encouragés à se pe
 *Les narrateurs virtuels s’allumeront pour suivre le déplacement d’un utilisateur, créant ainsi un point focal puissant tout au long de l’expérience.*
 
 La représentation réaliste de l’oreille a fourni un point focal puissant, avec des techniques subtiles pour que l’utilisateur ait l’impression d’être là, en parlant. Quand l’utilisateur se déplace sur l’expérience, il passe à votre seuil avant de revenir à un État neutre si l’utilisateur se déplace trop loin au-delà de sa périphérie. Si l’utilisateur regarde complètement l’oreille (par exemple, pour regarder quelque part dans la scène), puis revenir à l’oreille, la position directionnelle du narrateur sera de nouveau axée sur l’utilisateur. Les techniques telles que celle-ci fournissent un bon sens d’immersion et créent un point focal dans le cadre holographique, réduisant ainsi le déplacement excessif et promouvant le confort de l' [utilisateur](comfort.md).
-
-## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
-
-Si vous suivez le [parcours de découverte](../discover/get-started-with-mr.md) que nous avons disposé, vous êtes au cœur de l’exploration des principes fondamentaux de la réalité mixte. À partir de là, vous pouvez passer à la rubrique suivante : 
-
-> [!div class="nextstepaction"]
-> [Faire en sorte que les objets holographiques semblent réels : mappage spatial](../design/spatial-mapping.md)
 
 ## <a name="see-also"></a>Voir aussi
 * [Interactions instinctuelles](interaction-fundamentals.md)

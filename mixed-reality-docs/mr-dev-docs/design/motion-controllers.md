@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: contrôleurs 6DOF, contrôleurs de mouvement
-ms.openlocfilehash: 74ea6c8879d5deb1271e9a2169cae013b03bab5b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: contrôleurs 6DOF, contrôleurs de mouvement, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, défilement, poignée, état
+ms.openlocfilehash: a1af86ca174bc574ab8030d8aebd128649b6515f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679483"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703155"
 ---
 # <a name="motion-controllers"></a>Contrôleurs de mouvement
 
@@ -73,7 +73,7 @@ Les contrôleurs de mouvement Windows Mixed Reality permettent un suivi précis 
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
-**Vous aurez besoin des éléments suivants :**
+**Éléments requis :**
 * Ensemble de deux contrôleurs de mouvement.
 * Quatre piles AA.
 * Un PC compatible Bluetooth 4,0.
@@ -104,7 +104,7 @@ Les contrôleurs de mouvement peuvent être liés à un PC hôte à l’aide de 
     :::column-end:::
 :::row-end:::
    
-8. Le contrôleur s’affiche dans les paramètres Bluetooth sous la **catégorie « souris, clavier & stylet »** comme **connecté** . À ce stade, vous pouvez obtenir une mise à jour du microprogramme, voir la [section suivante](motion-controllers.md#updating-controller-firmware).
+8. Le contrôleur s’affiche dans les paramètres Bluetooth sous la **catégorie « souris, clavier & stylet »** comme **connecté**. À ce stade, vous pouvez obtenir une mise à jour du microprogramme, voir la [section suivante](motion-controllers.md#updating-controller-firmware).
 9. Reconnectez la couverture de la batterie.
 10. Répétez les étapes 1-9 pour le deuxième contrôleur.
 
@@ -146,9 +146,9 @@ Si les contrôleurs sont désactivés après l’appariement, leur état s’aff
 
 ## <a name="gazing-and-pointing"></a>Gazing et pointage
 
-Windows Mixed Reality prend en charge deux modèles clés pour l’interaction ; **gaze and commit** **pointage et pointer et valider** :
-* Avec le point de suspension **et la validation** , les utilisateurs ciblent un objet avec le [regard](gaze-and-commit.md) , puis sélectionnent les objets avec des robinets à main, un boîtier de soucoursment, un clic ou leur voix.
-* Avec **point et validation** , un utilisateur peut viser un contrôleur de mouvement de pointage sur l’objet cible, puis sélectionner des objets avec le déclencheur du contrôleur.
+Windows Mixed Reality prend en charge deux modèles clés pour l’interaction ; **gaze and commit** **pointage et pointer et valider**:
+* Avec le point de suspension **et la validation**, les utilisateurs ciblent un objet avec le [regard](gaze-and-commit.md) , puis sélectionnent les objets avec des robinets à main, un boîtier de soucoursment, un clic ou leur voix.
+* Avec **point et validation**, un utilisateur peut viser un contrôleur de mouvement de pointage sur l’objet cible, puis sélectionner des objets avec le déclencheur du contrôleur.
 
 Les applications qui prennent en charge le pointage avec les contrôleurs de mouvement doivent également activer les interactions pilotées par le regard dans la mesure du possible, pour permettre aux utilisateurs de choisir les périphériques d’entrée qu’ils utilisent.
 
@@ -162,25 +162,25 @@ Pour gérer ce type de réenroulement qui peut se produire lorsque les utilisate
 
 Windows Mixed Reality prend en charge les contrôleurs de mouvement dans un large éventail de facteurs de forme, la conception de chaque contrôleur étant différente dans sa relation entre la position de l’utilisateur et la direction « avant » naturelle que les applications doivent utiliser pour pointer lors du rendu du contrôleur.
 
-Pour mieux représenter ces contrôleurs, il existe deux types de poses que vous pouvez examiner pour chaque source d’interaction. la **poignée pose** et le **pointeur se posent** .
+Pour mieux représenter ces contrôleurs, il existe deux types de poses que vous pouvez examiner pour chaque source d’interaction. la **poignée pose** et le **pointeur se posent**.
 
 ### <a name="grip-pose"></a>Poignée de pose
 
 La **poignée** représente l’emplacement de la paume d’une main détectée par un HoloLens ou la poche qui détient un contrôleur de mouvement.
 
-Sur les casques immersifs, le pose de la poignée est utilisé pour restituer **la main de l’utilisateur** ou **un objet détenu par l’utilisateur** , tel qu’un épée ou un pistolet. La poignée est également utilisée lors de la visualisation d’un contrôleur de mouvement, car le **modèle de rendu** fourni par Windows pour un contrôleur de mouvement utilise la poignée comme son origine et le centre de rotation.
+Sur les casques immersifs, le pose de la poignée est utilisé pour restituer **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**, tel qu’un épée ou un pistolet. La poignée est également utilisée lors de la visualisation d’un contrôleur de mouvement, car le **modèle de rendu** fourni par Windows pour un contrôleur de mouvement utilise la poignée comme son origine et le centre de rotation.
 
 La poignée est définie spécifiquement comme suit :
-* Position de la **poignée** : le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée. Sur le contrôleur de mouvement Windows Mixed Reality, cette position s’aligne généralement avec le bouton de saisie.
-* **Axe droit de l’orientation de la poignée** : lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
-* **Axe avant de l’orientation de la poignée** : quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
-* **Axe vers le haut de l’orientation** : l’axe vers le haut, impliqué dans les définitions Right et Forward.
+* Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée. Sur le contrôleur de mouvement Windows Mixed Reality, cette position s’aligne généralement avec le bouton de saisie.
+* **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
+* **Axe avant de l’orientation de la poignée**: quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
+* **Axe vers le haut de l’orientation**: l’axe vers le haut, impliqué dans les définitions Right et Forward.
 
 ### <a name="pointer-pose"></a>Pose du pointeur
 
 Le **pointeur de pose** représente l’extrémité du contrôleur pointant vers l’avant.
 
-Le pointeur fourni par le système est le mieux utilisé pour raycast lorsque vous effectuez **le rendu du modèle de contrôleur lui-même** . Si vous effectuez le rendu d’un autre objet virtuel à la place du contrôleur, tel qu’un pistolet virtuel, vous devez pointer vers un rayon qui est le plus naturel pour cet objet virtuel, tel qu’un rayon qui traverse le canon du modèle de pistolet défini par l’application. Étant donné que les utilisateurs peuvent voir l’objet virtuel et non le contrôleur physique, le fait de pointer avec l’objet virtuel sera probablement plus naturel pour ceux qui utilisent votre application.
+Le pointeur fourni par le système est le mieux utilisé pour raycast lorsque vous effectuez **le rendu du modèle de contrôleur lui-même**. Si vous effectuez le rendu d’un autre objet virtuel à la place du contrôleur, tel qu’un pistolet virtuel, vous devez pointer vers un rayon qui est le plus naturel pour cet objet virtuel, tel qu’un rayon qui traverse le canon du modèle de pistolet défini par l’application. Étant donné que les utilisateurs peuvent voir l’objet virtuel et non le contrôleur physique, le fait de pointer avec l’objet virtuel sera probablement plus naturel pour ceux qui utilisent votre application.
 
 ## <a name="controller-tracking-state"></a>État du suivi du contrôleur
 
@@ -203,9 +203,9 @@ Les applications qui souhaitent traiter différemment les positions en fonction 
 <tr>
 <th> État du suivi </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Précision approximative</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Approximatif </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -223,7 +223,7 @@ Ces États de suivi du contrôleur de mouvement sont définis comme suit :
 
 ## <a name="interactions-low-level-spatial-input"></a>Interactions : entrée spatiale de bas niveau
 
-Les interactions de base entre les contrôleurs mains et Motion sont **Select** , **menu** , rescelle, **Touchpad** **,** **stick analogique** et **familial** .
+Les interactions de base entre les contrôleurs mains et Motion sont **Select**, **menu**, rescelle, **Touchpad** **,** **stick analogique** et **familial**.
 * **Select** est l’interaction principale pour activer un hologramme, qui consiste en une pression suivie d’une mise en sortie. Pour les contrôleurs de mouvement, vous effectuez une pression Select à l’aide du déclencheur du contrôleur. D’autres façons d’effectuer une sélection sont en parlant la [commande vocale](voice-input.md) « Select ». La même interaction SELECT peut être utilisée dans n’importe quelle application. Pensez à sélectionner comme équivalent d’un clic de souris ; une action universelle que vous découvrez une fois, puis appliquez-la à toutes vos applications.
 * **Menu** est l’interaction secondaire pour agir sur un objet, utilisée pour extraire un menu contextuel ou effectuer une autre action secondaire. Avec les contrôleurs de mouvement, vous pouvez effectuer une action de menu à l’aide du bouton de *menu* du contrôleur. (c’est-à-dire le bouton avec l’icône « menu » du hamburger)
 * **Saisissez** comment les utilisateurs peuvent directement agir sur les objets à leur disposition pour les manipuler. Avec les contrôleurs de mouvement, vous pouvez faire une action en appuyant sur votre avant-première. Un contrôleur de mouvement peut détecter une compréhension à l’aide d’un bouton de manipulation, d’un déclencheur Palm ou d’un autre capteur.
@@ -233,13 +233,13 @@ Les interactions de base entre les contrôleurs mains et Motion sont **Select** 
 
 ## <a name="composite-gestures-high-level-spatial-input"></a>Gestes composites : entrée spatiale de haut niveau
 
-Les [gestes](gaze-and-commit.md#composite-gestures) à la main et les contrôleurs de mouvement peuvent être suivis au fil du temps pour détecter un ensemble commun de **[gestes composites](gaze-and-commit.md#composite-gestures)** de haut niveau. Cela permet à votre application de détecter les gestes d' **appui** , de **maintien** , de **manipulation** et de **navigation** de haut niveau, que les utilisateurs finissent par utiliser des mains ou des contrôleurs.
+Les [gestes](gaze-and-commit.md#composite-gestures) à la main et les contrôleurs de mouvement peuvent être suivis au fil du temps pour détecter un ensemble commun de **[gestes composites](gaze-and-commit.md#composite-gestures)** de haut niveau. Cela permet à votre application de détecter les gestes d' **appui**, de **maintien**, de **manipulation** et de **navigation** de haut niveau, que les utilisateurs finissent par utiliser des mains ou des contrôleurs.
 
 ## <a name="rendering-the-motion-controller-model"></a>Rendu du modèle de contrôleur de mouvement
 
 **modèles de contrôleur 3D** Windows met à la disposition des applications un modèle pouvant être rendu de chaque contrôleur de mouvement actuellement actif dans le système. En faisant en sorte que votre application charge et articule dynamiquement ces modèles de contrôleur fournis par le système lors de l’exécution, vous pouvez vous assurer que votre application est compatible avec les futures conceptions de contrôleur.
 
-Ces modèles de rendu doivent tous être rendus au niveau de la **poignée** du contrôleur, car l’origine du modèle est alignée sur ce point dans le monde physique. Si vous affichez des modèles de contrôleur, vous souhaiterez peut-être raycast dans votre scène à partir du point de vue du **pointeur** , qui représente le rayon le long duquel les utilisateurs s’attendent naturellement à POINTER, étant donné la conception physique du contrôleur.
+Ces modèles de rendu doivent tous être rendus au niveau de la **poignée** du contrôleur, car l’origine du modèle est alignée sur ce point dans le monde physique. Si vous affichez des modèles de contrôleur, vous souhaiterez peut-être raycast dans votre scène à partir du point de vue du **pointeur**, qui représente le rayon le long duquel les utilisateurs s’attendent naturellement à POINTER, étant donné la conception physique du contrôleur.
 
 Pour plus d’informations sur la façon de charger dynamiquement des modèles de contrôleur dans Unity, consultez la section [rendu du modèle de contrôleur de mouvement dans Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) .
 
@@ -283,4 +283,4 @@ Consultez [résolution des problèmes du contrôleur de mouvement](https://docs.
 * [Mouvements](gaze-and-commit.md#composite-gestures)
 * [Guide de passionnés : votre page d’hébergement Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
 * [Guide de passionnés : utilisation de jeux & des applications dans Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [Fonctionnement du suivi interne](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [Fonctionnement du suivi intérieur-extérieur](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)

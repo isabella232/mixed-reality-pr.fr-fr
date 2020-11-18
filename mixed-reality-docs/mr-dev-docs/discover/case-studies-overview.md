@@ -5,13 +5,13 @@ author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
-keywords: Windows Mixed Reality, HoloLens, étude de cas, vision, scénarios
-ms.openlocfilehash: 78ece9c010ed402c6281ee2f9cd5638db9af4f3d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, HoloLens, étude de cas, vision, scénarios, études de cas, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: b30cc49759867b4f11f3f88195c8d9bec87ba297
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680582"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703485"
 ---
 # <a name="case-study-gallery"></a>Galerie d’études de cas
 
@@ -141,7 +141,7 @@ Lisez nos pensées de haut niveau et comprenez les principes que nous suivons.
     :::column:::
        [ ![ Représentation des êtres humains en réalité mixte](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md) **[représentant des êtres humains en réalité mixte](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
         Quels types d’opportunités émergent quand nous ne pouvons pas créer des éléments fantastiques, mais utiliser les captures les plus réalistes des environnements, des objets et des personnes en réalité mixte ?<br>
-         *Novembre 2017*
+         *Novembre 2017*
     :::column-end:::
     :::column:::
        [ ![ Ma première année pour l’équipe de conception hololens](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md) **[ma première année dans l’équipe de conception hololens](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)**<br>

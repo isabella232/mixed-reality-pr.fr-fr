@@ -5,20 +5,20 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, contrôles, conception
-ms.openlocfilehash: 5859f7141e8fa0ea27f142981e2cbd05b8da53bf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, contrôles, conception, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, collection d’objets, 2D, 3D, MRTK, kit de pratiques de réalité mixte
+ms.openlocfilehash: 41087c4a09e72b199c1ab03f504343bf7d6b1ba8
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679463"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703405"
 ---
 # <a name="object-collection"></a>Collection d’objets
 
 ![Collection d’objets utilisée dans la table périodique de l’application d’éléments](images/UX_Hero_ObjectCollection.jpg)<br>
 
 
-La collection d’objets est un contrôle de disposition qui vous permet de disposer un tableau d’objets dans une forme à trois dimensions prédéfinie. Il prend en charge divers styles de surface : **plan, cylindre, sphère** et **radial** . Vous pouvez ajuster le rayon et la taille des objets, ainsi que l’espace entre eux. La collection d’objets prend en charge n’importe quel objet d’Unity, à la fois 2D et 3D. Dans la **[boîte à outils de la réalité mixte](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** , nous avons créé un script Unity et des exemples qui vous aideront à créer une collection d’objets.
+La collection d’objets est un contrôle de disposition qui vous permet de disposer un tableau d’objets dans une forme à trois dimensions prédéfinie. Il prend en charge divers styles de surface : **plan, cylindre, sphère** et **radial**. Vous pouvez ajuster le rayon et la taille des objets, ainsi que l’espace entre eux. La collection d’objets prend en charge n’importe quel objet d’Unity, à la fois 2D et 3D. Dans la **[boîte à outils de la réalité mixte](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)**, nous avons créé un script Unity et des exemples qui vous aideront à créer une collection d’objets.
 
 
 ## <a name="object-collection-examples"></a>Exemples de collection d’objets

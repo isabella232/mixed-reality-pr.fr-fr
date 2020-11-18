@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, billboarding, balise
-ms.openlocfilehash: 266fb314ae4fccdc25e94b20d04262666be5a1b6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, l’intégration, le balisage, le casque de réalité mixte, le casque de réalité mixte, le casque de réalité virtuelle, HoloLens, MRTK, le kit de temps de réalité mixte
+ms.openlocfilehash: 1f40e1b180eccd8b79da43a07f969375d5135508
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680002"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702885"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding et tag-along
 

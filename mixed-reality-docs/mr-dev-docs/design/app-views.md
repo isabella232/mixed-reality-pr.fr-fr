@@ -5,17 +5,17 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: vue immersive, vue 2D, ardoise, application
-ms.openlocfilehash: e625eca3adb7cd4a9dcd1f971917f008d5daa7d2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: vue immersive, vue 2D, ardoise, application, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
+ms.openlocfilehash: 1380c32dc89e472428c86be30b2fce82a946f3cc
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680006"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702916"
 ---
 # <a name="app-views"></a>Vues d’applications
 
-Les applications Windows peuvent contenir deux types d’affichages, des vues **immersives** et des **vues 2D** . Les applications peuvent basculer entre les différents affichages immersifs et les vues 2D, en présentant leurs vues 2D sur une analyse sous la forme d’une fenêtre ou dans un casque comme un ardoise. Les applications qui ont au moins une vue immersive sont classées en tant qu' **applications de réalité mixte** . Les applications qui n’ont jamais une vue immersive sont des **applications 2D** .
+Les applications Windows peuvent contenir deux types d’affichages, des vues **immersives** et des **vues 2D**. Les applications peuvent basculer entre les différents affichages immersifs et les vues 2D, en présentant leurs vues 2D sur une analyse sous la forme d’une fenêtre ou dans un casque comme un ardoise. Les applications qui ont au moins une vue immersive sont classées en tant qu' **applications de réalité mixte**. Les applications qui n’ont jamais une vue immersive sont des **applications 2D**.
 
 ## <a name="immersive-views"></a>Vues immersives
 

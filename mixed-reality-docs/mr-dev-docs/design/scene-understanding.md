@@ -5,13 +5,13 @@ author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity
-ms.openlocfilehash: 6185d434b1687675f9ae46313277f61cf6d5e1f8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, occlusion, kit de développement logiciel (SDK)
+ms.openlocfilehash: 80fb01707d3265aa3dac23d75ea92034115d3c94
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679419"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703365"
 ---
 # <a name="scene-understanding"></a>Compréhension des scènes
 
@@ -35,7 +35,7 @@ Si vous n’avez pas de périphérique et que vous souhaitez accéder à des exe
 
 [Exemples de scènes de vision](https://github.com/sceneunderstanding-microsoft/unitysample/tree/master/Assets/Resources/SerializedScenesForPCPath)
 
-### <a name="sdk"></a>SDK
+### <a name="sdk"></a>Kit SDK
 
 Si vous recherchez des informations spécifiques sur le développement pour la compréhension de scènes ou des détails sur le fonctionnement de scenes et sur son développement, consultez la documentation de [Présentation de Scene Understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) .
 

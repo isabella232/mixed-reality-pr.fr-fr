@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
-keywords: La réalité mixte, les mains, les contrôleurs de mouvement, l’interaction et la conception
-ms.openlocfilehash: 8b2ed6127708204d0c4a537c56b2225ff26e0d0f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: La réalité mixte, les mains, les contrôleurs de mouvement, l’interaction, la conception, le casque de réalité mixte, le casque de réalité mixte, le casque de réalité virtuelle, HoloLens, MRTK et la réalité mixte Toolkit
+ms.openlocfilehash: e931e5ec11548d9aab0d1dd7f8921dbc7554abab
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680866"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702155"
 ---
 # <a name="hands-and-motion-controllers"></a>Mains et contrôleurs de mouvement
 ## <a name="scenarios"></a>Scénarios
@@ -37,7 +37,7 @@ Certains scénarios spécifiques peuvent être :
        Il s’agit d’une modalité tirant parti de la puissance des mains, avec laquelle les utilisateurs peuvent toucher et manipuler les hologrammes directement. En tirant parti de l’expérience de vie quotidienne et en fournissant un intuitivité visuel approprié, les utilisateurs peuvent utiliser la même méthode de manipulation d’objets réels pour interagir avec des objets virtuels.
     :::column-end:::
     :::column:::
-       [![Pointage et validation avec les mains](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
+       [![Pointer et valider avec les mains](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
         ### <a name="point-and-commit-with-handsbr"></a>[Pointer et valider avec les mains](point-and-commit.md)<br>
         Cette modalité permet aux utilisateurs d’interagir avec des hologrammes à distance. Il permet aux utilisateurs de tirer le meilleur parti de l’environnement. Les utilisateurs peuvent placer des hologrammes n’importe où et toujours y accéder à partir de n’importe quelle distance. Les modèles et les gestes mentals pour le contrôle et la manipulation des hologrammes 2D et 3D sont hautement synchronisés avec ceux de manipulation directe.
     :::column-end:::

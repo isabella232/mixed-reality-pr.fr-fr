@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
-keywords: Mixed Reality, pointer du regard, stabiliser, interaction, concevoir
-ms.openlocfilehash: 825623b00107eec400b4df926c8980c92b065902
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: La réalité mixte, le point de vue, l’interaction, la conception, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de la réalité virtuelle, HoloLens, MRTK, le kit de conditions de la réalité mixte, l’expérience utilisateur, les instructions, le mode liste
+ms.openlocfilehash: abedff5a273816f49419c7823b96eda1d474e336
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680926"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702315"
 ---
 # <a name="head-gaze-and-dwell"></a>Suivre de la tête et stabiliser
 
