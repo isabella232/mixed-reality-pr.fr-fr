@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Réalité mixte, Conférence, sommet, développeur, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
-ms.translationtype: HT
+ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
+ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573283"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94897354"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mi-développement de la réalité mixte-Japon
 
@@ -27,9 +27,13 @@ Nous sommes impatients de vous joindre au jour de développement de la réalité
 
 **Inscription-gratuit**
 
+**Langue principale-japonais**
+
 ## <a name="registration"></a>Inscription
 
-Bientôt disponible
+[Inscription-maintenant ouverte](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+
+Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev Days au Japon.  L’événement est gratuit et est conservé en ligne dans les événements en direct de Microsoft Teams.  Nous demandez à ce que les participants s’inscrivent afin que nous puissions envoyer des mises à jour par courrier électronique à mesure que l’événement se rapproche et que vous pouvez participer aux éléments interactifs de l’événement.
 
 ## <a name="schedule---subject-to-change"></a>Planification-sujet à modifier
 
@@ -49,7 +53,7 @@ Bientôt disponible
 |1:14:00-1:25pm|*Session 3* Vue d’ensemble du développement HoloLens 2|Madoka Chiyoda|JA|200|
 |1:30-1:55pm|*Session 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Parc Yoon|JA|300|
 |2:14:00-2:25pm|*Session 5* Prise en main de l’analyseur HoloLens 2 et du moteur inréel (MRTK-inreal)|Cameron micka|FR|300|
-|2:30-2:55pm|*Session 6* Conception d’application MR (recommandation pour la création de l’interface utilisateur/expérience utilisateur pour l’application HL2)|Daniel Escudero|FR|300|
+|2:30-2:55pm|*Session 6* Création de l’application « conception d’hologrammes ». Nous allons étudier les fonctionnalités, les défis et les autres apprentissages amusants découverts lors de la création de cette nouvelle application HoloLens 2.|Daniel Escudero|FR|300|
 |2:55pm-3:22h00|**Saut**||||
 |3:22h00-3:35pm|*Session 7* Ancres d’objets Azure|TBD|FR|300|
 |3:40pm-4:13h05|*Session 8* Rendu distant Azure|Atsushi Suzuki|JA|300|
