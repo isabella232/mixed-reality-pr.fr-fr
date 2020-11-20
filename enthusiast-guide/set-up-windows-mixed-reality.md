@@ -3,12 +3,12 @@ title: Configurer Windows Mixed Reality
 description: Comment configurer vos contrôleurs de mouvement Windows Mixed Reality, la voix et l’audio, et définir la limite de votre espace pour un espace de lecture sécurisé.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, prise en main, configuration, contrôleur de mouvement, contrôleur, voix, audio, assis, debout, limite, pilotes graphiques, Microsoft Edge, chrome
-ms.openlocfilehash: 95ca5b8d86e26061e565a74efa36e49cc3d1b92b
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 16fa0fbf1574a61a5c7401de8a1e0431e183ec11
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132143"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002994"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurer Windows Mixed Reality
 
@@ -24,7 +24,11 @@ Pour exécuter Windows Mixed Reality, vous avez besoin des éléments suivants 
 
 ## <a name="get-set"></a>Définir
 
-Préparez votre espace (y compris votre espace de charge). Veillez à ce qu’il n’y ait pas d’obstacles, de dangers ou d’éléments fragiles dans le domaine que vous utiliserez. Ne pas configurer en haut d’un escalier ou sous un ventilateur à plafond très faible. Retirez les breakables et les obstacles de la zone, et assurez-vous que vous et toute personne qui utilise votre casque lisent et comprennent les [consignes de sécurité](https://support.microsoft.com/help/4039969).
+Préparez votre espace (y compris votre espace de charge). Veillez à ce qu’il n’y ait pas d’obstacles, de dangers ou d’éléments fragiles dans le domaine que vous utiliserez. Ne pas configurer en haut d’un escalier ou sous un ventilateur à plafond très faible. Retirez les breakables et les obstacles de la zone, et assurez-vous que vous et toute personne qui utilise votre casque lisent et comprennent les consignes de sécurité.
+
+Une fois que votre espace est prêt, connectez-vous à votre casque, mais ne le mettez pas encore sur le tout, nous devons tout d’abord effectuer une installation sur votre ordinateur. Nous allons exécuter une vérification de PC, télécharger des logiciels, connecter vos contrôleurs et créer une [limite](boundary-questions.md) pour vous aider à éviter les obstacles.
+
+Vient ensuite la partie amusante, placez sur votre casque et entrez dans le monde mixte. Cortana sera en attente de vous présenter une visite guidée. En avant !
 
 ## <a name="go"></a>OK
 
@@ -40,7 +44,7 @@ Si vous avez un casque sans radio intégrée, vous devrez configurer vos contrô
 
 Si vous envisagez uniquement d’utiliser un boîtier et une souris Xbox, vous n’avez pas besoin de coupler vos contrôleurs.  Si vous envisagez d’utiliser des contrôleurs, vous devez probablement les coupler.
 
-**Remarque** : les contrôleurs de mouvement Windows Mixed Reality nécessitent Bluetooth 4,0. Si votre ordinateur ne dispose pas de Bluetooth intégré, vous devez brancher une carte USB Bluetooth qui prend en charge Bluetooth 4,0 pour activer vos contrôleurs de mouvement. Si vous utilisez la radio intégrée dans votre casque, vous n’avez pas besoin d’un adaptateur Bluetooth.
+**Remarque**: les contrôleurs de mouvement Windows Mixed Reality nécessitent Bluetooth 4,0. Si votre ordinateur ne dispose pas de Bluetooth intégré, vous devez brancher une carte USB Bluetooth qui prend en charge Bluetooth 4,0 pour activer vos contrôleurs de mouvement. Si vous utilisez la radio intégrée dans votre casque, vous n’avez pas besoin d’un adaptateur Bluetooth.
 
 ![Familiarisez-vous avec vos contrôleurs de mouvement](images/get_to_know_controllers.png)
 
@@ -100,7 +104,7 @@ Vous pouvez activer les commandes Cortana à l’intérieur de la réalité mixt
 
 ## <a name="adjusting-your-headsets-display-settings"></a>Réglage des paramètres d’affichage de votre casque
 
-Windows Mixed Reality choisit automatiquement les paramètres d’affichage qui équilibrent la qualité et les performances, en fonction de la configuration matérielle de votre PC. Pour ajuster ces paramètres, accédez à **paramètres > la réalité mixte > l’affichage du casque** .
+Windows Mixed Reality choisit automatiquement les paramètres d’affichage qui équilibrent la qualité et les performances, en fonction de la configuration matérielle de votre PC. Pour ajuster ces paramètres, accédez à **paramètres > la réalité mixte > l’affichage du casque**.
 
 ### <a name="visuals"></a>Visuels
 
@@ -126,7 +130,7 @@ Ce paramètre permet d’ajuster l’étalonnage IPD des casques avec la prise e
 
 Ce paramètre avancé remplace l’expérience du taux d’actualisation de l’affichage du casque par défaut.
 
-* **Automatique (par défaut)** : sélectionne automatiquement l’expérience 60 Hz ou 90Hz en fonction de la configuration matérielle de votre PC.
+* **Automatique (par défaut)**: sélectionne automatiquement l’expérience 60 Hz ou 90Hz en fonction de la configuration matérielle de votre PC.
 * **60Hz**
 * **90Hz**
 
@@ -138,7 +142,7 @@ Ce paramètre avancé remplace l’expérience du taux d’actualisation de l’
 Ce paramètre contrôle le comportement de Windows Mixed Reality en réponse au capteur de présence de votre casque :
 
 * **Basculer automatiquement à l’aide du capteur de présence du casque** (par défaut) : Windows dirige automatiquement l’entrée (clavier, souris...) vers Windows Mixed Reality chaque fois que vous enportez votre casque. Vous pouvez le remplacer à tout moment avec Win + Y.
-* **Basculer manuellement à l’aide de la touche Windows + Y** : Windows n’utilise pas le capteur de présence du casque pour détecter le moment où vous enportez votre casque. Vous devez utiliser Win + Y pour basculer votre entrée entre votre ordinateur de bureau et Windows Mixed Reality.
+* **Basculer manuellement à l’aide de la touche Windows + Y**: Windows n’utilise pas le capteur de présence du casque pour détecter le moment où vous enportez votre casque. Vous devez utiliser Win + Y pour basculer votre entrée entre votre ordinateur de bureau et Windows Mixed Reality.
 
 Ce paramètre est disponible sur Windows 10, version 1903 ou ultérieure.
 
@@ -165,7 +169,7 @@ Pour utiliser le nouveau Microsoft Edge basé sur le chrome dans Windows Mixed R
 - Les sites Web ouverts dans Windows Mixed Reality sont perdus lorsque le portail de réalité mixte se ferme, bien que les fenêtres Microsoft Edge restent là où elles ont été placées dans la page d’hébergement de la réalité mixte.
 - L’audio des fenêtres Microsoft Edge n’est pas spatial.
 - Correction de la version d’extension de visionneuse 360 2.3.8 : l’ouverture d’une vidéo 360 à partir de YouTube dans Windows Mixed Reality peut entraîner la déformation de la vidéo dans le casque. Le redémarrage de Edge doit mettre à jour l’extension de visionneuse 360 de façon invisible pour résoudre ce problème. Vous pouvez vérifier la version de l’extension que vous avez en entrant `edge://system/` dans la barre d’adresses et en sélectionnant le bouton « développer » en regard de « extensions ».
-- Pendant les sessions Windows Mixed Reality, les moniteurs virtuels s’affichent sous la forme de moniteurs physiques génériques dans les **paramètres > système > écran** .
+- Pendant les sessions Windows Mixed Reality, les moniteurs virtuels s’affichent sous la forme de moniteurs physiques génériques dans les **paramètres > système > écran**.
 
 ## <a name="launching-mixed-reality-after-the-first-time"></a>Lancement de la réalité mixte après la première exécution
 

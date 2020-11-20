@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573203"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002964"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Forum aux questions sur les réverbérations HP G2
 
@@ -43,7 +43,7 @@ Si vous constatez une erreur 7-14 « une erreur s’est produite », procédez
 - Assurez-vous que les pilotes les plus récents sont installés pour votre casque et votre contrôleur USB.
 - Vérifiez que vous utilisez un pilote USB Microsoft. Il doit y avoir un « Microsoft » dans le nom de l’appareil « contrôleur hôte eXtensible ».
 - Essayez de brancher le câble sur un port USB-3,0 différent sur votre ordinateur. (Essayez le type USB-C et tapez-A ports)
-- Utilisez le C USB inclus sur un adaptateur inclus pour essayer différents ports.
+- Utilisez le C USB inclus sur un adaptateur pour essayer d’autres ports.
 - Essayez de brancher le casque sur votre ordinateur via un concentrateur USB.
 
 > [!NOTE]
