@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Réalité mixte, Conférence, sommet, développeur, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: 6f673c78004f94692fcb09d304d6d40d2f97f1c3
+ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94933264"
+ms.locfileid: "94941855"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days - Japon
 
@@ -51,7 +51,7 @@ Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev
 |12:14:00-12:50pm|*Session déjeuner* Panel : discussion gratuite interactive, Q et A, MRTK + Oculus Quest 2|Madoka Chiyoda + MVP Microsoft|JA|200|
 |12:50pm-1:14:00|**Saut**||||
 |1:14:00-1:25pm|*Session 3* Vue d’ensemble du développement HoloLens 2|Madoka Chiyoda|JA|200|
-|1:30-1:55pm|*Session 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Parc Yoon|JA|300|
+|1:30-1:55pm|*Session 4* Blocs de construction de l’expérience utilisateur d’MRTK (v 2.5.0)|Parc Yoon|JA|300|
 |2:14:00-2:25pm|*Session 5* Prise en main de l’analyseur HoloLens 2 et du moteur inréel (MRTK-inreal)|Cameron micka|FR|300|
 |2:30-2:55pm|*Session 6* Création de l’application « conception d’hologrammes ». Nous allons étudier les fonctionnalités, les défis et les autres apprentissages amusants découverts lors de la création de cette nouvelle application HoloLens 2.|Daniel Escudero|FR|300|
 |2:55pm-3:22h00|**Saut**||||
