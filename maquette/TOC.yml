@@ -1,2 +1,10 @@
-- name: Index
-  href: index.md
+- name: Bienvenue dans Maquette
+  href: index.yml
+- name: Vue d’ensemble
+  href: overview/toc.yml
+- name: Démarrages rapides
+  href: quickstarts/toc.yml
+- name: Exemples
+  href: samples/toc.yml
+- name: Ressources
+  href: resources/toc.yml
