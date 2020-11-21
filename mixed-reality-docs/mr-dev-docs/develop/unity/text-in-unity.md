@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, conception, contrôles, police, typographie, UI, UX, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 04b62cd0989042856dbd15d467d042f67df69931
+ms.sourcegitcommit: 5d6dbbb94e60cf10786d0fbbaf4239a1541e9e29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677358"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95008132"
 ---
 # <a name="text-in-unity"></a>Texte dans Unity
 
@@ -93,7 +93,7 @@ En fonction de ces facteurs de mise à l’échelle, nous avons créé le [texte
 
 ### <a name="shader-with-occlusion-support"></a>Nuanceur avec prise en charge d’occlusion
 
-La matière de police par défaut d’Unity ne prend pas en charge l’occlusion. Pour cette raison, le texte derrière les objets s’affiche par défaut. Nous avons inclus un [nuanceur simple qui prend en charge l’occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MRTK/Core/StandardAssets/Shaders/Text3DShader.shader). L’image ci-dessous montre le texte avec les éléments de police par défaut (à gauche) et le texte avec une occlusion appropriée (à droite).
+La matière de police par défaut d’Unity ne prend pas en charge l’occlusion. Pour cette raison, le texte derrière les objets s’affiche par défaut. Nous avons inclus un [nuanceur simple qui prend en charge l’occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader). L’image ci-dessous montre le texte avec les éléments de police par défaut (à gauche) et le texte avec une occlusion appropriée (à droite).
 
 ![Nuanceur avec prise en charge d’occlusion](images/hug-text-07-1000px.png)<br>
 *Nuanceur avec prise en charge d’occlusion*
