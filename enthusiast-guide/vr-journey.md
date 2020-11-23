@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR,
-ms.openlocfilehash: 429a1130d628f54f12eb8ff6eed3f48d4712143a
-ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
+ms.openlocfilehash: 9426a85611cf53a349ca5bc8f3727ee8a784940e
+ms.sourcegitcommit: a129039d8ed228ed0305aa312006cadf403f0831
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941865"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95417203"
 ---
 # <a name="start-your-vr-journey"></a>Commencer votre parcours de réalité virtuelle
 
@@ -29,7 +29,7 @@ Il est important que votre ordinateur puisse gérer le matériel VR que vous ach
 
 |  Point de contrôle  |  Résultat  |
 | --- | --- |
-| [Avant de commencer](before-you-start.md) |  |
+| [Avant de commencer](before-you-start.md) | Assurez-vous de disposer de tout ce dont vous avez besoin pour commencer votre voyage VR |
 | [Recommandations sur le matériel PC minimum à avoir](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Tout ce que vous devez savoir sur l’exécution de Windows Mixed Reality, de Windows Mixed Reality ultra et de l’application portail Windows Mixed Reality |
 | [Obtenir de l’aide sur la compatibilité des PC](get-help-with-pc-compatibility.md) | Présentation du rapport généré à partir de la vérification du PC Windows Mixed Reality |
 | [FAQ sur l’achat](before-you-buy-faqs.md) | Obtenir des réponses à toutes vos questions d’achat sur les spécifications techniques, les appareils et les contrôleurs |
@@ -52,7 +52,7 @@ Il existe un large éventail de fonctionnalités et de services disponibles par 
 
 <br>
 
-|  Point de contrôle  |  Fonctionnalité  |
+|  Point de contrôle  |  Caractéristique  |
 | --- | --- |
 | [Découvrir la réalité mixte](learn-mixed-reality.md) | En savoir plus sur l’utilisation de vos entrées en regard, en voix, en contrôleurs et au clavier et à la souris |
 | [Naviguer dans la page d’hébergement Windows Mixed Reality](your-mixed-reality-home.md) | Explorez l’environnement virtuel de Windows Mixed Reality  |
@@ -64,11 +64,16 @@ Il existe un large éventail de fonctionnalités et de services disponibles par 
 
 ## <a name="4-discover-apps-and-content"></a>4. découvrir des applications et du contenu
 
-Recherchez des jeux immersifs, des applications de bureau et du contenu VR et utilisez le navigateur Microsoft Edge dans les ressources ci-dessous. 
+Recherchez des jeux immersifs, des applications de bureau et du contenu VR dans les ressources ci-dessous. 
 
 <br>
 
-| [Jeux, vidéo 360 et applications](using-games-and-apps-in-windows-mixed-reality.md) | Commencez avec votre premier jeu immersif, les ardoises 2D Store, les applications de bureau et les expériences WebVR | | [Utilisation de SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connectez votre appareil et jouez à SteamVR Games pour en savoir plus sur le programme Windows Insider | | [Utilisation de Microsoft Edge](using-microsoft-edge.md) | Installer la dernière version de Microsoft Edge sur votre appareil immersif | | [Utilisation de WebVR](webvr.md) | Obtenir le programme d’installation pour découvrir VR dans votre environnement de navigateur |
+|  Point de contrôle  |  Caractéristique  |
+| --- | --- |
+| [Jeux, vidéo 360 et applications](using-games-and-apps-in-windows-mixed-reality.md) | Commencez avec votre premier jeu immersif, les ardoises du Store 2D, les applications de bureau et les expériences WebVR |
+| [Utilisation de SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connectez votre appareil et jouez à SteamVR Games pour en savoir plus sur le programme Windows Insider |
+| [Utilisation de Microsoft Edge](using-microsoft-edge.md) | Installer la dernière version de Microsoft Edge sur votre appareil immersif |
+| [Utilisation de WebVR](webvr.md) | Obtenir le programme d’installation pour découvrir VR dans votre environnement de navigateur |
 
 ## <a name="troubleshooting-tips--resources"></a>Résolution des problèmes, conseils & ressources
 
