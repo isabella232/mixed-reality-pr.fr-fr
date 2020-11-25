@@ -6,19 +6,19 @@ ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Réalité mixte, interaction, conception, HoloLens, mains, éloigné, pointer et valider
-ms.openlocfilehash: 5baf625127b1c1757bb6ae82473adcb8329746cd
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Réalité mixte, interaction, conception, HoloLens, mains, loin, pointer et valider, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens, rayons émanant de la main, manipulation d’objets, MRTK, Mixed Reality Toolkit, DoF
+ms.openlocfilehash: 91befcec2d9b020c58d3ed02fd181122ce715936
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697356"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703455"
 ---
 # <a name="point-and-commit-with-hands"></a>Pointer et valider avec les mains
 
 ![Curseurs](images/UX_Hero_HandRay.jpg)
 
-Grâce au modèle d’entrée Pointer et valider avec les mains, les utilisateurs peuvent cibler, sélectionner et manipuler du contenu 2D et des objets 3D hors de portée. Cette technique d’interaction « éloignée » est propre à la réalité mixte et ne constitue pas pour les humains une méthode d’interaction naturelle avec le monde réel. Par exemple, dans le film de super-héros *X-Men* , le personnage [Magnéto](https://en.wikipedia.org/wiki/Magneto_(comics)) peut atteindre et manipuler des objets éloignés avec les mains. Ce n’est pas quelque chose que les humains peuvent faire dans la réalité. Dans HoloLens (réalité augmentée) et dans la réalité mixte, nous dotons les utilisateurs de ce pouvoir magique, éliminant ainsi les contraintes physiques du monde réel pour proposer une expérience amusante avec le contenu holographique et rendre les interactions des utilisateurs plus efficaces.
+Grâce au modèle d’entrée Pointer et valider avec les mains, les utilisateurs peuvent cibler, sélectionner et manipuler du contenu 2D et des objets 3D hors de portée. Cette technique d’interaction « éloignée » est propre à la réalité mixte et ne constitue pas pour les humains une méthode d’interaction naturelle avec le monde réel. Par exemple, dans le film de super-héros *X-Men*, le personnage [Magnéto](https://en.wikipedia.org/wiki/Magneto_(comics)) peut atteindre et manipuler des objets éloignés avec les mains. Ce n’est pas quelque chose que les humains peuvent faire dans la réalité. Dans HoloLens (réalité augmentée) et dans la réalité mixte, nous dotons les utilisateurs de ce pouvoir magique, éliminant ainsi les contraintes physiques du monde réel pour proposer une expérience amusante avec le contenu holographique et rendre les interactions des utilisateurs plus efficaces.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -60,12 +60,12 @@ Les commandes gestuelles de base sont déclenchées par un clic dans l’air, ef
     :::column:::
         ![rayons émanant de la main en pointage](images/hand-rays-pointing.jpg)<br>
         **État de pointage**<br>
-        Dans l’état de *pointage* , le rayon est une ligne en pointillés et le curseur un anneau.
+        Dans l’état de *pointage*, le rayon est une ligne en pointillés et le curseur un anneau.
     :::column-end:::
     :::column:::
         ![rayons émanant de la main en validation](images/hand-rays-commit.jpg)<br>
         **État de validation**<br>
-        Dans l’état de *validation* , le rayon se transforme en ligne continue et le curseur est réduit à un point.
+        Dans l’état de *validation*, le rayon se transforme en ligne continue et le curseur est réduit à un point.
     :::column-end:::
 :::row-end:::
 

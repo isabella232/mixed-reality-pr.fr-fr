@@ -6,13 +6,13 @@ ms.author: cmeekhof
 ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Réalité mixte, pointage du regard, ciblage par pointage du regard, interaction, conception, à portée de main, HoloLens
-ms.openlocfilehash: 8141bc588247be15174d4a85992b74911ffc002e
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Réalité mixte, regard, ciblage du regard, interaction, conception, mains de près, HoloLens, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, MRTK, Mixed Reality Toolkit, bouton, colliders, cadre englobant, 2D, gestes instinctifs
+ms.openlocfilehash: a882aa4bace0d911d328ad82d881b5c0d8cd0c96
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631537"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702845"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipulation directe avec les mains
 
