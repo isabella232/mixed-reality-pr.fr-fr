@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, interactions avec des objets, cadres englobants
 ms.localizationpriority: high
-ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5e2857a7baf85187902bd98de6271e53dcc3539e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353517"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679268"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interaction avec les objets 3D
 
@@ -34,14 +34,14 @@ Voici les principales étapes à suivre pour y parvenir :
 3. Configurer le composant Object Manipulator (Script)
 
 > [!NOTE]
-> Pour pouvoir **manipuler un objet** , celui-ci doit avoir les composants suivants :
+> Pour pouvoir **manipuler un objet**, celui-ci doit avoir les composants suivants :
 >
-> * Le composant **Collider** , par exemple un Box Collider
+> * Le composant **Collider**, par exemple un Box Collider
 > * Le composant **Object Manipulator (Script)**
 >
 > Pour pouvoir **manipuler** et **saisir** un objet avec les mains suivies, celui-ci doit avoir les composants suivants :
 >
-> * Le composant **Collider** , par exemple un Box Collider
+> * Le composant **Collider**, par exemple un Box Collider
 > * Le composant **Object Manipulator (Script)**
 > * Le composant **NearInteractionGrabbable**
 
@@ -85,7 +85,7 @@ Dans la fenêtre de hiérarchie, resélectionnez tous les **objets de pièces de
 
 ![Unity avec tous les objets de composant du Rover sélectionnés, et le composant Audio Source ajouté et configuré](images/mr-learning-base/base-07-section1-step1-4.png)
 
-Dans la fenêtre de hiérarchie, développez l’objet RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** pour révéler tous les objets d’indicateur de placement, puis sélectionnez la première pièce de Rover, RoverParts > **Camera_Part** , et configurez le composant **Part Assembly Controller (Script)** comme suit :
+Dans la fenêtre de hiérarchie, développez l’objet RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** pour révéler tous les objets d’indicateur de placement, puis sélectionnez la première pièce de Rover, RoverParts > **Camera_Part**, et configurez le composant **Part Assembly Controller (Script)** comme suit :
 
 * Assignez l’objet **Camera_PlacementHint** au champ **Location To Place** (Emplacement).
 
@@ -93,16 +93,16 @@ Dans la fenêtre de hiérarchie, développez l’objet RoverAssembly > RoverMode
 
 **Répétez** cette étape pour chacun des objets de pièces de Rover restants et l’objet RoverAssembly afin de configurer le composant **Part Assembly Controller (Script)** comme suit :
 
-* Pour **Generator_Part** , assignez l’objet **Generator_PlacementHint** au champ **Location To Place**.
-* Pour **Lights_Part** , assignez l’objet **Lights_PlacementHint** au champ **Location To Place**.
-* Pour **UHFAntenna_Part** , assignez l’objet **UHFAntenna_PlacementHint** au champ **Location To Place**.
-* Pour **Spectrometer_Part** , assignez l’objet **Spectrometer_PlacementHint** au champ **Location To Place**.
-* Pour **RoverAssembly** , assignez l’objet lui-même (c’est-à-dire le même objet **RoverAssembly** ), au champ **Location To Place**.
+* Pour **Generator_Part**, assignez l’objet **Generator_PlacementHint** au champ **Location To Place**.
+* Pour **Lights_Part**, assignez l’objet **Lights_PlacementHint** au champ **Location To Place**.
+* Pour **UHFAntenna_Part**, assignez l’objet **UHFAntenna_PlacementHint** au champ **Location To Place**.
+* Pour **Spectrometer_Part**, assignez l’objet **Spectrometer_PlacementHint** au champ **Location To Place**.
+* Pour **RoverAssembly**, assignez l’objet lui-même (c’est-à-dire le même objet **RoverAssembly**), au champ **Location To Place**.
 
 Dans la fenêtre de hiérarchie, sélectionnez l’objet de bouton RoverExplorer > Buttons > **Reset** puis, dans la fenêtre de l’inspecteur, configurez l’événement **OnClick ()** comme suit :
 
 * Assignez l’objet **RoverAssembly** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **PartAssemblyController** > **ResetPlacement ()** pour définir cette fonction en tant qu’action à exécuter lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **PartAssemblyController** > **ResetPlacement ()** pour définir cette fonction en tant qu’action à exécuter lorsque l’événement est déclenché.
 
 ![Unity avec l’événement OnClick de l’objet de bouton Reset configuré](images/mr-learning-base/base-07-section1-step1-6.png)
 
@@ -137,11 +137,11 @@ Dans la fenêtre de hiérarchie, développez l’objet Menu > **ButtonCollection
 
 * Affectez la valeur **Enable** à **Main Label Text** (Texte de l'étiquette principale).
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **BoundingBox** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **BoundingBox** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **cochée**.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **ObjectManipulator** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **ObjectManipulator** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **cochée**.
 * Conservez « cube avec cadre englobant » comme **icône**.
 
@@ -151,13 +151,13 @@ Renommez **BoundingBox_Disable** les quatrième et dernier bouton puis, dans la 
 
 * Affectez la valeur **Disable** à **Main Label Text**.
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **BoundingBox** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **BoundingBox** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **décochée**.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **ObjectManipulator** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **ObjectManipulator** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **décochée**.
-* Remplacez l’ **icône** par « cube avec cadre englobant ».
+* Remplacez l’**icône** par « cube avec cadre englobant ».
 
 ![Unity avec l’objet de bouton BoundingBox_Disable sélectionné et le composant Button Config Helper configuré](images/mr-learning-base/base-07-section2-step1-3.png)
 

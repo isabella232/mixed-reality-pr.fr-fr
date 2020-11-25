@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, solveurs
 ms.localizationpriority: high
-ms.openlocfilehash: 64b5c3c719ce72260a10226d22c178d4016e403b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353527"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679298"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Création de contenu dynamique avec des solveurs
 
@@ -28,7 +28,7 @@ Dans ce tutoriel, vous allez explorer différentes façons de placer dynamiqueme
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>Emplacement des solveurs dans le MRTK
 
- Les solveurs du MRTK se trouvent dans le dossier du SDK MRTK. Pour voir les solveurs disponibles dans votre projet, dans la fenêtre Project, accédez à **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers**  :
+ Les solveurs du MRTK se trouvent dans le dossier du SDK MRTK. Pour voir les solveurs disponibles dans votre projet, dans la fenêtre Project, accédez à **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers** :
 
 ![Fenêtre de projet Unity avec le dossier SOlvers sélectionné](images/mr-learning-base/base-05-section1-step1-1.png)
 
@@ -39,14 +39,14 @@ Dans ce tutoriel, nous allons passer en revue l’implémentation du solveur Dir
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Utilisation du solveur Directional Indicator pour diriger l’utilisateur vers des objets
 
-Dans la fenêtre Project, accédez au dossier à la **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** , cliquez et faites glisser le préfabriqué **Chevron** dans la fenêtre Hierarchy et définissez sa **Position** de transformation sur X = 0, Y = 0, Z = 2 pour le positionner à proximité de l’objet RoverExplorer :
+Dans la fenêtre Project, accédez au dossier à la **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs**, cliquez et faites glisser le préfabriqué **Chevron** dans la fenêtre Hierarchy et définissez sa **Position** de transformation sur X = 0, Y = 0, Z = 2 pour le positionner à proximité de l’objet RoverExplorer :
 
 ![Unity avec le préfabriqué nouvellement ajouté Chevron sélectionné](images/mr-learning-base/base-05-section2-step1-1.png)
 
 > [!TIP]
 > Si vous constatez que l’appareil photo ou d’autres icônes de votre scène masquent les objets ou gênent, vous pouvez les masquer en <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">basculant les Gizmos</a> sur la position désactivé, comme illustré dans l’image ci-dessus. Pour en savoir plus sur le menu Gizmos et sur la façon dont vous pouvez l’utiliser pour optimiser votre vue Scene, consultez la page consacrée au <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">menu Gizmos</a> dans la documentation Unity.
 
-Renommez l’objet **Indicator** de Chevron qui vient d’être ajouté puis, dans la fenêtre Inspector, utilisez le bouton **Ajouter un composant** pour ajouter les composants **DirectionalIndicator**  :
+Renommez l’objet **Indicator** de Chevron qui vient d’être ajouté puis, dans la fenêtre Inspector, utilisez le bouton **Ajouter un composant** pour ajouter les composants **DirectionalIndicator** :
 
 ![Unity avec le composant de solveur DirectionalIndicator ajouté](images/mr-learning-base/base-05-section2-step1-2.png)
 
@@ -85,7 +85,7 @@ Dans la fenêtre Hierarchy, sélectionnez l’objet RoverExplorer > **RoverAssem
 
 * Vérifiez que la propriété **Tracked Target Type** du composant **SolverHandler** est définis sur **Head**.
 * Cochez la case **Keep Orientation Vertical**.
-* Dans la liste déroulante **Magnetic Surfaces** > **Element 0** , décochez toutes les options sauf **Spatial Awareness**.
+* Dans la liste déroulante **Magnetic Surfaces** > **Element 0**, décochez toutes les options sauf **Spatial Awareness**.
 
 ![Unity avec le composant de solveur TapToPlace ajouté et configuré](images/mr-learning-base/base-05-section3-step1-1.png)
 
@@ -104,20 +104,20 @@ Avec l’objet RoverAssembly toujours sélectionné dans la fenêtre Hierarchy, 
 Configurez l’événement comme suit :
 
 * Affectez l’objet **RoverAssembly** en tant qu’écouteur pour l’événement On Placing Started () en le faisant glisser de la fenêtre Hierarchy dans le champ **None (Object)**
-* Dans la liste déroulante **No Function** , sélectionnez **TapToPlace** > **float SurfaceNormalOffset** pour mettre à jour la valeur de la propriété SurfaceNormalOffset quand l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **TapToPlace** > **float SurfaceNormalOffset** pour mettre à jour la valeur de la propriété SurfaceNormalOffset quand l’événement est déclenché.
 * Vérifiez que l’argument est défini sur **0**
 
 ![Unity avec l’événement TapToPlace OnPlacingStarted configuré](images/mr-learning-base/base-05-section3-step1-3.png)
 
 Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur une zone vide, sélectionnez **3D Object** > **Cube** pour créer un objet temporaire représentant le sol, puis configurez le composant **Transform** comme suit :
 
-* **Position**  : X = 0, Y = -1,65, Z = 6
-* **Rotation**  : X = 0, Y = 0, Z = 0
-* **Scale**  : X = 10, Y = 0,2, Z = 10
+* **Position** : X = 0, Y = -1,65, Z = 6
+* **Rotation** : X = 0, Y = 0, Z = 0
+* **Scale** : X = 10, Y = 0,2, Z = 10
 
 ![Unity avec l’objet de cube de sol temporaire ajouté et positionné](images/mr-learning-base/base-05-section3-step1-4.png)
 
-Le cube temporaire étant toujours sélectionné dans la fenêtre Hierarchy, dans la fenêtre Inspector, utilisez la liste déroulante **Couches** pour changer le paramètre Layer du cube de façon à inclure seulement la couche **Spatial Awareness**  :
+Le cube temporaire étant toujours sélectionné dans la fenêtre Hierarchy, dans la fenêtre Inspector, utilisez la liste déroulante **Couches** pour changer le paramètre Layer du cube de façon à inclure seulement la couche **Spatial Awareness** :
 
 ![Unity avec l’objet de cube de sol temporaire, la couche étant définie sur Spatial Awareness](images/mr-learning-base/base-05-section3-step1-5.png)
 

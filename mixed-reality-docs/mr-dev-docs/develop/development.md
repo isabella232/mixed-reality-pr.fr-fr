@@ -7,13 +7,13 @@ ms.author: grbury
 ms.date: 07/31/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Réalité mixte, développer, développement, HoloLens, unity, unreal, directx
-ms.openlocfilehash: 75916cbd7a59556f1cda2e7e94c3393c14938086
-ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+keywords: Réalité mixte, développer, développement, HoloLens, unity, unreal, directx, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, développement de réalité virtuelle, développement de réalité augmentée
+ms.openlocfilehash: e269523b7ddd369d65e9a33dbeb32b13a17428a4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93036255"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677858"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Introduction au développement de réalité mixte
 
@@ -23,9 +23,9 @@ La réalité mixte est un vaste univers où les mondes réels et virtuels se ren
 
 ## <a name="development-options"></a>Options de développement
 
-**Unity**  : Unity est l’une des principales plateformes de développement en temps réel du marché. Son code d’exécution sous-jacent est écrit en C++ et tous les scripts de développement sont écrits en C# . Quel que soit le type de projet qui vous intéresse, qu’il s’agisse de créer des jeux, des films, des animations ou encore de restituer des concepts architecturaux ou d’ingénierie dans un monde virtuel, Unity a l’infrastructure qu’il vous faut.
+**Unity** : Unity est l’une des principales plateformes de développement en temps réel du marché. Son code d’exécution sous-jacent est écrit en C++ et tous les scripts de développement sont écrits en C# . Quel que soit le type de projet qui vous intéresse, qu’il s’agisse de créer des jeux, des films, des animations ou encore de restituer des concepts architecturaux ou d’ingénierie dans un monde virtuel, Unity a l’infrastructure qu’il vous faut.
 
-**Unreal**  : Unreal Engine 4 est un puissant moteur de création open source qui inclut une prise en charge complète de la réalité mixte, aussi bien avec C++ qu’avec Blueprints. À compter d’Unreal Engine 4.25, la prise en charge d’HoloLens est complète et prête pour la production. Avec des fonctionnalités telles que le système flexible Blueprints Visual Scripting, les concepteurs peuvent utiliser pratiquement tous les concepts et outils qui sont généralement réservés aux seuls programmeurs. Les créateurs des différents secteurs peuvent bénéficier de la liberté et du contrôle qu’il offre pour créer du contenu de pointe, des expériences interactives et des mondes virtuels immersifs.
+**Unreal** : Unreal Engine 4 est un puissant moteur de création open source qui inclut une prise en charge complète de la réalité mixte, aussi bien avec C++ qu’avec Blueprints. À compter d’Unreal Engine 4.25, la prise en charge d’HoloLens est complète et prête pour la production. Avec des fonctionnalités telles que le système flexible Blueprints Visual Scripting, les concepteurs peuvent utiliser pratiquement tous les concepts et outils qui sont généralement réservés aux seuls programmeurs. Les créateurs des différents secteurs peuvent bénéficier de la liberté et du contrôle qu’il offre pour créer du contenu de pointe, des expériences interactives et des mondes virtuels immersifs.
 
 **Native (OpenXR)**  : OpenXR est un standard d’API ouvert et libre de redevance proposé par Khronos. Il permet aux moteurs d’accéder en mode natif à une large gamme d’appareils proposés par les différents fabricants du secteur de la réalité mixte. Vous pouvez développer avec OpenXR sur HoloLens 2 ou un casque immersif Windows Mixed Reality sur le bureau. Si vous n’avez pas accès à un casque, des émulateurs pour HoloLens 2 et les casques Windows Mixed Reality sont disponibles.
 

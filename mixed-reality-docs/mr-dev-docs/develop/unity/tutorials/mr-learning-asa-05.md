@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens, android, ios
+keywords: réalité mixte, unity, tutoriel, hololens, android, ios, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 501cfab2a86dcf5753b7371898a8c4b6c8a1e10b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: bee84db206dbb4e95272799c16d6dbd4e394e807
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353377"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679428"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Azure Spatial Anchors pour Android et iOS
 
@@ -35,7 +35,7 @@ Dans cette section, vous allez mettre à niveau et installer les packages intég
 > [!CAUTION]
 > Toutes les versions ne sont pas compatibles avec MRTK et seules certaines versions fonctionnent ensemble ; veillez donc à installer précisément les versions listées ci-dessus.
 
-Dans le menu Unity, sélectionnez **Window** > **Package Manager** pour ouvrir la fenêtre Package Manager, sélectionnez **AR Foundation** > **3.1.3** , puis cliquez sur le bouton **Update to 3.1.3** pour mettre à jour le package :
+Dans le menu Unity, sélectionnez **Window** > **Package Manager** pour ouvrir la fenêtre Package Manager, sélectionnez **AR Foundation** > **3.1.3**, puis cliquez sur le bouton **Update to 3.1.3** pour mettre à jour le package :
 
 ![Package Manager d’Unity avec AR Foundation sélectionné](images/mr-learning-asa/asa-05-section1-step1-1.png)
 
@@ -48,7 +48,7 @@ Suivez le même processus pour importer les packages restants en fonction des be
 
 Dans cette section, vous allez découvrir comment configurer MRTK pour le déploiement sur un appareil mobile.
 
-Dans la fenêtre de hiérarchie, sélectionnez l’objet **MixedRealityToolkit**. Ensuite, dans la fenêtre de l’inspecteur, sélectionnez l’onglet **Camera** , clonez le profil de la caméra et attribuez-lui un nom pertinent, par exemple **AzureSpatialAnchors_ARCameraProfile**  :
+Dans la fenêtre de hiérarchie, sélectionnez l’objet **MixedRealityToolkit**. Ensuite, dans la fenêtre de l’inspecteur, sélectionnez l’onglet **Camera**, clonez le profil de la caméra et attribuez-lui un nom pertinent, par exemple **AzureSpatialAnchors_ARCameraProfile** :
 
 ![Unity avec le profil nouvellement créé ARCameraProfile sélectionné](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
@@ -59,7 +59,7 @@ Avec l’onglet **Camera** toujours sélectionné dans la fenêtre de l’inspec
 
 ![Profil ARCameraProfile d’Unity avec ajout d’un nouveau fournisseur de données](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
-À l’aide de la liste déroulante **Type** , sélectionnez le type **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings**  :
+À l’aide de la liste déroulante **Type**, sélectionnez le type **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings** :
 
 ![Profil ARCameraProfile d’Unity avec le chemin vers la sélection du type de fournisseur de données](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
@@ -86,17 +86,17 @@ Dans le menu Unity, sélectionnez **File** > **Build Settings...** pour ouvrir l
 
 Fermez la fenêtre Build Settings.
 
-Dans le menu Unity, sélectionnez **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator** , vérifiez que toutes les options sont sélectionnées, puis cliquez sur le bouton **Apply** pour appliquer les paramètres :
+Dans le menu Unity, sélectionnez **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator**, vérifiez que toutes les options sont sélectionnées, puis cliquez sur le bouton **Apply** pour appliquer les paramètres :
 
 ![Fenêtre MRTK Project Configurator d’Unity - Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
-Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, recherchez la section **Player** >  **Other Settings** , sélectionnez **Vulkan** et supprimez-le en cliquant sur le symbole **« - »**  :
+Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, recherchez la section **Player** >  **Other Settings**, sélectionnez **Vulkan** et supprimez-le en cliquant sur le symbole **« - »**  :
 
 ![Fenêtre Other Settings d’Unity avec Vulcan sélectionné](images/mr-learning-asa/asa-05-section3-step1-3.png)
 
 Fermez la fenêtre Player Settings et rouvrez la fenêtre Build Settings.
 
-Dans la fenêtre Build Settings, cliquez sur le bouton **Add Open Scenes** (Ajouter des scènes ouvertes) pour ajouter votre scène actuelle à la liste des scènes de la build ( **Scenes In Build** ). Ensuite, utilisez un câble USB pour connecter votre appareil Android à votre ordinateur et sélectionnez-le dans la liste déroulante **Run Device**  :
+Dans la fenêtre Build Settings, cliquez sur le bouton **Add Open Scenes** (Ajouter des scènes ouvertes) pour ajouter votre scène actuelle à la liste des scènes de la build (**Scenes In Build**). Ensuite, utilisez un câble USB pour connecter votre appareil Android à votre ordinateur et sélectionnez-le dans la liste déroulante **Run Device** :
 
 ![Fenêtre Build Settings d’Unity avec la scène ajoutée et Run Device sélectionné](images/mr-learning-asa/asa-05-section3-step1-4.png)
 
@@ -105,7 +105,7 @@ Dans la fenêtre Build Settings, cliquez sur le bouton **Add Open Scenes** (Ajou
 
 Dans la fenêtre Build Settings, cliquez sur le bouton **Build And Run** (Générer et exécuter) pour ouvrir la fenêtre Build Android.
 
-Choisissez un emplacement approprié où stocker votre build, par exemple _D:\MixedRealityLearning\Builds_ , attribuez un nom pertinent à l’apk, par exemple _MRTKTutorials-AzureSpatialAnchors_ , puis cliquez sur le bouton **Save** pour démarrer le processus de génération :
+Choisissez un emplacement approprié où stocker votre build, par exemple _D:\MixedRealityLearning\Builds_, attribuez un nom pertinent à l’apk, par exemple _MRTKTutorials-AzureSpatialAnchors_, puis cliquez sur le bouton **Save** pour démarrer le processus de génération :
 
 ![Fenêtre Build Settings d’Unity avec la fenêtre d’invite Save - Android](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
@@ -127,23 +127,23 @@ Dans le menu Unity, sélectionnez **File** > **Build Settings...** pour ouvrir l
 
 Fermez la fenêtre Build Settings.
 
-Dans le menu Unity, sélectionnez **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator** , vérifiez que toutes les options sont sélectionnées, puis cliquez sur le bouton **Apply** pour appliquer les paramètres :
+Dans le menu Unity, sélectionnez **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator**, vérifiez que toutes les options sont sélectionnées, puis cliquez sur le bouton **Apply** pour appliquer les paramètres :
 
 ![Fenêtre MRTK Project Configurator d’Unity - iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
 
-Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, recherchez la section **Player** >  **Other Settings** , et décochez la case **Strip Engine Code** (Supprimer le code du moteur) :
+Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, recherchez la section **Player** >  **Other Settings**, et décochez la case **Strip Engine Code** (Supprimer le code du moteur) :
 
 ![Fenêtre Other Settings d’Unity avec Strip Engine Code désactivé](images/mr-learning-asa/asa-05-section4-step1-3.png)
 
 Fermez la fenêtre Player Settings et rouvrez la fenêtre **Build Settings**.
 
-Dans la fenêtre Build Settings, cliquez sur le bouton **Add Open Scenes** (Ajouter des scènes ouvertes) pour ajouter votre scène actuelle à la liste des scènes de la build ( **Scenes In Build** ) :
+Dans la fenêtre Build Settings, cliquez sur le bouton **Add Open Scenes** (Ajouter des scènes ouvertes) pour ajouter votre scène actuelle à la liste des scènes de la build (**Scenes In Build**) :
 
 ![Fenêtre Build Settings d’Unity avec une scène ajoutée](images/mr-learning-asa/asa-05-section4-step1-4.png)
 
 Dans la fenêtre Build Settings, cliquez sur le bouton **Build** pour ouvrir la fenêtre Build iOS.
 
-Choisissez un emplacement approprié où stocker votre projet Xcode, par exemple _D:\MixedRealityLearning\Builds_ , créez un dossier et attribuez-lui un nom pertinent, par exemple _MRTKTutorials-AzureSpatialAnchors_ , puis cliquez sur le bouton **Select Folder** pour démarrer le processus de génération :
+Choisissez un emplacement approprié où stocker votre projet Xcode, par exemple _D:\MixedRealityLearning\Builds_, créez un dossier et attribuez-lui un nom pertinent, par exemple _MRTKTutorials-AzureSpatialAnchors_, puis cliquez sur le bouton **Select Folder** pour démarrer le processus de génération :
 
 ![Fenêtre Build Settings d’Unity avec la fenêtre d’invite Save - iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 

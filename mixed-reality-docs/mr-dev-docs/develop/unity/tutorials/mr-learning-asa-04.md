@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, sessions, éléments de feedback
 ms.localizationpriority: high
-ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: fe87e539060b57f505838b43e897e8b6d8336aaf
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353337"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679388"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Affichage du feedback Azure Spatial Anchors
 
@@ -32,7 +32,7 @@ Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **Instruc
 > [!TIP]
 > Pour faciliter l’utilisation de votre scène, désactivez <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> pour l’objet ParentAnchor en cliquant sur l’icône œil à gauche de l’objet. Ceci masque l’objet dans la fenêtre Scene sans changer sa visibilité dans le jeu.
 
-Attribuez à l’objet Text (TMP) que vous venez de créer le nom de **Feedback** , puis, dans la fenêtre Inspector, modifiez sa position et sa taille de manière à ce qu’il soit placé bien en dessous du texte d’instruction, par exemple :
+Attribuez à l’objet Text (TMP) que vous venez de créer le nom de **Feedback**, puis, dans la fenêtre Inspector, modifiez sa position et sa taille de manière à ce qu’il soit placé bien en dessous du texte d’instruction, par exemple :
 
 * Remplacez la valeur **Pos Y** du composant Rect Transform par -0.24.
 * Remplacez la valeur **Width** du composant Rect Transform par 0.555.
@@ -46,7 +46,7 @@ Choisissez ensuite les propriétés de police de sorte que le texte s’ajuste c
 
 ![Unity avec un objet Feedback configuré](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet **Feedback** , puis, dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le composant **Anchor Feedback Script (Script)** et le configurer de la façon suivante :
+Dans la fenêtre Hierarchy, sélectionnez l’objet **Feedback**, puis, dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le composant **Anchor Feedback Script (Script)** et le configurer de la façon suivante :
 
 * Affectez l’objet **Feedback** au champ **Feedback Text** du composant **Anchor Feedback Script (Script)** .
 

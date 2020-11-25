@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, suivi oculaire
 ms.localizationpriority: high
-ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 2b572a106cba904231ed124260cd879cd3a9a944
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353497"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679748"
 ---
 # <a name="8-using-eye-tracking"></a>8. Utilisation du suivi oculaire
 
@@ -30,7 +30,7 @@ Dans ce tutoriel, vous allez voir comment activer le suivi oculaire (eye-trackin
 
 ## <a name="ensuring-the-eye-gaze-input-capability-is-enabled"></a>Vérifier que la fonctionnalité d’entrée avec le pointage du regard est activée
 
-Dans le menu Unity, sélectionnez Mixed Reality Toolkit > Utilities > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator** puis, dans la section **UWP Capabilities** , vérifiez que l’option **Enable Eye Gaze Input Capability** est grisée :
+Dans le menu Unity, sélectionnez Mixed Reality Toolkit > Utilities > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator** puis, dans la section **UWP Capabilities**, vérifiez que l’option **Enable Eye Gaze Input Capability** est grisée :
 
 ![Fenêtre MRTK Project Configurator d’Unity](images/mr-learning-base/base-08-section1-step1-1.png)
 
@@ -39,11 +39,11 @@ Dans le menu Unity, sélectionnez Mixed Reality Toolkit > Utilities > **Configur
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Activation du pointage du regard dans le fournisseur de regard
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ensuite, dans la fenêtre Inspector, sélectionnez l’onglet MixedRealityToolkit > **Input** , puis effectuez les étapes suivantes :
+Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ensuite, dans la fenêtre Inspector, sélectionnez l’onglet MixedRealityToolkit > **Input**, puis effectuez les étapes suivantes :
 
-* Clonez **DefaultHoloLens2InputSystemProfile** , puis attribuez-lui un nom adapté, comme _GettingStarted_HoloLens2InputSystemProfile_.
+* Clonez **DefaultHoloLens2InputSystemProfile**, puis attribuez-lui un nom adapté, comme _GettingStarted_HoloLens2InputSystemProfile_.
 * Développez la section **Pointers**.
-* Clonez **DefaultMixedRealityPointerProfile** , puis attribuez-lui un nom adapté, comme _GettingStarted_MixedRealityPointerProfile_.
+* Clonez **DefaultMixedRealityPointerProfile**, puis attribuez-lui un nom adapté, comme _GettingStarted_MixedRealityPointerProfile_.
 * Recherchez la section **Gaze Settings** (Paramètres du regard), puis cochez la case **Is Eye Tracking Enabled** (Activation du suivi oculaire).
 
 ![Composant MixedRealityToolkit d’Unity avec les profils nouvellement créés appliqués et le suivi du regard activé](images/mr-learning-base/base-08-section2-step1-1.png)
@@ -53,17 +53,17 @@ Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ens
 
 ## <a name="enabling-simulated-eye-tracking-for-the-unity-editor"></a>Activation du suivi oculaire simulé pour l’éditeur Unity
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ensuite, dans la fenêtre Inspector, accédez à l’onglet **Input** , puis :
+Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ensuite, dans la fenêtre Inspector, accédez à l’onglet **Input**, puis :
 
 * Développez la section **Input Data Providers** > **Input Simulation Service**.
-* Clonez **DefaultMixedRealityInputSimulationProfile** , puis attribuez-lui un nom adapté, comme _GettingStarted_MixedRealityInputSimulationProfile_.
-* Localisez la section **Eye Simulation** , puis cochez la case **Simulate Eye Position**.
+* Clonez **DefaultMixedRealityInputSimulationProfile**, puis attribuez-lui un nom adapté, comme _GettingStarted_MixedRealityInputSimulationProfile_.
+* Localisez la section **Eye Simulation**, puis cochez la case **Simulate Eye Position**.
 
 ![Composant MixedRealityToolkit d’Unity avec le profil nouvellement créé appliqué et la simulation du regard activée](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>Ajout du suivi oculaire aux objets
 
-Dans la fenêtre Hierarchy, développez l’objet RoverExplorer > **Buttons** , puis, pour chacun des trois objets enfants Buttons, développez et sélectionnez l’objet SeeItSayItLabel > **TextMeshPro**  :
+Dans la fenêtre Hierarchy, développez l’objet RoverExplorer > **Buttons**, puis, pour chacun des trois objets enfants Buttons, développez et sélectionnez l’objet SeeItSayItLabel > **TextMeshPro** :
 
 ![Unity avec l’objet TextMeshPro sélectionné](images/mr-learning-base/base-08-section4-step1-1.png)
 
@@ -74,22 +74,22 @@ Avec les trois objets TextMeshPro toujours sélectionnés, dans la fenêtre Insp
 
 ![Unity avec l’objet TextMeshPro sélectionné et des composants ajoutés](images/mr-learning-base/base-08-section4-step1-2.png)
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet **Hints**  > SeeItSayItLabel > **TextMeshPro** , puis configurez le composant **EyeTrackingTarget** de la façon suivante :
+Dans la fenêtre Hierarchy, sélectionnez l’objet **Hints** > SeeItSayItLabel > **TextMeshPro**, puis configurez le composant **EyeTrackingTarget** de la façon suivante :
 
 * Dans la section d’événement **On Look At Start ()**
   * Cliquez sur la petite icône **+** pour ajouter un autre événement.
   * Affectez l’objet **TextMeshPro** au champ **None (Object)** .
-  * Dans la liste déroulante **No Function** , sélectionnez **TextMeshPro** > **float fontSize** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+  * Dans la liste déroulante **No Function**, sélectionnez **TextMeshPro** > **float fontSize** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
   * Définissez l’argument sur **0.06** pour augmenter la taille de police actuelle (0.04) de 50 %.
 * Dans la section d’événement **On Look Away ()**
   * Cliquez sur la petite icône **+** pour ajouter un autre événement.
   * Affectez l’objet **TextMeshPro** au champ **None (Object)** .
-  * Dans la liste déroulante **No Function** , sélectionnez **TextMeshPro** > **float fontSize** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+  * Dans la liste déroulante **No Function**, sélectionnez **TextMeshPro** > **float fontSize** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
   * Définissez l’argument sur **0.04** pour rétablir la taille de la police à 0.04.
 
 ![Unity avec l’objet Hints TextMeshPro sélectionné et le composant EyeTrackingTarget configuré](images/mr-learning-base/base-08-section4-step1-3.png)
 
-**Répétez** cette étape pour l’objet **Explode**  > SeeItSayItLabel > **TextMeshPro** et pour l’objet **Reset**  > SeeItSayItLabel > **TextMeshPro**.
+**Répétez** cette étape pour l’objet **Explode** > SeeItSayItLabel > **TextMeshPro** et pour l’objet **Reset** > SeeItSayItLabel > **TextMeshPro**.
 
 Si vous passez maintenant en mode jeu, puis maintenez enfoncé le bouton droit de la souris tout en déplaçant la souris jusqu’à ce que le regard atteigne l’une des étiquettes, vous verrez que la taille de police augmente de 50 % et retourne à sa taille d’origine lorsque l’utilisateur regarde ailleurs :
 

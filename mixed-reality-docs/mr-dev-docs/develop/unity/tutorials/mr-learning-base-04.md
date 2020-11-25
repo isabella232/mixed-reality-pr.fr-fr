@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, solveurs, collection d’objets de grille
 ms.localizationpriority: high
-ms.openlocfilehash: 849de7c50adc8ff1da5262ad46fae50cce48e953
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353217"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679308"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Positionnement des objets dans la scène
 
@@ -47,15 +47,15 @@ Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur une zone vide et s�
 > [!TIP]
 > Pour afficher côte à côte les fenêtres Scene et Game comme dans l’image ci-dessus, faites glisser la fenêtre Game à droite de la fenêtre Scene. Pour en savoir plus, consultez la page consacrée à la <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">personnalisation de votre espace de travail</a> dans la documentation Unity.
 
-Cliquez avec le bouton droit sur l’objet que vous venez de créer, sélectionnez **Rename** , puis remplacez le nom par **RoverExplorer**  :
+Cliquez avec le bouton droit sur l’objet que vous venez de créer, sélectionnez **Rename**, puis remplacez le nom par **RoverExplorer** :
 
 ![Menu contextuel Rename d’Unity](images/mr-learning-base/base-04-section2-step1-2.png)
 
 L’objet RoverExplorer étant toujours sélectionné, dans la fenêtre Inspector, configurez le composant **Transform** comme ceci :
 
-* **Position**  : X = 0, Y = -0.6, Z = 2
-* **Rotation**  : X = 0, Y = 0, Z = 0
-* **Scale**  : X = 1, Y = 1, Z = 1
+* **Position** : X = 0, Y = -0.6, Z = 2
+* **Rotation** : X = 0, Y = 0, Z = 0
+* **Scale** : X = 1, Y = 1, Z = 1
 
 ![Unity avec un objet RoverExplorer sélectionné et positionné](images/mr-learning-base/base-04-section2-step1-3.png)
 
@@ -64,7 +64,7 @@ L’objet RoverExplorer étant toujours sélectionné, dans la fenêtre Inspecto
 
 ## <a name="adding-the-tutorial-prefabs"></a>Ajout des préfabriqués du tutoriel
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs**  :
+Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** :
 
 ![Fenêtre de projet Unity avec le dossier Prefabs sélectionné](images/mr-learning-base/base-04-section3-step1-1.png)
 
@@ -73,9 +73,9 @@ Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.Gett
 
 Dans la fenêtre Project, cliquez sur le préfabriqué **Table** et faites-le glisser sur l’objet **RoverExplorer** pour en faire un enfant de cet objet, puis dans la fenêtre Inspector, configurez le composant **Transform** comme ceci :
 
-* **Position**  : X = 0, Y = -0.005, Z = 0
-* **Rotation**  : X = 0, Y = 0, Z = 0
-* **Scale**  : X = 1.2, Y = 0.01, Z = 1.2
+* **Position** : X = 0, Y = -0.005, Z = 0
+* **Rotation** : X = 0, Y = 0, Z = 0
+* **Scale** : X = 1.2, Y = 0.01, Z = 1.2
 
 ![Unity avec le préfabriqué nouvellement ajouté Table, sélectionné et positionné](images/mr-learning-base/base-04-section3-step1-2.png)
 
@@ -84,23 +84,23 @@ Dans la fenêtre Project, cliquez sur le préfabriqué **Table** et faites-le gl
 
 Dans la fenêtre Project, cliquez sur le préfabriqué **RoverAssembly** et faites-le glisser sur l’objet **RoverExplorer** pour en faire un enfant de cet objet, puis dans la fenêtre Inspector, configurez le composant **Transform** comme ceci :
 
-* **Position**  : X = -0.1, Y = 0, Z = 0
-* **Rotation**  : X = 0, Y = -135, Z = 0
-* **Scale**  : X = 1, Y = 1, Z = 1
+* **Position** : X = -0.1, Y = 0, Z = 0
+* **Rotation** : X = 0, Y = -135, Z = 0
+* **Scale** : X = 1, Y = 1, Z = 1
 
 ![Unity avec le préfabriqué nouvellement ajouté RoverAssembly, sélectionné et positionné](images/mr-learning-base/base-04-section3-step1-3.png)
 
 ## <a name="organizing-objects-in-a-collection"></a>Organisation des objets dans une collection
 
-Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **RoverExplorer** , puis sélectionnez **Create Empty** pour ajouter un objet vide en tant qu’enfant de RoverExplorer. Nommez l’objet **RoverParts** , puis configurez le composant **Transform** comme ceci :
+Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **RoverExplorer**, puis sélectionnez **Create Empty** pour ajouter un objet vide en tant qu’enfant de RoverExplorer. Nommez l’objet **RoverParts**, puis configurez le composant **Transform** comme ceci :
 
-* **Position**  : X = 0, Y = 0.06, Z = 0
-* **Rotation**  : X = 0, Y = 90, Z = 0
-* **Scale**  : X = 1, Y = 1, Z = 1
+* **Position** : X = 0, Y = 0.06, Z = 0
+* **Rotation** : X = 0, Y = 90, Z = 0
+* **Scale** : X = 1, Y = 1, Z = 1
 
 ![Unity avec l’objet RoverParts nouvellement créé, sélectionné et positionné](images/mr-learning-base/base-04-section4-step1-1.png)
 
-Dans la fenêtre Hierarchy, sélectionnez tous les objets enfants RoverExplorer > RoverAssembly > RoverModel > **Parts** , cliquez dessus avec le bouton droit, puis sélectionnez **Duplicate** pour créer une copie de chaque élément :
+Dans la fenêtre Hierarchy, sélectionnez tous les objets enfants RoverExplorer > RoverAssembly > RoverModel > **Parts**, cliquez dessus avec le bouton droit, puis sélectionnez **Duplicate** pour créer une copie de chaque élément :
 
 ![Unity avec toutes les pièces (Parts) sélectionnées et le menu contextuel Duplicate](images/mr-learning-base/base-04-section4-step1-2.png)
 
@@ -118,20 +118,20 @@ Pour faciliter l’utilisation de votre scène, dans la fenêtre Hierarchy, cliq
 > [!TIP]
 > Pour en savoir plus sur les contrôles de visibilité de la scène et sur la façon dont vous pouvez les utiliser pour optimiser l’affichage et le workflow de votre scène, reportez-vous à la documentation <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> d’Unity.
 
-Dans la fenêtre Hierarchy, nettoyez les noms des objets enfants RoverParts en remplaçant le suffixe **(1)** par **_Part**  :
+Dans la fenêtre Hierarchy, nettoyez les noms des objets enfants RoverParts en remplaçant le suffixe **(1)** par **_Part** :
 
 ![Unity avec le nom des pièces (parts) dupliquées effacé](images/mr-learning-base/base-04-section4-step1-5.png)
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet **RoverParts**. Dans la fenêtre Inspector, cliquez sur le bouton **Add Component** , puis recherchez et sélectionnez **GridObjectCollection** pour ajouter le composant GridObjectCollection à l’objet RoverParts :
+Dans la fenêtre Hierarchy, sélectionnez l’objet **RoverParts**. Dans la fenêtre Inspector, cliquez sur le bouton **Add Component**, puis recherchez et sélectionnez **GridObjectCollection** pour ajouter le composant GridObjectCollection à l’objet RoverParts :
 
 ![Objet RoverParts d’Unity avec l’ajout du composant de collection d’objets de grille en cours](images/mr-learning-base/base-04-section4-step1-6.png)
 
 Configurez les valeurs du composant **GridObjectCollection** comme ceci :
 
-* **Sort Type**  : Alphabetic
-* **Layout**  : Horizontale
-* **Cell Width**  : 0.25
-* **Distance from parent**  : 0.38
+* **Sort Type** : Alphabetic
+* **Layout** : Horizontale
+* **Cell Width** : 0.25
+* **Distance from parent** : 0.38
 
 ![Unity avec le composant GridObjectCollection configuré](images/mr-learning-base/base-04-section4-step1-7.png)
 

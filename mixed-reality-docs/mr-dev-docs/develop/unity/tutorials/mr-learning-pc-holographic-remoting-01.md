@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, communication à distance holographique sur PC, info-bulles, suivi oculaire
 ms.localizationpriority: high
-ms.openlocfilehash: d88d3e17e26ddd361f2cbe1a32f22025255303f0
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416995"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679768"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Bien démarrer avec la communication à distance holographique de PC
 
@@ -94,7 +94,7 @@ Faites glisser-déposer ces modèles du dossier Prefabs vers la **fenêtre Hiera
 
 ![Unity avec des préfabriqués nouvellement ajoutés encore sélectionnés](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
 
-Pour vous concentrer sur les objets de la scène, vous pouvez double-cliquer sur l’objet **ModelParent** , puis faire un léger zoom avant :
+Pour vous concentrer sur les objets de la scène, vous pouvez double-cliquer sur l’objet **ModelParent**, puis faire un léger zoom avant :
 
 ![Unity avec l’objet ModelParent dans le focus](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-3.png)
 
@@ -107,7 +107,7 @@ Dans cette section, vous allez ajouter des scripts dans la scène pour créer de
 
 ### <a name="1-configuring-the-interactable-script-component"></a>1. Configuration du composant Interactable (Script)
 
-Dans la fenêtre Hierarchy, développez l’objet **ButtonParent** , puis sélectionnez **NextButton**. Dans la fenêtre Inspector, localisez le composant **Interactable (Script)** , puis cliquez sur l’icône **+** sous l’événement **OnClick ()** .
+Dans la fenêtre Hierarchy, développez l’objet **ButtonParent**, puis sélectionnez **NextButton**. Dans la fenêtre Inspector, localisez le composant **Interactable (Script)** , puis cliquez sur l’icône **+** sous l’événement **OnClick ()** .
 
 ![Unity avec l’événement OnClick de NextButton ajouté](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
 
@@ -123,7 +123,7 @@ Cliquez sur la liste déroulante **No Function** du même événement. Sélectio
 
 Pour chacun des boutons restants, effectuez le processus décrit ci-dessus pour affecter des fonctions aux événements **OnClick ()**  :
 
-* Pour l’objet PreviousButton, affectez la fonction **ViewButtonControl**  > **PreviousModel ()** .
+* Pour l’objet PreviousButton, affectez la fonction **ViewButtonControl** > **PreviousModel ()** .
 
 * Pour ClippingButton, sélectionnez la fonction **ToggleButton** > **ToggleClipping ()** .
 
@@ -131,11 +131,11 @@ Pour chacun des boutons restants, effectuez le processus décrit ci-dessus pour 
 
 Vos boutons sont maintenant configurés pour illustrer les fonctionnalités de changement et de découpage de modèle. Il est temps d’ajouter des modèles 3D et des objets de découpage au script.
 
-Six modèles 3D différents sont fournis à des fins de démonstration. Pour les exposer, développez * *_ModelParentobject_* _.
+Six modèles 3D différents sont fournis à des fins de démonstration. Pour les exposer, développez **_ModelParentobject_* _.
 
 L’objet ButtonParent étant toujours sélectionné dans la fenêtre Hierarchy, dans la fenêtre Inspector, recherchez le composant _ *View Button Control (Script)* *, puis développez la variable **Models**.
 
-Dans le champ **Size** , entrez le nombre de modèles 3D que vous aimeriez avoir dans votre scène. Dans ce cas, indiquez six. Des champs permettant d’ajouter de nouveaux modèles 3D sont créés.
+Dans le champ **Size**, entrez le nombre de modèles 3D que vous aimeriez avoir dans votre scène. Dans ce cas, indiquez six. Des champs permettant d’ajouter de nouveaux modèles 3D sont créés.
 
 ![Unity avec les champs du composant de script ViewButtonControl](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-1.png)
 
@@ -157,7 +157,7 @@ Dans cette section, vous allez ajouter le renderer d’objets enfants de l’obj
 
 Dans la fenêtre Hierarchy, développez l’objet **ClippingObjects** pour exposer les trois objets de découpage que vous allez utiliser dans ce projet.
 
-Pour configurer l’objet **ClippingSphere** , cliquez dessus, puis dans la fenêtre Inspector, recherchez le composant **Clipping Sphere (Script)** . Dans le champ Size, entrez le nombre de renderers à ajouter pour votre modèle 3D. Dans ce cas, entrez 10 pour les objets enfants de MarsCuriosityRover. Des champs permettant d’ajouter des renderers sont créés. Glissez-déposez les objets enfants du modèle MarsCuriosityRover sur ces champs.
+Pour configurer l’objet **ClippingSphere**, cliquez dessus, puis dans la fenêtre Inspector, recherchez le composant **Clipping Sphere (Script)** . Dans le champ Size, entrez le nombre de renderers à ajouter pour votre modèle 3D. Dans ce cas, entrez 10 pour les objets enfants de MarsCuriosityRover. Des champs permettant d’ajouter des renderers sont créés. Glissez-déposez les objets enfants du modèle MarsCuriosityRover sur ces champs.
 
 ![Unity avec les champs du composant de script ClippingSphere configurés](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
 
@@ -171,7 +171,7 @@ Dans cette section, nous allons examiner comment activer l’eye-tracking dans v
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Identifier les objets cibles et les info-bulles associées
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet ModelParent. Développez **_MarsCuriosity-> Rover_ *_ pour voir les cinq parties principales de MarsCuriosityRover : _* POI-Camera** , **POI-Wheels** , **POI-Antena** , **POI-Spectrometer** , **POI-RUHF Antenna**.
+Dans la fenêtre Hierarchy, sélectionnez l’objet ModelParent. Développez **_MarsCuriosity-> Rover_ *_ pour voir les cinq parties principales de MarsCuriosityRover : _* POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**.
 
 * Observez les cinq objets info-bulles associés aux éléments de MarsCuriosityRover dans la fenêtre Hierarchy.
 * Vous allez configurer ces objets pour les mettre en évidence quand vous regardez les éléments MarsCuriosityRover correspondants.
@@ -187,7 +187,7 @@ Dans la fenêtre Hierarchy, sélectionnez l’objet **POI-Camera** _. Dans la fe
 
 ![Unity avec la configuration de l’événement EyeTrackingTarget WhileLookingAtTarget en cours](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 
-* Suivez le même processus et cliquez sur la liste déroulante **No Function** du détecteur d’événements **On Look Away ()** . Sélectionnez ensuite **GameObject** > **SetActive (bool** ), mais ne cochez pas la **case** pour définir le masquage de l’info-bulle comme l’action à déclencher quand vous détournez votre regard de l’objet cible.
+* Suivez le même processus et cliquez sur la liste déroulante **No Function** du détecteur d’événements **On Look Away ()** . Sélectionnez ensuite **GameObject** > **SetActive (bool**), mais ne cochez pas la **case** pour définir le masquage de l’info-bulle comme l’action à déclencher quand vous détournez votre regard de l’objet cible.
 
 ![Unity avec l’événement EyeTrackingTarget OnLookAway configuré](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 

@@ -6,13 +6,13 @@ ms.author: erpau
 ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Réalité mixte, conception, confort, HoloLens 2, HoloLens (1ère génération)
-ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: réalité mixte, conception, confort, HoloLens 2, HoloLens (1ère génération), casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens, MRTK, Mixed Reality Toolkit, locomotion
+ms.openlocfilehash: f4edc048086e933a451290a8ca9f19f588797963
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340647"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702655"
 ---
 # <a name="comfort"></a>Confort
 
@@ -162,13 +162,6 @@ L’angle de regard optimal (de repos) est situé entre 10 et 20 degrés en d
 ## <a name="arm-positions"></a>Positions des bras
 
 Une fatigue musculaire peut s’installer si les utilisateurs sont censés garder une main levée pendant toute la durée de l’expérience. Les clics aériens répétés peuvent également se révéler fatigants s’ils doivent être effectués sur une longue période. Nous vous recommandons donc d’éviter les expériences qui exigent des gestes répétés ou maintenus. Pour cela, vous pouvez intégrer de courtes pauses ou proposer une combinaison de saisies gestuelles et vocales pour interagir avec l’application.
-
-## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
-
-Si vous suivez le [parcours de découverte](../discover/get-started-with-mr.md) que nous avons établi, vous êtes au cœur de l’exploration des concepts de base de la réalité mixte. À partir de là, vous pouvez passer au sujet suivant : 
-
-> [!div class="nextstepaction"]
-> [Comment l’utilisateur voit le monde : image holographique](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>Voir aussi
 * [Pointage du regard](gaze-and-commit.md)

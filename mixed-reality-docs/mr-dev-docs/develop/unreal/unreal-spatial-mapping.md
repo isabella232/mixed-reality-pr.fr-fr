@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, mappage spatial
-ms.openlocfilehash: 8e49878cf37945c8e317b1098f48014b57d18551
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, mappage spatial, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
+ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698502"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678808"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Mappage spatial dans Unreal
 
@@ -24,14 +24,14 @@ Vous trouverez plus d’informations sur la qualité du mappage spatial, le posi
 ## <a name="enabling-spatial-mapping"></a>Activation du mappage spatial
 
 Pour activer le mappage spatial sur HoloLens :
-- Ouvrez **Edit > Project Settings** , puis faites défiler jusqu’à la section **Platforms** .    
-    + Sélectionnez **HoloLens** , puis cochez **Spatial Perception** .
+- Ouvrez **Edit > Project Settings** , puis faites défiler jusqu’à la section **Platforms**.    
+    + Sélectionnez **HoloLens**, puis cochez **Spatial Perception**.
 
 Pour choisir le mappage spatial et déboguer **MRMesh** dans un jeu HoloLens :
-1. Ouvrez **ARSessionConfig** , puis développez la section **ARSettings > World Mapping** . 
+1. Ouvrez **ARSessionConfig**, puis développez la section **ARSettings > World Mapping**. 
 
-2. Cochez **Generate Mesh Data from Tracked Geometry** (Générer les données de maillage à partir de la géométrie suivie), ce qui indique au plug-in HoloLens qu’il doit démarrer de manière asynchrone la récupération des données de mappage spatial et les afficher dans Unreal via **MRMesh** . 
-3. Cochez **Render Mesh Data in Wireframe** (Afficher les données de maillage dans un contour filaire) pour afficher un contour filaire blanc autour de chaque triangle dans **MRMesh** . 
+2. Cochez **Generate Mesh Data from Tracked Geometry** (Générer les données de maillage à partir de la géométrie suivie), ce qui indique au plug-in HoloLens qu’il doit démarrer de manière asynchrone la récupération des données de mappage spatial et les afficher dans Unreal via **MRMesh**. 
+3. Cochez **Render Mesh Data in Wireframe** (Afficher les données de maillage dans un contour filaire) pour afficher un contour filaire blanc autour de chaque triangle dans **MRMesh**. 
 
 ![Magasin d’ancres spatiales prêt](images/unreal-spatialmapping-arsettings.PNG)
 
@@ -39,7 +39,7 @@ Pour choisir le mappage spatial et déboguer **MRMesh** dans un jeu HoloLens :
 ## <a name="spatial-mapping-at-runtime"></a>Mappage spatial au moment de l’exécution
 Vous pouvez modifier les paramètres suivants pour mettre à jour le comportement du runtime de mappage spatial :
 
-- Ouvrez **Edit > Project Settings** , faites défiler jusqu’à la section **Platforms** , puis sélectionnez **HoloLens > Spatial Mapping**  : 
+- Ouvrez **Edit > Project Settings**, faites défiler jusqu’à la section **Platforms**, puis sélectionnez **HoloLens > Spatial Mapping** : 
 
 ![Paramètres projet des ancres spatiales](images/unreal-spatialmapping-projectsettings.PNG)
 
@@ -53,7 +53,7 @@ Pour accéder à **MRMesh** au moment de l’exécution :
 
 ![Composant ARTrackableNotify pour les ancres spatiales](images/unreal-spatialmapping-artrackablenotify.PNG)
 
-2. Sélectionnez le composant **ARTrackableNotify** , puis développez la section **Events** (Événements) dans le panneau **Details** . 
+2. Sélectionnez le composant **ARTrackableNotify**, puis développez la section **Events** (Événements) dans le panneau **Details**. 
     - Cliquez sur le bouton **+** pour les événements que vous souhaitez superviser. 
 
 ![Événements d’ancres spatiales](images/unreal-spatialmapping-events.PNG)
@@ -67,12 +67,12 @@ Vous pouvez changer le matériau du maillage dans le graphe d’événements Blu
 Dans le code C++, vous pouvez vous abonner au délégué `OnTrackableAdded` pour récupérer `ARTrackedGeometry` dès qu’il est disponible, comme indiqué dans le code ci-dessous. 
 
 > [!IMPORTANT]
-> Le fichier build.cs du projet **DOIT INCLURE** **AugmentedReality** dans la liste **PublicDependencyModuleNames** .
-> - Cela inclut **ARBlueprintLibrary.h** et **MRMeshComponent.h** , ce qui vous permet d’examiner le composant **MRMesh** de **UARTrackedGeometry** . 
+> Le fichier build.cs du projet **DOIT INCLURE** **AugmentedReality** dans la liste **PublicDependencyModuleNames**.
+> - Cela inclut **ARBlueprintLibrary.h** et **MRMeshComponent.h**, ce qui vous permet d’examiner le composant **MRMesh** de **UARTrackedGeometry**. 
 
 ![Exemple de code C++ pour les ancres spatiales](images/unreal-spatialmapping-examplecode.PNG)
 
-Le mappage spatial n’est pas le seul type de données qui est affiché à travers **ARTrackedGeometries** . Vous pouvez vérifier que `EARObjectClassification` est `World`, ce qui signifie qu’il s’agit d’une géométrie de mappage spatial. 
+Le mappage spatial n’est pas le seul type de données qui est affiché à travers **ARTrackedGeometries**. Vous pouvez vérifier que `EARObjectClassification` est `World`, ce qui signifie qu’il s’agit d’une géométrie de mappage spatial. 
 
 Il existe des délégués similaires pour les événements de mise à jour et de suppression : 
 - `AddOnTrackableUpdatedDelegate_Handle` 

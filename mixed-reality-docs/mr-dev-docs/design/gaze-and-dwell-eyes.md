@@ -6,19 +6,19 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Suivi du regard, réalité mixte, entrée, suivre du regard, suivi rétinien, suivi du mouvement des yeux, HoloLens 2, sélection basée sur le regard, fixer
-ms.openlocfilehash: b7c2b22c24336813231e7e5ea4742f03b9d78004
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Suivi oculaire, réalité mixte, entrée, suivi du regard, ciblage du regard, HoloLens 2, sélection basée sur le regard, fixer, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens, MRTK, Mixed Reality Toolkit, conception
+ms.openlocfilehash: 2d17b93b09b204e6ebb94a51bcc709ee043b5018
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698496"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702305"
 ---
 # <a name="eye-gaze-and-dwell"></a>Pointer du regard et fixer
 
 Le modèle d’interaction _« Pointer du regard et fixer »_ est un cas particulier du modèle d’interaction [Pointer du regard et valider](gaze-and-commit.md) :
 1. Regardez simplement une cible. 
-2. Pour confirmer votre intention de sélectionner cette cible, effectuez une entrée explicite secondaire : _Continuez simplement de regarder la cible que vous voulez sélectionner_ .
+2. Pour confirmer votre intention de sélectionner cette cible, effectuez une entrée explicite secondaire : _Continuez simplement de regarder la cible que vous voulez sélectionner_.
 
 ## <a name="advantages-of-the-eye-gaze-and-dwell-interaction-model"></a>Avantages du modèle d’interaction « Pointer du regard et fixer » 
 Lorsque vos mains sont déjà occupées par une tâche ou chargées d’outils, vous ne pouvez probablement pas les utiliser pour interagir avec des hologrammes.
@@ -32,10 +32,10 @@ Si la durée de fixation du regard est trop courte : L’utilisateur peut finir
 
 ## <a name="design-recommendations"></a>Recommandations de conception
 Nous vous recommandons d’utiliser une approche avec deux états pour la rétroaction d’un regard fixe :
-1. *Délai initial*  : Quand l’utilisateur commence à fixer une cible, rien ne doit se produire immédiatement, sans quoi l’expérience utilisateur risque de devenir désagréable et pesante. Lancez plutôt un minuteur pour détecter si l’utilisateur fixe délibérément son regard sur la cible ou s’il pose à peine son regard dessus.
+1. *Délai initial* : Quand l’utilisateur commence à fixer une cible, rien ne doit se produire immédiatement, sans quoi l’expérience utilisateur risque de devenir désagréable et pesante. Lancez plutôt un minuteur pour détecter si l’utilisateur fixe délibérément son regard sur la cible ou s’il pose à peine son regard dessus.
 Nous recommandons un délai initial compris entre 150 et 250 ms dans une proximité donnée (ce qui signifie que l’utilisateur pointe son regard et fixe précisément, plutôt qu’il ne regarde vaguement une cible plus large).  
 2. *Lancement de la rétroaction du regard fixe :* Après vérification que l’utilisateur regarde délibérément la cible, commencez à faire apparaître la rétroaction du regard fixe pour informer l’utilisateur que l’activation par fixation du regard est lancée. 
-3. *Rétroaction en continu :* Pendant que l’utilisateur regarde toujours la cible, faites apparaître un indicateur de progression pour que l’utilisateur sache qu’il doit continuer à fixer la cible. En particulier pour les entrées par pointage du regard, nous vous recommandons d’ _attirer l’attention visuelle de l’utilisateur_ en commençant avec un cercle ou une sphère volumineuse qui rétrécit progressivement. L’utilisation d’un indicateur pour l’état final (petit cercle) vous aide à communiquer à l’utilisateur à quel moment la rétroaction est terminée. Vous trouverez ci-dessous un exemple d’illustration. 
+3. *Rétroaction en continu :* Pendant que l’utilisateur regarde toujours la cible, faites apparaître un indicateur de progression pour que l’utilisateur sache qu’il doit continuer à fixer la cible. En particulier pour les entrées par pointage du regard, nous vous recommandons d’_attirer l’attention visuelle de l’utilisateur_ en commençant avec un cercle ou une sphère volumineuse qui rétrécit progressivement. L’utilisation d’un indicateur pour l’état final (petit cercle) vous aide à communiquer à l’utilisateur à quel moment la rétroaction est terminée. Vous trouverez ci-dessous un exemple d’illustration. 
 4. *Fin :* Si l’utilisateur a continué de fixer la cible (pendant 650 à 850 ms supplémentaires), effectuez l’activation de la rétroaction et sélectionnez la cible fixée.
 
 ![États de rétroaction](images/eyes_dwellstate_recommendation.png)<br>

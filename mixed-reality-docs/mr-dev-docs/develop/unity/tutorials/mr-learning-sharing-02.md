@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: aeda463610f1fb1205eade556a2c2b9bc07a4fde
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353477"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679258"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configuration de Photon Unity Networking
 
@@ -46,11 +46,11 @@ Ensuite, suivez les instructions fournies dans [Modification de l’option d’a
 
 ## <a name="enabling-additional-capabilities"></a>Activation de fonctionnalités supplémentaires
 
-Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, puis recherchez la section **Player** >  **Publishing Settings**  :
+Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, puis recherchez la section **Player** >  **Publishing Settings** :
 
 ![Unity - Player Settings](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-Dans la section **Publishing Settings** , accédez à la section **Capabilities** et vérifiez bien que les fonctionnalités **InternetClient** , **Microphone** , **SpatialPerception** et **GazeInput** , que vous avez activées à l’étape [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project) ci-dessus, sont activées.
+Dans la section **Publishing Settings**, accédez à la section **Capabilities** et vérifiez bien que les fonctionnalités **InternetClient**, **Microphone**, **SpatialPerception** et **GazeInput**, que vous avez activées à l’étape [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project) ci-dessus, sont activées.
 
 Activez ensuite les fonctionnalités supplémentaires suivantes :
 
@@ -61,7 +61,7 @@ Activez ensuite les fonctionnalités supplémentaires suivantes :
 
 ## <a name="installing-inbuilt-unity-packages"></a>Installation de packages Unity intégrés
 
-Dans le menu Unity, sélectionnez **Window** > **Package Manager** pour ouvrir la fenêtre Package Manager, sélectionnez **AR Foundation** , puis cliquez sur le bouton **Install** pour installer le package :
+Dans le menu Unity, sélectionnez **Window** > **Package Manager** pour ouvrir la fenêtre Package Manager, sélectionnez **AR Foundation**, puis cliquez sur le bouton **Install** pour installer le package :
 
 ![Package Manager d’Unity avec AR Foundation sélectionné](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
 
@@ -70,7 +70,7 @@ Dans le menu Unity, sélectionnez **Window** > **Package Manager** pour ouvrir l
 
 ## <a name="importing-the-tutorial-assets"></a>Importation des ressources du tutoriel
 
-Téléchargez et **importez** les packages personnalisés Unity suivants **dans l’ordre où ils sont listés**  :
+Téléchargez et **importez** les packages personnalisés Unity suivants **dans l’ordre où ils sont listés** :
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (version 2.2.1)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
@@ -111,7 +111,7 @@ Accédez au <a href="https://dashboard.photonengine.com/account/signin" target="
 
 ![Page de connexion à Photon](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
 
-Une fois connecté, cliquez sur le bouton **Create a New App**  :
+Une fois connecté, cliquez sur le bouton **Create a New App** :
 
 ![Page d’accueil du tableau de bord Photon](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
 
@@ -140,7 +140,7 @@ Dans le tableau de bord Photon, cliquez sur le champ **App ID** pour voir l’ID
 
 Dans le menu Unity, sélectionnez **Window** > **Photon Unity Networking** > **PUN Wizard** pour ouvrir la fenêtre Pun Wizard, puis cliquez sur le bouton **Setup Project** pour ouvrir le menu PUN Setup et configurez-le comme suit :
 
-* Dans le champ **AppId or Email** , collez l’ID d’application PUN que vous avez copié à l’étape précédente.
+* Dans le champ **AppId or Email**, collez l’ID d’application PUN que vous avez copié à l’étape précédente.
 
 Cliquez ensuite sur le bouton **Setup Project** pour appliquer l’ID d’application :
 

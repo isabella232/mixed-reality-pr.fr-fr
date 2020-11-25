@@ -7,13 +7,13 @@ ms.author: v-haferr
 ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, développer, développement, HoloLens, services cloud
-ms.openlocfilehash: ae79da3d5bdf85bc27312044409c1f9c9aa5f031
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Réalité mixte, développer, développement, HoloLens, services cloud, Azure, rendu à distance, ancres spatiales, cognitive services, cognition, unity, machine learning, traduction vocale, vision par ordinateur, Microsoft Graph
+ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697302"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679688"
 ---
 # <a name="azure-cloud-services"></a>Services cloud Azure
 
@@ -46,9 +46,9 @@ En guise de bonus, ARR ne restreint pas le type d’interface utilisateur que vo
 Azure Spatial Anchors (ASA) est un service multiplateforme qui vous permet de créer des applications de réalité mixte avec reconnaissance spatiale. Avec Azure Spatial Anchors, vous pouvez mapper, conserver et partager du contenu holographique sur plusieurs appareils à l’échelle du monde réel. 
 
 ASA est une solution personnalisée unique pour les cas d’usage courants en réalité mixte, notamment :
-* **Orientation**  : où deux ancres spatiales (ou plus) peuvent être connectées afin de créer une liste de tâches ou des points d’intérêt avec lesquels un utilisateur doit interagir.
-* **Expériences multi-utilisateur**  : où les utilisateurs peuvent transmettre des déplacements en interagissant avec des objets dans le même espace virtuel.
-* **Persistance du contenu virtuel dans le monde réel**  : où les utilisateurs peuvent placer des objets virtuels dans le monde réel, qui sont visibles à partir d’autres appareils pris en charge.
+* **Orientation** : où deux ancres spatiales (ou plus) peuvent être connectées afin de créer une liste de tâches ou des points d’intérêt avec lesquels un utilisateur doit interagir.
+* **Expériences multi-utilisateur** : où les utilisateurs peuvent transmettre des déplacements en interagissant avec des objets dans le même espace virtuel.
+* **Persistance du contenu virtuel dans le monde réel** : où les utilisateurs peuvent placer des objets virtuels dans le monde réel, qui sont visibles à partir d’autres appareils pris en charge.
 
 ![Exemple Azure Spatial Anchors](images/persistence.gif)
 

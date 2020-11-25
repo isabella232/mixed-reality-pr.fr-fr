@@ -6,19 +6,19 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, ancres spatiales
-ms.openlocfilehash: d223c451cbbf0fb4e2cc1392394d2fe771ec8069
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, ancres spatiales, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
+ms.openlocfilehash: 3ce83160f745fc48f082776caa3cfa87d23a1844
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699084"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678828"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Ancres spatiales locales dans Unreal
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Les ancres spatiales sont utilisées pour enregistrer les hologrammes en place dans l’espace réel entre les sessions d’application. Elles sont exposées via Unreal sous forme d’ **ARPins** et sont enregistrées dans le magasin d’ancres HoloLens, que vous allez charger dans les sessions ultérieures. Les ancres locales sont idéales comme solutions de secours lorsqu’il n’y a pas de connectivité Internet.
+Les ancres spatiales sont utilisées pour enregistrer les hologrammes en place dans l’espace réel entre les sessions d’application. Elles sont exposées via Unreal sous forme d’**ARPins** et sont enregistrées dans le magasin d’ancres HoloLens, que vous allez charger dans les sessions ultérieures. Les ancres locales sont idéales comme solutions de secours lorsqu’il n’y a pas de connectivité Internet.
 
 > [!IMPORTANT]
 > Les ancres locales sont stockées sur l’appareil, alors que les ancres spatiales Azure sont stockées dans le cloud. Si vous envisagez d’utiliser les services cloud Azure pour stocker vos ancres, nous avons créé un guide qui vous aidera à intégrer [Azure Spatial Anchors](unreal-azure-spatial-anchors.md). Notez que vous pouvez avoir des ancres locales et Azure dans le même projet sans conflit.
@@ -41,7 +41,7 @@ Décomposons cette séquence :
 3. Ajoutez l’acteur au **ARPin** et enregistrez le repère dans le magasin d’ancres HoloLens.  
     * Le nom d’ancre que vous choisissez doit être unique. Dans cet exemple, il s’agit de l’horodatage actuel. 
 
-4. Si l’ancre est correctement enregistrée dans le magasin d’ancres, vous pouvez l’inspecter dans le portail d’appareil HoloLens sous **System > Map Manager > Anchor Files Saved On Device** . 
+4. Si l’ancre est correctement enregistrée dans le magasin d’ancres, vous pouvez l’inspecter dans le portail d’appareil HoloLens sous **System > Map Manager > Anchor Files Saved On Device**. 
 
 ## <a name="loading-anchors"></a>Chargement des ancres
 
@@ -60,7 +60,7 @@ L’ID de l’ancre est également demandé afin que différents acteurs puissen
 
 ## <a name="removing-anchors"></a>Suppression des ancres 
 
-Lorsque vous n’avez plus besoin d’une ancre, vous pouvez l’effacer individuellement ou effacer la totalité du magasin d’ancres avec les composants **Remove ARPin from WMRAnchor Store** et **Remove All ARPins from WMRAnchor Store** .
+Lorsque vous n’avez plus besoin d’une ancre, vous pouvez l’effacer individuellement ou effacer la totalité du magasin d’ancres avec les composants **Remove ARPin from WMRAnchor Store** et **Remove All ARPins from WMRAnchor Store**.
 
 ![Supprimer des ancres spatiales](images/unreal-spatialanchors-remove.PNG)
 

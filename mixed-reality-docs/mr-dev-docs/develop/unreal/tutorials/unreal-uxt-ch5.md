@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/14/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, tutoriel, bien démarrer, mrtk, uxt, UX Tools, documentation
-ms.openlocfilehash: f7b57cf8a023874aa14118ff5cd50076bbf344e0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, tutoriel, bien démarrer, mrtk, uxt, UX Tools, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
+ms.openlocfilehash: f903848b8d5c9c1dccfc00cd7bd6d16d2e491a5e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699186"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679838"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5. Ajout d’un bouton et réinitialisation des positions des pièces
 
@@ -30,13 +30,13 @@ Dans le tutoriel précédent, vous avez ajouté des acteurs d’interaction manu
 ## <a name="creating-a-reset-function"></a>Création d’une fonction de réinitialisation
 Votre première tâche consiste à créer un blueprint de fonction qui remet une pièce d’échec à sa position d’origine dans la scène. 
 
-1.  Ouvrez **WhiteKing** , cliquez sur l’icône **+** en regard de la section **Functions** de **My Blueprint** , puis nommez-la **Reset Location** . 
+1.  Ouvrez **WhiteKing**, cliquez sur l’icône **+** en regard de la section **Functions** de **My Blueprint**, puis nommez-la **Reset Location**. 
 
-2.  Faites glisser l’exécution de **Drag and release** vers la grille Blueprint pour créer un nœud **SetActorRelativeTransform** . 
+2.  Faites glisser l’exécution de **Drag and release** vers la grille Blueprint pour créer un nœud **SetActorRelativeTransform**. 
     * Cette fonction définit la transformation (position, rotation et échelle) d’un acteur par rapport à son parent. Vous allez utiliser cette fonction pour réinitialiser la position du roi sur l’échiquier, même si celui-ci a été déplacé de sa position d’origine. 
     
-3. Cliquez avec le bouton droit dans le graphique d’événements, sélectionnez **Make Transform** , puis déplacez-le en définissant le paramètre **Location** comme suit : **X =-26** , **Y = 4** , **Z = 0** .
-    * Connectez sa valeur de retour ( **Return Value** ) au repère **New Relative Transform** dans **SetActorRelativeTransform** . 
+3. Cliquez avec le bouton droit dans le graphique d’événements, sélectionnez **Make Transform**, puis déplacez-le en définissant le paramètre **Location** comme suit : **X =-26**, **Y = 4**, **Z = 0**.
+    * Connectez sa valeur de retour (**Return Value**) au repère **New Relative Transform** dans **SetActorRelativeTransform**. 
 
 ![Fonction Reset Location](images/unreal-uxt/5-function.PNG)
 
@@ -47,7 +47,7 @@ Votre première tâche consiste à créer un blueprint de fonction qui remet une
 Maintenant que la fonction est correctement configurée, la tâche suivante consiste à créer un bouton qui la déclenche quand le joueur appuie dessus. 
 
 
-1.  Cliquez sur **Add New > Blueprint Class** , développez la section **All Classes** , puis recherchez **BP_ButtonHoloLens2** . 
+1.  Cliquez sur **Add New > Blueprint Class**, développez la section **All Classes**, puis recherchez **BP_ButtonHoloLens2**. 
     * Nommez ce bouton **ResetButton** et double-cliquez pour ouvrir le blueprint.
 
 > [!NOTE]
@@ -55,7 +55,7 @@ Maintenant que la fonction est correctement configurée, la tâche suivante cons
 
 ![Sous-classe du nouveau Blueprint à partir du bouton de style HoloLens 2](images/unreal-uxt/5-subclass.PNG)
 
-2. Vérifiez que **ResetButton(self)** est sélectionné dans le volet **Components** . Dans le volet **Details** , accédez à la section **Button** . Remplacez l’élément **Button Label** par défaut par « Reset ». Développez la section **Button Icon Brush** et appuyez sur le bouton **Open Icon Brush Editor** . 
+2. Vérifiez que **ResetButton(self)** est sélectionné dans le volet **Components**. Dans le volet **Details**, accédez à la section **Button**. Remplacez l’élément **Button Label** par défaut par « Reset ». Développez la section **Button Icon Brush** et appuyez sur le bouton **Open Icon Brush Editor**. 
 
 ![Définir l’étiquette et l’icône sur le bouton](images/unreal-uxt/5-buttonconfig.PNG)
 
@@ -65,27 +65,27 @@ L’éditeur Icon Brush Editor s’ouvre. Vous pouvez utiliser cet utilitaire fo
 
 Vous pouvez ajuster de nombreux autres paramètres pour configurer votre bouton. Pour en savoir plus sur le composant UXT Pressable Button, consultez la [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html).
 
-3. Cliquez sur **UxtPressableButton (Inherited)** dans le panneau **Components** et faites défiler le volet **Details** vers le bas jusqu’à la section **Events** . 
+3. Cliquez sur **UxtPressableButton (Inherited)** dans le panneau **Components** et faites défiler le volet **Details** vers le bas jusqu’à la section **Events**. 
     * Cliquez sur le bouton vert **+** à côté de **On Button Pressed** pour ajouter un événement au graphique d’événements, qui est appelé quand le joueur appuie sur le bouton. 
     
-À partir de là, vous devez appeler la fonction **Reset Location** de **WhiteKing** , qui a besoin d’une référence à l’acteur **WhiteKing** dans le niveau. 
+À partir de là, vous devez appeler la fonction **Reset Location** de **WhiteKing**, qui a besoin d’une référence à l’acteur **WhiteKing** dans le niveau. 
 
-4.  Dans le volet **My Blueprint** , accédez à la section **Variables** , cliquez sur le bouton **+** et nommez la variable **WhiteKing** . 
-    * Dans le volet **Details** , sélectionnez la liste déroulante à côté de **Variable Type** , recherchez **WhiteKing** , puis sélectionnez **Object Reference** . 
-    * Cochez la case à côté de **Instance Editable** . Cela permettra de définir la variable à partir du niveau principal (Main). 
+4.  Dans le volet **My Blueprint**, accédez à la section **Variables**, cliquez sur le bouton **+** et nommez la variable **WhiteKing**. 
+    * Dans le volet **Details**, sélectionnez la liste déroulante à côté de **Variable Type**, recherchez **WhiteKing**, puis sélectionnez **Object Reference**. 
+    * Cochez la case à côté de **Instance Editable**. Cela permettra de définir la variable à partir du niveau principal (Main). 
 
 ![Créer une variable](images/unreal-uxt/5-var.PNG)
 
-5.  Faites glisser la variable WhiteKing de **My Blueprint > Variables** vers le graphique d’événements de Reset Button et choisissez **Get WhiteKing** . 
+5.  Faites glisser la variable WhiteKing de **My Blueprint > Variables** vers le graphique d’événements de Reset Button et choisissez **Get WhiteKing**. 
 
 ## <a name="firing-the-function"></a>Déclenchement de la fonction
 Il ne reste plus qu’à déclencher expressément la fonction de réinitialisation dès lors que le joueur appuie sur le bouton.
 
-1.  Faites glisser la broche de sortie WhiteKing et relâchez-la pour placer un nouveau nœud. Sélectionnez la fonction **Reset Location** . Pour finir, faites glisser la broche d’exécution sortante depuis **On Button Pressed** vers la broche d’exécution entrante sur **Reset Location** . **Compilez** et **enregistrez** le Blueprint ResetButton, puis revenez dans la fenêtre principale. 
+1.  Faites glisser la broche de sortie WhiteKing et relâchez-la pour placer un nouveau nœud. Sélectionnez la fonction **Reset Location**. Pour finir, faites glisser la broche d’exécution sortante depuis **On Button Pressed** vers la broche d’exécution entrante sur **Reset Location**. **Compilez** et **enregistrez** le Blueprint ResetButton, puis revenez dans la fenêtre principale. 
 
 ![Appeler la fonction Reset Location à partir de l’événement On Button Pressed](images/unreal-uxt/5-callresetloc.PNG)
 
-2.  Faites glisser **ResetButton** vers la fenêtre Viewport et définissez son emplacement sur **X = 50** , **Y = -25** et **Z = 10** . Définissez sa rotation comme ceci : **Z = 180** . Sous **Default** , attribuez à la variable **WhiteKing** la valeur **WhiteKing** .
+2.  Faites glisser **ResetButton** vers la fenêtre Viewport et définissez son emplacement sur **X = 50**, **Y = -25** et **Z = 10**. Définissez sa rotation comme ceci : **Z = 180**. Sous **Default**, attribuez à la variable **WhiteKing** la valeur **WhiteKing**.
 
 ![Définir la variable](images/unreal-uxt/5-buttonlevel.PNG)
 

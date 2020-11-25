@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 717bd1a259c8e21058023a7c45c3ee34783fec4a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353417"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679228"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Partage de mouvements d’objet avec plusieurs utilisateurs
 
@@ -27,7 +27,7 @@ Dans ce tutoriel, vous allez apprendre à partager les mouvements d’objets pou
 
 Dans cette section, vous allez préparer la scène en ajoutant le préfabriqué du tutoriel.
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** , puis faites glisser le préfabriqué **TableAnchor** sur l’objet **SharedPlayground** dans la fenêtre Hierarchy afin de l’ajouter à votre scène en tant qu’enfant de l’objet SharedPlayground :
+Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs**, puis faites glisser le préfabriqué **TableAnchor** sur l’objet **SharedPlayground** dans la fenêtre Hierarchy afin de l’ajouter à votre scène en tant qu’enfant de l’objet SharedPlayground :
 
 ![Unity avec le préfabriqué nouvellement ajouté TableAnchor sélectionné](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
@@ -39,7 +39,7 @@ Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.Mult
 
 Dans la fenêtre Hierarchy, développez l’objet **NetworkLobby** et sélectionnez l’objet enfant **NetworkRoom**. Ensuite, dans la fenêtre Inspector, localisez le composant **Photon Room (Script)** et configurez-le comme suit :
 
-* Dans le champ **Rover Explorer Prefab** , attribuez le préfabriqué **RoverExplorer_Complete_Variant** à partir du dossier Resources.
+* Dans le champ **Rover Explorer Prefab**, attribuez le préfabriqué **RoverExplorer_Complete_Variant** à partir du dossier Resources.
 
 ![Unity avec le composant Photon Room partiellement configuré](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 

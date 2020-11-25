@@ -5,18 +5,18 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, azure custom vision, azure cognitive services
+keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, azure custom vision, azure cognitive services, services cloud azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: d30d409752c8b7f9728a4a6576829d175f91506d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353267"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679348"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Intégration d’Azure Custom Vision
 
-Dans ce tutoriel, vous allez apprendre à utiliser **Azure Custom Vision**. Vous allez charger un ensemble de photos pour l’associer à un *objet suivi* , les charger sur le service **Custom Vision** et démarrer le processus d’entraînement. Ensuite, vous utiliserez le service pour détecter l’ *objet suivi* en capturant des photos à partir du flux de la webcam.
+Dans ce tutoriel, vous allez apprendre à utiliser **Azure Custom Vision**. Vous allez charger un ensemble de photos pour l’associer à un *objet suivi*, les charger sur le service **Custom Vision** et démarrer le processus d’entraînement. Ensuite, vous utiliserez le service pour détecter l’*objet suivi* en capturant des photos à partir du flux de la webcam.
 
 ## <a name="objectives"></a>Objectifs
 
@@ -54,7 +54,7 @@ Le préfabriqué **ObjectDetectionManager** contient le composant **ObjectDetect
 
 ## <a name="retrieving-azure-api-resource-credentials"></a>Récupération des informations d’identification de la ressource API Azure
 
-Les informations d’identification nécessaires pour les paramètres d’ **ObjectDetectionManager (script)** peuvent être récupérées à partir du portail Azure et du portail Custom Vision.
+Les informations d’identification nécessaires pour les paramètres d’**ObjectDetectionManager (script)** peuvent être récupérées à partir du portail Azure et du portail Custom Vision.
 
 ### <a name="azure-portal"></a>Portail Azure
 
@@ -62,13 +62,13 @@ Recherchez la ressource Custom Vision de type **Cognitive Services** que vous av
 
 ### <a name="custom-vision-dashboard"></a>Tableau de bord Custom Vision
 
-Dans le tableau de bord [Custom Vision](https://www.customvision.ai/projects), ouvrez le projet que vous avez créé pour ce tutoriel, puis cliquez en haut à droite de la page sur l’icône d’engrenage pour ouvrir la page Paramètres. Dans la section de droite *Resources* , vous trouverez les informations d’identification nécessaires.
+Dans le tableau de bord [Custom Vision](https://www.customvision.ai/projects), ouvrez le projet que vous avez créé pour ce tutoriel, puis cliquez en haut à droite de la page sur l’icône d’engrenage pour ouvrir la page Paramètres. Dans la section de droite *Resources*, vous trouverez les informations d’identification nécessaires.
 
 Le composant **ObjectDetectionManager (script)** étant maintenant configuré correctement, recherchez l’objet **SceneController** dans la hiérarchie de la scène et sélectionnez-le.
 
 ![Unity avec les champs de configuration du composant de script SceneController affichés dans Inspector](images/mr-learning-azure/tutorial3-section4-step1-3.png)
 
-Vous constatez que le champ *Object Detection Manager* (Gestionnaire de détection d’objets) dans le composant **SceneController** est vide. Faites glisser l’ **ObjectDetectionManager** de la hiérarchie vers ce champ et enregistrez la scène.
+Vous constatez que le champ *Object Detection Manager* (Gestionnaire de détection d’objets) dans le composant **SceneController** est vide. Faites glisser l’**ObjectDetectionManager** de la hiérarchie vers ce champ et enregistrez la scène.
 
 ![Unity avec le composant de script SceneController configuré](images/mr-learning-azure/tutorial3-section4-step1-4.png)
 
@@ -84,15 +84,15 @@ Une nouvelle fenêtre s’ouvre, dans laquelle vous devez prendre six photos pou
 Une fois que vous avez suffisamment d’images, cliquez sur le bouton **Train** (Entraîner) pour démarrer le processus d’entraînement du modèle dans le cloud. L’activation de l’entraînement provoque le chargement de toutes les images, puis le démarrage de l’entraînement. Cette opération peut prendre jusqu’à une minute, voire plus. Un message à l’intérieur du menu indique la progression actuelle et, une fois qu’il indique que l’opération est terminée, vous pouvez arrêter l’application.
 
 > [!TIP]
-> Le composant **ObjectDetectionManager (script)** charge directement les images prises dans le service Custom Vision. En guise d’alternative, l’API Custom Vision accepte les URL vers les images. Comme exercice, vous pouvez modifier l’ **ObjectDetectionManager (script)** afin qu’il charge plutôt les images dans un stockage Blob.
+> Le composant **ObjectDetectionManager (script)** charge directement les images prises dans le service Custom Vision. En guise d’alternative, l’API Custom Vision accepte les URL vers les images. Comme exercice, vous pouvez modifier l’**ObjectDetectionManager (script)** afin qu’il charge plutôt les images dans un stockage Blob.
 
 ## <a name="detect-objects"></a>Détecter des objets
 
-Vous pouvez maintenant tester le modèle entraîné. Exécutez l’application et, dans le *menu principal* , cliquez sur **Search Object** (Rechercher un objet) et tapez le nom de l’ **objet suivi** en question. La **fiche d’objet** apparaît. Cliquez sur le bouton **Custom Vision**. À partir de là, le composant **ObjectDetectionManager** commence à effectuer des captures d’images en arrière-plan à partir de l’appareil photo, et la progression sera indiquée dans le menu. Pointez l’appareil photo sur l’objet que vous avez utilisé pour l’entraînement du modèle, et vous constaterez qu’après quelques instants il détectera l’objet.
+Vous pouvez maintenant tester le modèle entraîné. Exécutez l’application et, dans le *menu principal*, cliquez sur **Search Object** (Rechercher un objet) et tapez le nom de l’**objet suivi** en question. La **fiche d’objet** apparaît. Cliquez sur le bouton **Custom Vision**. À partir de là, le composant **ObjectDetectionManager** commence à effectuer des captures d’images en arrière-plan à partir de l’appareil photo, et la progression sera indiquée dans le menu. Pointez l’appareil photo sur l’objet que vous avez utilisé pour l’entraînement du modèle, et vous constaterez qu’après quelques instants il détectera l’objet.
 
 ## <a name="congratulations"></a>Félicitations
 
-Dans ce tutoriel, vous avez appris à utiliser Azure Custom Vision pour entraîner des images et utiliser le service de classification pour détecter les images qui correspondent à l’ **objet suivi** associé.
+Dans ce tutoriel, vous avez appris à utiliser Azure Custom Vision pour entraîner des images et utiliser le service de classification pour détecter les images qui correspondent à l’**objet suivi** associé.
 
 Dans le tutoriel suivant, vous allez apprendre à utiliser Azure Spatial Anchors pour lier un *objet suivi* à un emplacement dans le monde physique, puis à afficher une flèche qui guidera l’utilisateur vers l’emplacement lié de l’objet suivi.
 

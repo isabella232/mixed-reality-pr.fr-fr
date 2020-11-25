@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 5ebb3ffd66422a5e38bc62ada0f040e00f52671d
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: c16182fe2363b4682a25d70715f5ee8cb65d5886
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353467"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679758"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Connexion de plusieurs utilisateurs
 
@@ -26,14 +26,14 @@ Dans ce tutoriel, vous allez apprendre à connecter plusieurs utilisateurs dans 
 
 Dans cette section, vous allez préparer la scène en ajoutant une partie des préfabriqués du tutoriel.
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutoriels.MultiUserCapabilities** > **Prefabs** , puis cliquez et faites glisser les préfabriqués suivants dans la fenêtre Hierarchy pour les ajouter à votre scène :
+Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutoriels.MultiUserCapabilities** > **Prefabs**, puis cliquez et faites glisser les préfabriqués suivants dans la fenêtre Hierarchy pour les ajouter à votre scène :
 
 * Préfabriqué **NetworkLobby**
 * Préfabriqué **SharedPlayground**
 
 ![Unity avec les préfabriqués nouvellement ajoutés NetworkLobby et SharedPlayground sélectionnés](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** , puis faites glisser le préfabriqué suivant dans la fenêtre Hierarchy pour l’ajouter à votre scène :
+Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs**, puis faites glisser le préfabriqué suivant dans la fenêtre Hierarchy pour l’ajouter à votre scène :
 
 * Préfabriqué **DebugWindow**
 
@@ -45,7 +45,7 @@ Dans cette section, vous allez créer un préfabriqué qui sera utilisé pour re
 
 ### <a name="1-create-and-configure-the-user"></a>1. Créer et configurer l’utilisateur
 
-Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur une zone vide et sélectionnez **Create Empty** pour ajouter un objet vide à votre scène, nommez l’objet **PhotonUser** , puis configurez-le comme suit :
+Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur une zone vide et sélectionnez **Create Empty** pour ajouter un objet vide à votre scène, nommez l’objet **PhotonUser**, puis configurez-le comme suit :
 
 * Vérifiez que le paramètre **Position** de Transform a les valeurs X = 0, Y = 0, Z = 0 :
 
@@ -71,7 +71,7 @@ Dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le
 
 Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Materials** pour rechercher les matériaux MRTK.
 
-Ensuite, dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **PhotonUser** , puis sélectionnez **3D Object** > **Sphere** pour créer un objet Sphere en tant qu’enfant de l’objet PhotonUser et configurez-le comme suit :
+Ensuite, dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **PhotonUser**, puis sélectionnez **3D Object** > **Sphere** pour créer un objet Sphere en tant qu’enfant de l’objet PhotonUser et configurez-le comme suit :
 
 * Vérifiez que le paramètre **Position** de Transform a les valeurs X = 0, Y = 0, Z = 0.
 * Changez le paramètre **Scale** de Transform en une taille appropriée, par exemple X = 0,15, Y = 0,15, Z = 0,15.
@@ -81,7 +81,7 @@ Ensuite, dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet 
 
 ### <a name="3-create-the-prefab"></a>3. Créer le préfabriqué
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources**  :
+Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** :
 
 ![Fenêtre de projet Unity avec le dossier Resource sélectionné](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
 

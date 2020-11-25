@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, reconnaissance vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a7fa1bdaa72d341eaa49ac70dfa926d8f9bbad7a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699101"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679728"
 ---
 # <a name="2-using-speech-recognition-to-execute-commands"></a>2. Utilisation de la reconnaissance vocale pour exécuter des commandes
 
@@ -26,19 +26,19 @@ Dans ce tutoriel, vous allez ajouter la capacité d’exécuter des commandes en
 
 Dans la fenêtre Hierachy, sélectionnez l’objet **Lunarcom** puis, dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le composant **Lunarcom Wake Word Recognizer (Script)** à l’objet Lunarcom et configurez-le de la manière suivante :
 
-* Dans le champ **Wake Word** , entrez une expression appropriée, par exemple, _Activer le terminal_ .
-* Dans le champ **Dismiss Word** , entrez une expression appropriée, par exemple, _Désactiver le terminal_ .
+* Dans le champ **Wake Word**, entrez une expression appropriée, par exemple, _Activer le terminal_.
+* Dans le champ **Dismiss Word**, entrez une expression appropriée, par exemple, _Désactiver le terminal_.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
 > Le composant Lunarcom Wake Word Recognizer (Script) ne fait pas partie de MRTK. Il a été fourni avec les ressources de ce tutoriel.
 
-Si vous entrez maintenant en mode Game, comme dans le tutoriel précédent, le panneau du terminal est activé par défaut, mais vous pouvez maintenant le désactiver en prononçant la valeur de Dismiss Word, **Désactiver le terminal**  :
+Si vous entrez maintenant en mode Game, comme dans le tutoriel précédent, le panneau du terminal est activé par défaut, mais vous pouvez maintenant le désactiver en prononçant la valeur de Dismiss Word, **Désactiver le terminal** :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
-Et réactivez-le en prononçant la valeur de Wake Word, à savoir **Activer le terminal**  :
+Et réactivez-le en prononçant la valeur de Wake Word, à savoir **Activer le terminal** :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 

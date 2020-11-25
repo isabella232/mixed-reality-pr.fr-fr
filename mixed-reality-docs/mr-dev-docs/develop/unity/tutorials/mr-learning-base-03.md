@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, reconnaissance spatiale
 ms.localizationpriority: high
-ms.openlocfilehash: 15fa4285fd6dd60aac9ba3869430649db5b40f91
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 7ac81c21e1658798b7f512c4afa2eea9f509d827
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353257"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679318"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Configuration des profils MRTK
 
@@ -49,7 +49,7 @@ Les principales étapes à suivre pour masquer le maillage de la reconnaissance 
 > [!NOTE]
 > Le profil de configuration est le profil de plus haut niveau. Par conséquent, pour pouvoir modifier d’autres profils, vous devez d’abord cloner le profil de configuration.
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit** , puis, dans la fenêtre Inspector, remplacez le profil de configuration **MixedRealityToolkit** par **DefaultHoloLens2ConfigurationProfile**  :
+Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**, puis, dans la fenêtre Inspector, remplacez le profil de configuration **MixedRealityToolkit** par **DefaultHoloLens2ConfigurationProfile** :
 
 ![Composant MixedRealityToolkit d’Unity avec DefaultHoloLens2ConfigurationProfile sélectionné](images/mr-learning-base/base-03-section1-step1-1.png)
 
@@ -57,7 +57,7 @@ Avec l’objet **MixedRealityToolkit** sélectionné, dans la fenêtre Inspector
 
 ![Composant MixedRealityToolkit d’Unity - Bouton Copy & Customize](images/mr-learning-base/base-03-section1-step1-2.png)
 
-Dans la fenêtre Clone Profile, en regard de **Profile Name** , entrez un nom de profil adapté comme _GettingStarted_HoloLens2ConfigurationProfile_ , puis cliquez sur le bouton **Clone** pour créer une copie modifiable de **DefaultHololens2ConfigurationProfile**  :
+Dans la fenêtre Clone Profile, en regard de **Profile Name**, entrez un nom de profil adapté comme _GettingStarted_HoloLens2ConfigurationProfile_, puis cliquez sur le bouton **Clone** pour créer une copie modifiable de **DefaultHololens2ConfigurationProfile** :
 
 ![MixedRealityToolkit d’Unity - Fenêtre contextuelle de clonage du profil de configuration](images/mr-learning-base/base-03-section1-step1-3.png)
 
@@ -72,7 +72,7 @@ Dans le menu Unity, sélectionnez **File** > **Save** pour enregistrer votre sc�
 
 ### <a name="2-enable-the-spatial-awareness-system"></a>2. Activer le système de reconnaissance spatiale
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ensuite, dans la fenêtre Inspector, sélectionnez l’onglet **Spatial Awareness** , puis cochez la case **Enable Spatial Awareness System**  :
+Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ensuite, dans la fenêtre Inspector, sélectionnez l’onglet **Spatial Awareness**, puis cochez la case **Enable Spatial Awareness System** :
 
 ![Composant MixedRealityToolkit d’Unity avec le système de reconnaissance spatiale activé](images/mr-learning-base/base-03-section1-step2-1.png)
 
@@ -81,11 +81,11 @@ Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ens
 
 ### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3. Cloner le profil système de reconnaissance spatiale par défaut
 
-Sous l’onglet **Spatial Awareness** , cliquez sur le bouton **Clone** pour ouvrir la fenêtre Clone Profile :
+Sous l’onglet **Spatial Awareness**, cliquez sur le bouton **Clone** pour ouvrir la fenêtre Clone Profile :
 
 ![Composant Unity MixedRealityToolkit d’Unity avec l’onglet Spatial Awareness sélectionné](images/mr-learning-base/base-03-section1-step3-1.png)
 
-Dans la fenêtre Clone Profile, en regard de **Profile Name** , entrez un nom de profil adapté comme _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_ , puis cliquez sur le bouton **Clone** pour créer une copie modifiable de **DefaultMixedRealitySpatialAwarenessSystemProfile**  :
+Dans la fenêtre Clone Profile, en regard de **Profile Name**, entrez un nom de profil adapté comme _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_, puis cliquez sur le bouton **Clone** pour créer une copie modifiable de **DefaultMixedRealitySpatialAwarenessSystemProfile** :
 
 ![MixedRealityToolkit d’Unity - Fenêtre contextuelle de clonage du profil du système de reconnaissance spatiale](images/mr-learning-base/base-03-section1-step3-2.png)
 
@@ -95,11 +95,11 @@ Le profil Spatial Awareness System nouvellement créé est maintenant automatiqu
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. Cloner le profil d’observateur de maillage de reconnaissance spatiale par défaut
 
-Avec l’onglet **Spatial Awareness** sélectionné, développez la section **Windows Mixed Reality Spatial Mesh Observer** , puis cliquez sur le bouton **Clone** pour ouvrir la fenêtre Clone Profile :
+Avec l’onglet **Spatial Awareness** sélectionné, développez la section **Windows Mixed Reality Spatial Mesh Observer**, puis cliquez sur le bouton **Clone** pour ouvrir la fenêtre Clone Profile :
 
 ![Composant MixedRealityToolkit d’Unity avec la section Windows Mixed Reality Spatial Mesh Observer développée](images/mr-learning-base/base-03-section1-step4-1.png)
 
-Dans la fenêtre Clone Profile, en regard de **Profile Name** , entrez un nom de profil adapté comme _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_ , puis cliquez sur le bouton **Clone** pour créer une copie modifiable de **DefaultMixedRealitySpatialAwarenessMeshObserverProfile**  :
+Dans la fenêtre Clone Profile, en regard de **Profile Name**, entrez un nom de profil adapté comme _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_, puis cliquez sur le bouton **Clone** pour créer une copie modifiable de **DefaultMixedRealitySpatialAwarenessMeshObserverProfile** :
 
 ![MixedRealityToolkit d’Unity - Fenêtre contextuelle de clonage du profil Spatial Mesh Observer](images/mr-learning-base/base-03-section1-step4-2.png)
 
@@ -109,7 +109,7 @@ Le profil Spatial Awareness Mesh Observer nouvellement créé est maintenant aut
 
 ### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5. Changer la visibilité du maillage de reconnaissance spatiale
 
-Dans **Spatial Mesh Observer Settings** , configurez **Display Option** sur **Occlusion** pour rendre le maillage de mappage spatial invisible tout en le gardant fonctionnel :
+Dans **Spatial Mesh Observer Settings**, configurez **Display Option** sur **Occlusion** pour rendre le maillage de mappage spatial invisible tout en le gardant fonctionnel :
 
 ![Composant MixedRealityToolkit d’Unity avec l’option d’affichage de Spatial Mesh Observer définie sur Occlusion](images/mr-learning-base/base-03-section1-step5-1.png)
 

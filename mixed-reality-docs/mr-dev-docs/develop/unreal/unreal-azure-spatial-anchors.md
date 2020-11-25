@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, développement Azure, ancres spatiales, réalité mixte, développement, fonctionnalités, nouveau projet, émulateur, documentation, guides, hologrammes, développement de jeux
-ms.openlocfilehash: 5f1f7ef0cb55714ed87bbc3e827d77d3e2694084
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, développement azure, ancres spatiales, réalité mixte, développement, fonctionnalités, nouveau projet, émulateur, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
+ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698618"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679868"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Azure Spatial Anchors dans Unreal
 
@@ -47,7 +47,7 @@ Pour plus d’informations, consultez la documentation sur l’[authentification
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Ajout des plug-ins Azure Spatial Anchors
 
 Activez les plug-ins Azure Spatial Anchors dans l’éditeur Unreal en effectuant les étapes suivantes :
-1. Cliquez sur **Edit > Plugins** et recherchez **AzureSpatialAnchors** et **AzureSpatialAnchorsForWMR** .
+1. Cliquez sur **Edit > Plugins** et recherchez **AzureSpatialAnchors** et **AzureSpatialAnchorsForWMR**.
 2. Cochez la case **Enabled** dans les deux plug-ins pour autoriser l’accès aux bibliothèques de blueprints Azure Spatial Anchors dans votre application.
 
 ![Plug-ins Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-01.png)
@@ -58,7 +58,7 @@ Une fois cette opération terminée, redémarrez l’éditeur Unreal pour que le
 Une session Azure Spatial Anchors permet aux applications clientes de communiquer avec le service Azure Spatial Anchors. Vous devez créer et démarrer une session Azure Spatial Anchors pour créer, conserver et partager des ancres spatiales Azure :
 
 1. Ouvrez le blueprint du Pawn que vous utilisez dans l’application.
-2. Ajoutez deux variables de chaîne pour l’ **ID de compte** et la **clé de compte** , puis affectez les valeurs correspondantes à partir de votre compte Azure Spatial Anchors pour authentifier la session.
+2. Ajoutez deux variables de chaîne pour l’**ID de compte** et la **clé de compte**, puis affectez les valeurs correspondantes à partir de votre compte Azure Spatial Anchors pour authentifier la session.
 
 ![Plug-ins Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-02.png)
 
@@ -69,7 +69,7 @@ Démarrez une session Azure Spatial Anchors en effectuant les étapes suivantes�
 
 ![Plug-ins Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-03.png)
 
-3. Configurez la session Azure Spatial Anchors pour fournir l’ **ID de compte** et la **clé de compte** .
+3. Configurez la session Azure Spatial Anchors pour fournir l’**ID de compte** et la **clé de compte**.
 
 ![Plug-ins Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-04.png)
 
@@ -127,12 +127,12 @@ Après avoir défini les paramètres de l’ancre, déclarez-la comme prête à 
 
 ## <a name="saving-an-anchor"></a>Enregistrement d’une ancre
 
-Après avoir configuré l’ancre spatiale Azure avec vos paramètres, appelez **Save Cloud Anchor** . Save Cloud Anchor déclare l’ancre auprès du service Azure Spatial Anchors. Lorsque l’appel à Save Cloud Anchor s’effectue correctement, l’ancre spatiale Azure est disponible pour les autres utilisateurs du service Azure Spatial Anchors.  
+Après avoir configuré l’ancre spatiale Azure avec vos paramètres, appelez **Save Cloud Anchor**. Save Cloud Anchor déclare l’ancre auprès du service Azure Spatial Anchors. Lorsque l’appel à Save Cloud Anchor s’effectue correctement, l’ancre spatiale Azure est disponible pour les autres utilisateurs du service Azure Spatial Anchors.  
 
 ![Plug-ins Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-15.png)
 
 > [!NOTE]
-> Save Cloud Anchor est une fonction asynchrone qui peut être appelée uniquement sur un événement de thread de jeu, par exemple **EventTick** . Save Cloud Anchor peut ne pas apparaître en tant que fonction de blueprint disponible dans les fonctions de blueprint personnalisées. Toutefois, elle devrait être disponible dans l’éditeur de blueprint de graphe d’événements de Pawn.
+> Save Cloud Anchor est une fonction asynchrone qui peut être appelée uniquement sur un événement de thread de jeu, par exemple **EventTick**. Save Cloud Anchor peut ne pas apparaître en tant que fonction de blueprint disponible dans les fonctions de blueprint personnalisées. Toutefois, elle devrait être disponible dans l’éditeur de blueprint de graphe d’événements de Pawn.
 
 Dans l’exemple ci-dessous, l’ancre spatiale Azure est stockée dans un ensemble pendant un rappel d’événement d’entrée. Elle est ensuite enregistrée sur l’EventTick. L’enregistrement d’une ancre spatiale Azure peut nécessiter plusieurs tentatives, en fonction de la quantité de données spatiales créées par votre session Azure Spatial Anchors. Il est donc préférable de vérifier si l’appel d’enregistrement a réussi.
 
@@ -144,7 +144,7 @@ Une fois l’ancre enregistrée, vous pouvez utiliser la transformation d’épi
 
 ## <a name="deleting-an-anchor"></a>Suppression d’une ancre
 
-Vous pouvez supprimer des ancres du service Azure Spatial Anchors en appelant **Delete Cloud Anchor** .
+Vous pouvez supprimer des ancres du service Azure Spatial Anchors en appelant **Delete Cloud Anchor**.
 
 ![Plug-ins Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-17.png)
 
@@ -172,18 +172,18 @@ En plus de créer des ancres spatiales Azure, vous pouvez détecter les ancres c
 
 ![Plug-ins Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-19.png)
 
-3. Abonnez-vous à l’ **ASAAnchor Located Delegate** pour le composant **AzureSpatialAnchorsEvent** .
+3. Abonnez-vous à l’**ASAAnchor Located Delegate** pour le composant **AzureSpatialAnchorsEvent**.
     * Le délégué permet à l’application de savoir quand de nouvelles ancres associées au compte Azure Spatial Anchors ont été localisées.
-    * Avec le rappel d’événement, les ancres spatiales Azure créées par les homologues à l’aide de la session Azure Spatial Anchors n’auront pas d’épingles RA créées par défaut. Pour créer une épingle RA pour l’ancre spatiale Azure détectée, les développeurs peuvent appeler **Create ARPin Around Azure Cloud Spatial Anchor** .
+    * Avec le rappel d’événement, les ancres spatiales Azure créées par les homologues à l’aide de la session Azure Spatial Anchors n’auront pas d’épingles RA créées par défaut. Pour créer une épingle RA pour l’ancre spatiale Azure détectée, les développeurs peuvent appeler **Create ARPin Around Azure Cloud Spatial Anchor**.
 
 ![Plug-ins Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-20.png)
 
-Pour localiser les ancres spatiales Azure créées par des homologues à l’aide du service Azure Spatial Anchors, l’application doit créer un **observateur Azure Spatial Anchors**  :
+Pour localiser les ancres spatiales Azure créées par des homologues à l’aide du service Azure Spatial Anchors, l’application doit créer un **observateur Azure Spatial Anchors** :
 1. Vérifiez qu’une session Azure Spatial Anchors est en cours d’exécution.
-2. Créez un **AzureSpatialAnchorsLocateCriteria** .
+2. Créez un **AzureSpatialAnchorsLocateCriteria**.
     * Vous pouvez spécifier différents paramètres d’emplacement tels que la distance par rapport à l’utilisateur ou la distance par rapport à une autre ancre.
-3. Déclarez l’identificateur Azure Spatial Anchors souhaité dans l’ **AzureSpatialAnchorsLocateCritieria** .
-4. Appelez **Create Watcher** .
+3. Déclarez l’identificateur Azure Spatial Anchors souhaité dans l’**AzureSpatialAnchorsLocateCritieria**.
+4. Appelez **Create Watcher**.
 
 ![Plug-ins Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-21.png)
 

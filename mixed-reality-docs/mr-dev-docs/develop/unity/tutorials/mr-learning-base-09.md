@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens
+keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, commandes vocales, entrée vocale
 ms.localizationpriority: high
-ms.openlocfilehash: c5d7297b8c8153270cd6ccf40eff64eab4afb49e
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: e51f9e816acbc2f98415deaec2c0885c97e40442
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353507"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679248"
 ---
 # <a name="9-using-speech-commands"></a>9. Utilisation des commandes vocales
 
@@ -27,7 +27,7 @@ Dans ce tutoriel, vous allez apprendre à créer des commandes vocales et à les
 
 ## <a name="ensuring-the-microphone-capability-is-enabled"></a>Vérification de l’activation de la fonctionnalité Microphone
 
-Dans le menu Unity, sélectionnez Mixed Reality Toolkit > Utilities > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator** puis, dans la section **UWP Capabilities** , vérifiez que l’option **Enable Microphone Capability** est grisée :
+Dans le menu Unity, sélectionnez Mixed Reality Toolkit > Utilities > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator** puis, dans la section **UWP Capabilities**, vérifiez que l’option **Enable Microphone Capability** est grisée :
 
 ![Activer la fonctionnalité du microphone](images/mr-learning-base/base-09-section1-step1-1.png)
 
@@ -47,7 +47,7 @@ Dans la fenêtre de hiérarchie, sélectionnez l’objet **MixedRealityToolkit**
 > [!TIP]
 > Pour vous rappeler comment cloner des profils MRTK, vous pouvez consulter les instructions fournies dans [Configuration des profils MRTK](mr-learning-base-03.md).
 
-Dans la section Speech > **Speech Commands** , cliquez à quatre reprises sur le bouton **+ Add a New Speech Command** (Ajouter une commande vocale) pour ajouter quatre nouvelles commandes vocales à la liste des commandes vocales existantes puis, dans le champ **Keyword** (Mot clé), entrez les expressions suivantes :
+Dans la section Speech > **Speech Commands**, cliquez à quatre reprises sur le bouton **+ Add a New Speech Command** (Ajouter une commande vocale) pour ajouter quatre nouvelles commandes vocales à la liste des commandes vocales existantes puis, dans le champ **Keyword** (Mot clé), entrez les expressions suivantes :
 
 * Activer l’indicateur
 * Activer l’appui pour placement
@@ -80,38 +80,38 @@ Sur le composant SpeechInputHandler, cliquez trois fois sur la petite icône **+
 
 Développez **Element 0** et configurez-le comme suit :
 
-* Dans le champ **Keyword** , entrez **Activer l’indicateur** afin de référencer la commande vocale Activer l’indicateur que vous avez créée dans la section précédente.
+* Dans le champ **Keyword**, entrez **Activer l’indicateur** afin de référencer la commande vocale Activer l’indicateur que vous avez créée dans la section précédente.
 * Cliquez sur la petite icône **+** pour ajouter un événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **Indicator** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **GameObject** > **SetActive (bool)** pour définir cette fonction en tant qu’action à exécuter lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **GameObject** > **SetActive (bool)** pour définir cette fonction en tant qu’action à exécuter lorsque l’événement est déclenché.
 * **Cochez** la case de l’argument.
 
 ![Configurer l’élément de mot clé 0](images/mr-learning-base/base-09-section3-step1-4.png)
 
 Développez **Element 1** et configurez-le comme suit :
 
-* Dans le champ **Keyword** , entrez **Activer le cadre englobant** afin de référencer la commande vocale Activer le cadre englobant que vous avez créée dans la section précédente.
+* Dans le champ **Keyword**, entrez **Activer le cadre englobant** afin de référencer la commande vocale Activer le cadre englobant que vous avez créée dans la section précédente.
 * Cliquez sur la petite icône **+** pour ajouter un événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **BoundingBox** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **BoundingBox** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * **Cochez** la case de l’argument.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **ObjectManipulator** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **ObjectManipulator** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * **Cochez** la case de l’argument.
 
 ![Configurer l’élément de mot clé 1](images/mr-learning-base/base-09-section3-step1-5.png)
 
 Développez **Element 2** et configurez-le comme suit :
 
-* Dans le champ **Keyword** , entrez **Désactiver le cadre englobant** afin de référencer la commande vocale Désactiver le cadre englobant que vous avez créée dans la section précédente.
+* Dans le champ **Keyword**, entrez **Désactiver le cadre englobant** afin de référencer la commande vocale Désactiver le cadre englobant que vous avez créée dans la section précédente.
 * Cliquez sur la petite icône **+** pour ajouter un événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **BoundingBox** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **BoundingBox** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **décochée**.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **ObjectManipulator** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **ObjectManipulator** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **décochée**.
 
 ![Configurer l’élément de mot clé 2](images/mr-learning-base/base-09-section3-step1-6.png)
@@ -125,10 +125,10 @@ Dans la fenêtre de hiérarchie, sélectionnez l’objet RoverExplorer > **Rover
 
 Sur le composant SpeechInputHandler, cliquez sur la petite icône **+** pour ajouter un élément Keyword, développez l’élément qui vient d’être créé, puis configurez-le comme suit :
 
-* Dans le champ **Keyword** , entrez **Activer l’appui pour placement** afin de référencer la commande vocale Activer l’appui pour placement que vous avez créée dans la section précédente.
+* Dans le champ **Keyword**, entrez **Activer l’appui pour placement** afin de référencer la commande vocale Activer l’appui pour placement que vous avez créée dans la section précédente.
 * Cliquez sur la petite icône **+** pour ajouter un événement.
-* Dans la fenêtre de hiérarchie, assignez l’objet lui-même, c’est-à-dire le même objet **RoverAssembly** , au champ **None (Object)** .
-* Dans la liste déroulante **No Function** , sélectionnez **TapToPlace** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la fenêtre de hiérarchie, assignez l’objet lui-même, c’est-à-dire le même objet **RoverAssembly**, au champ **None (Object)** .
+* Dans la liste déroulante **No Function**, sélectionnez **TapToPlace** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * **Cochez** la case de l’argument.
 
 ![Configurer le gestionnaire d’entrée vocale sur l’assemblage de Rover](images/mr-learning-base/base-09-section3-step1-8.png)

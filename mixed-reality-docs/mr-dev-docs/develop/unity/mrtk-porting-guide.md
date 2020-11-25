@@ -6,13 +6,13 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
-ms.openlocfilehash: 88bee12196099837f46164552c690a6b326f9ba7
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2, unity, portage, HoloLens 1ère génération, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, migration, bonnes pratiques, ARM
+ms.openlocfilehash: 84edf3b029140884443c23d685fe03a12161d1b8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386225"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677388"
 ---
 # <a name="get-your-existing-app-ready-for-hololens-2"></a>Préparer une application existante pour HoloLens 2
 
@@ -29,7 +29,7 @@ Les sections ci-dessous expliquent en détail chacune de ces étapes :
 
 Éléments requis :
 
-Avant de démarrer le processus de portage, nous vous **recommandons vivement** d’utiliser le contrôle de code source pour enregistrer un instantané de l’état d’origine de vos applications. Nous vous recommandons également d’ *enregistrer* les états des points de contrôle à différents stades du processus. Le fait de disposer d’une autre instance Unity de l’application d’origine peut vous être utile pour effectuer une comparaison côte à côte au cours du processus de portage. 
+Avant de démarrer le processus de portage, nous vous **recommandons vivement** d’utiliser le contrôle de code source pour enregistrer un instantané de l’état d’origine de vos applications. Nous vous recommandons également d’*enregistrer* les états des points de contrôle à différents stades du processus. Le fait de disposer d’une autre instance Unity de l’application d’origine peut vous être utile pour effectuer une comparaison côte à côte au cours du processus de portage. 
 
 > [!NOTE]
 > Avant d’effectuer le portage, vérifiez que vous avez installé les derniers outils de développement Windows Mixed Reality. Pour la plupart des développeurs HoloLens, il s’agit d’effectuer une mise à jour vers la dernière version de Visual Studio 2019 et d’installer le SDK Windows correspondant. Le contenu ci-dessous offre une présentation détaillée des différentes versions de Unity et de Mixed Reality Toolkit (MRTK), version 2.
@@ -107,7 +107,7 @@ Pour plus d’informations sur les différences entre HTK/MRTK et MRTK v2 au ni
 - Utiliser l’expérience utilisateur MRTK par défaut (boutons, fenêtres, etc.) lorsque cela est possible.
 - Éviter de modifier directement les fichiers MRTK. Pour cela, ajouter des wrappers autour des composants MRTK.
     - Cette action facilite les futures ingestions et mises à jour de MRTK.
-- Explorer les exemples de scènes fournis dans MRTK (surtout *HandInteractionExamples.scene* ).
+- Explorer les exemples de scènes fournis dans MRTK (surtout *HandInteractionExamples.scene*).
 - Recréer une interface utilisateur basée sur les canevas avec des quadrants, des colliders et du texte TextMeshPro.
 - Activer [Partage de mémoire tampon en profondeur](camera-in-unity.md#sharing-your-depth-buffers-with-windows) ou [définir le point de focus](focus-point-in-unity.md) ; préférer utiliser une mémoire tampon de profondeur 16 bits pour obtenir de meilleures performances. Vérifier lors de l’affichage de la couleur que la profondeur est également affichée. Unity n’écrit généralement pas de profondeur pour les gameobjects transparents et de texte. 
 - Définir le chemin de rendu d’instance à passage unique.
