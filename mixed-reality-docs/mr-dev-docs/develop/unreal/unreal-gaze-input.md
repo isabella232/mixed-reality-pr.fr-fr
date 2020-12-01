@@ -6,43 +6,101 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi des yeux, entrée de regard, affichage monté en tête, moteur non réel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f89638cef6b90e004f097c701c3df13edaf74fac
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679048"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354322"
 ---
 # <a name="gaze-input"></a>Entrée en regard
 
-## <a name="overview"></a>Vue d’ensemble
-
-Le [plug-in Windows Mixed Reality](https://docs.unrealengine.com/Platforms/VR/WMR/index.html) ne fournit pas de fonctions intégrées pour l’entrée en regard, mais HoloLens 2 prend en charge le suivi oculaire. Les fonctionnalités de suivi réelles sont fournies par les API d' **affichage** et de **suivi oculaire** non réelles et incluent :
-
-- Informations sur l'appareil
-- Capteurs de suivi
-- Orientation et position
-- Volets de découpage
-- Données de regard et informations de suivi
-
-Vous trouverez la liste complète des fonctionnalités dans la documentation sur l' [affichage](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) et le [suivi des yeux](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) de l’inréel.
-
-En plus des API inréelless, consultez la documentation sur l' [interaction](../../design/eye-gaze-interaction.md) avec le regard sur les yeux pour hololens 2 et découvrez comment fonctionne le [suivi oculaire sur hololens 2](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) .
-
-> [!IMPORTANT]
-> Le suivi oculaire est pris en charge uniquement sur HoloLens 2.
+Le point de regard est utilisé pour indiquer ce que l’utilisateur examine.  Cela utilise les caméras de suivi oculaire sur l’appareil pour trouver un rayon dans l’espace non réel correspondant à ce que l’utilisateur examine actuellement.
 
 ## <a name="enabling-eye-tracking"></a>Activation du suivi oculaire
-L’entrée en regard doit être activée dans les paramètres du projet HoloLens avant que vous puissiez utiliser l’une des API inréelles. Lorsque l’application démarre, une invite de consentement s’affiche dans la capture d’écran ci-dessous.
 
-- Sélectionnez **Oui** pour définir l’autorisation et accéder à l’entrée en regard. Si vous avez besoin de modifier ce paramètre à tout moment, il se trouve dans l’application **paramètres** .
+- Dans **paramètres du projet > HoloLens**, activez la fonctionnalité **d’entrée en regard** :
 
-![Autorisations d’entrée oculaire](images/unreal/eye-input-permissions.png)
+![Capture d’écran des fonctionnalités des paramètres du projet HoloLens avec l’entrée en regard en surbrillance](images/unreal-gaze-img-01.png)
+
+- Créer un acteur et l’ajouter à votre scène
 
 > [!NOTE] 
 > Le suivi oculaire HoloLens en non réel a un seul rayon de regard pour les yeux au lieu des deux rayons nécessaires pour le suivi STEREOSCOPIQUE, ce qui n’est pas pris en charge.
 
-C’est tout ce dont vous avez besoin pour commencer à ajouter des entrées de regard à vos applications HoloLens 2 en toute réalité. Pour plus d’informations sur l’entrée en regard et la façon dont elle affecte les utilisateurs en réalité mixte, consultez les liens ci-dessous. Pensez à les utiliser lors de la création de vos expériences interactives.
+## <a name="using-eye-tracking"></a>Utilisation du suivi oculaire
+
+Vérifiez tout d’abord que l’appareil prend en charge le suivi oculaire avec la fonction IsEyeTrackerConnected.  Si la valeur est true, appelez GetGazeData pour Rechercher l’endroit où les yeux de l’utilisateur regardent au cours du frame actuel :
+
+![Le plan de la fonction est connecté au suivi oculaire](images/unreal-gaze-img-02.png)
+
+> [!NOTE]
+> Le point de fixation et la valeur de confiance ne sont pas disponibles sur HoloLens.
+
+Pour trouver ce que l’utilisateur examine, utilisez l’origine du regard et la direction dans une trace de ligne.  Le début de ce vecteur est l’origine du point de regard et la fin est l’origine plus la direction du point de regard multipliée par la distance souhaitée :
+
+![Plan de la fonction d’extraction de données de regard](images/unreal-gaze-img-03.png)
+
+## <a name="getting-head-orientation"></a>Obtention de l’orientation des têtes
+
+Vous pouvez également utiliser la rotation HMD pour représenter la direction de l’en-tête de l’utilisateur.  Cela ne nécessite pas la fonctionnalité d’entrée en regard, mais ne vous donne aucune information de suivi visuel.  Une référence au plan doit être ajoutée comme contexte universel pour obtenir les données de sortie correctes :
+
+> [!NOTE]
+> L’obtention de données HMD n’est disponible que dans les versions 4,26 et ultérieures.
+
+![Plan de la fonction d’extraction de HMDData](images/unreal-gaze-img-04.png)
+
+## <a name="using-c"></a>Utilisation de C++ 
+
+- Dans le fichier build.cs de votre jeu, ajoutez « EyeTracker » à la liste PublicDependencyModuleNames :
+
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",
+        "EyeTracker"
+});
+```
+
+- Dans « fichier/nouvelle classe C++ », créez un acteur C++ appelé « EyeTracker »
+    - Une solution Visual Studio s’ouvre à la nouvelle classe EyeTracker. Générez et exécutez pour ouvrir le jeu inréel avec le nouvel acteur EyeTracker.  Recherchez « EyeTracker » dans la fenêtre « placer les acteurs ».  Faites glisser et déposez cette classe dans la fenêtre de jeu pour l’ajouter au projet :
+
+![Capture d’écran d’un acteur avec la fenêtre placer l’acteur ouverte](images/unreal-gaze-img-06.png)
+
+- Dans EyeTracker. cpp, ajoutez includes pour EyeTrackerFunctionLibrary et DrawDebugHelpers :
+
+```cpp
+#include "EyeTrackerFunctionLibrary.h"
+#include "DrawDebugHelpers.h"
+```
+
+Dans Tick, vérifiez que l’appareil prend en charge le suivi oculaire avec UEyeTrackerFunctionLibrary :: IsEyeTrackerConnected.  Recherchez ensuite le début et la fin d’un rayon pour une trace de ligne à partir de UEyeTrackerFunctionLibrary :: GetGazeData :
+
+```cpp
+void AEyeTracker::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+
+    if(UEyeTrackerFunctionLibrary::IsEyeTrackerConnected())
+    {
+        FEyeTrackerGazeData GazeData;
+        if(UEyeTrackerFunctionLibrary::GetGazeData(GazeData))
+        {
+            FVector Start = GazeData.GazeOrigin;
+            FVector End = GazeData.GazeOrigin + GazeData.GazeDirection * 100;
+
+            FHitResult Hit Result;
+            if (GWorld->LineTraceSingleByChannel(HitResult, Start, End, ECollisionChannel::ECC_Visiblity))
+            {
+                DrawDebugCoordinateSystem(GWorld, HitResult.Location, FQuat::Identity.Rotator(), 10);
+            }
+        }
+    }
+}
+```
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
