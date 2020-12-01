@@ -1,23 +1,29 @@
 ---
 title: Mouvements et contrôleurs de mouvement dans Unity
 description: Apprenez à prendre des mesures sur votre point de regard avec les gestes de main et les contrôleurs de mouvement.
-author: thetuvix
+author: hferrone
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/1/2020
 ms.topic: article
 keywords: gestes, contrôleurs de mouvement, Unity, point d’entrée, point d’entrée, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 122642bb7fc561e505098bca00b8bf65bfd4552e
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678648"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443579"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Mouvements et contrôleurs de mouvement dans Unity
 
 Il existe deux façons principales d’agir sur votre point [de regard](gaze-in-unity.md), les [gestes manuels](../../design/gaze-and-commit.md#composite-gestures) et les [contrôleurs de mouvement](../../design/motion-controllers.md) dans HoloLens et les HMD immersifs. Vous accédez aux données des deux sources d’entrée spatiale via les mêmes API dans Unity.
 
 Unity fournit deux méthodes principales pour accéder aux données d’entrée spatiale pour Windows Mixed Reality, les API common *Input. GetButton/Input. GetAxis* qui fonctionnent sur plusieurs SDK XR Unity, et une API *InteractionManager/GestureRecognizer* propre à Windows Mixed Reality qui expose l’ensemble complet des données d’entrée spatiale disponibles.
+
+## <a name="unity-xr-input-apis"></a>API d’entrée Unity XR
+
+Pour les nouveaux projets, nous vous recommandons d’utiliser les nouvelles API d’entrée XR dès le début. 
+
+Vous trouverez plus d’informations sur les [API XR ici](https://docs.unity3d.com/Manual/xr_input.html).
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Bouton Unity/table de mappage des axes
 
@@ -146,9 +152,9 @@ Les applications qui souhaitent traiter différemment les positions en fonction 
 <tr>
 <th> État du suivi </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Précision approximative</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Approximatif </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -213,6 +219,9 @@ Notez que cela représente la poignée de préhension du contrôleur (où l’ut
 Notez que la relation entre cette poignée pose et que le pointeur pose (où l’extrémité du contrôleur pointe) peut différer d’un contrôle à l’autre. À ce stade, l’accès au pointeur du contrôleur est possible uniquement via l’API d’entrée spécifique à MR, décrite dans les sections ci-dessous.
 
 ## <a name="windows-specific-apis-xrwsainput"></a>API spécifiques à Windows (XR. WSA. Entrée
+
+> [!CAUTION]
+> Si votre projet utilise l’un des XR. Les API WSA, elles sont en passe en faveur du kit de développement logiciel (SDK) XR dans les futures versions Unity. Pour les nouveaux projets, nous vous recommandons d’utiliser le kit de développement logiciel (SDK) XR dès le début. Vous trouverez plus d’informations sur le [système d’entrée XR et les API ici](https://docs.unity3d.com/Manual/xr_input.html).
 
 **Espace de noms :** *UnityEngine. XR. WSA. Input*<br>
 **Types**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*

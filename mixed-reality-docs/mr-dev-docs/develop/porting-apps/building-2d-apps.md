@@ -1,19 +1,19 @@
 ---
-title: Mise à jour d’applications UWP 2D pour la réalité mixte
+title: Mise à jour des applications UWP 2D pour Windows Mixed Reality
 description: Cet article décrit la mise à jour de votre application plateforme Windows universelle 2D existante pour qu’elle s’exécute sur HoloLens et les casques immersifs de Windows Mixed Reality.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: application 2D, UWP, application plate, HoloLens, casque immersif, modèle d’application, bouton précédent, barre d’application, PPP, résolution, mise à l’échelle, Portage, HoloLens 1ère génération, HoloLens 2, casque de réalité mixte, casque de réalité mixte, migration, Windows 10
-ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f4dcc022fced0b3e22eb42751dc596e1b334a01a
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677798"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443627"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Mise à jour d’applications UWP 2D pour la réalité mixte
+# <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Mise à jour des applications UWP 2D pour Windows Mixed Reality
 
 Windows Mixed Reality permet à un utilisateur de voir des hologrammes comme s’ils se trouvent sur vous, dans votre monde physique ou numérique. À la base, HoloLens et les ordinateurs de bureau auxquels vous attachez des accessoires de casque sont des appareils Windows 10 ; Cela signifie que vous pouvez exécuter presque toutes les applications de plateforme Windows universelle (UWP) dans le Store en tant qu’applications 2D.
 
@@ -51,7 +51,7 @@ Accédez simplement au menu Démarrer du casque de la réalité mixte et lancez 
 
 ## <a name="targeting-both-immersive-headsets-and-hololens"></a>Ciblage à la fois des casques immersifs et HoloLens
 
-Félicitations ! Votre application utilise désormais Windows 10 plateforme Windows universelle (UWP).
+Félicitations ! Votre application utilise désormais Windows 10 plateforme Windows universelle (UWP).
 
 Votre application est désormais en mesure de s’exécuter sur des appareils Windows actuels tels que les ordinateurs de bureau, les appareils mobiles, la Xbox, les casques immersifs de Windows Mixed Reality et HoloLens, ainsi que les futurs appareils Windows. Toutefois, pour cibler réellement tous ces appareils, vous devez vous assurer que votre application cible la famille d’appareils Windows. Universal.
 

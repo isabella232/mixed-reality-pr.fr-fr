@@ -3,20 +3,20 @@ title: Holographic Remoting Player
 description: Le lecteur de communication à distance holographique est une application auxiliaire qui se connecte aux applications de PC et aux jeux qui prennent en charge la communication à distance holographique. La communication à distance holographique diffuse du contenu holographique depuis un PC vers votre Microsoft HoloLens en temps réel, à l’aide d’une connexion Wi-Fi.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, diagnostics, performances
-ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 990143a6d0c51f5f817ca0636573c3479a7e1682
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677928"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443623"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
 >[!IMPORTANT]
->La communication à distance holographique pour HoloLens 2 est une modification majeure de la version. Les [applications distantes pour **hololens (1re génération)**](add-holographic-remoting.md) doivent utiliser le package NuGet version **1. x. x** et les [applications distantes pour **hololens 2**](holographic-remoting-create-host.md) doivent utiliser **2. x**. x. Cela implique que les applications distantes écrites pour HoloLens 2 ne sont pas compatibles avec HoloLens (1ère génération) et vice versa.
+>La communication à distance holographique pour HoloLens 2 est une modification majeure de la version. Les [applications distantes pour **hololens (1re génération)**](add-holographic-remoting.md) doivent utiliser le package NuGet version **1. x. x** et les [applications distantes pour **hololens 2**](holographic-remoting-create-remote-wmr.md) doivent utiliser **2. x**. x. Cela implique que les applications distantes écrites pour HoloLens 2 ne sont pas compatibles avec HoloLens (1ère génération) et vice versa.
 
 Le [lecteur de communication à distance holographique](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) est une application auxiliaire qui se connecte aux applications de PC et aux jeux qui prennent en charge la communication à distance holographique. La communication à distance holographique diffuse du contenu holographique depuis un PC vers votre Microsoft HoloLens en temps réel, à l’aide d’une connexion Wi-Fi.
 
@@ -26,6 +26,9 @@ Le lecteur de communication à distance holographique est disponible à la fois 
 
 >[!TIP]
 >À partir de la version [2.2.0](holographic-remoting-version-history.md#v2.2.0) , le lecteur de communication à distance holographique est également disponible pour les PC Windows exécutant [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
+
+>[!TIP]
+>À partir de la version [2.4.0](holographic-remoting-version-history.md#v2.4.0) , vous pouvez créer des applications distantes à l’aide de l' [API OpenXR](../native/openxr.md) . Pour commencer, consultez [écriture d’une application distante holographique à distance à l’aide des API OpenXR](holographic-remoting-create-remote-openxr.md).
 
 ## <a name="connecting-to-the-holographic-remoting-player"></a>Connexion au lecteur de communication à distance holographique
 
@@ -78,6 +81,7 @@ Dans l’écran principal, vous pouvez indiquer **« Désactiver les diagnostic
 
 ## <a name="see-also"></a>Voir aussi
 * [HoloLens (1ère génération) : ajouter une communication à distance holographique](add-holographic-remoting.md)
-* [HoloLens 2 : écriture d’une application distante holographique Remoting](holographic-remoting-create-host.md)
+* [Écriture d’une application distante holographique à distance à l’aide d’API Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Termes du contrat de licence de la communication à distance holographique](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

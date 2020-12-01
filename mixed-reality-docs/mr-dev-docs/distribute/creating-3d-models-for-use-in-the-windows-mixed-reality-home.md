@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, modélisation, Guide de modélisation, besoins en ressources, instructions de création, lanceur, lanceur 3D, texture, matériaux, complexité, triangles, maillage, polygones, polynombre, limites, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 6baf8bd4faf6bb9994806e846602c91b83a1530b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703465"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443660"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Créer des modèles 3D à utiliser dans la page d’accueil
 
@@ -97,6 +97,9 @@ Indique au nuanceur s’il s’agit d’un métal ou non. RAW Metal = 1,0 blanc 
 ## <a name="optimizations"></a>Optimisations
 
 La page d’hébergement Windows Mixed Reality offre une série d’optimisations par-dessus les spécifications glTF principales définies à l’aide d’extensions personnalisées. Ces optimisations sont requises sur les versions de Windows <= 1709 et recommandées sur les versions plus récentes de Windows. Vous pouvez facilement optimiser n’importe quel modèle glTF 2,0 à l’aide de [Windows Mixed Reality Converter disponible sur GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). Cet outil effectuera les optimisations de l’empaquetage et des optimisations de texture, comme indiqué ci-dessous. Pour une utilisation générale, nous vous recommandons d’utiliser WindowsMRAssetConverter, mais si vous avez besoin de davantage de contrôle sur l’expérience et que vous souhaitez créer votre propre pipeline d’optimisation, vous pouvez vous référer à la spécification détaillée ci-dessous.  
+
+> [!NOTE]
+> Pour obtenir une liste définitive des possibilités offertes par les limites du modèle, reportez-vous à l’article sur l' [optimisation du modèle 3D](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) à utiliser dans les applications Dynamics 365.
 
 ### <a name="materials"></a>Matériaux
 

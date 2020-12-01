@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Réalité mixte, Conférence, sommet, développeur, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 6f673c78004f94692fcb09d304d6d40d2f97f1c3
-ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
+ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941855"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443493"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days - Japon
 
@@ -42,7 +42,7 @@ Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev
 
 
 ### <a name="december-16th"></a>16 décembre
-|**Time**|**Titre de la session**|**Orateur**|**Langage**|**Niveau**|
+|**Time**|**Titre de la session**|**Orateur**|**Language**|**Niveau**|
 |---------|---------|---------|---------|---------|
 |10:00-10:50am|Ouverture du discours|TBD|JA/FR|N/A|
 |10:50am-11:00|**Saut**||||
@@ -95,13 +95,13 @@ Si, pour une raison quelconque, vous ne parvenez pas à vous connecter aux équi
 
 ### <a name="code-of-conduct"></a>Code de conduite 
 
-**_La mission de Microsoft est de permettre à toutes les personnes et à chaque organisation de la planète d’y parvenir davantage. Cela inclut tous les événements et rassemblements Microsoft, y compris sur les plateformes numériques, où nous cherchons à créer une expérience respectueuse, conviviale, amusante et inclusife pour tous les participants._* _  
+La mission de Microsoft est de permettre à chaque personne et à chaque entreprise du monde entier d’aller plus loin. Cela inclut tous les événements et rassemblements Microsoft, y compris sur les plateformes numériques, où nous cherchons à créer une expérience respectueuse, conviviale, amusante et inclusife pour tous les participants.
 
-_*_Nous pensons que tous les participants à l’événement numérique doivent respecter les principes de ce code de réalisation, qui couvre l’événement numérique principal et toutes les activités associées. Nous ne tolèrez pas le comportement, les messages, les images ou les interactions d’un participant tiers, quel que soit son lieu, quel que soit l’aspect du programme, y compris les activités sociales, quel que soit son emplacement. Microsoft ne tolère pas le harcèlement ou la discrimination en fonction de l’âge, de la ascendance, de la couleur, de l’identité ou de l’expression du sexe, de l’origine nationale, du handicap physique ou mental, de la religion, de l’orientation sexuelle ou de toute autre caractéristique protégée par les lois, réglementations et ordonnances locales applicables._*_  
+Nous pensons que tous les participants à l’événement numérique doivent respecter les principes de ce code de réalisation, qui couvre l’événement numérique principal et toutes les activités associées. Nous ne tolèrez pas le comportement, les messages, les images ou les interactions d’un participant tiers, quel que soit son lieu, quel que soit l’aspect du programme, y compris les activités sociales, quel que soit son emplacement. Microsoft ne tolère pas le harcèlement ou la discrimination en fonction de l’âge, de la ascendance, de la couleur, de l’identité ou de l’expression du sexe, de l’origine nationale, du handicap physique ou mental, de la religion, de l’orientation sexuelle ou de toute autre caractéristique protégée par les lois, réglementations et ordonnances locales applicables.  
 
-_*_La photographie, la vidéo ou l’enregistrement de contenu ou de présentations de session dans n’importe quel format partagé dans des réseaux sociaux est interdit. Nous encourageons tout le monde à créer un environnement d’accueil et de sécurité. Signalez les préoccupations, les comportements de harcèlement, les activités suspectes ou perturbatrices à la hotline des entreprises (1-877-320-MSFT ou [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft se réserve le droit de refuser des admission à tous les jours de développement de la réalité mixte à tout moment, à sa seule discrétion._*_  
+La photographie, la vidéo ou l’enregistrement de contenu ou de présentations de session dans n’importe quel format partagé dans des réseaux sociaux est interdit. Nous encourageons tout le monde à créer un environnement d’accueil et de sécurité. Signalez les préoccupations, les comportements de harcèlement, les activités suspectes ou perturbatrices à la hotline des entreprises (1-877-320-MSFT ou [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft se réserve le droit de refuser des admission à tous les jours de développement de la réalité mixte à tout moment, à sa seule discrétion. 
 
-_ *_Nous encourageons tout le monde à se comporter de façon responsable au sein de l’environnement immersif AltspaceVR comme vous le feriez pour n’importe quel événement en personne. Veuillez respecter les autres espaces de l’utilisateur et ne pas bloquer l’affichage des autres participants de l’étape lors de l’intervention de l’événement.  N’oubliez pas que comme tout événement en personne, tout ce que vous dites peut être entendu par d’autres utilisateurs lors de l’événement. Si vous avez besoin d’une conversation privée, nous vous recommandons de le faire vers un autre espace dans AltspaceVR, par exemple votre page d’hébergement AltspaceVR_**
+Nous encourageons tout le monde à se comporter de façon responsable au sein de l’environnement immersif AltspaceVR comme vous le feriez pour n’importe quel événement en personne. Veuillez respecter les autres espaces de l’utilisateur et ne pas bloquer l’affichage des autres participants de l’étape lors de l’intervention de l’événement.  N’oubliez pas que comme tout événement en personne, tout ce que vous dites peut être entendu par d’autres utilisateurs lors de l’événement. Si vous avez besoin d’une conversation privée, nous vous recommandons de le faire dans un autre espace de AltspaceVR, tel que votre page d’hébergement AltspaceVR.
 
 
 

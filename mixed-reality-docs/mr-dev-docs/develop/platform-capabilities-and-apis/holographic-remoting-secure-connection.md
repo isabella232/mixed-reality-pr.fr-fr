@@ -1,17 +1,17 @@
 ---
 title: Activation de la sécurité de connexion pour la communication à distance holographique
 description: Cette page explique comment configurer la communication à distance holographique pour utiliser des connexions chiffrées et authentifiées entre le lecteur et les applications distantes.
-author: markkeinz
-ms.author: makei
-ms.date: 10/29/2020
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, sécurité, authentification, serveur à client
-ms.openlocfilehash: 4004c7534092c73fe478130b9d957461bb34bcfa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: b2c054d19044b89b487331806b8256de1379fd53
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679588"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443463"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Activation de la sécurité de connexion pour la communication à distance holographique
 
@@ -38,8 +38,11 @@ La sécurité dans la communication à distance holographique, lorsqu’elle est
 * **Confidentialité :** aucun tiers ne peut lire les informations échangées entre le joueur et l’application distante
 * **Intégrité :** Player et Remote peuvent détecter toute modification en transit de leur communication
 
->[!TIP]
->Pour pouvoir utiliser les fonctionnalités de sécurité, vous devez implémenter à la fois un [lecteur personnalisé](holographic-remoting-create-player.md) et une [application distante personnalisée](holographic-remoting-create-host.md).
+>[!IMPORTANT]
+>Pour pouvoir utiliser les fonctionnalités de sécurité, vous devez implémenter à la fois un [lecteur personnalisé](holographic-remoting-create-player.md) et une application distante personnalisée à l’aide des API [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) ou [OpenXR](holographic-remoting-create-remote-openxr.md) .
+
+>[!NOTE]
+> À partir de la version [2.4.0](holographic-remoting-version-history.md#v2.4.0) , vous pouvez créer des applications distantes à l’aide de l' [API OpenXR](../native/openxr.md) . Vous trouverez [ci-dessous](#secure-connection-using-the-openxr-api)une vue d’ensemble de l’établissement d’une connexion sécurisée dans un environnement OpenXR.
 
 ## <a name="planning-the-security-implementation"></a>Planification de l’implémentation de la sécurité
 
@@ -168,8 +171,26 @@ Implémentez l' `ICertificateValidator` interface comme suit :
 >[!NOTE]
 >Si votre cas d’utilisation requiert une autre forme de validation (voir le cas d’utilisation de certificat #1 ci-dessus), ignorez entièrement la validation du système. Utilisez plutôt une API ou une bibliothèque qui peut gérer des certificats X. 509 encodés DER pour décoder la chaîne de certificats et effectuer les vérifications nécessaires à votre cas d’usage.
 
+## <a name="secure-connection-using-the-openxr-api"></a>Connexion sécurisée à l’aide de l’API OpenXR
+
+Lors de l’utilisation de l' [API OpenXR](../native/openxr.md) , toutes les API liées à la connexion sécurisée sont disponibles dans le cadre de l' `XR_MSFT_holographic_remoting` extension OpenXR.
+
+>[!IMPORTANT]
+>Pour en savoir plus sur l’API d’extension OpenXR de communication à distance holographique, consultez la [spécification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) qui se trouve dans le [référentiel GitHub des exemples de communication à distance holographique](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+
+Les éléments clés pour la connexion sécurisée à l’aide de l' `XR_MSFT_holographic_remoting` extension OpenXR sont les rappels suivants.
+- `xrRemotingRequestAuthenticationTokenCallbackMSFT`, génère ou récupère le jeton d’authentification à envoyer.
+- `xrRemotingValidateServerCertificateCallbackMSFT`, valide la chaîne de certificats.
+- `xrRemotingValidateAuthenticationTokenCallbackMSFT`, valide le jeton d’authentification du client.
+- `xrRemotingRequestServerCertificateCallbackMSFT`, fournissez à l’application serveur le certificat à utiliser.
+
+Ces rappels peuvent être fournis au runtime OpenXR de communication à distance via `xrRemotingSetSecureConnectionClientCallbacksMSFT` et `xrRemotingSetSecureConnectionServerCallbacksMSFT` . En outre, la connexion sécurisée doit être activée via le paramètre secureConnection sur la `XrRemotingConnectInfoMSFT` structure ou la `XrRemotingListenInfoMSFT` structure selon que vous utilisez `xrRemotingConnectMSFT` ou `xrRemotingListenMSFT` .
+
+Cette API est assez similaire à l’API IDL décrite dans implémentation de la sécurité de la [communication à distance holographique](#implementing-holographic-remoting-security) , mais au lieu d’implémenter des interfaces, votre est supposé fournir des implémentations de rappel. Vous trouverez un exemple détaillé dans le cadre de l’exemple d’application OpenXR disponible dans le [référentiel GitHub des exemples de communication à distance holographique](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+
 ## <a name="see-also"></a>Voir aussi
-* [Écriture d’une application de communication à distance holographique](holographic-remoting-create-host.md)
+* [Écriture d’une application distante holographique à distance à l’aide d’API Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)
 * [Termes du contrat de licence de la communication à distance holographique](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
