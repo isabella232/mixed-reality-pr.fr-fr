@@ -3,20 +3,24 @@ title: Historique des versions de la communication à distance holographique
 description: Historique des versions de la communication à distance holographique sur HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, historique des versions, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677848"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443468"
 ---
 # <a name="holographic-remoting-version-history"></a>Historique des versions de la communication à distance holographique
 
 > [!IMPORTANT]
 > Ce guide est spécifique à la communication à distance holographique sur HoloLens 2.
+
+## <a name="version-240-december-1-2020"></a>Version 2.4.0 (1er décembre 2020) <a name="v2.4.0"></a>
+* La communication à distance holographique prend désormais en charge l’écriture d’applications distantes à l’aide de l' [API OpenXR](../native/openxr.md). Pour commencer, consultez [écriture d’une application distante holographique à distance à l’aide des API OpenXR](holographic-remoting-create-remote-openxr.md).
+* Correctifs de bogues et améliorations de la stabilité.
 
 ## <a name="version-231-october-10-2020"></a>Version 2.3.1 (10 octobre 2020) <a name="v2.3.1"></a>
 * Correction de la régression avec une prédiction de pose à distance qui a entraîné une instabilité visuelle.
@@ -102,8 +106,9 @@ ms.locfileid: "94677848"
 * Première version publique de la communication à distance holographique pour HoloLens 2.
 
 ## <a name="see-also"></a>Voir aussi
+* [Écriture d’une application distante holographique à distance à l’aide d’API Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
-* [Écriture d’une application hôte de communication à distance holographique](holographic-remoting-create-host.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)
 * [Termes du contrat de licence de la communication à distance holographique](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

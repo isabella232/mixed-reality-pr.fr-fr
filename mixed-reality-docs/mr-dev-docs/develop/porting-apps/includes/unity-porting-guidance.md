@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bcc899a178917a8ef184b4c11bd724df71f7b5c0
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638539"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443666"
 ---
 # <a name="project-settings"></a>[Paramètres du projet](#tab/project)
 
@@ -54,7 +54,7 @@ Avec toute mise à jour Unity, il y a de bonnes chances que vous deviez mettre �
 
 Vous pouvez créer des expériences de réalité mixte sur une large gamme [d’expériences.](../../../design/coordinate-systems.md)
 
-Si vous déployez une expérience à l' **échelle assise** , vous devez vérifier que Unity est défini sur le type d’espace de suivi **fixe** :
+Si vous déployez une expérience à l' **échelle assise**, vous devez vérifier que Unity est défini sur le type d’espace de suivi **fixe** :
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -62,7 +62,7 @@ XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 
 Le code ci-dessus définit le système de coordonnées universel de Unity pour suivre le [cadre stationnaire de référence](../../../design/coordinate-systems.md#spatial-coordinate-systems). Dans le mode de suivi fixe, le contenu placé dans l’éditeur juste devant l’emplacement par défaut de l’appareil photo (Forward is-Z) apparaît devant l’utilisateur au lancement de l’application. Pour recentrer l’origine assise de l’utilisateur, vous pouvez appeler XR de l’unité [. Méthode InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) .
 
-Si vous effectuez une mise à l' **échelle permanente** ou une **expérience** de mise à l’échelle de l’espace, vous allez placer du contenu par rapport à l’étage. Vous avez raison de l’étage de l’utilisateur à l’aide de la **[Phase spatiale](../../../design/coordinate-systems.md#spatial-coordinate-systems)** , qui représente l’origine de l’utilisateur et la limite facultative de l’espace, configurées lors de la première exécution. Pour ces expériences, vous devez vous assurer que Unity est défini sur le type d’espace de suivi **RoomScale** . Alors que RoomScale est la valeur par défaut, vous pouvez le définir explicitement et vous assurer que vous obtenez la valeur true, afin d’intercepter les situations où l’utilisateur a déplacé son ordinateur hors de la salle qu’il a étalonnée :
+Si vous effectuez une mise à l' **échelle permanente** ou une **expérience** de mise à l’échelle de l’espace, vous allez placer du contenu par rapport à l’étage. Vous avez raison de l’étage de l’utilisateur à l’aide de la **[Phase spatiale](../../../design/coordinate-systems.md#spatial-coordinate-systems)**, qui représente l’origine de l’utilisateur et la limite facultative de l’espace, configurées lors de la première exécution. Pour ces expériences, vous devez vous assurer que Unity est défini sur le type d’espace de suivi **RoomScale** . Alors que RoomScale est la valeur par défaut, vous pouvez le définir explicitement et vous assurer que vous obtenez la valeur true, afin d’intercepter les situations où l’utilisateur a déplacé son ordinateur hors de la salle qu’il a étalonnée :
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -95,9 +95,6 @@ L’algorithme est basé sur un blog de Daniel Smilkov : le [plus grand rectang
 
 Chaque jeu ou application ciblant un HMD existant aura un ensemble d’entrées qu’il gère, les types d’entrées dont il a besoin pour l’expérience et les API spécifiques qu’il appelle pour obtenir ces entrées. Nous avons investi pour essayer de le rendre aussi simple et simple que possible pour tirer parti des entrées disponibles dans Windows Mixed Reality.
 1. Lisez le **Guide de Portage d’entrée pour Unity** dans l’onglet adjacent pour plus d’informations sur la façon dont Windows Mixed Reality expose les entrées et sur la façon dont elles sont mappées à ce que votre application peut faire aujourd’hui.
-2. Indiquez si vous souhaitez tirer parti de l’API d’entrée Cross-VR-SDK d’Unity ou de l’API d’entrée spécifique à MR. Les API d’entrée. GetButton/Input. GetAxis sont utilisées par les applications Unity VR aujourd’hui pour les entrées [Oculus](https://docs.unity3d.com/Manual/OculusControllers.html) et [OpenVR](https://docs.unity3d.com/Manual/OpenVRControllers.html). Si vos applications utilisent déjà ces API pour les contrôleurs de mouvement, il s’agit du chemin le plus simple. vous devez simplement remapper les boutons et les axes dans le gestionnaire d’entrée.
-    * Vous pouvez accéder aux données du contrôleur de mouvement dans Unity à l’aide des API d’entrée. GetButton/Input. GetAxis, ou des API UnityEngine. XR. WSA. Input spécifiques à MR. (précédemment dans l’espace de noms UnityEngine. XR. WSA. Input dans Unity 5,6)
-    * Consultez l' [exemple de la boîte à outils](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) qui combine les contrôleurs de manette et de mouvement.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. test et réglage des performances
 
@@ -112,7 +109,13 @@ Vous pouvez porter votre logique d’entrée vers Windows Mixed Reality à l’a
 > [!IMPORTANT]
 > Si vous utilisez des contrôleurs de reréverbérations HP G2, reportez-vous à [cet article](../../unity/unity-reverb-g2-controllers.md) pour obtenir des instructions supplémentaires sur le mappage d’entrée.
 
-## <a name="general-inputgetbuttongetaxis-apis"></a>Entrées générales. GetButton/GetAxis API
+## <a name="unity-xr-input-apis"></a>API d’entrée Unity XR
+
+Pour les nouveaux projets, nous vous recommandons d’utiliser les nouvelles API d’entrée XR dès le début. 
+
+Vous trouverez plus d’informations sur les [API XR ici](https://docs.unity3d.com/Manual/xr_input.html).
+
+## <a name="inputgetbuttongetaxis-apis"></a>API Input. GetButton/GetAxis
 
 Unity utilise actuellement ses API d’entrée. GetButton/Input. GetAxis pour exposer l’entrée pour [le kit de développement logiciel (SDK) Oculus](https://docs.unity3d.com/Manual/OculusControllers.html) et [le kit de développement logiciel (SDK) OpenVR](https://docs.unity3d.com/Manual/OpenVRControllers.html). Si vos applications utilisent déjà ces API pour l’entrée, il s’agit du chemin le plus simple pour la prise en charge des contrôleurs de mouvement dans Windows Mixed Reality : vous devez simplement remapper les boutons et les axes dans le gestionnaire d’entrée.
 
@@ -120,10 +123,13 @@ Pour plus d’informations, consultez le [tableau des mappages bouton Unity/AXIS
 
 ## <a name="windows-specific-xrwsainput-apis"></a>XR spécifique à Windows. WSA. API d’entrée
 
+> [!CAUTION]
+> Si votre projet utilise l’un des XR. Les API WSA, elles sont en passe en faveur du kit de développement logiciel (SDK) XR dans les futures versions Unity. Pour les nouveaux projets, nous vous recommandons d’utiliser le kit de développement logiciel (SDK) XR dès le début. Vous trouverez plus d’informations sur le [système d’entrée XR et les API ici](https://docs.unity3d.com/Manual/xr_input.html).
+
 Si votre application crée déjà une logique d’entrée personnalisée pour chaque plateforme, vous pouvez choisir d’utiliser les API d’entrée spatiale spécifiques à Windows sous l’espace de noms **UnityEngine. XR. WSA. Input** . Cela vous permet d’accéder à des informations supplémentaires, telles que la précision de la position ou le genre de source, vous permettant de distinguer les mains et les contrôleurs de HoloLens.
 
 > [!NOTE]
-> Si vous utilisez des contrôleurs de réverbération HP G2, toutes les API d’entrée continuent de fonctionner, à l’exception de **InteractionSource. supportsTouchpad** , qui retourne false sans les données du pavé tactile.
+> Si vous utilisez des contrôleurs de réverbération HP G2, toutes les API d’entrée continuent de fonctionner, à l’exception de **InteractionSource. supportsTouchpad**, qui retourne false sans les données du pavé tactile.
 
 Pour plus d’informations, consultez la [vue d’ensemble des API UnityEngine. XR. WSA. Input](../../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
@@ -133,15 +139,15 @@ Windows Mixed Reality prend en charge les contrôleurs de mouvement dans un larg
 
 Pour mieux représenter ces contrôleurs, il existe deux types de poses que vous pouvez examiner pour chaque source d’interaction :
 
-* La **poignée pose** , représentant l’emplacement de la paume d’une main détectée par un HoloLens, ou la paume contenant un contrôleur de mouvement.
-    * Sur les casques immersifs, cette pose est idéale pour afficher **la main de l’utilisateur** ou **un objet détenu par l’utilisateur** , tel qu’un arme ou un pistolet.
-    * Position de la **poignée** : le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée.
-    * **Axe droit de l’orientation de la poignée** : lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
-    * **Axe avant de l’orientation de la poignée** : quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
-    * **Axe vers le haut de l’orientation** : l’axe vers le haut, impliqué dans les définitions Right et Forward.
-    * Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity ( **[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation** ) ou par le biais de l’API spécifique à Windows ( **SourceState. SourcePose. TryGetPosition/rotation** , demandant la poignée pose).
-* Le **pointeur se pose** , représentant l’extrémité du contrôleur pointant vers l’avant.
+* La **poignée pose**, représentant l’emplacement de la paume d’une main détectée par un HoloLens, ou la paume contenant un contrôleur de mouvement.
+    * Sur les casques immersifs, cette pose est idéale pour afficher **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**, tel qu’un arme ou un pistolet.
+    * Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée.
+    * **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
+    * **Axe avant de l’orientation de la poignée**: quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
+    * **Axe vers le haut de l’orientation**: l’axe vers le haut, impliqué dans les définitions Right et Forward.
+    * Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity (**[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation**) ou par le biais de l’API spécifique à Windows (**SourceState. SourcePose. TryGetPosition/rotation**, demandant la poignée pose).
+* Le **pointeur se pose**, représentant l’extrémité du contrôleur pointant vers l’avant.
     * Ce modèle est mieux utilisé pour raycast quand vous **pointez sur l’interface utilisateur** lorsque vous rendez le modèle de contrôleur lui-même.
-    * Actuellement, le pointeur pose est disponible uniquement par le biais de l’API spécifique à Windows ( **sourceState. sourcePose. TryGetPosition/rotation** , demandant le pointeur pose).
+    * Actuellement, le pointeur pose est disponible uniquement par le biais de l’API spécifique à Windows (**sourceState. sourcePose. TryGetPosition/rotation**, demandant le pointeur pose).
 
 Ces coordonnées de pose sont toutes exprimées en coordonnées universelles Unity.

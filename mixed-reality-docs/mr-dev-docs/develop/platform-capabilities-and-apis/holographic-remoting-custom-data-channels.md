@@ -3,15 +3,15 @@ title: Canaux de données de communication à distance holographique personnalis
 description: Les canaux de données personnalisés peuvent être utilisés pour envoyer des données utilisateur sur la connexion de communication à distance holographique déjà établie.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, canaux de données
-ms.openlocfilehash: bbbf0e1dd48e1e6872243b2ea562b0729d53ebae
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 119a08a7f0e41aca694184879e33aaf54160220c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677908"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443448"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>Canaux de données de communication à distance holographique personnalisés
 
@@ -114,7 +114,8 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>Voir aussi
-* [Écriture d’une application de communication à distance holographique](holographic-remoting-create-host.md)
+* [Écriture d’une application distante holographique à distance à l’aide d’API Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)
 * [Termes du contrat de licence de la communication à distance holographique](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

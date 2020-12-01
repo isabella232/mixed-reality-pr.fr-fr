@@ -3,15 +3,15 @@ title: Écriture d’un lecteur de communication à distance holographique
 description: En créant une application de lecteur de communication à distance holographique personnalisée, vous pouvez créer une application personnalisée capable d’afficher le contenu rendu sur une machine distante à votre HoloLens 2. Cet article explique comment procéder.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, NuGet, manifeste de l’application, contexte du joueur, application distante, casque de la réalité mixte, casque Windows Mixed realisation, casque de la réalité virtuelle
-ms.openlocfilehash: f55973e74abc60f62599375aebf278224865a5c1
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 69dc382873eb4fe0dc50f6f55e074c3491b02c02
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677918"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443639"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Écriture d’une application de lecteur de communication à distance holographique personnalisée
 
@@ -251,7 +251,8 @@ Pour plus d’informations, consultez la ```PlayerFrameStatistics``` documentati
 Les canaux de données personnalisés peuvent être utilisés pour envoyer des données utilisateur sur la connexion de communication à distance déjà établie. Pour plus d’informations, consultez [canaux de données personnalisés](holographic-remoting-custom-data-channels.md) .
 
 ## <a name="see-also"></a>Voir aussi
-* [Écriture d’une application de communication à distance holographique](holographic-remoting-create-host.md)
+* [Écriture d’une application distante holographique à distance à l’aide d’API Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Canaux de données de communication à distance holographique personnalisés](holographic-remoting-custom-data-channels.md)
 * [Établissement d’une connexion sécurisée avec la communication à distance holographique](holographic-remoting-secure-connection.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)

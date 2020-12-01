@@ -1,17 +1,17 @@
 ---
 title: Ajouter la communication à distance holographique
 description: Explique comment utiliser la communication à distance holographique pour afficher des hologrammes sur le réseau.
-author: mikeriches
-ms.author: mriches
-ms.date: 05/24/2019
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, accès distant holographique, rendu à distance, rendu réseau, HoloLens, hologrammes distants, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679628"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443652"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>Ajouter la communication à distance holographique (HoloLens (1re génération))
 
@@ -23,7 +23,7 @@ ms.locfileid: "94679628"
 Les développeurs HoloLens qui utilisent la communication à distance holographique doivent mettre à jour leurs applications pour les rendre compatibles avec HoloLens 2. Cela nécessite une nouvelle version du package NuGet de communication à distance holographique. Si une application qui utilise le package NuGet de communication à distance holographique avec un numéro de version inférieur à 2.0.0.0 tente de se connecter au lecteur de communication à distance holographique sur HoloLens 2, la connexion échoue.
 
 >[!NOTE]
->Vous trouverez des conseils spécifiques à HoloLens 2 [ici](holographic-remoting-create-host.md).
+>Vous trouverez des conseils spécifiques à HoloLens 2 [ici](holographic-remoting-create-remote-wmr.md).
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Ajout de la communication à distance holographique à votre application de bureau ou UWP
