@@ -1,4 +1,5 @@
-# - name: Overview 
+- name: Vue d’ensemble
+  href: distribute-overview.md
 - name: Lanceurs d’applications 3D
   items:
     - name: Guide de conception
