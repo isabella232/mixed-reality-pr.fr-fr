@@ -7,18 +7,21 @@ ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, développement azure, ancres spatiales, réalité mixte, développement, fonctionnalités, nouveau projet, émulateur, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: b464292b606f6c375fe84a50867cac770cd8f001
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679868"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354547"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Azure Spatial Anchors dans Unreal
 
 ## <a name="overview"></a>Vue d’ensemble
 
 Azure Spatial Anchors est un service de Réalité mixte Microsoft qui permet aux appareils de réalité augmentée de découvrir, de partager et de conserver des points d’ancrage dans le monde physique. La documentation ci-dessous fournit des instructions pour l’intégration du service Azure Spatial Anchors à un projet Unreal. Si vous souhaitez obtenir plus d’informations, consultez la documentation sur le [service Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
+
+> [!NOTE]
+> Unreal Engine 4.26 a maintenant des plug-ins pour la prise en charge d’ARKit et d’ARCore quand vous ciblez iOS ou Android.
 
 > [!IMPORTANT]
 > Les ancres locales sont stockées sur l’appareil, alors que les ancres spatiales Azure sont stockées dans le cloud. Si vous envisagez de stocker vos ancres localement sur un appareil, nous mettons à votre disposition un document sur les [ancres spatiales locales](unreal-spatial-anchors.md) qui peut vous guider tout au long du processus. Notez que vous pouvez avoir des ancres locales et Azure dans le même projet sans conflit.

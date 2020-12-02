@@ -7,16 +7,15 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, mappage spatial, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678808"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354373"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Mappage spatial dans Unreal
 
-## <a name="overview"></a>Vue d’ensemble
 Le mappage spatial permet de placer des objets sur des surfaces du monde physique en montrant l’environnement autour d’HoloLens, ce qui fait paraître les hologrammes encore plus réels à l’utilisateur. Le mappage spatial ancre également les objets dans le monde de l’utilisateur en tirant parti des indications de profondeur du monde réel. De cette façon, l’utilisateur a réellement l’impression que ces hologrammes se trouvent autour de lui. Les hologrammes qui flottent dans les airs ou qui se déplacent en même temps que l’utilisateur ne sembleront pas aussi réels. Il est conseillé d’ajouter des éléments à des fins de confort dès que cela vous est possible.
 
 Vous trouverez plus d’informations sur la qualité du mappage spatial, le positionnement, l’occlusion, le rendu et plus encore, dans le document [Mappage spatial](../../design/spatial-mapping.md).
@@ -26,6 +25,8 @@ Vous trouverez plus d’informations sur la qualité du mappage spatial, le posi
 Pour activer le mappage spatial sur HoloLens :
 - Ouvrez **Edit > Project Settings** , puis faites défiler jusqu’à la section **Platforms**.    
     + Sélectionnez **HoloLens**, puis cochez **Spatial Perception**.
+
+![Capture d’écran des fonctionnalités des paramètres du projet HoloLens avec la perception spatiale mise en surbrillance](images/unreal-spatial-mapping-img-01.png)
 
 Pour choisir le mappage spatial et déboguer **MRMesh** dans un jeu HoloLens :
 1. Ouvrez **ARSessionConfig**, puis développez la section **ARSettings > World Mapping**. 
@@ -48,6 +49,13 @@ Vous pouvez modifier les paramètres suivants pour mettre à jour le comportemen
     + Si l’environnement d’exécution de l’application est supposé être grand, cette valeur devra être suffisamment grande pour s’adapter à l’espace réel.  À l’inverse, si l’application doit uniquement placer des hologrammes sur des surfaces proches de l’utilisateur, cette valeur pourra être plus petite. Le volume de mappage spatial bougera en même temps que l’utilisateur se déplacera dans le monde. 
 
 ## <a name="working-with-mrmesh"></a>Utilisation de MRMesh
+
+Vous devez d’abord démarrer le mappage spatial :
+
+![Blueprint de la fonction ToggleARCapture avec le type de capture de mappage spatial mis en surbrillance](images/unreal-spatial-mapping-img-02.png)
+
+Une fois le mappage spatial capturé pour l’espace, nous vous recommandons de désactiver le mappage spatial.  Le mappage spatial peut être effectué après un certain laps de temps ou quand les raycasts dans chaque direction renvoient des collisions sur le MRMesh.
+
 Pour accéder à **MRMesh** au moment de l’exécution :
 1. Ajoutez un composant **ARTrackableNotify** à l’acteur Blueprint. 
 
@@ -64,21 +72,53 @@ Vous pouvez changer le matériau du maillage dans le graphe d’événements Blu
 
 ![Exemple d’ancres spatiales](images/unreal-spatialmapping-example.PNG)
 
-Dans le code C++, vous pouvez vous abonner au délégué `OnTrackableAdded` pour récupérer `ARTrackedGeometry` dès qu’il est disponible, comme indiqué dans le code ci-dessous. 
+## <a name="spatial-mapping-in-c"></a>Mappage spatial en C++
 
-> [!IMPORTANT]
-> Le fichier build.cs du projet **DOIT INCLURE** **AugmentedReality** dans la liste **PublicDependencyModuleNames**.
-> - Cela inclut **ARBlueprintLibrary.h** et **MRMeshComponent.h**, ce qui vous permet d’examiner le composant **MRMesh** de **UARTrackedGeometry**. 
+Dans le fichier build.cs de votre jeu, ajoutez **AugmentedReality** et **MRMesh** à la liste PublicDependencyModuleNames :
 
-![Exemple de code C++ pour les ancres spatiales](images/unreal-spatialmapping-examplecode.PNG)
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",    
+        "EyeTracker",
+        "AugmentedReality",
+        "MRMesh"
+});
+```
 
-Le mappage spatial n’est pas le seul type de données qui est affiché à travers **ARTrackedGeometries**. Vous pouvez vérifier que `EARObjectClassification` est `World`, ce qui signifie qu’il s’agit d’une géométrie de mappage spatial. 
+Pour accéder au MRMesh, abonnez-vous aux délégués **OnTrackableAdded** :
 
-Il existe des délégués similaires pour les événements de mise à jour et de suppression : 
-- `AddOnTrackableUpdatedDelegate_Handle` 
-- `AddOnTrackableRemovedDelegate_Handle`. 
+```cpp
+#include "ARBlueprintLibrary.h"
+#include "MRMeshComponent.h"
 
-Vous trouverez la liste complète des événements dans l’API [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html).
+void AARTrackableMonitor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Subscribe to Tracked Geometry delegates
+    UARBlueprintLibrary::AddOnTrackableAddedDelegate_Handle(
+        FOnTrackableAddedDelegate::CreateUObject(this, &AARTrackableMonitor::OnTrackableAdded)
+    );
+}
+
+void AARTrackableMonitor::OnTrackableAdded(UARTrackedGeometry* Added)
+{
+    // When tracked geometry is received, check that it's from spatial mapping
+    if(Added->GetObjectClassification() == EARObjectClassification::World)
+    {
+        UMRMeshComponent* MRMesh = Added->GetUnderlyingMesh();
+    }
+}
+```
+
+> [!NOTE]
+> Il existe des délégués similaires pour les événements mis à jour et supprimés, respectivement **AddOnTrackableUpdatedDelegate_Handle** et **AddOnTrackableRemovedDelegate_Handle**.
+>
+> Vous trouverez la liste complète des événements dans l’API [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html).
 
 ## <a name="see-also"></a>Voir aussi
 * [Mappage spatial](../../design/spatial-mapping.md)

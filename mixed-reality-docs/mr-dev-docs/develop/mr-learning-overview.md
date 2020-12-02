@@ -3,22 +3,40 @@ title: Vue d’ensemble de la formation à la réalité mixte
 description: Consultez les modules Learn disponibles pour la réalité mixte.
 author: hferrone
 ms.author: jemccull
-ms.date: 10/28/2020
+ms.date: 11/30/2020
 ms.topic: article
 keywords: réalité mixte, Unity, tutoriel, hololens, learn, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, MRTK, mixed reality toolkit, traduction linguistique, Azure, Azure Cognitive Services
 ms.localizationpriority: high
-ms.openlocfilehash: 70114e25003368263c6e2fecad5a4fe8e2f96de0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e6c1cc878558c5ce74be7018f6d59cbfc4bcd09a
+ms.sourcegitcommit: 83d0aa2c9a626a203b25de30d8ae9da8585d05ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678088"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96324196"
 ---
 # <a name="mixed-reality-learning-overview"></a>Vue d’ensemble de la formation à la réalité mixte
 
 Lorsque vous développez pour la réalité mixte, plus vous avez d’outils, mieux c’est. Même si la documentation et les tutoriels sont cruciaux, si vous êtes davantage visuel, nous vous invitons à consulter notre contenu vidéo sur Microsoft Learn. De nouveaux modules sont constamment ajoutés. Il est donc recommandé de consulter régulièrement les nouveautés.
 
 Nos modules Learn vous permettent de très bien maîtriser le développement de réalité mixte. En effet, la structure organisée par module peut vous aider à bien démarrer avec des outils clés tels que Mixed Reality Toolkit, Unity et les services de réalité mixte Azure. Les objectifs de programmation sont plus clairs que jamais, car nous présentons les objectifs d’apprentissage, les prérequis et le temps d’achèvement prévu dans une seule et même interface. Démarrez dès maintenant avec les modules Learn sur la réalité mixte ou consultez notre présentation [vidéo](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn) Microsoft Learn.
+
+## <a name="general-modules"></a>Modules généraux
+
+Si vous vous intéressez aux fondements de la réalité mixte ou si vous n’avez pas encore choisi un mode de développement, commencez par nos modules d’apprentissage indépendants des technologies.
+
+### <a name="introduction-to-mixed-reality"></a>[Introduction à la réalité mixte](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
+
+Maîtrisez les concepts de base, la terminologie et les processus de conception propres à l’espace de développement de la réalité mixte.
+
+**Objectifs d’apprentissage**
+
+À la fin de ce module, vous saurez :
+
+* Définir la réalité mixte, et faire la différence entre la réalité virtuelle et la réalité augmentée
+* Décrire les idées principales qui sont à la base des hologrammes
+* Commencer à concevoir et à développer des applications 3D
+* Comprendre ce que la réalité mixte peut offrir dans des applications réelles
+* Tirer parti de la puissance du cloud pour la réalité mixte
 
 ## <a name="unity-modules"></a>Modules Unity
 
@@ -28,7 +46,9 @@ Que vous soyez débutant ou expérimenté, notre approche pratique du développe
 
 Importez le Mixed Reality Toolkit dans votre projet Unity pour accélérer le développement d’applications de réalité mixte.
 
-**Objectifs d’apprentissage** À la fin de ce module, vous pourrez :
+**Objectifs d’apprentissage**
+
+À la fin de ce module, vous serez en mesure d’effectuer les opérations suivantes :
 
 * Configurer Unity pour le développement Windows Mixed Reality
 * Importer le package de base du Mixed Reality Toolkit (MRTK) dans Unity
@@ -40,7 +60,9 @@ Importez le Mixed Reality Toolkit dans votre projet Unity pour accélérer le d�
 
 Créez une application de traducteur de langue pour votre appareil Mixed Reality (Windows Mixed Reality, HoloLens 2, etc.) en utilisant Cognitive Services.
 
-**Objectifs d’apprentissage** À la fin de ce module, vous pourrez :
+**Objectifs d’apprentissage**
+
+À la fin de ce module, vous saurez :
 
 * Configurer un projet Unity pour le service Speech dans Azure Cognitive Services
 * Intégrer le service Speech à une application Windows Mixed Reality
