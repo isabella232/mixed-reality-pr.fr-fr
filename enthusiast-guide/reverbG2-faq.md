@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
 appliesto:
 - Windows 10
-ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
+ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002964"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96501707"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Forum aux questions sur les réverbérations HP G2
 
@@ -53,6 +53,10 @@ Si vous constatez une erreur 7-14 « une erreur s’est produite », procédez
 ## <a name="i-am-getting-a-13-14-something-went-wrong-error-when-my-pc-resumes-from-hibernate-s4"></a>J’obtiens une erreur 13-14 « une erreur s’est produite » lorsque mon PC sort de la veille prolongée (S4)
 
 Parfois, pendant le processus de reprise, la carte vidéo ne peut pas établir de connexion. par conséquent, le fait de déconnecter le type C de votre PC et de le rebrancher peut vous aider à établir une connexion.
+
+## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>Ma manette de jeu HP Motion Controller peut parfois se trouver sur un côté
+
+Ce problème est résolu en déappuyant entièrement sur la manette de jeu jusqu’à ce qu’elle se déplace librement.
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>Le portail de réalité mixte indique « Impossible d’exécuter une réalité mixte sur ce casque », mais cela fonctionnait correctement avec mon casque WMR précédent
 
