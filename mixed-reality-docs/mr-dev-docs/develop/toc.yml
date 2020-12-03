@@ -1,6 +1,6 @@
 - name: Introduction au développement de réalité mixte
   href: development.md
-- name: Services cloud Azure
+- name: Vue d’ensemble des services cloud de réalité mixte Azure
   href: mixed-reality-cloud-services.md
 - name: Vue d’ensemble de la formation à la réalité mixte
   href: mr-learning-overview.md
@@ -30,7 +30,7 @@
           href: unity/configure-unity-project.md
     - name: Didacticiels
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: unity/tutorials.md
         - name: "Tutoriels sur HoloLens\_2"
           items:
