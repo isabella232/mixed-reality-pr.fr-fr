@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
-ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
+ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96501707"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578614"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Forum aux questions sur les réverbérations HP G2
 
@@ -57,6 +57,10 @@ Parfois, pendant le processus de reprise, la carte vidéo ne peut pas établir d
 ## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>Ma manette de jeu HP Motion Controller peut parfois se trouver sur un côté
 
 Ce problème est résolu en déappuyant entièrement sur la manette de jeu jusqu’à ce qu’elle se déplace librement.
+
+## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>Les autres États sont très forts ou que mon audio est tronqué pendant que j’utilise le microphone avec certaines applications
+
+Les niveaux de volume en entrée sont automatiquement définis sur 100% lorsque le microphone de réverbes HP G2 est reconnu pour la première fois par un PC Windows. En raison des microtéléphones de reréverbération G2's de haute qualité, la sensibilité d’entrée est beaucoup plus élevée que les paramètres Windows 10 par défaut. Nous vous recommandons de définir le niveau d’entrée du microphone G2 de réverbération à partir de 50% et de monter en puissance. Un paramètre optimal est spécifique à l’utilisateur, en particulier lors de l’utilisation d’applications qui n’ont pas de paramètre de microphone « gain automatique ». Des exemples d’applications qui ont un « gain automatique » sont Skype, zoom, équipes et Cisco WebEx, mais pas toutes les applications de réseaux sociaux ou de radiodiffusion ne disposent pas de cette fonctionnalité.
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>Le portail de réalité mixte indique « Impossible d’exécuter une réalité mixte sur ce casque », mais cela fonctionnait correctement avec mon casque WMR précédent
 

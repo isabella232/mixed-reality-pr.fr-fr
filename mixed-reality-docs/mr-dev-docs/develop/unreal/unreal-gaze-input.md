@@ -2,16 +2,16 @@
 title: Entrée en pointage en regard
 description: Didacticiel sur la configuration de l’entrée de regard pour HoloLens et le moteur inréel
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi des yeux, entrée de regard, affichage monté en tête, moteur non réel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: f89638cef6b90e004f097c701c3df13edaf74fac
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: d0470c5abbefce797254aa9f2030519d3347aaab
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354322"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578888"
 ---
 # <a name="gaze-input"></a>Entrée en regard
 

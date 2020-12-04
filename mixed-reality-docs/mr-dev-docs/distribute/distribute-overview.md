@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
 keywords: HoloLens, réalité mixte, casques immersifs, application, UWP, envoi, envoi, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising
-ms.openlocfilehash: f52109792e174a0b0fbdd9738539b5fc88f190a1
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 4ea60d2111f99924eaa417d4ff6fa8830934588c
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443512"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578878"
 ---
 # <a name="distributing-your-apps"></a>Distribution de vos applications
 
@@ -81,7 +81,7 @@ La mise en œuvre de vos applications auprès de vos utilisateurs ou dans le mon
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Déploiement Win32 personnalisé</strong></a> (Windows Mixed Reality uniquement-voir ci-dessous)</td>
+    <td><a href="#additional-scenarios"><strong>Déploiement Win32 personnalisé</strong></a> (non disponible pour les appareils HoloLens-voir ci-dessous)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>

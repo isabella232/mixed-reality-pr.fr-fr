@@ -6,14 +6,17 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, casques immersifs, application, UWP, envoyer, envoyer, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703115"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578898"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Envoi d’une application au Microsoft Store
+
+> [!IMPORTANT]
+> Si vous envoyez une application inréelle, veillez à suivre les **[instructions de publication ici](../develop/unreal/unreal-publishing-to-store.md)** avant de continuer.
 
 [HoloLens](../hololens-hardware-details.md) et le PC Windows 10 qui alimentent votre [casque immersif](../discover/immersive-headset-hardware-details.md) s’exécutent plateforme Windows universelle applications. Que vous soumettez une application qui prend en charge HoloLens, PC, ou les deux, l’envoi d’applications passe par l' [espace partenaires](https://partner.microsoft.com/dashboard).
 
