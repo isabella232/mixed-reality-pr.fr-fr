@@ -6,17 +6,16 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, non réel, moteur 4, UE4, HoloLens 2, voix, entrée vocale, reconnaissance vocale, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 79a6043511cc4658ae2451dd8aa6350d8e8037fe
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 504a2d978e3c9bc698e8edd11ea8a4d6be13795a
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678778"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609750"
 ---
 # <a name="voice-input-in-unreal"></a>Entrée vocale en non réel
 
-## <a name="overview"></a>Vue d’ensemble
-Les entrées vocales en temps réel vous permettent d’interagir avec un hologramme sans avoir à utiliser des mouvements manuels et n’est pris en charge que pour HoloLens 2. Même si l’entrée vocale sur HoloLens 2 est alimentée par le même moteur qui prend en charge la reconnaissance vocale dans toutes les autres applications Windows universelles, inréel utilise un moteur plus limité qui lui est propre pour traiter l’entrée vocale. Cela limite les fonctionnalités d’entrée vocales dans des mappages de reconnaissance vocale non réels, qui sont traités dans les sections suivantes. 
+Les entrées vocales en temps réel vous permettent d’interagir avec un hologramme sans avoir à utiliser des mouvements manuels et n’est pris en charge que pour HoloLens 2. L’entrée vocale sur HoloLens 2 est alimentée par le même moteur qui prend en charge la reconnaissance vocale dans toutes les autres applications universelles Windows, mais inréelles utilise un moteur plus limité pour traiter l’entrée vocale. Cela limite les fonctionnalités d’entrée vocale dans les mappages de reconnaissance vocale prédéfinis, qui sont traités dans les sections suivantes. 
 
 ## <a name="enabling-speech-recognition"></a>Activation de la reconnaissance vocale
 
@@ -34,11 +33,12 @@ Pour activer la reconnaissance vocale sur HoloLens :
 L’entrée vocale ne nécessite pas d’API Windows Mixed Reality spéciales. Il repose sur l’API existante de mappage [d’entrée](https://docs.unrealengine.com/Gameplay/Input/index.html) de moteur non réel. 
 
 ## <a name="adding-speech-mappings"></a>Ajout de mappages vocaux
+
 La connexion vocale à l’action est une étape importante lors de l’utilisation de l’entrée vocale. Ces mappages surveillent l’application pour les mots clés vocaux qu’un utilisateur peut prononcer, puis déclenchent une action liée. Vous pouvez trouver des mappages de reconnaissance vocale en procédant comme suit :
 1. Sélectionnez **modifier > paramètres du projet**, faites défiler jusqu’à la section **moteur** , puis cliquez sur **entrée**.
 
 Pour ajouter un nouveau mappage de reconnaissance vocale pour une commande de saut :
-1. Cliquez sur l' **+** icône en regard d' **éléments de tableau** et remplissez les valeurs suivantes :
+1. Sélectionnez l' **+** icône en regard d' **éléments de tableau** et remplissez les valeurs suivantes :
     * **jumpWord** pour le nom de l' **action**
     * **raccourci** pour le **mot clé Speech**
 
@@ -50,18 +50,18 @@ Pour ajouter un nouveau mappage de reconnaissance vocale pour une commande de sa
 Les mappages vocaux peuvent être utilisés en tant que composants d’entrée comme les mappages d’action ou d’axe ou en tant que nœuds de plan dans le graphique d’événements. Par exemple, vous pouvez lier la commande Jump pour imprimer deux journaux différents selon le moment où le mot est parlé :
 
 1. Double-cliquez sur un plan pour l’ouvrir dans le **graphique des événements**.
-2. **Cliquez avec le bouton droit** et recherchez le **nom d’action** de votre mappage de reconnaissance vocale (dans le cas présent **jumpWord**), puis appuyez sur **entrée**. Cela ajoute un nœud **d’action d’entrée** au graphique.
+2. **Cliquez avec le bouton droit** et recherchez le **nom d’action** de votre mappage de reconnaissance vocale (dans le cas présent **jumpWord**), puis appuyez sur **entrée** pour ajouter un nœud **d’action d’entrée** au graphique.
 3. Faites glisser et déposez le code PIN **appuyé** pour imprimer le nœud de **chaîne** comme indiqué dans l’image ci-dessous. Vous pouvez faire en sorte que le code confidentiel **libéré** soit vide. il n’exécutera rien pour les mappages vocaux.
  
 ![Action simple pour la voix](images/unreal/voice-input-img-03.png)
 
-4. Lisez l’application, disons le mot **Jump** et regardez la console imprimer les journaux !
+4. Lisez l’application, disons le mot **Jump** et regardez la console pour imprimer les journaux !
 
-C’est tout ce dont vous avez besoin pour commencer à ajouter des entrées vocales à vos applications HoloLens en toute situation. Vous trouverez plus d’informations sur la voix et l’interactivité dans les liens ci-dessous, et veillez à réfléchir à l’expérience que vous créez pour vos utilisateurs.
+C’est tout ce dont vous avez besoin pour commencer à ajouter des entrées vocales à vos applications HoloLens en toute situation. Vous trouverez plus d’informations sur la reconnaissance vocale et l’interactivité dans les liens ci-dessous, et veillez à réfléchir à l’expérience que vous créez pour vos utilisateurs.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement inréel que nous avons mis à disposition, vous êtes ensuite en train d’explorer les API et les fonctionnalités de la plateforme de réalité mixte : 
+Si vous suivez le parcours de développement inréel que nous avons mis à disposition, vous êtes ensuite en train d’explorer les fonctionnalités de la plateforme de réalité mixte et les API : 
 
 > [!div class="nextstepaction"]
 > [Caméra HoloLens](unreal-hololens-camera.md)

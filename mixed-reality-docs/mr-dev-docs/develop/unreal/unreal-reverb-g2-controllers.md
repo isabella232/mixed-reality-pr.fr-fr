@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Le moteur non réel, les UE4, les réverbérations, les réverbérations G2, les régressions G2, la réalité mixte, le développement, les contrôleurs de mouvement, les entrées utilisateur, les fonctionnalités, le nouveau projet, l’émulateur, la documentation, les guides, les fonctionnalités, les hologrammes, le développement de jeux, le casque de la réalité mixte, le casque de réalité
-ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 419f5b803a6abb2b19080807ef9f403b96758683
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678928"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609590"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Contrôleurs de reréverbérations de HP G2 inréel 
 
@@ -24,7 +24,7 @@ ms.locfileid: "94678928"
 
 ## <a name="porting-an-existing-openxr-app"></a>Portage d’une application OpenXR existante 
 
-Si aucune liaison de contrôleur n’existe dans le jeu pour le contrôleur de réalité mixte HP, le runtime OpenXR tente de remapper les liaisons existantes au contrôleur actif.  Dans ce cas, le jeu présente des liaisons tactiles Oculus et aucune liaison de contrôleur de réalité mixte HP.
+Si aucune liaison de contrôleur n’existe dans le jeu pour le contrôleur de réalité mixte HP, le runtime OpenXR essaiera de remapper les liaisons existantes au contrôleur actif.  Dans ce cas, le jeu présente des liaisons tactiles Oculus et aucune liaison de contrôleur de réalité mixte HP.
 
 ![Remappage des liaisons existantes lorsqu’il n’existe aucune liaison de contrôleur](images/reverb-g2-img-04.png)
 

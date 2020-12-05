@@ -1,21 +1,21 @@
 ---
-title: UMG et clavier inréel
+title: UMG et clavier dans Unreal
 description: Découvrez comment utiliser des graphiques de mouvement inréalistes pour créer un système d’interface utilisateur en dehors des widgets.
 author: hferrone
 ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi des yeux, entrée de regard, affichage monté en tête, moteur non réel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, widgets, UI, UMG, graphiques de mouvement inréel, moteur inréel, UE, UE4
-ms.openlocfilehash: 9f22a5f7a13732727b6b122d385aad7e708a1343
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355321"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609760"
 ---
-# <a name="umg-and-keyboard-in-unreal"></a>UMG et clavier inréel
+# <a name="umg-and-keyboard-in-unreal"></a>UMG et clavier dans Unreal
 
-Les graphiques de mouvement inréel (UMG) sont des systèmes d’interface utilisateur intégrés au moteur, qui permettent de créer des interfaces telles que des menus et des zones de texte. Les interfaces utilisateur créées avec UMG consistent en des widgets. Ce guide vous montre comment créer un nouveau widget, l’ajouter à l’espace universel et activer l’interaction avec ce widget en réalité mixte, en utilisant le clavier système comme exemple. Pour plus d’informations sur UMG, consultez la [documentation](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)officielle sur le moteur. 
+Les graphiques de mouvement inréel (UMG) sont des systèmes d’interface utilisateur intégrés au moteur, qui permettent de créer des interfaces telles que des menus et des zones de texte. Les interfaces utilisateur créées avec UMG consistent en des widgets. Nous allons vous guider tout au long de la création d’un widget, de son ajout à l’espace universel et de l’activation de l’interaction à l’aide du clavier système à titre d’exemple. Pour plus d’informations sur UMG, consultez la [documentation](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)officielle sur le moteur. 
 
 ## <a name="create-a-new-widget"></a>Créer un widget
 
@@ -27,7 +27,7 @@ Les graphiques de mouvement inréel (UMG) sont des systèmes d’interface utili
 
 ![Capture d’écran de la fenêtre de hiérarchie avec le composant widget de texte mis en surbrillance et développé](images/unreal-umg-img-02.png)
 
-- Sélectionnez un widget dans la fenêtre hiérarchie ou concepteur et modifiez les paramètres dans le panneau détails.  Dans ce cas, nous avons ajouté un « texte d’indication » par défaut et une couleur de teinte lorsque le curseur pointe sur la zone de texte pour fournir des commentaires que le widget est prêt à interagir.  Une zone de texte affiche un clavier virtuel sur HoloLens lorsqu’il est interagi avec :
+- Sélectionnez un widget dans la fenêtre hiérarchie ou concepteur et modifiez les paramètres dans le panneau détails.  Dans ce cas, nous avons ajouté un « texte d’indication » par défaut et une couleur de teinte qui s’affiche lorsque vous pointez sur la zone de texte.  Une zone de texte affiche un clavier virtuel sur HoloLens lorsqu’il est interagi avec :
 
 ![Capture d’écran des paramètres modifiés dans la fenêtre hiérarchie](images/unreal-umg-img-03.png)
 
@@ -57,11 +57,14 @@ Les widgets UMG reçoivent généralement une entrée à partir d’une souris. 
 
 ![Capture d’écran d’un nouvel acteur avec un composant d’interaction de widget mis en surbrillance](images/unreal-umg-img-08.png)
 
-- Dans le volet d’informations du composant interaction du widget, définissez la distance d’interaction sur la distance souhaitée, définissez la **source d’interaction** sur **personnalisé**, et pour développement, affectez à **afficher le débogage** la **valeur true**:
+- Dans le volet d’informations du composant interaction du widget :
+    - Définissez la distance d’interaction sur la valeur de distance souhaitée
+    - Définir la **source d’interaction** sur **personnalisé**
+    - Pour le développement, définissez **Show Debug** sur **true**:
 
 ![Capture d’écran des propriétés du composant d’interaction et de débogage du widget](images/unreal-umg-img-09.png)
 
-La valeur par défaut de la source d’interaction est « World », qui doit envoyer des raycasts en fonction de la position universelle du composant d’interaction du widget, mais dans AR et VR, cela ne semble pas être le cas.  L’activation de l’option « Afficher le débogage » et l’ajout d’une teinte de survol aux widgets pendant le développement est importante pour la vérification de la validité. le composant d’interaction des widgets fait ce que vous attendez.  La solution consiste à utiliser une source personnalisée et à définir raycast dans le graphique d’événements à partir de la main Ray.  
+La valeur par défaut de la source d’interaction est « World », qui doit envoyer des raycasts en fonction de la position universelle du composant d’interaction du widget. Dans AR et VR, ce n’est pas le cas.  L’activation de l’option « Afficher le débogage » et l’ajout d’une teinte de survol aux widgets sont importantes pour vérifier que le composant interaction des widgets fait ce que vous attendez.  La solution consiste à utiliser une source personnalisée et à définir raycast dans le graphique d’événements à partir de la main Ray.  
 
 Ici, nous appelons ce code à partir de l’événement :
 

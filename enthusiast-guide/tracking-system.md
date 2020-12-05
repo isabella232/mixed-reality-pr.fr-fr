@@ -3,14 +3,14 @@ title: Fonctionnement du suivi intérieur-extérieur
 description: Informations sur le système de suivi à l’intérieur de l’appareil photo, utilisé dans les casques de Windows Mixed Reality.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, Inside-Out, Inside Out, Tracking, Camera
-ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: e299415d8f5a727d8005a9cb3a65dd5da0d9bdf6
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434604"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609730"
 ---
-# <a name="inside-out-tracking"></a>Suivi interne
+# <a name="inside-out-tracking"></a>Suivi intérieur-extérieur
 
 ## <a name="how-does-inside-out-tracking-work"></a>Comment fonctionne le suivi à l’intérieur de la sortie ?
 
@@ -30,7 +30,7 @@ Il y a deux préoccupations à prendre en compte pour garantir le bon fonctionne
 
 ## <a name="how-much-light-is-enough-light"></a>Quelle est la quantité de lumière suffisante ?
 
-Une bonne règle empirique est que vous puissiez vous déplacer confortablement dans l’environnement sans vous sentir trop obscur. Si vous pouvez observer les fonctionnalités d’une autre personne à travers la pièce, le système de suivi est probablement suffisamment clair.
+Une bonne règle empirique est que vous puissiez vous déplacer confortablement dans l’environnement sans vous sentir trop obscur. Si vous pouvez observer les fonctionnalités d’une autre personne à travers la pièce, le système de suivi est probablement suffisamment clair. Gardez à l’esprit qu’il y a une telle chose trop claire si vous regardez directement le soleil, les caméras peuvent être saturées et ne pourront pas être suivies de manière fiable. 
 
 ## <a name="what-is-the-recommended-amount-of-environmental-features"></a>Quelle est la quantité recommandée de fonctionnalités environnementales ?
 
@@ -42,7 +42,7 @@ L’appareil est conçu pour prendre en charge le mouvement en-delà de ce qui e
 
 ## <a name="where-will-tracking-not-work"></a>Où le suivi ne fonctionne-t-il pas ?
 
-Le suivi ne fonctionne pas dans une pièce sombre dans laquelle les caméras ne peuvent pas voir suffisamment de fonctionnalités en raison de la faible luminosité. En général, le suivi ne fonctionne pas correctement (ou parfois du tout) dans le déplacement de véhicules tels que les avions, les bus, les trains, les voitures ou les ascenseurs.
+Le suivi ne fonctionne pas dans une pièce sombre dans laquelle les caméras ne peuvent pas voir suffisamment de fonctionnalités en raison de la faible luminosité. En général, le suivi ne fonctionne pas correctement (ou parfois du tout) dans le déplacement de véhicules tels que les avions, les bus, les trains, les voitures ou les ascenseurs. Le suivi peut également échouer dans des situations où la légère ou la légère différence est importante. Par exemple, s’il existe un flux direct de soleil dans une pièce, les caméras peuvent réduire l’exposition pour réduire la saturation et ne pas être en mesure de voir les caractéristiques naturelles normales. Il est recommandé d’utiliser un éclairage relativement même, et si vous devez plisser ou trouver des choses peu de confort, le système de suivi peut ne pas s’avérer très efficace. 
 
 ## <a name="what-is-the-difference-between-3dof-and-6dof"></a>Quelle est la différence entre 3DOF et 6DOF ?
 
@@ -72,6 +72,6 @@ Le système de suivi stocke des données d’environnement afin qu’il puisse r
 
 ## <a name="see-also"></a>Voir aussi
 * [Résolution des problèmes liés au système de suivi](tracking.md)
-* [Contrôleurs de mouvement](controller-in-wmr.md)
+* [Contrôleurs de mouvement](controllers-in-wmr.md)
 * [Votre accueil Windows Mixed Reality](your-mixed-reality-home.md)
 * [Utilisation de jeux et d’applications dans Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

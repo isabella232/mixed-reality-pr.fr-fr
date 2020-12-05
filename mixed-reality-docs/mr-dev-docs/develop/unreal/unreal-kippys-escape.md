@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, réalité mixte, déployer sur un appareil, PC, documentation, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f5abfca4d5f85fd65aee77857d94a989122df310
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678948"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609680"
 ---
 # <a name="the-making-of-kippys-escape"></a>La création de l’échappement de kippy
 
@@ -24,7 +24,7 @@ Kippy le robot se réveille pour se retrouver sur un îlot. C’est à vous de f
 
 ## <a name="overview"></a>Vue d’ensemble
 
-La séquence d’échappement de kippy est une application de l’exemple [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) Open source générée avec des outils inréalistes pour le moteur 4 et la [réalité mixte](https://github.com/microsoft/MixedReality-UXTools-Unreal). Dans ce billet, nous allons vous guider tout au long de notre processus de mise en œuvre de l’échappement de kippy, des premiers principes et de la conception visuelle à l’implémentation et à l’optimisation de l’expérience. Vous trouverez plus d’informations sur le développement d’applications de réalité mixte avec les outils MRTK UX dans la [vue d’ensemble du développement inréel](unreal-development-overview.md).
+La séquence d’échappement de kippy est une application de l’exemple [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) Open source générée avec des outils inréalistes pour le moteur 4 et la [réalité mixte](https://github.com/microsoft/MixedReality-UXTools-Unreal). Dans ce billet, nous allons vous guider tout au long de notre processus, de la conception visuelle à la mise en œuvre et à l’optimisation de l’expérience. Vous trouverez plus d’informations sur le développement d’applications de réalité mixte avec les outils MRTK UX dans la [vue d’ensemble du développement inréel](unreal-development-overview.md).
 
 ## <a name="first-principles"></a>Premiers principes 
 
@@ -36,7 +36,7 @@ Nous avons obtenu trois principes directeurs pour l’expérience : ils devaien
 
 Le HoloLens 2 a accès aux fonctionnalités de conception qui ne se trouvent nulle part ailleurs dans le jeu. Les objets peuvent être directement poussés ou manipulés à l’aide de vos mains ou avec le suivi oculaire. Ces fonctionnalités clés se trouvent derrière les moments amusants que nous avons intégrés à l’échappement de kippy.  
 
-À l’aide des fonctionnalités HoloLens 2 uniques en guise d’aide pour notre conception de jeu, nous avons limité quelques scénarios d’environnement. Les îlots ont beaucoup de sens, car ils peuvent être ajustés en fonction des différentes hauteurs de joueurs et fournir des idées de pont divertissantes. À partir de là, nous sommes parvenus au thème de l’ancien civilisation, qui répond à la technologie Sci-Fi, avec l’idée que quelqu’un avait créé des machines sur Ruins en exploitant une énergie étrange fournie par chaque île. Les îles ont chacune leur propre apparence, un détail qui nous a aidé à créer un intérêt visuel. Un bon équilibre entre la modélisation et les texturages était de garder les appels de dessin faible pour les performances de rendu, donc un look stylisé a été conçu en tenant compte de cela à l’esprit. 
+À l’aide des fonctionnalités HoloLens 2 uniques en guise d’aide pour notre conception de jeu, nous avons limité quelques scénarios d’environnement. Les îlots ont un sens, car ils peuvent être ajustés en fonction des différentes hauteurs de joueurs et fournir des idées de pont divertissantes. Nous sommes parvenus sur le thème de l’ancien civilisation, qui répond à la technologie Sci-Fi, avec l’idée que quelqu’un avait créé des machines sur Ruins en exploitant une énergie étrange fournie par chaque île. Les îles ont chacune leur propre apparence, un détail qui nous a aidé à créer un intérêt visuel. Un bon équilibre entre la modélisation et la texturation permet de réduire les appels de dessin pour les performances de rendu, donc un look stylisé a été conçu en tenant compte de cela à l’esprit. 
 
 ![La conception de jeux précoces ébauche ](images/kippys-escape/kippys-escape-img-01.png)
  *des croquis précoces pour ce que l’expérience peut ressembler*
@@ -54,7 +54,7 @@ Pour rester dans le cadre de notre planification de production, nous avons conve
 
 *Si l’utilisateur met trop de temps à résoudre un puzzle, kippy donne une indication à l’utilisateur*
 
-Au-delà de la conception de caractères et d’environnements, nous avons fait un effort concerté pour que le jeu se sent amusant. Le suivi oculaire nous permettait de déclencher des attributs de matériau et de son, ce qui a mis en surbrillance les éléments clés du jeu. L’audio spatial a aidé les niveaux à la racine de l’environnement du joueur. La possibilité de capturer des objets, de pousser des boutons et de manipuler des curseurs permet d’effectuer des missions de joueurs innovantes. il est donc important de s’assurer que ces points de connexion sont naturels. 
+Au-delà de la conception de caractères et d’environnements, nous avons fait un effort concerté pour que le jeu se sent amusant. Le suivi oculaire nous permettait de déclencher des attributs de matériau et de son, ce qui a mis en surbrillance les éléments clés du jeu. L’audio spatial a aidé les niveaux à la racine de l’environnement du joueur. La possibilité de récupérer des objets, des boutons de commande et de manipuler des curseurs permet d’effectuer des missions de joueurs innovantes. Il était important de s’assurer que ces points de connexion sont naturels. 
 
 ![La fin du câble de pont s’illumine lorsque l’utilisateur l’approche à la main](images/kippys-escape/kippys-escape-img-05.gif)
 
@@ -117,4 +117,4 @@ Démarrez votre HoloLens 2 et [Téléchargez](https://www.microsoft.com/p/kippys
 </tr>
 </table>
 
-Merci à nos amis sur [Framestore](https://www.framestore.com/) pour nous aider à passer le kippy au niveau supérieur. Du développement de caractères à la conception de ressources, à la programmation de jeux, leur collaboration sur ce projet était Pivotal.  
+Merci à nos amis sur [Framestore](https://www.framestore.com/) pour nous aider à donner à l’échappement de kippy. Du développement de caractères à la conception de ressources, à la programmation de jeux, leur collaboration sur ce projet était Pivotal.  
