@@ -1,11 +1,15 @@
 - name: Introduction au développement de réalité mixte
   href: development.md
-- name: Vue d’ensemble des services cloud de réalité mixte Azure
-  href: mixed-reality-cloud-services.md
-- name: Vue d’ensemble de la formation à la réalité mixte
-  href: mr-learning-overview.md
 - name: Installer les outils
   href: install-the-tools.md
+- name: Prise en main
+  items:
+    - name: Vue d’ensemble des services cloud de réalité mixte Azure
+      href: mixed-reality-cloud-services.md
+    - name: Vue d’ensemble de la formation à la réalité mixte
+      href: mr-learning-overview.md
+    - name: Exemples d’applications et de fonctionnalités
+      href: features-and-samples.md
 - name: Applications de portage
   items:
     - name: Vue d’ensemble du portage
@@ -216,8 +220,6 @@
           href: unity/unity-reverb-g2-controllers.md
     - name: Exemples d’application
       items:
-        - name: Vue d'ensemble
-          href: unity/samples.md
         - name: HoloLens 2
           items:
             - name: Surfaces
@@ -300,8 +302,6 @@
           href: unreal/unreal-reverb-g2-controllers.md
     - name: Exemples d’application
       items:
-        - name: Vue d'ensemble
-          href: unreal/unreal-samples.md
         - name: Kippy's Escape
           href: unreal/unreal-kippys-escape.md
     - name: Performances et déploiement
@@ -396,6 +396,8 @@
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: Fonctionnement des studios de capture de Réalité Mixte
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+        - name: "Installation de PIX pour HoloLens\_2"
+          href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Communication à distance holographique
       items:
         - name: Holographic Remoting Player
