@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity
-ms.openlocfilehash: 7541ab38cd8c90e774614af5ea457e5636ee66fe
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 731a4dfd0b714f22f25c0818de82680d4c576a27
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679895"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761761"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Présentation du SDK présentation de Scene
 
@@ -47,7 +47,7 @@ La partie gauche est un diagramme du runtime de réalité mixte qui est toujours
 
 Étant donné que chaque scène stocke ses données dans l’espace mémoire de votre application, vous pouvez supposer que toutes les fonctions de l’objet de la scène ou de ses données internes sont toujours exécutées dans le processus de votre application.
 
-### <a name="layout"></a>Layout
+### <a name="layout"></a>Mise en page
 
 Pour travailler avec la compréhension des scènes, il peut être utile de savoir et de comprendre comment le runtime représente des composants logiquement et physiquement. La scène représente des données avec une disposition spécifique qui a été choisie comme simple tout en conservant une structure sous-jacente qui est pliable pour répondre aux exigences futures sans avoir besoin de révisions majeures. Pour ce faire, la scène stocke tous les composants (blocs de construction pour tous les objets de scène) dans une liste plate et définit la hiérarchie et la composition par le biais de références où des composants spécifiques référencent d’autres.
 
@@ -135,9 +135,9 @@ Un SceneMesh est un SceneComponent qui se rapproche de la géométrie des objets
 
 #### <a name="winding-order-and-coordinate-systems"></a>Ordre d’enroulement et systèmes de coordonnées
 
-Toutes les mailles produites par la compréhension des scènes sont supposées retourner des maillages dans un système de coordonnées droitiers à l’aide de l’ordre de séquencement des aiguilles d’une montre. 
+Tous les maillages produits par la compréhension des scènes sont censés retourner des maillages dans un système de coordonnées Right-Handed à l’aide de l’ordre de séquencement des aiguilles d’une montre. 
 
-Remarque : les builds du système d’exploitation antérieures à. 191105 peuvent présenter un bogue connu dans lequel les maillages « universels » renvoient dans l’ordre de sortie dans le sens inverse des aiguilles d’une montre, qui a été résolu par la suite.
+Remarque : les builds de système d’exploitation antérieures à. 191105 peuvent avoir un bogue connu dans lequel les mailles « World » renvoient dans Counter-Clockwise ordre d’enroulement, qui a été résolu par la suite.
 
 ### <a name="scenequad"></a>SceneQuad
 
@@ -222,7 +222,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 ### <a name="component-update-and-re-finding-components"></a>Mise à jour des composants et rerecherche de composants
 
-Une autre fonction récupère les composants de la scène appelée ***FindComponent*** . Cette fonction est utile lors de la mise à jour des objets de suivi et de leur recherche dans des scènes ultérieures. Le code suivant calcule une nouvelle scène par rapport à une scène précédente, puis trouve le plancher dans la nouvelle scène.
+Une autre fonction récupère les composants dans la scène appelée **_FindComponent_* _. Cette fonction est utile lors de la mise à jour des objets de suivi et de leur recherche dans des scènes ultérieures. Le code suivant calcule une nouvelle scène par rapport à une scène précédente, puis trouve le plancher dans la nouvelle scène.
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -239,7 +239,7 @@ if (firstFloor != null)
 
 ## <a name="accessing-meshes-and-quads-from-scene-objects"></a>Accès aux maillages et aux quads à partir d’objets de scène
 
-Une fois les SceneObjects trouvés, votre application souhaitera probablement accéder aux données contenues dans les quadruples/les maillages dont elle est composée. Ces données sont accessibles avec les propriétés ***quads*** et ***meshes*** . Le code suivant énumère tous les Quad et les maillages de notre objet Floor.
+Une fois les SceneObjects trouvés, votre application souhaitera probablement accéder aux données contenues dans les quadruples/les maillages dont elle est composée. Ces données sont accessibles avec les propriétés _*_quads_*_ et _*_meshes_*_ . Le code suivant énumère tous les Quad et les maillages de notre objet Floor.
 
 ```cs
 
@@ -263,53 +263,95 @@ Notez qu’il s’agit du SceneObject qui a la transformation par rapport à l�
 
 ### <a name="dealing-with-transforms"></a>Traitement des transformations
 
-La compréhension des scènes a fait une tentative délibérée d’alignement avec les représentations de scène 3D traditionnelles lors du traitement des transformations. Chaque scène est donc confinée à un système de coordonnées unique, à l’instar des représentations environnementales 3D les plus courantes. Les SceneObjects fournissent chacun leur emplacement sous la forme d’une position et d’une orientation au sein de ce système de coordonnées. Si votre application traite des scènes qui étendent la limite de ce qu’une origine unique fournit peut ancrer SceneObjects à SpatialAnchors, ou générer plusieurs scènes et les fusionner, mais pour des raisons de simplicité, nous supposons que des scènes étanches existent dans leur propre origine et sont localisées par un NodeId défini par Scene. OriginSpatialGraphNodeId.
+La compréhension des scènes a fait une tentative délibérée d’alignement avec les représentations de scène 3D traditionnelles lors du traitement des transformations. Chaque scène est donc confinée à un système de coordonnées unique, à l’instar des représentations environnementales 3D les plus courantes. Les SceneObjects fournissent chacun leur emplacement par rapport à ce système de coordonnées. Si votre application traite des scènes qui étendent la limite de ce qu’une origine unique fournit peut ancrer SceneObjects à SpatialAnchors, ou générer plusieurs scènes et les fusionner, mais pour des raisons de simplicité, nous supposons que des scènes étanches existent dans leur propre origine et sont localisées par un NodeId défini par Scene. OriginSpatialGraphNodeId.
 
-Le code Unity suivant, par exemple, montre comment utiliser la perception de Windows et les API Unity pour aligner les systèmes de coordonnées ensemble. Pour plus d’informations sur les API de perception Windows et sur les [objets natifs de réalité mixte dans Unity](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) , consultez [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) et [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) pour obtenir des informations sur l’obtention d’un SpatialCoordinateSystem qui correspond à l’origine universelle de Unity, ainsi que la `.ToUnity()` méthode d’extension pour la conversion entre `System.Numerics.Matrix4x4` et `UnityEngine.Matrix4x4` .
+Le code Unity suivant, par exemple, montre comment utiliser la perception de Windows et les API Unity pour aligner les systèmes de coordonnées ensemble. Pour plus d’informations sur les API de perception Windows et sur les [objets natifs de réalité mixte en Unity](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) , consultez [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) et [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) pour plus d’informations sur l’obtention d’un SpatialCoordinateSystem qui correspond à l’origine universelle d’Unity.
 
 ```cs
-public class SceneRootComponent : MonoBehavior
+private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)
 {
-    public SpatialCoordinateSystem worldOrigin;
-    public Scene scene;
-    SpatialCoordinateSystem sceneOrigin;
-    
-    void Start()
-    {
-        // Initialize a SpatialCoordinateSystem for the scene's node in the system's Spatial Graph.
-        scene.origin = SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
-    }
-    
-    void Update()
-    {
-        // Try to get the current transform of the scene's spatial graph node.
-        // This may not be available, e.g. when tracking has been lost.
-        var sceneToWorld = sceneOrigin.TryGetTransformTo(worldOrigin);
-        if (sceneToWorld.HasValue)
-        {
-            // Convert the transform to Unity numerics and update the game object.
-            var sceneToWorldUnity = sceneToWorld.Value.ToUnity();
-            this.gameObject.transform.SetPositionAndRotation(sceneToWorldUnity.GetColumn(3), sceneToWorldUnity.rotation);
-        }
-    }
+
+      System.Numerics.Matrix4x4? sceneToUnityTransform = System.Numerics.Matrix4x4.Identity;
+
+      Windows.Perception.Spatial.SpatialCoordinateSystem sceneCoordinateSystem = Microsoft.Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
+      HolograhicFrameData holoFrameData =  Marshal.PtrToStructure<HolograhicFrameData>(UnityEngine.XR.XRDevice.GetNativePtr());
+      Windows.Perception.Spatial.SpatialCoordinateSystem unityCoordinateSystem = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(holoFrameData.ISpatialCoordinateSystemPtr);
+
+      sceneToUnityTransform = sceneCoordinateSystem.TryGetTransformTo(unityCoordinateSystem);
+
+      if(sceneToUnityTransform != null)
+      {
+          sceneToUnityTransform = ConvertRightHandedMatrix4x4ToLeftHanded(sceneToUnityTransform.Value);
+      }
+      else
+      {
+          return null;
+      }
+
+    return sceneToUnityTransform;
 }
 ```
 
-Chaque `SceneObject` possède une `Position` `Orientation` propriété et qui peut être utilisée pour positionner le contenu correspondant par rapport à l’origine du conteneur `Scene` . Par exemple, l’exemple suivant suppose que le jeu est un enfant de la racine de la scène et affecte sa position locale et sa rotation pour l’aligner sur un donné `SceneObject` :
+Chaque `SceneObject` a une transformation qui est ensuite appliquée à cet objet. Dans Unity, nous convertissons les coordonnées vers la droite et assignerons des transformations locales comme suit :
 
 ```cs
-void SetLocalTransformFromSceneObject(GameObject gameObject, SceneObject sceneObject)
+private System.Numerics.Matrix4x4 ConvertRightHandedMatrix4x4ToLeftHanded(System.Numerics.Matrix4x4 matrix)
 {
-    gameObject.transform.localPosition = sceneObject.Position.ToUnity();
-    gameObject.transform.localRotation = sceneObject.Orientation.ToUnity());
+    matrix.M13 = -matrix.M13;
+    matrix.M23 = -matrix.M23;
+    matrix.M43 = -matrix.M43;
+
+    matrix.M31 = -matrix.M31;
+    matrix.M32 = -matrix.M32;
+    matrix.M34 = -matrix.M34;
+
+    return matrix;
 }
+
+ private void SetUnityTransformFromMatrix4x4(Transform targetTransform, System.Numerics.Matrix4x4 matrix, bool updateLocalTransformOnly = false)
+ {
+    if(targetTransform == null)
+    {
+        return;
+    }
+
+    Vector3 unityTranslation;
+    Quaternion unityQuat;
+    Vector3 unityScale;
+
+    System.Numerics.Vector3 vector3;
+    System.Numerics.Quaternion quaternion;
+    System.Numerics.Vector3 scale;
+
+    System.Numerics.Matrix4x4.Decompose(matrix, out scale, out quaternion, out vector3);
+
+    unityTranslation = new Vector3(vector3.X, vector3.Y, vector3.Z);
+    unityQuat        = new Quaternion(quaternion.X, quaternion.Y, quaternion.Z, quaternion.W);
+    unityScale       = new Vector3(scale.X, scale.Y, scale.Z);
+
+    if(updateLocalTransformOnly)
+    {
+        targetTransform.localPosition = unityTranslation;
+        targetTransform.localRotation = unityQuat;
+    }
+    else
+    {
+        targetTransform.SetPositionAndRotation(unityTranslation, unityQuat);
+    }
+}
+
+// Assume we have an SU object called suObject and a unity equivalent unityObject
+
+System.Numerics.Matrix4x4 converted4x4LocationMatrix = ConvertRightHandedMatrix4x4ToLeftHanded(suObject.GetLocationAsMatrix());
+SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix, true);
+        
 ```
 
 ### <a name="quad"></a>Quadruple
 
 Les Quad sont conçus pour faciliter les scénarios de positionnement 2D et doivent être considérés comme des extensions aux éléments d’expérience utilisateur 2D Canvas. Alors que les Quad sont des composants de SceneObjects et peuvent être rendus en 3D, les API Quad elles-mêmes partent du principe que les quatre cœurs sont des structures 2D. Elles offrent des informations telles que l’étendue, la forme et fournissent des API pour le positionnement.
 
-Les Quad présentent des étendues rectangulaires, mais elles représentent des surfaces 2D de forme arbitraire. Pour activer la position sur ces surfaces 2D qui interagissent avec les utilitaires de l’environnement 3D quads, vous pouvez faire en sorte que cette interaction soit possible. Actuellement, la compréhension des scènes fournit deux fonctions telles que **FindCentermostPlacement** et **GetOcclusionMask** . FindCentermostPlacement est une API de haut niveau qui localise une position sur le quadruple dans laquelle un objet peut être placé et tente de trouver le meilleur emplacement pour votre objet, garantissant que le cadre englobant que vous fournissez se trouvera sur la surface sous-jacente.
+Les Quad présentent des étendues rectangulaires, mais elles représentent des surfaces 2D de forme arbitraire. Pour activer la position sur ces surfaces 2D qui interagissent avec les utilitaires de l’environnement 3D quads, vous pouvez faire en sorte que cette interaction soit possible. Actuellement, la compréhension des scènes fournit deux fonctions, _ *FindCentermostPlacement** et **GetSurfaceMask**. FindCentermostPlacement est une API de haut niveau qui localise une position sur le quadruple dans laquelle un objet peut être placé et tente de trouver le meilleur emplacement pour votre objet, garantissant que le cadre englobant que vous fournissez se trouvera sur la surface sous-jacente.
 
 > [!NOTE]
 > Les coordonnées de la sortie sont relatives au Quad dans « espace quadruple » avec le coin supérieur gauche (x = 0, y = 0), comme c’est le cas avec d’autres types de fenêtres Rect. Veillez à prendre cela en compte lorsque vous travaillez avec les origines de vos propres objets. 
@@ -372,7 +414,11 @@ mesh.GetVertexPositions(positions);
 
 Les mémoires tampons d’index/vertex doivent être >= nombre d’index/vertex, mais peuvent être de taille arbitraire, ce qui permet une réutilisation efficace de la mémoire.
 
-## <a name="developing-with-scene-understandings"></a>Développement avec présentation des scènes
+### <a name="collidermesh"></a>ColliderMesh
+
+Les objets de scène fournissent l’accès aux données de maillage et de mailleur par le biais des propriétés MESHS et ColliderMeshes. Ces maillages correspondent toujours, ce qui signifie que l’index IE de la propriété meshes représente le même geometryh que l’index IE de la propriété ColliderMeshes. Si le runtime/objet prend en charge les maillages de collisions, vous êtes guarateed pour bénéficier du polygone le plus bas, approximation de l’ordre le plus élevé et il est genrally conseillé d’utiliser ColliderMeshes partout où votre application utiliserait des conflits. Si le système ne prend pas en charge les conflits, l’objet de maillage retourné dans ColliderMeshes sera le même objet que le maillage pour réduire les contraintes de mémoire.
+
+## <a name="developing-with-scene-understanding"></a>Développement avec la compréhension de la scène
 
 À ce stade, vous devez comprendre les principaux blocs de construction de la scène présentation du runtime et du kit de développement logiciel (SDK). La majeure partie de la puissance et de la complexité se trouve dans les modèles d’accès, l’interaction avec les frameworks 3D et les outils qui peuvent être écrits sur ces API pour effectuer des tâches plus avancées telles que la planification spatiale, l’analyse de la salle, la navigation, la physique, etc. Nous espérons capturer ces exemples dans des exemples qui devraient vous guider dans la bonne direction pour que vos scénarios brillent. S’il existe des exemples ou des scénarios que nous n’adressons pas, faites-le nous savoir et nous essaierons de documenter/prototyper ce dont vous avez besoin.
 
