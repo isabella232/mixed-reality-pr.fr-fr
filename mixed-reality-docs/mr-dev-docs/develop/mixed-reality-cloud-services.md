@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Services cloud Azure
+title: Vue d’ensemble des services cloud de réalité mixte Azure
 description: Ressources concernant les services cloud de réalité mixte.
 author: hferrone
 ms.author: v-haferr
@@ -8,14 +8,14 @@ ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, développer, développement, HoloLens, services cloud, Azure, rendu à distance, ancres spatiales, cognitive services, cognition, unity, machine learning, traduction vocale, vision par ordinateur, Microsoft Graph
-ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 338574ac5a06841a6a2a9920fc0dfbdfdbfd0bbf
+ms.sourcegitcommit: eba192e1cfaef35bc55161d4e9a0adea36ff1a18
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679688"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96526056"
 ---
-# <a name="azure-cloud-services"></a>Services cloud Azure
+# <a name="azure-mixed-reality-cloud-services-overview"></a>Vue d’ensemble des services cloud de réalité mixte Azure
 
 ![ Image Azure Spatial Anchors](../design/images/AzureSpatialAnchors.jpg)
 
