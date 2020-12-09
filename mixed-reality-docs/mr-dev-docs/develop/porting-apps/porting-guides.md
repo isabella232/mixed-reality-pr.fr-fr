@@ -1,19 +1,19 @@
 ---
-title: Portage d’applications VR vers Windows Mixed Reality
+title: Portage d’applications VR sur Windows Mixed Reality
 description: Une procédure pas à pas expliquant comment porter une application immersive existante vers Windows Mixed Reality.
 author: JBrentJ
 ms.author: alexturn
-ms.date: 07/07/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: port, Unity, inreal, middleware, Engine, UWP, Win32, Portage, HoloLens 1ère génération, casque de réalité mixte, casque Windows Mixed realisation, migration, Windows 10, mappage d’entrée,
-ms.openlocfilehash: aa9d45a4413fd8e0f5c7eec61f830635c2db6f4b
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 9f3e064c4462fc3d12a23bd94885476bcd2f9466
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443683"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925948"
 ---
-# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portage d’applications VR vers Windows Mixed Reality
+# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portage d’applications VR sur Windows Mixed Reality
 
 Windows 10 offre une prise en charge directe des casques immersifs et holographiques. Si vous avez créé du contenu pour d’autres appareils, tels que le rift Oculus ou le HTC, ceux-ci ont des dépendances vis-à-vis des bibliothèques qui se trouvent au-dessus de l’API de plateforme du système d’exploitation. L’intégration des applications Win32 Unity en cours à Windows Mixed Reality implique le reciblage de l’utilisation des kits de développement logiciel (SDK) de VR spécifiques au fournisseur pour les API VR inter-fournisseurs.
 

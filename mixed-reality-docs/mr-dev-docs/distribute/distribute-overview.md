@@ -3,15 +3,15 @@ title: Distribution de vos applications
 description: Vue d’ensemble des différentes options de distribution pour les différentes plateformes prises en charge et les magasins de publication.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, réalité mixte, casques immersifs, application, UWP, envoi, envoi, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising
-ms.openlocfilehash: 4ea60d2111f99924eaa417d4ff6fa8830934588c
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 5c7a1d6e00610a4046bd71b07ca5184399c9e335
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578878"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925777"
 ---
 # <a name="distributing-your-apps"></a>Distribution de vos applications
 

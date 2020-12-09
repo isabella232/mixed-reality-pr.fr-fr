@@ -1,19 +1,19 @@
 ---
-title: Vue d’ensemble du Portage
+title: Vue d’ensemble du portage
 description: Vue d’ensemble des différentes options de Portage pour ramener les applications existantes à la réalité mixte.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: Portage, Unity, intergiciel, Engine, UWP, Win32
-ms.openlocfilehash: 074e0792a5ed43bb56b8f337613234efbd166eb7
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443541"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925825"
 ---
-# <a name="porting-overview"></a>Vue d’ensemble du Portage
+# <a name="porting-overview"></a>Vue d’ensemble du portage
 
 En ce qui concerne le portage ou la mise à niveau de vos projets existants pour la réalité mixte, plusieurs scénarios peuvent s’appliquer selon que votre application a été créée avec Unity ou un moteur inréel, HoloLens (1re génération) ou HoloLens 2, ou SteamVR. Cette page de vue d’ensemble contient les recommandations actuelles pour chaque plateforme et appareil : Veillez à vérifier que ces processus sont toujours en cours de modification.
 

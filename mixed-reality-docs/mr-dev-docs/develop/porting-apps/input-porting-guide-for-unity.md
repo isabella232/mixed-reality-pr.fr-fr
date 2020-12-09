@@ -3,15 +3,15 @@ title: Guide de portage des entrées pour Unity
 description: Apprenez à gérer les entrées pour Windows Mixed Reality dans Unity.
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/9/2020
 ms.topic: article
 keywords: entrée, Unity, Portage
-ms.openlocfilehash: 4ad4b66b8238b3d00142fd14161113c6b912641c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 053918ec62f83c74655b0d4bb09a2b45b62bfc53
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679091"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925875"
 ---
 # <a name="input-porting-guide-for-unity"></a>Guide de portage des entrées pour Unity
 
@@ -35,16 +35,16 @@ Windows Mixed Reality prend en charge les contrôleurs de mouvement dans un larg
 
 Pour mieux représenter ces contrôleurs, il existe deux types de poses que vous pouvez examiner pour chaque source d’interaction :
 
-* La **poignée pose** , représentant l’emplacement de la paume d’une main détectée par un HoloLens, ou la paume contenant un contrôleur de mouvement.
-    * Sur les casques immersifs, cette pose est idéale pour afficher **la main de l’utilisateur** ou **un objet détenu par l’utilisateur** , tel qu’un arme ou un pistolet.
-    * Position de la **poignée** : le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée.
-    * **Axe droit de l’orientation de la poignée** : lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
-    * **Axe avant de l’orientation de la poignée** : quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
-    * **Axe vers le haut de l’orientation** : l’axe vers le haut, impliqué dans les définitions Right et Forward.
-    * Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity ( **[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation** ) ou par le biais de l’API spécifique à Windows ( **SourceState. SourcePose. TryGetPosition/rotation** , demandant la poignée pose).
-* Le **pointeur se pose** , représentant l’extrémité du contrôleur pointant vers l’avant.
+* La **poignée pose**, représentant l’emplacement de la paume d’une main détectée par un HoloLens, ou la paume contenant un contrôleur de mouvement.
+    * Sur les casques immersifs, cette pose est idéale pour afficher **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**, tel qu’un arme ou un pistolet.
+    * Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée.
+    * **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
+    * **Axe avant de l’orientation de la poignée**: quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
+    * **Axe vers le haut de l’orientation**: l’axe vers le haut, impliqué dans les définitions Right et Forward.
+    * Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity (**[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation**) ou par le biais de l’API spécifique à Windows (**SourceState. SourcePose. TryGetPosition/rotation**, demandant la poignée pose).
+* Le **pointeur se pose**, représentant l’extrémité du contrôleur pointant vers l’avant.
     * Ce modèle est mieux utilisé pour raycast quand vous **pointez sur l’interface utilisateur** lorsque vous rendez le modèle de contrôleur lui-même.
-    * Actuellement, le pointeur pose est disponible uniquement par le biais de l’API spécifique à Windows ( **sourceState. sourcePose. TryGetPosition/rotation** , demandant le pointeur pose).
+    * Actuellement, le pointeur pose est disponible uniquement par le biais de l’API spécifique à Windows (**sourceState. sourcePose. TryGetPosition/rotation**, demandant le pointeur pose).
 
 Ces coordonnées de pose sont toutes exprimées en coordonnées universelles Unity.
 
