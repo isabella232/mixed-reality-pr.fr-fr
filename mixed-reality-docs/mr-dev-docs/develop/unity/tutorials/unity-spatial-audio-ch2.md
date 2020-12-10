@@ -2,16 +2,16 @@
 title: Didacticiels audio spatiaux-2. Spatialisation des sons d’interaction avec les boutons
 description: Ajoutez un bouton à votre projet et spatialez les sons d’interaction du bouton.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, prefabs, courbe de volume
-ms.openlocfilehash: eb550c3127e13926d73428b337abfd7cf9872eb7
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 62825ed8922cd904212160748018446cbc76b839
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678188"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002594"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>Spatialisation des sons d’interaction avec les boutons
 

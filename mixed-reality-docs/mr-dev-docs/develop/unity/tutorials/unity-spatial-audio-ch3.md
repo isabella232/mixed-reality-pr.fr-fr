@@ -2,16 +2,16 @@
 title: Didacticiels audio spatiaux-3. Spatialisation du contenu audio d’une vidéo
 description: Importez un élément multimédia vidéo dans votre projet Unity et spatialez l’audio de la vidéo.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, importation de vidéos, lecteur vidéo
-ms.openlocfilehash: 43297fc4148600cc820111e6c206313560224ac9
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 46f2f88be6613096a835f04e826b776c32c1b8c2
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679718"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002624"
 ---
 # <a name="spatializing-audio-from-a-video"></a>Spatialisation du contenu audio d’une vidéo
 Dans ce troisième chapitre du module audio spatial des didacticiels HoloLens 2 Unity, vous allez :

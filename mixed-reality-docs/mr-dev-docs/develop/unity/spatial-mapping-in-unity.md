@@ -6,16 +6,16 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mappage spatial, convertisseur, conflit, maillage, numérisation, composant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 2e5518b1a54f967762143bb8602141b4199a2d54
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677398"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002514"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mappage spatial dans Unity
 
-Cette rubrique explique comment utiliser le [mappage spatial](../../design/spatial-mapping.md) dans votre projet Unity, en récupérant les maillages de triangles qui représentent les surfaces dans le monde autour d’un appareil HoloLens, pour le placement, l’occlusion, l’analyse de la salle, et bien plus encore.
+le [mappage spatial](../../design/spatial-mapping.md) vous permet de récupérer des maillages de triangles qui représentent les surfaces dans le monde autour d’un appareil HoloLens. Vous pouvez utiliser les données de surface pour le placement, l’occlusion et l’analyse de la salle pour que vos projets Unity fassent une dose supplémentaire d’immersion.
 
 Unity comprend la prise en charge complète du mappage spatial, qui est exposé aux développeurs des manières suivantes :
 1. Composants de mappage spatial disponibles dans MixedRealityToolkit, qui fournissent un chemin d’accès pratique et rapide pour la prise en main du mappage spatial
@@ -34,7 +34,7 @@ Pour utiliser le mappage spatial dans votre application, vous devez définir la 
     </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (première génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
@@ -52,10 +52,11 @@ Pour qu’une application consomme des données de mappage spatiales, la capacit
 
 Comment activer la fonctionnalité SpatialPerception :
 1. Dans l’éditeur Unity, ouvrez le volet **« paramètres du lecteur »** (modifier > paramètres du projet > Player)
-2. Cliquer sur l’onglet **« Windows Store »**
+2. Sélectionnez sous l’onglet **Windows Store**
 3. Développez **« paramètres de publication »** et cochez la fonctionnalité **« SpatialPerception »** dans la liste **« fonctionnalités »** .
 
-Notez que si vous avez déjà exporté votre projet Unity vers une solution Visual Studio, vous devez soit exporter vers un nouveau dossier, soit [définir manuellement cette fonctionnalité dans AppxManifest dans Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
+> [!NOTE]
+> Si vous avez déjà exporté votre projet Unity vers une solution Visual Studio, vous devez l’exporter vers un nouveau dossier ou définir manuellement [cette fonctionnalité dans AppxManifest dans Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 Le mappage spatial nécessite également un MaxVersionTested d’au moins 10.0.10586.0 :
 1. Dans Visual Studio, cliquez avec le bouton droit sur **Package. appxmanifest** dans le Explorateur de solutions puis sélectionnez **afficher le code** .
@@ -64,7 +65,7 @@ Le mappage spatial nécessite également un MaxVersionTested d’au moins 10.0.1
 
 ## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>Prise en main des composants de mappage spatial intégrés à Unity
 
-Unity offre 2 composants pour ajouter facilement le mappage spatial à votre application, le **convertisseur de mappage spatial** et le **conflit de mappage spatial**.
+Unity offre deux composants pour ajouter facilement le mappage spatial à votre application, le **convertisseur de mappage spatial** et le **conflit de mappage spatial**.
 
 ### <a name="spatial-mapping-renderer"></a>Convertisseur de mappage spatial
 
@@ -96,12 +97,12 @@ Ces composants facilitent le glisser-déplacer pour la prise en main du mappage 
 
 ## <a name="using-the-low-level-unity-spatial-mapping-api"></a>Utilisation de l’API de mappage spatial de bas niveau
 
-Si vous avez besoin d’un contrôle plus élevé que celui obtenu à partir du convertisseur de mappage spatial et des composants de conflit de mappage spatial, vous pouvez utiliser les API de script de mappage spatial de bas niveau.
+Si vous avez besoin de plus de contrôle que le convertisseur de mappage spatial et les composants de conflit de mappage spatial offrent, utilisez les API de mappage spatial de bas niveau.
 
 **Espace de noms :** *UnityEngine. XR. WSA*<br>
 **Types**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *SurfaceId*
 
-Voici un aperçu du déroulement suggéré pour une application qui utilise les API de mappage spatial.
+Nous avons décrit le déroulement suggéré pour une application qui utilise les API de mappage spatial dans les sections ci-dessous.
 
 ### <a name="set-up-the-surfaceobservers"></a>Configurer le (s) SurfaceObserver (s)
 
@@ -135,8 +136,8 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 
 ### <a name="handling-surface-changes"></a>Gestion des modifications de surface
 
-Il existe plusieurs cas principaux à gérer. Ajout de & mis à jour qui peut utiliser le même chemin de code et supprimé.
-* Dans la & ajoutée cas mis à jour dans l’exemple, nous ajoutons ou obtenons le GameObject représentant ce maillage du dictionnaire, nous créons un struct SurfaceData avec les composants nécessaires, puis appelons RequestMeshDataAsync pour remplir le GameObject avec les données de maillage et la position dans la scène.
+Il existe plusieurs cas principaux à gérer : ajouté et mis à jour, qui peuvent utiliser le même chemin d’accès de code et être supprimés.
+* Dans les cas ajoutés et mis à jour, nous ajoutons ou obtenons le GameObject représentant ce maillage du dictionnaire, nous créons un struct SurfaceData avec les composants nécessaires, puis appelons RequestMeshDataAsync pour remplir le GameObject avec les données de maillage et la position dans la scène.
 * Dans le cas supprimé, nous supprimons le GameObject représentant ce maillage du dictionnaire et le détruisons.
 
 ```cs
@@ -189,7 +190,7 @@ System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects 
 
 ### <a name="handling-data-ready"></a>Gestion des données prêtes
 
-Le gestionnaire OnDataReady reçoit un objet SurfaceData. Les objets WorldAnchor, MeshFilter et (facultatif) MeshCollider qu’il contient reflètent l’état le plus récent de la surface spatiale associée. Effectuez éventuellement une analyse et/ou un [traitement](../../design/spatial-mapping.md#mesh-processing) des données de maillage en accédant au membre de maillage de l’objet MeshFilter. Affichez la surface spatiale avec la dernière maille et (éventuellement) utilisez-la pour les collisions physiques et les raycasts. Il est important de vérifier que le contenu du SurfaceData n’est pas null.
+Le gestionnaire OnDataReady reçoit un objet SurfaceData. Les objets WorldAnchor, MeshFilter et (éventuellement) MeshCollider qu’il contient reflètent l’état le plus récent de la surface spatiale associée. Si vous le souhaitez, analysez et/ou [traitez](../../design/spatial-mapping.md#mesh-processing) les données de maillage en accédant au membre de maillage de l’objet MeshFilter. Affichez la surface spatiale avec la dernière maille et (éventuellement) utilisez-la pour les collisions physiques et les raycasts. Il est important de vérifier que le contenu du SurfaceData n’est pas null.
 
 ### <a name="start-processing-on-updates"></a>Démarrer le traitement des mises à jour
 
@@ -214,23 +215,23 @@ void Start () {
 
 ## <a name="higher-level-mesh-analysis-spatialunderstanding"></a>Analyse de maillage de niveau supérieur : SpatialUnderstanding
 
-Le <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a> est une collection de code d’utilitaire utile pour le développement holographique reposant sur les API d’Unity holographique.
+Le <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a> est une collection de code utilitaire pour le développement holographique reposant sur des API holographiques Unity.
 
 ### <a name="spatial-understanding"></a>Compréhension spatiale
 
-Quand vous placez des hologrammes dans le monde physique, il est souvent préférable d’aller au-delà des plans de maillage et de surface du mappage spatial. Une fois le placement effectué, il est souhaitable d’avoir un niveau de compréhension environnemental plus élevé. Il est généralement nécessaire de prendre des décisions sur le plancher, le plafond et les murs. En outre, il est possible d’optimiser par rapport à un ensemble de contraintes de placement pour déterminer les emplacements physiques les plus intéressants pour les objets holographiques.
+Quand vous placez des hologrammes dans le monde physique, il est souvent préférable d’aller au-delà des plans de maillage et de surface du mappage spatial. Une fois le placement effectué, il est souhaitable d’avoir un niveau de compréhension environnemental plus élevé. Il est généralement nécessaire de prendre des décisions sur le plancher, le plafond et les murs. Vous avez également la possibilité d’optimiser par rapport à un ensemble de contraintes de placement pour déterminer les emplacements physiques les plus adaptés aux objets holographiques.
 
-Pendant le développement de jeunes Conkers et fragments, Asobo Studios a rencontré ce problème en développant un solveur de salle à cet effet. Chacun de ces jeux avait des besoins spécifiques aux jeux, mais ils partageaient la technologie de compréhension spatiale principale. La bibliothèque HoloToolkit. SpatialUnderstanding encapsule cette technologie, ce qui vous permet de trouver rapidement des espaces vides sur les murs, de placer des objets sur le plafond, d’identifier le positionnement d’un personnage et une multitude d’autres requêtes de compréhension spatiale.
+Pendant le développement de jeunes Conkers et fragments, Asobo Studios a rencontré ce problème en développant un solveur de salle. Chacun de ces jeux avait des besoins spécifiques aux jeux, mais ils partageaient la technologie de compréhension spatiale principale. La bibliothèque HoloToolkit. SpatialUnderstanding encapsule cette technologie, ce qui vous permet de trouver rapidement des espaces vides sur les murs, de placer des objets sur le plafond, d’identifier le positionnement d’un personnage et une multitude d’autres requêtes de compréhension spatiale.
 
 Tout le code source est inclus, ce qui vous permet de le personnaliser en fonction de vos besoins et de partager vos améliorations avec la communauté. Le code du solveur C++ a été encapsulé dans une dll UWP et exposé à Unity avec une chute de Prefab contenue dans le MixedRealityToolkit.
 
 ### <a name="understanding-modules"></a>Fonctionnement des modules
 
-Il existe trois interfaces principales exposées par le module : la topologie pour les requêtes spatiales et spatiales simples, la forme pour la détection d’objets et le solveur de positionnement des objets pour le positionnement basé sur les contraintes des jeux d’objets. Chacun d’eux est décrit ci-dessous. En plus des trois interfaces de module principales, une interface de type Ray peut être utilisée pour récupérer des types de surfaces avec balises et un maillage PlaySpace à l’eau personnalisé peut être copié.
+Il existe trois interfaces principales exposées par le module : la topologie pour les requêtes spatiales et spatiales simples, la forme pour la détection d’objets et le solveur de positionnement des objets pour le placement basé sur les contraintes de jeux d’objets. Chacun d’eux est décrit ci-dessous. En plus des trois interfaces de module principales, une interface de type Ray peut être utilisée pour récupérer des types de surfaces avec balises et un maillage PlaySpace à l’eau personnalisé peut être copié.
 
 ### <a name="ray-casting"></a>Conversion de rayon
 
-Une fois la salle analysée et finalisée, les étiquettes sont générées en interne pour les surfaces comme le plancher, le plafond et les murs. La fonction « PlayspaceRaycast » prend un rayon et retourne si le rayon entre en conflit avec une surface connue et, le cas échéant, des informations sur cette surface sous la forme d’un « RaycastResult ».
+Une fois l’analyse de la salle terminée, les étiquettes sont générées en interne pour les surfaces telles que le plancher, le plafond et les murs. La fonction « PlayspaceRaycast » prend un rayon et retourne si le rayon entre en conflit avec une surface connue et, le cas échéant, des informations sur cette surface sous la forme d’un « RaycastResult ».
 
 ```cpp
 struct RaycastResult
@@ -258,7 +259,7 @@ struct RaycastResult
 };
 ```
 
-En interne, raycast est calculé par rapport à la représentation voxel 8cm cube calculée du PlaySpace. Chaque voxel contient un ensemble d’éléments surface avec des données de topologie traitées (surfels). Le surfels contenu dans la cellule voxel intersectée est comparé et la meilleure correspondance est utilisée pour rechercher les informations de topologie. Ces données de topologie contiennent l’étiquetage renvoyé sous la forme de l’énumération « SurfaceTypes », ainsi que la surface d’exposition de la surface intersectée.
+En interne, le raycast est calculé par rapport à la représentation voxel de cube calculée de 8 cm du PlaySpace. Chaque voxel contient un ensemble d’éléments surface avec des données de topologie traitées (surfels). Le surfels contenu dans la cellule voxel intersectée est comparé et la meilleure correspondance est utilisée pour rechercher les informations de topologie. Ces données de topologie contiennent l’étiquetage renvoyé sous la forme de l’énumération « SurfaceTypes », ainsi que la surface d’exposition de la surface intersectée.
 
 Dans l’exemple Unity, le curseur convertit chaque image de rayon. Tout d’abord, contre les conflits avec Unity. Deuxièmement, par rapport à la représentation universelle du module de présentation. Enfin, les éléments d’interface utilisateur. Dans cette application, l’interface utilisateur est prioritaire, puis le résultat de la compréhension et enfin, les conflits avec Unity. Le SurfaceType est signalé en tant que texte en regard du curseur.
 
@@ -267,7 +268,10 @@ Dans l’exemple Unity, le curseur convertit chaque image de rayon. Tout d’abo
 
 ### <a name="topology-queries"></a>Requêtes de topologie
 
-Dans la DLL, le gestionnaire de topologie gère l’étiquetage de l’environnement. Comme indiqué ci-dessus, la plupart des données sont stockées dans surfels, contenues dans un volume voxel. En outre, la structure « PlaySpaceInfos » est utilisée pour stocker des informations sur le PlaySpace, y compris l’alignement universel (plus de détails à ce niveau ci-dessous), le plancher et la hauteur du plafond. Les heuristiques sont utilisées pour déterminer l’étage, le plafond et les murs. Par exemple, la surface horizontale la plus grande et la plus basse avec une surface d’exposition supérieure à 1 m2 est considérée comme le plancher. Notez que le chemin d’accès de l’appareil photo pendant le processus d’analyse est également utilisé dans ce processus.
+Dans la DLL, le gestionnaire de topologie gère l’étiquetage de l’environnement. Comme indiqué ci-dessus, la plupart des données sont stockées dans surfels, contenues dans un volume voxel. En outre, la structure « PlaySpaceInfos » est utilisée pour stocker des informations sur le PlaySpace, y compris l’alignement universel (plus de détails à ce niveau ci-dessous), le plancher et la hauteur du plafond. Les heuristiques sont utilisées pour déterminer l’étage, le plafond et les murs. Par exemple, la surface horizontale la plus grande et la plus basse avec une surface d’exposition supérieure à 1-m2 est considérée comme le plancher. 
+
+> [!NOTE]
+> Le chemin d’accès de l’appareil photo pendant le processus d’analyse est également utilisé dans ce processus.
 
 Un sous-ensemble des requêtes exposées par le gestionnaire de topologie est exposé via la dll. Les requêtes de topologie exposées sont les suivantes.
 
@@ -306,13 +310,14 @@ struct TopologyResult
 };
 ```
 
-Notez que dans l’exemple Unity, chacune de ces requêtes est liée à un bouton dans le panneau de l’interface utilisateur virtuelle. L’exemple code en dur les paramètres de chacune de ces requêtes à des valeurs raisonnables. Pour plus d’exemples, consultez SpaceVisualizer.cs dans l’exemple de code.
+> [!NOTE]
+> Dans l’exemple Unity, chacune de ces requêtes est liée à un bouton dans le panneau de l’interface utilisateur virtuelle. L’exemple code en dur les paramètres de chacune de ces requêtes à des valeurs raisonnables. Pour plus d’exemples, consultez SpaceVisualizer.cs dans l’exemple de code.
 
 ### <a name="shape-queries"></a>Requêtes de forme
 
-À l’intérieur de la dll, l’analyseur de forme (« ShapeAnalyzer_W ») utilise l’analyseur de topologie pour faire correspondre les formes personnalisées définies par l’utilisateur. L’exemple Unity définit un ensemble de formes et expose les résultats par le biais du menu requête dans l’application, dans l’onglet forme. L’objectif est que l’utilisateur peut définir ses propres requêtes de forme d’objet et les utiliser, selon les besoins de leur application.
+Dans la dll, l’analyseur de forme (« ShapeAnalyzer_W ») utilise l’analyseur de topologie pour faire correspondre les formes personnalisées définies par l’utilisateur. L’exemple Unity définit un ensemble de formes et expose les résultats par le biais du menu requête dans l’application, dans l’onglet forme. L’objectif est que l’utilisateur peut définir ses propres requêtes de forme d’objet et les utiliser, selon les besoins de leur application.
 
-Notez que l’analyse des formes fonctionne uniquement sur des surfaces horizontales. Un canapé, par exemple, est défini par la surface du siège plat et le haut à l’arrière de la canapé. La requête Shape recherche deux surfaces d’une taille, d’une hauteur et d’une plage d’aspect spécifiques, les deux surfaces étant alignées et connectées. En utilisant la terminologie des API, le siège de la canapé et l’arrière-plan sont des composants de forme et les exigences d’alignement sont des contraintes de composant de forme.
+L’analyse des formes fonctionne uniquement sur des surfaces horizontales. Un canapé, par exemple, est défini par la surface du siège plat et le haut à l’arrière de la canapé. La requête Shape recherche deux surfaces d’une taille, d’une hauteur et d’une plage d’aspect spécifiques, les deux surfaces étant alignées et connectées. En utilisant la terminologie des API, le siège de la canapé et l’arrière-plan sont des composants de forme et les exigences d’alignement sont des contraintes de composant de forme.
 
 Voici un exemple de requête défini dans l’exemple Unity (ShapeDefinition.cs) pour les objets « sittable ».
 
@@ -331,9 +336,9 @@ shapeComponents = new List<ShapeComponent>()
 AddShape("Sittable", shapeComponents);
 ```
 
-Chaque requête de forme est définie par un ensemble de composants de forme, chacun avec un ensemble de contraintes de composant et un ensemble de contraintes de forme qui répertorient les dépendances entre les composants. Cet exemple inclut trois contraintes dans une définition de composant unique et aucune contrainte de forme entre les composants (étant donné qu’il n’y a qu’un seul composant).
+Chaque requête de forme est définie par un ensemble de composants de forme, chacun avec un ensemble de contraintes de composant et un ensemble de contraintes de forme qui répertorient les dépendances entre les composants. Cet exemple inclut trois contraintes dans une définition de composant unique et aucune contrainte de forme entre les composants (puisqu’il n’y a qu’un seul composant).
 
-En revanche, la forme de canapé a deux composants de forme et quatre contraintes de forme. Notez que les composants sont identifiés par leur index dans la liste des composants de l’utilisateur (0 et 1 dans cet exemple).
+En revanche, la forme de canapé a deux composants de forme et quatre contraintes de forme. Les composants sont identifiés par leur index dans la liste des composants de l’utilisateur (0 et 1 dans cet exemple).
 
 ```cs
 shapeConstraints = new List<ShapeConstraint>()
@@ -461,11 +466,11 @@ Import_UnderstandingMesh –
     after scanning has been finalized.
 ```
 
-Le workflow d’analyse, piloté par le comportement « SpatialUnderstanding », appelle InitScan, puis UpdateScan chaque frame. Lorsque la requête de statistiques signale une couverture raisonnable, l’utilisateur est autorisé à airtap d’appeler RequestFinish pour indiquer la fin de la phase d’analyse. UpdateScan continue à être appelé jusqu’à ce qu’il retourne la valeur indiquant que la dll a terminé le traitement.
+Le workflow d’analyse, piloté par le comportement « SpatialUnderstanding », appelle InitScan, puis UpdateScan chaque frame. Lorsque la requête de statistiques signale une couverture raisonnable, l’utilisateur est autorisé à airtap d’appeler RequestFinish pour indiquer la fin de la phase d’analyse. UpdateScan continue d’être appelé jusqu’à ce que sa valeur de retour indique que la dll a terminé le traitement.
 
 ### <a name="understanding-mesh"></a>Fonctionnement de la maille
 
-La dll de compréhension stocke en interne le PlaySpace sous la forme d’une grille de cubes voxel 8cm dimensionnés. Au cours de la phase initiale d’analyse, une analyse de composant principale est effectuée pour déterminer les axes de la salle. En interne, elle stocke son espace voxel aligné sur ces axes. Une maille est générée environ chaque seconde en extrayant le isosurface du volume voxel. 
+La dll de compréhension stocke en interne le PlaySpace sous la forme d’une grille de cubes voxel de 8 cm de taille. Au cours de la phase initiale d’analyse, une analyse de composant principale est effectuée pour déterminer les axes de la salle. En interne, elle stocke son espace voxel aligné sur ces axes. Une maille est générée environ chaque seconde en extrayant le isosurface du volume voxel. 
 
 ![Maille générée produite à partir du volume voxel](images/su-custommesh.jpg)<br>
 *Maille générée produite à partir du volume voxel*
@@ -479,7 +484,7 @@ Pour plus d’informations sur l’utilisation du mappage spatial avec Mixed Rea
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, vous explorez actuellement les composants de base de MRTK. À partir de là, vous pouvez passer au composant suivant : 
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant : 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)

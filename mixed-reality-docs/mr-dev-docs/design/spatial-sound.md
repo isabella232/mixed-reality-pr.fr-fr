@@ -2,16 +2,16 @@
 title: Audio en réalité mixte
 description: L’audio en réalité mixte peut augmenter la confiance des utilisateurs dans les interactions entre les interfaces utilisateur et plonger les utilisateurs dans l’expérience.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: son spatial, son surround, audio 3D, son 3D, audio spatial, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, kit de fonctions de réalité mixte, études de cas, acoustiques
-ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2fe40f1b271e7ae775c333951286e87c5196c20b
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703255"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002494"
 ---
 # <a name="audio-in-mixed-reality"></a>Audio en réalité mixte
 L’audio est un élément essentiel de la conception et de la productivité dans la réalité mixte. Le son peut :

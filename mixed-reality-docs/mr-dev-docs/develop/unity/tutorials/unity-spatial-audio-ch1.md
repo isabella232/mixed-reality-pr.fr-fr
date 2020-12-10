@@ -2,16 +2,16 @@
 title: Didacticiels audio spatial-1. Ajout de données audio spatiales à votre projet
 description: Ajoutez le plug-in Microsoft Spatializer à votre projet Unity pour accéder au déchargement matériel HoloLens 2 HRTF.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
-ms.openlocfilehash: fc657eb22034c1c3fd31aadedfe7b8ea7bb8447d
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8790c4c62ab4c1b2b9e9f9c5c6fe0583b9e36545
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679708"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002504"
 ---
 # <a name="adding-spatial-audio-to-your-unity-project"></a>Ajout de données audio spatiales à votre projet Unity
 

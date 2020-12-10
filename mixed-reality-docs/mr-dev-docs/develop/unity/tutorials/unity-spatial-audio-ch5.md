@@ -2,16 +2,16 @@
 title: Didacticiels audio spatiaux-5. Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
 description: Ajoutez un effet de réverbération pour améliorer le sens de la variation de distance avec l’audio spatial.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, mélangeur audio, réverbération SFX
-ms.openlocfilehash: d688955910d667edbdb79e63dab16587e66064a4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679698"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002614"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
 

@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK, boîte à outils de réalité mixte, hologrammes, conception d’hologrammes, apprentissage, exemple d’application, casque de réalité mixte, casque de réalité virtuelle, présentation de la réalité virtuelle
-ms.openlocfilehash: 243b6f28da7b074b3ff6d48794d525ac08281fa7
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bf904b319ed5b452f254b659315d9b531832a4d5
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355339"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002584"
 ---
 # <a name="the-making-of-designing-holograms"></a>Création d’hologrammes
 
@@ -122,6 +122,32 @@ Dans un premier temps, nous avons commencé à ajouter de l’épaisseur aux pan
 Évidemment, les icônes fonctionnent beaucoup mieux que le simple texte. par conséquent, afin de fournir une aide encore plus puissante, j’ai commencé à créer un ensemble d’objets animés et d’avatars, chacun d’entre eux indiquant un petit récit sur ce qui est fait dans le scénario respectif et sur la manière dont il est utilisé.
 
 ![GIF animé d’un système de menu holographique interactif](images/designing-holograms/creative-process.gif)
+
+## <a name="core-concepts"></a>Principaux concepts
+
+**Image holographique**
+
+![GIF animé d’un utilisateur qui regarde le Dollhouse avec le cadre holographique mis en surbrillance](images/designing-holograms/FOVandFOI.gif)
+
+**Systèmes de coordonnées**
+
+![GIF animé d’un utilisateur qui regarde le Dollhouse avec les systèmes de coordonnées mis en surbrillance](images/designing-holograms/CoordinateSystems.gif)
+
+**Eye-tracking**
+
+![GIF animé d’un utilisateur cherchant des hologrammes stationnaires avec le point de regard de l’oeil en surbrillance](images/designing-holograms/EyeTracking.gif)
+
+**Visualisation de l’analyse de la salle et mappage spatial**
+
+![GIF animé de toutes les surfaces à l’intérieur du Dollhouse mappé](images/designing-holograms/SpatialMapping.gif)
+
+**Compréhension des scènes**
+
+![GIF animé d’objets dans le Dollhouse qui est reconnu](images/designing-holograms/SceneUnderstanding.gif)
+
+**Pointer et valider avec des rayons de main**
+
+![GIF animé d’un utilisateur qui soulève sa main avec un rayon de la main mis en surbrillance](images/designing-holograms/HandRays.gif)
 
 ## <a name="try-it-out-moments"></a>« Essayer » les moments
 
