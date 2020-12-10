@@ -6,8 +6,6 @@
   items:
     - name: Vue d’ensemble des services cloud de réalité mixte Azure
       href: mixed-reality-cloud-services.md
-    - name: Vue d’ensemble de la formation à la réalité mixte
-      href: mr-learning-overview.md
     - name: Exemples d’applications et de fonctionnalités
       href: features-and-samples.md
 - name: Applications de portage
@@ -254,6 +252,8 @@
   items:
     - name: Vue d’ensemble du développement Unreal
       href: unreal/unreal-development-overview.md
+    - name: Mise à niveau de projets dans Unreal
+      href: unreal/unreal-porting.md
     - name: Tutoriels
       items:
         - name: Créer une application de jeu d’échecs avec les outils MRTK UX
@@ -310,8 +310,6 @@
           href: unreal/unreal-deploying.md
         - name: Publication sur le Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-        - name: Mise à niveau de projets dans Unreal
-          href: unreal/unreal-porting.md
         - name: Recommandations sur les performances pour Unreal
           href: unreal/performance-recommendations-for-unreal.md
         - name: Recommandations matérielles dans Unreal
