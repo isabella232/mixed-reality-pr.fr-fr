@@ -6,18 +6,22 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendu holographique, holographique, immersif, point de focus, mémoire tampon de profondeur, orientation uniquement, positionnelle, opaque, transparent, clip, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677618"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010430"
 ---
 # <a name="camera-in-unity"></a>Appareil photo dans Unity
 
-Quand vous portez un casque de réalité mixte, il devient le centre de votre monde holographique. Le composant [appareil photo](https://docs.unity3d.com/Manual/class-Camera.html) Unity gère automatiquement le rendu stéréoscopique et suit le mouvement et la rotation de votre tête lorsque l’appareil est sélectionné avec la « réalité virtuelle prise en charge » dans la section autres paramètres des paramètres du lecteur Windows Store. Cela peut être indiqué sous la forme « Windows holographique » dans les versions antérieures d’Unity.
+Quand vous portez un casque de réalité mixte, il devient le centre de votre monde holographique. Le composant [appareil photo](https://docs.unity3d.com/Manual/class-Camera.html) Unity gère automatiquement le rendu stéréoscopique et suit le mouvement et la rotation de votre tête. Toutefois, pour optimiser complètement la qualité visuelle et la [stabilité des hologrammes](../platform-capabilities-and-apis/hologram-stability.md), vous devez définir les paramètres de l’appareil photo décrits ci-dessous.
 
-Toutefois, pour optimiser complètement la qualité visuelle et la [stabilité des hologrammes](../platform-capabilities-and-apis/hologram-stability.md), vous devez définir les paramètres de l’appareil photo décrits ci-dessous.
+## <a name="setup"></a>Programme d’installation
+
+1. Accéder à d' **autres paramètres** de la section paramètres du **lecteur Windows Store**
+2. Choisissez **Windows Mixed realisation** comme périphérique, qui peut être listé comme **Windows holographique** dans les versions antérieures d’Unity
+3. Sélectionner une **réalité virtuelle prise en charge**
 
 >[!NOTE]
 >Ces paramètres doivent être appliqués à l’appareil photo dans chaque scène de votre application.
@@ -26,10 +30,10 @@ Toutefois, pour optimiser complètement la qualité visuelle et la [stabilité d
 
 ## <a name="holographic-vs-immersive-headsets"></a>Des casques holographiques et des casques immersifs
 
-Les paramètres par défaut du composant appareil photo Unity sont destinés aux applications 3D traditionnelles qui ont besoin d’un arrière-plan skybox, car ils n’ont pas de monde réel.
+Les paramètres par défaut du composant appareil photo Unity sont destinés aux applications 3D traditionnelles, qui nécessitent un arrière-plan skybox, car ils n’ont pas de monde réel.
 
 * Quand vous exécutez sur un **[casque immersif](../../discover/immersive-headset-hardware-details.md)**, vous affichez tout ce que l’utilisateur voit, et vous souhaiterez probablement conserver le skybox.
-* Toutefois, en cas d’exécution sur un **casque holographique** comme [HoloLens](../../hololens-hardware-details.md), le monde réel doit apparaître derrière tout ce que l’appareil photo rend. Pour ce faire, définissez l’arrière-plan de l’appareil photo sur transparent (dans HoloLens, le rendu noir est transparent) au lieu d’une texture skybox :
+* Toutefois, en cas d’exécution sur un **casque holographique** comme [HoloLens](../../hololens-hardware-details.md), le monde réel doit apparaître derrière tout ce que l’appareil photo rend. Définissez l’arrière-plan de la caméra sur transparent (dans HoloLens, le rendu noir est transparent) au lieu d’une texture skybox :
     1. Sélectionner la caméra principale dans le volet de la hiérarchie
     2. Dans le panneau Inspecteur, recherchez le composant Camera et modifiez la liste déroulante Clear Flags de skybox en Color unie
     3. Sélectionnez le sélecteur de couleur d’arrière-plan et modifiez les valeurs RVBA en (0, 0, 0, 0)
@@ -51,11 +55,11 @@ Il sera plus facile de disposer votre application si vous imaginez la position d
 Le rendu du contenu trop proche de l’utilisateur peut ne pas être à l’aise avec la réalité mixte. Vous pouvez ajuster les [plans de clip proches et Far](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) sur le composant de l’appareil photo.
 
 1. Sélectionner la caméra principale dans le volet de la hiérarchie
-2. Dans le panneau Inspecteur, recherchez les plans de découpage du composant d’appareil photo et remplacez la valeur 0,3 de la zone de texte near par. 85. Le rendu du contenu est encore plus proche peut entraîner une gêne de l’utilisateur et doit être évité en fonction des [règles de distance de rendu](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
+2. Dans le panneau Inspecteur, recherchez les plans de découpage du composant d’appareil photo et remplacez la valeur 0,3 de la zone de texte near par 0,85. Le rendu du contenu est encore plus proche peut entraîner une gêne de l’utilisateur et doit être évité en fonction des [règles de distance de rendu](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
 
 ## <a name="multiple-cameras"></a>Plusieurs caméras
 
-Lorsqu’il existe plusieurs composants d’appareil photo dans la scène, Unity sait quelle caméra utiliser pour le rendu stéréoscopique et le suivi des têtes en vérifiant quel GameObject a la balise MainCamera.
+Lorsqu’il existe plusieurs composants d’appareil photo dans la scène, Unity sait quelle caméra utiliser pour le rendu stéréoscopique et le suivi des têtes en fonction de l’GameObject a la balise MainCamera.
 
 ## <a name="recentering-a-seated-experience"></a>Recentrer une expérience assise
 
@@ -67,33 +71,33 @@ Les casques HoloLens et immersif reprojeteront chaque image que votre applicatio
 
 Par défaut :
 
-* Les **casques immersifs** effectuent une reprojection de position, en ajustant vos hologrammes pour la prédiction à la fois à la position et à l’orientation, si l’application fournit un tampon de profondeur pour un frame donné.  Si aucune mémoire tampon de profondeur n’est fournie, le système corrigera uniquement les prédictions incorrectes dans l’orientation.
-* Les **casques holographiques** comme HoloLens effectuent une reprojection de position, que l’application fournisse ou non sa mémoire tampon de profondeur.  La reprojection positionnel est possible sans tampons de profondeur sur HoloLens, car le rendu est souvent épars avec un arrière-plan stable fourni par le monde réel.
+* Les **casques immersifs** se chargent de la reprojection positionnelle si l’application fournit un tampon de profondeur pour un frame donné. Les casques immersifs ajustent également vos hologrammes pour une prédiction incorrecte à la fois dans la position et l’orientation. Si une mémoire tampon de profondeur n’est pas fournie, le système corrigera uniquement les prédictions incorrectes dans l’orientation.
+* Les **casques holographiques** comme HoloLens prennent en charge la reprojection de position, que l’application fournisse ou non sa mémoire tampon de profondeur.  La reprojection positionnel est possible sans tampons de profondeur sur HoloLens, car le rendu est souvent épars avec un arrière-plan stable fourni par le monde réel.
 
-Si vous savez que vous créez une [expérience d’orientation uniquement](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) avec du contenu verrouillé de manière rigide (par exemple, du contenu vidéo de 360 degrés), vous pouvez définir explicitement le mode de reprojection sur la valeur orientation uniquement en définissant [HolographicSettings. ReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) sur [HolographicReprojectionMode. OrientationOnly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html).
+Si vous savez que vous créez une [expérience d’orientation uniquement](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) avec du contenu verrouillé de manière rigide (par exemple, du contenu vidéo de 360 degrés), vous pouvez définir explicitement le mode de reprojection sur orientation uniquement en définissant [HolographicSettings. ReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) sur [HolographicReprojectionMode. OrientationOnly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html).
 
 ## <a name="sharing-your-depth-buffers-with-windows"></a>Partage de vos mémoires tampons de profondeur avec Windows
 
 En partageant le tampon de profondeur de votre application sur Windows, chaque trame donne à votre application l’un des deux boosters de stabilité de l’hologramme, en fonction du type de casque pour lequel vous effectuez le rendu :
 
-* Les **casques immersifs** peuvent effectuer une reprojection de position lorsqu’une mémoire tampon de profondeur est fournie, en ajustant vos hologrammes pour la prédiction à la fois à la position et à l’orientation.
+* Les **casques immersifs** peuvent prendre en charge la reprojection de position lorsqu’une mémoire tampon de profondeur est fournie, en ajustant vos hologrammes pour la prédiction à la fois à la position et à l’orientation.
 * Les **casques holographiques** présentent différentes méthodes. HoloLens 1 sélectionne automatiquement un [point de focus](focus-point-in-unity.md) lorsqu’une mémoire tampon de profondeur est fournie, ce qui optimise la stabilité de l’hologramme le long du plan qui croise la plus grande partie du contenu. HoloLens 2 va stabiliser le contenu à l’aide [de Depth LSR (consultez la section Notes)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 Pour définir si votre application Unity fournira un tampon de profondeur à Windows :
 
 1. Accédez à **modifier** les  >  **paramètres du projet**  >  **lecteur**  >  **plateforme Windows universelle onglet**  >  **paramètres XR**.
 2. Développez l’élément du **Kit de développement logiciel (SDK) Windows Mixed Reality** .
-3. Activez ou désactivez la case à cocher **activer le partage de tampons de profondeur** .  Cette option est activée par défaut dans les nouveaux projets créés, car cette fonctionnalité a été ajoutée à Unity et elle est désactivée par défaut pour les projets plus anciens qui ont été mis à niveau.
+3. Activez ou désactivez la case à cocher **activer le partage de tampons de profondeur** .  L’option Activer le partage de tampons de profondeur est activée par défaut dans les nouveaux projets, car cette fonctionnalité a été ajoutée à Unity et elle est désactivée par défaut pour les projets plus anciens qui ont été mis à niveau.
 
-En fournissant une mémoire tampon de profondeur à Windows, vous pouvez améliorer la qualité visuelle tant que Windows peut mapper avec précision les valeurs de profondeur par pixel normalisées dans votre tampon de profondeur à des distances exprimées en mètres, à l’aide des plans proches et Far que vous avez définis dans Unity sur la caméra principale.  Si votre rendu passe les valeurs de profondeur des poignées de manière classique, vous devez généralement être précis ici, bien que le rendu translucide passe l’écriture dans le tampon de profondeur pendant que l’affichage aux pixels de couleur existants peut confondre la reprojection.  Si vous savez que vos passes de rendu conservent un grand nombre de pixels de profondeur finale avec des valeurs de profondeur inexactes, vous obtiendrez probablement une meilleure qualité visuelle en désactivant l’option « Activer le partage de mémoire tampon de profondeur ». # # point de contrôle de développement suivant
+Une mémoire tampon de profondeur peut améliorer la qualité visuelle tant que Windows peut mapper avec précision les valeurs de profondeur par pixel normalisées dans votre tampon de profondeur à des distances exprimées en mètres, à l’aide des plans proches et éloignés que vous avez définis dans Unity sur la caméra principale.  Si votre rendu passe les valeurs de profondeur des poignées de manière classique, vous devez généralement être précis ici, bien que le rendu translucide passe l’écriture dans le tampon de profondeur pendant que l’affichage aux pixels de couleur existants peut confondre la reprojection.  Si vous savez que vos passes de rendu conservent un grand nombre de pixels de profondeur finale avec des valeurs de profondeur inexactes, vous obtiendrez probablement une meilleure qualité visuelle en désactivant l’option « Activer le partage de mémoire tampon de profondeur ».
 
-## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit-v2"></a>Configuration automatique de la scène et de l’appareil photo avec Mixed Reality Toolkit v2
+## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>Configuration automatique de la scène et de l’appareil photo avec Mixed Reality Toolkit 
 
-Suivez le guide [pas à pas](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) pour ajouter Mixed Reality Toolkit v2 à votre projet Unity et configurez votre projet automatiquement. Vous pouvez également configurer manuellement le projet sans MRTK avec le Guide de la section ci-dessous.
+Suivez le guide [pas à pas](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) pour ajouter le Toolkit de réalité mixte à votre projet Unity et configurez votre projet automatiquement. Vous pouvez également configurer manuellement le projet sans MRTK avec le Guide de la section ci-dessous.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, vous explorez actuellement les composants de base de MRTK. À partir de là, vous pouvez passer au composant suivant :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant :
 
 > [!div class="nextstepaction"]
 > [Pointage du regard](gaze-in-unity.md)

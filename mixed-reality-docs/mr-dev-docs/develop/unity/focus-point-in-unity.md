@@ -6,21 +6,21 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, point de focalisation, plan de focalisation, plan de stabilisation, point de stabilisation, reprojection, LSR, mémoire tampon de profondeur, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 48c0d26e89124b9dbfc1d108354fb6e751e51783
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678688"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010270"
 ---
 # <a name="focus-point-in-unity"></a>Point de focus dans Unity
 
 **Espace de noms :** *UnityEngine. XR. WSA*<br>
 **Type**: *HolographicSettings*
 
-Le [point de focus](../platform-capabilities-and-apis/hologram-stability.md#reprojection) peut être défini pour fournir à HoloLens une indication sur la façon d’effectuer la meilleure stabilisation sur les hologrammes actuellement affichés.
+Utilisez le [point de focus](../platform-capabilities-and-apis/hologram-stability.md#reprojection) pour fournir à HoloLens une indication sur la manière de mieux stabiliser les hologrammes actuellement affichés.
 
-Si vous souhaitez définir le point de focus dans Unity, vous devez définir chaque frame à l’aide de *HolographicSettings. SetFocusPointForFrame ()*. Si le point de focus n’est pas défini pour un frame, le plan de stabilisation par défaut est utilisé.
+Si vous souhaitez définir le point de focus dans Unity, vous devez définir chaque frame à l’aide de *HolographicSettings. SetFocusPointForFrame ()*. Lorsque le point de focus n’est pas défini pour un cadre, le plan de stabilisation par défaut est utilisé.
 
 > [!NOTE]
 > Par défaut, l’option « Activer le partage de tampon de profondeur » est définie pour les nouveaux projets Unity.  Avec cette option, une application Unity s’exécutant sur un casque de bureau immersif ou sur un HoloLens exécutant la mise à jour 2018 d’avril de Windows 10 (RS4) ou une version ultérieure envoie votre tampon de profondeur à Windows pour optimiser la stabilité de l’hologramme automatiquement, sans que votre application spécifie un point de focalisation :
@@ -48,11 +48,12 @@ void Update()
 }
 ```
 
-Notez que le code simple ci-dessus peut finir par réduire la stabilité des hologrammes si l’objet ayant le focus se termine derrière l’utilisateur.  C’est la raison pour laquelle vous devez généralement définir « activer le partage de mémoire tampon de profondeur » au lieu de spécifier manuellement un point de focus.
+> [!NOTE]
+> Le code simple ci-dessus peut réduire la stabilité des hologrammes si l’objet ayant le focus se termine derrière l’utilisateur. Nous recommandons généralement de définir le **[partage de mémoire tampon de profondeur](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** au lieu de spécifier manuellement un point de focus.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons disposé, vous êtes en train d’explorer les fonctionnalités de la plateforme de réalité mixte et les API. À partir de là, vous pouvez passer à la rubrique suivante :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des fonctionnalités de la plateforme de réalité mixte et des API. À partir de là, vous pouvez passer à la rubrique suivante :
 
 > [!div class="nextstepaction"]
 > [Perte de suivi](tracking-loss-in-unity.md)

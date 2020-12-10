@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: système de coordonnées, système de coordonnées spatiales, orientation uniquement, à l’échelle assise, à l’échelle debout, mise à l’échelle de l’espace, à l’échelle mondiale, 360 de degrés, assis, debout, salle, monde, échelle, position, orientation, Unity, Ancre, ancrage spatial, point d’ancrage universel, verrouillage universel, verrouillage universel, verrouillage du corps, verrouillage du corps, perte de suivi, localisabilité, limites, recentre, casque de réalité mixte, casque de réalité
-ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 900c393bf9ab09f1ac49e3108488d081f8025c19
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678678"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010280"
 ---
 # <a name="coordinate-systems-in-unity"></a>Systèmes de coordonnées dans Unity
 
@@ -24,7 +24,7 @@ La première étape de la création d’une expérience de réalité mixte dans 
 **Espace de noms :** *UnityEngine. XR*<br>
 **Type :** *XRDevice*
 
-Pour créer une expérience d' **orientation uniquement** ou de mise à l' **échelle assise**, vous devez définir Unity sur le type d’espace de suivi fixe. Définit le système de coordonnées universelles de Unity pour suivre le [cadre stationnaire de référence](../../design/coordinate-systems.md#spatial-coordinate-systems). Dans le mode de suivi fixe, le contenu placé dans l’éditeur juste devant l’emplacement par défaut de l’appareil photo (Forward is-Z) s’affiche devant l’utilisateur au lancement de l’application.
+Pour créer une expérience d' **orientation uniquement** ou de mise à l' **échelle assise**, vous devez définir Unity sur le type d’espace de suivi fixe. Espace de suivi fixe définit le système de coordonnées universelles de l’unité pour suivre le [cadre stationnaire de référence](../../design/coordinate-systems.md#spatial-coordinate-systems). Dans le mode de suivi fixe, le contenu placé dans l’éditeur juste devant l’emplacement par défaut de l’appareil photo (Forward is-Z) s’affiche devant l’utilisateur au lancement de l’application.
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -52,7 +52,7 @@ InputTracking.Recenter();
 
 Pour une expérience à l’échelle **permanente** ou à l’échelle de l' **espace**, vous devez placer du contenu par rapport à l’étage. Vous avez raison de l’étage de l’utilisateur à l’aide de la **[Phase spatiale](../../design/coordinate-systems.md#spatial-coordinate-systems)**, qui représente l’origine de l’utilisateur et la limite facultative de l’espace, configurées lors de la première exécution.
 
-Pour vous assurer que Unity fonctionne avec son système de coordonnées universel à l’étage, vous pouvez définir Unity sur le type d’espace de suivi RoomScale et vérifier que le jeu est correctement effectué :
+Pour vous assurer que Unity fonctionne avec son système de coordonnées universel à l’étage, vous pouvez définir et tester qu’Unity utilise le type d’espace de suivi RoomScale :
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -65,16 +65,17 @@ else
 }
 ```
 * Si SetTrackingSpaceType retourne la valeur true, Unity a correctement basculé son système de coordonnées universel pour suivre le [cadre de la phase de référence](../../design/coordinate-systems.md#spatial-coordinate-systems).
-* Si SetTrackingSpaceType retourne la valeur false, Unity n’a pas pu basculer vers le cadre de la phase de référence, ce qui est probablement dû au fait que l’utilisateur n’a pas configuré un étage dans son environnement. Ce n’est pas courant, mais cela peut se produire si l’étape a été configurée dans une autre salle et que l’appareil a été déplacé dans la salle active sans que l’utilisateur n’ait configuré une nouvelle phase.
+* Si SetTrackingSpaceType retourne la valeur false, Unity n’a pas pu basculer vers le cadre de la phase de référence, probablement parce que l’utilisateur n’a pas configuré d’étage dans son environnement. Bien qu’une valeur de retour false ne soit pas courante, elle peut se produire si l’étape est configurée dans une salle différente et que l’appareil est déplacé dans la salle actuelle sans que l’utilisateur ne configure une nouvelle étape.
 
-Une fois que votre application a correctement défini le type d’espace de suivi RoomScale, le contenu placé sur le plan y = 0 s’affiche sur le plancher. L’origine à (0, 0, 0) sera l’emplacement spécifique sur le plancher où l’utilisateur a pris la main pendant la configuration de la salle, avec-Z représentant la direction vers l’avant au cours de l’installation.
+Une fois que votre application a correctement défini le type d’espace de suivi RoomScale, le contenu placé sur le plan y = 0 s’affiche sur le plancher. L’origine à 0, 0 correspond à l’emplacement spécifique sur le plancher où l’utilisateur a pris la main pendant la configuration de la salle, avec-Z représentant la direction vers l’avant pendant la configuration.
 
 **Espace de noms :** *UnityEngine. expérimentale. XR*<br>
 **Type :** *limite*
 
-Dans le code de script, vous pouvez ensuite appeler la méthode TryGetGeometry sur vous êtes le type UnityEngine. expérimental. XR. Boundary pour obtenir un polygone de limite, en spécifiant un type de limite de TrackedArea. Si l’utilisateur a défini une limite (vous récupérez une liste de vertex), vous savez qu’il est possible de fournir une expérience de mise à l’échelle de l' **espace** à l’utilisateur, où il peut se déplacer dans la scène que vous créez.
+Dans le code de script, vous pouvez ensuite appeler la méthode TryGetGeometry sur le type UnityEngine. expérimentale. XR. Boundary pour obtenir un polygone de limite, en spécifiant un type de limite de TrackedArea. Si l’utilisateur a défini une limite (vous récupérez une liste de vertex), il est possible de fournir une expérience de mise à l’échelle de l' **espace** à l’utilisateur, où il peut se déplacer dans la scène que vous créez.
 
-Notez que le système affiche automatiquement la limite lorsque l’utilisateur l’approche. Votre application n’a pas besoin d’utiliser ce polygone pour restituer la limite elle-même. Toutefois, vous pouvez choisir de disposer vos objets de scène à l’aide de ce polygone limite pour vous assurer que l’utilisateur peut atteindre physiquement ces objets sans téléportage :
+> [!NOTE]
+> Le système affiche automatiquement la limite lorsque l’utilisateur l’approche. Votre application n’a pas besoin d’utiliser ce polygone pour restituer la limite elle-même. Toutefois, vous pouvez choisir de disposer vos objets de scène à l’aide de ce polygone limite pour vous assurer que l’utilisateur peut atteindre physiquement ces objets sans téléportage :
 
 ```cs
 var vertices = new List<Vector3>();
@@ -89,7 +90,7 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 **Espace de noms :** *UnityEngine. XR. WSA*<br>
 **Type :** *WorldAnchor*
 
-Pour les expériences réelles à l' **échelle mondiale** sur HoloLens qui permettent aux utilisateurs d’aller au-delà de 5 mètres, vous aurez besoin de nouvelles techniques au-delà de celles utilisées pour les expériences à l’échelle de la place. Une technique clé que vous allez utiliser consiste à créer une [ancre spatiale](../../design/coordinate-systems.md#spatial-anchors) pour verrouiller un cluster d’hologrammes précisément en place dans le monde physique, quelle que soit la durée d’itinérance de l’utilisateur, puis [retrouvez ces hologrammes dans les sessions ultérieures](../../design/coordinate-systems.md#spatial-anchor-persistence).
+Pour les expériences réelles à l' **échelle mondiale** sur HoloLens qui permettent aux utilisateurs d’aller au-delà de 5 mètres, vous aurez besoin de nouvelles techniques au-delà de celles utilisées pour les expériences à l’échelle de la place. Une technique clé que vous allez utiliser consiste à créer une [ancre spatiale](../../design/coordinate-systems.md#spatial-anchors) pour verrouiller un cluster d’hologrammes précisément en place dans le monde physique, quel que soit le degré d’itinérance de l’utilisateur, puis [retrouvez ces hologrammes dans les sessions ultérieures](../../design/coordinate-systems.md#spatial-anchor-persistence).
 
 Dans Unity, vous créez une ancre spatiale en ajoutant le composant **WorldAnchor** Unity à un GameObject.
 
@@ -162,7 +163,7 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>Partage d’ancres sur plusieurs appareils
 
-Vous pouvez utiliser des <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre Cloud durable à partir d’un WorldAnchor local, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu affiché par rapport à cette ancre dans le même emplacement physique.  Cette technique autorise les expériences partagées en temps réel.
+Utilisez les <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre Cloud durable à partir d’un WorldAnchor local, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu affiché par rapport à cette ancre dans le même emplacement physique.  Cette technique autorise les expériences partagées en temps réel.
 
 Pour commencer à créer des expériences partagées dans Unity, essayez les Démarrages rapides de 5 minutes d' <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Unity spatiales Azure Unity</a>.
 
@@ -170,7 +171,7 @@ Une fois que vous êtes opérationnel avec les ancres spatiales Azure, vous pouv
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au composant suivant :
+Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au bloc de construction suivant :
 
 > [!div class="nextstepaction"]
 > [Pointage du regard](gaze-in-unity.md)

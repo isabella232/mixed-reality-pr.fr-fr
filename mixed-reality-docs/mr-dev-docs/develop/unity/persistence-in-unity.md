@@ -1,24 +1,24 @@
 ---
 title: Persistance dans Unity
-description: La persistance permet à vos utilisateurs d’épingler des hologrammes individuels ou un espace de travail où qu’ils le souhaitent, puis de les trouver plus tard là où ils s’attendent à plusieurs utilisations de votre application.
+description: La persistance permet à l’utilisateur d’ajouter des hologrammes individuels chaque fois qu’ils le souhaitent, puis de le retrouver plus tard dans de nombreuses utilisations de votre application.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, persistance, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d74f9c0a118c1886037c564073742ebedc7d0146
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678528"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010440"
 ---
 # <a name="persistence-in-unity"></a>Persistance dans Unity
 
 **Espace de noms :** *UnityEngine. XR. WSA. persistance*<br>
 **Classe :** *WorldAnchorStore*
 
-Le WorldAnchorStore est la clé de la création d’expériences holographiques dans lesquelles les hologrammes restent dans des positions réelles spécifiques entre les instances de l’application. Cela permet à vos utilisateurs d’épingler des hologrammes individuels ou un espace de travail où qu’ils le souhaitent, puis de les trouver plus tard là où ils s’attendent à plusieurs utilisations de votre application.
+Le WorldAnchorStore est la clé de la création d’expériences holographiques dans lesquelles les hologrammes restent dans des positions réelles spécifiques entre les instances de l’application. Les utilisateurs peuvent ensuite épingler des hologrammes individuels où ils le souhaitent, et les trouver plus tard dans les mêmes cas sur de nombreuses utilisations de votre application.
 
 ## <a name="how-to-persist-holograms-across-sessions"></a>Comment conserver des hologrammes entre les sessions
 
@@ -26,7 +26,7 @@ Le WorldAnchorStore vous permet de conserver l’emplacement des WorldAnchor ent
 
 Pour charger des hologrammes à partir de sessions précédentes :
 1. Obtient le WorldAnchorStore
-2. Charger les données d’application relatives à l’ancre mondiale qui vous donne l’ID de l’ancre mondiale
+2. Charger les données d’application relatives à l’ancre mondiale, qui vous donne l’ID du point d’ancrage
 3. Charger une ancre universelle à partir de son ID
 
 Pour enregistrer des hologrammes pour les sessions à venir :
@@ -36,7 +36,7 @@ Pour enregistrer des hologrammes pour les sessions à venir :
 
 ### <a name="getting-the-worldanchorstore"></a>Obtention du WorldAnchorStore
 
-Nous souhaitons conserver une référence à WorldAnchorStore pour nous assurer que nous sommes prêts à travailler lorsque nous souhaitons effectuer une opération. Étant donné qu’il s’agit d’un appel asynchrone, éventuellement dès le démarrage, nous souhaitons appeler
+Il est préférable de conserver une référence à WorldAnchorStore afin de savoir quand il est prêt à effectuer une opération. Étant donné qu’il s’agit d’un appel asynchrone, éventuellement dès le démarrage, vous souhaitez appeler :
 
 ```
 WorldAnchorStore.GetAsync(StoreLoaded);
@@ -51,11 +51,11 @@ private void StoreLoaded(WorldAnchorStore store)
 }
 ```
 
-Nous disposons maintenant d’une référence au WorldAnchorStore que nous allons utiliser pour enregistrer et charger des ancres universelles spécifiques.
+Nous avons maintenant une référence à WorldAnchorStore, que nous allons utiliser pour enregistrer et charger des ancres universelles spécifiques.
 
 ### <a name="saving-a-worldanchor"></a>Enregistrement d’un WorldAnchor
 
-Pour ce faire, nous devons simplement nommer ce que nous enregistrons et le transférer dans le WorldAnchor que nous avons reçu avant l’enregistrement. Remarque : la tentative d’enregistrement de deux ancres dans la même chaîne échoue (Store. L’enregistrement retourne la valeur false). Vous devez supprimer le précédent enregistrement avant d’enregistrer le nouveau fichier :
+Pour ce faire, nous devons simplement nommer ce que nous enregistrons et le transférer dans le WorldAnchor que nous avons reçu avant l’enregistrement. Remarque : la tentative d’enregistrement de deux ancres dans la même chaîne échoue (Store. L’enregistrement retourne la valeur false). Supprimer le précédent enregistrement avant d’en enregistrer un nouveau :
 
 ```
 private void SaveGame()
@@ -109,7 +109,7 @@ Une fois que vous êtes opérationnel avec les ancres spatiales Azure, vous pouv
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au module suivant :
+Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au bloc de construction suivant :
 
 > [!div class="nextstepaction"]
 > [Mappage spatial](spatial-mapping-in-unity.md)

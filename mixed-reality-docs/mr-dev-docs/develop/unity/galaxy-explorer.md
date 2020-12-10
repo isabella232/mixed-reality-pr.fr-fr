@@ -6,18 +6,19 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Explorateur Galaxy, étude de cas, projet, exemple, MRTK, boîte à outils de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: a58d07cd50679154fe68d3b8b7d424ea6cfbf39e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7ab439a1248895975c5ebff676862515ee79ecf0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678618"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010300"
 ---
 # <a name="galaxy-explorer"></a>Galaxy Explorer
 
 **Vous avez partagé vos idées. Nous partageons le code.**
 
-Le projet Galaxy Explorer est prêt. Vous avez partagé vos idées avec la communauté, vous avez choisi une application, vous avez regardé une équipe la créer et vous pouvez maintenant en obtenir le code source. Si vous disposez d’un appareil, le projet Explorateur Galaxy est également disponible en téléchargement à partir du Windows Store pour Microsoft HoloLens.
+Le projet Galaxy Explorer est prêt. Vous avez partagé vos idées avec la Communauté, choisi une application, regardé une équipe la créer et vous pouvez désormais obtenir le code source. Si vous disposez d’un appareil, le projet de l’Explorateur Galaxy est disponible en téléchargement à partir du Windows Store pour Microsoft HoloLens.
+
 >[!TIP]
 >[Obtient le code](https://github.com/Microsoft/GalaxyExplorer) sur GitHub
 
@@ -92,7 +93,7 @@ Vous trouverez encore plus d’informations et de leçons sur le développement 
 ![Équipe de développement de l’Explorateur Galaxy](images/syiteampic.jpg)<br>
 *Équipe de développement de l’Explorateur Galaxy*
 
-Nous avons appris que la conception de la bonne équipe est l’un des investissements les plus importants que nous pourrions faire. Nous avons décidé de procéder de la même façon à un studio de jeu pour ceux d’entre vous qui connaissent ce modèle de développement. Nous avons choisi d’avoir onze membres de l’équipe de base pour contrôler l’étendue, puisque nous avions une plage de temps fixe (créez un objet cool avant la génération le 30 mars 2016).
+Nous avons appris que la création de la bonne équipe est l’un des investissements les plus importants que nous pourrions faire et décidé d’organiser de façon similaire à un studio de jeu pour ceux d’entre vous qui connaissent ce modèle de développement. Nous avons choisi d’avoir 11 membres de l’équipe de base pour contrôler l’étendue, puisque nous avions une plage de temps fixe (créez un objet cool avant la génération le 30 mars 2016).
 
 Pour ce projet, nous avons commencé avec un producteur, d’après la planification, l’examen de la progression et le maintien de la journée. Elle est celle avec des cheveux roses. Nous avions un directeur de la conception (Jon) et un senior Designer (Peter). Ils ont gardé la vision de l’Explorateur Galaxy. Jon est l’un des lunettes sur la première ligne, tandis que Peter est le second de la droite vers l’arrière.
 
@@ -100,9 +101,9 @@ Nous avions trois développeurs : BJ (entre Jon et Jean), Mike (deuxième ligne
 
 Nous avons commencé avec quatre artistes à plein temps, un artiste concept (Jedd, second à partir de la gauche), un modeleur (Andy, troisième à partir de la droite), un artiste technique (la personne la plus à droite) et un animateur (Steve (la personne la plus à gauche). Chacune d’elles fait plus que cela, mais celles-ci sont leurs principales responsabilités.
 
-Nous aurons un testeur à plein temps – Lena, qui a testé nos builds tous les jours, a configuré nos révisions de build et étudié les fonctionnalités lorsqu’elles sont en ligne. Tout le monde a testé constamment, car nous avons toujours examiné nos builds. Lena est l’un des marteaus de la chemise en cuir.
+Nous avions un testeur à plein temps – Lena, qui a testé nos builds chaque jour, a configuré nos révisions de build et étudié les fonctionnalités lorsqu’elles sont en ligne. Tout le monde a testé constamment, car nous avons toujours examiné nos builds. Lena est l’un des marteaus de la chemise en cuir.
 
-Nous faisons tous partie d’un studio plus important ici chez Microsoft (imaginez l’équipe dans le développement sans jeu). Il y avait également un certain nombre d’autres personnes impliquées : nous avons fait appel aux talents de notre directeur artistique, de l’ingénieur audio et de la direction de Studio dans tout le projet, mais ces personnes étaient des ressources partagées avec d’autres projets de notre équipe.
+Nous faisons tous partie d’un studio plus important ici chez Microsoft (imaginez l’équipe dans le développement sans jeu). Il y avait également un certain nombre d’autres personnes impliquées : nous avons fait appel aux talents de notre directeur artistique, de son ingénieur et du leadership de Studio, souvent dans tout le projet, mais ces personnes étaient des ressources partagées avec d’autres projets.
 
 ## <a name="see-also"></a>Voir aussi
 * [Étude de cas : création d’un Galaxy en réalité mixte](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)

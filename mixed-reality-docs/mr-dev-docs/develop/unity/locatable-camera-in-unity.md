@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: photo, vidéo, hololens, appareil photo, Unity, localisable, PVC, caméra vidéo photo, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, webcam, capture de photos, capture vidéo
-ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678598"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010100"
 ---
 # <a name="locatable-camera-in-unity"></a>Appareil photo localisable dans Unity
 
@@ -19,10 +19,10 @@ ms.locfileid: "94678598"
 
 La fonctionnalité « WebCam » doit être déclarée pour qu’une application utilise l' [appareil photo](../platform-capabilities-and-apis/locatable-camera.md).
 1. Dans l’éditeur Unity, accédez aux paramètres du lecteur en accédant à la page « modifier les paramètres du projet > > Player ».
-2. Cliquez sur l’onglet « Windows Store ».
+2. Sélectionner l’onglet « Windows Store »
 3. Dans la section « fonctionnalités de > des paramètres de publication », vérifiez les fonctionnalités de la **webcam** et du **microphone**
 
-Une seule opération peut être effectuée avec la caméra à la fois. Pour déterminer le mode (photo, vidéo ou aucun) dans lequel se trouve actuellement l’appareil photo, vous pouvez vérifier UnityEngine. XR. WSA. WebCam. mode.
+Une seule opération peut être effectuée avec la caméra à la fois. Vous pouvez vérifier le mode dans lequel l’appareil photo se trouve actuellement avec UnityEngine. XR. WSA. WebCam. mode. Les modes disponibles sont photo, Video ou None.
 
 ## <a name="photo-capture"></a>Capture de photos
 
@@ -124,9 +124,9 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 
 ### <a name="capture-a-photo-to-a-texture2d"></a>Capturer une photo sur un Texture2D
 
-Lors de la capture de données dans un Texture2D, le processus est très similaire à la capture sur le disque.
+Lors de la capture de données dans un Texture2D, le processus est similaire à la capture sur le disque.
 
-Suivez le processus de configuration ci-dessus.
+Suivez le processus d’installation ci-dessus.
 
 Dans *OnPhotoModeStarted*, capturez un frame en mémoire.
 
@@ -144,7 +144,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-Vous allez ensuite appliquer votre résultat à une texture et utiliser le code de nettoyage commun ci-dessus.
+Vous appliquerez ensuite votre résultat à une texture et utiliserez le code de nettoyage commun ci-dessus.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -165,9 +165,9 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Capturer une photo et interagir avec les octets bruts
 
-Pour interagir avec les octets bruts d’un dans une trame de mémoire, suivez les mêmes étapes que ci-dessus et *OnPhotoModeStarted* comme pour la capture d’une photo à un Texture2D. La différence réside dans *OnCapturedPhotoToMemory* où vous pouvez récupérer les octets bruts et interagir avec eux.
+Pour interagir avec les octets bruts d’un dans le frame de mémoire, suivez les mêmes étapes de configuration que ci-dessus et *OnPhotoModeStarted* comme pour la capture d’une photo sur un Texture2D. La différence réside dans *OnCapturedPhotoToMemory* où vous pouvez récupérer les octets bruts et interagir avec eux.
 
-Dans cet exemple, vous allez créer une *liste <Color>* qui peut être traitée ultérieurement ou appliquée à une texture par le biais de *setPixels ()*
+Dans cet exemple, vous allez créer une *liste <Color>* qui sera traitée ou appliquée à une texture à l’aide de *setPixels ()*
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **Espace de noms :** *UnityEngine. XR. WSA. Webcam*<br>
 **Type :** *VideoCapture*
 
-*VideoCapture* fonctionne de façon très similaire à la *PhotoCapture*. Les deux seules différences sont que vous devez spécifier une valeur d’images par seconde (FPS) et vous ne pouvez enregistrer directement sur le disque qu’en tant que fichier. MP4. Les étapes d’utilisation de *VideoCapture* sont les suivantes :
+*VideoCapture* fonctionne de la même façon que *PhotoCapture*. Les deux seules différences sont que vous devez spécifier une valeur d’images par seconde (FPS) et vous ne pouvez enregistrer directement sur le disque qu’en tant que fichier. MP4. Les étapes d’utilisation de *VideoCapture* sont les suivantes :
 1. Créer un objet *VideoCapture*
 2. Créer un objet *CameraParameters* avec les paramètres souhaités
 3. Démarrer le mode vidéo via *StartVideoModeAsync*
@@ -213,7 +213,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 5. Arrêter l’enregistrement de la vidéo
 6. Arrêter le mode vidéo et nettoyer les ressources
 
-Commencez par créer notre *VideoCapture* objet VideoCapture *VideoCapture m_VideoCapture = null ;*
+Commencez par créer notre  objet VideoCapture *VideoCapture m_VideoCapture = null ;*
 
 ```cs
 void Start ()
@@ -222,7 +222,7 @@ void Start ()
    }
 ```
 
-Ensuite, configurez les paramètres que vous souhaitez utiliser pour l’enregistrement et démarrer.
+Ensuite, configurez les paramètres souhaités pour l’enregistrement et démarrer.
 
 ```cs
 void OnVideoCaptureCreated (VideoCapture videoCapture)
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-À un moment ultérieur, vous voudrez arrêter l’enregistrement. Cela peut se produire à partir d’une entrée d’horloge ou d’utilisateur, par exemple.
+À un moment ultérieur, vous souhaiterez arrêter l’enregistrement à l’aide d’un minuteur ou d’une entrée utilisateur, par exemple.
 
 ```cs
 // The user has indicated to stop recording

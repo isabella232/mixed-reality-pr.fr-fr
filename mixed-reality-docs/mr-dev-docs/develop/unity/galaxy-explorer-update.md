@@ -1,31 +1,31 @@
 ---
 title: Création de l’Explorateur Galaxy pour HoloLens 2
-description: Bienvenue dans la procédure de mise à jour de l’Explorateur Galaxy pour HoloLens 2. À l’instar de l’Explorateur Galaxy d’origine, notre équipe sera à l’origine du projet sur GitHub pour s’assurer que la Communauté dispose d’un accès complet.
+description: Bienvenue dans la procédure de mise à jour de l’Explorateur Galaxy pour HoloLens 2. Tout comme l’Explorateur Galaxy d’origine, notre équipe est en libre-remplissage du projet sur GitHub pour s’assurer que la Communauté dispose d’un accès complet.
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: Explorateur Galaxy, étude de cas, projet, exemple, MRTK, boîte à outils de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 00bf589d738cf74cbfdb489bc43aadf931dda285
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677628"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010470"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Création de l’Explorateur Galaxy pour HoloLens 2
 
-Bienvenue dans la procédure de mise à jour de l’Explorateur Galaxy pour HoloLens 2. L' [Explorateur Galaxy](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") a été développé à l’origine en tant qu’application open source pour HoloLens (1ère génération) par le biais du programme partager votre idée, et est l’une des premières réalité mixtes que rencontrent de nombreuses personnes. À présent, nous mettons à jour ce dernier pour les [nouvelles fonctionnalités passionnantes de HoloLens 2](https://www.microsoft.com/hololens/hardware).
+Bienvenue dans l’Explorateur Galaxy mis à jour pour l’application HoloLens 2 ! L' [Explorateur Galaxy](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") a été développé à l’origine en tant qu’application open source pour HoloLens (première génération) par le biais du programme de partage de votre idée, et est l’une des premières réalité mixtes que rencontrent de nombreuses personnes. À présent, nous mettons à jour ce dernier pour les [nouvelles fonctionnalités passionnantes de HoloLens 2](https://www.microsoft.com/hololens/hardware).
 
-En tant qu’un des [Studios Microsoft Mixed Reality](galaxy-explorer-update.md#mixed-reality-studios), nous développons généralement des solutions de qualité commerciale et développons des tests & sur des plateformes cibles tout au long du processus de développement et créatif. Nous avons maintenant une situation unique où vous n’avez pas encore accès aux appareils HoloLens 2, mais que vous êtes ravi de démarrer les mises à jour de l’Explorateur Galaxy. Nous envoyons ce projet à l’aide des infrastructures et des outils (tels que [MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) à mesure qu’ils sont mis à la disposition des États-Unis et de la Communauté, et nous souhaitons vous apporter le plus de temps.
+En tant qu’un des [Studios Microsoft Mixed Reality](galaxy-explorer-update.md#mixed-reality-studios), nous développons généralement des solutions de qualité commerciale et développons des tests & sur des plateformes cibles tout au long du processus de développement et créatif. Nous envoyons ce projet à l’aide des frameworks et des outils (tels que [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) dès qu’ils sont disponibles pour nous et la Communauté, et nous souhaitons vous apporter le plus de temps.
 
-À l’instar de l’Explorateur Galaxy d’origine, [notre équipe](galaxy-explorer-update.md#meet-the-team) sera à [l’origine du projet sur GitHub](https://github.com/Microsoft/GalaxyExplorer) pour s’assurer que la Communauté dispose d’un accès complet. Nous allons également documenter notre voyage ici dans une transparence complète sur la façon dont nous avons effectué le portage de MRTK v1 vers MRTK v2, la façon dont nous avons amélioré l’expérience en fonction des nouvelles fonctionnalités disponibles dans HoloLens 2, et de la façon dont nous sommes assurés que l’Explorateur Galaxy restait une expérience multi-plateforme. Si vous affichez l’Explorateur Galaxy sur HoloLens (1ère génération), HoloLens 2, un casque Windows Mixed Reality ou sur votre poste de travail Windows 10, nous souhaitons vous assurer que vous disposez d’une expérience immersive et que nous apprécions le voyage.
+À l’instar de l’Explorateur Galaxy d’origine, [notre équipe](galaxy-explorer-update.md#meet-the-team) sera à l’origine [du projet sur GitHub](https://github.com/Microsoft/GalaxyExplorer) pour s’assurer que la Communauté dispose d’un accès complet. Nous allons également documenter notre voyage ici dans une transparence complète sur la façon dont nous sommes portées de MRTK v1 vers MRTK v2, amélioré l’expérience avec les nouvelles fonctionnalités disponibles dans HoloLens 2 et garanti que l’Explorateur Galaxy restait une expérience multi-plateforme. Que vous visualisiez l’Explorateur Galaxy sur HoloLens (First Gen), HoloLens 2, un casque Windows Mixed Reality ou sur votre poste de travail Windows 10, nous voulons nous assurer que vous appréciez le voyage.
 
-Cette page se développe au fur et à mesure que nous progressons dans le projet, et nous allons nous attacher à des articles plus détaillés, du code, des artefacts de conception, une documentation supplémentaire de MRTK v2, etc., afin de vous fournir une vue Insider du projet.
+Cette page s’étend au fur et à mesure que nous progressons dans le projet avec des liens vers des articles plus détaillés, du code, des artefacts de conception et une documentation supplémentaire sur MRTK pour vous fournir un aperçu du projet.
 
 ## <a name="unveiling-the-new-logo"></a>Présentation du nouveau logo
 
-Nous sommes ravis de lancer une version préliminaire du nouveau logo de l’Explorateur Galaxy ! Tout en payant hommage au logo d’origine, nous avons conçu une visualisation réaliste et mis à jour la typographie pour offrir une sensation plus élégante et plus moderne. L’une des nouvelles icônes est incluse dans le logo.
+Nous sommes ravis de lancer une version préliminaire du nouveau logo de l’Explorateur Galaxy ! En payant hommage dans le logo original en présentant la méthode lactée, nous avons conçu une visualisation réaliste et mis à jour la typographie pour fournir une apparence plus moderne. L’une des nouvelles icônes est incluse dans le logo.
 
 ![Nouveau logo de l’Explorateur Galaxy](images/ge-update-app-icon.png)
 
@@ -33,17 +33,17 @@ La conception et la typographie du logo définissent la tonalité pour l’appar
 
 ## <a name="thinking-about-interactions"></a>Réflexion sur les interactions
 
-En tant que Creative Studio, nous étions ecstatics sur le privilège de portage de l’Explorateur Galaxy vers HoloLens 2. Nous savions que nous souhaitions que l’expérience soit une fête du nouvel appareil et pour démontrer que l’autonomie de la réalité mixte est limitée uniquement à l’imagination.
+En tant que Creative Studio, nous étions ecstatics sur le privilège de portage de l’Explorateur Galaxy vers HoloLens 2. Nous savions que nous souhaitions que l’expérience soit une fête du nouvel appareil et pour démontrer que l’autonomisation de la réalité mixte est limité uniquement par l’imagination.
 
 HoloLens 2 permet aux utilisateurs de toucher, de saisir et de déplacer des hologrammes de manière naturelle : ils répondent beaucoup à des objets réels. Les modèles de handles entièrement articulés sont incroyables, car ils permettent aux utilisateurs de faire ce qu’ils estiment naturels. Par exemple, tout le monde sélectionne une tasse légèrement différente, et au lieu de mettre en œuvre une manière particulière de le faire, HoloLens 2 vous permet de le faire à votre façon.
 
 >[!VIDEO https://www.youtube.com/embed/wogJv5v9x-s]
 
-Il s’agit d’un grand changement par rapport aux interfaces basées sur le robinet sur les appareils HoloLens de première génération. Au lieu d’interagir avec des hologrammes à distance, les utilisateurs peuvent désormais se trouver « haut et proche ». Lors du Portage d’expériences existantes vers HoloLens 2 ou en planifiant de nouvelles, il est important de vous familiariser avec la manipulation directe des hologrammes.
+Il s’agit d’une modification importante par rapport aux interfaces basées sur le robinet sur les appareils HoloLens de première génération. Au lieu d’interagir avec des hologrammes à distance, les utilisateurs peuvent désormais se trouver « haut et proche ». Lors du Portage d’expériences existantes vers HoloLens 2 ou en planifiant de nouvelles, il est important de vous familiariser avec la manipulation directe des hologrammes.
 
 ### <a name="direct-manipulation-vs-the-vast-distances-in-space"></a>Manipulation directe et les grandes distances dans l’espace
 
-Il s’agit d’une expérience magique pour être en mesure d’atteindre, de saisir une planète et de la maintenir à portée de main. Le défi de cette approche est la taille du système solaire, c’est énorme ! L’utilisateur doit parcourir sa salle pour se rapprocher de chaque planète pour pouvoir interagir avec lui.
+Il s’agit d’une expérience magique pour contacter, saisir une planète et la maintenir à la main. Le défi de cette approche est la taille du système solaire, c’est énorme ! L’utilisateur doit parcourir sa salle pour se rapprocher de chaque planète et interagir avec lui.
 
 Pour permettre aux utilisateurs d’interagir avec des objets plus éloignés, MRTK propose des rayons de main qui se déplacent à partir du centre de la paume de l’utilisateur, agissant comme une extension de la main. Un curseur en forme de bouée est attaché à la fin du rayon pour indiquer l’intersection entre le rayon et un objet cible. L’objet sur lequel le curseur atterrit peut alors recevoir des commandes gestuelles de la main. 
 
@@ -79,7 +79,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ### <a name="implementing-force-grab-into-the-application"></a>Implémentation de la manipulation forcée dans l’application
 
-Lorsque nous avons essayé de s’emparer de la force sur les planètes, nous avons réalisé que nous devions modifier l’échelle du système solaire. Il s’est avéré qu’une représentation précise et de taille moyenne du système solaire est difficile pour les utilisateurs de comprendre et de naviguer. elles ne savent pas où chercher. Toutefois, une représentation précise de petite taille a rendu certaines planètes trop petites pour être facilement sélectionnées. Par conséquent, la taille des planètes et l’espacement entre les objets solaires ont été conçus pour se sentir à l’aise dans une salle de taille moyenne tout en maintenant la précision relative.
+Lorsque nous avons essayé de s’emparer de la force sur les planètes, nous avons réalisé que nous devions modifier l’échelle du système solaire. Il s’est avéré qu’une représentation précise et de taille moyenne du système solaire est difficile pour les utilisateurs de comprendre et de naviguer. elles ne savent pas où chercher. Toutefois, une représentation de petite taille a rendu certaines planètes trop petites pour être facilement sélectionnées. Par conséquent, la taille des planètes et l’espacement entre les objets solaires ont été conçus pour se sentir à l’aise dans une salle de taille moyenne tout en maintenant la précision relative.
 
 Au cours des étapes ultérieures de notre Sprint de développement, nous étions heureux d’avoir des experts en la réalité mixtes MSFT en interne. nous avons donc eu l’occasion d’obtenir leur contribution en tant que testeurs experts et d’effectuer des itérations rapides sur l’interaction de manipulation forcée.
 
@@ -91,17 +91,17 @@ Dans Picture : isabelb Kam, responsable de la conception senior, test d’un tr
 
 À mesure que nous avons expérimentés sur HoloLens 2, nous avons constaté que bien que les nouvelles interactions soient naturelles et intuitives, les hologrammes restent les mêmes : sans aucune sensation de poids ou tactile. Étant donné que les hologrammes ne fournissent pas de commentaires naturels que les humains reçoivent lorsqu’ils interagissent avec les objets, nous avions besoin de les créer.
 
-Nous avons pensé aux commentaires visuels et audio que les utilisateurs seraient fournis pour les différentes étapes de leurs interactions, et puisque le mécanisme de manipulation forcée est essentiel à l’interaction avec l’Explorateur Galaxy, nous avons effectué de nombreuses itérations. L’objectif était de trouver le juste équilibre entre les retours audio et visuels pour chaque étape de l’interaction : en se concentrant sur l’objet prévu, en l’appelant à l’utilisateur, puis en le publiant. Ce que nous avons appris, c’est que beaucoup plus de retours audio et visuels étaient requis pour renforcer l’interaction que celle utilisée pour HoloLens (1ère génération).
+Nous avons pensé aux commentaires visuels et audio que les utilisateurs seraient fournis pour les différentes étapes de leurs interactions, et puisque le mécanisme de manipulation forcée est essentiel à l’interaction avec l’Explorateur Galaxy, nous avons effectué de nombreuses itérations. L’objectif était de trouver le juste équilibre entre les retours audio et visuels pour chaque étape de l’interaction : en se concentrant sur l’objet prévu, en l’appelant à l’utilisateur, puis en le publiant. Nous avons appris qu’un plus grand nombre de retours audio et visuels était nécessaire pour renforcer l’interaction que celle utilisée pour HoloLens (First Gen).
 
 ![Visual intuitivité sur les planètes](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>Ajout de intuitivité pour la capture forcée
  
-Une fois que nous avions le mécanisme de base de la manipulation forcée avec l’audio et l’intuitivité de Visual, nous avons vu comment sélectionner des planètes plus conviviales. Deux éléments principaux sont à prendre en compte : étant donné que le système solaire est une interface de déplacement 3D, les utilisateurs ont ajouté de la complexité pour apprendre à cibler les objets de manière cohérente. Cela a été aggravé par le fait que le rayon de la main est très rapide à la sélection d’un objet, ce qui fait que les planètes se déplacent très rapidement vers l’utilisateur.
+Une fois que nous avions le mécanisme de base de la manipulation forcée avec l’audio et l’intuitivité de Visual, nous avons vu comment sélectionner des planètes plus conviviales. Deux éléments principaux sont à prendre en compte : étant donné que le système solaire est une interface de déplacement 3D, les utilisateurs ont ajouté de la complexité pour apprendre à cibler les objets de manière cohérente. Cela a été aggravé par le fait que le rayon de la main est rapide à la sélection d’un objet, ce qui fait que les planètes se déplacent très rapidement vers l’utilisateur.
 
-Nous l’avons envisagée avec une solution à trois branches. Le premier était assez intuitif : Ralentissez le processus de sélection afin que les planètes approchent l’utilisateur à un rythme plus naturel. Une fois la vitesse réglée, nous avons dû revisiter l’audio et l’intuitivité visuel, en ajoutant des commentaires audio supplémentaires à mesure que la planète était suivie vers l’utilisateur.
+Nous l’avons envisagée avec une solution à trois branches. Le premier était assez intuitif : Ralentissez le processus de sélection afin que les planètes approchent l’utilisateur à un rythme plus naturel. Une fois la vitesse réglée, nous avons dû revisiter l’audio et l’intuitivité visuel, en ajoutant des commentaires audio à la planète qui a suivi l’utilisateur.
 
-La deuxième partie de la solution consistait à rendre la visualisation de l’intégralité de l’interaction de manipulation forcée extrêmement tangible. Nous avons visualisé une ligne épaisse qui se déplace vers l’objet ciblé une fois que la main Ray s’y connecte, puis remet l’objet à l’utilisateur, comme un lasso. 
+La deuxième partie de la solution consistait à rendre la visualisation de l’intégralité de l’interaction de manipulation forcée tangible. Nous avons visualisé une ligne épaisse qui se déplace vers l’objet ciblé une fois que la main Ray s’y connecte, puis remet l’objet à l’utilisateur, comme un lasso. 
 
 ![Intuitivité visuel « lasso » pour la capture forcée](images/ge-update-lasso-affordances.png)
 
@@ -123,7 +123,7 @@ Il a été immédiatement clair que l’utilisation de techniques de visualisati
 
 L’approche suivante était une solution « fumée-and-Mirror », consistant à superposer des couches de texture transparentes, chacune ayant traité un aspect spécifique du mouvement atmosphérique, compilée sur une composition de mailles tournantes.
 
-Dans l’image ci-dessous, vous pouvez voir l’interpréteur de commandes interne sur la gauche. Cette couche de Matt a fourni un arrière-plan à la composition pour se prémunir contre les petits écarts entre les différentes couches qui composent les clouds. En raison de la rotation lente de la couche, elle a également servi de tampon visuel entre les bandes mobiles plus rapides afin d’aider à créer une unité visuelle dans les couches.
+Dans l’image ci-dessous, vous pouvez voir l’interpréteur de commandes interne sur la gauche. Cette couche de tapis a fourni un arrière-plan à la composition pour se prémunir contre les petits écarts entre les différentes couches qui composent les clouds. En raison de la rotation lente de la couche, elle a également servi de tampon visuel entre les bandes mobiles plus rapides pour aider à créer une unité visuelle dans les couches.
 
 Après avoir défini cette ancre sur le modèle, les couches Cloud mobiles ont ensuite été projetées sur les mailles du milieu et de droite, comme indiqué ci-dessous.
 
@@ -135,13 +135,13 @@ La texture existante a été divisée en un Atlas de texture en trois parties :
 
 Le point rouge très caractéristique a également été divisé en plusieurs parties mobiles, puis insérées dans une zone de la texture autrement invisible. Ces composants peuvent être considérés comme des taches en rouge-toned dans la section du milieu de l’image ci-dessous.
 
-Étant donné que chaque bande a une direction et une vitesse spécifiques, la texture a été appliquée individuellement à chaque maille. Les maillages comportaient alors un centre commun et un point pivot, afin de pouvoir animer de façon centrée la surface entière.
+Étant donné que chaque bande a une direction et une vitesse spécifiques, la texture a été appliquée individuellement à chaque maille. Les maillages comportaient alors un centre commun et un point pivot, ce qui permet d’animer de façon centrée la surface entière.
 
 ![Vue d’ensemble des textures Jupiter](images/ge-update-jupiter-planet-cloud-texture.png)
 
 ### <a name="rotation-and-texture-behavior"></a>Comportement de la rotation et de la texture
 
-Maintenant que la composition visuelle de Jupiter a été définie, nous avons besoin de garantir que les vitesses de rotation et d’orbite ont été correctement calculées et appliquées en conséquence. Il faut environ 9 heures pour que Jupiter effectue une rotation complète. Il s’agit d’une question de définition en raison de sa rotation différentielle. Par conséquent, le flux équatoriale a été défini en tant que « flux maître », en utilisant 3600 frames pour une rotation complète. Chaque autre couche devait avoir une vitesse de rotation comme un facteur de 3600 afin de correspondre à sa position initiale, en autorisant par exemple 600, 900, 1200, 1800, etc.
+Une fois la composition visuelle de Jupiter définie, nous avons besoin de garantir que les vitesses de rotation et d’orbite ont été correctement calculées et appliquées en conséquence. Il faut environ 9 heures pour que Jupiter effectue une rotation complète. Il s’agit d’une question de définition en raison de sa rotation différentielle. Par conséquent, le flux équatoriale a été défini en tant que « flux maître », en utilisant 3600 frames pour une rotation complète. Chaque autre couche devait avoir une vitesse de rotation en tant que facteur de 3600 afin de correspondre à sa position initiale, en autorisant, par exemple, 600, 900, 1200, 1800, etc.
 
 ![Textures de Shell Jupiter](images/ge-update-shell-texture.jpg)
 
@@ -176,11 +176,11 @@ Le résultat était le shell interne avait une valeur de file d’attente de ren
 
 Les couches Jupiter texturées ont été configurées au début, ce qui s’est avéré insuffisant pour l’implémentation.
 
-Le nuanceur standard de la planète (et toutes ses variantes) reçoit les informations d’éclairage via un script, le SunLightReceiver, qui n’est pas pris en charge par le nuanceur standard MRTK.
+Le nuanceur standard de la planète, et toutes ses variantes, reçoivent leurs informations d’éclairage via un script, le SunLightReceiver, qui n’est pas pris en charge par le nuanceur MRTK standard.
 
-Le simple fait de permuter les nuanceurs n’était pas une solution, car le nuanceur standard de planète ne prend pas en charge les cartes de texture avec des transparences. Nous avons modifié ce nuanceur afin que la build Jupiter fonctionne comme prévu.
+Le simple fait de permuter les nuanceurs n’était pas une solution, car le nuanceur standard de planète ne prend pas en charge les cartes de texture avec des transparences. Nous avons modifié ce nuanceur pour que la build Jupiter fonctionne comme prévu.
 
-Enfin, les fusions alpha devaient être configurées en affectant à la fusion source la valeur 10, ainsi qu’à la fusion de destination la valeur 5.
+Enfin, les fusions alpha devaient être configurées en affectant à la fusion source la valeur 10 et à la fusion de destination la valeur 5.
 
 ![Propriétés de Jupiter Unity](images/ge-update-jupiter-unity-render-queue.jpg)
 
@@ -188,14 +188,14 @@ Vous pouvez voir le rendu final de Jupiter dans l’Explorateur Galaxy.
 
 ## <a name="meet-the-team"></a>Rencontrer l’équipe 
 
-Notre équipe de réalité mixte Studio est composée de concepteurs, d’artistes 3D, d’experts de l’expérience utilisateur, de développeurs, d’un responsable de programme et d’une tête de Studio. Nous nous du monde entier : Belgique, Canada, Allemagne, Israël, Japon, Royaume-Uni et États-Unis. Nous sommes une équipe pluridisciplinaire qui vient d’un arrière-plan diversifié : les jeux, à la fois traditionnels et indie, le marketing numérique, les soins de santé et la science.
+Notre équipe de réalité mixte Studio est composée de concepteurs, d’artistes 3D, d’experts de l’expérience utilisateur, de développeurs, d’un responsable de programme et d’une tête de Studio. Nous nous du monde entier : Belgique, Canada, Allemagne, Israël, Japon, Royaume-Uni et le États-Unis. Nous sommes une équipe pluridisciplinaire qui vient d’un arrière-plan diversifié : les jeux, à la fois traditionnels et indie, le marketing numérique, les soins de santé et la science.
 
-Nous sommes ravis de créer l’Explorateur Galaxy pour HoloLens 2 et de mettre à jour les versions HoloLens (1re génération), VR et Desktop. 
+Nous sommes ravis de créer l’Explorateur Galaxy pour HoloLens 2 et de mettre à jour les versions HoloLens (First Gen), VR et Desktop. 
 
 ![L’équipe de l’Explorateur Galaxy](images/ge-update-team-image.png)
 
 De gauche à droite : Artemis Tsouflidou (Developer), Angie Teickner (concepteur visuel), David Janer (Concepteur de l’expérience utilisateur), Laura Garrett (livraison & production Lead), Yasushi Zonno (Prospect créatif), Eline Ledent (Developer) et Ben Turner (SR. Developer).
-Bas de gauche à droite : Amit Rojtblat (artiste technique), Martin Wettig (3D Artist) et Dirk Songuer (Studio Head).
+De gauche à droite : Amit Rojtblat (artiste technique), Martin Wettig (3D Artist) et Dirk Songuer (Studio Head).
 Non proposé : Tim Gerken (Lead Tech) et Oscar Saland (concepteur visuel).
 
 ## <a name="additional-information"></a>Informations supplémentaires

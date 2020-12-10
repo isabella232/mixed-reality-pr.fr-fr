@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Entrée vocale, KeywordRecognizer, GrammarRecognizer, microphone, dictée, voix, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679888"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010570"
 ---
 # <a name="voice-input-in-unity"></a>Entrée vocale dans Unity
 
@@ -27,9 +27,9 @@ Avec KeywordRecognizer (l’un des deux types de PhraseRecognizers), votre appli
 
 ## <a name="enabling-the-capability-for-voice"></a>Activation de la fonctionnalité de voix
 
-La fonctionnalité **microphone** doit être déclarée pour qu’une application tire parti de l’entrée vocale.
+La fonctionnalité **microphone** doit être déclarée pour qu’une application utilise l’entrée vocale.
 1. Dans l’éditeur Unity, accédez aux paramètres du lecteur en accédant à « modifier les paramètres du projet > > Player ».
-2. Cliquer sur l’onglet « Windows Store »
+2. Sélectionnez sous l’onglet Windows Store
 3. Dans la section « fonctionnalités de > des paramètres de publication », vérifiez la fonctionnalité du **microphone** .
 
 ## <a name="phrase-recognition"></a>Reconnaissance d’expressions
@@ -58,7 +58,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-Ajoutez maintenant un mot clé au dictionnaire (par exemple, à l’intérieur d’une méthode Start ()). Nous ajoutons le mot clé « Activate » dans cet exemple :
+Ajoutez maintenant un mot clé au dictionnaire, par exemple dans une méthode Start (). Nous ajoutons le mot clé « Activate » dans cet exemple :
 
 ```
 //Create keywords for keyword recognizer
@@ -126,7 +126,7 @@ Inscrivez-vous maintenant à l’événement OnPhraseRecognized
 grammarRecognizer.OnPhraseRecognized += grammarRecognizer_OnPhraseRecognized;
 ```
 
-Vous recevrez un rappel contenant les informations spécifiées dans votre grammaire SRGS que vous pouvez gérer de manière appropriée. La plupart des informations importantes seront fournies dans le tableau semanticMeanings.
+Vous obtenez un rappel contenant les informations spécifiées dans votre syntaxe SRGS, que vous pouvez gérer de manière appropriée. La plupart des informations importantes seront fournies dans le tableau semanticMeanings.
 
 ```
 private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args)
@@ -156,9 +156,9 @@ Il n’y a que quelques étapes nécessaires pour commencer à utiliser la dict�
 
 ### <a name="enabling-the-capability-for-dictation"></a>Activation de la fonctionnalité de dictée
 
-La fonctionnalité « client Internet », en plus de la fonctionnalité « microphone » mentionnée ci-dessus, doit être déclarée pour qu’une application tire parti de la dictée.
+La fonctionnalité « client Internet », ainsi que la fonctionnalité « microphone » mentionnée ci-dessus, doivent être déclarées pour qu’une application tire parti de la dictée.
 1. Dans l’éditeur Unity, accédez aux paramètres du lecteur en accédant à la page « modifier les paramètres du projet > > Player ».
-2. Cliquer sur l’onglet « Windows Store »
+2. Sélectionnez sous l’onglet Windows Store
 3. Dans la section « fonctionnalités de > des paramètres de publication », vérifiez la capacité de **internetclient**
 
 ### <a name="dictationrecognizer"></a>DictationRecognizer
@@ -272,7 +272,7 @@ dictationRecognizer.Dispose();
 * Une fois le module de reconnaissance terminé, il doit être supprimé à l’aide de la méthode Dispose () pour libérer les ressources qu’il utilise. Les ressources seront libérées automatiquement pendant la garbage collection à un coût de performances supplémentaire si elles ne sont pas libérées avant cela.
 * Les délais d’attente se produisent après un laps de temps défini. Vous pouvez vérifier ces délais d’attente dans l’événement DictationComplete. Deux délais d’attente doivent être pris en compte :
    1. Si le module de reconnaissance démarre et n’entend aucun audio pendant les cinq premières secondes, il expire.
-   2. Si le module de reconnaissance a donné un résultat, mais émet un silence pendant vingt secondes, il expire.
+   2. Si le module de reconnaissance a donné un résultat, mais émet un silence pendant 20 secondes, il expire.
 
 ## <a name="using-both-phrase-recognition-and-dictation"></a>Utilisation de la reconnaissance et de la dictée des expressions
 
@@ -292,7 +292,7 @@ Vous pouvez aussi simplement démarrer un KeywordRecognizer, qui redémarrera é
 
 ## <a name="using-the-microphone-helper"></a>Utilisation du programme d’assistance du microphone
 
-La boîte à outils de réalité mixte sur GitHub contient une classe d’assistance de microphone qui permet aux développeurs de savoir s’il existe un microphone utilisable sur le système. Pour ce faire, il convient de vérifier s’il existe un microphone sur le système avant d’illustrer des indicateurs d’interaction vocale dans l’application.
+La boîte à outils de réalité mixte sur GitHub contient une classe d’assistance de microphone qui permet aux développeurs de savoir s’il existe un microphone utilisable sur le système. Il s’agit là d’une utilisation pour déterminer si un microphone est présent sur le système avant d’illustrer des indicateurs d’interaction vocale dans l’application.
 
 Le script d’assistance du microphone se trouve dans le [dossier entrées/scripts/utilitaires](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). Le référentiel GitHub contient également un [petit exemple](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) illustrant l’utilisation de l’application auxiliaire.
 

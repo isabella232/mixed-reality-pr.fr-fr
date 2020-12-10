@@ -1,24 +1,24 @@
 ---
 title: Tableau périodique des éléments
-description: La table périodique des éléments est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft, où vous pouvez apprendre à disposer un tableau d’objets dans l’espace 3D avec différents types de surface à l’aide d’une collection d’objets.
+description: La table périodique des éléments est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft. Découvrez comment composer un tableau d’objets dans l’espace 3D avec différents types de surface à l’aide d’une collection d’objets.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, conception, exemple d’application, contrôles, MRTK, kit de préversion de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677678"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010180"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tableau périodique des éléments
 
 >[!NOTE]
 >Cet article présente un exemple exploratoire que nous avons créé dans les [laboratoires de conception de réalité mixte](https://github.com/Microsoft/MRDesignLabs_Unity), un endroit où nous partageons nos connaissances et des suggestions concernant le développement d’applications de réalité mixte. Nos articles et code liés à la conception évoluent à mesure que nous effectuons de nouvelles découvertes.
 
-[La table périodique des éléments](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft. Avec ce projet, vous pouvez apprendre à disposer un tableau d’objets dans l’espace 3D avec différents types de surface à l’aide d’une **[collection d’objets](../../design/object-collection.md)**. Découvrez également comment créer des objets interactifs qui répondent aux entrées standard de HoloLens. Vous pouvez utiliser les composants de ce projet pour créer votre propre expérience d’application de réalité mixte.
+[La table périodique des éléments](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft. Découvrez comment disposer un tableau d’objets dans l’espace 3D avec différents types de surface à l’aide d’une **[collection d’objets](../../design/object-collection.md)**. Découvrez également comment créer des objets interactifs qui répondent aux entrées standard de HoloLens. Vous pouvez utiliser les composants de ce projet pour créer votre propre expérience d’application de réalité mixte.
 
 ![Table period de l’application Elements](images/640px-periodictable-hero.jpg)
 
@@ -33,7 +33,7 @@ La table périodique des éléments visualise les éléments chimiques et chacun
 
 ## <a name="background"></a>Arrière-plan
 
-Une fois que j’ai expérimenté le langage HoloLens, une application de table périodique était une idée que je souhaitais expérimenter en réalité mixte. Étant donné que chaque élément a de nombreux points de données qui s’affichent avec du texte, j’ai pensé qu’il serait intéressant d’explorer la composition typographique dans un espace 3D. La possibilité de visualiser le modèle d’électrons de l’élément était une autre partie intéressante de ce projet.
+Une fois que je me suis familiarisé avec HoloLens, je savais que je voulais expérimenter une application de table périodique en réalité mixte. Étant donné que chaque élément a de nombreux points de données qui s’affichent avec du texte, j’ai pensé qu’il serait intéressant d’explorer la composition typographique dans un espace 3D. Donner aux utilisateurs la possibilité de visualiser le modèle d’électrons de l’élément était une autre partie intéressante de ce projet.
 
 ## <a name="design"></a>Conception
 
@@ -49,19 +49,19 @@ En mode Détails, je voulais visualiser les informations de chaque élément ave
 ![Prototypes](images/640px-periodictable-prototypes.jpg)<br>
 *Prototypes d’interaction*
 
-L’utilisateur peut modifier le type de surface par air en appuyant sur les boutons situés en bas du tableau : il peut basculer entre le plan, le cylindre, la sphère et le nuage de points.
+L’utilisateur peut modifier le type de surface par air en appuyant sur les boutons situés en bas du tableau : il peut basculer entre les plans, les cylindres, les sphères et les nuages de points.
 
 ## <a name="common-controls-and-patterns-used-in-this-app"></a>Contrôles et modèles communs utilisés dans cette application
 
 ### <a name="interactable-object-button"></a>Objet interagiable (bouton)
 
-L’objet pouvant être [interagi](../../design/interactable-object.md) est un objet qui peut répondre aux entrées HoloLens de base. Il est fourni en tant que Prefab/script que vous pouvez facilement appliquer à n’importe quel objet. Par exemple, vous pouvez faire en sorte qu’une tasse de café dans votre scène puisse être manipulée et répondre à des entrées telles que le pointage, le toucher en air, les mouvements de navigation et de manipulation. [En savoir plus](../../design/interactable-object.md)
+L’objet qui peut être [interagi](../../design/interactable-object.md) est un objet, qui peut répondre aux entrées HoloLens de base. Il est fourni en tant que Prefab/script, que vous pouvez facilement appliquer à n’importe quel objet. Par exemple, vous pouvez rendre une tasse de café dans votre scène interactive et répondre à des entrées telles que le pointage, le toucher, la navigation et les gestes de manipulation. [En savoir plus](../../design/interactable-object.md)
 
 ![objet nteractable](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>Collection d’objets
 
-La [collection d’objets](../../design/object-collection.md) est un objet qui vous permet de disposer plusieurs objets dans différentes formes. Il prend en charge les plans, les cylindres, les sphères et les nuages de points. Vous pouvez configurer des propriétés supplémentaires telles que le rayon, le nombre de lignes et l’espacement. [En savoir plus](../../design/object-collection.md)
+La [collection d’objets](../../design/object-collection.md) est un objet, qui vous permet de disposer plusieurs objets dans différentes formes. Il prend en charge les plans, les cylindres, les sphères et les nuages de points. Vous pouvez configurer des propriétés supplémentaires telles que le rayon, le nombre de lignes et l’espacement. [En savoir plus](../../design/object-collection.md)
 
 ![Collection d’objets](images/640px-periodictable-collections.jpg)
 

@@ -6,24 +6,24 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, Visual Studio, exporter, générer, déployer, HoloLens, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, UWP, déploiement
-ms.openlocfilehash: 29415fa7d561cab1aec5f0c2c9344fa24b0e8293
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4da20a30375c7204c532a19c129c9265c0fa27d9
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677558"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010410"
 ---
 # <a name="exporting-and-building-a-unity-visual-studio-solution"></a>Exportation et création de solutions Unity Visual Studio
 
-Si vous n’envisagez pas d’utiliser le clavier du système dans votre application, nous vous recommandons d’utiliser *D3D* , car votre application utilisera un peu moins de mémoire et une durée de lancement légèrement plus rapide. Si vous utilisez l’API TouchScreenKeyboard dans votre projet pour utiliser le clavier du système, vous devez exporter en tant que *code XAML*.
+Si votre application n’a pas besoin du clavier système, nous vous recommandons de *l’utiliser pour que votre* application utilise légèrement moins de mémoire et un temps de lancement plus rapide. Toutefois, si vous utilisez le clavier du système via l’API TouchScreenKeyboard, vous devez exporter le projet en tant que *code XAML*.
 
 ## <a name="how-to-export-from-unity"></a>Exportation à partir d’Unity
 
 ![Paramètres de build Unity](images/unitybuildsettings-300px.png)<br>
-*Paramètres de build Unity*
+*Paramètres de build dans l’éditeur Unity*
 
-1. Lorsque vous êtes prêt à exporter votre projet à partir d’Unity, ouvrez le menu **fichier** et sélectionnez **paramètres de Build...**
-2. Cliquez sur **Ajouter des scènes ouvertes** pour ajouter votre scène à la Build.
+1. Quand vous êtes prêt à exporter votre projet à partir d’Unity, ouvrez le menu **fichier** et sélectionnez **paramètres de Build...**
+2. Sélectionnez **Ajouter des scènes ouvertes** pour ajouter votre scène à la Build.
 3. Dans la boîte de dialogue **paramètres de build** , choisissez les options suivantes à exporter pour HoloLens :
    * **Plateforme :** *plateforme Windows universelle* et veillez à sélectionner **basculer la plateforme** pour que votre sélection prenne effet.
    * **SDK :** *Universal 10*.
@@ -42,13 +42,13 @@ Si vous n’envisagez pas d’utiliser le clavier du système dans votre applica
 9. Revenez à la boîte de dialogue **paramètres de build** .
 10. Sélectionnez **Build**.
 11. Dans la boîte de dialogue de l’Explorateur Windows qui s’affiche, créez un nouveau dossier pour contenir la sortie de la génération d’Unity. En règle générale, nous nommez le dossier « App ».
-12. Sélectionnez le dossier nouvellement créé, puis cliquez sur **Sélectionner un dossier**.
+12. Sélectionnez le dossier que vous venez de créer, puis sélectionnez **Sélectionner un dossier**.
 13. Une fois la génération de Unity terminée, une fenêtre de l’Explorateur Windows s’ouvre sur le répertoire racine du projet. Accédez au dossier nouvellement créé.
 14. Ouvrez le fichier de solution Visual Studio généré situé dans ce dossier.
 
 ## <a name="when-to-re-export-from-unity"></a>Moment de la réexportation à partir d’Unity
 
-Activation de la case à cocher « projets C# » lors de l’exportation de votre application à partir d’Unity crée une solution Visual Studio qui comprend tous vos fichiers de script Unity. Cela vous permet d’effectuer une itération sur vos scripts sans réexportation à partir d’Unity. Toutefois, si vous souhaitez apporter des modifications à votre projet qui ne changent pas le contenu des scripts, vous devrez réexporter à partir d’Unity. Voici quelques exemples de tentatives de réexportation à partir d’Unity :
+Cochez la case **projets C#** lors de l’exportation de votre application à partir d’Unity crée une solution Visual Studio qui comprend tous vos fichiers de script Unity. L’utilisation de tous vos scripts dans un même emplacement vous permet d’effectuer une itération sans réexportation à partir d’Unity. Toutefois, si vous apportez des modifications à votre projet qui ne modifient pas simplement le contenu des scripts, vous devez réexporter à partir d’Unity. Voici quelques exemples de tentatives de réexportation à partir d’Unity :
 * Vous ajoutez ou supprimez des ressources dans l’onglet projet.
 * Vous pouvez modifier n’importe quelle valeur sous l’onglet Inspector.
 * Vous ajoutez ou supprimez des objets dans l’onglet hiérarchie.
@@ -56,7 +56,7 @@ Activation de la case à cocher « projets C# » lors de l’exportation de vo
 
 ## <a name="building-and-deploying-a-unity-visual-studio-solution"></a>Génération et déploiement d’une solution Unity Visual Studio
 
-Le reste de la génération et du déploiement d’applications s’effectue dans [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). Vous devrez spécifier une configuration de build Unity. Les conventions d’affectation des noms de Unity peuvent différer de ce que vous utilisez habituellement dans Visual Studio :
+Le reste de la génération et du déploiement d’applications s’effectue dans [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). Vous devrez spécifier une configuration de build Unity. Les conventions d’affectation des noms de Unity peuvent différer de ce que vous utilisez dans Visual Studio :
 
 |  Configuration  |  Explication | 
 |----------|----------|
@@ -68,4 +68,4 @@ Notez que la liste ci-dessus est un sous-ensemble des déclencheurs courants qui
 
 ## <a name="troubleshooting"></a>Dépannage
 
-Si vous constatez que les modifications apportées à vos fichiers. cs ne sont pas reconnues dans votre projet Visual Studio, vérifiez que « Unity C# Projects » est activé lorsque vous générez le projet VS à partir du menu Build de Unity.
+Si vous constatez que les modifications apportées à vos fichiers. cs ne sont pas reconnues dans votre projet Visual Studio, vérifiez que les **projets Unity C#** sont activés lorsque vous générez le projet vs à partir du menu générer de Unity.
