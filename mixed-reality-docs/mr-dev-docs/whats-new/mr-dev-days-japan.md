@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Réalité mixte, Conférence, sommet, développeur, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: df7b6837653b309189e44d36853430b89b8b56a9
-ms.sourcegitcommit: 2eeee7bb1589148f5c9fe7f76ade58d3e08b5817
+ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
+ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "97104203"
+ms.locfileid: "97111881"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days - Japon
 
@@ -44,7 +44,7 @@ Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev
 ### <a name="december-16th"></a>16 décembre
 |**Time**|**Titre de la session**|**Orateur**|**Language**|**Niveau**|
 |---------|---------|---------|---------|---------|
-|10:00-10:50am|Ouverture du discours|Madoka Chiyoda, Alex Kipman, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/FR|N/A|
+|10:00-10:50am|Ouverture du discours|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/FR|N/A|
 |10:50am-11:00|**Arrêter (10min)**||||
 |11:00-11:25am|*Session 1* Présentation de la réalité mixte|Atsushi Suzuki|JA|100|
 |11:30-11:55am|*Session 2* Dynamisme de l’entreprise en réalité mixte|Tetsu Muranaka|JA|200|
