@@ -2,21 +2,21 @@
 title: Mappage spatial dans Unreal
 description: Guide d’utilisation du mappage spatial dans Unreal
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, mappage spatial, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bde5a1b53f6ad90bc84f54bd3e4f1237b78f2abe
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354373"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609420"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Mappage spatial dans Unreal
 
-Le mappage spatial permet de placer des objets sur des surfaces du monde physique en montrant l’environnement autour d’HoloLens, ce qui fait paraître les hologrammes encore plus réels à l’utilisateur. Le mappage spatial ancre également les objets dans le monde de l’utilisateur en tirant parti des indications de profondeur du monde réel. De cette façon, l’utilisateur a réellement l’impression que ces hologrammes se trouvent autour de lui. Les hologrammes qui flottent dans les airs ou qui se déplacent en même temps que l’utilisateur ne sembleront pas aussi réels. Il est conseillé d’ajouter des éléments à des fins de confort dès que cela vous est possible.
+Le mappage spatial vous permet de placer des objets sur des surfaces physiques dans le monde réel. Quand le monde autour du HoloLens est mappé, les hologrammes semblent plus réels pour l’utilisateur. Le mappage spatial ancre également les objets dans le monde de l’utilisateur en tirant parti des indicateurs de profondeur, ce qui permet de les convaincre que ces hologrammes sont en fait dans leur espace. Les hologrammes qui flottent dans l’espace ou qui se déplacent avec l’utilisateur n’ont pas l’air aussi réels, si bien qu’il est conseillé d’ajouter des éléments pour plus de confort dès que cela est possible.
 
 Vous trouverez plus d’informations sur la qualité du mappage spatial, le positionnement, l’occlusion, le rendu et plus encore, dans le document [Mappage spatial](../../design/spatial-mapping.md).
 
@@ -46,7 +46,7 @@ Vous pouvez modifier les paramètres suivants pour mettre à jour le comportemen
 
 - Le paramètre **Max Triangles Per Cubic Meter** (Nombre maximal de triangles par mètre cube) modifie la densité des triangles dans le maillage de mappage spatial.  
 - Le paramètre **Spatial Meshing Volume Size** (Volume du maillage spatial) définit la taille du cube autour du joueur utilisé pour le rendu et la mise à jour des données de mappage spatial.  
-    + Si l’environnement d’exécution de l’application est supposé être grand, cette valeur devra être suffisamment grande pour s’adapter à l’espace réel.  À l’inverse, si l’application doit uniquement placer des hologrammes sur des surfaces proches de l’utilisateur, cette valeur pourra être plus petite. Le volume de mappage spatial bougera en même temps que l’utilisateur se déplacera dans le monde. 
+    + Si l’environnement d’exécution de l’application est supposé être grand, cette valeur devra être suffisamment grande pour s’adapter à l’espace réel. Si l’application doit uniquement placer des hologrammes sur des surfaces proches de l’utilisateur, cette valeur pourra être plus petite. Le volume de mappage spatial bougera en même temps que l’utilisateur se déplacera dans le monde. 
 
 ## <a name="working-with-mrmesh"></a>Utilisation de MRMesh
 
@@ -54,7 +54,7 @@ Vous devez d’abord démarrer le mappage spatial :
 
 ![Blueprint de la fonction ToggleARCapture avec le type de capture de mappage spatial mis en surbrillance](images/unreal-spatial-mapping-img-02.png)
 
-Une fois le mappage spatial capturé pour l’espace, nous vous recommandons de désactiver le mappage spatial.  Le mappage spatial peut être effectué après un certain laps de temps ou quand les raycasts dans chaque direction renvoient des collisions sur le MRMesh.
+Une fois le mappage spatial capturé pour l’espace, nous vous recommandons de le désactiver.  Le mappage spatial peut être effectué après un certain laps de temps ou quand les raycasts dans chaque direction renvoient des collisions sur le MRMesh.
 
 Pour accéder à **MRMesh** au moment de l’exécution :
 1. Ajoutez un composant **ARTrackableNotify** à l’acteur Blueprint. 
@@ -62,7 +62,7 @@ Pour accéder à **MRMesh** au moment de l’exécution :
 ![Composant ARTrackableNotify pour les ancres spatiales](images/unreal-spatialmapping-artrackablenotify.PNG)
 
 2. Sélectionnez le composant **ARTrackableNotify**, puis développez la section **Events** (Événements) dans le panneau **Details**. 
-    - Cliquez sur le bouton **+** pour les événements que vous souhaitez superviser. 
+    - Sélectionnez le bouton **+** pour les événements à superviser. 
 
 ![Événements d’ancres spatiales](images/unreal-spatialmapping-events.PNG)
 

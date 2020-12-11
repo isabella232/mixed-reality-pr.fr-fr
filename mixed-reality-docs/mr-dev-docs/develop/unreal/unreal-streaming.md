@@ -10,26 +10,25 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte,
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 5a001088208106176ae771c2bc684674e6ce37a8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 9cbde33ce7238d704d4b24b4afbed9d8306d4e4d
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679778"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609330"
 ---
 # <a name="streaming-in-unreal"></a>Streaming dans Unreal
 
-## <a name="overview"></a>Vue d’ensemble
 Le streaming à partir d’un PC vers HoloLens offre deux avantages majeurs : 
 * Il permet à votre application de réalité mixte de tirer parti de la puissance de calcul de vos PC. 
 * Il permet d’accélérer l’itération du développement. 
 
-Pour commencer, vous devez télécharger [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) sur votre appareil HoloLens. Cela permet à votre application de diffuser directement sur le lecteur de communication à distance sur votre HoloLens à partir des sources suivantes :
+Pour commencer, vous devez télécharger [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) sur votre appareil HoloLens. Holographic Remoting Player permet à votre application de diffuser directement sur le lecteur de communication à distance sur votre HoloLens à partir des sources suivantes :
 
 * L’éditeur Unreal Engine
 * Un exécutable Windows empaqueté 
 
-Lors du streaming, vous avez accès à presque toutes les mêmes fonctionnalités HoloLens que lors de l’exécution d’une application sur un appareil. Cela comprend notamment le [suivi de la main](unreal-hand-tracking.md) (si vous êtes sur un HoloLens 2), le [mappage spatial](unreal-spatial-mapping.md) et les [ancres spatiales](unreal-spatial-anchors.md), mais pas les fonctionnalités mentionnées dans cette [liste de limitations](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md). 
+Lors du streaming, vous avez accès à presque toutes les mêmes fonctionnalités HoloLens que lors de l’exécution d’une application sur un appareil. Cela comprend notamment le [suivi de la main](unreal-hand-tracking.md) si vous êtes sur un HoloLens 2, le [mappage spatial](unreal-spatial-mapping.md) et les [ancres spatiales](unreal-spatial-anchors.md), mais pas les fonctionnalités mentionnées dans cette [liste](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md). 
 
 > [!NOTE]
 > * La qualité de streaming dépend fortement de la puissance de votre réseau Wi-Fi.
@@ -45,7 +44,7 @@ Lors du streaming, vous avez accès à presque toutes les mêmes fonctionnalité
     </colgroup>
     <tr>
         <td><strong>Source</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens première génération</strong></a></td>
         <td><a href="https://www.microsoft.com/hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><strong>Casques immersifs</strong></td>
     </tr>
@@ -66,16 +65,16 @@ Lors du streaming, vous avez accès à presque toutes les mêmes fonctionnalité
 
 ## <a name="streaming-from-the-unreal-editor"></a>Streaming à partir de l’éditeur Unreal
 
-En tant que développeur, vous constaterez que le streaming de l’éditeur Unreal vers votre appareil HoloLens offre de gros avantages lors des tests ; en effet, vous n’avez plus besoin d’attendre que votre application soit générée et déployée avant d’essayer vos mises à jour.
+En tant que développeur, vous constaterez que le streaming de l’éditeur Unreal vers votre appareil HoloLens offre de considérables avantages lors des tests ; en effet, vous n’avez plus besoin d’attendre que votre application soit générée et déployée avant d’essayer vos mises à jour.
 
-Vous trouverez des instructions détaillées sur le [streaming à partir de l’éditeur Unreal](tutorials/unreal-uxt-ch6.md#device-only-streaming) dans la dernière section de la séries de tutoriels Bien démarrer avec Unreal.
+Vous trouverez des instructions détaillées pour le [streaming à partir de l’éditeur Unreal](tutorials/unreal-uxt-ch6.md#device-only-streaming) dans notre série de tutoriels.
 
 ## <a name="streaming-from-a-packaged-windows-executable"></a>Streaming à partir d’un exécutable Windows empaqueté
 
-À partir d’Unreal 4.25.1, vous pouvez diffuser votre application sur un appareil HoloLens 2 à partir d’un exécutable Windows empaqueté en effectuant les étapes ci-dessous : 
+Dans Unreal 4.25.1 et versions ultérieures, vous pouvez diffuser votre application sur un appareil HoloLens 2 à partir d’un fichier exécutable Windows empaqueté : 
 
 1. Accédez à **File > Package Project > Windows** dans le menu de l’éditeur. 
-    * Choisissez un emplacement où enregistrer votre package, puis cliquez sur **Select Folder** (Sélectionner un dossier).
+    * Choisissez un emplacement où enregistrer votre package, puis sélectionnez **Select Folder** (Sélectionner un dossier).
 
 2. Une fois la génération du package terminée, ouvrez **Holographic Remoting Player** sur votre HoloLens 2 et prenez note de l’adresse IP. 
 3. Laissez **Holographic Remoting Player** ouvert et utilisez l’invite de ligne de commande pour : 
@@ -88,6 +87,7 @@ Vous trouverez des instructions détaillées sur le [streaming à partir de l’
 Appuyez sur Entrée ; le streaming de votre application commence.
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Historique des versions de la communication à distance holographique](../platform-capabilities-and-apis/holographic-remoting-version-history.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](../platform-capabilities-and-apis/holographic-remoting-create-player.md)
 * [Établissement d’une connexion sécurisée avec la communication à distance holographique](../platform-capabilities-and-apis/holographic-remoting-secure-connection.md)

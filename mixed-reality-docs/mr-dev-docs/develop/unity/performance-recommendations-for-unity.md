@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: graphiques, UC, GPU, rendu, garbage collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2c5a459f673889dd4c52043f9b9df6a3fe43a93a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697590"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761771"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recommandations sur les performances pour Unity
 
@@ -120,9 +120,9 @@ public class ExampleClass : MonoBehaviour
 
 3) **Attention à Boxing**
 
-    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) est un concept fondamental du langage et runtime C#. Il s’agit du processus qui consiste à wrapper des variables de type valeur, comme char, int, bool, etc., dans des variables de type référence. Quand une variable de type valeur est « boxed », elle est wrappée à l’intérieur d’un System.Object qui est stocké sur le tas managé. Ainsi, de la mémoire est allouée et, quand elle est supprimée, elle doit être traitée par le garbage collector. Ces allocations et désallocations entraînent un coût pour les performances et, dans de nombreux scénarios, s’avèrent inutiles ou peuvent être facilement remplacées par une alternative moins coûteuse.
+    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) est un concept fondamental du langage et runtime C#. Il s’agit du processus qui consiste à wrapper des variables de type valeur, par exemple `char`, `int`, `bool`, etc., dans des variables de type référence. Quand une variable de type valeur fait l’objet d’un « boxing », elle est wrappée dans un `System.Object` stocké sur le tas managé. Ainsi, de la mémoire est allouée et, quand elle est supprimée, elle doit être traitée par le garbage collector. Ces allocations et désallocations entraînent un coût pour les performances et, dans de nombreux scénarios, s’avèrent inutiles ou peuvent être facilement remplacées par une alternative moins coûteuse.
 
-    L’une des formes les plus courantes de boxing en développement est l’utilisation de [types valeur Nullable](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/). Il est courant de vouloir retourner Null pour un type valeur dans une fonction, notamment quand l’opération risque de ne pas réussir à obtenir la valeur. L’éventuel problème avec cette approche est que l’allocation se produit maintenant sur le tas et doit donc être récupérée par le garbage collector ultérieurement.
+    Pour éviter le boxing, vérifiez que les variables, les champs et les propriétés dans lesquels vous stockez des types numériques et des structs (notamment `Nullable<T>`) sont fortement typés en tant que types spécifiques par exemple `int`, `float?` ou `MyStruct`, au lieu d’utiliser l’objet.  Si vous placez ces objets dans une liste, veillez à utiliser une liste fortement typée telle que `List<int>` au lieu de `List<object>` ou `ArrayList`.
 
     **Exemple de boxing en C#**
 
@@ -130,21 +130,6 @@ public class ExampleClass : MonoBehaviour
     // boolean value type is boxed into object boxedMyVar on the heap
     bool myVar = true;
     object boxedMyVar = myVar;
-    ```
-
-    **Exemple de boxing problématique par le biais de types valeur Nullable**
-
-    Ce code illustre une classe de particule factice qu’il est possible de créer dans un projet Unity. Un appel à `TryGetSpeed()` entraîne l’allocation d’objets sur le tas qui devront être récupérés par le garbage collector ultérieurement. Cet exemple s’avère particulièrement problématique, car il peut y avoir plus de 1000 particules dans une scène, chacune étant demandée pour sa vitesse actuelle. Par conséquent, des milliers d’objets sont alloués et, donc, désalloués à chaque frame, ce qui diminue considérablement les performances. La réécriture de la fonction pour retourner une valeur négative comme -1 pour indiquer qu’un échec permet d’éviter ce problème et de conserver la mémoire sur la pile.
-
-    ```csharp
-        public class MyParticle
-        {
-            // Example of function returning nullable value type
-            public int? TryGetSpeed()
-            {
-                // Returns current speed int value or null if fails
-            }
-        }
     ```
 
 #### <a name="repeating-code-paths"></a>Chemins de code répétitifs
@@ -229,7 +214,7 @@ Unity dispose d’un excellent article qui donne une vue d’ensemble descriptiv
 Le rendu d’instance à passage unique dans Unity permet de réduire les appels de dessin pour chaque œil à un seul appel de dessin instancié. En raison de la cohérence du cache entre deux appels de dessin, les performances sont également améliorées sur le GPU.
 
 Pour activer cette fonctionnalité dans votre projet Unity
-1)  Ouvrez **Player XR Settings** (accédez à **Edit** > **Project Settings** > **Player** > **XR Settings** ).
+1)  Ouvrez **Player XR Settings** (accédez à **Edit** > **Project Settings** > **Player** > **XR Settings**).
 2) Sélectionnez **Single Pass Instanced** dans le menu déroulant **Stereo Rendering Method** (la case **Virtual Reality Supported** doit être cochée).
 
 Lisez les articles suivants sur Unity pour plus d’informations sur l’approche de ce rendu.
@@ -249,7 +234,7 @@ Pour plus d’informations, consultez *Traitement par lot statique* sous [Traite
 
 #### <a name="dynamic-batching"></a>Traitement par lot dynamique
 
-Étant donné qu’il est difficile de marquer des objets comme *statiques* pour le développement HoloLens, le traitement par lot dynamique peut s’avérer un excellent outil pour compenser cette fonctionnalité manquante. Bien entendu, il peut également s’avérer utile sur les casques immersifs. Toutefois, le traitement par lot dynamique dans Unity peut être difficile à activer car les GameObjects doivent **a) partager le même matériau** et **b) remplir une longue liste d’autres critères** .
+Étant donné qu’il est difficile de marquer des objets comme *statiques* pour le développement HoloLens, le traitement par lot dynamique peut s’avérer un excellent outil pour compenser cette fonctionnalité manquante. Bien entendu, il peut également s’avérer utile sur les casques immersifs. Toutefois, le traitement par lot dynamique dans Unity peut être difficile à activer car les GameObjects doivent **a) partager le même matériau** et **b) remplir une longue liste d’autres critères**.
 
 Lisez *Traitement par lot dynamique* sous [Traitement par lot des appels de dessin dans Unity](https://docs.unity3d.com/Manual/DrawCallBatching.html) pour obtenir la liste complète. En règle générale, les GameObjects deviennent non valides pour le traitement par lot dynamique, car les données de maillage associées ne peuvent pas dépasser 300 vertex.
 
@@ -268,7 +253,7 @@ Découvrez-en plus sur l’[optimisation du rendu graphique dans Unity](https://
 
 ### <a name="optimize-depth-buffer-sharing"></a>Optimiser le partage du tampon de profondeur
 
-Il est généralement recommandé d’activer **Depth buffer sharing** sous **Player XR Settings** pour optimiser la [stabilité des hologrammes](../platform-capabilities-and-apis/Hologram-stability.md). En revanche, quand vous activez la reprojection au stade tardif basée sur la profondeur avec ce paramètre, il est recommandé de sélectionner le **format de profondeur 16 bits** au lieu du **format de profondeur 24 bits** . Les tampons de profondeur 16 bits réduisent considérablement la bande passante (et donc la puissance) associée au trafic du tampon de profondeur. Cela peut s’avérer avantageux à la fois en termes de réduction de puissance et d’amélioration des performances. Toutefois, il existe deux résultats négatifs possibles avec l’utilisation du *format de profondeur 16 bits* .
+Il est généralement recommandé d’activer **Depth buffer sharing** sous **Player XR Settings** pour optimiser la [stabilité des hologrammes](../platform-capabilities-and-apis/Hologram-stability.md). En revanche, quand vous activez la reprojection au stade tardif basée sur la profondeur avec ce paramètre, il est recommandé de sélectionner le **format de profondeur 16 bits** au lieu du **format de profondeur 24 bits**. Les tampons de profondeur 16 bits réduisent considérablement la bande passante (et donc la puissance) associée au trafic du tampon de profondeur. Cela peut s’avérer avantageux à la fois en termes de réduction de puissance et d’amélioration des performances. Toutefois, il existe deux résultats négatifs possibles avec l’utilisation du *format de profondeur 16 bits*.
 
 **Z-Fighting**
 
@@ -284,11 +269,11 @@ Les techniques qui fonctionnent en mode plein écran peuvent être assez coûteu
 
 ### <a name="optimal-lighting-settings"></a>Paramètres d’éclairage optimaux
 
-L’[illumination globale en temps réel](https://docs.unity3d.com/Manual/GIIntro.html) dans Unity peut donner des résultats visuels époustouflants, mais implique des calculs d’éclairage relativement coûteux. Il est recommandé de désactiver l’illumination globale en temps réel pour chaque fichier de scène Unity par le biais de **Window** > **Rendering** > **Lighting Settings** > Décochez **Real-time Global Illumination** .
+L’[illumination globale en temps réel](https://docs.unity3d.com/Manual/GIIntro.html) dans Unity peut donner des résultats visuels époustouflants, mais implique des calculs d’éclairage relativement coûteux. Il est recommandé de désactiver l’illumination globale en temps réel pour chaque fichier de scène Unity par le biais de **Window** > **Rendering** > **Lighting Settings** > Décochez **Real-time Global Illumination**.
 
 En outre, il est recommandé de désactiver la projection d’ombres, car elle ajoute également des passes de GPU coûteuses à une scène Unity. Les ombres peuvent être désactivées par lumière, mais également contrôlées de façon holistique par le biais des paramètres de qualité.
 
-Sélectionnez **Edit** > **Project Settings** , puis la catégorie **Quality** et **Low Quality** pour la plateforme UWP. Vous pouvez également affecter simplement à la propriété **Shadows** la valeur **Disable Shadows** .
+Sélectionnez **Edit** > **Project Settings**, puis la catégorie **Quality** et **Low Quality** pour la plateforme UWP. Vous pouvez également affecter simplement à la propriété **Shadows** la valeur **Disable Shadows**.
 
 Nous vous recommandons d’utiliser l’éclairage baked avec vos modèles dans Unity.
 
@@ -334,7 +319,7 @@ Utilisez le *préchargement des nuanceurs* et d’autres astuces pour optimiser 
 
 ### <a name="limit-overdraw"></a>Limiter le surdessin
 
-Dans Unity, vous pouvez afficher le surdessin pour votre scène, en utilisant le [**menu du mode dessin**](https://docs.unity3d.com/Manual/ViewModes.html) dans le coin supérieur gauche de la **vue de la scène** et en sélectionnant **Overdraw** .
+Dans Unity, vous pouvez afficher le surdessin pour votre scène, en utilisant le [**menu du mode dessin**](https://docs.unity3d.com/Manual/ViewModes.html) dans le coin supérieur gauche de la **vue de la scène** et en sélectionnant **Overdraw**.
 
 En règle générale, le surdessin peut être atténué en éliminant les objets à l’avance avant leur envoi au GPU. Unity fournit des détails sur l’implémentation de l’[élimination des occlusions](https://docs.unity3d.com/Manual/OcclusionCulling.html) pour son moteur.
 

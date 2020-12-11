@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5952cf94ba07a6d92903050a2a813cc911d4d70f
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354675"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609604"
 ---
 # <a name="425"></a>[4.25](#tab/425)
 
@@ -13,11 +13,11 @@ ms.locfileid: "96354675"
 > [!NOTE]
 > Cela nécessite **Unreal Engine 4.25** ou ultérieur.
 
-Le système et les enregistreurs personnalisés créent des captures de Réalité Mixte en combinant l’appareil photo/vidéo à des hologrammes affichés par l’application immersive.
+Le système et les enregistreurs personnalisés créent des captures de réalité mixte en combinant la caméra PV à des hologrammes affichés par l’application.
 
-Par défaut, la capture de Réalité Mixte utilise la sortie holographique de l’œil droit. Si une application immersive choisit de s’[afficher à partir de l’appareil photo/vidéo](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), alors cette sortie sera utilisée à la place. Cela améliore le mappage entre le monde réel et les hologrammes dans la vidéo MRC.
+Par défaut, la capture de Réalité Mixte utilise la sortie holographique de l’œil droit. Si une application immersive choisit d’être [affichée à partir de la caméra PV](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), ce mode de rendu est utilisé à la place. Le rendu à partir de la caméra PV améliore le mappage entre le monde réel et les hologrammes dans la vidéo de capture de réalité mixte.
 
-Pour choisir le rendu à partir de l’appareil photo/vidéo :
+Pour choisir le rendu à partir de la caméra PV :
 
 1. Appelez **SetEnabledMixedRealityCamera** et **ResizeMixedRealityCamera**
     * Utilisez les valeurs de taille **Size X** et **Size Y** pour définir les dimensions de la vidéo.
@@ -51,7 +51,7 @@ Pour afficher l’image de l’appareil photo :
 
 ![Texture de la caméra à partir de la webcam](../images/unreal-camera-texture.PNG)
 
-5. Vérifiez que le matériau comprend un paramètre correspondant au nom situé dans **SetTextureParameterValue**, qui est lié à une entrée de couleur. Sans cela, l’image de l’appareil photo/vidéo ne pourra pas être affichée correctement.
+5. Vérifiez que le matériau a un paramètre correspondant au nom indiqué dans **SetTextureParameterValue**, qui est lié à une entrée de couleur. Sans ce paramètre, l’image de la caméra ne peut pas s’afficher correctement.
 
 ![Texture de la caméra](../images/unreal-camera-material.PNG)
 
@@ -81,7 +81,7 @@ Pour afficher l’image de l’appareil photo :
 
 ![Blueprint de la fonction Créer une instance de matériau dynamique](../images/unreal-pvc-img-05.png)
 
-- Récupérez la texture du flux de la caméra et affectez-la au matériau dynamique si elle est valide.  Si la texture n’est pas valide, démarrez un minuteur, puis réessayez après le délai d’expiration :
+- Récupérez la texture du flux de la caméra, et affectez-la au matériau dynamique, si elle est valide.  Si la texture n’est pas valide, démarrez un minuteur, puis réessayez une fois le délai d’expiration écoulé :
 
 ![Blueprint de la texture du flux de la caméra affectée au matériau dynamique](../images/unreal-pvc-img-06.png)
 
@@ -91,13 +91,13 @@ Pour afficher l’image de l’appareil photo :
 
 ## <a name="find-camera-positions-in-world-space"></a>Rechercher des positions de la caméra dans l’espace universel
 
-La caméra sur le casque HoloLens 2 est décalée verticalement par rapport au suivi de la tête de l’appareil.  Pour tenir compte de cela, il existe quelques fonctions permettant de localiser la caméra dans l’espace universel.
+La caméra sur le casque HoloLens 2 est décalée verticalement par rapport au suivi de la tête de l’appareil.  Pour tenir compte du décalage, il existe quelques fonctions qui permettent de localiser la caméra dans l’espace universel.
 
-GetPVCameraToWorldTransform obtient la transformation dans l’espace universel de la caméra PV.  Ceci sera positionné sur l’objectif de la caméra :
+GetPVCameraToWorldTransform obtient la transformation dans l’espace universel de la caméra PV, et est positionné sur l’objectif de la caméra :
 
 ![Blueprint de la fonction Obtenir la transformation de la caméra PV en monde](../images/unreal-pvc-img-08.png)
 
-GetWorldSpaceRayFromCameraPoint convertit un rayon de l’objectif de la caméra dans la scène en espace universel Unreal pour rechercher ce qui se trouve sur un pixel particulier dans le cadre de la caméra :
+GetWorldSpaceRayFromCameraPoint diffuse un rayon de l’objectif de la caméra vers la scène dans l’espace universel Unreal pour rechercher le contenu d’un pixel dans le cadre de la caméra :
 
 ![Blueprint de la fonction Obtenir un rayon de l’espace universel depuis un point de la caméra](../images/unreal-pvc-img-09.png)
 
@@ -105,7 +105,7 @@ GetPVCameraIntrinsics retourne les valeurs intrinsèques de la caméra, qui peuv
 
 ![Blueprint de fonctions intrinsèques de la caméra PV](../images/unreal-pvc-img-10.png)
 
-Pour trouver ce qui existe dans l’espace universel à une coordonnée d’un pixel particulier, vous pouvez utiliser un suivi de ligne avec le rayon d’espace universel :
+Pour trouver ce qui existe dans l’espace universel à une coordonnée d’un pixel particulier, utilisez un suivi de ligne avec le rayon d’espace universel :
 
 ![Blueprint du rayon d’espace universel utilisé pour déterminer ce qui existe dans l’espace universel à une coordonnée particulière](../images/unreal-pvc-img-11.png)
 
@@ -169,7 +169,7 @@ ACamCapture::ACamCapture()
 
 Dans BeginPlay, créez une instance de matériau dynamique à partir du matériau de la caméra du projet, appliquez-la au composant de maillage statique et démarrez la caméra HoloLens. 
  
-Dans l’éditeur, cliquez avec le bouton droit sur CamTextureMaterial dans l’explorateur de contenu, puis sélectionnez « Copy Reference » pour obtenir la chaîne de CameraMatPath.
+Dans l’éditeur, cliquez avec le bouton droit sur CamTextureMaterial dans l’explorateur de contenu, puis sélectionnez Copy Reference pour obtenir la chaîne de CameraMatPath.
 
 ```cpp
 void ACamCapture::BeginPlay()

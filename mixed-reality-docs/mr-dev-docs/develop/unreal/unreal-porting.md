@@ -2,25 +2,25 @@
 title: Mise à niveau de projets dans Unreal
 description: Vue d’ensemble des étapes de mise à niveau de la version et des API dépréciées dans les projets Unreal.
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, documentation, guides, fonctionnalités, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, portage, mise à niveau
-ms.openlocfilehash: efad783ee199ed42c7355917a180855b3ec4f11b
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355707"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609660"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Mise à niveau de projets dans Unreal
 
-Lors de la mise à jour vers une nouvelle version d’Unreal, les fonctions dépréciées vont apparaître sous forme d’avertissements lors de la compilation du blueprint ou de l’empaquetage du projet.  Une fonction est dépréciée quand une nouvelle fonction a été ajoutée et doit être utilisée à la place. 
+Lors de la mise à jour vers une nouvelle version d’Unreal, les fonctions dépréciées apparaissent sous forme d’avertissements lors de la compilation des blueprints ou de l’empaquetage du projet.  Une fonction est dépréciée quand une nouvelle fonction a été ajoutée et doit être utilisée à la place. 
 
 ## <a name="426-upgrades"></a>Mises à niveau de 4.26
  
-Dans 4.26, toutes les plateformes AR et VR ont été refactorisées de façon à ajouter des interfaces communes et à garder le code d’application indépendant des plateformes.  En raison de cette refactorisation, les projets HoloLens mis à jour vers 4.26 peuvent rencontrer plus d’avertissements que d’habitude.  La mise à jour vers les nouvelles API est recommandée pour que le projet puisse être porté plus facilement vers d’autres plateformes.
+Dans la version 4.26, toutes les plateformes AR et VR ont été refactorisées de façon à ajouter des interfaces communes et à garder le code d’application indépendant des plateformes, si bien que vous risquez de voir plus d’avertissements que d’habitude.  La mise à jour vers les nouvelles API est recommandée pour que le projet puisse être porté plus facilement vers d’autres plateformes.
 
 Les messages d’avertissement montrent quelle fonction a été dépréciée et indiquent la fonction à utiliser à la place.  Toutes les fonctions dépréciées vont continuer de fonctionner pour cette version, mais elles peuvent ne pas fonctionner dans des versions futures.  Les fonctions dépréciées ne sont plus listées lors de la recherche de fonctions dans un blueprint.
 
@@ -49,4 +49,4 @@ Les messages d’avertissement montrent quelle fonction a été dépréciée et 
 | GetVersionString | ![Blueprint de la fonction Obtenir la chaîne de version](images/unreal-porting-img-16.png) |
 | IsTrackingAvailable | ![Blueprint de la propriété IsTrackingAvailable](images/unreal-porting-img-17.png) |
 | IsButtonClicked, IsButtonDown, IsGrasped, IsSelectPressed | Utilisez le système d’action d’entrée d’Unreal. |
-| SetFocusPointForFrame | Supprimé dans 4.26  C’était utilisé auparavant pour la reprojection lors de la communication à distance, qui prend désormais en charge la reprojection de profondeur. |
+| SetFocusPointForFrame | Supprimé dans 4.26  Était utilisé pour la reprojection lors de la communication à distance, qui prend désormais en charge la reprojection de profondeur. |

@@ -7,18 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, ancres spatiales, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354484"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609630"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Ancres spatiales locales dans Unreal
 
-## <a name="overview"></a>Vue d’ensemble
-
-Les ancres spatiales sont utilisées pour enregistrer les hologrammes en place dans l’espace réel entre les sessions d’application. Elles sont exposées via Unreal sous forme d’**ARPins** et sont enregistrées dans le magasin d’ancres HoloLens, que vous allez charger dans les sessions ultérieures. Les ancres locales sont idéales comme solutions de secours lorsqu’il n’y a pas de connectivité Internet.
+Les ancres spatiales enregistrent les hologrammes en place dans l’espace réel entre les sessions d’application comme des **ARPins**. Une fois enregistrés dans le magasin d’ancres HoloLens, les ARPins peuvent être chargés dans de futures sessions et constituent une option de secours idéale en l’absence de connectivité Internet.
 
 > [!NOTE]
 > Les fonctions des ancres d’UE 4.25 sont obsolètes dans 4.26 et doivent être remplacées par des fonctions plus récentes. 
@@ -34,7 +32,7 @@ Avant d’enregistrer ou de charger des ancres, vous avez besoin de vérifier si
 
 ## <a name="saving-anchors"></a>Enregistrement des ancres
 
-Quand l’application a un composant qui doit être relié au monde réel, ce composant peut être enregistré dans le magasin d’ancres avec la séquence suivante : 
+Quand l’application a un composant que vous avez besoin de relier au monde réel, ce composant peut être enregistré dans le magasin d’ancres avec la séquence suivante : 
 
 [!INCLUDE[](includes/tabs-sa-2.md)]
 
@@ -44,7 +42,7 @@ Décomposons cette séquence :
 3. Ajoutez l’acteur au **ARPin** et enregistrez le repère dans le magasin d’ancres HoloLens.  
     * Le nom d’ancre que vous choisissez doit être unique. Dans cet exemple, il s’agit de l’horodatage actuel. 
 
-4. Si l’ancre est correctement enregistrée dans le magasin d’ancres, vous pouvez l’inspecter dans le portail d’appareil HoloLens sous **System > Map Manager > Anchor Files Saved On Device**. 
+4. Si l’ancre est correctement enregistrée dans le magasin d’ancres, vous pouvez la voir dans le portail d’appareil HoloLens sous **System > Map Manager > Anchor Files Saved On Device**. 
 
 ## <a name="loading-anchors"></a>Chargement des ancres
 
@@ -72,7 +70,7 @@ Lorsque vous n’avez plus besoin d’une ancre, vous pouvez l’effacer individ
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours des points de contrôle de développement Unreal que nous avons mis en place, vous explorez actuellement les modules de base du MRTK. À partir de là, vous pouvez passer au module suivant : 
+Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous explorez actuellement les composants de base du MRTK. À partir d’ici, vous pouvez passer au composant suivant : 
 
 > [!div class="nextstepaction"]
 > [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
