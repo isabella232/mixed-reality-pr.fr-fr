@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Réalité mixte, Conférence, sommet, développeur, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 01447b6122dae1c449e85b9bc7a9ad2cfc678f24
-ms.sourcegitcommit: 59c23d1ea5009e1929660a9a97c6131c353cd57e
+ms.openlocfilehash: df7b6837653b309189e44d36853430b89b8b56a9
+ms.sourcegitcommit: 2eeee7bb1589148f5c9fe7f76ade58d3e08b5817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538716"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97104203"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days - Japon
 
@@ -44,23 +44,23 @@ Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev
 ### <a name="december-16th"></a>16 décembre
 |**Time**|**Titre de la session**|**Orateur**|**Language**|**Niveau**|
 |---------|---------|---------|---------|---------|
-|10:00-10:50am|Ouverture du discours|TBD|JA/FR|N/A|
-|10:50am-11:00|**Saut**||||
-|11:00-11:25am|*Session 1* Qu’est-ce que la réalité mixte ?Que pouvez-vous faire avec HL2 ?Empilement Tech|Atsushi Suzuki|JA|100|
-|11:30-11:55am|*Session 2* Mise à jour de l’élan du marché du Japon pour les clients et les partenaires études de cas|Tetsu Muranaka|JA|200|
+|10:00-10:50am|Ouverture du discours|Madoka Chiyoda, Alex Kipman, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/FR|N/A|
+|10:50am-11:00|**Arrêter (10min)**||||
+|11:00-11:25am|*Session 1* Présentation de la réalité mixte|Atsushi Suzuki|JA|100|
+|11:30-11:55am|*Session 2* Dynamisme de l’entreprise en réalité mixte|Tetsu Muranaka|JA|200|
 |12:14:00-12:50pm|*Session déjeuner* Panel : discussion gratuite interactive, Q et A, MRTK + Oculus Quest 2|Madoka Chiyoda + MVP Microsoft|JA|200|
-|12:50pm-1:14:00|**Saut**||||
+|12:50pm-1:14:00|**Arrêter (10min)**||||
 |1:14:00-1:25pm|*Session 3* Vue d’ensemble du développement HoloLens 2|Madoka Chiyoda|JA|200|
-|1:30-1:55pm|*Session 4* Blocs de construction de l’expérience utilisateur d’MRTK (v 2.5.0)|Parc Yoon|JA|300|
+|1:30-1:55pm|*Session 4* Composants MRTK UX v 2.5.0|Parc Yoon|JA|300|
 |2:14:00-2:25pm|*Session 5* Prise en main de l’analyseur HoloLens 2 et du moteur inréel (MRTK-inreal)|Cameron micka|FR|300|
-|2:30-2:55pm|*Session 6* Création de l’application « conception d’hologrammes ». Nous allons étudier les fonctionnalités, les défis et les autres apprentissages amusants découverts lors de la création de cette nouvelle application HoloLens 2.|Daniel Escudero|FR|300|
-|2:55pm-3:22h00|**Saut**||||
-|3:22h00-3:35pm|*Session 7* Ancres d’objets Azure|Jesse McCulloch|FR|300|
-|3:40pm-4:13h05|*Session 8* Rendu distant Azure|Atsushi Suzuki|JA|300|
-|4:22h00-4:35pm|*Session 9* Alignement de l’hologramme et du monde réel par le biais d’ancres spatiales Azure|Yingguang Mei|FR|300|
-|4:40pm-5:13h05|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
-|5:22h00-5:35pm|*Session 11* Présentation approfondie d’Azure Kinect DK, étude de cas|Shinji Chiba|JA|400|
-|5:35pm-5:50pm|Fermeture|Madoka Chiyoda|JA|N/D|
+|2:30-2:55pm|*Session 6* Création d’hologrammes|Daniel Escudero|FR|300|
+|2:55pm-3:15|**Arrêter (20min)**||||
+|3:15-3:40pm|*Session 7* Ancres d’objets Azure|Jesse McCulloch|FR|300|
+|3:17h45-4:22h00|*Session 8* Rendu distant Azure|Atsushi Suzuki|JA|300|
+|4:15-4:40pm|*Session 9* Alignement de l’hologramme et du monde réel par le biais d’ancres spatiales Azure|Yingguang Mei|FR|300|
+|4:17h45-5:22h00|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unitx technologies Japan)|JA|200|
+|5:15-5:40pm|*Session 11* Présentation approfondie d’Azure Kinect DK, étude de cas|Shinji Chiba|JA|400|
+|5:17h45-6:14:00|Fermeture|Madoka Chiyoda|JA|N/A|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Contributeurs (réviseurs techniques pour les sous-titres)
 
@@ -69,15 +69,18 @@ Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura (
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions (FAQ)
 Cette section sera fréquemment mise à jour à mesure que nous recevrons d’autres questions.
 
-**Q** -qui devrait assister au développement de la réalité mixte le jour **a** -cet événement est inclus dans l’espace de la réalité mixte. Alors que la majeure partie du contenu sera axée sur les développeurs, nous savons également qu’il existe du contenu intéressant pour un large éventail de rôles au-delà des développeurs. N’oubliez pas de vérifier la planification des mises à jour pour voir le type de contenu que nous fournissons.  
-  
-**Q** -je ne trouve pas l’événement dans les événements en direct des équipes  
+**Q** -qui devrait assister au jour du développement de la réalité mixte
+
+**R** : cet événement s’applique à tous ceux qui travaillent ou jouent dans l’espace de la réalité mixte. Alors que la majeure partie du contenu sera axée sur les développeurs, nous savons également qu’il existe du contenu intéressant pour un large éventail de rôles au-delà des développeurs. N’oubliez pas de vérifier la planification des mises à jour pour voir le type de contenu que nous fournissons.  
+
+**Q** -je ne trouve pas l’événement dans les événements en direct des équipes
+
 **R** pour participer, cliquez sur le lien dans le message électronique que vous recevrez après vous être inscrit pour l’événement. Nous vous recommandons de regarder sur l’application PC Teams, et vous pouvez également participer à l’application mobile teams ou au navigateur de votre bureau.
 
 Si, pour une raison quelconque, vous ne parvenez pas à vous connecter aux équipes, vérifiez le canal YouTube dans lequel l’événement sera diffusé simultanément. Toutefois, vous ne serez pas en mesure de participer à l’assurance qualité avec les intervenants.
 
-  
-**Q** : les vidéos de présentation et de session seront-elles disponibles après l’événement ? 
+**Q** : les vidéos de présentation et de session seront-elles disponibles après l’événement ?
+
 **R** : nous publierons chaque session vidéo, mais en raison du temps nécessaire, nous vous invitons à vous joindre en direct si vous le pouvez.
 
 <!--  
@@ -100,8 +103,3 @@ La mission de Microsoft est de permettre à chaque personne et à chaque entrepr
 Nous pensons que tous les participants à l’événement numérique doivent respecter les principes de ce code de réalisation, qui couvre l’événement numérique principal et toutes les activités associées. Nous ne tolèrez pas le comportement, les messages, les images ou les interactions d’un participant tiers, quel que soit son lieu, quel que soit l’aspect du programme, y compris les activités sociales, quel que soit son emplacement. Microsoft ne tolère pas le harcèlement ou la discrimination en fonction de l’âge, de la ascendance, de la couleur, de l’identité ou de l’expression du sexe, de l’origine nationale, du handicap physique ou mental, de la religion, de l’orientation sexuelle ou de toute autre caractéristique protégée par les lois, réglementations et ordonnances locales applicables.  
 
 La photographie, la vidéo ou l’enregistrement de contenu ou de présentations de session dans n’importe quel format partagé dans des réseaux sociaux est interdit. Nous encourageons tout le monde à créer un environnement d’accueil et de sécurité. Signalez les préoccupations, les comportements de harcèlement, les activités suspectes ou perturbatrices à la hotline des entreprises (1-877-320-MSFT ou [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft se réserve le droit de refuser des admission à tous les jours de développement de la réalité mixte à tout moment, à sa seule discrétion. 
-
-Nous encourageons tout le monde à se comporter de façon responsable au sein de l’environnement immersif AltspaceVR comme vous le feriez pour n’importe quel événement en personne. Veuillez respecter les autres espaces de l’utilisateur et ne pas bloquer l’affichage des autres participants de l’étape lors de l’intervention de l’événement.  N’oubliez pas que comme tout événement en personne, tout ce que vous dites peut être entendu par d’autres utilisateurs lors de l’événement. Si vous avez besoin d’une conversation privée, nous vous recommandons de le faire dans un autre espace de AltspaceVR, tel que votre page d’hébergement AltspaceVR.
-
-
-
