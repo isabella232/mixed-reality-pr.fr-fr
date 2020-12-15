@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, accès distant holographique, rendu à distance, rendu réseau, HoloLens, hologrammes distants, dépannage, aide, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: ca0e4b3a43eae5be09f2c0bfbee9056cd847787c
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 9b900238abc79b0f2f93691d4b4a67cce67a201a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443595"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530185"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Résolution des problèmes de communication à distance holographique
 
@@ -22,15 +22,15 @@ ms.locfileid: "96443595"
 
 Les exemples d’applications de communication à distance holographique ont une atténuation de spectre (/Qspectre) activée dans la configuration Release.
 
-Si vous recevez une erreur irrécupérable de l’éditeur de liens qui indique que « vccorlib. lib » ne peut pas être ouvert, vérifiez que votre charge de travail Visual Studio comprend les bibliothèques atténuées spectre. Consultez la rubrique https://aka.ms/Ofhn4c (éventuellement en anglais) pour plus d'informations.
+Si vous recevez l’erreur irrécupérable *vccorlib. lib ne peut pas être ouverte* , vérifiez que votre charge de travail Visual Studio comprend les [bibliothèques atténuées spectre](https://aka.ms/Ofhn4c)
 
 ## <a name="speech"></a>Voix
 
-Le lecteur de communication à distance holographique prend en charge une superposition de diagnostics qui peut être activée en disant ```Enable Diagnostics``` et en désactivant ```Disable Diagnostics``` . Si vous rencontrez des problèmes avec ces commandes vocales, vous pouvez également lancer le lecteur de communication à distance holographique via un navigateur Web en ```ms-holographic-remoting:?stats``` tant qu’URL.
+Le lecteur de communication à distance holographique prend en charge une superposition de diagnostics, que vous pouvez activer en disant ```Enable Diagnostics``` et en désactivant ```Disable Diagnostics``` . Si vous rencontrez des problèmes avec ces commandes vocales, vous pouvez également lancer le lecteur de communication à distance holographique via un navigateur Web ```ms-holographic-remoting:?stats``` en tant qu’URL.
 
 ## <a name="h265-video-codec-not-available"></a>Codec vidéo H265 non disponible
 
-Vous devez installer les [extensions vidéo HEVC](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) lors de l’utilisation du codec vidéo H265 dans votre application distante. Si vous rencontrez des problèmes d’installation du codec mais que vous ne pouvez pas les utiliser, consultez le Guide de [Dépannage](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) .
+Installez les [extensions vidéo HEVC](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) lors de l’utilisation du codec vidéo H265 dans votre application distante. Si vous rencontrez des problèmes d’installation du codec mais que vous ne pouvez pas les utiliser, consultez le Guide de [Dépannage](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) .
 
 ## <a name="limitations"></a>Limites
 
@@ -44,13 +44,13 @@ Les API suivantes ne sont actuellement **pas** prises en charge lors de l’util
 * [HolographicCamera.IsHardwareContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled#Windows_Graphics_Holographic_HolographicCamera_IsHardwareContentProtectionEnabled)
 * [HolographicViewConfiguration.RequestRenderTargetSize](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration.requestrendertargetsize#Windows_Graphics_Holographic_HolographicViewConfiguration_RequestRenderTargetSize_Windows_Foundation_Size_)
   - Pris en charge à partir de la version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
-  - Dans les versions précédentes n’échoue pas, mais la taille de la cible de rendu n’est pas modifiée.
+  - Dans les versions précédentes, n’échoue pas, mais la taille de la cible de rendu n’est pas modifiée.
 * [HolographicCameraPose.OverrideProjectionTransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideprojectiontransform)
 * [HolographicCameraPose.OverrideViewport](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewport)
 * [HolographicCameraPose.OverrideViewTransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewtransform)
   - Pris en charge à partir de la version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 * [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
-  - N’échoue pas, mais la mémoire tampon de profondeur ne sera pas distante.
+  - Renaud.
   - Pris en charge à partir de la version [2.1.0](holographic-remoting-version-history.md#v2.1.0)
 * [HolographicDisplay.TryGetViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
   - L’interrogation de HolographicViewConfigurationKind. PhotoVideoCamera retourne toujours un ```nullptr``` .
@@ -71,14 +71,14 @@ Les API suivantes ne sont actuellement **pas** prises en charge lors de l’util
 * [SpatialLocation. AbsoluteLinearVelocity](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearvelocity)
 * [SpatialStageFrameOfReference. Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)
   - Pris en charge à partir de la version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
-  - Dans les versions précédentes retourne toujours ```nullptr``` .
+  - Dans les versions précédentes, retourne toujours ```nullptr``` .
 * [SpatialStageFrameOfReference.RequestNewStageAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)
   - Pris en charge à partir de la version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 * [SpatialAnchor.RemovedByUser](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.removedbyuser)
 * [SpatialAnchorExporter.GetDefault](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.getdefault
 )
   - Pris en charge à partir de la version [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
-  - Dans les versions précédentes retourne toujours ```nullptr``` . 
+  - Dans les versions précédentes, retourne toujours ```nullptr``` . 
 * [SpatialAnchorExporter.RequestAccessAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.requestaccessasync
 )
   - Pris en charge à partir de la version [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
@@ -105,7 +105,7 @@ Les API suivantes ne sont actuellement **pas** prises en charge lors de l’util
 
 ## <a name="see-also"></a>Voir aussi
 * [Historique des versions de la communication à distance holographique](holographic-remoting-version-history.md)
-* [Écriture d’une application distante holographique à distance à l’aide d’API Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Écriture d’une application distante holographique à distance à l’aide des API Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Termes du contrat de licence de la communication à distance holographique](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
