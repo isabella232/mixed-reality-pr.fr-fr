@@ -4,16 +4,16 @@ title: Découvrir les outils et l’architecture
 description: Documentation du développeur sur la réalité mixte pour les casques immersifs et HoloLens.
 author: grbury
 ms.author: grbury
-ms.date: 07/31/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, développer, développement, HoloLens, unity, unreal, directx, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, développement de réalité virtuelle, développement de réalité augmentée
-ms.openlocfilehash: e269523b7ddd369d65e9a33dbeb32b13a17428a4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 75501e299b0bccbc35056ebb2da6657bd5d1e335
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677858"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925967"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Introduction au développement de réalité mixte
 

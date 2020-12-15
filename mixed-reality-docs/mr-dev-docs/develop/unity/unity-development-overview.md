@@ -3,16 +3,16 @@ title: Vue d’ensemble du développement Unity
 description: Commencez à créer des applications de réalité mixte dans Unity.
 author: thetuvix
 ms.author: kurtie
-ms.date: 08/04/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, réalité mixte, développement, prise en main, nouveau projet, portage, fonctionnalité, caméra, simulation, émulation, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, MRTK, mixed reality toolkit, mappage spatial, entrée vocale, caméra localisable, émulateur, Azure, tutoriels
-ms.openlocfilehash: 9a9a5bc47327b3bd23ac6212b8b9f12787b74e4c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4eeec1544315ff2b9a43fc725d5bbd83c8cea89f
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679898"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926041"
 ---
 # <a name="unity-development-overview"></a>Vue d’ensemble du développement Unity
 
