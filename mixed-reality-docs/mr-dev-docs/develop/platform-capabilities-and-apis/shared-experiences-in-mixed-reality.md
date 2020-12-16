@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: expérience partagée, réalité mixte, hologramme, ancrage spatial, multi-utilisateur, multi
-ms.openlocfilehash: f05632f344e448a2b9fce95912086f3fda69c180
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6db5bb13d7e04dbee6b4d9d6568b821347bd769a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679879"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530118"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>Expériences partagées dans la réalité mixte
 
@@ -31,13 +31,13 @@ Une présentation peut être dirigée par un seul utilisateur virtuel, tandis qu
 
 Il existe de nombreuses façons de partager, mais nous avons constaté que la plupart d’entre elles se répartissent en trois catégories :
 
-* **Présentation** : quand le même contenu est affiché à plusieurs utilisateurs. Par exemple : un professeur qui donne un cours à plusieurs élèves en utilisant les mêmes éléments holographiques présentés à tout le monde. Toutefois, le professeur peut avoir ses propres indications et notes qui peuvent ne pas être visibles par d’autres utilisateurs.
-* **Collaboration** : lorsque des utilisateurs travaillent ensemble pour atteindre des objectifs courants. Par exemple : le professeur a donné un projet pour en savoir plus sur l’exécution d’une intervention cardiaque. Les étudiants s’associent et créent une expérience de laboratoire de compétences partagées qui permet aux étudiants médicaux de collaborer sur le modèle de cœur et d’apprendre.
-* **Conseils** : quand une personne aide quelqu’un à résoudre un problème dans une interaction de style un-à-un plus grand. Par exemple, le professeur qui donne des conseils à un étudiant lorsqu’il est en mesure d’exécuter le laboratoire de compétences en chirurgie cardiaque dans l’expérience partagée.
+* **Présentation**: quand le même contenu est affiché à plusieurs utilisateurs. Par exemple : un professeur qui donne un cours à plusieurs élèves en utilisant les mêmes éléments holographiques présentés à tout le monde. Toutefois, le professeur peut avoir ses propres indications et notes qui peuvent ne pas être visibles par d’autres utilisateurs.
+* **Collaboration**: lorsque des utilisateurs travaillent ensemble pour atteindre des objectifs courants. Par exemple : le professeur a donné un projet pour en savoir plus sur l’intervention cardiaque. Les étudiants s’associent et créent une expérience de laboratoire de compétences partagées, qui permet aux étudiants médicaux de collaborer sur le modèle de cœur et d’apprendre.
+* **Conseils**: quand une personne aide quelqu’un à résoudre un problème dans une interaction de style un-à-un plus grand. Par exemple, le professeur qui donne des conseils à un étudiant lorsqu’il effectue le laboratoire de compétences en chirurgie cardiaque dans l’expérience partagée.
 
 ### <a name="2-what-is-the-group-size"></a>2. quelle est la taille de groupe ?
 
-Les expériences de partage **un-à-un** peuvent fournir une base forte et, idéalement, vous pouvez créer vos preuves de concept à ce niveau. Toutefois, sachez que le partage avec de grands groupes (au-delà de 6 personnes) peut entraîner des difficultés à la fois techniques (données et mise en réseau) et sociales (l’impact d’être dans une salle avec [plusieurs avatars](https://vimeo.com/160704056)). La complexité augmente de façon exponentielle au fur et à mesure que vous passez de **petits** à **grands groupes** .
+Les expériences de partage **un-à-un** peuvent fournir une base forte et, idéalement, vous pouvez créer vos preuves de concept à ce niveau. Toutefois, sachez que le partage avec de grands groupes (au-delà de six personnes) peut entraîner des difficultés à la fois techniques (données et mise en réseau) et sociales (l’impact d’être dans une salle avec [plusieurs avatars](https://vimeo.com/160704056)). La complexité augmente de façon exponentielle au fur et à mesure que vous passez de **petits** à **grands groupes**.
 
 Nous avons constaté que les besoins des groupes peuvent être répartis en trois catégories :
 * 1:1
@@ -52,15 +52,15 @@ La taille de groupe fait une question importante car elle influence :
 
 ### <a name="3-where-is-everyone"></a>3. où est-ce que tout le monde ?
 
-La force de la réalité mixte entre en interaction quand une expérience partagée peut avoir lieu au même emplacement. Nous **appelons ce colocalisation** . Inversement, lorsque le groupe est distribué et qu’au moins un participant n’est pas dans le même espace physique (comme c’est souvent le cas avec VR), nous appelons cette **expérience à distance** . Souvent, il s’agit du cas où votre groupe a des participants colocalisés et distants (par exemple, deux groupes dans **les** salles de conférence).
+La force de la réalité mixte entre en interaction quand une expérience partagée peut avoir lieu au même emplacement. Nous appelons ce **colocalisé**. Inversement, lorsque le groupe est distribué et qu’au moins un participant n’est pas dans le même espace physique (comme c’est souvent le cas avec VR), nous appelons cette **expérience à distance**. Souvent, il s’agit du cas où votre groupe a des participants colocalisés et distants (par exemple, deux groupes dans **les** salles de conférence).
 
 ![Trois personnes avec holograph sur la table](images/three-people-with-holograph-on-table-500px.png)
 
 Les catégories suivantes vous aident à communiquer où se trouvent les utilisateurs :
 
 * Colocalisé : tous vos utilisateurs se **trouvent** dans le même espace physique.
-* **À distance** : tous vos utilisateurs se trouvent dans des espaces physiques distincts.
-* **Les deux** : vos utilisateurs sont un mélange d’espaces colocalisés et distants.
+* **À distance**: tous vos utilisateurs se trouvent dans des espaces physiques distincts.
+* **Les deux**: vos utilisateurs sont un mélange d’espaces colocalisés et distants.
 
 Cette question est cruciale, car elle influence :
 
@@ -75,9 +75,9 @@ En général, nous considérons les expériences **synchrones** quand les expér
 
 Considérez vos expériences comme l’une des catégories de temps suivantes :
 
-* En mode **synchrone** : partage de l’expérience holographique en même temps. Par exemple, deux élèves effectuant le laboratoire de compétences en même temps.
-* De **manière asynchrone** : le partage de l’expérience holographique à des moments différents. Par exemple, deux élèves effectuant le laboratoire de compétences, mais travaillant sur des sections distinctes à des moments différents.
-* **Les deux** : vos utilisateurs partageront parfois de façon synchrone, mais d’autres fois de façon asynchrone. Par exemple, un professeur qui dégrade l’attribution effectuée par les étudiants ultérieurement et qui laisse des notes aux élèves pour la journée suivante.
+* En mode **synchrone**: partage de l’expérience holographique en même temps. Par exemple : deux étudiants qui exécutent le laboratoire de compétences en même temps.
+* De **manière asynchrone**: le partage de l’expérience holographique à des moments différents. Par exemple : deux étudiants qui réalisent le laboratoire de compétences, mais qui travaillent sur des sections distinctes à des moments différents.
+* **Les deux**: vos utilisateurs partageront parfois de façon synchrone, mais d’autres fois de façon asynchrone. Par exemple, un professeur qui dégrade l’attribution effectuée par les étudiants ultérieurement et qui laisse des notes aux élèves pour la journée suivante.
 
 Cette question est importante car elle influence :
 
@@ -86,33 +86,33 @@ Cette question est importante car elle influence :
 
 ### <a name="5-how-similar-are-their-physical-environments"></a>5. quelle est la similarité de leurs environnements physiques ?
 
-La probabilité de deux environnements réels identiques, en dehors des expériences colocalisées, est mince, à moins que ces environnements aient été conçus pour être identiques. Vous êtes plus susceptible d’avoir des environnements **similaires** . Par exemple, les salles de conférence sont similaires. elles ont généralement une table située à l’emplacement central, entourée de chaises. Les salles vivantes, en revanche, sont généralement **dissemblables** et peuvent inclure un nombre quelconque de meubles dans un tableau infini de dispositions.
+La probabilité de deux environnements réels identiques, en dehors des expériences colocalisées, est une mince, à moins que ces environnements aient été conçus pour être identiques. Vous êtes plus susceptible d’avoir des environnements **similaires** . Par exemple, les salles de conférence sont similaires, elles ont généralement une table située de manière centralisée, entourée de chaises. Les salles vivantes, en revanche, sont différentes * * et peuvent inclure un nombre quelconque de meubles dans un tableau infini de dispositions.
 
 ![Holograph sur la table](images/holograph-on-table-500px.png)
 
 Imaginez que vos expériences de partage s’adaptent à l’une de ces deux catégories :
 
-* **Similaire** : environnements qui ont tendance à avoir des meubles similaires, un éclairage ambiant et un son, la taille de la salle physique. Par exemple, le professeur est dans la salle de conférence A et les étudiants se trouvent dans la salle de conférence B. la salle de conférence A peut avoir moins de chaises que B, mais les deux peuvent avoir un bureau physique sur lequel placer des hologrammes.
-* **Différent : environnements** qui sont très différents dans les paramètres de mobilier, les tailles de salle, les considérations claires et sonores. Par exemple, un professeur est dans une salle de focalisation, tandis que les étudiants sont dans une grande salle de conférence, remplis avec des étudiants et des enseignants.
+* **Similaire**: environnements qui ont tendance à avoir des meubles similaires, un éclairage ambiant et un son, la taille de la salle physique. Par exemple, le professeur est dans la salle de conférence A et les étudiants se trouvent dans la salle de conférence B. la salle de conférence A peut avoir moins de chaises que B, mais les deux peuvent avoir un bureau physique sur lequel placer des hologrammes.
+* Différent **: environnements** qui diffèrent dans les paramètres de mobilier, les tailles de salle, les considérations claires et les aspects sonores. Par exemple, un professeur est dans une salle de focalisation, mais les étudiants sont dans une grande salle de conférence, remplie avec des étudiants et des enseignants.
 
 Il est important de [réfléchir à l’environnement](../../environment-considerations-for-hololens.md), car il aura une incidence sur les éléments suivants :
 
 * La manière dont les utilisateurs auront connaissance de ces objets. Par exemple : Si votre expérience fonctionne mieux sur une table et si l’utilisateur n’a pas de table ? Ou sur une surface plate, mais l’utilisateur a un espace encombré.
-* Échelle des objets. Par exemple, le fait de placer un modèle humain de 6 mètres sur une table peut être difficile, mais un modèle cardiaque fonctionnerait bien.
+* Échelle des objets. Par exemple, la mise en place d’un modèle humain de six mètres sur une table peut être délicate, mais un modèle cardiaque fonctionnerait très bien.
 
 ### <a name="6-what-devices-are-they-using"></a>6. Quels appareils utilisent-ils ?
 
-Aujourd’hui, vous êtes souvent amené à voir des expériences partagées entre deux [**appareils immersifs**](../../discover/immersive-headset-hardware-details.md) (ces appareils peuvent différer légèrement en termes de boutons et de fonctionnalités relatives, mais pas beaucoup) ou de deux **appareils holographiques** étant donné les solutions ciblées sur ces appareils. Toutefois, si les **appareils 2D** (un participant ou un observateur mobile/Desktop) sont nécessaires, en particulier dans les situations des **appareils 2D et 3D mélangés** . Il est important de comprendre les types d’appareils que vos participants vont utiliser, non seulement parce qu’ils sont fournis avec des opportunités et des contraintes de fidélité et de données différentes, mais parce que les utilisateurs ont des attentes uniques pour chaque plateforme.
+Aujourd’hui, vous êtes souvent amené à voir des expériences partagées entre deux [**appareils immersifs**](../../discover/immersive-headset-hardware-details.md) (ces appareils peuvent différer légèrement pour les boutons et les fonctionnalités relatives, mais pas très bien) ou deux **appareils holographiques** en fonction des solutions ciblées sur ces appareils. Toutefois, si les **appareils 2D** (un participant ou un observateur mobile/Desktop) sont nécessaires, en particulier dans les situations des **appareils 2D et 3D mélangés**. Il est important de comprendre les types d’appareils que vos participants vont utiliser, non seulement parce qu’ils sont fournis avec des opportunités et des contraintes de fidélité et de données différentes, mais parce que les utilisateurs ont des attentes uniques pour chaque plateforme.
 
 ## <a name="exploring-the-potential-of-shared-experiences"></a>Exploration du potentiel des expériences partagées
 
 Les réponses aux questions ci-dessus peuvent être combinées pour mieux comprendre votre scénario partagé, en déformant les défis au fur et à mesure que vous développez l’expérience. Pour l’équipe chez Microsoft, cela nous a aidé à établir un plan de route pour améliorer les expériences que nous utilisons aujourd’hui, à comprendre la nuance de ces problèmes complexes et à tirer parti des expériences partagées dans la réalité mixte.
 
-Par exemple, considérez l’un des scénarios Skype du lancement de HoloLens : un utilisateur a travaillé sur [la résolution d’un commutateur lumineux défectueux](https://www.youtube.com/watch?v=iBfzs3G8BEA) avec l’aide d’un expert à distance.
+Par exemple, considérez l’un des scénarios Skype du lancement de HoloLens : un utilisateur a travaillé sur [la résolution d’un commutateur de lumière cassé](https://www.youtube.com/watch?v=iBfzs3G8BEA) avec l’aide d’un expert situé à distance.
 
 ![Résolution d’un commutateur léger avec assistance via Skype pour HoloLens](images/fix-a-broken-switch-with-hololens-640px.jpg)
 
-*Un expert fournit des conseils **1:1** de son ordinateur de bureau **2D** à un utilisateur d’un appareil en **réalité mixte en 3D** . L' **aide** est **synchrone** et les environnements physiques sont **différents** .*
+*Un expert fournit des conseils **1:1** de son ordinateur de bureau **2D** à un utilisateur d’un appareil en **réalité mixte en 3D** . L' **aide** est **synchrone** et les environnements physiques sont **différents**.*
 
 Une expérience comme celle-ci est un changement pas à pas de notre expérience actuelle, en appliquant le paradigme de la vidéo et de la voix à un nouveau support. Mais à l’avenir, nous devons mieux définir l’opportunité de nos scénarios et créer des expériences qui reflètent la force de la réalité mixte.
 
@@ -120,7 +120,7 @@ Prenons l' [outil de collaboration OnSight](https://www.youtube.com/watch?v=XtUy
 
 ![Collaboration entre collègues séparés à distance pour planifier le travail pour Mars Rover](images/onsight-nasa-jpl.gif)
 
-*Un scientifique explore un environnement à l’aide d’un appareil 3D et en **réalité mixte** avec un **petit** groupe de collègues **distants** utilisant des appareils **3D et 2D** . La **collaboration** est **synchrone** (mais peut être revisitée de manière asynchrone) et les environnements physiques sont (pratiquement) **similaires** .*
+*Un scientifique explore un environnement à l’aide d’un appareil 3D et en **réalité mixte** avec un **petit** groupe de collègues **distants** utilisant des appareils **3D et 2D** . La **collaboration** est **synchrone** (mais peut être revisitée de manière asynchrone) et les environnements physiques sont (pratiquement) **similaires**.*
 
 Des expériences comme OnSight présentent de nouvelles opportunités de collaboration. Du point de vue physique des éléments de l’environnement virtuel à la position à côté d’un collègue et au partage de leur perspective lorsqu’ils expliquent leurs résultats. OnSight utilise l’objectif de l’immersion et de la présence pour repenser les expériences de partage dans la réalité mixte.
 
@@ -130,10 +130,10 @@ La collaboration intuitive est le socle de conversation, le travail et la compr�
 
 En fonction de votre application et de votre scénario, il y aura plusieurs exigences pour atteindre votre expérience souhaitée. entres autres :
 
-* **Correspondance** : possibilité de créer des sessions, de publier des sessions, de découvrir et d’inviter des personnes spécifiques, localement et à distance, pour rejoindre votre session.
-* **Partage d’ancrage** : possibilité d’aligner les coordonnées sur plusieurs appareils dans un espace local commun, de sorte que les hologrammes s’affichent dans le même emplacement pour tous les utilisateurs.
-* **Mise en réseau** : possibilité d’avoir des positions, des interactions et des mouvements de personnes et d’hologrammes synchronisés en temps réel pour tous les participants.
-* **Stockage d’État** : capacité à stocker les caractéristiques et emplacements de l’hologramme dans l’espace pour la jonction au milieu des sessions, à rappeler ultérieurement et à renforcer les problèmes réseau.
+* **Correspondance**: possibilité de créer des sessions, de publier des sessions, de découvrir et d’inviter des personnes spécifiques, localement et à distance, pour rejoindre votre session.
+* **Partage d’ancrage**: possibilité d’aligner les coordonnées sur plusieurs appareils dans un espace local commun, de sorte que les hologrammes s’affichent dans le même emplacement pour tous les utilisateurs.
+* **Mise en réseau**: possibilité d’avoir des positions, des interactions et des mouvements de personnes et d’hologrammes synchronisés en temps réel entre tous les participants.
+* **Stockage d’État**: capacité à stocker les caractéristiques et emplacements de l’hologramme dans l’espace pour la jonction au milieu des sessions, à rappeler ultérieurement et à renforcer les problèmes réseau.
 
 La clé de l’expérience partagée consiste à faire en sorte que plusieurs utilisateurs voient les mêmes hologrammes dans le monde sur leur propre appareil, souvent en partageant des points d’ancrage pour aligner les coordonnées entre les appareils.
 
@@ -141,7 +141,7 @@ Pour partager des ancres, utilisez les [ancres spatiales Azure](https://docs.mic
 
 * Tout d’abord, l’utilisateur place l’hologramme.
 * L’application crée une [ancre spatiale](../../design/spatial-anchors.md), pour épingler précisément cet hologramme dans le monde.
-* Les ancres peuvent être partagées avec des appareils HoloLens, iOS et Android via des [ancres spatiales Azure](https://docs.microsoft.com/azure/spatial-anchors/).
+* Les ancres peuvent être partagées sur des appareils HoloLens, iOS et Android via des [ancres spatiales Azure](https://docs.microsoft.com/azure/spatial-anchors/).
 
 Avec une ancre spatiale partagée, l’application sur chaque appareil dispose désormais d’un [système de coordonnées commun](../../design/coordinate-systems.md) dans lequel elles peuvent placer du contenu. L’application peut maintenant garantir la position et l’orientation de l’hologramme au même emplacement.
 
@@ -155,7 +155,7 @@ Différentes options de service et de technologie sont disponibles pour vous aid
 
 Tirez parti des [ancres spatiales Azure](https://docs.microsoft.com/azure/spatial-anchors/) dans votre application.  L’activation et le partage d’ancres spatiales sur plusieurs appareils vous permettent de créer une application dans laquelle les utilisateurs voient les hologrammes dans le même emplacement en même temps.  La synchronisation supplémentaire entre les appareils est nécessaire pour permettre aux utilisateurs d’interagir avec les hologrammes et voir les mouvements ou les mises à jour d’état des hologrammes.
 
-## <a name="share-1st-person-perspective"></a>Perspective partager la première personne
+## <a name="share-first-person-perspective"></a>Perspective partager la première personne
 
 Tirez parti de la prise en charge de Miracast intégrée, pour les utilisateurs locaux lorsque vous avez un récepteur Miracast pris en charge, tel qu’un PC ou une télévision, aucun code d’application supplémentaire n’est nécessaire.
 
@@ -164,7 +164,7 @@ Tirez parti de [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-w
 > [!NOTE]
 > Notez que SignalWire est un service payant et qu’il n’est pas détenu/affilié à Microsoft.
 
-## <a name="presenter-spectator-applications-and-demos"></a>Présentateur-applications et démonstrations pour spectateur
+## <a name="presenter-spectator-applications-and-demos"></a>Presenter-Spectator les applications et les démonstrations
 
 Tirez parti de [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) pour placer les fonctionnalités de la [vue spectateur](spectator-view.md) dans votre application.  Activez les autres appareils (HL, Android, iOS et les caméras vidéo) pour voir ce que l’HoloLens voit d’une perspective différente au même emplacement, et recevoir des mises à jour sur les interactions de l’utilisateur de l’ordinateur hôte HoloLens qui interagit avec les hologrammes.  Regardez, prenez des photos et enregistrez une vidéo de ce que fait l’hôte avec les hologrammes de l’application, de votre propre perspective spatiale avec l’accompagnement spectateur de la même application.
 

@@ -6,12 +6,12 @@ ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens, émulateur, simulation, Windows Mixed Reality, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 59e163c61b620fb1e203fe651d22cc45c2074d19
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679618"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530461"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Entrées avancées dans l’émulateur HoloLens et le simulateur de réalité mixte
 
@@ -29,26 +29,26 @@ Motion fait référence au contrôle et à la modification de la position et de 
 * **Y**: monter ou descendre.
 * **Z**: déplacer vers l’avant ou vers l’arrière.
 
-Les entrées de contrôleur de mouvement et de mouvement sont mappées de près à la façon dont elles sont les appareils physiques :
-* **Action**: cela simule l’action d’appuyer sur le index sur le curseur ou d’extraire le bouton d’action d’un contrôleur. Par exemple, l’entrée d’action peut être utilisée pour simuler le mouvement d’appui sur l’air, pour faire défiler le contenu et pour appuyer et maintenir.
-* **[Bloom](../../design/system-gesture.md#bloom)Geste ou page d’habitation/**: le geste de système et de réseau HoloLens ou le bouton d’hébergement d’un contrôleur est utilisé pour retourner à l’interpréteur de commandes et effectuer des actions système.
+Les entrées de contrôle de mouvement et de mouvement sont mappées étroitement aux appareils physiques :
+* **Action**: simule l’action d’appui sur le index au curseur ou en tirant le bouton d’action d’un contrôleur. Par exemple, l’entrée d’action peut être utilisée pour simuler le mouvement d’appui sur l’air, pour faire défiler le contenu et pour appuyer et maintenir.
+* **[](../../design/system-gesture.md#bloom)Geste ou page d’habitation/**: le geste de système et de réseau HoloLens ou le bouton d’hébergement d’un contrôleur est utilisé pour retourner à l’interpréteur de commandes et déclencher des actions système.
 
-Les mains ont une représentation riche dans HoloLens 2.  En plus de faire l’objet d’un suivi/non suivi, et d’être utilisable pour la conduite de mouvements, les mains disposent désormais d’un modèle de squelette articulé qui leur est adapté et exposé au développeur.  Cela présente 26 points suivis sur chaque main.  
-* **Joint**: l’un des vingt positions suivies pour une main donnée. Un point est alors associé à l’espace 3D.
-* **Pose**: collection complète de tous les joints dans une main. À ce stade, il s’agit d’une collection de 26 jointures. 
+Les mains ont une représentation riche dans HoloLens 2.  En plus de faire l’objet d’un suivi/non suivi et d’être utilisable pour la conduite de mouvements, les mains disposent désormais d’un modèle de squelette articulé qui leur est adapté et exposé au développeur.  Le modèle squelette a 26 points suivis à chaque main.  
+* **Joint**: l’une des 20 positions suivies pour une main donnée suivie avec un point associé dans l’espace 3D.
+* **Pose**: collection complète de tous les joints dans une main, 26 jointures. 
 
-À ce stade, nous n’exposent pas le contrôle direct de chaque position conjointe individuellement par le biais de l’interface utilisateur de l’émulateur, même si vous pouvez les définir via l’API de simulation. Au lieu de cela, nous disposons d’un ensemble de jeux représentatifs utiles que l’émulateur vous permet de basculer entre.
+Nous n’exposent actuellement pas de contrôle direct de la position conjointe individuelle via l’émulateur, mais vous pouvez les définir via l’API de simulation. Nous avons un ensemble de poses représentatifs utiles que l’émulateur vous permet de basculer entre.
 
 Vous pouvez également contrôler l’état de l’entrée de capteur simulé :
-* **Réinitialisation**: tous les capteurs simulés sont retournés à leurs valeurs par défaut.  À partir de l’émulateur HoloLens 2, une réinitialisation peut être étendue à l’un ou aux deux mains en faisant passer la ou les mains souhaitées à l’aide de la ou des touches de modification appropriées ou des boutons (gauche et/ou droit Alt, ou de gauche et/ou de droite sur le boîtier de sélection).
-* **Suivi**: parcourt les modes de suivi positionnel. notamment :
+* **Réinitialisation**: retourne tous les capteurs simulés à leurs valeurs par défaut.  À partir de l’émulateur HoloLens 2, une réinitialisation peut être limitée à une ou deux mains. Faites appel à la ou aux main (s) souhaitée (s) à l’aide des touches de modification ou des boutons (gauche et/ou droit Alt, ou le pare-chocs gauche et/ou droit sur le boîtier de l’option).
+* **Suivi**: parcourt les modes de suivi positionnel, y compris :
   * **Valeur par défaut**: le système d’exploitation choisit le mode de suivi le plus approprié en fonction des demandes effectuées sur le système.
-   * **Orientation**: force le suivi de l’orientation uniquement, quelles que soient les demandes effectuées sur le système.
-   * **Positional**: force le suivi positionnel, quelles que soient les demandes effectuées sur le système.
+   * **Orientation**: force le suivi de l’orientation uniquement, quelle que soit la demande du système.
+   * **Positional**: force le suivi positionnel, quelle que soit la demande du système.
 
 ## <a name="types-of-input"></a>Types d’entrée
 
-Le tableau suivant montre comment chaque type d’entrée est mappé au clavier, à la souris et au contrôleur Xbox. Chaque type a un mappage différent selon le mode de contrôle d’entrée. plus d’informations sur les modes de contrôle d’entrée sont fournies plus loin dans ce document.
+Le tableau suivant montre comment chaque type d’entrée est mappé au clavier, à la souris et au contrôleur Xbox. Chaque type a un mappage différent selon le mode de contrôle d’entrée. Vous trouverez plus d’informations sur les modes de contrôle d’entrée plus loin dans ce document.
 
 | Entrée |  Clavier |  Souris |  Contrôleur Xbox | 
 |----------|----------|----------|----------|
@@ -79,7 +79,7 @@ Remarque : les boutons de contrôleur peuvent être ciblés sur une main ou un 
 
 ## <a name="targeting"></a>Ciblage 
 
-Certains des concepts d’entrée ci-dessus sont autonomes.  Les concepts action, fleuri/System, Reset et Tracking sont complets, n’ont pas besoin et ne sont pas affectés par, tout modificateur supplémentaire pour le ciblage.  Toutefois, les autres concepts peuvent être appliqués à une ou plusieurs cibles. Nous avons introduit des moyens de spécifier la cible à laquelle votre commande doit être appliquée.  Dans tous les cas, il est possible de spécifier par le biais de l’interface utilisateur ou par le biais de l’appui sur le clavier, l’objet à cibler.  Dans certains cas, il est également possible de spécifier directement avec le contrôleur Xbox. 
+Certains des concepts d’entrée ci-dessus sont autonomes.  Action, fleuri/System, Reset et Tracking sont des concepts complets, qui ne sont pas nécessaires et qui ne sont pas affectés par, tous les modificateurs supplémentaires pour le ciblage.  Les autres concepts peuvent être appliqués à une ou plusieurs cibles. Nous avons introduit des moyens de spécifier la cible à laquelle votre commande doit être appliquée.  Dans tous les cas, il est possible de spécifier par le biais de l’interface utilisateur ou par le biais de l’appui sur le clavier, l’objet à cibler.  Dans certains cas, il est également possible de spécifier directement avec le contrôleur Xbox. 
 
 Le tableau suivant décrit les options de ciblage et la manière d’activer chacune d’elles.
 
@@ -87,8 +87,8 @@ Le tableau suivant décrit les options de ciblage et la manière d’activer cha
 |----------|----------|----------|----------|
 | Corps | (par défaut) | (par défaut) | (par défaut) |
 | Head | Contenir H | (Non disponible) | (Non disponible) |
-| Main gauche/contrôleur | Maintenir le bouton gauche ALT | Bouton conserver l’épaule gauche | Punaise gauche | 
-| Main droite/contrôleur | Maintenir le bouton droit Alt | Bouton de maintien de l’épaule de droite | Clic droit |
+| Main gauche/contrôleur | Maintenir le bouton gauche ALT | Bouton conserver l’épaule gauche | Left-Hand punaise | 
+| Main droite/contrôleur | Maintenir le bouton droit Alt | Bouton de maintien de l’épaule de droite | Right-Hand punaise |
 | Yeux | Conserver Y | (Non disponible) | Punaise yeux |
   
 Le tableau suivant montre comment chaque modificateur cible mappe chacun des concepts d’entrée de déplacement de base
@@ -134,7 +134,8 @@ L’ensemble de contrôles suivant est suggéré pour une utilisation quotidienn
 
 Lors de l’utilisation d’un casque immersif Windows Mixed Reality avec l’émulateur HoloLens 2, le déplacement et la rotation sont automatiquement mappés au mouvement et à la rotation du casque.  La position et l’orientation du contrôleur de mouvement sont automatiquement mappées à la position et à l’orientation de la main dans l’émulateur.  Le tableau ci-dessous répertorie les actions supplémentaires disponibles lors de l’utilisation d’un contrôleur de mouvement.
 
-Notez que lorsque vous utilisez un casque, les contrôles standard du clavier, de la souris et du boîtier de commande sont automatiquement ignorés.
+> [!NOTE]
+> Quand vous utilisez un casque, les contrôles standard du clavier, de la souris et du boîtier sont ignorés automatiquement.
 
 |  Opération |  Action |  Notes | 
 |----------|----------|----------|
@@ -150,7 +151,7 @@ Notez que lorsque vous utilisez un casque, les contrôles standard du clavier, d
 
 ## <a name="perception-simulation-control-panel-keyboard-shortcuts"></a>Raccourcis clavier du panneau de configuration de la perception
 
-Les raccourcis clavier suivants sont disponibles pour accéder au panneau de configuration de la simulation de perception et à l’activation ou la désactivation de périphériques d’entrée de PC pour une utilisation avec la simulation.
+Vous pouvez accéder au panneau de configuration de la simulation de perception et activer ou désactiver les périphériques d’entrée de PC avec les raccourcis clavier suivants.
 
 | Opération | Raccourci | Description/remarques |
 |-----------|----------|-------------|
@@ -158,7 +159,7 @@ Les raccourcis clavier suivants sont disponibles pour accéder au panneau de con
 | Activer l’utilisation de la souris pour la simulation | F5 | Lorsqu’elle est désactivée, l’entrée de la souris est envoyée à l’environnement de réalité mixte (Windows Mixed Reality uniquement) |
 | Activer/désactiver le boîtier d’activation pour la simulation | F6 | Lorsqu’elle est désactivée, l’entrée du boîtier est ignorée par la simulation |
 | Afficher ou masquer le panneau de configuration | F7 | |
-| Définir le focus clavier sur le panneau de configuration | F8 | Si le panneau n’est pas visible actuellement, il s’affiche en premier. |
+| Définir le focus clavier sur le panneau de configuration | F8 | Si le panneau n’est pas actuellement visible, il est affiché en premier. |
 | Ancrer ou détacher le panneau vers/depuis la fenêtre du portail de l’émulateur ou de la réalité mixte | F9 | Si la fenêtre est fermée lorsqu’elle est désancrée, elle est ancrée et masquée. |
 
 ## <a name="see-also"></a>Voir aussi

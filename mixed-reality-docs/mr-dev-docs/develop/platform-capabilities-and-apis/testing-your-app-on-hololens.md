@@ -6,31 +6,31 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, test
-ms.openlocfilehash: f498fd9f724cc0786e7b8bfe656f1948de1ab0cb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e1a5a62cf52a3144f02b8acaa96b3c653246fd9c
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679874"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530341"
 ---
 # <a name="testing-your-app-on-hololens"></a>Test de votre application dans HoloLens
 
-Le test des applications HoloLens est très similaire au test des applications Windows. Toutes les zones habituelles doivent être considérées (fonctionnalités, interopérabilité, performances, sécurité, fiabilité, etc.). Toutefois, certaines zones nécessitent un traitement spécial ou une attention particulière aux détails qui ne sont généralement pas observés dans les applications PC ou téléphone. Les applications holographiques doivent s’exécuter sans heurts dans un ensemble diversifié d’environnements. Ils doivent également conserver les performances et le confort de l’utilisateur à tout moment. Les conseils pour tester ces domaines sont détaillés dans cette rubrique.
+Le test des applications HoloLens est semblable au test des applications Windows. Vous devez toujours tenir compte des fonctionnalités, de l’interopérabilité, des performances, de la sécurité, de la fiabilité, etc. Toutefois, certaines zones qui ne s’affichent pas dans les applications de téléphone ou de PC nécessitent un traitement spécial. Les applications holographiques doivent s’exécuter sans heurts dans un ensemble diversifié d’environnements. Ils doivent également conserver les performances et le confort de l’utilisateur à tout moment. Ce guide est ici pour vous aider à tester ces domaines.
 
 ## <a name="performance"></a>Performances
 
 Les applications holographiques doivent s’exécuter sans heurts dans un ensemble diversifié d’environnements. Ils doivent également conserver les performances et le confort de l’utilisateur à tout moment. Les performances sont si importantes pour l’expérience de l’utilisateur avec une application holographique dans laquelle nous avons une rubrique entière consacrée. Veillez à lire et à suivre la [Description des performances pour la réalité mixte](understanding-performance-for-mixed-reality.md)
 
 ## <a name="testing-3d-in-3d"></a>Test de 3D en 3D
-1. **Testez votre application dans autant d’espaces que possible.** Essayez dans les grands locaux, les petites salles, les salles de bain, les cuisines, les chambres, les bureaux, etc. Prenez également en compte les chambres avec des fonctionnalités non standard, telles que les murs non verticaux, les murs incurvés et les limites non horizontales. Fonctionne-t-il bien lors de la transition entre des salles, des planchers, en passant par des couloirs ou des escaliers ?
-2. **Testez votre application dans des conditions d’éclairage différentes.** Répond-il correctement à différentes conditions environnementales, telles que l’éclairage, les surfaces noires, les surfaces transparentes/réfléchissantes telles que les miroirs, les murs de verre, etc.
+1. **Testez votre application dans autant d’espaces que possible.** Essayez dans les grandes salles, les petites salles, les salles de bain, les cuisines, les chambres, les bureaux, etc. Prenez également en compte les chambres avec des fonctionnalités non standard, telles que les murs non verticaux, les murs incurvés et les limites non horizontales. Fonctionne-t-il bien lors de la transition entre des salles, des planchers, en passant par des couloirs ou des escaliers ?
+2. **Testez votre application dans des conditions d’éclairage différentes.** Répond-il correctement à différentes conditions environnementales, telles que l’éclairage, les surfaces noires et les surfaces transparentes ou réfléchissantes comme les miroirs et les murs.
 3. **Testez votre application dans différentes conditions de mouvement.** Mettez sur l’appareil et essayez vos scénarios dans différents États de mouvement. Répond-il correctement à un mouvement ou à un état stable différent ?
 4. **Testez le fonctionnement de votre application à partir de différents angles.** Si vous avez un hologramme universel, que se passe-t-il si votre utilisateur s’en sert ? Que se passe-t-il si un élément est présent entre l’utilisateur et l’hologramme ? Que se passe-t-il si l’utilisateur regarde l’hologramme ci-dessus ou en dessous ?
-5. **Utilisez des signaux spatial et audio.** Assurez-vous que votre application les utilise pour empêcher la perte de l’utilisateur.
+5. **Utilisez des signaux spatial et audio.** Assurez-vous que votre application utilise des indications spatiales et audio pour empêcher l’utilisateur de se perdre.
 6. **Testez votre application à différents niveaux de bruit ambiant.** Si vous avez implémenté des commandes vocales, essayez de les appeler avec différents niveaux de bruit ambiant.
-7. **Testez votre application en place et debout** . Veillez à tester à partir des sièges et des positions debout.
-8. **Testez votre application à partir de différentes distances** . Les éléments d’interface utilisateur peuvent-ils être lus et interagis à partir de loin ? Votre application réagit-elle aux utilisateurs qui se trouvent trop près de vos hologrammes ?
-9. **Testez votre application en fonction des interactions courantes de la barre d’application** . Toutes les vignettes d’application et les applications universelles 2D ont une [barre d’application](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) qui vous permet de contrôler la façon dont l’application est positionnée dans le monde mixte. Assurez-vous que le fait de cliquer sur supprimer met fin à votre processus d’application et que le bouton précédent est pris en charge dans le contexte de votre application universelle 2D. Essayez de mettre à l’échelle et de déplacer votre application en [mode d’ajustement](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) , tant qu’elle est active et qu’il s’agit d’une vignette d’application interrompue.
+7. **Testez votre application en place et debout**. Veillez à tester à partir des sièges et des positions debout.
+8. **Testez votre application à partir de différentes distances**. Les éléments d’interface utilisateur peuvent-ils être lus et interagis à partir de loin ? Votre application réagit-elle aux utilisateurs qui se trouvent trop près de vos hologrammes ?
+9. **Testez votre application en fonction des interactions courantes de la barre d’application**. Toutes les vignettes d’application et les applications universelles 2D ont une [barre d’application](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) qui vous permet de contrôler la position des applications dans le monde mixte. Assurez-vous que le fait de cliquer sur supprimer met fin au processus de l’application normalement et que le bouton précédent est pris en charge dans le contexte de votre application universelle 2D. Essayez de mettre à l’échelle et de déplacer votre application en [mode d’ajustement](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) , tant qu’elle est active et qu’il s’agit d’une vignette d’application interrompue.
 
 ### <a name="environmental-test-matrix"></a>Matrice de test environnemental
 
@@ -48,16 +48,16 @@ Les applications holographiques doivent s’exécuter sans heurts dans un ensemb
 ### <a name="interaction-models"></a>Modèles d’interaction
 
 Assurez-vous que les interactions d’hologramme fonctionnent avec le [modèle d’interaction](../../design/interaction-fundamentals.md)que vous avez choisi.
-Il est également judicieux de valider avec différents accessoires, tels que la souris et le clavier, si ces accessoires sont nécessaires pour prendre en charge l’accessibilité.
+Il est également judicieux de valider avec différents accessoires, tels que la souris et le clavier, s’ils sont nécessaires pour prendre en charge l’accessibilité.
 
-**Validez le moment où votre application a un comportement différent avec la souris et le toucher.** Cela permet d’identifier les incohérences et d’aider à prendre des décisions de conception pour rendre l’expérience plus naturelle pour les utilisateurs. Par exemple, le déclenchement d’une action basée sur le pointage.
+**Validez le moment où votre application a un comportement différent avec la souris et le toucher.** Identifie les incohérences et aide à prendre des décisions de conception pour rendre l’expérience plus naturelle pour les utilisateurs. Par exemple, le déclenchement d’une action basée sur le pointage.
 
 
 ### <a name="custom-voice-commands"></a>Commandes vocales personnalisées
 
 L' [entrée vocale](../../design/voice-input.md) est une forme naturelle d’interaction. L’expérience utilisateur peut être magique ou confuse en fonction de votre choix de commandes et de la façon dont vous les exposez. En règle générale, vous ne devez pas utiliser de commandes vocales système telles que « SELECT » ou « Hey Cortana » comme commandes personnalisées. Voici quelques points à prendre en compte :
-1. **Évitez d’utiliser des commandes similaires.** Cela peut éventuellement déclencher une commande incorrecte.
-2. **Choisissez des mots phonétiquement enrichis lorsque cela est possible.** Cela permet de réduire et/ou d’éviter les fausses activations.
+1. **Évitez d’utiliser des commandes similaires.** Peut potentiellement déclencher une commande incorrecte.
+2. **Choisissez des mots phonétiquement enrichis lorsque cela est possible.** Minimise et/ou évite les fausses activations.
 
 ### <a name="peripherals"></a>Périphériques
 
@@ -87,7 +87,7 @@ Validez les fonctionnalités principales de l’application lors du basculement 
 
 ## <a name="telemetry"></a>Télémétrie
 
-Utilisez les données de télémétrie et les analyses pour vous guider. L’intégration d’Analytics dans votre application vous aide à obtenir des informations sur votre application auprès de vos testeurs et utilisateurs finaux. Ces données peuvent être utilisées pour optimiser votre application avant son envoi au Windows Store et pour les futures mises à jour. Il existe de nombreuses options d’analyse. Si vous n’êtes pas sûr de l’emplacement de départ, consultez [application Insights](https://www.visualstudio.com/products/application-insights-vs.aspx).
+Utilisez les données de télémétrie et les analyses pour vous guider. L’intégration de Analytics à votre application vous aide à obtenir des informations sur votre application auprès de vos testeurs et utilisateurs finaux. Ces données peuvent être utilisées pour optimiser votre application avant son envoi au Windows Store et pour les futures mises à jour. Il existe de nombreuses options d’analyse. Si vous n’êtes pas sûr de l’emplacement de départ, consultez [application Insights](https://www.visualstudio.com/products/application-insights-vs.aspx).
 
 Questions à prendre en compte :
 1. Comment les utilisateurs utilisent-ils l’espace ?
@@ -95,11 +95,11 @@ Questions à prendre en compte :
 3. Combien de temps consacrez-vous aux différentes étapes de l’application ?
 4. Combien de temps consacrez-vous à l’application ?
 5. Quels sont les chemins d’utilisation les plus courants que les utilisateurs essaient ?
-6. Les utilisateurs atteignent-ils des États et/ou des erreurs inattendus ?
+6. Les utilisateurs atteignent-ils des États ou des erreurs inattendus ?
 
 ## <a name="emulator-and-simulated-input"></a>Émulateur et entrée simulée
 
-L' [émulateur HoloLens](using-the-hololens-emulator.md) est un excellent moyen de tester efficacement votre application holographique avec une variété de caractéristiques et d’espaces simulés pour l’utilisateur. Voici quelques suggestions pour utiliser efficacement l’émulateur pour tester votre application :
+L' [émulateur HoloLens](using-the-hololens-emulator.md) est un excellent moyen de tester efficacement votre application holographique avec différents genres de caractéristiques et d’espaces simulés de l’utilisateur. Voici quelques suggestions pour utiliser efficacement l’émulateur pour tester votre application :
 1. **Utilisez les salles virtuelles de l’émulateur pour développer vos tests.** L’émulateur est fourni avec un ensemble de salles virtuelles que vous pouvez utiliser pour tester votre application dans encore plus d’environnements.
 2. **Utilisez l’émulateur pour examiner votre application à partir de tous les angles.** Les clés PageUp/PageDn rendent votre utilisateur simulé plus grand ou plus petit.
 3. **Testez votre application avec un véritable HoloLens.** L’émulateur HoloLens est un excellent outil pour vous aider à itérer rapidement sur une application et à intercepter de nouveaux bogues, mais veillez également à effectuer des tests sur un HoloLens physique avant de l’envoyer au Windows Store. Il est important de s’assurer que les performances et l’expérience sont importantes sur du matériel réel.

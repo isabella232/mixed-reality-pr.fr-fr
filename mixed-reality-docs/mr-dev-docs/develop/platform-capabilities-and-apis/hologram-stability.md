@@ -8,16 +8,14 @@ ms.topic: article
 keywords: hologrammes, stabilité, hololens, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, fréquence d’images, rendu, reprojection, séparation des couleurs
 appliesto:
 - HoloLens
-ms.openlocfilehash: 081a080c73a1c78eb762b94291027cf7ebcbed45
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 345ba3608b77ed4d7b493985903295f5ee3f4863
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679598"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530428"
 ---
 # <a name="hologram-stability"></a>Stabilité des hologrammes
-
-## <a name="overview"></a>Vue d’ensemble
 
 Pour obtenir des hologrammes stables, HoloLens dispose d’un pipeline de stabilisation d’image intégré. Le pipeline de stabilisation fonctionne automatiquement en arrière-plan. vous n’avez donc pas besoin d’effectuer des étapes supplémentaires pour l’activer. Toutefois, vous devez exercer des techniques qui améliorent la stabilité des hologrammes et évitez les scénarios qui réduisent la stabilité.
 
@@ -29,7 +27,7 @@ La terminologie suivante peut vous aider lorsque vous identifiez des problèmes 
 * **Précision.** Une fois que l’hologramme est verrouillé et placé dans le monde réel, il doit rester à l’endroit où il est placé par rapport à l’environnement environnant et indépendamment du mouvement de l’utilisateur ou des modifications de l’environnement faible et épars. Si un hologramme s’affiche plus tard dans un emplacement inattendu, il s’agit d’un problème de *précision* . De tels scénarios peuvent se produire si deux salles distinctes paraissent identiques.
 * **Instabilité.** Les utilisateurs observent le bougé comme un tremblement haute fréquence d’un hologramme, ce qui peut se produire lorsque le suivi de l’environnement se dégrade. Pour les utilisateurs, la solution exécute le [Paramétrage du capteur](../../sensor-tuning.md).
 * **Judder.** Une faible fréquence de rendu entraîne des mouvements inégaux et des images double d’hologrammes. Judder est particulièrement visible dans les hologrammes avec motion. Les développeurs doivent conserver une [constante de 60 fps](hologram-stability.md#frame-rate).
-* **Cession.** Les utilisateurs voient la dérive lorsqu’un hologramme s’éloigne de l’endroit où il a été placé à l’origine. La dérive se produit lorsque les hologrammes sont placés loin des [ancres spatiales](../../design/spatial-anchors.md), en particulier dans les parties de l’environnement qui ne sont pas entièrement mappées. La création d’hologrammes proches des ancres spatiales réduit la probabilité de dérive.
+* **Cession.** Les utilisateurs voient la dérive lorsqu’un hologramme s’éloigne de l’endroit où il a été placé à l’origine. La dérive se produit lorsque vous placez des hologrammes loin des [ancres spatiales](../../design/spatial-anchors.md), en particulier dans les parties non mappées de l’environnement. La création d’hologrammes proches des ancres spatiales réduit la probabilité de dérive.
 * **Jumpiness.** Quand un hologramme « sort » ou « saute » à son emplacement, parfois. Jumpiness peut se produire lorsque le suivi ajuste les hologrammes pour correspondre à la compréhension mise à jour de votre environnement.
 * **Jeter.** Lorsqu’un hologramme apparaît sur le Sway correspondant au mouvement de la tête de l’utilisateur. Cet événement se produit lorsque l’application n’a pas été [entièrement implémentée et que](hologram-stability.md#reprojection)la vue HoloLens n’est pas [étalonnée](../../calibration.md) pour l’utilisateur actuel. L’utilisateur peut réexécuter l’application d' [étalonnage](../../calibration.md) pour résoudre le problème. Les développeurs peuvent mettre à jour le plan de stabilisation pour améliorer la stabilité.
 * **Séparation des couleurs.** Les affichages dans HoloLens sont des affichages séquentiels de couleur, qui sont des canaux de couleur Flash rouge-vert-bleu-vert à 60 Hz (les champs de couleur individuels sont affichés à 240 Hz). Chaque fois qu’un utilisateur effectue le suivi d’un hologramme mobile avec ses yeux, les bords de début et de fin de l’hologramme sont séparés dans leurs couleurs constitutives, ce qui produit un effet arc-en-ciel. Le degré de séparation dépend de la vitesse de l’hologramme. Dans certains cas plus rares, le déplacement des têtes s’effectue rapidement tout en regardant un hologramme stationnaire, ce qui se traduit par une *[séparation des couleurs](hologram-stability.md#color-separation)*.
@@ -70,7 +68,7 @@ Les utilisateurs qui ont le port HoloLens s’adapteront toujours à 2,0 m pour 
 
 Il est possible d’éviter ou de minimiser le conflit entre le vergence et l’hébergement en conservant un contenu convergé aussi proche que possible de 2,0 m (autrement dit, dans une scène avec un grand nombre de points d’intérêt près de 2,0 m, si possible). Lorsque le contenu ne peut pas être placé près de 2,0 m, le conflit entre le vergence et l’hébergement est plus grand lorsque l’utilisateur se déplace entre les différentes distances. En d’autres termes, il est bien plus facile de regarder un hologramme stationnaire qui reste 50 cm de plus que d’examiner un hologramme de 50 cm qui se déplace vers et à partir de vous dans le temps.
 
-Il est également avantageux de placer du contenu à 2,0 m, car les deux écrans sont conçus pour se chevaucher entièrement à cette distance. Pour les images placées en dehors de ce plan, lorsqu’elles se déplacent du côté du cadre holographique, elles apparaissent d’un affichage à l’autre, tout en étant toujours visibles. Cette rivalisation binoculaire peut perturber le sentiment de profondeur du holorgam.
+Il est également avantageux de placer du contenu à 2,0 m, car les deux écrans sont conçus pour se chevaucher entièrement à cette distance. Pour les images placées en dehors de ce plan, lorsqu’elles se déplacent du côté du cadre holographique, elles apparaissent d’un affichage à l’autre, tout en étant toujours visibles. Cette rivalisation binoculaire peut perturber le sentiment de profondeur de l’hologramme.
 
 **Distance optimale pour le placement des hologrammes par rapport à l’utilisateur**
 
@@ -81,7 +79,7 @@ Il est également avantageux de placer du contenu à 2,0 m, car les deux écrans
 **Meilleures pratiques** Lorsque les hologrammes ne peuvent pas être placés à 2 m et que les conflits entre la convergence et l’hébergement ne peuvent pas être évités, la zone optimale pour le placement de l’hologramme est comprise entre 1,25 m et 5 mètres. Dans tous les cas, les concepteurs doivent structurer le contenu pour encourager les utilisateurs à interagir à 1 + m de distance (par exemple, ajuster la taille du contenu et les paramètres de positionnement par défaut).
 
 ## <a name="reprojection"></a>Reprojection
-HoloLens effectue une technique de stabilisation holographique à assistance matérielle sophistiquée appelée reprojection. La reprojection prend en compte le mouvement et la modification du point de vue (CameraPose) à mesure que la scène s’anime et que l’utilisateur déplace sa tête.  Les applications doivent prendre des mesures spécifiques pour utiliser au mieux la reprojection.
+HoloLens dispose d’une technique de stabilisation holographique à assistance matérielle sophistiquée appelée reprojection. La reprojection prend en compte le mouvement et la modification du point de vue (CameraPose) à mesure que la scène s’anime et que l’utilisateur déplace sa tête.  Les applications doivent prendre des mesures spécifiques pour utiliser au mieux la reprojection.
 
 
 Il existe quatre types principaux de reprojection
@@ -99,8 +97,8 @@ Les applications doivent prendre des mesures spécifiques pour activer les diff�
 
 Type de stabilisation |    Casques immersifs |    Génération HoloLens 1 | HoloLens 2
 --- | --- | --- | ---
-Reprojection de profondeur |    Recommandé |   N/A |   Recommandé<br/><br/>Les applications Unity doivent utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure. Sinon, utilisez la reprojection automatique planaire.
-Reprojection plan automatique | N/A |   Valeur par défaut recommandée |   Recommandé si la reprojection de profondeur ne donne pas les meilleurs résultats<br/><br/>Les applications Unity sont recommandées pour utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure.  Les versions d’Unity précédentes fonctionnent avec des résultats de reprojection légèrement dégradés.
+Reprojection de profondeur |    Recommandé |   NON APPLICABLE |   Recommandé<br/><br/>Les applications Unity doivent utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure. Sinon, utilisez la reprojection automatique planaire.
+Reprojection plan automatique | NON APPLICABLE |   Valeur par défaut recommandée |   Recommandé si la reprojection de profondeur ne donne pas les meilleurs résultats<br/><br/>Les applications Unity sont recommandées pour utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure.  Les versions d’Unity précédentes fonctionnent avec des résultats de reprojection légèrement dégradés.
 Reprojection planaire |   Non recommandé |   Recommandé si le plan automatique ne donne pas les meilleurs résultats | Utilisez si aucune des options de profondeur ne donne les résultats souhaités    
 
 ### <a name="verifying-depth-is-set-correctly"></a>La précision de la vérification est définie correctement
@@ -146,7 +144,7 @@ La seule chose la plus importante qu’un développeur puisse faire pour stabili
 
 **Meilleures pratiques** Il n’existe pas de méthode universelle pour configurer le plan de stabilisation et il est spécifique à l’application. Notre recommandation principale est d’expérimenter et de voir ce qui convient le mieux à votre scénario. Toutefois, essayez d’aligner le plan de stabilisation avec autant de contenu que possible, car tout le contenu de ce plan est parfaitement stabilisé.
 
-Exemple :
+Par exemple :
 * Si vous disposez uniquement d’un contenu planaire (lecture de l’application de lecture vidéo), alignez le plan de stabilisation avec le plan qui contient votre contenu.
 * Si trois petites sphères sont verrouillées dans le monde, faites en sorte que le plan de stabilisation soit « coupé » par le biais des centres de tous les sphères actuellement dans la vue de l’utilisateur.
 * Si votre scène a du contenu à des profondeurs sensiblement différentes, privilégiez les autres objets.

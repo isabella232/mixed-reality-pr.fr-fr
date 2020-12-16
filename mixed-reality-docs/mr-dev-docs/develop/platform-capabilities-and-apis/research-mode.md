@@ -6,20 +6,20 @@ ms.author: v-hferrone
 ms.date: 07/31/2020
 ms.topic: article
 keywords: Mode de recherche, CV, RS4, vision par ordinateur, recherche, HoloLens, HoloLens 2
-ms.openlocfilehash: 327ee932dce99a2559e406630611dcc3c69a0002
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6c40ac814a5dacfdbb942aec8200f46157bea161
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679903"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530088"
 ---
 # <a name="hololens-research-mode"></a>Mode de recherche HoloLens
 
-Le mode de recherche a été introduit dans le HoloLens de 1re génération pour permettre l’accès aux capteurs de clé sur l’appareil, en particulier pour les applications de recherche qui ne sont pas destinées au déploiement.  Le mode de recherche pour HoloLens 2 conserve les fonctionnalités de HoloLens 1, en ajoutant l’accès aux flux supplémentaires :
+Le mode de recherche a été introduit sur les appareils HoloLens (1er génération) pour permettre l’accès aux capteurs de clé, en particulier pour les applications de recherche qui ne sont pas destinées au déploiement.  Le mode de recherche pour HoloLens 2 conserve les fonctionnalités de HoloLens 1, mais ajoute l’accès aux flux suivants :
 
 * **Caméras de suivi de l’environnement clair visibles** -caméras de nuances de gris utilisées par le système pour le suivi des têtes et la génération de cartes.
 * **Appareil photo de profondeur** : fonctionne en deux modes :  
-    + Détection presque-profondeur AHAT, à fréquence élevée (45 FPS) utilisée pour le suivi des handles. De la même façon que le mode de levée abrégée de la première version, AHAT fournit une Pseudo-profondeur avec un retour à la ligne au-delà de 1 mètre. 
+    + Détection presque-profondeur AHAT, à fréquence élevée (45 FPS) utilisée pour le suivi des handles. Différemment du mode de levée de la première version, AHAT offre une Pseudo-profondeur avec un retour à la ligne au-delà de 1 mètre. 
     + Détection de longueurs longues, à faible fréquence (1-5 FPS), utilisée par le [mappage spatial](../../design/spatial-mapping.md)
 
 * **Deux versions du flux de réflectivité IR** -utilisées par le HoloLens pour calculer la profondeur. Ces images sont éclairées par infrarouge et ne sont pas affectées par la lumière visible ambiante.
@@ -40,11 +40,11 @@ Si vous utilisez un HoloLens 2, vous avez également accès aux entrées supplé
 
 Le mode de recherche est conçu pour les chercheurs universitaires et industriels qui explorent de nouvelles idées dans les domaines de la Vision par ordinateur et de la robotique.  Elle n’est pas destinée aux applications déployées dans des environnements d’entreprise ou disponibles via le Microsoft Store ou d’autres canaux de distribution.
 
-En outre, Microsoft ne garantit pas que le mode de recherche ou les fonctionnalités équivalentes seront pris en charge dans les futures mises à jour du matériel ou du système d’exploitation. Toutefois, cela ne vous empêche pas de l’utiliser pour développer et tester de nouvelles idées !
+En outre, Microsoft ne garantit pas que le mode de recherche ou les fonctionnalités équivalentes seront pris en charge dans les futures mises à jour du matériel ou du système d’exploitation. Toutefois, ne vous laissez pas vous empêcher de l’utiliser pour développer et tester de nouvelles idées !
 
 ## <a name="security-and-performance"></a>Sécurité et performances
 
-N’oubliez pas que l’activation du mode de recherche utilise davantage de batterie que l’utilisation de la mise à l’aide du système HoloLens 2 dans des conditions normales. Cela est vrai même si l’application qui utilise les fonctionnalités du mode de recherche n’est pas en cours d’exécution.  L’activation de ce mode peut également réduire la sécurité globale de votre appareil, car les applications peuvent avoir recours à des données de capteur.  Vous trouverez plus d’informations sur la sécurité des appareils dans le [Forum aux questions sur la sécurité HoloLens](https://docs.microsoft.com/hololens/hololens-faq-security).  
+L’activation du mode de recherche utilise davantage de batterie que l’utilisation du HoloLens 2 dans des conditions normales, même si l’application qui utilise les fonctionnalités du mode de recherche n’est pas en cours d’exécution.  L’activation de ce mode peut également réduire la sécurité globale de votre appareil, car les applications peuvent avoir recours à des données de capteur.  Vous trouverez plus d’informations sur la sécurité des appareils dans le [Forum aux questions sur la sécurité HoloLens](https://docs.microsoft.com/hololens/hololens-faq-security).  
 
 ## <a name="device-support"></a>Prise en charge des appareils
 <table>
@@ -54,7 +54,7 @@ N’oubliez pas que l’activation du mode de recherche utilise davantage de bat
     <col width="33%" /> </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens première génération</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
     </tr>
      <tr>
@@ -84,18 +84,18 @@ N’oubliez pas que l’activation du mode de recherche utilise davantage de bat
     </tr>
 </table>
 
-## <a name="enabling-research-mode-hololens-1st-gen-and-hololens-2"></a>Activation du mode de recherche (HoloLens 1re génération et HoloLens 2)
+## <a name="enabling-research-mode-hololens-first-gen-and-hololens-2"></a>Activation du mode de recherche (HoloLens First GEN et HoloLens 2)
 
 Le mode de recherche est une extension du mode développeur. Avant de commencer, les fonctionnalités de développement de l’appareil doivent être activées pour accéder aux paramètres du mode de recherche : 
 
-* Ouvrez le **menu démarrer > paramètres** , puis sélectionnez **mises à jour** .
-* Sélectionnez **pour les développeurs** et activer le **mode développeur** .
-* Faites défiler la liste et activez le **portail d’appareil** .
+* Ouvrez le **menu démarrer > paramètres** , puis sélectionnez **mises à jour**.
+* Sélectionnez **pour les développeurs** et activer le **mode développeur**.
+* Faites défiler la liste et activez le **portail d’appareil**.
 
 Une fois les fonctionnalités du développeur activées, [Connectez-vous au portail de l’appareil](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) pour activer les fonctionnalités du mode de recherche :
 
-* Accédez à **système > le mode de recherche** dans le portail de l' **appareil** .
-* Sélectionnez **autoriser l’accès au flux de capteur** .
+* Accédez à **système > le mode de recherche** dans le portail de l' **appareil**.
+* Sélectionnez **autoriser l’accès au flux de capteur**.
 * Redémarrez l’appareil à partir de l’élément de menu **Power** situé en haut de la page.
 
 Une fois que vous avez redémarré l’appareil, les applications chargées via le portail de l' **appareil** peuvent accéder aux flux en mode de recherche.
@@ -108,17 +108,17 @@ Une fois que vous avez redémarré l’appareil, les applications chargées via 
 
 ### <a name="using-sensor-data-in-your-apps"></a>Utilisation des données de capteur dans vos applications
 
-Les applications peuvent accéder aux données de flux de capteur de la même façon que les flux de photos et les vidéos de caméra vidéo sont accessibles par le biais de [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197). 
+Les applications peuvent accéder aux données de flux de capteur de la même façon que [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) accède à des flux de photo et de vidéo. 
 
 Toutes les API qui fonctionnent pour le développement HoloLens sont également disponibles en mode de recherche. En particulier, l’application sait précisément où HoloLens se trouve dans l’espace 6DoF à chaque fois que la capture de l’image du capteur est terminée.
 
-Vous trouverez des exemples d’applications sur l’accès aux différents flux en mode de recherche, à l’aide des [fonctions intrinsèques et extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), et l’enregistrement de flux dans les dépôts de mode de recherche respectifs :
-* [HoloLens (1ère génération)](https://github.com/Microsoft/HoloLensForCV)
+Nous avons des exemples d’applications qui illustrent l’accès aux flux en mode de recherche, à l’aide des [fonctions intrinsèques et extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)et de l’enregistrement des flux :
+* [HoloLens (première génération)](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV)
 
 ## <a name="support"></a>Support
 
-Pour HoloLens (1ère génération), utilisez le [suivi des problèmes](https://github.com/Microsoft/HololensForCV/issues) dans le référentiel HoloLensForCV pour publier des commentaires et effectuer le suivi des problèmes connus.
+Pour HoloLens (First Gen), utilisez le [suivi des problèmes](https://github.com/Microsoft/HololensForCV/issues) dans le référentiel HoloLensForCV pour publier des commentaires et effectuer le suivi des problèmes connus.
 
 Pour HoloLens 2, utilisez le [suivi des problèmes](https://github.com/microsoft/HoloLens2ForCV/issues) dans le référentiel HoloLens2ForCV pour publier des commentaires et effectuer le suivi des problèmes connus.
 

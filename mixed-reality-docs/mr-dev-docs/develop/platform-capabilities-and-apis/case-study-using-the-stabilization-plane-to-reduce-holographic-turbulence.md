@@ -6,28 +6,28 @@ ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, stabilisation, étude de cas, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679608"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530439"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Étude de cas : utilisation du plan de stabilisation pour réduire la turbulence holographique
 
-L’utilisation des hologrammes peut être délicate. Le fait que vous puissiez vous déplacer dans votre espace et voir vos hologrammes à partir de tous les angles différents fournit un niveau d’immersion que vous ne pouvez pas obtenir avec un écran d’ordinateur normal. La mise en place de ces hologrammes et la recherche réaliste sont une fonction technique accomplie par le matériel Microsoft HoloLens et la conception intelligente des applications holographiques.
+L’utilisation des hologrammes est souvent délicate. Le fait de se déplacer autour d’un espace et d’examiner des hologrammes à partir de tous les angles différents fournit un niveau d’immersion qui n’est pas disponible sur un écran d’ordinateur normal. La mise en place de ces hologrammes et la recherche réaliste sont une fonction technique accomplie par le matériel Microsoft HoloLens et la conception intelligente des applications holographiques.
 
 ## <a name="the-tech"></a>Le Tech
 
-Pour que les hologrammes apparaissent comme s’ils partagent réellement l’espace avec vous, ils doivent s’afficher correctement, sans séparation des couleurs. Cela est possible, en partie, par la technologie intégrée au matériel HoloLens, qui permet aux hologrammes d’être ancrés sur ce que nous appelons un [plan de stabilisation](hologram-stability.md#reprojection).
+Pour que les hologrammes apparaissent comme s’ils partagent réellement l’espace avec vous, ils doivent s’afficher correctement sans séparation des couleurs. Cela est possible, en partie, par la technologie intégrée au matériel HoloLens, qui permet aux hologrammes d’être ancrés sur ce que nous appelons un [plan de stabilisation](hologram-stability.md#reprojection).
 
-Un plan est défini par un point et un normal, mais étant donné que nous voulons toujours que le plan fasse face à l’appareil photo, nous sommes simplement soucieux de définir le point du plan. Nous pouvons indiquer à HoloLens le point de se concentrer sur son traitement pour garder tout ce qui est ancré et stable, mais la façon de définir ce point de concentration est spécifique à l’application et peut créer ou rompre votre application en fonction du contenu.
+Un plan est défini par un point et un normal. Étant donné que nous voulons toujours que le plan fasse face à l’appareil photo, nous sommes soucieux de définir le point du plan. Nous pouvons indiquer à HoloLens le point sur lequel concentrer son traitement pour garder tout ce qui est ancré et stable. Toutefois, la définition de ce point de focus est spécifique à l’application et peut créer ou rompre votre application en fonction du contenu.
 
-En résumé, les hologrammes fonctionnent mieux lorsque le plan de stabilisation est correctement appliqué, mais ce qui en fait dépend du type d’application que vous créez. Jetons un coup d’œil sur la façon dont certaines des applications actuellement disponibles pour HoloLens peuvent résoudre ce problème.
+Les hologrammes fonctionnent mieux lorsque le plan de stabilisation est correctement appliqué, mais ce qui en fait dépend du type d’application que vous créez. Jetons un coup d’œil sur la façon dont certaines des applications actuellement disponibles pour HoloLens peuvent résoudre ce problème.
 
 ## <a name="behind-the-scenes"></a>Dans les coulisses
 
-Lors du développement des applications suivantes, nous avons remarqué que lorsque nous n’avions pas utilisé le plan, les objets s’affichent lorsque notre tête a été déplacée et nous verrions la séparation des couleurs avec des déplacements rapides ou des mouvements d’hologramme. Au cours de la période de développement, nous avons appris par le biais d’une version d’évaluation et d’une erreur à utiliser au mieux le plan de stabilisation et à concevoir nos applications autour des problèmes qu’il ne peut pas résoudre.
+Lors du développement des applications suivantes, nous avons remarqué que lorsque nous n’avions pas utilisé le plan, les objets sont montés lorsque notre tête a été déplacé. Nous verrons également la séparation des couleurs avec des déplacements rapides ou des hologrammes. Nous avons mis fin à l’apprentissage au cours de la période d’essai et nous avons rencontré une erreur pour utiliser au mieux le plan de stabilisation et concevoir nos applications autour des problèmes qu’il ne peut pas résoudre.
 
 ### <a name="galaxy-explorer-stationary-content-3d-interactivity"></a>Explorateur Galaxy : contenu fixe, interactivité 3D
 
@@ -47,25 +47,25 @@ Dans HoloStudio, vous passez la majeure partie de votre temps à regarder le mê
 
 Dans HoloTour et la visionneuse 3D, vous regardez un objet animé solitaires ou un film avec des effets 3D ajoutés par-dessus. La stabilisation dans ces applications est définie sur ce que vous visualisez actuellement.
 
-HoloTour vous empêche également de vous écarter trop loin de votre univers virtuel en le déplaçant avec vous au lieu de rester dans un emplacement fixe. Cela vous permet de vous assurer que vous ne serez pas suffisamment éloigné d’autres hologrammes pour éviter les problèmes de stabilité.
+HoloTour vous évite également d’être trop éloigné de votre monde virtuel en le déplaçant avec vous au lieu de rester dans un emplacement fixe. Cela vous permet de vous assurer que vous ne serez pas suffisamment éloigné d’autres hologrammes pour éviter les problèmes de stabilité.
 
 ![Dans cet exemple de HoloTour, le plan de stabilisation est défini sur ce film du Pantheon de Hadrian.](images/holotour-stabilization-plane-500px.jpg)
 
 ### <a name="roboraid-dynamic-content-and-environmental-interactions"></a>RoboRaid : contenu dynamique et interactions environnementales
 
-La définition du plan de stabilisation dans RoboRaid est étonnamment simple, bien qu’il s’agit de l’application qui nécessite le mouvement le plus soudain. Le plan est conçu pour s’orienter vers les murs ou les objets environnants et flotte à une distance fixe devant vous lorsque vous en êtes suffisamment éloigné.
+La définition du plan de stabilisation dans RoboRaid est étonnamment simple, bien qu’il s’agit de l’application qui nécessite le mouvement le plus soudain. Le plan est orienté vers les murs ou les objets environnants, et flotte à une distance fixe devant vous lorsque vous êtes suffisamment éloigné.
 
-RoboRaid a été conçu avec le plan de stabilisation à l’esprit. Le réticule, qui se déplace le plus puisqu’il est verrouillé, le contourne en utilisant uniquement le rouge et le bleu, ce qui minimise les traces de couleurs. Il contient également un peu de profondeur entre les pièces, ce qui réduit le risque de débordement de couleur qui se produit en le masquant avec un effet de parallaxe déjà attendu. Les robots ne se déplacent pas très rapidement et ne voyagent que sur de courtes distances à intervalles réguliers. Ils ont tendance à rester autour de 2 mètres devant vous, où la stabilisation est définie par défaut.
+RoboRaid a été conçu avec le plan de stabilisation à l’esprit. Le réticule, qui se déplace le plus puisqu’il est verrouillé, le contourne en utilisant uniquement le rouge et le bleu, ce qui réduit les traces de couleurs. Il contient également un peu de profondeur entre les pièces, ce qui réduit le risque de débordement de couleur qui se produit en le masquant avec un effet de parallaxe déjà attendu. Les robots ne se déplacent pas rapidement et ne voyagent que sur de courtes distances à intervalles réguliers. Ils ont tendance à rester autour de 2 mètres devant vous, où la stabilisation est définie par défaut.
 
 ### <a name="fragments-and-young-conker-dynamic-content-with-environmental-interaction"></a>Fragments et jeunes Conker : contenu dynamique avec interaction environnementale
 
-Écrit par Asobo Studio en C++, les fragments et les jeunes Conker adoptent une approche différente pour définir le plan de stabilisation. Les points d’intérêt (d) sont définis dans le code et classés en termes de priorité. Les POI sont du contenu en jeu, comme le modèle Conker dans Conker, les menus, le réticule de visée et les logos. Les POI sont croisés par le point de regard de l’utilisateur et le plan est défini au centre de l’objet avec la priorité la plus élevée. Si aucune intersection n’est effectuée, le plan est défini sur la distance par défaut.
+Écrit par Asobo Studio en C++, les fragments et les jeunes Conker adoptent une approche différente pour définir le plan de stabilisation. Les points d’intérêt (e) sont définis dans le code et classés par priorité. Les POI sont du contenu en jeu, comme le modèle Conker dans Conker, les menus, le réticule de visée et les logos. Les POI sont croisés par le point de regard de l’utilisateur et le plan est défini au centre de l’objet avec la priorité la plus élevée. Si aucune intersection n’est effectuée, le plan est défini sur la distance par défaut.
 
 Les fragments et les jeunes Conkers vous informent trop loin des hologrammes en interrompant l’application si vous vous déplacez en dehors de ce qui a été précédemment analysé comme espace de lecture. Par conséquent, ils vous tiennent dans les limites qui sont disponibles pour fournir l’expérience la plus stable.
 
 ## <a name="do-it-yourself"></a>Faites-le vous-même
 
-Si vous avez un HoloLens et que vous souhaitez vous lancer avec les concepts de cet article, vous pouvez télécharger une scène de test et essayer les exercices ci-dessous. Elle utilise l’API Gizmo intégrée de Unity et doit vous aider à visualiser l’emplacement où votre plan est défini. Ce code était également utilisé pour capturer les captures d’écran dans cette étude de cas.
+Si vous avez un HoloLens et que vous souhaitez vous amuser avec les concepts de cet article, vous pouvez télécharger une scène de test pour tester les exercices suivants. La scène de test utilise l’API Gizmo intégrée d’Unity pour vous aider à visualiser l’emplacement où votre plan est défini. Le code était également utilisé pour capturer les captures d’écran dans cette étude de cas.
 1. Synchronisez la dernière version de [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity).
 2. Ouvrez la scène [HoloToolkit-examples/Utilities/scenes/StabilizationPlaneSetting. Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) .
 3. Générez et configurez le projet généré.
@@ -86,7 +86,7 @@ Retournez à votre droite jusqu’à ce qu’une nouvelle configuration de point
 **Conseils**
 * N’oubliez pas que la logique de définition de votre plan est simple. Comme vous l’avez vu, vous n’avez pas besoin d’algorithmes de paramètre de plan complexes pour effectuer une expérience immersive. Le plan de stabilisation n’est qu’une partie du puzzle.
 * Dans la mesure du possible, déplacez toujours le plan entre les cibles en douceur. Le basculement instantané des cibles à distance peut perturber visuellement la scène.
-* Envisagez de définir une option dans votre plan pour le verrouillage sur une cible très spécifique. De cette façon, le plan peut être verrouillé sur un objet, tel qu’un logo ou un écran de titre, si nécessaire.
+* Envisagez de disposer d’une option dans votre plan qui définit la logique de verrouillage sur une cible spécifique. De cette façon, le plan peut être verrouillé sur un objet, tel qu’un logo ou un écran de titre, si nécessaire.
 
 ## <a name="about-the-author"></a>À propos de l’auteur
 

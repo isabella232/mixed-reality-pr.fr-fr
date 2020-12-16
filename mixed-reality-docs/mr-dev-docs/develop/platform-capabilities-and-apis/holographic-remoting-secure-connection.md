@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, sécurité, authentification, serveur à client
-ms.openlocfilehash: b2c054d19044b89b487331806b8256de1379fd53
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443463"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530404"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Activation de la sécurité de connexion pour la communication à distance holographique
 
@@ -30,7 +30,7 @@ La communication à distance holographique échange des informations sur un rés
 
 La sécurité est désactivée pour les exemples d’applications et le lecteur de communication à distance holographique dans le Windows Store. Cela rend les exemples plus faciles à comprendre. Il vous aide également à commencer plus rapidement avec le développement.
 
-Toutefois, pour les tests de champ ou la production, nous vous recommandons vivement d’activer la sécurité dans votre solution de communication à distance holographique.
+Pour les tests de champ ou la production, nous vous recommandons vivement d’activer la sécurité dans votre solution de communication à distance holographique.
 
 La sécurité dans la communication à distance holographique, lorsqu’elle est configurée correctement pour votre cas d’utilisation, vous offre les garanties suivantes :
 
@@ -66,7 +66,7 @@ La manière dont le client valide le certificat de serveur, ainsi que les types 
 
 **Cas d’utilisation 1 :** Le nom d’hôte du serveur n’est pas fixe, ou le serveur n’est pas traité par le nom d’hôte.
 
-Dans ce cas d’utilisation, il n’est pas pratique (voire possible) d’émettre un certificat pour le nom d’hôte du serveur. La recommandation ici consiste à valider l’empreinte numérique du certificat à la place. Comme pour une empreinte humaine, l’empreinte numérique identifie de façon unique un certificat.
+Dans ce cas d’utilisation, il n’est pas pratique (voire possible) d’émettre un certificat pour le nom d’hôte du serveur. Nous vous recommandons de valider l’empreinte numérique du certificat à la place. Comme pour une empreinte humaine, l’empreinte numérique identifie de façon unique un certificat.
 
 Il est important de communiquer l’empreinte numérique au client hors bande. Cela signifie que vous ne pouvez pas l’envoyer sur la même connexion réseau que celle utilisée pour la communication à distance. Au lieu de cela, vous pouvez l’entrer manuellement dans la configuration du client ou demander au client d’analyser un code QR.
 
@@ -159,7 +159,7 @@ Pour valider des certificats, vous pouvez utiliser la logique de validation du s
 Sur Windows, la validation système recherche les éléments suivants :
 
 * Intégrité de la chaîne de certificats : les certificats forment une chaîne cohérente qui se termine au niveau d’un certificat racine approuvé
-* Validité du certificat : le certificat du serveur est dans son intervalle de validité et est émis pour l’authentification du serveur.
+* Validité du certificat : le certificat du serveur est dans son intervalle de validité et est émis pour l’authentification du serveur
 * Révocation : le certificat n’a pas été révoqué
 * Nom correspondance : le nom d’hôte du serveur correspond à l’un des noms d’hôte pour lequel le certificat a été émis
 
@@ -186,10 +186,10 @@ Les éléments clés pour la connexion sécurisée à l’aide de l' `XR_MSFT_ho
 
 Ces rappels peuvent être fournis au runtime OpenXR de communication à distance via `xrRemotingSetSecureConnectionClientCallbacksMSFT` et `xrRemotingSetSecureConnectionServerCallbacksMSFT` . En outre, la connexion sécurisée doit être activée via le paramètre secureConnection sur la `XrRemotingConnectInfoMSFT` structure ou la `XrRemotingListenInfoMSFT` structure selon que vous utilisez `xrRemotingConnectMSFT` ou `xrRemotingListenMSFT` .
 
-Cette API est assez similaire à l’API IDL décrite dans implémentation de la sécurité de la [communication à distance holographique](#implementing-holographic-remoting-security) , mais au lieu d’implémenter des interfaces, votre est supposé fournir des implémentations de rappel. Vous trouverez un exemple détaillé dans le cadre de l’exemple d’application OpenXR disponible dans le [référentiel GitHub des exemples de communication à distance holographique](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+Cette API est similaire à l’API basée sur IDL décrite dans implémentation de la sécurité de l' [accès à distance holographique](#implementing-holographic-remoting-security). Toutefois, au lieu d’implémenter des interfaces, vous êtes censé fournir des implémentations de rappel. Vous trouverez un exemple détaillé dans l’exemple d' [application OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 ## <a name="see-also"></a>Voir aussi
-* [Écriture d’une application distante holographique à distance à l’aide d’API Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Écriture d’une application distante holographique à distance à l’aide des API Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)

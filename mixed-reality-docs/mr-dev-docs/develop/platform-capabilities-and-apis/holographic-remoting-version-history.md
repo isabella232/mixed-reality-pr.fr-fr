@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, historique des versions, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: bda4d4a304c6d13a55ad0433fcd248d8513fa6a0
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443468"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530384"
 ---
 # <a name="holographic-remoting-version-history"></a>Historique des versions de la communication à distance holographique
 
@@ -19,15 +19,15 @@ ms.locfileid: "96443468"
 > Ce guide est spécifique à la communication à distance holographique sur HoloLens 2.
 
 ## <a name="version-240-december-1-2020"></a>Version 2.4.0 (1er décembre 2020) <a name="v2.4.0"></a>
-* La communication à distance holographique prend désormais en charge l’écriture d’applications distantes à l’aide de l' [API OpenXR](../native/openxr.md). Pour commencer, consultez [écriture d’une application distante holographique à distance à l’aide des API OpenXR](holographic-remoting-create-remote-openxr.md).
+* La communication à distance holographique prend désormais en charge l’écriture d’applications distantes à l’aide de l' [API OpenXR](../native/openxr.md). Consultez [écriture d’une application distante holographique à distance à l’aide des API OpenXR](holographic-remoting-create-remote-openxr.md) pour commencer.
 * Correctifs de bogues et améliorations de la stabilité.
 
 ## <a name="version-231-october-10-2020"></a>Version 2.3.1 (10 octobre 2020) <a name="v2.3.1"></a>
-* Correction de la régression avec une prédiction de pose à distance qui a entraîné une instabilité visuelle.
+* Correction de la régression avec la prédiction de pose à distance, ce qui a provoqué une instabilité visuelle.
 * Implémentation de PerceptionDeviceSetCreateFactoryOverride, qui garantit que les PerceptionDevice.dll fournies avec la communication à distance holographique n’interfèrent pas avec la version fournie avec Windows 10.
 
 ## <a name="version-230-october-2-2020"></a>Version 2.3.0 (2 octobre 2020) <a name="v2.3.0"></a>
-* Résolution des incidents qui peuvent se produire lorsque le lecteur de communication à distance holographique est suspendu.
+* Résolution des incidents, ce qui peut se produire lorsque le lecteur de communication à distance holographique est suspendu.
 * Améliorations de la stabilité.
 
 ## <a name="version-223-august-28-2020"></a>Version 2.2.3 (28 août 2020) <a name="v2.2.3"></a>
@@ -35,7 +35,7 @@ ms.locfileid: "96443468"
 
 ## <a name="version-222-july-10-2020"></a>Version 2.2.2 (10 juillet 2020) <a name="v2.2.2"></a>
 * Résolution du problème lié à [HolographicCamera. LeftViewportParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) et [HolographicCamera. RightViewportParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) ne renvoyant aucun vertex de maillage de zone masqué lors de la diffusion en continu à partir d’un casque Windows Mixed Reality.
-* Résolution d’un incident qui peut se produire avec une mauvaise connexion réseau.
+* Correction d’un incident, ce qui peut se produire avec une mauvaise connexion réseau.
 
 ## <a name="version-221-july-6-2020"></a>Version 2.2.1 (6 juillet 2020) <a name="v2.2.1"></a>
 > [!IMPORTANT]
@@ -46,17 +46,17 @@ ms.locfileid: "96443468"
 * Le lecteur de communication à distance holographique peut désormais être installé sur des PC exécutant [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md), ce qui rend possible la diffusion en continu vers des casques immersifs.
 * Les [contrôleurs de mouvement](../../design/motion-controllers.md) sont désormais pris en charge par la communication à distance holographique et les données spécifiques au contrôleur peuvent être récupérées via [SpatialInteractionSource. Controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller).
 * [SpatialStageFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference) est maintenant pris en charge et l’étape actuelle peut être récupérée via [SpatialStageFrameOfReference. Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current). En outre, une nouvelle étape peut être demandée via [SpatialStageFrameOfReference. RequestNewStageAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync).
-* Dans les versions précédentes, la prédiction pose a été entièrement gérée sur le joueur par le lecteur de communication à distance holographique. À partir de la version 2.2.0, la communication à distance holographique a une synchronisation temporelle et la prédiction est entièrement effectuée par l’application distante. Les utilisateurs doivent également s’attendre à une stabilité améliorée des hologrammes dans des situations difficiles sur le réseau.
+* Dans les versions précédentes, la prédiction de pose a été gérée côté joueur par le lecteur de communication à distance holographique. À partir de la version 2.2.0, la communication à distance holographique a une synchronisation temporelle et la prédiction est entièrement effectuée par l’application distante. Les utilisateurs doivent également s’attendre à une stabilité améliorée des hologrammes dans des situations difficiles sur le réseau.
 
 ## <a name="version-213-may-25-2020"></a>Version 2.1.3 (25 mai, 2020) <a name="v2.1.3"></a>
-* Modification du comportement de l’événement [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) . Dans les versions précédentes, il n’était **pas** garanti qu’un [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera) ajouté ait également un [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) valide lors de la création du frame suivant via [HolographicSpace. CreateNextFrame](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe). À compter de la version 2.1.3 [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) est synchronisé avec les données de pose provenant du joueur de communication à distance holographique et les utilisateurs peuvent s’attendre à ce que, quand une caméra est ajoutée, un [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) valide soit disponible pour cette caméra dans le cadre suivant.
-* Ajout de **désactivé** à DepthBufferStreamResolution qui peut être utilisé pour désactiver la diffusion en continu de tampons de profondeur via RemoteContext.ConfigureDepthVideoStream. Notez que s’il est utilisé, [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) échouera avec *E_ILLEGAL_METHOD_CALL*.
-* L’écran de démarrage du lecteur de communication à distance holographique a été reconçu et ne bloque pas la vue des utilisateurs.
+* Modification du comportement de l’événement [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) . Dans les versions précédentes, il n’était **pas** garanti qu’un [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera) ajouté ait également un [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) valide lors de la création du frame suivant via [HolographicSpace. CreateNextFrame](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe). À partir de la version 2.1.3, [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) est synchronisé avec les données de pose provenant du lecteur de communication à distance holographique. Les utilisateurs peuvent s’attendre à ce qu’un [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) valide soit disponible pour cette caméra dans le cadre suivant.
+* Ajout de **désactivé** à DepthBufferStreamResolution, qui peut être utilisé pour désactiver la diffusion en continu de tampons de profondeur via RemoteContext.ConfigureDepthVideoStream. Notez que s’il est utilisé, [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) échouera avec *E_ILLEGAL_METHOD_CALL*.
+* L’écran de démarrage du lecteur de communication à distance holographique a été repensé et ne bloque pas la vue des utilisateurs.
 * Améliorations de la stabilité et correctifs de bogues.
 
 ## <a name="version-212-april-5-2020"></a>Version 2.1.2 (5 avril 2020) <a name="v2.1.2"></a>
 * Résolution d’un problème de compatibilité descendante audio entre le dernier lecteur de communication à distance holographique et les applications distantes utilisant une version inférieure à 2.1.0.
-* Problème fixe d’ancrage spatial qui a fermé de manière inattendue le lecteur de communication à distance holographique. Ce problème affecte également les lecteurs personnalisés.
+* Problème fixe d’ancrage spatial, qui a fermé de manière inattendue le lecteur de communication à distance holographique. Ce problème affecte également les lecteurs personnalisés.
 
 ## <a name="version-211-march-20-2020"></a>Version 2.1.1 (20 mars, 2020) <a name="v2.1.1"></a>
 * Résolution d’un problème de codage vidéo avec les applications distantes lors de l’utilisation des GPU AMD.
@@ -80,7 +80,7 @@ ms.locfileid: "96443468"
 
 ## <a name="version-2014-october-26-2019"></a>Version 2.0.14 (26 octobre 2019) <a name="v2.0.14"></a>
 * Prise en charge des nouvelles API PerceptionDevice (mise à jour de novembre 2019 de Windows 10).
-* Résolution du problème qui empêche les événements de mouvement de maintien déclenchés par SpatialGestureRecognizer.
+* Résolution d’un problème qui empêche les événements de mouvement de conservation d’être déclenchés par SpatialGestureRecognizer.
 * Problème de thread fixe lors de l’utilisation de SpatialSurfaceObserver. SetBoundingVolume.
 
 ## <a name="version-2012-october-18-2019"></a>Version 2.0.12 (18 octobre 2019) <a name="v2.0.12"></a>
@@ -106,7 +106,7 @@ ms.locfileid: "96443468"
 * Première version publique de la communication à distance holographique pour HoloLens 2.
 
 ## <a name="see-also"></a>Voir aussi
-* [Écriture d’une application distante holographique à distance à l’aide d’API Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Écriture d’une application distante holographique à distance à l’aide des API Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)

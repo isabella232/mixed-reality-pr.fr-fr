@@ -6,17 +6,17 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, clavier, souris, contrôleur de jeu, contrôleur Xbox, HoloLens, Desktop, procédure pas à pas, exemple de code
-ms.openlocfilehash: 47d5ac7c7517d607d29d004497f62ac0755c3051
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679939"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530046"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Saisie à l’aide de la commande de jeu, du clavier et de la souris dans DirectX
 
 > [!NOTE]
-> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](../native/openxr-getting-started.md)** .
+> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](../native/openxr-getting-started.md)**.
 
 Les claviers, les souris et les contrôleurs de jeu peuvent être des formes d’entrée utiles pour les appareils Windows Mixed Reality. Les claviers et souris Bluetooth sont pris en charge sur HoloLens, pour être utilisés avec le débogage de votre application ou comme une autre forme d’entrée. Windows Mixed Reality prend également en charge les casques immersifs attachés à des PC, où les souris, les claviers et les contrôleurs de jeu étaient traditionnellement la norme.
 
@@ -51,7 +51,7 @@ Dans le modèle d’application holographique Windows, nous incluons un gestionn
 ```
 
 ### <a name="virtual-keyboard-input"></a>Entrée au clavier virtuel
-Pour les casques de bureau immersifs, vous pouvez également prendre en charge des claviers virtuels rendus par Windows sur votre vue immersif. Pour prendre cela en charge, votre application peut implémenter **CoreTextEditContext** . Cela permet à Windows de comprendre l’état de vos propres zones de texte de rendu d’application, de sorte que le clavier virtuel puisse contribuer correctement au texte.
+Pour les casques de bureau immersifs, vous pouvez prendre en charge des claviers virtuels rendus par Windows sur votre vue immersif en implémentant **CoreTextEditContext**. Cela permet à Windows de comprendre l’état de vos propres zones de texte de rendu d’application, de sorte que le clavier virtuel puisse contribuer correctement au texte.
 
 Pour plus d’informations sur l’implémentation de la prise en charge de CoreTextEditContext, consultez l' [exemple CoreTextEditContext](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomEditControl).
 
@@ -59,7 +59,8 @@ Pour plus d’informations sur l’implémentation de la prise en charge de Core
 
 Vous pouvez également utiliser l’entrée de la souris, à nouveau via les gestionnaires d’événements d’entrée UWP CoreWindow. Voici comment modifier le modèle d’application holographique Windows pour prendre en charge les clics de souris de la même façon que les gestes appuyés. Une fois cette modification effectuée, un clic de souris tout en faisant passer un périphérique de casque immersif repositionne le cube.
 
-Notez que les applications UWP peuvent également obtenir des données brutes XY pour la souris à l’aide de l’API [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) .
+> [!NOTE]
+> Les applications UWP peuvent également obtenir des données brutes XY pour la souris à l’aide de l’API [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) .
 
 Commencez par déclarer un nouveau gestionnaire OnPointerPressed dans AppView. h :
 
@@ -103,7 +104,7 @@ Vous aurez également besoin de cette variable de membre privé :
        bool m_pointerPressed = false;
 ```
 
-Enfin, nous mettrons à jour la classe principale avec la nouvelle logique pour prendre en charge les clics de souris. Commencez par ajouter ce gestionnaire d’événements. Veillez à mettre à jour le nom de la classe :
+Enfin, nous allons mettre à jour la classe principale avec la nouvelle logique pour prendre en charge les clics de souris. Commencez par ajouter ce gestionnaire d’événements. Veillez à mettre à jour le nom de la classe :
 
 ```
 void MyHolographicAppMain::OnPointerPressed()
@@ -134,7 +135,7 @@ Recompilez et redéployez. Notez que le clic de souris va à présent reposition
 
 Les contrôleurs de jeu peuvent être un moyen amusant et pratique de permettre à l’utilisateur de contrôler une expérience Windows Mixed Reality.
 
-La première étape de l’ajout de la prise en charge des contrôleurs de jeu au modèle d’application holographique Windows consiste à ajouter les déclarations de membre privées suivantes à la classe d’en-tête de votre fichier principal :
+ Ajoutez les déclarations de membre privées suivantes à la classe d’en-tête de votre fichier principal :
 
 ```
 // Recognize gamepads that are plugged in after the app starts.
@@ -265,7 +266,7 @@ Il existe quelques différences clés dans la façon dont ce code peut être uti
 * Vous ne pouvez pas vous appuyer sur l’entrée du clavier ou de la souris. Toutes les fonctionnalités de votre application doivent fonctionner avec le regard, le geste et l’entrée vocale.
 * Lorsqu’un clavier Bluetooth est attaché, il peut être utile d’activer l’entrée au clavier pour tout texte que votre application peut demander. Il peut s’agir d’un excellent complément pour la dictée, par exemple.
 * Lorsqu’il s’agit de concevoir votre application, ne vous fiez pas (par exemple) aux contrôles WASD et Mouse pour votre jeu. HoloLens est conçu pour permettre à l’utilisateur de parcourir la salle. Dans ce cas, l’utilisateur contrôle directement l’appareil photo. Une interface pour la conduite de l’appareil photo autour de la salle avec des contrôles de déplacement/d’apparence n’offre pas la même expérience.
-* L’entrée au clavier peut être un excellent moyen de contrôler les aspects de débogage de votre application ou moteur de jeu, en particulier dans la mesure où l’utilisateur ne sera pas obligé d’utiliser le clavier. Son câblage est identique à celui que vous utilisez avec les API d’événement CoreWindow. Dans ce scénario, vous pouvez choisir d’implémenter un moyen de configurer votre application pour acheminer les événements de clavier vers un mode « en entrée de débogage uniquement » pendant vos sessions de débogage.
+* L’entrée au clavier est un excellent moyen de contrôler le débogage de votre application ou du moteur de jeu, en particulier dans la mesure où l’utilisateur n’est pas obligé d’utiliser le clavier. Son câblage est identique à celui que vous utilisez avec les API d’événement CoreWindow. Dans ce scénario, vous pouvez choisir d’implémenter un moyen de configurer votre application pour acheminer les événements de clavier vers un mode « en entrée de débogage uniquement » pendant vos sessions de débogage.
 * Les contrôleurs Bluetooth fonctionnent également.
 
 ## <a name="see-also"></a>Voir aussi

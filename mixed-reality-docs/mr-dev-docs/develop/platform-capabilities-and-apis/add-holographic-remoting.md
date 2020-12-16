@@ -6,31 +6,31 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, accès distant holographique, rendu à distance, rendu réseau, HoloLens, hologrammes distants, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 809258d3387b5e45885c0eb207544c176f891a1d
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443652"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530311"
 ---
-# <a name="add-holographic-remoting-hololens-1st-gen"></a>Ajouter la communication à distance holographique (HoloLens (1re génération))
+# <a name="add-holographic-remoting-hololens-first-gen"></a>Ajouter la communication à distance holographique (HoloLens (First Gen))
 
 >[!IMPORTANT]
->Ce document décrit la création d’une application hôte pour HoloLens 1. L’application hôte pour **HoloLens (1re génération)** doit utiliser le package NuGet version **1. x. x**. Cela implique que les applications hôtes écrites pour HoloLens 1 ne sont pas compatibles avec HoloLens 2 et vice versa.
+> Ce document décrit la création d’une application hôte pour HoloLens 1. L’application hôte pour **HoloLens (1re génération)** doit utiliser le package NuGet version **1. x. x**. Cela implique que les applications hôtes écrites pour HoloLens 1 ne sont pas compatibles avec HoloLens 2 et vice versa.
 
 ## <a name="hololens-2"></a>HoloLens 2
 
-Les développeurs HoloLens qui utilisent la communication à distance holographique doivent mettre à jour leurs applications pour les rendre compatibles avec HoloLens 2. Cela nécessite une nouvelle version du package NuGet de communication à distance holographique. Si une application qui utilise le package NuGet de communication à distance holographique avec un numéro de version inférieur à 2.0.0.0 tente de se connecter au lecteur de communication à distance holographique sur HoloLens 2, la connexion échoue.
+Les développeurs HoloLens qui utilisent la communication à distance holographique doivent mettre à jour leurs applications pour les rendre compatibles avec HoloLens 2. Cela nécessite une nouvelle version du package NuGet de communication à distance holographique. Veillez à utiliser la version 2.0.0.0 ou ultérieure du package NuGet de communication à distance holographique lors de la connexion au lecteur de communication à distance holographique sur HoloLens 2, sans quoi la connexion échouera.
 
 >[!NOTE]
->Vous trouverez des conseils spécifiques à HoloLens 2 [ici](holographic-remoting-create-remote-wmr.md).
+> Vous trouverez des conseils spécifiques à HoloLens 2 [ici](holographic-remoting-create-remote-wmr.md).
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Ajout de la communication à distance holographique à votre application de bureau ou UWP
 
 Cette page explique comment ajouter la communication à distance holographique à une application de bureau ou UWP.
 
-La communication à distance holographique permet à votre application de cibler un HoloLens avec un contenu holographique hébergé sur un ordinateur de bureau ou sur un appareil UWP, tel que le Xbox, permettant d’accéder à davantage de ressources système et d’intégrer des [vues immersives](../../design/app-views.md) distantes dans le logiciel du PC de bureau existant. Une application hôte de communication à distance reçoit un flux de données d’entrée d’un HoloLens, restitue le contenu dans une vue immersive virtuelle et diffuse en continu des frames de contenu vers HoloLens. La connexion est établie à l’aide du Wi-Fi standard. Pour utiliser la communication à distance, vous allez utiliser un package NuGet pour ajouter la communication à distance holographique à votre application de bureau ou UWP, et écrire du code pour gérer la connexion et effectuer un rendu dans une vue immersive. Les bibliothèques d’assistance sont incluses dans l’exemple de code qui simplifie la tâche de gestion de la connexion de l’appareil.
+La communication à distance holographique permet à votre application de cibler un HoloLens avec un contenu holographique hébergé sur un ordinateur de bureau ou sur un appareil UWP tel que le Xbox. Vous avez également accès à davantage de ressources système, ce qui permet d’intégrer des [vues immersives](../../design/app-views.md) distantes dans des logiciels de poste de travail existants. Une application hôte de communication à distance reçoit un flux de données d’entrée d’un HoloLens, restitue le contenu dans une vue immersive virtuelle et diffuse en continu des frames de contenu vers HoloLens. La connexion est établie à l’aide du Wi-Fi standard. Pour utiliser la communication à distance, utilisez un package NuGet pour ajouter la communication à distance holographique à votre application de bureau ou UWP, puis écrivez le code pour gérer la connexion et restituer une vue immersive. Les bibliothèques d’assistance sont incluses dans l’exemple de code qui simplifie la tâche de gestion de la connexion de l’appareil.
 
 Une connexion à distance classique aura une latence aussi faible que 50 ms de latence. L’application de lecteur peut signaler la latence en temps réel.
 
@@ -42,14 +42,14 @@ Une connexion à distance classique aura une latence aussi faible que 50 ms de l
 Procédez comme suit pour obtenir le package NuGet pour la communication à distance holographique et ajouter une référence à partir de votre projet :
 1. Accédez à votre projet dans Visual Studio.
 2. Cliquez avec le bouton droit sur le nœud du projet et sélectionnez **gérer les packages NuGet...**
-3. Dans le volet qui s’affiche, cliquez sur **Parcourir** , puis recherchez « accès distant holographique ».
-4. Sélectionnez **Microsoft. holographique. Remoting** , puis cliquez sur **installer**.
-5. Si la boîte de dialogue **Aperçu** s’affiche, cliquez sur **OK**.
-6. La boîte de dialogue suivante qui s’affiche est le contrat de licence. Cliquez sur **J’accepte** pour accepter le contrat de licence.
+3. Dans le volet qui s’affiche, selecct **Parcourir** , puis recherchez « accès distant holographique ».
+4. Sélectionnez **Microsoft. holographique. Remoting** et l' **installation** de selecct.
+5. Si la boîte de dialogue **Aperçu** s’affiche, sélectionnez **OK**.
+6. Sélectionnez **J’accepte** lorsque la boîte de dialogue contrat de licence s’affiche.
 
 ### <a name="create-the-holographicstreamerhelpers"></a>Créer le HolographicStreamerHelpers
 
-Tout d’abord, nous avons besoin d’une instance de HolographicStreamerHelpers. Ajoutez ceci à la classe qui gérera la communication à distance.
+Tout d’abord, nous devons ajouter une instance de HolographicStreamerHelpers à la classe qui gérera la communication à distance.
 
 ```cpp
 #include <HolographicStreamerHelpers.h>
@@ -77,7 +77,7 @@ private:
 
 ### <a name="initialize-holographicstreamerhelpers-and-connect-to-hololens"></a>Initialiser HolographicStreamerHelpers et se connecter à HoloLens
 
-Pour vous connecter à un appareil HoloLens, créez une instance de HolographicStreamerHelpers et connectez-vous à l’adresse IP cible. Vous devrez définir la taille de l’image vidéo pour qu’elle corresponde à la largeur et à la hauteur de l’affichage HoloLens, car la bibliothèque de communication à distance holographique s’attend à ce que les résolutions d’encodeur et de décodeur correspondent exactement.
+Pour vous connecter à un appareil HoloLens, créez une instance de HolographicStreamerHelpers et connectez-vous à l’adresse IP cible. Vous devez définir la taille de l’image vidéo pour qu’elle corresponde à la largeur et à la hauteur de l’affichage HoloLens, car la bibliothèque de communication à distance holographique s’attend à ce que les résolutions d’encodeur et de décodeur correspondent exactement.
 
 ```cpp
 m_streamerHelpers = ref new HolographicStreamerHelpers();
@@ -188,7 +188,7 @@ Au lieu de les créer vous-même, les composants d’espace et de parole hologra
 m_appView->Initialize(m_streamerHelpers->HolographicSpace, m_streamerHelpers->RemoteSpeech);
 ```
 
-Au lieu d’utiliser une boucle de mise à jour à l’intérieur d’une méthode Run, vous fournissez des mises à jour de graduations à partir de la boucle principale de votre application de bureau ou UWP. Cela permet à votre application de bureau ou UWP de rester dans le contrôle du traitement des messages.
+Au lieu d’utiliser une boucle de mise à jour dans une méthode Run, vous fournissez des mises à jour de graduations à partir de la boucle principale de votre application de bureau ou UWP. Cela permet à votre application de bureau ou UWP de rester dans le contrôle du traitement des messages.
 
 ```cpp
 void DesktopWindow::Tick()
@@ -258,7 +258,6 @@ internal:
        }
 ```
 
-**Exemple de code :** Un exemple complet de code de communication à distance holographique est disponible, qui comprend une vue d’application holographique compatible avec la communication à distance et les projets hôtes de communication à distance pour les ordinateurs de bureau Win32, UWP DirectX et UWP avec XAML. Pour l’utiliser, cliquez ici :
-* [Exemple de code Windows holographique pour la communication à distance](https://github.com/Microsoft/HoloLensCompanionKit/)
+**Exemple de code :** Un exemple complet de [Code de communication à distance holographique](https://github.com/Microsoft/HoloLensCompanionKit) est disponible, qui comprend une vue d’application holographique compatible avec la communication à distance et les projets hôtes de communication à distance pour les ordinateurs de bureau Win32, UWP DirectX et UWP avec XAML. 
 
 **Remarque sur le débogage :** La bibliothèque de communication à distance holographique peut lever des exceptions de première chance. Ces exceptions peuvent être visibles dans les sessions de débogage, en fonction des paramètres d’exception de Visual Studio qui sont actifs à ce moment-là. Ces exceptions sont interceptées en interne par la bibliothèque de communication à distance holographique et peuvent être ignorées.
