@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Réalité mixte, Conférence, sommet, développeur, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
-ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
+ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
+ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97111881"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97564254"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days - Japon
 
@@ -31,9 +31,9 @@ Nous sommes impatients de vous joindre au jour de développement de la réalité
 
 ## <a name="registration"></a>Inscription
 
-[Inscription-maintenant ouverte](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+[Regardez maintenant-événements en direct de Microsoft teams](https://aka.ms/MRDDJPLive)
 
-Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev Days au Japon.  L’événement est gratuit et est conservé en ligne dans les événements en direct de Microsoft Teams.  Nous demandez à ce que les participants s’inscrivent afin que nous puissions envoyer des mises à jour par courrier électronique à mesure que l’événement se rapproche et que vous pouvez participer aux éléments interactifs de l’événement.
+Nous vous recommandons de regarder sur l’application PC Teams, et vous pouvez également participer à l’application mobile teams ou au navigateur de votre bureau. Si, pour une raison quelconque, vous ne parvenez pas à vous connecter aux équipes, consultez [YouTube Live](https://youtu.be/zxZu1uHjyo4). Toutefois, vous ne serez pas en mesure de participer à l’assurance qualité avec les intervenants.
 
 ## <a name="schedule---subject-to-change"></a>Planification-sujet à modifier
 
@@ -44,7 +44,7 @@ Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev
 ### <a name="december-16th"></a>16 décembre
 |**Time**|**Titre de la session**|**Orateur**|**Language**|**Niveau**|
 |---------|---------|---------|---------|---------|
-|10:00-10:50am|Ouverture du discours|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/FR|N/A|
+|10:00-10:50am|Ouverture du discours|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/FR|NON APPLICABLE|
 |10:50am-11:00|**Arrêter (10min)**||||
 |11:00-11:25am|*Session 1* Présentation de la réalité mixte|Atsushi Suzuki|JA|100|
 |11:30-11:55am|*Session 2* Dynamisme de l’entreprise en réalité mixte|Tetsu Muranaka|JA|200|
@@ -60,13 +60,13 @@ Nous sommes très heureux d’ouvrir l’inscription pour la réalité mixte dev
 |4:15-4:40pm|*Session 9* Alignement de l’hologramme et du monde réel par le biais d’ancres spatiales Azure|Yingguang Mei|FR|300|
 |4:17h45-5:22h00|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unitx technologies Japan)|JA|200|
 |5:15-5:40pm|*Session 11* Présentation approfondie d’Azure Kinect DK, étude de cas|Shinji Chiba|JA|400|
-|5:17h45-6:14:00|Fermeture|Madoka Chiyoda|JA|N/A|
+|5:17h45-6:14:00|Fermeture|Madoka Chiyoda|JA|NON APPLICABLE|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Contributeurs (réviseurs techniques pour les sous-titres)
 
 Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura ( [@takabrz1](https://twitter.com/takabrz1) ), Akihiro Ueyama ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shinya Tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions (FAQ)
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 Cette section sera fréquemment mise à jour à mesure que nous recevrons d’autres questions.
 
 **Q** -qui devrait assister au jour du développement de la réalité mixte
