@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Réalité mixte, Conférence, sommet, développeur, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
-ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
+ms.openlocfilehash: 925e94931adab767fbca2544d781c9ba1c095216
+ms.sourcegitcommit: cecb76c6a9b4b2c4e9769a5829a7146c99086e85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97564254"
+ms.locfileid: "97580545"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days - Japon
 
@@ -39,28 +39,29 @@ Nous vous recommandons de regarder sur l’application PC Teams, et vous pouvez 
 
 **Toutes les heures sont de l’heure d’hiver du Japon (UTC + 9)** 
 
-
-
 ### <a name="december-16th"></a>16 décembre
+
+**Nous avons retardé une heure à partir de notre planification d’origine.**
+
 |**Time**|**Titre de la session**|**Orateur**|**Language**|**Niveau**|
 |---------|---------|---------|---------|---------|
-|10:00-10:50am|Ouverture du discours|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/FR|NON APPLICABLE|
-|10:50am-11:00|**Arrêter (10min)**||||
-|11:00-11:25am|*Session 1* Présentation de la réalité mixte|Atsushi Suzuki|JA|100|
-|11:30-11:55am|*Session 2* Dynamisme de l’entreprise en réalité mixte|Tetsu Muranaka|JA|200|
-|12:14:00-12:50pm|*Session déjeuner* Panel : discussion gratuite interactive, Q et A, MRTK + Oculus Quest 2|Madoka Chiyoda + MVP Microsoft|JA|200|
-|12:50pm-1:14:00|**Arrêter (10min)**||||
-|1:14:00-1:25pm|*Session 3* Vue d’ensemble du développement HoloLens 2|Madoka Chiyoda|JA|200|
-|1:30-1:55pm|*Session 4* Composants MRTK UX v 2.5.0|Parc Yoon|JA|300|
-|2:14:00-2:25pm|*Session 5* Prise en main de l’analyseur HoloLens 2 et du moteur inréel (MRTK-inreal)|Cameron micka|FR|300|
-|2:30-2:55pm|*Session 6* Création d’hologrammes|Daniel Escudero|FR|300|
-|2:55pm-3:15|**Arrêter (20min)**||||
-|3:15-3:40pm|*Session 7* Ancres d’objets Azure|Jesse McCulloch|FR|300|
-|3:17h45-4:22h00|*Session 8* Rendu distant Azure|Atsushi Suzuki|JA|300|
-|4:15-4:40pm|*Session 9* Alignement de l’hologramme et du monde réel par le biais d’ancres spatiales Azure|Yingguang Mei|FR|300|
-|4:17h45-5:22h00|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unitx technologies Japan)|JA|200|
-|5:15-5:40pm|*Session 11* Présentation approfondie d’Azure Kinect DK, étude de cas|Shinji Chiba|JA|400|
-|5:17h45-6:14:00|Fermeture|Madoka Chiyoda|JA|NON APPLICABLE|
+|11:00-11:50am|Ouverture du discours|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/FR|NON APPLICABLE|
+|11:50am-12:14:00|**Arrêter (10min)**||||
+|12:14:00-12:25pm|*Session 1* Présentation de la réalité mixte|Atsushi Suzuki|JA|100|
+|12:30-12:55pm|*Session 2* Dynamisme de l’entreprise en réalité mixte|Tetsu Muranaka|JA|200|
+|1:14:00-1:50pm|*Session déjeuner* Panel : discussion gratuite interactive, Q et A, MRTK + Oculus Quest 2|Madoka Chiyoda + MVP Microsoft|JA|200|
+|1:50pm-2:14:00|**Arrêter (10min)**||||
+|2:14:00-2:25pm|*Session 3* Vue d’ensemble du développement HoloLens 2|Madoka Chiyoda|JA|200|
+|2:30-2:55pm|*Session 4* Composants MRTK UX v 2.5.0|Parc Yoon|JA|300|
+|3:14:00-3:25pm|*Session 5* Prise en main de l’analyseur HoloLens 2 et du moteur inréel (MRTK-inreal)|Cameron micka|FR|300|
+|3:30-3:55pm|*Session 6* Création d’hologrammes|Daniel Escudero|FR|300|
+|3:55pm-4:15|**Arrêter (20min)**||||
+|4:15-4:40pm|*Session 7* Ancres d’objets Azure|Jesse McCulloch|FR|300|
+|4:17h45-5:22h00|*Session 8* Rendu distant Azure|Atsushi Suzuki|JA|300|
+|5:15-5:40pm|*Session 9* Alignement de l’hologramme et du monde réel par le biais d’ancres spatiales Azure|Yingguang Mei|FR|300|
+|5:17h45-6:22h00|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unitx technologies Japan)|JA|200|
+|6:15-6:40pm|*Session 11* Présentation approfondie d’Azure Kinect DK, étude de cas|Shinji Chiba|JA|400|
+|6:17h45-7:14:00|Fermeture|Madoka Chiyoda|JA|NON APPLICABLE|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Contributeurs (réviseurs techniques pour les sous-titres)
 
