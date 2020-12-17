@@ -6,12 +6,12 @@ ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: image volumétrique, rendu volume, performances, réalité mixte
-ms.openlocfilehash: 6dbb49c31761d4b7b9da5060d15763c3925be754
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c0b68a2368823e5699e24d66bfafe1e4e05bdce8
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679134"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612943"
 ---
 # <a name="volume-rendering"></a>Rendu du volume
 
@@ -24,10 +24,10 @@ Solutions clés pour améliorer les performances
 4. BONNE : réduire la résolution du rendu du volume (voir « Mixed Resolution Scene Rendering »)
 
 Il n’existe qu’une certaine quantité d’informations qui peuvent être transférées de l’application à l’écran dans n’importe quel cadre particulier, ce qui correspond à la bande passante de mémoire totale. En outre, tout traitement (ou « ombrage ») requis pour transformer ces données en vue de leur présentation nécessite du temps. Les principales considérations à prendre en compte lors du rendu du volume sont les suivantes :
-* Screen-largeur * Screen-hauteur * Screen-Count * volume-Layers-on-pixel = total-volume-Samples per-Frame
+* Screen-Width * Screen-Height * Screen-Count * volume-Layers-on-pixel = total-volume-Samples per-Frame
 * 1028 * 720 * 2 * 256 = 378961920 (100%) (Full res volume : exemples trop nombreux)
 * 1028 * 720 * 2 * 1 = 1480320 (0,3% de l’intégralité) (tranche fine : 1 échantillon par pixel, s’exécute sans heurts)
-* 1028 * 720 * 2 * 10 = 14803200 (3,9% de l’intégralité) (sous-volume : 10 échantillons par pixel, s’exécute de manière assez fluide, semble 3D)
+* 1028 * 720 * 2 * 10 = 14803200 (3,9% de l’intégralité) (tranche de sous-volume : 10 échantillons par pixel, s’exécute assez facilement, semble 3D)
 * 200 * 200 * 2 * 256 = 20480000 (5% de l’ensemble) (volume de ressources inférieur : moins de pixels, volume complet, semble 3D mais un peu flou)
 
 ## <a name="representing-3d-textures"></a>Représentation de textures 3D
@@ -98,7 +98,7 @@ float4 ShadeVol( float intensity ) {
    color.rgba = tex2d( ColorRampTexture, float2( unitIntensity, 0 ) );
 ```
 
-Dans la plupart de nos applications, nous stockons dans notre volume à la fois une valeur d’intensité brute et un « index de segmentation » (pour segmenter différentes parties, telles que la peau et le segment ; ces segments sont généralement créés par des experts dans des outils dédiés). Cela peut être combiné avec l’approche ci-dessus pour mettre une couleur différente, ou même une gamme de couleurs différente pour chaque index de segment :
+Dans la plupart de nos applications, nous stockons dans notre volume à la fois une valeur d’intensité brute et un « index de segmentation » (pour segmenter des parties différentes, telles que la peau et le segment ; ces segments sont créés par des experts dans des outils dédiés). Cela peut être combiné avec l’approche ci-dessus pour mettre une couleur différente, ou même une gamme de couleurs différente pour chaque index de segment :
 
 ```
 // Change color to match segment index (fade each segment towards black):
@@ -181,11 +181,11 @@ float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
 
 Comment restituer une partie de la scène avec une résolution faible et la remettre en place :
 1. Configurer deux caméras hors écran, une pour suivre chaque œil qui met à jour chaque image
-2. Configurer deux cibles de rendu basse résolution (par exemple, 200x200 chacune) à laquelle les caméras s’affichent
-3. Configurer un Quad qui se déplace devant l’utilisateur
+2. Configurer deux cibles de rendu de faible résolution (autrement dit, 200x200 chacune) à laquelle les caméras s’affichent
+3. Configurer un quadruple qui se déplace devant l’utilisateur
 
 Chaque frame :
-1. Dessinez les cibles de rendu pour chaque œil à basse résolution (données de volume, nuanceurs onéreux, etc.).
+1. Dessinez les cibles de rendu pour chaque œil à basse résolution (données de volume, nuanceurs coûteux, etc.)
 2. Dessinez la scène normalement en tant que résolution complète (mailles, UI, etc.)
 3. Dessinez une quadruple face avant l’utilisateur, sur la scène, et projetez les rendus de faible résolution sur cela
 4. Résultat : combinaison visuelle d’éléments à pleine résolution avec des données de volume à faible résolution mais à haute densité

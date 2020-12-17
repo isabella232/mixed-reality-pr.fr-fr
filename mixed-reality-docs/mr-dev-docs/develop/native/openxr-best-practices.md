@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, application native, moteur personnalisé, intergiciel, meilleures pratiques, performances, qualité, stabilité
-ms.openlocfilehash: dad4622e4186ecc8b090e2abe2e33d3d39ac7525
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: ee600cfc22ab1fb7ee43c5727d8e19cf3a1b1463
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679362"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612983"
 ---
 # <a name="openxr-app-best-practices"></a>Meilleures pratiques pour les applications OpenXR
 
@@ -25,53 +25,52 @@ Pour obtenir d’autres recommandations relatives aux performances propres à Ho
 
 ### <a name="gamma-correct-rendering"></a>Gamma-rendu correct
 
-Vous devez veiller à ce que le pipeline de rendu soit correct pour la valeur gamma. Lors du rendu sur un utilise permutation, le format de la vue de cible de rendu doit correspondre au format utilise permutation (par exemple, `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` pour le format utilise permutation et l’affichage de la cible Render).
-L’exception est si le pipeline de rendu de l’application effectue une conversion sRVB manuelle dans le code du nuanceur. dans ce cas, l’application doit demander un format utilise permutation sRVB, mais utiliser le format linéaire pour la vue de la cible de rendu (par exemple, la demande `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` comme format utilise permutation, mais utiliser `DXGI_FORMAT_B8G8R8A8_UNORM` comme affichage de la cible de rendu) pour empêcher que le contenu soit corrigé.
+Vous devez veiller à ce que le pipeline de rendu soit correct pour la valeur gamma. Lors du rendu sur un utilise permutation, le format de la vue de cible de rendu doit correspondre au format utilise permutation. Par exemple, `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` pour le format utilise permutation et l’affichage de la cible Render.
+Il existe une exception si le pipeline de rendu de l’application effectue une conversion sRVB manuelle dans le code du nuanceur. L’application doit demander un format utilise permutation sRVB, mais utiliser le format linéaire pour la vue Render-cible. Par exemple, demandez `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` comme format utilise permutation, mais utilisez `DXGI_FORMAT_B8G8R8A8_UNORM` comme affichage de la cible de rendu pour empêcher le contenu d’être corrigé par double gamma.
 
 ### <a name="submit-depth-buffer-for-projection-layers"></a>Envoyer le tampon de profondeur pour les couches de projection
 
 Utilisez toujours `XR_KHR_composition_layer_depth` l’extension et soumettez la mémoire tampon de profondeur avec la couche de projection lors de l’envoi d’un frame à `xrEndFrame` .
-Cela améliore la stabilité de l’hologramme en activant la reprojection de la profondeur matérielle sur HoloLens 2.
+L’activation de la reprojection de profondeur matérielle sur HoloLens 2 améliore la stabilité des hologrammes.
 
 ### <a name="choose-a-reasonable-depth-range"></a>Choisir une plage de profondeur raisonnable
 
 Privilégiez une plage de profondeur plus étroite pour étendre le contenu virtuel afin d’aider à la stabilité de l’hologramme sur HoloLens.
-Par exemple, l’exemple OpenXrProgram. cpp utilise 0,1 à 20 mètres.
+Par exemple, l’exemple OpenXrProgram. cpp utilise 0,1 mètres à 20 mètres.
 Utilisez [inversé-Z](https://developer.nvidia.com/content/depth-precision-visualized) pour une résolution de profondeur plus uniforme.
-Notez que, sur HoloLens 2, l’utilisation du `DXGI_FORMAT_D16_UNORM` format de profondeur préféré permet d’obtenir un meilleur taux de trames et de meilleures performances, bien que les mémoires tampons de profondeur 16 bits offrent une résolution moins importante que les mémoires tampons de profondeur 24 bits.
-Par conséquent, le fait de suivre ces meilleures pratiques pour tirer le meilleur parti de la résolution de profondeur devient plus important.
+Sur HoloLens 2, l’utilisation du `DXGI_FORMAT_D16_UNORM` format de profondeur préféré permet d’obtenir un meilleur taux de trames et de meilleures performances, bien que les mémoires tampons de profondeur de 16 bits fournissent une résolution moins importante que les mémoires tampons de profondeur 24 bits.
+Suivre ces meilleures pratiques pour tirer le meilleur parti de la résolution de profondeur devient plus important.
 
 ### <a name="prepare-for-different-environment-blend-modes"></a>Préparer les différents modes de fusion de l’environnement
 
-Si votre application s’exécute également sur des casques immersifs qui bloquent complètement le monde, veillez à énumérer les modes de mélange d’environnement pris en charge à l’aide de l' `xrEnumerateEnvironmentBlendModes` API et à préparer le contenu de rendu en conséquence.
+Si votre application s’exécute également sur des casques immersifs qui bloquent complètement le monde, veillez à énumérer les modes de mélange d’environnement pris en charge à l’aide de l' `xrEnumerateEnvironmentBlendModes` API et à préparer correctement le rendu du contenu.
 Par exemple, pour un système avec `XR_ENVIRONMENT_BLEND_MODE_ADDITIVE` tel que HoloLens, l’application doit utiliser transparent comme couleur claire, tandis que pour un système avec `XR_ENVIRONMENT_BLEND_MODE_OPAQUE` , l’application doit restituer une couleur opaque ou une salle virtuelle en arrière-plan.
 
 ### <a name="choose-unbounded-reference-space-as-applications-root-space"></a>Choisir l’espace de référence illimité comme espace racine de l’application
 
 En règle générale, les applications établissent un espace de coordonnées universel pour connecter des vues, des actions et des hologrammes.
-Utilisez `XR_REFERENCE_SPACE_TYPE_UNBOUNDED_MSFT` lorsque l’extension est prise en charge pour établir un système de coordonnées à l' [échelle du monde](../../design/coordinate-systems.md#building-a-world-scale-experience), ce qui permet à votre application d’éviter la dérive d’hologramme indésirable lorsque l’utilisateur se déplace jusqu’à présent (par exemple, 5 mètres) à partir de l’emplacement où l’application démarre.
+Utilisez `XR_REFERENCE_SPACE_TYPE_UNBOUNDED_MSFT` lorsque l’extension est prise en charge pour établir un système de coordonnées à l' [échelle du monde](../../design/coordinate-systems.md#building-a-world-scale-experience), ce qui permet à votre application d’éviter la dérive d’hologramme indésirable lorsque l’utilisateur passe loin (par exemple, 5 mètres) à partir de l’emplacement où l’application démarre.
 `XR_REFERENCE_SPACE_TYPE_LOCAL`À utiliser comme secours si l’extension de l’espace non lié n’existe pas.
 
 ### <a name="associate-hologram-with-spatial-anchor"></a>Associer l’hologramme avec l’ancrage spatial
 
 Lors de l’utilisation d’un espace de référence non lié, les hologrammes que vous placez directement dans cet espace de référence [peuvent dériver lorsque l’utilisateur parcourt des salles distantes, puis revient](../../design/coordinate-systems.md#building-a-world-scale-experience).
-Pour les utilisateurs d’hologrammes placés à un emplacement discret dans le monde, [créez une ancre spatiale](../../design/spatial-anchors.md#best-practices) à l’aide de la `xrCreateSpatialAnchorSpaceMSFT` fonction d’extension et positionnez l’hologramme à son origine.
-Cela permet de maintenir la stabilité de l’hologramme indépendamment dans le temps.
+Pour les utilisateurs d’hologrammes placés à un emplacement discret dans le monde, [créez une ancre spatiale](../../design/spatial-anchors.md#best-practices) à l’aide de la `xrCreateSpatialAnchorSpaceMSFT` fonction d’extension et positionnez l’hologramme à son origine. Cela permet de maintenir la stabilité de l’hologramme indépendamment dans le temps.
 
 ### <a name="support-mixed-reality-capture"></a>Prendre en charge la capture de réalité mixte
 
-Bien que l’affichage principal de HoloLens 2 utilise la fusion d’environnement additive, lorsque l’utilisateur initie une [capture de réalité mixte](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md), le contenu de rendu de l’application est mélangé à l’alpha avec le flux vidéo de l’environnement.
+Bien que l’affichage principal de HoloLens 2 utilise la fusion d’environnement additive, lorsque l’utilisateur démarre la capture de la [réalité mixte](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md), le contenu de rendu de l’application est mélangé à l’alpha avec le flux vidéo de l’environnement.
 Pour obtenir la meilleure qualité visuelle dans les vidéos de capture de réalité mixte, il est préférable de définir le `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` dans le de la couche de projection `layerFlags` .
 
 ## <a name="best-practices-for-performance-on-hololens-2"></a>Meilleures pratiques en matière de performances sur HoloLens 2
 
-En tant qu’appareil mobile avec prise en charge de la reprojection matérielle, HoloLens 2 a des exigences plus strictes pour obtenir des performances optimales.  Il existe plusieurs façons d’envoyer des données de composition via, `xrEndFrame` ce qui entraînera une baisse notable des performances.
+En tant qu’appareil mobile avec prise en charge de la reprojection matérielle, HoloLens 2 a des exigences plus strictes pour des performances optimales.  Il existe plusieurs façons d’envoyer des données de composition par le biais de, ce qui entraîne un traitement après traitement avec une pénalité notable des performances.
 
 ### <a name="select-a-swapchain-format"></a>Sélectionner un format de utilise permutation
 
 Énumérez toujours les formats de pixel pris en charge à l’aide de `xrEnumerateSwapchainFormats` , puis choisissez le premier format de pixel de couleur et de profondeur du runtime pris en charge par l’application, car c’est ce que le runtime préfère pour des performances optimales. Notez, sur HoloLens 2, `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` et `DXGI_FORMAT_D16_UNORM` est généralement le premier choix pour obtenir de meilleures performances de rendu. Cette préférence peut être différente sur les casques de VR qui s’exécutent sur un PC de bureau, où les mémoires tampons de profondeur de 24 bits ont moins d’impact sur les performances.
   
-**Avertissement de performance :** L’utilisation d’un format autre que le format de couleur utilise permutation principal entraîne une baisse significative des performances du Runtime.
+**Avertissement de performance :** L’utilisation d’un format autre que le format de couleur utilise permutation principal entraîne un traitement postérieur au moment de l’exécution, ce qui se traduit par une baisse significative des performances.
 
 ### <a name="render-with-recommended-rendering-parameters-and-frame-timing"></a>Rendu avec les paramètres de rendu recommandés et le minutage des frames
 
@@ -81,7 +80,7 @@ Cela permet à HoloLens d’ajuster le rendu et d’optimiser la qualité visuel
 
 ### <a name="use-a-single-projection-layer"></a>Utiliser une seule couche de projection
 
-HoloLens 2 offre une puissance GPU limitée pour les applications afin de restituer le contenu et un compositeur matériel optimisé pour une couche de projection unique.
+HoloLens 2 offre une puissance GPU limitée pour le rendu du contenu et un compositeur matériel optimisé pour une couche de projection unique.
 En utilisant toujours une seule couche de projection, vous pouvez améliorer la fréquence de l’application, la stabilité de l’hologramme et la qualité visuelle.  
   
 **Avertissement de performance :** L’envoi de tout sauf une seule couche de protection entraînera un traitement postérieur au moment de l’exécution, ce qui se traduit par une baisse significative des performances.

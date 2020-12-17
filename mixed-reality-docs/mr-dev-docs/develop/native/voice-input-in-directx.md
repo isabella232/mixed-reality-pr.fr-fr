@@ -6,17 +6,17 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: procédure pas à pas, commande vocale, expression, reconnaissance, reconnaissance vocale, DirectX, plateforme, Cortana, Windows Mixed Reality
-ms.openlocfilehash: bdd92f79b3dd9677ac5c2c64e532978477ac5bca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679326"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613103"
 ---
 # <a name="voice-input-in-directx"></a>Entrée vocale dans DirectX
 
 > [!NOTE]
-> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)** .
+> Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
 Cet article explique comment implémenter des [commandes vocales](../../design/voice-input.md) , ainsi que la reconnaissance des phrases et des phrases de petite taille dans une application DirectX pour Windows Mixed Reality.
 
@@ -29,7 +29,7 @@ Cette section décrit comment utiliser la reconnaissance vocale continue pour ac
 
 Tout d’abord, créez une instance *Windows :: Media :: SpeechRecognition :: SpeechRecognizer* .
 
-À partir de *HolographicVoiceInputSampleMain :: CreateSpeechConstraintsForCurrentState* :
+À partir de *HolographicVoiceInputSampleMain :: CreateSpeechConstraintsForCurrentState*:
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
@@ -97,7 +97,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
 
 Votre gestionnaire d’événements *OnResultGenerated* reçoit les données d’événement dans une instance [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Si la confiance est supérieure au seuil que vous avez défini, votre application doit noter que l’événement s’est produit. Enregistrez les données d’événement afin de pouvoir les utiliser dans une boucle de mise à jour ultérieure.
 
-À partir de *HolographicVoiceInputSampleMain. cpp* :
+À partir de *HolographicVoiceInputSampleMain. cpp*:
 
 ```
 // Change the cube color, if we get a valid result.
@@ -112,7 +112,7 @@ Votre gestionnaire d’événements *OnResultGenerated* reçoit les données d�
 
 Dans notre exemple de code, nous modifions la couleur du cube d’hologramme en rotation en fonction de la commande de l’utilisateur.
 
-À partir de *HolographicVoiceInputSampleMain :: Update* :
+À partir de *HolographicVoiceInputSampleMain :: Update*:
 
 ```
 // Check for new speech input since the last frame.
@@ -367,7 +367,7 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 Les exemples de reconnaissance vocale holographique utilisent la synthèse vocale pour fournir des instructions audibles à l’utilisateur. Cette section montre comment créer un exemple de voix synthétisée, puis le relire via les API audio HRTF.
 
-Vous devez fournir vos propres invites vocales lorsque vous demandez une entrée de phrase. Les invites permettent également d’indiquer à quel moment les commandes vocales peuvent être parlées pour un scénario de reconnaissance continue. L’exemple suivant montre comment utiliser un synthétiseur vocal pour effectuer cette opération. Vous pouvez également utiliser un clip vocal pré-enregistré, une interface utilisateur visuelle ou un autre indicateur de ce qui doit être dit, par exemple dans les scénarios où l’invite n’est pas dynamique.
+Nous vous recommandons de fournir vos propres invites vocales lorsque vous demandez une entrée de phrase. Les invites permettent également d’indiquer à quel moment les commandes vocales peuvent être parlées pour un scénario de reconnaissance continue. L’exemple suivant montre comment utiliser un synthétiseur vocal pour effectuer cette opération. Vous pouvez également utiliser un clip vocal pré-enregistré, une interface utilisateur visuelle ou un autre indicateur de ce qui doit être dit, par exemple dans les scénarios où l’invite n’est pas dynamique.
 
 Tout d’abord, créez l’objet SpeechSynthesizer.
 

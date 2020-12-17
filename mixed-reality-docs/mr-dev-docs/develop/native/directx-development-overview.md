@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, rendu holographique, native, application native, WinRT, application WinRT, API de plateforme, moteur personnalisé, intergiciel, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 0d5e364fdb4faac73f28649f5c009823a74ac595
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 493715660ff8df79df25e09c82fe48b863053ed3
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679648"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613073"
 ---
 # <a name="native-development-overview"></a>Vue d’ensemble du développement natif
 
 ![Logo de bannière Native](../images/native_logo_banner.png)
 
-les moteurs 3D comme [Unity](../unity/unity-development-overview.md) ou [Unreal](../unreal/unreal-development-overview.md) ne sont pas les seuls chemins de développement de réalité mixte qui vous sont ouverts. Vous pouvez également créer des applications de réalité mixte en les codant directement sur les API de réalité mixte Windows avec DirectX 11 ou DirectX 12. En tirant parti de la plateforme, vous créez essentiellement votre propre infrastructure ou intergiciel (middleware). 
+les moteurs 3D comme [Unity](../unity/unity-development-overview.md) ou [Unreal](../unreal/unreal-development-overview.md) ne sont pas les seuls chemins de développement de réalité mixte qui vous sont ouverts. Vous pouvez également créer des applications de réalité mixte à l’aide des API Windows Mixed Reality avec DirectX 11 ou DirectX 12. En accédant à la source de la plateforme, vous créez essentiellement votre propre infrastructure ou intergiciel. 
 
 > [!IMPORTANT]
 > Si vous avez un projet WinRT existant que vous souhaitez conserver, accédez à notre [documentation WinRT](creating-a-holographic-directx-project.md)principale. 
@@ -29,10 +29,10 @@ Utilisez les points de contrôle suivants pour intégrer vos jeux et application
 ### <a name="1-getting-started"></a>1. Mise en route
 
 Windows Mixed Reality prend en charge [deux types d’applications](../../design/app-views.md):
-* **Applications en réalité mixte** (UWP ou Win32) qui utilisent l’API [HOLOGRAPHICSPACE](getting-a-holographicspace.md) ou l' [API OpenXR](openxr.md) pour restituer une [vue immersive](../../design/app-views.md) à l’utilisateur qui remplit l’affichage du casque
+* Applications UWP ou de **réalité mixte** Win32 qui utilisent l' [API HOLOGRAPHICSPACE](getting-a-holographicspace.md) ou l' [API OpenXR](openxr.md) pour afficher un [affichage immersif](../../design/app-views.md) qui remplit l’affichage du casque
 * **applications 2D** (UWP) qui utilisent DirectX, XAML ou une autre infrastructure pour restituer des [vues 2D](../../design/app-views.md#2d-views) sur des ardoises dans la page d’hébergement de Windows Mixed Reality
 
-Les différences entre le développement DirectX pour les [vues 2D et les vues immersives](../../design/app-views.md) concernent principalement le rendu holographique et l’entrée spatiale. Le [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) de votre application UWP ou le HWND de votre application Win32 sont requis et restent en grande partie les mêmes. Il en va de même pour les API WinRT qui sont disponibles pour votre application. Toutefois, vous devez utiliser un sous-ensemble différent de ces API pour tirer parti des fonctionnalités holographiques. Par exemple, le utilise permutation et le frame présent sont gérés par le système pour les applications holographiques afin d’activer une boucle de frame de prédiction de pose.
+Les différences entre le développement DirectX pour les [vues 2D et les vues immersives](../../design/app-views.md) concernent principalement le rendu holographique et l’entrée spatiale. Le [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) de votre application UWP ou le HWND de votre application Win32 sont requis et restent en grande partie les mêmes. Il en va de même pour les API WinRT qui sont disponibles pour votre application. Toutefois, vous devez utiliser un sous-ensemble différent de ces API pour tirer parti des fonctionnalités holographiques. Par exemple, le système pour les applications holographiques gère le utilise permutation et le frame présent pour activer une boucle de frames prédite.
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 
@@ -54,11 +54,11 @@ Les applications Windows Mixed Reality utilisent les API suivantes pour créer d
 
 ### <a name="3-deploying-and-testing"></a>3. déploiement et test
 
-Vous pouvez développer avec OpenXR sur HoloLens 2 ou un casque immersif Windows Mixed Reality sur le bureau.  Si vous n’avez pas accès à un casque, vous pouvez utiliser l' [émulateur HoloLens 2](../platform-capabilities-and-apis/using-the-hololens-emulator.md) ou [Windows Mixed Reality Simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) à la place.
+Vous pouvez développer sur un ordinateur de bureau à l’aide de OpenXR sur un casque d’architecture HoloLens 2 ou Windows Mixed Reality.  Si vous n’avez pas accès à un casque, vous pouvez utiliser l' [émulateur HoloLens 2](../platform-capabilities-and-apis/using-the-hololens-emulator.md) ou [Windows Mixed Reality Simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) à la place.
 
 ## <a name="whats-next"></a>Quelle est l’étape suivante ?
 
-Le travail d’un développeur n’est jamais terminé, en particulier lorsqu’il s’agit d’apprendre un nouvel outil ou kit SDK. Les sections suivantes peuvent vous amener dans des domaines qui vont au-delà de la documentation niveau débutant que vous connaissez déjà, et vous fournir des ressources utiles si vous êtes bloqué. Notez que ces rubriques et ressources ne sont pas listées dans un ordre séquentiel particulier. N’hésitez donc pas à vous y plonger et à les explorer !
+Le travail d’un développeur n’est jamais terminé, en particulier lorsqu’il s’agit d’apprendre un nouvel outil ou SDK. Les sections suivantes peuvent vous permettre d’aller au-delà des éléments de niveau débutant que vous avez déjà effectués. Ces rubriques et ressources ne sont pas dans un ordre séquentiel. n’hésitez pas à vous plonger dans l’exploration.
 
 ### <a name="additional-resources"></a>Ressources supplémentaires
 

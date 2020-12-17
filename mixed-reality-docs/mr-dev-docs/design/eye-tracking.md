@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de regard, étalonnage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, intention, actions
-ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53a44fab72d3a15df3cf5929c6ddda4fec06af71
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702585"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612863"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Eye-tracking sur HoloLens 2
 
@@ -133,7 +133,7 @@ Cela peut être dû à différentes raisons, parmi lesquelles les plus courantes
 * L’utilisateur dispose de lunettes uniques ou d’une condition oculaire que le système ne prend pas encore en charge.    
 * Facteurs externes qui empêchent le suivi des yeux fiables, tels que les taches sur le Visor ou les lunettes, les lumières et les occlusions directs du soleil en raison des cheveux devant les yeux.   
 
-Par conséquent, les développeurs doivent s’assurer qu’il existe une prise en charge de secours appropriée pour ces utilisateurs. Sur la page [suivi des yeux dans DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) , nous expliquons les API requises pour détecter si les données de suivi visuel sont disponibles. 
+Par conséquent, les développeurs doivent s’assurer qu’il existe une prise en charge de secours appropriée pour ces utilisateurs. Sur la page [suivi des yeux dans DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) , nous expliquons les API requises pour détecter si les données de suivi visuel sont disponibles. 
 
 Alors que certains utilisateurs peuvent avoir des axent décidés de révoquer l’accès à leurs données de suivi visuel et qu’ils sont OK avec le compromis d’une expérience utilisateur inférieure à la confidentialité de ne pas fournir l’accès à leurs données de suivi visuel, dans certains cas cela peut être involontaire.  
 Par conséquent, si votre application utilise le suivi oculaire et qu’il s’agit d’une partie importante de l’expérience, nous vous recommandons de le communiquer clairement à l’utilisateur.     

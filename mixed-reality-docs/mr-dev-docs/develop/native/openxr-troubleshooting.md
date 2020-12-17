@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, application native, moteur personnalisé, intergiciel, résolution des problèmes
-ms.openlocfilehash: 174c115b86e62d5c52051a7363a59e383e503a95
-ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
+ms.openlocfilehash: ddfe548d689d84576ad0ac06bda46d7c2757859c
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903095"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612933"
 ---
 # <a name="openxr-troubleshooting"></a>Résolution des problèmes d’OpenXR
 
@@ -22,6 +22,6 @@ Voici quelques conseils de dépannage pour le développement d’une application
 
 ### <a name="openxr-app-not-starting-windows-mixed-reality"></a>Application OpenXR ne démarrant pas Windows Mixed Reality
 
-Si votre application OpenXR ne démarre pas Windows Mixed Reality quand vous l’exécutez, le runtime Windows Mixed Reality OpenXR peut ne pas être défini comme le runtime actif.  Veillez à suivre les instructions de [prise en main de OpenXR pour les casques pour Windows Mixed Reality](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) pour rendre le runtime actif.
+Si votre application OpenXR ne démarre pas Windows Mixed Reality quand vous l’exécutez, le runtime Windows Mixed Reality OpenXR peut ne pas être défini comme le runtime actif. Suivez les instructions de [prise en main de OpenXR pour les casques pour Windows Mixed Reality](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) pour résoudre le problème.
 
-Vous pouvez également exécuter le [outils de développement OpenXR pour Windows Mixed Reality](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) pour obtenir une aide supplémentaire sur l’état du runtime Windows Mixed Reality OpenXR sur votre système.
+Vous pouvez également exécuter le [outils de développement OpenXR pour Windows Mixed Reality](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) pour obtenir de l’aide sur l’état de vos systèmes Windows Mixed Reality OpenXR Runtime.
