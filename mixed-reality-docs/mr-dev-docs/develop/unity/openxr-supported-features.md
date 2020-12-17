@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: dc908762d6e44e04f56b8ff82b90394106ca42e5
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5db08dee6b26de6fa3f44d92709e4903bb90a44c
+ms.sourcegitcommit: 7595db7438398b5c78cec41a6f8ab625711bf8ec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "97622913"
+ms.locfileid: "97664417"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>OpenXR en réalité mixte fonctionnalités prises en charge dans Unity
 
@@ -25,12 +25,12 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * Optimise l’interaction entre le package UWP et CoreWindow pour les applications HoloLens 2.
 * Suivi de la mise à l’échelle mondiale utilisant les ancres et l’espace non limité.
 * API de stockage d’ancrage pour rendre les ancres persistantes dans le stockage local HoloLens 2.
-* Interactions entre le contrôleur de mouvement et la main, y compris le nouveau contrôleur de réverbération HP G2.
+* [Interactions entre le contrôleur de mouvement et la main](#motion-controller-and-hand-interactions), y compris le nouveau contrôleur de réverbération HP G2.
 * Suivi articulé à l’aide de 26 jointures et d’entrées RADIUS jointes.
 * Interaction de regard sur HoloLens 2.
 * Recherche de l’appareil photo/vidéo (PV) sur HoloLens 2.
 * Capture de la réalité mixte à l’aide d’un rendu de 3e œil via l’appareil photo PV.
-* Prend en charge la « lecture » dans HoloLens 2 à l’aide de l’application de communication à distance holographique, ce qui permet aux développeurs de déboguer les scripts sans les générer et les déployer sur l’appareil.
+* Prend en charge [la « lecture » dans HoloLens 2 avec l’application de communication à distance holographique](#holographic-remoting-in-unity-editor-play-mode), ce qui permet aux développeurs de déboguer les scripts sans les générer et les déployer sur l’appareil.
 * Compatible avec MRTK Unity 2.5.2 via le package d’adaptateur OpenXR MRTK. <missing link>
 * Compatible avec Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) ou version ultérieure
 
