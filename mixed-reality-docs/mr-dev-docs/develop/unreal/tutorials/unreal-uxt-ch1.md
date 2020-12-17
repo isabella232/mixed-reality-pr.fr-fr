@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, tutoriel, bien démarrer, mrtk, uxt, UX Tools, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: 465215efd953c0acb9f2d80a2905ee06963c5f8c
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 71a3edbc00c315ca68ac56985c54faee2492d74d
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609720"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010524"
 ---
 # <a name="1-getting-started"></a>1. Mise en route
 
@@ -33,20 +33,27 @@ Avant de commencer, vérifiez que vous avez installé les éléments suivants :
 * Windows 10 1809 ou version ultérieure
 * SDK Windows 10 (10.0.18362.0 ou version ultérieure)
 * [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.25 ou ultérieur
-* Appareil Microsoft HoloLens 2 [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) ou l’émulateur
+* Appareil Microsoft HoloLens 2 [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) ou [émulateur](../../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-2-emulator-overview)
 * Visual Studio 2019 avec les charges de travail ci-dessous
 
 ### <a name="installing-visual-studio-2019"></a>Installation de Visual Studio 2019
 
 Vérifiez d’abord que votre installation a tous les packages Visual Studio nécessaires :
 1. Installez la dernière version de [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/).
-2. Installez les [charges de travail](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads) suivantes :
+1. Installez les [charges de travail](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads) suivantes :
     * Développement Desktop en C++
     * Développement .NET Desktop
     * Développement pour la plateforme Windows universelle
+1. Dans Développement pour la plateforme Windows universelle, sélectionnez : 
+    * Connectivité des périphériques USB
+    * Outils de plateforme Windows universelle C++ (v142)
 
-3. Installez les [composants](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components) suivants :
+1. Installez les [composants](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components) suivants :
     * Compilateurs, outils de build et runtimes > MSVC v142 - VS 2019 C++ ARM64 Build Tools (dernière version)
+
+Vous pouvez confirmer l’installation avec l’image suivante
+
+![Cycles importants dans le programme d’installation de Visual Studio](images/unreal-uxt/1-install-the-tools.png)
 
 C’est tout ! Vous êtes maintenant prêt à lancer le projet de jeu d’échecs.
 

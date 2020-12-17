@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, tutoriel, bien démarrer, mrtk, uxt, UX Tools, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609490"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010543"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Empaquetage et déploiement sur un appareil ou un émulateur
 
@@ -49,6 +49,7 @@ Une fois que vous êtes connecté, cliquez sur la flèche déroulante à droite 
 1.  Accédez à **Edit > Project Settings**.
     * Ajoutez un nom de projet sous **Project > Description > About > Project Name**.
     * Ajoutez **CN=NomVotreSociété** sous **Project > Description > Publisher > Company Distinguished Name**.
+    * Sélectionnez **Start in VR** sous **Project > Description > Settings**.
 
 > [!IMPORTANT]
 > Si vous laissez l’un de ces champs vide, une erreur se produit quand vous tentez de générer un nouveau certificat à l’étape 3.
@@ -56,7 +57,10 @@ Une fois que vous êtes connecté, cliquez sur la flèche déroulante à droite 
 > [!IMPORTANT]
 > Le nom de l’éditeur doit être au [format de nom unique LADPv3](https://www.ietf.org/rfc/rfc2253.txt). Un nom d’éditeur incorrect provoque l’affichage du message d’erreur « Clé de signature introuvable. L’application n’a pas pu être signée numériquement. » lors de l’empaquetage.
 
-![Paramètres du projet - Description](images/unreal-uxt/6-cn.PNG)
+> [!IMPORTANT]
+> Si vous ne sélectionnez pas « Start in VR », votre application essaie de démarrer dans une ardoise
+
+![Paramètres du projet - Description](images/unreal-uxt/6-cn-new.PNG)
 
 2.  Cochez les cases **Build for HoloLens Emulation** et/ou **Build for HoloLens Device** sous **Platforms > HoloLens**.
 
@@ -88,7 +92,7 @@ Félicitations ! Votre application de réalité mixte HoloLens est terminée et
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous explorez actuellement les composants de base du MRTK. À partir d’ici, vous pouvez passer au composant suivant :
+Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous êtes en train d’explorer les modules de base du MRTK. À partir d’ici, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Entrée avec le pointage du regard](../unreal-gaze-input.md)

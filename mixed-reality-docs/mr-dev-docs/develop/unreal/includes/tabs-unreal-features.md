@@ -1,20 +1,22 @@
 ---
-ms.openlocfilehash: be2bbcc7e20a005ecb91228cdfa36b20f56acb33
-ms.sourcegitcommit: f31f3a54c7c46e21884d62b4a696acf122a3c2b9
+ms.openlocfilehash: 31f11712c2f1cbe7e6726ecf5a83ccd31a2e616e
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781964"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96912173"
 ---
 # <a name="426"></a>[4.26](#tab/ue426)
 
 La dernière version d’Unreal Engine 4.26 comprend les éléments suivants :
-* Prise en charge d’OpenXR
-* Prise en charge du plug-in [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) avec les extensions OpenXR spécifiques aux fournisseurs de Microsoft
+* Prise en charge de nouvelles [API XR inter-appareils](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-porting)
+* Prise en charge d’OpenXR et plug-in [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 
 * Plug-in du lecteur multimédia HoloLens pour une lecture vidéo performante
 * Azure Spatial Anchors pour iOS et Android (version bêta)
-* Streaming d’Azure vers HoloLens 2
-* Conformité du Kit de certification des applications Windows pour les applications empaquetées
+* Prise en charge des connexions inversées lors de la communication à distance, activation du streaming d’Azure vers HoloLens 2
+* Accès au clavier système HoloLens 2
+* Conformité du kit de certification des applications Windows pour les applications empaquetées
+* Prise en charge d’Unreal Insights pour HoloLens 2
 * Prise en charge du contrôleur HP Reverb G2
 
 Pour plus d’informations, consultez les <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_26/index.html" target="_blank" title="notes de publication"></a> d’Unreal Engine 4.26. 

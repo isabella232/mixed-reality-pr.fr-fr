@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portail d’appareil Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 4d945a6fbc61e56707d1e36e110a1108283b5add
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102928"
 ---
 # <a name="using-the-windows-device-portal"></a>Utilisation du portail d’appareil Windows
 
@@ -117,6 +117,38 @@ Chaque HoloLens génère un certificat auto-signé unique pour sa connexion SSL.
 >[!NOTE]
 > Ce certificat sera uniquement approuvé pour l’appareil et l’utilisateur devra recommencer le processus si l’appareil est flashé.
 
+## <a name="sideloading-applications"></a>Chargement de version test des applications
+
+### <a name="installing-a-certificate"></a>Installation d’un certificat
+
+1. Dans le portail d’appareil Windows, accédez à la page **Gestionnaire d’applications**
+2. Dans la section Déployer des applications, sélectionnez **Installer un certificat**
+3. Sous Sélectionnez le fichier de certificat (.cer) utilisé pour signer un package d’application, sélectionnez Choisir un fichier et accédez au certificat associé au package d’application dont vous souhaitez charger une version test
+4. Sélectionnez **Installer** pour commencer l’installation
+
+![Capture d’écran de la page Gestionnaire d’applications ouverte dans le portail d’appareil Windows](images/sideloading-1.png)
+
+### <a name="installing-an-app"></a>Installation d’une application
+
+> [!NOTE]
+> Pour qu’une application puisse être correctement installée via le portail d’appareil, elle doit être signée par un certificat qui doit être installé sur l’appareil avant d’essayer d’installer l’application. Pour obtenir des instructions, consultez la [section précédente](#installing-a-certificate).
+
+1. Lorsque vous avez [créé un package d’application depuis Visual Studio](using-visual-studio.md), vous pouvez l’installer à distance sur votre appareil à partir des fichiers générés :
+
+![Capture d’écran du contenu du fichier de package d’application](images/sideloading-2.png)
+
+2. Dans le portail d’appareil Windows, accédez à la page **Gestionnaire d’applications**
+3. Dans la section **Déployer des applications**, sélectionnez **Stockage local**
+4. Sous Sélectionner le package d’application, sélectionnez Choisir un fichier et accédez au package d’application dont vous souhaitez charger une version test
+5. Cochez les cases respectives si vous souhaitez installer des packages facultatifs ou de framework en même temps que l’application, puis sélectionnez **Suivant** :
+
+![Capture d’écran de la page Gestionnaire d’applications ouverte dans le portail d’appareil Windows avec l’onglet Stockage local en surbrillance](images/sideloading-3.png)
+
+6. Sélectionnez **Installer** pour démarrer l’installation
+ 
+![Capture d’écran de la page Gestionnaire d’applications ouverte dans le portail d’appareil Windows avec l’installation terminée](images/sideloading-4.png) 
+
+Une fois l’installation terminée, revenez à la page **All apps** dans HoloLens et lancez votre application nouvellement installée.
 
 ## <a name="device-portal-pages"></a>Pages de Device Portal
 

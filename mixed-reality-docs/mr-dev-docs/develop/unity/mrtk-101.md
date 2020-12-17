@@ -7,14 +7,15 @@ ms.date: 08/27/2019
 ms.topic: article
 keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, conception, exemple d’application, contrôles, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
 ms.localizationpriority: high
-ms.openlocfilehash: 95d8f8c52b226eda7ea1601feffc1464c2ea91c5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 16087b69a45def0f496d2ded434458725474bd25
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677529"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010600"
 ---
 # <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-common-spatial-interactions"></a>MRTK 101 : Guide pratique pour utiliser Mixed Reality Toolkit d’Unity pour les interactions spatiales courantes
+
 ![MRTK](images/MRTK101/MRTK101Cover.png)
 
 Découvrez comment utiliser MRTK pour obtenir certains des modèles d’interaction les plus largement utilisés dans le domaine de la réalité mixte.
@@ -36,16 +37,19 @@ Découvrez comment utiliser MRTK pour obtenir certains des modèles d’interact
 Tout le contenu de cette page peut être testé dans l’éditeur Unity avec la simulation d’entrée de MRTK. Si vous n’en disposez pas, suivez le [Guide d’installation de MRTK (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) pour installer la dernière version de MRTK.
 
 ## <a name="how-to-simulate-input-interactions-in-unity-editor"></a>Comment simuler des interactions d’entrée dans l’éditeur Unity ?
-MRTK prend en charge la simulation d’une entrée dans l’éditeur. Exécutez simplement votre scène en cliquant sur le bouton de lecture dans Unity. Utilisez ces touches pour simuler une entrée.
-Appuyez sur les touches W, A, S, D pour déplacer la caméra.
-Maintenez le bouton droit de la souris enfoncé et déplacez la souris pour regarder autour de vous.
-Pour faire apparaître les mains simulées, appuyez sur la barre d’espace (avec la main droite) ou sur la touche Maj gauche (avec la main gauche). Pour garder les mains simulées dans la vue, appuyez sur la touche T ou Y. Pour faire pivoter les mains simulées, appuyez sur Q ou E (horizontal)/R ou F (vertical).
 
-- [En savoir plus sur la simulation d’entrée dans la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html)
+MRTK prend en charge la simulation d’une entrée dans l’éditeur. Exécutez votre scène en cliquant sur le bouton de lecture d’Unity, puis utilisez les touches suivantes pour simuler l’entrée :
+- Appuyez sur les touches W, A, S, D pour déplacer la caméra.
+- Maintenez le bouton droit de la souris enfoncé et déplacez la souris pour regarder autour de vous.
+- Appuyez sur la barre d’espace (droite) ou sur la touche Maj de gauche pour faire apparaître les mains simulées
+- Appuyez sur les touches T ou Y pour que les mains simulées restent affichées
+- Appuyez sur Q ou E (horizontal) / R ou F (vertical) pour faire pivoter les mains simulées
 
+Vous pouvez en apprendre davantage sur la simulation d’entrée dans la [documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html).
 
 ## <a name="how-to-grab-and-move-an-object"></a>Comment saisir et déplacer un objet ?
-Pour rendre un objet saisissable, affectez ces deux scripts : **ObjectManipulator.cs** et **NearInteractionGrabbable.cs** (pour une entrée par saisie directe avec le suivi de la main articulée). ObjectManipulator prend en charge les interactions proches et éloignées. Avec Hololens 2, vous pouvez saisir et déplacer un objet avec une entrée par suivi de la main articulée (interaction proche), avec un rayon émanant de la main (interaction éloignée), avec le faisceau du contrôleur de mouvement (interaction éloignée), avec le curseur oculaire HoloLens et le clic aérien (interaction éloignée).
+
+Attachez les scripts **ObjectManipulator.cs** et **NearInteractionGrabbable.cs** pour rendre un objet saisissable. ObjectManipulator prend en charge les interactions proches et lointaines. Avec HoloLens 2, vous pouvez saisir et déplacer un objet avec une entrée par suivi de la main articulée (interaction proche), avec un rayon émanant de la main (interaction éloignée), avec le faisceau du contrôleur de mouvement (interaction éloignée) ainsi qu’avec le curseur oculaire HoloLens et le clic aérien (interaction éloignée).
 
 <br/><img alt="NearInteractionGrabbable and ObjectManipulator.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
 
@@ -53,7 +57,7 @@ Pour rendre un objet saisissable, affectez ces deux scripts : **ObjectManipulat
 
 
 ## <a name="how-to-resize-an-object"></a>Comment redimensionner un objet ?
-**ObjectManipulator.cs** prend en charge la rotation/mise à l’échelle à deux mains. Cela fonctionne avec divers types d’entrée : suivi de la main articulée avec HoloLens 2, pointage du regard + mouvement avec HoloLens 1 et contrôleur de mouvement du casque immersif de Windows Mixed Reality.
+**ObjectManipulator.cs** prend en charge la rotation/mise à l’échelle à deux mains. Le script fonctionne avec divers types d’entrée : suivi de la main articulée avec HoloLens 2,pointage du regard + mouvement avec HoloLens 1 et contrôleur de mouvement du casque immersif de Windows Mixed Reality.
 
 - [En savoir plus sur Object Manipulator dans la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
 
@@ -70,7 +74,7 @@ Affectez **BoundsControl.cs** à un objet pour utiliser un cadre englobant qui c
 
 
 ## <a name="how-to-make-an-object-respond-to-input-events"></a>Comment faire en sorte qu’un objet réponde à des événements d’entrée ?
-Affectez **PointerHandler.cs** à un objet. Dans l’inspecteur, vous allez pouvoir utiliser des événements OnPointerDown(), OnPointerUp(), OnPointerClicked(), OnPointerDragged(). Pour utiliser ces événements dans un script, implémentez **IMixedRealityPointerHandler**.
+Affectez **PointerHandler.cs** à un objet. Dans l’inspecteur, vous pouvez utiliser des événements OnPointerDown(), OnPointerUp(), OnPointerClicked(), OnPointerDragged(). Pour utiliser ces événements dans un script, implémentez **IMixedRealityPointerHandler**.
 
 <br/><img alt="PointerHandler.cs assigned to an object image" width="800" src="images/MRTK101/MRTK_PointerHandler.png">
 
@@ -88,7 +92,7 @@ Interactable fournit divers types de thèmes, notamment le thème du nuanceur, q
 
 - [En savoir plus sur Interactable dans la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 
-Un autre module important pour le feedback visuel est le **nuanceur MRTK standard**. Avec le nuanceur MRTK standard, vous pouvez facilement ajouter des effets de retour visuel comme une lumière de survol et une lumière de proximité. Étant donné que le nuanceur MRTK standard effectue beaucoup moins de calcul que le nuanceur Unity standard, vous pouvez ainsi créer une expérience performante.
+Un autre module important pour le feedback visuel est le **nuanceur MRTK standard**. Avec le nuanceur MRTK standard, vous pouvez facilement ajouter des effets de retour visuel comme une lumière de survol et une lumière de proximité. Étant donné que le nuanceur MRTK standard effectue moins de calcul que le nuanceur Unity standard, vous pouvez créer une expérience performante.
 
 Créez un matériau et sélectionnez le nuanceur « Mixed Reality Toolkit > Standard ». Ou vous pouvez choisir l’un des matériaux existants qui utilisent le nuanceur MRTK standard.
 
@@ -107,11 +111,11 @@ Ajoutez **AudioSource** à un objet. Ensuite, dans les scripts qui exposent des 
 <br/><img alt="Audio Source assigned to an object. AudioSource.PlayOneShot configured in the Interactable's OnPress() and OnRelease() events." width="800" src="images/MRTK101/MRTK_Audio.png">
 
 ## <a name="how-to-use-hololens-2-style-button-prefabs"></a>Comment utiliser des préfabriqués de bouton de style HoloLens 2 ?
-MRTK fournit divers types de boutons de style shell (système d’exploitation) HoloLens 2. Il offre des feedbacks visuels sophistiqués, comme la lumière de proximité, le cadre de compression et un effet d’ondulation à la surface du bouton qui améliorent la confiance de l’utilisateur.
+MRTK fournit divers types de boutons de style shell (système d’exploitation) HoloLens 2, notamment des retours visuels comme la lumière de proximité, le cadre de compression et un effet d’ondulation à la surface du bouton qui augmentent la confiance de l’utilisateur.
 
 <br/><img alt="Interactable button" width="800" src="images/MRTK101/MRTK_Button.gif">
 
-Il vous suffit de glisser-déposer un des **préfabriqués de boutons sur lequel appuyer de style HoloLens 2** dans votre scène. Le préfabriqué utilise Interactable.cs, décrit ci-dessus. Vous pouvez utiliser des événements exposés comme OnClick() dans Interactable pour déclencher des actions.
+Il vous suffit de glisser-déposer un des **préfabriqués de boutons sur lequel appuyer de style HoloLens 2** dans votre scène. Le préfabriqué utilise Interactable.cs, présenté ci-dessus. Vous pouvez utiliser des événements exposés comme OnClick() dans Interactable pour déclencher des actions.
 
 <br/><img alt="HoloLens 2 Button Prefab" width="800" src="images/MRTK101/MRTK_Button.png">
 
@@ -148,7 +152,7 @@ Vous êtes prêt à créer des expériences étonnantes pour la réalité mixte�
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, vous explorez actuellement les composants de base de MRTK. À partir de là, vous pouvez passer au composant suivant : 
+Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, vous explorez actuellement les composants de base de MRTK. À partir de là, vous pouvez passer au module suivant : 
 
 > [!div class="nextstepaction"]
 > [Appareil photo](camera-in-unity.md)

@@ -3,16 +3,16 @@ title: Bien démarrer avec la réalité mixte
 description: Aidez les novices en réalité mixte à comprendre en quoi cette technologie consiste et quelles fonctionnalités elle offre.
 author: grbury
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, découvrir, distribuer, index, page d’accueil, conception, développement, tutoriels, exemples d’applications, principes fondamentaux, études de cas, ressources, procédures HoloLens, projets open source, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: c085a60f78ef68e2139b8cc3dd2fdae24bce2a52
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702266"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926055"
 ---
 # <a name="get-started-with-mixed-reality"></a>Bien démarrer avec la réalité mixte
 
@@ -60,6 +60,7 @@ Avant de vous plonger dans la conception ou le développement d’applications, 
 | --- | --- |
 | [La réalité mixte est un spectre](../discover/mixed-reality.md) | La réalité mixte mélange le physique avec le numérique, l’évolution à venir des interactions entre les hommes, les ordinateurs et l’environnement. |
 | [Qu’est-ce qu’un hologramme ?](../discover/hologram.md) | HoloLens vous permet de créer des hologrammes, qui sont des objets composés de lumière et de son qui s’affichent dans votre environnement, comme s’il s’agissait d’objets réels. Les hologrammes répondent à votre suivi du regard, à vos gestes et à vos commandes vocales, et ils peuvent interagir avec des surfaces du monde réel autour de vous. |
+| [Vue d’ensemble de la formation à la réalité mixte](mr-learning-overview.md#general-modules) | Essayez notre module de réalité mixte organisé par le biais de Microsoft Learn |
 | [Développer votre processus de conception](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Développez votre façon de penser la conception avec une intellection, du bodystorming et des actions de l’ordre du spatial quand vous créez vos expériences immersives.  |
 
 <br>
