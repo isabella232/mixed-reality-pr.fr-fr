@@ -1,13 +1,11 @@
 - name: Introduction au développement de réalité mixte
   href: development.md
+- name: Vue d’ensemble des services cloud de réalité mixte Azure
+  href: mixed-reality-cloud-services.md
+- name: Exemples d’applications et de fonctionnalités
+  href: features-and-samples.md
 - name: Installer les outils
   href: install-the-tools.md
-- name: Prise en main
-  items:
-    - name: Vue d’ensemble des services cloud de réalité mixte Azure
-      href: mixed-reality-cloud-services.md
-    - name: Exemples d’applications et de fonctionnalités
-      href: features-and-samples.md
 - name: Applications de portage
   items:
     - name: Vue d’ensemble du portage
@@ -24,19 +22,23 @@
   items:
     - name: Vue d’ensemble du développement Unity
       href: unity/unity-development-overview.md
-    - name: Prise en main
+    - name: Configurations de projet
       items:
-        - name: Bien démarrer avec MRTK
+        - name: Présentation de MRTK
           href: unity/mrtk-getting-started.md
-        - name: Configurer un projet Unity pour Windows Mixed Reality
+        - name: Configuration de votre projet sans MRTK
           href: unity/configure-unity-project.md
+        - name: Utilisation du plug-in OpenXR Mixed Reality
+          href: unity/openxr-getting-started.md
+        - name: Fonctionnalités prises en charge par le plug-in OpenXR
+          href: unity/openxr-supported-features.md
     - name: Didacticiels
       items:
         - name: Vue d’ensemble
           href: unity/tutorials.md
         - name: "Tutoriels sur HoloLens\_2"
           items:
-            - name: Tutoriels de démarrage
+            - name: Tutoriels sur MRTK
               items:
                 - name: 1. Introduction
                   href: unity/tutorials/mr-learning-base-01.md
@@ -312,6 +314,8 @@
           href: unreal/unreal-publishing-to-store.md
         - name: Recommandations sur les performances pour Unreal
           href: unreal/performance-recommendations-for-unreal.md
+        - name: Recommandations matérielles dans Unreal
+          href: unreal/unreal-materials.md
         - name: Profilage avec Unreal Insights
           href: unreal/unreal-insights.md
         - name: Recommandations matérielles dans Unreal
