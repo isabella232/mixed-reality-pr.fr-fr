@@ -17,7 +17,5 @@
   href: release-notes-may-2020.md
 - name: Ressources communautaires
   href: ../discover/community.md
-- name: Contribuer à cette documentation
-  href: contributing.md
 - name: Déploiement de HoloLens à grande échelle
   href: 'https://docs.microsoft.com/hololens/'
