@@ -5,13 +5,13 @@ author: rwinj
 ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
-keywords: Aucun
-ms.openlocfilehash: 748685f89e44221ff50b90b57d871867b83f581c
-ms.sourcegitcommit: d4b96e5b51b64ff618dbf667e8b8eb069e1a2fe2
+keywords: aucun
+ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
+ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91717432"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97676132"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>Titre (Soyez le plus spécifique possible, utilisez les conditions humaines) 
 
@@ -52,7 +52,7 @@ ms.locfileid: "91717432"
 
 Une section peut contenir tout ou partie des éléments suivants :  
 
-*   Descriptions
+*   Explications
 *   Considérations
 *   Règles de curseur 
 *   Méthodes d’utilisation 
@@ -65,7 +65,7 @@ Conventions éditoriales :
 *   N’essayez pas d’être drôle.
 *   Écrivez à l’aide des conventions et de l’orthographe en-US (États-Unis l’anglais).
 *   **Utilisez la casse des phrases pour les titres, les en-têtes de section et... tout est tout.** Dans les phrases, les seuls mots qui doivent être capitalisés sont des noms corrects (comme vous l’avez appris dans la grammaire). Les noms de logos (par exemple, Microsoft HoloLens) sont des noms appropriés. Les noms de fonctionnalités (par exemple, le mappage spatial) ne sont pas des noms corrects, sauf s’ils sont cités.
-*   N’écrivez pas de liens au format « pour plus d’informations, cliquez [ici](../whats-new/contributing.md)». Au lieu de cela, placez les liens de façon [contextuelle](../whats-new/contributing.md) sans demander au lecteur d’aller ailleurs.
+*   N’écrivez pas de liens au format « pour plus d’informations, cliquez [ici](../contributing.md)». Au lieu de cela, placez les liens de façon [contextuelle](../contributing.md) sans demander au lecteur d’aller ailleurs.
 *   Cette documentation est la source de vérité. Les informations doivent être précises et actuelles.
 
 <br>
