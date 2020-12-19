@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: dd84ba86af0b86b29510c4c317ad0a14fabc296b
-ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
+ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
+ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97676222"
+ms.locfileid: "97691318"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contribution à la documentation du développeur de réalité mixte
 
@@ -48,12 +48,12 @@ Utilisez le flux de travail suivant pour effectuer des mises à jour d' *un arti
    ![Modifier un article.](images/editpage.png)
 3. Modifiez le contenu de l’article en fonction des [« principes de base »](#markdown-basics).
 4. Mettez à jour les métadonnées en haut de chaque article :
-   * titre : titre de la page qui s’affiche sous l’onglet navigateur lorsque l’article est affiché. Les titres de page sont utilisés pour le SEO et l’indexation. par conséquent, ne modifiez pas le titre, sauf si cela est nécessaire (bien que cela soit moins critique avant que la documentation ne soit publique).
-   * Description : rédigez une brève description du contenu de l’article, qui améliore le SEO et la découverte.
-   * Auteur : Si vous êtes le propriétaire principal de la page, ajoutez votre alias GitHub ici.
-   * ms. Author : Si vous êtes le propriétaire principal de la page, ajoutez votre alias Microsoft ici (vous n’en avez pas besoin @microsoft.com , juste l’alias).
-   * ms. Date : mettez à jour la date si vous ajoutez du contenu majeur à la page, mais pas pour des correctifs tels que la clarification, la mise en forme, la grammaire ou l’orthographe.
-   * Mots clés : aide sur les mots clés dans SEO (optimisation du moteur de recherche). Ajoutez des mots clés, séparés par une virgule et un espace, qui sont spécifiques à votre article, mais pas de ponctuation après le dernier mot clé de votre liste. Vous n’avez pas besoin d’ajouter des mots clés globaux qui s’appliquent à tous les articles, car ceux-ci sont gérés ailleurs. 
+   * **titre**: titre de la page qui s’affiche sous l’onglet navigateur lorsque l’article est affiché. Les titres de page sont utilisés pour le SEO et l’indexation. par conséquent, ne modifiez pas le titre, sauf si cela est nécessaire (bien que cela soit moins critique avant que la documentation ne soit publique).
+   * **Description**: rédigez une brève description du contenu de l’article, qui améliore le SEO et la découverte.
+   * **auteur**: Si vous êtes le propriétaire principal de la page, ajoutez votre alias GitHub ici.
+   * **ms. Author**: Si vous êtes le propriétaire principal de la page, ajoutez votre alias Microsoft ici (vous n’en avez pas besoin @microsoft.com , juste l’alias).
+   * **ms. date**: mettez à jour la date si vous ajoutez du contenu majeur à la page, mais pas pour des correctifs tels que la clarification, la mise en forme, la grammaire ou l’orthographe.
+   * **Mots clés**: aide sur les mots clés dans SEO (optimisation du moteur de recherche). Ajoutez des mots clés, séparés par une virgule et un espace, qui sont spécifiques à votre article, mais pas de ponctuation après le dernier mot clé de votre liste. Vous n’avez pas besoin d’ajouter des mots clés globaux qui s’appliquent à tous les articles, car ceux-ci sont gérés ailleurs. 
 5. Lorsque vous avez terminé les modifications de votre article, faites défiler la liste vers le dessous et sélectionnez **proposer une modification de fichier**.
 6. Sur la page suivante, sélectionnez **créer une demande de tirage (pull Request** ) pour fusionner votre branche créée automatiquement dans « Master ».
 7. Répétez les étapes ci-dessus pour le prochain article que vous souhaitez modifier.
@@ -76,7 +76,7 @@ Pour ajouter une redirection à .openpublishing.redirection.jssur, ajoutez une e
 
 - `source_path`Est le chemin d’accès relatif au référentiel relatif à l’ancien article que vous supprimez. Assurez-vous que le chemin commence par `mixed-reality-docs` et se termine par `.md` .
 - `redirect_url`Est l’URL publique relative de l’ancien article vers le nouvel article. Assurez-vous que cette URL **ne** contient `mixed-reality-docs` `.md` pas ou, car elle fait référence à l’URL publique et non au chemin d’accès au référentiel. La liaison à une section dans le nouvel article à l’aide de `#section` est autorisée. Vous pouvez également utiliser un chemin d’accès absolu à un autre site, si nécessaire.
-- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. Par défaut, il s’agit de `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
+- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. La valeur par défaut est `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
 
 Si vous ajoutez une redirection, veillez à supprimer également l’ancien fichier.
 
