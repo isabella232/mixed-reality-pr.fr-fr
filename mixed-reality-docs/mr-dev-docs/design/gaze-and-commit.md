@@ -6,32 +6,28 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: La réalité mixte, le regard, le regard, l’interaction, la conception, le suivi des yeux, le suivi des têtes, le casque de réalité mixte, le casque Windows Mixed Reality, le casque de réalité virtuelle, HoloLens, MRTK et la réalité mixte Toolkit
-ms.openlocfilehash: a901e505d8e282e52078f5635627fbc2018a27b5
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: f9e79f8d600002f63e87316ea588741a21c0d68b
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702405"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847936"
 ---
 # <a name="gaze-and-commit"></a>Pointer du regard et valider
 
-Le point de _regard et la validation_ est un modèle d’entrée fondamental étroitement lié à la façon dont nous interagissons avec nos ordinateurs à l’aide de la souris : _point & cliquez_.
-Sur cette page, nous présentons deux types d’entrées de regard (pointer et Eye-regard) et différents types d’actions de validation. 
-Le point de _regard et la validation_ sont considérés comme un modèle d’entrée lointain avec manipulation indirecte.
-Cela signifie qu’il est préférable d’utiliser le contenu holographique qui est hors de portée.
+Le point de vue du _regard et_ de la validation est un modèle d’entrée fondamental qui est étroitement lié à la façon dont nous interagissons avec nos ordinateurs à l’aide de la souris : _point & cliquez_. Sur cette page, nous présentons deux types d’entrées de regard (pointer et Eye-regard) et différents types d’actions de validation. Le point de _regard et la validation_ sont considérés comme un modèle d’entrée lointain avec manipulation indirecte. Il est préférable d’utiliser le contenu holographique qui n’est pas accessible.
 
-Les casques de réalité mixte peuvent utiliser la position et l’orientation de la tête de l’utilisateur pour déterminer le vecteur de direction de l’en-tête. Vous pouvez l’assimiler à un rayon laser qui prend son origine entre les yeux de l’utilisateur et pointe droit devant. C’est une approximation assez grossière de la zone vers laquelle se porte le regard de l’utilisateur. Votre application peut croiser ce rayon avec des objets virtuels ou réels, et dessiner un curseur à cet emplacement pour permettre à l’utilisateur de savoir ce qu’il cible actuellement.
+Les casques de réalité mixte peuvent utiliser la position et l’orientation de la tête de l’utilisateur pour déterminer le vecteur de direction de l’en-tête. Considérez le point de regard comme un laser qui pointe directement vers l’avant entre les yeux de l’utilisateur. C’est une approximation assez grossière de la zone vers laquelle se porte le regard de l’utilisateur. Votre application peut croiser ce rayon avec des objets virtuels ou réels, et dessiner un curseur à cet emplacement pour permettre à l’utilisateur de savoir ce qu’il cible.
 
-En plus de la tête de regard, certains casques de réalité mixte, tels que HoloLens 2, incluent des systèmes de suivi oculaire qui produisent un vecteur point-Orient. Ces dispositifs fournissent une mesure précise de la zone vers laquelle se porte le regard de l’utilisateur. Dans les deux cas, le point de regard représente un signal important pour l’intention de l’utilisateur. Mieux le système peut interpréter et prédire les actions prévues de l’utilisateur, l’augmentation de la satisfaction des utilisateurs et l’amélioration des performances.
+En plus de la tête de regard, certains casques de réalité mixte, tels que HoloLens 2, incluent des systèmes de suivi oculaire qui produisent un vecteur point-Orient. Ces dispositifs fournissent une mesure précise de la zone vers laquelle se porte le regard de l’utilisateur. Dans les deux cas, le point de regard représente un signal important pour l’intention de l’utilisateur. Mieux le système peut interpréter et prédire les actions prévues de l’utilisateur, plus la satisfaction des utilisateurs et les performances sont améliorées.
 
 Voici quelques exemples de la façon dont vous êtes un développeur de réalité mixte qui peut tirer parti de la tête ou du regard :
 * Votre application peut faire une intersection avec le regard des hologrammes dans votre scène pour déterminer où l’attention de l’utilisateur est (plus précise avec le regard de l’oeil).
 * Votre application peut canaliser les gestes et les presses des contrôleurs en fonction du point de regard de l’utilisateur, ce qui permet à l’utilisateur de sélectionner, d’activer, de saisir, de faire défiler ou d’interagir de manière transparente avec ses hologrammes.
 * Votre application peut permettre à l’utilisateur de placer des hologrammes sur des surfaces réelles en croisant leur rayon de regard avec le maillage de mappage spatial.
-* Votre application peut savoir quand l’utilisateur *ne cherche pas* dans la direction d’un objet important, ce qui peut amener votre application à donner des signaux visuels et audio pour tourner vers cet objet.
+* Votre application peut savoir quand l’utilisateur n’est pas dans la direction d’un objet important, ce qui peut amener votre application à donner des signaux visuels et audio pour tourner vers cet objet.
 
 <br>
-
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -66,7 +62,7 @@ Voici quelques exemples de la façon dont vous êtes un développeur de réalit�
 ## <a name="gaze"></a>Pointage du regard
 
 ### <a name="eye--or-head-gaze"></a>Le regard de l’œil ou de la tête ?
-Il y a plusieurs points à prendre en compte lorsque vous êtes confronté à la question de savoir si vous devez utiliser le modèle d’entrée « Eye-regard and Commit » ou « Head-Pointing and commit ». Si vous développez pour un casque immersif ou pour HoloLens (1re génération), le choix est simple : début et validation. Si vous développez pour HoloLens 2, le choix devient un peu plus difficile, c’est pourquoi il est important de comprendre les avantages et les défis inhérents à chacun d’eux.
+Il y a plusieurs points à prendre en compte lorsque vous êtes confronté à la question de savoir si vous devez utiliser le modèle d’entrée « Eye-regard and Commit » ou « Head-pointage and commit ». Si vous développez pour un casque immersif ou pour HoloLens (1re génération), le choix est simple : début et validation. Si vous développez pour HoloLens 2, le choix devient un peu plus difficile. Il est important de comprendre les avantages et les défis inhérents à chacun d’eux.
 Nous avons compilé un grand nombre de professionnels et de conversions dans le tableau ci-dessous pour contraster en tête et en regard. Ceci est loin d’être terminé et nous vous suggérons d’en apprendre davantage sur le ciblage des regards dans la réalité mixte ici :
 * [Suivi oculaire sur hololens 2](eye-tracking.md): présentation générale de notre nouvelle fonctionnalité de suivi oculaire sur hololens 2, avec quelques conseils pour les développeurs. 
 * [Œil-regard](eye-gaze-interaction.md): considérations de conception et recommandations lors de la planification de l’utilisation du suivi oculaire comme entrée.
@@ -91,15 +87,15 @@ Nous avons compilé un grand nombre de professionnels et de conversions dans le 
         <td>Peut être fatiguing-une gêne possible (par exemple, une fatigue du cou)</td>
     </tr>
     <tr>
-        <td>Ne nécessite pas de curseur, mais les commentaires subtils sont recommandés</td>
+        <td>N’a pas besoin d’un curseur, mais les commentaires subtils sont recommandés</td>
         <td>Requiert l’affichage d’un curseur</td>
     </tr>
     <tr>
-        <td>Aucun mouvement d’œil lisse, par exemple, non adapté au dessin</td>
+        <td>Pas de mouvements d’œil lisses, par exemple, pas bon pour le dessin</td>
         <td>Plus contrôlé et plus explicite</td>
     </tr>
     <tr>
-        <td>Difficile pour les très petites cibles (par exemple, des boutons minuscules ou des liens weblink)</td>
+        <td>Difficile pour les petites cibles (par exemple, les petits boutons ou les liens de connexion à des Webliens)</td>
         <td>Fidèles! Parfait !</td>
     </tr>
     <tr>
@@ -108,7 +104,7 @@ Nous avons compilé un grand nombre de professionnels et de conversions dans le 
     </tr>
 </table>
 
-Que vous utilisiez le point de regard ou le regard de votre modèle d’entrée de point de présence et de validation, il est fourni avec différents jeux de contraintes de conception, qui seront couverts séparément dans [les Articles de](gaze-and-commit-head.md) [regard et](gaze-and-commit-eyes.md) de validation.
+Que vous utilisiez un point de regard ou un regard pour votre modèle d’entrée de point de présence et de validation, chacun d’entre eux est accompagné de différents ensembles de contraintes de conception. Celles-ci sont couvertes séparément dans les Articles de regard et de [validation](gaze-and-commit-eyes.md) et de [point](gaze-and-commit-head.md) de regard.
 
 <br>
 
@@ -118,9 +114,9 @@ Que vous utilisiez le point de regard ou le regard de votre modèle d’entrée 
 
 :::row:::
     :::column:::
-        Pour le point de vue de la tête, la plupart des applications doivent utiliser un [curseur](cursors.md) (ou une autre indication d’audit/visuel) pour donner à l’utilisateur la certitude de ce qu’ils sont sur le point d’interagir. En règle générale, vous positionnez ce curseur dans le monde où le rayon de regard de son en-tête croise d’abord un objet, qui peut être un hologramme ou une surface réaliste.<br>
+        Pour le point de vue de la tête, la plupart des applications doivent utiliser un [curseur](cursors.md) ou une autre indication d’audit/visuel pour donner à l’utilisateur la confiance dans ce qu’ils sont sur le point d’interagir. En règle générale, vous positionnez ce curseur dans le monde où le rayon de regard de son en-tête croise d’abord un objet, qui peut être un hologramme ou une surface réaliste.<br>
         <br>
-        Pour les yeux oculaires, nous vous recommandons généralement de *ne pas* afficher de curseur, car cela peut rapidement devenir gênant et ennuyeux pour l’utilisateur. À la place, mettez en surbrillance les cibles visuelles ou utilisez un curseur très pâle pour faire confiance à ce que l’utilisateur est sur le point d’interagir. Pour plus d’informations, consultez notre [Guide de conception pour une entrée basée](eye-tracking.md) sur l’œil sur HoloLens 2.
+        Pour les yeux oculaires, nous vous recommandons généralement de *ne pas* afficher de curseur, car cela peut rapidement devenir gênant et ennuyeux pour l’utilisateur. À la place, mettez en surbrillance les cibles visuelles ou utilisez un curseur flou pour faire confiance à ce que l’utilisateur est sur le point d’interagir. Pour plus d’informations, consultez notre [Guide de conception pour une entrée basée](eye-tracking.md) sur l’œil sur HoloLens 2.
     :::column-end:::
         :::column:::
        ![Exemple de curseur visuel pour afficher le regard](images/cursor.jpg)<br>
@@ -137,14 +133,14 @@ Après avoir parlé des différentes façons de pointer vers une cible, nous _al
 Après avoir ciblé un objet ou un élément d’interface utilisateur, l’utilisateur peut interagir ou cliquer dessus à l’aide d’une entrée secondaire. C’est ce que l’on appelle l’étape de validation du modèle d’entrée. 
 
 Les méthodes de validation suivantes sont prises en charge :
-- Mouvement d’appui sur la main (par exemple, augmentez votre main en avant et regroupez le doigt et le curseur de votre index)
+- Mouvement d’appui sur air (autrement dit, soulevez votre main et regroupez le doigt et le curseur de votre index)
 - Dites _« Sélectionner »_ ou l’une des commandes vocales ciblées
 - Appuyer sur un bouton unique sur un [Clicker HoloLens](https://docs.microsoft.com/hololens/hololens1-clicker)
 - Appuyez sur le bouton « A » sur un boîtier de manette Xbox
 - Appuyez sur le bouton « A » sur un contrôleur d’adaptateur Xbox
 
 ### <a name="gaze-and-air-tap-gesture"></a>Mouvement du toucher et de l’air
-Le clic aérien est une action d’appui avec la main levée. Pour effectuer un TAP Air, soulevez le doigt de votre index jusqu’à la position prête, puis pincez-le avec votre curseur et augmentez la sauvegarde du doigt de l’index jusqu’à la version finale. Sur HoloLens (1ère génération), le robinet air est l’entrée secondaire la plus courante.
+Le clic aérien est une action d’appui avec la main levée. Pour utiliser un robinet, soulevez le doigt de votre index jusqu’à la position prête, puis pincez-le avec votre curseur et augmentez la sauvegarde du doigt de l’index jusqu’à la version finale. Sur HoloLens (1ère génération), le robinet air est l’entrée secondaire la plus courante.
 
 
 :::row:::
@@ -159,22 +155,22 @@ Le clic aérien est une action d’appui avec la main levée. Pour effectuer un 
 :::row-end:::
 
 
-Le TAP Air est également disponible sur HoloLens 2. Elle a été allégée de la version d’origine. Presque tous les types de pincements sont maintenant pris en charge tant que la main est debout et qu’elles sont conservées. Ainsi, les utilisateurs peuvent apprendre et effectuer le mouvement beaucoup plus facilement. Ce nouveau robinet d’air remplace l’ancien par la même API. par conséquent, les applications existantes auront le nouveau comportement automatiquement après la recompilation pour HoloLens 2.
+Le TAP Air est également disponible sur HoloLens 2. Elle a été allégée de la version d’origine. Presque tous les types de pincements sont maintenant pris en charge tant que la main est debout et qu’elles sont conservées. Il est ainsi beaucoup plus facile pour les utilisateurs d’apprendre et d’utiliser le geste. Ce nouveau robinet d’air remplace l’ancien par la même API. par conséquent, les applications existantes auront le nouveau comportement automatiquement après la recompilation pour HoloLens 2.
 
 <br>
 
 ---
 
 ### <a name="gaze-and-select-voice-command"></a>Commande vocale en regard de « sélectionner »
-Les commandes vocales sont l’une des principales méthodes d’interaction dans la réalité mixte. Il fournit un mécanisme pratique et gratuit pour contrôler le système. Il existe différents types de modèles d’interactions vocales :
+Les commandes vocales sont l’une des principales méthodes d’interaction dans la réalité mixte. Il fournit un mécanisme mains-libres puissant pour contrôler le système. Il existe différents types de modèles d’interactions vocales :
 
-- Commande « SELECT » générique qui effectue une activation de clic ou une validation en tant qu’entrée secondaire.
-- Les commandes d’objet (par exemple, « fermer » ou « agrandir ») effectuent et valident une action en tant qu’entrée secondaire.
+- Commande « SELECT » générique qui utilise une activation de clic ou une validation comme entrée secondaire.
+- Les commandes d’objet (par exemple, « fermer » ou « agrandir ») sont exécutées et validées sur une action en tant qu’entrée secondaire.
 - Les commandes globales (par exemple, « atteindre le début ») ne nécessitent pas de cible.
 - Les interfaces utilisateur ou les entités de conversation comme Cortana disposent d’une fonctionnalité de langage naturel AI.
 - Commandes vocales personnalisées
 
-Pour obtenir plus de détails, ainsi qu’une liste complète des commandes vocales disponibles et comment les utiliser, consultez notre guide de [commande vocale](../out-of-scope/voice-design.md) .
+Pour en savoir plus sur les détails et sur la liste complète des commandes vocales disponibles et sur leur utilisation, consultez notre guide de [commande vocale](../out-of-scope/voice-design.md) .
 
 <br>
 
@@ -231,7 +227,7 @@ Le contrôleur d’adaptateur Xbox effectue une action de clic comme entrée sec
 ![Manette Xbox Adaptive Controller](images/xbox-adaptive-controller-devices.jpg)<br>
 *Manette Xbox Adaptive Controller*
 
-Connectez des appareils externes, tels que des commutateurs, des boutons, des montages et des joysticks, afin de créer une expérience de contrôleur personnalisée unique. Les entrées de bouton, de Stick et de déclencheur sont contrôlées à l’aide d’appareils d’assistance connectés par des connecteurs 3,5 mm et des ports USB.
+Connectez des appareils externes, tels que des commutateurs, des boutons, des montages et des joysticks, afin de créer une expérience de contrôleur personnalisée unique. Les entrées de bouton, de Stick et de déclencheur sont contrôlées à l’aide d’appareils d’assistance connectés via des connecteurs 3,5-mm et des ports USB.
 
 ![Ports de la manette Xbox Adaptive Controller](images/xbox-adaptive-controller-ports.jpg)<br>
 *Ports de la manette Xbox Adaptive Controller*
@@ -247,21 +243,21 @@ Connectez des appareils externes, tels que des commutateurs, des boutons, des mo
 ## <a name="composite-gestures"></a>Mouvements composites
 
 ### <a name="air-tap"></a>Clic aérien
-Le mouvement d’appui sur l’air (ainsi que les autres mouvements ci-dessous) réagit uniquement à un TAP spécifique. Pour détecter d’autres pressions, telles que menu ou saisis, votre application doit utiliser directement les interactions de niveau inférieur décrites dans la section relative aux mouvements de composants clés ci-dessus.
+Le mouvement d’appui sur l’air (et les autres mouvements ci-dessous) réagit uniquement à un TAP spécifique. Pour détecter d’autres pressions, telles que menu ou saisis, votre application doit utiliser directement les interactions de niveau inférieur décrites dans la section relative aux mouvements de composants clés ci-dessus.
 
 ### <a name="tap-and-hold"></a>Appui de longue durée
-L’appui prolongé consiste simplement à maintenir la position du doigt vers le bas pendant le clic aérien. La combinaison du robinet et du maintien de l’air permet d’obtenir une série d’interactions plus complexes de type « glisser-déplacer » lorsqu’elles sont combinées à des mouvements ARM tels que la sélection d’un objet au lieu de l’activer ou des interactions secondaires MouseDown, telles que l’émission d’un menu contextuel.
-Toutefois, vous devez faire preuve de vigilance lors de la conception de ce mouvement, car l’utilisateur peut être sujet à relâcher ses postures de la main pendant un mouvement étendu.
+L’appui prolongé consiste simplement à maintenir la position du doigt vers le bas pendant le clic aérien. La combinaison du robinet et du maintien de l’air permet des interactions plus complexes de type « glisser-déplacer » lorsqu’elles sont combinées à un mouvement ARM, par exemple la sélection d’un objet au lieu de l’activer ou des interactions secondaires MouseDown, telles que l’émission d’un menu contextuel.
+Toutefois, il est préférable d’utiliser cette opération lors de la conception de ce geste, car les utilisateurs peuvent être enclins à les faire passer au cours d’un mouvement étendu.
 
 ### <a name="manipulation"></a>Manipulation
 Les mouvements de manipulation peuvent être utilisés pour déplacer, redimensionner ou faire pivoter un hologramme lorsque vous souhaitez que l’hologramme réagisse 1:1 aux mouvements manuels de l’utilisateur. La possibilité pour l’utilisateur de dessiner ou de peindre dans le monde illustre l’utilisation de ce type de mouvement.
-Le ciblage initial pour un mouvement de manipulation doit être effectué au moyen d’un pointage du regard ou d’un pointage. Une fois le TAP et le Hold démarré, toute manipulation de l’objet est gérée par des mouvements manuels, ce qui permet à l’utilisateur d’effectuer des recherches lors de la manipulation.
+Le ciblage initial pour un mouvement de manipulation doit être effectué au moyen d’un pointage du regard ou d’un pointage. Une fois le TAP et le Hold démarré, toute manipulation d’objet est gérée par des mouvements manuels, ce qui permet à l’utilisateur d’effectuer des recherches lors de la manipulation.
 
 ### <a name="navigation"></a>Navigation
-Les mouvements de navigation fonctionnent comme une manette de jeu virtuelle et peuvent être utilisés pour parcourir des widgets d’interface utilisateur, tels que des menus circulaires. Vous appuyez longuement pour démarrer le mouvement, puis déplacez votre main dans un cube 3D normalisé, centré sur l’appui initial. Vous pouvez déplacer votre main sur l’axe des X, Y ou Z à partir d’une valeur comprise entre -1 et 1, 0 étant le point de départ.
+Les mouvements de navigation fonctionnent comme une manette de jeu virtuelle et peuvent être utilisés pour parcourir des widgets d’interface utilisateur, tels que des menus circulaires. Vous appuyez longuement pour démarrer le mouvement, puis déplacez votre main dans un cube 3D normalisé, centré sur l’appui initial. Vous pouvez déplacer votre main le long de l’axe X, Y ou Z d’une valeur de-1 à 1, 0 étant le point de départ.
 La navigation peut servir à générer des mouvements de zoom ou de défilement continus basés sur la vitesse, à l’image du défilement d’une interface utilisateur 2D que vous pouvez obtenir en cliquant sur le bouton central de la souris, puis en déplaçant le pointeur de la souris vers le haut ou le bas.
 
-La navigation avec rails fait référence à la possibilité de reconnaître des mouvements dans certains axes jusqu’à ce qu’un certain seuil soit atteint sur cet axe. Cela est utile uniquement lorsque le déplacement dans plus d’un axe est activé dans une application par le développeur, par exemple si une application est configurée pour reconnaître les gestes de navigation sur l’axe des X, Y, mais également dans l’axe des X avec rails. Dans ce cas, le système reconnaît les mouvements de main sur l’axe des X tant qu’ils restent dans des rails imaginaires (repère) sur l’axe des X, si le mouvement des mains se produit également sur l’axe des Y.
+La navigation avec rails fait référence à la possibilité de reconnaître des mouvements dans certains axes jusqu’à ce qu’un certain seuil soit atteint sur cet axe. Cela est utile uniquement lorsque le déplacement dans plus d’un axe est activé dans une application par le développeur, par exemple si une application est configurée pour reconnaître les gestes de navigation sur l’axe des X, Y, mais également dans l’axe des X avec rails. Dans ce cas, le système reconnaît les mouvements de main sur l’axe des X tant qu’ils restent dans des rails imaginaires (repère) sur l’axe des X, si le mouvement de la main se produit également sur l’axe des Y.
 
 Dans les applications 2D, l’utilisateur peut se servir de mouvements de navigation verticaux pour faire défiler l’écran, effectuer un zoom ou faire glisser un élément à l’intérieur de l’application. Des interactions tactiles virtuelles sont ainsi injectées dans l’application pour simuler des mouvements tactiles du même type. Les utilisateurs peuvent sélectionner les actions à effectuer en basculant entre les outils de la barre au-dessus de l’application, soit en sélectionnant le bouton, soit en disant « <défilement/glissement/zoom> outil ».
 
@@ -278,7 +274,7 @@ Pour chaque main détectée par HoloLens, vous pouvez accéder à sa position sa
 ## <a name="gesture-frame"></a>Cadre de mouvement
 Pour les gestes sur HoloLens, la main doit se trouver dans un cadre de mouvement, dans une plage que les caméras de détection de mouvement peuvent voir de manière appropriée, d’un nez à l’autre et entre les épaules. Les utilisateurs doivent être formés dans ce domaine de reconnaissance pour la réussite de l’action et pour leur propre confort. Un grand nombre d’utilisateurs partent initialement du principe que le cadre de mouvement doit se trouver dans leur vue par le biais de HoloLens et que leurs bras ne sont pas plus confortables pour interagir. Lorsque vous utilisez le clicker HoloLens, il n’est pas nécessaire que les mains soient dans le cadre de mouvement.
 
-En particulier, dans le cas de mouvements continus, il existe un risque que les utilisateurs se déplacent en dehors du cadre du geste pendant le déplacement d’un objet holographique, par exemple, et perdent leur résultat prévu.
+Pour les gestes continus, en particulier, il existe un risque que les utilisateurs déplacent leurs mains en dehors du cadre de mouvement pendant le mouvement intermédiaire lors du déplacement d’un objet holographique, par exemple, et la perte de leur résultat prévu.
 
 Voici trois choses que vous devez envisager :
 

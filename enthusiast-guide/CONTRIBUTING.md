@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: d8b4e23603a09d39fef076b600364a55410d12c3
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691462"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865434"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Contribution au Guide du passionné de réalité mixte
 
@@ -85,7 +85,7 @@ Pour ajouter une redirection à .openpublishing.redirection.jssur, ajoutez une e
 
 - `source_path`Est le chemin d’accès relatif au référentiel relatif à l’ancien article que vous supprimez. Assurez-vous que le chemin commence par `mixed-reality-docs/enthusiast-guide` et se termine par `.md` .
 - `redirect_url`Est l’URL publique relative de l’ancien article vers le nouvel article. Assurez-vous que cette URL **ne** contient `mixed-reality-docs/enthusiast-guide` `.md` pas ou, car elle fait référence à l’URL publique et non au chemin d’accès au référentiel. La liaison à une section dans le nouvel article à l’aide de `#section` est autorisée. Vous pouvez également utiliser un chemin d’accès absolu à un autre site, si nécessaire.
-- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. La valeur par défaut est `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
+- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. Par défaut, il s’agit de `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
 
 Si vous ajoutez une redirection, veillez à supprimer également l’ancien fichier.
 
@@ -167,7 +167,7 @@ Pendant la modification dans GitHub via un navigateur Web, vous pouvez sélectio
 >[!NOTE]
 >L’aperçu de vos modifications sur review.docs.microsoft.com est uniquement disponible pour les employés de Microsoft
 
-Employés de Microsoft : une fois vos contributions fusionnées dans la branche principale, vous pouvez passer en revue le contenu avant qu’il ne soit public à l’adresse https://review.docs.microsoft.com/windows/mixed-reality?branch=master . Recherchez votre article à l’aide de la table des matières de la colonne de gauche.
+Employés de Microsoft : une fois vos contributions fusionnées dans la branche principale, vous pouvez passer en revue le contenu avant qu’il ne soit public à l’adresse https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=master . Recherchez votre article à l’aide de la table des matières de la colonne de gauche.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Modification dans le navigateur et modification avec un client Desktop
 

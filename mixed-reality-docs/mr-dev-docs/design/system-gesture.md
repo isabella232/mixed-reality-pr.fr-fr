@@ -6,16 +6,16 @@ ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Réalité mixte, gestes, interaction, conception, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, kit de pratiques de réalité mixte, fleuri
-ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703265"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848166"
 ---
 # <a name="start-gesture"></a>Démarrer le mouvement
 
-Le mouvement de début est un mouvement manuel utilisé pour appeler le menu Démarrer. Cela revient à appuyer sur la touche Windows du clavier, le bouton Xbox sur un contrôleur Xbox ou le bouton Windows sur le contrôleur de mouvement du casque immersif. Il est important de comprendre quels mouvements sont réservés pour le système sur chaque appareil de réalité mixte afin d’éviter les conflits lors de la conception de vos interactions.
+Le mouvement de début est un mouvement manuel utilisé pour appeler le menu Démarrer. Cela revient à appuyer sur la touche Windows sur les claviers, le bouton Xbox sur les contrôleurs Xbox ou le bouton Windows sur les contrôleurs de mouvement du casque immersif. Portez une attention particulière aux gestes système réservés sur chaque appareil de réalité mixte pour éviter les conflits lors de la conception d’interactions.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -53,7 +53,8 @@ Le mouvement de début est un mouvement manuel utilisé pour appeler le menu Dé
 </table>
 
 ## <a name="bloom"></a>Bourgeon
-Pour afficher le menu Démarrer dans HoloLens (1ère génération), nous avons conçu « fleuri », qui est un geste symbolique imitant la fleur florale. Il est propre à l’interaction surefooted, facile à effectuer et rapide à rappeler. Pour effectuer le mouvement de floraison sur HoloLens (1ère génération), tenez votre main avec votre paume, puis ouvrez votre main en répartissant vos doigts.
+
+Nous avons conçu « fleuri » pour afficher le menu Démarrer dans HoloLens (1ère génération), qui est un geste symbolique imitant une fleur florale. Il est propre à l’interaction à l’aide des pieds de page, facile à utiliser et facile à rappeler. Pour utiliser le geste, tenez votre main avec votre paume, puis ouvrez votre main en répartissant vos doigts.
 
 :::row:::
     :::column:::
@@ -71,7 +72,8 @@ Pour afficher le menu Démarrer dans HoloLens (1ère génération), nous avons c
 ---
 
 ## <a name="start-gesture"></a>Démarrer le mouvement
-Dans HoloLens 2, nous avons remplacé le geste fleuri par un bouton de poignet virtuel qui permet d’autres interactions instinctual qui ne nécessitent pas d’apprentissage supplémentaire. En présentant les utilisateurs du bouton sur le poignet, ils peuvent accéder de manière intuitive et appuyer dessus.
+
+Dans HoloLens 2, nous avons remplacé le geste fleuri par un bouton de poignet virtuel, qui est plus instinctual pour les utilisateurs. En présentant les utilisateurs du bouton sur le poignet, ils peuvent accéder de manière intuitive et appuyer dessus.
 
 :::row:::
     :::column:::
@@ -88,7 +90,6 @@ Dans HoloLens 2, nous avons remplacé le geste fleuri par un bouton de poignet v
 
 ---
 
-
 ## <a name="one-handed-start-gesture"></a>Mouvement de démarrage à une main
 
 > [!IMPORTANT]
@@ -97,7 +98,7 @@ Dans HoloLens 2, nous avons remplacé le geste fleuri par un bouton de poignet v
 > 1. Vous devez effectuer la mise à jour vers la mise à jour de novembre 2019 (Build 18363,1039) ou version ultérieure.
 > 1. Vos yeux doivent être étalonnés sur l’appareil afin que le suivi visuel fonctionne correctement. Si vous ne voyez pas les points d’orbite autour de l’icône de démarrage lorsque vous l’examinez, vos yeux ne sont pas étalonnés sur l’appareil.
 
-Vous pouvez également effectuer le mouvement de démarrage avec une seule main. Pour ce faire, tenez votre main avec votre paume et regardez l' **icône de démarrage** sur votre poignet interne. **Tout en gardant un œil sur l’icône**, pincez votre doigt et votre index ensemble.<br>
+Vous pouvez également utiliser le mouvement Start avec une seule main. Tenez votre main avec votre paume et regardez l' **icône de démarrage** sur votre poignet interne. **Tout en gardant un œil sur l’icône**, pincez votre doigt et votre index ensemble.<br>
 :::row:::
     :::column:::
         ![Bouton de poignet prêt](images/wrist-button-ready.png)<br>

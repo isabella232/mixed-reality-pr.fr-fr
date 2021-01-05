@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, Slider, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 72433b3f3e2a755c66189e5628993aeaa33c3e89
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b2f338dd25bbcc50a68a3c5e9b8d980d15827755
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703329"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848235"
 ---
 # <a name="slider"></a>Slider
 
 ![Slider](images/UX_Hero_Slider.jpg)
 
-Un curseur est un composant d’interface utilisateur utilisé pour définir une valeur. Il fournit une indication visuelle du contenu réglable, ainsi que le paramètre actuel de la plage totale de contenu. Elle s’affiche sous la forme d’une piste avec des options de chaque côté. Un bouton ou un levier est déplacé vers une extrémité ou l’autre pour faire le choix, indiquant la valeur actuelle. Le curseur de pincement peut être déplacé en saisissant directement le curseur, soit directement, soit à distance. Les curseurs fonctionnent avec différents types d’entrée, tels que le point de suspension et l’air, ainsi qu’un contrôleur de mouvement.
+Un curseur est un composant d’interface utilisateur utilisé pour définir une valeur. Il fournit une indication visuelle du contenu réglable et la valeur actuelle de la plage de contenu totale. Elle s’affiche sous la forme d’une piste avec des options de chaque côté. Un bouton ou un levier est déplacé vers une extrémité ou l’autre pour faire le choix, indiquant la valeur actuelle. Le curseur de pincement peut être déplacé en saisissant directement le curseur, soit directement, soit à distance. Les curseurs fonctionnent avec différents types d’entrée, tels que le point de contrôle et le robinet d’air et un contrôleur de mouvement.
 
 <br>
 

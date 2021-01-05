@@ -1,17 +1,17 @@
 ---
 title: Conception de contenu pour un affichage holographique
-description: Directives de conception et meilleures pratiques pour l’affichage holographique
+description: Découvrez les instructions de conception et les meilleures pratiques pour l’affichage holographique.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Conception d’interface utilisateur, affichage holographique, conception de contenu, thème sombre, thème clair, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de la réalité mixte, conception, pixels
-ms.openlocfilehash: ea3fbda7aff80f0878521deb433c88b16abeab19
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 4a95f5df50a600035d9127c73f86a5d8be5e7131
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702635"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847991"
 ---
 # <a name="designing-content-for-holographic-display"></a>Conception de contenu pour un affichage holographique
 
@@ -22,11 +22,11 @@ Lorsque vous concevez du contenu pour des affichages holographiques, vous devez 
 <br>
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>Défis avec une couleur brillante sur une grande surface 
-En s’appuyant sur la recherche et les tests des utilisateurs sur différents types d’expériences HoloLens, nous avons constaté que l’utilisation de couleurs brillantes dans une grande partie de l’affichage peut entraîner plusieurs problèmes : 
+Sur la base de nos recherches et tests, nous avons constaté que l’utilisation de couleurs brillantes dans une grande zone de l’affichage peut entraîner plusieurs problèmes : 
 
 **Fatigue oculaire** 
 
-Étant donné que l’affichage holographique est additif, la couleur brillante utilise plus de lumière pour afficher les hologrammes. Une couleur unie et brillante dans une grande zone de l’affichage peut facilement entraîner une fatigue oculaire pour l’utilisateur. 
+Étant donné que l’affichage holographique est additif, les hologrammes avec des couleurs brillantes utilisent davantage de lumière. Une couleur unie et brillante dans une grande zone de l’affichage peut facilement entraîner une fatigue oculaire pour l’utilisateur. 
 
 **Occlusion à la main** 
 
@@ -39,48 +39,50 @@ La couleur brillante rend difficile à l’utilisateur de voir ses mains lorsqu�
 
 En raison des caractéristiques des affichages holographiques, une grande surface lumineuse sur l’écran peut devenir brillante. En utilisant des modèles de couleurs sombres, vous pouvez réduire ce problème. 
 
-## <a name="design-guidelines"></a>Instructions de conception
+## <a name="design-guidelines-for-color-choices"></a>Instructions de conception pour les choix de couleurs
 
 **Utiliser la couleur sombre pour l’arrière-plan de l’interface utilisateur**
 
 En utilisant le jeu de couleurs sombres, vous pouvez réduire la fatigue oculaire et améliorer la confiance dans les interactions directes. 
 
-![Exemple d’interface utilisateur sombre ](images/color_dark_examples.jpg)
+![Exemples de couleurs sombres utilisées pour l’arrière-plan du contenu ](images/color_dark_examples.jpg)
  *exemples de couleurs sombres utilisées pour l’arrière-plan du contenu*
 
 **Utiliser l’épaisseur de police SemiBold ou gras**
 
 HoloLens vous permet d’afficher un texte très haute résolution. Toutefois, il est recommandé d’éviter des poids de police minces, tels que la lumière ou le semi-éclairage, car les traits verticaux peuvent être instables dans une petite taille de police. 
 
-![Les exemples d’IU sombres en ](images/color_font_examples.jpg)
- *gras ou en caractères semi-gras (panneau supérieur) améliorent la lisibilité*
+![L’épaisseur de police en gras ou semi-gras (panneau supérieur) améliore la lisibilité de la police de caractères ](images/color_font_examples.jpg)
+ *gras ou semi-gras (panneau supérieur) améliore la lisibilité*
 
 **Utiliser le matériel HolographicBackplate de MRTK**
 
-Le matériel HolographicBackplate est appliqué à plusieurs panneaux d’interface utilisateur dans l’interpréteur de commandes HoloLens. L’une de ses fonctionnalités est un effet iridescence qui est visible pour les utilisateurs lorsqu’ils décalent leur position par rapport au panneau. Les couleurs de la plaque arrière décalent légèrement sur un spectre prédéfini, créant ainsi un effet visuel attrayant et dynamique sans interférer avec la lisibilité du contenu. Ce petit décalage de couleur sert également à compenser les irrégularités de couleur mineure. 
+Le matériel HolographicBackplate est appliqué à plusieurs panneaux d’interface utilisateur dans l’interpréteur de commandes HoloLens. L’une de ses fonctionnalités est un effet iridescence qui est visible pour les utilisateurs lorsqu’ils décalent leur position en fonction du panneau. Les couleurs de la plaque arrière décalent légèrement sur un spectre prédéfini, créant ainsi un effet visuel attrayant et dynamique sans interférer avec la lisibilité du contenu. Ce petit décalage de couleur sert également à compenser les irrégularités de couleur mineure. 
 
 
 ## <a name="challenges-with-transparent-or-translucent-ui-backplate"></a>Défis avec la plaque d’interface utilisateur transparente ou translucide 
+
 ![Exemple d’interface utilisateur transparente ](images/color_transparent_examples.jpg)
  *exemples d’arrière-plaque d’interface utilisateur transparente*
 
 **Complexité visuelle et accessibilité**
 
-Étant donné que les objets holographiques sont mélangés à l’environnement physique, la lisibilité du contenu ou de l’interface utilisateur sur la fenêtre transparente ou translucide peut être dégradée. En outre, lorsque des objets holographiques transparents sont superposés les uns aux autres, il peut être difficile pour l’utilisateur d’interagir en raison de la profondeur de confusion.
+Étant donné que les objets holographiques fusionnent avec l’environnement physique, la lisibilité du contenu ou de l’interface utilisateur sur des fenêtres transparentes ou translucides peut être dégradée. En outre, lorsque des objets holographiques transparents sont superposés les uns aux autres, il peut être difficile pour l’utilisateur d’interagir en raison de la profondeur de confusion.
 
 **Performances**
 
-Pour que les objets transparents ou translucides s’affichent correctement, ils doivent être triés et fusionnés avec tous les objets qui existent en arrière-plan. Le tri des objets transparents a un coût d’UC modeste, la fusion présente un coût considérable du GPU, car elle ne permet pas au GPU d’effectuer une suppression de surface cachée via l’élimination z (c.-à-d. test de profondeur). Si vous n’autorisez pas la suppression de la surface masquée, vous augmentez le nombre d’opérations qui doivent être calculées pour le pixel final rendu, ce qui augmente la pression sur les contraintes de taux de remplissage.
+Pour que les objets transparents ou translucides s’affichent correctement, ils doivent être triés et fusionnés avec tous les objets qui existent en arrière-plan. Le tri des objets transparents a un coût d’UC modeste, le mélange ayant un coût de GPU considérable, car il n’autorise pas le GPU à effectuer une suppression de surface cachée via l’élimination z (c.-à-d. test de profondeur). Si vous n’autorisez pas la suppression de la surface masquée, cela augmente le nombre d’opérations nécessaires pour le rendu final du pixel. Cela pose des contraintes de taux de remplissage plus sollicitées.
 
 **Problème de stabilité d’hologramme avec la technologie Depth LSR**
 
-Pour améliorer la reprojection holographique ou la stabilité de l’hologramme, une application peut envoyer une mémoire tampon de profondeur au système pour chaque cadre rendu. Lors de l’utilisation de la mémoire tampon de profondeur pour la reprojection, une règle est que, pour chaque pixel de couleur rendu, une valeur de profondeur correspondante doit être écrite dans la mémoire tampon de profondeur (et tout pixel avec une valeur de profondeur doit également avoir une valeur de couleur). Si les recommandations ci-dessus ne sont pas suivies, les zones de l’image rendue qui ne possèdent pas d’informations de profondeur valides peuvent être reprojetées de manière à produire des artefacts (souvent visibles sous forme de distorsions de type « Wave »).
+Pour améliorer la reprojection holographique ou la stabilité de l’hologramme, une application peut envoyer une mémoire tampon de profondeur au système pour chaque cadre rendu. Lorsque vous utilisez la mémoire tampon de profondeur pour la reprojection, vous devez écrire un tampon de profondeur pour chaque couleur rendu pixel une profondeur correspondante. Tout pixel avec une valeur de profondeur doit également avoir une valeur de couleur. Si les recommandations ci-dessus ne sont pas suivies, les zones de l’image rendue qui n’ont pas d’informations de profondeur valides peuvent être redéfinies de manière à produire des artefacts, qui sont souvent visibles sous forme de distorsions de type « Wave ».
 
 
-## <a name="design-guidelines"></a>Instructions de conception
+## <a name="design-guidelines-for-transparent-elements"></a>Instructions de conception pour les éléments transparents
+
 **Utiliser l’arrière-plan de l’interface utilisateur opaque**
 
-Par défaut, les objets transparents ou translucides n’écrivent pas de profondeur pour permettre une fusion correcte. Pour atténuer ce problème, vous pouvez utiliser des objets opaques, en veillant à ce que les objets translucides apparaissent près des objets opaques (tels qu’un bouton translucide devant une plaque arrière opaque), en forçant les objets translucides à écrire une profondeur (non applicable dans tous les scénarios), ou en rendant des objets proxy qui contribuent uniquement des valeurs de profondeur à
+Par défaut, les objets transparents ou translucides n’écrivent pas de profondeur pour permettre une fusion correcte. Pour atténuer ce problème, vous pouvez utiliser des objets opaques, en veillant à ce que les objets translucides apparaissent près des objets opaques (par exemple, un bouton translucide devant une plaque arrière opaque), en forçant les objets translucides à écrire une profondeur (non applicable dans tous les scénarios) ou en rendant les objets proxy, qui contribuent uniquement aux valeurs de profondeur à la
 
 Solutions dans MRTK-Unity : https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html#depth-buffer-sharing-in-unity  
 
@@ -97,19 +99,19 @@ Si votre projet doit utiliser des objets transparents, essayez de réduire le no
 <br/>
 
 ## <a name="dark-ui-examples-in-mrtk-mixed-reality-toolkit-for-unity"></a>Exemples d’interfaces utilisateur sombres dans MRTK (kit de préversion de réalité mixte) pour Unity
+
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit de nombreux exemples de blocs de construction d’interface utilisateur basés sur les modèles de couleurs sombres.
 
 * [Menu proche](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
 * [Dialogue](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)
 * [Menu de la main](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
 
-
 <br>
 
 ---
 
-
 ## <a name="see-also"></a>Voir aussi
+
 * [Couleurs, éclairage et matériaux](color-light-and-materials.md)
 * [Curseurs](cursors.md)
 * [Rayon émanant de la main](point-and-commit.md)

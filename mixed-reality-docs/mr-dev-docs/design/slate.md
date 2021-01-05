@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, ardoise, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 85aa91793da9022080c95775bbfd1e4775ea05d8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703328"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848220"
 ---
 # <a name="slate"></a>Tablette
 
 ![Tablette](images/UX_Hero_Slate.jpg)
 
-Un ardoise est un contrôle de style de fenêtre fine pour l’affichage de contenu 2D. Par exemple, vous pouvez l’utiliser pour afficher du texte brut, des images ou des documents. Il offre une barre de titre qui vous permet d’obtenir des boutons pour « suivre (baliser) » et fermer la fonctionnalité. Il est possible de faire défiler le contenu d’un ardoise via une [manipulation directe](direct-manipulation.md#2d-slate-interaction) , comme un écran tactile physique. Vous pouvez utiliser le point de suspension, le déplacement par l’air et le glisser-déplacer, ou encore un pointeur de contrôleur de mouvement.
+Un ardoise est un contrôle de style de fenêtre fine permettant d’afficher du contenu 2D comme du texte brut, des images ou des documents. Un ardoise offre une barre de titre qui vous permet d’obtenir des boutons pour « suivre (baliser) » et fermer la fonctionnalité. Il est possible de faire défiler le contenu d’un ardoise via une [manipulation directe](direct-manipulation.md#2d-slate-interaction) , comme un écran tactile physique. Vous pouvez utiliser le point de suspension, le robinet d’air, le mouvement de glissement ou le pointeur d’un contrôleur de mouvement.
 
 <br>
 

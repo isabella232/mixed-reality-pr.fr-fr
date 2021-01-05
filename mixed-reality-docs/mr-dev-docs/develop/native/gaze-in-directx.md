@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: œil-point d’interposition, point de présence, suivi de la tête, suivi des yeux, DirectX, entrée, hologrammes, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 4e8c638d91125a30cb4121b09a699f9ff6db5892
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613043"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848091"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Entrée en regard des points de regard et de pointage dans DirectX
 
@@ -84,6 +84,7 @@ Elle utilise la même API [SpatialPointerPose](https://docs.microsoft.com//uwp/a
 2. Activez la fonctionnalité « entrée de regard » dans le manifeste de votre package.
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>Demande d’accès à une entrée en regard des yeux
+
 Lorsque votre application démarre, appelez [EyesPose :: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) pour demander l’accès au suivi oculaire. Le système demande à l’utilisateur si nécessaire et retourne [GazeInputAccessStatus :: allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) une fois que l’accès a été accordé. Il s’agit d’un appel asynchrone, ce qui nécessite un peu de gestion supplémentaire. L’exemple suivant montre comment effectuer une opération de détachement d’un thread std :: thread pour attendre le résultat, qu’il stocke dans une variable membre appelée *m_isEyeTrackingEnabled*.
 
 ```cpp
@@ -146,6 +147,7 @@ Cela ajoute les lignes suivantes à la section *package* dans le fichier appxman
 ```
 
 ### <a name="getting-the-eye-gaze-ray"></a>Obtenir le regard de l’œil
+
 Une fois que vous avez reçu l’accès à ET, vous êtes libre de prendre le regard de chaque image.
 Comme avec le point de regard, récupérez [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) en appelant [SpatialPointerPose :: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) avec un horodatage et un système de coordonnées souhaités. SpatialPointerPose contient un objet [EyesPose](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose) via la propriété [Eyes](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) . Ce n’est pas NULL uniquement si le suivi oculaire est activé. À partir de là, vous pouvez vérifier si l’utilisateur de l’appareil a un étalonnage de suivi oculaire en appelant [EyesPose :: IsCalibrationValid](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Ensuite, utilisez la [propriété de](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) pointage pour récupérer le [SpatialRay](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) contenant la position et la direction de l’oeil. La propriété de pointage peut parfois avoir la valeur null. Assurez-vous de le vérifier. Cela peut se produire si un utilisateur calibré ferme temporairement ses yeux.
 
@@ -174,7 +176,8 @@ if (pointerPose)
 ```
 
 ## <a name="fallback-when-eye-tracking-isnt-available"></a>Secours lorsque le suivi oculaire n’est pas disponible
-Comme mentionné dans nos [documents sur la conception des suivis oculaires](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available), les concepteurs et les développeurs doivent connaître les instances où les données de suivi oculaire peuvent ne pas être disponibles.
+
+Comme mentionné dans nos [documents sur la conception des suivis oculaires](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available), les concepteurs et les développeurs doivent connaître les instances où les données de suivi oculaire peuvent ne pas être disponibles.
 
 Il existe plusieurs raisons pour lesquelles les données ne sont pas disponibles :
 * Un utilisateur n’est pas étalonné
@@ -190,11 +193,12 @@ Alors que certaines API ont déjà été mentionnées dans ce document, nous fou
 * Vérifiez que l’utilisateur a donné à votre application l’autorisation d’utiliser ses données de suivi oculaire : récupérez le _« GazeInputAccessStatus »_ actuel. Vous trouverez un exemple de la procédure à suivre pour [demander l’accès aux entrées de regard](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input).   
 
 Vous pouvez également vérifier que vos données de suivi oculaire ne sont pas obsolètes en ajoutant un délai d’expiration entre les mises à jour reçues des données de suivi oculaire et en conversant le point de vue de la tête, comme indiqué ci-dessous.   
-Pour plus d’informations, consultez les [considérations relatives](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available) à la conception de secours.
+Pour plus d’informations, consultez les [considérations relatives](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available) à la conception de secours.
 
 <br>
 
 ## <a name="correlating-gaze-with-other-inputs"></a>Corrélation du regard avec d’autres entrées
+
 Il peut arriver que vous ayez besoin d’un [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) qui correspond à un événement dans le passé. Par exemple, si l’utilisateur fait un robinet d’air, votre application peut souhaiter savoir ce qu’elle recherchait. À cet effet, l’utilisation simple de [SpatialPointerPose :: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) avec le temps de trame prédit serait inexacte en raison de la latence entre le traitement d’entrée du système et la durée d’affichage. En outre, si vous utilisez des yeux pour le ciblage, nos yeux ont tendance à se déplacer même avant de terminer une action de validation. Il s’agit d’un problème moins grave pour une pression aérienne simple, mais il devient plus critique lors de la combinaison de longues commandes vocales avec des mouvements d’œil rapides. L’une des façons de gérer ce scénario consiste à effectuer un appel supplémentaire à  [SpatialPointerPose :: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp), à l’aide d’un horodateur historique qui correspond à l’événement d’entrée.  
 
 Toutefois, pour les entrées qui acheminent le SpatialInteractionManager, il existe une méthode plus simple. [SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) a sa propre fonction [TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) . L’appel de qui fournira un [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) parfaitement corrélé sans les deviner. Pour plus d’informations sur l’utilisation de SpatialInteractionSourceStates, jetez un coup d’œil aux [contrôleurs mains et motion dans](hands-and-motion-controllers-in-directx.md) la documentation DirectX.
@@ -202,6 +206,7 @@ Toutefois, pour les entrées qui acheminent le SpatialInteractionManager, il exi
 <br>
 
 ## <a name="calibration"></a>Étalonnage
+
 Pour que le suivi des yeux fonctionne correctement, chaque utilisateur doit passer par un étalonnage de l' [utilisateur de suivi oculaire](../../calibration.md). Cela permet à l’appareil d’ajuster le système pour une expérience d’affichage plus confortable et de meilleure qualité pour l’utilisateur et pour garantir un suivi visuel précis en même temps. Les développeurs n’ont rien à faire à leur bout pour gérer l’étalonnage de l’utilisateur. Le système s’assure que l’utilisateur est invité à étalonner l’appareil dans les circonstances suivantes :
 * L’utilisateur utilise l’appareil pour la première fois
 * L’utilisateur a précédemment choisi le processus d’étalonnage
@@ -212,6 +217,7 @@ Les développeurs doivent veiller à fournir une prise en charge adéquate pour 
 <br>
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Étalonnage](../../calibration.md)
 * [Systèmes de coordonnées dans DirectX](coordinate-systems-in-directx.md)
 * [Eye-point de regard sur HoloLens 2](../../design/eye-tracking.md)

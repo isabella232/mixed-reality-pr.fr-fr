@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, conception, contrôles, UI, UX, indicateur de progression, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de temps de réalité mixte
-ms.openlocfilehash: aa74ae1bf9dae9831743aeaf6ce18df196784ded
-ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
+ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96470511"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848282"
 ---
 # <a name="progress-indicator"></a>Indicateur de progression
 
@@ -19,7 +19,7 @@ ms.locfileid: "96470511"
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-Un contrôle de progression offre un retour à l’utilisateur lorsqu’une longue opération est en cours. Cela peut signifier que l’utilisateur ne peut pas interagir avec l’application lorsque l’indicateur de progression est visible et peut également indiquer le temps d’attente en fonction de l’indicateur utilisé.
+Un contrôle de progression fournit des commentaires qu’une opération de longue durée est en cours d’exécution. Lorsqu’un indicateur de progression est visible, les utilisateurs peuvent voir le temps d’attente et ne peuvent pas interagir avec l’application.
 
 <br>
 
@@ -27,12 +27,12 @@ Un contrôle de progression offre un retour à l’utilisateur lorsqu’une long
 
 ## <a name="types-of-progress"></a>Types de progression
 
-Il est important de fournir les informations de l’utilisateur sur ce qui se passe. Dans la réalité mixte, les utilisateurs peuvent être facilement gênés par un environnement ou des objets physiques si votre application ne donne pas de bons commentaires visuels. Pour les situations qui prennent quelques secondes, telles que le chargement des données ou la mise à jour d’une scène, il est judicieux d’afficher un indicateur visuel. Il existe deux options pour montrer à l’utilisateur qu’une opération est en cours d’exécution : une **barre de progression** ou un **anneau de progression**.
+Il est important de fournir les informations de l’utilisateur sur ce qui se passe. En réalité mixte, les utilisateurs peuvent être facilement gênés par l’environnement physique ou les objets si votre application n’a pas de commentaires visuels corrects. Pour les situations qui prennent quelques secondes, par exemple lors du chargement de données ou lors de la mise à jour d’une scène, il est judicieux d’afficher un indicateur visuel. Il existe deux options pour montrer à l’utilisateur qu’une opération est en cours d’exécution : une **barre de progression** ou un **anneau de progression**.
 
 :::row:::
     :::column:::
         ### <a name="progress-barbr"></a>Barre de progression<br>
-        Une barre de progression indique le pourcentage d’achèvement d’une tâche. Elle doit être utilisée pendant une opération dont la durée est connue (arrêt), mais la progression ne doit pas bloquer l’interaction de l’utilisateur avec l’application.<br>
+        Une barre de progression indique le pourcentage d’achèvement d’une tâche. Elle doit être utilisée pendant une opération dont la durée est connue (se terminer), mais sa progression ne doit pas bloquer l’interaction de l’utilisateur avec l’application.<br>
         <br>
         *Image : exemple de barre de progression dans HoloLens*
     :::column-end:::
@@ -49,13 +49,13 @@ Il est important de fournir les informations de l’utilisateur sur ce qui se pa
 :::row:::
     :::column:::
         ### <a name="progress-ringbr"></a>Anneau de progression<br>
-        Un anneau de progression n’a qu’un état indéterminé et doit être utilisé quand une interaction utilisateur supplémentaire est bloquée jusqu’à ce que l’opération soit terminée.<br>
+        Un anneau de progression n’a qu’un état indéterminé et doit être utilisé lorsque l’interaction avec l’utilisateur est bloquée jusqu’à ce que l’opération soit terminée.<br>
         <br>
         *Image : exemple de sonnerie de progression dans HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Exemple de sonnerie de progression dans HoloLens](images/640px-progressring.jpg)<br>
+       ![Exemple de sonnerie de progression sur un appareil HoloLens](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 

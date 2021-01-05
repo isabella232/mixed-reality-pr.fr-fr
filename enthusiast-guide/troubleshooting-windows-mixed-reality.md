@@ -3,12 +3,12 @@ title: Résolution des problèmes de Windows Mixed Reality
 description: Résolution des problèmes de Windows Mixed realisation qui va au-delà de notre documentation de support technique standard.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support
-ms.openlocfilehash: bc320787e243e92aafb5c942da8ca4d76737ec46
-ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
+ms.openlocfilehash: f98bc55062f2e159e6ac6fca5514cee899f50bc5
+ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94361650"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97859488"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Résolution des problèmes de Windows Mixed Reality (FAQ)
 
@@ -16,22 +16,22 @@ ms.locfileid: "94361650"
 
 ## <a name="whats-new"></a>Nouveautés !
 
-En respectant la nouvelle version du casque et des contrôleurs de révocation HP, nous avons compilé une [page de FAQ dédiée](reverbG2-faq.md) pour tous les éléments liés au matériel G2. Cet article aborde tout ce qui est lié aux problèmes de connexion et la clarté des images aux problèmes des contrôleurs motion et à l’exécution de la réalité mixte.
+En respectant les nouveaux contrôleurs et les contrôleurs de la nouvelle réverbération de HP, nous avons compilé une [page de FAQ dédiée](reverbG2-faq.md) pour tous les éléments G2. Cet article aborde tout ce qui est lié aux problèmes de connexion et la clarté des images aux problèmes des contrôleurs motion et à l’exécution de la réalité mixte.
 
 ## <a name="troubleshooting-topics"></a>Rubriques de dépannage
 
-Lorsque vous rencontrez des problèmes liés à votre matériel immersif, il est important de diagnostiquer la zone de problème général et de consulter les articles suivants pour obtenir une aide plus détaillée. 
+Lorsque vous rencontrez des problèmes avec votre matériel immersif, il est important de diagnostiquer la zone de problème général et de consulter les articles suivants pour obtenir une aide plus détaillée. 
 
 ### <a name="installation-and-setup-issues"></a>Problèmes d’installation et de configuration
 
-Pour les problèmes d’installation, y compris votre ordinateur qui ne peut pas exécuter Windows Mixed Reality, les erreurs d’installation, la configuration minimale requise pour PC ou les autorisations d’administrateur, consultez ces deux FAQ :
+Pour les problèmes liés à l’installation, à l’exécution de Windows Mixed Reality, aux erreurs d’installation, aux exigences minimales du PC ou aux autorisations d’administrateur, consultez ces deux FAQ :
 
 - [Erreurs d'installation](installation_errors.md)
 - [Paramétrage](wmr-setup-faq.md)
 
 ### <a name="hardware-issues"></a>Problèmes matériels
 
-Pour les problèmes liés à votre périphérique de casque physique, y compris les connexions de câble, les erreurs de connexion, le lancement du portail de réalité mixte ou le casque noir/blanc, consultez les articles suivants :
+Pour les problèmes liés à votre périphérique de casque physique, aux connexions de câble, aux erreurs de connexion, au lancement du portail de réalité mixte et au casque noir ou blanc, consultez les articles suivants :
 
 - [Connectivité du casque](headset-connectivity.md)
 - [Affichage du casque](headset-display.md)
@@ -39,7 +39,7 @@ Pour les problèmes liés à votre périphérique de casque physique, y compris 
 
 ### <a name="core-experience-issues"></a>Problèmes d’expérience de base
 
-Si vous rencontrez des problèmes lors de la création de limites (la zone mobile que vous pouvez utiliser pour porter un casque Windows Mixed Reality), écouter ou ne pas entendre le son, l’audio Bluetooth ou le suivi des casques, consultez les FAQ suivantes :
+Si vous rencontrez des problèmes lors de la création de limites, de l’audition ou de la non-audition du son, de l’audio Bluetooth ou du suivi des casques, consultez les FAQ suivantes :
 
 - [Limites](boundary-questions.md)
 - [Voix et audio](speech-and-audio.md)
@@ -47,7 +47,7 @@ Si vous rencontrez des problèmes lors de la création de limites (la zone mobil
 
 ### <a name="vr-experience-issues"></a>Problèmes d’expérience VR
 
-Si vous rencontrez des problèmes lors de la lecture de jeux sur SteamVR, lors de l’installation du mode développeur Windows ou de l’affichage du contenu WebVR dans un navigateur, les articles ci-dessous sont les suivants :
+Si vous rencontrez des problèmes avec les jeux SteamVR, l’installation du mode développeur Windows ou l’affichage du contenu WebVR dans un navigateur, les articles ci-dessous sont les suivants :
 
 - [SteamVR](steamvr-questions.md)
 - [WebVR](webvr-questions.md)
