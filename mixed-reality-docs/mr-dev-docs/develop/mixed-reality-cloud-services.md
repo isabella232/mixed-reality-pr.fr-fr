@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, développer, développement, HoloLens, services cloud, Azure, rendu à distance, ancres spatiales, cognitive services, cognition, unity, machine learning, traduction vocale, vision par ordinateur, Microsoft Graph
-ms.openlocfilehash: f69ec9672898caf01092d805e5c83df48a14a65e
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925923"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865404"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Vue d’ensemble des services cloud de réalité mixte Azure
 
@@ -28,7 +28,7 @@ Les services cloud de réalité mixte comme **Azure Remote Rendering** et **Azur
 ### <a name="azure-remote-rendering"></a>Azure Remote Rendering
 Azure Remote Rendering (ARR) est un service qui vous permet d’afficher en temps réel des modèles 3D extrêmement complexes et de les diffuser sur un appareil. ARR est actuellement en préversion publique, et peut être ajouté à vos projets Unity ou à vos projets natifs C++ qui ciblent HoloLens 2 ou un poste de travail Windows.
 
-![ Image de Remote Rendering](../design/images/RemoteRendering.jpg)
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
 
 ARR est un composant essentiel de toute application de réalité mixte qui s’exécute sur des appareils non attachés, car ils ont moins de puissance de rendu de calcul. Prenez la comparaison suivante de modèle de moteur en guise d’exemple : le modèle haute fidélité sur la gauche a plus de 18 millions de triangles, tandis que le modèle réduit sur la droite n’en a qu’environ 200 000. Dans les scénarios où chaque détail a son importance : gestion des installations industrielles, contrôle de la conception pour des biens tels que les moteurs de camion, planification de la chirurgie pré-opération, et ainsi de suite, la visualisation en 3D permet de faire vivre chacun de ces détails. C’est ce qui aide les concepteurs, les ingénieurs, les médecins et les étudiants à mieux comprendre des informations complexes et à prendre la bonne décision. Toutefois, cette simplification peut entraîner une perte de détails importants qui sont nécessaires dans les décisions métier et de conception clés.
 
