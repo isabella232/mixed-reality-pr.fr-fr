@@ -3,26 +3,26 @@ title: FAQ WebVR
 description: Résolution des problèmes Web Mixed realisation qui va au-delà de notre documentation de support technique standard.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, WebVR
-ms.openlocfilehash: e03051008921f87e18cae3a9f6db369e54c56b94
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: fd9906ca36c71b1bf959466d90c57e07be0eca5e
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131933"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725630"
 ---
 # <a name="webvr-faqs"></a>FAQ WebVR
 
 ## <a name="why-cant-i-see-my-controllers-when-viewing-vr-content-from-edge"></a>Pourquoi ne puis-je pas voir mes contrôleurs lors de l’affichage du contenu VR depuis Edge
 
-Tous les contenus WebVR ne sont pas créés pour prendre en charge les contrôleurs de mouvement. WebVR permet aux développeurs de contenu de prendre en charge différents types d’entrée, tels que les contrôleurs de jeu ou les contrôleurs de mouvement. Si vous ne voyez pas vos contrôleurs sur un site, cela signifie probablement qu’il ne prend pas en charge le contrôleur de mouvement.
+Tous les contenus WebVR ne sont pas créés pour prendre en charge les contrôleurs de mouvement. WebVR permet aux développeurs de contenu de prendre en charge différents types d’entrée, tels que les contrôleurs de jeu ou les contrôleurs de mouvement. Si vous ne voyez pas vos contrôleurs sur un site, cela signifie probablement que le contrôleur de mouvement n’est pas pris en charge.
 
 ## <a name="why-cant-i-use-the-mouse-in-an-immersive-webvr-view"></a>Pourquoi ne puis-je pas utiliser la souris dans une vue WebVR immersif
 
-Il s’agit d’une fonctionnalité facultative de la spécification WebVR. Tous les navigateurs ne prennent pas en charge cette fonctionnalité, et tous les contenus WebVR ne sont pas créés pour prendre en charge l’entrée de la souris. WebVR permet aux développeurs de contenu de prendre en charge différents types d’entrée, tels que la souris, le clavier, les contrôleurs de jeu ou les contrôleurs de mouvement. Le comportement d’entrée de la souris varie selon le navigateur. Au sein de Microsoft Edge, les auteurs de sites Web doivent s’assurer qu’ils acceptent « pointerlock » lors de la présentation du casque pour que l’entrée de la souris fonctionne.
+L’utilisation d’une souris est une fonctionnalité facultative de la spécification WebVR. Tous les navigateurs ne prennent pas en charge cette fonctionnalité, et tous les contenus WebVR ne sont pas créés pour prendre en charge l’entrée de la souris. WebVR permet aux développeurs de contenu de prendre en charge différents types d’entrée, tels que la souris, le clavier, les contrôleurs de jeu ou les contrôleurs de mouvement. Le comportement d’entrée de la souris varie selon le navigateur. Au sein de Microsoft Edge, les auteurs de sites Web doivent s’assurer qu’ils acceptent « pointerlock » lors de la présentation du casque pour que l’entrée de la souris fonctionne.
 
 ## <a name="why-cant-i-view-360-degree-videos-from-youtubefacebookvimeothe-guardian-etc-from-edge-in-vr"></a>Pourquoi ne puis-je pas afficher les vidéos de 360 degrés de YouTube/Facebook/Vimeo/du gardien, etc., depuis Edge en VR
 
-Il existe une spécification WebVR qui permet aux sites Web de lancer des expériences VR directement à partir du navigateur, et les auteurs de ces sites Web n’ont pas implémenté cette spécification pour l’instant. Il peut y avoir des applications téléchargeables sur certaines plateformes, qui permettent d’afficher le contenu VR de ces fournisseurs.
+Une spécification WebVR permet aux sites Web de lancer des expériences VR directement à partir du navigateur. Les auteurs de ces sites Web n’ont pas implémenté cette spécification pour l’instant. Il peut y avoir des applications téléchargeables sur certaines plateformes, qui permettent d’afficher le contenu VR de ces fournisseurs.
 
 ## <a name="why-cant-i-enter-vr-from-firefox-or-chrome"></a>Pourquoi ne puis-je pas entrer VR à partir de Firefox ou chrome
 
@@ -37,7 +37,7 @@ Le site Web n’a peut-être pas implémenté la prise en charge de plusieurs ma
 
 ## <a name="when-i-exit-vr-when-watching-a-video-from-edge-the-sound-continues-playing-but-the-edge-window-is-grayed-out"></a>Lorsque je quitte VR en regardant une vidéo à partir de Edge, le son continue de fonctionner, mais la fenêtre du bord est grisée
 
-Il s’agit d’un problème connu lors de l’exécution de WebVR à partir de Edge dans la maison de la falaise de la réalité mixte. Pour le résoudre, appuyez sur Échap sur le clavier au lieu d’appuyer sur le bouton Windows pour quitter l’expérience WebVR, ou activez la fenêtre grisée du bord en la sélectionnant, puis arrêtez la vidéo.
+Il s’agit d’un problème connu lors de l’exécution de WebVR à partir de Edge dans la maison de la falaise de la réalité mixte. Pour le résoudre, appuyez sur Échap sur le clavier au lieu du bouton Windows pour quitter l’expérience WebVR, ou activez la fenêtre grisée du bord en la sélectionnant, puis arrêtez la vidéo.
 
 ## <a name="can-i-use-webvr-on-the-hololens"></a>Puis-je utiliser WebVR sur le HoloLens
 
@@ -45,7 +45,7 @@ Microsoft n’a pas annoncé de WebVR sur le HoloLens à ce stade.
 
 ## <a name="why-is-my-view-at-floor-level-when-viewing-webvr-content-from-edge"></a>Pourquoi ma vue est-elle au niveau étage lors de l’affichage du contenu WebVR à partir de Edge ?
 
-Le site Web ne prend pas en charge correctement les casques Windows Mixed Reality. Pour contourner ce problème :
+Le site Web ne prend pas correctement en charge les casques Windows Mixed Reality. Pour contourner ce problème :
 
 1. Placez le casque à l’étage de votre espace.
 2. Accédez à la page WebVR à l’aide de Microsoft Edge sur votre bureau (pas dans la réalité mixte).
@@ -53,9 +53,9 @@ Le site Web ne prend pas en charge correctement les casques Windows Mixed Realit
 4. Attendez cinq à 10 secondes pour que l’expérience soit entièrement entrée en mode immersif.
 5. Placez sur le casque.
 
-## <a name="the-display-is-very-low-resolution-in-some-webvr-experiences"></a>La résolution de l’affichage est très faible dans certaines expériences WebVR
+## <a name="the-display-is-low-resolution-in-some-webvr-experiences"></a>L’affichage est à faible résolution dans certaines expériences WebVR
 
-Ces sites Web ne prennent pas en charge correctement les casques haute résolution. Pour contourner ce problème :
+Ces sites Web ne prennent pas correctement en charge les casques haute résolution. Pour contourner ce problème :
 
 * Si vous lancez WebVR à partir du Bureau (et non dans la maison de la falaise de la réalité mixte), assurez-vous que la fenêtre est agrandie avant de sélectionner « Enter VR ».
 * Évitez de redimensionner la fenêtre Microsoft Edge une fois que vous avez entré VR.
@@ -72,4 +72,4 @@ Vous pouvez signaler des sites rompus directement à l’équipe du navigateur M
 
 ## <a name="why-does-haptic-feedback-not-work-in-webvr-with-motion-controllers"></a>Pourquoi les commentaires haptique ne fonctionnent pas dans WebVR avec les contrôleurs de mouvement
 
-Actuellement, Microsoft Edge ne prend pas en charge les haptique sur les extensions d’API du boîtier WebVR.
+Microsoft Edge ne prend pas en charge les haptique sur les extensions d’API du boîtier WebVR.

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, casques immersifs, application, UWP, envoyer, envoyer, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578898"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757837"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Envoi d’une application au Microsoft Store
 
@@ -47,7 +47,7 @@ Les ressources d’image suivantes sont requises pour que les outils de généra
 |  Logo du Windows Store |  75x75 (échelle de 150%)  |  PNG  |  Espace partenaires, application de rapport, rédiger un avis, ma bibliothèque | 
 |  Écran de démarrage |  930x450 (échelle de 150%)  |  PNG  |  lanceur d’applications 2D (ardoise) | 
 
-Si vous développez pour HoloLens, vous pouvez tirer parti des ressources supplémentaires suivantes :
+Si vous développez pour HoloLens, vous pouvez profiter d’autres ressources recommandées :
 
 | Ressources recommandées | Mise à l’échelle recommandée | Où l’élément multimédia est-il affiché ? | 
 |----------|----------|----------|
@@ -70,7 +70,7 @@ Vous serez invité à définir la version cible et la version minimale de Window
 
 ### <a name="specifying-target-device-families"></a>Spécification des familles d’appareils cibles
 
-Les applications Windows Mixed Reality (à la fois pour [HoloLens](../hololens-hardware-details.md) et les [casques immersifs](../discover/immersive-headset-hardware-details.md)) font partie du plateforme Windows universelle. ainsi, tout package d’application avec une [famille de périphériques cibles](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) **universels Windows** peut s’exécuter sur des PC HoloLens ou Windows 10 avec des casques immersifs. Si vous ne spécifiez pas de famille d’appareils cibles dans votre manifeste d’application, vous pouvez ouvrir par inadvertance votre application sur des appareils Windows 10 inattendus. Suivez les étapes ci-dessous pour spécifier la famille d’appareils Windows 10 prévue, puis [double-Vérifiez que les familles d’appareils appropriées sont définies lorsque vous téléchargez votre package d’application dans l’espace partenaires pour l’envoi de Microsoft Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Les applications Windows Mixed Reality (à la fois pour [HoloLens](../hololens-hardware-details.md) et les [casques immersifs](../discover/immersive-headset-hardware-details.md)) font partie du plateforme Windows universelle. ainsi, tout package d’application avec une [famille de périphériques cibles](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) **universels Windows** peut s’exécuter sur des PC HoloLens ou Windows 10 avec des casques immersifs. Si vous ne spécifiez pas de famille d’appareils cibles dans votre manifeste d’application, vous pouvez ouvrir par inadvertance votre application sur des appareils Windows 10 inattendus. Suivez les étapes ci-dessous pour spécifier la famille d’appareils Windows 10 prévue, puis [double-Vérifiez que vous avez défini les familles d’appareils appropriées lorsque vous téléchargez votre package d’application dans l’espace partenaires pour l’envoi de Microsoft Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * Pour définir ce champ dans Visual Studio, cliquez avec le bouton droit sur **Package. appxmanifest** et sélectionnez **afficher le code**, puis recherchez le champ nom du **TargetDeviceFamily** . Par défaut, elle doit ressembler à l’entrée suivante :
 
@@ -172,7 +172,7 @@ La plateforme Windows universelle vous permet de créer une application unique q
 
 Si vous soumettez une application de réalité mixte basée sur un projet Unity, reportez-vous à cette [vidéo](https://channel9.msdn.com/Blogs/One-Dev-Minute/How-to-publish-your-Unity-game-as-a-UWP-app) .
 
-En général, la soumission d’une application Windows Mixed Reality qui fonctionne sur HoloLens et/ou des casques immersifs revient à envoyer une application UWP au Microsoft Store. Une fois que vous avez [créé votre application en réservant son nom](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name), suivez la [liste de vérification de soumission UWP](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+En général, l’envoi d’une application Windows Mixed Reality qui fonctionne sur HoloLens ou des casques immersifs revient à envoyer une application UWP au Microsoft Store. Une fois que vous avez [créé votre application en réservant son nom](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name), suivez la [liste de vérification de soumission UWP](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
 
 L’une des premières choses à faire est de [Sélectionner une catégorie et une sous-catégorie](https://docs.microsoft.com/windows/uwp/publish/category-and-subcategory-table) pour votre expérience de réalité mixte. Il est important de **choisir la catégorie la plus précise pour votre application**. Les catégories vous aident à trouver votre application dans les catégories de magasins appropriées et à s’assurer qu’elle s’affiche à l’aide de requêtes de recherche pertinentes. **Le fait de répertorier votre titre en VR en tant que jeu n’entraîne pas une meilleure exposition pour votre application** et peut l’empêcher de s’afficher dans des catégories qui sont plus adaptées et moins encombrées.
 
@@ -192,7 +192,7 @@ Déclarations de produit de réalité mixte
 Tout d’abord, vous devez identifier les types d’appareils pour lesquels votre application offre une expérience de réalité mixte. L’identification des types d’appareils garantit que votre application est incluse dans les collections de réalité mixte Windows dans le magasin.
 
 En regard de « cette expérience a été conçue pour Windows Mixed Reality sur : »
-* Cochez la case **PC** si votre application offre une expérience VR lorsqu’un casque immersif est connecté au PC de l’utilisateur. Nous vous recommandons de cocher cette case si votre application est configurée pour s’exécuter exclusivement sur un casque immersif ou s’il s’agit d’un jeu ou d’une application PC standard offrant un mode de réalité mixte et/ou du contenu de bonus quand un casque est connecté.
+* Cochez la case **PC** si votre application offre une expérience VR lorsqu’un casque immersif est connecté au PC de l’utilisateur. Nous vous recommandons de cocher cette case si votre application est configurée pour s’exécuter exclusivement sur un casque immersif ou s’il s’agit d’un jeu de PC standard ou d’une application offrant un mode de réalité mixte ou du contenu bonus quand un casque est connecté.
 * Vérifiez la zone **HoloLens** uniquement si votre application offre une expérience holographique lorsqu’elle est exécutée sur HoloLens.
 * Cochez **les deux** cases si votre application offre une expérience de réalité mixte sur les deux types d’appareils.
 
@@ -211,11 +211,11 @@ Dans cette section, vous allez identifier le matériel minimal (obligatoire) et 
 
 **Matériel d’entrée :**
 
-Utilisez les cases à cocher pour indiquer aux clients potentiels si votre application prend en charge le **microphone** pour les [entrées vocales](../design/voice-input.md)), le **[contrôleur Xbox ou le boîtier de commande](../discover/hardware-accessories.md#bluetooth-gamepads)** et/ou les **[contrôleurs de mouvement Windows Mixed Reality](../design/motion-controllers.md)**. Ces informations seront exposées dans la page de détails du produit de votre application dans le Store et vous aideront à faire figurer votre application dans les collections d’applications/jeux appropriées. Par exemple, une collection peut exister pour tous les jeux qui prennent en charge les contrôleurs de mouvement.
+Utilisez les cases à cocher pour indiquer aux clients potentiels si votre application prend en charge le **microphone** pour les [entrées vocales](../design/voice-input.md)), le **[contrôleur Xbox ou le boîtier de commande](../discover/hardware-accessories.md#bluetooth-gamepads)** ou les **[contrôleurs de mouvement Windows Mixed Reality](../design/motion-controllers.md)**. Ces informations seront exposées dans la page de détails du produit de votre application dans le Store et vous aideront à faire figurer votre application dans les collections d’applications/jeux appropriées. Par exemple, une collection peut exister pour tous les jeux qui prennent en charge les contrôleurs de mouvement.
 
 Veillez à sélectionner des cases à cocher pour « matériel minimum » ou « matériel recommandé » pour les types d’entrée. 
 
-Par exemple : 
+Exemple : 
 * Si votre jeu nécessite des contrôleurs de mouvement, mais accepte les entrées vocales via le microphone, activez la case à cocher « matériel minimal » en regard de « contrôleurs de mouvement Windows Mixed Reality », mais la case à cocher « matériel recommandé » en regard de « microphone ». 
 * Si votre jeu peut être lu à l’aide d’un contrôleur Xbox, d’un boîtier d’accès ou de contrôleurs de mouvement, vous pouvez activer la case à cocher « matériel minimal » en regard de « contrôleur Xbox ou boîtier de commande », puis activer la case à cocher « matériel recommandé » en regard de « contrôleurs de mouvement Windows Mixed Reality », car les contrôleurs de
 

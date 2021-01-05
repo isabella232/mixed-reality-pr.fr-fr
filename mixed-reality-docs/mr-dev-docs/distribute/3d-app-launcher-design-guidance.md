@@ -6,16 +6,16 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, conception, mode de lancement d’application 3D, casque immersif, cube en direct, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, UWP, Win32, éclairage, couleur
-ms.openlocfilehash: a501b4bdc86df17f6d005c2f7ccf4fe6a94a4b43
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2edb09e47da5bcbae34a37f004853002f3f65cf3
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703475"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757727"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>Guide de conception de lanceur d’applications 3D
 
-Lorsque vous placez un casque Windows Mixed Reality (VR), vous accédez à la page d’hébergement de Windows Mixed Reality, visualisée en tant que maison sur une falaise placée par des montagnes et de l’eau (vous pouvez toutefois [choisir d’autres environnements et même créer votre propre environnement](../design/add-custom-home-environments.md)). Dans l’espace de cette page d’hébergement, un utilisateur est libre de réorganiser et d’organiser les objets et applications 3D dont il se soucie. Un **lanceur d’applications 3D** est un objet « physique » dans la maison de réalité mixte de l’utilisateur qu’il peut sélectionner pour lancer une application.
+Lorsque vous placez un casque Windows Mixed Reality (VR), vous accédez à la page d’hébergement Windows Mixed Reality. La maison est visualisée sous la forme d’une maison sur une falaise placée par des montagnes et de l’eau, mais vous pouvez [choisir d’autres environnements et même créer les vôtres](../design/add-custom-home-environments.md). Au sein de l’espace de la famille, un utilisateur est libre de réorganiser et d’organiser les objets et applications 3D dont il se soucie. Un **lanceur d’applications 3D** est un objet « physique » dans la maison de réalité mixte de l’utilisateur qu’il peut sélectionner pour lancer une application.
 
 ![Exemple : lanceur d’applications 3D avec un oiseau flottant](images/20171016-151526-mixedreality1-1200px-1000px.jpg)<br>
 *Exemple de lanceur d’application 3D d’oiseau flottant (application fictive)*
@@ -56,7 +56,7 @@ Le lanceur d’application doit ressembler à un objet qu’une personne peut av
 
 ### <a name="recognizable"></a>Reconnaissable
 
-Votre lanceur d’applications 3D doit instantanément exprimer « la personnalisation de votre application » aux personnes qui l’affichent. Si votre application contient un caractère en étoile ou un objet particulièrement identifiable, nous vous recommandons de l’utiliser comme une partie importante de votre conception. Dans un monde de réalité mixte, un objet attire davantage l’intérêt des utilisateurs qu’un seul logo. Les objets reconnaissables communiquent la personnalisation rapidement et clairement.
+Votre lanceur d’applications 3D doit instantanément exprimer « la personnalisation de votre application » aux personnes qui l’affichent. Si votre application contient un caractère en étoile ou un objet particulièrement identifiable, nous vous recommandons de l’utiliser en tant que partie significative de votre conception. Dans un monde de réalité mixte, un objet attire davantage l’intérêt des utilisateurs qu’un seul logo. Les objets reconnaissables communiquent la personnalisation rapidement et clairement.
 
 ### <a name="volumetric"></a>Dosage
 
@@ -82,7 +82,7 @@ Votre application mérite plus que simplement placer votre logo sur un plan plat
 
 ## <a name="tips-for-good-3d-models"></a>Conseils pour les bons modèles 3D
 
-* Lors de la planification de dimensions pour votre lanceur d’applications, prenez des 30cm à peu près un cube. Par conséquent, un ratio de taille de 1:1:1.
+* Lors de la planification de dimensions pour votre lanceur d’applications, prenez un cube de 30 cm environ. Par conséquent, un ratio de taille de 1:1:1.
 * Les modèles doivent être sous les polygones 10 000. [En savoir plus sur le nombre de triangles et les niveaux de détail (LODs)](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
 * Testez sur un casque immersif.
 * Créez des détails dans la géométrie de votre modèle, dans la mesure du possible, ne vous fiez pas aux textures pour des détails.
@@ -105,9 +105,9 @@ Votre application mérite plus que simplement placer votre logo sur un plan plat
 
 ## <a name="how-to-handle-type"></a>Comment gérer le type
 
-* Nous vous recommandons de faire en sorte que votre type comporte environ 1/3 de votre lanceur d’applications (ou plus). Le type est l’élément principal qui donne aux gens une idée que votre lanceur est, en fait, un lanceur, ce qui est intéressant s’il est assez important.
+* Nous vous recommandons d’utiliser votre type de lancement d’application 1/3 (ou plus). Le type est l’élément principal qui donne aux gens une idée que votre lanceur est, en fait, un lanceur, ce qui est intéressant s’il est substantiel.
 * Évitez de rendre le type Super étendu : essayez de le conserver dans les limites des dimensions principales des lanceurs d’applications (plus ou moins).
-* Le type plat peut fonctionner, mais sachez qu’il peut être difficile à afficher à partir de certains angles et dans certains environnements. Vous pouvez envisager de placer un objet solide ou un fond en arrière-plan pour faciliter cette opération.
+* Le type plat peut fonctionner, mais il peut être difficile à afficher à partir de certains angles et dans certains environnements. Vous pouvez envisager de placer un objet solide ou un fond en arrière-plan pour faciliter cette opération.
 * L’ajout d’une dimension à votre type semble agréable en 3D. L’ombrage des côtés du type d’une couleur plus sombre peut contribuer à la lisibilité.
 
 :::row:::
@@ -124,7 +124,7 @@ Votre application mérite plus que simplement placer votre logo sur un plan plat
 
 **Tapez les couleurs qui fonctionnent**
 
-* White
+* Blancs
 * Noir
 * Couleur semi-saturée vive
 
@@ -144,7 +144,7 @@ Les couleurs de type qui sont à l’origine des problèmes sont les suivantes 
 
 ## <a name="lighting"></a>Éclairage
 
-L’éclairage de votre lanceur d’applications provient de l’environnement de la maison de la falaise. Veillez à tester votre lanceur à plusieurs endroits de la maison, afin qu’il soit parfait dans le ciel et dans les ombres. La bonne nouvelle, c’est que si vous avez suivi les autres conseils de conception de ce document, votre lanceur doit être de forme assez bonne pour la plupart des éclairages de la maison de la falaise.
+L’éclairage de votre lanceur d’applications provient de l’environnement de la maison de la falaise. Veillez à tester votre lanceur à plusieurs endroits de la maison, afin qu’il soit parfait dans le ciel et dans les ombres. La bonne nouvelle, c’est que si vous avez suivi les autres conseils de conception de ce document, votre lanceur doit être en bonne forme pour la plupart des éclairages de la maison de la falaise.
 
 Les bonnes places pour tester la manière dont votre lanceur regarde dans les différentes lumières de l’environnement sont le Studio, la salle de support, n’importe où et sur le patio Back (la zone concrète avec la pelouse). Un autre bon test consiste à le placer en demi-feu et demi-ombre et à voir à quoi il ressemble.
 
@@ -168,9 +168,9 @@ Nous vous recommandons d’utiliser l’outil de création de [substance](https:
 
 ### <a name="best-practices"></a>Meilleures pratiques
 
-* Si votre objet de lanceur d’application a été créé pour le PBR, il doit être assez simple de le convertir pour l’environnement de la maison de la falaise.
+* Si votre objet de lanceur d’application a été créé pour le PBR, il doit être facile de le convertir pour l’environnement de la maison de la falaise.
 * Notre nuanceur attend un flot de travail Metal/grossiste : le nuanceur PBR non réel est une fac-similé de fermeture.
-* Lorsque vous exportez vos Textures, gardez les [tailles de texture recommandées](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) à l’esprit.
+* Lorsque vous exportez vos Textures, gardez à l’esprit les [tailles de texture recommandées](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) .
 * Veillez à créer vos objets pour l’éclairage en temps réel, à savoir :
   * Évitez les ombres cuites, ou les ombres peintes
   * Éviter l’éclairage cuit dans les textures

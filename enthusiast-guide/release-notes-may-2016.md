@@ -6,37 +6,37 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, notes de publication, système d’exploitation, fonctionnalités, Build, plateforme
-ms.openlocfilehash: 83a184c104fa0690cc0a87fd94f505bf802c98fe
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: a1e5ab1ead2816baf2f03c1037299090e1246f17
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91783974"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725950"
 ---
 # <a name="release-notes---may-2016"></a>Notes de publication - Mai 2016
 
-L’équipe HoloLens s’engage à vous fournir une mise à jour de nos derniers développements de fonctionnalités et de correctifs principaux par le biais du programme Windows Insider. Grâce à toutes vos suggestions, nous prenons vos commentaires à coeur. Continuez à [nous faire part de vos commentaires](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) via le hub de commentaires, les [Forums des développeurs](https://forums.hololens.com) et [Twitter via @HoloLens ](https://twitter.com/hololens).
+L’équipe HoloLens s’engage à vous fournir les dernières mises à jour de fonctionnalités et les correctifs les plus importants par le biais du programme Windows Insider. Grâce à toutes vos suggestions, nous prenons vos commentaires à coeur. Continuez à [nous faire part de vos commentaires](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) via le hub de commentaires, les [Forums des développeurs](https://forums.hololens.com) et [ @HoloLens Twitter via ](https://twitter.com/hololens).
 
-**Version Release :** Windows holographique mai 2016 mise à jour ( **10.0.14342.1016** )
+**Version Release :** Windows holographique mai 2016 mise à jour (**10.0.14342.1016**)
 
 >[!VIDEO https://www.youtube.com/embed/XM5OHHrOGqQ]
 
-Pour effectuer une mise à jour vers la version actuelle, ouvrez l’application *paramètres* , accédez à *mettre à jour & sécurité* , puis sélectionnez le bouton *Rechercher les mises à jour* .
+Pour effectuer une mise à jour vers la version actuelle, ouvrez l’application *paramètres* , accédez à *mettre à jour & sécurité*, puis sélectionnez le bouton *Rechercher les mises à jour* .
 
 ## <a name="new-features"></a>Nouvelles fonctionnalités
 
-* Vous pouvez désormais **Exécuter jusqu’à trois applications en mode 2D simultanément** . Cela permet des cas d’utilisation infinis pour le multitâche dans HoloLens. Utilisez le nouveau hub de commentaires avec la liste des quests ouverte tout en explorant les nouvelles fonctionnalités de ce vol.
+* Vous pouvez désormais **Exécuter jusqu’à trois applications en mode 2D simultanément**, ce qui permet des cas d’utilisation sans fin pour les tâches multitâche dans HoloLens. Utilisez le nouveau hub de commentaires avec la liste des quests ouverte tout en explorant les nouvelles fonctionnalités de ce vol.
 
   ![HoloLens peut exécuter trois applications en même temps](images/img-3625-400px.jpg)<br>
   Exécuter jusqu’à trois applications en mode 2D simultanément
 
-* Nous avons ajouté de nouvelles **commandes vocales** :
+* Nous avons ajouté de nouvelles **commandes vocales**:
    * Essayez d’examiner un hologramme et de le faire pivoter en disant « Facer »
    * Modifiez sa taille en disant « plus grande » ou « plus petite »
    * Déplacez une application en disant « Hey Cortana, déplacer le nom de l' *application* ici ».
-* Nous avons **facilité le développement de HoloLens** . Vous pouvez maintenant parcourir, télécharger et télécharger des fichiers via le [portail des appareils Windows](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal). Vous pouvez accéder au dossier documents, au dossier images et au stockage local pour toutes les applications que vous avez chargées ou déployées par le biais de Visual Studio.
-* L' **émulateur prend maintenant en charge la connexion avec un compte Microsoft** comme vous le feriez sur un HoloLens réel. Vous pouvez l’activer à partir du menu outils supplémentaires « >> ».
-* **les applications 2D masquent désormais la barre et le curseur de l’application lorsque vous regardez la vidéo en mode plein écran** pour éviter toute distraction. Avec cela, votre expérience de visionnage vidéo sera encore plus agréable sur HoloLens.
+* Nous avons **facilité le développement de HoloLens**. Vous pouvez maintenant parcourir, télécharger et télécharger des fichiers via le [portail des appareils Windows](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal). Vous pouvez accéder au dossier documents, au dossier images et au stockage local pour toutes les applications que vous avez chargées ou déployées par le biais de Visual Studio.
+* L' **émulateur prend maintenant en charge la connexion avec un compte Microsoft** comme vous le feriez sur un HoloLens réel, que vous pouvez activer à partir du menu outils supplémentaires « >> ».
+* **les applications 2D masquent désormais la barre et le curseur de l’application lorsque vous regardez la vidéo en mode plein écran** pour éviter toute distraction. Votre expérience de visionnage vidéo sera encore plus agréable sur HoloLens.
 * Vous pouvez également **Épingler des photos sans la barre de l’application** dans votre monde.
 
   ![La barre de l’application peut être masquée pour les applications 2D comme les photos](images/img-3626-400px.jpg)<br>
@@ -50,17 +50,17 @@ Pour effectuer une mise à jour vers la version actuelle, ouvrez l’application
   ![Vous pouvez faire pivoter les hologrammes une fois que vous les avez placés dans le monde](images/img-3627-400px.jpg)<br>
   Faites pivoter les hologrammes après les avoir placés dans le monde entier
 
-* Nous avons apporté de nombreuses améliorations en matière de **saisie** dans ce vol. Vous pouvez connecter une souris Bluetooth normale à HoloLens. Le clic a été ajusté pour permettre le redimensionnement & des hologrammes avec un clic. Le clavier fonctionne également mieux que jamais.
-* Vous pouvez désormais utiliser des **images de réalité mixte** en appuyant simplement sur la touche Monter le volume + volume. Vous pouvez également partager vos photos & des vidéos capturées en réalité mixte sur Facebook, Twitter et YouTube.
+* Nous avons apporté plusieurs **améliorations** au sein de ce vol. Vous pouvez connecter une souris Bluetooth normale à HoloLens. L’utilisateur a été conçu pour permettre le redimensionnement & déplacer des hologrammes avec un clic. Le clavier fonctionne également mieux que jamais.
+* Vous pouvez maintenant utiliser des **images de réalité mixte** en appuyant sur la touche Monter le volume + volume simultanément. Vous pouvez également partager vos photos & des vidéos capturées en réalité mixte sur Facebook, Twitter et YouTube.
 * La durée d’enregistrement maximale des **vidéos de réalité mixte** a été augmentée à cinq minutes.
 * L' **application photos** diffuse désormais des vidéos à partir de OneDrive au lieu de télécharger l’intégralité de la vidéo avant la lecture.
-* Nous avons amélioré la façon dont vos **hologrammes seront bons à l’endroit où vous les avez laissés** . Vous serez également invité à vous reconnecter au Wi-Fi et réessayer si HoloLens ne parvient pas à détecter son emplacement.
+* Nous avons amélioré la façon dont vos **hologrammes seront bons à l’endroit où vous les avez laissés**. Vous avez également la possibilité de vous reconnecter à Wi-Fi et de réessayer si HoloLens ne parvient pas à détecter son emplacement.
 * Le clavier offre une **mise en page améliorée pour la saisie de l’adresse e-mail** avec des clés qui vous permettent d’entrer les domaines de messagerie les plus populaires en un seul clic.
 * **Inscription d’application** plus rapide et **détection automatique du fuseau horaire** pendant l’OOBE, ce qui vous offre la meilleure expérience utilisateur.
 * Le **sens du stockage** vous permet d’afficher l’espace disque restant et utilisé par le système et les applications dans l’application paramètres.
-* Nous disposons d’une application de commentaires convergée dans un **concentrateur de commentaires** sur une application unique qui sera l’outil incontournable pour **nous faire part de vos commentaires** , les fonctionnalités que vous aimez, les fonctionnalités que vous pourriez faire sans, ou quand un résultat peut être amélioré. Quand vous rejoignez le programme Insider, vous pouvez suivre les **dernières nouvelles de l’Insider** , **évaluer les builds** et vous rendre sur les **Commentaires** de votre Hub de commentaires.
+* Nous avons convergé l’application de commentaires et l’intérieur d’un concentrateur en un **Hub de commentaires** d’application unique, qui est l’outil incontournable pour **nous faire part de vos commentaires** sur les fonctionnalités que vous aimez, celles qui nécessitent une amélioration et celles que vous pourriez faire sans. Quand vous rejoignez le programme Insider, vous pouvez suivre les **dernières nouvelles de l’Insider**, **évaluer les builds** et vous rendre sur les **Commentaires** de votre Hub de commentaires.
 * Nous avons également [publié une build d’émulateur HoloLens mise à jour](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools) .
-* Vos vidéos de réalité mixte s’affichent désormais mieux en raison d’une **stabilisation vidéo** automatique.
+* Vos vidéos de réalité mixte s’affichent désormais mieux en raison de la **stabilisation vidéo** automatique.
 
 ## <a name="major-fixes"></a>Correctifs principaux
 
@@ -78,7 +78,7 @@ Nous avons résolu un problème
 * où le portail de périphériques Windows n’autorise pas les réglages IPD de 50 à 80
 
 Nous avons résolu les problèmes liés aux photos où
-* une image peut parfois être pivotée en raison de l’ignorance de la propriété d’orientation EXIF.
+* une image peut parfois être pivotée, car la propriété d’orientation EXIF ignorée a été ignorée.
 * elle peut se bloquer lors du démarrage sur des photos épinglées.
 * les vidéos redémarreront après une pause au lieu de reprendre là où elle a été suspendue.
 * la relecture d’une vidéo partagée peut être empêchée si elle était partagée pendant la lecture.
@@ -87,7 +87,7 @@ Nous avons résolu les problèmes liés aux photos où
 
 Nous avons résolu les problèmes liés aux paramètres où
 * une actualisation était nécessaire lors de la modification de l’environnement.
-* La touche entrée du clavier ne se comporte pas comme si vous cliquiez sur suivant dans certaines boîtes de dialogue.
+* « Enter » sur le clavier ne se comporte pas comme si vous cliquiez sur suivant dans certaines boîtes de dialogue.
 * il était difficile de savoir quand le coupleur a échoué.
 * Il peut cesser de répondre avec WiFi Disconnect et Connect.
 
@@ -101,12 +101,12 @@ Nous avons résolu les problèmes avec Cortana là où
 * elle n’est pas lancée lorsque l’interface utilisateur de capture de la réalité mixte était active.
 
 Nous avons résolu les problèmes liés à Visual Studio où
-* le débogage des tâches en arrière-plan n’a pas été effectué.
-* l’analyse des frames du débogueur Graphics ne fonctionne pas.
-* l’émulateur HoloLens n’apparaissait pas dans la liste déroulante de Visual Studio, sauf si TargetPlatformVersion de votre projet a été défini sur 10240.
+* le débogage des tâches en arrière-plan n’a pas fonctionné.
+* l’analyse des frames dans le débogueur Graphics n’a pas fonctionné.
+* l’émulateur HoloLens n’a pas été affiché dans la liste déroulante de Visual Studio, sauf si TargetPlatformVersion de votre projet a été défini sur 10240.
 
 ## <a name="changes-from-previous-release"></a>Modifications par rapport à la version précédente
-* La commande Cortana **Hey Cortana, redémarrage de l’appareil** ne fonctionne pas. L’utilisateur peut indiquer **Hey Cortana, redémarrer** ou **Hey Cortana, redémarrer l’appareil** .
+* La commande Cortana **Hey Cortana, redémarrage de l’appareil** ne fonctionne pas. L’utilisateur peut indiquer **Hey Cortana, redémarrer** ou **Hey Cortana, redémarrer l’appareil**.
 * Le mode plein écran a été supprimé du produit.
 
 ## <a name="prior-release-notes"></a>Notes de publication antérieures

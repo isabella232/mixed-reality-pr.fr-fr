@@ -6,20 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, menu, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 215147f0ded0c9594ddf075c1464ab04d031f2a9
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703395"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847265"
 ---
 # <a name="near-menu"></a>Menu proche
 
 ![Menu proche](images/UX_Hero_NearMenu.jpg)
 
-Un menu proche est une collection de boutons sur un panneau qui suit [le comportement de balise](billboarding-and-tag-along.md#what-is-a-tag-along). Elle reste dans une certaine plage de distance et d’angle pour vous permettre d’interagir avec le contenu. Vous pouvez utiliser le bouton épingler ou saisir et placer le menu pour le rendre verrouillé et désactiver le comportement avec balises. Cela vous permet de vous concentrer sur le contenu cible sans être dérangé par le menu flottant.
-
-Vous pouvez réactiver la balise, en appuyant sur le bouton épingler, puis faire en sorte que le menu vous reproduise.
+Un menu proche est une collection de boutons sur un panneau qui suivent vos utilisateurs avec un [comportement avec balise](billboarding-and-tag-along.md#what-is-a-tag-along). Le panneau reste dans une plage de distance et un angle définis, ce qui permet aux utilisateurs d’interagir aisément avec le contenu. Si vous avez besoin de verrouiller ou de désactiver le comportement de balise du panneau, utilisez le bouton épingler ou saisissez et placez le menu. L’épinglage du panneau permet à vos utilisateurs de se concentrer sur le contenu cible sans distraction. Vous pouvez réactiver le comportement avec balises à tout moment en appuyant sur le bouton épingler pour que le menu resuive l’utilisateur.
 
 <br>
 
@@ -30,11 +28,9 @@ Vous pouvez réactiver la balise, en appuyant sur le bouton épingler, puis fair
 
 * [MRTK-menu proche](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
 
-
 <br>
 
 ---
-
 
 ## <a name="see-also"></a>Voir aussi
 

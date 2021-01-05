@@ -1,22 +1,23 @@
 ---
 title: Boîte de dialogue
+description: En savoir plus sur les superpositions de boîtes de dialogue et leur utilisation dans des applications de réalité mixte.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Réalité mixte, HoloLens, contrôles d’interface utilisateur, interaction, interface utilisateur, expérience utilisateur, conception UX, interface utilisateur spatiale, interaction spatiale, interface utilisateur 3D, expérience utilisateur 3D, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de mise en réalité mixte
-ms.openlocfilehash: 354581b5f0c2b63e5fdb7077c0d8cdba4c96c3d3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702601"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847448"
 ---
 # <a name="dialog"></a>Boîte de dialogue
 
-![Boîte de dialogue](images/MRTK_UX_Dialog.jpg)
+![Capture d’écran d’une superposition de boîte de dialogue avec les boutons Oui et non affichés sur HoloLens](images/MRTK_UX_Dialog.jpg)
 
-Les contrôles Dialog sont des superpositions d’interface utilisateur qui fournissent des informations d’application contextuelles. Elles exigent souvent une forme d’action de la part de l’utilisateur. Utilisez les boîtes de dialogue pour notifier les utilisateurs d’informations importantes ou pour demander une confirmation ou des informations supplémentaires avant de pouvoir effectuer une action.
+Les contrôles de boîte de dialogue sont des superpositions d’interface utilisateur qui fournissent des informations d’application contextuelles, qui demandent souvent une action utilisateur. Utilisez les boîtes de dialogue pour fournir aux utilisateurs des informations importantes et demander une confirmation ou des informations supplémentaires avant qu’une action puisse être effectuée.
 
 <br>
 
@@ -29,10 +30,10 @@ MRTK fournit un contrôle de boîte de dialogue en trois tailles avec une ou deu
 - DialogMedium_192x128. Prefab : 192x128mm
 - DialogLarge_192x192. Prefab : 192x192mm
 
-![Boîte de dialogue](images/MRTK_UX_Dialog_Types.jpg)
+![Capture d’écran des superpositions de boîte de dialogue de taille différente s’exécutant sur HoloLens](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* Pour plus d’informations, consultez [MRTK-Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html) .
+* Pour plus d’informations, consultez [MRTK-Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html).
 
 <br>
 

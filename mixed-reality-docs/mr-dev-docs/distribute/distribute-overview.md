@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, réalité mixte, casques immersifs, application, UWP, envoi, envoi, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising
-ms.openlocfilehash: b4b82557ba274852ebb3f97058017fa2e5db1c02
-ms.sourcegitcommit: 9e9d58de4513655c7daa71ff4b5b2c2b115ab959
+ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97034580"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757627"
 ---
 # <a name="distributing-your-apps"></a>Distribution de vos applications
 
 ![Lancher d’application 3D d’oiseau flottant dans WMR](images/distribute-hero-image.png)
 
-La mise en œuvre de vos applications auprès de vos utilisateurs ou dans le monde entier est l’un des efforts de développement les plus importants et parfois fastidieux. Nous avons simplifié le processus en un ensemble de ressources listées ci-dessous, qui dépendent toutes du scénario de distribution et de déploiement qui convient le mieux à votre équipe ou à vous-même.
+La mise en œuvre de vos applications auprès de vos utilisateurs ou dans le monde entier est l’un des efforts de développement les plus importants et parfois fastidieux. Nous avons simplifié le processus en un ensemble de ressources, qui dépendent du scénario de distribution et de déploiement qui convient le mieux à votre équipe ou à vous-même.
 
 [!INCLUDE[](includes/before-submission.md)]
 
@@ -40,7 +40,7 @@ La mise en œuvre de vos applications auprès de vos utilisateurs ou dans le mon
 </colgroup>
 <tr>
     <td><strong>Scénario</strong></td>
-    <td><strong>Installation de l’appareil local</strong></td>
+    <td><strong>Installations de l’appareil local</strong></td>
     <td><strong>Partager avec tout le monde</strong></td>
     <td><strong>Partager avec une organisation</strong></td>
 </tr>
@@ -81,7 +81,7 @@ La mise en œuvre de vos applications auprès de vos utilisateurs ou dans le mon
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Déploiement Win32 personnalisé</strong></a> (non disponible pour les appareils HoloLens-voir ci-dessous)</td>
+    <td><a href="#other-scenarios"><strong>Déploiement Win32 personnalisé</strong></a> (non disponible pour les appareils HoloLens-voir ci-dessous)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -91,11 +91,11 @@ La mise en œuvre de vos applications auprès de vos utilisateurs ou dans le mon
 > [!IMPORTANT]
 > Le programme d’installation de l’application n’est actuellement pas disponible pour les appareils gérés ou les appareils HoloLens (1er génération).
 
-## <a name="additional-scenarios"></a>Autres cas de figure
+## <a name="other-scenarios"></a>Autres scénarios
 
-* Pour le déploiement d’applications Win32, y compris la transmission de vapeur et de jeu, vous pouvez produire un Win32. Fichier EXE à l’aide de la cible de build PC Standalone à partir d’Unity et envoyez vos applications normalement à la plateforme choisie. 
+* Vous pouvez produire un Win32. Fichier EXE à l’aide de la cible de build PC standalone d’Unity pour le déploiement d’applications Win32, y compris la transmission de vapeur et de jeu. Une fois que vous avez le. EXE, vous pouvez soumettre vos applications comme d’habitude à la plateforme que vous avez choisie. 
 
-* Si vous devez installer une application HoloLens 2 alors que vous êtes hors connexion, reportez-vous aux instructions de sécurité de l’application [hololens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) ou installez l’application par le biais d’un package d’approvisionnement sans activer le mode développeur.
+* Si vous devez installer une application HoloLens 2 alors que vous êtes hors connexion, reportez-vous aux instructions [Secure de hololens 2 hors connexion](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) ou installez l’application via un package d’approvisionnement sans activer le mode développeur.
 
 * Vous pouvez également déployer des builds sur votre appareil et les partager avec d’autres développeurs qui ont le mode développeur activé en [déployant et déboguer avec Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) ou en [installant un package d’application avec le portail de l’appareil](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal).
 

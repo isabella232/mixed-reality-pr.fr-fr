@@ -1,17 +1,17 @@
 ---
 title: Pointer du regard et fixer
-description: Présentation générale du modèle d’entrée (œil/tête) du regard et du point d’entrée
+description: Vue d’ensemble générale du modèle d’entrée (œil/tête) du regard et du point d’entrée.
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: La réalité mixte, le point de présence, l’interaction, la conception, le suivi des yeux, le suivi des têtes, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de réalité virtuelle, le HoloLens, le MRTK, la réalité mixte Toolkit
-ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702195"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847343"
 ---
 # <a name="gaze-and-dwell"></a>Pointer du regard et fixer
 
@@ -23,7 +23,7 @@ Nous distingueons deux variantes de point de _regard_ et de [tête : le point](
 
 ## <a name="scenarios"></a>Scénarios
 
-Le point de vue et le point de vue dans les scénarios où les mains d’une personne sont occupés avec d’autres tâches, et la voix n’est pas 100% fiable ou disponible en raison de contraintes environnementales ou sociales.
+Le point d’accès est très bien utilisé dans les scénarios où les mains d’une personne sont occupées par d’autres tâches, et la voix n’est pas 100% fiable ou disponible en raison de contraintes environnementales ou sociales.
 Un bon exemple est une personne portant un appareil HoloLens pour superposer des informations de référence tout en réparant un moteur de voiture.
 Ses mains sont occupées par des outils ou supportent son corps quand elle se penche dans le compartiment du moteur.
 L’espace du garage est bruyant, les coups et bourdonnement constants des outils rendant difficile l’utilisation de commandes vocales.
@@ -64,6 +64,7 @@ Le point de regard permet à la personne utilisant HoloLens de parcourir en tout
 ---
 
  ## <a name="see-also"></a>Voir aussi
+
 * [Interaction basée sur le regard](eye-gaze-interaction.md)
 * [Suivi oculaire sur HoloLens 2](eye-tracking.md)
 * [Pointer et valider](gaze-and-commit.md)

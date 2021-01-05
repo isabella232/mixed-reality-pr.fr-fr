@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: contrôleurs 6DOF, contrôleurs de mouvement, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, défilement, poignée, état
-ms.openlocfilehash: a1af86ca174bc574ab8030d8aebd128649b6515f
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 768e316f175769d7399866b0b7cc62ee8c5c2cde
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703155"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847438"
 ---
 # <a name="motion-controllers"></a>Contrôleurs de mouvement
 
@@ -57,7 +57,7 @@ ms.locfileid: "94703155"
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/1nlcdDNOdm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Les contrôleurs de mouvement Windows Mixed Reality permettent un suivi précis et réactif des mouvements dans votre champ de vue à l’aide des capteurs du casque immersif, ce qui signifie qu’il n’est pas nécessaire d’installer le matériel sur les murs de votre espace. Ces contrôleurs de mouvement offriront la même facilité de configuration et de portabilité que les casques immersifs immersifs de Windows Mixed Reality. Nos partenaires d’appareils envisagent de commercialiser et de vendre ces contrôleurs sur les étagères de la vente au détail.
+Les contrôleurs de mouvement Windows Mixed Reality effectuent un suivi des mouvements précis et réactifs dans votre champ de vue à l’aide des capteurs du casque immersif. Il n’est pas nécessaire d’installer le matériel sur les murs de votre espace. Ces contrôleurs de mouvement offriront la même facilité de configuration et de portabilité que les casques immersifs immersifs de Windows Mixed Reality. Nos partenaires d’appareils envisagent de commercialiser et de vendre ces contrôleurs sur les étagères de la vente au détail.
 
 ![Découverte de votre contrôleur](images/controllerimage-750px.png)<br>
 *Découverte de votre contrôleur*
@@ -73,20 +73,20 @@ Les contrôleurs de mouvement Windows Mixed Reality permettent un suivi précis 
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
-**Éléments requis :**
+**Vous devez disposer des éléments suivants :**
 * Ensemble de deux contrôleurs de mouvement.
 * Quatre piles AA.
-* Un PC compatible Bluetooth 4,0.
+* Un PC avec prise en charge de Bluetooth 4,0.
 
 **Rechercher les mises à jour de Windows, Unity et Driver**
-* Consultez [installer les outils](../develop/install-the-tools.md) pour les versions préférées de Windows, Unity, etc. pour le développement de la réalité mixte.
+* Consultez [installer les outils](../develop/install-the-tools.md) pour les versions préférées de Windows, Unity, et ainsi de suite, pour le développement de la réalité mixte.
 * Veillez à disposer des [pilotes de contrôleur de mouvement et de casque](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)les plus récents.
 
 ### <a name="pairing-controllers"></a>Contrôleurs associés
 
 Les contrôleurs de mouvement peuvent être liés à un PC hôte à l’aide de paramètres Windows, comme tout autre appareil Bluetooth.
 
-1. Insérez 2 piles AA à l’arrière du contrôleur. Laissez la couverture de la batterie désactivée pour le moment.
+1. Insérez deux piles AA à l’arrière du contrôleur. Laissez la couverture de la batterie désactivée pour le moment.
 2. Si vous utilisez une carte Bluetooth USB externe au lieu d’une radio Bluetooth intégrée, passez en revue les [meilleures pratiques relatives à Bluetooth](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) avant de continuer. Pour la configuration du bureau avec la radio intégrée, assurez-vous que l’antenne est connectée.
 3. Ouvrir les **Paramètres Windows**  ->  **appareils**  ->  **Ajouter Bluetooth ou autre périphérique**  ->  **Bluetooth** et supprimer toutes les instances antérieures de « pilote de mouvement – droite » et « contrôleur de mouvement – gauche ». Consultez également la catégorie autres périphériques au bas de la liste.
 4. Sélectionnez **Ajouter un périphérique Bluetooth ou un autre appareil** pour voir comment détecter des appareils Bluetooth.
@@ -104,7 +104,7 @@ Les contrôleurs de mouvement peuvent être liés à un PC hôte à l’aide de 
     :::column-end:::
 :::row-end:::
    
-8. Le contrôleur s’affiche dans les paramètres Bluetooth sous la **catégorie « souris, clavier & stylet »** comme **connecté**. À ce stade, vous pouvez obtenir une mise à jour du microprogramme, voir la [section suivante](motion-controllers.md#updating-controller-firmware).
+8. Vous verrez que le contrôleur apparaît dans les paramètres Bluetooth sous la **catégorie « souris, clavier & stylet »** comme **connecté**. À ce stade, vous pouvez obtenir une mise à jour du microprogramme, voir la [section suivante](motion-controllers.md#updating-controller-firmware).
 9. Reconnectez la couverture de la batterie.
 10. Répétez les étapes 1-9 pour le deuxième contrôleur.
 
@@ -121,11 +121,11 @@ Les contrôleurs de mouvement peuvent être liés à un PC hôte à l’aide de 
     :::column-end:::
 :::row-end:::
 
-Si les contrôleurs sont désactivés après l’appariement, leur état s’affiche comme jumelé. Si les contrôleurs restent définitivement sous la catégorie « autres périphériques », le couplage n’a peut-être été effectué que partiellement et doit être réexécuté pour que le contrôleur fonctionne.
+Si les contrôleurs sont désactivés après l’appariement, leur état s’affiche comme jumelé. Pour les contrôleurs de manière permanente sous la catégorie « autres périphériques », le couplage peut être partiellement terminé. Dans ce cas, réexécutez les étapes de jumelage pour accéder à la fonctionnalité de contrôleur.
 
 ### <a name="updating-controller-firmware"></a>Mise à jour du microprogramme du contrôleur
 
-* Si un casque immersif est connecté à votre PC et que le nouveau microprogramme du contrôleur est disponible, le microprogramme est automatiquement envoyé à vos contrôleurs de mouvement la prochaine fois qu’ils sont allumés. Les mises à jour du microprogramme du contrôleur sont indiquées par un modèle de quadrants lumineux lumineux dans un mouvement circulaire et prennent 1-2 minutes.
+* Si un casque immersif est connecté à votre PC avec le nouveau microprogramme de contrôleur disponible, le microprogramme est automatiquement envoyé à vos contrôleurs de mouvement la prochaine fois que vous les allumez. Les mises à jour du microprogramme du contrôleur sont indiquées par un modèle de quadrants lumineux lumineux dans un mouvement circulaire et prennent 1-2 minutes.
 
 
 :::row:::
@@ -146,21 +146,21 @@ Si les contrôleurs sont désactivés après l’appariement, leur état s’aff
 
 ## <a name="gazing-and-pointing"></a>Gazing et pointage
 
-Windows Mixed Reality prend en charge deux modèles clés pour l’interaction ; **gaze and commit** **pointage et pointer et valider**:
-* Avec le point de suspension **et la validation**, les utilisateurs ciblent un objet avec le [regard](gaze-and-commit.md) , puis sélectionnent les objets avec des robinets à main, un boîtier de soucoursment, un clic ou leur voix.
+Windows Mixed Reality prend en charge deux modèles clés pour l’interaction ;  **pointage et pointer et valider**:
+* Avec le point de suspension **et la validation**, les utilisateurs ciblent un objet avec le [regard](gaze-and-commit.md), puis sélectionnent les objets avec des robinets, un boîtier de souclic ou une voix.
 * Avec **point et validation**, un utilisateur peut viser un contrôleur de mouvement de pointage sur l’objet cible, puis sélectionner des objets avec le déclencheur du contrôleur.
 
 Les applications qui prennent en charge le pointage avec les contrôleurs de mouvement doivent également activer les interactions pilotées par le regard dans la mesure du possible, pour permettre aux utilisateurs de choisir les périphériques d’entrée qu’ils utilisent.
 
 ### <a name="managing-recoil-when-pointing"></a>Gestion de la réenroulement lors du pointage
 
-Lorsque vous utilisez des contrôleurs de mouvement pour pointer et valider, vos utilisateurs utilisent le contrôleur pour cibler, puis agir en extrayant son déclencheur. Les utilisateurs qui extraient le déclencheur peuvent finir par faire en sorte que le contrôleur soit plus élevé à la fin de l’extraction du déclencheur que prévu.
+Lorsque vous utilisez des contrôleurs de mouvement pour pointer et valider, vos utilisateurs utilisent le contrôleur pour cibler et interagir en tirant son déclencheur. Les utilisateurs qui extraient le déclencheur peuvent finir par faire en sorte que le contrôleur soit plus élevé à la fin de l’extraction du déclencheur que prévu.
 
 Pour gérer ce type de réenroulement qui peut se produire lorsque les utilisateurs extraient le déclencheur, votre application peut aligner son cible sur Ray lorsque la valeur de l’axe analogique du déclencheur dépasse 0,0. Vous pouvez ensuite prendre une mesure à l’aide du ciblage de rayon de quelques frames plus tard, une fois que la valeur du déclencheur atteint 1,0, tant que la dernière pression se produit dans une fenêtre de temps abrégée. Lors de l’utilisation du [mouvement composite composite](gaze-and-commit.md#composite-gestures)de niveau supérieur, Windows gère cette capture et ce délai d’expiration pour le ciblage.
 
 ## <a name="grip-pose-vs-pointing-pose"></a>Poignée de pose et pose de pointage
 
-Windows Mixed Reality prend en charge les contrôleurs de mouvement dans un large éventail de facteurs de forme, la conception de chaque contrôleur étant différente dans sa relation entre la position de l’utilisateur et la direction « avant » naturelle que les applications doivent utiliser pour pointer lors du rendu du contrôleur.
+Windows Mixed Reality prend en charge les contrôleurs de mouvement dans différents facteurs de forme, la conception de chaque contrôleur se distinguant dans sa relation entre la position de l’utilisateur et la direction « avant » naturelle que les applications doivent utiliser pour pointer lors du rendu du contrôleur.
 
 Pour mieux représenter ces contrôleurs, il existe deux types de poses que vous pouvez examiner pour chaque source d’interaction. la **poignée pose** et le **pointeur se posent**.
 
@@ -172,7 +172,7 @@ Sur les casques immersifs, le pose de la poignée est utilisé pour restituer **
 
 La poignée est définie spécifiquement comme suit :
 * Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée. Sur le contrôleur de mouvement Windows Mixed Reality, cette position s’aligne généralement avec le bouton de saisie.
-* **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
+* **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à cinq doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
 * **Axe avant de l’orientation de la poignée**: quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
 * **Axe vers le haut de l’orientation**: l’axe vers le haut, impliqué dans les définitions Right et Forward.
 
@@ -203,9 +203,9 @@ Les applications qui souhaitent traiter différemment les positions en fonction 
 <tr>
 <th> État du suivi </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Précision approximative</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Approximatif </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -216,16 +216,16 @@ Les applications qui souhaitent traiter différemment les positions en fonction 
 
 
 Ces États de suivi du contrôleur de mouvement sont définis comme suit :
-* **Précision élevée :** Alors que le contrôleur de mouvement se trouve dans le champ de vision du casque, il fournit généralement des positions à grande précision, en fonction du suivi visuel. Notez qu’un contrôleur mobile qui quitte momentanément le champ de la vue ou est momentanément masqué des capteurs du casque (par exemple, par l’autre côté de l’utilisateur) continue à retourner des poses de grande précision pendant une brève période, en se basant sur le suivi inertiel du contrôleur lui-même.
-* **Haute précision (risque de perte) :** Lorsque l’utilisateur déplace le contrôleur de mouvement au-delà du bord du champ de vue du casque, le casque ne pourra bientôt pas suivre la position du contrôleur. L’application sait quand le contrôleur a atteint cette limite d’aide en regardant le **SourceLossRisk** REACH 1,0. À ce stade, l’application peut choisir de suspendre les gestes de contrôleur qui nécessitent un flux constant de poses très haute qualité.
+* **Précision élevée :** Alors que le contrôleur de mouvement se trouve dans le champ de vision du casque, il fournit généralement des positions à grande précision, en fonction du suivi visuel. Un contrôleur mobile qui laisse momentanément le champ de vue ou est momentanément masqué des capteurs du casque (par exemple, par l’autre côté de l’utilisateur) continue à retourner des poses de grande précision pendant une brève période, en se basant sur le suivi inertiel du contrôleur lui-même.
+* **Haute précision (risque de perte) :** Lorsque l’utilisateur déplace le contrôleur de mouvement au-delà du bord du champ de vue du casque, le casque ne pourra bientôt pas suivre la position du contrôleur. L’application sait quand le contrôleur a atteint cette limite d’aide en regardant le **SourceLossRisk** REACH 1,0. À ce stade, l’application peut choisir de suspendre les gestes de contrôleur qui nécessitent un flux constant de poses de haute qualité.
 * **Précision approximative :** Lorsque le contrôleur a perdu le suivi visuel suffisamment longtemps, les positions du contrôleur sont découpées à des positions de précision approximatives. À ce stade, le système va verrouiller le contrôleur à l’utilisateur, en effectuant le suivi de la position de l’utilisateur lors de son déplacement, tout en exposant l’orientation réelle du contrôleur à l’aide de ses capteurs d’orientation internes. De nombreuses applications qui utilisent des contrôleurs pour pointer et activer des éléments d’interface utilisateur peuvent fonctionner normalement, tout en ayant une précision approximative, sans que l’utilisateur ne remarque. Les applications avec des exigences d’entrée plus lourdes peuvent choisir de déterminer ce déplacement de la **haute** précision à une précision **approximative** en inspectant la propriété **PositionAccuracy** , par exemple pour accorder à l’utilisateur un hitbox plus généreux sur les cibles hors écran pendant cette période.
-* **Aucune position :** Alors que le contrôleur peut fonctionner à des fins de précision approximative pendant une longue période, le système sait parfois que même une position verrouillée par le corps n’est pas significative pour le moment. Par exemple, un contrôleur qui vient d’être activé n’a peut-être jamais été observé visuellement, ou un utilisateur peut mettre un contrôleur qui est ensuite récupéré par une autre personne. À ce moment-là, le système ne fournit aucune position à l’application, et **TryGetPosition** retourne la valeur false.
+* **Aucune position :** Alors que le contrôleur peut fonctionner à des fins de précision approximative pendant une longue période, le système sait parfois que même une position verrouillée par le corps n’est pas significative pour le moment. Par exemple, un contrôleur qui a été activé n’a peut-être jamais été observé visuellement, ou un utilisateur peut mettre un contrôleur qui est ensuite récupéré par quelqu’un d’autre. À ce moment-là, le système ne fournit pas de position à l’application, et **TryGetPosition** retourne la valeur false.
 
 ## <a name="interactions-low-level-spatial-input"></a>Interactions : entrée spatiale de bas niveau
 
 Les interactions de base entre les contrôleurs mains et Motion sont **Select**, **menu**, rescelle, **Touchpad** **,** **stick analogique** et **familial**.
 * **Select** est l’interaction principale pour activer un hologramme, qui consiste en une pression suivie d’une mise en sortie. Pour les contrôleurs de mouvement, vous effectuez une pression Select à l’aide du déclencheur du contrôleur. D’autres façons d’effectuer une sélection sont en parlant la [commande vocale](voice-input.md) « Select ». La même interaction SELECT peut être utilisée dans n’importe quelle application. Pensez à sélectionner comme équivalent d’un clic de souris ; une action universelle que vous découvrez une fois, puis appliquez-la à toutes vos applications.
-* **Menu** est l’interaction secondaire pour agir sur un objet, utilisée pour extraire un menu contextuel ou effectuer une autre action secondaire. Avec les contrôleurs de mouvement, vous pouvez effectuer une action de menu à l’aide du bouton de *menu* du contrôleur. (c’est-à-dire le bouton avec l’icône « menu » du hamburger)
+* **Menu** est l’interaction secondaire pour agir sur un objet, utilisée pour extraire un menu contextuel ou effectuer une autre action secondaire. Avec les contrôleurs de mouvement, vous pouvez effectuer une action de menu à l’aide du bouton de *menu* du contrôleur. (autrement dit, le bouton avec l’icône « menu » de hamburger)
 * **Saisissez** comment les utilisateurs peuvent directement agir sur les objets à leur disposition pour les manipuler. Avec les contrôleurs de mouvement, vous pouvez faire une action en appuyant sur votre avant-première. Un contrôleur de mouvement peut détecter une compréhension à l’aide d’un bouton de manipulation, d’un déclencheur Palm ou d’un autre capteur.
 * Le **pavé tactile** permet à l’utilisateur d’ajuster une action en deux dimensions le long de la surface du pavé tactile d’un contrôleur de mouvement, en validant l’action en cliquant sur le bouton du pavé tactile. Les pavés tactiles fournissent un état appuyé, un État touché et des coordonnées XY normalisées. Plage X et Y comprise entre-1 et 1 dans la plage du pavé tactile circulaire, avec un centre à (0,0). Pour X,-1 est sur la gauche et 1 est sur la droite. Pour Y,-1 est en bas et 1 est en haut.
 * Le **stick analogique** permet à l’utilisateur d’ajuster une action en deux dimensions en déplaçant le stick analogique d’un contrôleur de mouvement dans sa plage circulaire, en validant l’action en cliquant sur le stick analogique. Thumbsticks fournissent également un état appuyé et des coordonnées XY normalisées. Plage X et Y comprise entre-1 et 1 dans la plage du pavé tactile circulaire, avec un centre à (0,0). Pour X,-1 est sur la gauche et 1 est sur la droite. Pour Y,-1 est en bas et 1 est en haut.
@@ -239,7 +239,7 @@ Les [gestes](gaze-and-commit.md#composite-gestures) à la main et les contrôleu
 
 **modèles de contrôleur 3D** Windows met à la disposition des applications un modèle pouvant être rendu de chaque contrôleur de mouvement actuellement actif dans le système. En faisant en sorte que votre application charge et articule dynamiquement ces modèles de contrôleur fournis par le système lors de l’exécution, vous pouvez vous assurer que votre application est compatible avec les futures conceptions de contrôleur.
 
-Ces modèles de rendu doivent tous être rendus au niveau de la **poignée** du contrôleur, car l’origine du modèle est alignée sur ce point dans le monde physique. Si vous affichez des modèles de contrôleur, vous souhaiterez peut-être raycast dans votre scène à partir du point de vue du **pointeur**, qui représente le rayon le long duquel les utilisateurs s’attendent naturellement à POINTER, étant donné la conception physique du contrôleur.
+Nous vous recommandons d’effectuer le rendu de tous les modèles renderables au niveau de la **poignée** du contrôleur, car l’origine du modèle est alignée sur ce point dans le monde physique. Si vous affichez des modèles de contrôleur, vous souhaiterez peut-être raycast dans votre scène à partir du point de vue du **pointeur**, qui représente le rayon le long duquel les utilisateurs s’attendent naturellement à POINTER, étant donné la conception physique du contrôleur.
 
 Pour plus d’informations sur la façon de charger dynamiquement des modèles de contrôleur dans Unity, consultez la section [rendu du modèle de contrôleur de mouvement dans Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) .
 
@@ -251,7 +251,7 @@ Pour plus d’informations sur la façon de charger dynamiquement des modèles d
  
 [Image de ligne des contrôleurs de mouvement pleine résolution dans' ' 'noir' ' '](images/motioncontrollers-black.png)
 
-## <a name="faq"></a>Questions fréquentes (FAQ)
+## <a name="faq"></a>Forum aux questions
 
 ### <a name="can-i-pair-motion-controllers-to-multiple-pcs"></a>Puis-je coupler des contrôleurs de mouvement à plusieurs PC ?
 
@@ -269,7 +269,7 @@ Dans la [page d’hébergement de la réalité mixte Windows](../discover/naviga
 
 Pas pour les applications Windows universelles.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Consultez [résolution des problèmes du contrôleur de mouvement](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) dans le Guide du passionné.
 

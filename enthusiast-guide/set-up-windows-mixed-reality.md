@@ -3,12 +3,12 @@ title: Configurer Windows Mixed Reality
 description: Comment configurer vos contrôleurs de mouvement Windows Mixed Reality, la voix et l’audio, et définir la limite de votre espace pour un espace de lecture sécurisé.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, prise en main, configuration, contrôleur de mouvement, contrôleur, voix, audio, assis, debout, limite, pilotes graphiques, Microsoft Edge, chrome
-ms.openlocfilehash: 693c55a7375dd2cb1b4a6f880fca31ba8d50c7f9
-ms.sourcegitcommit: b90697776b7027ed7eb8dd49a72d52740a16d12d
+ms.openlocfilehash: 8cd313651665fe2e50deb21e2ba2434883dc873a
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96843127"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725940"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurer Windows Mixed Reality
 
@@ -42,7 +42,7 @@ Si votre casque intègre une radio, les contrôleurs fournis avec votre casque s
 
 Si vous avez un casque sans radio intégrée, vous devrez configurer vos contrôleurs de mouvement en les associant à votre PC. La plupart des casques fabriqués après 2018 ont intégré la radio.
 
-Si vous envisagez uniquement d’utiliser un boîtier et une souris Xbox, vous n’avez pas besoin de coupler vos contrôleurs.  Si vous envisagez d’utiliser des contrôleurs, vous devez probablement les coupler.
+Vous n’avez pas besoin de coupler vos contrôleurs si vous envisagez uniquement d’utiliser un boîtier et une souris Xbox.  Si vous envisagez d’utiliser des contrôleurs, vous devez les coupler.
 
 **Remarque**: les contrôleurs de mouvement Windows Mixed Reality nécessitent Bluetooth 4,0. Si votre ordinateur ne dispose pas de Bluetooth intégré, vous devez brancher une carte USB Bluetooth qui prend en charge Bluetooth 4,0 pour activer vos contrôleurs de mouvement. Vous n’avez pas besoin d’un adaptateur Bluetooth pour utiliser la radio intégrée dans votre casque.
 
@@ -56,7 +56,7 @@ Choisir une expérience de mise à l’échelle de salle ou de bureau :
 
 **Option 1 : configurer pour toutes les expériences (également appelées mise à l’échelle de l’espace)** vous permet de vous familiariser avec l’espace et est l’expérience de réalité mixte la plus immersive. Nous vous recommandons au moins cinq pieds x sept pieds (1,5 mètres x 2 mètres) d’espace pour la réalité mixte.
 
-**Option 2 : configurez-moi pour une expérience assise et debout (également appelée mise à l’échelle du bureau)** sur votre bureau. C’est une bonne option si votre espace n’est pas important. Cela signifie également que vous allez utiliser votre casque sans limite. Vous devez rester à un seul endroit, car vous n’aurez pas de limite pour vous aider à éviter les obstacles physiques. En outre, certaines applications et certains jeux sont conçus pour être utilisés avec une limite. ils peuvent donc ne pas fonctionner comme prévu.
+**Option 2 : configurez-moi pour une expérience assise et debout (également appelée mise à l’échelle du bureau)** sur votre bureau. C’est une bonne option si votre espace n’est pas important. Cela signifie également que vous allez utiliser votre casque sans limite. Vous devez rester à un seul endroit, car vous n’aurez pas de limite pour vous aider à éviter les obstacles physiques. Certaines applications et certains jeux ne sont pas conçus pour être une expérience de limite. ils peuvent donc ne pas fonctionner comme prévu.
 
 ![Choisir un programme d’installation](images/1050px-chooseasetup.png)
 
@@ -90,7 +90,7 @@ Aucune étape supplémentaire n’est requise si vous choisissez cette option.
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>Quelle est la taille maximale de la limite ?
 
-La taille limite maximale prise en charge dans Windows Mixed Reality est un rayon de 18x18ft (5.7 x 5.7 m) ou de 13 ft (4 mètres) à partir du centre.  La taille de la limite dépend du point d’ancrage et de la distance du point d’ancrage que vous pouvez déplacer avant de risquer la stabilité de la limite.  Windows Mixed Reality est basé sur une abstraction en phase de la plateforme, l’étape étant l’espace que vous déplacez dans. Cette phase dépend d’un seul point d’ancrage, qui, presque toutes les applications, suppose également qu’il s’agit d’un travail vive et Oculus, car ils n’ont qu’un seul système de coordonnées.  Cela est important, car avec le suivi à l’intérieur, lorsque vous éloignez davantage d’un point d’ancrage, le suivi du casque est fiable pour maintenir la limite stable.  Lorsque la limite est destinée à éviter les obstacles physiques, elle devient de plus en plus un problème en plus du centre que vous recherchez.  Deux facteurs ont pris la décision sur la taille limite maximale ; la distance maximale à laquelle les casques Windows mixtes de réalité peuvent fournir la meilleure expérience de mise à l’échelle de l’espace avec une limite et la longueur du câble du casque, qui, pour la plupart des casques Windows mixtes, est de 10 mètres (3 mètres).
+La taille maximale de la limite prise en charge dans Windows Mixed Reality est un rayon de 18x18ft (5.7 x 5.7 m) ou de 13 ft (4 mètres) à partir du centre. La taille de la limite dépend du point d’ancrage et de la distance du point d’ancrage que vous pouvez déplacer avant de risquer la stabilité de la limite.  Windows Mixed Reality est basé sur une abstraction de phase, l’étape étant l’espace que vous déplacez dans. Cette phase dépend d’un seul point d’ancrage, qui, presque toutes les applications, suppose également qu’il s’agit d’un système de coordonnées unique.  Cela est important, car avec le suivi à l’intérieur, lorsque vous éloignez davantage d’un point d’ancrage, le suivi du casque est fiable pour maintenir la limite stable.  Lorsque la limite est destinée à éviter les obstacles physiques, il devient plus grand d’un problème en plus du centre.  Deux facteurs ont été pris en considération dans la décision sur la taille limite maximale. La distance maximale à laquelle les casques Windows mixtes de réalité peuvent fournir la meilleure expérience de mise à l’échelle de l’espace avec une limite et la longueur du câble du casque, ce qui, pour la plupart des casques Windows mixtes, est de 10 mètres (3 mètres).
 
 ## <a name="set-up-speech"></a>Configurer la reconnaissance vocale
 
@@ -100,7 +100,7 @@ Vous pouvez activer les commandes Cortana en réalité mixte, ce qui vous permet
 
 ## <a name="set-up-your-audio-headset"></a>Configurer votre casque audio
 
-À moins que vous n’achetiez un Samsung HMD Odyssey avec un casque AKG intégré et une baie à deux microphones, vous devez obtenir un casque audio avec microphone et casque et le brancher à la prise jack audio 3,5-mm de votre casque. La prise jack audio 3,5-mm pour votre casque est-en fonction du modèle de casque, situé soit au-dessous du visière du casque, soit à la fin d’un petit câble audio attaché au visière du casque.
+À moins que vous n’achetiez un Samsung HMD Odyssey avec un casque AKG intégré et une baie à deux microphones, vous devez obtenir un casque audio avec microphone et casque et le brancher à la prise jack audio 3,5-mm de votre casque. La prise jack audio 3,5-mm de votre casque est située au-dessous du visière du casque ou à la fin d’un petit câble audio attaché au visière du casque, en fonction du modèle de casque.
 
 ## <a name="adjusting-your-headsets-display-settings"></a>Réglage des paramètres d’affichage de votre casque
 
@@ -118,7 +118,9 @@ Si vous connectez un casque avec des affichages de plus haute résolution à vot
 
 * Ce paramètre permet à la pile de composition de la réalité Windows mixed de s’afficher en mode natif (par exemple, sur 4320x2160) ou de rendre la pile de composition restituée à une résolution et une mise à l’échelle inférieures (par exemple, le rendu à 2880x1440 et la mise à l’échelle vers 4320x2160).
 * Le paramètre par défaut est le rendu natif (par exemple, l’option **4320 x 2160 (meilleure qualité)** ) pour fournir la meilleure qualité visuelle possible à partir de votre casque.
-* Si votre ordinateur ne répond pas à la configuration matérielle minimale requise pour votre casque avec des affichages de plus haute résolution, ou si vous constatez des problèmes de performances graphiques, essayez d’utiliser l’option **mise à l’échelle automatique (meilleures performances)** .
+* Utilisez l’option de **mise à l’échelle automatique (meilleures performances)** si :
+    * Votre PC ne répond pas à la configuration matérielle minimale requise pour votre casque, avec des affichages de plus haute résolution
+    * Vous constatez des problèmes de performances graphiques
 
 Ce paramètre est disponible sur Windows 10, version 1903 ou ultérieure.
 
@@ -130,7 +132,7 @@ Ce paramètre permet d’ajuster l’étalonnage IPD des casques avec la prise e
 
 Ce paramètre avancé remplace l’expérience du taux d’actualisation de l’affichage du casque par défaut.
 
-* **Automatique (par défaut)**: sélectionne automatiquement l’expérience 60 hz ou 90 Hz en fonction de la configuration matérielle de votre PC.
+* **Automatique (par défaut)**: sélectionne automatiquement l’expérience 60 hz ou 90-Hz en fonction de la configuration matérielle de votre PC.
 * **60 Hz**
 * **90 Hz**
 

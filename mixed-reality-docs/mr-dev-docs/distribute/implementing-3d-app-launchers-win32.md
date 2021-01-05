@@ -1,26 +1,26 @@
 ---
 title: Implémenter des lanceurs d’applications 3D (applications Win32)
-description: Comment créer des programmes de lancement et des logos d’applications en 3D pour les jeux et les applications Win32 VR (distribués en dehors de la vapeur) afin qu’ils s’affichent dans le menu Démarrer et l’environnement d’accueil de Windows Mixed Reality.
+description: Découvrez comment créer des programmes de lancement et des logos d’applications en 3D pour les applications et les jeux Win32 VR pour le menu Démarrer et l’environnement d’accueil de Windows Mixed Reality.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icône, modélisation, lanceur, lanceur 3D, vignette, cube en direct, Win32, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, manifeste
-ms.openlocfilehash: 9a8680232bf1d8d333c26ca4e39075ee553782fb
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 5a3e38de54aad1fceb4804003043c87dddab61c4
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703425"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757816"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>Implémenter des lanceurs d’applications 3D (applications Win32)
 
 > [!NOTE]
 > Cette fonctionnalité est uniquement disponible pour les PC qui exécutent les derniers vols de [Windows Insider](https://insider.windows.com) (RS5), Build 17704 et versions ultérieures.
 
-La [base de la réalité Windows Mixed](../discover/navigating-the-windows-mixed-reality-home.md) est le point de départ où les utilisateurs se trouvent avant de lancer des applications. Par défaut, les applications et les jeux Win32 VR Win32 sont lancés à partir de l’extérieur du casque et n’apparaissent pas dans la liste « toutes les applications » dans le menu Démarrer de Windows Mixed Reality. Toutefois, en suivant les instructions de cet article pour implémenter un lanceur d’applications 3D, votre expérience Win32 VR peut être lancée à partir du menu Démarrer et de l’environnement d’accueil de Windows Mixed Reality.
+La [base de la réalité Windows Mixed](../discover/navigating-the-windows-mixed-reality-home.md) est le point de départ où les utilisateurs se trouvent avant de lancer des applications. Par défaut, vous devez lancer des applications et des jeux Win32 VR en dehors du casque et qui n’apparaîtront pas dans la liste « toutes les applications » dans le menu Démarrer de Windows Mixed Reality. Si vous suivez les instructions de cet article pour implémenter un lanceur d’applications 3D, votre expérience Win32 VR peut être lancée à partir du menu Démarrer et de l’environnement d’accueil de Windows Mixed Reality.
 
-Cela est vrai uniquement pour les expériences Win32 VR distributied en dehors de la vapeur. Pour les expériences VR [distribuées par vapeur](../develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md), nous avons [mis à jour la version bêta de Windows Mixed Reality for SteamVR](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) avec les derniers vols Windows Insider RS5, de sorte que les titres de SteamVR s’affichent dans le menu Démarrer de Windows Mixed Reality dans la liste « toutes les applications » à l’aide d’un lanceur par défaut. En d’autres termes, la méthode décrite dans cet article n’est pas nécessaire pour les titres SteamVR et sera remplacée par la fonctionnalité bêta de Windows Mixed Reality pour SteamVR.
+Cela n’est valable que pour les expériences Win32 VR de l’eau, distribuées en dehors de la vapeur. Pour les expériences VR [distribuées par vapeur](../develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md), nous avons [mis à jour la version bêta de Windows Mixed Reality for SteamVR](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) avec les derniers vols Windows Insider RS5, de sorte que les titres de SteamVR s’affichent dans le menu Démarrer de Windows Mixed Reality dans la liste « toutes les applications » à l’aide d’un lanceur par défaut. En d’autres termes, la méthode décrite dans cet article n’est pas nécessaire pour les titres SteamVR et sera remplacée par la fonctionnalité bêta de Windows Mixed Reality pour SteamVR.
 
 ## <a name="3d-app-launcher-creation-process"></a>processus de création du lanceur d’applications 3D
 
@@ -29,7 +29,7 @@ La création d’un lanceur d’applications 3D comporte trois étapes :
 2. [Modélisation et exportation](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. Intégration dans votre application (cet article)
 
-les ressources 3D à utiliser comme lanceurs pour votre application doivent être créées à l’aide des [instructions de création Windows Mixed realisation](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) pour garantir la compatibilité. Les ressources qui ne satisfont pas à cette spécification de création ne seront pas affichées dans la page d’hébergement de la réalité mixte Windows.
+les ressources 3D à utiliser comme lanceurs pour votre application doivent être créées à l’aide des [instructions de création Windows Mixed realisation](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) pour garantir la compatibilité. Les ressources qui ne satisfont pas à cette spécification de création ne seront pas affichées dans la page d’hébergement de Windows Mixed Reality.
 
 ## <a name="configuring-the-3d-launcher"></a>Configuration du lanceur 3D
 
@@ -40,15 +40,15 @@ Les applications Win32 s’affichent dans la liste « toutes les applications 
     1. Vous pouvez commencer par l' [exemple ci-dessous](#sample-visual-elements-manifest).  Pour plus d’informations, consultez la documentation complète du [manifeste des éléments visuels](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) .
     2. Mettez à jour **Square150x150Logo** et **Square70x70Logo** avec un fichier PNG/jpg/gif pour votre application.
         * Ils seront utilisés pour le logo 2D de l’application dans la liste toutes les applications de la réalité mixte Windows et pour le menu Démarrer sur le bureau.
-        * Le chemin d’accès du fichier est relatif au dossier contenant le manifeste des éléments visuels.
-        * Vous devez toujours fournir une icône de menu Démarrer du Bureau pour votre application via les mécanismes standard. Celui-ci peut être directement dans l’exécutable ou dans le raccourci que vous créez (par exemple, via IShellLink :: SetIconLocation).
+        * Le chemin d’accès du fichier est basé sur le dossier contenant le manifeste des éléments visuels.
+        * Vous devez toujours fournir une icône de menu Démarrer du Bureau pour votre application via les mécanismes standard. Celui-ci peut être directement dans l’exécutable ou dans le raccourci que vous créez. Par exemple, via IShellLink :: SetIconLocation.
         * *Facultatif :* Vous pouvez utiliser un fichier Resources. pri si vous souhaitez que le fichier MRT fournisse plusieurs tailles de ressources pour différentes échelles de résolution et des thèmes à contraste élevé.
     3. Mettre à jour le **chemin d’accès MixedRealityModel** pour pointer vers le GLB pour votre lanceur d’applications 3D
     4. Enregistrez le fichier sous le même nom que votre fichier exécutable, avec l’extension « .VisualElementsManifest.xml », puis enregistrez-le dans le même répertoire. Par exemple, pour le fichier exécutable « contoso.exe », le fichier XML associé est nommé « contoso.visualelementsmanifest.xml ».
 3. **Ajoutez un raccourci** à votre application dans le menu Démarrer de Windows Desktop. Consultez l’exemple [ci-dessous](#sample-app-launcher-shortcut-creation) pour obtenir un exemple d’implémentation C++. 
     * Créez-le dans%ALLUSERSPROFILE%\Microsoft\Windows\Start \ programme (machine) ou%APPDATA%\Microsoft\Windows\Start \ programme \ (utilisateur)
     * Si une mise à jour modifie votre manifeste d’éléments visuels ou les ressources référencées par celle-ci, le programme d’installation ou le programme d’installation doit mettre à jour le raccourci de telle sorte que le manifeste soit analysé et que les ressources mises en cache soient mises à jour.
-4. *Facultatif :* Si le raccourci de votre bureau ne pointe pas directement vers l’exécutable de votre application (par exemple, s’il appelle un gestionnaire de protocole personnalisé comme « myapp:// »), le menu Démarrer ne trouvera pas automatiquement le fichier VisualElementsManifest.xml de l’application. Pour résoudre ce cas, le raccourci doit spécifier le chemin d’accès du fichier manifeste des éléments visuels à l’aide de System. AppUserModel. VisualElementsManifestHintPath (). Cela peut être défini dans le raccourci en utilisant les mêmes techniques que System.AppUserModel.ID. Vous n’êtes pas obligé d’utiliser System.AppUserModel.ID, mais vous pouvez le faire si vous souhaitez que le raccourci corresponde à l’ID de modèle utilisateur d’application explicite de l’application, le cas échéant.  Consultez la section exemple de création d’un [raccourci de lancement d’application](#sample-app-launcher-shortcut-creation) ci-dessous pour obtenir un exemple C++.
+4. *Facultatif :* Si votre raccourci de bureau ne pointe pas directement vers l’exécutable de votre application (par exemple, s’il appelle un gestionnaire de protocole personnalisé comme « myapp:// »), le menu Démarrer ne trouvera pas automatiquement le fichier VisualElementsManifest.xml de l’application. Pour résoudre ce cas, le raccourci doit spécifier le chemin d’accès du fichier manifeste des éléments visuels à l’aide de System. AppUserModel. VisualElementsManifestHintPath (). Cela peut être défini dans le raccourci en utilisant les mêmes techniques que System.AppUserModel.ID. Vous n’êtes pas obligé d’utiliser System.AppUserModel.ID, mais vous pouvez le faire si vous souhaitez que le raccourci corresponde à l’ID de modèle utilisateur d’application explicite de l’application, le cas échéant.  Consultez la section exemple de création d’un [raccourci de lancement d’application](#sample-app-launcher-shortcut-creation) ci-dessous pour obtenir un exemple C++.
 
 ### <a name="sample-visual-elements-manifest"></a>Exemple de manifeste d’éléments visuels
 

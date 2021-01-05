@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, système d’exploitation, plateforme, maison, maison, accueil, environnement, démarrer, menu Démarrer, menu Accueil, pin, application, lancer des applications, placer des applications, téléporter, déplacer, naviguer, casque de réalité mixte, casque de réalité virtuelle, présentation de la réalité virtuelle
-ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703445"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757687"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Exploration de la page d’accueil Windows Mixed Reality
 
-Tout comme l’expérience du PC Windows commence avec le bureau, Windows Mixed Reality commence par la page d’hébergement. La page d’hébergement Windows Mixed Reality utilise notre capacité innée pour comprendre et parcourir les emplacements 3D. Avec HoloLens, votre foyer est votre espace physique. Avec les casques immersifs, votre foyer est une place virtuelle.
+Tout comme l’expérience du PC Windows commence avec le bureau, Windows Mixed Reality commence par la page d’hébergement. La famille Windows Mixed Reality utilise notre capacité innée pour comprendre et parcourir les emplacements 3D. Avec HoloLens, votre foyer est votre espace physique, mais avec des casques immersifs, votre foyer est une place virtuelle.
 
 Votre foyer est également l’emplacement où vous allez utiliser le menu Démarrer pour ouvrir et placer des applications et du contenu. Vous pouvez remplir votre foyer avec du contenu de réalité mixte et utiliser plusieurs applications en même temps. Les choses que vous placez dans votre foyer restent là, même si vous redémarrez votre appareil.
 
@@ -52,17 +52,17 @@ Sélectionnez **ajuster** dans la barre de l’application pour afficher les con
 
 ![La ardoise du magasin en mode ajustement (cadre bleu). Remarque : la barre d’application (haut) a changé pour inclure les boutons « terminé » et « supprimer ».](images/adjust-500px.png)
 
-Différentes applications peuvent avoir des options supplémentaires dans la barre des applications. Par exemple, Microsoft Edge possède des options de *défilement*, de *glisser-déplacer* et de *Zoom* . 
+Différentes applications peuvent avoir d’autres options dans la barre des applications. Par exemple, Microsoft Edge possède des options de *défilement*, de *glisser-déplacer* et de *Zoom* . 
 
 ![Barre d’application pour les applications 2D s’exécutant sur HoloLens](images/holobar-500px.png)
 
-Le bouton **précédent** permet de revenir aux écrans affichés précédemment dans l’application. Il s’arrête lorsque vous atteignez le début des expériences qui ont été affichées dans l’application et n’accède pas à d’autres applications.
+Le bouton **précédent** permet de revenir aux écrans affichés précédemment dans l’application. Elle s’arrête lorsque vous atteignez le début des expériences affichées dans l’application et n’accède pas à d’autres applications.
 
 ## <a name="getting-around-your-home"></a>L’approche de votre foyer
 
 Avec **HoloLens**, vous vous déplacez dans l’espace physique pour vous déplacer dans votre foyer.
 
-Avec les **casques immersifs**, vous pouvez également vous familiariser avec vos PlaySpace pour vous déplacer dans une zone similaire dans le monde virtuel. Pour vous déplacer sur des distances plus longues, vous pouvez utiliser le stick analogique sur votre contrôleur pour « parcourir » virtuellement, ou vous pouvez utiliser la *téléportage* pour passer immédiatement plus de distances.
+Avec les **casques immersifs**, vous pouvez vous familiariser avec vos PlaySpace pour vous déplacer dans une zone similaire dans le monde virtuel. Pour vous déplacer sur des distances plus longues, utilisez le stick analogique sur votre contrôleur pour « parcourir » virtuellement, ou vous pouvez utiliser la *téléportage* pour passer immédiatement plus de distances.
 
 ![Téléporting dans la page d’hébergement Windows Mixed Reality](images/teleportation-500px.png)
 
@@ -87,7 +87,7 @@ Les [casques immersifs Windows Mixed Reality](immersive-headset-hardware-details
 
 ### <a name="motion-controllers"></a>Contrôleurs de mouvement
 
-La meilleure expérience Windows Mixed Reality sera avec les [contrôleurs de mouvement](../design/motion-controllers.md) Windows Mixed Real qui prennent en charge le suivi de 6 degrés de liberté en utilisant uniquement les capteurs de votre casque-aucun appareil photo ou marqueur externe n’est nécessaire.
+La meilleure expérience Windows Mixed Reality sera avec les [contrôleurs de mouvement](../design/motion-controllers.md) Windows Mixed realer qui prennent en charge six degrés de liberté, en utilisant uniquement les capteurs de votre casque-aucun appareil photo ou marqueur externe n’est nécessaire.
 
 Commandes de navigation bientôt disponibles.
 
@@ -97,7 +97,7 @@ Commandes de navigation bientôt disponibles.
   * Appuyez sur le stick analogique à gauche, à droite ou à gauche pour déplacer les petits incréments vers la gauche, vers la droite ou vers l’arrière.
   * Cliquez sur le stick analogique gauche et maintenez-le enfoncé, puis déplacez le stick analogique dans le sens où vous souhaitez [virtuellement « parcourir ».](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * Appuyez sur le **Stick à droite** vers la gauche ou vers la droite pour faire pivoter la direction que vous avez dirigée de 45 degrés.
-* Le fait d’appuyer sur le bouton **a** effectue une opération SELECT et agit comme le mouvement [air TAP](../design/gaze-and-commit.md#composite-gestures) .
+* Le fait **d'** appuyer sur le bouton A sélectionne et agit comme le mouvement [air appuyé](../design/gaze-and-commit.md#composite-gestures) .
 * Le fait d’appuyer sur le bouton du **repère** permet d’ouvrir le [menu Démarrer](navigating-the-windows-mixed-reality-home.md#start-menu) et agit comme [le geste.](../design/system-gesture.md#bloom)
 * Le fait d’appuyer sur les **déclencheurs de gauche et de droite** vous permet d’effectuer un zoom avant et arrière sur une application de bureau 2D avec laquelle vous interagissez à l’origine.
 
@@ -106,7 +106,7 @@ Commandes de navigation bientôt disponibles.
 **Remarque :** Utilisez la **touche Windows + Y** pour faire basculer la souris entre le Bureau de votre PC et la page d’hébergement Windows Mixed Reality.
 
 Dans la page d’hébergement de Windows Mixed Reality :
-* Le fait d’appuyer sur le bouton **gauche** de la souris permet d’effectuer une sélection et agit comme le mouvement d’appui sur l' [air](../design/gaze-and-commit.md#composite-gestures) .
+* Le fait d’appuyer sur le bouton gauche de la souris sélectionne et agit comme le mouvement d’appui **à** l' [air](../design/gaze-and-commit.md#composite-gestures) .
 * En maintenant le bouton droit de la souris **, vous** Affichez le réticule de [téléportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) .
 * Le fait d’appuyer sur la touche **Windows** du clavier affiche le [menu Démarrer](navigating-the-windows-mixed-reality-home.md#start-menu) et agit comme [le geste.](../design/system-gesture.md#bloom)
 * Quand vous [Gazing](../design/gaze-and-commit.md) dans une application de bureau 2D, vous pouvez **Cliquer** avec le bouton droit pour sélectionner, **cliquer avec le bouton droit** pour afficher les menus contextuels et utiliser la **roulette de défilement** pour faire défiler (comme sur le Bureau de votre PC).
@@ -119,7 +119,7 @@ Vous pouvez également utiliser des commandes vocales pour vous familiariser ave
 
 ## <a name="store-settings-and-system-apps"></a>Stocker, paramètres et applications système
 
-Windows Mixed Reality possède un certain nombre d’applications intégrées, telles que :
+Windows Mixed Reality possède plusieurs applications intégrées, telles que :
 * **Microsoft Store** pour accéder aux applications et aux Jeux
 * **Hub de commentaires** pour envoyer des commentaires sur les applications système et système
 * **Paramètres** pour configurer les paramètres système ([y compris la mise en réseau](../connecting-to-wi-fi-on-hololens.md) et les mises à jour système)

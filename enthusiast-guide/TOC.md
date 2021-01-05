@@ -46,3 +46,5 @@
 ### [Fonctionnement du suivi intérieur-extérieur](tracking-system.md)
 ### [Contrôleurs HP Reverb G2 dans Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 ### [Contrôleurs HP Reverb G2 dans Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+
+## [Guide de contribution](contributing.md)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: La réalité mixte, le point de vue, l’interaction, la conception, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de la réalité virtuelle, HoloLens, MRTK, le kit de conditions de la réalité mixte, l’expérience utilisateur, les instructions, le mode liste
-ms.openlocfilehash: abedff5a273816f49419c7823b96eda1d474e336
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702315"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847372"
 ---
 # <a name="head-gaze-and-dwell"></a>Suivre de la tête et stabiliser
 
@@ -19,7 +19,7 @@ Quand les mains sont occupées avec des outils et des pièces, les mouvements pe
 
 ## <a name="scenarios"></a>Scénarios
 
-Le point de regard et le point de vue dans les scénarios où les mains d’une personne sont occupées avec d’autres tâches, et la voix n’est pas 100% fiable ou disponible en raison de contraintes environnementales ou sociales. Un bon exemple est une personne portant un appareil HoloLens pour superposer des informations de référence tout en réparant un moteur de voiture. Ses mains sont occupées par des outils ou supportent son corps quand elle se penche dans le compartiment du moteur. L’espace du garage est bruyant, les coups et bourdonnement constants des outils rendant difficile l’utilisation de commandes vocales. Le point de regard et l’arrière-plan permet à la personne utilisant HoloLens de parcourir en toute confiance son document de référence sans interrompre son flux de travail. 
+Le point de regard et le front-tête est parfait dans les scénarios où les mains d’une personne sont occupées par d’autres tâches. Cette fonctionnalité est également utile lorsque la voix n’est pas 100% fiable ou disponible en raison de contraintes environnementales ou sociales. Un bon exemple est une personne portant un appareil HoloLens pour superposer des informations de référence tout en réparant un moteur de voiture. Ses mains sont occupées par des outils ou supportent son corps quand elle se penche dans le compartiment du moteur. L’espace du garage est bruyant, les coups et bourdonnement constants des outils rendant difficile l’utilisation de commandes vocales. Le point de regard et l’arrière-plan permet à la personne utilisant HoloLens de parcourir en toute confiance son document de référence sans interrompre son flux de travail. 
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -49,7 +49,7 @@ Le point de regard et le point de vue dans les scénarios où les mains d’une 
 
 **Éviter le « pointage du regard comme une arme »**
 
-Pour être intuitif, le modèle Suivre de la tête et stabiliser nécessite un retour visuel, mais trop de retour peut engendrer de l’anxiété. Le retour doit aider l’utilisateur à savoir ce qu’il cible, sans sélectionner automatiquement l’objet concerné contre son gré. L’utilisateur étant amené à lire du texte, des étiquettes et des icônes, vous devez faire en sorte qu’il dispose d’un espace suffisant pour absorber les informations avant d’effectuer une sélection.
+Pour être intuitif, le modèle Suivre de la tête et stabiliser nécessite un retour visuel, mais trop de retour peut engendrer de l’anxiété. Les commentaires doivent permettre à un utilisateur de savoir ce qu’il cible, mais pas de le sélectionner à son intention. Lors de la lecture de texte, d’icônes et d’étiquettes, vous devez fournir aux utilisateurs l’heure d’absorber les informations avant de les sélectionner.
     
 **Rechercher la vitesse idéale**
     
@@ -57,37 +57,38 @@ Les interactions avec stabilisation peuvent avoir différentes durées en foncti
     
 **Éviter l’effet yo-yo**
 
-L’effet yo-yo est un schéma désagréable de mouvement de la tête qui peut émerger quand la position des contrôles de contenu et de suivi de la tête et de stabilisation oblige l’utilisateur à regarder vers le haut et vers le bas de façon répétée. Par exemple, une liste de navigation avec le bouton en tête et le point d’interposition en bas de la liste donne une boucle de-regarde vers le bas, recherche les résultats, regarde jusqu’à son logement, etc. Ce modèle résultant est peu pratique et doit être évité en plaçant les contrôles de navigation dans un emplacement centralisé qui nécessite moins de sauvegarde et d’arrière-plan. Le placement des boutons de stabilisation par rapport à leurs effets est important pour le confort.
-
+L’effet yo-yo est un modèle de déplacement de la tête qui se produit lorsque les contrôles placement du contenu et point-Orient/logement forcent les utilisateurs à effectuer des recherches à plusieurs reprises. Par exemple, un point de la liste avec le bouton de tête et de pointage en haut en bas de la liste donne une boucle de-regarde vers le bas, recherche les résultats, regarde jusqu’à l’arrière, et ainsi de suite. Le modèle résultant n’est pas à l’aise. nous vous recommandons donc de placer les contrôles de navigation dans un emplacement centralisé qui nécessite moins d’arrière-plan. Le positionnement des boutons de logement en fonction de leurs effets devient important pour le confort.
+s
 <br>
 
 ---
 
-
 ## <a name="ux-guidelines-and-best-practices"></a>Recommandations et bonnes pratiques pour l’expérience utilisateur
 
 ### <a name="target-sizes"></a>Taille des cibles
-  Pour être facilement accessibles, les cibles du point de vue et du regard doivent être suffisamment grandes pour regarder confortablement et maintenir une tête stable sur la cible pour le temps imparti. Nous vous recommandons une taille de cible minimale de 2 degrés pour obtenir l’expérience la plus confortable. 
+
+Pour être facilement accessibles, les cibles du point de vue et du regard doivent être suffisamment grandes pour regarder confortablement et maintenir une tête stable sur la cible pour le temps imparti. Nous vous recommandons une taille de cible minimale de 2 degrés pour obtenir l’expérience la plus confortable. 
 
 ### <a name="visual-feedback"></a>Retour visuel
 
 Quand vous utilisez un remplissage radial pour représenter la durée de stabilisation, démarrez à partir du centre du bouton. Une réponse cohérente est plus claire que toutes les directions différentes sur les différents boutons. 
 
-  * Cette règle peut cependant être enfreinte pour les interactions directionnelles (par exemple, navigation vers le haut/bas/gauche/droite, etc.). Par exemple, Microsoft Dynamics 365 Guides fait une exception pour SUIVANT/PRECEDENT qui correspond aux remplissages gauche et droite.
-  * Envisagez d’inverser le remplissage radial à partir de l’extérieur pour les scénarios tels que la désactivation d’un bouton. Le sentiment inverse d’appui sur un bouton est un schéma visuel agréable à conserver. 
+  * Toutefois, cette règle peut être interrompue pour les interactions directionnelles (par exemple, navigation vers le haut/vers le haut/gauche/droite, etc.). Par exemple, Microsoft Dynamics 365 Guides fait une exception pour SUIVANT/PRECEDENT qui correspond aux remplissages gauche et droite.
+  * Envisagez d’inverser le remplissage radial à partir de l’extérieur, pour des scénarios tels que le basculement d’un bouton. Le sentiment inverse d’appui sur un bouton est un schéma visuel agréable à conserver. 
 
 ### <a name="progressive-disclosure"></a>Affichage progressif
 
-L’affichage progressif consiste à n’afficher que les informations pertinentes à chaque étape d’une interaction. Pour la stabilisation, cela signifie que la cible de stabilisation est affichée au moment de la mise en surbrillance (par exemple, dans un contrôle de liste).
+L’affichage progressif consiste à n’afficher que les informations pertinentes à chaque étape d’une interaction. Pour le son, cela signifie que la cible du logement est révélée en surbrillance (par exemple, dans un contrôle de liste).
 
  ### <a name="oversized-targets"></a>Cibles trop grandes
+
 La région de stabilisation peut être plus grande que l’icône à l’état inactif pour faciliter son utilisation, comme le bouton Précédent dans Microsoft Dynamics 365 Guides.
 
 ### <a name="prevent-flickering-with-delayed-feedback"></a>Éviter le scintillement avec un retour décalé
-Utilisez un court délai avant de démarrer le retour visuel afin d’éviter le scintillement quand l’utilisateur passe au-dessus d’une cible de stabilisation.
-* Pour les boutons qui sont interactifs fréquemment, laissez le délai très bref pour que l’application soit réactive.
-* Pour les boutons qui sont interactifs rarement, un délai plus long peut être approprié pour éviter que l’interface twitchy.
 
+Utilisez un court délai avant de démarrer le retour visuel afin d’éviter le scintillement quand l’utilisateur passe au-dessus d’une cible de stabilisation.
+* Pour les boutons qui sont interactifs fréquemment, conservez le délai pour que l’application soit réactive.
+* Pour les boutons qui sont interactifs rarement, un délai plus long peut être approprié pour éviter que l’interface twitchy.
 
 <br>
 
@@ -118,7 +119,8 @@ Utilisez un court délai avant de démarrer le retour visuel afin d’éviter le
 
 
 ### <a name="low-frequency-buttons"></a>Boutons à fréquence faible
-Les boutons à fréquence faible sont les boutons avec lesquels l’utilisateur n’interagit pas aussi régulièrement tout au long de l’application. À titre d’exemple, citons un bouton permettant d’accéder à un menu de paramètres ou d’effacer la totalité du travail.
+
+Les boutons à basse fréquence sont des boutons qui ne sont pas interactifs avec comme régulièrement dans l’application. À titre d’exemple, citons un bouton permettant d’accéder à un menu de paramètres ou d’effacer la totalité du travail.
 
 * Dans la mesure du possible, maintenez ces boutons hors du chemin emprunté par les suivis de la tête afin d’éviter une activation accidentelle. 
 
@@ -130,7 +132,7 @@ Les boutons à fréquence faible sont les boutons avec lesquels l’utilisateur 
 
 :::row:::
     :::column:::
-        Quand une action a un impact significatif, telle que le prélèvement d’une somme d’argent, la suppression d’un travail ou le démarrage d’un long processus, il est utile de vérifier que l’utilisateur a effectivement souhaité sélectionner le bouton lié à cette action.<br>
+        Lorsqu’une action a un impact significatif, comme le chargement de l’argent, la suppression d’un travail ou le démarrage d’un processus long, il est utile de confirmer qu’une personne est censée sélectionner un bouton.<br>
         <br>
         **Recommandations**<br>
   * Afficher la surbrillance de la sélection sur le bouton principal
@@ -149,7 +151,8 @@ Les boutons à fréquence faible sont les boutons avec lesquels l’utilisateur 
 ---
 
 ### <a name="toggle-buttons"></a>Boutons bascule
-Les boutons bascule nécessitent une logique nuancée pour fonctionner correctement. Quand l’utilisateur reste sur un bouton bascule et l’active, il doit quitter le bouton, puis revenir pour redémarrer la logique de stabilisation. Il est important que l’utilisateur puisse clairement identifier si un bouton bascule est à l’état actif ou inactif. 
+
+Les boutons bascule nécessitent une logique nuancée pour fonctionner correctement. Quand une personne se trouve sur un bouton bascule et l’active, elle doit quitter le bouton, puis revenir au redémarrage de la logique du logement. Il est important que les boutons bascule présentent l’état actif et inactif. 
 
 <br>
 
@@ -159,7 +162,7 @@ Les boutons bascule nécessitent une logique nuancée pour fonctionner correctem
 
 :::row:::
     :::column:::
-        Les affichages de liste présentent un défi particulier pour les entrées de point de vue et de point d’entrée. L’utilisateur doit être en mesure de balayer le contenu sans avoir le sentiment de devoir tâtonner autour des cibles de stabilisation.<br>
+        Les affichages de liste présentent un défi particulier pour les entrées de point de vue et de point d’entrée. Les utilisateurs peuvent analyser le contenu sans avoir à vous Tiptoe autour des cibles du logement.<br>
         <br>
 **Recommandations**<br>
   * Faites en sorte que la totalité de la ligne surbrille quand la tête est en regard, mais ne commence pas, sauf si le point de regard se trouve sur la cible d’un logement spécifique.
@@ -180,6 +183,7 @@ Les boutons bascule nécessitent une logique nuancée pour fonctionner correctem
 ---
  
  ## <a name="see-also"></a>Voir aussi
+
 * [Pointer et valider](gaze-and-commit.md)
 * [Mains : Manipulation directe](direct-manipulation.md)
 * [Mains : Mouvements](gaze-and-commit.md#composite-gestures)

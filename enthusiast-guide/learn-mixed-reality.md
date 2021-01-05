@@ -1,6 +1,6 @@
 ---
 title: Découvrir la réalité mixte
-description: Décrit comment exécuter l’application formation de la réalité mixte, qui vous apprend à utiliser et à parcourir Windows Mixed Reality.
+description: Décrit comment exécuter l’application apprendre à la réalité mixte et comment naviguer dans Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,24 +8,24 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, didacticiel, prise en main
 appliesto:
 - Windows 10
-ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132063"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726050"
 ---
 # <a name="learn-mixed-reality"></a>Découvrir la réalité mixte
 
 ## <a name="running-the-learning-experience-for-the-first-time"></a>Exécution de l’expérience d’apprentissage pour la première fois
 
-Une fois l’installation terminée, l’application portail de réalité mixte doit lancer une expérience immersive dans votre HMD appelée **apprendre à mélanger la réalité** pour vous apprendre à utiliser Windows Mixed Reality. Pointez le regard de la gemme dans l’écran de chargement pour commencer. Vous devez entendre la voix de Cortana dans votre casque, en vous donnant des instructions sur la marche à suivre.
+Une fois l’installation terminée, l’application portail de réalité mixte doit lancer une expérience immersive dans votre HMD appelée apprendre à la **réalité mixte**. Cette expérience immersive va vous apprendre à utiliser Windows Mixed Reality. Pointez le regard de la gemme dans l’écran de chargement pour commencer. Vous devez entendre la voix de Cortana dans votre casque, en vous donnant des instructions sur la marche à suivre.
 
 ![Découvrir la réalité mixte](images/file-learnmixedrealitystart.png)
 
-## <a name="re-run-the-learning-experience"></a>Réexécuter l’expérience d’apprentissage
+## <a name="rerun-the-learning-experience"></a>Réexécuter l’expérience d’apprentissage
 
-L’apprentissage de la réalité mixte est une application. L’application peut être lancée à tout moment à partir du menu Démarrer à partir de [votre page d’accueil de la réalité mixte](your-mixed-reality-home.md) . À l’aide de vos contrôleurs de mouvement ou du clavier :
+L’apprentissage de la réalité mixte est une application. L’application peut être lancée à tout moment à partir du menu Démarrer dans [votre foyer de réalité mixte](your-mixed-reality-home.md) . À l’aide de vos contrôleurs de mouvement ou du clavier :
 
 ### <a name="use-your-motion-controllers"></a>Utiliser vos contrôleurs de mouvement
 

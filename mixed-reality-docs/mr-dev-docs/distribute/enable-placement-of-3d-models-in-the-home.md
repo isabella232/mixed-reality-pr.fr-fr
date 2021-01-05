@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, modèle, place à la terre, lieu, monde, modélisation, Hébergement de réalité mixte, Web, application, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703185"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757807"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Permettre le placement d’objets 3D dans l’accueil réalité mixte
 
@@ -20,7 +20,7 @@ ms.locfileid: "94703185"
 
 La [base de la réalité Windows Mixed](../discover/navigating-the-windows-mixed-reality-home.md) est le point de départ où les utilisateurs se trouvent avant de lancer des applications. Dans certains scénarios, les applications 2D (comme l’application hologrammes) permettent de placer des modèles 3D directement dans l’espace de la réalité mixte en tant que décorations ou pour une inspection supplémentaire en 3D complet. Le *protocole Add Model* vous permet d’envoyer un modèle 3D à partir de votre site Web ou application directement dans la page d’hébergement Windows Mixed Reality, où il sera conservé comme les [lanceurs d’applications 3D](3d-app-launcher-design-guidance.md), les applications 2D et les hologrammes. 
 
-Par exemple, si vous développez une application qui couvre un catalogue de mobilier en 3D pour la conception d’un espace, vous pouvez utiliser le *protocole ajouter un modèle* pour permettre aux utilisateurs de placer ces modèles de mobilier 3D à partir du catalogue. Une fois placés dans le monde, les utilisateurs peuvent déplacer, redimensionner et supprimer ces modèles 3D comme d’autres hologrammes de la famille. Cet article fournit une vue d’ensemble de l’implémentation du *protocole Add Model* pour vous permettre de commencer à permettre aux utilisateurs de décorer leur monde avec des objets 3D à partir de votre application ou du Web.
+Par exemple, si vous développez une application qui couvre un catalogue de mobilier en 3D pour la conception d’un espace, utilisez le *protocole ajouter un modèle* pour permettre aux utilisateurs de placer ces modèles de mobilier 3D à partir du catalogue. Une fois placés dans le monde, les utilisateurs peuvent déplacer, redimensionner et supprimer ces modèles 3D comme d’autres hologrammes de la famille. Cet article fournit une vue d’ensemble de l’implémentation du *protocole Add Model* pour permettre aux utilisateurs de décorer leur monde avec des objets 3D à partir de votre application ou du Web.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -44,7 +44,7 @@ Par exemple, si vous développez une application qui couvre un catalogue de mobi
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Il existe 2 étapes pour activer le placement des modèles 3D dans la page d’hébergement de la réalité mixte de Windows :
+Il existe deux étapes pour activer le placement des modèles 3D dans la page d’hébergement de Windows Mixed Reality :
 1. [Vérifiez que votre modèle 3D est compatible avec la page d’hébergement Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md).
 2. Implémentez le *protocole Add Model* dans votre application ou votre page Web (cet article).
 
@@ -88,8 +88,8 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 
 ## <a name="considerations-for-immersive-vr-headsets"></a>Considérations relatives aux casques immersifs (VR)
 
-* Pour les casques immersifs, le portail de réalité mixte n’a pas besoin d’être en cours d’exécution avant d’appeler le *protocole Add Model*. Dans ce cas, le *protocole Add Model* lance le portail de réalité mixte et place l’objet directement là où le casque regarde une fois que vous arrivez dans la zone d’hébergement de la réalité mixte. 
-* Quand vous appelez le *protocole Add Model* à partir du bureau avec le portail de réalité mixte déjà en cours d’exécution, assurez-vous que le casque est « éveillé ». Si ce n’est pas le cas, le positionnement échoue. 
+* Pour les casques immersifs (VR), le portail de réalité mixte n’a pas besoin d’être en cours d’exécution avant d’appeler le *protocole Add Model*. Dans ce cas, le *protocole Add Model* lance le portail de réalité mixte et place l’objet directement là où le casque regarde une fois que vous arrivez dans la zone d’hébergement de la réalité mixte. 
+* Quand vous appelez le *protocole Add Model* à partir du bureau avec le portail de réalité mixte déjà en cours d’exécution, assurez-vous que le casque est « éveillé ». Si ce n’est pas le cas, l’emplacement ne fonctionnera pas. 
 
 ## <a name="see-also"></a>Voir aussi
 

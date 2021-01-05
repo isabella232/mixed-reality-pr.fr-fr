@@ -7,16 +7,16 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
 appliesto:
 - Windows 10
-ms.openlocfilehash: d6b37f8f6c964222b90fff57f0ba994c14fcaeab
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: dea2e81d53bfbb16a8803fc3f7c4e011741dfce6
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131963"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726000"
 ---
 # <a name="performance-faqs"></a>Questions fréquentes relatives aux performances
 
-## <a name="is-my-windows-mixed-reality-headset-rendering-at-60hz-or-90hz-framerate"></a>Le rendu du casque Windows Mixed Reality est-il à 60 Hz ou 90Hz
+## <a name="is-my-windows-mixed-reality-headset-rendering-at-60-hz-or-90-hz-framerate"></a>Le rendu du casque Windows Mixed Reality est-il à 60 Hz ou 90 Hz.
 
 Si vous disposez d’un GPU discret avec des ports HDMI 2,0 et un processeur avec quatre cœurs physiques ou plus, vous devez obtenir 90 Hz. Pour confirmer, sélectionnez le **portail de l’appareil > onglet performances** .
 
@@ -26,7 +26,7 @@ Remarque : les paramètres de qualité visuelle dans « affichage du casque �
 
 ## <a name="my-pc-is-running-slowly"></a>Mon PC fonctionne lentement
 
-Le système peut être lent pour de nombreuses raisons et, dans la plupart des cas, cela ne dure que quelques secondes. Si vous rencontrez ce problème sur de longues périodes de temps :
+Le système peut être lent pour de nombreuses raisons, en règle générale ne durer que quelques secondes. Si vous rencontrez ce problème sur de longues périodes de temps :
 
 1. Fermez toutes les applications inutilisées sur le bureau.
 2. Assurez-vous que votre ordinateur portable est branché à une source d’alimentation.
@@ -46,8 +46,8 @@ Le système peut être lent pour de nombreuses raisons et, dans la plupart des c
 * Assurez-vous que votre casque est branché à la bonne carte graphique sur votre PC. Certains PC ont des cartes graphiques intégrées et discrètes. La carte discrète offre généralement les meilleures performances. [En savoir plus sur le matériel PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
 * Fermez les applications inutilisées sur votre bureau.
 * Assurez-vous que votre casque est ajusté (déplacez-le vers le bas et vers le haut, ou à gauche et à droite pour ajuster).
-* Réglez les paramètres visuels de votre casque dans **paramètres > la réalité mixte > affichage du casque** . Lorsque la « qualité visuelle » est définie sur « automatique », l’expérience de réalité mixte pour votre ordinateur est sélectionnée automatiquement. Pour plus d’informations visuelles, définissez « qualité visuelle » sur « haute ». Si vos visuels sont saccadés, sélectionnez un paramètre inférieur.
-* Réglez le bouton d’étalonnage du casque pour vous assurer que les lentilles sont réglées sur la distance appropriée entre vos élèves (« IPD »). Si vous ne connaissez pas votre IPD, un Optometrist doit être en mesure de le mesurer pour vous ou d’utiliser un site Web conçu pour mesurer le IPD. Si le casque n’a pas de bouton d’étalonnage, sélectionnez **paramètres > réalité mixte > affichage du casque** et réglez le « contrôle d’étalonnage ».
+* Réglez les paramètres visuels de votre casque dans **paramètres > la réalité mixte > affichage du casque**. Lorsque la « qualité visuelle » est définie sur « automatique », l’expérience de réalité mixte pour votre ordinateur est sélectionnée automatiquement. Pour plus d’informations visuelles, définissez « qualité visuelle » sur « haute ». Si vos visuels sont saccadés, sélectionnez un paramètre inférieur.
+* Réglez le bouton d’étalonnage du casque pour vous assurer que les lentilles sont réglées sur la distance appropriée entre vos élèves (« IPD »). Si vous ne connaissez pas votre IPD, un Optometrist peut le mesurer pour vous ou utiliser un site Web conçu pour mesurer l’IPD. Si le casque n’a pas de bouton d’étalonnage, sélectionnez **paramètres > réalité mixte > affichage du casque** et réglez le « contrôle d’étalonnage ».
 * Si vous utilisez un adaptateur USB-C ou DisplayPort vers HDMI, essayez-en un autre. Voir les [adaptateurs recommandés.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 * Déconnectez les moniteurs supplémentaires qui peuvent être connectés à la carte graphique de votre PC.
 * Essayez différentes applications de réalité mixte à partir du Windows Store, certaines peuvent fonctionner mieux avec la configuration de votre ordinateur.

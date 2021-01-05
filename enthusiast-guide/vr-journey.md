@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR,
-ms.openlocfilehash: 9426a85611cf53a349ca5bc8f3727ee8a784940e
-ms.sourcegitcommit: a129039d8ed228ed0305aa312006cadf403f0831
+ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95417203"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725706"
 ---
 # <a name="start-your-vr-journey"></a>Commencer votre parcours de réalité virtuelle
 
@@ -19,11 +19,15 @@ ms.locfileid: "95417203"
 
 ## <a name="setup--usability-checkpoints"></a>Configurer les points de contrôle d’utilisation &
 
-Utilisez les points de contrôle suivants pour configurer, configurer et utiliser vos périphériques immersifs pour mettre vos applications et vos jeux à la vie.
+Utilisez les points de contrôle suivants pour installer, configurer et utiliser vos périphériques immersifs pour amener vos applications et vos jeux à vie.
 
 ### <a name="1-before-you-buy"></a>1. avant d’acheter
 
-Il est important que votre ordinateur puisse gérer le matériel VR que vous achetez afin de bénéficier de la meilleure expérience d’installation et d’utilisation. Dans certains cas, vous devrez peut-être commander des [adaptateurs ou du matériel](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)supplémentaires. Cette section vous guide tout au long des exigences de PC minimales, des vérifications de compatibilité et des questions fréquemment posées associées au matériel de réalité virtuelle.
+Votre ordinateur doit gérer le matériel VR que vous achetez pour bénéficier de la meilleure expérience d’installation et d’utilisation. Dans certains cas, vous devrez peut-être commander des [cartes ou du matériel](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)supplémentaires. Cette section vous guide à travers les étapes suivantes :
+
+* La configuration minimale requise pour le PC
+* Vérifications de compatibilité
+* Forum aux questions (FAQ) sur le matériel de réalité virtuelle
 
 <br>
 
@@ -48,16 +52,20 @@ Une fois que vous avez votre appareil, vous devez l’installer et le configurer
 
 ### <a name="3-using-windows-mixed-reality"></a>3. utilisation de Windows Mixed Reality
 
-Il existe un large éventail de fonctionnalités et de services disponibles par le biais de Windows Mixed Reality et des casques immersifs. À la fin de cette section, vous serez familiarisé avec la navigation dans l’environnement d’hébergement virtuel, l’utilisation de contrôleurs et de la parole comme entrées, ainsi que l’intégration de services et d’applications tels que SteamVR et WebVR.
+Il existe différents services et fonctionnalités disponibles via Windows Mixed Reality et les casques immersifs. À la fin de cette section, vous serez à l’aise :
+
+* Navigation dans l’environnement d’hébergement virtuel
+* Utilisation de contrôleurs et vocaux comme entrées
+* Intégration de services et d’applications comme SteamVR et WebVR.
 
 <br>
 
-|  Point de contrôle  |  Caractéristique  |
+|  Point de contrôle  |  Fonctionnalité  |
 | --- | --- |
 | [Découvrir la réalité mixte](learn-mixed-reality.md) | En savoir plus sur l’utilisation de vos entrées en regard, en voix, en contrôleurs et au clavier et à la souris |
 | [Naviguer dans la page d’hébergement Windows Mixed Reality](your-mixed-reality-home.md) | Explorez l’environnement virtuel de Windows Mixed Reality  |
 | [Utilisation de contrôleurs](controllers-in-wmr.md) | Configurer, comprendre et utiliser vos contrôleurs de mouvement |
-| [Utilisation d’entrées vocales](using-speech-in-wmr.md) | Familiarisez-vous avec de nombreuses commandes vocales qui peuvent interagir avec les objets 3D, la barre d’application, le menu Démarrer et Cortana. |
+| [Utilisation d’entrées vocales](using-speech-in-wmr.md) | Familiarisez-vous avec différentes commandes vocales qui peuvent interagir avec les objets 3D, la barre d’application, le menu Démarrer et Cortana |
 
 > [!NOTE]
 > Si vous rencontrez des problèmes avec les fonctionnalités ci-dessus, consultez le **[Forum aux questions sur l’utilisation de Windows Mixed Reality](using-wmr-faq.md)**.
@@ -68,7 +76,7 @@ Recherchez des jeux immersifs, des applications de bureau et du contenu VR dans 
 
 <br>
 
-|  Point de contrôle  |  Caractéristique  |
+|  Point de contrôle  |  Fonctionnalité  |
 | --- | --- |
 | [Jeux, vidéo 360 et applications](using-games-and-apps-in-windows-mixed-reality.md) | Commencez avec votre premier jeu immersif, les ardoises du Store 2D, les applications de bureau et les expériences WebVR |
 | [Utilisation de SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connectez votre appareil et jouez à SteamVR Games pour en savoir plus sur le programme Windows Insider |
@@ -81,9 +89,9 @@ Lorsque vous rencontrez des problèmes liés à votre matériel immersif, commen
  
 * [FAQ général](troubleshooting-windows-mixed-reality.md) 
 
-Si vous ne trouvez pas ce que vous cherchez, nous disposons d’une liste exhaustive de documents de FAQ spécifiques à une rubrique dans la section FAQ sur la **résolution des problèmes** qui couvrent tout, des codes d’installation et d’erreur jusqu’à l’affichage des performances et du casque. Si vous souhaitez en savoir plus sur le fonctionnement des fonctionnalités spécifiques en VR, consultez les articles sur le fonctionnement des [contrôleurs de mouvement](controllers-in-wmr.md) et du [suivi interne](tracking-system.md) .
+Si vous ne trouvez pas ce que vous cherchez, nous disposons d’une liste exhaustive de documents de FAQ spécifiques à une rubrique dans la section FAQ sur la **résolution des problèmes** , qui couvrent tout, des codes d’installation et d’erreur jusqu’à l’affichage des performances et du casque. Vous trouverez plus d’informations sur le fonctionnement de fonctionnalités spécifiques dans les articles sur le fonctionnement des [contrôleurs de mouvement](controllers-in-wmr.md) et du [suivi interne](tracking-system.md) .
 
-Nous sommes toujours à l’affût de nouveaux problèmes et bogues. par conséquent, si vous rencontrez des problèmes qui ne sont pas documentés, envoyez-nous [vos commentaires ici](filing-feedback.md).
+Nous sommes toujours à l’affût des nouveaux problèmes et bogues. par conséquent, si vous rencontrez des problèmes qui ne sont pas documentés, envoyez-nous [vos commentaires](filing-feedback.md).
 
 > [!NOTE]
 > Un historique complet de la version Windows Mixed Reality est disponible [ici](mixed-reality-software.md).

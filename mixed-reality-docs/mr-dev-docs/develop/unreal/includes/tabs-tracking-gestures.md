@@ -1,18 +1,35 @@
 ---
-ms.openlocfilehash: 50b56f6f081f682c3f3655e81aa492d84d254314
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6b9223481ed909961dbb88d03e4b55ef68448525
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002656"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717813"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+### <a name="windows-mixed-reality"></a>Windows Mixed Reality
+
+![Plan de la lecture de début d’événement connecté à la fonction de configuration des mouvements](../images/unreal-hand-tracking-img-09.png)
+
+Vous devez ensuite ajouter du code pour vous abonner aux événements suivants :
+
+![Plan de la conservation des entrées spatiales Windows, du robinet et des gestes de manipulation gauche ](../images/unreal/key-events.png)
+ ![ capture d’écran des options de mouvement d’entrée spatiale Windows dans le volet d’informations](../images/unreal/key-events2.png)
+
+### <a name="openxr"></a>OpenXR
+
+Dans OpenXR, les événements de mouvement sont suivis via le pipeline d’entrée. À l’aide de l’interaction manuelle, l’appareil peut reconnaître automatiquement les gestes TAP et Hold, mais pas les autres. Elles sont nommées en tant que mappages de sélection et de préhension OpenXRMsftHandInteraction. Vous n’avez pas besoin d’activer l’abonnement, vous devez déclarer les événements dans paramètres du projet/moteur/entrée, comme suit :
+
+![Capture d’écran des mappages d’actions OpenXR](../images/unreal-hand-tracking-img-12.png)
+
 # <a name="425"></a>[4.25](#tab/425)
 
 Vous pouvez trouver la fonction Blueprint dans sous **Windows Mixed Real Input spatial**, et la fonction C++ en ajoutant `WindowsMixedRealitySpatialInputFunctionLibrary.h` dans votre fichier de code appelant.
 
 ![Capturer les gestes](../images/unreal/capture-gestures.png)
 
-### <a name="enum"></a>Enum
+### <a name="enum"></a>Énumération
 <!-- Deprecated
 The `ESPatialInputAxisGestureType` enum describes spatial axis gestures and are [fully documented](../../out-of-scope/deprecated/holograms-211.md).
 -->
@@ -87,19 +104,3 @@ const FKey FSpatialInputKeys::RightNavigationYGesture(RightNavigationYGestureNam
 const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureName);
 ```
 
-# <a name="426"></a>[4.26](#tab/426)
-
-### <a name="windows-mixed-reality"></a>Windows Mixed Reality
-
-![Plan de la lecture de début d’événement connecté à la fonction de configuration des mouvements](../images/unreal-hand-tracking-img-09.png)
-
-Vous devez ensuite ajouter du code pour vous abonner aux événements suivants :
-
-![Plan de la conservation des entrées spatiales Windows, du robinet et des gestes de manipulation gauche ](../images/unreal/key-events.png)
- ![ capture d’écran des options de mouvement d’entrée spatiale Windows dans le volet d’informations](../images/unreal/key-events2.png)
-
-### <a name="openxr"></a>OpenXR
-
-Dans OpenXR, les événements de mouvement sont suivis via le pipeline d’entrée. À l’aide de l’interaction manuelle, l’appareil peut reconnaître automatiquement les gestes TAP et Hold, mais pas les autres. Elles sont nommées en tant que mappages de sélection et de préhension OpenXRMsftHandInteraction. Vous n’avez pas besoin d’activer l’abonnement, vous devez déclarer les événements dans paramètres du projet/moteur/entrée, comme suit :
-
-![Capture d’écran des mappages d’actions OpenXR](../images/unreal-hand-tracking-img-12.png)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, compatible, compatibilité, prise en main, configuration, PC, configuration système requise
 appliesto:
 - Windows 10
-ms.openlocfilehash: 84001a46826ada06e315f1707ee9516c3da063bd
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: f4743b6548def227675944fcd742b1596963cb3c
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434575"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725490"
 ---
 # <a name="before-you-start"></a>Avant de commencer
 
@@ -29,9 +29,9 @@ ms.locfileid: "92434575"
 
 ## <a name="make-sure-your-pc-is-compatible-with-windows-mixed-reality"></a>Assurez-vous que votre ordinateur est compatible avec Windows Mixed Reality
 
-Pour voir si votre ordinateur est compatible avec Windows Mixed Reality, vérifiez la [Configuration matérielle PC minimale requise pour Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) ou exécutez le [portail Windows Mixed Reality](install-windows-mixed-reality.md#launch-mixed-reality-portal) sur votre PC.
+Vérifiez la [Configuration matérielle requise pour le PC Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) ou exécutez le [portail Windows Mixed Reality](install-windows-mixed-reality.md#launch-mixed-reality-portal) sur votre PC pour vérifier la compatibilité avec Windows Mixed Reality.
 
-Pour plus d’informations sur les problèmes de compatibilité des PC, cliquez [ici](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality).
+Pour plus d’informations, consultez [problèmes de compatibilité](https://support.microsoft.com/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality) avec les PC.
 
 ## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>Vérifiez que la version 1709 ou une version ultérieure de Windows 10 est installée
 
@@ -46,15 +46,15 @@ Pour voir la version de Windows 10 que votre appareil est en cours d’exécutio
 
 Pour vous assurer que Windows 10 est à jour sur votre ordinateur, sélectionnez le bouton **Démarrer** , puis sélectionnez **paramètres > mettre à jour & sécurité > Windows Update**.  Sélectionnez **Rechercher des mises à jour**. Si des mises à jour sont disponibles, installez-les.
 
-Pour plus d’informations sur la façon de maintenir votre ordinateur à jour, cliquez [ici](https://support.microsoft.com/en-us/help/12373/windows-update-faq)
+Pour plus d’informations, consultez [garder votre PC à jour](https://support.microsoft.com/help/12373/windows-update-faq) .
 
 ## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>Vérifier que votre ordinateur est connecté à Internet
 
-Vérifiez que votre ordinateur est connecté à Internet. Vous devrez télécharger des pilotes et d’autres logiciels supplémentaires pour que Windows Mixed realisation soit opérationnel.
+Vérifiez que votre ordinateur est connecté à Internet et téléchargez les pilotes et les logiciels supplémentaires pour que Windows Mixed realisation fonctionne.
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Vérifiez que vous disposez d’un pilote graphique compatible.
 
-Votre ordinateur doit disposer d’un pilote graphique WDDM 2,2 ou version ultérieure pour pouvoir effectuer l’installation de Windows Mixed Reality. Si ce n’est pas déjà le cas, essayez les sources suivantes :
+Votre ordinateur a besoin d’un pilote graphique WDDM 2,2 ou version ultérieure pour terminer l’installation de Windows Mixed Reality. Si le pilote graphique n’est pas encore compatible, essayez les sources suivantes :
 
 * Recherchez les dernières mises à jour de pilotes critiques à l’aide de Windows Update (**> paramètres Windows > mise à jour et sécurité > vérification des mises à jour**)
 * Recherchez les dernières mises à jour de pilote facultatives :
@@ -66,7 +66,7 @@ Votre ordinateur doit disposer d’un pilote graphique WDDM 2,2 ou version ulté
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>Assurez-vous que vous disposez des adaptateurs requis
 
-Il se peut que votre PC compatible Windows Mixed Reality ne dispose pas des ports HDMI et USB 3,0 de taille intégrale nécessaires pour connecter votre casque immersif. Ou vous aurez peut-être besoin d’un adaptateur Bluetooth pour répondre aux exigences du portail Windows Mixed Reality.  Si c’est le cas, vous aurez besoin d’adaptateurs pour connecter votre casque et vos contrôleurs de mouvement. Veillez à consulter la liste des [types d’adaptateurs dont vous pouvez avoir besoin, ainsi que certaines recommandations sur des modèles d’adaptateur spécifiques](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+Il se peut que votre PC compatible Windows Mixed Reality ne dispose pas des ports HDMI et USB 3,0 de taille intégrale nécessaires pour connecter votre casque immersif. Vous pouvez également avoir besoin d’un adaptateur Bluetooth pour répondre aux exigences du portail Windows Mixed Reality.  Si c’est le cas, vous aurez besoin d’adaptateurs pour connecter votre casque et vos contrôleurs de mouvement. Veillez à consulter la liste des [types d’adaptateurs et des recommandations sur des modèles d’adaptateur spécifiques](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Vérifiez que vous avez des périphériques d’entrée.
 
@@ -78,11 +78,11 @@ Si vous souhaitez vous déplacer tout en utilisant Windows Mixed Reality, vous d
 
 ### <a name="seated-and-standing-no-boundary"></a>Assis et debout (aucune limite)
 
-Si vous sélectionnez « assis et debout », vous utiliserez votre casque sans limite. Cela signifie que vous devez rester en un seul endroit lors de l’utilisation du casque, afin de pouvoir éviter les obstacles physiques et le déclenchement des dangers. Vous pouvez vous asseoir, mais vous ne devez pas vous déplacer. Certaines applications peuvent être conçues pour fonctionner avec une limite. vous ne pourrez peut-être pas les utiliser ou ne pas avoir la même expérience, si vous les utilisez sans limite.
+Si vous sélectionnez « assis et debout », vous utiliserez votre casque sans limite. Cela signifie que vous devez rester sur un seul endroit lorsque vous utilisez le casque pour éviter les obstacles physiques et les risques de déclenchement. Vous pouvez vous asseoir, mais vous ne devez pas vous déplacer. Certaines applications peuvent être conçues pour fonctionner avec une limite, de sorte qu’elles ne fonctionnent pas ou ne fournissent pas la même expérience si vous les utilisez sans une.
 
 ### <a name="all-experiences-boundary"></a>Toutes les expériences (limite)
 
-Si vous choisissez « toutes les expériences », vous configurerez une limite et vous serez en mesure de vous déplacer et d’utiliser les applications et les expériences qui fonctionnent avec une limite, ainsi que celles qui n’en ont pas besoin. Vous devez préparer votre espace pour vous assurer qu’il n’y a pas d’obstacles, de dangers ou d’éléments fragiles dans le domaine que vous utiliserez (y compris au-dessus de votre tête). Ne pas configurer en haut d’un escalier ou sous un ventilateur à plafond très faible. Retirez les breakables et les obstacles de la zone, et assurez-vous que vous et toute personne qui utilise votre casque lisent et comprennent les [consignes de sécurité](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort).
+Si vous choisissez « toutes les expériences », vous allez configurer une limite et être en mesure de vous déplacer autour des expériences d’application qui fonctionnent avec une limite et celles qui n’en ont pas besoin. Préparez votre espace en vous assurant qu’il n’y a pas d’obstacles, de dangers ou d’éléments fragiles dans le domaine que vous utiliserez, y compris au-dessus de votre tête. Ne pas configurer en haut d’un escalier ou sous un ventilateur à plafond très faible. Supprimez les breakables et les obstacles de la zone, et assurez-vous que tous les utilisateurs de votre casque lisent et comprennent les [consignes de sécurité](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort).
 
 ## <a name="see-also"></a>Voir aussi
 

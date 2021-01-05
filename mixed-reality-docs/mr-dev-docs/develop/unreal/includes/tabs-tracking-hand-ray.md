@@ -1,11 +1,19 @@
 ---
-ms.openlocfilehash: 23bba22801f61f6b4814991c8b3bde68d2c5f6b7
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002696"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97718104"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+Pour obtenir les données des rayons de la main, vous devez utiliser la fonction de données obtenir le contrôleur de mouvement de la section précédente. La structure retournée contient deux paramètres que vous pouvez utiliser pour créer un rayon **et une** **rotation AIM**. Ces paramètres forment un rayon dirigé par votre coude. Vous devez les prendre et trouver un hologramme pointé par.
+
+Voici un exemple qui montre comment déterminer si un rayon de main atteint un widget et comment définir un résultat d’accès personnalisé :
+
+![Plan de la fonction de données de l’extraction de contrôle de mouvement](../images/unreal-hand-tracking-img-04.png) 
+
 # <a name="425"></a>[4.25](#tab/425)
 
 Pour utiliser des rayons de main dans des plans, recherchez l’une des actions sous **Windows Mixed Reality HMD**:
@@ -14,7 +22,7 @@ Pour utiliser des rayons de main dans des plans, recherchez l’une des actions 
 
 Pour y accéder en C++, incluez- `WindowsMixedRealityFunctionLibrary.h` le au début de votre fichier de code appelant.
 
-### <a name="enum"></a>Enum
+### <a name="enum"></a>Énumération
 
 Vous avez également accès aux cas d’entrée sous **EHMDInputControllerButtons**, qui peuvent être utilisés dans les projets :
 
@@ -138,10 +146,3 @@ C++ :
 ```cpp
 static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrackingStatus(EControllerHand hand);
 ```
-# <a name="426"></a>[4.26](#tab/426)
-
-Pour obtenir les données des rayons de la main, vous devez utiliser la fonction de données obtenir le contrôleur de mouvement de la section précédente. La structure retournée contient deux paramètres que vous pouvez utiliser pour créer un rayon **et une** **rotation AIM**. Ces paramètres forment un rayon dirigé par votre coude. Vous devez les prendre et trouver un hologramme pointé par.
-
-Voici un exemple qui montre comment déterminer si un rayon de main atteint un widget et comment définir un résultat d’accès personnalisé :
-
-![Plan de la fonction de données de l’extraction de contrôle de mouvement](../images/unreal-hand-tracking-img-04.png) 

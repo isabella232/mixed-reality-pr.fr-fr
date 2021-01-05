@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, portail des appareils Windows, API, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
+ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677968"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97804431"
 ---
 # <a name="device-portal-api-reference"></a>Informations de référence sur les API du portail d’appareil
 
@@ -388,6 +388,9 @@ Paramètres
 Arrête l’enregistrement de la réalité mixte actuelle
 
 ## <a name="mixed-reality-streaming"></a>Diffusion en continu de la réalité mixte
+
+> [!CAUTION]
+> En raison de l’isolement de bouclage, vous ne pouvez pas vous connecter à la réalité mixte en continu à partir d’une application sur un appareil.
 
 HoloLens prend en charge l’aperçu instantané de la réalité mixte via le téléchargement segmenté d’un MP4 fragmenté.
 

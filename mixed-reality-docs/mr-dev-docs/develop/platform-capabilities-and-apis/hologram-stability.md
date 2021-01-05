@@ -8,12 +8,12 @@ ms.topic: article
 keywords: hologrammes, stabilité, hololens, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, fréquence d’images, rendu, reprojection, séparation des couleurs
 appliesto:
 - HoloLens
-ms.openlocfilehash: 345ba3608b77ed4d7b493985903295f5ee3f4863
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
+ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530428"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808830"
 ---
 # <a name="hologram-stability"></a>Stabilité des hologrammes
 
@@ -91,14 +91,14 @@ Il existe quatre types principaux de reprojection
 Les applications doivent prendre des mesures spécifiques pour activer les différents types de reprojection
 * **Reprojection de profondeur :** L’application soumet son tampon de profondeur au système pour chaque frame rendu.  Sur Unity, la reprojection de profondeur s’effectue à l’aide de l’option de **mémoire tampon de profondeur partagée** dans le volet **Windows Mixed Reality Settings** sous **gestion du plug-in XR**.  Les applications DirectX appellent CommitDirect3D11DepthBuffer.  L’application ne doit pas appeler SetFocusPoint.
 * **Reprojection planaire :** Sur chaque image, les applications indiquent au système l’emplacement d’un plan à stabiliser.  Les applications Unity appellent SetFocusPointForFrame et doivent avoir une **mémoire tampon de profondeur partagée** désactivée.  Les applications DirectX appellent SetFocusPoint et ne doivent pas appeler CommitDirect3D11DepthBuffer.
-* **Reprojection plan automatique :** Pour activer, l’application doit envoyer son tampon de profondeur au système comme pour la reprojection de profondeur.  Sur HoloLens 2, l’application doit ensuite SetFocusPoint avec un point de 0, 0 pour chaque trame.  Pour la génération de HoloLens 1, l’application ne doit pas appeler SetFocusPoint.
+* **Reprojection plan automatique :** Pour activer, l’application doit envoyer son tampon de profondeur au système comme pour la reprojection de profondeur. Les applications qui utilisent la boîte à outils de la réalité mixte (MRTK) peuvent configurer le [fournisseur de paramètres d’appareil photo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) pour qu’il utilise la reprojection autoplanaire. Les applications natives doivent définir le `DepthReprojectionMode` [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) sur `AutoPlanar` chaque frame. Pour la génération de HoloLens 1, l’application ne doit pas appeler SetFocusPoint.
 
 ### <a name="choosing-reprojection-technique"></a>Choix de la technique de reprojection
 
 Type de stabilisation |    Casques immersifs |    Génération HoloLens 1 | HoloLens 2
 --- | --- | --- | ---
-Reprojection de profondeur |    Recommandé |   NON APPLICABLE |   Recommandé<br/><br/>Les applications Unity doivent utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure. Sinon, utilisez la reprojection automatique planaire.
-Reprojection plan automatique | NON APPLICABLE |   Valeur par défaut recommandée |   Recommandé si la reprojection de profondeur ne donne pas les meilleurs résultats<br/><br/>Les applications Unity sont recommandées pour utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure.  Les versions d’Unity précédentes fonctionnent avec des résultats de reprojection légèrement dégradés.
+Reprojection de profondeur |    Recommandé |   N/A |   Recommandé<br/><br/>Les applications Unity doivent utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure. Sinon, utilisez la reprojection automatique planaire.
+Reprojection plan automatique | N/A |   Valeur par défaut recommandée |   Recommandé si la reprojection de profondeur ne donne pas les meilleurs résultats<br/><br/>Les applications Unity sont recommandées pour utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure.  Les versions d’Unity précédentes fonctionnent avec des résultats de reprojection légèrement dégradés.
 Reprojection planaire |   Non recommandé |   Recommandé si le plan automatique ne donne pas les meilleurs résultats | Utilisez si aucune des options de profondeur ne donne les résultats souhaités    
 
 ### <a name="verifying-depth-is-set-correctly"></a>La précision de la vérification est définie correctement
@@ -144,7 +144,7 @@ La seule chose la plus importante qu’un développeur puisse faire pour stabili
 
 **Meilleures pratiques** Il n’existe pas de méthode universelle pour configurer le plan de stabilisation et il est spécifique à l’application. Notre recommandation principale est d’expérimenter et de voir ce qui convient le mieux à votre scénario. Toutefois, essayez d’aligner le plan de stabilisation avec autant de contenu que possible, car tout le contenu de ce plan est parfaitement stabilisé.
 
-Par exemple :
+Exemple :
 * Si vous disposez uniquement d’un contenu planaire (lecture de l’application de lecture vidéo), alignez le plan de stabilisation avec le plan qui contient votre contenu.
 * Si trois petites sphères sont verrouillées dans le monde, faites en sorte que le plan de stabilisation soit « coupé » par le biais des centres de tous les sphères actuellement dans la vue de l’utilisateur.
 * Si votre scène a du contenu à des profondeurs sensiblement différentes, privilégiez les autres objets.

@@ -1,63 +1,62 @@
 ---
 title: Bouton
-description: Un bouton permet à l’utilisateur de déclencher une action immédiate. Il s’agit de l’un des composants les plus fondamentaux de la réalité mixte.
+description: Découvrez comment déclencher une action immédiate avec des boutons, qui est l’un des composants fondamentaux de la réalité mixte.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, bouton
-ms.openlocfilehash: c5e52bef8604ba4874b7f4b055107ec0db6b3683
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702855"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847591"
 ---
 # <a name="button"></a>Button
 
 ![Button](images/UX_Hero_Button.jpg)
 
-Un bouton permet à l’utilisateur de déclencher une action immédiate. Il s’agit de l’un des composants les plus fondamentaux de la réalité mixte. Dans HoloLens 2, un bouton a de nombreux signaux visuels et intuitivité pour augmenter la confiance de l’utilisateur. 
-
+Un bouton permet à vos utilisateurs de déclencher des actions immédiates dans une expérience de réalité mixte. Dans HoloLens 2, les boutons ont des signaux visuels et des intuitivité qui permettent d’accroître la confiance de l’interaction avec les utilisateurs. 
 
 :::row:::
     :::column:::
-       ![Déplacer](images/UX_Button_Affordance_ProximityLight.jpg)<br>
+       ![Bouton avec effet d’éclairage de proximité indiqué](images/UX_Button_Affordance_ProximityLight.jpg)<br>
        **Lumière de proximité**<br>
     :::column-end:::
     :::column:::
-       ![Faire pivoter](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
+       ![Bouton sélectionné avec l’effet de surbrillance Focus affiché](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
         **Sélection du focus**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       ![Déplacer](images/UX_Button_Affordance_Compression.jpg)<br>
+       ![Bouton enfoncé avec l’effet de bâti de compression affiché](images/UX_Button_Affordance_Compression.jpg)<br>
        **Compression du boîtier**<br>
     :::column-end:::
     :::column:::
-       ![Faire pivoter](images/UX_Button_Affordance_Pulse.jpg)<br>
+       ![Bouton enfoncé avec l’effet d’impulsion de déclenchement affiché](images/UX_Button_Affordance_Pulse.jpg)<br>
         **Impulsion sur le déclencheur**<br>
     :::column-end:::
 :::row-end:::
 
 <br>
 
-
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Bouton dans MRTK (ensemble d’outils de réalité mixte) pour Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit différents types de prefabs de bouton. Vous pouvez trouver des boutons de style Shell pour HoloLens 2 et HoloLens (1re génération), ainsi que des exemples personnalisés. Le bouton HoloLens 2 Prefab contient un grand nombre de intuitivité détaillés qui contribuent à améliorer la confiance de l’utilisateur. Il comprend une mise en surbrillance basée sur la proximité, la compression du boîtier avant et un effet d’impulsion sur le déclencheur.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit différents types de prefabs Button, y compris les boutons de style Shell pour hololens 2 et hololens (1re génération). Le bouton HoloLens 2 Prefab contient plusieurs intuitivité détaillés qui permettent d’améliorer la confiance de l’utilisateur :
 
-* [MRTK-bouton](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* Surbrillance basée sur la proximité
+* Compression de la cage avant
+* Effet d’impulsion sur le déclencheur.
 
-
+* Pour obtenir des instructions et des exemples personnalisés, consultez le [bouton MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) .
 
 <br>
 
 ---
-
 
 ## <a name="see-also"></a>Voir aussi
 

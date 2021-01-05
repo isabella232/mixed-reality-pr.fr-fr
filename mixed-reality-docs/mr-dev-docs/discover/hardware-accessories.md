@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
 keywords: Guide pratique, accessoires, Bluetooth, BT, contrôleur, boîtier de commande, clic, Xbox, matériel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, contrôleur de mouvement
-ms.openlocfilehash: 3855d5337c4cad462b60ff8c73cec0b7b96c0ca1
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: aaed865f3fd2f722ce287bd2362299f785af05dc
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702005"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757717"
 ---
 # <a name="hardware-accessories"></a>Accessoires matériels
 
-Les appareils Windows Mixed Reality prennent en charge les accessoires. Vous pouvez utiliser Bluetooth ou USB pour coupler les accessoires pris en charge à un casque immersif en utilisant le PC auquel il est connecté.
+Les appareils Windows Mixed Reality prennent en charge les accessoires. Vous pouvez utiliser des ports Bluetooth ou USB pour coupler des accessoires pris en charge à un casque immersif de votre PC.
 
 Pour plus d’informations sur l’utilisation des accessoires Bluetooth avec HoloLens, consultez [se connecter à des appareils Bluetooth et USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).
 
@@ -28,13 +28,13 @@ Le couplage d’un périphérique Bluetooth à un casque immersif est semblable 
 1. Dans le menu Démarrer, ouvrez l’application **paramètres** .
 2. Accéder aux **appareils**
 3. Activer la radio Bluetooth si elle est désactivée à l’aide du commutateur Slider
-4. Mettez votre appareil Bluetooth en mode d’appariement. Cela varie d’un appareil à l’appareil. Sur la plupart des appareils Bluetooth, cette opération s’effectue en appuyant sur un ou plusieurs boutons.
+4. Mettez votre appareil Bluetooth en mode d’appariement. Ce processus varie d’un appareil à l’autre, mais sur la plupart des appareils Bluetooth, appuyez sur un ou plusieurs boutons et maintenez-le enfoncé.
 5. Attendez que le nom de l’appareil apparaisse dans la liste des périphériques Bluetooth. Dans ce cas, sélectionnez l’appareil, puis sélectionnez le bouton de **paire** . Si vous avez de nombreux périphériques Bluetooth à proximité, vous devrez peut-être faire défiler vers le bas de la liste des appareils Bluetooth pour voir l’appareil que vous essayez de coupler.
-6. Lorsque vous associez des périphériques Bluetooth à une capacité d’entrée (par exemple, des claviers Bluetooth), un code pin à 6 ou 8 chiffres peut s’afficher. Veillez à taper cette broche sur le périphérique, puis appuyez sur entrée pour terminer le jumelage avec le casque.
+6. Lorsque vous associez des périphériques Bluetooth à la capacité d’entrée (par exemple : claviers Bluetooth), un code pin à 6 ou 8 chiffres peut s’afficher. Veillez à taper cette broche sur le périphérique, puis appuyez sur entrée pour terminer le jumelage avec le casque.
 
 ## <a name="motion-controllers"></a>Contrôleurs de mouvement
 
-Les [contrôleurs de mouvement](../design/motion-controllers.md) Windows Mixed Reality sont pris en charge par les casques immersifs, mais pas HoloLens. Ces contrôleurs offrent un suivi précis et réactif des mouvements dans votre champ de vue à l’aide des capteurs du casque immersif, ce qui signifie qu’il n’est pas nécessaire d’installer le matériel sur les murs de votre espace. Chaque contrôleur est doté de plusieurs méthodes d’entrée.
+Les [contrôleurs de mouvement](../design/motion-controllers.md) Windows Mixed Reality sont pris en charge par les casques immersifs, mais pas HoloLens. Ces contrôleurs offrent un suivi des mouvements précis et réactif dans votre champ de vue. Les capteurs du casque immersif effectuent le suivi, ce qui signifie qu’il n’est pas nécessaire d’installer le matériel sur les murs de votre espace. Chaque contrôleur est doté de plusieurs méthodes d’entrée.
 
 ![Contrôleurs de mouvement Windows Mixed Reality](../design/images/winmr-ck-1080x1080-350px.jpg)
 
@@ -46,19 +46,19 @@ Les claviers Bluetooth de l’anglais QWERTY peuvent être couplés et utilisés
 
 Vous pouvez utiliser un contrôleur avec des applications et des jeux qui activent spécifiquement la prise en charge du boîtier de commande. Les boîtiers de commande ne peuvent pas être utilisés pour contrôler l’interface utilisateur HoloLens.
 
-Les contrôleurs Xbox Wireless livrés avec la Xbox One ou vendus comme accessoires pour la Xbox One S disposent d’une connectivité Bluetooth qui leur permet d’être utilisés avec HoloLens et des casques immersifs. Le contrôleur sans fil Xbox [doit être mis à jour](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) avant de pouvoir être utilisé avec HoloLens.
+Les contrôleurs Xbox Wireless livrés avec la Xbox One ou vendus comme accessoires pour la Xbox One S disposent d’une connectivité Bluetooth. vous pouvez donc les utiliser avec HoloLens et des casques immersifs. Le contrôleur sans fil Xbox [doit être mis à jour](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) avant de pouvoir être utilisé avec HoloLens.
 
 D’autres marques de manette Bluetooth peuvent fonctionner avec des appareils Windows Mixed Reality, mais la prise en charge varie selon l’application.
 
 ## <a name="other-bluetooth-accessories"></a>Autres accessoires Bluetooth
 
-Tant que le périphérique prend en charge les profils HID Bluetooth ou GATT, il sera en mesure de s’associer à HoloLens. Les autres périphériques HID et du GATT Bluetooth, en plus du clavier, de la souris et du module de clic de l’appareil HoloLens, peuvent nécessiter une application complémentaire sur Microsoft HoloLens pour être entièrement fonctionnelle.
+Tant que le périphérique prend en charge les profils HID Bluetooth ou GATT, il peut être associé à HoloLens. Les autres périphériques HID et du GATT Bluetooth, en plus du clavier, de la souris et du module de clic de l’appareil HoloLens, peuvent nécessiter une application complémentaire sur Microsoft HoloLens pour être entièrement fonctionnelle.
 
 Les périphériques non pris en charge sont les suivants :
 
 * Les périphériques dans les profils audio Bluetooth ne sont pas pris en charge.
-* Les périphériques audio Bluetooth, tels que les haut-parleurs et les casques, peuvent apparaître comme étant disponibles dans l’application paramètres, mais ne sont pas pris en charge pour être utilisés avec Microsoft HoloLens comme point de terminaison audio.
-* Les téléphones et les PC compatibles Bluetooth ne sont pas pris en charge pour le transfert de fichiers.
+* Les périphériques audio Bluetooth, tels que les haut-parleurs et les casques, peuvent être disponibles dans l’application paramètres, mais ne sont pas pris en charge avec Microsoft HoloLens comme point de terminaison audio.
+* Les téléphones et les PC compatibles Bluetooth ne sont pas pris en charge pour le jumelage et les transferts de fichiers.
 
 ## <a name="unpairing-a-bluetooth-peripheral"></a>Découplage d’un périphérique Bluetooth
 

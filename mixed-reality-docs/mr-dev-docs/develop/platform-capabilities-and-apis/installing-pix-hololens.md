@@ -6,18 +6,18 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, capture, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
+ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530451"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97822926"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Installation de PIX pour HoloLens 2
 
 [Pix](https://devblogs.microsoft.com/pix) est un outil de réglage et de débogage des performances pour les applications DirectX 12 sur Windows. 
 
-## <a name="setup"></a>Installation
+## <a name="setup"></a>Programme d’installation
 
 1. Prenez la version la plus récente de la [version]( https://devblogs.microsoft.com/pix/download) pix de votre ordinateur hôte et connectez votre HoloLens 2 à votre PC via un câble USB.
 
@@ -25,7 +25,7 @@ ms.locfileid: "97530451"
 
 3. Activer le **mode développeur** et le **portail des appareils**:
 
-* Ouvrir les **paramètres** à partir de l’interpréteur de commandes :
+* Ouvrir les **paramètres** de la page d’hébergement de la réalité mixte :
 
 ![Capture d’écran du menu HoloLens avec le bouton paramètres mis en surbrillance](images/pix-img-01.jpg)
 

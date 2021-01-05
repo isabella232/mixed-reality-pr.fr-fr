@@ -1,60 +1,11 @@
 ---
-ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: eb51caa4caf0d425b5e49c3abca2a523b08fc312
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609604"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97718089"
 ---
-# <a name="425"></a>[4.25](#tab/425)
-
-## <a name="render-from-the-pv-camera-for-mrc"></a>Affichage à partir de l’appareil photo/vidéo pour la capture de Réalité Mixte
-
-> [!NOTE]
-> Cela nécessite **Unreal Engine 4.25** ou ultérieur.
-
-Le système et les enregistreurs personnalisés créent des captures de réalité mixte en combinant la caméra PV à des hologrammes affichés par l’application.
-
-Par défaut, la capture de Réalité Mixte utilise la sortie holographique de l’œil droit. Si une application immersive choisit d’être [affichée à partir de la caméra PV](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), ce mode de rendu est utilisé à la place. Le rendu à partir de la caméra PV améliore le mappage entre le monde réel et les hologrammes dans la vidéo de capture de réalité mixte.
-
-Pour choisir le rendu à partir de la caméra PV :
-
-1. Appelez **SetEnabledMixedRealityCamera** et **ResizeMixedRealityCamera**
-    * Utilisez les valeurs de taille **Size X** et **Size Y** pour définir les dimensions de la vidéo.
-
-![Troisième caméra](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
-
-Unreal va ensuite gérer les requêtes de capture de Réalité Mixte pour effectuer le rendu du point de vue de l’appareil photo/vidéo.
-
-> [!NOTE]
-> C’est seulement quand la [capture de Réalité Mixte](../../../mixed-reality-capture.md) est déclenchée qu’il est demandé à l’application de s’afficher du point de vue de l’appareil photo/vidéo.
-
-## <a name="using-the-pv-camera"></a>Utilisation de l’appareil photo/vidéo
-
-La texture de la webcam peut être récupérée dans le jeu au moment de l’exécution. Toutefois, vous devez l’activer dans l’éditeur **Edit > Project Settings** (Modifier > Paramètres du projet) :
-1. Accédez à **Platforms > HoloLens > Capabilities** (Plateformes > HoloLens > Fonctionnalités), puis cochez **Webcam**.
-    * Utilisez la fonction **StartCameraCapture** pour utiliser la webcam au moment de l’exécution, et la fonction **StopCameraCapture** pour arrêter l’enregistrement.
-
-![Démarrer/Arrêter la caméra](../images/unreal-camera-startstop.PNG)
-
-## <a name="rendering-an-image"></a>Affichage d’une image
-Pour afficher l’image de l’appareil photo :
-1. Créez une instance de matériau dynamique basée sur un matériau du projet, nommé **PVCamMat** dans la capture d’écran ci-dessous.  
-2. Définissez l’instance de matériau dynamique sur une variable **Material Instance Dynamic Object Reference**.  
-3. Définissez le matériau de l’objet de la scène qui affichera le flux de l’appareil sur cette nouvelle instance de matériau dynamique.
-    * Démarrez un minuteur qui sera utilisé pour lier l’image de l’appareil au matériau.
-
-![Rendu de la caméra](../images/unreal-camera-render.PNG)
-
-4. Créez une fonction pour ce minuteur, dans ce cas **MaterialTimer**, puis appelez **GetARCameraImage** pour obtenir la texture à partir de la webcam.  
-5. Si la texture est correcte, définissez un paramètre de texture dans le nuanceur de cette image.  Sinon, redémarrez le minuteur de matériau.
-
-![Texture de la caméra à partir de la webcam](../images/unreal-camera-texture.PNG)
-
-5. Vérifiez que le matériau a un paramètre correspondant au nom indiqué dans **SetTextureParameterValue**, qui est lié à une entrée de couleur. Sans ce paramètre, l’image de la caméra ne peut pas s’afficher correctement.
-
-![Texture de la caméra](../images/unreal-camera-material.PNG)
-
 # <a name="426"></a>[4.26](#tab/426) 
 
 ## <a name="pv-camera-feed-setup"></a>Configuration du flux de la caméra PV
@@ -221,4 +172,53 @@ void ACamCapture::Tick(float DeltaTime)
     }
 }
 ```
+
+# <a name="425"></a>[4.25](#tab/425)
+
+## <a name="render-from-the-pv-camera-for-mrc"></a>Affichage à partir de l’appareil photo/vidéo pour la capture de Réalité Mixte
+
+> [!NOTE]
+> Cela nécessite **Unreal Engine 4.25** ou ultérieur.
+
+Le système et les enregistreurs personnalisés créent des captures de réalité mixte en combinant la caméra PV à des hologrammes affichés par l’application.
+
+Par défaut, la capture de Réalité Mixte utilise la sortie holographique de l’œil droit. Si une application immersive choisit d’être [affichée à partir de la caméra PV](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), ce mode de rendu est utilisé à la place. Le rendu à partir de la caméra PV améliore le mappage entre le monde réel et les hologrammes dans la vidéo de capture de réalité mixte.
+
+Pour choisir le rendu à partir de la caméra PV :
+
+1. Appelez **SetEnabledMixedRealityCamera** et **ResizeMixedRealityCamera**
+    * Utilisez les valeurs de taille **Size X** et **Size Y** pour définir les dimensions de la vidéo.
+
+![Troisième caméra](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
+
+Unreal va ensuite gérer les requêtes de capture de Réalité Mixte pour effectuer le rendu du point de vue de l’appareil photo/vidéo.
+
+> [!NOTE]
+> C’est seulement quand la [capture de Réalité Mixte](../../../mixed-reality-capture.md) est déclenchée qu’il est demandé à l’application de s’afficher du point de vue de l’appareil photo/vidéo.
+
+## <a name="using-the-pv-camera"></a>Utilisation de l’appareil photo/vidéo
+
+La texture de la webcam peut être récupérée dans le jeu au moment de l’exécution. Toutefois, vous devez l’activer dans l’éditeur **Edit > Project Settings** (Modifier > Paramètres du projet) :
+1. Accédez à **Platforms > HoloLens > Capabilities** (Plateformes > HoloLens > Fonctionnalités), puis cochez **Webcam**.
+    * Utilisez la fonction **StartCameraCapture** pour utiliser la webcam au moment de l’exécution, et la fonction **StopCameraCapture** pour arrêter l’enregistrement.
+
+![Démarrer/Arrêter la caméra](../images/unreal-camera-startstop.PNG)
+
+## <a name="rendering-an-image"></a>Affichage d’une image
+Pour afficher l’image de l’appareil photo :
+1. Créez une instance de matériau dynamique basée sur un matériau du projet, nommé **PVCamMat** dans la capture d’écran ci-dessous.  
+2. Définissez l’instance de matériau dynamique sur une variable **Material Instance Dynamic Object Reference**.  
+3. Définissez le matériau de l’objet de la scène qui affichera le flux de l’appareil sur cette nouvelle instance de matériau dynamique.
+    * Démarrez un minuteur qui sera utilisé pour lier l’image de l’appareil au matériau.
+
+![Rendu de la caméra](../images/unreal-camera-render.PNG)
+
+4. Créez une fonction pour ce minuteur, dans ce cas **MaterialTimer**, puis appelez **GetARCameraImage** pour obtenir la texture à partir de la webcam.  
+5. Si la texture est correcte, définissez un paramètre de texture dans le nuanceur de cette image.  Sinon, redémarrez le minuteur de matériau.
+
+![Texture de la caméra à partir de la webcam](../images/unreal-camera-texture.PNG)
+
+5. Vérifiez que le matériau a un paramètre correspondant au nom indiqué dans **SetTextureParameterValue**, qui est lié à une entrée de couleur. Sans ce paramètre, l’image de la caméra ne peut pas s’afficher correctement.
+
+![Texture de la caméra](../images/unreal-camera-material.PNG)
 

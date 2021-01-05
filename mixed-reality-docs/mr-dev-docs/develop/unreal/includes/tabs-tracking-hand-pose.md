@@ -1,11 +1,23 @@
 ---
-ms.openlocfilehash: 9fdcbdfe115fa859081c28b768f9c213ac241d13
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002677"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717515"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+La hiérarchie est décrite par `EHandKeypoint` enum :
+
+![Image des options bluprint de KEYpoint de la main](../images/hand-keypoint-bp.png)
+
+Vous pouvez obtenir toutes ces données à partir de la main d’un utilisateur à l’aide de la fonction de **données obtenir le contrôleur de mouvement** . Cette fonction retourne une structure **XRMotionControllerData** . Vous trouverez ci-dessous un exemple de script Blueprint qui analyse la structure XRMotionControllerData pour obtenir les emplacements joints et dessine un système de coordonnées de débogage à chaque emplacement de la jointure.
+
+![Plan de la fonction d’extraction de données de regard connectée à la trace de ligne par fonction de canal](../images/unreal-hand-tracking-img-03.png)
+
+Il est important de vérifier si la structure est valide et qu’elle est une main. Dans le cas contraire, vous risquez d’avoir un comportement indéfini dans l’accès aux positions, aux rotations et aux rayons.
+
 # <a name="425"></a>[4.25](#tab/425)
 
 L' `EWMRHandKeypoint` énumération décrit la hiérarchie osseuse de la main. Chaque KEYpoint est indiqué dans vos projets :
@@ -84,15 +96,3 @@ Voici une répartition des paramètres de fonction de GetHandJointTransform :
 * * * Rayon : rayon de la base du segment.
 * * * Valeur de retour : true si le segment est suivi dans ce frame, false si le segment n’est pas suivi.
 
-
-# <a name="426"></a>[4.26](#tab/426)
-
-La hiérarchie est décrite par `EHandKeypoint` enum :
-
-![Image des options bluprint de KEYpoint de la main](../images/hand-keypoint-bp.png)
-
-Vous pouvez obtenir toutes ces données à partir de la main d’un utilisateur à l’aide de la fonction de **données obtenir le contrôleur de mouvement** . Cette fonction retourne une structure **XRMotionControllerData** . Vous trouverez ci-dessous un exemple de script Blueprint qui analyse la structure XRMotionControllerData pour obtenir les emplacements joints et dessine un système de coordonnées de débogage à chaque emplacement de la jointure.
-
-![Plan de la fonction d’extraction de données de regard connectée à la trace de ligne par fonction de canal](../images/unreal-hand-tracking-img-03.png)
-
-Il est important de vérifier si la structure est valide et qu’elle est une main. Dans le cas contraire, vous risquez d’avoir un comportement indéfini dans l’accès aux positions, aux rotations et aux rayons.
