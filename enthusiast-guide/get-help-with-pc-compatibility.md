@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: e55c66599e47abff35b872a494a6afbb48774171
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 8f6ba747c2f336194cb30241dce18bc1138143f2
+ms.sourcegitcommit: b331ec40b1e8869e6a6e7b2e32a03ff68e04b956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859518"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97956062"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Obtenir de l’aide sur la compatibilité des ordinateurs dans Windows Mixed Reality
 
@@ -27,13 +27,32 @@ Avant de poursuivre, essayez les correctifs les plus courants ci-dessous :
 > * Vérifier la liste des [adaptateurs recommandés](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 > * Mettez à jour votre pilote graphique en sélectionnant **démarrer > paramètres > mettre à jour & sécurité > Rechercher les mises à jour** 
 
+Si vous souhaitez obtenir un contact, vous pouvez [demander à la communauté](https://answers.microsoft.com), [contacter le support technique](https://support.microsoft.com/contactus/)ou passer en revue les informations de [Dépannage](troubleshooting-windows-mixed-reality.md) .
+
 ## <a name="youre-good-to-go"></a>Vous êtes bien
 
 Bonne nouvelle. Si vous voyez le message **vous êtes correct** , votre ordinateur peut exécuter Windows Mixed Reality. Il y a toujours une variation entre le matériel informatique et la configuration. l’expérience de réalité mixte peut donc ne pas être la même sur tous les PC.
 
 ## <a name="supports-some-features"></a>Prend en charge certaines fonctionnalités
 
-Si vous voyez le message **prend en charge certaines fonctionnalités** , votre ordinateur peut exécuter des expériences Windows Mixed Reality, mais il peut ne pas offrir la meilleure expérience possible. Parmi les inconvénients possibles, citons les graphiques en retard, les résultats de performances et certaines applications et certains jeux que vous ne pouvez pas exécuter du tout. Nous avons listé les messages que vous pouvez voir et la procédure à suivre ci-dessous.
+Si vous voyez le message **prend en charge certaines fonctionnalités** , votre ordinateur peut exécuter des expériences Windows Mixed Reality, mais il peut ne pas offrir la meilleure expérience possible. Parmi les inconvénients possibles, citons les graphiques en retard, les résultats de performances et certaines applications et certains jeux que vous ne pouvez pas exécuter du tout. Nous avons listé les messages que vous pouvez voir et la procédure à suivre ci-dessous :
+
+* [Cet ordinateur dispose d’une carte graphique intégrée avec une RAM à canal unique](#this-pc-has-an-integrated-graphics-card-with-single-channel-ram)
+* [Cet ordinateur possède une configuration graphique hybride avec une liaison PCIe incompatible](#this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link)
+* [Le pilote graphique de ce PC peut ne pas fonctionner correctement avec Windows Mixed Reality](#this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality)
+* [Le processeur de ce PC peut ne pas fonctionner correctement avec Windows Mixed Reality](#this-pcs-processor-might-not-work-well-with-windows-mixed-reality)
+* [Ce PC n’a peut-être pas de configuration USB compatible](#this-pc-might-not-have-a-compatible-usb-configuration)
+* [Ce PC ne dispose pas de Bluetooth 4,0 pour les contrôleurs](#this-pc-doesnt-have-bluetooth-40-for-controllers)
+* [En fonction de votre casque, vous aurez peut-être besoin d’un adaptateur Bluetooth pour utiliser les contrôleurs de mouvement.](#depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers)
+* [Ce PC ne dispose pas d’un port USB auto-alimenté](#this-pc-doesnt-have-a-self-powered-usb-port)
+* [La carte graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality](#this-pcs-graphics-card-wont-work-with-windows-mixed-reality)
+* [Le pilote graphique de ce PC ne fonctionnera pas avec Windows Mixed Reality](#this-pcs-graphics-driver-wont-work-with-windows-mixed-reality)
+* [Le processeur de ce PC ne fonctionnera pas avec Windows Mixed Reality](#this-pcs-processor-wont-work-with-windows-mixed-reality)
+* [Cet ordinateur ne dispose pas de suffisamment d’espace disque libre pour exécuter Windows Mixed Reality](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
+* [Ce PC exécute une édition de Windows qui ne prend pas en charge Windows Mixed Reality](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
+* [Ce PC n’exécute pas la dernière version de Windows 10](#this-pc-isnt-running-the-latest-version-of-windows-10)
+* [Ce PC n’a pas de port USB 3,0](#this-pc-has-no-usb-30-port)
+* [Vous ne pouvez pas exécuter cette application via le Bureau à distance](#you-cant-run-this-app-via-remote-desktop)
 
 ### <a name="this-pc-has-an-integrated-graphics-card-with-single-channel-ram"></a>Cet ordinateur dispose d’une carte graphique intégrée avec une RAM à canal unique
 
@@ -161,10 +180,11 @@ Pour utiliser Windows Mixed Reality, vous avez besoin d’un PC avec un moniteur
 
 Certaines configurations matérielles peuvent entraîner des problèmes de performances avec Windows Mixed Reality. Pour les problèmes tels que le chargement lent, les visuels saccadés ou la qualité visuelle médiocre, essayez les correctifs courants suivants :
 
-* Fermez toutes les applications ouvertes en cours d’exécution sur votre ordinateur de bureau.
+* Fermez toutes les applications ouvertes en cours d’exécution sur votre ordinateur de bureau
 * Si vous utilisez un adaptateur USB-C ou DisplayPort vers HDMI, essayez-en un autre. Voir les adaptateurs recommandés
-* Si des moniteurs supplémentaires sont connectés à la carte graphique du PC, déconnectez-les.
-* Essayez de télécharger des applications de réalité mixte différentes à partir du Windows Store, certaines peuvent fonctionner mieux avec la configuration de votre ordinateur.
+* Si des moniteurs supplémentaires sont connectés à la carte graphique du PC, déconnectez-les
+* Essayez de télécharger des applications de réalité mixte différentes à partir du Windows Store, certaines peuvent fonctionner mieux avec la configuration de votre ordinateur
+* Consultez notre documentation sur les questions sur les [performances](performance-questions.md)
 
 Si vous rencontrez toujours des problèmes de performances, mettez à jour les paramètres [Windows Mixed Reality](set-up-windows-mixed-reality.md) suivants pour une expérience utilisateur optimale :
 
@@ -178,7 +198,7 @@ Si vous rencontrez toujours des problèmes de performances, mettez à jour les p
 
 ## <a name="working-with-steamvr"></a>Utilisation de SteamVR
 
-Profiter des jeux à partir de SteamVR est un excellent moyen d’expérimenter tout ce qu’il faut offrir. Toutefois, vous souhaiterez vous assurer que vous obtenez les meilleures performances de votre appareil immersif. Une fois que vous [avez installé la](https://store.steampowered.com/about)diffusion en continu :
+Profiter des jeux à partir de SteamVR est un excellent moyen d’expérimenter tout ce qu’il faut offrir. Toutefois, vous souhaiterez vous assurer que vous [obtenez les meilleures performances](performance-questions.md) de votre appareil immersif. Une fois que vous [avez installé la](https://store.steampowered.com/about)diffusion en continu :
 
 * Suivez les instructions relatives [à l’utilisation de SteamVR avec Windows Mixed Reality](using-steamvr-with-windows-mixed-reality.md)
 * Installer les applications de [test de performances SteamVR](https://store.steampowered.com/app/323910/SteamVR_Performance_Test)
@@ -196,9 +216,3 @@ Ou accédez directement à la section mise en route :
 > [Configuration de la réalité mixte Windows](set-up-windows-mixed-reality.md)
 
 Vous pouvez toujours revenir au voyage de [VR](vr-journey.md) à tout moment.
-
-## <a name="see-also"></a>Voir aussi
-
-* [Demander à la communauté](https://answers.microsoft.com)
-* [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
-* [Dépannage](troubleshooting-windows-mixed-reality.md)
