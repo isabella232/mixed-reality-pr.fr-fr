@@ -6,21 +6,26 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, casques immersifs, application, UWP, envoyer, envoyer, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 7b1953fe0244b06f019f0e28432b7f9be9c21081
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757837"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031975"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Envoi d’une application au Microsoft Store
 
 > [!IMPORTANT]
-> Si vous envoyez une application inréelle, veillez à suivre les **[instructions de publication ici](../develop/unreal/unreal-publishing-to-store.md)** avant de continuer.
+> Si vous envoyez une application inréelle, veillez à suivre les **[instructions de publication](../develop/unreal/unreal-publishing-to-store.md)** avant de continuer.
+
+## <a name="prerequisites"></a>Prérequis
 
 [HoloLens](../hololens-hardware-details.md) et le PC Windows 10 qui alimentent votre [casque immersif](../discover/immersive-headset-hardware-details.md) s’exécutent plateforme Windows universelle applications. Que vous soumettez une application qui prend en charge HoloLens, PC, ou les deux, l’envoi d’applications passe par l' [espace partenaires](https://partner.microsoft.com/dashboard).
 
-Si vous n’avez pas encore de compte de développeur de l’espace partenaires, inscrivez-vous à un compte avant de passer à l' [installation](https://developer.microsoft.com/store/register) .
+Si vous n’avez pas encore de compte de développeur de l’espace partenaires, inscrivez-vous à un compte avant de passer à l' [installation](https://developer.microsoft.com/store/register) . Vous trouverez plus d’informations sur les instructions et les listes de vérification de l’envoi dans cet article sur les [envois d’application](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+
+> [!IMPORTANT]
+> Vous ne serez pas en mesure de soumettre des applications au Microsoft Store si votre compte de développeur de l’espace partenaires ne parvient pas à effectuer la vérification de l’emploi. Pour plus d’informations, contactez l' [équipe de support](https://developer.microsoft.com/windows/support) de l’espace partenaires.
 
 ## <a name="packaging-a-mixed-reality-app"></a>Empaquetage d’une application de réalité mixte
 
@@ -215,7 +220,7 @@ Utilisez les cases à cocher pour indiquer aux clients potentiels si votre appli
 
 Veillez à sélectionner des cases à cocher pour « matériel minimum » ou « matériel recommandé » pour les types d’entrée. 
 
-Exemple : 
+Par exemple : 
 * Si votre jeu nécessite des contrôleurs de mouvement, mais accepte les entrées vocales via le microphone, activez la case à cocher « matériel minimal » en regard de « contrôleurs de mouvement Windows Mixed Reality », mais la case à cocher « matériel recommandé » en regard de « microphone ». 
 * Si votre jeu peut être lu à l’aide d’un contrôleur Xbox, d’un boîtier d’accès ou de contrôleurs de mouvement, vous pouvez activer la case à cocher « matériel minimal » en regard de « contrôleur Xbox ou boîtier de commande », puis activer la case à cocher « matériel recommandé » en regard de « contrôleurs de mouvement Windows Mixed Reality », car les contrôleurs de
 
