@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Réalité mixte, holographique, RA, RV, RM, XR, réalité augmentée, réalité virtuelle, explication, étude de cas, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée
 ms.localizationpriority: high
-ms.openlocfilehash: 5f4e41c04206eb5ca1a0d2e0dac914a1b3b1052d
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703125"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757697"
 ---
 # <a name="what-is-mixed-reality"></a>Qu’est-ce que la réalité mixte ?
 
@@ -34,7 +34,7 @@ Fusion des mondes physiques et numériques, la réalité mixte rend possible l�
 
 Au cours des dernières décennies, la relation entre les entrées humaines et celles des ordinateurs a continué, donnant lieu à une discipline appelée *interaction homme-machine* ou IHM. Les entrées humaines se font par divers moyens : clavier, souris, toucher, écriture manuscrite, voix et même suivi du squelette avec Kinect.
 
-Les avancées dans les capteurs et le traitement ont donné naissance à un nouveau type d’entrée d’ordinateur qui vient de l’environnement. L’interaction entre un ordinateur et un environnement réside en fait dans la compréhension ou la *perception* de cet environnement. C’est pourquoi les API dans Windows qui révèlent des informations environnementales sont appelées [API de perception](https://docs.microsoft.com/uwp/api/Windows.Perception). Les entrées environnementales capturent des éléments tels que la position d’une personne dans le monde ([suivi de la tête](../design/coordinate-systems.md)), les surfaces et les limites ([cartographie spatiale](../design/spatial-mapping.md) et [compréhension des scènes](../design/scene-understanding.md)), l’éclairage ambiant, le son environnemental, la reconnaissance des objets et la localisation.
+Les avancées dans les capteurs et le traitement créent des types d’entrée d’ordinateur qui viennent de l’environnement. L’interaction entre un ordinateur et un environnement réside en fait dans la compréhension ou la *perception* de cet environnement. C’est pourquoi les API dans Windows qui révèlent des informations environnementales sont appelées [API de perception](https://docs.microsoft.com/uwp/api/Windows.Perception). Les entrées environnementales capturent des éléments tels que la position d’une personne dans le monde ([suivi de la tête](../design/coordinate-systems.md)), les surfaces et les limites ([cartographie spatiale](../design/spatial-mapping.md) et [compréhension des scènes](../design/scene-understanding.md)), l’éclairage ambiant, le son environnemental, la reconnaissance des objets et la localisation.
 
 <br>
 
@@ -43,7 +43,7 @@ Les avancées dans les capteurs et le traitement ont donné naissance à un nouv
 
 <br>
 
-La combinaison de ces trois éléments (**traitement informatique, entrées humaines et entrées environnementales**) permet la création de véritables expériences de réalité mixte. Un mouvement dans le monde physique peut se traduire par un mouvement dans le monde numérique. Les limites présentes dans le monde physique peuvent influencer des expériences applicatives, notamment la jouabilité, dans le monde numérique. Sans entrée environnementale, les expériences ne peuvent pas fusionner les réalités physique et numérique.<br>
+La combinaison de ces trois éléments (**traitement informatique, entrées humaines et entrées environnementales**) permet la création de véritables expériences de réalité mixte. Un mouvement dans le monde physique se traduit par un mouvement dans le monde numérique. Les limites présentes dans le monde physique influencent des expériences applicatives, notamment la jouabilité, dans le monde numérique. Sans entrée environnementale, les expériences ne peuvent pas fusionner les réalités physique et numérique.<br>
 
 <br>
 
@@ -66,7 +66,6 @@ Aujourd’hui, la plupart des téléphones portables du marché sont dotés de f
 * À partir du monde physique, placer un objet numérique, comme un hologramme, et le faire apparaître comme s’il existait.
 * À partir du monde physique, créer une représentation numérique d’une autre personne (avatar) et montrer son emplacement quand elle laisse des notes. En d’autres termes, des expériences qui représentent une collaboration asynchrone à différents moments.
 * À partir d’un monde numérique, faire apparaître numériquement dans l’expérience les limites du monde physique, comme les murs et les meubles, pour aider les utilisateurs à éviter les objets physiques.
-
 
 <br>
 
@@ -100,7 +99,7 @@ Deux principaux types d’appareils proposent des expériences Windows Mixed Rea
 > [!NOTE]
 > Le fait qu’un appareil soit connecté ou attaché à un PC distinct (via un câble USB ou le Wi-Fi) ou autonome (non attaché) n’indique pas s’il est holographique ou immersif. Les fonctionnalités qui améliorent la mobilité donnent lieu à de meilleures expériences, mais les appareils holographiques et immersifs peuvent être attachés à un PC ou non.
 
-Le progrès technologique est ce qui a permis de créer des expériences de réalité mixte. Aucun appareil n’est actuellement capable d’exécuter des expériences sur l’ensemble du spectre. Windows 10 offre une plateforme de réalité mixte commune pour les fabricants d’appareils et les développeurs. Aujourd’hui, les appareils peuvent prendre en charge une plage spécifique du spectre de réalité mixte. Au fil du temps, de nouveaux appareils prendront en charge une plage plus étendue. À l’avenir, les appareils holographiques deviendront plus immersifs et les appareils immersifs deviendront plus holographiques.
+Le progrès technologique permet des expériences de réalité mixte, mais aucun appareil n’est en mesure d’exécuter des expériences sur tout le spectre. Windows 10 offre une plateforme de réalité mixte commune pour les fabricants d’appareils et les développeurs. Aujourd’hui, les appareils peuvent prendre en charge une plage spécifique du spectre de réalité mixte. Au fil du temps, de nouveaux appareils prendront en charge une plage plus étendue. À l’avenir, les appareils holographiques seront immersifs et les appareils immersifs seront plus holographiques.
 
 <br>
 

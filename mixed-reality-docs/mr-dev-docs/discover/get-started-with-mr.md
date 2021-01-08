@@ -1,24 +1,24 @@
 ---
 title: Bien démarrer avec la réalité mixte
-description: Aidez les novices en réalité mixte à comprendre en quoi cette technologie consiste et quelles fonctionnalités elle offre.
+description: Découvrez les principes de base de la théorie de la réalité mixte, du développement et des cas d’utilisation courants.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, découvrir, distribuer, index, page d’accueil, conception, développement, tutoriels, exemples d’applications, principes fondamentaux, études de cas, ressources, procédures HoloLens, projets open source, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: f50457fedb0223317e522c4d86bd56cc02657c77
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926055"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757667"
 ---
 # <a name="get-started-with-mixed-reality"></a>Bien démarrer avec la réalité mixte
 
 ![Colibri virtuel avec une main humaine](images/01_MixedReality.png)
 
-L’écosystème de la réalité mixte est un paysage émergeant d’interactions physiques et numériques, limité seulement par votre imagination. Que vous soyez développeur expérimenté ou nouvellement converti, nous vous recommandons de commencer votre découverte de la réalité mixte avec les ressources que nous mentionnons dans les liens ci-dessous. Il y a beaucoup de nouveautés à présenter : commençons donc ! 
+L’écosystème de la réalité mixte est un paysage émergeant d’interactions physiques et numériques, limité seulement par votre imagination. Que vous soyez développeur expérimenté ou nouvellement converti, nous vous recommandons de commencer votre découverte de la réalité mixte avec les ressources que nous mentionnons ci-dessous. Il y a beaucoup de nouveautés à présenter : commençons donc ! 
 
 ## <a name="choose-your-track"></a>Choisissez votre piste
 
@@ -48,18 +48,18 @@ Si vous savez déjà quel domaine de la réalité mixte vous aimeriez explorer, 
 
 ## <a name="understand-the-basics"></a>Comprendre les principes de base
 
-Si vous ne connaissez pas encore la réalité mixte, il est important de commencer par le début et de découvrir progressivement ses concept principaux, ses expériences et ses fonctionnalités. Nous avons créé une sorte de parcours séquentiel afin de vous aider à établir des bases solides pour la conception et le développement de vos propres idées en réalité mixte.
+Si vous ne connaissez pas encore la réalité mixte, il est important de commencer par le début et de découvrir progressivement ses concepts, expériences et fonctionnalités clés. Nous avons créé une sorte de parcours séquentiel afin de vous aider à établir des bases solides pour la conception et le développement de vos propres idées en réalité mixte.
 
 ### <a name="what-is-mixed-reality"></a>Qu’est-ce que la réalité mixte ?
 
 ![Que pouvez-vous faire avec la réalité mixte ?](images/HLS19_remoteAssistHologram_001.jpg)
 
-Avant de vous plonger dans la conception ou le développement d’applications, vous devez comprendre ce que nous voulons dire par « réalité mixte ». Cette section a pour but de vous familiariser avec tout le spectre de la réalité mixte, y compris les différentes entrées dans l’environnement, les changements de perception, les défis de la conception et les appareils qui l’accompagnent. 
+Avant de vous plonger dans la conception ou le développement d’applications, vous devez comprendre ce que nous voulons dire par « réalité mixte ». Cette section a pour but de vous familiariser avec tout le spectre de la réalité mixte, notamment l’entrée dans l’environnement, les changements de perception, les défis de la conception et les appareils. 
 
 |  Concept  |  Résultat  |
 | --- | --- |
 | [La réalité mixte est un spectre](../discover/mixed-reality.md) | La réalité mixte mélange le physique avec le numérique, l’évolution à venir des interactions entre les hommes, les ordinateurs et l’environnement. |
-| [Qu’est-ce qu’un hologramme ?](../discover/hologram.md) | HoloLens vous permet de créer des hologrammes, qui sont des objets composés de lumière et de son qui s’affichent dans votre environnement, comme s’il s’agissait d’objets réels. Les hologrammes répondent à votre suivi du regard, à vos gestes et à vos commandes vocales, et ils peuvent interagir avec des surfaces du monde réel autour de vous. |
+| [Qu’est-ce qu’un hologramme ?](../discover/hologram.md) | HoloLens vous permet de créer des hologrammes, qui sont des objets composés de lumière et de son qui s’affichent dans votre environnement comme des objets réels. Les hologrammes répondent à votre suivi du regard, à vos gestes et à vos commandes vocales, et ils peuvent interagir avec des surfaces du monde réel autour de vous. |
 | [Vue d’ensemble de la formation à la réalité mixte](mr-learning-overview.md#general-modules) | Essayez notre module de réalité mixte organisé par le biais de Microsoft Learn |
 | [Développer votre processus de conception](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Développez votre façon de penser la conception avec une intellection, du bodystorming et des actions de l’ordre du spatial quand vous créez vos expériences immersives.  |
 
@@ -68,6 +68,42 @@ Avant de vous plonger dans la conception ou le développement d’applications, 
 ---
 
 ## <a name="see-how-industry-partners-are-using-mixed-reality"></a>Découvrir comment les partenaires de l’industrie utilisent la réalité mixte
+
+:::row:::
+    :::column:::
+       [![HoloLens chez le constructeur automobile Mercedes](images/mercedes.png)](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="mercedes-benz-is-transforming-the-service-workforce-with-hololens-2-and-dynamics-365-remote-assist"></a>[Mercedes-Benz transforme le personnel de maintenance avec HoloLens 2 et Dynamics 365 Remote Assist](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
+        Mercedes-Benz USA utilise HoloLens 2 et Dynamics 365 Remote Assist pour améliorer l’efficacité des techniciens de maintenance, réduire le temps de résolution des problèmes et réduire le coût et l’impact environnemental des déplacements liés à la maintenance.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![BHP : secteur de l’énergie - Dynamics 365 et HoloLens](images/bhp.png)](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="bhp-increases-the-pace-of-innovation-despite-lockdown-with-mixed-reality-and-iot"></a>[BHP accélère le rythme de l’innovation malgré le confinement avec la réalité mixte et l’IoT](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
+        Malgré l’impact et les restrictions liés à la COVID-19, BHP offre un support et une formation aux travailleurs de terrain à des milliers de kilomètres de distance avec HoloLens 2 et Dynamics 365 Remote Assist.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![HoloLens accompagne MediView](images/mediview.jpeg)](https://customers.microsoft.com/story/848966-mediview-mcs-story)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="healthcare-startup-cuts-time-to-market-by-up-to-70-despite-pandemic"></a>[La start-up du secteur médical réduit le délai de mise sur le marché jusqu’à 70 %, malgré la pandémie](https://customers.microsoft.com/story/848966-mediview-mcs-story)
+        La start-up du secteur médical MediView a développé un produit remarquable qui utilise des hologrammes 3D projetés directement sur ou au-dessus de l’anatomie du patient pour aider les chirurgiens à voir l’anatomie interne du patient et les guider dans leurs procédures.
+    :::column-end:::
+:::row-end:::
+
+---
 
 :::row:::
     :::column:::
@@ -98,8 +134,8 @@ Avant de vous plonger dans la conception ou le développement d’applications, 
        [![Philips-Azurion](images/Philips-Azurion1.jpg)](https://binged.it/31B1RiR)
     :::column-end:::
     :::column span="2":::
-        ### <a name="philips-is-piloting-hololens-in-the-domain-of-image-guided-minimally-invasive-procedures"></a>[Philips pilote HoloLens dans le domaine des interventions à effraction minimale guidées par imagerie](https://binged.it/31B1RiR)
-        Philips pilote HoloLens dans le domaine des interventions à effraction minimale guidées par imagerie, au cours desquelles les médecins s’appuient sur des sources d’informations en direct telles que des radiographies ou des ultrasons pour « voir » à l’intérieur du patient et guider leurs actions.
+        ### <a name="philips-is-piloting-hololens-in-the-domain-of-image-guided-invasive-procedures"></a>[Philips pilote HoloLens dans le domaine des interventions à effraction guidées par imagerie](https://binged.it/31B1RiR)
+        Philips pilote HoloLens dans le domaine des interventions à effraction guidées par imagerie, au cours desquelles les médecins s’appuient sur des sources d’informations en direct telles que des radiographies ou des ultrasons pour « voir » à l’intérieur du patient et guider leurs actions.
     :::column-end:::
 :::row-end:::
 
@@ -111,13 +147,13 @@ Avant de vous plonger dans la conception ou le développement d’applications, 
 
 ![Vue éclatée de l’appareil HoloLens](images/HoloLens2_ExplodedView_8k.png)
 
-Si vous êtes curieux de voir comment les différents matériels et services de réalité mixte fonctionnent ensemble, suivez les liens ci-dessous. Ces liens vous permettent d’accéder à différentes parties de la documentation Microsoft, mais nous vous recommandons de créer des signets et de revenir ici pour continuer votre parcours pour la conception et le développement.
+Si vous êtes curieux de voir comment les différents matériels et services de réalité mixte fonctionnent ensemble, suivez les liens ci-dessous. Ces liens vous dirigent vers différentes parties de la documentation de Microsoft. Nous vous recommandons de créer des signets et de revenir ici pour poursuivre votre parcours de conception et de développement.
 
 |  Concept  |  Résultat  |
 | --- | --- |
 | [Matériel HoloLens](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offre l’expérience de réalité mixte la plus confortable et la plus immersive actuellement disponible, avec des solutions de pointe qui font la différence en quelques minutes, le tout amélioré par la fiabilité, la sécurité et la scalabilité des services cloud et des services d’IA de Microsoft. |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explorez une gamme de produits qui peuvent autonomiser les employés et optimiser les opérations avec Dynamics 365, y compris [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/) et [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). L’expérience du travail réel, des appareils réels et des utilisateurs réels apporte un savoir significatif. |
-| [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Créez des expériences immersives attrayantes sur une variété de plateformes en ajoutant la reconnaissance spatiale, des ancres spatiales et le rendu de modèle 3D complexe. |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explorez une gamme de produits qui peuvent autonomiser les employés et optimiser les opérations avec Dynamics 365, notamment [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), Layout et [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). L’expérience du travail réel, des appareils réels et des utilisateurs réels apporte un savoir significatif. |
+| [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Créez des expériences immersives attrayantes sur différentes plateformes avec la reconnaissance spatiale, des ancres spatiales et le rendu de modèle 3D complexe. |
 
 ## <a name="what-would-you-like-to-do-next"></a>Que voulez-vous faire à présent ?
 

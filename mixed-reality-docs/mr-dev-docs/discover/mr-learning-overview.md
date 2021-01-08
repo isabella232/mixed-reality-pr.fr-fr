@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: réalité mixte, Unity, tutoriel, hololens, learn, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, MRTK, mixed reality toolkit, traduction linguistique, Azure, Azure Cognitive Services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 996aad49d7fa48d5c7d7d33913680da9e5a4bdd8
-ms.sourcegitcommit: 9c2a90b17fe72cf482598969f8f3beca511e78a1
+ms.openlocfilehash: 5d59f09b98b4228b52a87a7c91e64129060f754c
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97350011"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757797"
 ---
 # <a name="mixed-reality-learn-overview"></a>Vue d’ensemble Learn de réalité mixte
 
@@ -20,7 +20,7 @@ Microsoft Learn est l’endroit où tout le monde vient apprendre. Découvrez de
 
 Lorsque vous développez pour la réalité mixte, plus vous avez d’outils, mieux c’est. Même si la documentation et les tutoriels sont cruciaux, si vous êtes davantage visuel, nous vous invitons à consulter notre contenu vidéo sur Microsoft Learn. De nouveaux modules sont constamment ajoutés. Il est donc recommandé de consulter régulièrement les nouveautés.
 
-Nos modules Learn vous permettent de très bien maîtriser le développement de réalité mixte. En effet, la structure organisée par module peut vous aider à bien démarrer avec des outils clés tels que Mixed Reality Toolkit, Unity et les services de réalité mixte Azure. Les objectifs de programmation sont plus clairs que jamais, car nous présentons les objectifs d’apprentissage, les prérequis et le temps d’achèvement prévu dans une seule et même interface. Démarrez dès maintenant avec les modules Learn sur la réalité mixte ou consultez notre présentation [vidéo](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn) Microsoft Learn.
+Nos modules Learn vous aident à très bien maîtriser le développement de réalité mixte. En effet, la structure organisée par module vous aide à bien démarrer avec des outils clés tels que Mixed Reality Toolkit, Unity et les services de réalité mixte Azure. Les objectifs de programmation sont plus clairs que jamais, car nous présentons les objectifs d’apprentissage, les prérequis et le temps d’achèvement prévu dans une seule et même interface. Démarrez dès maintenant avec les modules Learn sur la réalité mixte ou consultez notre présentation [vidéo](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn) Microsoft Learn.
 
 ## <a name="general-modules"></a>Modules généraux
 
@@ -38,7 +38,7 @@ Maîtrisez les concepts de base, la terminologie et les processus de conception 
 * Décrire les principes les plus importants concernant les hologrammes
 * Concevoir et développer des applications 3D
 * Ce qu’apporte la réalité mixte aux applications
-* Tirer parti de la puissance du cloud pour la réalité mixte
+* Utiliser la puissance du cloud pour la réalité mixte
 
 ## <a name="unity-modules"></a>Modules Unity
 
@@ -50,7 +50,7 @@ Importez le Mixed Reality Toolkit dans votre projet Unity pour accélérer le d�
 
 **Objectifs d’apprentissage**
 
-À la fin de ce module, vous serez en mesure d’effectuer les opérations suivantes :
+À la fin de ce module, vous pourrez :
 
 * Configurer Unity pour le développement Windows Mixed Reality
 * Importer le package de base du Mixed Reality Toolkit (MRTK) dans Unity
@@ -60,7 +60,7 @@ Importez le Mixed Reality Toolkit dans votre projet Unity pour accélérer le d�
 
 ### <a name="create-a-language-translator-app-with-unity--azure-cognitive-services"></a>[Créer une application de traduction avec Unity et Azure Cognitive Services](https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/)
 
-Créez une application de traducteur de langue pour votre appareil Mixed Reality (Windows Mixed Reality, HoloLens 2, etc.) en utilisant Cognitive Services.
+Créez une application de traduction pour votre appareil de réalité mixte (Windows Mixed Reality, HoloLens 2, etc.) à l’aide de Cognitive Services.
 
 **Objectifs d’apprentissage**
 

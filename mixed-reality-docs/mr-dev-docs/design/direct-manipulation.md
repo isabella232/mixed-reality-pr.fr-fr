@@ -7,20 +7,18 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Réalité mixte, regard, ciblage du regard, interaction, conception, mains de près, HoloLens, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, MRTK, Mixed Reality Toolkit, bouton, colliders, cadre englobant, 2D, gestes instinctifs
-ms.openlocfilehash: a882aa4bace0d911d328ad82d881b5c0d8cd0c96
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: a5e3497926d977f2a60cd32bb5f009d27d7b86ee
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702845"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848053"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipulation directe avec les mains
 
 ![Bouton](images/UX_Hero_Manipulation.jpg)
 
-La manipulation directe est un modèle d’entrée qui consiste à toucher les hologrammes directement avec les mains. L’idée derrière ce concept est de faire en sorte que les objets se comportent exactement comme dans le monde réel. Vous pouvez activer les boutons simplement en appuyant dessus, vous pouvez saisir les objets en les agrippant, et le contenu 2D se comporte comme un écran tactile virtuel. C’est pourquoi la manipulation directe est facile à apprendre pour les utilisateurs et amusante. Elle est considérée comme un modèle d’entrée « proche », car elle est utilisée de préférence pour interagir avec le contenu situé à portée de main.
-
-La manipulation directe est basée sur l’affordance, ce qui la rend conviviale. Les utilisateurs n’ont pas à apprendre de mouvements symboliques. Toutes les interactions reposent sur un élément visuel que vous pouvez toucher ou saisir.
+La manipulation directe est un modèle d’entrée qui consiste à toucher les hologrammes directement avec les mains. L’idée derrière ce concept est de faire en sorte que les objets se comportent exactement comme dans le monde réel. Vous pouvez activer les boutons simplement en appuyant dessus, vous pouvez saisir les objets en les agrippant, et le contenu 2D se comporte comme un écran tactile virtuel. La manipulation directe est basée sur l’affordance, ce qui la rend conviviale. Les utilisateurs n’ont pas à apprendre de mouvements symboliques. Toutes les interactions reposent sur un élément visuel que vous pouvez toucher ou saisir. Elle est considérée comme un modèle d’entrée « proche », car elle est utilisée de préférence pour interagir avec le contenu situé à portée de main.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -47,7 +45,7 @@ La manipulation directe est basée sur l’affordance, ce qui la rend conviviale
 </table>
 
 
-La manipulation directe est l’un des principaux modèles d’entrée sur HoloLens 2. Elle utilise le nouveau système de suivi des mains articulé. Le modèle d’entrée est également disponible sur les casques immersifs via l’utilisation de contrôleurs de mouvement, mais il n’est pas recommandé en tant que mode principal d’interaction en dehors de la manipulation d’objets. La manipulation directe n’est pas disponible sur HoloLens (1re génération).
+La manipulation directe est l’un des principaux modèles d’entrée sur HoloLens 2. Elle utilise le nouveau système de suivi des mains articulé. Le modèle d’entrée est également disponible sur les casques immersifs par le biais de l’utilisation de contrôleurs de mouvement, mais il n’est pas recommandé en tant que mode principal d’interaction en dehors de la manipulation d’objets. La manipulation directe n’est pas disponible sur HoloLens (1re génération).
 
 <br>
 
@@ -55,9 +53,9 @@ La manipulation directe est l’un des principaux modèles d’entrée sur HoloL
 
 ## <a name="collidable-fingertip"></a>Pointe de doigt avec détection de collision
 
-Sur HoloLens 2, les mains de l’utilisateur sont reconnues et interprétées en tant que modèles du squelette des mains gauche et droite. Pour implémenter l’idée consistant à toucher les hologrammes directement avec les mains, l’idéal serait d’attacher cinq colliders (détecteurs de collision) aux cinq pointes de doigt de chaque modèle du squelette de la main. Toutefois, en raison de l’absence de rétroaction tactile, dix bouts de doigts avec détection de collision donnent lieu à des collisions inattendues et imprévisibles avec les hologrammes. 
+Sur HoloLens 2, les mains de l’utilisateur sont reconnues et interprétées en tant que modèles du squelette des mains gauche et droite. Pour implémenter l’idée consistant à toucher les hologrammes directement avec les mains, l’idéal serait d’attacher cinq colliders (détecteurs de collision) aux cinq pointes de doigt de chaque modèle du squelette de la main. Toutefois, en raison de l’absence de rétroaction tactile, 10 bouts de doigts avec détection de collision donnent lieu à des collisions inattendues et imprévisibles avec les hologrammes. 
 
-Nous suggérons donc de placer uniquement un collider sur chaque index. Les pointes d’index avec détection de collision peuvent toujours servir de points tactiles actifs pour les divers mouvements tactiles impliquant d’autres doigts, par exemple l’appui avec un doigt, le clic à un doigt, l’appui avec deux doigts et l’appui avec cinq doigts, comme illustré dans l’image ci-dessous.
+Nous suggérons de placer uniquement un collider sur chaque index. Les pointes d’index avec détection de collision peuvent toujours servir de points tactiles actifs pour les divers mouvements tactiles impliquant d’autres doigts. Les mouvements tactiles incluent la pression à 1 doigt, le clic à 1 doigt, la pression à 2 doigts et la pression à 5 doigts, comme illustré ci-dessous :
 
 :::row:::
     :::column:::
@@ -88,7 +86,7 @@ Au lieu d’utiliser une forme générique aléatoire, nous vous suggérons d’
 
 ### <a name="fingertip-cursor"></a>Curseur à la pointe du doigt
 
-En plus du rendu d’une sphère avec détection de collision à la pointe de l’index, nous avons créé un curseur à la pointe du doigt pour vivre une meilleure expérience interactive de ciblage interactif proche. Il s’agit d’un curseur en forme d’anneau attaché à la pointe de l’index. En fonction de la proximité, il réagit de manière dynamique à l’orientation et à la taille d’une cible, comme indiqué ci-dessous :
+En plus du rendu d’une sphère avec détection de collision à la pointe de l’index, nous avons créé un curseur à la pointe du doigt pour vivre une meilleure expérience de ciblage proche. Il s’agit d’un curseur en forme d’anneau attaché à la pointe de l’index. En fonction de la proximité, il réagit de manière dynamique à l’orientation et à la taille d’une cible, comme indiqué ci-dessous :
 
 * Quand un index se déplace vers un hologramme, le curseur est toujours parallèle à la surface de l’hologramme et réduit progressivement sa taille.
 * Dès que le doigt touche la surface, le curseur se réduit en un point et émet un événement tactile.
@@ -150,7 +148,7 @@ L’hologramme lui-même doit également pouvoir fournir une rétroaction visuel
 Avec une pointe de doigt pourvue de la détection de collision, les utilisateurs sont désormais prêts à interagir avec un composant d’IU holographique fondamental, à savoir un bouton sur lequel appuyer. Ce type de bouton est un composant holographique conçu pour une pression directe à l’aide du doigt. Là encore, en raison du manque de rétroaction tactile, un bouton sur lequel il est possible d’appuyer associe deux mécanismes pour traiter les problèmes de rétroaction tactile.
 
 * Le premier mécanisme est un rectangle englobant avec nuanceur de proximité, détaillé dans la section précédente. Il offre aux utilisateurs une meilleure sensation de proximité lors de l’approche et du contact avec un bouton.
-* Le second mécanisme est une dépression. La dépression crée une sensation de pression lorsque le doigt entre en contact avec un bouton. Ce mécanisme permet de veiller à ce que le bouton se déplace étroitement avec la pointe du doigt dans l’axe de profondeur. Le bouton peut se déclencher quand il atteint une profondeur déterminée (l’utilisateur appuie sur le bouton) ou quand il quitte cette profondeur (l’utilisateur relâche le bouton).
+* Le second mécanisme est une dépression. La dépression crée une sensation de pression lorsque le doigt entre en contact avec un bouton. Ce mécanisme permet de veiller à ce que le bouton se déplace étroitement avec la pointe du doigt dans l’axe de profondeur. Le bouton peut se déclencher quand il atteint une profondeur choisie (l’utilisateur appuie sur le bouton) ou quand il quitte cette profondeur (l’utilisateur relâche le bouton).
 * Il est possible d’ajouter un effet sonore pour améliorer la rétroaction quand le bouton se déclenche.
 
 :::row:::
@@ -178,7 +176,7 @@ Avec une pointe de doigt pourvue de la détection de collision, les utilisateurs
 
 ## <a name="2d-slate-interaction"></a>Interaction avec une tablette 2D
 
-Une [tablette](slate.md) 2D est un conteneur holographique utilisé pour héberger le contenu d’applications 2D comme un navigateur web. L’interaction avec une tablette 2D par manipulation directe consiste à exploiter le modèle mental de l’interaction avec un écran tactile physique.
+Une [tablette](slate.md) 2D est un conteneur holographique utilisé pour héberger le contenu d’applications 2D comme un navigateur web. L’interaction avec une tablette 2D par manipulation directe est la même chose que l’interaction avec un écran tactile physique.
 
 ### <a name="to-interact-with-the-slate-contact"></a>Pour interagir avec la tablette par contact
 
@@ -205,12 +203,12 @@ Une [tablette](slate.md) 2D est un conteneur holographique utilisé pour héberg
 
 :::row:::
     :::column:::
-       ![Déplacer](images/manipulate-2d-slate-move.jpg)<br>
+       ![Graphique présentant la fonctionnalité de saisie et de déplacement](images/manipulate-2d-slate-move.jpg)<br>
        **Déplacer**<br>
        Déplacez vos mains vers les coins et les bords pour faire apparaître les affordances de manipulation les plus proches. Saisissez la barre holographique en haut de la tablette 2D pour pouvoir déplacer la tablette entière.
     :::column-end:::
     :::column:::
-       ![Mettre à l’échelle](images/manipulate-2d-slate-scale.jpg)<br>
+       ![Graphique présentant la fonctionnalité de mise à l’échelle](images/manipulate-2d-slate-scale.jpg)<br>
         **Mettre à l’échelle**<br>
         Saisissez les affordances de manipulation, puis effectuez une mise à l’échelle uniforme par le biais des affordances d’angle.
     :::column-end:::
@@ -236,17 +234,17 @@ La manipulation basée sur l’affordance vous permet de manipuler l’objet 3D 
 
 :::row:::
     :::column:::
-       ![Déplacer](images/3d-object-manipulation-move.jpg)<br>
+       ![Graphique présentant le rectangle englobant d’un objet et la fonctionnalité de déplacement](images/3d-object-manipulation-move.jpg)<br>
        **Déplacer**<br>
        Dès que la main d’un utilisateur est proche d’un objet 3D, le rectangle englobant et l’affordance la plus proche apparaissent. Les utilisateurs peuvent saisir le rectangle englobant pour déplacer l’objet entier.
     :::column-end:::
     :::column:::
-       ![Faire pivoter](images/3d-object-manipulation-rotate.jpg)<br>
+       ![Graphique montrant l’utilisateur saisissant le bord d’un objet pour effectuer une rotation](images/3d-object-manipulation-rotate.jpg)<br>
         **Faire pivoter**<br>
         Les utilisateurs peuvent saisir les affordances de bord pour effectuer une rotation.
     :::column-end:::
     :::column:::
-       ![Mettre à l’échelle](images/3d-object-manipulation-scale.jpg)<br>
+       ![Graphique montrant l’utilisateur saisissant l’angle d’un objet pour effectuer une mise à l’échelle](images/3d-object-manipulation-scale.jpg)<br>
        **Mettre à l’échelle**<br>
        Les utilisateurs peuvent saisir les affordances d’angle pour effectuer une mise à l’échelle uniforme.
     :::column-end:::
@@ -270,20 +268,20 @@ Une manipulation spécifique nécessite de la précision. Nous vous recommandons
 
 Avec HoloLens (1re génération), nous avons montré aux utilisateurs quelques mouvements prédéfinis, tels qu’écarter les doigts paume vers le haut et cliquer dans l’air. Avec HoloLens 2, nous ne demandons pas aux utilisateurs de mémoriser des mouvements symboliques. Tous les mouvements nécessaires à l’utilisateur qui lui permettent d’interagir avec les hologrammes et le contenu sont instinctifs. Les mouvements instinctifs doivent aider les utilisateurs à effectuer des mouvements via les affordances d’IU conçues à cet effet.
 
-Par exemple, si nous encourageons l’utilisateur à saisir un objet ou un point de contrôle en le pinçant avec deux doigts, l’objet ou le point de contrôle doit être petit. Si nous souhaitons que l’utilisateur le saisisse avec cinq doigts, l’objet ou le point de contrôle doit être relativement grand. Si nous prenons l’exemple des boutons, un tout petit bouton oblige les utilisateurs à appuyer dessus avec un seul doigt ; un gros bouton incite les utilisateurs à appuyer dessus avec la paume de la main.
+Par exemple, si nous encourageons l’utilisateur à saisir un objet ou un point de contrôle en le pinçant avec deux doigts, l’objet ou le point de contrôle doit être petit. Si nous souhaitons que l’utilisateur le saisisse avec cinq doigts, l’objet ou le point de contrôle doit être relativement grand. Si nous prenons l’exemple des boutons, un tout petit bouton oblige les utilisateurs à appuyer dessus avec un seul doigt. Un gros bouton incite les utilisateurs à appuyer dessus avec la paume de la main.
 
 
 :::row:::
     :::column:::
-       ![Déplacer](images/instinctual-gestures-smallobject.jpg)<br>
+       ![Graphique montrant l’utilisateur saisissant un petit objet afin de le déplacer](images/instinctual-gestures-smallobject.jpg)<br>
        **Petit objet**<br>
     :::column-end:::
     :::column:::
-       ![Faire pivoter](images/instinctual-gestures-mediumobject.jpg)<br>
+       ![Graphique montrant l’utilisateur saisissant un objet de taille moyenne afin de le déplacer](images/instinctual-gestures-mediumobject.jpg)<br>
         **Objet de taille moyenne**<br>
     :::column-end:::
     :::column:::
-       ![Mettre à l’échelle](images/instinctual-gestures-largeobject.jpg)<br>
+       ![Graphique montrant l’utilisateur saisissant un objet volumineux afin de le déplacer](images/instinctual-gestures-largeobject.jpg)<br>
        **Objet volumineux**<br>
     :::column-end:::
 :::row-end:::
@@ -310,13 +308,13 @@ La manipulation directe peut paraître magique si elle fonctionne comme prévu. 
 * **Quand** : Réduisez le déclenchements par inadvertance d’une réponse à une manipulation. L’eye-tracking permet de mieux comprendre l’engagement de l’utilisateur.
 Par exemple, supposons que vous lisiez un texte holographique (instructions) quand vous tendez la main pour saisir votre outil de travail réel.
 
-En procédant ainsi, vous passez accidentellement votre main sur des boutons holographiques interactifs que vous n’aviez même pas remarqués auparavant (par exemple, situés en dehors du champ de vision de l’utilisateur (FoV)).
+En procédant ainsi, vous passez accidentellement votre main sur des boutons holographiques interactifs que vous n’aviez même pas remarqués. Par exemple, ils peuvent être situés en dehors du champ de vision de l’utilisateur (FoV).
 
-  Pour faire court : Si l’utilisateur n’a pas regardé un hologramme depuis un certain temps et si un événement tactile ou de saisie a été détecté, il est probable que l’utilisateur n’avait pas réellement l’intention d’interagir avec cet hologramme.
+Si l’utilisateur n’a pas regardé un hologramme depuis un certain temps et si un événement tactile ou de saisie a été détecté, l’interaction est probablement involontaire.
 
 * **Lequel** :  En plus du traitement des activations correspondant à des faux positifs, il est également possible d’améliorer l’identification des hologrammes à saisir ou à pousser, car le point d’intersection n’est pas forcément clair selon votre perspective, surtout si plusieurs hologrammes sont proches les uns des autres.
 
-  Bien que le suivi oculaire sur HoloLens 2 soit parfois limité au niveau de la précision avec laquelle il évalue votre regard, il peut être très utile pour les interactions rapprochées en raison de la disparité de la profondeur quand vous interagissez avec la saisie manuelle. Cela signifie qu’il est parfois difficile de déterminer si votre main est placée derrière ou devant un hologramme pour saisir avec précision un widget de manipulation, par exemple.
+  Bien que l’eye-tracking sur HoloLens 2 soit parfois limité au niveau de la précision avec laquelle il évalue votre regard, il peut être utile pour les interactions rapprochées en raison de la disparité de la profondeur quand vous interagissez avec la saisie manuelle. Cela signifie qu’il est parfois difficile de déterminer si votre main est placée derrière ou devant un hologramme pour saisir avec précision un widget de manipulation, par exemple.
 
 * **Où** : Utilisez les informations relatives à ce qu’un utilisateur regarde avec des mouvements rapides. Saisissez un hologramme et lancez-le à peu près vers l’emplacement souhaité.  
 

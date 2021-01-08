@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, performances, optimisation, paramètres, documentation
-ms.openlocfilehash: 295f5c3653d02e9ab7ab4cd51dba57cafb5b291f
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609620"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865424"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Recommandations sur les performances pour Unreal
 
@@ -37,7 +37,7 @@ Vous trouverez chacun des paramètres suivants dans **Edit > Project Settings**.
 
 ![Paramètres de rendu VR](images/unreal/performance-recommendations-img-03.png)
 
-4. Vérifiez que la **valeur par défaut** ou **D3D12** est la valeur de **RHI par défaut** sélectionnée lors de l’utilisation d’OpenXR.
+4. **[OpenXR uniquement]** Vérifiez que la **valeur par défaut** ou **D3D12** est la valeur de **RHI par défaut** sélectionnée :
     * La sélection de **D3D11** aura un impact négatif sur les performances en raison de la plateforme effectuant une passe de rendu supplémentaire. **D3D12** doit permettre d’améliorer les performances de rendu, en plus d’éviter la passe de rendu supplémentaire.
 
 ![RHI par défaut](images/unreal/performance-recommendations-img-09.png)
