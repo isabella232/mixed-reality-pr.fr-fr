@@ -1,5 +1,5 @@
 ---
-title: Tutoriels de démarrage - 9. Utilisation des commandes vocales
+title: Tutoriels sur MRTK - 9. Utilisation des commandes vocales
 description: Ce cours vous montre comment utiliser les commandes vocales avec Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, commandes vocales, entrée vocale
 ms.localizationpriority: high
-ms.openlocfilehash: e51f9e816acbc2f98415deaec2c0885c97e40442
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6e008f3e46bc4a22499691e284020321d29a2f23
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679248"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613463"
 ---
 # <a name="9-using-speech-commands"></a>9. Utilisation des commandes vocales
 

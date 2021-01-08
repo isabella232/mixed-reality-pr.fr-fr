@@ -7,23 +7,23 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, déboguer, déployer
-ms.openlocfilehash: b0280edb2116094f6443e262d12c62243c319250
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 20bda2cd247f18680d3f9fe95284e238a32e1140
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697278"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97529964"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Utilisation de Visual Studio pour le déploiement et le débogage
 
-Que vous choisissiez de développer votre application de réalité mixte dans DirectX ou dans Unity, vous utiliserez Visual Studio pour son débogage et son déploiement. Dans cette section, vous allez découvrir comment :
+Que vous utilisiez DirectX ou Unity pour développer votre application de réalité mixte, Visual Studio est votre outil de prédilection pour la déboguer et la déployer. Dans cette section, vous allez découvrir comment :
 * Déployer des applications sur votre HoloLens ou un casque immersif Windows Mixed Reality à l’aide de Visual Studio.
 * Utiliser l’émulateur HoloLens intégré à Visual Studio.
 * Déboguer des applications de réalité mixte.
 
 ## <a name="prerequisites"></a>Prérequis
 1. Consultez [Installer les outils](../../develop/install-the-tools.md) pour obtenir des instructions d’installation.
-2. Créez un projet d’application Windows universelle dans Visual Studio.  Pour HoloLens (1re génération), utilisez Visual Studio 2017 ou une version plus récente.  Pour HoloLens 2, utilisez Visual Studio 2019 version 16.2 ou ultérieure. Les langages C# et C++ sont pris en charge. (Ou suivez les instructions pour [créer une application dans Unity](../../develop/unity/tutorials/holograms-100.md).)
+2. Créez un projet d’application Windows universelle dans Visual Studio.  Pour HoloLens (1re génération), utilisez Visual Studio 2017 ou une version plus récente.  Pour HoloLens 2, utilisez Visual Studio 2019 16.2 ou ultérieur. Les langages C# et C++ sont pris en charge. (Ou suivez les instructions pour [créer une application dans Unity](../../develop/unity/tutorials/holograms-100.md).)
 
 ## <a name="enabling-developer-mode"></a>Activation du mode développeur
 
@@ -31,46 +31,46 @@ Commencez par activer le **mode développeur** sur votre appareil afin que Visua
 
 ### <a name="hololens"></a>HoloLens
 1. Mettez HoloLens sous tension et allumez l’appareil.
-2. Effectuez le [mouvement de démarrage](../../design/system-gesture.md) pour lancer le menu principal.
+2. Utilisez le [mouvement associé au menu Démarrer](../../design/system-gesture.md) pour lancer le menu principal.
 3. Sélectionnez la vignette **Settings** pour lancer l’application dans votre environnement.
-4. Sélectionnez l’élément de menu **Mettre à jour** .
-5. Sélectionnez l’élément de menu **Pour les développeurs** .
-6. Activez **Mode développeur** . Ce mode vous permet de [déployer des applications à partir de Visual Studio](using-visual-studio.md) sur votre HoloLens.
-7. Facultatif : Faites défiler la page et activez également le **portail d’appareil** . Cela vous permettra également de vous connecter au [portail d’appareil Windows](using-the-windows-device-portal.md) sur votre HoloLens à partir d’un navigateur web.
+4. Sélectionnez l’élément de menu **Mettre à jour**.
+5. Sélectionnez l’élément de menu **Pour les développeurs**.
+6. Activez le **Mode développeur** pour [déployer des applications à partir de Visual Studio](using-visual-studio.md) sur votre HoloLens.
+7. Facultatif : Faites défiler et activez également **Portail d’appareil**, ce qui vous permet de vous connecter au [Portail d’appareil Windows](using-the-windows-device-portal.md) sur votre HoloLens à partir d’un navigateur web.
 
 ### <a name="windows-pc"></a>PC Windows
 
-Si vous travaillez avec un casque Windows Mixed Reality connecté à votre PC, vous devez activer le **mode développeur** sur ce PC.
+Si vous travaillez avec un casque Windows Mixed Reality connecté à votre PC, vous devez activer le **Mode développeur** sur ce PC.
 1. Accédez à **Paramètres**
 2. Sélectionnez **Mise à jour et sécurité**
 3. Sélectionnez **Pour les développeurs**
-4. Activez le **mode développeur** , lisez la clause d’exclusion de responsabilité pour le paramètre que vous avez choisi, puis cliquez sur Oui pour accepter la modification.
+4. Activez le **Mode développeur**, lisez la clause d’exclusion de responsabilité pour le paramètre que vous avez choisi, puis sélectionnez Oui pour accepter la modification.
 
 ## <a name="deploying-an-app-over-wi-fi---hololens-1st-gen"></a>Déploiement d’une application via une connexion WiFi - HoloLens (1re génération)
 1. Sélectionnez une configuration de build **x86** pour votre application</br>
 ![Configuration de build x86 dans Visual Studio](images/x86setting.png)</br>
 2. Sélectionnez **Machine distante** dans le menu déroulant de la cible de déploiement</br>
 ![Cible de déploiement de machine distante dans Visual Studio](images/remotemachinesetting.png)</br>
-3. Pour les projets C++ et JavaScript, accédez à **Projet > Propriétés > Propriétés de configuration > Débogage** . Pour les projets C#, une boîte de dialogue s’affiche automatiquement, dans laquelle vous pouvez configurer votre connexion.
-  a. Entrez l’adresse IP de votre appareil dans le champ **Adresse** ou **Nom de la machine** . Recherchez l’adresse IP sur votre HoloLens sous **Paramètres > Réseau et Internet > Options avancées** , ou demandez à Cortana « Quelle est mon adresse IP ? ».
+3. Pour les projets C++ et JavaScript, accédez à **Projet > Propriétés > Propriétés de configuration > Débogage**. Pour les projets C#, une boîte de dialogue s’affiche automatiquement, dans laquelle vous pouvez configurer votre connexion.
+  a. Entrez l’adresse IP de votre appareil dans le champ **Adresse** ou **Nom de la machine**. Recherchez l’adresse IP sur votre HoloLens sous **Paramètres > Réseau et Internet > Options avancées**, ou demandez à Cortana « Quelle est mon adresse IP ? ».
   b. Définir le mode d’authentification sur **Universel (protocole non chiffré)**</br>
   ![Boîte de dialogue Connexion à distance dans Visual Studio](images/remotedeploy.png)</br>
 4. Sélectionnez **Déboguer > Démarrer le débogage** pour déployer votre application et commencer le débogage</br>
 ![Démarrer sans débogage dans Visual Studio](images/deploywithdebugging.png)</br>
-5. La première fois que vous déployez une application sur votre HoloLens à partir de votre PC, vous êtes invité à entrer un code PIN. Suivez les instructions de la section **Appairer votre appareil** , plus loin dans cet article.
+5. La première fois que vous déployez une application sur votre HoloLens à partir de votre PC, vous êtes invité à entrer un code PIN. Suivez les instructions de la section **Appairer votre appareil**, plus loin dans cet article.
 
 ## <a name="deploying-an-app-over-wi-fi---hololens-2"></a>Déploiement d’une application via une connexion WiFi - HoloLens 2
 1. Sélectionnez une configuration de build **ARM** ou **ARM64** pour votre application</br>
 ![Configuration de build ARM64 dans Visual Studio](images/arm64setting.png)</br>
 2. Sélectionnez **Machine distante** dans le menu déroulant de la cible de déploiement</br>
 ![Cible de déploiement de machine distante dans Visual Studio](images/remotemachinesetting_arm64.png)</br>
-3. Pour les projets C++ et JavaScript, accédez à **Projet > Propriétés > Propriétés de configuration > Débogage** . Pour les projets C#, une boîte de dialogue s’affiche automatiquement, dans laquelle vous pouvez configurer votre connexion.
-  a. Entrez l’adresse IP de votre appareil dans le champ **Adresse** ou **Nom de la machine** . Recherchez l’adresse IP sur votre HoloLens sous **Paramètres > Réseau et Internet > Options avancées** , ou demandez à Cortana « Quelle est mon adresse IP ? ».
+3. Pour les projets C++ et JavaScript, accédez à **Projet > Propriétés > Propriétés de configuration > Débogage**. Pour les projets C#, une boîte de dialogue s’affiche automatiquement, dans laquelle vous pouvez configurer votre connexion.
+  a. Entrez l’adresse IP de votre appareil dans le champ **Adresse** ou **Nom de la machine**. Recherchez l’adresse IP sur votre HoloLens sous **Paramètres > Réseau et Internet > Options avancées**, ou demandez à Cortana « Quelle est mon adresse IP ? ».
   b. Définir le mode d’authentification sur **Universel (protocole non chiffré)**</br>
   ![Boîte de dialogue Connexion à distance dans Visual Studio](images/remotedeploy.png)</br>
 4. Sélectionnez **Déboguer > Démarrer le débogage** pour déployer votre application et commencer le débogage</br>
 ![Démarrer sans débogage dans Visual Studio](images/deploywithdebugging.png)</br>
-5. La première fois que vous déployez une application sur votre HoloLens à partir de votre PC, vous êtes invité à entrer un code PIN. Suivez les instructions de la section **Appairer votre appareil** , plus loin dans cet article.
+5. La première fois que vous déployez une application sur votre HoloLens à partir de votre PC, vous êtes invité à entrer un code PIN. Suivez les instructions de la section **Appairer votre appareil**, plus loin dans cet article.
 
 Si l’adresse IP de votre HoloLens change, vous pouvez changer l’adresse IP de la machine cible à partir de **Projet > Propriétés > Propriétés de configuration > Débogage**
 
@@ -81,7 +81,7 @@ Si l’adresse IP de votre HoloLens change, vous pouvez changer l’adresse IP d
 ![Déploiement d’appareils dans Visual Studio](images/buildsettingsusbdeploy.png)</br>
 3. Sélectionnez **Déboguer > Démarrer le débogage** pour déployer votre application et commencer le débogage</br>
 ![Démarrer sans débogage dans Visual Studio](images/deploywithdebugging.png)</br>
-4. La première fois que vous déployez une application sur votre HoloLens à partir de votre PC, vous êtes invité à entrer un code PIN. Suivez les instructions de la section **Appairer votre appareil** , plus loin dans cet article.
+4. La première fois que vous déployez une application sur votre HoloLens à partir de votre PC, vous êtes invité à entrer un code PIN. Suivez les instructions de la section **Appairer votre appareil**, plus loin dans cet article.
 
 ## <a name="deploying-an-app-over-usb---hololens-2"></a>Déploiement d’une application via une connexion USB - HoloLens 2
 
@@ -93,20 +93,21 @@ Si l’adresse IP de votre HoloLens change, vous pouvez changer l’adresse IP d
 ![Déploiement d’appareils dans Visual Studio](images/buildsettingsusbdeploy_arm64.png)</br>
 3. Sélectionnez **Déboguer > Démarrer le débogage** pour déployer votre application et commencer le débogage</br>
 ![Démarrer sans débogage dans Visual Studio](images/deploywithdebugging.png)</br>
-4. La première fois que vous déployez une application sur votre HoloLens à partir de votre PC, vous êtes invité à entrer un code PIN. Suivez les instructions de la section **Appairer votre appareil** , plus loin dans cet article.
+4. La première fois que vous déployez une application sur votre HoloLens à partir de votre PC, vous êtes invité à entrer un code PIN. Suivez les instructions de la section **Appairer votre appareil**, plus loin dans cet article.
 
 ## <a name="deploying-an-app-to-your-local-pc---immersive-headset"></a>Déploiement d’une application sur votre PC local - Casque immersif
 
-Suivez ces instructions si vous utilisez un casque immersif Windows Mixed Reality qui est connecté à votre PC ou au [simulateur Mixed Reality](using-the-windows-mixed-reality-simulator.md). Dans ces deux cas, il vous suffit de déployer et d’exécuter votre application sur le PC local.
+Pour utiliser un casque immersif Windows Mixed Reality qui se connecte à votre PC ou au [simulateur Mixed Reality](using-the-windows-mixed-reality-simulator.md) :
 1. Sélectionnez une configuration de build **x86** ou **x64** pour votre application
 2. Sélectionnez **Machine locale** dans le menu déroulant de la cible de déploiement
 3. Sélectionnez **Déboguer > Démarrer le débogage** pour déployer votre application et commencer le débogage
 
 ## <a name="pairing-your-device"></a>Appairage de votre appareil
 
-La première fois que vous déployez une application sur votre HoloLens à partir de Visual Studio, vous êtes invité à entrer un code PIN. Sur votre HoloLens, générez un code PIN en lançant l’application Paramètres, en accédant à **Mise à jour > Pour les développeurs** et en appuyant sur **Coupler** . Un code PIN s’affiche sur votre HoloLens. Tapez ce code PIN dans Visual Studio. Une fois l’appairage terminé, appuyez sur **Terminé** sur votre HoloLens pour fermer la boîte de dialogue. Ce PC étant maintenant appairé avec votre HoloLens, vous pouvez y déployer des applications automatiquement. Répétez ces étapes pour chaque autre PC qui est utilisé pour déployer des applications sur votre HoloLens.
+La première fois que vous déployez une application sur votre HoloLens à partir de Visual Studio, vous êtes invité à entrer un code PIN. Sur votre HoloLens, générez un code PIN. Pour cela, lancez l’application Paramètres, accédez à **Mise à jour > Pour les développeurs**, puis appuyez sur **Coupler**. Tapez le code PIN qui apparaît sur votre HoloLens dans Visual Studio. Une fois l’appairage terminé, appuyez sur **Terminé** sur votre HoloLens pour fermer la boîte de dialogue. Ce PC étant maintenant appairé avec votre HoloLens, vous pouvez y déployer des applications automatiquement. Répétez ces étapes pour chaque PC utilisé pour déployer des applications sur votre HoloLens.
 
-Pour annuler l’appairage de votre HoloLens avec tous les ordinateurs avec lesquels il a été appairé, lancez l’application **Paramètres** , accédez à **Mise à jour > Pour les développeurs** et appuyez sur **Effacer** .
+Pour découpler votre HoloLens de tous les ordinateurs appairés :
+* Lancez l’application **Paramètres**, accédez à **Mise à jour > Pour les développeurs**, puis appuyez sur **Effacer**.
 
 ## <a name="deploying-an-app-to-the-hololens-1st-gen-emulator"></a>Déploiement d’une application sur l’émulateur HoloLens (1re génération)
 1. Vérifiez que **[l’émulateur HoloLens est installé](../install-the-tools.md)** .
@@ -128,12 +129,12 @@ Pour annuler l’appairage de votre HoloLens avec tous les ordinateurs avec lesq
 
 ## <a name="graphics-debugger-for-hololens-1st-gen"></a>Débogueur Graphics pour HoloLens (1re génération)
 
-Les outils Graphics Diagnostics de Visual Studio sont très utiles quand vous créez et optimisez une application holographique. Pour plus d’informations, consultez [Visual Studio Graphics Diagnostics sur MSDN](https://msdn.microsoft.com/library/hh315751.aspx).
+Les outils Graphics Diagnostics de Visual Studio sont utiles quand vous écrivez et optimisez une application holographique. Pour plus d’informations, consultez [Visual Studio Graphics Diagnostics sur MSDN](https://msdn.microsoft.com/library/hh315751.aspx).
 
 **Pour démarrer le débogueur Graphics**
 1. Suivez les instructions données plus haut pour cibler un appareil ou un émulateur
 2. Accédez à **Déboguer > Graphics > Démarrer les diagnostics**
-3. La première fois que vous effectuez cette opération avec un HoloLens, vous pouvez obtenir une erreur « Accès refusé ». Redémarrez votre HoloLens pour que les autorisations mises à jour prennent effet, puis réessayez.
+3. La première fois que vous démarrez les diagnostics avec un HoloLens, vous pouvez obtenir une erreur « Accès refusé ». Redémarrez votre HoloLens pour que les autorisations mises à jour prennent effet, puis réessayez.
 
 ## <a name="profiling"></a>Profilage
 
@@ -143,23 +144,23 @@ Les outils de profilage dans Visual Studio vous permettent d’analyser l’util
 1. Suivez les instructions données plus haut pour cibler un appareil ou un émulateur
 2. Accédez à **Déboguer > Démarrer les outils de diagnostic sans débogage...**
 3. Sélectionnez les outils que vous souhaitez utiliser
-4. Cliquez sur **Démarrer**
-5. La première fois que vous effectuez cette opération avec un HoloLens, vous pouvez obtenir une erreur « Accès refusé ». Redémarrez votre HoloLens pour que les autorisations mises à jour prennent effet, puis réessayez.
+4. Sélectionnez **Démarrer**
+5. La première fois que vous démarrez les diagnostics sans débogage avec un HoloLens, vous pouvez obtenir une erreur « Accès refusé ». Redémarrez votre HoloLens pour que les autorisations mises à jour prennent effet, puis réessayez.
 
 ## <a name="debugging-an-installed-or-running-app"></a>Débogage d’une application installée ou en cours d’exécution
 
-Vous pouvez utiliser Visual Studio pour déboguer une application Windows universelle installée sans déploiement à partir d’un projet Visual Studio. Cela est utile si vous souhaitez déboguer un package d’application installé ou déboguer une application en cours d’exécution.
+Vous pouvez utiliser Visual Studio pour déboguer une application Windows universelle installée sans déploiement à partir d’un projet Visual Studio. Cela est utile si vous souhaitez déboguer un package d’application installé ou une application en cours d’exécution.
 1. Accédez à **Déboguer -> Autres cibles de débogage -> Déboguer le package d’application installé**
 2. Sélectionnez la cible **Machine distante** pour HoloLens ou **Machine locale** pour les casques immersifs
-3. Entrez l’ **adresse IP** de votre appareil
+3. Entrez l’**adresse IP** de votre appareil
 4. Choisissez le mode d’authentification **Universel**
 5. La fenêtre affiche les applications en cours d’exécution et les applications inactives. Sélectionnez celle que vous voulez déboguer.
 6. Choisissez le type de code à déboguer (managé, natif, mixte)
-7. Cliquez sur **Attacher** ou sur **Démarrer**
+7. Sélectionnez **Attacher** ou **Démarrer**
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de points de contrôle de développement Unreal que nous avons élaboré, vous êtes actuellement au cœur de la phase de déploiement. À partir de là, vous pouvez passer au sujet suivant :
+Si vous suivez le parcours de points de contrôle de développement Unreal que nous avons élaboré, vous êtes actuellement au cœur de la phase de déploiement. À partir d’ici, vous pouvez passer au sujet suivant :
 
 > [!div class="nextstepaction"]
 > [Déploiement sur l’émulateur HoloLens](using-the-hololens-emulator.md)

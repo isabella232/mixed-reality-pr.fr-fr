@@ -1,5 +1,5 @@
 ---
-title: Tutoriels de démarrage - 1. Présentation des tutoriels de démarrage
+title: Tutoriels sur MRTK - 1. Présentation des tutoriels MRTK
 description: Ce cours montre comment utiliser Mixed Reality Toolkit (MRTK) pour créer une application de réalité mixte à partir de rien.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, solveurs, suivi oculaire, commandes vocales
 ms.localizationpriority: high
-ms.openlocfilehash: 14feba57c7a8995648d108ffa5e4af95c4fa2827
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 25a19d24a027000c78d6bffe2c74eb9f9d91370c
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679328"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613203"
 ---
-# <a name="1-introduction-to-the-getting-started-tutorials"></a>1. Présentation des tutoriels de démarrage
+# <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Présentation des tutoriels MRTK
 
 ## <a name="overview"></a>Vue d’ensemble
 

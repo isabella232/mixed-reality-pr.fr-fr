@@ -1,5 +1,5 @@
 ---
-title: Tutoriels de démarrage - 6. Création d’interfaces utilisateur
+title: Tutoriels sur MRTK - 6. Création d’interfaces utilisateur
 description: Ce cours vous montre comment utiliser Mixed Reality Toolkit (MRTK) pour créer des interfaces utilisateur.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, préfabriqués, hologrammes, info-bulles
 ms.localizationpriority: high
-ms.openlocfilehash: 9ef3f17f8ec5508ace0c5d05cccf7a8383e54353
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 90b794dc6e88b724d16c339e428c4d2ed9cdac07
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679288"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613513"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Création d’interfaces utilisateur
 

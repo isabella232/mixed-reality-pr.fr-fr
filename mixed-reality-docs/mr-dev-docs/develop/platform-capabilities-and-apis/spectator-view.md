@@ -1,18 +1,18 @@
 ---
 title: Spectator View
-description: Visualisez les hologrammes d’un appareil externe pour proposer une expérience de réalité mixte sur un affichage externe ou enregistrer une vidéo d’une expérience de réalité mixte.
+description: Visualisez des hologrammes à partir d’un appareil externe pour montrer ou enregistrer une expérience de réalité mixte sur un écran externe.
 author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, caméra, ARKit, HoloLens, réalité mixte, MixedRealityToolkit, démonstration, enregistrement
-ms.openlocfilehash: 7b48315753ada0ae7a94abca5377a083ac659a34
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698173"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530109"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Spectator View pour HoloLens et HoloLens 2
 
@@ -20,8 +20,7 @@ ms.locfileid: "91698173"
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Quand nous portons un appareil HoloLens, nous oublions souvent qu’une personne qui n’en a pas est incapable de voir les merveilles qui s’offrent à nos yeux. Spectator View permet à d’autres personnes de voir sur un écran 2D ce qu’un utilisateur HoloLens voit dans son monde.
-Spectator View offre un moyen rapide et économique d’enregistrer des hologrammes en HD avec des appareils mobiles. Il permet également de créer des enregistrements d’hologrammes de qualité professionnelle avec des caméras vidéo.
+Quand nous portons un appareil HoloLens, il est facile d’oublier qu’une personne qui n’en a pas est incapable de voir les merveilles qui s’offrent à nos yeux. Spectator View permet à d’autres personnes de voir ce qu’un utilisateur HoloLens voit sur un écran 2D. Il offre un moyen rapide et économique d’enregistrer des hologrammes en HD avec des appareils mobiles, et permet de créer des enregistrements d’hologrammes de qualité avec des caméras vidéo.
 
 ## <a name="key-resources"></a>Ressources clés
 
@@ -30,7 +29,8 @@ Spectator View offre un moyen rapide et économique d’enregistrer des hologram
 * [**Exemples Spectator View**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## <a name="use-cases"></a>Scénarios d’utilisation
-* Vous pouvez enregistrer une expérience de réalité mixte à l’aide d’un appareil iPhone ou Android. Enregistrez en Full HD et appliquez un anticrénelage aux hologrammes et même aux ombres. Il s’agit d’un moyen économique et rapide de capturer des vidéos d’hologrammes.
+
+* Vous pouvez enregistrer une expérience de réalité mixte à l’aide d’un appareil iPhone ou Android. Enregistrez en Full HD et appliquez un anticrénelage aux hologrammes et aux ombres. Vous disposez d’une solution de capture de vidéos d’hologrammes économique et rapide.
 * Diffusez en streaming des expériences de réalité mixte en direct sur un appareil Apple TV, directement à partir de votre iPhone ou iPad, sans aucun décalage !
 * Partagez l’expérience avec des invités : donnez aux personnes ne disposant pas d’un appareil HoloLens la possibilité de voir des hologrammes directement sur leur téléphone ou leur tablette.
 

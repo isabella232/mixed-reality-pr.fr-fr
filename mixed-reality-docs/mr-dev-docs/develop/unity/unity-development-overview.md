@@ -1,20 +1,20 @@
 ---
-title: Vue d’ensemble du développement Unity
-description: Commencez à créer des applications de réalité mixte dans Unity.
-author: thetuvix
+title: Développement Unity pour HoloLens
+description: Commencez à créer des applications de réalité mixte dans Unity et HoloLens.
+author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, réalité mixte, développement, prise en main, nouveau projet, portage, fonctionnalité, caméra, simulation, émulation, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, MRTK, mixed reality toolkit, mappage spatial, entrée vocale, caméra localisable, émulateur, Azure, tutoriels
-ms.openlocfilehash: 4eeec1544315ff2b9a43fc725d5bbd83c8cea89f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 150d86d1522f3fa71dd9d9a1fe154baef89496e0
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926041"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613473"
 ---
-# <a name="unity-development-overview"></a>Vue d’ensemble du développement Unity
+# <a name="unity-development-for-hololens"></a>Développement Unity pour HoloLens 
 
 ![Logo de bannière Unity](../images/unity_logo_banner.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Tutoriels de démarrage - 4. Positionnement des objets dans la scène
+title: Tutoriels sur MRTK - 4. Positionnement des objets dans la scène
 description: Ce cours vous montre comment positionner des objets dans la scène et comment utiliser Mixed Reality Toolkit (MRTK) pour organiser les objets dans une grille.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, solveurs, collection d’objets de grille
 ms.localizationpriority: high
-ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679308"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613253"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Positionnement des objets dans la scène
 
