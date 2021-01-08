@@ -1,17 +1,17 @@
 ---
-title: Entrée vocale
-description: Didacticiel sur la configuration et l’utilisation de l’entrée vocale dans HoloLens 2 et le moteur inréel
+title: Entrée vocale en non réel
+description: Découvrez comment configurer et utiliser les entrées vocales, les mappages vocaux et la reconnaissance dans des applications de réalité mixte non réelles pour les appareils HoloLens 2.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, non réel, moteur 4, UE4, HoloLens 2, voix, entrée vocale, reconnaissance vocale, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 504a2d978e3c9bc698e8edd11ea8a4d6be13795a
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609750"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010069"
 ---
 # <a name="voice-input-in-unreal"></a>Entrée vocale en non réel
 

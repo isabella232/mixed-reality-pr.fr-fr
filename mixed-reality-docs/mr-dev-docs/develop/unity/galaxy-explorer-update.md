@@ -1,17 +1,17 @@
 ---
 title: Création de l’Explorateur Galaxy pour HoloLens 2
-description: Bienvenue dans la procédure de mise à jour de l’Explorateur Galaxy pour HoloLens 2. Tout comme l’Explorateur Galaxy d’origine, notre équipe est en libre-remplissage du projet sur GitHub pour s’assurer que la Communauté dispose d’un accès complet.
+description: Découvrez comment notre équipe met à jour le projet open source de l’Explorateur Galaxy pour HoloLens 2 sur GitHub.
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: Explorateur Galaxy, étude de cas, projet, exemple, MRTK, boîte à outils de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 00bf589d738cf74cbfdb489bc43aadf931dda285
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d3a31204275b2d2a9f1f1ea1c283993d2e0285ed
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010470"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009579"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Création de l’Explorateur Galaxy pour HoloLens 2
 

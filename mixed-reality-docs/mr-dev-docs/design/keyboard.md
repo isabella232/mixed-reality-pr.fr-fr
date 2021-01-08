@@ -1,17 +1,17 @@
 ---
 title: Clavier
-description: Découvrez comment appeler le clavier système dans MRTK.
+description: Découvrez comment appeler et utiliser le clavier du système à l’aide de la boîte à outils de la réalité mixte.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, clavier, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: b258ad7934cae76c581723d681cce32c68458b72
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 8efb5446479e53569349eda302c7d4dcb844a137
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847285"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009729"
 ---
 # <a name="keyboard"></a>Clavier
 

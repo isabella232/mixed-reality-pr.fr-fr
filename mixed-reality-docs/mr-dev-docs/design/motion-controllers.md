@@ -1,17 +1,17 @@
 ---
 title: Contrôleurs de mouvement
-description: Détails sur les contrôleurs de mouvement de réalité mixte.
+description: Découvrez comment configurer, associer et Manager des interactions d’entrée à l’aide de contrôleurs de mouvement de réalité mixte dans vos applications.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: contrôleurs 6DOF, contrôleurs de mouvement, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, défilement, poignée, état
-ms.openlocfilehash: 768e316f175769d7399866b0b7cc62ee8c5c2cde
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2dbe0ab0b83b371a88e419e7b223f30670bfeaea
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847438"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009709"
 ---
 # <a name="motion-controllers"></a>Contrôleurs de mouvement
 
@@ -213,8 +213,6 @@ Les applications qui souhaitent traiter différemment les positions en fonction 
 </tr>
 </table>
 
-
-
 Ces États de suivi du contrôleur de mouvement sont définis comme suit :
 * **Précision élevée :** Alors que le contrôleur de mouvement se trouve dans le champ de vision du casque, il fournit généralement des positions à grande précision, en fonction du suivi visuel. Un contrôleur mobile qui laisse momentanément le champ de vue ou est momentanément masqué des capteurs du casque (par exemple, par l’autre côté de l’utilisateur) continue à retourner des poses de grande précision pendant une brève période, en se basant sur le suivi inertiel du contrôleur lui-même.
 * **Haute précision (risque de perte) :** Lorsque l’utilisateur déplace le contrôleur de mouvement au-delà du bord du champ de vue du casque, le casque ne pourra bientôt pas suivre la position du contrôleur. L’application sait quand le contrôleur a atteint cette limite d’aide en regardant le **SourceLossRisk** REACH 1,0. À ce stade, l’application peut choisir de suspendre les gestes de contrôleur qui nécessitent un flux constant de poses de haute qualité.
@@ -251,7 +249,7 @@ Pour plus d’informations sur la façon de charger dynamiquement des modèles d
  
 [Image de ligne des contrôleurs de mouvement pleine résolution dans' ' 'noir' ' '](images/motioncontrollers-black.png)
 
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 ### <a name="can-i-pair-motion-controllers-to-multiple-pcs"></a>Puis-je coupler des contrôleurs de mouvement à plusieurs PC ?
 
@@ -278,6 +276,7 @@ Consultez [résolution des problèmes du contrôleur de mouvement](https://docs.
 [Faites-nous part](../give-us-feedback.md) de vos commentaires dans le hub de commentaires à l’aide de la catégorie « > d’entrée de réalité mixte ».
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Mouvements et contrôleurs de mouvement dans Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
 * [Mains et contrôleurs de mouvement dans DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Mouvements](gaze-and-commit.md#composite-gestures)

@@ -1,17 +1,17 @@
 ---
 title: Curseur
-description: Un curseur est un composant d’interface utilisateur qui vous permet de définir une valeur en déplaçant un bouton ou un levier sur une piste.
+description: Apprenez à utiliser le composant de l’interface utilisateur Slider pour définir une valeur en déplaçant un bouton ou un levier sur une piste à l’aide de la boîte à outils de la réalité mixte.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, Slider, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: b2f338dd25bbcc50a68a3c5e9b8d980d15827755
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 15a536074f8f873456482a55c1c9dbe418602bb1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848235"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009559"
 ---
 # <a name="slider"></a>Slider
 

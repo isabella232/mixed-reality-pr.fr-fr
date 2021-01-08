@@ -1,17 +1,17 @@
 ---
 title: 'Étude de cas : création d’un Galaxy en réalité mixte'
-description: Avant la sortie de Microsoft HoloLens, nous avons demandé à notre communauté de développeurs quel type d’application il souhaite voir une build d’équipe interne expérimentée pour le nouvel appareil. Plus de 5000 idées ont été partagées et, après une interrogation Twitter de 24 heures, le gagnant était une idée appelée « Galaxy Explorer ».
+description: En savoir plus sur l’application « Explorateur Galaxy » et sur la manière dont elle a été créée pour le service de test de présentation et d’interrogation Twitter de 24 heures par les développeurs de la communauté.
 author: karimluccin
 ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Explorateur Galaxy, HoloLens, Windows Mixed Reality, partager votre idée, étude de cas
-ms.openlocfilehash: 91e1c356d69d2b58795a0a0003dd5ffaf0ef1bdc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681182"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009779"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>Étude de cas : création d’un Galaxy en réalité mixte
 
@@ -41,7 +41,7 @@ Nous avons commencé des tests de stress avec des milliers de particules de poin
 
 ### <a name="creating-the-position-of-the-stars"></a>Création de la position des étoiles
 
-L’un de nos membres de l’équipe a déjà écrit le code C# qui générerait des étoiles à leur position initiale. Les étoiles se trouvent sur une ellipse et leur position peut être décrite par ( **curveOffset** , **ellipseSize** , **Elevation** ) où **curveOffset** est l’angle de l’étoile le long de l’ellipse, **ellipseSize** est la dimension de l’ellipse le long de X et de Z, et élévation l’altitude appropriée de l’étoile au sein de Galaxy. Par conséquent, nous pouvons créer une mémoire tampon ([ComputeBuffer d’Unity](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) qui serait initialisée avec chaque attribut d’étoile et l’envoyer sur le GPU là où il résiderait pour le reste de l’expérience. Pour dessiner ce tampon, nous utilisons [l’DrawProcedural d’Unity](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) qui permet d’exécuter un nuanceur (code sur un GPU) sur un ensemble arbitraire de points sans avoir de maillage réel représentant le Galaxy :
+L’un de nos membres de l’équipe a déjà écrit le code C# qui générerait des étoiles à leur position initiale. Les étoiles se trouvent sur une ellipse et leur position peut être décrite par (**curveOffset**, **ellipseSize**, **Elevation**) où **curveOffset** est l’angle de l’étoile le long de l’ellipse, **ellipseSize** est la dimension de l’ellipse le long de X et de Z, et élévation l’altitude appropriée de l’étoile au sein de Galaxy. Par conséquent, nous pouvons créer une mémoire tampon ([ComputeBuffer d’Unity](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) qui serait initialisée avec chaque attribut d’étoile et l’envoyer sur le GPU là où il résiderait pour le reste de l’expérience. Pour dessiner ce tampon, nous utilisons [l’DrawProcedural d’Unity](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) qui permet d’exécuter un nuanceur (code sur un GPU) sur un ensemble arbitraire de points sans avoir de maillage réel représentant le Galaxy :
 
 **POURCENTAGE**
 
@@ -85,14 +85,14 @@ Une fois que suffisamment de ellipses ont été ajoutées et sont définies pour
 
 ### <a name="creating-the-motion-of-the-stars"></a>Création du mouvement des étoiles
 
-Pour animer le mouvement de l’étoile générale, nous avons besoin d’ajouter un angle constant pour chaque image et de faire en sorte que les étoiles se déplacent le long de leurs ellipses à une vélocité radiale constante. Il s’agit de la raison principale de l’utilisation de **curveOffset** . Cela n’est pas techniquement correct, car les étoiles se déplacent plus rapidement sur les longs côtés des ellipses, mais le mouvement général est parfait.
+Pour animer le mouvement de l’étoile générale, nous avons besoin d’ajouter un angle constant pour chaque image et de faire en sorte que les étoiles se déplacent le long de leurs ellipses à une vélocité radiale constante. Il s’agit de la raison principale de l’utilisation de **curveOffset**. Cela n’est pas techniquement correct, car les étoiles se déplacent plus rapidement sur les longs côtés des ellipses, mais le mouvement général est parfait.
 
 ![Les étoiles se déplacent plus rapidement sur l’arc long, plus lentement sur les bords.](images/ellipse-movement.jpg)
 
 Les étoiles se déplacent plus rapidement sur l’arc long, plus lentement sur les bords.
 
 
-Avec cela, chaque étoile est entièrement décrite par ( **curveOffset** , **ellipseSize** , **Elevation** , **Age** ) où **Age** est une accumulation du temps total qui s’est écoulé depuis le chargement de la scène.
+Avec cela, chaque étoile est entièrement décrite par (**curveOffset**, **ellipseSize**, **Elevation**, **Age**) où **Age** est une accumulation du temps total qui s’est écoulé depuis le chargement de la scène.
 
 
 

@@ -1,17 +1,17 @@
 ---
 title: Info-bulle
-description: Une info-bulle est une brève description qui est liée à un autre contrôle ou objet.
+description: Découvrez comment utiliser des info-bulles dans des applications de réalité mixte, qui sont des descriptions courtes qui sont liées à un autre contrôle ou objet.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, info-bulle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: ceb88fd89ec9d7bde50e23f2ae3ac158a301eb02
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bed9e83cac381fceddbf94cd4048d36427a27874
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848123"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009409"
 ---
 # <a name="tooltip"></a>Info-bulle
 

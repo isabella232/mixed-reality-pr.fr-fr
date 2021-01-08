@@ -1,17 +1,17 @@
 ---
 title: Démarrer le mouvement
-description: Démarrer le mouvement pour appeler le menu Démarrer.
+description: Découvrez comment utiliser le mouvement de démarrage pour appeler le menu Démarrer sur HoloLens et les casques immersifs de Windows Mixed Reality.
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Réalité mixte, gestes, interaction, conception, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, kit de pratiques de réalité mixte, fleuri
-ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e29d483375db103cebc30be9117e40899a9f81f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848166"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009429"
 ---
 # <a name="start-gesture"></a>Démarrer le mouvement
 

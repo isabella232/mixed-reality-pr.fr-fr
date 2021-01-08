@@ -1,17 +1,17 @@
 ---
 title: Étude de cas - Voir à travers vos objets
-description: Cette étude de cas explique comment implémenter l’effet « fenêtre magique » sur HoloLens, ce qui permet à l’utilisateur de voir derrière les murs, le plancher et les ouvertures virtuelles au sein de leur environnement réel.
+description: Cette étude de cas explique l’implémentation de l’effet « fenêtre magique » sur HoloLens, ce qui permet à l’utilisateur de voir derrière les murs, le plancher et les ouvertures virtuelles.
 author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, Magic Window, parallaxe
-ms.openlocfilehash: 84af124cc69e03b3502cee55c694b11ff5c9433b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 018e45a79d88cbc8e28204f023106fbe5dae39bc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681134"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010109"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>Étude de cas - Voir à travers vos objets
 
@@ -19,7 +19,7 @@ Lorsque les gens pensent à la réalité mixte et à ce qu’ils peuvent faire a
 
 ## <a name="the-tech"></a>Le Tech
 
-Si vous avez lutté des étrangers lorsqu’ils sont confrontés à des murs dans **[RoboRaid](https://www.youtube.com/watch?v=Hf9qkURqtbM)** , déverrouillé un mur protégé en **[fragments](case-study-creating-an-immersive-experience-in-fragments.md)** ou si vous étiez suffisamment heureux pour voir le UNSC infini hangar dans l' **[expérience de Halo 5 à E3 dans 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)** , vous avez vu ce que je parle. En fonction de votre imagination, cette astuce visuelle peut être utilisée pour placer des trous temporaires dans votre cloison ou pour masquer des mondes sous un plancher faible.
+Si vous avez lutté des étrangers lorsqu’ils sont confrontés à des murs dans **[RoboRaid](https://www.youtube.com/watch?v=Hf9qkURqtbM)**, déverrouillé un mur protégé en **[fragments](case-study-creating-an-immersive-experience-in-fragments.md)** ou si vous étiez suffisamment heureux pour voir le UNSC infini hangar dans l' **[expérience de Halo 5 à E3 dans 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)**, vous avez vu ce que je parle. En fonction de votre imagination, cette astuce visuelle peut être utilisée pour placer des trous temporaires dans votre cloison ou pour masquer des mondes sous un plancher faible.
 
 ![RoboRaid ajoute des canaux à trois dimensions et d’autres structures derrière vos murs, visibles uniquement par des trous créés en tant que saut de envahisseurs.](../develop/unity/images/roboraid-640px.png)
 

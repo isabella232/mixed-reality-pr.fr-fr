@@ -1,17 +1,17 @@
 ---
 title: Mode Lecture Unity
-description: Utilisation du mode lecture dans l’éditeur Unity pour afficher un aperçu de vos modifications sur un appareil sans déployer une application.
+description: Découvrez comment utiliser le mode lecture dans l’éditeur Unity pour afficher un aperçu des modifications apportées à votre application sur un appareil sans déployer une application.
 author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, communication à distance, accès distant holographique, lecteur de communication à distance holographique, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, mode de lecture Unity
-ms.openlocfilehash: 396e441903fe7b567c6329ca4d207ce893a07825
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 9f6c2cafd08fca8a5d60f3fcf5832ee74762e173
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010610"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009839"
 ---
 # <a name="unity-play-mode"></a>Mode Lecture Unity
 
@@ -25,7 +25,7 @@ Avec la communication à distance holographique, vous pouvez expérimenter votre
 3. Dans Unity, accédez au menu **fenêtre** , développez le sous-menu **XR** , puis sélectionnez **émulation holographique**.
 4. Définissez le **mode d’émulation** à **distant sur appareil**.
 5. Pour **ordinateur distant**, entrez l’adresse IP de votre HoloLens.
-6. Sélectionnez **Connecter**. Le changement d' **État** de la connexion doit être défini sur **connecté** et l’écran s’affichera vide dans HoloLens.
+6. Sélectionnez **Se connecter**. Le changement d' **État** de la connexion doit être défini sur **connecté** et l’écran s’affichera vide dans HoloLens.
 7. Sélectionnez le bouton de **lecture** pour démarrer le mode lecture et tester l’application sur votre HoloLens.
 
 La communication à distance holographique requiert un PC rapide et une connexion Wi-Fi. Pour plus d’informations, consultez la documentation sur les [lecteurs de communication à distance holographique](../platform-capabilities-and-apis/holographic-remoting-player.md) .

@@ -1,17 +1,17 @@
 ---
 title: Entrée en pointage en regard
-description: Didacticiel sur la configuration de l’entrée de regard pour HoloLens et le moteur inréel
+description: Découvrez comment configurer et utiliser l’entrée en regard avec le suivi des yeux et l’orientation des têtes pour les applications HoloLens dans un environnement inréel.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi des yeux, entrée de regard, affichage monté en tête, moteur non réel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: a11573d732e739068dca8c42dd8688c0705fc5bb
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e546867fe02acd5e72ee76b4108a369ec25fd32f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925988"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010139"
 ---
 # <a name="gaze-input"></a>Entrée en regard
 
@@ -104,7 +104,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement inréel que nous avons mis à disposition, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous êtes en train d’explorer les modules de base du MRTK. À partir de là, vous pouvez passer au module suivant :
 
 > [!div class="nextstepaction"]
 > [Suivi de la main](unreal-hand-tracking.md)

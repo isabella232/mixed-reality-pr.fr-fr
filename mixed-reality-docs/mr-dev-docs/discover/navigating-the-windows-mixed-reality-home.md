@@ -1,17 +1,17 @@
 ---
 title: Exploration de la page d’accueil Windows Mixed Reality
-description: Les casques HoloLens et Windows Mixed realisation partagent un paradigme pour le lancement, le placement et la manipulation des applications et des modèles 3D dans votre environnement (physique ou numérique). Découvrez comment accéder à la page d’hébergement de la réalité mixte Windows sur les deux types d’appareils.
+description: Découvrez comment naviguer dans la page d’hébergement de Windows Mixed Real sur les casques HoloLens et Windows Mixed Reality.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, système d’exploitation, plateforme, maison, maison, accueil, environnement, démarrer, menu Démarrer, menu Accueil, pin, application, lancer des applications, placer des applications, téléporter, déplacer, naviguer, casque de réalité mixte, casque de réalité virtuelle, présentation de la réalité virtuelle
-ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757687"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009689"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Exploration de la page d’accueil Windows Mixed Reality
 

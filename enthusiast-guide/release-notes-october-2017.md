@@ -1,17 +1,17 @@
 ---
 title: Notes de publication - Octobre 2017
-description: Notes de publication de Windows Mixed Reality pour la mise à jour des créateurs de automne Windows 10 (octobre 2017).
+description: Restez à jour dans les notes de publication de Windows Mixed Reality pour la mise à jour des créateurs de automne Windows 10 (octobre 2017).
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Notes de publication, version, Windows 10, Build, RS3, système d’exploitation
-ms.openlocfilehash: 7c5af3b8ead4aa4bee9e342e9c41b696a30e5e2c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725910"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009489"
 ---
 # <a name="release-notes---october-2017"></a>Notes de publication - Octobre 2017
 

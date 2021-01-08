@@ -1,21 +1,22 @@
 ---
 title: Éléments UX de réalité mixte
-description: Ce document contient un ensemble de rubriques qui expliquent comment concevoir des appareils de réalité mixte.
+description: Apprenez à concevoir vos applications pour les appareils de réalité mixte avec des éléments de base, des contrôles communs et des comportements.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: Conception d’expérience utilisateur, expérience utilisateur mixte de réalité, expérience utilisateur, modèles d’application, contrôles, style, HoloLens, interaction, interaction spatiale, interface utilisateur spatiale, éléments UX, comportements, blocs de construction, typographie, couleur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847777"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009699"
 ---
 # <a name="ux-elements-overview"></a>Vue d’ensemble des éléments UX
 
 ## <a name="foundational-elements"></a>Éléments fondamentaux
+
 En savoir plus sur les éléments fondamentaux dont vous avez besoin pour concevoir une expérience de réalité mixte exceptionnelle.
 
 :::row:::
@@ -39,6 +40,7 @@ En savoir plus sur les éléments fondamentaux dont vous avez besoin pour concev
 <br>
 
 ## <a name="common-controls-and-behaviors"></a>Contrôles et comportements communs
+
 Découvrez les modules d’interface utilisateur et les interactions spatiales courantes fréquemment utilisés pour les expériences de réalité mixte.
 
 :::row:::

@@ -1,17 +1,17 @@
 ---
 title: MR and Azure 310 - Détection d’objets
-description: Suivez ce cours pour apprendre à former un modèle de Machine Learning, puis à utiliser le modèle formé pour reconnaître des objets similaires et leur position dans le monde réel à partir d’une application de réalité mixte.
+description: Suivez ce cours pour apprendre à former et à utiliser un modèle de Machine Learning pour reconnaître des objets similaires et leur position dans le monde réel.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, vision personnalisée, détection d’objets, réalité mixte, Académie, Unity, didacticiel, API, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 10f3b2b8f8422a20c39a4d89568e42ca530683c2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8f625ebc1e40edaa6364567686c345386ea37dbf
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679458"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010169"
 ---
 # <a name="mr-and-azure-310-object-detection"></a>Mr et Azure 310 : détection d’objets
 
@@ -1292,7 +1292,7 @@ Vous êtes maintenant prêt à créer votre application en tant que solution UWP
 
     1.  Tout en portant votre HoloLens, ouvrez les **paramètres**.
 
-    2.  Accéder au **réseau &**  >  Options avancées **de Wi-Fi**  >  **Advanced Options** Internet
+    2.  Accéder au **réseau &**  >  Options avancées **de Wi-Fi**  >   Internet
 
     3.  Notez l’adresse **IPv4** .
 

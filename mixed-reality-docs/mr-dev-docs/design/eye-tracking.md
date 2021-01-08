@@ -1,17 +1,17 @@
 ---
 title: Eye-tracking
-description: HoloLens 2 permet à un nouveau niveau de contexte et de compréhension humaine au sein de l’expérience holographique en offrant aux développeurs la possibilité d’utiliser des informations sur ce que l’utilisateur examine.
+description: En savoir plus sur le suivi oculaire pour HoloLens 2 et les nouveaux niveaux de compréhension humaine s’ils vous permettent de bénéficier d’expériences holographiques.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de regard, étalonnage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, intention, actions
-ms.openlocfilehash: 5ee957db85c2eefc32b7bfd716268262b347867b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847939"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009599"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Eye-tracking sur HoloLens 2
 
@@ -19,7 +19,7 @@ ms.locfileid: "97847939"
 
 HoloLens 2 permet à un nouveau niveau de contexte et de compréhension humaine au sein de l’expérience holographique en offrant aux développeurs la possibilité d’utiliser des informations sur ce que l’utilisateur examine. Cette page explique comment les développeurs peuvent tirer parti du suivi oculaire pour divers cas d’usage, et ce qu’il faut rechercher lors de la conception d’interactions utilisateur en regard de regard. 
 
-L’API de suivi oculaire a été conçue en tenant compte de la confidentialité d’un utilisateur, ce qui évite de transmettre des informations identifiables, en particulier toute biométrie. Pour les applications pouvant suivre le suivi oculaire, l’utilisateur doit accorder à l’application l’autorisation d’utiliser les informations de suivi oculaire. 
+L’API de suivi oculaire a été conçue en tenant compte de la confidentialité d’un utilisateur, ce qui évite de transmettre des informations identifiables, en particulier toute biométrie. Pour les applications pouvant suivre le suivi oculaire, l’utilisateur doit accorder à l’application l’autorisation d’utiliser les informations de suivi oculaire.
 
 ### <a name="device-support"></a>Prise en charge des appareils
 

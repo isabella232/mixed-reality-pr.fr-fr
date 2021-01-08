@@ -1,17 +1,17 @@
 ---
 title: Suivi des codes QR
-description: Découvrez comment détecter les codes QR sur HoloLens 2.
+description: Apprenez à détecter les codes QR, à ajouter des fonctionnalités de webcam et à gérer des systèmes de coordonnées dans des applications de réalité mixte sur HoloLens 2.
 author: dorreneb
 ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, LBE, divertissement basé sur l’emplacement, VR arcade, arcade, immersif, QR, code QR, hololens2
-ms.openlocfilehash: 023da7a98d1559d9dd0387a7efbaf26ad577df50
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530005"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009399"
 ---
 # <a name="qr-code-tracking"></a>Suivi des codes QR
 
@@ -21,7 +21,7 @@ HoloLens 2 peut détecter les codes QR dans l’environnement situé autour du 
 
 <table>
 <tr>
-<th>Fonctionnalité</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (première génération)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Caractéristique</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (première génération)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td> Détection du code QR</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>

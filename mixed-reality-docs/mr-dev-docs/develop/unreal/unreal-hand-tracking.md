@@ -1,17 +1,17 @@
 ---
 title: Suivi de la main dans Unreal
-description: Explique comment utiliser le suivi des handles en mode inréel
+description: Découvrez comment utiliser les entrées de suivi manuel, les maillages de pose et de main, ainsi que les animations de liens dynamiques dans les applications de réalité mixte.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, suivi manuel, non réel, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 66ae1994f2bbee3ba4786a7c4eeebfe1cd57ca37
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002661"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010159"
 ---
 # <a name="hand-tracking-in-unreal"></a>Suivi de la main dans Unreal
 
@@ -162,7 +162,7 @@ HoloLens 2 effectue le suivi des mouvements spatiaux, ce qui signifie que vous p
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement inréel que nous avons mis à disposition, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous êtes en train d’explorer les modules de base du MRTK. À partir de là, vous pouvez passer au module suivant :
 
 > [!div class="nextstepaction"]
 > [Ancres spatiales locales](unreal-spatial-anchors.md)

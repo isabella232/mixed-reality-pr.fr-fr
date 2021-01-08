@@ -1,17 +1,17 @@
 ---
 title: Mains et contrôleurs de mouvement dans DirectX
-description: Guide du développeur pour utiliser le suivi des mains et les contrôleurs de mouvement dans les applications DirectX natives.
+description: Prise en main du Guide du développeur pour utiliser le suivi de la main et les contrôleurs de mouvement dans les applications DirectX natives.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: mains, contrôleurs de mouvement, DirectX, entrée, hologrammes, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 52fc8f054ee4a4a57374c90fc31703b749d498de
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 43673602b01a1937953d16fcca9b4c4f4d3fd33a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613053"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009539"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>Mains et contrôleurs de mouvement dans DirectX
 

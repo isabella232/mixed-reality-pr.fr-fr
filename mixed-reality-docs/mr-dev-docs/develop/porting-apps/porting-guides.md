@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: port, Unity, inreal, middleware, Engine, UWP, Win32, Portage, HoloLens 1ère génération, casque de réalité mixte, casque Windows Mixed realisation, migration, Windows 10, mappage d’entrée,
-ms.openlocfilehash: 4137ff4dcc9f72dd66b9078b0d86c2d06f01f2bc
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: f1cb7cd96ee1d6e32c9ef1f8d3e0e1b2654e0a79
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613223"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009869"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portage d’applications VR sur Windows Mixed Reality
 

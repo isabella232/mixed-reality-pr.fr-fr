@@ -1,17 +1,17 @@
 ---
 title: Suivi des pertes dans Unity
-description: Gestion des pertes de suivi dans une application Unity.
+description: Découvrez comment gérer les pertes de suivi manuelles et par défaut au sein d’une application Unity de réalité mixte.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, perte de suivi, image de perte de suivi, interrogation, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 1df9f579abf43576284d065afa091bb26c631482
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010050"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009849"
 ---
 # <a name="tracking-loss-in-unity"></a>Suivi des pertes dans Unity
 
@@ -82,4 +82,5 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Gestion des pertes de suivi dans DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

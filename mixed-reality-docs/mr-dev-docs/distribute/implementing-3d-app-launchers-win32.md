@@ -1,17 +1,17 @@
 ---
 title: Implémenter des lanceurs d’applications 3D (applications Win32)
-description: Découvrez comment créer des programmes de lancement et des logos d’applications en 3D pour les applications et les jeux Win32 VR pour le menu Démarrer et l’environnement d’accueil de Windows Mixed Reality.
+description: Découvrez comment créer des programmes de lancement et des logos d’applications en 3D pour les applications et les jeux Win32 VR pour le menu Démarrer et l’environnement d’accueil.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icône, modélisation, lanceur, lanceur 3D, vignette, cube en direct, Win32, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, manifeste
-ms.openlocfilehash: 5a3e38de54aad1fceb4804003043c87dddab61c4
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757816"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009668"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>Implémenter des lanceurs d’applications 3D (applications Win32)
 

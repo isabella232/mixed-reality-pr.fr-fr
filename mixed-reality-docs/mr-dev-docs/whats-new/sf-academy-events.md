@@ -1,17 +1,17 @@
 ---
 title: Série de haut-parleurs de réalité mixte
-description: Calendrier des événements de développeurs de réalité mixte au niveau du réacteur à San Francisco.
+description: Restez à jour avec notre calendrier d’événements de développeurs de réalité mixte au niveau du réacteur à San Francisco.
 author: danielescudero
 ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: événement, Calendar, Academy, planification, DF, San Francisco, réacteur
-ms.openlocfilehash: 169af00c61d1eeb5af6b0ea1249f5f4c3083a9f3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757427"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009999"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Événements de réalité mixte Microsoft
 
@@ -32,5 +32,3 @@ Rejoignez l’équipe Microsoft Mixed Reality à ces événements à venir !
 | Série de haut-parleurs de réalité mixte|22 octobre, 2020|[Présentation de WebXR avec BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Série de haut-parleurs de réalité mixte|17 novembre 2020|[Développement de l’avenir : nouveautés dans MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Série de haut-parleurs de réalité mixte|1er décembre 2020|[Conception d’hologrammes]()|
-
-

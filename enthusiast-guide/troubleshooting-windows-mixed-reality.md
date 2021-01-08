@@ -1,14 +1,14 @@
 ---
 title: Résolution des problèmes de Windows Mixed Reality
-description: Résolution des problèmes de Windows Mixed realisation qui va au-delà de notre documentation de support technique standard.
+description: Restez à jour avec le dépannage de Windows Mixed realisation qui va au-delà de notre documentation de support technique standard.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support
-ms.openlocfilehash: f98bc55062f2e159e6ac6fca5514cee899f50bc5
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859488"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009479"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Résolution des problèmes de Windows Mixed Reality (FAQ)
 

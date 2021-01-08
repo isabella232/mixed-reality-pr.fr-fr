@@ -1,17 +1,17 @@
 ---
 title: Vues d’applications
-description: Les deux types d’affichages dans les applications Windows Mixed Reality sont des vues immersives et des vues 2D.
+description: Découvrez comment utiliser les deux types d’affichages dans les applications Windows Mixed Reality (vues immersives et vues 2D).
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: vue immersive, vue 2D, ardoise, application, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 0c6127427d5af118bb18aea5c19ddaef6fe8d5eb
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848075"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009629"
 ---
 # <a name="app-views"></a>Vues d’applications
 

@@ -1,17 +1,17 @@
 ---
 title: Suivre de la tête et du regard dans DirectX
-description: Découvrez comment utiliser le suivi des regards et des yeux en tête dans les applications DirectX natives.
+description: Apprenez à demander, à utiliser et à décompresser des données Raycasting à partir du suivi des yeux et du regard dans les applications DirectX natives.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: œil-point d’interposition, point de présence, suivi de la tête, suivi des yeux, DirectX, entrée, hologrammes, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a518e5e4153da9c58295abb257a8ed2d69145211
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848091"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009549"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Entrée en regard des points de regard et de pointage dans DirectX
 
@@ -27,6 +27,7 @@ Dans Windows Mixed Reality, l’entrée en regard de l’œil et de la tête est
 Les rayons de tête et de regard sont accessibles par le biais de l’API  [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) . Appelez [SpatialPointerPose :: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) pour recevoir un nouvel objet SpatialPointerPose à l’horodatage et au [système de coordonnées](coordinate-systems-in-directx.md)spécifiés. Ce SpatialPointerPose contient une origine et une direction de pointage. Elle contient également un point d’origine et une direction de regard si le suivi oculaire est disponible.
 
 ### <a name="device-support"></a>Prise en charge des appareils
+
 <table>
 <colgroup>
     <col width="25%" />

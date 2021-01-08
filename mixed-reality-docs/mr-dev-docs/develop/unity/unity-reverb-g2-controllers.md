@@ -1,17 +1,17 @@
 ---
 title: Contrôleurs de réverbération HP G2 dans Unity
-description: Instructions sur l’utilisation des contrôleurs de réverbération HP G2 dans SteamVR et Windows Mixed Reality.
+description: Découvrez comment configurer et utiliser les nouveaux contrôleurs G2 de réverbération HP dans SteamVR et les applications Windows Mixed Reality Unity.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, réverbération, réverbération G2, réverbération HP G2, réalité mixte, développement, contrôleurs de mouvement, entrée d’utilisateur, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux
-ms.openlocfilehash: 17f373a3d94740bf103821b85ee5d6fe4dbaa11f
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+ms.openlocfilehash: 1c9d8f1279f81ea1d8020e2a3c689dae86496221
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886252"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009829"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Contrôleurs de réverbération HP G2 dans Unity
 
@@ -286,7 +286,7 @@ void Update()
 
 ### <a name="generating-events-from-the-new-inputs"></a>Génération d’événements à partir des nouvelles entrées 
 
-Au lieu d’interroger l’état d’un contrôleur une fois par Frame, vous avez la possibilité de gérer toutes les modifications d’État en tant qu’événements, ce qui vous permet de gérer même les actions les plus rapides qui sont moins qu’un cadre. Pour que cette approche fonctionne, le cache des contrôleurs motion doit traiter tous les États publiés par un contrôleur depuis la dernière trame, ce que vous pouvez faire en stockant l’horodateur du dernier MotionControllerReading récupéré à partir d’un MotionController et en appelant *MotionController. TryGetReadingAfterTime ()* : 
+Au lieu d’interroger l’état d’un contrôleur une fois par Frame, vous avez la possibilité de gérer toutes les modifications d’État en tant qu’événements, ce qui vous permet de gérer même les actions les plus rapides qui sont moins qu’un cadre. Pour que cette approche fonctionne, le cache des contrôleurs motion doit traiter tous les États publiés par un contrôleur depuis la dernière trame, ce que vous pouvez faire en stockant l’horodateur du dernier MotionControllerReading récupéré à partir d’un MotionController et en appelant *MotionController. TryGetReadingAfterTime ()*: 
 
 ```csharp
 private class MotionControllerState 

@@ -1,18 +1,18 @@
 ---
 title: FAQ sur les réverbérations HP G2
-description: Questions fréquentes sur l’utilisation du casque de réverbération HP G2
+description: Restez à jour avec les questions fréquemment posées sur l’utilisation du casque de réverbération de HP G2 avec les casques immersif Windows Mixed Reality.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
 appliesto:
 - Windows 10
-ms.openlocfilehash: 55baf3f076b8cf0f815f899658b3bbe61292e267
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725900"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009469"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Forum aux questions sur les réverbérations HP G2
 

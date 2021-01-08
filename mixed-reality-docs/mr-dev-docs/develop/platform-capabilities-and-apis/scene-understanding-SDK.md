@@ -1,17 +1,17 @@
 ---
 title: Scène Understanding SDK
-description: Guide de programmation du SDK Scene Understanding
+description: Découvrez comment installer et utiliser le kit de développement logiciel (SDK) de scène, y compris les composants, les mailles et les objets dans les applications de réalité mixte.
 author: szymons
 ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity
-ms.openlocfilehash: 1ec29d09ab52abae9a9111a6441523c8aa7720f7
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 9520ad604125705c60624254b097de5fc93021ec
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530345"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009379"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Présentation du SDK présentation de Scene
 
@@ -47,7 +47,7 @@ Sur le côté gauche figure un diagramme du runtime de la réalité mixte, qui e
 
 Étant donné que chaque scène stocke ses données dans l’espace mémoire de votre application, vous pouvez supposer que toutes les fonctions de l’objet de la scène ou de ses données internes sont toujours exécutées dans le processus de votre application.
 
-### <a name="layout"></a>Layout
+### <a name="layout"></a>Mise en page
 
 Pour travailler avec la compréhension des scènes, il peut être utile de savoir et de comprendre comment le runtime représente des composants logiquement et physiquement. La scène représente des données avec une disposition spécifique qui a été choisie comme simple tout en conservant une structure sous-jacente qui est pliable pour répondre aux exigences futures sans avoir besoin de révisions majeures. Pour ce faire, la scène stocke tous les composants (blocs de construction pour tous les objets de scène) dans une liste plate et définit la hiérarchie et la composition par le biais de références où des composants spécifiques référencent d’autres.
 
@@ -123,7 +123,7 @@ SceneObjects peut avoir l’un des éléments suivants :
 <tr><td>Mur</td><td>Un mur physique. Les murs sont supposés être des structures environnementales immobilières.</td></tr>
 <tr><td>Floor</td><td>Les étages sont des surfaces sur lesquelles il est possible de parcourir. Remarque : les escaliers ne sont pas des étages. Notez également que les étages supposent une surface pouvant être guidée et qu’il n’y a donc pas d’hypothèse explicite d’un étage singulier. Structures à plusieurs niveaux, rampes, etc... doit tous être classifiés en tant que plancher.</td></tr>
 <tr><td>Ceiling</td><td>Surface supérieure d’une salle.</td></tr>
-<tr><td>Plate-forme</td><td>Grande surface plate sur laquelle vous pouvez placer des hologrammes. Elles ont tendance à représenter des tables, des plans de plan et d’autres grandes surfaces horizontales.</td></tr>
+<tr><td>Plateforme</td><td>Grande surface plate sur laquelle vous pouvez placer des hologrammes. Elles ont tendance à représenter des tables, des plans de plan et d’autres grandes surfaces horizontales.</td></tr>
 <tr><td>World (Monde)</td><td>Étiquette réservée pour les données géométriques indépendantes de l’étiquetage. La maille générée par la définition de l’indicateur de mise à jour EnableWorldMesh est classée comme monde.</td></tr>
 <tr><td>Unknown</td><td>Cet objet de scène n’a pas encore été classé et affecté un genre. Cette opération ne doit pas être confondue avec l’arrière-plan, car cet objet peut être n’importe quoi, le système n’a pas encore pu trouver une classification suffisamment importante pour cela.</td></tr>
 </tr>

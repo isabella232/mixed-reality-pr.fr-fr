@@ -1,17 +1,17 @@
 ---
 title: Transferts d’ancrage locaux dans DirectX
-description: Explique comment synchroniser deux appareils HoloLens en transférant des ancres spatiales.
+description: Découvrez comment synchroniser deux appareils HoloLens en transférant, en exportant et en sérialisant des ancres spatiales.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, synchroniser, ancrage spatial, transfert, multijoueur, vue, scénario, procédure pas à pas, exemple de code, transfert, transfert d’ancrage local, exportation d’ancrage, importation d’ancrage
-ms.openlocfilehash: 6d54b29a01617f9d78b7fdfec0ebc04a3cd48002
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679658"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009649"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>Transferts d’ancrage locaux dans DirectX
 
@@ -31,7 +31,7 @@ Notez que les ancres spatiales ne peuvent pas être transférées entre différe
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurer votre application pour utiliser la fonctionnalité spatialPerception
 
-Pour pouvoir utiliser le [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx), votre application doit avoir l’autorisation d’utiliser la fonctionnalité spatialPerception. Cela est nécessaire, car le transfert d’une ancre spatiale implique le partage d’images de capteur collectées au fil du temps à proximité de cette ancre, qui peut inclure des informations sensibles.
+Pour pouvoir utiliser le [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx), votre application doit avoir l’autorisation d’utiliser la fonctionnalité SpatialPerception. Cela est nécessaire, car le transfert d’une ancre spatiale implique le partage d’images de capteur collectées au fil du temps à proximité de cette ancre, qui peut inclure des informations sensibles.
 
 Déclarez cette fonctionnalité dans le fichier Package. appxmanifest pour votre application. Voici un exemple :
 
@@ -672,7 +672,7 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-Et voilà ! Maintenant, vous devez disposer de suffisamment d’informations pour essayer de localiser les ancres reçues sur le réseau. Là encore, Notez que le client doit disposer d’un nombre suffisant de données de suivi visuel pour l’espace pour la localisation de l’ancre. Si cela ne fonctionne pas immédiatement, essayez de vous lancer pendant un certain temps. Si cela ne fonctionne toujours pas, faites en sorte que le serveur envoie davantage d’ancres et qu’il utilise des communications réseau pour s’en contenter. Vous pouvez essayer cela en téléchargeant le HolographicSpatialAnchorTransferSample, en configurant les adresses IP du client et du serveur, et en le déployant sur des appareils HoloLens client et serveur.
+C’est tout ! Maintenant, vous devez disposer de suffisamment d’informations pour essayer de localiser les ancres reçues sur le réseau. Là encore, Notez que le client doit disposer d’un nombre suffisant de données de suivi visuel pour l’espace pour la localisation de l’ancre. Si cela ne fonctionne pas immédiatement, essayez de vous lancer pendant un certain temps. Si cela ne fonctionne toujours pas, faites en sorte que le serveur envoie davantage d’ancres et qu’il utilise des communications réseau pour s’en contenter. Vous pouvez essayer cela en téléchargeant le HolographicSpatialAnchorTransferSample, en configurant les adresses IP du client et du serveur, et en le déployant sur des appareils HoloLens client et serveur.
 
 ## <a name="see-also"></a>Voir aussi
 * [Bibliothèque de modèles parallèles](https://msdn.microsoft.com/library/dd492418.aspx)

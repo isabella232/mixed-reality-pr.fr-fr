@@ -1,17 +1,17 @@
 ---
 title: Menu proche
-description: Un menu proche est une collection de boutons sur un panneau qui suit le comportement de balise.
+description: Apprenez à utiliser near menus, qui est une collection de boutons sur un panneau qui vous suit avec un comportement avec balises dans un environnement de réalité mixte.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, menu, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847265"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009929"
 ---
 # <a name="near-menu"></a>Menu proche
 

@@ -1,17 +1,17 @@
 ---
 title: Implémenter des lanceurs d’applications 3D (applications UWP)
-description: Comment créer des programmes de lancement et des logos d’applications en 3D pour des applications et des jeux UWP Windows Mixed Reality (distribués via le Microsoft Store), à la fois sur des casques HoloLens et immersif (VR).
+description: Découvrez comment créer des programmes de lancement et des logos d’applications en 3D pour des applications et des jeux UWP Windows Mixed Reality sur des casques HoloLens et VR.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icône, modélisation, lanceur, lanceur 3D, vignette, cube en direct, lien profond, secondarytile, vignette secondaire, UWP, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, XML, cadre englobant, Unity
-ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757493"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009679"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implémenter des lanceurs d’applications 3D (applications UWP)
 

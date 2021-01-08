@@ -1,17 +1,17 @@
 ---
 title: Transferts d’ancrage locaux dans Unity
-description: Transférer des ancres entre plusieurs appareils HoloLens dans une application Unity.
+description: Découvrez comment transférer des ancres entre plusieurs appareils HoloLens dans une application Unity de réalité mixte.
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Partage, ancrer, WorldAnchor, m partage 250, WorldAnchorTransferBatch, SpatialPerception, transfert, transfert d’ancrage local, exportation d’ancrage, importation d’ancrage
-ms.openlocfilehash: d6aebfb89d05926b1f773dea58ee65fead57988e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1048e6a3cfc41a04cd49e201e5d1841e805a4193
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682802"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009639"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Transferts d’ancrage locaux dans Unity
 
@@ -35,7 +35,7 @@ Comment activer la fonctionnalité *SpatialPerception* :
 ### <a name="anchor-transfer"></a>Transfert d’ancrage
 
 **Espace de noms :** *UnityEngine. XR. WSA. Sharing*<br>
-**Type** : *WorldAnchorTransferBatch*
+**Type**: *WorldAnchorTransferBatch*
 
 Pour transférer un [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md), vous devez établir l’ancre à transférer. L’utilisateur d’un HoloLens balaie son environnement et choisit manuellement ou par programme un point dans l’espace pour être l’ancre de l’expérience partagée. Les données qui représentent ce point peuvent ensuite être sérialisées et transmises aux autres périphériques qui partagent l’expérience. Chaque appareil désérialise ensuite les données d’ancrage et tente de localiser ce point dans l’espace. Pour que le transfert d’ancrage fonctionne, chaque appareil doit avoir effectué une analyse suffisante de l’environnement, de telle sorte que le point représenté par l’ancre puisse être identifié.
 
@@ -43,7 +43,7 @@ Pour transférer un [WorldAnchor](../develop/unity/coordinate-systems-in-unity.m
 
 L’exemple de code sur cette page contient quelques champs qui devront être initialisés :
 1. *Gameobject rootGameObject* est un *gameobject* dans Unity qui contient un composant *WorldAnchor* . Un utilisateur de l’expérience partagée placera ce *gameobject* et exportera les données vers les autres utilisateurs.
-2. *WorldAnchor gameRootAnchor* est le *UnityEngine. XR. WSA. WorldAnchor* qui est sur *rootGameObject* .
+2. *WorldAnchor gameRootAnchor* est le *UnityEngine. XR. WSA. WorldAnchor* qui est sur *rootGameObject*.
 3. *Byte [] importedData* est un tableau d’octets pour l’ancre sérialisée que chaque client reçoit sur le réseau.
 
 ```

@@ -1,17 +1,17 @@
 ---
 title: Objets natifs de réalité mixte dans Unity
-description: Accédez aux objets natifs holographiques sous-jacents dans Unity.
+description: Découvrez comment obtenir l’accès aux objets natifs holographiques sous-jacents dans Unity à l’aide de l’espace de noms XR.
 author: vladkol
 ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
 keywords: Unity, la réalité mixte, native, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 8dda1152da9705147ca3a057faadb9edd8428df6
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 7aa69286942ce98909e23508d92fb88c59ce9175
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010590"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009809"
 ---
 # <a name="mixed-reality-native-objects-in-unity"></a>Objets natifs de réalité mixte dans Unity
 
@@ -130,6 +130,7 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Utilisation de l’espace de noms Windows avec les applications Unity pour HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>

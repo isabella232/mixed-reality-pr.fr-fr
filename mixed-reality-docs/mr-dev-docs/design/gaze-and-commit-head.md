@@ -1,17 +1,17 @@
 ---
 title: Suivre de la tête et valider
-description: Vue d’ensemble du modèle d’entrée de pointage en tête et de validation.
+description: Prise en main du modèle d’entrée point-Orient et validation, y compris le dimensionnement, le positionnement et la stabilisation cibles.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: La réalité mixte, le point de présence, le regard, l’interaction, la conception, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de la réalité virtuelle, HoloLens, MRTK, le kit de configuration de la réalité mixte, la cible, le lissage
-ms.openlocfilehash: cc12c349704a63c5b95c9eede91d0486f56787a2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847882"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009449"
 ---
 # <a name="head-gaze-and-commit"></a>Suivre de la tête et valider
 

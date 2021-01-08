@@ -1,17 +1,17 @@
 ---
 title: Billboarding et tag-along
-description: Les objets avec des panneaux s’orientent toujours pour être confrontés à l’utilisateur.
+description: Apprenez à utiliser des objets avec des panneaux d’affichage, qui s’orientent toujours pour les faire face à l’utilisateur dans des applications de réalité mixte.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, l’intégration, le balisage, le casque de réalité mixte, le casque de réalité mixte, le casque de réalité virtuelle, HoloLens, MRTK, le kit de temps de réalité mixte
-ms.openlocfilehash: 44f2678fe2f8e4be071086f46037749d1df61ae4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848028"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009610"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding et tag-along
 

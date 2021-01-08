@@ -1,17 +1,17 @@
 ---
 title: Affichage de la progression
-description: Un contrôle de progression offre un retour à l’utilisateur lorsqu’une longue opération est en cours.
+description: Découvrez comment les contrôles de progression fournissent aux utilisateurs des commentaires sur l’exécution d’une opération de longue durée dans vos applications de réalité mixte.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, conception, contrôles, UI, UX, indicateur de progression, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de temps de réalité mixte
-ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 489f4bd9fea31126f936673db7acafeab27d9cd9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848282"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009459"
 ---
 # <a name="progress-indicator"></a>Indicateur de progression
 

@@ -1,17 +1,17 @@
 ---
 title: Pointage du regard dans Unity
-description: Le point de regard est un moyen principal pour les utilisateurs de cibler les hologrammes que votre application crée en réalité mixte.
+description: Apprenez à utiliser l’entrée de regard comme méthode principale permettant aux utilisateurs de cibler les hologrammes que votre application crée en réalité mixte.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: œil-point de présence, point de présence, unité, hologramme, réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010360"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009889"
 ---
 # <a name="head-gaze-in-unity"></a>Tête-pointage dans Unity
 
@@ -56,7 +56,7 @@ Vous pouvez accéder au point de regard du [Gestionnaire d’entrée](https://mi
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au module suivant :
 
 > [!div class="nextstepaction"]
 > [Mouvements et contrôleurs de mouvement](gestures-and-motion-controllers-in-unity.md)

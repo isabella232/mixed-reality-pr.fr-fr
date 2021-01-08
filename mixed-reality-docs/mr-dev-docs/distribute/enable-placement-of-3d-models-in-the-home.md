@@ -1,17 +1,17 @@
 ---
 title: Permettre le placement des modèles 3D dans la page d’accueil
-description: Comment placer des modèles 3D à partir de votre site Web ou de votre application dans la page d’hébergement de Windows Mixed Reality
+description: Découvrez comment placer des modèles 3D à partir de votre site Web ou de votre application dans la page d’hébergement Windows Mixed Reality.
 author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, modèle, place à la terre, lieu, monde, modélisation, Hébergement de réalité mixte, Web, application, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757807"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010099"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Permettre le placement d’objets 3D dans l’accueil réalité mixte
 
@@ -42,7 +42,7 @@ Par exemple, si vous développez une application qui couvre un catalogue de mobi
     </tr>
 </table>
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="the-basics"></a>Concepts de base
 
 Il existe deux étapes pour activer le placement des modèles 3D dans la page d’hébergement de Windows Mixed Reality :
 1. [Vérifiez que votre modèle 3D est compatible avec la page d’hébergement Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md).

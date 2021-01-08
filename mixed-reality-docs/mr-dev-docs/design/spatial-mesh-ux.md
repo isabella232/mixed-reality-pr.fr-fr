@@ -1,17 +1,17 @@
 ---
 title: Visualisation de maillage spatial
-description: Découvrez comment les appareils comprennent les environnements physiques à l’aide de maillages spatiaux.
+description: Découvrez les instructions de conception et la compréhension de l’environnement physique avec la visualisation de maillage spatial dans MRTK.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Réalité mixte, HoloLens, contrôles d’interface utilisateur, interaction, interface utilisateur, expérience utilisateur, conception UX, interface utilisateur spatiale, interaction spatiale, interface utilisateur 3D, expérience utilisateur 3D, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de mise en réalité mixte
-ms.openlocfilehash: ffa13da6762b803ba2a3f370308ac2af65164ecf
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0f9cdc218c6fe54b8892c39a6a76f023e203d334
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848189"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009919"
 ---
 # <a name="spatial-mesh"></a>Maillage spatial
 
