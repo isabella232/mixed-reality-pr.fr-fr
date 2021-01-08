@@ -1,17 +1,17 @@
 ---
 title: Notes de publication - Mars 2016
-description: Notes de publication HoloLens pour le lancement de HoloLens et Windows holographique.
+description: Restez à jour dans les notes de publication HoloLens pour le lancement de HoloLens et Windows holographique.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Notes de publication, HoloLens, système d’exploitation, plateforme, fonctionnalités, générer, lancer
-ms.openlocfilehash: 9129bb220d2a580235494a94ecbd3227e7d4c7c7
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a7797483b5ba60203f0f0b3c2c4ce79b924d81dc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725930"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009199"
 ---
 # <a name="release-notes---march-2016"></a>Notes de publication - Mars 2016
 

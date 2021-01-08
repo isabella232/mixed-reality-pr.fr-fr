@@ -1,17 +1,17 @@
 ---
-title: Bonnes pratiques sur l’utilisation d’Unity et de Visual Studio
+title: Meilleures pratiques pour Unity et Visual Studio
 description: Trucs et astuces pour rationaliser le flux de travail de création d’une application de réalité mixte avec Unity et Visual Studio.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Déployez, Unity, Visual Studio, HoloLens, HoloLens 2, casque immersif, meilleures pratiques, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, UWP, Visual Studio Tools, SDK Windows
-ms.openlocfilehash: 9e80cad3e7154ae5548514297343db8efcdcb49e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010260"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009369"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Bonnes pratiques sur l’utilisation d’Unity et de Visual Studio
 

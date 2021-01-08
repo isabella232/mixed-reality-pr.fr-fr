@@ -1,17 +1,17 @@
 ---
 title: Typographie
-description: Le texte est un élément important pour la diffusion d’informations dans votre expérience d’application.
+description: Découvrez comment concevoir et implémenter du texte sous la forme d’un élément important pour la diffusion d’informations dans votre expérience d’application de réalité mixte.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, conception, style, police, typographie, UI, UX, texte, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 09e0e6029011fdd7fda793f6b6645cb3744baa3b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848143"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007649"
 ---
 # <a name="typography"></a>Typographie
 
@@ -45,7 +45,7 @@ Générez le contraste et la hiérarchie en utilisant des tailles et des poids d
 
 Évitez d’utiliser des pondérations de police légère ou semilight pour les tailles de type inférieures à 42 PT, car les traits verticaux fins vibreront et dégradent la lisibilité. Les polices modernes avec suffisamment d’épaisseur de trait fonctionnent bien. Par exemple, Helvetica et Arial sont lisibles dans HoloLens en utilisant des pondérations standard ou en gras.
 
-### <a name="color"></a>Color
+### <a name="color"></a>Couleur
 
 Dans HoloLens, étant donné que les hologrammes sont construits avec un système d’éclairage additif, le texte blanc est très lisible. Vous trouverez des exemples de texte blanc dans le menu Démarrer et la barre des applications. Même si le texte blanc fonctionne bien sans une plaque arrière sur HoloLens, un arrière-plan physique complexe peut rendre le type difficile à lire. Nous vous recommandons d’utiliser du texte blanc sur une plaque de fond sombre ou coloré pour améliorer le focus de l’utilisateur et réduire la distraction d’un arrière-plan physique.
 

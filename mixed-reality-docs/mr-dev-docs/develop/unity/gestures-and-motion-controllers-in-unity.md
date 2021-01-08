@@ -1,17 +1,17 @@
 ---
 title: Mouvements et contrôleurs de mouvement dans Unity
-description: Apprenez à prendre des mesures sur votre point de regard avec les gestes de main et les contrôleurs de mouvement.
+description: Apprenez à prendre des mesures sur votre point de regard avec les gestes de main et les contrôleurs de mouvement en utilisant XR et les API de bouton/axe courantes.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: gestes, contrôleurs de mouvement, Unity, point d’entrée, point d’entrée, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 8941fa05af21a7b2c7302f4a76f27cf38e1d5a65
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3ef3e3d5a1d9171ff6cc04e19fa97bb73768370e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010320"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008789"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Mouvements et contrôleurs de mouvement dans Unity
 
@@ -565,7 +565,7 @@ Des didacticiels pas à pas, avec des exemples de personnalisation plus détaill
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au module suivant :
 
 > [!div class="nextstepaction"]
 > [Suivi du regard et des mains](hand-eye-in-unit.md)

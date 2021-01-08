@@ -1,17 +1,17 @@
 ---
 title: Mappage spatial dans DirectX
-description: Découvrez comment implémenter le mappage spatial dans votre application DirectX, y compris l’exemple d’application de mappage spatial fourni avec le kit de développement logiciel (SDK) plateforme Windows universelle.
+description: Découvrez comment implémenter le mappage spatial dans votre application DirectX et comment utiliser l’exemple d’application de mappage spatial dans le kit de développement logiciel (SDK) plateforme Windows universelle.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, mappage spatial, environnement, interaction, DirectX, WinRT, API, exemple de code, UWP, SDK, procédure pas à pas
-ms.openlocfilehash: fa372473939222ef4be7ca36076a17241173c441
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: bcd78487e96aaf09707aa4bf58917223cc2e8583
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612913"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006709"
 ---
 # <a name="spatial-mapping-in-directx"></a>Mappage spatial dans DirectX
 
@@ -77,7 +77,7 @@ Lors du développement d’une application à l’aide de ces API, le dérouleme
   - À partir de là, votre application peut éventuellement analyser ou [traiter](../../design/spatial-mapping.md#mesh-processing) les données de maillage, et les utiliser pour le [rendu](../../design/spatial-mapping.md#rendering) et les [Raycasting physiques et les collisions](../../design/spatial-mapping.md#raycasting-and-collision).
   - Un détail important à noter est que vous devez appliquer une échelle aux positions de vertex de maillage (par exemple, dans le nuanceur de sommets utilisé pour le rendu des maillages), pour les convertir à partir des unités entières optimisées dans lesquelles elles sont stockées dans la mémoire tampon, aux mètres. Vous pouvez récupérer cette échelle en appelant [VertexPositionScale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx).
 
-### <a name="troubleshooting"></a>Dépannage
+### <a name="troubleshooting"></a>Résolution des problèmes
 * N’oubliez pas de mettre à l’échelle les positions de vertex de maillage dans votre nuanceur de sommets, à l’aide de l’échelle retournée par [SpatialSurfaceMesh. VertexPositionScale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)
 
 ## <a name="spatial-mapping-code-sample-walkthrough"></a>Exemple de code de mappage spatial

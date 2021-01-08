@@ -1,17 +1,17 @@
 ---
 title: Coach de main
-description: mains en 3D qui se déclenchent lorsque le système ne détecte pas les mains de l’utilisateur pour aider.
+description: Découvrez comment les mains en 3D sont déclenchées à l’aide d’un autocar de main lorsque le système ne détecte pas les mains de l’utilisateur pour aider.
 author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, conception, coach, casque immersif, MRTK, mains, assistance mains, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: e46704a1cd2e93fc1764528c408c01d117444c34
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847966"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009159"
 ---
 # <a name="hand-coach"></a>Coach de main
 

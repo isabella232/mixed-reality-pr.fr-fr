@@ -1,6 +1,6 @@
 ---
-title: Vue d’ensemble des logiciels Mixed Reality et historique des versions
-description: Vue d’ensemble des principaux composants logiciels de Windows Mixed Reality et de leur historique de publication
+title: Présentation des logiciels et historique des versions
+description: Vue d’ensemble des principaux composants logiciels pour Windows Mixed Reality, les casques immersifs et leur historique des versions.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, les composants logiciels, l’historique des versions, les notes de publication, l’historique des versions
 appliesto:
 - Windows 10
-ms.openlocfilehash: 31adf0572482cb9857ff94c2b7ef3aee4fe538d9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b06bd835f1e2562e01bfb7bf240747919f422e8c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726020"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009249"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Vue d’ensemble des logiciels Mixed Reality et historique des versions
 
@@ -49,9 +49,11 @@ Mise à niveau vers la dernière version de PC pour les casques de Windows Mixed
 ### <a name="updates-for-windows-mixed-reality-immersive-headsets"></a>Mises à jour pour les casques immersif Windows Mixed Reality
 
 #### <a name="introducing-the-new-microsoft-edge"></a>Présentation du nouveau Microsoft Edge
+
 Comme [annoncé précédemment](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge), nous avons apporté des mises à jour pour une meilleure prise en charge de l’utilisation du nouveau navigateur Microsoft Edge dans Windows Mixed Reality. Le nouveau Microsoft Edge adopte le projet open source de chrome afin de créer une meilleure compatibilité Web pour les clients et de réduire la fragmentation du Web pour tous les développeurs Web. Il prend également en charge WebXR, la nouvelle norme pour créer des expériences Web immersifs pour les casques VR, à la place de WebVR.
 
 #### <a name="improved-settings-for-wmr"></a>Paramètres améliorés pour WMR
+
 Grâce à vos commentaires, nous avons ajouté et clarifié les paramètres sur la page d’affichage du casque :
 
 * **Qualité visuelle de mon domicile** -la modification de ces paramètres affecte uniquement l’environnement d’hébergement de la réalité mixte (maison et Skyloft de la falaise) :
@@ -71,15 +73,18 @@ Grâce à vos commentaires, nous avons ajouté et clarifié les paramètres sur 
 * **Basculement d’entrée** : basculez le comportement de basculement du focus d’entrée (Win + Y) pour qu’il soit automatique (en fonction des commentaires du capteur de présence) ou manuel.
 
 #### <a name="new-cortana-app"></a>Nouvelle application Cortana
+
 Cette mise à jour de Windows comprend la version la plus récente de l’application Cortana, qui est actuellement en anglais uniquement et qui ne prend plus en charge certaines commandes spécifiques à la réalité mixte comme « prendre une photo » et « prendre une vidéo ». Vous pouvez utiliser le nouveau Cortana pour lancer des applications. de plus, il prend en charge de nouvelles commandes axées sur la productivité telles que « quand est-ce que j’ai ma prochaine réunion ? ». ou « envoyez un e-mail à <name> ce que je suis en retard ».
     
 #### <a name="additional-updates-in-available-in-19041546-released-october-2020"></a>Mises à jour supplémentaires disponibles dans 19041,546 (publiée le 2020 octobre)
+
 Cette mise à jour mensuelle de maintenance des postes de travail comprend les modifications suivantes pour les appareils Windows Mixed Reality : 
 * Réduit les distorsions et les aberrations dans les affichages montés en tête de Windows Mixed Reality (HMD). 
 * Ajoute la prise en charge des prochains contrôleurs de mouvement HP Windows Mixed Reality. 
 * Modifie le comportement du paramètre de fréquence d’actualisation de 90 Hz dans Windows Mixed realisation pour qu’il ne repasse plus automatiquement à 60 Hz dans certains cas quand 90 Hz ne peut pas être atteint. 
 
 #### <a name="help-us-improve"></a>Aidez-nous à améliorer !
+
 Nous cherchons continuellement à améliorer la compatibilité.  Si vous trouvez que votre application Win32 classique favorite ne se comporte pas correctement dans Windows Mixed Reality, envoyez vos commentaires via notre [Hub de commentaires](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
 
 ### <a name="prior-release-notes"></a>Notes de publication antérieures

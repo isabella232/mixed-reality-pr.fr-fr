@@ -1,17 +1,17 @@
 ---
 title: Expériences partagées dans Unity
-description: Partager les mêmes hologrammes entre plusieurs utilisateurs dans une application Unity.
+description: Apprenez à partager les mêmes hologrammes entre plusieurs utilisateurs dans une application Unity avec des ancres spatiales Azure.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Partage, ancrer, WorldAnchor, MR partageant 250, WorldAnchorTransferBatch, SpatialPerception, Azure, ancres spatiales Azure, ASA, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 46588f84c39a48e22147d0fc246ceb8d5ee7c47d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 26ff56c2f9d3feff33bcb7eb103b41a8dfcba971
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010089"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009279"
 ---
 # <a name="shared-experiences-in-unity"></a>Expériences partagées dans Unity
 

@@ -1,17 +1,17 @@
 ---
 title: Ancres spatiales
-description: Bonnes pratiques pour utiliser des ancres spatiales afin d’afficher des hologrammes stables.
+description: Découvrez les meilleures pratiques relatives à l’utilisation des ancres spatiales pour restituer des hologrammes stables dans des applications de réalité mixte.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: système de coordonnées, système de coordonnées spatiales, échelle universelle, monde, échelle, position, orientation, Ancre, ancrage spatial, verrouillage universel, verrouillage universel, persistance, partage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 7f6997e491f76e66845b88ea0897dbb037495ba6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848207"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009109"
 ---
 # <a name="spatial-anchors"></a>Ancres spatiales
 

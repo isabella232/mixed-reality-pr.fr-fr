@@ -1,17 +1,17 @@
 ---
 title: Types d’applications de réalité mixte
-description: Découvrez le spectre des expériences que la plateforme de réalité mixte peut prendre en charge, des environnements entièrement immersifs à la couche d’informations légères sur l’environnement actuel d’un utilisateur.
+description: Découvrez les expériences prises en charge par la plateforme de réalité mixte, des environnements immersifs à la couche d’informations légère sur l’environnement d’un utilisateur.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, conception, modèles d’application, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 8c9a051ff0b80461fe590efa37593bddb01c0e63
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 795d8733b9f509a79d9429f75dff2f88a2a63c93
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848097"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007619"
 ---
 # <a name="types-of-mixed-reality-apps"></a>Types d’applications de réalité mixte
 

@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, sécurité, authentification, serveur à client
-ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 0881238bfca199958802598a3e1829a9de0d8e5b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530404"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006479"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Activation de la sécurité de connexion pour la communication à distance holographique
 
@@ -24,7 +24,7 @@ Cette page vous donne une vue d’ensemble de la sécurité réseau pour la comm
 * mesures recommandées en fonction de différents cas d’utilisation
 * implémentation de la sécurité dans votre solution de communication à distance holographique
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="holographic-remoting-security"></a>Sécurité de la communication à distance holographique
 
 La communication à distance holographique échange des informations sur un réseau. Si aucune mesure de sécurité n’est en place, les adversaires sur le même réseau peuvent compromettre l’intégrité de la communication ou accéder aux informations confidentielles.
 

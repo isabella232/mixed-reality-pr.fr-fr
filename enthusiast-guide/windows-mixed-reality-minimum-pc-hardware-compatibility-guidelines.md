@@ -1,6 +1,6 @@
 ---
-title: Instructions de compatibilité matérielle PC minimale pour Windows Mixed Reality
-description: Graphique détaillant la configuration minimale requise pour le système PC pour la compatibilité avec Windows Mixed Reality.
+title: Instructions de compatibilité des PC Windows Mixed Reality
+description: Graphique de vue d’ensemble détaillant la configuration minimale requise pour le système PC pour la compatibilité avec Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, ultra, compatible, compatibilité, configuration système requise, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: bd287e2089056be56330c2c2e8e9af2c079009ac
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: ed53c388797cb57a7f2a53ed40b18923a23c8b74
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725660"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009119"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Instructions de compatibilité matérielle PC minimale pour Windows Mixed Reality
 
@@ -69,6 +69,7 @@ Vous obtiendrez ensuite une analyse de votre ordinateur par rapport au matériel
  [Obtenir de l’aide sur les résultats du portail de réalité mixte](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)
 
 ## <a name="compatibility-guidelines"></a>Directives de compatibilité
+
 > [!IMPORTANT]
 > Nous allons effectuer des mises à jour, en apportant des compléments à ces recommandations en matière de compatibilité des PC Windows Mixed Reality. Consultez régulièrement les dernières instructions et exigences.
 
@@ -180,25 +181,25 @@ Pour plus d’informations sur la compatibilité des surfaces avec Windows Mixed
         <th> Appareil surface </th><th> Prise en charge de la fonctionnalité Windows Mixed Reality ? </th><th> Configuration recommandée </th><th> Notes</th>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Pro (original)/surface Pro 2 </td><td style="vertical-align: middle"> Aucun </td><td> </td><td></td>
+        <td style="vertical-align: middle"> Surface Pro (original)/surface Pro 2 </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Pro 3 </td><td style="vertical-align: middle"> Aucun </td><td> </td><td></td>
+        <td style="vertical-align: middle"> Surface Pro 3 </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
     </tr>
 (avec Windows 10 professionnel installé) <tr>
-        <td style="vertical-align: middle"> Surface Pro 4 </td><td style="vertical-align: middle"> Aucun </td><td> </td><td></td>
+        <td style="vertical-align: middle"> Surface Pro 4 </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface 3 </td><td style="vertical-align: middle"> Aucun </td><td> </td><td></td>
+        <td style="vertical-align: middle"> Surface 3 </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Book </td><td style="vertical-align: middle"> Aucun </td><td> </td><td></td>
+        <td style="vertical-align: middle"> Surface Book </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Livre surface avec la base de performances </td><td style="vertical-align: middle"> Aucun </td><td> </td><td></td>
+        <td style="vertical-align: middle"> Livre surface avec la base de performances </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Go </td><td style="vertical-align: middle"> Aucun </td><td> </td><td></td>
+        <td style="vertical-align: middle"> Surface Go </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
     </tr>
 <tr>
         <td style="vertical-align: middle"> Livre surface 2 (15 &quot; ) </td><td style="vertical-align: middle"> Complète </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1060/16 Go de RAM </td>
@@ -211,7 +212,7 @@ Pour plus d’informations sur la compatibilité des surfaces avec Windows Mixed
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Book 2 (13,5 &quot; ) </td><td style="vertical-align: middle"> Partiel </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1050/16 Go de RAM </td>
+        <td style="vertical-align: middle"> Surface Book 2 (13,5 &quot; ) </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1050/16 Go de RAM </td>
         <td>
             <ul>
                 <li><b>Remarque</b>: le livre surface 2 (13) n’a pas de badge pour Windows Mixed Reality, mais prend en charge certaines fonctionnalités Windows Mixed realisation, ce qui vous permet d’utiliser un nombre limité d’applications et de jeux compatibles.  Les performances dépendent de votre configuration.</li>
@@ -224,7 +225,7 @@ Pour plus d’informations sur la compatibilité des surfaces avec Windows Mixed
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> Partiel </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/16 Go de RAM </td>
+        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/16 Go de RAM </td>
         <td>
             <ul>
                 <li><b>Remarque</b>: la surface Studio n’a pas de badge pour Windows Mixed Reality, mais prend en charge certaines fonctionnalités de Windows Mixed realisation, ce qui vous permet d’utiliser un nombre limité d’applications et de jeux compatibles.  Les performances dépendent de votre configuration.</li>
@@ -236,7 +237,7 @@ Pour plus d’informations sur la compatibilité des surfaces avec Windows Mixed
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Pro (2017) </td><td style="vertical-align: middle"> Partiel </td><td style="vertical-align: middle"> Intel Core i7/Intel® IRIS™ plus Graphics 640/16 Go de RAM </td>
+        <td style="vertical-align: middle"> Surface Pro (2017) </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/Intel® IRIS™ plus Graphics 640/16 Go de RAM </td>
         <td>
             <ul>
                 <li><b>Remarque</b>: le Pro Surface (2017) n’est pas badge pour Windows Mixed Reality, mais prend en charge certaines fonctionnalités de Windows Mixed realisation, ce qui vous permet d’utiliser un nombre limité d’applications et de jeux compatibles.  Les performances dépendent de votre configuration.</li>
@@ -247,7 +248,7 @@ Pour plus d’informations sur la compatibilité des surfaces avec Windows Mixed
             </ul>
         </td>
     </tr><br/>    <tr>
-        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> Partiel </td><td style="vertical-align: middle"> Intel Core i7/Intel® IRIS™ plus Graphics 640/16 Go de RAM </td>
+        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/Intel® IRIS™ plus Graphics 640/16 Go de RAM </td>
         <td>
             <ul>
                 <li><b>Remarque</b>: l’ordinateur portable n’a pas de badge pour Windows Mixed Reality, mais il prend en charge certaines fonctionnalités Windows Mixed realisation, ce qui vous permet d’utiliser un nombre limité d’applications et de jeux compatibles.  Les performances dépendent de votre configuration.</li>
@@ -261,6 +262,7 @@ Pour plus d’informations sur la compatibilité des surfaces avec Windows Mixed
 </table>
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Demander à la communauté](https://answers.microsoft.com)
 * [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
 * [Adaptateurs recommandés pour les PC prenant en charge Windows Mixed Reality](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

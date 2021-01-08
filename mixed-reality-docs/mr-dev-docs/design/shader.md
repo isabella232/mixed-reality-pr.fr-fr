@@ -1,17 +1,17 @@
 ---
 title: Nuanceur
-description: Le nuanceur de la réalité mixte standard fournit différents types d’effets visuels qui peuvent être utilisés avec des hologrammes.
+description: Découvrez comment le nuanceur de la norme mixte de la réalité fournit différents types d’effets visuels qui peuvent être utilisés avec des hologrammes dans vos applications de réalité mixte.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, nuanceur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, effets visuels
-ms.openlocfilehash: 08701fb48d633f7de75b74b5e44655c3a01fade8
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 68e40c053f9557debf9ad22baf2f48a8e06a1bbb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848237"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008859"
 ---
 # <a name="shader"></a>Nuanceur
 

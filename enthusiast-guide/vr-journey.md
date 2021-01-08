@@ -1,17 +1,17 @@
 ---
 title: Commencer votre parcours de réalité virtuelle
-description: Des points de contrôle pour guider les utilisateurs de l’appareil VR grâce à la configuration et à l’utilisation de leurs périphériques immersifs.
+description: Explorez nos points de contrôle organisés pour guider les nouveaux utilisateurs d’appareils grâce à la configuration et à l’utilisation de leurs appareils de VR immersifs.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR,
-ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725706"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007059"
 ---
 # <a name="start-your-vr-journey"></a>Commencer votre parcours de réalité virtuelle
 
@@ -60,7 +60,7 @@ Il existe différents services et fonctionnalités disponibles via Windows Mixed
 
 <br>
 
-|  Point de contrôle  |  Fonctionnalité  |
+|  Point de contrôle  |  Caractéristique  |
 | --- | --- |
 | [Découvrir la réalité mixte](learn-mixed-reality.md) | En savoir plus sur l’utilisation de vos entrées en regard, en voix, en contrôleurs et au clavier et à la souris |
 | [Naviguer dans la page d’hébergement Windows Mixed Reality](your-mixed-reality-home.md) | Explorez l’environnement virtuel de Windows Mixed Reality  |
@@ -76,7 +76,7 @@ Recherchez des jeux immersifs, des applications de bureau et du contenu VR dans 
 
 <br>
 
-|  Point de contrôle  |  Fonctionnalité  |
+|  Point de contrôle  |  Caractéristique  |
 | --- | --- |
 | [Jeux, vidéo 360 et applications](using-games-and-apps-in-windows-mixed-reality.md) | Commencez avec votre premier jeu immersif, les ardoises du Store 2D, les applications de bureau et les expériences WebVR |
 | [Utilisation de SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connectez votre appareil et jouez à SteamVR Games pour en savoir plus sur le programme Windows Insider |

@@ -1,17 +1,17 @@
 ---
 title: Achats dans l'application
-description: Les achats dans l’application sont pris en charge dans les applications de réalité mixte, mais il existe un certain travail pour les configurer.
+description: Apprenez à utiliser des achats dans l’application dans vos applications de réalité mixte avec des vues XAML 2D et une fenêtre contextuelle du système d’exploitation Windows.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: achats dans l’application, hololens, XAML, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 905c1be72bf2a3d6fa167cab68a4cb71e6538acc
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: a87cc68f67def1d46a3a6ba352e723d356f51fa2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757778"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008669"
 ---
 # <a name="in-app-purchases"></a>Achats dans l'application
 

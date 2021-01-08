@@ -1,17 +1,17 @@
 ---
 title: Notes de publication - Août 2016
-description: Notes de publication HoloLens pour la version anniversaire de Windows 10 (automne 2016)
+description: Restez à jour dans les notes de publication HoloLens pour la version anniversaire de Windows 10 pour automne 2016.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, notes de publication, système d’exploitation, plateforme, fonctionnalités, suite commerciale
-ms.openlocfilehash: 870da1075dd1fa1a83926a89bad753233927abda
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725960"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009259"
 ---
 # <a name="release-notes---august-2016"></a>Notes de publication - Août 2016
 

@@ -1,26 +1,28 @@
 ---
-title: Didacticiels audio spatiaux-5. Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
-description: Ajoutez un effet de réverbération pour améliorer le sens de la variation de distance avec l’audio spatial.
+title: Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
+description: Découvrez comment ajouter un effet de réverbération pour améliorer le sens de la variation de distance vers le son spatial dans une application de réalité mixte.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, mélangeur audio, réverbération SFX
-ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002614"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006359"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
 
 ## <a name="objectives"></a>Objectifs
+
 Dans les chapitres précédents, nous avons ajouté Spatialization aux sons pour leur offrir un sens de la direction. Dans ce cinquième chapitre, nous allons ajouter un effet de réverbération pour fournir aux sons un sens de la distance. Nos objectifs sont les suivants :
 * Améliorer la distance perçue des sources sonores en ajoutant une réverbération
 * Contrôle de la distance perçue du son à l’aide de la distance de l’écouteur à l’hologramme
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Ajouter un groupe de mixage et un effet de réverbération
+
 Dans le [Chapitre 2](unity-spatial-audio-ch2.md), nous avons ajouté un mélangeur. Le mélangeur comprend un **groupe** par défaut nommé **maître**. Étant donné que nous voulons uniquement appliquer un effet de réverbération à certains sons, nous allons ajouter un deuxième **groupe** pour ces sons. Pour ajouter un **groupe**, cliquez avec le bouton droit sur le groupe **principal** dans le **mélangeur audio** , puis choisissez **Ajouter un groupe enfant**:
 
 ![Ajouter un groupe enfant](images/spatial-audio/add-child-group.png)
@@ -44,6 +46,7 @@ Une fois ces modifications effectuées, le volet de l' **inspecteur** du **rever
 Les autres paramètres contrôlent l’apparence de la salle simulée. En particulier, le **temps de désintégration** est lié à la taille de l’espace perçu. 
 
 ## <a name="enable-reverb-on-the-video-playback"></a>Activer la réverbération sur la lecture vidéo
+
 Il existe deux étapes pour activer la réverbération sur une source audio :
 * Acheminer la **source audio** vers le **groupe** approprié
 * Définir le plug-in **Microsoft Spatializer** pour transmettre l’audio au **groupe** pour traitement

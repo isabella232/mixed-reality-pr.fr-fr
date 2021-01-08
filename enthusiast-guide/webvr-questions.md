@@ -1,14 +1,14 @@
 ---
 title: FAQ WebVR
-description: Résolution des problèmes Web Mixed realisation qui va au-delà de notre documentation de support technique standard.
+description: Restez à jour grâce à la résolution des problèmes de réalité mixte pour les applications Web qui vont au-delà de notre documentation de support technique standard.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, WebVR
-ms.openlocfilehash: fd9906ca36c71b1bf959466d90c57e07be0eca5e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: dc7a0b28e19f4f1fc029489aae2ea375e43b8d3b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725630"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008659"
 ---
 # <a name="webvr-faqs"></a>FAQ WebVR
 

@@ -1,17 +1,17 @@
 ---
 title: Module lunaire
-description: Découvrez comment étendre les gestes de base de HoloLens avec le suivi à deux mains et l’entrée du contrôleur Xbox, créer des objets qui sont réactifs pour le mappage de surface et la recherche de plan, et implémenter des systèmes de menus simples.
+description: Découvrez comment étendre les gestes de base de HoloLens avec le suivi à deux mains et l’entrée du contrôleur Xbox, créer des objets réactifs et implémenter des systèmes de menu.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, exemples d’applications, conception, MRTK, kit de préversion de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 2861cb85ac2f4a51a80e586b2be42ddb1d395e8a
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: b0630df49fd8ad154017000893a08560793fb39e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010500"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008819"
 ---
 # <a name="lunar-module"></a>Module lunaire
 

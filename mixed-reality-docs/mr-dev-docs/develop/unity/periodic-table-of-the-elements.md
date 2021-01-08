@@ -1,17 +1,17 @@
 ---
 title: Tableau périodique des éléments
-description: La table périodique des éléments est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft. Découvrez comment composer un tableau d’objets dans l’espace 3D avec différents types de surface à l’aide d’une collection d’objets.
+description: Découvrez comment disposer un tableau d’objets dans l’espace 3D avec différents types de surface à l’aide d’une collection d’objets avec la table périodique de l’exemple d’application d’éléments.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, conception, exemple d’application, contrôles, MRTK, kit de préversion de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: fd525b0d41efa15ff55097456fb6b06dd3d60c25
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010180"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009359"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tableau périodique des éléments
 

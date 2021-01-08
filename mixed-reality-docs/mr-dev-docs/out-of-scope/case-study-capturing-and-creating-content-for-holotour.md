@@ -1,17 +1,17 @@
 ---
 title: Étude de cas-HoloTour
-description: HoloTour pour Microsoft HoloLens fournit des présentations personnelles en 3D immersifs d’emplacements sous forme à travers le monde. Cette étude de cas vous guidera tout au long du processus de capture et de création du contenu utilisé pour HoloTour.
+description: Explorez l’étude de cas d’application HoloTour et parcourez le processus de capture et de création de son contenu.
 author: dannyaskew
 ms.author: daaske
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloTour, HoloLens, Windows Mixed Reality
-ms.openlocfilehash: 9908327a1b8e70eef73d3f98adb7c75615e8e098
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 3e285988b6027b8c043dea7a4594c21d0bf3370d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679798"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009319"
 ---
 # <a name="case-study---holotour"></a>Étude de cas-HoloTour
 

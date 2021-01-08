@@ -1,17 +1,17 @@
 ---
 title: Conception de contenu pour un affichage holographique
-description: Découvrez les instructions de conception et les meilleures pratiques pour l’affichage holographique.
+description: En savoir plus sur les instructions de conception et les meilleures pratiques pour l’affichage holographique sur les appareils HoloLens.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Conception d’interface utilisateur, affichage holographique, conception de contenu, thème sombre, thème clair, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de la réalité mixte, conception, pixels
-ms.openlocfilehash: 4a95f5df50a600035d9127c73f86a5d8be5e7131
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 371d9aac610a765e7ecc6dd1f17401e5d7855672
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847991"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009089"
 ---
 # <a name="designing-content-for-holographic-display"></a>Conception de contenu pour un affichage holographique
 
@@ -22,6 +22,7 @@ Lorsque vous concevez du contenu pour des affichages holographiques, vous devez 
 <br>
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>Défis avec une couleur brillante sur une grande surface 
+
 Sur la base de nos recherches et tests, nous avons constaté que l’utilisation de couleurs brillantes dans une grande zone de l’affichage peut entraîner plusieurs problèmes : 
 
 **Fatigue oculaire** 

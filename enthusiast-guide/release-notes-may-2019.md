@@ -1,17 +1,17 @@
 ---
 title: Notes de publication-mai 2019
-description: Notes de publication de Windows Mixed Reality pour Windows 10 mai 2019 Update (également appelé 19H1).
+description: Restez à jour dans les notes de publication de Windows Mixed Reality pour la mise à jour de Windows 10 mai 2019/19H1.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: Notes de publication, version, Windows 10, Build, 19h1, OS, mai 2019
-ms.openlocfilehash: 19444732884a87de3f28e90d656deef6e51eb191
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725920"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007119"
 ---
 # <a name="release-notes---may-2019"></a>Notes de publication-mai 2019
 

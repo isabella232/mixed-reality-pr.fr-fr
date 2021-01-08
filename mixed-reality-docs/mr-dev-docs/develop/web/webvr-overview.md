@@ -1,22 +1,22 @@
 ---
 title: Présentation de WebVR
-description: Vue d’ensemble de l’utilisation et du développement pour WebVR dans Windows Mixed Reality
+description: Découvrez les principes de base de l’utilisation et du développement d’applications WebVR s’exécutant sur des casques immersifs Windows Mixed Reality.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebVR, WebXR, WinMR, WebAR, Web VR, Web XR, Web Mr, Web AR, 360, 360 Video, 360 vidéos, 360 photo, 360 photos, 360 content, Internet immersif, immersiveweb, IW
-ms.openlocfilehash: fdff2acf7816f36129d867650b16d9760a92e375
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: bf0335c0fa7fd42f60a20690d22b2ef9a4f6859a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683018"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006959"
 ---
 # <a name="webvr-overview"></a>Présentation de WebVR
 
 > [!IMPORTANT]
-> Les **API WebVR 1,1** sont dépréciées et remplacées par les **API d’appareil WebXR** .
+> Les **API WebVR 1,1** sont dépréciées et remplacées par les **API d’appareil WebXR**.
 
 Les API WebVR 1,1 sont déconseillées et supprimées du chrome et du nouveau Microsoft Edge. Les API WebVR sont remplacées par les API d’appareil WebXR. Vous pouvez consulter la liste des navigateurs qui prennent actuellement en charge les API WebVR sur [caniuse.com](https://caniuse.com/#search=webvr).
 

@@ -1,17 +1,17 @@
 ---
 title: Suivre de la tête et stabiliser
-description: Vue d’ensemble du modèle d’entrée Suivre de la tête et stabiliser
+description: Prise en main d’une vue d’ensemble du modèle d’entrée du point de vue et du point d’entrée, y compris les scénarios courants et les principes de conception.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: La réalité mixte, le point de vue, l’interaction, la conception, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de la réalité virtuelle, HoloLens, MRTK, le kit de conditions de la réalité mixte, l’expérience utilisateur, les instructions, le mode liste
-ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847372"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007079"
 ---
 # <a name="head-gaze-and-dwell"></a>Suivre de la tête et stabiliser
 

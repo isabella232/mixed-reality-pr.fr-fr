@@ -1,17 +1,17 @@
 ---
 title: Systèmes de coordonnées dans DirectX
-description: En savoir plus sur les systèmes de coordonnées dans DirectX et la réalité mixte avec des localisateurs spatiaux, des frames de référence et des ancres spatiales. Utilisez le SpatialStage et gérez la perte de suivi, l’enregistrement et le chargement des ancres et la stabilisation d’image.
+description: En savoir plus sur les systèmes de coordonnées dans DirectX et la réalité mixte avec des localisateurs spatiaux, des frames de référence et des ancres spatiales.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Réalité mixte, localisateur spatial, frame de référence spatiale, système de coordonnées spatiales, étape spatiale, exemple de code, stabilisation d’image, ancrage spatial, magasin d’ancrage spatial, perte de suivi, procédure pas à pas, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 7bf2309f3fb6264d6b1a5232f7ead78b771c1649
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613113"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006859"
 ---
 # <a name="coordinate-systems-in-directx"></a>Systèmes de coordonnées dans DirectX
 

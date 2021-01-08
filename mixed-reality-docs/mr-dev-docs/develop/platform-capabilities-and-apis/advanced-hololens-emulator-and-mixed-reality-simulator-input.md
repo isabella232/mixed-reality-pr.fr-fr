@@ -1,17 +1,17 @@
 ---
-title: Entrées avancées dans l’émulateur HoloLens et le simulateur de réalité mixte
+title: Émulateur HoloLens avancé et simulateur de réalité mixte
 description: Instructions détaillées pour l’utilisation du clavier, de la souris et du contrôleur Xbox pour simuler l’entrée pour l’émulateur HoloLens et le simulateur Windows Mixed Reality.
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens, émulateur, simulation, Windows Mixed Reality, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff8a2830630b73266fe7348eee5459bcad98e2e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530461"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006679"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Entrées avancées dans l’émulateur HoloLens et le simulateur de réalité mixte
 
@@ -56,7 +56,7 @@ Le tableau suivant montre comment chaque type d’entrée est mappé au clavier,
 |  Inclinaison |  Flèches haut/bas |  Faire glisser vers le haut/vers le haut |  Joystick droit vers le haut/vers le haut | 
 |  Group |  Q/E |  |  DPad gauche/droite | 
 |  X |  A/D |  |  Stick analogique gauche vers la gauche/droite | 
-|  O |  PG. suiv/PG. suiv |  |  DPad vers le haut/vers le haut | 
+|  Y |  PG. suiv/PG. suiv |  |  DPad vers le haut/vers le haut | 
 |  Z |  W/S |  |  Joystick gauche vers le haut/vers le haut | 
 |  Action |  Entrée ou espace |  Bouton droit |  Un bouton ou un déclencheur | 
 |  Fleuri/système |  F2 ou touche Windows |  |  Bouton B | 
@@ -99,7 +99,7 @@ Le tableau suivant montre comment chaque modificateur cible mappe chacun des con
 |  Inclinaison |  Activer/désactiver la tête |  Monter/descendre |  Activer/désactiver la tête | Point de regard des yeux | 
 |  Group |  Tête de roulement gauche/droite |  |  Tête de roulement gauche/droite | (Aucune action) |
 |  X |  Corps de la diapositive vers la gauche/droite |  Déplacer la main/le contrôleur vers la gauche/droite |  Activer l’en-tête gauche/droite | (Aucune action) |
-|  O |  Déplacer le corps vers le haut/vers le haut |  Monter/descendre dans la main/le contrôleur |  Activer/désactiver la tête | (Aucune action) |
+|  Y |  Déplacer le corps vers le haut/vers le haut |  Monter/descendre dans la main/le contrôleur |  Activer/désactiver la tête | (Aucune action) |
 |  Z |  Déplacer le corps vers l’avant/vers l’arrière |  Déplacer vers l’avant/à l’arrière du contrôleur |  Activer/désactiver la tête | (Aucune action) |
  
  

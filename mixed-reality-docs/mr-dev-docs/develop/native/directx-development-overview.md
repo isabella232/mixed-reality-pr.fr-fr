@@ -1,17 +1,17 @@
 ---
 title: Vue d’ensemble du développement natif
-description: Créez un moteur de réalité mixte DirectX en utilisant directement les API Windows Mixed Reality.
+description: Apprenez à créer un moteur de réalité mixte DirectX à l’aide des API Windows Mixed Reality directement.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, rendu holographique, native, application native, WinRT, application WinRT, API de plateforme, moteur personnalisé, intergiciel, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 493715660ff8df79df25e09c82fe48b863053ed3
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613073"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006849"
 ---
 # <a name="native-development-overview"></a>Vue d’ensemble du développement natif
 

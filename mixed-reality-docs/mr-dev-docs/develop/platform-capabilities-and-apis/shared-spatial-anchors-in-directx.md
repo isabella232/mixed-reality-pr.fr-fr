@@ -1,17 +1,17 @@
 ---
 title: Ancres spatiales partagées dans DirectX
-description: Explique comment synchroniser deux appareils HoloLens en partageant des ancres spatiales.
+description: Découvrez comment synchroniser deux appareils HoloLens en partageant des ancres spatiales locales et Azure dans des applications DirectX.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens, synchroniser, ancrage spatial, transfert, multijoueur, vue, scénario, procédure pas à pas, exemple de code, Azure, ancres spatiales Azure, ASA
-ms.openlocfilehash: 4e41975a18c28cb2228b20ebb5d3a445774cca44
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 46fe6be5d81a8fc68502500e318eb8e63d223089
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530328"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008529"
 ---
 # <a name="shared-experiences-in-directx"></a>Expériences partagées dans DirectX
 
@@ -35,6 +35,7 @@ Une fois que vous êtes opérationnel avec les ancres spatiales Azure, vous pouv
 Dans les situations où vous ne pouvez pas utiliser d’ancres spatiales Azure, les [transferts d’ancrage locaux](../../out-of-scope/local-anchor-transfers-in-directx.md) permettent à un appareil hololens d’exporter une ancre à importer par un second appareil hololens.  Cette approche offre un rappel d’ancrage moins fiable que les ancres spatiales Azure, et les appareils iOS et Android ne sont pas pris en charge par cette approche.
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Expériences partagées dans Mixed Reality](shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/" target="_blank">Kit de développement logiciel (SDK) d’ancre spatiale Azure pour HoloLens</a>

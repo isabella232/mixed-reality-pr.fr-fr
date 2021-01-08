@@ -1,17 +1,17 @@
 ---
 title: Compréhension des scènes
-description: Présentation des fonctionnalités de présentation de la scène pour HoloLens
+description: Découvrez comment développer avec la compréhension de scène pour HoloLens, y compris le kit de développement logiciel (SDK), les fonctionnalités et les scénarios d’utilisation courants.
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, occlusion, kit de développement logiciel (SDK)
-ms.openlocfilehash: f46245c668e7cc58258fa4e28c4af5aa7812ef5f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: c4485c5501300d6ca629f4e587fde1f88eea7ea5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848259"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008869"
 ---
 # <a name="scene-understanding"></a>Compréhension des scènes
 

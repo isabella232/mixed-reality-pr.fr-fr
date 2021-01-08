@@ -8,12 +8,12 @@ ms.topic: article
 keywords: hologrammes, stabilité, hololens, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, fréquence d’images, rendu, reprojection, séparation des couleurs
 appliesto:
 - HoloLens
-ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808830"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006639"
 ---
 # <a name="hologram-stability"></a>Stabilité des hologrammes
 
@@ -144,7 +144,7 @@ La seule chose la plus importante qu’un développeur puisse faire pour stabili
 
 **Meilleures pratiques** Il n’existe pas de méthode universelle pour configurer le plan de stabilisation et il est spécifique à l’application. Notre recommandation principale est d’expérimenter et de voir ce qui convient le mieux à votre scénario. Toutefois, essayez d’aligner le plan de stabilisation avec autant de contenu que possible, car tout le contenu de ce plan est parfaitement stabilisé.
 
-Exemple :
+Par exemple :
 * Si vous disposez uniquement d’un contenu planaire (lecture de l’application de lecture vidéo), alignez le plan de stabilisation avec le plan qui contient votre contenu.
 * Si trois petites sphères sont verrouillées dans le monde, faites en sorte que le plan de stabilisation soit « coupé » par le biais des centres de tous les sphères actuellement dans la vue de l’utilisateur.
 * Si votre scène a du contenu à des profondeurs sensiblement différentes, privilégiez les autres objets.

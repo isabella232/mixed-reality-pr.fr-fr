@@ -1,17 +1,17 @@
 ---
 title: Vue d’ensemble du portage
-description: Vue d’ensemble des différentes options de Portage pour ramener les applications existantes à la réalité mixte.
+description: Vue d’ensemble des différentes options de Portage pour intégrer vos applications existantes à la réalité mixte pour HoloLens et VR.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Portage, Unity, intergiciel, Engine, UWP, Win32
-ms.openlocfilehash: d8cbb62500a81a29a00f4d32eaed0c2df3f5149d
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5a57c73481e80e5ab6fac1bd02b83c5d3dfaabb6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612833"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007489"
 ---
 # <a name="porting-overview"></a>Vue d’ensemble du portage
 

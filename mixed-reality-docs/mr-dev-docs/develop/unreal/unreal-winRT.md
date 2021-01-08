@@ -1,17 +1,17 @@
 ---
 title: WinRT dans Unreal
-description: Vue d’ensemble du plug-in d’audio spatial pour le moteur Unreal.
+description: Découvrez comment écrire et gérer des fonctionnalités WinRT personnalisées dans des applications de réalité mixte non réelles pour les appareils HoloLens.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, prise en main, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, WinRT, DLL
-ms.openlocfilehash: f86939ee53b51fad1e31d18f810d92c3d20611f8
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: ac28ce08443de40d9f7eb32eb1b2e8e071a618b3
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926067"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007029"
 ---
 # <a name="winrt-in-unreal"></a>WinRT dans Unreal
 
@@ -21,12 +21,13 @@ Au cours de votre développement HoloLens, vous devrez peut-être écrire une fo
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement inréel que nous avons disposé, vous êtes en train d’explorer les fonctionnalités de la plateforme de réalité mixte et les API. À partir de là, vous pouvez accéder à n’importe quelle [rubrique](unreal-development-overview.md#3-platform-capabilities-and-apis) ou passer directement au déploiement de votre application sur un appareil ou un émulateur.
+Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous explorez actuellement les API et les fonctionnalités de la plateforme Mixed Reality. À partir de là, vous pouvez accéder à n’importe quelle [rubrique](unreal-development-overview.md#3-platform-capabilities-and-apis) ou passer directement au déploiement de votre application sur un appareil ou un émulateur.
 
 > [!div class="nextstepaction"]
 > [Déploiement sur un appareil](unreal-deploying.md)
 
 ## <a name="see-also"></a>Voir aussi
+
 * [API C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
 * [FileSavePicker, classe](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
 * [Bibliothèques tierces non réelles](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html) 

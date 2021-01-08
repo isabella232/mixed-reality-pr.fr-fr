@@ -1,17 +1,17 @@
 ---
 title: Point de focus dans Unity
-description: Réglage manuel de la stabilité des hologrammes dans Unity en définissant le point de focus
+description: Apprenez à ajuster manuellement la stabilité des hologrammes dans Unity en définissant le point de focalisation pour HoloLens et les casques immersif Windows Mixed Reality.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, point de focalisation, plan de focalisation, plan de stabilisation, point de stabilisation, reprojection, LSR, mémoire tampon de profondeur, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: bd662a079f23ed590708d961e924859675a44917
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010270"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009339"
 ---
 # <a name="focus-point-in-unity"></a>Point de focus dans Unity
 
@@ -53,7 +53,7 @@ void Update()
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des fonctionnalités de la plateforme de réalité mixte et des API. À partir de là, vous pouvez passer à la rubrique suivante :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des fonctionnalités de la plateforme de réalité mixte et des API. À partir d’ici, vous pouvez passer au sujet suivant :
 
 > [!div class="nextstepaction"]
 > [Perte de suivi](tracking-loss-in-unity.md)
@@ -66,4 +66,5 @@ Ou accéder directement au déploiement de votre application sur un appareil ou 
 Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-platform-capabilities-and-apis) à tout moment.
 
 ### <a name="see-also"></a>Voir aussi
+
 * [Plan de stabilisation](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

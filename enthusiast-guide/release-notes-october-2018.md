@@ -1,26 +1,26 @@
 ---
 title: Notes de publication - Octobre 2018
-description: Notes de publication de HoloLens et de Windows Mixed Reality pour la mise à jour 2018 de Windows 10 octobre (également appelée RS5).
+description: Restez à jour dans les notes de publication HoloLens et Windows Mixed Reality pour la mise à jour Windows 10 octobre 2018/RS5.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 10/02/2018
 ms.topic: article
 keywords: Notes de publication, version, Windows 10, Build, RS5, système d’exploitation
-ms.openlocfilehash: 88d7393fdcf499b1fabd36668364ffb31b0e793d
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: f7d95481d166f2c8795701c516946346101a21d0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91783962"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007109"
 ---
 # <a name="release-notes---october-2018"></a>Notes de publication - Octobre 2018
 
 La **[mise à jour 2018 de Windows 10 octobre](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)** (également connue sous le nom de RS5) comprend de nouvelles fonctionnalités pour les casques immersif et Windows Mixed Real en réalité connectés aux PC. 
 
-Pour effectuer une mise à jour vers la version la plus récente sur HoloLens ou PC (pour les casques en mode immersif Windows Mixed Reality), ouvrez l’application **paramètres** , accédez à **mettre à jour & sécurité** , puis sélectionnez le bouton **Rechercher les mises à jour** . Sur un PC Windows 10, vous pouvez également installer manuellement la mise à jour 2018 de Windows 10 octobre à l’aide de l' [outil de création de média Windows](https://www.microsoft.com/software-download/windows10).
+Pour effectuer une mise à jour vers la version la plus récente sur HoloLens ou PC (pour les casques en mode immersif Windows Mixed Reality), ouvrez l’application **paramètres** , accédez à **mettre à jour & sécurité**, puis sélectionnez le bouton **Rechercher les mises à jour** . Sur un PC Windows 10, vous pouvez également installer manuellement la mise à jour 2018 de Windows 10 octobre à l’aide de l' [outil de création de média Windows](https://www.microsoft.com/software-download/windows10).
 
-**Dernière version pour ordinateur de bureau :** Mise à jour 2018 de Windows 10 octobre ( **10.0.17763.107** )<br>
-**Dernière version pour HoloLens :** Mise à jour 2018 de Windows 10 octobre ( **10.0.17763.134** )<br>
+**Dernière version pour ordinateur de bureau :** Mise à jour 2018 de Windows 10 octobre (**10.0.17763.107**)<br>
+**Dernière version pour HoloLens :** Mise à jour 2018 de Windows 10 octobre (**10.0.17763.134**)<br>
 
 ## <a name="new-features-for-windows-mixed-reality-immersive-headsets"></a>Nouvelles fonctionnalités pour les casques immersifs de Windows Mixed Reality
 
@@ -41,7 +41,7 @@ La mise à jour 2018 d’octobre de Windows 10 offre de nombreuses amélioration
     * Nouvelle application *WebVR Showcase* permettant de découvrir une sélection d’expériences WebVR régulièrement organisée.
     * Les clients Windows Mixed Really entrent dans la maison de la falaise et le trouvent préremplis avec les lanceurs d’applications en 3D pour certaines de nos applications et jeux immersifs favoris de la Microsoft Store.
     * Les fenêtres Microsoft Edge incluent maintenant un bouton *partager* .
-* **Menu actions rapides** : à partir d’une application de réalité mixte immersive, vous pouvez appuyer sur le bouton Windows pour accéder à un nouveau menu actions rapides, avec un accès facile au *menu SteamVR* , à la *capture photo/vidéo* , à la *torche* et à la *page d’habitation* .
+* **Menu actions rapides** : à partir d’une application de réalité mixte immersive, vous pouvez appuyer sur le bouton Windows pour accéder à un nouveau menu actions rapides, avec un accès facile au *menu SteamVR*, à la *capture photo/vidéo*, à la *torche* et à la *page d’habitation*.
 * **Prise en charge des PC de sac à dos** : les casques en immersion Windows Mixed Reality (VR) s’exécutent sur des PC de poche sans nécessiter d’émulateur d’affichage une fois l’installation terminée.
 * **Nouvelles fonctionnalités audio** : vous pouvez désormais mettre en miroir le son à partir d’une expérience Windows Mixed Reality sur la prise jack audio (ou le casque) de votre casque *et* un périphérique audio connecté à votre PC (comme les haut-parleurs externes). Nous avons également ajouté un indicateur visuel pour le niveau du volume dans l’affichage de votre casque.
 * **Autres améliorations**
@@ -60,7 +60,7 @@ La mise à jour 2018 de Windows 10 octobre est publiquement disponible pour tous
 
 ### <a name="for-everyone"></a>Pour tout le monde
 
-* **Menu actions rapides** : dans une application de réalité mixte immersive, vous pouvez appuyer sur le bouton Windows pour accéder à un nouveau menu actions rapides, avec un accès facile pour *Démarrer l’enregistrement vidéo* , *prendre des photos* , *Accueil mixte* de la réalité, *changer de volume* et *se connecter* .
+* **Menu actions rapides** : dans une application de réalité mixte immersive, vous pouvez appuyer sur le bouton Windows pour accéder à un nouveau menu actions rapides, avec un accès facile pour *Démarrer l’enregistrement vidéo*, *prendre des photos*, *Accueil mixte* de la réalité, *changer de volume* et *se connecter*.
 * **Démarrer/arrêter la capture vidéo à partir du menu actions de démarrage ou rapide** : Si vous démarrez la capture vidéo à partir du menu Démarrer ou du menu actions rapides, vous pouvez arrêter l’enregistrement à partir du même emplacement. (N’oubliez pas que vous pouvez toujours le faire avec les commandes vocales.)
 * **Projet sur un appareil compatible Miracast** -projetez votre contenu HoloLens sur un appareil à surface proche ou une TV/moniteur si vous utilisez un adaptateur ou un écran compatible miracast.
 * **Nouvelles notifications** : Affichez et répondez aux notifications sur HoloLens, comme vous le feriez sur un PC.  

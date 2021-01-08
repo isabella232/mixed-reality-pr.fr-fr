@@ -1,17 +1,17 @@
 ---
 title: Test de votre application dans HoloLens
-description: Conseils et suggestions pour tester votre application HoloLens
+description: En savoir plus sur les conseils généraux et les suggestions relatives aux tests et à l’optimisation des performances de vos applications HoloLens Mixed Reality.
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, test
-ms.openlocfilehash: e1a5a62cf52a3144f02b8acaa96b3c653246fd9c
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: d26a3717da2ee9943e92e3602b6029435815262b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530341"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008539"
 ---
 # <a name="testing-your-app-on-hololens"></a>Test de votre application dans HoloLens
 
@@ -22,6 +22,7 @@ Le test des applications HoloLens est semblable au test des applications Windows
 Les applications holographiques doivent s’exécuter sans heurts dans un ensemble diversifié d’environnements. Ils doivent également conserver les performances et le confort de l’utilisateur à tout moment. Les performances sont si importantes pour l’expérience de l’utilisateur avec une application holographique dans laquelle nous avons une rubrique entière consacrée. Veillez à lire et à suivre la [Description des performances pour la réalité mixte](understanding-performance-for-mixed-reality.md)
 
 ## <a name="testing-3d-in-3d"></a>Test de 3D en 3D
+
 1. **Testez votre application dans autant d’espaces que possible.** Essayez dans les grandes salles, les petites salles, les salles de bain, les cuisines, les chambres, les bureaux, etc. Prenez également en compte les chambres avec des fonctionnalités non standard, telles que les murs non verticaux, les murs incurvés et les limites non horizontales. Fonctionne-t-il bien lors de la transition entre des salles, des planchers, en passant par des couloirs ou des escaliers ?
 2. **Testez votre application dans des conditions d’éclairage différentes.** Répond-il correctement à différentes conditions environnementales, telles que l’éclairage, les surfaces noires et les surfaces transparentes ou réfléchissantes comme les miroirs et les murs.
 3. **Testez votre application dans différentes conditions de mouvement.** Mettez sur l’appareil et essayez vos scénarios dans différents États de mouvement. Répond-il correctement à un mouvement ou à un état stable différent ?
@@ -37,11 +38,11 @@ Les applications holographiques doivent s’exécuter sans heurts dans un ensemb
 ![Matrice de test de l’environnement pour le développement d’applications HoloLens](images/environment-matrix-600px.png)
 
 ## <a name="comfort"></a>Confort
+
 1. **Plans de clip.** Soyez précis à l’endroit où [les hologrammes sont rendus](hologram-stability.md#hologram-render-distances).
 2. **Évitez les mouvements virtuels incohérents avec le mouvement de la tête réelle.** Évitez de déplacer l’appareil photo d’une façon qui n’est pas représentative du mouvement réel de l’utilisateur. Si votre application nécessite de déplacer l’utilisateur via une scène, rendez le mouvement prévisible, réduisez l’accélération et laissez l’utilisateur contrôler le mouvement.
 3. **Suivez les instructions de qualité de l’hologramme.** Les applications performantes qui implémentent les recommandations en matière de [qualité des hologrammes](hologram-stability.md) sont moins susceptibles d’entraîner une gêne pour l’utilisateur.
 4. **Distribuez les hologrammes horizontalement plutôt que verticalement.** Forcer l’utilisateur à consacrer de longues périodes de temps à la recherche ou à la baisse peut entraîner une fatigue dans le cou.
-
 
 ## <a name="input"></a>Entrée
 
@@ -113,4 +114,5 @@ Certains développeurs d’applications peuvent souhaiter automatiser les tests 
 Pour permettre à votre application d’être [publiée dans le Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md), validez-la et testez-la localement avant de la soumettre à la certification. Si votre application cible la famille d’appareils Windows. holographique, le [Kit de certification des applications Windows](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) exécutera uniquement les tests d’analyse statique locaux sur votre PC. Aucun test ne sera exécuté sur votre HoloLens.
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Envoi d’une application au Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)

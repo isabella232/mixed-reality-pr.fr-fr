@@ -1,17 +1,17 @@
 ---
 title: Rendu dans DirectX
-description: Décrit le rendu holographique pour Windows Mixed Reality.
+description: Apprenez à mettre à jour et à restituer le contenu dans les applications DirectX pour Windows Mixed Reality.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, rendu, 3D Graphics, HolographicFrame, boucle de rendu, boucle de mise à jour, procédure pas à pas, exemple de code, Direct3D
-ms.openlocfilehash: 90d665e8054a185969a95e6ff6415979e728e9ab
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: aafead61b45550f499405ae63bda7d7f8e79d224
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613183"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006719"
 ---
 # <a name="rendering-in-directx"></a>Rendu dans DirectX
 

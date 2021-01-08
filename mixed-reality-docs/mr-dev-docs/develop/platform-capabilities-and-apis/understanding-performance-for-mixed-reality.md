@@ -1,17 +1,17 @@
 ---
 title: Comprendre les performances de la réalité mixte
-description: Informations et détails avancés sur l’optimisation des performances des applications Windows Mixed Reality.
+description: Découvrez des informations et des détails avancés sur l’analyse et l’optimisation des performances des applications Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, performances, optimisation, UC, GPU
-ms.openlocfilehash: fc7b6385acda9079a649131b9e6eccf5ac067819
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530063"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008469"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Comprendre les performances de la réalité mixte
 
@@ -19,7 +19,7 @@ Cet article est une introduction à la compréhension de l’importance des perf
 
 Les valeurs de fréquence d’images performante pour chaque plateforme cible sont répertoriées ci-dessous.
 
-| Plate-forme | Fréquence d’images cible |
+| Plateforme | Fréquence d’images cible |
 |----------|-------------------|
 | [HoloLens](../../hololens-hardware-details.md) | 60 i/s |
 | [Windows Mixed Reality ultra PC](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
@@ -134,7 +134,7 @@ Les opérations d’allocation et de désallocation de mémoire excessives peuve
 
 #### <a name="object-pooling"></a>Mise en pool d’objets
 
-Le mise en pool d’objets est une technique populaire pour réduire le coût des allocations et des désallocations continues d’objets. Pour ce faire, vous devez allouer un grand pool d’objets identiques et réutiliser les instances inactives de ce pool au lieu de générer et de détruire constamment des objets dans le temps. Les pools d’objets sont idéaux pour les composants réutilisables qui ont une durée de vie variable pendant une application.
+Le mise en pool d’objets est une technique populaire pour réduire le coût des allocations et des désallocations continues d’objets. Pour la réaliser, vous devez allouer un grand pool d’objets identiques et réutiliser des instances inactives disponibles de ce pool au lieu de générer et détruire constamment des objets au fil du temps. Les pools d’objets conviennent parfaitement aux composants réutilisables qui ont une durée de vie variable pendant une application.
 
 ## <a name="see-also"></a>Voir aussi
 - [Recommandations de performances pour Unity](../unity/performance-recommendations-for-unity.md)

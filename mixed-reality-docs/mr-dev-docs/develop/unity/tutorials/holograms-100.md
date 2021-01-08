@@ -1,17 +1,17 @@
 ---
 title: MR Basics 100 - Bien démarrer avec Unity
-description: Apprenez à créer votre première application de réalité mixte « Hello World ».
+description: Découvrez comment créer votre première application de base « Hello World » de base pour les appareils HoloLens et Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: la réalité mixte, Windows Mixed Reality, HoloLens, immersif, VR, Mr, prise en main, hologramme, Academy, didacticiel, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 83ca133e341688f42fa2d53b4d50f1aefa9bb39b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678408"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006509"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>Réalité mixte - Principes fondamentaux - Cours 100 : Bien démarrer avec Unity
 
@@ -43,7 +43,7 @@ Pour générer une application avec Unity, vous devez d’abord créer un projet
 Pour générer et déployer des applications UWP, Unity peut exporter le projet en tant que solution Visual Studio qui contient tous les fichiers de ressources et de code nécessaires.
 
 1. Démarrer Unity
-2. Sélectionner **nouveau**
+2. Sélectionnez **Nouveau**
 3. Entrez un nom de projet (par exemple, « MixedRealityIntroduction »)
 4. Entrez un emplacement pour enregistrer votre projet
 5. Vérifier que le bouton bascule **3D** est sélectionné

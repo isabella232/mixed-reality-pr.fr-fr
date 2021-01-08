@@ -1,17 +1,17 @@
 ---
 title: Mappage spatial dans Unity
-description: Rendu et collision avec la géométrie réelle autour de vous dans Unity.
+description: Découvrez comment utiliser et gérer le rendu et la collision avec la géométrie réelle vous concernant dans des applications Unity de réalité mixte.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mappage spatial, convertisseur, conflit, maillage, numérisation, composant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 2e5518b1a54f967762143bb8602141b4199a2d54
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: b4c45ba91a3e864c8cd29f3ebc3396d0250948f4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002514"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009289"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mappage spatial dans Unity
 
@@ -475,7 +475,7 @@ La dll de compréhension stocke en interne le PlaySpace sous la forme d’une gr
 ![Maille générée produite à partir du volume voxel](images/su-custommesh.jpg)<br>
 *Maille générée produite à partir du volume voxel*
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 * Vérifiez que vous avez défini la fonctionnalité [SpatialPerception](#setting-the-spatialperception-capability)
 * Lorsque le suivi est perdu, l’événement OnSurfaceChanged suivant supprime tous les maillages.
 
@@ -484,10 +484,10 @@ Pour plus d’informations sur l’utilisation du mappage spatial avec Mixed Rea
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant : 
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au module suivant : 
 
 > [!div class="nextstepaction"]
-> [Text](text-in-unity.md)
+> [Texte](text-in-unity.md)
 
 Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 

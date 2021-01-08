@@ -1,6 +1,6 @@
 ---
 title: Utilisation de la reconnaissance vocale dans Windows Mixed Reality
-description: Découvrez comment utiliser l’entrée vocale dans vos applications Windows Mixed Reality.
+description: Découvrez comment utiliser l’entrée vocale pour contrôler les commandes, les objets 3D et la dictée dans vos applications Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725770"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007669"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Utilisation de la reconnaissance vocale dans Windows Mixed Reality
 
@@ -38,7 +38,7 @@ Utilisez les commandes vocales suivantes dans Windows Mixed Reality pour une plu
 
 | Pour | Disons cela |
 | --- | --- |
-| Sélectionnez | Dites « sélectionner » pour afficher le curseur en regard. Ensuite, tournez votre tête pour positionner le curseur sur l’élément que vous souhaitez sélectionner et dites « sélectionner » à nouveau. |
+| Sélectionner | Dites « sélectionner » pour afficher le curseur en regard. Ensuite, tournez votre tête pour positionner le curseur sur l’élément que vous souhaitez sélectionner et dites « sélectionner » à nouveau. |
 | Ouverture du menu Démarrer | Aller à démarrer |
 | Conserver une application immersif | Dites « aller à démarrer » pour afficher le menu actions rapides, puis « Accueil de la réalité mixte ». |
 | Allumer/éteindre l’torche | Dites « aller à démarrer » pour afficher le menu actions rapides, puis « Accueil de la réalité mixte ». |
@@ -88,7 +88,7 @@ Pointez le regard du menu Démarrer pour utiliser ces commandes :
 | Revenir au menu Démarrer à partir de toutes les applications | Revenir |
 | Prendre une photo | Appareil photo |
 | Prendre une vidéo | Vidéo |
-| Afficher la vue du casque dans le portail de réalité mixte sur votre bureau | Préversion |
+| Afficher la vue du casque dans le portail de réalité mixte sur votre bureau | Aperçu |
 | Ouvrir le contrôle du volume au démarrage | Modifier le volume |
 | Désactiver le son | Désactiver le son |
 | Réactiver le son | Réactiver le son |

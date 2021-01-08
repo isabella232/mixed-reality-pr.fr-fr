@@ -1,17 +1,17 @@
 ---
 title: Écriture d’une application distante holographique de communication à distance (OpenXR)
-description: En créant une application distante de communication à distance holographique, le contenu distant, qui est affiché sur un ordinateur distant, peut être diffusé en continu vers HoloLens 2.
+description: Découvrez comment diffuser du contenu distant rendu sur une machine distante à HoloLens 2 avec des applications de communication à distance holographique avec OpenXR.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, NuGet
-ms.openlocfilehash: 202f2108ade9998d25d87dee20d4bd456da0a118
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 616765143309fe2a4883c1393713133fcbe2a9d5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530415"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006489"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>Écriture d’une application distante holographique à distance à l’aide de l’API OpenXR
 

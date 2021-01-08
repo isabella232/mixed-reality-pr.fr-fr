@@ -1,17 +1,17 @@
 ---
 title: Notes de publication-2018 avril
-description: Notes de publication de HoloLens et de Windows Mixed Reality pour la mise à jour 2018 d’avril de Windows 10 (également appelée RS4).
+description: Restez à jour dans les notes de publication HoloLens et Windows Mixed Reality pour la mise à jour de Windows 10 avril 2018/RS4.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 05/21/2018
 ms.topic: article
 keywords: Notes de publication, version, Windows 10, Build, RS4, système d’exploitation
-ms.openlocfilehash: 42d22feb582716be5ab0bd24ade4a8566dddb5cf
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 8590cf8f813f22fb4f91fef0862b1e2e4ad43b1a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725970"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009239"
 ---
 # <a name="release-notes---april-2018"></a>Notes de publication-2018 avril
 

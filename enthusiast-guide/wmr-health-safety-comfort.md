@@ -1,5 +1,5 @@
 ---
-title: Intégrité, sécurité et confort des écouteurs immersifs Windows Mixed Reality
+title: Intégrité et sécurité du casque Windows Mixed Reality
 description: Découvrez comment vous assurer que vous et vos utilisateurs soyez sains, sûrs et familiers quand vous utilisez des applications Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8b78cd637b3f3b68ef793aa76031e3151f1f0fe
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725570"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008999"
 ---
 # <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Intégrité, sécurité et confort des écouteurs immersifs Windows Mixed Reality
 
@@ -41,7 +41,7 @@ Suivez toutes les recommandations de configuration pour Windows Mixed Reality, y
 
 **Certaines personnes peuvent rencontrer des** risques de incrédulité, de maladie, de dizziness, de désorientation, de casse, de fatigue ou de fatigue oculaire lors de l’utilisation de Windows Mixed Reality, en particulier lorsqu’elles s’ajustent à leur utilisation. Le mouvement de maladie et les symptômes connexes peuvent se produire en cas d’incompatibilité entre ce que vous voyez et ce que votre corps perçoit. Si vous êtes susceptible de faire des mouvements de maladie, d’obtenir des migraines de migraine, d’avoir un trouble de l’oreille interne ou d’autres conditions d’intégrité, vous pouvez être à l’augmentation du risque de gêne.
 
-**Certaines situations peuvent accroître votre risque de gêne.** Exemple :
+**Certaines situations peuvent accroître votre risque de gêne.** Par exemple :
 
 * L’utilisation de nouveaux symptômes utilisateur a tendance à diminuer à mesure que vous vous familiarisez avec Windows Mixed Reality.
 * Les appareils peuvent fonctionner de manière optimale pour les utilisateurs dont la distance interpupillary (IPD) est comprise dans une certaine plage. L’IPD est la distance entre le Centre des pupilles des deux yeux. Les utilisateurs disposant d’une IPD en dehors de la plage optimale pour l’appareil peuvent rencontrer une gêne.

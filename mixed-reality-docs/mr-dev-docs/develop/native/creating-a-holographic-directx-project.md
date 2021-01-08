@@ -1,17 +1,17 @@
 ---
 title: Création d’un projet DirectX holographique
-description: Explique comment créer une application holographique basée sur le modèle application Windows Mixed Reality.
+description: Découvrez comment créer une application DirectX holographique basée sur le modèle application Windows Mixed Reality.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, application holographique, nouvelle application, application UWP, modèle App, hologrammes, nouveau projet, procédure pas à pas, téléchargement, exemple de code, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: f377ca5b8af08beb53c878e1ebf665b8074853f6
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 9259a85512555342877de0a5a8bae697fdd03b8d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613083"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006869"
 ---
 # <a name="creating-a-holographic-directx-project"></a>Création d’un projet DirectX holographique
 
