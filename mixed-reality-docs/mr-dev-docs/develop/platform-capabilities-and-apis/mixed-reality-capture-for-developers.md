@@ -1,19 +1,19 @@
 ---
-title: Capture de réalité mixte pour les développeurs
+title: Capture de Réalité Mixte pour les développeurs
 description: Découvrez les meilleures pratiques pour l’activation, l’utilisation et le rendu de la capture de réalité mixte pour les développeurs.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, photo, vidéo, capture, appareil photo
-ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009939"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108862"
 ---
-# <a name="mixed-reality-capture-for-developers"></a>Capture de réalité mixte pour les développeurs
+# <a name="mixed-reality-capture-for-developers"></a>Capture de Réalité Mixte pour les développeurs
 
 > [!NOTE]
 > Pour obtenir des conseils sur une nouvelle fonctionnalité MRC pour HoloLens 2, voir [rendu à partir de l’appareil photo PV](#render-from-the-pv-camera-opt-in) ci-dessous.
@@ -254,37 +254,55 @@ Effet audio MRC (**Windows. Media. MixedRealityCapture. MixedRealityCaptureAudio
 
 ### <a name="simultaneous-mrc-limitations"></a>Limitations de la MRC simultanée
 
-Certaines restrictions s’imposent pour plusieurs applications qui accèdent à MRC en même temps.
+Vous devez être conscient de certaines limitations lorsque plusieurs applications accèdent à la MRC en même temps.
 
 #### <a name="photovideo-camera-access"></a>Accès à la photo/caméra vidéo
 
-La caméra photo/vidéo est limitée au nombre de processus qui peuvent y accéder en même temps. Lorsqu’un processus enregistre une vidéo ou prend une photo, tout autre processus ne parvient pas à acquérir l’appareil photo/vidéo. (cela s’applique à la fois à la capture de réalité mixte et à la capture de photos/vidéos standard)
+Sur HoloLens 1, MRC ne parvient pas à capturer une photo ou à capturer une vidéo lorsqu’un processus enregistre une vidéo ou prend une photo. L’inverse est également vrai : si MRC est en cours d’exécution, l’application ne parvient pas à accéder à l’appareil photo. 
 
-Avec HoloLens 2, une application peut utiliser la propriété MediaCaptureInitializationSettings [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) pour indiquer qu’elle souhaite exécuter SharedReadOnly si elle n’a pas besoin d’un contrôle exclusif sur la caméra photo/vidéo. La résolution et la cadence de la capture se limitent à ce que les autres applications ont configurées pour la caméra.
+Avec HoloLens 2, il est possible de partager l’accès à l’appareil photo. Si vous n’avez pas besoin de contrôler directement la résolution ou la fréquence d’images, vous pouvez initialiser MediaCapture à l’aide de la [propriété SharedMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) avec SharedReadOnly.  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>Accès intégré à la caméra photo/vidéo MRC
 
 Fonctionnalité MRC intégrée à Windows 10 (via Cortana, menu Démarrer, raccourcis matériels, Miracast, portail de périphériques Windows) :
+
 * S’exécutera avec ExclusiveControl par défaut
 
-Toutefois, une prise en charge a été ajoutée à chaque sous-système pour fonctionner en mode partagé :
-* Si une application demande un accès ExclusiveControl à la caméra photo/vidéo, la MRC intégrée arrête automatiquement l’utilisation de la caméra photo/vidéo pour que la demande de l’application aboutisse.
-* Si la génération de la MRC est lancée alors qu’une application dispose d’un ExclusiveControl, la MRC intégrée s’exécutera en mode SharedReadOnly
+Toutefois, la prise en charge a été ajoutée au sous-système MRC pour fonctionner en mode partagé : 
+
+* Si une application demande un accès ExclusiveControl à la caméra photo/vidéo, la MRC intégrée arrête automatiquement l’utilisation de la caméra photo/vidéo pour que la demande de l’application aboutisse. 
+* Si la génération de la MRC est lancée alors qu’une application dispose d’un ExclusiveControl, la MRC intégrée s’exécutera en mode SharedReadOnly 
 
 Cette fonctionnalité du mode partagé présente certaines restrictions :
+
 * Photo via Cortana, les raccourcis matériels ou le menu Démarrer : requiert la mise à jour 2018 d’avril de Windows 10 (ou version ultérieure)
 * Vidéo via Cortana, les raccourcis matériels ou le menu Démarrer : requiert la mise à jour 2018 de Windows 10 avril (ou version ultérieure)
 * Streaming MRC sur Miracast : requiert la mise à jour 2018 de Windows 10 octobre (ou version ultérieure)
 * Diffusion en continu de la MRC sur le portail de périphériques Windows ou via l’application auxiliaire HoloLens : requiert HoloLens 2
 
 >[!NOTE]
-> La résolution et la cadence de l’interface utilisateur de la caméra MRC intégrée peuvent être réduites par rapport à leurs valeurs normales lorsqu’une autre application utilise la caméra photo/vidéo.
+> La résolution et la fréquence d’images de l’interface utilisateur de la caméra MRC intégrée peuvent être réduites par rapport à leurs valeurs normales lorsqu’une autre application utilise la caméra photo/vidéo.
 
-#### <a name="mrc-access"></a>Accès MRC
+#### <a name="mrc-access-for-developers"></a>Accès MRC pour les développeurs
 
-Avec la mise à jour 2018 d’avril de Windows 10, il n’y a plus de limitation concernant plusieurs applications qui accèdent au flux MRC (Toutefois, l’accès à la caméra photo/vidéo présente toujours des limitations).
+Nous vous recommandons de toujours demander le contrôle exclusif de l’appareil photo lors de l’utilisation de MRC. Cela garantit que votre application dispose d’un contrôle total sur les paramètres de l’appareil photo, à condition que vous soyez conscient des limitations mentionnées ci-dessus. 
 
-Avant la mise à jour 2018 de Windows 10 avril, l’enregistreur MRC personnalisé d’une application était mutuellement exclusif avec la MRC du système (capture de photos, capture de vidéos ou diffusion en continu à partir du portail de périphériques Windows).
+* Créer un objet de capture de média à l’aide des [paramètres d’initialisation](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)
+* Affectez à la propriété [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) la valeur **exclusive**
+
+> [!CAUTION]
+> Veillez à lire attentivement les [notes de SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) avant de continuer.
+
+* Configurez votre appareil photo comme vous le souhaitez
+* Démarrez l’application, capturez des images vidéo avec l’API Démarrer, puis activez la fonction MRC
+
+> [!CAUTION]
+> Si vous démarrez MRC avant de démarrer votre application, nous ne pouvons pas garantir que la fonctionnalité fonctionnera comme prévu.
+
+Vous trouverez un exemple complet du processus ci-dessus dans l' [exemple de suivi de visage holographique](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking).
+
+> [!NOTE]
+> Avant la mise à jour 2018 de Windows 10 avril, l’enregistreur MRC personnalisé d’une application s’excluait mutuellement avec la MRC du système (capture de photos, capture de vidéos ou diffusion en continu à partir du portail de périphériques Windows).
 
 ## <a name="see-also"></a>Voir aussi
 

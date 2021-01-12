@@ -3,15 +3,15 @@ title: Utilisation du plug-in OpenXR de la réalité mixte pour Unity
 description: Découvrez comment activer le plug-in OpenXR de réalité mixte pour les projets Unity.
 author: hferrone
 ms.author: alexturn
-ms.date: 12/1/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: 7d28dd50e111da4b010bcae699b7451d967e8f35
-ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
+ms.openlocfilehash: c5d312161b7d0f4f832e8d09dbacf5af700ffd8d
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97905291"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108878"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Utilisation du plug-in OpenXR de la réalité mixte pour Unity
 
@@ -20,7 +20,7 @@ ms.locfileid: "97905291"
 ## <a name="prerequisites"></a>Prérequis
 
 * Unity 2020,2 ou version ultérieure
-* Plug-in Unity OpenXR 0.1.1 ou version ultérieure
+* Plug-in Unity OpenXR 0.1.2 ou version ultérieure
 * Visual Studio 2019 ou version ultérieure
 * Installer la prise en charge de plateforme **UWP** dans Unity pour les applications HoloLens 2
 
@@ -62,7 +62,7 @@ Pour ajouter le package OpenXR :
 
     ``` json
       "dependencies": {
-        "com.microsoft.mixedreality.openxr": "0.1.1",
+        "com.microsoft.mixedreality.openxr": "0.1.2",
       }
     ```
 
@@ -109,7 +109,7 @@ Pour utiliser un ou plusieurs des exemples, installez [ARFoundation 4.0 +](https
 2. Dans la liste des packages, sélectionnez le **plug-in OpenXR de réalité mixte**
 3. Recherchez l’exemple dans la liste d' **exemples** et sélectionnez **Importer**
 
-![Capture d’écran du gestionnaire de package Unity ouverte dans l’éditeur Unity avec le plug-in OpenXR de réalité mixte sélectionné et le bouton d’importation en surbrillance](images/openxr-img-10.png)
+![Capture d’écran du gestionnaire de package Unity ouverte dans l’éditeur Unity avec le plug-in OpenXR de réalité mixte sélectionné et le bouton d’importation en surbrillance](images/openxr-img-03.png)
 
 <!-- ### For all other OpenXR samples
 
@@ -121,6 +121,33 @@ Pour utiliser un ou plusieurs des exemples, installez [ARFoundation 4.0 +](https
 
 > [!NOTE]
 > Lorsqu’un package est mis à jour, Unity offre la possibilité de mettre à jour les exemples importés.  La mise à jour d’un échantillon importé remplace toutes les modifications apportées à l’exemple et aux ressources associées.
+
+## <a name="using-mrtk-with-openxr-support"></a>Utilisation de MRTK avec prise en charge de OpenXR
+
+MRTK Unity prend en charge le plug-in OpenXR de réalité mixte à partir de la version 2.5.3.  Les plug-ins MRTK peuvent être installés à partir des mêmes registres délimités que vous avez configurés lors de l' [installation du plug-in OpenXR de la réalité mixte](#installing-the-mixed-reality-openxr-plugin). Vous trouverez des informations plus détaillées dans la [documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
+
+1. Ajoutez les packages suivants dans votre **manifest.js/packages/[projectRoot]** :
+
+```json
+"dependencies": {
+    "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
+    "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
+    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
+    …
+}
+```
+
+2. Accédez au script du composant MixedReality Toolkit dans l’inspecteur et basculez vers le profil **DefaultOpenXRConfigurationProfile** :
+
+![Capture d’écran de basculement de la configuration MRTK dans le composant de la réalité mixte du composant dans l’inspecteur](images/openxr-img-11.png)
+
+### <a name="known-issues"></a>Problèmes connus 
+
+Lorsque vous utilisez la fonctionnalité de suivi de la main, ajoutez la ligne suivante dans le fichier **Assets/MixedRealityToolkit. generated/link.xml** :
+
+```
+<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
+```
 
 ## <a name="next-steps"></a>Étapes suivantes
 

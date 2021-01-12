@@ -3,26 +3,26 @@ title: Fonctionnalités prises en charge par le plug-in OpenXR dans Unity
 description: Découvrez les fonctionnalités prises en charge par OpenXR pour le développement de réalité mixte dans Unity.
 author: hferrone
 ms.author: alexturn
-ms.date: 12/15/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: 94ec7ae6c89dea8f953fea6f4c794ca51e044d87
-ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
+ms.openlocfilehash: d65bab65bcb06f7ccba522461e04062458e7400c
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97880583"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108842"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>OpenXR en réalité mixte fonctionnalités prises en charge dans Unity
 
-Le package de **plug-in OpenXR de réalité mixte** est une extension du **plug-in OpenXR** d’Unity et prend en charge une suite de fonctionnalités pour les casques HoloLens 2 et Windows Mixed Reality. Avant de continuer, vérifiez que vous avez installé **unity 2020,2** ou une version ultérieure, le **plug-in OpenXR version 0.1.1** ou ultérieure et votre projet Unity est [configuré pour OpenXR](openxr-getting-started.md).
+Le package de **plug-in OpenXR de réalité mixte** est une extension du **plug-in OpenXR** d’Unity et prend en charge une suite de fonctionnalités pour les casques HoloLens 2 et Windows Mixed Reality. Avant de continuer, vérifiez que vous avez installé **unity 2020,2** ou une version ultérieure, le **plug-in OpenXR version 0.1.2** ou ultérieure et votre projet Unity est [configuré pour OpenXR](openxr-getting-started.md).
 
 ## <a name="whats-supported"></a>Opérations prises en charge
 
 Les fonctionnalités suivantes sont actuellement prises en charge :
 
-* Prend en charge les applications UWP pour les applications HoloLens 2 et Win32 VR pour les casques de la réalité mixte Windows.
-* Optimise l’interaction entre le package UWP et CoreWindow pour les applications HoloLens 2.
+* Prend en charge les applications UWP pour HoloLens 2 et optimise le modèle d’application HoloLens 2.
+* Prend en charge les applications Win32 VR pour le casque Windows Mixed Reality avec les derniers profils de contrôleur et la communication à distance des applications holographiques.
 * Suivi de la mise à l’échelle mondiale utilisant les ancres et l’espace non limité.
 * [API de stockage d’ancrage pour rendre les ancres persistantes](#anchors-and-anchor-persistence) dans le stockage local HoloLens 2.
 * [Interactions entre le contrôleur de mouvement et la main](#motion-controller-and-hand-interactions), y compris le nouveau contrôleur de réverbération HP G2.
@@ -31,7 +31,7 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * Recherche de l’appareil photo/vidéo (PV) sur HoloLens 2.
 * Capture de la réalité mixte à l’aide d’un rendu de 3e œil via l’appareil photo PV.
 * Prend en charge [la « lecture » dans HoloLens 2 avec l’application de communication à distance holographique](#holographic-remoting-in-unity-editor-play-mode), ce qui permet aux développeurs de déboguer les scripts sans les générer et les déployer sur l’appareil.
-* Compatible avec MRTK Unity 2.5.2 et versions ultérieures via la prise en charge des fournisseurs MRTK OpenXR. Pour commencer, [consultez la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) .
+* Compatible avec MRTK Unity 2.5.3 et versions ultérieures via la [prise en charge des fournisseurs MRTK OpenXR](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatible avec Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) ou version ultérieure
 
 ## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Communication à distance holographique en mode de lecture de l’éditeur Unity

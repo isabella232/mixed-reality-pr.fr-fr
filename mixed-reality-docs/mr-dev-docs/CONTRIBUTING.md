@@ -3,14 +3,14 @@ title: Instructions de contribution
 description: Apprenez à contribuer aux documents de développement de réalité mixte sur la plateforme docs.microsoft.com à l’aide de la démarque GitHub.
 author: mattwojo
 ms.author: mattwoj
-ms.date: 03/21/2018
+ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 47689a53557e6ce9b97d0e9d834a70fb0a7786d0
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865414"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108852"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contribution à la documentation du développeur de réalité mixte
 
@@ -24,7 +24,7 @@ Cette page décrit les étapes et les instructions de base pour contribuer et le
 
 | Nom du dépôt | URL |
 | --- | --- |
-| Mixed Reality | [MicrosoftDocs/réalité mixte](https://docs.microsoft.com/windows/mixed-reality) |
+| Réalité mixte | [MicrosoftDocs/réalité mixte](https://docs.microsoft.com/windows/mixed-reality) |
 | Guide des passionnés de VR | [MicrosoftDocs/Mixed-Reality/passionné-Guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
@@ -84,7 +84,7 @@ Pour ajouter une redirection à .openpublishing.redirection.jssur, ajoutez une e
 
 - `source_path`Est le chemin d’accès relatif au référentiel relatif à l’ancien article que vous supprimez. Assurez-vous que le chemin commence par `mixed-reality-docs` et se termine par `.md` .
 - `redirect_url`Est l’URL publique relative de l’ancien article vers le nouvel article. Assurez-vous que cette URL **ne** contient `mixed-reality-docs` `.md` pas ou, car elle fait référence à l’URL publique et non au chemin d’accès au référentiel. La liaison à une section dans le nouvel article à l’aide de `#section` est autorisée. Vous pouvez également utiliser un chemin d’accès absolu à un autre site, si nécessaire.
-- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. Par défaut, il s’agit de `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
+- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. La valeur par défaut est `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
 
 Si vous ajoutez une redirection, veillez à supprimer également l’ancien fichier.
 
