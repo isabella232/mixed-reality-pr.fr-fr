@@ -7,18 +7,18 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Réalité mixte, interaction, conception, HoloLens, mains, loin, pointer et valider, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens, rayons émanant de la main, manipulation d’objets, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 91befcec2d9b020c58d3ed02fd181122ce715936
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 13b692dada134f856ac6eed446cca45702030f67
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703455"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848288"
 ---
 # <a name="point-and-commit-with-hands"></a>Pointer et valider avec les mains
 
 ![Curseurs](images/UX_Hero_HandRay.jpg)
 
-Grâce au modèle d’entrée Pointer et valider avec les mains, les utilisateurs peuvent cibler, sélectionner et manipuler du contenu 2D et des objets 3D hors de portée. Cette technique d’interaction « éloignée » est propre à la réalité mixte et ne constitue pas pour les humains une méthode d’interaction naturelle avec le monde réel. Par exemple, dans le film de super-héros *X-Men*, le personnage [Magnéto](https://en.wikipedia.org/wiki/Magneto_(comics)) peut atteindre et manipuler des objets éloignés avec les mains. Ce n’est pas quelque chose que les humains peuvent faire dans la réalité. Dans HoloLens (réalité augmentée) et dans la réalité mixte, nous dotons les utilisateurs de ce pouvoir magique, éliminant ainsi les contraintes physiques du monde réel pour proposer une expérience amusante avec le contenu holographique et rendre les interactions des utilisateurs plus efficaces.
+Le modèle d’entrée Pointer et valider avec les mains permet aux utilisateurs de cibler, sélectionner et manipuler du contenu 2D et 3D hors de portée. Cette technique d’interaction « éloignée » est propre à la réalité mixte car les humains n’interagissent pas naturellement de cette manière avec le monde réel. Par exemple, dans le film de super-héros *X-Men*, le personnage [Magnéto](https://en.wikipedia.org/wiki/Magneto_(comics)) peut manipuler des objets éloignés avec les mains. Ce n’est pas quelque chose que les humains peuvent faire dans la réalité. Dans HoloLens (réalité augmentée) et dans la réalité mixte, nous dotons les utilisateurs de ce pouvoir magique, éliminant ainsi les contraintes physiques du monde réel. Cette expérience amusante avec le contenu holographique rend, en outre, les interactions des utilisateurs plus efficaces.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -44,7 +44,7 @@ Grâce au modèle d’entrée Pointer et valider avec les mains, les utilisateur
 </table>
 
 
-Le modèle d’entrée _« Pointer et valider »_ est l’une des fonctionnalités récemment introduites qui exploitent le nouveau système de suivi des mains articulées. Il constitue également le principal modèle d’entrée sur les casques immersifs équipés de contrôleurs de mouvement.
+Le modèle d’entrée _« Pointer et valider »_ est l’une des fonctionnalités récemment introduites qui exploitent le nouveau système de suivi des mains articulées. Il constitue également le principal modèle d’entrée sur les casques immersifs à l’aide de contrôleurs de mouvement.
 
 <br>
 
@@ -72,7 +72,6 @@ Les commandes gestuelles de base sont déclenchées par un clic dans l’air, ef
 <br>
 
 ---
-
 
 ## <a name="transition-between-near-and-far"></a>Transition entre le contenu proche et éloigné
 
@@ -124,16 +123,16 @@ Le fait de cibler le rayon émanant de la main au niveau des coins et des bords 
 * En appliquant un mouvement de manipulation sur l’affordance, les utilisateurs peuvent effectuer une montée en charge uniforme (affordance de coin) et ajuster dynamiquement l’ardoise (affordance de bord). 
 * En appliquant un mouvement de manipulation sur la barre holographique située en haut de la tablette 2D, les utilisateurs peuvent déplacer la tablette entière.<br>
 
-
 <br>
 
 ---
 
 ## <a name="3d-object-manipulation"></a>Manipulation d’objets 3D
 
-En manipulation directe, les utilisateurs ont le choix entre deux méthodes pour manipuler des objets 3D : la manipulation basée sur l’affordance et la manipulation non basée sur l’affordance. Dans le modèle Pointer et valider, les utilisateurs peuvent accomplir exactement les mêmes tâches à l’aide du rayon émanant de la main. Aucun apprentissage supplémentaire n’est nécessaire.<br>
+En manipulation directe, les utilisateurs ont le choix entre deux méthodes pour manipuler des objets 3D : la manipulation basée sur l’affordance et la manipulation non basée sur l’affordance. Dans le modèle Pointer et valider, les utilisateurs peuvent accomplir exactement les mêmes tâches à l’aide du rayon émanant de la main. Aucune formation supplémentaire n’est requise.<br>
 
 ### <a name="affordance-based-manipulation"></a>Manipulation basée sur l’affordance
+
 Les utilisateurs utilisent le rayon émanant de la main pour pointer sur un objet et faire apparaître le cadre englobant et les affordances de manipulation. Les utilisateurs peuvent appliquer le mouvement de manipulation sur le cadre englobant pour déplacer l’objet entier, sur les affordances de bord pour faire pivoter l’objet et sur les affordances de coin pour effectuer une mise à l’échelle uniforme. <br>
 
 :::row:::
@@ -151,8 +150,8 @@ Les utilisateurs utilisent le rayon émanant de la main pour pointer sur un obje
     :::column-end:::
 :::row-end:::
 
-
 ### <a name="non-affordance-based-manipulation"></a>Manipulation non basée sur l’affordance
+
 Les utilisateurs pointent sur un objet à l’aide du rayon émanant de la main pour faire apparaître le cadre englobant, puis appliquent directement des mouvements de manipulation à cet objet. Avec une main, la translation et la rotation de l’objet sont associées au mouvement et à l’orientation de la main. Avec les deux mains, les utilisateurs peuvent translater, mettre à l’échelle et faire pivoter l’objet selon les mouvements relatifs des deux mains.<br>
 
 <br>
@@ -160,7 +159,8 @@ Les utilisateurs pointent sur un objet à l’aide du rayon émanant de la main 
 ---
 
 ## <a name="instinctual-gestures"></a>Mouvements instinctifs
-Le concept de mouvements instinctifs pour pointer et valider est similaire à celui de la [manipulation directe avec les mains](direct-manipulation.md). Les mouvements que les utilisateurs effectuent sur un objet 3D sont guidés par la conception des affordances de l’interface utilisateur. Par exemple, un petit point de contrôle peut inciter les utilisateurs à le pincer avec le pouce et l’index, tandis qu’un utilisateur peut souhaiter saisir un objet plus volumineux à l’aide de ses cinq doigts.
+
+Le concept de mouvements instinctifs pour pointer et valider est similaire à celui de la [manipulation directe avec les mains](direct-manipulation.md). Les mouvements que les utilisateurs effectuent sur un objet 3D sont guidés par la conception des affordances de l’interface utilisateur. Par exemple, un petit point de contrôle peut inciter les utilisateurs à le pincer avec le pouce et l’index, tandis qu’un utilisateur peut souhaiter utiliser ses cinq doigts pour saisir un objet plus volumineux.
 
 :::row:::
     :::column:::
@@ -183,7 +183,7 @@ Le concept de mouvements instinctifs pour pointer et valider est similaire à ce
 
 ## <a name="symmetric-design-between-hands-and-6-dof-controller"></a>Conception symétrique entre les mains et le contrôleur 6DoF 
 
-Le concept Pointer et valider pour l’interaction éloignée a été initialement créé et défini pour le portail de réalité mixte (MRP), dans lequel un utilisateur porte un casque immersif et interagit avec des objets 3D à l’aide de contrôleurs de mouvement. Les contrôleurs de mouvement émettent des rayons pour pointer et manipuler des objets éloignés. Les contrôleurs sont équipés de boutons pour valider différentes actions. Nous exploitons le modèle d’interaction des rayons et les fixons aux deux mains. Grâce à cette conception symétrique, les utilisateurs qui sont familiarisés avec MRP ne sont pas contraints d’apprendre un autre modèle d’interaction pour pointer sur un objet éloigné et le manipuler quand ils utilisent HoloLens 2, et inversement.    
+Le concept Pointer et valider pour l’interaction éloignée a été initialement créé et défini pour le portail de réalité mixte (MRP). Dans ce scénario, un utilisateur porte un casque immersif et interagit avec des objets 3D à l’aide de contrôleurs de mouvement. Les contrôleurs de mouvement émettent des rayons pour pointer et manipuler des objets éloignés. Les contrôleurs sont équipés de boutons pour valider différentes actions. Nous appliquons le modèle d’interaction des rayons et les fixons aux deux mains. Grâce à cette conception symétrique, les utilisateurs qui sont familiarisés avec MRP ne sont pas contraints d’apprendre un autre modèle d’interaction pour pointer sur un objet éloigné et le manipuler quand ils utilisent HoloLens 2, et inversement.    
 
 :::row:::
     :::column:::
@@ -198,16 +198,15 @@ Le concept Pointer et valider pour l’interaction éloignée a été initialeme
 
 <br>
 
-
 ---
 
 ## <a name="hand-ray-in-mrtk-mixed-reality-toolkit-for-unity"></a>Rayon émanant de la main dans MRTK (Mixed Reality Toolkit) pour Unity
-Par défaut, MRTK fournit un préfabriqué de rayon émanant de la main ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) qui a le même état visuel que le rayon système du shell. Il est assigné dans le profil d’entrée de MRTK, sous Pointers. Dans le casque immersif, les mêmes rayons sont utilisés pour les contrôleurs de mouvement.
+
+Par défaut, MRTK fournit un préfabriqué de rayon émanant de la main ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) qui a le même état visuel que le rayon système du shell. Il est attribué dans le profil d’entrée de MRTK, sous Pointeurs. Dans le casque immersif, les mêmes rayons sont utilisés pour les contrôleurs de mouvement.
 
 * [MRTK - Profil de pointeur](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
 * [MRTK - Système d’entrée](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
 * [MRTK - Pointeurs](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
-
 
 ---
 

@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: réalité mixte, découvrir, distribuer, index, page d’accueil, conception, développement, tutoriels, exemples d’applications, principes fondamentaux, études de cas, ressources, procédures HoloLens, projets open source, concepts principaux, interaction, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: a11283ad4a7931c9e061cdbf25d4659fa4760822
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926012"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847602"
 ---
 # <a name="start-designing-and-prototyping"></a>Commencer à concevoir et à créer des prototypes
 
 ![résumé de la conception en réalité mixte](images/design-hero-image.png)
 
-Les applications de réalité mixte ne ressemblent à rien d’autre de ce qui se fait aujourd’hui, et leur conception est ardue. Vous devez prendre en compte non seulement les nouvelles combinaisons de mondes réels et virtuels que vous créez, mais également les nouveaux types d’expériences utilisateur qu’ils engendrent. La réalité mixte étant un vaste sujet, nous avons sélectionné quelques points importants de son spectre de conception, que nous présentons ci-dessous sous la forme d’une série de points de contrôle. Ces points de contrôle se veulent séquentiels, mais si vous avez déjà une expérience préalable, n’hésitez pas à passer directement à l’une des sections suivantes.
+Les applications de réalité mixte ne ressemblent à rien d’autre de ce qui se fait aujourd’hui, et leur conception est ardue. Vous devez prendre en compte non seulement les nouvelles combinaisons de mondes réels et virtuels que vous créez, mais également les nouvelles expériences utilisateur qu’ils permettent. La réalité mixte étant un vaste sujet, nous avons sélectionné quelques points importants de son spectre de conception, que nous présentons ci-dessous sous la forme d’une série de points de contrôle. Ces points de contrôle se veulent séquentiels, mais si vous avez déjà une expérience préalable, n’hésitez pas à passer directement à l’une des sections suivantes.
 
 ## <a name="design-checkpoints"></a>Points de contrôle de conception
 
@@ -34,8 +34,9 @@ Comme tout parcours, votre aventure dans la conception d’applications de réal
 | --- | --- |
 | [Développer votre processus de conception](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Découvrez un premier aperçu du processus de conception de réalité mixte, collecté auprès de concepteurs internes et externes à Microsoft. |
 | [Types d’applications de réalité mixte](types-of-mixed-reality-apps.md) | Décidez de l’emplacement de votre application sur le spectre de la réalité mixte. |
-| [Application Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Découvrez les bases de la conception d’une expérience utilisateur de réalité mixte en explorant comportements, conseils et recommandations en réalité mixte pour créer des applications HoloLens incroyables (disponibles en téléchargement sur le Microsoft Store dans HoloLens 2). |
+| [Application Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Découvrez les bases de la conception d’une expérience utilisateur de réalité mixte à l’aide des comportements, conseils et recommandations pour créer des applications HoloLens incroyables (disponibles en téléchargement sur le Microsoft Store dans HoloLens 2). |
 | [Hub d’exemples MRTK](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Découvrez les interactions spatiales et les composants de création UX courants pour la réalité mixte (disponibles en téléchargement sur le Microsoft Store dans HoloLens 2) |
+
 ### <a name="2-core-concepts"></a>2. Concepts principaux
 
 Que vous développiez pour la réalité virtuelle (VR) ou la réalité augmentée (AR), plusieurs concepts de base s’appliquent à la conception d’expériences immersives et fluides. Comprendre le point de vue des utilisateurs, positionner les objets et s’assurer que tout le monde est à l’aise et en sécurité constituent vos priorités principales à ce stade de votre parcours. À la fin de cette section, vous disposerez d’une fondation solide pour passer à la conception de l’interaction.
@@ -45,26 +46,26 @@ Que vous développiez pour la réalité virtuelle (VR) ou la réalité augmenté
 |  Concept  |  Résultat  |
 | --- | --- |
 | [Image holographique](holographic-frame.md) | Comprenez comment les utilisateurs voient votre contenu superposé sur le monde réel lorsqu’ils portent leurs casques. |
-| [Systèmes de coordonnées](coordinate-systems.md) | Découvrez comment positionner précisément des hologrammes à des endroits significatifs pour l’utilisateur, qu’il s’agisse d’une pièce physique ou d’un monde virtuel que vous avez créé. |
+| [Systèmes de coordonnées](coordinate-systems.md) | Découvrez comment positionner précisément des hologrammes à des endroits significatifs, qu’il s’agisse d’une pièce physique ou d’un monde virtuel que vous avez créé. |
 | [Mappage spatial](spatial-mapping.md) | Ancrez des objets dans l’environnement de l’utilisateur et tirez parti des surfaces physiques du monde réel. |
 | [Considérations relatives au confort](comfort.md) | Garantissez la sécurité et le confort des utilisateurs en créant et en présentant un contenu immersif d’une manière qui imite le monde naturel. |
 
 ### <a name="3-interaction-design"></a>3. Conception des interactions
 
-Quels que soient sa beauté et son caractère immersif, une expérience virtuelle est inutile sans interaction. Cette section décrit les modèles d’interaction de base, les contrôleurs de main et de mouvement, l’utilisation de l’entrée vocale et la collecte des données d’eye tracking à partir de vos utilisateurs. À la fin de cette section, vous serez prêt à aborder le dernier aspect majeur de votre parcours de conception : l’expérience utilisateur.
+Quels que soient sa beauté et son caractère immersif, une expérience virtuelle est inutile sans interaction. Cette section décrit les modèles d’interaction de base, les contrôleurs de main et de mouvement, l’entrée vocale et la collecte des données d’eye tracking à partir de vos utilisateurs. À la fin de cette section, vous serez prêt à aborder le dernier aspect majeur de votre parcours de conception : l’expérience utilisateur.
 
 ![Facteurs de conception des interactions](images/UX_Hero_Manipulation.jpg)
 
 |  Concept  |  Résultat  |
 | --- | --- |
 | [Modèles d’interaction](interaction-fundamentals.md) | Fournissez à vos utilisateurs des interactions instinctives par le biais d’entrées manuelles, oculaires et vocales. |
-| [Mains et contrôleurs de mouvement](hands-and-tools.md) | Découvrez comment les hologrammes peuvent être touchés et manipulés à proximité avec les mains d’un utilisateur ou à distance avec des interactions précises. |
+| [Mains et contrôleurs de mouvement](hands-and-tools.md) | Découvrez comment interagir avec les hologrammes à proximité avec les mains d’un utilisateur ou à distance avec des interactions précises. |
 | [Entrée vocale](voice-input.md) | Utilisez des commandes vocales comme entrée dans vos applications immersives afin de contrôler les environnements et les hologrammes environnants.  |
 | [Eye tracking](eye-tracking.md) | Ajoutez un nouveau niveau de contexte et de compréhension humaine dans une expérience holographique en utilisant des informations sur ce que vos utilisateurs regardent. |
 
 ### <a name="4-user-experience-elements"></a>4. Éléments de l’expérience utilisateur
 
-Maintenant que vous maîtrisez les interactions de base, vous pouvez vous concentrer sur les points plus fins des éléments de l’expérience utilisateur et sur la manière de les adapter aux environnements uniques de la réalité mixte. Vous aborderez les comportements courants, la conception des actifs, la mise à l’échelle des objets et la typographie, tout ceci en veillant à rendre vos applications le plus intuitives possible pour les utilisateurs. Cette section marque la fin du parcours de conception officiel de la réalité mixte, mais vous trouverez davantage de ressources dans la section [Prochaine étape](#whats-next) si vous voulez poursuivre l’aventure.
+Maintenant que vous maîtrisez les interactions de base, vous pouvez vous concentrer sur les points plus fins des éléments de l’expérience utilisateur et sur la manière de les adapter aux environnements uniques de la réalité mixte. Vous aborderez les comportements courants, la conception des actifs, la mise à l’échelle des objets et la typographie, tout en rendant l’expérience intuitive pour les utilisateurs. Cette section marque la fin du parcours de conception officiel de la réalité mixte, mais vous trouverez davantage de ressources dans la section [Prochaine étape](#whats-next) si vous voulez poursuivre l’aventure.
 
 ![Éléments de l’expérience utilisateur](images/UX_Hero_BoundingBox.jpg)
 
@@ -108,7 +109,7 @@ Le travail d’un concepteur n’est jamais terminé, surtout lorsqu’il s’ag
 
 ---
 
-### <a name="additional-resources"></a>Ressources supplémentaires
+### <a name="other-resources"></a>Autres ressources
 
 :::row:::
     :::column:::

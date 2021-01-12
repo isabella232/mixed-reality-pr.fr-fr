@@ -1,5 +1,5 @@
 ---
-title: Tutoriels sur MRTK - 5. Création de contenu dynamique avec des solveurs
+title: Création de contenu dynamique avec des solveurs
 description: Ce cours vous montre comment utiliser les solveurs de Mixed Reality Toolkit (MRTK) pour créer du contenu dynamique.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, solveurs
 ms.localizationpriority: high
-ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 959ed164e566f5bee3db203437145fa08ce168d8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613503"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008019"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Création de contenu dynamique avec des solveurs
-
-## <a name="overview"></a>Vue d’ensemble
 
 Dans ce tutoriel, vous allez explorer différentes façons de placer dynamiquement des hologrammes à l’aide des outils de placement fournis dans le MRTK, appelés « solveurs », pour résoudre des scénarios de placement spatial complexes. Dans MRTK, les solveurs sont un système de scripts et de comportements utilisés pour permettre aux objets de suivre l’utilisateur (vous) ou d’autres objets de jeu dans la scène. Ils peuvent aussi être utilisés pour l’alignement sur certaines positions, rendant votre application plus intuitive.
 

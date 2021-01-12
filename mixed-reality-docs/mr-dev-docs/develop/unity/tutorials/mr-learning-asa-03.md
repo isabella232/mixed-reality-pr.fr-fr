@@ -1,5 +1,5 @@
 ---
-title: Tutoriels Azure Spatial Anchors - 3. Enregistrement, récupération et partage d’ancres spatiales Azure
+title: Enregistrement, récupération et partage d’ancres spatiales Azure
 description: Suivez ce cours pour découvrir comment enregistrer, récupérer et partager des ancres spatiales Azure dans une application de réalité mixte.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, sessions d’application
 ms.localizationpriority: high
-ms.openlocfilehash: c085aecef1ce32565d2f3bbbf1d5fdb2da91c217
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679408"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008359"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Enregistrement, récupération et partage d’ancres spatiales Azure
 
