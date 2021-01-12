@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: événement, Calendar, Academy, planification, DF, San Francisco, réacteur
-ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a7d592243f758415c0ca757f35567d80fbfc1f2f
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009999"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110437"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Événements de réalité mixte Microsoft
 
@@ -31,4 +31,4 @@ Rejoignez l’équipe Microsoft Mixed Reality à ces événements à venir !
 | Série de haut-parleurs de réalité mixte|22 septembre 2020|[Échappement de kippy : Introduction aux MRTK de & non réels pour HoloLens 2]()|
 | Série de haut-parleurs de réalité mixte|22 octobre, 2020|[Présentation de WebXR avec BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Série de haut-parleurs de réalité mixte|17 novembre 2020|[Développement de l’avenir : nouveautés dans MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
-| Série de haut-parleurs de réalité mixte|1er décembre 2020|[Conception d’hologrammes]()|
+| Série de haut-parleurs de réalité mixte|1er décembre 2020|[Conception d’hologrammes](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
