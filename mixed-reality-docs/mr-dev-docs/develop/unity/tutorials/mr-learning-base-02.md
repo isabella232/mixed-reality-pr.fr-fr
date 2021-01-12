@@ -1,5 +1,5 @@
 ---
-title: Tutoriels sur MRTK - 2. Initialisation de votre projet et déploiement de votre première application
+title: Initialisation de votre projet et déploiement de votre première application
 description: Ce cours vous montre comment configurer votre projet Unity pour le MRTK (Mixed Reality Toolkit) et comment le déployer sur votre HoloLens 2.
 author: jessemcculloch
 ms.author: v-vtieto
@@ -7,16 +7,14 @@ ms.date: 12/30/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: ebf81b9b1ae1abb5001b88e0f2b2929c45c22d7f
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 2ce119e1dd18eacf02088d00e99fb70d06bf956e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859528"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008219"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Initialisation de votre projet et déploiement de votre première application
-
-## <a name="overview"></a>Vue d’ensemble
 
 Dans ce tutoriel, vous allez apprendre à créer un nouveau projet Unity, à le configurer pour le développement <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">MRTK (Mixed Reality Toolkit)</a> et à importer MRTK. Vous allez également effectuer la configuration, la génération et le déploiement d’une scène Unity de base depuis Visual Studio sur votre HoloLens 2. Une fois que l’avez déployée sur votre HoloLens 2, vous devez voir un maillage de mappage spatial couvrant les surfaces qui sont perçues par HoloLens. En outre, vous devez voir des indicateurs sur vos mains et doigts pour le suivi de la main et un compteur de fréquence d’images pour vous tenir informé des performances de l’application.
 
@@ -46,7 +44,7 @@ Dans ce tutoriel, vous allez apprendre à créer un nouveau projet Unity, à le 
     * Cliquez sur le bouton à trois points en regard d’**Emplacement**, puis accédez au dossier dans lequel vous souhaitez enregistrer votre projet.
 
 > [!CAUTION]
-> Quand vous utilisez Windows, il existe une limite de 255 caractères pour MAX_PATH. Dès lors, vous devez enregistrer le projet Unity près de la racine du lecteur.
+> Lorsque vous travaillez sur Windows, il existe une limite MAX_PATH de 255 caractères. Dès lors, vous devez enregistrer le projet Unity près de la racine du lecteur.
 
     * Cliquez sur le bouton **Créer**. Cela permet de créer et de lancer votre nouveau projet Unity.
 
