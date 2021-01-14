@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ff8435ee09cf380bb4b055a50abcbe4e5e91dc03
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: d9b8bc79859ab74c799188326731b3c8722bc49a
+ms.sourcegitcommit: b9d0155ae0d37a9f55f2cf0bcd954a2b148a26e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808810"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181736"
 ---
 ![Colibri virtuel avec une main humaine](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
@@ -55,7 +55,10 @@ Si vous ne connaissez pas les appareils VR, nous vous recommandons de commencer 
 
 * [Commencer votre parcours de réalité virtuelle](enthusiast-guide/vr-journey.md)
 
+## <a name="contributor-license-agreement-cla"></a>Contrat de licence de collaborateur (CLA)
+
+Ce projet accepte les contributions et les suggestions. La plupart des contributions vous demandent d’accepter un contrat de licence de contribution (CLA) déclarant que vous avez le droit de nous accorder, et que vous nous accordez réellement, les droits d’utilisation de votre contribution. Pour plus d’informations, consultez [https://cla.opensource.microsoft.com](https://cla.opensource.microsoft.com).
+
 ## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite Microsoft Open Source
 
-Ce projet a adopté le [Code de conduite Open Source de Microsoft](https://opensource.microsoft.com/codeofconduct/).
-Pour plus d’informations, consultez le [Forum Aux Questions sur le Code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) si vous avez d’autres questions ou des commentaires.
+Ce projet a adopté le [Code de conduite Open Source de Microsoft](https://opensource.microsoft.com/codeofconduct). Pour plus d’informations, consultez le [Forum Aux Questions sur le Code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) si vous avez d’autres questions ou des commentaires.
