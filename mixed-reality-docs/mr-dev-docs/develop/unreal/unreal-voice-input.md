@@ -6,18 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, non réel, moteur 4, UE4, HoloLens 2, voix, entrée vocale, reconnaissance vocale, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 466b41c522e95f9fe3d618ad221dde8ccd925634
+ms.sourcegitcommit: a688bf0f1b796e4860f8252e852be79053937088
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010069"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205834"
 ---
 # <a name="voice-input-in-unreal"></a>Entrée vocale en non réel
 
 Les entrées vocales en temps réel vous permettent d’interagir avec un hologramme sans avoir à utiliser des mouvements manuels et n’est pris en charge que pour HoloLens 2. L’entrée vocale sur HoloLens 2 est alimentée par le même moteur qui prend en charge la reconnaissance vocale dans toutes les autres applications universelles Windows, mais inréelles utilise un moteur plus limité pour traiter l’entrée vocale. Cela limite les fonctionnalités d’entrée vocale dans les mappages de reconnaissance vocale prédéfinis, qui sont traités dans les sections suivantes. 
 
 ## <a name="enabling-speech-recognition"></a>Activation de la reconnaissance vocale
+
+Si vous utilisez le plug-in Windows Mixed Reality, l’entrée vocale ne requiert pas d’API Windows Mixed Reality spéciales. Il repose sur l’API existante de mappage [d’entrée](https://docs.unrealengine.com/Gameplay/Input/index.html) de moteur non réel. Si vous utilisez OpenXR, vous devez également installer le [plug-in Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal). 
 
 Pour activer la reconnaissance vocale sur HoloLens :
 1. Sélectionnez **paramètres du projet > plateforme > HoloLens > fonctionnalités** et activer le **microphone**. 
@@ -29,8 +31,6 @@ Pour activer la reconnaissance vocale sur HoloLens :
 ![Paramètres de reconnaissance vocale Windows](images/unreal/speech-recognition-settings.png)
 
 3. Une boîte de dialogue s’affiche lorsque l’application commence par vous demander si vous souhaitez activer le microphone. Si vous sélectionnez **Oui** , l’entrée vocale démarre dans l’application.
-
-L’entrée vocale ne nécessite pas d’API Windows Mixed Reality spéciales. Il repose sur l’API existante de mappage [d’entrée](https://docs.unrealengine.com/Gameplay/Input/index.html) de moteur non réel. 
 
 ## <a name="adding-speech-mappings"></a>Ajout de mappages vocaux
 
