@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: port, Unity, inreal, middleware, Engine, UWP, Win32, Portage, HoloLens 1ère génération, casque de réalité mixte, casque Windows Mixed realisation, migration, Windows 10, mappage d’entrée,
-ms.openlocfilehash: f1cb7cd96ee1d6e32c9ef1f8d3e0e1b2654e0a79
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009869"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192661"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portage d’applications VR sur Windows Mixed Reality
 
@@ -61,7 +61,7 @@ La plateforme Windows Mixed Reality est toujours en cours de développement. Nou
 * [Comprendre les performances de la réalité mixte](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Recommandations en matière de performances pour Unity](../unity/performance-recommendations-for-unity.md)
 * [Contrôleurs de mouvement](../../design/motion-controllers.md)
-* [Mouvements et contrôleurs de mouvement dans Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Contrôleurs de mouvement dans Unity](../unity/motion-controllers-in-unity.md)
 * [UnityEngine. XR. WSA. Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine. XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [Guides de portage](porting-guides.md)

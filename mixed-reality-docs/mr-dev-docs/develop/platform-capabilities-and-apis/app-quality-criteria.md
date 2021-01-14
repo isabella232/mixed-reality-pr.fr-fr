@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: critères de qualité des applications, réalité mixte, application de réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 788a2e8ac1a364f8c33e3895992fd99fa220a26a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530283"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192677"
 ---
 # <a name="app-quality-criteria"></a>Critères de qualité des applications
 
@@ -176,7 +176,7 @@ Les mauvais alignements d’hologrammes avec des objets physiques (s’ils sont 
 
 |  La meilleure  |  Présente |  Échec |
 --- | --- | ---
-| Les hologrammes s’alignent sur la surface généralement dans la plage de centimètres en pouces. Si vous avez besoin de plus de précision, l’application doit fournir un moyen efficace de collaboration dans les spécifications de l’application. | N/D | Les hologrammes apparaissent non alignés avec l’objet cible physique en rompant le plan de surface ou en s’éloignant de l’aire. Si la précision est requise, les hologrammes doivent répondre aux spécifications de proximité du scénario. | 
+| Les hologrammes s’alignent sur la surface généralement dans la plage de centimètres en pouces. Si vous avez besoin de plus de précision, l’application doit fournir un moyen efficace de collaboration dans les spécifications de l’application. | NA | Les hologrammes apparaissent non alignés avec l’objet cible physique en rompant le plan de surface ou en s’éloignant de l’aire. Si la précision est requise, les hologrammes doivent répondre aux spécifications de proximité du scénario. | 
 
 ### <a name="how-to-measure"></a>Comment mesurer
 
@@ -545,7 +545,8 @@ La clarté de l’interaction d’entrée est essentielle à l’utilisation d�
 * [Guide de portage des entrées pour Unity](../porting-apps/input-porting-guide-for-unity.md)
 * [Saisie au clavier dans Unity](../unity/keyboard-input-in-unity.md)
 * [Pointage du regard dans Unity](../unity/gaze-in-unity.md)
-* [Mouvements et contrôleurs de mouvement dans Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Contrôleurs de mouvement dans Unity](../unity/motion-controllers-in-unity.md)
+* [Mouvements dans Unity](../unity/gestures-in-unity.md)
 * [Entrée vocale dans Unity](../unity/voice-input-in-unity.md)
 * [Saisie à l’aide de la commande de jeu, du clavier et de la souris dans DirectX](../../keyboard,-mouse,-and-controller-input-in-directx.md)
 * [Suivre de la tête et du regard dans DirectX](../native/gaze-in-directx.md)

@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: contrôleurs 6DOF, contrôleurs de mouvement, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, défilement, poignée, état
-ms.openlocfilehash: 2dbe0ab0b83b371a88e419e7b223f30670bfeaea
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: contrôleurs 6DOF, contrôleurs de mouvement, appariement, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, défilement, préhension, état
+ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009709"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192617"
 ---
 # <a name="motion-controllers"></a>Contrôleurs de mouvement
 
@@ -239,7 +239,7 @@ Les [gestes](gaze-and-commit.md#composite-gestures) à la main et les contrôleu
 
 Nous vous recommandons d’effectuer le rendu de tous les modèles renderables au niveau de la **poignée** du contrôleur, car l’origine du modèle est alignée sur ce point dans le monde physique. Si vous affichez des modèles de contrôleur, vous souhaiterez peut-être raycast dans votre scène à partir du point de vue du **pointeur**, qui représente le rayon le long duquel les utilisateurs s’attendent naturellement à POINTER, étant donné la conception physique du contrôleur.
 
-Pour plus d’informations sur la façon de charger dynamiquement des modèles de contrôleur dans Unity, consultez la section [rendu du modèle de contrôleur de mouvement dans Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) .
+Pour plus d’informations sur la façon de charger dynamiquement des modèles de contrôleur dans Unity, consultez la section [rendu du modèle de contrôleur de mouvement dans Unity](../develop/unity/gestures-in-unity.md#rendering-the-motion-controller-model-in-unity) .
 
 **art de ligne de contrôleur 2D** Bien que nous vous recommandons de joindre des commandes et des conseils de contrôleur dans l’application aux modèles de contrôleur dans l’application eux-mêmes, certains développeurs peuvent souhaiter utiliser des représentations d’art de ligne 2D des contrôleurs de mouvement dans un « didacticiel » plat ou une interface utilisateur « How-to ». Pour ces développeurs, nous avons créé des fichiers d’art de ligne de contrôleur de mouvement. png disponibles dans le noir et le blanc ci-dessous (cliquez avec le bouton droit pour enregistrer).
 
@@ -267,7 +267,7 @@ Dans la [page d’hébergement de la réalité mixte Windows](../discover/naviga
 
 Pas pour les applications Windows universelles.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Consultez [résolution des problèmes du contrôleur de mouvement](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) dans le Guide du passionné.
 
@@ -277,7 +277,7 @@ Consultez [résolution des problèmes du contrôleur de mouvement](https://docs.
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Mouvements et contrôleurs de mouvement dans Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
+* [Contrôleurs de mouvement dans Unity](../develop/unity/motion-controllers-in-unity.md)
 * [Mains et contrôleurs de mouvement dans DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Mouvements](gaze-and-commit.md#composite-gestures)
 * [Guide de passionnés : votre page d’hébergement Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
