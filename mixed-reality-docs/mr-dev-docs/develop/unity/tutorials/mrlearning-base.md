@@ -1,22 +1,22 @@
 ---
-title: Tutoriels de démarrage - 1. Vue d’ensemble et objectifs
-description: Ce cours vous montre comment implémenter la reconnaissance faciale Azure dans une application de réalité mixte.
+title: Vue d’ensemble et objectifs du tutoriel
+description: Suivez ce cours pour découvrir comment implémenter la reconnaissance faciale Azure au sein d’une application de réalité mixte.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 777203d0051c22b0f249db7d377ab08f92c089b7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d767cca4fbb88d0cfdd7c2fdea1a0621523ad236
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698762"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010089"
 ---
-# <a name="1-overview-and-objectives"></a><span data-ttu-id="25101-105">1. Vue d’ensemble et objectifs</span><span class="sxs-lookup"><span data-stu-id="25101-105">1. Overview and objectives</span></span>
+# <a name="1-overview-and-objectives"></a><span data-ttu-id="a9385-104">1. Vue d’ensemble et objectifs</span><span class="sxs-lookup"><span data-stu-id="a9385-104">1. Overview and objectives</span></span>
 
-## <a name="device-support"></a><span data-ttu-id="25101-106">Prise en charge des appareils</span><span class="sxs-lookup"><span data-stu-id="25101-106">Device support</span></span>
+## <a name="device-support"></a><span data-ttu-id="a9385-105">Prise en charge des appareils</span><span class="sxs-lookup"><span data-stu-id="a9385-105">Device support</span></span>
 
 <table>
     <colgroup>
@@ -26,30 +26,30 @@ ms.locfileid: "91698762"
     <col width="25%" />
     </colgroup>
     <tr>
-        <td><span data-ttu-id="25101-107"><strong>Cours</strong></span><span class="sxs-lookup"><span data-stu-id="25101-107"><strong>Course</strong></span></span></td>
-        <td><span data-ttu-id="25101-108"><a href="../../../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></span><span class="sxs-lookup"><span data-stu-id="25101-108"><a href="../../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></span></span></td>
-        <td><span data-ttu-id="25101-109"><a href="https://www.microsoft.com//hololens/hardware"><strong>HoloLens 2</strong></a></span><span class="sxs-lookup"><span data-stu-id="25101-109"><a href="https://www.microsoft.com//hololens/hardware"><strong>HoloLens 2</strong></a></span></span></td>
-        <td><span data-ttu-id="25101-110"><a href="../../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></span><span class="sxs-lookup"><span data-stu-id="25101-110"><a href="../../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></span></span></td>
+        <td><span data-ttu-id="a9385-106"><strong>Cours</strong></span><span class="sxs-lookup"><span data-stu-id="a9385-106"><strong>Course</strong></span></span></td>
+        <td><span data-ttu-id="a9385-107"><a href="../../../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></span><span class="sxs-lookup"><span data-stu-id="a9385-107"><a href="../../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></span></span></td>
+        <td><span data-ttu-id="a9385-108"><a href="https://www.microsoft.com//hololens/hardware"><strong>HoloLens 2</strong></a></span><span class="sxs-lookup"><span data-stu-id="a9385-108"><a href="https://www.microsoft.com//hololens/hardware"><strong>HoloLens 2</strong></a></span></span></td>
+        <td><span data-ttu-id="a9385-109"><a href="../../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></span><span class="sxs-lookup"><span data-stu-id="a9385-109"><a href="../../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></span></span></td>
     </tr>
      <tr>
         <td></td>
         <td>❌</td>
-        <td><span data-ttu-id="25101-111">✔️</span><span class="sxs-lookup"><span data-stu-id="25101-111">✔️</span></span></td>
+        <td><span data-ttu-id="a9385-110">✔️</span><span class="sxs-lookup"><span data-stu-id="a9385-110">✔️</span></span></td>
         <td>❌</td>
     </tr>
 </table>
 
-## <a name="before-you-start"></a><span data-ttu-id="25101-112">Avant de commencer</span><span class="sxs-lookup"><span data-stu-id="25101-112">Before you start</span></span>
+## <a name="before-you-start"></a><span data-ttu-id="a9385-111">Avant de commencer</span><span class="sxs-lookup"><span data-stu-id="a9385-111">Before you start</span></span>
 
-### <a name="prerequisites"></a><span data-ttu-id="25101-113">Prérequis</span><span class="sxs-lookup"><span data-stu-id="25101-113">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="a9385-112">Prérequis</span><span class="sxs-lookup"><span data-stu-id="a9385-112">Prerequisites</span></span>
 
-* <span data-ttu-id="25101-114">PC Windows 10 configuré avec les [outils appropriés installés](../../install-the-tools.md)</span><span class="sxs-lookup"><span data-stu-id="25101-114">A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)</span></span>
-* <span data-ttu-id="25101-115">SDK Windows 10 (10.0.18362.0 ou version ultérieure)</span><span class="sxs-lookup"><span data-stu-id="25101-115">Windows 10 SDK 10.0.18362.0 or later</span></span>
-* <span data-ttu-id="25101-116">Capacité de programmation C# de base</span><span class="sxs-lookup"><span data-stu-id="25101-116">Some basic C# programming ability</span></span>
-* <span data-ttu-id="25101-117">Appareil HoloLens 2 [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span><span class="sxs-lookup"><span data-stu-id="25101-117">A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span></span>
-* <span data-ttu-id="25101-118"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2019.2.X installé et le module de prise en charge de la build d’applications de plateforme Windows universelle ajouté</span><span class="sxs-lookup"><span data-stu-id="25101-118"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Universal Windows Platform Build Support module added</span></span>
+* <span data-ttu-id="a9385-113">PC Windows 10 configuré avec les [outils appropriés installés](../../install-the-tools.md)</span><span class="sxs-lookup"><span data-stu-id="a9385-113">A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)</span></span>
+* <span data-ttu-id="a9385-114">SDK Windows 10 (10.0.18362.0 ou version ultérieure)</span><span class="sxs-lookup"><span data-stu-id="a9385-114">Windows 10 SDK 10.0.18362.0 or later</span></span>
+* <span data-ttu-id="a9385-115">Capacité de programmation C# de base</span><span class="sxs-lookup"><span data-stu-id="a9385-115">Some basic C# programming ability</span></span>
+* <span data-ttu-id="a9385-116">Appareil HoloLens 2 [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span><span class="sxs-lookup"><span data-stu-id="a9385-116">A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span></span>
+* <span data-ttu-id="a9385-117"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2019.2.X installé et le module de prise en charge de la build d’applications de plateforme Windows universelle ajouté</span><span class="sxs-lookup"><span data-stu-id="a9385-117"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Universal Windows Platform Build Support module added</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="25101-119">La version Unity recommandée pour cette série de tutoriels est Unity 2019.2.X.</span><span class="sxs-lookup"><span data-stu-id="25101-119">The recommended Unity version for this tutorial series is Unity 2019.2.X.</span></span> <span data-ttu-id="25101-120">Cela remplace toute exigence ou recommandation de version Unity énoncée dans les prérequis indiqués ci-dessus.</span><span class="sxs-lookup"><span data-stu-id="25101-120">This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.</span></span>
+> <span data-ttu-id="a9385-118">La version Unity recommandée pour cette série de tutoriels est Unity 2019.2.X.</span><span class="sxs-lookup"><span data-stu-id="a9385-118">The recommended Unity version for this tutorial series is Unity 2019.2.X.</span></span> <span data-ttu-id="a9385-119">Cela remplace toute exigence ou recommandation de version Unity énoncée dans les prérequis indiqués ci-dessus.</span><span class="sxs-lookup"><span data-stu-id="a9385-119">This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.</span></span>
 
-[<span data-ttu-id="25101-121">Leçon suivante : 2. Initialisation de votre projet et première application</span><span class="sxs-lookup"><span data-stu-id="25101-121">Next lesson: 2. Initializing your project and first application</span></span>](../../../mrlearning-base-ch1.md)
+[<span data-ttu-id="a9385-120">Leçon suivante : 2. Initialisation de votre projet et première application</span><span class="sxs-lookup"><span data-stu-id="a9385-120">Next lesson: 2. Initializing your project and first application</span></span>](../../../mrlearning-base-ch1.md)

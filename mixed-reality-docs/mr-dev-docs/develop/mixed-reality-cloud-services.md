@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: Vue d’ensemble des services cloud de réalité mixte Azure
-description: Ressources concernant les services cloud de réalité mixte.
+description: Découvrez tous les services cloud de réalité mixte Azure que vous pouvez intégrer dans vos applications Unity ou Unreal.
 author: hferrone
 ms.author: v-haferr
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, développer, développement, HoloLens, services cloud, Azure, rendu à distance, ancres spatiales, cognitive services, cognition, unity, machine learning, traduction vocale, vision par ordinateur, Microsoft Graph
-ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 251fd68d2a3fea79c1db160b6aaf64aad05c686f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865404"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009569"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Vue d’ensemble des services cloud de réalité mixte Azure
 
