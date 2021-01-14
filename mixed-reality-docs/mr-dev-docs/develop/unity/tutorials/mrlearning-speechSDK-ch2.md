@@ -1,20 +1,20 @@
 ---
-title: Tutoriels sur les services Azure Speech - 2. Ajout d’un mode hors connexion pour la traduction locale de la reconnaissance vocale
-description: Suivez ce cours pour apprendre à implémenter le SDK Azure Speech au sein d’une application de réalité mixte.
+title: Ajout d’un mode hors connexion pour la traduction locale de la reconnaissance vocale
+description: Suivez ce cours pour découvrir comment ajouter le mode hors connexion pour la traduction par reconnaissance vocale locale dans les applications de réalité mixte.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, reconnaissance vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679728"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010079"
 ---
-# <a name="2-using-speech-recognition-to-execute-commands"></a>2. Utilisation de la reconnaissance vocale pour exécuter des commandes
+# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. Ajout d’un mode hors connexion pour la traduction de parole en texte locale
 
 Dans ce tutoriel, vous allez ajouter la capacité d’exécuter des commandes en utilisant la reconnaissance vocale Azure, ce qui va vous permettre de déclencher une action en fonction du mot ou de l’expression que vous définissez.
 
@@ -29,18 +29,18 @@ Dans la fenêtre Hierachy, sélectionnez l’objet **Lunarcom** puis, dans la fe
 * Dans le champ **Wake Word**, entrez une expression appropriée, par exemple, _Activer le terminal_.
 * Dans le champ **Dismiss Word**, entrez une expression appropriée, par exemple, _Désactiver le terminal_.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
+![Éditeur Unity avec le composant de script Lunarcom Wake Word Recognizer mis en évidence](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
 > Le composant Lunarcom Wake Word Recognizer (Script) ne fait pas partie de MRTK. Il a été fourni avec les ressources de ce tutoriel.
 
 Si vous entrez maintenant en mode Game, comme dans le tutoriel précédent, le panneau du terminal est activé par défaut, mais vous pouvez maintenant le désactiver en prononçant la valeur de Dismiss Word, **Désactiver le terminal** :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
+![Éditeur Unity en mode lecture avec la fonctionnalité de reconnaissance vocale en cours d’utilisation](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
 Et réactivez-le en prononçant la valeur de Wake Word, à savoir **Activer le terminal** :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
+![Éditeur Unity en mode lecture avec le terminal actif](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 
 > [!CAUTION]
 > L’application a besoin de se connecter à Azure, donc vérifiez que votre ordinateur/appareil est connecté à Internet.

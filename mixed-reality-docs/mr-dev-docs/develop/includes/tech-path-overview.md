@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 11533175057217bddcc7e121a524da1f26d2764e
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915538"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98052796"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -40,11 +40,11 @@ Quand vous créez des applications de réalité mixte avec Unity, plusieurs opti
 
 Plusieurs services cloud peuvent être intégrés dans des projets de réalité mixte intégrés à Unity, en particulier **Azure Remote Rendering** et **Azure Spatial Anchors**. Ces services peuvent ajouter du contenu holographique partagé et un rendu 3D en temps réel à vos applications, ce qui les rend plus attrayantes et immersives pour vos utilisateurs.
 
-Tous ces services sont abordés tout au long du [parcours de développement Unity](../unity/unity-development-overview.md), qui est le **chemin fortement recommandé pour l’apprentissage de la réalité mixte avec Unity**. Comme vous êtes déjà sur ce parcours, vous pouvez simplement continuer à lire et à suivre le grand bouton bleu au bas de l’article. Toutefois, si vous en êtes à une étape de développement plus avancée et souhaitez tout de suite vous plonger dans le vif du sujet, consultez notre [vue d’ensemble des services cloud](../mixed-reality-cloud-services.md) ou accédez directement aux [ressources de services](../unity/unity-development-overview.md#5-adding-services).
+Tous ces services sont abordés dans le [parcours de développement Unity pour HoloLens](../unity/unity-development-overview.md), qui est le **parcours fortement recommandé pour l’apprentissage de la réalité mixte avec Unity**. Comme vous êtes déjà sur ce parcours, vous pouvez simplement continuer à lire et à suivre le grand bouton bleu au bas de l’article. Toutefois, si vous en êtes à une étape de développement plus avancée et souhaitez tout de suite vous plonger dans le vif du sujet, consultez notre [vue d’ensemble des services cloud](../mixed-reality-cloud-services.md) ou accédez directement aux [ressources de services](../unity/unity-development-overview.md#5-adding-services).
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365 Guides
 
-Vous pouvez utiliser **Microsoft Dynamics 365 Guides** pour attacher visuellement des instructions holographiques à votre environnement virtuel d’applications, permettant ainsi à vos utilisateurs d’obtenir des informations importantes quand et où ils en ont besoin. Cette fonctionnalité est également abordée dans le parcours de développement Unity, mais si vous souhaitez tout de suite aller plus loin, vous pouvez consulter l’offre en sélectionnant l’onglet **Dynamics 365** [ici](../unity/unity-development-overview.md#5-adding-services).
+Vous pouvez utiliser **Microsoft Dynamics 365 Guides** pour attacher visuellement des instructions holographiques à votre environnement virtuel d’applications, permettant ainsi à vos utilisateurs d’obtenir des informations importantes quand et où ils en ont besoin. Cette fonctionnalité est également abordée dans le parcours de développement Unity pour HoloLens, mais si vous voulez tout de suite aller plus loin, vous pouvez consulter l’offre en sélectionnant l’onglet **Dynamics 365** [ici](../unity/unity-development-overview.md#5-adding-services).
 
 ## <a name="examples"></a>Exemples
 
@@ -88,7 +88,7 @@ Quand vous créez des applications de réalité mixte avec Unreal Engine, plusie
 
 ## <a name="cloud-services"></a>Services cloud
 
-Lors de la création d’applications de réalité mixte dans un environnement Unreal, vous avez accès à un service cloud puissant appelé **Azure Spatial Anchors** , que vous pouvez utiliser pour ajouter, conserver et partager du contenu holographique sur différents appareils. 
+Lors de la création d’applications de réalité mixte dans un environnement Unreal, vous avez accès à un service cloud puissant appelé **Azure Spatial Anchors**, que vous pouvez utiliser pour ajouter, conserver et partager du contenu holographique sur différents appareils. 
 
 Azure Spatial Anchors est abordé lors du [parcours de développement Unreal](../unreal/unreal-development-overview.md), qui est le **chemin fortement recommandé pour l’apprentissage de la réalité mixte avec Unreal**. Comme vous êtes déjà sur ce parcours, vous pouvez simplement continuer à lire et à suivre le grand bouton bleu au bas de l’article. Toutefois, si vous en êtes à une étape de développement plus avancée et souhaitez tout de suite vous plonger dans le vif du sujet, consultez notre [vue d’ensemble des services cloud](../mixed-reality-cloud-services.md) ou accédez directement aux [ressources de services](../unreal/unreal-development-overview.md#5-adding-services).
 

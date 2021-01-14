@@ -1,18 +1,18 @@
 ---
-title: Tutoriels de démarrage - 1. Vue d’ensemble et objectifs
-description: Ce cours vous montre comment implémenter la reconnaissance faciale Azure dans une application de réalité mixte.
+title: Vue d’ensemble et objectifs du tutoriel
+description: Suivez ce cours pour découvrir comment implémenter la reconnaissance faciale Azure au sein d’une application de réalité mixte.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 777203d0051c22b0f249db7d377ab08f92c089b7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d767cca4fbb88d0cfdd7c2fdea1a0621523ad236
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698762"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010089"
 ---
 # <a name="1-overview-and-objectives"></a>1. Vue d’ensemble et objectifs
 

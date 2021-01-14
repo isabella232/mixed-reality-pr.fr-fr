@@ -1,24 +1,25 @@
 ---
 title: Recommandations sur les performances pour Unreal
-description: Recommandations pour des performances optimales pour les applications de réalité mixte dans Unreal
+description: Découvrez comment obtenir les meilleures performances de vos applications de réalité mixte avec nos paramètres de projet Unreal recommandés.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, performances, optimisation, paramètres, documentation
-ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: a1a8dacd0206882c7ebd67b2658fa2e6300aa66a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865424"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009819"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Recommandations sur les performances pour Unreal
 
 Unreal Engine comporte plusieurs fonctionnalités capables d’augmenter les performances des applications, toutes basées sur la description présentée dans [Recommandations sur les performances pour la réalité mixte](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Avant de continuer, nous vous encourageons à vous informer sur les goulots d’étranglement des applications, l’analyse et le profilage des applications de réalité mixte, ainsi que les correctifs des performances généraux.
 
 ## <a name="recommended-unreal-project-settings"></a>Paramètres de projet Unreal recommandés
+
 Vous trouverez chacun des paramètres suivants dans **Edit > Project Settings**.
 
 1. Utilisation du convertisseur VR mobile :
@@ -78,4 +79,5 @@ Vous trouverez chacun des paramètres suivants dans **Edit > Project Settings**.
 ![Réduction des permutations de nuanceurs sur mobile](images/unreal/performance-recommendations-img-08.png)
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Recommandations en matière de performances sur mobile pour Unreal Engine]( https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html)

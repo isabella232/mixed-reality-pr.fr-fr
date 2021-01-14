@@ -7,18 +7,22 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: réalité mixte, découvrir, distribuer, index, page d’accueil, conception, développement, tutoriels, exemples d’applications, principes fondamentaux, études de cas, ressources, procédures HoloLens, projets open source, concepts principaux, interaction, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847602"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110447"
 ---
 # <a name="start-designing-and-prototyping"></a>Commencer à concevoir et à créer des prototypes
 
 ![résumé de la conception en réalité mixte](images/design-hero-image.png)
 
-Les applications de réalité mixte ne ressemblent à rien d’autre de ce qui se fait aujourd’hui, et leur conception est ardue. Vous devez prendre en compte non seulement les nouvelles combinaisons de mondes réels et virtuels que vous créez, mais également les nouvelles expériences utilisateur qu’ils permettent. La réalité mixte étant un vaste sujet, nous avons sélectionné quelques points importants de son spectre de conception, que nous présentons ci-dessous sous la forme d’une série de points de contrôle. Ces points de contrôle se veulent séquentiels, mais si vous avez déjà une expérience préalable, n’hésitez pas à passer directement à l’une des sections suivantes.
+Les applications de réalité mixte ne ressemblent à rien d’autre de ce qui se fait aujourd’hui, et leur conception est ardue. Vous devez prendre en compte non seulement les nouvelles combinaisons de mondes réels et virtuels que vous créez, mais également les nouvelles expériences utilisateur qu’ils permettent. La réalité mixte étant un vaste sujet, nous avons sélectionné quelques points importants de son spectre de conception, que nous présentons ci-dessous sous la forme d’une série de points de contrôle. Ces points de contrôle se veulent séquentiels, mais si vous avez déjà une expérience préalable, n’hésitez pas à passer directement à l’une des sections suivantes. 
+
+Pour commencer, regardez notre vidéo de vue d’ensemble de la conception :
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW]
 
 ## <a name="design-checkpoints"></a>Points de contrôle de conception
 

@@ -1,18 +1,18 @@
 ---
 title: Mise à niveau de projets dans Unreal
-description: Vue d’ensemble des étapes de mise à niveau de la version et des API dépréciées dans les projets Unreal.
+description: Restez informé des étapes de mise à niveau de version, des modifications de l’API et des dépréciations pour vos projets Unreal.
 author: hferrone
 ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, documentation, guides, fonctionnalités, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, portage, mise à niveau
-ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 27fb726bc0ca9c51b4e7b68ad28b76f89312262e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010620"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010049"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Mise à niveau de projets dans Unreal
 

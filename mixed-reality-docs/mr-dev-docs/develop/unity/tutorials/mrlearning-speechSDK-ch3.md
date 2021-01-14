@@ -1,18 +1,18 @@
 ---
-title: Tutoriels sur les services Azure Speech - 3. Ajout du composant de traduction vocale Azure Cognitive Services
-description: Dans ce cours, vous allez apprendre à implémenter le SDK Azure Speech au sein d’une application de réalité mixte.
+title: Ajout du composant de traduction vocale Azure Cognitive Services
+description: Dans ce cours, vous allez découvrir comment ajouter la traduction vocale Azure Cognitive Services dans des applications de réalité mixte.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, reconnaissance vocale, Windows 10, traduction vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 1139da69b27352b996d57184e21e9d6291d26fce
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3c647ca841e51b707aae4171b31b0b045c79fb03
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679918"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009879"
 ---
 # <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a>3. Ajout du composant de traduction vocale Azure Cognitive Services
 

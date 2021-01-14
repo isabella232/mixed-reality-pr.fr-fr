@@ -1,22 +1,20 @@
 ---
-title: Tutoriels sur MRTK - 3. Configuration des profils MRTK
-description: Ce cours vous montre comment configurer les profils Mixed Reality Toolkit (MRTK).
+title: Configuration des profils MRTK
+description: Ce cours vous montre comment configurer les profils Mixed Reality Toolkit (MRTK) pour vos applications de réalité mixte.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, reconnaissance spatiale
 ms.localizationpriority: high
-ms.openlocfilehash: 48bb6aa8705c9d874e6af8867d1edbe2385cb853
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 58f9c5f756a12e99fd10b136b2a450c6227b2dad
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613243"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008009"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Configuration des profils MRTK
-
-## <a name="overview"></a>Vue d’ensemble
 
 Dans ce tutoriel, vous allez voir comment personnaliser et configurer les profils MRTK.
 

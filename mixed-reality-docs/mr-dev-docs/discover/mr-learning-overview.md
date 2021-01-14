@@ -1,18 +1,18 @@
 ---
 title: Vue d’ensemble du module Learn de réalité mixte
-description: Consultez les modules Learn disponibles pour la réalité mixte.
+description: Restez informé de tous les modules de réalité mixte disponibles qui sont hébergés sur la plateforme Microsoft Learn.
 author: hferrone
 ms.author: jemccull
 ms.date: 11/30/2020
 ms.topic: article
 keywords: réalité mixte, Unity, tutoriel, hololens, learn, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, MRTK, mixed reality toolkit, traduction linguistique, Azure, Azure Cognitive Services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 5d59f09b98b4228b52a87a7c91e64129060f754c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 211d8e61a45a59df725f4c6c7d11c93f129d63b5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757797"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006909"
 ---
 # <a name="mixed-reality-learn-overview"></a>Vue d’ensemble Learn de réalité mixte
 

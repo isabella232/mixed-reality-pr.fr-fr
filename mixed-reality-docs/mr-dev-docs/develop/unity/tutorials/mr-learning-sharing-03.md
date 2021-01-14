@@ -1,18 +1,18 @@
 ---
-title: Tutoriels sur les fonctionnalités multiutilisateurs - 3. Connexion de plusieurs utilisateurs
-description: Suivez ce cours pour découvrir comment connecter plusieurs utilisateurs dans une application HoloLens 2.
+title: Connexion de plusieurs utilisateurs
+description: Suivez ce cours pour découvrir comment connecter plusieurs utilisateurs dans une application de réalité mixte HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure
 ms.localizationpriority: high
-ms.openlocfilehash: c16182fe2363b4682a25d70715f5ee8cb65d5886
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6cc77b32e9479bafeb53dcb99cba4f2f29865fd7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679758"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007209"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Connexion de plusieurs utilisateurs
 
@@ -112,7 +112,7 @@ Vous pouvez à présent générer le projet Unity et le déployer sur votre Holo
 ![Animation montrant Unity avec des utilisateurs en réseau](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> Pour vous rappeler comment générer et déployer votre projet Unity sur HoloLens 2, vous pouvez vous référer aux instructions de [Génération de votre application sur votre HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).
+> Pour vous rappeler comment générer et déployer votre projet Unity sur HoloLens 2, vous pouvez vous référer aux instructions de [Génération de votre application sur votre HoloLens 2](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
 
 > [!CAUTION]
 > L’application doit se connecter à Photon : vérifiez donc que votre ordinateur/appareil est connecté à Internet.

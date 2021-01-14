@@ -1,18 +1,18 @@
 ---
 title: Ancres spatiales locales dans Unreal
-description: Guide d’utilisation des ancres spatiales dans Unreal
+description: Découvrez comment utiliser, enregistrer et gérer les ancres spatiales dans des applications de réalité mixte Unreal.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, ancres spatiales, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: 1c9d9fa119e57c57ab126fc26a26a35d75e07db7
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: d44610ea0632dbc93941096007e60e4ae7be53e1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926089"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009979"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Ancres spatiales locales dans Unreal
 
@@ -83,6 +83,7 @@ Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 Vous pouvez revenir aux [points de contrôle de développement Unreal](unreal-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
 * [Ancres spatiales](../../design/spatial-anchors.md)
 * [Systèmes de coordonnées](../../design/coordinate-systems.md)

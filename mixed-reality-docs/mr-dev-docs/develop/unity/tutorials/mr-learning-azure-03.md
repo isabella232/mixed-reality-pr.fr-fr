@@ -1,18 +1,18 @@
 ---
-title: Tutoriels sur le cloud Azure - 3. Intégration d’Azure Custom Vision
-description: Suivez ce cours pour découvrir comment implémenter Azure Custom Vision dans une application HoloLens 2.
+title: Intégration d’Azure Custom Vision
+description: Suivez ce cours pour découvrir comment implémenter Azure Custom Vision dans une application de réalité mixte HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, azure custom vision, azure cognitive services, services cloud azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d30d409752c8b7f9728a4a6576829d175f91506d
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: bd99b2ca8f41c276db747dc7fc75328c31807512
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679348"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008209"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Intégration d’Azure Custom Vision
 

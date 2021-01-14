@@ -1,18 +1,18 @@
 ---
 title: Vue d’ensemble du développement Unreal
-description: Vue d’ensemble du développement en réalité mixte avec Unreal Engine 4
+description: Démarrez dans le développement de réalité mixte pour HoloLens et VR en utilisant Unreal Engine 4 avec notre parcours de points de contrôle organisé.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, démarrage, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, OpenXR
-ms.openlocfilehash: af5883ad71acf919133c330b1da8eb846d3a039f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 3d9a33ca98734d40a37e24805f28f7f70b6a4ba9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926014"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009759"
 ---
 # <a name="unreal-development-overview"></a>Vue d’ensemble du développement Unreal
 

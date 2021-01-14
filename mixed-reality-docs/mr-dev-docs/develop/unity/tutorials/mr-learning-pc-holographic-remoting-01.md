@@ -1,28 +1,26 @@
 ---
-title: Tutoriels sur la communication à distance holographique de PC - 1. Bien démarrer avec la communication à distance holographique de PC
-description: Suivez ce cours pour découvrir comment effectuer à distance une expérience de réalité mixte de votre PC vers HoloLens 2.
+title: Bien démarrer avec la communication à distance holographique de PC
+description: Suivez ce cours pour découvrir comment diffuser en continu à distance des applications de réalité mixte de votre PC vers HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, communication à distance holographique sur PC, info-bulles, suivi oculaire
 ms.localizationpriority: high
-ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 551c6427d9659dd7f5bad8558c777e918456b4d7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679768"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007919"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Bien démarrer avec la communication à distance holographique de PC
 
-## <a name="overview"></a>Vue d’ensemble
+Bienvenue dans les tutoriels HoloLens 2. Dans cette série comprenant deux tutoriels, vous allez apprendre à créer une démonstration d’expérience de réalité mixte et à créer une application PC de communication à distance holographique.
 
-  Bienvenue dans les tutoriels HoloLens 2. Dans cette série comprenant deux tutoriels, vous allez apprendre à créer une démonstration d’expérience de réalité mixte et à créer une application PC de communication à distance holographique.
+Dans ce tutoriel, vous allez découvrir comment créer une expérience de réalité mixte. Il présente les éléments d’interface utilisateur, la manipulation de modèle 3D, le découpage de modèle et les fonctionnalités de suivi oculaire.
 
-   Dans ce tutoriel, vous allez découvrir comment créer une expérience de réalité mixte. Il présente les éléments d’interface utilisateur, la manipulation de modèle 3D, le découpage de modèle et les fonctionnalités de suivi oculaire.
-
-  Le deuxième tutoriel, [Créer une application de communication à distance holographique](mr-learning-pc-holographic-remoting-02.md), montre comment créer une application PC de communication à distance holographique. Il présente également comment connecter l’application à HoloLens 2 à tout moment pour visualiser du contenu 3D en réalité mixte.
+Le deuxième tutoriel, [Créer une application de communication à distance holographique](mr-learning-pc-holographic-remoting-02.md), montre comment créer une application PC de communication à distance holographique. Il présente également comment connecter l’application à HoloLens 2 à tout moment pour visualiser du contenu 3D en réalité mixte.
 
 ## <a name="objectives"></a>Objectifs
 
@@ -48,19 +46,19 @@ Si vous n’avez pas une expérience de base avec Unity et MRTK, nous vous **rec
 
 Dans cette section, vous allez créer un projet Unity et le préparer au développement avec MRTK.
 
-Pour cela, suivez d’abord [Initialisation de votre projet et de votre première application](mr-learning-base-02.md), en excluant les instructions données dans [Générer votre application sur votre appareil](mr-learning-base-02.md#building-your-application-to-your-hololens-2), ce qui inclut les étapes suivantes :
+Pour cela, suivez d’abord [Initialisation de votre projet et de votre première application](mr-learning-base-02.md), en excluant les instructions données dans [Générer votre application sur votre appareil](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2), ce qui inclut les étapes suivantes :
 
 1. [Création du projet Unity](mr-learning-base-02.md#creating-the-unity-project) et affectation d’un nom pertinent, par exemple *MRTK Tutorials*
 
-1. [Changement de plateforme de génération](mr-learning-base-02.md#configuring-the-unity-project)
+2. [Changement de plateforme de génération](mr-learning-base-02.md#switching-the-build-platform)
 
-1. [Importation des ressources TextMeshPro Essential](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. [Importation des ressources TextMeshPro Essential](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-1. [Importation du Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+4. [Importation du Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
-1. [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project)
+5. [Configuration du projet Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
 
-1. [Création et définition de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene), et affectation d’un nom pertinent à la scène, par exemple **PC Holographic Remoting**
+6. [Création et définition de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene), et affectation d’un nom pertinent à la scène, par exemple **PC Holographic Remoting**
 
 Ensuite, suivez les instructions fournies dans [Changement de l’option d’affichage de la reconnaissance spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour remplacer le profil de configuration MRTK de votre scène par **DefaultHoloLens2ConfigurationProfile**. Choisissez **Occlusion** dans les options d’affichage du maillage de la reconnaissance spatiale.
 

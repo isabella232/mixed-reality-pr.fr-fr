@@ -1,18 +1,18 @@
 ---
 title: Recommandations sur les performances pour Unity
-description: Conseils propres à Unity pour améliorer les performances avec les applications de réalité mixte.
+description: Découvrez des conseils spécifiques à Unity pour améliorer les performances avec des paramètres de projet, le profilage et la gestion de la mémoire dans vos applications de réalité mixte.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 03/26/2019
 ms.topic: article
 keywords: graphiques, UC, GPU, rendu, garbage collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 1a0509e656b7a6bf0d8d1f0b5d381b2fbdb39c2d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3508edae9fa0e60e9d9b60000186dfd3e49ff134
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010480"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009349"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recommandations sur les performances pour Unity
 

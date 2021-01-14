@@ -1,22 +1,20 @@
 ---
-title: Tutoriels sur les fonctionnalités multi-utilisateurs - 2. Configuration de Photon Unity Networking
-description: Suivez ce cours pour découvrir comment implémenter Photon Unity Network dans une application HoloLens 2.
+title: Configuration de Photon Unity Networking
+description: Suivez ce cours pour découvrir comment implémenter Photon Unity Network dans une application de réalité mixte HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8bf8d440cb47d817514e34c98ac45f34f495c2bb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679258"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007299"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configuration de Photon Unity Networking
-
-## <a name="overview"></a>Vue d’ensemble
 
 Dans ce tutoriel, vous allez préparer la création d’une expérience partagée à l’aide de Photon Unity Networking (PUN). Vous allez découvrir comment créer une application PUN, importer des ressources PUN dans votre projet Unity et connecter votre projet Unity à l’application PUN.
 
@@ -30,18 +28,18 @@ Dans ce tutoriel, vous allez préparer la création d’une expérience partagé
 
 Dans cette section, vous allez créer un projet Unity et le préparer au développement avec MRTK.
 
-Pour cela, suivez d’abord [Initialisation de votre projet et déploiement de votre première application](mr-learning-base-02.md), en excluant les instructions données dans [Générer votre application sur votre appareil](mr-learning-base-02.md#building-your-application-to-your-hololens-2), ce qui inclut les étapes suivantes :
+Suivez d’abord [Initialisation de votre projet et déploiement de votre première application](mr-learning-base-02.md), en excluant les instructions données dans [Générer votre application sur votre appareil](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2), qui inclut les étapes suivantes :
 
 1. [Création du projet Unity](mr-learning-base-02.md#creating-the-unity-project) et affectation d’un nom pertinent, par exemple *MRTK Tutorials*
-1. [Changement de plateforme de génération](mr-learning-base-02.md#configuring-the-unity-project)
-1. [Importation des ressources TextMeshPro Essential](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-1. [Importation du Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-1. [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project)
-1. [Création et configuration de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene), et affectation d’un nom pertinent à la scène, par exemple *MultiUserCapabilities*
+2. [Changement de plateforme de génération](mr-learning-base-02.md#switching-the-build-platform)
+3. [Importation des ressources TextMeshPro Essential](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [Importation du Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [Configuration du projet Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+6. [Création et configuration de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene), et affectation d’un nom pertinent à la scène, par exemple *MultiUserCapabilities*
 
 Ensuite, suivez les instructions fournies dans [Modification de l’option d’affichage de la reconnaissance spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour :
 
-1. Définir le **profil de configuration MRTK** sur **DefaultHoloLens2ConfigurationProfile**.
+1. Remplacer le **profil de configuration MRTK** par **DefaultHoloLens2ConfigurationProfile**
 1. Définir les **options d’affichage du maillage spatiale** sur **Occlusion**.
 
 ## <a name="enabling-additional-capabilities"></a>Activation de fonctionnalités supplémentaires
@@ -50,7 +48,7 @@ Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir
 
 ![Unity - Player Settings](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-Dans la section **Publishing Settings**, accédez à la section **Capabilities** et vérifiez bien que les fonctionnalités **InternetClient**, **Microphone**, **SpatialPerception** et **GazeInput**, que vous avez activées à l’étape [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project) ci-dessus, sont activées.
+Dans la section **Publishing Settings**, accédez à la section **Capabilities** et vérifiez bien que les fonctionnalités **InternetClient**, **Microphone**, **SpatialPerception** et **GazeInput**, que vous avez activées à l’étape [Configuration du projet Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings) ci-dessus, sont activées.
 
 Activez ensuite les fonctionnalités supplémentaires suivantes :
 
