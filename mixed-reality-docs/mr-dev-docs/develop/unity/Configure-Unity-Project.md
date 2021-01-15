@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, réalité mixte, développement, prise en main, nouveau projet, Windows Mixed Reality, UWP, XR, performances
-ms.openlocfilehash: 1d4acb80a7ad0c5143a4408829759aab0a2c012b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 70df0314cb714d78c2eeb17335f67d6d90134770
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009899"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226448"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Configuration de votre projet sans MRTK
 
@@ -124,7 +124,7 @@ Si votre application cible en particulier HoloLens, vous devez modifier quelques
 Maintenant que votre projet est prêt, vous pouvez commencer à développer votre expérience de réalité mixte :
 
 * Ajouter des [blocs de construction principaux](unity-development-overview.md#2-core-building-blocks)
-* Découvrez les [API et les fonctionnalités de plateforme](unity-development-overview.md#3-platform-capabilities-and-apis) disponibles
+* Découvrez les [API et les fonctionnalités de plateforme](unity-development-overview.md#3-advanced-features) disponibles
 * Découvrez comment [déployer votre application](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset)
 * Utiliser le [simulateur de réalité mixte](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
