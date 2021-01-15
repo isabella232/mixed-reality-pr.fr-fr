@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, réalité mixte, casques immersifs, application, UWP, envoi, envoi, filtres, métadonnées, configuration système requise, Mots clés, wack, certification, package, AppX, merchandising
-ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: b729bd65413587d3ad3b05bef495349b60a6fffd
+ms.sourcegitcommit: 47a5c86b4694449c825902631777a9962a40e332
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757627"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215974"
 ---
 # <a name="distributing-your-apps"></a>Distribution de vos applications
 
@@ -66,7 +66,7 @@ La mise en œuvre de vos applications auprès de vos utilisateurs ou dans le mon
     <td><a href="submitting-an-app-to-the-microsoft-store.md"><strong>Microsoft Store</strong></a></td>
     <td>❌</td>
     <td>✔️</td>
-    <td>✔️</td>s
+    <td>✔️</td>
 </tr>
 <tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-store-business"><strong>Microsoft Store pour Entreprises</strong></a></td>
@@ -97,7 +97,7 @@ La mise en œuvre de vos applications auprès de vos utilisateurs ou dans le mon
 
 * Si vous devez installer une application HoloLens 2 alors que vous êtes hors connexion, reportez-vous aux instructions [Secure de hololens 2 hors connexion](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) ou installez l’application via un package d’approvisionnement sans activer le mode développeur.
 
-* Vous pouvez également déployer des builds sur votre appareil et les partager avec d’autres développeurs qui ont le mode développeur activé en [déployant et déboguer avec Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) ou en [installant un package d’application avec le portail de l’appareil](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal).
+* Vous pouvez également déployer des builds sur votre appareil et les partager avec d’autres développeurs qui ont le mode développeur activé en [déployant et déboguer avec Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) ou en [installant un package d’application avec le portail de l’appareil](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications).
 
 ## <a name="see-also"></a>Voir aussi
 * [Recherche, installation et désinstallation d’applications à partir du Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
