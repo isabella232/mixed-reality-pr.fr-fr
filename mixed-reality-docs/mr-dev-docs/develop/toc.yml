@@ -176,8 +176,6 @@
           href: unity/openxr-supported-features.md
     - name: Modules de base
       items:
-        - name: MRTK 101 - Création des principales interactions avec Mixed Reality Toolkit Unity
-          href: unity/mrtk-101.md
         - name: Appareil photo
           href: unity/camera-in-unity.md
         - name: Systèmes de coordonnées
