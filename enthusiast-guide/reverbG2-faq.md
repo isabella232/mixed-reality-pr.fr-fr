@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
 appliesto:
 - Windows 10
-ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
+ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009469"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242533"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Forum aux questions sur les réverbérations HP G2
 
@@ -92,3 +92,13 @@ Pour
 
 À partir de là, vous pouvez modifier la liaison de votre contrôleur actif en « personnalisé », ce qui permet d’ouvrir l’option permettant d’essayer les liaisons de jeux de la communauté partagée.
 Si aucune liaison de jeu personnalisée n’a encore été partagée pour ce jeu (ou si vous n’êtes pas satisfait de celles que vous avez essayées), vous pouvez également créer vos propres liaisons de jeu personnalisées et même aider le reste de la communauté en les partageant après quelques sessions de jeu.
+
+## <a name="i-have-all-cables-connected-to-the-headset-and-pc-but-it-wont-turn-on"></a>Tous les câbles sont connectés au casque et au PC, mais ils ne s’allument pas
+
+Vérifiez que le câble connecté au casque est bien assis. Il y a un petit point en haut du câble qui s’alignera à côté du bord supérieur du casque lorsqu’il a été entièrement inséré :
+
+![Petit point en haut du câble](images/small-dot.jpg)
+
+## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>Comment puis-je éteindre le casque tout en continuant à utiliser mon PC ?
+
+Débranchez la carte de connexion AC de la zone de liaison sur le câble du casque pour débrancher l’alimentation du casque.
