@@ -1,19 +1,19 @@
 ---
-title: Capture de Réalité Mixte pour les développeurs
+title: Capture de réalité mixte pour les développeurs
 description: Découvrez les meilleures pratiques pour l’activation, l’utilisation et le rendu de la capture de réalité mixte pour les développeurs.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, photo, vidéo, capture, appareil photo
-ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: 88b31d139f01c6cbe0567203e39f7640270f7716
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108862"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247722"
 ---
-# <a name="mixed-reality-capture-for-developers"></a>Capture de Réalité Mixte pour les développeurs
+# <a name="mixed-reality-capture-for-developers"></a>Capture de réalité mixte pour les développeurs
 
 > [!NOTE]
 > Pour obtenir des conseils sur une nouvelle fonctionnalité MRC pour HoloLens 2, voir [rendu à partir de l’appareil photo PV](#render-from-the-pv-camera-opt-in) ci-dessous.
@@ -214,7 +214,7 @@ D’autres applications peuvent le faire à l’aide des [API de capture Windows
 
 Les applications ont deux options pour ajouter l’effet :
 * API plus ancienne : [Windows. Media. capture. MediaCapture. AddEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* La nouvelle API recommandée par Microsoft (retourne un objet, ce qui permet de manipuler des propriétés dynamiques) : [Windows. Media. capture. MediaCapture. AddVideoEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [Windows. Media. capture. MediaCapture. AddAudioEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) qui requièrent que l’application crée sa propre implémentation de [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) et [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition). Consultez l’exemple d’effet MRC [effet, par exemple, utilisation.
+* La nouvelle API recommandée par Microsoft (retourne un objet, ce qui permet de manipuler des propriétés dynamiques) : [Windows. Media. capture. MediaCapture. AddVideoEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [Windows. Media. capture. MediaCapture. AddAudioEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) qui requièrent que l’application crée sa propre implémentation de [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) et [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition). Pour obtenir des exemples, consultez l' [exemple d’application MRC](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) .
 
 >[!NOTE]
 > L’espace de noms Windows. Media. MixedRealityCapture n’est pas reconnu par Visual Studio, mais les chaînes sont toujours valides.

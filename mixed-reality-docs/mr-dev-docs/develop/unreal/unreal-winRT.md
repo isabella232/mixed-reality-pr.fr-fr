@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, prise en main, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, WinRT, DLL
-ms.openlocfilehash: ac28ce08443de40d9f7eb32eb1b2e8e071a618b3
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0d181d1eff644de0512c40a140474612a1540b40
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007029"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247752"
 ---
 # <a name="winrt-in-unreal"></a>WinRT dans Unreal
 
@@ -21,7 +21,7 @@ Au cours de votre développement HoloLens, vous devrez peut-être écrire une fo
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous explorez actuellement les API et les fonctionnalités de la plateforme Mixed Reality. À partir de là, vous pouvez accéder à n’importe quelle [rubrique](unreal-development-overview.md#3-platform-capabilities-and-apis) ou passer directement au déploiement de votre application sur un appareil ou un émulateur.
+Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous explorez actuellement les API et les fonctionnalités de la plateforme Mixed Reality. À partir de là, vous pouvez accéder à n’importe quelle [rubrique](unreal-development-overview.md#3-advanced-features) ou passer directement au déploiement de votre application sur un appareil ou un émulateur.
 
 > [!div class="nextstepaction"]
 > [Déploiement sur un appareil](unreal-deploying.md)
