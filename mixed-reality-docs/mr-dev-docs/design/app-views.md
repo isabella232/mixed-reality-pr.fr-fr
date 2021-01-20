@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: vue immersive, vue 2D, ardoise, application, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6a16fc3b1ac45d74874f37ce44a36d3e144fee8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009629"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580108"
 ---
 # <a name="app-views"></a>Vues d’applications
 
@@ -24,7 +24,7 @@ Dans une vue immersive, votre application peut créer des hologrammes dans l’e
 ![Dans une vue immersive, vous pouvez placer des hologrammes partout dans le monde.](images/designoverview-940px.jpg)<br>
 *Dans une vue immersive, les hologrammes peuvent être placés dans le monde entier*
 
-Sur [HoloLens](https://docs.microsoft.com/hololens/hololens1-hardware), votre application affiche ses hologrammes en plus de l’environnement réel de l’utilisateur. Sur un [casque d’immersion immersif Windows Mixed Reality](../discover/immersive-headset-hardware-details.md), l’utilisateur ne peut pas voir le monde réel et, par conséquent, votre application doit rendre tout ce que l’utilisateur verra.
+Sur [HoloLens](/hololens/hololens1-hardware), votre application affiche ses hologrammes en plus de l’environnement réel de l’utilisateur. Sur un [casque d’immersion immersif Windows Mixed Reality](../discover/immersive-headset-hardware-details.md), l’utilisateur ne peut pas voir le monde réel et, par conséquent, votre application doit rendre tout ce que l’utilisateur verra.
 
 La [page d’accueil Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md) (y compris le menu Démarrer et les hologrammes que vous avez placés autour de l’environnement) ne s’affiche pas non plus dans un affichage immersif. Sur HoloLens, Cortana relaie les notifications système qui se produisent lorsqu’une vue immersive est affichée, à laquelle l’utilisateur peut répondre avec une entrée vocale.
 

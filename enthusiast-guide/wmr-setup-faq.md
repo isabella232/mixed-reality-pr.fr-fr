@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 87eb22e600ca2426bdd3fec1fd428c11d9c45313
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008629"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581814"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>FAQ sur la configuration de Windows Mixed Reality
 
@@ -28,7 +28,7 @@ Essayez les étapes suivantes :
 * Redémarrez votre ordinateur et réessayez. Vous devrez peut-être répéter plusieurs fois ou exécuter l’utilitaire de résolution des problèmes de Windows Update pour effacer les mises à jour en attente.
 
 > [!NOTE]
-> * Si vous êtes sur un réseau géré par l’entreprise, contactez votre administrateur. Ils peuvent avoir besoin d’activer Windows Mixed Reality. Vous recherchez les instructions du professionnel de l’informatique ? Consultez **[cet article](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)**.
+> * Si vous êtes sur un réseau géré par l’entreprise, contactez votre administrateur. Ils peuvent avoir besoin d’activer Windows Mixed Reality. Vous recherchez les instructions du professionnel de l’informatique ? Consultez **[cet article](/windows/application-management/manage-windows-mixed-reality)**.
 > * Si votre Wi-Fi connexion réseau est définie sur contrôlé, modifiez-la en la définissant sur non contrôlé. **[En savoir plus](https://support.microsoft.com/help/4028458)**
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>J’obtiens un message indiquant « une erreur s’est produite et nous n’avons pas pu démarrer Windows Mixed Reality ».

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (1re génération), HoloLens 2, réalité mixte, curseurs, ciblage, point de regard, mouvements, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, rayons, entrée
-ms.openlocfilehash: 3d1bc215f7f5c37f1c2c3ae33c3bc2e4031b354a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0525bb9b30dfe71fba7b8ebf2afd2c87a8c97a27
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848002"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582402"
 ---
 # <a name="cursors"></a>Curseurs
 
@@ -32,7 +32,7 @@ Il existe 3 types de curseurs : **Finger, Ray** et **point-regard**. Ces curseu
     </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
@@ -141,7 +141,7 @@ Si vous souhaitez personnaliser les comportements et les apparences de commentai
 * Nous pourrions utiliser le curseur pour afficher l’état d’entrée ou l’intention de l’utilisateur. Par exemple, nous pourrions afficher une icône indiquant à l’utilisateur que le système voit son état main et que l’application sait qu’il est prêt à agir.
 * Nous pourrions également utiliser le curseur pour montrer aux utilisateurs que des commandes vocales ont été entendues par le système par le biais d’une modification de couleur momentanée
 
-* Les États de curseur suivants peuvent être implémentés de différentes façons. Vous pouvez implémenter ces différents États en modélisant le curseur comme une machine à États. Exemple :
+* Les États de curseur suivants peuvent être implémentés de différentes façons. Vous pouvez implémenter ces différents États en modélisant le curseur comme une machine à États. Par exemple :
     * L’état inactif est l’endroit où vous affichez le curseur par défaut.
     * L’état prêt est lorsque vous avez détecté la main de l’utilisateur en position prête.
     * L’état de l’interaction est lorsque l’utilisateur fait une interaction particulière.
@@ -163,7 +163,7 @@ La conception sans curseur est recommandée lorsque le sens de l’immersion est
 
 ## <a name="cursor-in-mrtk-mixed-reality-toolkit-for-unity"></a>Curseur dans MRTK (ensemble d’outils de réalité mixte) pour Unity
 
-Par défaut, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit un Prefab de curseur ([DefaultCursor. Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) qui a le même état visuel que le curseur système de l’interpréteur de commandes. Elle est affectée dans le profil d’entrée de MRTK, sous pointeurs. Vous pouvez remplacer/personnaliser ce curseur pour votre expérience. Pour l’expérience avec l’entrée de suivi oculaire, MRTK fournit également EyeGazeCursor, qui a un visuel subtil pour réduire la distraction.
+Par défaut, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit un Prefab de curseur ([DefaultCursor. Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) qui a le même état visuel que le curseur système de l’interpréteur de commandes. Il est attribué dans le profil d’entrée de MRTK, sous Pointeurs. Vous pouvez remplacer/personnaliser ce curseur pour votre expérience. Pour l’expérience avec l’entrée de suivi oculaire, MRTK fournit également EyeGazeCursor, qui a un visuel subtil pour réduire la distraction.
 
 * [MRTK - Profil de pointeur](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
 * [MRTK - Système d’entrée](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)

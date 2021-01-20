@@ -6,18 +6,18 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de présence oculaire, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de la réalité mixte, conception, interactions
-ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: db3cb774d72de13c2f1e51d446969ee7a4cdf2b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008579"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582386"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interaction Eye-orientée vers le regard de HoloLens 2
 
 ![Démonstration du suivi oculaire dans MRTK](images/mrtk_et_scenemenu.jpg)
 
-L’une de nos nouvelles fonctionnalités passionnantes sur HoloLens 2 est le suivi oculaire. Sur notre [suivi oculaire sur la page HoloLens 2](eye-tracking.md) , nous avons mentionné la nécessité pour chaque utilisateur de passer par un [étalonnage](https://docs.microsoft.com/hololens/hololens-calibration), de fournir des conseils pour les développeurs et de mettre en surbrillance les cas d’utilisation pour le suivi oculaire. L’entrée Eye-pointage est toujours un nouveau type d’entrée utilisateur et il y a beaucoup à apprendre. 
+L’une de nos nouvelles fonctionnalités passionnantes sur HoloLens 2 est le suivi oculaire. Sur notre [suivi oculaire sur la page HoloLens 2](eye-tracking.md) , nous avons mentionné la nécessité pour chaque utilisateur de passer par un [étalonnage](/hololens/hololens-calibration), de fournir des conseils pour les développeurs et de mettre en surbrillance les cas d’utilisation pour le suivi oculaire. L’entrée Eye-pointage est toujours un nouveau type d’entrée utilisateur et il y a beaucoup à apprendre. 
 
 Bien que l’entrée Eye-pointage soit uniquement utilisée au sein de notre expérience d’interpréteur de commandes holographique (l’interface utilisateur que vous voyez quand vous démarrez votre HoloLens 2), plusieurs applications, telles que la « structure de travail [hololens »](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), illustrent de superbes exemples sur la façon dont les entrées de regard oculaire peuvent être ajoutées à la magie de votre expérience holographique.
 Sur cette page, nous aborderons les considérations relatives à la conception pour l’intégration de l’entrée de regard pour interagir avec vos applications holographiques.
@@ -35,7 +35,7 @@ Vous en apprendrez davantage sur les principaux avantages et les défis uniques 
 </colgroup>
 <tr>
      <td><strong>Fonctionnalité</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
 </tr>

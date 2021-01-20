@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, NuGet
-ms.openlocfilehash: 616765143309fe2a4883c1393713133fcbe2a9d5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: da3114b2c8c4e04d8da9296687f92d0b23945281
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006489"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581232"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>Écriture d’une application distante holographique à distance à l’aide de l’API OpenXR
 
@@ -27,7 +27,7 @@ Tout le code de cette page et des projets de travail se trouve dans le [référe
 Un bon point de départ est une application de bureau ou UWP basée sur un OpenXR fonctionnel. Pour plus d’informations, consultez [prise en main de OpenXR](../native/openxr-getting-started.md).
 
 >[!IMPORTANT]
->Toute application utilisant la communication à distance holographique doit être créée pour utiliser un [cloisonnement](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments)multithread. L’utilisation d’un [cloisonnement à thread unique](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) est prise en charge, mais entraîne des performances non optimales et éventuellement des interruptions pendant la lecture. Lors de l’utilisation de C++/WinRT [WinRT :: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) un cloisonnement multithread est la valeur par défaut.
+>Toute application utilisant la communication à distance holographique doit être créée pour utiliser un [cloisonnement](//windows/win32/com/multithreaded-apartments)multithread. L’utilisation d’un [cloisonnement à thread unique](//windows/win32/com/single-threaded-apartments) est prise en charge, mais entraîne des performances non optimales et éventuellement des interruptions pendant la lecture. Lors de l’utilisation de C++/WinRT [WinRT :: init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) un cloisonnement multithread est la valeur par défaut.
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>Procurez-vous le package NuGet de communication à distance holographique
 
@@ -209,5 +209,5 @@ Si votre application distante utilise DX12, utilisez XrRemotingFrameMirrorImageD
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Établissement d’une connexion sécurisée avec la communication à distance holographique](holographic-remoting-secure-connection.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)
-* [Termes du contrat de licence de la communication à distance holographique](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Termes du contrat de licence de la communication à distance holographique](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

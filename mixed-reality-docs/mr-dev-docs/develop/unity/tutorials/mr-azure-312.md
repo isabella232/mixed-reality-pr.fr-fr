@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, vision par ordinateur, hololens, immersif, VR, Microsoft bot Framework v4, application Web bot, robot Framework, Microsoft bot, Windows 10, Visual Studio
-ms.openlocfilehash: 6c172bbede50062064a654543362afe38b46be63
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6b8b4624615a3c3f62800b396803572b0b67ad1a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679448"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582459"
 ---
 # <a name="mr-and-azure-312-bot-integration"></a>Réalité mixte - Azure - Cours 312 : Intégration de bots
 
@@ -36,7 +36,7 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td> Réalité mixte - Azure - Cours 312 : Intégration de bots</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -57,18 +57,18 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 - [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](../../../hololens-hardware-details.md) avec le mode développeur activé
+- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Accès Internet pour Azure et récupération Azure bot. Pour plus d’informations, [veuillez suivre ce lien](https://dev.botframework.com/).
 
 ### <a name="before-you-start"></a>Avant de commencer
 
 1.  Pour éviter de rencontrer des problèmes lors de la création de ce projet, il est fortement recommandé de créer le projet mentionné dans ce didacticiel dans un dossier racine ou dans un dossier racine (les chemins de dossiers longs peuvent entraîner des problèmes au moment de la génération).
-2.  Configurez et testez votre HoloLens. Si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article Configuration de hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Configurez et testez votre HoloLens. Si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article Configuration de hololens](/hololens/hololens-setup). 
 3.  Il est judicieux d’effectuer un réglage de l’étalonnage et du capteur au début du développement d’une nouvelle application HoloLens (parfois, il peut être utile d’effectuer ces tâches pour chaque utilisateur). 
 
-Pour obtenir de l’aide sur l’étalonnage, veuillez suivre ce [lien vers l’article d’étalonnage HoloLens](../../../calibration.md#hololens-2).
+Pour obtenir de l’aide sur l’étalonnage, veuillez suivre ce [lien vers l’article d’étalonnage HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Pour obtenir de l’aide sur le réglage du capteur, veuillez suivre ce [lien vers l’article sur le paramétrage du capteur HoloLens](../../../sensor-tuning.md).
+Pour obtenir de l’aide sur le réglage du capteur, veuillez suivre ce [lien vers l’article sur le paramétrage du capteur HoloLens](/hololens/hololens-updates).
 
 ## <a name="chapter-1--create-the-bot-application"></a>Chapitre 1 : créer l’application bot
 
@@ -273,7 +273,7 @@ Maintenant que vous avez généré le code de votre bot, vous devez le publier d
     2. Sélectionnez un **Abonnement**.
     3. Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces cours) dans un groupe de ressources commun.
 
-        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, [veuillez suivre ce lien](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)
+        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, [veuillez suivre ce lien](/azure/azure-resource-manager/resource-group-portal)
 
     4. Déterminez l’emplacement de votre groupe de ressources (si vous créez un groupe de ressources). L’emplacement devrait idéalement se trouver dans la région où l’application s’exécutait. Certaines ressources Azure sont uniquement disponibles dans certaines régions.
     5. Sélectionnez le **niveau tarifaire** approprié, s’il s’agit de la première fois que vous créez un service *Web App bot* , vous devez disposer d’un niveau gratuit (nommé F0).
@@ -437,7 +437,7 @@ Pour vous aider à désérialiser et à sérialiser les objets reçus et envoyé
 
 Pour importer la bibliothèque Newtonsoft dans votre projet, utilisez le package Unity fourni avec ce cours.
 
-1.  Ajoutez le fichier *. pour Unity* à Unity à **Assets** l’aide de l’option de  >  **Import Package**  >  menu **package personnalisé** du package d’importation de ressources.
+1.  Ajoutez le fichier *. pour Unity* à Unity à l’aide de l’option de  >    >  menu **package personnalisé** du package d’importation de ressources.
 
     ![Importer la bibliothèque Newtonsoft](images/AzureLabs-Lab312-34.png)
 

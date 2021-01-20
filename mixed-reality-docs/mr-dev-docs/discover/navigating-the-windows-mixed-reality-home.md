@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, système d’exploitation, plateforme, maison, maison, accueil, environnement, démarrer, menu Démarrer, menu Accueil, pin, application, lancer des applications, placer des applications, téléporter, déplacer, naviguer, casque de réalité mixte, casque de réalité virtuelle, présentation de la réalité virtuelle
-ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6b021aff20363f0e3efc1c2675df41ee5819aef6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009689"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582634"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Exploration de la page d’accueil Windows Mixed Reality
 
@@ -28,7 +28,7 @@ Le menu Démarrer se compose des éléments suivants :
 * Cortana (sur les casques immersifs, une vignette de démarrage ; sur HoloLens, en haut du début)
 * Applications épinglées
 * Bouton toutes les applications (signe plus)
-* Boutons photo et vidéo pour la capture de la [réalité mixte](../mixed-reality-capture.md)
+* Boutons photo et vidéo pour la capture de la [réalité mixte](/hololens/holographic-photos-and-videos)
 
 Basculez entre les vues applications épinglées et toutes les applications en sélectionnant les boutons plus ou moins. Pour ouvrir le menu Démarrer sur HoloLens, utilisez le mouvement fleuri. Sur un casque immersif, appuyez sur le bouton Windows de votre contrôleur.
 
@@ -40,7 +40,7 @@ Pour exécuter l’application, vous devez la placer dans votre foyer :
 1. Utilisez votre point d’interposition [ou contrôleur](../design/gaze-and-commit.md) pour positionner l’application là où vous le souhaitez. Elle s’ajuste automatiquement (en taille et en position) pour se conformer à l’espace où vous la placez.
 2. Placez l’application à l’aide d’air-TAP (HoloLens) ou du bouton de sélection (casques immersifs). Pour annuler et revenir au menu Démarrer, utilisez le geste de touche ou le bouton Windows.
 
-les [applications 2D](../develop/porting-apps/building-2d-apps.md), créées pour un ordinateur de bureau, un appareil mobile ou une Xbox, peuvent être modifiées pour s’exécuter en tant qu’applications immersives de réalité mixte à l’aide de l' [API HolographicSpace](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). Une application immersive fait sortir l’utilisateur de son lieu de départ et d’une expérience immersive. Les utilisateurs peuvent retourner chez eux avec le geste (HoloLens) ou en appuyant sur le bouton Windows de leur contrôleur (casques immersifs).
+les [applications 2D](../develop/porting-apps/building-2d-apps.md), créées pour un ordinateur de bureau, un appareil mobile ou une Xbox, peuvent être modifiées pour s’exécuter en tant qu’applications immersives de réalité mixte à l’aide de l' [API HolographicSpace](/uwp/api/Windows.Graphics.Holographic.HolographicSpace). Une application immersive fait sortir l’utilisateur de son lieu de départ et d’une expérience immersive. Les utilisateurs peuvent retourner chez eux avec le geste (HoloLens) ou en appuyant sur le bouton Windows de leur contrôleur (casques immersifs).
 
 Les applications peuvent également être lancées via une API app-to-App ou via Cortana.
 
@@ -122,7 +122,7 @@ Vous pouvez également utiliser des commandes vocales pour vous familiariser ave
 Windows Mixed Reality possède plusieurs applications intégrées, telles que :
 * **Microsoft Store** pour accéder aux applications et aux Jeux
 * **Hub de commentaires** pour envoyer des commentaires sur les applications système et système
-* **Paramètres** pour configurer les paramètres système ([y compris la mise en réseau](../connecting-to-wi-fi-on-hololens.md) et les mises à jour système)
+* **Paramètres** pour configurer les paramètres système ([y compris la mise en réseau](/hololens/hololens-network) et les mises à jour système)
 * **Microsoft Edge** pour parcourir les sites Web
 * **Photos** pour afficher et partager des photos et des vidéos
 * **Étalonnage** (hololens uniquement) pour l’adaptation de l’expérience HoloLens à l’utilisateur actuel
@@ -138,6 +138,6 @@ Windows Mixed Reality possède plusieurs applications intégrées, telles que :
 * [Vues d’applications](../design/app-views.md)
 * [Contrôleurs de mouvement](../design/motion-controllers.md)
 * [Accessoires matériels](hardware-accessories.md)
-* [Considérations relatives à l’environnement pour HoloLens](../environment-considerations-for-hololens.md)
+* [Considérations relatives à l’environnement pour HoloLens](/hololens/hololens-environment-considerations)
 * [Implémentation des lanceurs d’applications 3D](../distribute/implementing-3d-app-launchers.md)
 * [Création de modèles 3D à utiliser dans la page d’hébergement Windows Mixed Reality](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)

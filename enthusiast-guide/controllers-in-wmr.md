@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007799"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580541"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Contrôleurs de mouvement dans Windows Mixed Reality
 
@@ -94,7 +94,7 @@ Voici comment contourner la réalité mixte avec les contrôleurs de mouvement, 
 |  Pour  |  Contrôleurs de mouvement  | Boîtier de commande | Souris et clavier |
 | --- | --- | --- | --- |
 | Porte | Appuyez sur le stick analogique, puis pointez le contrôleur à l’endroit où vous souhaitez aller. Relâchez le stick analogique. | Appuyez sur le stick analogique gauche vers l’avant, puis recherchez l’emplacement où vous souhaitez aller. Relâchez le stick analogique. | Sélectionnez et maintenez le bouton droit, puis pointez la souris à l’endroit où vous souhaitez aller. Relâchez le bouton. |
-| Sélectionner | Pointez sur le contrôleur, puis tirez le déclencheur ou utilisez le pavé tactile. | Pointez avec le regard sur la cible, puis appuyez sur A. | Pointez la souris, puis cliquez sur le bouton gauche. |
+| Sélectionnez | Pointez sur le contrôleur, puis tirez le déclencheur ou utilisez le pavé tactile. | Pointez avec le regard sur la cible, puis appuyez sur A. | Pointez la souris, puis cliquez sur le bouton gauche. |
 | Ouverture du menu Démarrer | Appuyez sur le bouton **Windows** . | Appuyez sur le bouton **Xbox** . | Appuyez sur la **touche du logo Windows**. |
 | Conserver une application immersif | Appuyez sur le bouton **Windows** . Ensuite, dans le menu actions rapides, sélectionnez page d’hébergement de la **réalité mixte** . | Appuyez sur le bouton **Xbox** . Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides. | Appuyez sur la touche * * du logo Windows. Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides qui s’affiche. |
 | Faire pivoter | Déplacer le stick analogique vers la gauche ou vers la droite. | Déplacez le levier droit vers la gauche ou la droite. | Non disponible. |
@@ -151,8 +151,8 @@ Faites-nous part de vos commentaires dans le hub de commentaires à l’aide de 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Contrôleurs HP dans Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-- [Contrôleurs HP inréel](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Contrôleurs HP dans Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [Contrôleurs HP inréel](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 - [Demander à la communauté](https://answers.microsoft.com)
 - [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
 - [Dépannage](troubleshooting-windows-mixed-reality.md)

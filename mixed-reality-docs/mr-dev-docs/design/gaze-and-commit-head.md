@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: La réalité mixte, le point de présence, le regard, l’interaction, la conception, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de la réalité virtuelle, HoloLens, MRTK, le kit de configuration de la réalité mixte, la cible, le lissage
-ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a69b855e2246327affeeb0f771f565b94ea65cb2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009449"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582285"
 ---
 # <a name="head-gaze-and-commit"></a>Suivre de la tête et valider
 
@@ -28,7 +28,7 @@ Le _point de regard et la validation de tête_ est un cas particulier du modèle
     </colgroup>
     <tr>
         <td><strong>Modèle d’entrée</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
@@ -98,6 +98,3 @@ Lors de la détermination des éléments interactifs proches à donner, le focus
 * [Mains : Pointer et valider](point-and-commit.md)
 * [Interactions instinctuelles](interaction-fundamentals.md)
 * [Entrée vocale](voice-input.md)
-
-
-

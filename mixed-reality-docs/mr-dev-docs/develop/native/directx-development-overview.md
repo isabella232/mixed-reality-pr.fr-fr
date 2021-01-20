@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, rendu holographique, native, application native, WinRT, application WinRT, API de plateforme, moteur personnalisé, intergiciel, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b137fad12740542deb4995485201a9bd0d1d7662
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006849"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581044"
 ---
 # <a name="native-development-overview"></a>Vue d’ensemble du développement natif
 
@@ -32,7 +32,7 @@ Windows Mixed Reality prend en charge [deux types d’applications](../../design
 * Applications UWP ou de **réalité mixte** Win32 qui utilisent l' [API HOLOGRAPHICSPACE](getting-a-holographicspace.md) ou l' [API OpenXR](openxr.md) pour afficher un [affichage immersif](../../design/app-views.md) qui remplit l’affichage du casque
 * **applications 2D** (UWP) qui utilisent DirectX, XAML ou une autre infrastructure pour restituer des [vues 2D](../../design/app-views.md#2d-views) sur des ardoises dans la page d’hébergement de Windows Mixed Reality
 
-Les différences entre le développement DirectX pour les [vues 2D et les vues immersives](../../design/app-views.md) concernent principalement le rendu holographique et l’entrée spatiale. Le [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) de votre application UWP ou le HWND de votre application Win32 sont requis et restent en grande partie les mêmes. Il en va de même pour les API WinRT qui sont disponibles pour votre application. Toutefois, vous devez utiliser un sous-ensemble différent de ces API pour tirer parti des fonctionnalités holographiques. Par exemple, le système pour les applications holographiques gère le utilise permutation et le frame présent pour activer une boucle de frames prédite.
+Les différences entre le développement DirectX pour les [vues 2D et les vues immersives](../../design/app-views.md) concernent principalement le rendu holographique et l’entrée spatiale. Le [IFrameworkView](/uwp/api/Windows.ApplicationModel.Core.IFrameworkView) de votre application UWP ou le HWND de votre application Win32 sont requis et restent en grande partie les mêmes. Il en va de même pour les API WinRT qui sont disponibles pour votre application. Toutefois, vous devez utiliser un sous-ensemble différent de ces API pour tirer parti des fonctionnalités holographiques. Par exemple, le système pour les applications holographiques gère le utilise permutation et le frame présent pour activer une boucle de frames prédite.
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/11/2020
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, famille, naviguer, découvrir, applications, jeux, Microsoft Edge, chrome, Edge, 360, 360 vidéo, 360 Viewer
-ms.openlocfilehash: d3ed8f95285eefacf43177915d512bfb41730243
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 26691dd3cf1b8e620373ef150de61cd2c7f461db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725780"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581304"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality et le nouveau Microsoft Edge
 
@@ -48,7 +48,7 @@ Après avoir effectué la mise à jour cumulative 2020-01 pour Windows 10 versio
 
 **Pourquoi cela se produit**
 
-La prise en charge des applications Win32 classiques dans Windows Mixed Reality a été introduite dans la [mise à jour de Windows 10 mai 2019](https://docs.microsoft.com/windows/mixed-reality/release-notes-may-2019). Pour activer cette prise en charge, vous devez créer un moniteur virtuel pour héberger l’application Win32. À chaque fois qu’une nouvelle application Win32 est lancée, une autre analyse virtuelle doit être créée. Malheureusement, la création d’un moniteur virtuel est une tâche intensive qui peut entraîner un blocage rapide de l’affichage du casque. Les clients ont proposé des commentaires que l’expérience était inconfortable et perturbatrice. En raison de ces commentaires, en plus de l’utilisation accrue des applications Win32, nous avons décidé de pré-allouer trois analyses virtuelles au démarrage de Windows Mixed Reality pour éviter cette interruption et permettre aux clients de lancer jusqu’à trois applications Win32 simultanées sans avoir à se figer.
+La prise en charge des applications Win32 classiques dans Windows Mixed Reality a été introduite dans la [mise à jour de Windows 10 mai 2019](/windows/mixed-reality/release-notes-may-2019). Pour activer cette prise en charge, vous devez créer un moniteur virtuel pour héberger l’application Win32. À chaque fois qu’une nouvelle application Win32 est lancée, une autre analyse virtuelle doit être créée. Malheureusement, la création d’un moniteur virtuel est une tâche intensive qui peut entraîner un blocage rapide de l’affichage du casque. Les clients ont proposé des commentaires que l’expérience était inconfortable et perturbatrice. En raison de ces commentaires, en plus de l’utilisation accrue des applications Win32, nous avons décidé de pré-allouer trois analyses virtuelles au démarrage de Windows Mixed Reality pour éviter cette interruption et permettre aux clients de lancer jusqu’à trois applications Win32 simultanées sans avoir à se figer.
 
 **Solution de contournement**
 

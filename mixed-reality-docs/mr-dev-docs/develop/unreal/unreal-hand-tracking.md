@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, suivi manuel, non réel, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010159"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581109"
 ---
 # <a name="hand-tracking-in-unreal"></a>Suivi de la main dans Unreal
 
@@ -156,7 +156,7 @@ La mise en place de la main fonctionne pour les interactions proches comme la sa
 
 ## <a name="gestures"></a>Mouvements
 
-HoloLens 2 effectue le suivi des mouvements spatiaux, ce qui signifie que vous pouvez capturer ces mouvements comme entrée. Le suivi des mouvements est basé sur un modèle d’abonnement. Vous devez utiliser la fonction « configurer les gestes » pour indiquer à l’appareil les gestes que vous souhaitez suivre.  Vous trouverez plus d’informations sur les gestes dans le document sur l' [utilisation de base de HoloLens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage) .
+HoloLens 2 effectue le suivi des mouvements spatiaux, ce qui signifie que vous pouvez capturer ces mouvements comme entrée. Le suivi des mouvements est basé sur un modèle d’abonnement. Vous devez utiliser la fonction « configurer les gestes » pour indiquer à l’appareil les gestes que vous souhaitez suivre.  Vous trouverez plus d’informations sur les gestes dans le document sur l' [utilisation de base de HoloLens 2](/hololens/hololens2-basic-usage) .
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 

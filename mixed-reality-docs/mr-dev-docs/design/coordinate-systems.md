@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: système de coordonnées, système de coordonnées spatiales, orientation uniquement, à l’échelle assise, à l’échelle debout, à l’échelle de la pièce, à l’échelle mondiale, 360 degré, assis, debout, chambre, monde, échelle, position, orientation, stationnaire, attaché, étage, Ancre, ancrage spatial, verrouillage universel, verrouillage universel, verrouillage du corps, verrouillage du corps, limites, persistance, partage, perte de suivi, Ancre spatiale Cloud, casque de réalité mixte, casque de réalité Windows, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 42efc1444c030641ad215501c4a12d6315ea9857
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 6d4bddc17027ad32f82fbc8c37860e64b2bc57eb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848021"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582409"
 ---
 # <a name="coordinate-systems"></a>Systèmes de coordonnées
 
@@ -32,9 +32,9 @@ ms.locfileid: "97848021"
     </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Casques immersifs</strong></a></td>
+        <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>Casques immersifs</strong></a></td>
     </tr>
      <tr>
         <td><a href="coordinate-systems.md#stationary-frame-of-reference">Cadre de référence stationnaire</a></td>
@@ -80,7 +80,7 @@ Vous pouvez concevoir des applications de réalité mixte pour un large éventai
 
 <br>
 
-| Mise à l’échelle | Configuration requise | Exemple d’expérience | 
+| Mise à l’échelle | Conditions requises | Exemple d’expérience | 
 |----------|----------|----------|
 |  **Orientation uniquement** |  **Orientation du casque** (alignée en gravité) |  visionneuse vidéo 360 ° | 
 |  **À l’échelle assise** |  Plus à la **position du casque** en fonction de la position zéro |  Jeu de course ou simulateur d’espace | 
@@ -94,7 +94,7 @@ Les échelles de l’expérience supérieures suivent un modèle d’imbrication
 
 | suivi 6DOF | Défini par l’étage | suivi de 360 ° | Limites définies | Ancres spatiales | Expérience max. | 
 |----------|----------|----------|----------|----------|----------|
-|  No |  - |  - |  - |  - |  **Orientation uniquement** | 
+|  Non |  - |  - |  - |  - |  **Orientation uniquement** | 
 |  **Oui** |  Non |  - |  - |  - |  **Positionné** | 
 |  **Oui** |  **Oui** |  Non |  - |  - |  **En aval** | 
 |  **Oui** |  **Oui** |  **Oui** |  Non |  - |  **Debout-360 °** | 
@@ -105,7 +105,7 @@ Le cadre de la phase de référence n’est pas encore pris en charge sur HoloLe
 
 ## <a name="spatial-coordinate-systems"></a>Systèmes de coordonnées spatiales
 
-Toutes les applications graphiques 3D utilisent des [systèmes de coordonnées cartésiens](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) pour expliquer les positions et les orientations des objets virtuels. Ces systèmes de coordonnées établissent 3 axes perpendiculaires pour positionner les objets : un axe X, Y et Z.
+Toutes les applications graphiques 3D utilisent des [systèmes de coordonnées cartésiens](/windows/uwp/graphics-concepts/coordinate-systems) pour expliquer les positions et les orientations des objets virtuels. Ces systèmes de coordonnées établissent 3 axes perpendiculaires pour positionner les objets : un axe X, Y et Z.
 
 En [réalité mixte](../discover/mixed-reality.md), votre application est la raison des systèmes de coordonnées virtuels et physiques. Windows appelle un système de coordonnées qui a une signification réelle dans le système physique de **coordonnées spatiales**.
 
@@ -191,13 +191,13 @@ Vous pouvez enregistrer sur disque les ancres spatiales créées par votre appli
 
 En conservant les ancres dans le magasin, vos utilisateurs peuvent placer des hologrammes individuels ou placer un espace de travail autour duquel une application place ses différents hologrammes, puis rechercher ces hologrammes plus tard là où ils l’attendent, sur de nombreuses utilisations de votre application.
 
-Vous pouvez également utiliser des <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance des hologrammes asynchrones sur les appareils HoloLens, iOS et Android.  En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
+Vous pouvez également utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance des hologrammes asynchrones sur les appareils HoloLens, iOS et Android.  En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
 
 ### <a name="spatial-anchor-sharing"></a>Partage d’ancrage spatial
 
 Votre application peut également partager une ancre spatiale en temps réel avec d’autres appareils, ce qui permet d’obtenir des expériences partagées en temps réel.
 
-En utilisant des <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a>, votre application peut partager une ancre spatiale sur plusieurs appareils HoloLens, iOS et Android. Quand chaque appareil affiche un hologramme à l’aide de la même ancre spatiale, tous les utilisateurs voient l’hologramme au même endroit dans le monde réel.
+En utilisant des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a>, votre application peut partager une ancre spatiale sur plusieurs appareils HoloLens, iOS et Android. Quand chaque appareil affiche un hologramme à l’aide de la même ancre spatiale, tous les utilisateurs voient l’hologramme au même endroit dans le monde réel.
 
 ## <a name="avoid-head-locked-content"></a>Éviter le contenu verrouillé
 
@@ -239,5 +239,5 @@ Parfois, un logement ou un autre espace peut avoir deux zones identiques. Par ex
 * [Systèmes de coordonnées dans DirectX](../develop/native/coordinate-systems-in-directx.md)
 * [Ancres spatiales](spatial-anchors.md)
 * [Expériences partagées dans Mixed Reality](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Étude de cas - Voir à travers vos objets](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: en réalité mixte, VR, LBE, emplacement, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, matériel, HoloLens, Multi-Player, services Cloud, Azure
-ms.openlocfilehash: 323981d49c99f5cb175b71645851496bfa1f268c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 41b35e7f92f8410357c685362ebc1714aea616e8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757827"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580672"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Divertissement basé sur l’emplacement avec Windows Mixed Reality
 
@@ -98,11 +98,11 @@ Le fichier JSON doit avoir le contenu ci-dessous avec « true » défini pour 
  
 **Q : existe-t-il des instructions sur la configuration de l’PlaySpace ?**
 
-R : la configuration d’un Playspace doit être effectuée comme vous le feriez avec une expérience d’installation du consommateur. Le processus de configuration de la salle vous permet également de définir les limites de votre salle. Vous trouverez plus d’informations sur la configuration des limites de la salle [ici](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+R : la configuration d’un Playspace doit être effectuée comme vous le feriez avec une expérience d’installation du consommateur. Le processus de configuration de la salle vous permet également de définir les limites de votre salle. Vous trouverez plus d’informations sur la configuration des limites de la salle [ici](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 Comme indiqué dans le document ci-dessus, la coordonnée unique raisonnable PlaySpace est autour de 5mx5m. Si vous souhaitez disposer d’une plus grande surface, vous pouvez utiliser la fonctionnalité d’ancrages spatiaux dans la pile d’API holographique Windows. L’utilisation de cette API nécessite une ingénierie personnalisée dans les expériences que vous êtes en train de produire.  
 
-Pour plus d’informations sur l’optimisation de votre contenu en fonction de la taille de l’espace, consultez [cette page](https://docs.microsoft.com//windows/mixed-reality/coordinate-systems).
+Pour plus d’informations sur l’optimisation de votre contenu en fonction de la taille de l’espace, consultez [cette page](//windows/mixed-reality/coordinate-systems).
  
 
 **Q : mon espace est trop grand et je rencontre des erreurs lorsque j’essaie de configurer une expérience permanente avec les limites. Que dois-je faire pour configurer mon expérience d’itinérance gratuite ?**
@@ -113,7 +113,7 @@ Vous pouvez configurer le mode « assiste », qui n’affiche pas la limite ou
 
 Le développeur de l’application est responsable de l’affichage des protections nécessaires afin que les utilisateurs n’entrent pas en conflit avec l’environnement physique.  Il peut s’agir de murs numériques au sein de l’expérience ou d’un visuel de limite de jeu personnalisé. 
 
-Vous trouverez des conseils sur la configuration de la limite de la salle avec WMR [ici](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+Vous trouverez des conseils sur la configuration de la limite de la salle avec WMR [ici](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 **Q : où est l’origine du PlaySpace ?**
 
@@ -125,7 +125,7 @@ R : l’origine du PlaySpace est déterminée par l’expérience d’installat
 
 R : Si vous vous abonnez à la version Windows 20H1 ou version ultérieure par le biais de notre programme Insider, vous pouvez accéder à une nouvelle interface pour le partage de cartes. Cette nouvelle fonctionnalité est disponible via l’interface du [Gestionnaire de cartes](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) du portail des appareils Windows. Pour utiliser cet outil, suivez les étapes ci-dessous :
 * Assurez-vous que vous avez opté pour 20H1 ou version ultérieure-après le 2019 septembre, cela signifie que nous avons utilisé notre programme Insider
-* Activer le portail d’appareils Windows (WDP) à l’aide de ces [instructions](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop)
+* Activer le portail d’appareils Windows (WDP) à l’aide de ces [instructions](/windows/uwp/debug-test-perf/device-portal-desktop)
 * Branchez un HMD Windows Mixed realisation dans lequel vous souhaitez télécharger un mappage existant à partir de ou importer un nouveau mappage
 * Accédez au WDP dans le navigateur de votre choix à l’aide de l’URL fournie dans l’écran des paramètres.
     * Une fois que vous accédez à la section « réalité mixte » et sélectionnez « Gestionnaire de cartes ».
@@ -140,13 +140,13 @@ R : Si vous vous abonnez à la version Windows 20H1 ou version ultérieure par 
 
 Q : Comment fonctionne la technologie de suivi des casques de la réalité mixte Windows ?  
 
-La réalité mixte partage la même technologie de suivi que le HoloLens. Pour en savoir plus sur le système de suivi interne, consultez la documentation [ici](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/tracking-system).
+La réalité mixte partage la même technologie de suivi que le HoloLens. Pour en savoir plus sur le système de suivi interne, consultez la documentation [ici](//windows/mixed-reality/enthusiast-guide/tracking-system).
 
 Pour obtenir une description de la façon dont le système de mappage spatial de niveau supérieur fonctionne, vous pouvez lire notre description [ici](../design/spatial-mapping.md).
 
 **Q : existe-t-il des pratiques recommandées pour obtenir un volume de suivi fiable ?**
 
-Pour mieux configurer l’environnement pour le suivi des réussites, vous pouvez lire les meilleures pratiques dans ce [billet](../environment-considerations-for-hololens.md).
+Pour mieux configurer l’environnement pour le suivi des réussites, vous pouvez lire les meilleures pratiques dans ce [billet](/hololens/hololens-environment-considerations).
 
 **Q : existe-t-il des nuances spécifiques avec le suivi des espaces ou des optimisations de l’échelle de l’entrepôt à prendre en compte ?**
 
@@ -188,13 +188,13 @@ R : Azure PlayFab est une plateforme backend complète pour les jeux en direct.
 
 **Q : J’utilise SteamVR pour déployer mes expériences. Windows Mixed Reality fonctionne-t-il avec SteamVR ?**
 
-R : Windows Mixed Reality for SteamVR permet aux utilisateurs d’exécuter des expériences SteamVR sur des casques immersifs immersifs de Windows Mixed Reality. En savoir plus sur SteamVR avec WMR [ici](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+R : Windows Mixed Reality for SteamVR permet aux utilisateurs d’exécuter des expériences SteamVR sur des casques immersifs immersifs de Windows Mixed Reality. En savoir plus sur SteamVR avec WMR [ici](//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
 
 ### <a name="support-and-community"></a>Support et communauté  
 
 Nous disposons de quelques ressources utiles pour vous aider à participer à des experts de notre équipe, à obtenir un support de dépannage et à contribuer à la communauté de développement de la réalité mixte.  
 
-Si vous rencontrez des problèmes avec les fonctionnalités publiées publiquement, signalez un bogue à l’aide de feedback Hub. pour obtenir de l’aide, reportez-vous à cette [page](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/filing-feedback).
+Si vous rencontrez des problèmes avec les fonctionnalités publiées publiquement, signalez un bogue à l’aide de feedback Hub. pour obtenir de l’aide, reportez-vous à cette [page](//windows/mixed-reality/enthusiast-guide/filing-feedback).
 
 Pour obtenir de l’aide sur la résolution des problèmes liés à WMR, [prenez une demande de support](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) auprès de notre équipe de support technique.
 

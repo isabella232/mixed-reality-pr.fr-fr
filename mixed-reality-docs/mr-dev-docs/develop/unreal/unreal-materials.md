@@ -2,16 +2,16 @@
 title: Recommandations matérielles dans Unreal
 description: Vue d’ensemble des matériaux dans un moteur inréel.
 author: hferrone
-ms.author: v-hferrone
+ms.author: safarooq
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, développement, matériaux, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: bfe70e730c5fbd6e5d103737b03e76bfd0ab65f6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609570"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580793"
 ---
 # <a name="material-recommendations-in-unreal"></a>Recommandations matérielles dans Unreal
 

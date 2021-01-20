@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, portail des appareils Windows, API, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 13845a5a5668ee8c86178196326425f46be9b321
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cdbe9635fc51a0d19c978b72fdc8d5db6b8e8e01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006649"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581257"
 ---
 # <a name="device-portal-api-reference"></a>Informations de référence sur les API du portail d’appareil
 
@@ -568,7 +568,7 @@ Obtient l’état de l’enregistrement.
 
 Arrêter l’enregistrement en cours. L’enregistrement est retourné sous la forme d’un fichier.
 
-## <a name="performance-data"></a>Données de performances
+## <a name="performance-data"></a>Données relatives aux performances
 
 **/API/ResourceManager/Processes (récupération)**
 
@@ -584,7 +584,7 @@ Retourne les statistiques de performances système (lecture/écriture d’e/s, s
 Retourner les données
 * JSON avec informations système : processeur, GPU, mémoire, réseau, e/s
 
-## <a name="power"></a>Power
+## <a name="power"></a>Avancé
 
 **/API/Power/Battery (récupération)**
 
@@ -698,4 +698,4 @@ Retourner les données
 
 ## <a name="see-also"></a>Voir aussi
 * [Utilisation du portail d’appareil Windows](using-the-windows-device-portal.md)
-* [Informations de référence sur l’API principale du portail des appareils (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
+* [Informations de référence sur l’API principale du portail des appareils (UWP)](/windows/uwp/debug-test-perf/device-portal-api-core)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: 21c29b2c8d540378259200cc834f7a36065f8ab3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717515"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581116"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -57,7 +57,7 @@ enum class EWMRHandKeypoint : uint8
 };
 ```
 
-Vous pouvez rechercher les valeurs numériques de chaque cas d’énumération dans la table [Windows. perception. People. HandJointKind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind) .
+Vous pouvez rechercher les valeurs numériques de chaque cas d’énumération dans la table [Windows. perception. People. HandJointKind](/uwp/api/windows.perception.people.handjointkind) .
 
 ### <a name="supporting-hand-tracking"></a>Prise en charge du suivi des mains
 
@@ -95,4 +95,3 @@ Voici une répartition des paramètres de fonction de GetHandJointTransform :
 * **Transform** : coordonnées et orientation de la base du segment. Vous pouvez demander la base du segment suivant pour obtenir les données de transformation pour la fin d’un segment. Un segment de pourboire spécial offre une terminaison de distribution.
 * * * Rayon : rayon de la base du segment.
 * * * Valeur de retour : true si le segment est suivi dans ce frame, false si le segment n’est pas suivi.
-

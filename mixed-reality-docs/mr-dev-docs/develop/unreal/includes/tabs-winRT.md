@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6bed33ee9b41a4ee66ce4c1c579d398f0958143d
-ms.sourcegitcommit: db01faaf76bccd4f0432cf6b383fefa04ab7a085
+ms.openlocfilehash: 7d530b66596bb79a082b98e5417bd125a7c5687d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745708"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580411"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -69,7 +69,7 @@ SDK Windows dll de la section précédente sont gérées par le système d’exp
 </packages>
 ```
 
-Vous pouvez maintenant télécharger NuGet, les packages requis ou faire référence à la [documentation](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)NuGet.
+Vous pouvez maintenant télécharger NuGet, les packages requis ou faire référence à la [documentation](/nuget/consume-packages/install-use-packages-nuget-cli)NuGet.
 
 Ouvrez YourModule.Build.cs et ajoutez le code suivant :
 
@@ -533,5 +533,4 @@ Lorsque l’appel d’OpenFileDialogue n’est pas vrai, une boîte de dialogue 
 
 ## <a name="summary"></a>Résumé 
 
-Nous vous encourageons à utiliser ce didacticiel comme point de départ pour consommer du code WinRT dans des conditions imréelless lorsque vous devez enregistrer des fichiers sur le disque HoloLens en utilisant la même boîte de dialogue de fichier que Windows.  Le même processus s’applique à l’exportation de fonctions supplémentaires à partir de l’en-tête HoloLensWinrtDLL et utilisées dans des conditions inréelless.  Portez une attention particulière au code DLL qui attend le code asynchrone asynchrone dans un thread MTA en arrière-plan, ce qui évite le blocage du thread de jeu inréel. 
-
+Nous vous encourageons à utiliser ce didacticiel comme point de départ pour consommer du code WinRT dans des conditions imréelless lorsque vous devez enregistrer des fichiers sur le disque HoloLens en utilisant la même boîte de dialogue de fichier que Windows.  Le même processus s’applique à l’exportation de fonctions supplémentaires à partir de l’en-tête HoloLensWinrtDLL et utilisées dans des conditions inréelless.  Portez une attention particulière au code DLL qui attend le code asynchrone asynchrone dans un thread MTA en arrière-plan, ce qui évite le blocage du thread de jeu inréel.

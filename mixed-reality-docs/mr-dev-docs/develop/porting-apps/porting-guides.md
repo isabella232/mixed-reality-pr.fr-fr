@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: port, Unity, inreal, middleware, Engine, UWP, Win32, Portage, HoloLens 1ère génération, casque de réalité mixte, casque Windows Mixed realisation, migration, Windows 10, mappage d’entrée,
-ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: dd09c6479bfcf3659b3e9355be898d77bccc6dc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192661"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580585"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portage d’applications VR sur Windows Mixed Reality
 
@@ -37,8 +37,8 @@ La page [installer les outils](../install-the-tools.md#immersive-vr-headset-requ
 La plateforme Windows Mixed Reality est toujours en cours de développement. Nous vous recommandons de [rejoindre le programme Windows Insider](https://insider.windows.com/) pour accéder au vol « Windows Insider Fast ».
 1. Installer [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10)
 2. [Participez](https://insider.windows.com/) au programme Windows Insider.
-3. Activer le [mode développeur](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
-4. Basculer vers les [vols rapides Windows Insider](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) via les **paramètres > section mettre à jour la sécurité &**
+3. Activer le [mode développeur](/windows/uwp/get-started/enable-your-device-for-development)
+4. Basculer vers les [vols rapides Windows Insider](/archive/blogs/uktechnet/joining-insider-preview) via les **paramètres > section mettre à jour la sécurité &**
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. effectuez une mise à niveau vers la version la plus récente de Visual Studio
 * Si vous utilisez Visual Studio, effectuez une mise à niveau vers la build la plus récente
@@ -57,7 +57,7 @@ La plateforme Windows Mixed Reality est toujours en cours de développement. Nou
 > Si vous utilisez des contrôleurs de reréverbérations HP G2, reportez-vous à [cet article](../unreal/unreal-reverb-g2-controllers.md) pour obtenir des instructions supplémentaires sur le mappage d’entrée.
 
 ## <a name="see-also"></a>Voir aussi
-* [Instructions de compatibilité matérielle PC minimale pour Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [Instructions de compatibilité matérielle PC minimale pour Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Comprendre les performances de la réalité mixte](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Recommandations en matière de performances pour Unity](../unity/performance-recommendations-for-unity.md)
 * [Contrôleurs de mouvement](../../design/motion-controllers.md)

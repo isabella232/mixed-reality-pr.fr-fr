@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, conception, style, police, typographie, UI, UX, texte, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 015273c84462e48e145af77421da4131bb650d9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007649"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580274"
 ---
 # <a name="typography"></a>Typographie
 
@@ -37,9 +37,9 @@ Générez le contraste et la hiérarchie en utilisant des tailles et des poids d
 
 ### <a name="limit-your-fonts"></a>Limiter vos polices
 
-Évitez d’utiliser plus de deux familles de polices différentes dans un seul contexte. Un trop grand nombre de polices rompt l’harmonie et la cohérence de votre expérience et complique la consommation d’informations. Dans HoloLens, étant donné que les informations sont superposées en plus de l’environnement physique, l’utilisation d’un trop grand nombre de styles de police dégradera l’expérience. Segoe UI est la police de toutes les conceptions numériques Microsoft. Il est utilisé de manière cohérente dans le shell Windows Mixed Reality. Vous pouvez télécharger le fichier de police Segoe UI à partir de la page de la [boîte à outils de conception Windows](https://docs.microsoft.com/windows/uwp/design-downloads/).
+Évitez d’utiliser plus de deux familles de polices différentes dans un seul contexte. Un trop grand nombre de polices rompt l’harmonie et la cohérence de votre expérience et complique la consommation d’informations. Dans HoloLens, étant donné que les informations sont superposées en plus de l’environnement physique, l’utilisation d’un trop grand nombre de styles de police dégradera l’expérience. Segoe UI est la police de toutes les conceptions numériques Microsoft. Il est utilisé de manière cohérente dans le shell Windows Mixed Reality. Vous pouvez télécharger le fichier de police Segoe UI à partir de la page de la [boîte à outils de conception Windows](/windows/uwp/design-downloads/).
 
-[Plus d’informations sur la police Segoe UI](https://docs.microsoft.com/windows/uwp/design/style/typography)
+[Plus d’informations sur la police Segoe UI](/windows/uwp/design/style/typography)
 
 ### <a name="avoid-thin-font-weights"></a>Évitez les poids des polices fines
 
@@ -132,4 +132,4 @@ Segoe UI (police par défaut pour Windows) fonctionne bien dans la plupart des c
 ## <a name="see-also"></a>Voir aussi
 
 * [Texte dans Unity](../develop/unity/text-in-unity.md)
-* [Couleurs, éclairage et matériaux](../color,-light-and-materials.md)
+* [Couleurs, éclairage et matériaux](./color-light-and-materials.md)

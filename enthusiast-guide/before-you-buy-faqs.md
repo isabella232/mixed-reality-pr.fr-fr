@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, pré-vente, recherche, achat, avant l’achat
 appliesto:
 - Windows 10
-ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725510"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580292"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>Avant d’acheter le Forum aux questions
 
@@ -63,7 +63,7 @@ En savoir plus sur la réalité mixte ici : <https://docs.microsoft.com/windows
 
 * **Suivi externe** Oculus, vive et autres utilisent le suivi externe.  Avec le suivi extérieur, le casque est suivi par un ou plusieurs périphériques externes. Les caméras sont intégrées à ces périphériques externes, placées autour de l’environnement et utilisées pour déterminer la position du casque en fonction de l’environnement.
 
-En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system).
+En savoir plus sur [le suivi à l’intérieur](./tracking-system.md).
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Peut effectuer le suivi à l’intérieur des contrôleurs de mouvement ayant un impact sur mon jeu en raison de l’angle de l’appareil photo
 
@@ -82,7 +82,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <tr>
 <th style="width:25%"> Casque </th>
 <th style="width:15%"> Résolution </th>
-<th style="width:10%"> Afficher </th>
+<th style="width:10%"> Affichage </th>
 <th style="width:10%"> Fréquence d’actualisation </th>
 <th style="width:10%"> VISION </th>
 <th style="width:15%"> Audio </th>
@@ -99,7 +99,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <td> Jusqu’à 90 Hz </td>
 <td> 100 ° </td>
 <td> Jack 3,5-mm </td>
-<td> Aucun </td>
+<td> None </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Portable Acer</a> </td>
@@ -125,7 +125,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <td> Jusqu’à 90 Hz </td>
 <td> 95 ° </td>
 <td> Jack 3,5-mm </td>
-<td> Aucun </td>
+<td> None </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">ASUS</a> </td>
@@ -138,7 +138,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <td> Jusqu’à 90 Hz </td>
 <td> 105 ° </td>
 <td> Jack 3,5-mm </td>
-<td> Aucun </td>
+<td> None </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">Ordinateurs</a> </td>
@@ -151,7 +151,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <td> Jusqu’à 90 Hz </td>
 <td> 105 ° </td>
 <td> Jack 3,5-mm </td>
-<td> Aucun </td>
+<td> None </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -177,7 +177,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <td> Jusqu’à 90 Hz </td>
 <td> 105 ° </td>
 <td> Jack 3,5-mm </td>
-<td> Aucun </td>
+<td> None </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">Hewlett</a> </td>
@@ -190,7 +190,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <td> Jusqu’à 90 Hz </td>
 <td> 105 ° </td>
 <td> Jack 3,5-mm </td>
-<td> Aucun </td>
+<td> None </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -203,7 +203,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <td> Jusqu’à 90 Hz </td>
 <td> 105 ° </td>
 <td> Jack 3,5-mm </td>
-<td> Aucun </td>
+<td> None </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -216,7 +216,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <td> Jusqu’à 90 Hz </td>
 <td> 110 ° </td>
 <td> Intégré </td>
-<td> Aucun </td>
+<td> None </td>
 <td style="text-align: center;">Mécanique</td>
 <td> Automne 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
@@ -242,7 +242,7 @@ En savoir plus sur [le suivi à l’intérieur](https://docs.microsoft.com/windo
 <td> Jusqu’à 90 Hz </td>
 <td> 105 ° </td>
 <td> Jack 3,5-mm </td>
-<td> Aucun </td>
+<td> None </td>
 <td style="text-align: center;">Logiciel</td>
 <td> Automne 2017 </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>

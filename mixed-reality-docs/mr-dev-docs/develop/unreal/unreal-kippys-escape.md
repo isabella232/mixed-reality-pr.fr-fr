@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, réalité mixte, déployer sur un appareil, PC, documentation, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df199b6a3215158e15fb1252dd75c58aea5bc2ab
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010039"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580813"
 ---
 # <a name="the-making-of-kippys-escape"></a>La création de l’échappement de kippy
 
@@ -22,7 +22,7 @@ Kippy le robot se réveille pour se retrouver sur un îlot. C’est à vous de f
 > [!IMPORTANT]
 > Assurez-vous que vous utilisez un **moteur 4,25 ou ultérieur** , si vous générez l’échappement de kippy à partir du référentiel github.
 
-La séquence d’échappement de kippy est une application de l’exemple [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) Open source générée avec des outils inréalistes pour le moteur 4 et la [réalité mixte](https://github.com/microsoft/MixedReality-UXTools-Unreal). Dans ce billet, nous allons vous guider tout au long de notre processus, de la conception visuelle à la mise en œuvre et à l’optimisation de l’expérience. Vous trouverez plus d’informations sur le développement d’applications de réalité mixte avec les outils MRTK UX dans la [vue d’ensemble du développement inréel](unreal-development-overview.md).
+La séquence d’échappement de kippy est une application de l’exemple [HoloLens 2](/hololens/hololens2-hardware) Open source générée avec des outils inréalistes pour le moteur 4 et la [réalité mixte](https://github.com/microsoft/MixedReality-UXTools-Unreal). Dans ce billet, nous allons vous guider tout au long de notre processus, de la conception visuelle à la mise en œuvre et à l’optimisation de l’expérience. Vous trouverez plus d’informations sur le développement d’applications de réalité mixte avec les outils MRTK UX dans la [vue d’ensemble du développement inréel](unreal-development-overview.md).
 
 ## <a name="first-principles"></a>Premiers principes 
 
@@ -115,4 +115,4 @@ Démarrez votre HoloLens 2 et [Téléchargez](https://www.microsoft.com/p/kippys
 </tr>
 </table>
 
-Merci à nos amis sur [Framestore](https://www.framestore.com/) pour nous aider à donner à l’échappement de kippy. Du développement de caractères à la conception de ressources, à la programmation de jeux, leur collaboration sur ce projet était Pivotal.  
+Merci à nos amis sur [Framestore](https://www.framestore.com/) pour nous aider à donner à l’échappement de kippy. Du développement de caractères à la conception de ressources, à la programmation de jeux, leur collaboration sur ce projet était Pivotal.

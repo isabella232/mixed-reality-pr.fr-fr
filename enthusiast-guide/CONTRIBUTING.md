@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 28ca1653019252c749fe5977a06bff4503800c10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865434"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580185"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Contribution au Guide du passionné de réalité mixte
 
@@ -22,7 +22,7 @@ Nous vous remercions de votre intérêt dans le Guide du passionné. Nous appré
 > [!IMPORTANT]
 > Tous les dépôts qui publient sur docs.microsoft.com ont adopté le [Code de conduite Open Source Microsoft](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, consultez la [FAQ sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou envoyez vos questions ou vos commentaires à [opencode@microsoft.com](mailto:opencode@microsoft.com).<br>
 >
-> Les corrections mineures ou les clarifications pour la documentation, ainsi que les exemples de code dans les référentiels publics, sont couverts par les [Conditions d’utilisation du site web docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Les nouveautés et modifications significatives généreront un commentaire dans la requête de tirage pour vous inviter à signer un contrat de licence de contribution en ligne si vous n’êtes pas un employé de Microsoft. Vous devrez remplir le formulaire en ligne pour que nous puissions accepter votre demande de tirage (pull request).
+> Les corrections mineures ou les clarifications pour la documentation, ainsi que les exemples de code dans les référentiels publics, sont couverts par les [Conditions d’utilisation du site web docs.microsoft.com](/legal/termsofuse). Les nouveautés et modifications significatives généreront un commentaire dans la requête de tirage pour vous inviter à signer un contrat de licence de contribution en ligne si vous n’êtes pas un employé de Microsoft. Vous devrez remplir le formulaire en ligne pour que nous puissions accepter votre demande de tirage (pull request).
 
 ## <a name="before-you-start"></a>Avant de commencer
 
@@ -44,7 +44,7 @@ Le système de publication est lié à GitHub. ces étapes sont donc importantes
 
 ## <a name="how-to-make-a-change"></a>Comment apporter une modification
 
-| Pour suggérer une modification de la documentation, procédez comme suit : | Captures d’écran. |
+| Pour suggérer une modification de la documentation, procédez comme suit : | Captures d’écran |
 | :------------------- | :--------: |
 | 1. Si vous affichez une page Docs.microsoft.com, cliquez sur le bouton **modifier** en haut à droite de la page.  Vous êtes redirigé vers le fichier source Markdown correspondant dans le [dépôt GitHub](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide). | ![Bouton modifier](images/edit_button.jpg) |
 | 2. Si vous n’avez pas encore de compte GitHub, cliquez sur s' **inscrire** dans le coin supérieur droit et créez un nouveau compte. | ![Bouton d’inscription](images/signup-for-github-button.png)|
@@ -53,7 +53,7 @@ Le système de publication est lié à GitHub. ces étapes sont donc importantes
 | 5. cliquez sur Aperçu des modifications pour vérifier que la mise en forme se présente comme prévu. | ![Prévisualiser les modifications](images/edit-in-github.png)|
 | 6. quand vous avez terminé, faites défiler la page vers le bas et cliquez sur « proposer un changement de fichier ». une page de comparaison des modifications s’affiche, vous permettant de vérifier vos modifications. Cliquez ensuite sur le bouton « créer une requête de tirage » pour soumettre vos modifications. Et vous avez terminé ! | ![Proposer une modification](images/propose.jpg)|
 
-Une fois que vous avez envoyé des modifications (via une requête de tirage), elles sont examinées par un membre de l’équipe de documentation. Si votre demande est acceptée, les mises à jour sont publiées dans [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide) .
+Une fois que vous avez envoyé des modifications (via une requête de tirage), elles sont examinées par un membre de l’équipe de documentation. Si votre demande est acceptée, les mises à jour sont publiées dans [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide) .
 
 * Pour la révision interne uniquement, vous pouvez voir vos modifications sur [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://review.docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/?branch=master) .
 
@@ -85,7 +85,7 @@ Pour ajouter une redirection à .openpublishing.redirection.jssur, ajoutez une e
 
 - `source_path`Est le chemin d’accès relatif au référentiel relatif à l’ancien article que vous supprimez. Assurez-vous que le chemin commence par `mixed-reality-docs/enthusiast-guide` et se termine par `.md` .
 - `redirect_url`Est l’URL publique relative de l’ancien article vers le nouvel article. Assurez-vous que cette URL **ne** contient `mixed-reality-docs/enthusiast-guide` `.md` pas ou, car elle fait référence à l’URL publique et non au chemin d’accès au référentiel. La liaison à une section dans le nouvel article à l’aide de `#section` est autorisée. Vous pouvez également utiliser un chemin d’accès absolu à un autre site, si nécessaire.
-- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. Par défaut, il s’agit de `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
+- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. La valeur par défaut est `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
 
 Si vous ajoutez une redirection, veillez à supprimer également l’ancien fichier.
 
@@ -128,7 +128,7 @@ Utilisez le flux de travail suivant pour *créer de nouveaux articles* dans la d
 
 ## <a name="working-with-branches"></a>Utilisation des branches
 
-Le [référentiel github du Guide du adepte de la réalité mixte](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) utilise deux branches parentes principales : [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), ce contenu peut être consulté sur le [site intermédiaire](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)et en [direct](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), pour le contenu qui s’affiche sur le [site en ligne](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide).
+Le [référentiel github du Guide du adepte de la réalité mixte](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) utilise deux branches parentes principales : [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), ce contenu peut être consulté sur le [site intermédiaire](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)et en [direct](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), pour le contenu qui s’affiche sur le [site en ligne](/windows/mixed-reality/enthusiast-guide).
 
 Lorsque vous faites des contributions, soumettez votre demande de tirage (PR) à la branche **principale** . Cette branche qui peut être visualisée sur le site intermédiaire ne doit contenir que des contributions prêtes pour publication sur le site actif. Vous pouvez également créer et soumettre une branche avec votre propre nom de branche unique, qui peut être sélectionné et affiché dans le site intermédiaire. (La branche **active** est uniquement autorisée à être utilisée par les administrateurs de contenu.)
 
@@ -138,13 +138,13 @@ Les ressources suivantes vous permettront d’apprendre à modifier la documenta
 
 - [Principes de base de Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Affiche de référence de démarque-en un clin d’œil](images/MarkdownPoster.pdf)
-- [Ressources supplémentaires pour l’écriture de la démarque pour docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Ressources supplémentaires pour l’écriture de la démarque pour docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>Ajout de tables
 
 En raison de la façon dont les tableaux de styles docs.microsoft.com, ils n’ont pas de bordures ou de styles personnalisés, même si vous essayez le style CSS en ligne. Il semblera fonctionner pendant une période de temps limitée, mais la plateforme finira par supprimer le style de la table. Vous devez donc anticiper et garder vos tables simples. [Voici un site qui simplifie les tableaux de démarques](https://www.tablesgenerator.com/markdown_tables).
 
-L' [extension docs de démarque pour Visual Studio code](https://docs.microsoft.com/teamblog/docs-extension) facilite également la génération de table si vous utilisez [Visual Studio code (voir ci-dessous)](#using-visual-studio-code) pour modifier la documentation.
+L' [extension docs de démarque pour Visual Studio code](/teamblog/docs-extension) facilite également la génération de table si vous utilisez [Visual Studio code (voir ci-dessous)](#using-visual-studio-code) pour modifier la documentation.
 
 ### <a name="adding-images"></a>Ajouter des images
 

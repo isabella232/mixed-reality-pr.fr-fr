@@ -6,32 +6,32 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, synchroniser, ancrage spatial, transfert, multijoueur, vue, scénario, procédure pas à pas, exemple de code, transfert, transfert d’ancrage local, exportation d’ancrage, importation d’ancrage
-ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009649"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582799"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>Transferts d’ancrage locaux dans DirectX
 
-Dans les situations où vous ne pouvez pas utiliser les <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, les transferts d’ancrage locaux permettent à un appareil hololens d’exporter une ancre à importer par un deuxième appareil hololens.
+Dans les situations où vous ne pouvez pas utiliser les <a href="/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, les transferts d’ancrage locaux permettent à un appareil hololens d’exporter une ancre à importer par un deuxième appareil hololens.
 
 >[!NOTE]
->Les transferts d’ancrage locaux fournissent un rappel d’ancrage moins fiable que les <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, et les appareils iOS et Android ne sont pas pris en charge par cette approche.
+>Les transferts d’ancrage locaux fournissent un rappel d’ancrage moins fiable que les <a href="/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, et les appareils iOS et Android ne sont pas pris en charge par cette approche.
 
 >[!NOTE]
 >Les extraits de code de cet article illustrent actuellement l’utilisation de C++/CX au lieu des/WinRT C++ conformes à C + +17, tels qu’ils sont utilisés dans le [modèle de projet holographique c++](../develop/native/creating-a-holographic-directx-project.md).  Les concepts sont équivalents pour un projet C++/WinRT, bien que vous deviez traduire le code.
 
 ## <a name="transferring-spatial-anchors"></a>Transfert des ancres spatiales
 
-Vous pouvez transférer des ancres spatiales entre des appareils Windows Mixed Reality à l’aide de [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). Cette API vous permet de regrouper une ancre avec toutes les données de capteur de prise en charge nécessaires pour trouver cet emplacement exact dans le monde, puis d’importer cette offre groupée sur un autre appareil. Une fois que l’application sur le deuxième appareil a importé cette ancre, chaque application peut restituer des hologrammes à l’aide du système de coordonnées de cette ancre spatiale partagée, qui apparaît alors au même endroit dans le monde réel.
+Vous pouvez transférer des ancres spatiales entre des appareils Windows Mixed Reality à l’aide de [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager). Cette API vous permet de regrouper une ancre avec toutes les données de capteur de prise en charge nécessaires pour trouver cet emplacement exact dans le monde, puis d’importer cette offre groupée sur un autre appareil. Une fois que l’application sur le deuxième appareil a importé cette ancre, chaque application peut restituer des hologrammes à l’aide du système de coordonnées de cette ancre spatiale partagée, qui apparaît alors au même endroit dans le monde réel.
 
 Notez que les ancres spatiales ne peuvent pas être transférées entre différents types d’appareils, par exemple une ancre spatiale HoloLens peut ne pas être localisable à l’aide d’un casque immersif.  Les ancres transférées ne sont pas non plus compatibles avec les appareils iOS ou Android.
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurer votre application pour utiliser la fonctionnalité spatialPerception
 
-Pour pouvoir utiliser le [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx), votre application doit avoir l’autorisation d’utiliser la fonctionnalité SpatialPerception. Cela est nécessaire, car le transfert d’une ancre spatiale implique le partage d’images de capteur collectées au fil du temps à proximité de cette ancre, qui peut inclure des informations sensibles.
+Pour pouvoir utiliser le [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager), votre application doit avoir l’autorisation d’utiliser la fonctionnalité SpatialPerception. Cela est nécessaire, car le transfert d’une ancre spatiale implique le partage d’images de capteur collectées au fil du temps à proximité de cette ancre, qui peut inclure des informations sensibles.
 
 Déclarez cette fonctionnalité dans le fichier Package. appxmanifest pour votre application. Voici un exemple :
 
@@ -53,11 +53,11 @@ La fonctionnalité provient de l’espace de noms **UAP2** . Pour accéder à ce
     >
 ```
 
-**Remarque :** Votre application devra demander la fonctionnalité au moment de l’exécution avant de pouvoir accéder aux API d’exportation/importation SpatialAnchor. Consultez [RequestAccessAsync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.requestaccessasync.aspx) dans les exemples ci-dessous.
+**Remarque :** Votre application devra demander la fonctionnalité au moment de l’exécution avant de pouvoir accéder aux API d’exportation/importation SpatialAnchor. Consultez [RequestAccessAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) dans les exemples ci-dessous.
 
 ## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>Sérialisez les données d’ancrage en les exportant avec SpatialAnchorTransferManager
 
-Une fonction d’assistance est incluse dans l’exemple de code pour exporter (sérialiser) des données [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) . Cette API d’exportation sérialise toutes les ancres dans une collection de paires clé-valeur associant des chaînes à des points d’ancrage.
+Une fonction d’assistance est incluse dans l’exemple de code pour exporter (sérialiser) des données [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) . Cette API d’exportation sérialise toutes les ancres dans une collection de paires clé-valeur associant des chaînes à des points d’ancrage.
 
 ```
 // ExportAnchorDataAsync: Exports a byte buffer containing all of the anchors in the given collection.
@@ -274,7 +274,7 @@ Si les données peuvent être importées, nous obtenons une vue cartographique d
 
 ## <a name="special-considerations"></a>Considérations spéciales
 
-L’API [TryExportAnchorsAsync](https://msdn.microsoft.com/library/windows/apps/mt592763.aspx) permet d’exporter plusieurs [SpatialAnchors](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) dans le même objet blob binaire opaque. Toutefois, il existe une différence subtile entre les données que l’objet BLOB doit inclure, selon qu’un seul SpatialAnchor ou plusieurs SpatialAnchors sont exportés dans un seul appel.
+L’API [TryExportAnchorsAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) permet d’exporter plusieurs [SpatialAnchors](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) dans le même objet blob binaire opaque. Toutefois, il existe une différence subtile entre les données que l’objet BLOB doit inclure, selon qu’un seul SpatialAnchor ou plusieurs SpatialAnchors sont exportés dans un seul appel.
 
 ### <a name="export-of-a-single-spatialanchor"></a>Exportation d’un SpatialAnchor unique
 
@@ -675,6 +675,6 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 C’est tout ! Maintenant, vous devez disposer de suffisamment d’informations pour essayer de localiser les ancres reçues sur le réseau. Là encore, Notez que le client doit disposer d’un nombre suffisant de données de suivi visuel pour l’espace pour la localisation de l’ancre. Si cela ne fonctionne pas immédiatement, essayez de vous lancer pendant un certain temps. Si cela ne fonctionne toujours pas, faites en sorte que le serveur envoie davantage d’ancres et qu’il utilise des communications réseau pour s’en contenter. Vous pouvez essayer cela en téléchargeant le HolographicSpatialAnchorTransferSample, en configurant les adresses IP du client et du serveur, et en le déployant sur des appareils HoloLens client et serveur.
 
 ## <a name="see-also"></a>Voir aussi
-* [Bibliothèque de modèles parallèles](https://msdn.microsoft.com/library/dd492418.aspx)
-* [Windows. Networking. StreamSocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
-* [Windows. Networking. StreamSocketListener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)
+* [Bibliothèque de modèles parallèles](/cpp/parallel/concrt/parallel-patterns-library-ppl)
+* [Windows. Networking. StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [Windows. Networking. StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

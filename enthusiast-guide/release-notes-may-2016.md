@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, notes de publication, système d’exploitation, fonctionnalités, Build, plateforme
-ms.openlocfilehash: db5e3b87eaf619a0f25e07d0698499a89a1b4b12
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 290369f94797a790ec0a2bb4227d84902d31eb43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009499"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581525"
 ---
 # <a name="release-notes---may-2016"></a>Notes de publication - Mai 2016
 
-L’équipe HoloLens s’engage à vous fournir les dernières mises à jour de fonctionnalités et les correctifs les plus importants par le biais du programme Windows Insider. Grâce à toutes vos suggestions, nous prenons vos commentaires à coeur. Continuez à [nous faire part de vos commentaires](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) via le hub de commentaires, les [Forums des développeurs](https://forums.hololens.com) et [ @HoloLens Twitter via ](https://twitter.com/hololens).
+L’équipe HoloLens s’engage à vous fournir les dernières mises à jour de fonctionnalités et les correctifs les plus importants par le biais du programme Windows Insider. Grâce à toutes vos suggestions, nous prenons vos commentaires à coeur. Continuez à [nous faire part de vos commentaires](/windows/mixed-reality/give-us-feedback) via le hub de commentaires, les [Forums des développeurs](https://forums.hololens.com) et [ @HoloLens Twitter via ](https://twitter.com/hololens).
 
 **Version Release :** Windows holographique mai 2016 mise à jour (**10.0.14342.1016**)
 
@@ -34,7 +34,7 @@ Pour effectuer une mise à jour vers la version actuelle, ouvrez l’application
    * Essayez d’examiner un hologramme et de le faire pivoter en disant « Facer »
    * Modifiez sa taille en disant « plus grande » ou « plus petite »
    * Déplacez une application en disant « Hey Cortana, déplacer le nom de l' *application* ici ».
-* Nous avons **facilité le développement de HoloLens**. Vous pouvez maintenant parcourir, télécharger et télécharger des fichiers via le [portail des appareils Windows](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal). Vous pouvez accéder au dossier documents, au dossier images et au stockage local pour toutes les applications que vous avez chargées ou déployées par le biais de Visual Studio.
+* Nous avons **facilité le développement de HoloLens**. Vous pouvez maintenant parcourir, télécharger et télécharger des fichiers via le [portail des appareils Windows](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal). Vous pouvez accéder au dossier documents, au dossier images et au stockage local pour toutes les applications que vous avez chargées ou déployées par le biais de Visual Studio.
 * L' **émulateur prend maintenant en charge la connexion avec un compte Microsoft** comme vous le feriez sur un HoloLens réel, que vous pouvez activer à partir du menu outils supplémentaires « >> ».
 * **les applications 2D masquent désormais la barre et le curseur de l’application lorsque vous regardez la vidéo en mode plein écran** pour éviter toute distraction. Votre expérience de visionnage vidéo sera encore plus agréable sur HoloLens.
 * Vous pouvez également **Épingler des photos sans la barre de l’application** dans votre monde.
@@ -59,7 +59,7 @@ Pour effectuer une mise à jour vers la version actuelle, ouvrez l’application
 * **Inscription d’application** plus rapide et **détection automatique du fuseau horaire** pendant l’OOBE, ce qui vous offre la meilleure expérience utilisateur.
 * Le **sens du stockage** vous permet d’afficher l’espace disque restant et utilisé par le système et les applications dans l’application paramètres.
 * Nous avons convergé l’application de commentaires et l’intérieur d’un concentrateur en un **Hub de commentaires** d’application unique, qui est l’outil incontournable pour **nous faire part de vos commentaires** sur les fonctionnalités que vous aimez, celles qui nécessitent une amélioration et celles que vous pourriez faire sans. Quand vous rejoignez le programme Insider, vous pouvez suivre les **dernières nouvelles de l’Insider**, **évaluer les builds** et vous rendre sur les **Commentaires** de votre Hub de commentaires.
-* Nous avons également [publié une build d’émulateur HoloLens mise à jour](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools) .
+* Nous avons également [publié une build d’émulateur HoloLens mise à jour](/windows/mixed-reality/develop/install-the-tools) .
 * Vos vidéos de réalité mixte s’affichent désormais mieux en raison de la **stabilisation vidéo** automatique.
 
 ## <a name="major-fixes"></a>Correctifs principaux
@@ -113,12 +113,12 @@ Nous avons résolu les problèmes liés à Visual Studio où
 * [Notes de publication - Mars 2016](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>Voir aussi
-* [Problèmes connus concernant HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [Installer les outils](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [Shell](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
-* [Mise à jour des applications UWP 2D pour la réalité mixte](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/building-2d-apps)
-* [Accessoires matériels](https://docs.microsoft.com/windows/mixed-reality/discover/hardware-accessories)
-* [MRC (Mixed Reality Capture)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture)
-* [Entrée vocale](https://docs.microsoft.com/windows/mixed-reality/design/voice-input)
-* [Envoi d’une application au Windows Store](https://docs.microsoft.com/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
-* [Utilisation de l’émulateur HoloLens](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)
+* [Problèmes connus concernant HoloLens](/windows/mixed-reality/hololens-known-issues)
+* [Installer les outils](/windows/mixed-reality/develop/install-the-tools)
+* [Shell](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
+* [Mise à jour des applications UWP 2D pour la réalité mixte](/windows/mixed-reality/develop/porting-apps/building-2d-apps)
+* [Accessoires matériels](/windows/mixed-reality/discover/hardware-accessories)
+* [MRC (Mixed Reality Capture)](/windows/mixed-reality/mixed-reality-capture)
+* [Entrée vocale](/windows/mixed-reality/design/voice-input)
+* [Envoi d’une application au Windows Store](/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
+* [Utilisation de l’émulateur HoloLens](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

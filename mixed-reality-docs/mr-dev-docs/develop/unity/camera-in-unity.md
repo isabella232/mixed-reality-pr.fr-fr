@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendu holographique, holographique, immersif, point de focus, mémoire tampon de profondeur, orientation uniquement, positionnelle, opaque, transparent, clip, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006389"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581127"
 ---
 # <a name="camera-in-unity"></a>Appareil photo dans Unity
 
@@ -33,7 +33,7 @@ Quand vous portez un casque de réalité mixte, il devient le centre de votre mo
 Les paramètres par défaut du composant appareil photo Unity sont destinés aux applications 3D traditionnelles, qui nécessitent un arrière-plan skybox, car ils n’ont pas de monde réel.
 
 * Quand vous exécutez sur un **[casque immersif](../../discover/immersive-headset-hardware-details.md)**, vous affichez tout ce que l’utilisateur voit, et vous souhaiterez probablement conserver le skybox.
-* Toutefois, en cas d’exécution sur un **casque holographique** comme [HoloLens](../../hololens-hardware-details.md), le monde réel doit apparaître derrière tout ce que l’appareil photo rend. Définissez l’arrière-plan de la caméra sur transparent (dans HoloLens, le rendu noir est transparent) au lieu d’une texture skybox :
+* Toutefois, en cas d’exécution sur un **casque holographique** comme [HoloLens](/hololens/hololens1-hardware), le monde réel doit apparaître derrière tout ce que l’appareil photo rend. Définissez l’arrière-plan de la caméra sur transparent (dans HoloLens, le rendu noir est transparent) au lieu d’une texture skybox :
     1. Sélectionner la caméra principale dans le volet de la hiérarchie
     2. Dans le panneau Inspecteur, recherchez le composant Camera et modifiez la liste déroulante Clear Flags de skybox en Color unie
     3. Sélectionnez le sélecteur de couleur d’arrière-plan et modifiez les valeurs RVBA en (0, 0, 0, 0)
@@ -81,7 +81,7 @@ Si vous savez que vous créez une [expérience d’orientation uniquement](coord
 En partageant le tampon de profondeur de votre application sur Windows, chaque trame donne à votre application l’un des deux boosters de stabilité de l’hologramme, en fonction du type de casque pour lequel vous effectuez le rendu :
 
 * Les **casques immersifs** peuvent prendre en charge la reprojection de position lorsqu’une mémoire tampon de profondeur est fournie, en ajustant vos hologrammes pour la prédiction à la fois à la position et à l’orientation.
-* Les **casques holographiques** présentent différentes méthodes. HoloLens 1 sélectionne automatiquement un [point de focus](focus-point-in-unity.md) lorsqu’une mémoire tampon de profondeur est fournie, ce qui optimise la stabilité de l’hologramme le long du plan qui croise la plus grande partie du contenu. HoloLens 2 va stabiliser le contenu à l’aide [de Depth LSR (consultez la section Notes)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
+* Les **casques holographiques** présentent différentes méthodes. HoloLens 1 sélectionne automatiquement un [point de focus](focus-point-in-unity.md) lorsqu’une mémoire tampon de profondeur est fournie, ce qui optimise la stabilité de l’hologramme le long du plan qui croise la plus grande partie du contenu. HoloLens 2 va stabiliser le contenu à l’aide [de Depth LSR (consultez la section Notes)](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 Pour définir si votre application Unity fournira un tampon de profondeur à Windows :
 

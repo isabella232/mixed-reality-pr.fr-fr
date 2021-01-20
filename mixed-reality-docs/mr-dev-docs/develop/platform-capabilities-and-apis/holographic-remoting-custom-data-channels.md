@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, canaux de données
-ms.openlocfilehash: 6fd2bbd8ce2dedc3b13674576a23a0484ebe1419
-ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
+ms.openlocfilehash: a11fe0bb023ae34692015585f6e1689db4330ac7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97102904"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582613"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>Canaux de données de communication à distance holographique personnalisés
 
@@ -118,5 +118,5 @@ m_customDataChannel.Close();
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)
-* [Termes du contrat de licence de la communication à distance holographique](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Termes du contrat de licence de la communication à distance holographique](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

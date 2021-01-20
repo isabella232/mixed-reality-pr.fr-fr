@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6bcd6db30bf3a8a6e69d45c10be523d45ee4f82a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: f448cafe3d0952ada63d545e44b58001779a1470
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725410"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580514"
 ---
 # <a name="headset-display-faqs"></a>Affichage du casque FAQ
 
@@ -52,7 +52,7 @@ ms.locfileid: "97725410"
 
 ## <a name="my-headset-display-occasionally-turns-black-after-some-use"></a>Mon casque s’affiche parfois en noir après une certaine utilisation
 
-* Essayez de désactiver les fonctionnalités d’interruption ou d’économie d’énergie USB sur votre PC. Par exemple, dans **paramètres > système > Power & Sleep > la [suspension sélective USB](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-selective-suspend)**, le paramètre « autoriser l’ordinateur à éteindre cet appareil pour économiser de l’énergie » dans Device Manager et les paramètres d’économie d’énergie USB dans le microprogramme de votre PC.
+* Essayez de désactiver les fonctionnalités d’interruption ou d’économie d’énergie USB sur votre PC. Par exemple, dans **paramètres > système > Power & Sleep > la [suspension sélective USB](/windows-hardware/drivers/usbcon/usb-selective-suspend)**, le paramètre « autoriser l’ordinateur à éteindre cet appareil pour économiser de l’énergie » dans Device Manager et les paramètres d’économie d’énergie USB dans le microprogramme de votre PC.
 * Déconnectez temporairement les autres périphériques USB et les périphériques connectés à votre PC.
 * Vérifiez que la version du pilote GPU est récente et recherchez les nouveaux problèmes de performances et de compatibilité et les régressions sur les nouveaux pilotes.
 

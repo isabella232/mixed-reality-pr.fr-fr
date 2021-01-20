@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, prise en main, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, WinRT, DLL
-ms.openlocfilehash: 0d181d1eff644de0512c40a140474612a1540b40
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: f32b5b3ddbee2e24e61d08b0a1b887b7b06e6da4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247752"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580400"
 ---
 # <a name="winrt-in-unreal"></a>WinRT dans Unreal
 
@@ -28,6 +28,6 @@ Si vous suivez le parcours de développement Unreal que nous avons mis en place,
 
 ## <a name="see-also"></a>Voir aussi
 
-* [API C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
-* [FileSavePicker, classe](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
-* [Bibliothèques tierces non réelles](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html) 
+* [API C++/WinRT](/windows/uwp/cpp-and-winrt-apis/)
+* [FileSavePicker, classe](/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
+* [Bibliothèques tierces non réelles](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html)

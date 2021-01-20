@@ -3,12 +3,12 @@ title: FAQ sur la voix et l’audio
 description: Résolution des problèmes vocaux et audio Windows Mixed Reality qui va au-delà de notre documentation de support technique standard.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, problèmes audio, problèmes vocaux
-ms.openlocfilehash: d685190248dd17792f941cf53e3a57499cd3e662
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fff5d661dbe61d4c9364c83e3bd0c6ddb8ab5cc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725890"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581410"
 ---
 # <a name="speech-and-audio-faqs"></a>FAQ sur la voix et l’audio
 
@@ -35,7 +35,7 @@ ms.locfileid: "97725890"
 
 * Certaines applications, comme celles lancées par SteamVR, peuvent perdre du son ou se bloquer lorsque le périphérique audio change quand vous démarrez ou arrêtez le portail de réalité mixte. Pour corriger cela, rouvrez le portail de réalité mixte et redémarrez l’application.
 * Si un autre périphérique USB multimédia (par exemple, une webcam) partage le même concentrateur USB interne ou externe avec le casque Windows Mixed Reality, le casque ou le casque audio du casque peut parfois avoir un très bon bruit ou pas de son. Connectez votre casque à un port USB qui utilise un autre concentrateur ou déconnectez/désactivez votre autre périphérique multimédia USB.
-* Si vous remarquez une forte rafale de bruit de votre casque connecté, le concentrateur USB du PC peut ne pas être en mesure de fournir suffisamment de puissance au casque Windows Mixed Reality. Si cela se produit, envoyez un bogue au [Hub de commentaires](https://docs.microsoft.com/hololens/hololens-feedback) et essayez :
+* Si vous remarquez une forte rafale de bruit de votre casque connecté, le concentrateur USB du PC peut ne pas être en mesure de fournir suffisamment de puissance au casque Windows Mixed Reality. Si cela se produit, envoyez un bogue au [Hub de commentaires](/hololens/hololens-feedback) et essayez :
     * retrait des câbles d’extension
     * à l’aide d’un CONCENTRateur USB 3,0 alimenté en externe et dédié
     * un port USB différent sur le PC

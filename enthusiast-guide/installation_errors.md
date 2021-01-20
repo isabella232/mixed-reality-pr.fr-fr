@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, installation
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56ead28a5809eadef1797507168b68cbaf79953e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 056caca0b7e562007178929d4a59c2faeaece450
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726060"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581666"
 ---
 # <a name="installation-errors"></a>Erreurs d'installation
 
@@ -31,7 +31,7 @@ Windows Mixed Reality requiert un pilote de carte graphique qui prend en charge 
 
 ## <a name="before-we-can-set-up-windows-mixed-reality-your-administrator-will-need-to-enable-it-for-your-organization-learn-more"></a>«Avant de pouvoir configurer Windows Mixed Reality, votre administrateur doit l’activer pour votre organisation. En savoir plus»
 
-Vous êtes probablement sur un réseau géré par l’entreprise et votre organisation utilise Windows Server Update Services (WSUS). Ces stratégies et d’autres peuvent bloquer le téléchargement. Contactez le service informatique ou l’administrateur système de votre organisation pour [activer Windows Mixed Reality](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality#enable).
+Vous êtes probablement sur un réseau géré par l’entreprise et votre organisation utilise Windows Server Update Services (WSUS). Ces stratégies et d’autres peuvent bloquer le téléchargement. Contactez le service informatique ou l’administrateur système de votre organisation pour [activer Windows Mixed Reality](/windows/application-management/manage-windows-mixed-reality#enable).
 
 ## <a name="we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading"></a>« Nous n’avons pas pu télécharger le logiciel de réalité mixte » ou « raccrocher pendant le téléchargement »
 

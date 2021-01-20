@@ -3,12 +3,12 @@ title: Utilisation de SteamVR avec Windows Mixed Reality
 description: Découvrez comment configurer et jouer des jeux SteamVR sur des casques et des contrôleurs Windows Mixed Reality avec des PC compatibles.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, jeux, SteamVR, Steam, configuration système requise
-ms.openlocfilehash: 01fac0f6ce88e473da8a8d9300a4169b37b74078
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: 4a2d3065a12cdc413eae5b7ad164db6e820455ae
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031965"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581797"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Utilisation de SteamVR avec Windows Mixed Reality
 
@@ -163,6 +163,6 @@ Si vous avez des questions ou des commentaires à partager, vous pouvez égaleme
 
 * [Résolution des problèmes de SteamVR avec Windows Mixed Reality](steamvr-questions.md)
 * [Utilisation de jeux et d’applications dans Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
-* [Utilisation de contrôleurs HP dans Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-* [Utilisation de contrôleurs HP dans des conditions inréelles](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+* [Utilisation de contrôleurs HP dans Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+* [Utilisation de contrôleurs HP dans des conditions inréelles](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 * [Envoyer des bogues et des commentaires](filing-feedback.md)

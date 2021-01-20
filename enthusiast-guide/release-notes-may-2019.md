@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: Notes de publication, version, Windows 10, Build, 19h1, OS, mai 2019
-ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b8df518b03544bd2473ff67030ed008e1a2bc26e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007119"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581500"
 ---
 # <a name="release-notes---may-2019"></a>Notes de publication-mai 2019
 
@@ -50,7 +50,7 @@ Nous effectuons le suivi d’un problème nécessitant la connexion d’une anal
 
 ## <a name="provide-feedback-and-report-issues"></a>Fournir des commentaires et signaler des problèmes
 
-Utilisez l' [application Hub de commentaires sur votre PC Windows 10](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) ou votre appareil HoloLens pour fournir des commentaires et signaler des problèmes. L’utilisation de feedback Hub garantit que toutes les informations de diagnostic nécessaires sont incluses pour aider nos ingénieurs à déboguer et résoudre rapidement le problème.
+Utilisez l' [application Hub de commentaires sur votre PC Windows 10](/windows/mixed-reality/give-us-feedback) ou votre appareil HoloLens pour fournir des commentaires et signaler des problèmes. L’utilisation de feedback Hub garantit que toutes les informations de diagnostic nécessaires sont incluses pour aider nos ingénieurs à déboguer et résoudre rapidement le problème.
 
 >[!NOTE]
 >Veillez à accepter l’invite qui vous demande si vous souhaitez que le hub de commentaires accède à votre dossier documents (sélectionnez **Oui** lorsque vous y êtes invité).
@@ -66,8 +66,7 @@ Utilisez l' [application Hub de commentaires sur votre PC Windows 10](https://do
 * [Notes de publication - Mars 2016](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>Voir aussi
-* [Prise en charge des casques immersifs (lien externe)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [Prise en charge des casques immersifs (lien externe)](./troubleshooting-windows-mixed-reality.md)
 * [Prise en charge de HoloLens (lien externe)](https://support.microsoft.com/products/hololens)
-* [Installer les outils](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+* [Installer les outils](/windows/mixed-reality/develop/install-the-tools)
 * [Faites-nous part de vos commentaires] (https://docs.microsoft.com/windows/mixed-reality/give-us-feedback
-

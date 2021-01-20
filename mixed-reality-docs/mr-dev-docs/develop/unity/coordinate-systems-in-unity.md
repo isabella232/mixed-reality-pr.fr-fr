@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: système de coordonnées, système de coordonnées spatiales, orientation uniquement, à l’échelle assise, à l’échelle debout, mise à l’échelle de l’espace, à l’échelle mondiale, 360 de degrés, assis, debout, salle, monde, échelle, position, orientation, Unity, Ancre, ancrage spatial, point d’ancrage universel, verrouillage universel, verrouillage universel, verrouillage du corps, verrouillage du corps, perte de suivi, localisabilité, limites, recentre, casque de réalité mixte, casque de réalité
-ms.openlocfilehash: 900c393bf9ab09f1ac49e3108488d081f8025c19
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: aa68ae44e09dfe579f8ab8924d1b300506a1f00e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010280"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581063"
 ---
 # <a name="coordinate-systems-in-unity"></a>Systèmes de coordonnées dans Unity
 
@@ -102,7 +102,7 @@ Pour ajouter une ancre universelle, appelez AddComponent <WorldAnchor> () sur l�
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-Et voilà ! Cet objet de jeu sera désormais ancré à son emplacement actuel dans le monde physique : vous pouvez constater que ses coordonnées universelles s’ajustent légèrement au fil du temps pour garantir l’alignement physique. Utilisez la [persistance](persistence-in-unity.md) pour rechercher à nouveau cet emplacement d’ancrage dans une session d’application future.
+C’est tout ! Cet objet de jeu sera désormais ancré à son emplacement actuel dans le monde physique : vous pouvez constater que ses coordonnées universelles s’ajustent légèrement au fil du temps pour garantir l’alignement physique. Utilisez la [persistance](persistence-in-unity.md) pour rechercher à nouveau cet emplacement d’ancrage dans une session d’application future.
 
 ### <a name="removing-a-world-anchor"></a>Suppression d’une ancre mondiale
 
@@ -163,15 +163,15 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>Partage d’ancres sur plusieurs appareils
 
-Utilisez les <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre Cloud durable à partir d’un WorldAnchor local, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu affiché par rapport à cette ancre dans le même emplacement physique.  Cette technique autorise les expériences partagées en temps réel.
+Utilisez les <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre Cloud durable à partir d’un WorldAnchor local, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu affiché par rapport à cette ancre dans le même emplacement physique.  Cette technique autorise les expériences partagées en temps réel.
 
-Pour commencer à créer des expériences partagées dans Unity, essayez les Démarrages rapides de 5 minutes d' <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Unity spatiales Azure Unity</a>.
+Pour commencer à créer des expériences partagées dans Unity, essayez les Démarrages rapides de 5 minutes d' <a href="/azure/spatial-anchors/unity-overview" target="_blank">Unity spatiales Azure Unity</a>.
 
-Une fois que vous êtes opérationnel avec les ancres spatiales Azure, vous pouvez <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">créer et localiser des ancres dans Unity</a>.
+Une fois que vous êtes opérationnel avec les ancres spatiales Azure, vous pouvez <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">créer et localiser des ancres dans Unity</a>.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours du point de contrôle de développement Unity que nous avons mis en place, vous êtes au cœur de l’exploration des blocs de construction de la réalité mixte. À partir de là, vous pouvez passer au module suivant :
 
 > [!div class="nextstepaction"]
 > [Pointage du regard](gaze-in-unity.md)
@@ -190,5 +190,5 @@ Vous pouvez revenir aux [points de contrôle de développement Unity](unity-deve
 * [Ancres spatiales](../../design/spatial-anchors.md)
 * [Persistance dans Unity](persistence-in-unity.md)
 * [Expériences partagées dans Unity](shared-experiences-in-unity.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Kit de développement logiciel (SDK) d’ancre spatiale Azure pour Unity</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Kit de développement logiciel (SDK) d’ancre spatiale Azure pour Unity</a>

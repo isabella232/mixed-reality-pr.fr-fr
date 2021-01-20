@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: La réalité mixte, le regard, le regard, l’interaction, la conception, le suivi des yeux, le suivi des têtes, le casque de réalité mixte, le casque Windows Mixed Reality, le casque de réalité virtuelle, HoloLens, MRTK et la réalité mixte Toolkit
-ms.openlocfilehash: f9e79f8d600002f63e87316ea588741a21c0d68b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bfbf58ad065f91b27208d36ba63672ee5c28dfdd
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847936"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582335"
 ---
 # <a name="gaze-and-commit"></a>Pointer du regard et valider
 
@@ -40,7 +40,7 @@ Voici quelques exemples de la façon dont vous êtes un développeur de réalit�
     </colgroup>
     <tr>
         <td><strong>Modèle d’entrée</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
@@ -135,7 +135,7 @@ Après avoir ciblé un objet ou un élément d’interface utilisateur, l’util
 Les méthodes de validation suivantes sont prises en charge :
 - Mouvement d’appui sur air (autrement dit, soulevez votre main et regroupez le doigt et le curseur de votre index)
 - Dites _« Sélectionner »_ ou l’une des commandes vocales ciblées
-- Appuyer sur un bouton unique sur un [Clicker HoloLens](https://docs.microsoft.com/hololens/hololens1-clicker)
+- Appuyer sur un bouton unique sur un [Clicker HoloLens](/hololens/hololens1-clicker)
 - Appuyez sur le bouton « A » sur un boîtier de manette Xbox
 - Appuyez sur le bouton « A » sur un contrôleur d’adaptateur Xbox
 
@@ -295,4 +295,3 @@ Voici trois choses que vous devez envisager :
 * [Mains : Pointer et valider](point-and-commit.md)
 * [Interactions instinctuelles](interaction-fundamentals.md)
 * [Entrée vocale](voice-input.md)
-

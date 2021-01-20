@@ -1,19 +1,19 @@
 ---
-title: Profilage avec des Insights inréels
+title: Profilage avec Unreal Insights
 description: Découvrez comment utiliser des Insights inréels sur HoloLens 2.
 author: sajidfarooq
 ms.author: v-hferrone
 ms.date: 12/10/2020
 ms.topic: article
 keywords: Moteur 4, UE4, HoloLens, HoloLens 2, développement, profilage non réel, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 20e620f147f2cf5ee05073467c8ce7335340d59d
-ms.sourcegitcommit: 53bde413a174712cb9d3794d02d96363a2d599cd
+ms.openlocfilehash: b41d36679adfb35b5cc3561b8d5e7734654e7fb5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97486338"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580834"
 ---
-# <a name="profiling-with-unreal-insights"></a>Profilage avec des Insights inréels 
+# <a name="profiling-with-unreal-insights"></a>Profilage avec Unreal Insights 
 
 Le système de profilage qui collecte, analyse et visualise les données à partir d’un moteur inréel [est un](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Overview/index.html) système de profilage. Le système de profilage peut vous aider à identifier les goulots d’étranglement d’optimisation et les zones où les performances des applications peuvent utiliser une augmentation. Normalement, vous activez les Insights non réels directement à partir de l’éditeur, mais pour HoloLens 2, vous devez utiliser la ligne de commande.  
 

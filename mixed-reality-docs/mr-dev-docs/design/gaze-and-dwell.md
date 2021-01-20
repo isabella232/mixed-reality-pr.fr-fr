@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: La réalité mixte, le point de présence, l’interaction, la conception, le suivi des yeux, le suivi des têtes, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de réalité virtuelle, le HoloLens, le MRTK, la réalité mixte Toolkit
-ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa4fceeb8875da89fd7f84c3709ff6db07fd96f4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007639"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582130"
 ---
 # <a name="gaze-and-dwell"></a>Pointer du regard et fixer
 
@@ -40,7 +40,7 @@ Le point de regard permet à la personne utilisant HoloLens de parcourir en tout
     </colgroup>
     <tr>
         <td><strong>Modèle d’entrée</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>

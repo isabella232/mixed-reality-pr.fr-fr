@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de regard, étalonnage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, intention, actions
-ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d603e2576856fe48080a1a1f06c1814a78381192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009599"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582327"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Eye-tracking sur HoloLens 2
 
@@ -32,7 +32,7 @@ L’API de suivi oculaire a été conçue en tenant compte de la confidentialit�
 </colgroup>
 <tr>
      <td><strong>Fonctionnalité</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
 </tr>
@@ -48,7 +48,7 @@ L’API de suivi oculaire a été conçue en tenant compte de la confidentialit�
 
 ## <a name="calibration"></a>Étalonnage 
 
-Pour que le suivi des yeux fonctionne correctement, chaque utilisateur doit passer par un [étalonnage d’utilisateur de suivi oculaire](../calibration.md) pour lequel l’utilisateur doit examiner un ensemble de cibles holographiques. Cela permet à l’appareil d’ajuster le système pour une expérience d’affichage plus confortable et de meilleure qualité pour l’utilisateur et pour garantir un suivi visuel précis en même temps. 
+Pour que le suivi des yeux fonctionne correctement, chaque utilisateur doit passer par un [étalonnage d’utilisateur de suivi oculaire](/hololens/hololens-calibration) pour lequel l’utilisateur doit examiner un ensemble de cibles holographiques. Cela permet à l’appareil d’ajuster le système pour une expérience d’affichage plus confortable et de meilleure qualité pour l’utilisateur et pour garantir un suivi visuel précis en même temps. 
 
 Le suivi oculaire doit fonctionner pour la plupart des utilisateurs, mais il existe de rares cas où un utilisateur ne peut pas l’étalonner correctement. L’étalonnage peut échouer pour diverses raisons, y compris mais sans s’y limiter : 
 * L’utilisateur a précédemment choisi le processus d’étalonnage
@@ -59,13 +59,13 @@ Le suivi oculaire doit fonctionner pour la plupart des utilisateurs, mais il exi
 
 Les développeurs doivent veiller à fournir une prise en charge adéquate pour les utilisateurs pour lesquels les données de suivi oculaire peuvent ne pas être disponibles (qui ne peuvent pas être correctement étalonnes). Nous avons fourni des recommandations pour les solutions de secours dans la section en bas de cette page. 
 
-Pour en savoir plus sur l’étalonnage et sur la façon de garantir une expérience sans heurts, consultez notre page d’étalonnage de l' [utilisateur de suivi oculaire](../calibration.md) .
+Pour en savoir plus sur l’étalonnage et sur la façon de garantir une expérience sans heurts, consultez notre page d’étalonnage de l' [utilisateur de suivi oculaire](/hololens/hololens-calibration) .
 
 <br>
 
 ## <a name="available-eye-tracking-data"></a>Données de suivi oculaire disponibles
 
-Avant de passer en revue les cas d’utilisation spécifiques pour les entrées de regard oculaire, nous souhaitons rapidement souligner les fonctionnalités fournies par l' [API de suivi oculaire](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) HoloLens 2. Les développeurs accèdent à un seul point d’accès en regard (origine du regard et direction) à environ _30 i/s (30 Hz)_.
+Avant de passer en revue les cas d’utilisation spécifiques pour les entrées de regard oculaire, nous souhaitons rapidement souligner les fonctionnalités fournies par l' [API de suivi oculaire](/uwp/api/windows.perception.people.eyespose) HoloLens 2. Les développeurs accèdent à un seul point d’accès en regard (origine du regard et direction) à environ _30 i/s (30 Hz)_.
 Pour plus d’informations sur la façon d’accéder aux données de suivi oculaire, reportez-vous à nos guides pour les développeurs sur l’utilisation des [yeux dans DirectX](../develop/native/gaze-in-directx.md) et [Eye-pointer sur Unity](https://aka.ms/mrtk-eyes).
 
 Le point de regard prédit est approximativement de 1,5 degrés d’angle visuel autour de la cible réelle (Voir l’illustration ci-dessous). Les développeurs doivent prévoir une marge autour de cette valeur de limite inférieure (par exemple, 2.0-3 degrés peut se traduire par une expérience bien plus confortable). Nous verrons comment aborder la sélection de petites cibles plus en détail ci-dessous. Pour que l’eye-tracking fonctionne avec précision, chaque utilisateur doit effectuer un étalonnage. 
@@ -135,8 +135,8 @@ D’un côté, les yeux se déplacent tellement vite que vous devez être attent
 
 Dans de rares cas, les données de suivi oculaire peuvent ne pas être disponibles.
 Cela peut être dû à différentes raisons, parmi lesquelles les plus courantes sont répertoriées ci-dessous :
-* Le système n’a pas pu [étalonner l’utilisateur](../calibration.md).
-* L’utilisateur a ignoré l' [étalonnage](../calibration.md).    
+* Le système n’a pas pu [étalonner l’utilisateur](/hololens/hololens-calibration).
+* L’utilisateur a ignoré l' [étalonnage](/hololens/hololens-calibration).   
 * L’utilisateur est étalonné, mais il a décidé de ne pas accorder à votre application l’autorisation d’utiliser ses données de suivi visuel.    
 * L’utilisateur dispose de lunettes uniques ou d’une condition oculaire que le système ne prend pas encore en charge. 
 * Facteurs externes qui empêchent le suivi des yeux fiables, tels que les taches sur le visière ou les lunettes, le soleil intense et les occlusions en raison des cheveux devant les yeux.  
@@ -168,12 +168,10 @@ Cette page vous a espérons vous fournir une bonne vue d’ensemble pour vous ai
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Étalonnage](../calibration.md)
+* [Étalonnage](/hololens/hololens-calibration)
 * [Confort](comfort.md)
 * [Interaction par pointage du regard](eye-gaze-interaction.md)
 * [Œil-point de regard sur DirectX](../develop/native/gaze-in-directx.md)
 * [Œil-point d’interfaut](https://aka.ms/mrtk-eyes)
 * [Pointer et valider](gaze-and-commit.md)
 * [Entrée vocale](../out-of-scope/voice-design.md)
-
-

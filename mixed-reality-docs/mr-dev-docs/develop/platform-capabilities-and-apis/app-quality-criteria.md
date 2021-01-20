@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: critères de qualité des applications, réalité mixte, application de réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 3f6752c0a15ae7db21be1f4a6d2843339ab28a5c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192677"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581266"
 ---
 # <a name="app-quality-criteria"></a>Critères de qualité des applications
 
@@ -36,7 +36,7 @@ La fréquence d’images est le premier pilier de la stabilité de l’hologramm
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -99,7 +99,7 @@ Les hologrammes stables augmenteront la convivialité et l’incroyableté de vo
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -161,7 +161,7 @@ Les mauvais alignements d’hologrammes avec des objets physiques (s’ils sont 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -224,7 +224,7 @@ Les développeurs d’applications contrôlent l’emplacement des yeux des util
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -281,7 +281,7 @@ Indépendamment de l’affichage des problèmes liés à la zone de confort, les
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -324,7 +324,7 @@ Dans Windows Mixed Reality, le moteur audio fournit le composant d’acoustique 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -382,7 +382,7 @@ Les expériences utilisateur bien conçues peuvent créer et gérer le contexte 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -438,7 +438,7 @@ Les hologrammes doivent réagir à la position de l’utilisateur à peu près d
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -479,7 +479,7 @@ Les hologrammes doivent réagir à la position de l’utilisateur à peu près d
 #### <a name="documentation"></a>Documentation
 
 * [Conception des interactions](../../discover/hologram.md)
-* [Couleur, lumière et matériau](../../color,-light-and-materials.md)
+* [Couleur, lumière et matériau](../../design/color-light-and-materials.md)
 * [Billboarding et tag-along](../../design/billboarding-and-tag-along.md)
 * [Interactions instinctuelles](../../design/interaction-fundamentals.md)
 * [Mouvement propre et locomotion utilisateur](../../design/comfort.md#self-motion-and-user-locomotion)
@@ -497,7 +497,7 @@ La clarté de l’interaction d’entrée est essentielle à l’utilisation d�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -548,7 +548,7 @@ La clarté de l’interaction d’entrée est essentielle à l’utilisation d�
 * [Contrôleurs de mouvement dans Unity](../unity/motion-controllers-in-unity.md)
 * [Mouvements dans Unity](../unity/gestures-in-unity.md)
 * [Entrée vocale dans Unity](../unity/voice-input-in-unity.md)
-* [Saisie à l’aide de la commande de jeu, du clavier et de la souris dans DirectX](../../keyboard,-mouse,-and-controller-input-in-directx.md)
+* [Saisie à l’aide de la commande de jeu, du clavier et de la souris dans DirectX](./keyboard-mouse-and-controller-input-in-directx.md)
 * [Suivre de la tête et du regard dans DirectX](../native/gaze-in-directx.md)
 * [Mains et contrôleurs de mouvement dans DirectX](../native/hands-and-motion-controllers-in-directx.md)
 * [Entrée vocale dans DirectX](../native/voice-input-in-directx.md)
@@ -573,7 +573,7 @@ Un bouton a longtemps été une métaphore utilisée pour déclencher un événe
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -628,7 +628,7 @@ Les applications qui requièrent des données de mappage spatiale s’appuient s
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -683,7 +683,7 @@ Dans une application de réalité mixte, le contenu peut être en dehors du cham
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
@@ -726,7 +726,7 @@ Un contrôle de progression offre un retour à l’utilisateur lorsqu’une long
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
         <td></td>
     </tr>
