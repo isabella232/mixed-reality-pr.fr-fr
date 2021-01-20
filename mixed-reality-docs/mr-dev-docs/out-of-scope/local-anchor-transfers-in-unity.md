@@ -6,19 +6,19 @@ ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Partage, ancrer, WorldAnchor, m partage 250, WorldAnchorTransferBatch, SpatialPerception, transfert, transfert d’ancrage local, exportation d’ancrage, importation d’ancrage
-ms.openlocfilehash: 1048e6a3cfc41a04cd49e201e5d1841e805a4193
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4949dd49817d723729974fb5666d5defb64b72ba
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009639"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583877"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Transferts d’ancrage locaux dans Unity
 
-Dans les situations où vous ne pouvez pas utiliser les <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, les transferts d’ancrage locaux permettent à un appareil hololens d’exporter une ancre à importer par un deuxième appareil hololens.
+Dans les situations où vous ne pouvez pas utiliser les <a href="/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, les transferts d’ancrage locaux permettent à un appareil hololens d’exporter une ancre à importer par un deuxième appareil hololens.
 
 >[!NOTE]
->Les transferts d’ancrage locaux fournissent un rappel d’ancrage moins fiable que les <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, et les appareils iOS et Android ne sont pas pris en charge par cette approche.
+>Les transferts d’ancrage locaux fournissent un rappel d’ancrage moins fiable que les <a href="/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, et les appareils iOS et Android ne sont pas pris en charge par cette approche.
 
 ### <a name="setting-the-spatialperception-capability"></a>Définition de la fonctionnalité SpatialPerception
 
@@ -138,4 +138,3 @@ private void OnImportComplete(SerializationCompletionReason completionReason, Wo
 ```
 
 Une fois qu’un *gameobject* est verrouillé via l’appel *lockobject* , il aura un *WorldAnchor* qui le conservera dans la même position physique dans le monde, mais il peut se trouver à un emplacement différent dans l’espace de coordonnées Unity que d’autres utilisateurs.
-

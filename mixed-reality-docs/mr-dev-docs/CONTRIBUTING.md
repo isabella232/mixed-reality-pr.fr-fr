@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: f60179c35f6103c4771ea2777e05829bfb7a8ce4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108852"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583039"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contribution à la documentation du développeur de réalité mixte
 
@@ -24,7 +24,7 @@ Cette page décrit les étapes et les instructions de base pour contribuer et le
 
 | Nom du dépôt | URL |
 | --- | --- |
-| Réalité mixte | [MicrosoftDocs/réalité mixte](https://docs.microsoft.com/windows/mixed-reality) |
+| Mixed Reality | [MicrosoftDocs/réalité mixte](/windows/mixed-reality) |
 | Guide des passionnés de VR | [MicrosoftDocs/Mixed-Reality/passionné-Guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
@@ -131,13 +131,13 @@ Les ressources suivantes vous permettront d’apprendre à modifier la documenta
 
 - [Principes de base de Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Affiche de référence de démarque-en un clin d’œil](images/MarkdownPoster.pdf)
-- [Ressources supplémentaires pour l’écriture de la démarque pour docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Ressources supplémentaires pour l’écriture de la démarque pour docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>Ajout de tables
 
 En raison de la façon dont les tableaux de styles docs.microsoft.com, ils n’ont pas de bordures ou de styles personnalisés, même si vous essayez le style CSS en ligne. Il semblera fonctionner pendant une période de temps limitée, mais la plateforme finira par supprimer le style de la table. Vous devez donc anticiper et garder vos tables simples. [Voici un site qui simplifie les tableaux de démarques](https://www.tablesgenerator.com/markdown_tables).
 
-L' [extension docs de démarque pour Visual Studio code](https://docs.microsoft.com/teamblog/docs-extension) facilite également la génération de table si vous utilisez [Visual Studio code (voir ci-dessous)](#using-visual-studio-code) pour modifier la documentation.
+L' [extension docs de démarque pour Visual Studio code](/teamblog/docs-extension) facilite également la génération de table si vous utilisez [Visual Studio code (voir ci-dessous)](#using-visual-studio-code) pour modifier la documentation.
 
 ### <a name="adding-images"></a>Ajouter des images
 

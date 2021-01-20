@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Portage, Unity, intergiciel, Engine, UWP, Win32
-ms.openlocfilehash: 5a57c73481e80e5ab6fac1bd02b83c5d3dfaabb6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 268d98b45aa659614e0266bfd1add7c7ed2f684a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007489"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583585"
 ---
 # <a name="porting-overview"></a>Vue d’ensemble du portage
 
@@ -48,7 +48,7 @@ Notre recommandation actuelle pour le développement non réel avec la réalité
 
 ### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>Applications HoloLens (1re génération) Unity vers HoloLens 2
 
-Si vous avez une application HoloLens (1re génération) Unity existante que vous souhaitez porter sur un HoloLens 2, suivez les instructions de notre article sur le [Portage hololens](../unity/mrtk-porting-guide.md).
+Si vous avez une application HoloLens (1re génération) Unity existante que vous souhaitez porter sur un HoloLens 2, suivez les instructions de notre article sur le [Portage hololens](./porting-hl1-hl2.md).
 
 ### <a name="windows-mixed-reality-headsets"></a>Casques Windows Mixed Reality
 
@@ -61,4 +61,3 @@ Pour toute expérience SteamVR que vous souhaitez mettre à jour pour les casque
 ### <a name="2d-universal-windows-applications"></a>applications Windows universelles 2D
 
 Si vous disposez d’une application UWP 2D existante que vous souhaitez porter vers un casque ou HoloLens Windows Mixed Reality, suivez nos instructions sur le [Portage d’applications UWP 2D pour Windows Mixed Reality](building-2d-apps.md) .
-

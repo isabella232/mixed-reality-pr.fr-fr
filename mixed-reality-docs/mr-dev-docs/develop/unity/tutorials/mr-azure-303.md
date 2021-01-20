@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, Language Understanding Intelligence Service, Luis, hololens, immersifive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 431858d369bc7007cc5eddbf0e75d9b74b7ba5d3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679498"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583435"
 ---
 # <a name="mr-and-azure-303-natural-language-understanding-luis"></a>MR et Azure 303 : compréhension du langage naturel (LUIS)
 
@@ -44,7 +44,7 @@ Préparez-vous à former LUIS plusieurs fois, ce qui est abordé dans le [chapit
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td>MR et Azure 303 : compréhension du langage naturel (LUIS)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -65,7 +65,7 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 - [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md)
 - [Unity 2017,4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](../../../hololens-hardware-details.md) avec le mode développeur activé
+- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Un jeu de casque avec un microphone intégré (si le casque n’a pas de MIC et de haut-parleurs intégrés)
 - Accès Internet pour l’installation d’Azure et la récupération LUIS
 
@@ -105,7 +105,7 @@ Pour utiliser le service de *Language Understanding* dans Azure, vous devez conf
     3. Sélectionnez le **niveau tarifaire** approprié, s’il s’agit de la première fois que vous créez un *service Luis*, vous devez disposer d’un niveau gratuit (nommé F0). L’allocation gratuite doit être plus que suffisante pour ce cours.
     4. Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces cours) dans un groupe de ressources commun. 
 
-        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](/azure/azure-resource-manager/resource-group-portal).
 
     5. Déterminez l' **emplacement** de votre groupe de ressources (si vous créez un groupe de ressources). L’emplacement devrait idéalement se trouver dans la région où l’application s’exécutait. Certaines ressources Azure sont uniquement disponibles dans certaines régions.
     6. Vous devrez également confirmer que vous avez compris les conditions générales appliquées à ce service.
@@ -194,7 +194,7 @@ Le résultat doit ressembler à l’image ci-dessous :
 
     ![Créer des intentions](images/AzureLabs-Lab3-14.png)
 
-13. Appelez le nouveau *Intent* **ChangeObjectColor** d’intention.
+13. Appelez le nouveau  **ChangeObjectColor** d’intention.
 
     > [!IMPORTANT]
     > Ce nom d' *intention* est utilisé dans le code plus loin dans ce cours. pour obtenir de meilleurs résultats, utilisez ce nom exactement comme indiqué.
@@ -262,7 +262,7 @@ Pour chaque énoncé que vous avez créé, vous devez identifier les mots qui do
 
     ![Former LUIS](images/AzureLabs-Lab3-19.png)
  
-21. En guise d’exercice pour vous, créez une intention appelée **ChangeObjectSize**, en utilisant les entités *target*, Resize et *downsize* *Resize*.
+21. En guise d’exercice pour vous, créez une intention appelée **ChangeObjectSize**, en utilisant les entités *target*, Resize et  *Resize*.
 22. En suivant le même processus que l’intention précédente, insérez les huit (8) énoncés suivants pour la modification de la *taille* :
 
     ```
@@ -399,7 +399,7 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
     1. *Sphere*
     2. *Cylindre*
-    3. *Dernier*
+    3. *Cube*
     4. *Texte 3D*
 
 4.  La *hiérarchie* de scène qui en résulte doit être semblable à celle de l’image ci-dessous :
@@ -1117,4 +1117,4 @@ Si vous utilisez cette application, vous remarquerez peut-être que si vous poin
 
 ### <a name="exercise-2"></a>Exercice 2
 
-Essayez d’étendre les fonctionnalités de LUIS et de l’application, en ajoutant des fonctionnalités supplémentaires pour les objets dans la scène. par exemple, créez des objets au point d’accès en regard, en fonction de ce que l’utilisateur prétend, puis pouvez utiliser ces objets avec les objets de scène actuels, avec les commandes existantes. 
+Essayez d’étendre les fonctionnalités de LUIS et de l’application, en ajoutant des fonctionnalités supplémentaires pour les objets dans la scène. par exemple, créez des objets au point d’accès en regard, en fonction de ce que l’utilisateur prétend, puis pouvez utiliser ces objets avec les objets de scène actuels, avec les commandes existantes.

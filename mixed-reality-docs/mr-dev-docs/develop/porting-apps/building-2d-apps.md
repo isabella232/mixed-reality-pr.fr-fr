@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: application 2D, UWP, application plate, HoloLens, casque immersif, modèle d’application, bouton précédent, barre d’application, PPP, résolution, mise à l’échelle, Portage, HoloLens 1ère génération, HoloLens 2, casque de réalité mixte, casque de réalité mixte, migration, Windows 10
-ms.openlocfilehash: b2df0b0a7cb598fead09016c528bd6a81c6ea238
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612963"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583532"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Mise à jour des applications UWP 2D pour Windows Mixed Reality
 
@@ -25,7 +25,7 @@ La première étape pour placer une application 2D sur des casques de réalité 
 
 Pour générer une application 2D pour la réalité mixte, vous générez une application standard 2D plateforme Windows universelle (UWP). Aucune autre modification de l’application n’est requise pour que cette application s’exécute en tant que ardoise dans une réalité mixte.
 
-Pour commencer à créer une application UWP 2D, consultez l’article [créer votre première application](https://docs.microsoft.com/windows/uwp/get-started/your-first-app) .
+Pour commencer à créer une application UWP 2D, consultez l’article [créer votre première application](/windows/uwp/get-started/your-first-app) .
 
 ### <a name="bringing-an-existing-2d-store-app-to-uwp"></a>Intégration d’une application de Store 2D existante à UWP
 
@@ -34,10 +34,10 @@ Si vous disposez déjà d’une application Windows 2D dans le Store, assurez-vo
 
 |  Point de départ  |  Cible de plateforme de manifeste AppX  |  Comment faire pour que cela soit universel ? | 
 |----------|----------|----------|
-|  Windows Phone (Silverlight)  |  Manifeste de l’application Silverlight |  [Migrer vers WinRT](https://msdn.microsoft.com/library/windows/apps/dn642486(v=vs.105).aspx) | 
-|  Windows Phone 8,1 universel  |  8,1 manifeste AppX qui n’inclut pas la plateforme cible  |  [Migrez votre application vers le plateforme Windows universelle](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows Store 8  |  8 manifeste AppX qui n’inclut pas la plateforme cible  |  [Migrez votre application vers le plateforme Windows universelle](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows Store 8,1 universel  |  8,1 manifeste AppX qui n’inclut pas la plateforme cible  |  [Migrez votre application vers le plateforme Windows universelle](https://msdn.microsoft.com/library/mt148501.aspx) | 
+|  Windows Phone (Silverlight)  |  Manifeste de l’application Silverlight |  [Migrer vers WinRT](/previous-versions/windows/apps/dn642486(v=vs.105)) | 
+|  Windows Phone 8,1 universel  |  8,1 manifeste AppX qui n’inclut pas la plateforme cible  |  [Migrez votre application vers le plateforme Windows universelle](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8  |  8 manifeste AppX qui n’inclut pas la plateforme cible  |  [Migrez votre application vers le plateforme Windows universelle](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8,1 universel  |  8,1 manifeste AppX qui n’inclut pas la plateforme cible  |  [Migrez votre application vers le plateforme Windows universelle](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
 
 Si vous avez une application Unity 2D aujourd’hui créée en tant qu’application Win32 sur le **PC, Mac &** la cible de build autonome Linux, basculez vers la cible de build **plateforme Windows universelle** pour la réalité mixte.
 
@@ -116,7 +116,7 @@ Maintenant que votre application UWP s’exécute sur des casques immersifs et H
 
 ![À partir de la conception réactive](images/scale-500px.png)
 
-Windows 10 déplace toutes les conceptions visuelles des pixels de l’écran réel vers les **pixels effectifs**. Cela signifie que les développeurs conçoivent leur interface utilisateur en suivant les instructions de l’interface utilisateur de Windows 10 pour les pixels effectifs, et la mise à l’échelle de Windows garantit que ces pixels effectifs sont la bonne taille pour la convivialité sur les appareils, les résolutions, les PPP, etc. Pour plus d’informations, consultez cette présentation [sur MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) et cette présentation de la [version](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx) .
+Windows 10 déplace toutes les conceptions visuelles des pixels de l’écran réel vers les **pixels effectifs**. Cela signifie que les développeurs conçoivent leur interface utilisateur en suivant les instructions de l’interface utilisateur de Windows 10 pour les pixels effectifs, et la mise à l’échelle de Windows garantit que ces pixels effectifs sont la bonne taille pour la convivialité sur les appareils, les résolutions, les PPP, etc. Pour plus d’informations, consultez cette présentation [sur MSDN](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) et cette présentation de la [version](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx) .
 
 Même avec la capacité unique de placer des applications dans votre monde à un large éventail de distances, il est recommandé d’utiliser des distances d’affichage de type TV pour produire la meilleure lisibilité et l’interaction avec le point de vue des mouvements. En raison de cela, un ardoise virtuel dans la réalité mixte affiche votre vue UWP plate à l’adresse :
 
@@ -131,7 +131,7 @@ Cette résolution présente plusieurs avantages :
 
 **Ne**
 * Suivez les [instructions de l’interface utilisateur de Windows 10 (HIG)](https://dev.windows.com/design) pour les styles, les tailles de police et les tailles de bouton. HoloLens effectue le travail pour s’assurer que votre application aura des modèles d’application compatibles, des tailles de texte lisibles et un dimensionnement cible approprié.
-* Assurez-vous que votre interface utilisateur suit les meilleures pratiques pour la [conception réactive](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx) afin d’obtenir un meilleur aperçu de la résolution et de la résolution uniques de HoloLens.
+* Assurez-vous que votre interface utilisateur suit les meilleures pratiques pour la [conception réactive](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) afin d’obtenir un meilleur aperçu de la résolution et de la résolution uniques de HoloLens.
 * Utilisez les recommandations de thème de couleur « Light » de Windows.
 
 **Ne pas:**
@@ -147,7 +147,7 @@ les vues 2D sont décorées avec une barre d’application au-dessus de leur con
 
 **Title :** affiche le *DisplayName* de la vignette associée à l’instance de l’application
 
-**Bouton précédent :** déclenche l’événement *[demandé](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* lorsque l’utilisateur clique dessus. La visibilité du bouton précédent est contrôlée par *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
+**Bouton précédent :** déclenche l’événement *[demandé](/uwp/api/Windows.UI.Core.SystemNavigationManager)* lorsque l’utilisateur clique dessus. La visibilité du bouton précédent est contrôlée par *[SystemNavigationManager. AppViewBackButtonVisibility](/uwp/api/Windows.UI.Core.SystemNavigationManager)*.
 
 ![Interface utilisateur de la barre d’application dans la vue d’application 2D](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *Interface utilisateur de la barre d’application dans la vue d’application 2D*
@@ -162,7 +162,7 @@ HoloLens utilise des capteurs de profondeur avancés pour voir le monde et voir 
 
 Avec les casques de bureau, les utilisateurs peuvent utiliser des contrôleurs de mouvement pour pointer vers des applications et prendre des mesures. Ils peuvent également utiliser un boîtier de sélection, en ciblant les objets avec le regard.
 
-Windows s’occupe de toute cette complexité pour les applications UWP, en traduisant votre point de vue du [regard](../../design/gaze-and-commit.md), des gestes, de la voix et du contrôleur de mouvement en [événements de pointeur](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) qui éliminent le mécanisme d’entrée. Par exemple, un utilisateur a peut-être fait un robinet avec sa main ou a retiré le déclencheur SELECT sur un contrôleur de mouvement, mais les applications 2D n’ont pas besoin de savoir où provient l’entrée. elles voient simplement une pression tactile 2D, comme sur un écran tactile.
+Windows s’occupe de toute cette complexité pour les applications UWP, en traduisant votre point de vue du [regard](../../design/gaze-and-commit.md), des gestes, de la voix et du contrôleur de mouvement en [événements de pointeur](/windows/uwp/design/input/handle-pointer-input#pointer_events) qui éliminent le mécanisme d’entrée. Par exemple, un utilisateur a peut-être fait un robinet avec sa main ou a retiré le déclencheur SELECT sur un contrôleur de mouvement, mais les applications 2D n’ont pas besoin de savoir où provient l’entrée. elles voient simplement une pression tactile 2D, comme sur un écran tactile.
 
 Voici les concepts/scénarios de haut niveau que vous devez comprendre pour les entrées lors de l’intégration de votre application UWP à HoloLens :
 * Le point d’arrêt de la souris se [transforme en](../../design/gaze-and-commit.md) événements de pointage, ce qui peut déclencher de manière inattendue des menus, des lanceurs ou d’autres éléments de l’interface utilisateur qui s’affichent simplement en Gazing de votre application.

@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, mappage spatial, reconstruction de surface, maille, HoloLens, Académie de la réalité mixte, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: dc96fbff43c21216e3b860f1dbbbaae330e1f176
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677188"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582938"
 ---
 # <a name="mr-spatial-230-spatial-mapping"></a>Réalité mixte - Fonctionnalités spatiales - Cours 230 : Mappage spatial
 
 >[!NOTE]
->Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](../../../mr-learning-base-01.md) a été publiée pour HoloLens 2.
+>Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.
 
 Le [mappage spatial](../../../design/spatial-mapping.md) combine le monde réel et le monde virtuel ensemble en apprenant des hologrammes sur l’environnement. Dans l’spatial spatial 230 (Project Planetarium), nous allons apprendre à :
 
@@ -32,7 +32,7 @@ Le [mappage spatial](../../../design/spatial-mapping.md) combine le monde réel 
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td>Réalité mixte - Fonctionnalités spatiales - Cours 230 : Mappage spatial</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -134,7 +134,7 @@ Le [mappage spatial](../../../design/spatial-mapping.md) combine le monde réel 
 * Dans Visual Studio, utilisez la barre d’outils supérieure pour changer la configuration en **Release**.
 * Remplacez la plateforme par **x86**.
 * Cliquez sur la flèche déroulante à droite de « ordinateur local », puis sélectionnez **ordinateur distant**.
-* Entrez l' [adresse IP de votre appareil](../../../connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) dans le champ adresse et changez le mode d’authentification en **protocole universel (protocole non chiffré)**.
+* Entrez l' [adresse IP de votre appareil](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) dans le champ adresse et changez le mode d’authentification en **protocole universel (protocole non chiffré)**.
 * Cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
 * Regardez le panneau de **sortie** dans Visual Studio pour l’état de génération et de déploiement.
 * Une fois votre application déployée, parcourez la salle. Vous verrez les surfaces environnantes couvertes par les maillages filaires noir et blanc.

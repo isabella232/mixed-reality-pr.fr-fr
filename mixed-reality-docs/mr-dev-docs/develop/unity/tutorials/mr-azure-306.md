@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Academy, Unity, didacticiel, API, Media Services, streaming video, 360, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 1d53b260b2c4b00ff6bf985646a45948472a56a5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679518"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583456"
 ---
 # <a name="mr-and-azure-306-streaming-video"></a>Réalité mixte - Azure - Cours 306 : Diffusion de vidéos en streaming
 
@@ -43,7 +43,7 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td> Réalité mixte - Azure - Cours 306 : Diffusion de vidéos en streaming</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -142,7 +142,7 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
 
     3. Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces laboratoires) sous un groupe de ressources commun). 
     
-    > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, cliquez [sur le lien suivant pour gérer les groupes de ressources Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+    > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, cliquez [sur le lien suivant pour gérer les groupes de ressources Azure](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Déterminez l' **emplacement** de votre groupe de ressources (si vous créez un groupe de ressources). L’emplacement devrait idéalement se trouver dans la région où l’application s’exécutait. Certaines ressources Azure sont uniquement disponibles dans certaines régions.
 
@@ -250,7 +250,7 @@ Pour utiliser Azure Media Service, vous devez configurer une instance du service
     2.  La **Date** et l' **heure** seront définies pour vous, à partir de la date actuelle, à une heure future (100 ans dans le cas présent). Laissez tel quel ou modifiez-le pour l’adapter à vos besoins.
 
     > [!NOTE]
-    > Pour plus d’informations sur les localisateurs et sur ce que vous pouvez choisir, consultez la [Documentation Azure Media Services](https://docs.microsoft.com/azure/media-services/media-services-concepts).
+    > Pour plus d’informations sur les localisateurs et sur ce que vous pouvez choisir, consultez la [Documentation Azure Media Services](/azure/media-services/media-services-concepts).
 
 24. En bas de ce panneau, cliquez sur le bouton **Ajouter** .
 
@@ -367,7 +367,7 @@ Comment importer les **pour Unity**:
 
 4.  Dans la **hiérarchie**, sélectionnez l’objet **Camera principal** et mettez à jour les composants suivants :
 
-    1.  **Transformation**
+    1.  **Transformer**
 
         1.  Position = **X**: 0, **Y**: 0, **Z**: 0.
 
@@ -606,7 +606,7 @@ Pour créer cette classe :
     ```
 
     > [!TIP] 
-    > La méthode **ChangeScene ()** utilise une fonctionnalité C pratique \# appelée *opérateur conditionnel*. Cela permet de vérifier les conditions, puis les valeurs retournées en fonction du résultat de la vérification, dans une instruction unique. Suivez ce [lien pour en savoir plus sur l’opérateur conditionnel](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
+    > La méthode **ChangeScene ()** utilise une fonctionnalité C pratique \# appelée *opérateur conditionnel*. Cela permet de vérifier les conditions, puis les valeurs retournées en fonction du résultat de la vérification, dans une instruction unique. Suivez ce [lien pour en savoir plus sur l’opérateur conditionnel](/dotnet/csharp/language-reference/operators/conditional-operator).
 
 11. Enregistrez vos modifications dans Visual Studio avant de revenir à Unity.
 
@@ -888,5 +888,3 @@ Il est tout à fait possible d’utiliser une seule scène pour modifier les vid
 **Exercice 2**
 
 Expérimentez Azure et Unity et tentez d’implémenter la possibilité pour l’application de sélectionner automatiquement une vidéo avec une taille de fichier différente, en fonction de la force d’une connexion Internet.
-
-

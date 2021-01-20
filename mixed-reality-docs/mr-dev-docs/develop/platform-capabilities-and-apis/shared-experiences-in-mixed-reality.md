@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: expérience partagée, réalité mixte, hologramme, ancrage spatial, multi-utilisateur, multi
-ms.openlocfilehash: 6db5bb13d7e04dbee6b4d9d6568b821347bd769a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530118"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583157"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>Expériences partagées dans la réalité mixte
 
@@ -95,7 +95,7 @@ Imaginez que vos expériences de partage s’adaptent à l’une de ces deux cat
 * **Similaire**: environnements qui ont tendance à avoir des meubles similaires, un éclairage ambiant et un son, la taille de la salle physique. Par exemple, le professeur est dans la salle de conférence A et les étudiants se trouvent dans la salle de conférence B. la salle de conférence A peut avoir moins de chaises que B, mais les deux peuvent avoir un bureau physique sur lequel placer des hologrammes.
 * Différent **: environnements** qui diffèrent dans les paramètres de mobilier, les tailles de salle, les considérations claires et les aspects sonores. Par exemple, un professeur est dans une salle de focalisation, mais les étudiants sont dans une grande salle de conférence, remplie avec des étudiants et des enseignants.
 
-Il est important de [réfléchir à l’environnement](../../environment-considerations-for-hololens.md), car il aura une incidence sur les éléments suivants :
+Il est important de [réfléchir à l’environnement](/hololens/hololens-environment-considerations), car il aura une incidence sur les éléments suivants :
 
 * La manière dont les utilisateurs auront connaissance de ces objets. Par exemple : Si votre expérience fonctionne mieux sur une table et si l’utilisateur n’a pas de table ? Ou sur une surface plate, mais l’utilisateur a un espace encombré.
 * Échelle des objets. Par exemple, la mise en place d’un modèle humain de six mètres sur une table peut être délicate, mais un modèle cardiaque fonctionnerait très bien.
@@ -137,11 +137,11 @@ En fonction de votre application et de votre scénario, il y aura plusieurs exig
 
 La clé de l’expérience partagée consiste à faire en sorte que plusieurs utilisateurs voient les mêmes hologrammes dans le monde sur leur propre appareil, souvent en partageant des points d’ancrage pour aligner les coordonnées entre les appareils.
 
-Pour partager des ancres, utilisez les [ancres spatiales Azure](https://docs.microsoft.com/azure/spatial-anchors):
+Pour partager des ancres, utilisez les [ancres spatiales Azure](/azure/spatial-anchors):
 
 * Tout d’abord, l’utilisateur place l’hologramme.
 * L’application crée une [ancre spatiale](../../design/spatial-anchors.md), pour épingler précisément cet hologramme dans le monde.
-* Les ancres peuvent être partagées sur des appareils HoloLens, iOS et Android via des [ancres spatiales Azure](https://docs.microsoft.com/azure/spatial-anchors/).
+* Les ancres peuvent être partagées sur des appareils HoloLens, iOS et Android via des [ancres spatiales Azure](/azure/spatial-anchors/).
 
 Avec une ancre spatiale partagée, l’application sur chaque appareil dispose désormais d’un [système de coordonnées commun](../../design/coordinate-systems.md) dans lequel elles peuvent placer du contenu. L’application peut maintenant garantir la position et l’orientation de l’hologramme au même emplacement.
 
@@ -153,7 +153,7 @@ Différentes options de service et de technologie sont disponibles pour vous aid
 
 ## <a name="shared-static-holograms-no-interactions"></a>Hologrammes statiques partagés (aucune interaction)
 
-Tirez parti des [ancres spatiales Azure](https://docs.microsoft.com/azure/spatial-anchors/) dans votre application.  L’activation et le partage d’ancres spatiales sur plusieurs appareils vous permettent de créer une application dans laquelle les utilisateurs voient les hologrammes dans le même emplacement en même temps.  La synchronisation supplémentaire entre les appareils est nécessaire pour permettre aux utilisateurs d’interagir avec les hologrammes et voir les mouvements ou les mises à jour d’état des hologrammes.
+Tirez parti des [ancres spatiales Azure](/azure/spatial-anchors/) dans votre application.  L’activation et le partage d’ancres spatiales sur plusieurs appareils vous permettent de créer une application dans laquelle les utilisateurs voient les hologrammes dans le même emplacement en même temps.  La synchronisation supplémentaire entre les appareils est nécessaire pour permettre aux utilisateurs d’interagir avec les hologrammes et voir les mouvements ou les mises à jour d’état des hologrammes.
 
 ## <a name="share-first-person-perspective"></a>Perspective partager la première personne
 
@@ -172,7 +172,7 @@ Tirez parti de [MixedReality-SpectatorView](https://github.com/microsoft/MixedRe
 
 ## <a name="multi-user-collaborative-experience"></a>Expérience collaborative multi-utilisateur
 
-Commencez avec notre [didacticiel d’apprentissage multi-utilisateur](../../mrlearning-sharing(photon)-ch1.md), qui tire parti des [ancres spatiales Azure](https://docs.microsoft.com/azure/spatial-anchors/) pour les utilisateurs locaux et le [Kit de développement logiciel (SDK) de photons](https://www.photonengine.com/PUN) pour synchroniser le contenu/l’État dans la scène. Créez des applications de collaboration localement, où chaque utilisateur a sa propre perspective sur les hologrammes de la scène et peut interagir entièrement avec les hologrammes.  Les mises à jour sont fournies sur tous les appareils et la gestion des conflits d’interaction est gérée par la photonique.
+Commencez avec notre [didacticiel d’apprentissage multi-utilisateur](../unity/tutorials/mr-learning-sharing-02.md), qui tire parti des [ancres spatiales Azure](/azure/spatial-anchors/) pour les utilisateurs locaux et le [Kit de développement logiciel (SDK) de photons](https://www.photonengine.com/PUN) pour synchroniser le contenu/l’État dans la scène. Créez des applications de collaboration localement, où chaque utilisateur a sa propre perspective sur les hologrammes de la scène et peut interagir entièrement avec les hologrammes.  Les mises à jour sont fournies sur tous les appareils et la gestion des conflits d’interaction est gérée par la photonique.
 
 > [!NOTE]
 > Notez que la [photon](https://www.photonengine.com/) est un produit non-Microsoft. une relation de facturation avec photons peut donc être nécessaire pour la reproduction et la mise à l’échelle pour une utilisation plus élevée.
@@ -185,7 +185,7 @@ Autre scénario ou souhait d’utiliser une autre technique/service ? Fournisse
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* [Azure Spatial Anchors](/azure/spatial-anchors)
 * [Ancres spatiales partagées dans DirectX](shared-spatial-anchors-in-directx.md)
 * [Expériences partagées dans Unity](../unity/shared-experiences-in-unity.md)
 * [Vue Spectateur](spectator-view.md)

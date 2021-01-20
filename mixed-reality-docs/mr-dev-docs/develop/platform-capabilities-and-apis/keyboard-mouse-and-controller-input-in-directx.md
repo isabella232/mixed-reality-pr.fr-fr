@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, clavier, souris, contrôleur de jeu, contrôleur Xbox, HoloLens, Desktop, procédure pas à pas, exemple de code
-ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3cf35ba195e839332cbedb8b2c3945334a158cbc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530046"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583629"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Saisie à l’aide de la commande de jeu, du clavier et de la souris dans DirectX
 
@@ -27,7 +27,7 @@ Pour utiliser l’entrée au clavier sur HoloLens, couplez un clavier Bluetooth 
 
 ## <a name="subscribe-for-corewindow-input-events"></a>S’abonner aux événements d’entrée CoreWindow
 
-### <a name="keyboard-input"></a>Saisie au clavier
+### <a name="keyboard-input"></a>Entrée de clavier
 
 Dans le modèle d’application holographique Windows, nous incluons un gestionnaire d’événements pour l’entrée au clavier comme n’importe quelle autre application UWP. Votre application utilise les données d’entrée au clavier de la même façon dans Windows Mixed Reality.
 
@@ -60,7 +60,7 @@ Pour plus d’informations sur l’implémentation de la prise en charge de Core
 Vous pouvez également utiliser l’entrée de la souris, à nouveau via les gestionnaires d’événements d’entrée UWP CoreWindow. Voici comment modifier le modèle d’application holographique Windows pour prendre en charge les clics de souris de la même façon que les gestes appuyés. Une fois cette modification effectuée, un clic de souris tout en faisant passer un périphérique de casque immersif repositionne le cube.
 
 > [!NOTE]
-> Les applications UWP peuvent également obtenir des données brutes XY pour la souris à l’aide de l’API [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) .
+> Les applications UWP peuvent également obtenir des données brutes XY pour la souris à l’aide de l’API [MouseDevice](/uwp/api/Windows.Devices.Input.MouseDevice) .
 
 Commencez par déclarer un nouveau gestionnaire OnPointerPressed dans AppView. h :
 

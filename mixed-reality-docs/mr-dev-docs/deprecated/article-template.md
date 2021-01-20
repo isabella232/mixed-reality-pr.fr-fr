@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: aucun
-ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
-ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
+ms.openlocfilehash: 246e87ace1c0b3edf5e9f4829a5a0879cddf7279
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97676132"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583172"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>Titre (Soyez le plus spécifique possible, utilisez les conditions humaines) 
 
@@ -32,7 +32,7 @@ ms.locfileid: "97676132"
 </colgroup>
 <tr>
      <td><strong>Fonctionnalité</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
 </tr>

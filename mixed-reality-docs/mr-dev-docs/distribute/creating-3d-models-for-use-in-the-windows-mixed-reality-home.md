@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, modélisation, Guide de modélisation, besoins en ressources, instructions de création, lanceur, lanceur 3D, texture, matériaux, complexité, triangles, maillage, polygones, polynombre, limites, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 17014e3deaaa161dd7949a55679b916e872ad5a7
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c5447661bdbe6aeb59a3e7a524863d68b717ee0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757784"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583812"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Créer des modèles 3D à utiliser dans la page d’accueil
 
@@ -101,7 +101,7 @@ Indique au nuanceur s’il s’agit d’un métal ou non. RAW Metal = 1,0 blanc 
 La page d’hébergement Windows Mixed Reality offre une série d’optimisations par-dessus les spécifications glTF principales définies à l’aide d’extensions personnalisées. Ces optimisations sont requises sur les versions de Windows <= 1709 et recommandées sur les versions plus récentes de Windows. Vous pouvez facilement optimiser n’importe quel modèle glTF 2,0 à l’aide de [Windows Mixed Reality Converter disponible sur GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). Cet outil effectuera les optimisations de l’empaquetage et des optimisations de texture, comme indiqué ci-dessous. Pour une utilisation générale, nous vous recommandons d’utiliser WindowsMRAssetConverter, mais si vous avez besoin de davantage de contrôle sur l’expérience et que vous souhaitez créer votre propre pipeline d’optimisation, vous pouvez vous référer à la spécification détaillée ci-dessous.  
 
 > [!NOTE]
-> Pour obtenir une liste définitive des possibilités offertes par les limites du modèle, reportez-vous à l’article sur l' [optimisation du modèle 3D](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) à utiliser dans les applications Dynamics 365.
+> Pour obtenir une liste définitive des possibilités offertes par les limites du modèle, reportez-vous à l’article sur l' [optimisation du modèle 3D](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) à utiliser dans les applications Dynamics 365.
 
 ### <a name="materials"></a>Matériaux
 
@@ -184,7 +184,7 @@ Les LODs sont affichés dans Windows Mixed Reality en fonction d’un système p
 
 |  Niveau LOD  |  Plage recommandée  |  Plage par défaut | 
 |-------|-------|-------|
-|  LOD 0  |  100%-50% |  0.5 | 
+|  LOD 0  |  100%-50% |  0,5 | 
 |  LOD 1 |  Moins de 50%-20%  |  0.2 | 
 |  LOD 2 |  Moins de 20%-1%  |  0.01 | 
 |  LOD 4  |  Moins de 1%  |  - | 
@@ -192,7 +192,7 @@ Les LODs sont affichés dans Windows Mixed Reality en fonction d’un système p
 ## <a name="animation-guidelines"></a>Instructions d’animation
 
 > [!NOTE]
-> Cette fonctionnalité a été ajoutée dans le cadre de la [mise à jour 2018 d’avril de Windows 10](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Dans les versions antérieures de Windows, ces animations ne sont pas lues, mais elles sont toujours chargées si elles sont créées conformément aux instructions de cet article.  
+> Cette fonctionnalité a été ajoutée dans le cadre de la [mise à jour 2018 d’avril de Windows 10](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Dans les versions antérieures de Windows, ces animations ne sont pas lues, mais elles sont toujours chargées si elles sont créées conformément aux instructions de cet article.  
 
 La page d’hébergement de la réalité mixte prend en charge les objets glTF animés sur les casques HoloLens et immersif (VR). Si vous souhaitez déclencher des animations sur votre modèle, vous devez utiliser l’extension de la carte d’animation au format glTF. Cette extension vous permet de déclencher des animations dans le modèle glTF en fonction de la présence de l’utilisateur dans le monde, par exemple déclencher une animation lorsque l’utilisateur est proche de l’objet ou qu’il l’examine. Si vous glTF objet contient des animations, mais ne définit pas les déclencheurs, les animations ne sont pas lues. La section ci-dessous décrit un flux de travail pour l’ajout de ces déclencheurs à n’importe quel objet glTF animé.
 
@@ -255,7 +255,7 @@ Les animations ne peuvent pas dépasser 20 minutes et ne peuvent pas contenir pl
 
 Windows MR ne prend pas en charge le retournement de géométrie à l’aide d’échelles négatives. La géométrie avec des échelles négatives entraîne probablement des artefacts visuels.
 
-La ressource glTF doit pointer vers la scène par défaut à l’aide de l’attribut Scene qui doit être rendu par Windows MR. En outre, le chargeur Windows MR glTF avant la [mise à jour 2018 de Windows 10 avril](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **requiert** des accesseurs :
+La ressource glTF doit pointer vers la scène par défaut à l’aide de l’attribut Scene qui doit être rendu par Windows MR. En outre, le chargeur Windows MR glTF avant la [mise à jour 2018 de Windows 10 avril](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **requiert** des accesseurs :
 * Doit avoir des valeurs min et max.
 * Le type scalaire doit être componentType UNSIGNED_SHORT (5123) ou UNSIGNED_INT (5125).
 * Le type VEC2 et VEC3 doit être componentType FLOAT (5126).

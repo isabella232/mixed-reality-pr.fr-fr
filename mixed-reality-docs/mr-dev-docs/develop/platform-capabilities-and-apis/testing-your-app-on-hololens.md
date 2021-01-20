@@ -6,12 +6,12 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, test
-ms.openlocfilehash: d26a3717da2ee9943e92e3602b6029435815262b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6f1c6bcff9f9db1a1fb7f5b3ea9d2c4c2be969a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008539"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583764"
 ---
 # <a name="testing-your-app-on-hololens"></a>Test de votre application dans HoloLens
 
@@ -111,7 +111,7 @@ Certains développeurs d’applications peuvent souhaiter automatiser les tests 
 
 ## <a name="windows-app-certification-kit"></a>Kit de certification des applications Windows
 
-Pour permettre à votre application d’être [publiée dans le Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md), validez-la et testez-la localement avant de la soumettre à la certification. Si votre application cible la famille d’appareils Windows. holographique, le [Kit de certification des applications Windows](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) exécutera uniquement les tests d’analyse statique locaux sur votre PC. Aucun test ne sera exécuté sur votre HoloLens.
+Pour permettre à votre application d’être [publiée dans le Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md), validez-la et testez-la localement avant de la soumettre à la certification. Si votre application cible la famille d’appareils Windows. holographique, le [Kit de certification des applications Windows](/windows/uwp/debug-test-perf/windows-app-certification-kit) exécutera uniquement les tests d’analyse statique locaux sur votre PC. Aucun test ne sera exécuté sur votre HoloLens.
 
 ## <a name="see-also"></a>Voir aussi
 

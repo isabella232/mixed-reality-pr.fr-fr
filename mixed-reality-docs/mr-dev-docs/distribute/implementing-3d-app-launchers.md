@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icône, modélisation, lanceur, lanceur 3D, vignette, cube en direct, lien profond, secondarytile, vignette secondaire, UWP, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, XML, cadre englobant, Unity
-ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7a0b73a0b3638c1aa2c9cbffacd548fb461589ea
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009679"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582971"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implémenter des lanceurs d’applications 3D (applications UWP)
 
@@ -118,7 +118,7 @@ Lorsque vous utilisez Unity, le projet doit être généré et ouvert dans Visua
 >[!IMPORTANT]
 >les liens secondaryTiles (3D Deep Links) fonctionnent uniquement avec les applications UWP 2D. Toutefois, vous pouvez créer un [lanceur d’applications en 3D](implementing-3d-app-launchers.md) pour lancer une application exclusive à partir de la page d’hébergement de Windows Mixed Reality.
 
-Vos applications 2D peuvent être améliorées pour Windows Mixed Reality en ajoutant la possibilité de placer des modèles 3D à partir de votre application dans la [page d’accueil Windows Mixed Real](../discover/navigating-the-windows-mixed-reality-home.md) comme des liens détaillés vers le contenu au sein de votre application 2D, comme des [vignettes secondaires 2D](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) dans le menu Démarrer de Windows. Par exemple, vous pouvez créer des photosphères de 360 ° qui se lient directement à une application de visionneuse de photos 360 °, ou permettre aux utilisateurs de placer du contenu 3D à partir d’une collection de ressources qui ouvre une page de détails à propos de l’auteur. Il s’agit simplement de quelques façons d’étendre les fonctionnalités de votre application 2D avec du contenu 3D.
+Vos applications 2D peuvent être améliorées pour Windows Mixed Reality en ajoutant la possibilité de placer des modèles 3D à partir de votre application dans la [page d’accueil Windows Mixed Real](../discover/navigating-the-windows-mixed-reality-home.md) comme des liens détaillés vers le contenu au sein de votre application 2D, comme des [vignettes secondaires 2D](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) dans le menu Démarrer de Windows. Par exemple, vous pouvez créer des photosphères de 360 ° qui se lient directement à une application de visionneuse de photos 360 °, ou permettre aux utilisateurs de placer du contenu 3D à partir d’une collection de ressources qui ouvre une page de détails à propos de l’auteur. Il s’agit simplement de quelques façons d’étendre les fonctionnalités de votre application 2D avec du contenu 3D.
 
 ### <a name="creating-a-3d-secondarytile"></a>Création d’un « secondaryTile » 3D
 
@@ -191,7 +191,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>Vérification de la présence de l’utilisateur dans Windows Mixed Reality
 
-les liens en profondeur 3D (secondaryTiles) peuvent être créés uniquement lorsque la vue est affichée dans un casque Windows Mixed Reality. Lorsque votre vue n’est pas présentée dans un casque Windows Mixed Reality, nous vous recommandons de la traiter correctement en masquant le point d’entrée ou en indiquant un message d’erreur. Vous pouvez vérifier cela en interrogeant [IsCurrentViewPresentedOnHolographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
+les liens en profondeur 3D (secondaryTiles) peuvent être créés uniquement lorsque la vue est affichée dans un casque Windows Mixed Reality. Lorsque votre vue n’est pas présentée dans un casque Windows Mixed Reality, nous vous recommandons de la traiter correctement en masquant le point d’entrée ou en indiquant un message d’erreur. Vous pouvez vérifier cela en interrogeant [IsCurrentViewPresentedOnHolographic ()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
 
 ## <a name="tile-notifications"></a>Notifications de vignette
 
@@ -201,7 +201,7 @@ Les notifications de vignette ne prennent pas actuellement en charge l’envoi d
 * Interrogation périodique
 * Notifications planifiées
 
-Pour plus d’informations sur les autres fonctionnalités et attributs de vignettes et sur la façon dont ils sont utilisés pour les vignettes 2D, consultez la [documentation vignettes pour les applications UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
+Pour plus d’informations sur les autres fonctionnalités et attributs de vignettes et sur la façon dont ils sont utilisés pour les vignettes 2D, consultez la [documentation vignettes pour les applications UWP](/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: mappage spatial, HoloLens, réalité mixte, reconstruction de surface, maille, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, présentation de la scène, maillage universel, occlusion, physique, navigation, observateur de surface, rendu, traitement de maillage
-ms.openlocfilehash: 4305a291a2a83f4425c5a80d25dd8145a7033492
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 1c41706abc0a393e8530b38be83fed49ed3e20a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848205"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583275"
 ---
 # <a name="spatial-mapping"></a>Mappage spatial
 
@@ -32,7 +32,7 @@ Le mappage spatial fournit une représentation détaillée des surfaces réelles
     </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
@@ -78,7 +78,7 @@ Pour HoloLens 2, il est possible d’interroger une version statique des donnée
 
 ## <a name="what-influences-spatial-mapping-quality"></a>Qu’est-ce qui influence la qualité du mappage spatial ?
 
-Plusieurs facteurs, détaillés [ici](../environment-considerations-for-hololens.md), peuvent affecter la fréquence et la gravité de ces erreurs.  Toutefois, vous devez concevoir votre application afin que l’utilisateur puisse atteindre ses objectifs même en présence d’erreurs dans les données de mappage spatiale.
+Plusieurs facteurs, détaillés [ici](/hololens/hololens-environment-considerations), peuvent affecter la fréquence et la gravité de ces erreurs.  Toutefois, vous devez concevoir votre application afin que l’utilisateur puisse atteindre ses objectifs même en présence d’erreurs dans les données de mappage spatiale.
 
 ## <a name="common-usage-scenarios"></a>Scénarios d’utilisation courants
 
@@ -209,13 +209,13 @@ Il existe trois façons principales pour lesquelles les maillages de mappage spa
    * Une chose à garder à l’esprit est que les maillages spatiaux sont différents du type de maille qu’un artiste 3D peut créer. La topologie de triangle ne sera pas « propre » comme topologie créée par l’utilisateur, et la maille sera affectée de [diverses erreurs](spatial-mapping.md#what-influences-spatial-mapping-quality).
    * Pour créer un visuel agréable, vous souhaiterez peut-être effectuer un [traitement de maillage](spatial-mapping.md#mesh-processing), par exemple pour remplir des trous ou lisser les normales de surface. Vous pouvez également utiliser un nuanceur pour projeter des textures conçues pour les artistes sur votre maille au lieu de visualiser directement la topologie de maillage et les normales.
 * Pour boucher les hologrammes derrière des surfaces réelles
-   * Les surfaces spatiales peuvent être rendues dans une passe à profondeur uniquement, ce qui affecte uniquement la [mémoire tampon de profondeur](https://msdn.microsoft.com/library/windows/desktop/bb219616(v=vs.85).aspx) et n’affecte pas les cibles de rendu des couleurs.
+   * Les surfaces spatiales peuvent être rendues dans une passe à profondeur uniquement, ce qui affecte uniquement la [mémoire tampon de profondeur](/windows/win32/direct3d9/depth-buffers) et n’affecte pas les cibles de rendu des couleurs.
    * Cela fait passer la mémoire tampon de profondeur à occultait ensuite rendu des hologrammes derrière des surfaces spatiales. L’occlusion précise des hologrammes améliore le sens dans lequel les hologrammes se trouvent vraiment dans l’espace physique de l’utilisateur.
-   * Pour activer le rendu de profondeur uniquement, mettez à jour votre état de fusion pour affecter à [RenderTargetWriteMask](https://msdn.microsoft.com/library/windows/desktop/hh404492(v=vs.85).aspx) la valeur zéro pour toutes les cibles de rendu des couleurs.
+   * Pour activer le rendu de profondeur uniquement, mettez à jour votre état de fusion pour affecter à [RenderTargetWriteMask](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) la valeur zéro pour toutes les cibles de rendu des couleurs.
 * Pour modifier l’apparence des bloqués hologrammes par surfaces réelles
-   * Normalement, la géométrie rendue est masquée quand elle est bloqués. Cela est possible en définissant la fonction Depth dans votre [État de gabarit de profondeur](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx) sur « inférieur ou égal à », ce qui entraîne la visibilité de la géométrie uniquement lorsque celle-ci est plus **proche** de l’appareil photo que toute la géométrie précédemment rendue.
+   * Normalement, la géométrie rendue est masquée quand elle est bloqués. Cela est possible en définissant la fonction Depth dans votre [État de gabarit de profondeur](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) sur « inférieur ou égal à », ce qui entraîne la visibilité de la géométrie uniquement lorsque celle-ci est plus **proche** de l’appareil photo que toute la géométrie précédemment rendue.
    * Toutefois, il peut être utile de garder une certaine géométrie visible même quand elle est bloqués et de modifier son apparence lorsque bloqués est un moyen de fournir des commentaires visuels à l’utilisateur. Par exemple, cela permet à l’application de montrer à l’utilisateur l’emplacement d’un objet tout en le rendant clair, derrière une surface réelle.
-   * Pour ce faire, restituez la géométrie une seconde fois avec un nuanceur différent qui crée l’apparence « bloqués » souhaitée. Avant de restituer la géométrie pour la deuxième fois, apportez deux modifications à l’état de votre [gabarit de profondeur](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx). Tout d’abord, définissez la fonction Depth sur « supérieur ou égal à » pour que la géométrie soit visible uniquement là où elle est **plus éloignée** de l’appareil photo que toute géométrie précédemment rendue. Ensuite, définissez DepthWriteMask sur zéro, afin que la mémoire tampon de profondeur ne soit pas modifiée (le tampon de profondeur doit continuer à représenter la profondeur de la géométrie la **plus proche** de l’appareil photo).
+   * Pour ce faire, restituez la géométrie une seconde fois avec un nuanceur différent qui crée l’apparence « bloqués » souhaitée. Avant de restituer la géométrie pour la deuxième fois, apportez deux modifications à l’état de votre [gabarit de profondeur](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). Tout d’abord, définissez la fonction Depth sur « supérieur ou égal à » pour que la géométrie soit visible uniquement là où elle est **plus éloignée** de l’appareil photo que toute géométrie précédemment rendue. Ensuite, définissez DepthWriteMask sur zéro, afin que la mémoire tampon de profondeur ne soit pas modifiée (le tampon de profondeur doit continuer à représenter la profondeur de la géométrie la **plus proche** de l’appareil photo).
 
 Les [performances](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) sont une préoccupation importante lors du rendu de maillages de mappages spatiaux. Voici quelques techniques de performances de rendu spécifiques au rendu des maillages de mappage spatial :
 * Ajuster la densité du triangle
@@ -227,11 +227,11 @@ Les [performances](../develop/platform-capabilities-and-apis/understanding-perfo
    * Étant donné que l’élimination est effectuée au niveau de chaque maillage et que les surfaces spatiales peuvent être volumineuses, le fait de diviser chaque maillage de surface spatiale en plus petits blocs peut entraîner une élimination plus efficace (dans le cas où un nombre réduit de triangles hors écran sont rendus). Toutefois, il existe un compromis. plus vous avez de maillages, plus les appels de dessin que vous devez effectuer, ce qui peut augmenter les coûts de l’UC. Dans un cas extrême, les calculs d’élimination des frustum peuvent même avoir un coût d’UC mesurable.
 * Ajuster l’ordre de rendu
    * Les surfaces spatiales ont tendance à être volumineuses, car elles représentent l’environnement entier de l’utilisateur qui les entoure. Les coûts de traitement des pixels sur le GPU peuvent être élevés, en particulier dans les cas où il y a plus d’une couche de géométrie visible (y compris des surfaces spatiales et d’autres hologrammes). Dans ce cas, la couche la plus proche de l’utilisateur va abandonner toutes les couches, de sorte que tout temps GPU consacré au rendu de ces autres couches distantes est gaspillé.
-   * Pour réduire ce travail redondant sur le GPU, il est utile de restituer les surfaces opaques dans l’ordre avant-arrière (les plus proches en premier, les plus éloignées en dernier). Par « opaque », nous entendons les surfaces pour lesquelles le DepthWriteMask est défini sur un dans l’état de votre [gabarit de profondeur](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx). Lorsque les surfaces les plus proches sont rendues, elles priment le tampon de profondeur afin que davantage de surfaces distantes soient efficacement ignorées par le processeur de pixels sur le GPU.
+   * Pour réduire ce travail redondant sur le GPU, il est utile de restituer les surfaces opaques dans l’ordre avant-arrière (les plus proches en premier, les plus éloignées en dernier). Par « opaque », nous entendons les surfaces pour lesquelles le DepthWriteMask est défini sur un dans l’état de votre [gabarit de profondeur](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). Lorsque les surfaces les plus proches sont rendues, elles priment le tampon de profondeur afin que davantage de surfaces distantes soient efficacement ignorées par le processeur de pixels sur le GPU.
 
 ## <a name="mesh-processing"></a>Traitement de maillage
 
-Une application peut souhaiter effectuer [diverses opérations](spatial-mapping.md#mesh-processing) sur les maillages de surface spatiale en fonction de ses besoins. Les données d’index et de vertex fournies avec chaque maillage de surface spatiale utilisent la même disposition familière que les [mémoires tampons de vertex et d’index](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) utilisées pour le rendu des maillages de triangle dans toutes les API de rendu modernes. Toutefois, l’un des principaux faits à connaître est que les triangles de mappage spatial ont un **ordre de déroulement dans le sens inverse des aiguilles** d’une montre. Chaque triangle est représenté par trois index de vertex dans le tampon d’index de la maille et ces index identifient les vertex du triangle dans le **sens des aiguilles** d’une montre, lorsque le triangle est affiché du côté **frontal** . Le côté avant (ou à l’extérieur) des maillages de surface spatiales correspond au côté de l’avant (visible) des surfaces universelles réelles.
+Une application peut souhaiter effectuer [diverses opérations](spatial-mapping.md#mesh-processing) sur les maillages de surface spatiale en fonction de ses besoins. Les données d’index et de vertex fournies avec chaque maillage de surface spatiale utilisent la même disposition familière que les [mémoires tampons de vertex et d’index](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) utilisées pour le rendu des maillages de triangle dans toutes les API de rendu modernes. Toutefois, l’un des principaux faits à connaître est que les triangles de mappage spatial ont un **ordre de déroulement dans le sens inverse des aiguilles** d’une montre. Chaque triangle est représenté par trois index de vertex dans le tampon d’index de la maille et ces index identifient les vertex du triangle dans le **sens des aiguilles** d’une montre, lorsque le triangle est affiché du côté **frontal** . Le côté avant (ou à l’extérieur) des maillages de surface spatiales correspond au côté de l’avant (visible) des surfaces universelles réelles.
 
 Les applications doivent uniquement effectuer une simplification de la maille si la densité de triangle la plus grossière fournie par l’observateur de surface est toujours insuffisante. ce travail est coûteux en termes de calcul et déjà effectué par le runtime pour générer les divers niveaux de détail fournis.
 
@@ -292,7 +292,7 @@ Pour faciliter la conception de l’expérience d’analyse, prenez en compte le
    * Une application peut nécessiter une analyse de toutes les surfaces dans la salle actuelle, y compris celles qui se trouvent derrière l’utilisateur.
    * Par exemple, un jeu peut mettre l’utilisateur dans le rôle de Gulliver, sous siege à partir de centaines de petites Lilliputians approchant de toutes les directions.
    * Dans ce cas, l’application doit déterminer le nombre de surfaces de la salle active qui ont déjà été analysées et diriger le point de regard de l’utilisateur pour combler les lacunes significatives.
-   * La clé de ce processus consiste à fournir des commentaires visuels qui démontrent à l’utilisateur que les surfaces n’ont pas encore été analysées. L’application peut, par exemple, utiliser [un brouillard basé](https://msdn.microsoft.com/library/windows/desktop/bb173401%28v=vs.85%29.aspx) sur la distance pour mettre visuellement en surbrillance des régions qui ne sont pas couvertes par des surfaces de mappage spatiale.
+   * La clé de ce processus consiste à fournir des commentaires visuels qui démontrent à l’utilisateur que les surfaces n’ont pas encore été analysées. L’application peut, par exemple, utiliser [un brouillard basé](/windows/win32/direct3d9/fog-formulas) sur la distance pour mettre visuellement en surbrillance des régions qui ne sont pas couvertes par des surfaces de mappage spatiale.
 
 * **Prendre un instantané initial de l’environnement**
    * Une application peut souhaiter ignorer toutes les modifications apportées à l’environnement après avoir effectué un « instantané » initial.
@@ -368,7 +368,7 @@ Voici quelques exemples de différents types de traitement de maillage qui peuve
 * De même, si les données synthétiques ou enregistrées peuvent être utiles pour le débogage, ne vous inquiétez pas trop sur les mêmes cas de test. Cela peut retarder la recherche de problèmes importants que des tests plus variés auraient été détectés précédemment.
 * Il est judicieux d’effectuer des tests avec des utilisateurs réels (et idéalement non surveillés), car ils ne peuvent pas utiliser le HoloLens ou votre application exactement de la même façon que vous le faites. En fait, il peut être surpris de savoir comment le comportement, les connaissances et les hypothèses de personnes divergentes peuvent être !
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 * Pour que les maillages de surface soient correctement orientés, chaque GameObject doit être actif avant d’être envoyé à SurfaceObserver pour que sa maille soit construite. Dans le cas contraire, les mailles s’affichent dans votre espace mais subissent une rotation à des angles inhabituels.
 * Le GameObject qui exécute le script qui communique avec le SurfaceObserver doit être défini sur l’origine. Dans le cas contraire, tous les GameObjects que vous créez et envoyez au SurfaceObserver pour que leurs maillages soient construits auront un décalage égal au décalage de l’objet de jeu parent. Cela peut faire apparaître plusieurs mètres de vos mails, ce qui complique le débogage de ce qui se passe.

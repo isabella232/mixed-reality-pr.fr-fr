@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: réalité mixte, Windows Mixed Reality, HoloLens, hologramme, Academy, didacticiel, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: f2725db17a2991b956c777ee7106b7f094582f77
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4ca16542060e1cee746ba5095a7bf68ca8136267
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677198"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583711"
 ---
 # <a name="mr-basics-101-complete-project-with-device"></a>Réalité mixte - Principes fondamentaux - Cours 101 : Projet complet avec appareil
 
@@ -32,7 +32,7 @@ Le didacticiel prendra environ 1 heure.
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td>Réalité mixte - Principes fondamentaux - Cours 101 : Projet complet avec appareil</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>

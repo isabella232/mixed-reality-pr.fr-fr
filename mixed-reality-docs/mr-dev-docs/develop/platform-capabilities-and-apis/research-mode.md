@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/31/2020
 ms.topic: article
 keywords: Mode de recherche, CV, RS4, vision par ordinateur, recherche, HoloLens, HoloLens 2
-ms.openlocfilehash: 6c40ac814a5dacfdbb942aec8200f46157bea161
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c8e626969f87eda8b686ba759a167a2bf48e3277
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530088"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583135"
 ---
 # <a name="hololens-research-mode"></a>Mode de recherche HoloLens
 
@@ -44,7 +44,7 @@ En outre, Microsoft ne garantit pas que le mode de recherche ou les fonctionnali
 
 ## <a name="security-and-performance"></a>Sécurité et performances
 
-L’activation du mode de recherche utilise davantage de batterie que l’utilisation du HoloLens 2 dans des conditions normales, même si l’application qui utilise les fonctionnalités du mode de recherche n’est pas en cours d’exécution.  L’activation de ce mode peut également réduire la sécurité globale de votre appareil, car les applications peuvent avoir recours à des données de capteur.  Vous trouverez plus d’informations sur la sécurité des appareils dans le [Forum aux questions sur la sécurité HoloLens](https://docs.microsoft.com/hololens/hololens-faq-security).  
+L’activation du mode de recherche utilise davantage de batterie que l’utilisation du HoloLens 2 dans des conditions normales, même si l’application qui utilise les fonctionnalités du mode de recherche n’est pas en cours d’exécution.  L’activation de ce mode peut également réduire la sécurité globale de votre appareil, car les applications peuvent avoir recours à des données de capteur.  Vous trouverez plus d’informations sur la sécurité des appareils dans le [Forum aux questions sur la sécurité HoloLens](/hololens/hololens-faq-security).  
 
 ## <a name="device-support"></a>Prise en charge des appareils
 <table>
@@ -54,8 +54,8 @@ L’activation du mode de recherche utilise davantage de batterie que l’utilis
     <col width="33%" /> </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens première génération</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens première génération</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
     </tr>
      <tr>
         <td>Caméras de suivi des têtes</td>
@@ -92,7 +92,7 @@ Le mode de recherche est une extension du mode développeur. Avant de commencer,
 * Sélectionnez **pour les développeurs** et activer le **mode développeur**.
 * Faites défiler la liste et activez le **portail d’appareil**.
 
-Une fois les fonctionnalités du développeur activées, [Connectez-vous au portail de l’appareil](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) pour activer les fonctionnalités du mode de recherche :
+Une fois les fonctionnalités du développeur activées, [Connectez-vous au portail de l’appareil](/windows/uwp/debug-test-perf/device-portal-hololens) pour activer les fonctionnalités du mode de recherche :
 
 * Accédez à **système > le mode de recherche** dans le portail de l' **appareil**.
 * Sélectionnez **autoriser l’accès au flux de capteur**.
@@ -104,15 +104,15 @@ Une fois que vous avez redémarré l’appareil, les applications chargées via 
 *Fenêtre du mode de recherche dans le portail d’appareils HoloLens*
 
 > [!IMPORTANT]
-> Le mode de recherche pour HoloLens 2 est disponible à partir de la build 19041,1356. Si vous avez besoin d’accéder à une version antérieure, inscrivez-vous à notre programme [Insider Preview](https://docs.microsoft.com/hololens/hololens-insider) .
+> Le mode de recherche pour HoloLens 2 est disponible à partir de la build 19041,1356. Si vous avez besoin d’accéder à une version antérieure, inscrivez-vous à notre programme [Insider Preview](/hololens/hololens-insider) .
 
 ### <a name="using-sensor-data-in-your-apps"></a>Utilisation des données de capteur dans vos applications
 
-Les applications peuvent accéder aux données de flux de capteur de la même façon que [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) accède à des flux de photo et de vidéo. 
+Les applications peuvent accéder aux données de flux de capteur de la même façon que [Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk) accède à des flux de photo et de vidéo. 
 
 Toutes les API qui fonctionnent pour le développement HoloLens sont également disponibles en mode de recherche. En particulier, l’application sait précisément où HoloLens se trouve dans l’espace 6DoF à chaque fois que la capture de l’image du capteur est terminée.
 
-Nous avons des exemples d’applications qui illustrent l’accès aux flux en mode de recherche, à l’aide des [fonctions intrinsèques et extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)et de l’enregistrement des flux :
+Nous avons des exemples d’applications qui illustrent l’accès aux flux en mode de recherche, à l’aide des [fonctions intrinsèques et extrinsics](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)et de l’enregistrement des flux :
 * [HoloLens (première génération)](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV)
 
@@ -124,7 +124,7 @@ Pour HoloLens 2, utilisez le [suivi des problèmes](https://github.com/microsoft
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
+* [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk)
 * [HoloLensForCV GitHub référentiel](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens2ForCV GitHub référentiel](https://github.com/microsoft/HoloLens2ForCV)
 * [Utilisation du portail d’appareil Windows](using-the-windows-device-portal.md)

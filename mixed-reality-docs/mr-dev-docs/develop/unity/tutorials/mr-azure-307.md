@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Academy, Unity, didacticiel, API, Machine Learning, ml, Machine Learning Studio, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 3bb50c146e11a340f4223d71dd401ac2b84dd6d4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679478"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583397"
 ---
 # <a name="mr-and-azure-307-machine-learning"></a>Réalité mixte - Azure - Cours 307 : Machine Learning
 
@@ -42,7 +42,7 @@ Ce cours est un didacticiel autonome qui n’implique pas directement d’autres
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td> Réalité mixte - Azure - Cours 307 : Machine Learning</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -63,7 +63,7 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 - [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](../../../hololens-hardware-details.md) avec le mode développeur activé
+- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Accès Internet pour l’installation d’Azure et la récupération de données ML
 
 ## <a name="before-you-start"></a>Avant de commencer
@@ -100,7 +100,7 @@ Pour utiliser l’API Azure translator, vous devez configurer une instance du se
     7.  Sélectionnez un **Abonnement**.
     4. Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces laboratoires) sous un groupe de ressources commun).
 
-        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](/azure/azure-resource-manager/resource-group-portal).
     
     5.  Déterminez l' **emplacement** de votre groupe de ressources (si vous créez un groupe de ressources). L’emplacement devrait idéalement se trouver dans la région où l’application s’exécutait. Certaines ressources Azure sont uniquement disponibles dans certaines régions.
 
@@ -132,7 +132,7 @@ Pour utiliser l' *Azure machine learning*, vous devez configurer une instance du
 
     3. Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces laboratoires) sous un groupe de ressources commun). 
 
-        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Déterminez l' **emplacement** de votre groupe de ressources (si vous créez un groupe de ressources). L’emplacement devrait idéalement se trouver dans la région où l’application s’exécutait. Certaines ressources Azure sont uniquement disponibles dans certaines régions. Vous devez utiliser le même groupe de ressources que celui que vous avez utilisé pour créer le stockage Azure dans le chapitre précédent.
 
@@ -252,9 +252,9 @@ Pour commencer à créer une expérience :
 
     ![Machine Learning Studio (classique) : l’expérience](images/AzureLabs-Lab7-22.png)
 
-11. Vous allez former un algorithme de **régression logistique multiclasse** afin de prédire le **produit** le plus vendu en fonction de l’heure de la journée et de la date. L’explication des différents algorithmes fournis par le Azure Machine Learning Studio n’entre pas dans le cadre de ce document. Toutefois, vous pouvez en savoir plus sur l’aide-mémoire de l' [algorithme machine learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
+11. Vous allez former un algorithme de **régression logistique multiclasse** afin de prédire le **produit** le plus vendu en fonction de l’heure de la journée et de la date. L’explication des différents algorithmes fournis par le Azure Machine Learning Studio n’entre pas dans le cadre de ce document. Toutefois, vous pouvez en savoir plus sur l’aide-mémoire de l' [algorithme machine learning](/azure/machine-learning/studio/algorithm-cheat-sheet)
 
-12. Dans le panneau des éléments d’expérience sur la gauche, développez **machine learning**  >  **Initialize Model**  >  la **classification** du modèle, puis faites glisser l’élément **multiCLASS logistique Regression** sur la zone de dessin de l’expérience.
+12. Dans le panneau des éléments d’expérience sur la gauche, développez **machine learning**  >    >  la **classification** du modèle, puis faites glisser l’élément **multiCLASS logistique Regression** sur la zone de dessin de l’expérience.
 
 13. Connectez la sortie, en bas de la **régression logistique multiclasse**, à l’entrée en haut à gauche de l’élément de **modèle de formation** .
 
@@ -823,7 +823,7 @@ Pour générer :
 
 1.  Enregistrez la scène actuelle en cliquant sur **fichier**  >  **enregistrer des scènes**.
 
-2.  Atteindre les **File**  >  **paramètres de génération** de fichier
+2.  Atteindre les   >  **paramètres de génération** de fichier
 
 3.  Cochez la case **projets Unity C#** (cela est important car cela vous permettra de modifier les classes une fois la génération terminée).
 

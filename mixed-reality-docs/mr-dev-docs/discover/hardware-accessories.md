@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
 keywords: Guide pratique, accessoires, Bluetooth, BT, contrôleur, boîtier de commande, clic, Xbox, matériel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, contrôleur de mouvement
-ms.openlocfilehash: aaed865f3fd2f722ce287bd2362299f785af05dc
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: b9a58a34a88de01d1d2351ff0a5efbe4f99298db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757717"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583320"
 ---
 # <a name="hardware-accessories"></a>Accessoires matériels
 
 Les appareils Windows Mixed Reality prennent en charge les accessoires. Vous pouvez utiliser des ports Bluetooth ou USB pour coupler des accessoires pris en charge à un casque immersif de votre PC.
 
-Pour plus d’informations sur l’utilisation des accessoires Bluetooth avec HoloLens, consultez [se connecter à des appareils Bluetooth et USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).
+Pour plus d’informations sur l’utilisation des accessoires Bluetooth avec HoloLens, consultez [se connecter à des appareils Bluetooth et USB-C](/hololens/hololens-connect-devices).
 
 Les casques immersifs Windows Mixed Reality requièrent des accessoires pour l’entrée au-delà du [point de vue](../design/gaze-and-commit.md) et de la [voix](../design/voice-input.md). Les accessoires pris en charge incluent le **clavier et la souris**, le **boîtier de soumanette** et les **[contrôleurs de mouvement](../design/motion-controllers.md)**.
 

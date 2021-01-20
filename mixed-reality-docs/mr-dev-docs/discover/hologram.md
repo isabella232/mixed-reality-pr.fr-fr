@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, hologrammes, conception, interaction, casque de réalité mixte, casque Windows Mixed Reality, qu’est-ce que la réalité augmente
-ms.openlocfilehash: b390910fcece8e6263d19f52c80b784efb2561f6
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: cc6b4a4838e7a275b1ef3a45e54c4b894a04b9c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757557"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583341"
 ---
 # <a name="what-is-a-hologram"></a>Qu’est-ce qu’un hologramme ?
 
@@ -33,7 +33,7 @@ HoloLens vous permet de créer des **hologrammes**, qui sont des objets composé
     </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
@@ -126,8 +126,7 @@ Les hologrammes peuvent également être bloqués par des objets réels. Par exe
 
 ## <a name="next-discovery-checkpoint"></a>Point de contrôle de découverte suivant
 
-Si vous suivez le [parcours de découverte](get-started-with-mr.md) que nous avons établi, vous êtes au cœur de l’exploration des concepts de base de la réalité mixte. À partir de là, vous pouvez passer à la rubrique suivante : 
+Si vous suivez le [parcours de découverte](get-started-with-mr.md) que nous avons établi, vous êtes au cœur de l’exploration des concepts de base de la réalité mixte. À partir de là, vous pouvez passer au sujet suivant : 
 
 > [!div class="nextstepaction"]
 > [Développer votre processus de conception](case-study-expanding-the-design-process-for-mixed-reality.md)
-

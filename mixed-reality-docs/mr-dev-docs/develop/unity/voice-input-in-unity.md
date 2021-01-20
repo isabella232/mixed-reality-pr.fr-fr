@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Entrée vocale, KeywordRecognizer, GrammarRecognizer, microphone, dictée, voix, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: d07909bbf05ff882eb0a4b6123c39eae9280e3e8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c6364b190ca90c5e6faf7fb8ef79314134e93cfc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009799"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583719"
 ---
 # <a name="voice-input-in-unity"></a>Entrée vocale dans Unity
 
@@ -105,7 +105,7 @@ keywordRecognizer.Start();
 **Espace de noms :** *UnityEngine. Windows. Speech*<br>
 **Types**: *GrammarRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
-Le GrammarRecognizer est utilisé si vous spécifiez votre grammaire de reconnaissance à l’aide de SRGS. Cela peut être utile si votre application contient plus de seulement quelques mots-clés, si vous souhaitez reconnaître des expressions plus complexes ou si vous souhaitez facilement activer et désactiver des ensembles de commandes. Voir : [créer des grammaires à l’aide de SRGS XML](https://msdn.microsoft.com/library/hh378349(v=office.14).aspx) pour les informations de format de fichier.
+Le GrammarRecognizer est utilisé si vous spécifiez votre grammaire de reconnaissance à l’aide de SRGS. Cela peut être utile si votre application contient plus de seulement quelques mots-clés, si vous souhaitez reconnaître des expressions plus complexes ou si vous souhaitez facilement activer et désactiver des ensembles de commandes. Voir : [créer des grammaires à l’aide de SRGS XML](/previous-versions/office/developer/speech-technologies/hh378349(v=office.14)) pour les informations de format de fichier.
 
 Une fois que vous disposez de la grammaire SRGS et que celle-ci se trouve dans votre projet dans un [dossier StreamingAssets](https://docs.unity3d.com/Manual/StreamingAssets.html):
 

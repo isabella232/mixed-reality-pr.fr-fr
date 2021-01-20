@@ -6,12 +6,12 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, Windows Mixed Reality, Web VR, Web XR, Web Mr, Web AR, 360, 360 Video, 360 vidéos, 360 photo, 360 photos, 360 content, Internet immersif, immersiveweb, IW
-ms.openlocfilehash: e49f5f2422c9802f94b63943f8a38949a2969f83
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 99cf5cf151c41252e43c6051c0d6281d33fe695a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006939"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582902"
 ---
 # <a name="webxr-overview"></a>Présentation de WebXR
 
@@ -19,7 +19,7 @@ ms.locfileid: "98006939"
 
 L' **API d’appareil WebXR** permet d’accéder à des appareils de réalité **virtuelle (VR)** et de **réalité augmentée (AR)** , notamment des **capteurs** et des **affichages montés en tête** sur le **Web**. L’API d’appareil WebXR est actuellement disponible sur Microsoft Edge et Chrome version 79 et les versions ultérieures prennent en charge WebXR comme valeur par défaut. Vous pouvez vérifier l’état de prise en charge du navigateur le plus récent pour WebXR sur [caniuse.com](https://caniuse.com/#search=webxr).
 
-Apprenez-en davantage sur [Windows Mixed Reality et le nouveau Microsoft Edge dans la](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)section [Nouveautés](https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide) .
+Apprenez-en davantage sur [Windows Mixed Reality et le nouveau Microsoft Edge dans la](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)section [Nouveautés](/windows/mixed-reality/mrtk-porting-guide) .
 
 ## <a name="viewing-webxr"></a>Affichage de WebXR
 
@@ -36,9 +36,9 @@ Pour tester si votre navigateur prend en charge WebXR, vous pouvez accéder à d
 * [Documentation de l’API d’appareil WebXR](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
 * [Immersiveweb. dev](https://immersiveweb.dev/)
 * [Exemples WebXR](https://immersive-web.github.io/webxr-samples/)
-* [Windows Mixed Reality et le nouveau Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
+* [Windows Mixed Reality et le nouveau Microsoft Edge](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
 * [Github du W3C sur le Web immersif](https://github.com/immersive-web)
-* [API WebGL](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
+* [API WebGL](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [API du boîtier de manette](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) et les [extensions de boîtier](https://w3c.github.io/gamepad/extensions.html)
 * [Gestion du contexte perdu dans WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
 * [Pointerlock](https://www.w3.org/TR/pointerlock/)

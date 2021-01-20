@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: système de coordonnées, système de coordonnées spatiales, échelle universelle, monde, échelle, position, orientation, Ancre, ancrage spatial, verrouillage universel, verrouillage universel, persistance, partage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b11dc8cada8b67a21795dd9838579fc5dd735e6d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009109"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583263"
 ---
 # <a name="spatial-anchors"></a>Ancres spatiales
 
@@ -19,8 +19,8 @@ Une ancre spatiale représente un point important dans le monde où le système 
 
 Vous pouvez également conserver et partager des ancres spatiales entre les sessions d’application et entre les appareils :
 * En enregistrant les ancres spatiales locales sur le disque et en les chargeant ultérieurement, votre application peut calculer le même emplacement dans le monde réel sur plusieurs sessions d’application sur une même HoloLens.
-* En utilisant des <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre Cloud, votre application peut partager une ancre spatiale sur plusieurs appareils HoloLens, iOS et Android. Si chaque appareil effectue le rendu d’un hologramme à l’aide de la même ancre spatiale, les utilisateurs voient l’hologramme apparaître au même endroit dans le monde réel. Cette technique autorise les expériences partagées en temps réel.
-* Vous pouvez également utiliser des <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance des hologrammes asynchrones sur les appareils HoloLens, iOS et Android. En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
+* En utilisant des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre Cloud, votre application peut partager une ancre spatiale sur plusieurs appareils HoloLens, iOS et Android. Si chaque appareil effectue le rendu d’un hologramme à l’aide de la même ancre spatiale, les utilisateurs voient l’hologramme apparaître au même endroit dans le monde réel. Cette technique autorise les expériences partagées en temps réel.
+* Vous pouvez également utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance des hologrammes asynchrones sur les appareils HoloLens, iOS et Android. En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
 
 Pour les expériences à échelle permanente ou à l’échelle de l’espace pour les casques de bureau attachés qui restent dans un diamètre de 5 mètres, vous pouvez généralement utiliser le [cadre de la phase de référence](coordinate-systems.md#stage-frame-of-reference) au lieu des ancres spatiales, ce qui vous permet de restituer tout le contenu. Toutefois, si votre application permet aux utilisateurs d’aller au-delà de 5 mètres dans HoloLens, peut-être en fonctionnement tout au long d’un étage d’un bâtiment, vous aurez besoin d’ancres spatiales pour garantir la stabilité du contenu.
 
@@ -75,7 +75,7 @@ Pour les ancres spatiales cloud, votre stockage peut évoluer en fonction de vot
 
 * [Systèmes de coordonnées](coordinate-systems.md)
 * [Expériences partagées dans Mixed Reality](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Persistance dans Unity](../develop/unity/persistence-in-unity.md)
 * [Ancres spatiales dans DirectX](../develop/native/coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [Étude de cas - Voir à travers vos objets](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

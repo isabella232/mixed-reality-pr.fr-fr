@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, occlusion, kit de développement logiciel (SDK)
-ms.openlocfilehash: c4485c5501300d6ca629f4e587fde1f88eea7ea5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1458ca9e70a52913ae150c58393c3e030e2c1add
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008869"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583334"
 ---
 # <a name="scene-understanding"></a>Compréhension des scènes
 
@@ -56,7 +56,7 @@ Si vous recherchez des informations spécifiques sur le développement avec la c
     </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>

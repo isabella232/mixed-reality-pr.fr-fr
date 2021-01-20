@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: contrôleurs 6DOF, contrôleurs de mouvement, appariement, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, défilement, préhension, état
-ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 367c9d9e0179c82af05af3fded9341ff7960d19e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192617"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583668"
 ---
 # <a name="motion-controllers"></a>Contrôleurs de mouvement
 
@@ -41,7 +41,7 @@ ms.locfileid: "98192617"
 </colgroup>
 <tr>
      <td><strong>Fonctionnalité</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
 </tr>
@@ -80,14 +80,14 @@ Les contrôleurs de mouvement Windows Mixed Reality effectuent un suivi des mouv
 
 **Rechercher les mises à jour de Windows, Unity et Driver**
 * Consultez [installer les outils](../develop/install-the-tools.md) pour les versions préférées de Windows, Unity, et ainsi de suite, pour le développement de la réalité mixte.
-* Veillez à disposer des [pilotes de contrôleur de mouvement et de casque](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)les plus récents.
+* Veillez à disposer des [pilotes de contrôleur de mouvement et de casque](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)les plus récents.
 
 ### <a name="pairing-controllers"></a>Contrôleurs associés
 
 Les contrôleurs de mouvement peuvent être liés à un PC hôte à l’aide de paramètres Windows, comme tout autre appareil Bluetooth.
 
 1. Insérez deux piles AA à l’arrière du contrôleur. Laissez la couverture de la batterie désactivée pour le moment.
-2. Si vous utilisez une carte Bluetooth USB externe au lieu d’une radio Bluetooth intégrée, passez en revue les [meilleures pratiques relatives à Bluetooth](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) avant de continuer. Pour la configuration du bureau avec la radio intégrée, assurez-vous que l’antenne est connectée.
+2. Si vous utilisez une carte Bluetooth USB externe au lieu d’une radio Bluetooth intégrée, passez en revue les [meilleures pratiques relatives à Bluetooth](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) avant de continuer. Pour la configuration du bureau avec la radio intégrée, assurez-vous que l’antenne est connectée.
 3. Ouvrir les **Paramètres Windows**  ->  **appareils**  ->  **Ajouter Bluetooth ou autre périphérique**  ->  **Bluetooth** et supprimer toutes les instances antérieures de « pilote de mouvement – droite » et « contrôleur de mouvement – gauche ». Consultez également la catégorie autres périphériques au bas de la liste.
 4. Sélectionnez **Ajouter un périphérique Bluetooth ou un autre appareil** pour voir comment détecter des appareils Bluetooth.
 5. Appuyez sur le bouton Windows du contrôleur et maintenez-le enfoncé pour le mettre sous tension.
@@ -142,7 +142,7 @@ Si les contrôleurs sont désactivés après l’appariement, leur état s’aff
 
 * Vérifiez que vos contrôleurs fonctionnent correctement :
     1. Lancez le **portail de réalité mixte** et entrez votre page d’hébergement de la réalité mixte.
-    2. Déplacez vos contrôleurs et vérifiez le suivi, les boutons de test et vérifiez que la [téléportage](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) fonctionne. Si ce n’est pas le cas, consultez [résolution des problèmes du contrôleur de mouvement](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
+    2. Déplacez vos contrôleurs et vérifiez le suivi, les boutons de test et vérifiez que la [téléportage](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) fonctionne. Si ce n’est pas le cas, consultez [résolution des problèmes du contrôleur de mouvement](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
 
 ## <a name="gazing-and-pointing"></a>Gazing et pointage
 
@@ -257,7 +257,7 @@ Les contrôleurs de mouvement prennent en charge le jumelage avec un seul PC. Su
 
 ### <a name="how-do-i-update-motion-controller-firmware"></a>Comment faire mettre à jour le microprogramme du contrôleur de mouvement ?
 
-Le microprogramme du contrôleur de mouvement fait partie du pilote du casque et sera mis à jour automatiquement à la connexion, si nécessaire. Les mises à jour de microprogramme prennent généralement 1-2 minutes en fonction de la radio Bluetooth et de la qualité de liaison. Dans de rares cas, les mises à jour du microprogramme du contrôleur peuvent prendre jusqu’à 10 minutes, ce qui peut indiquer une connectivité Bluetooth médiocre ou des interférences radio. Pour résoudre les problèmes de connectivité, consultez [meilleures pratiques pour Bluetooth dans le Guide du passionné](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) . Après une mise à jour du microprogramme, les contrôleurs redémarrent et se reconnectent au PC hôte (vous remarquerez peut-être que les LED sont brillantes pour le suivi). Si une mise à jour du microprogramme est interrompue (par exemple, si les contrôleurs perdent de l’énergie), elle sera tentée à nouveau lors de la prochaine mise sous tension des contrôleurs.
+Le microprogramme du contrôleur de mouvement fait partie du pilote du casque et sera mis à jour automatiquement à la connexion, si nécessaire. Les mises à jour de microprogramme prennent généralement 1-2 minutes en fonction de la radio Bluetooth et de la qualité de liaison. Dans de rares cas, les mises à jour du microprogramme du contrôleur peuvent prendre jusqu’à 10 minutes, ce qui peut indiquer une connectivité Bluetooth médiocre ou des interférences radio. Pour résoudre les problèmes de connectivité, consultez [meilleures pratiques pour Bluetooth dans le Guide du passionné](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) . Après une mise à jour du microprogramme, les contrôleurs redémarrent et se reconnectent au PC hôte (vous remarquerez peut-être que les LED sont brillantes pour le suivi). Si une mise à jour du microprogramme est interrompue (par exemple, si les contrôleurs perdent de l’énergie), elle sera tentée à nouveau lors de la prochaine mise sous tension des contrôleurs.
 
 ### <a name="how-i-can-check-battery-level"></a>Comment vérifier le niveau de la batterie ?
 
@@ -269,17 +269,17 @@ Pas pour les applications Windows universelles.
 
 ## <a name="troubleshooting"></a>Dépannage
 
-Consultez [résolution des problèmes du contrôleur de mouvement](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) dans le Guide du passionné.
+Consultez [résolution des problèmes du contrôleur de mouvement](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) dans le Guide du passionné.
 
 ## <a name="filing-motion-controller-feedbackbugs"></a>Profilage de commentaires/bogues du contrôleur de mouvement
 
-[Faites-nous part](../give-us-feedback.md) de vos commentaires dans le hub de commentaires à l’aide de la catégorie « > d’entrée de réalité mixte ».
+[Faites-nous part](/hololens/hololens-feedback) de vos commentaires dans le hub de commentaires à l’aide de la catégorie « > d’entrée de réalité mixte ».
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Contrôleurs de mouvement dans Unity](../develop/unity/motion-controllers-in-unity.md)
 * [Mains et contrôleurs de mouvement dans DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Mouvements](gaze-and-commit.md#composite-gestures)
-* [Guide de passionnés : votre page d’hébergement Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
-* [Guide de passionnés : utilisation de jeux & des applications dans Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [Fonctionnement du suivi intérieur-extérieur](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [Guide de passionnés : votre page d’hébergement Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
+* [Guide de passionnés : utilisation de jeux & des applications dans Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
+* [Fonctionnement du suivi intérieur-extérieur](/windows/mixed-reality/enthusiast-guide/tracking-system)

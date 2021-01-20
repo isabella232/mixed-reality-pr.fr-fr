@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: GGv, voix, Cortana, voix, entrée, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, HoloLens, MRTK, Toolkit de réalité mixte, point de regard
-ms.openlocfilehash: 09f99083d769be80d8c15016b3de8713eae76515
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848127"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583223"
 ---
 # <a name="voice-input"></a>Entrée vocale
 
@@ -19,7 +19,7 @@ ms.locfileid: "97848127"
 
 La voix est l’un des principaux types d’entrée sur HoloLens. Elle vous permet de directement commander un hologramme sans avoir à utiliser des gestes à la [main](gaze-and-commit.md#composite-gestures). Une entrée vocale peut être un moyen naturel de communiquer votre intention. La voix est particulièrement intéressante pour traverser les interfaces complexes, car elle permet aux utilisateurs de couper les menus imbriqués avec une commande.
 
-L’entrée vocale est alimentée par le [moteur](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) qui prend en charge la reconnaissance vocale dans toutes les _applications Windows universelles_. Sur HoloLens, la reconnaissance vocale fonctionne toujours dans la langue d’affichage Windows configurée dans les paramètres de votre appareil. 
+L’entrée vocale est alimentée par le [moteur](/windows/uwp/design/input/speech-recognition) qui prend en charge la reconnaissance vocale dans toutes les _applications Windows universelles_. Sur HoloLens, la reconnaissance vocale fonctionne toujours dans la langue d’affichage Windows configurée dans les paramètres de votre appareil. 
 
 <br>
 
@@ -43,7 +43,7 @@ Lorsque vous utilisez des commandes vocales, le point de vue de la tête ou de l
     </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
@@ -59,7 +59,7 @@ Lorsque vous utilisez des commandes vocales, le point de vue de la tête ou de l
 
 **HoloLens (1ère génération)**
 
-Même sans ajouter spécifiquement la prise en charge vocale à votre application, vos utilisateurs peuvent activer des hologrammes simplement en disant à la commande System Voice « Select ». Cela se comporte de la même façon qu’un [TAP Air](gaze-and-commit.md#composite-gestures) sur HoloLens, en appuyant sur le bouton de sélection sur l’interactiveur [hololens](https://docs.microsoft.com/hololens/hololens1-clicker)ou en appuyant sur le déclencheur sur un [contrôleur de mouvement Windows Mixed Reality](motion-controllers.md). Vous entendez un son et vous voyez une info-bulle avec « sélectionner » qui s’affiche comme confirmation. « SELECT » est activé par un algorithme de détection de mot clé de faible puissance, ce qui signifie que vous pouvez le prononcer à tout moment avec un impact minimal sur la durée de vie de la batterie. Vous pouvez même indiquer « SELECT » avec vos mains.
+Même sans ajouter spécifiquement la prise en charge vocale à votre application, vos utilisateurs peuvent activer des hologrammes simplement en disant à la commande System Voice « Select ». Cela se comporte de la même façon qu’un [TAP Air](gaze-and-commit.md#composite-gestures) sur HoloLens, en appuyant sur le bouton de sélection sur l’interactiveur [hololens](/hololens/hololens1-clicker)ou en appuyant sur le déclencheur sur un [contrôleur de mouvement Windows Mixed Reality](motion-controllers.md). Vous entendez un son et vous voyez une info-bulle avec « sélectionner » qui s’affiche comme confirmation. « SELECT » est activé par un algorithme de détection de mot clé de faible puissance, ce qui signifie que vous pouvez le prononcer à tout moment avec un impact minimal sur la durée de vie de la batterie. Vous pouvez même indiquer « SELECT » avec vos mains.
 
 <br>
 
@@ -266,7 +266,7 @@ Lorsque la voix est utilisée correctement, l’utilisateur **comprend ce qu’i
 
 ## <a name="communication"></a>Communication
 
-Pour les applications qui souhaitent tirer parti des options de traitement d’entrée audio personnalisées fournies par HoloLens, il est important de comprendre les différentes [catégories de flux audio](https://msdn.microsoft.com/library/windows/desktop/hh404178(v=vs.85).aspx) que votre application peut consommer. Windows 10 prend en charge plusieurs catégories de flux et HoloLens en utilise trois pour permettre un traitement personnalisé afin d’optimiser la qualité audio du microphone adaptée à la parole, à la communication et à d’autres, qui peuvent être utilisées pour les scénarios de capture audio de l’environnement ambiant (autrement dit, « Camcorder »).
+Pour les applications qui souhaitent tirer parti des options de traitement d’entrée audio personnalisées fournies par HoloLens, il est important de comprendre les différentes [catégories de flux audio](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) que votre application peut consommer. Windows 10 prend en charge plusieurs catégories de flux et HoloLens en utilise trois pour permettre un traitement personnalisé afin d’optimiser la qualité audio du microphone adaptée à la parole, à la communication et à d’autres, qui peuvent être utilisées pour les scénarios de capture audio de l’environnement ambiant (autrement dit, « Camcorder »).
 * La catégorie de flux de AudioCategory_Communications est personnalisée pour les scénarios de qualité des appels et de narration et fournit au client un flux audio mono de 16 kHz de la voix de l’utilisateur.
 * La catégorie de flux de AudioCategory_Speech est personnalisée pour le moteur de reconnaissance de la parole HoloLens (Windows) et lui fournit un flux mono 16 kHz de 24 bits de la voix de l’utilisateur. Cette catégorie peut être utilisée par des moteurs de reconnaissance vocale tiers, si nécessaire.
 * La catégorie de flux de AudioCategory_Other est personnalisée pour l’enregistrement audio de l’environnement ambiant et fournit au client un flux audio stéréo 48 kHz de 24 bits.
@@ -275,9 +275,9 @@ Tout ce traitement audio est l’accélération matérielle, ce qui signifie que
 
 ## <a name="languages"></a>Langages
 
-HoloLens 2 [prend en charge plusieurs langues](https://docs.microsoft.com/hololens/hololens2-language-support). N’oubliez pas que les commandes vocales s’exécutent toujours dans la langue d’affichage du système même si plusieurs claviers sont installés ou si les applications essaient de créer un module de reconnaissance vocale dans une autre langue.
+HoloLens 2 [prend en charge plusieurs langues](/hololens/hololens2-language-support). N’oubliez pas que les commandes vocales s’exécutent toujours dans la langue d’affichage du système même si plusieurs claviers sont installés ou si les applications essaient de créer un module de reconnaissance vocale dans une autre langue.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Si vous rencontrez des problèmes à l’aide de « SELECT » et de « Hey Cortana », essayez de passer à un espace plus silencieux, à l’extérieur de la source de bruit, ou en parlant plus fort. À ce stade, toute la reconnaissance vocale sur HoloLens est réglée et optimisée spécifiquement pour les intervenants natifs de États-Unis anglais.
 

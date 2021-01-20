@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Academy, Unity, didacticiel, API, application Insights, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: d663da0e3a0d00532669a122dc95f2089bf08712
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5d599e7c3c6f887675bf010a10fb8841e80143db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679468"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582964"
 ---
 # <a name="mr-and-azure-309-application-insights"></a>Réalité mixte - Azure - Cours 309 : Application Insights
 
@@ -40,7 +40,7 @@ Ce cours vous apprend à obtenir les résultats du service Application Insights,
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td> Réalité mixte - Azure - Cours 309 : Application Insights</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -61,7 +61,7 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 - [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](../../../hololens-hardware-details.md) avec le mode développeur activé
+- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Un jeu de casque avec un microphone intégré (si le casque n’a pas de MIC et de haut-parleurs intégrés)
 - Accès Internet pour l’installation d’Azure et la récupération des données de Application Insights
 
@@ -102,7 +102,7 @@ Pour utiliser *application Insights*, vous devez créer et configurer un *Servic
 
     4.  Choisissez un **groupe de ressources** ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces cours) dans un groupe de ressources commun.
 
-        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](/azure/azure-resource-manager/resource-group-portal).
 
     5.  Sélectionnez un **emplacement**.
 
@@ -1207,7 +1207,7 @@ Dans ce chapitre, vous devez placer le script de **déplacement** sur le parent 
 
 Tout ce qui est nécessaire pour la section Unity de ce projet est maintenant terminé. il est donc temps de la générer à partir d’Unity.
 
-1.  Accédez à **paramètres de build**, (paramètres de génération de **fichier**  >  **Build Settings**).
+1.  Accédez à **paramètres de build**, (paramètres de génération de **fichier**  >  ).
 
 2.  Dans la fenêtre **paramètres de build** , cliquez sur **générer**.
 
@@ -1281,4 +1281,3 @@ Essayez de créer dynamiquement, plutôt que de créer manuellement les objets O
 **Exercice 2**
 
 Triez vos résultats Application Insights par heure, afin d’obtenir les données les plus pertinentes, et d’implémenter ces données sensibles au temps dans votre application.
-

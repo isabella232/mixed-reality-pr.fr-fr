@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: en réalité mixte, Windows Mixed Reality, hologramme, Academy, didacticiel, émulateur, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10, point de regard, mouvements, entrée vocale, son spatial, mappage spatial
-ms.openlocfilehash: 3499011b8c91168bf27522e5f6f287b14295283e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678308"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583690"
 ---
 # <a name="mr-basics-101e-complete-project-with-emulator"></a>Réalité mixte - Principes fondamentaux - Cours 101E : Projet complet avec émulateur
 
@@ -28,7 +28,7 @@ Ce didacticiel vous guide tout au long d’un projet complet, Unity, qui illustr
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td>Réalité mixte - Principes fondamentaux - Cours 101E : Projet complet avec émulateur</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>

@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, diagnostics, performances
-ms.openlocfilehash: c016221746efb34dd83ceb42a4a2cde156dde4c8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7a7c7762f079dcc4ec05bacec8bd7ab0d3625e0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006529"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583168"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
@@ -83,5 +83,5 @@ Dans l’écran principal, vous pouvez indiquer **« Désactiver les diagnostic
 * [HoloLens (First Gen) : ajouter la communication à distance holographique](add-holographic-remoting.md)
 * [Écriture d’une application distante holographique à distance à l’aide des API Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
-* [Termes du contrat de licence de la communication à distance holographique](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Termes du contrat de licence de la communication à distance holographique](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

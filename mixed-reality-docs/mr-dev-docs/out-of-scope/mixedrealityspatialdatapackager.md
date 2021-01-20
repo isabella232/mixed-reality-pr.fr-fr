@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 08/03/2020
 ms.topic: article
 keywords: LBE, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
-ms.openlocfilehash: df6757730c8a5448d96811bfe4ce024f6942dc07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 93d598a6add8350850faadab241b254e9cb341aa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680554"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583640"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>Documentation du package de données spatiales de la réalité mixte
 
@@ -37,7 +37,7 @@ ms.locfileid: "91680554"
     </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ère génération)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
@@ -71,8 +71,7 @@ Principales exigences et limitations :
 4. Réduire les surfaces vides et sans texture, par exemple placer une plage de différentes affiches sur des murs blancs
 5. Mapper l’espace sans objets dynamiques dans la scène, tels que le déplacement de personnes
 6. Verrouiller la carte lors de l’importation (disponible par le biais de la version préliminaire d’Insider)
-7. Déverrouillez la carte et relancez l’analyse de l’environnement en cas de dégradation de la qualité et/ou d’évolution de l’environnement (éclairage ou modifications dans la disposition des objets).
-***
+7. Déverrouillez la carte et relancez l’analyse de l’environnement en cas de dégradation de la qualité et/ou d’évolution de l’environnement (éclairage ou modifications dans la disposition des objets) * * _
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>Exécution d’un package de données spatiales de réalité mixte avec un script compagnon
 
@@ -154,7 +153,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 L’importation supprime les données spatiales existantes et les remplace par les données du répertoire spécifié. L’entrée nom de l’application spécifie le nom du package de l’application cible qui doit être importé pour les ancres spatiales et le SID de l’utilisateur cible spécifie l’utilisateur qui doit avoir accès aux ancres spatiales importées. Le nom de la famille de packages cible et les SID d’utilisateur doivent correspondre aux valeurs existantes sur le PC. sinon, le fichier exe échoue.
 
 
-***
+_**
 ## <a name="error-messages"></a>Messages d'erreur
 En outre, les messages d’erreur ci-dessous sont également accompagnés d’un HRESULT
 

@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, capture, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
-ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
+ms.openlocfilehash: 29cb741cd986fbb98dabb1faf2051450fd0286c3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97822926"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583096"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Installation de PIX pour HoloLens 2
 
@@ -21,7 +21,7 @@ ms.locfileid: "97822926"
 
 1. Prenez la version la plus récente de la [version]( https://devblogs.microsoft.com/pix/download) pix de votre ordinateur hôte et connectez votre HoloLens 2 à votre PC via un câble USB.
 
-2. Si votre HoloLens 2 est sur une [version de Windows Insider](https://insider.windows.com) ou si elle a une configuration qui interrompt pix,  [reflashez votre appareil](https://docs.microsoft.com/hololens/hololens-recovery) pour effacer toutes les données.
+2. Si votre HoloLens 2 est sur une [version de Windows Insider](https://insider.windows.com) ou si elle a une configuration qui interrompt pix,  [reflashez votre appareil](/hololens/hololens-recovery) pour effacer toutes les données.
 
 3. Activer le **mode développeur** et le **portail des appareils**:
 
@@ -46,7 +46,7 @@ ms.locfileid: "97822926"
 * Lorsque l’appareil est toujours connecté, en éveil et avec l’utilisateur connecté, lancez Visual Studio.
 
 > [!IMPORTANT]
-> Assurez-vous que votre appareil n’est pas en mode veille ou en veille. Si vous rencontrez des problèmes avec cette étape, reportez-vous aux [instructions du portail d’appareils Windows](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+> Assurez-vous que votre appareil n’est pas en mode veille ou en veille. Si vous rencontrez des problèmes avec cette étape, reportez-vous aux [instructions du portail d’appareils Windows](./using-the-windows-device-portal.md).
 
 ## <a name="preparing-for-deployment"></a>Préparation du déploiement
 

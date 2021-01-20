@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: contrôleurs de mouvement, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: bf9aad0ee67a406280cefedec8b55fb1de130b8b
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192951"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583504"
 ---
 # <a name="motion-controllers-in-unity"></a>Contrôleurs de mouvement dans Unity
 
@@ -445,15 +445,15 @@ Des didacticiels pas à pas, avec des exemples de personnalisation plus détaill
 - [Réalité mixte - Entrées - Cours 211 : Mouvement](tutorials/holograms-211.md)
 - [Réalité mixte - Entrées - Cours 213 : Contrôleurs de mouvement](../../deprecated/mixed-reality-213.md)
 
-[![Entrée MR 213-contrôleur de mouvement](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
+[![Entrée MR 213-contrôleur de mouvement](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
 *Entrée MR 213-contrôleur de mouvement*
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir d’ici, vous pouvez passer au composant suivant :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au module suivant :
 
 > [!div class="nextstepaction"]
-> [Suivi du regard et des mains](hand-eye-in-unit.md)
+> [Suivi du regard et des mains](./hand-eye-in-unity.md)
 
 Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 

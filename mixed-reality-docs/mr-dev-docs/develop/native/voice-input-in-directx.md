@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: procédure pas à pas, commande vocale, expression, reconnaissance, reconnaissance vocale, DirectX, plateforme, Cortana, Windows Mixed Reality
-ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613103"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583740"
 ---
 # <a name="voice-input-in-directx"></a>Entrée vocale dans DirectX
 
@@ -67,7 +67,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-Pour charger la liste de commandes dans la liste des contraintes pour le module de reconnaissance vocale, utilisez un objet [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) .
+Pour charger la liste de commandes dans la liste des contraintes pour le module de reconnaissance vocale, utilisez un objet [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) .
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -86,7 +86,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-Abonnez-vous à l’événement [ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) sur le [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx)du module de reconnaissance vocale. Cet événement avertit votre application lorsque l’une de vos commandes a été reconnue.
+Abonnez-vous à l’événement [ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) sur le [SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)du module de reconnaissance vocale. Cet événement avertit votre application lorsque l’une de vos commandes a été reconnue.
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -95,7 +95,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Votre gestionnaire d’événements *OnResultGenerated* reçoit les données d’événement dans une instance [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Si la confiance est supérieure au seuil que vous avez défini, votre application doit noter que l’événement s’est produit. Enregistrez les données d’événement afin de pouvoir les utiliser dans une boucle de mise à jour ultérieure.
+Votre gestionnaire d’événements *OnResultGenerated* reçoit les données d’événement dans une instance [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) . Si la confiance est supérieure au seuil que vous avez défini, votre application doit noter que l’événement s’est produit. Enregistrez les données d’événement afin de pouvoir les utiliser dans une boucle de mise à jour ultérieure.
 
 À partir de *HolographicVoiceInputSampleMain. cpp*:
 
@@ -256,7 +256,7 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> Il existe plusieurs [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) prédéfinis que vous pouvez utiliser pour optimiser la reconnaissance vocale.
+> Il existe plusieurs [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) prédéfinis que vous pouvez utiliser pour optimiser la reconnaissance vocale.
 
 * Pour optimiser la dictée, utilisez le scénario de dictée.<br/>
    ```
@@ -431,5 +431,5 @@ catch (Exception^ exception)
 ```
 
 ## <a name="see-also"></a>Voir aussi
-* [Conception d’applications vocales](https://msdn.microsoft.com/library/dn596121.aspx)
+* [Conception d’applications vocales](/windows/uwp/design/input/speech-interactions)
 * [Exemple SpeechRecognitionAndSynthesis](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

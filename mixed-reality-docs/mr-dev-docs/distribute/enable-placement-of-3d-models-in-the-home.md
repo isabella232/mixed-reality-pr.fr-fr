@@ -6,17 +6,17 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, modèle, place à la terre, lieu, monde, modélisation, Hébergement de réalité mixte, Web, application, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 58da61add35546331ff8199fa20885f9869a9f43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010099"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583804"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Permettre le placement d’objets 3D dans l’accueil réalité mixte
 
 > [!NOTE]
-> Cette fonctionnalité a été ajoutée dans le cadre de la [mise à jour 2018 de Windows 10 avril](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Les versions antérieures de Windows ne sont pas compatibles avec cette fonctionnalité.
+> Cette fonctionnalité a été ajoutée dans le cadre de la [mise à jour 2018 de Windows 10 avril](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Les versions antérieures de Windows ne sont pas compatibles avec cette fonctionnalité.
 
 La [base de la réalité Windows Mixed](../discover/navigating-the-windows-mixed-reality-home.md) est le point de départ où les utilisateurs se trouvent avant de lancer des applications. Dans certains scénarios, les applications 2D (comme l’application hologrammes) permettent de placer des modèles 3D directement dans l’espace de la réalité mixte en tant que décorations ou pour une inspection supplémentaire en 3D complet. Le *protocole Add Model* vous permet d’envoyer un modèle 3D à partir de votre site Web ou application directement dans la page d’hébergement Windows Mixed Reality, où il sera conservé comme les [lanceurs d’applications 3D](3d-app-launcher-design-guidance.md), les applications 2D et les hologrammes. 
 
@@ -32,7 +32,7 @@ Par exemple, si vous développez une application qui couvre un catalogue de mobi
     </colgroup>
     <tr>
         <td><strong>Fonctionnalité</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
      <tr>

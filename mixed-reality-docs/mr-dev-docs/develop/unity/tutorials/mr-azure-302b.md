@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, vision personnalisée, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: d40dc1cf23ee8040406047eaddd7ee3b70365199
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: cba2df5841911df6d60a7060a70f835975a21f62
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679548"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583408"
 ---
 # <a name="mr-and-azure-302b-custom-vision"></a>Réalité mixte - Azure - Cours 302b : Vision personnalisée
 
@@ -29,7 +29,7 @@ Ce service vous permet d’effectuer l’apprentissage d’un modèle de Machine
 
 ![résultat du cours](images/AzureLabs-Lab302b-00.png)
 
-Azure Custom Vision est un service cognitive de Microsoft qui permet aux développeurs de créer des classifieurs d’images personnalisées. Ces classifieurs peuvent ensuite être utilisés avec de nouvelles images pour reconnaître, ou classer, des objets dans cette nouvelle image. Le service fournit un portail en ligne simple et facile à utiliser pour simplifier le processus. Pour plus d’informations, consultez la [page service vision personnalisée Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
+Azure Custom Vision est un service cognitive de Microsoft qui permet aux développeurs de créer des classifieurs d’images personnalisées. Ces classifieurs peuvent ensuite être utilisés avec de nouvelles images pour reconnaître, ou classer, des objets dans cette nouvelle image. Le service fournit un portail en ligne simple et facile à utiliser pour simplifier le processus. Pour plus d’informations, consultez la [page service vision personnalisée Azure](/azure/cognitive-services/custom-vision-service/home).
 
 À la fin de ce cours, vous disposerez d’une application de réalité mixte qui pourra fonctionner en deux modes :
 
@@ -43,7 +43,7 @@ Ce cours vous apprend à obtenir les résultats de la Service Vision personnalis
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td> Réalité mixte - Azure - Cours 302b : Vision personnalisée</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -64,7 +64,7 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 - [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](../../../hololens-hardware-details.md) avec le mode développeur activé
+- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Appareil photo connecté à votre PC (pour le développement d’un casque immersif)
 - Accès à Internet pour l’installation d’Azure et la récupération de l’API Custom Vision
 - Une série d’au moins cinq (5) images (dix (10) recommandé) pour chaque objet que vous souhaitez que le Service Vision personnalisée reconnaître. Si vous le souhaitez, vous pouvez utiliser [les images déjà fournies dans ce cours (une souris d’ordinateur et un clavier) ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip).
@@ -72,12 +72,12 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 ## <a name="before-you-start"></a>Avant de commencer
 
 1.  Pour éviter de rencontrer des problèmes lors de la création de ce projet, il est fortement recommandé de créer le projet mentionné dans ce didacticiel dans un dossier racine ou dans un dossier racine (les chemins de dossiers longs peuvent entraîner des problèmes au moment de la génération).
-2.  Configurez et testez votre HoloLens. Si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article Configuration de hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Configurez et testez votre HoloLens. Si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article Configuration de hololens](/hololens/hololens-setup). 
 3.  Il est judicieux d’effectuer un réglage de l’étalonnage et du capteur au début du développement d’une nouvelle application HoloLens (parfois, il peut être utile d’effectuer ces tâches pour chaque utilisateur). 
 
-Pour obtenir de l’aide sur l’étalonnage, veuillez suivre ce [lien vers l’article d’étalonnage HoloLens](../../../calibration.md#hololens-2).
+Pour obtenir de l’aide sur l’étalonnage, veuillez suivre ce [lien vers l’article d’étalonnage HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Pour obtenir de l’aide sur le réglage du capteur, veuillez suivre ce [lien vers l’article sur le paramétrage du capteur HoloLens](../../../sensor-tuning.md).
+Pour obtenir de l’aide sur le réglage du capteur, veuillez suivre ce [lien vers l’article sur le paramétrage du capteur HoloLens](/hololens/hololens-updates).
 
 ## <a name="chapter-1---the-custom-vision-service-portal"></a>Chapitre 1-portail Service Vision personnalisée
 
@@ -118,7 +118,7 @@ Pour utiliser le *service vision personnalisée* dans Azure, vous devez configur
 
         ![Définir les domaines](images/AzureLabs-Lab302b-05.png)
 
-        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](/azure/azure-resource-manager/resource-group-portal).
 
 7.  Une fois que vous avez terminé, cliquez sur **créer un projet**, vous serez redirigé vers la page service vision personnalisée, projet.
 
@@ -279,7 +279,7 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 Ce cours requiert l’utilisation de la bibliothèque **Newtonsoft** , que vous pouvez ajouter en tant que dll à vos ressources. Le package contenant [cette bibliothèque peut être téléchargé à partir de ce lien](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/NewtonsoftDLL.unitypackage).
 Pour importer la bibliothèque Newtonsoft dans votre projet, utilisez le package Unity fourni avec ce cours.
 
-1.  Ajoutez le fichier *. pour Unity* à Unity à l’aide de l’option de menu **Assets*  >   >  *Custom* *package* personnalisé du *package* d'*importation* de ressources* .
+1.  Ajoutez le fichier *. pour Unity* à Unity à l’aide de l’option de menu * >   >   *package* personnalisé du *package* d'*importation* de ressources* .
 
 2.  Dans la zone **importer le package Unity** qui s’affiche, vérifiez que tous les **plug-ins** sous (et y compris) sont sélectionnés.
 
@@ -1666,7 +1666,7 @@ Pour effectuer un déploiement sur HoloLens :
 
     1.  Tout en portant votre HoloLens, ouvrez les **paramètres**.
 
-    2.  Accéder au **réseau &**  >  Options avancées **de Wi-Fi**  >  **Advanced Options** Internet
+    2.  Accéder au **réseau &**  >  Options avancées **de Wi-Fi**  >   Internet
 
     3.  Notez l’adresse **IPv4** .
 
@@ -1697,7 +1697,7 @@ Pour basculer la fonctionnalité de l’application entre le mode d' *apprentiss
         // Change this flag to switch between Analysis mode and Training mode 
         AppMode = AppModes.Training;
 ```
-ou
+or
 ```
         // Change this flag to switch between Analysis mode and Training mode 
         AppMode = AppModes.Analysis;

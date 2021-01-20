@@ -6,12 +6,12 @@ ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Explorateur Galaxy, HoloLens, Windows Mixed Reality, partager votre idée, étude de cas
-ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ef97920d22df65a9d4fa5e630840759e58c80b53
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009779"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583542"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>Étude de cas : création d’un Galaxy en réalité mixte
 
@@ -147,7 +147,7 @@ Le fait d’effectuer des clouds plein écran et d’essayer de les brouiller au
 
 ### <a name="a-bit-of-context-first"></a>Un peu de contexte en premier
 
-Lorsque vous utilisez des textures dans un jeu, la taille de la texture correspond rarement à la zone dans laquelle nous voulons l’utiliser, mais nous pouvons utiliser un autre type de filtrage de texture pour faire en sorte que la carte graphique interpole la couleur souhaitée à partir des pixels de la texture ([filtrage de texture](https://msdn.microsoft.com/library/dn642451.aspx)). Le filtrage qui nous intéresse est le [Filtrage bilinéaire](https://msdn.microsoft.com/library/windows/desktop/bb172357.aspx) qui calcule la valeur de tout pixel à l’aide des 4 voisins les plus proches.
+Lorsque vous utilisez des textures dans un jeu, la taille de la texture correspond rarement à la zone dans laquelle nous voulons l’utiliser, mais nous pouvons utiliser un autre type de filtrage de texture pour faire en sorte que la carte graphique interpole la couleur souhaitée à partir des pixels de la texture ([filtrage de texture](/previous-versions/visualstudio/visual-studio-2015/debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants)). Le filtrage qui nous intéresse est le [Filtrage bilinéaire](/windows/win32/direct3d9/bilinear-texture-filtering) qui calcule la valeur de tout pixel à l’aide des 4 voisins les plus proches.
 
 ![Original avant le filtrage](images/texture-1.png)
 

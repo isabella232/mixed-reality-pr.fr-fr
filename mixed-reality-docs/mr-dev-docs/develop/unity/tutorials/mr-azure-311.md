@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, Microsoft Graph, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 341b6fea537fe6001a8f7dcf2e98efea0a0b09b6
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 699e520fb9db8d8d3b5bab8b98d92fa39f0acb2d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679438"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583441"
 ---
 # <a name="mr-and-azure-311---microsoft-graph"></a>MR and Azure 311 - Microsoft Graph
 
@@ -37,7 +37,7 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td> Réalité mixte - Azure - Cours 311 : Microsoft Graph</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -55,7 +55,7 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 - [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- [Microsoft HoloLens](../../../hololens-hardware-details.md) avec mode développeur activé
+- [Microsoft HoloLens](/hololens/hololens1-hardware) avec mode développeur activé
 - Accès Internet pour l’installation d’Azure et la récupération des données de Microsoft Graph
 - Un **compte Microsoft** valide (personnel ou professionnel/scolaire)
 - Quelques réunions planifiées pour la journée en cours, à l’aide du même compte Microsoft
@@ -63,12 +63,12 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 ### <a name="before-you-start"></a>Avant de commencer
 
 1.  Pour éviter de rencontrer des problèmes lors de la création de ce projet, il est fortement recommandé de créer le projet mentionné dans ce didacticiel dans un dossier racine ou dans un dossier racine (les chemins de dossiers longs peuvent entraîner des problèmes au moment de la génération).
-2.  Configurez et testez votre HoloLens. Si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article Configuration de hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Configurez et testez votre HoloLens. Si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article Configuration de hololens](/hololens/hololens-setup). 
 3.  Il est judicieux d’effectuer un réglage de l’étalonnage et du capteur au début du développement d’une nouvelle application HoloLens (parfois, il peut être utile d’effectuer ces tâches pour chaque utilisateur). 
 
-Pour obtenir de l’aide sur l’étalonnage, veuillez suivre ce [lien vers l’article d’étalonnage HoloLens](../../../calibration.md#hololens-2).
+Pour obtenir de l’aide sur l’étalonnage, veuillez suivre ce [lien vers l’article d’étalonnage HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Pour obtenir de l’aide sur le réglage du capteur, veuillez suivre ce [lien vers l’article sur le paramétrage du capteur HoloLens](../../../sensor-tuning.md).
+Pour obtenir de l’aide sur le réglage du capteur, veuillez suivre ce [lien vers l’article sur le paramétrage du capteur HoloLens](/hololens/hololens-updates).
 
 ## <a name="chapter-1---create-your-app-in-the-application-registration-portal"></a>Chapitre 1-créer votre application dans le portail d’inscription des applications
 
@@ -131,7 +131,7 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 
     ![](images/AzureLabs-Lab311-12.png)
 
-5.  Tout en conservant les paramètres de génération de **fichiers**, assurez-vous  >  **Build Settings** que :
+5.  Tout en conservant les paramètres de génération de **fichiers**, assurez-vous  >  que :
 
     1. L' **appareil cible** est défini sur **HoloLens**
     2. Le **type de build** est **D3D**
@@ -959,7 +959,7 @@ Pour effectuer un déploiement sur HoloLens :
 
     1.  Tout en portant votre HoloLens, ouvrez les **paramètres**.
 
-    2.  Accéder au **réseau &**  >  Options avancées **de Wi-Fi**  >  **Advanced Options** Internet
+    2.  Accéder au **réseau &**  >  Options avancées **de Wi-Fi**  >   Internet
 
     3.  Notez l’adresse **IPv4** .
 

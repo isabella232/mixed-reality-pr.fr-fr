@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Déployez, Unity, Visual Studio, HoloLens, HoloLens 2, casque immersif, meilleures pratiques, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, UWP, Visual Studio Tools, SDK Windows
-ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009369"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583466"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Bonnes pratiques sur l’utilisation d’Unity et de Visual Studio
 
@@ -35,7 +35,7 @@ Envisagez d’installer l' [extension Visual Studio *UnityScriptAnalyzer*](https
 
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools pour Unity
 
-Télécharger [outils Visual Studio pour Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
+Télécharger [outils Visual Studio pour Unity](/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
 
 **Avantages de Outils Visual Studio pour Unity**
 * Déboguez Unity en mode de lecture de l’éditeur à partir de Visual Studio en plaçant des points d’arrêt, en évaluant des variables et des expressions complexes.

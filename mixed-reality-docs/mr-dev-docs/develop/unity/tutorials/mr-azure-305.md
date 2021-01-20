@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, fonctions, stockage, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: bc609e5a4a1c4252f498ada4dba2206140635667
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5c9784446923b3eae7a600b8e672574ce6465038
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679488"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583419"
 ---
 # <a name="mr-and-azure-305-functions-and-storage"></a>Réalité mixte - Azure - Cours 305 : Fonctions et stockage
 
@@ -26,9 +26,9 @@ ms.locfileid: "94679488"
 
 Dans ce cours, vous allez apprendre à créer et à utiliser des Azure Functions et à stocker des données avec une ressource de stockage Azure, au sein d’une application de réalité mixte.
 
-*Azure Functions* est un service Microsoft, qui permet aux développeurs d’exécuter de petits morceaux de code, « functions », dans Azure. Cela permet de déléguer le travail au Cloud, plutôt qu’à votre application locale, ce qui peut avoir de nombreux avantages. *Azure Functions* prend en charge plusieurs langages de développement, notamment C \# , F \# , Node.js, Java et php. Pour plus d’informations, consultez l' [article Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+*Azure Functions* est un service Microsoft, qui permet aux développeurs d’exécuter de petits morceaux de code, « functions », dans Azure. Cela permet de déléguer le travail au Cloud, plutôt qu’à votre application locale, ce qui peut avoir de nombreux avantages. *Azure Functions* prend en charge plusieurs langages de développement, notamment C \# , F \# , Node.js, Java et php. Pour plus d’informations, consultez l' [article Azure Functions](/azure/azure-functions/functions-overview).
 
-Le *stockage Azure* est un service Cloud Microsoft qui permet aux développeurs de stocker des données, avec l’assurance qu’elles seront hautement disponibles, sécurisées, durables, évolutives et redondantes. Cela signifie que Microsoft traitera toutes les tâches de maintenance et les problèmes critiques pour vous. Pour plus d’informations, consultez l' [article stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction).
+Le *stockage Azure* est un service Cloud Microsoft qui permet aux développeurs de stocker des données, avec l’assurance qu’elles seront hautement disponibles, sécurisées, durables, évolutives et redondantes. Cela signifie que Microsoft traitera toutes les tâches de maintenance et les problèmes critiques pour vous. Pour plus d’informations, consultez l' [article stockage Azure](/azure/storage/common/storage-introduction).
 
 Une fois ce cours terminé, vous disposerez d’une application de casque immersif en réalité mixte, qui sera en mesure d’effectuer les opérations suivantes :
 
@@ -44,7 +44,7 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 
 <table>
 <tr>
-<th>Cours</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
+<th>Cours</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Casques immersifs</a></th>
 </tr><tr>
 <td>Réalité mixte - Azure - Cours 305 : Fonctions et stockage</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -65,7 +65,7 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 - [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](../../../hololens-hardware-details.md) avec le mode développeur activé
+- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Abonnement à un compte Azure pour la création de ressources Azure
 - Accès Internet pour l’installation d’Azure et la récupération de données
 
@@ -113,7 +113,7 @@ Pour utiliser le **service de stockage Azure**, vous devez créer et configurer 
 
     9. Choisissez un *groupe de ressources* ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces laboratoires) sous un groupe de ressources commun). 
 
-        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](/azure/azure-resource-manager/resource-group-portal).
 
     10. Vous devrez également confirmer que vous avez compris les conditions générales appliquées à ce service.
 
@@ -141,7 +141,7 @@ Pour utiliser le **service de stockage Azure**, vous devez créer et configurer 
 
 ## <a name="chapter-2---setting-up-an-azure-function"></a>Chapitre 2-Configuration d’une fonction Azure
 
-Vous allez maintenant écrire une **Azure** **fonction** Azure dans le service Azure.
+Vous allez maintenant écrire une  **fonction** Azure dans le service Azure.
 
 Vous pouvez utiliser une **fonction Azure** pour effectuer presque tout ce que vous feriez avec une fonction classique dans votre code, à la différence que cette fonction est accessible par n’importe quelle application disposant d’informations d’identification pour accéder à votre compte Azure.
 
@@ -166,7 +166,7 @@ Pour créer une fonction Azure :
 
     3. Choisissez un *groupe de ressources* ou créez-en un. Un groupe de ressources permet de surveiller, de contrôler l’accès, de configurer et de gérer la facturation d’un regroupement de ressources Azure. Il est recommandé de conserver tous les services Azure associés à un seul projet (par exemple, ces laboratoires) sous un groupe de ressources commun). 
 
-        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Pour cet exercice, sélectionnez *Windows* comme **système d’exploitation** choisi.
 
@@ -423,7 +423,7 @@ Configurez et testez votre casque immersif en réalité mixte.
 
 6.  Vous allez ensuite créer un objet **texte 3D** pour fournir des commentaires sur l’état du service Azure.
 
-    Cliquez à nouveau avec le bouton droit sur **GazeButton** dans le panneau hiérarchie et ajoutez un objet **3D 3D Object**  >  **3D Text** en tant qu' *enfant*.
+    Cliquez à nouveau avec le bouton droit sur **GazeButton** dans le panneau hiérarchie et ajoutez un objet **3D 3D Object**  >   en tant qu' *enfant*.
 
     ![créer un objet texte 3D](images/AzureLabs-Lab5-42.png)
 
@@ -463,15 +463,15 @@ Configurez et testez votre casque immersif en réalité mixte.
 
 ## <a name="chapter-6---import-azure-storage-for-unity"></a>Chapitre 6-importer un stockage Azure pour Unity
 
-Vous allez utiliser le stockage Azure pour Unity (qui utilise lui-même le kit de développement logiciel (SDK) .net pour Azure). Pour plus d’informations à ce sujet, consultez l' [article stockage Azure pour Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
+Vous allez utiliser le stockage Azure pour Unity (qui utilise lui-même le kit de développement logiciel (SDK) .net pour Azure). Pour plus d’informations à ce sujet, consultez l' [article stockage Azure pour Unity](/sandbox/gamedev/unity/azure-storage-unity).
 
 Il existe actuellement un problème connu dans Unity qui nécessite que les plug-ins soient reconfigurés après l’importation. Ces étapes (4-7 dans cette section) ne sont plus nécessaires une fois que le bogue a été résolu.
 
 Pour importer le kit de développement logiciel (SDK) dans votre propre projet, assurez-vous d’avoir téléchargé la dernière version [de « . pour Unity » à partir de GitHub](https://aka.ms/azstorage-unitysdk). Ensuite, procédez comme suit :
 
-1.  Ajoutez le fichier **. pour Unity** à Unity à l' **Assets** aide de l’option de  >  **Import Package**  >  menu **package personnalisé** du package d’importation de ressources.
+1.  Ajoutez le fichier **. pour Unity** à Unity à l' aide de l’option de  >    >  menu **package personnalisé** du package d’importation de ressources.
 
-2.  Dans la zone **importer le package Unity** qui s’affiche, vous pouvez tout sélectionner sous stockage du **plug-in**  >  **Storage**. Décochez tout le reste, car il n’est pas nécessaire pour ce cours.
+2.  Dans la zone **importer le package Unity** qui s’affiche, vous pouvez tout sélectionner sous stockage du **plug-in**  >  . Décochez tout le reste, car il n’est pas nécessaire pour ce cours.
 
     ![importer dans le package](images/AzureLabs-Lab5-45.png)
 
@@ -1220,7 +1220,7 @@ Pour déployer votre application :
 3.  Dans la **configuration** de la solution, sélectionnez **Déboguer**.
 
     > Pour Microsoft HoloLens, il peut s’avérer plus facile de définir cette valeur sur *machine distante*, afin de ne pas être attaché à votre ordinateur. Toutefois, vous devez également effectuer les opérations suivantes :
-    > - Vous devez connaître l' **adresse IP** de votre HoloLens, qui se trouve dans les **paramètres**  >  **réseau &**  >  Options avancées de **Wi-Fi** Internet.  >  **Advanced Options** IPv4 correspond à l’adresse que vous devez utiliser. 
+    > - Vous devez connaître l' **adresse IP** de votre HoloLens, qui se trouve dans les **paramètres**  >  **réseau &**  >  Options avancées de **Wi-Fi** Internet.  >  IPv4 correspond à l’adresse que vous devez utiliser. 
     > - Assurez-vous que le **mode développeur** est **activé**; trouvé dans **paramètres**  >  **mise à jour & sécurité**  >  **pour les développeurs**.
 
     ![déployer la solution](images/AzureLabs-Lab5-55.png)
@@ -1243,4 +1243,4 @@ Créez un deuxième point de lancement et un autre enregistrement à partir duqu
 
 ### <a name="exercise-2"></a>Exercice 2
 
-Créez un moyen de redémarrer l’application, au lieu de la rouvrir à chaque fois. Le **chargement des scènes** est un bon point de départ. Après cela, créez un moyen d’effacer la liste stockée dans le *stockage Azure*, afin qu’elle puisse être facilement réinitialisée à partir de votre application. 
+Créez un moyen de redémarrer l’application, au lieu de la rouvrir à chaque fois. Le **chargement des scènes** est un bon point de départ. Après cela, créez un moyen d’effacer la liste stockée dans le *stockage Azure*, afin qu’elle puisse être facilement réinitialisée à partir de votre application.

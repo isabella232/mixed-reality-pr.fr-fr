@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, style, conception, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, échelle, hologrammes
-ms.openlocfilehash: 6711a58fb4dde2aa28272c3003e642c4f4d3e236
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 12b1c96146f76274831c9bc3427cef93bb326f70
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848269"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583312"
 ---
 # <a name="scale"></a>Scale
 
@@ -81,6 +81,6 @@ Cela peut toutefois créer quelques artefacts possibles dans l’expérience :
 ---
 
 ## <a name="see-also"></a>Voir aussi
-* [Couleurs, éclairage et matériaux](../color,-light-and-materials.md)
+* [Couleurs, éclairage et matériaux](./color-light-and-materials.md)
 * [Typographie](typography.md)
 * [Conception du son spatial](spatial-sound-design.md)
