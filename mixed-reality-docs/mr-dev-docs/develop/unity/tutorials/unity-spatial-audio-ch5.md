@@ -1,70 +1,72 @@
 ---
-title: Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
-description: Découvrez comment ajouter un effet de réverbération pour améliorer le sens de la variation de distance vers le son spatial dans une application de réalité mixte.
+title: Didacticiels audio spatiaux-5. Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
+description: Ajoutez un effet de réverbération pour améliorer le sens de la variation de distance avec l’audio spatial.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, mélangeur audio, réverbération SFX
-ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 3d19bb0b22c507eb692a752aa318ecb82a1cf2f7
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006359"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578376"
 ---
-# <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
+# <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5. Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
+
+## <a name="overview"></a>Vue d'ensemble
+
+Dans le didacticiel précédent, vous avez ajouté Spatialization pour les sons afin de leur offrir un sens de la direction dans ce didacticiel. vous ajouterez un effet de réverbération pour fournir aux sons une idée de la distance.
 
 ## <a name="objectives"></a>Objectifs
 
-Dans les chapitres précédents, nous avons ajouté Spatialization aux sons pour leur offrir un sens de la direction. Dans ce cinquième chapitre, nous allons ajouter un effet de réverbération pour fournir aux sons un sens de la distance. Nos objectifs sont les suivants :
-* Améliorer la distance perçue des sources sonores en ajoutant une réverbération
-* Contrôle de la distance perçue du son à l’aide de la distance de l’écouteur à l’hologramme
+* Améliorez la distance perçue des sources sonores en ajoutant une réverbération.
+* Contrôle la distance perçue du son à l’aide de la distance de l’écouteur à l’hologramme.
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Ajouter un groupe de mixage et un effet de réverbération
 
-Dans le [Chapitre 2](unity-spatial-audio-ch2.md), nous avons ajouté un mélangeur. Le mélangeur comprend un **groupe** par défaut nommé **maître**. Étant donné que nous voulons uniquement appliquer un effet de réverbération à certains sons, nous allons ajouter un deuxième **groupe** pour ces sons. Pour ajouter un **groupe**, cliquez avec le bouton droit sur le groupe **principal** dans le **mélangeur audio** , puis choisissez **Ajouter un groupe enfant**:
+Dans le didacticiel sur l' [aménagement des sons d’interaction du bouton](unity-spatial-audio-ch2.md), nous avons ajouté un mélangeur. Le mélangeur comprend un **groupe** par défaut nommé **maître**. Étant donné que nous voulons uniquement appliquer un effet de réverbération à certains sons, nous allons ajouter un deuxième groupe pour ces sons. Pour ajouter un groupe, cliquez avec le bouton droit sur le groupe principal dans le **panneau Mixage audio** , choisissez **Ajouter un groupe enfant** et donnez un nom approprié pour exemple d' _espace_:
 
-![Ajouter un groupe enfant](images/spatial-audio/add-child-group.png)
-
-Dans cet exemple, nous avons nommé « effet Room » pour le nouveau groupe.
+![Ajouter un groupe enfant](images/spatial-audio/spatial-audio-05-section1-step1-1.png)
 
 Chaque **groupe** a son propre ensemble d’effets. Ajoutez un effet de réverbération au nouveau groupe en cliquant sur **Ajouter...** dans le nouveau groupe, puis en choisissant **réverbe SFX**:
 
-![Ajouter une réverbération SFX](images/spatial-audio/add-sfx-reverb.png)
+![Ajouter une réverbération SFX](images/spatial-audio/spatial-audio-05-section1-step1-2.png)
 
 Dans la terminologie audio, le son original, unreverberated, est appelé le chemin à l' _état sec_, et l’audio après le filtrage avec le filtre de réverbération est appelé le _chemin d’accès humide_. Les deux chemins d’accès sont envoyés à la sortie audio, et leurs forces relatives dans ce mélange sont appelées la _combinaison humide/sèche_. La combinaison humide/sèche affecte fortement le sens de la distance.
 
-Le **reverbe SFX** comprend des contrôles pour ajuster la combinaison humide/sèche dans l’effet. Étant donné que le plug-in **Microsoft Spatializer** gère le chemin d’accès à sec, nous allons utiliser la **réverbération SFX** uniquement pour le chemin d’accès humide. Dans le volet de l' **inspecteur** de votre **réverbération SFX**:
-* Définir la propriété de niveau Dry sur le paramètre le plus bas (-10000 Mo)
-* Définir la propriété Room sur le paramètre le plus élevé (0 Mo)
+Le **reverbe SFX** comprend des contrôles pour ajuster la combinaison humide/sèche dans l’effet. Étant donné que le plug-in **Microsoft Spatializer** gère le chemin d’accès à sec, nous allons utiliser la **réverbération SFX** uniquement pour le chemin d’accès humide. Dans le volet de l’inspecteur de votre **réverbération SFX**:
 
-Une fois ces modifications effectuées, le volet de l' **inspecteur** du **reverbe SFX** se présente comme suit :
+* Définir la propriété de **niveau Dry** sur le paramètre le plus bas (-10000 Mo)
+* Définir la **propriété Room** sur le paramètre le plus élevé (0 Mo)
 
-![Propriétés de la réverbération SFX](images/spatial-audio/sfx-reverb-properties.png)
+![Propriétés de la réverbération SFX](images/spatial-audio/spatial-audio-05-section1-step1-3.png)
 
-Les autres paramètres contrôlent l’apparence de la salle simulée. En particulier, le **temps de désintégration** est lié à la taille de l’espace perçu. 
+Les autres paramètres contrôlent l’apparence de la salle simulée. En particulier, le **temps de désintégration** est lié à la taille de l’espace perçu.
 
 ## <a name="enable-reverb-on-the-video-playback"></a>Activer la réverbération sur la lecture vidéo
 
 Il existe deux étapes pour activer la réverbération sur une source audio :
+
 * Acheminer la **source audio** vers le **groupe** approprié
 * Définir le plug-in **Microsoft Spatializer** pour transmettre l’audio au **groupe** pour traitement
 
-Dans les étapes suivantes, nous allons ajuster notre script pour contrôler le routage audio et attacher un script de contrôle fourni avec le plug-in **Microsoft Spatializer** pour alimenter les données dans le verbe.
+Dans les étapes suivantes, vous allez ajuster le script pour contrôler le routage audio et attacher un script de contrôle fourni avec le plug-in **Microsoft Spatializer** pour alimenter les données dans le réverbe.
 
-Dans le volet de l' **inspecteur** pour le **Quad**, cliquez sur **Ajouter un composant** et ajoutez le script de niveau d’envoi de l’effet de **pièce** :
+Après avoir sélectionné le **Quad** dans la hiérarchie, cliquez sur **Ajouter un composant** dans la fenêtre de l’inspecteur et ajoutez le niveau d’envoi de l' **effet de pièce (script)**:
 
-![Ajouter un script de niveau d’envoi](images/spatial-audio/add-send-level-script.png)
+![Ajouter un script de niveau d’envoi](images/spatial-audio/spatial-audio-05-section2-step1-1.png)
 
 > [!NOTE]
 > À moins que vous activiez la fonctionnalité de niveau d’envoi de l' **effet de salle** du plug-in **Microsoft Spatializer** , il n’envoie pas d’audio au moteur audio Unity pour le traitement de l’effet.
 
-Le composant de niveau d’envoi de l' **effet de salle** comprend un contrôle de graphique qui définit le niveau de l’audio envoyé au moteur audio Unity pour le traitement de la réverbération. Cliquez et faites glisser la courbe vers le bas pour définir le niveau sur about-30dB :
+Le composant de niveau d’envoi de l' **effet de salle** comprend un contrôle de graphique qui définit le niveau de l’audio envoyé au moteur audio Unity pour le traitement de la réverbération. Pour ouvrir le contrôle de graphique, cliquez sur le niveau d’envoi de l' **effet de salle**.  Cliquez et faites glisser la courbe verte vers le bas pour définir le niveau sur about-30dB :
 
-![Ajuster la courbe de réverbération](images/spatial-audio/adjust-reverb-curve.png)
+![Ajuster la courbe de réverbération](images/spatial-audio/spatial-audio-05-section2-step1-2.png)
 
 Ensuite, supprimez les marques de commentaire des 4 lignes commentées dans le script **SpatializeOnOff** . Le script ressemble maintenant à ce qui suit :
+
 ```c#
 using System.Collections;
 using System.Collections.Generic;
@@ -120,18 +122,18 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-Si vous supprimez les commentaires de ces lignes, vous ajoutez deux propriétés au volet de l' **inspecteur** pour le script. Pour les définir, dans le volet **inspecteur** du composant **spatial on off** du **Quad**:
+Une fois que ces lignes ne sont pas commentées, elle ajoute deux propriétés à l’inspecteur du **script SpatializeOnOff**. Affectez-les dans la fenêtre de l’inspecteur du composant **SpatializeOnOff** du **Quad**.
+
+Lorsque l’objet Quad est toujours sélectionné dans la hiérarchie, dans la fenêtre Inspector, localisez le composant **script SpatializeOnOff** et :
+
 * Définir la propriété **groupe d’effets** de la salle sur votre nouveau groupe de mixeur d’effets d’espace
 * Définir la propriété de **groupe maître** sur le groupe de mixages principaux
 
-Une fois ces modifications effectuées, les propriétés de l’espacement **inactif** se présentent comme suit :
+![Spatialiser sur OFF étendu](images/spatial-audio/spatial-audio-05-section2-step1-3.png)
 
-![Spatialiser sur OFF étendu](images/spatial-audio/spatialize-on-off-extended.png)
+## <a name="congratulations"></a>Félicitations
 
-## <a name="next-steps"></a>Étapes suivantes
+Vous avez terminé les didacticiels audio spatiaux HoloLens 2 pour Unity. Essayez l’application sur un HoloLens 2 ou Unity. Lorsque vous cliquez sur le bouton dans l’application pour activer Spatialization, le script achemine l’audio de la vidéo vers le groupe d’effets de la pièce pour ajouter une réverbération. Lorsque vous basculez en stéréo, il achemine l’audio vers le groupe maître et évite l’ajout d’une réverbération.
 
-Essayez votre application sur un HoloLens 2 ou dans l’éditeur Unity. Maintenant, quand vous touchez le bouton dans l’application pour activer Spatialization, le script achemine l’audio de la vidéo vers le groupe d’effets de la pièce pour ajouter une réverbération. Lorsque vous basculez en stéréo, il achemine l’audio vers le groupe maître et évite l’ajout d’une réverbération.
-
-Vous avez terminé les didacticiels audio spatiaux HoloLens 2 pour Unity. Félicitations !
-
-
+> [!TIP]
+> Pour vous rappeler comment générer et déployer votre projet Unity sur HoloLens 2, vous pouvez vous référer aux instructions de [Génération de votre application sur votre HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).

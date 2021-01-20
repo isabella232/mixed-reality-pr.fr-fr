@@ -1,36 +1,39 @@
 ---
-title: Activation et désactivation de contenu audio spatial au moment de l’exécution
-description: Apprenez à écrire un script C# qui utilise un bouton pour activer et désactiver l’audio Spatialization au moment de l’exécution.
+title: Didacticiels audio spatial-4. Activation et désactivation de contenu audio spatial au moment de l’exécution
+description: Utilisez un bouton pour activer et désactiver le Spatialization de l’audio au moment de l’exécution.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
-ms.openlocfilehash: eaaf8a05088b5bab674ca11b15b0c63383faa479
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 9239c45efa5196b94fe2e05f85a2e83df6c7789f
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007339"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578310"
 ---
-# <a name="enabling-and-disabling-spatialization-at-run-time"></a>Activation et désactivation de Spatialization au moment de l’exécution
+# <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. activation et désactivation de Spatialization au moment de l’exécution
+
+## <a name="overview"></a>Vue d'ensemble
+
+Dans ce didacticiel, vous allez apprendre à activer et à désactiver les Spatialization au moment de l’exécution et à les tester dans l’éditeur Unity et dans HoloLens 2.
 
 ## <a name="objectives"></a>Objectifs
 
-Dans ce quatrième chapitre, vous allez :
 * Ajouter un nouveau script pour contrôler Spatialization sur un objet de jeu
 * Piloter le script de contrôle Spatialization à partir d’actions Button
 
 ## <a name="add-spatialization-control-script"></a>Ajouter un script de contrôle Spatialization
 
-Cliquez avec le bouton droit dans le volet **projet** et créez un script c# en choisissant **créer > script c#**. Nommez votre script « SpatializeOnOff ».
+ Cliquez avec le bouton droit dans la fenêtre du projet et choisissez **créer**  >  un **script c#** pour créer un script c#, entrez un nom approprié pour le script, par exemple, _SpatializeOnOff_:
 
-![Création du script](images/spatial-audio/create-script.png)
+![Création du script](images/spatial-audio/spatial-audio-04-section1-step1-1.png)
 
-Double-cliquez sur le script dans le volet **projet** pour l’ouvrir dans Visual Studio. Remplacez le contenu du script par défaut par ce qui suit :
+Double-cliquez sur le script dans la fenêtre projet pour l’ouvrir dans Visual Studio. Remplacez le contenu du script par défaut par ce qui suit :
 
 > [!NOTE]
-> Plusieurs lignes du script sont commentées. Ces lignes ne seront pas commentées dans le [Chapitre 5](unity-spatial-audio-ch5.md).
+> Plusieurs lignes du script sont commentées. Ces lignes ne seront pas commentées dans le [chapitre suivant : utilisation de la réverbération pour ajouter une distance à un son spatial](unity-spatial-audio-ch5.md).
 
 ```c#
 using System.Collections;
@@ -88,39 +91,39 @@ public class SpatializeOnOff : MonoBehaviour
 ```
 
 > [!NOTE]
-> Pour activer ou désactiver Spatialization, le script ajuste uniquement la propriété **spatialBlend** , en laissant la propriété **Spatialization** activée. Dans ce mode, Unity applique toujours la courbe du **volume** . Dans le cas contraire, si l’utilisateur devait désactiver Spatialization en loin de la source, il entendrait l’augmentation soudaine du volume. <br> <br>
+> Pour activer ou désactiver le Spatialization, le script ajuste uniquement la propriété **spatialBlend** , en laissant la propriété **Spatialization** activée. Dans ce mode, Unity applique toujours la courbe du **volume** . Dans le cas contraire, si l’utilisateur devait désactiver Spatialization en loin de la source, il entendrait l’augmentation soudaine du volume.
 > Si vous préférez désactiver complètement Spatialization, modifiez le script pour ajuster également la propriété booléenne **Spatialization** de la variable **ObjetSource** .
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>Joindre votre script et le piloter à partir du bouton
 
-Dans le volet de l' **inspecteur** du **Quad**, cliquez sur **Ajouter un composant** et ajoutez le script **spatial on off** :
+Sélectionnez **Quad** dans la hiérarchie et dans la fenêtre Inspector, utilisez le bouton Ajouter un composant pour ajouter **SpatializeOnOff (script)**
 
-![Ajouter un script à quatre cœurs](images/spatial-audio/add-script-to-quad.png)
+![Ajouter un script à quatre cœurs](images/spatial-audio/spatial-audio-04-section2-step1-1.png)
 
-Sur le composant **spatialiser on off** du **Quad**:
-1. Recherchez l’objet **PressableButtonHoloLens2-> IconAndText-> TextMeshPro** dans la **hiérarchie**:
+Dans la hiérarchie, recherchez **PressableButtonHoloLens2**  >  **IconAndText**  >  **TextMeshPro**.
 
-![Rechercher l’objet PressableButtonHoloLens2 dans la hiérarchie](images/spatial-audio/pressable-button-object.png)
+Lorsque l’objet **Quad** est toujours sélectionné dans la hiérarchie, dans la fenêtre Inspector, localisez le composant **spatialiser on off (script)** et faites glisser le composant **TextMeshPro** du PressableButtonHoloLens2.
 
-2. Faites glisser le sujet **TextMeshPro** dans le champ **ButtonTextObject** du composant **spatialiser sur OFF** .
+![Rechercher l’objet PressableButtonHoloLens2 dans la hiérarchie](images/spatial-audio/spatial-audio-04-section2-step1-2.png)
 
-Une fois ces modifications effectuées, le composant **spatial on off** du **Quad** ressemble à ce qui suit :
+Pour définir le bouton pour appeler le script **SpatializeOnOff** quand le bouton est relâché, vous devez configurer un script d’interaction.
 
-![Spatialiser en dehors de la base](images/spatial-audio/spatialize-on-off-basic.png)
+Dans la fenêtre hiérarchie, sélectionnez **PressableButtonHoloLens2**. Dans la fenêtre de l’inspecteur, localisez le composant **(script) pouvant être interagi** , puis cliquez sur l’icône + sous l’événement OnClick ().
 
-Pour définir le bouton pour appeler le script **spatial on off** lorsque le bouton est relâché, ouvrez le volet **Inspector** de l’objet **PressableButtonHoloLens2** , recherchez **le composant** interactif et :
-1. Recherche la région **OnClick ()** de la sous-section **événements**
-2. Faites glisser le **Quad** de la **hiérarchie** dans l’emplacement de l’objet cible.
-3. Sélectionnez **SpatializeOnOff. SwapSpatialization** dans la zone de liste déroulante action.
+* Avec l’objet **PressableButtonHoloLens2** toujours sélectionné dans la fenêtre hiérarchie, cliquez et faites glisser l’objet **quadruple** à partir de la fenêtre hiérarchie dans le champ **aucun (objet)** vide de l’événement que vous venez d’ajouter pour que l’objet ButtonParent écoute l’événement de clic de bouton à partir de ce bouton :
 
-Une fois ces modifications effectuées, le composant **interagissant** peut se présenter comme suit :
+* Cliquez sur la liste déroulante **No Function** du même événement. Sélectionnez ensuite **SpatializeOnOff**  >  **SwapSpatialization ()** pour activer et désactiver le son spatial
 
-![Paramètres d’action du bouton](images/spatial-audio/button-action-settings.png)
+![Paramètres d’action du bouton](images/spatial-audio/spatial-audio-04-section2-step1-3.png)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="congratulations"></a>Félicitations
 
-Essayez votre application sur un HoloLens 2 ou dans l’éditeur Unity. Dans l’application, vous pouvez maintenant toucher le bouton pour activer et désactiver Spatialization sur la vidéo. Lors du test dans l’éditeur Unity, appuyez sur la barre d’espace et faites défiler la molette pour activer la simulation manuelle. 
+Dans ce didacticiel, vous avez appris à activer et désactiver des Spatialization au moment de l’exécution, à tester l’application sur un HoloLens 2 ou dans l’éditeur Unity. Dans l’application, vous pouvez maintenant cliquer sur le bouton pour activer et désactiver Spatialization de l’audio.
+
+Dans le didacticiel suivant, vous allez ajouter un effet de réverbération pour fournir aux sons un sens de la distance.
+
+> [!TIP]
+> Pour vous rappeler comment générer et déployer votre projet Unity sur HoloLens 2, vous pouvez vous référer aux instructions de [Génération de votre application sur votre HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).
 
 > [!div class="nextstepaction"]
-> [Chapitre 5](unity-spatial-audio-ch5.md) 
-
+> [Didacticiel suivant : 5. utilisation de la réverbération pour ajouter une distance à un son spatial](unity-spatial-audio-ch5.md)
