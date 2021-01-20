@@ -17,9 +17,9 @@
 - name: Matériel HoloLens
   items:
     - name: "Informations détaillées sur le casque HoloLens\_2"
-      href: 'https://docs.microsoft.com/hololens/hololens2-hardware'
+      href: /hololens/hololens2-hardware
     - name: "Informations détaillées sur le matériel HoloLens (1ère\_génération)"
-      href: 'https://docs.microsoft.com/hololens/hololens1-hardware'
+      href: /hololens/hololens1-hardware
 - name: Casques immersifs
   items:
     - name: Informations détaillées sur les casques immersifs
@@ -27,7 +27,7 @@
     - name: Exploration de la page d’accueil Windows Mixed Reality
       href: navigating-the-windows-mixed-reality-home.md
     - name: Guide pour les passionnés de RV
-      href: 'https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/'
+      href: /windows/mixed-reality/enthusiast-guide/
     - name: Divertissement basé sur l’emplacement
       href: location-based-experiences.md
 - name: Ressources communautaires
