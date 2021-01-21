@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, réalité mixte, déployer sur un appareil, PC, documentation, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580813"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635397"
 ---
 # <a name="the-making-of-kippys-escape"></a>La création de l’échappement de kippy
 
@@ -62,21 +62,21 @@ Au-delà de la conception de caractères et d’environnements, nous avons fait 
 
 L’échappement de kippy s’appuie fortement sur les composants d’outils d’expérience de réalité mixte pour rendre le jeu interactif, à savoir les acteurs d’interaction main, les contrôles de limites, les manipulateurs, les curseurs et les boutons.   
 
-L' [acteur d’interaction manuelle](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) permet une manipulation directe et éloignée des hologrammes. Au début de l’échappement de kippy, l’utilisateur a la possibilité de définir l’emplacement du jeu. Les poutres de main qui s’étendent à partir du Palm de l’utilisateur facilitent la manipulation d’hologrammes volumineux éloignés, comme illustré dans le GIF ci-dessous.  
+L' [acteur d’interaction manuelle](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) permet une manipulation directe et éloignée des hologrammes. Au début de l’échappement de kippy, l’utilisateur a la possibilité de définir l’emplacement du jeu. Les poutres de main qui s’étendent à partir du Palm de l’utilisateur facilitent la manipulation d’hologrammes volumineux éloignés, comme illustré dans le GIF ci-dessous.  
 
 ![GIF d’acteur d’interaction de la main](images/kippys-escape/kippys-escape-img-06.gif)
 
-La scène d’espace réservé peut être glissée et pivotée à l’aide du composant de [contrôle des limites](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/BoundsControl.html) des outils UX.  
+La scène d’espace réservé peut être glissée et pivotée à l’aide du composant de [contrôle des limites](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) des outils UX.  
 
-Sur le second îlot, l’utilisateur doit sélectionner des gemmes et les placer dans leurs emplacements correspondants. Les gemmes sont associées à des [manipulateurs](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/Manipulator.html) qui permettent à l’utilisateur de les sélectionner et de les placer. 
+Sur le second îlot, l’utilisateur doit sélectionner des gemmes et les placer dans leurs emplacements correspondants. Les gemmes sont associées à des [manipulateurs](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) qui permettent à l’utilisateur de les sélectionner et de les placer. 
 
 ![Exemple de fichier GIF de manipulateur](images/kippys-escape/kippys-escape-img-07.gif)
 
-Un [bouton enfoncé](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html) est la clé de l’utilisation de bombes pour le troisième îlot.  
+Un [bouton enfoncé](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) est la clé de l’utilisation de bombes pour le troisième îlot.  
 
 ![Image GIF de l’exemple de bouton enfoncé](images/kippys-escape/kippys-escape-img-08.gif)
 
-Un composant [Slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) apparaît sur le quatrième îlot, déclenchant ainsi le déclenchement du dernier pont.  
+Un composant [Slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) apparaît sur le quatrième îlot, déclenchant ainsi le déclenchement du dernier pont.  
 
 ![Image GIF de l’exemple de composant Slider](images/kippys-escape/kippys-escape-img-09.gif) 
 

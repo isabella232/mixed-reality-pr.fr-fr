@@ -6,16 +6,16 @@ ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
-ms.openlocfilehash: 7d4702a21fccbb18c7c4b07675953c37785ae6db
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc7a4db5a3b4d853f2912a5e8e022fddd372e105
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580227"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635387"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Ajout de l’audio spatial à votre projet Unity
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Bienvenue dans le didacticiel sur l’audio spatial pour Unity sur HoloLens2. Grâce à cette série de didacticiels, vous allez apprendre à utiliser le déchargement de la fonction de transfert HRTF (en anglais) sur HoloLens 2 et à activer la réaction lors de l’utilisation du déchargement HRTF.
 
@@ -63,7 +63,7 @@ Pour cela, suivez d’abord [Initialisation de votre projet et de votre premièr
 
 1. [Création et définition de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene) et attribution d’un nom approprié à la scène, par exemple, *SpatialAudio*
 
-Suivez ensuite les instructions relatives à la modification des options d’affichage de la [sensibilisation spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour vous assurer que le profil de configuration MRTK pour votre scène est **DefaultXRSDKConfigurationProfile** et modifiez les options d’affichage du maillage de la sensibilisation spatiale à **occlusion**.
+Suivez ensuite les instructions relatives à la modification des options d’affichage de la [sensibilisation spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour vous assurer que le profil de configuration MRTK pour votre scène est **DefaultHoloLens2ConfigurationProfile** et modifiez les options d’affichage du maillage de la sensibilisation spatiale à **occlusion**.
 
 ## <a name="adding-microsoft-spatializer-to-the-project"></a>Ajout de Microsoft Spatializer au projet
 
