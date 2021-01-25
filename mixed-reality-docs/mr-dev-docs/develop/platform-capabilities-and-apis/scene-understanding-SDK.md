@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity
-ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
+ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583756"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758375"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Présentation du SDK présentation de Scene
 
@@ -47,7 +47,7 @@ Sur le côté gauche figure un diagramme du runtime de la réalité mixte, qui e
 
 Étant donné que chaque scène stocke ses données dans l’espace mémoire de votre application, vous pouvez supposer que toutes les fonctions de l’objet de la scène ou de ses données internes sont toujours exécutées dans le processus de votre application.
 
-### <a name="layout"></a>Mise en page
+### <a name="layout"></a>Layout
 
 Pour travailler avec la compréhension des scènes, il peut être utile de savoir et de comprendre comment le runtime représente des composants logiquement et physiquement. La scène représente des données avec une disposition spécifique qui a été choisie comme simple tout en conservant une structure sous-jacente qui est pliable pour répondre aux exigences futures sans avoir besoin de révisions majeures. Pour ce faire, la scène stocke tous les composants (blocs de construction pour tous les objets de scène) dans une liste plate et définit la hiérarchie et la composition par le biais de références où des composants spécifiques référencent d’autres.
 
@@ -432,7 +432,7 @@ Si vous avez un HoloLens2, vous pouvez enregistrer toute scène que vous avez ca
 
 Si vous n’avez pas d’appareil HoloLens2 mais que vous souhaitez jouer avec la compréhension des scènes, vous devez télécharger une scène précapturée. L’exemple Scene Understanding est actuellement fourni avec des scènes sérialisées qui peuvent être téléchargées et utilisées à votre convenance. Vous pouvez les trouver ici :
 
-[Exemples de scènes de vision](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples/tree/master/Assets/Resources/SerializedScenesForPCPath)
+[Exemples de scènes de vision](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
 ## <a name="see-also"></a>Voir aussi
 
