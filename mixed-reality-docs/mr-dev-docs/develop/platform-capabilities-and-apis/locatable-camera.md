@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: appareil photo, hololens, caméra couleur, frontal, hololens 2, CV, vision par ordinateur, fiduciaire, marqueurs, code QR, QR, photo, vidéo
-ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f34973fee56f9469632b320a62dd441ed32e5805
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583622"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810153"
 ---
 # <a name="locatable-camera"></a>Appareil photo localisable
 
@@ -37,7 +37,7 @@ HoloLens intègre une caméra universelle montée sur l’avant de l’appareil,
 
 * Appareil photo/vidéo (PV) de focalisation automatique avec balance des blancs automatique, exposition automatique et pipeline de traitement d’image complet.
 * La lumière blanche sur la confidentialité dans le monde s’illumine quand l’appareil photo est actif.
-* HoloLens 2 prend en charge différents profils d’appareil photo. Découvrez comment [découvrir et sélectionner les fonctionnalités de l’appareil photo](//windows/uwp/audio-video-camera/camera-profiles).
+* HoloLens 2 prend en charge différents profils d’appareil photo. Découvrez comment [découvrir et sélectionner les fonctionnalités de l’appareil photo](/windows/uwp/audio-video-camera/camera-profiles).
 * L’appareil photo prend en charge les profils et résolutions suivants (tous les modes vidéo sont des proportions 16:9) :
   
   | Profil                                         | Vidéo     | PRÉVERSION   | Subsist     | Fréquences d’images | Champ horizontal de l’affichage (H-angle d’affichage) | Utilisation suggérée                             |
@@ -75,14 +75,14 @@ Pour passer des « CameraIntrinsics » et « CameraCoordinateSystem » à vo
 
 ### <a name="using-mediaframereference"></a>Utilisation de MediaFrameReference
 
-Ces instructions s’appliquent si you’r utilise la classe [MediaFrameReference](//uwp/api/windows.media.capture.frames.mediaframereference) pour lire des images d’image à partir de l’appareil photo.
+Ces instructions s’appliquent si you’r utilise la classe [MediaFrameReference](/uwp/api/windows.media.capture.frames.mediaframereference) pour lire des images d’image à partir de l’appareil photo.
 
-Chaque image (qu’il s’agisse d’une photo ou d’une vidéo) comprend un [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) enraciné à l’appareil photo au moment de la capture, qui est accessible à l’aide de la propriété [CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) de votre [MediaFrameReference](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Chaque frame contient une description du modèle d’objectif de l’appareil photo, qui se trouve dans la propriété [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) . Ensemble, ces transformations définissent pour chaque pixel un rayon dans l’espace 3D représentant le chemin emprunté par les photons qui ont produit le pixel. Ces rayons peuvent être liés à d’autres contenus dans l’application en obtenant la transformation du système de coordonnées du cadre vers un autre système de coordonnées (par exemple, à partir d’une [image stationnaire de référence](../../design/coordinate-systems.md#stationary-frame-of-reference)). 
+Chaque image (qu’il s’agisse d’une photo ou d’une vidéo) comprend un [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) enraciné à l’appareil photo au moment de la capture, qui est accessible à l’aide de la propriété [CoordinateSystem](/uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) de votre [MediaFrameReference](/uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Chaque frame contient une description du modèle d’objectif de l’appareil photo, qui se trouve dans la propriété [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) . Ensemble, ces transformations définissent pour chaque pixel un rayon dans l’espace 3D représentant le chemin emprunté par les photons qui ont produit le pixel. Ces rayons peuvent être liés à d’autres contenus dans l’application en obtenant la transformation du système de coordonnées du cadre vers un autre système de coordonnées (par exemple, à partir d’une [image stationnaire de référence](../../design/coordinate-systems.md#stationary-frame-of-reference)). 
 
 Chaque frame d’image fournit les éléments suivants :
 * Données de pixels (au format RGB/NV12/JPEG/etc.)
-* Un [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) à partir de l’emplacement de capture
-* Une classe [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) contenant le mode de l’objectif de l’appareil photo
+* Un [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) à partir de l’emplacement de capture
+* Une classe [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) contenant le mode de l’objectif de l’appareil photo
 
 L' [exemple HolographicFaceTracking](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) illustre la manière assez simple d’interroger la transformation entre le système de coordonnées de l’appareil photo et vos propres systèmes de coordonnées de l’application.
 

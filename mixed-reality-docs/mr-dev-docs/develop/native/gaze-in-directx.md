@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: œil-point d’interposition, point de présence, suivi de la tête, suivi des yeux, DirectX, entrée, hologrammes, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 551fbf10a4a2e3028ce08bcfa80b92ef38bdf23f
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8b3c63ac7a7edba0ce3173e024139e29d49757ab
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580951"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810177"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Entrée en regard des points de regard et de pointage dans DirectX
 
@@ -24,7 +24,7 @@ Dans Windows Mixed Reality, l’entrée en regard de l’œil et de la tête est
 
 **Eye-point de regard** représente la direction vers laquelle les yeux de l’utilisateur cherchent. L’origine est située entre les yeux de l’utilisateur.  Elle est disponible sur les appareils de réalité mixte qui incluent un système de suivi oculaire.
 
-Les rayons de tête et de regard sont accessibles par le biais de l’API  [SpatialPointerPose](//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) . Appelez [SpatialPointerPose :: TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) pour recevoir un nouvel objet SpatialPointerPose à l’horodatage et au [système de coordonnées](coordinate-systems-in-directx.md)spécifiés. Ce SpatialPointerPose contient une origine et une direction de pointage. Elle contient également un point d’origine et une direction de regard si le suivi oculaire est disponible.
+Les rayons de tête et de regard sont accessibles par le biais de l’API  [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) . Appelez [SpatialPointerPose :: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) pour recevoir un nouvel objet SpatialPointerPose à l’horodatage et au [système de coordonnées](coordinate-systems-in-directx.md)spécifiés. Ce SpatialPointerPose contient une origine et une direction de pointage. Elle contient également un point d’origine et une direction de regard si le suivi oculaire est disponible.
 
 ### <a name="device-support"></a>Prise en charge des appareils
 
@@ -57,9 +57,9 @@ Les rayons de tête et de regard sont accessibles par le biais de l’API  [Spat
 
 ## <a name="using-head-gaze"></a>Utilisation de l’en-tête
 
-Pour accéder au point de regard, commencez par appeler  [SpatialPointerPose :: TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) pour recevoir un nouvel objet SpatialPointerPose. Transmettez les paramètres suivants.
- - [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) qui représente le système de coordonnées souhaité pour le point de regard. Elle est représentée par la variable *coordinateSystem* dans le code suivant. Pour plus d’informations, consultez notre guide de développement des [systèmes de coordonnées](coordinate-systems-in-directx.md) .
- - [Horodateur](//uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) qui représente l’heure exacte de la pose demandée.  En général, vous utilisez un horodatage qui correspond à l’heure à laquelle le frame actuel sera affiché. Vous pouvez obtenir cet horodateur d’affichage prédit à partir d’un objet  [HolographicFramePrediction](//uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) , qui est accessible via le [HolographicFrame](//uwp/api/windows.graphics.holographic.holographicframe)actuel.  Cet objet HolographicFramePrediction est représenté par la variable de *prédiction* dans le code suivant.
+Pour accéder au point de regard, commencez par appeler  [SpatialPointerPose :: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) pour recevoir un nouvel objet SpatialPointerPose. Transmettez les paramètres suivants.
+ - [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) qui représente le système de coordonnées souhaité pour le point de regard. Elle est représentée par la variable *coordinateSystem* dans le code suivant. Pour plus d’informations, consultez notre guide de développement des [systèmes de coordonnées](coordinate-systems-in-directx.md) .
+ - [Horodateur](/uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) qui représente l’heure exacte de la pose demandée.  En général, vous utilisez un horodatage qui correspond à l’heure à laquelle le frame actuel sera affiché. Vous pouvez obtenir cet horodateur d’affichage prédit à partir d’un objet  [HolographicFramePrediction](/uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) , qui est accessible via le [HolographicFrame](/uwp/api/windows.graphics.holographic.holographicframe)actuel.  Cet objet HolographicFramePrediction est représenté par la variable de *prédiction* dans le code suivant.
 
  Une fois que vous avez un SpatialPointerPose valide, la position de la tête et la direction vers l’avant sont accessibles en tant que propriétés.  Le code suivant montre comment y accéder.
 
@@ -80,13 +80,13 @@ if (pointerPose)
 ## <a name="using-eye-gaze"></a>Utilisation des yeux
 
 Pour que vos utilisateurs utilisent une entrée en regard de l’œil, chaque utilisateur doit passer par un étalonnage de l' [utilisateur de suivi oculaire](/hololens/hololens-calibration) la première fois qu’il utilise l’appareil. L’API Eye-regard est semblable à la tête de regard.
-Elle utilise la même API [SpatialPointerPose](//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) , qui fournit une origine de rayon et une direction que vous pouvez raycast par rapport à votre scène.  La seule différence est que vous devez activer explicitement le suivi visuel avant de l’utiliser :
+Elle utilise la même API [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) , qui fournit une origine de rayon et une direction que vous pouvez raycast par rapport à votre scène.  La seule différence est que vous devez activer explicitement le suivi visuel avant de l’utiliser :
 1. Demandez à l’utilisateur l’autorisation d’utiliser le suivi oculaire dans votre application.
 2. Activez la fonctionnalité « entrée de regard » dans le manifeste de votre package.
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>Demande d’accès à une entrée en regard des yeux
 
-Lorsque votre application démarre, appelez [EyesPose :: RequestAccessAsync](//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) pour demander l’accès au suivi oculaire. Le système demande à l’utilisateur si nécessaire et retourne [GazeInputAccessStatus :: allowed](//uwp/api/windows.ui.input.gazeinputaccessstatus) une fois que l’accès a été accordé. Il s’agit d’un appel asynchrone, ce qui nécessite un peu de gestion supplémentaire. L’exemple suivant montre comment effectuer une opération de détachement d’un thread std :: thread pour attendre le résultat, qu’il stocke dans une variable membre appelée *m_isEyeTrackingEnabled*.
+Lorsque votre application démarre, appelez [EyesPose :: RequestAccessAsync](/uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) pour demander l’accès au suivi oculaire. Le système demande à l’utilisateur si nécessaire et retourne [GazeInputAccessStatus :: allowed](/uwp/api/windows.ui.input.gazeinputaccessstatus) une fois que l’accès a été accordé. Il s’agit d’un appel asynchrone, ce qui nécessite un peu de gestion supplémentaire. L’exemple suivant montre comment effectuer une opération de détachement d’un thread std :: thread pour attendre le résultat, qu’il stocke dans une variable membre appelée *m_isEyeTrackingEnabled*.
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -105,7 +105,7 @@ std::thread requestAccessThread([this]()
 requestAccessThread.detach();
 
 ```
-Le démarrage d’un thread détaché n’est qu’une option pour gérer les appels asynchrones. Vous pouvez également utiliser les nouvelles fonctionnalités de [co_await](//windows/uwp/cpp-and-winrt-apis/concurrency) prises en charge par C++/WinRT.
+Le démarrage d’un thread détaché n’est qu’une option pour gérer les appels asynchrones. Vous pouvez également utiliser les nouvelles fonctionnalités de [co_await](/windows/uwp/cpp-and-winrt-apis/concurrency) prises en charge par C++/WinRT.
 Voici un autre exemple de demande d’autorisation de l’utilisateur :
 -   EyesPose :: IsSupported () permet à l’application de déclencher la boîte de dialogue d’autorisation uniquement s’il existe un dispositif de suivi oculaire.
 -   GazeInputAccessStatus m_gazeInputAccessStatus ; Cela permet d’éviter de relancer l’invite d’autorisation.
@@ -150,7 +150,7 @@ Cela ajoute les lignes suivantes à la section *package* dans le fichier appxman
 ### <a name="getting-the-eye-gaze-ray"></a>Obtenir le regard de l’œil
 
 Une fois que vous avez reçu l’accès à ET, vous êtes libre de prendre le regard de chaque image.
-Comme avec le point de regard, récupérez [SpatialPointerPose](//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) en appelant [SpatialPointerPose :: TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) avec un horodatage et un système de coordonnées souhaités. SpatialPointerPose contient un objet [EyesPose](//uwp/api/windows.perception.people.eyespose) via la propriété [Eyes](//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) . Ce n’est pas NULL uniquement si le suivi oculaire est activé. À partir de là, vous pouvez vérifier si l’utilisateur de l’appareil a un étalonnage de suivi oculaire en appelant [EyesPose :: IsCalibrationValid](//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Ensuite, utilisez la [propriété de](//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) pointage pour récupérer le [SpatialRay](//uwp/api/windows.perception.spatial.spatialray) contenant la position et la direction de l’oeil. La propriété de pointage peut parfois avoir la valeur null. Assurez-vous de le vérifier. Cela peut se produire si un utilisateur calibré ferme temporairement ses yeux.
+Comme avec le point de regard, récupérez [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) en appelant [SpatialPointerPose :: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) avec un horodatage et un système de coordonnées souhaités. SpatialPointerPose contient un objet [EyesPose](/uwp/api/windows.perception.people.eyespose) via la propriété [Eyes](/uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) . Ce n’est pas NULL uniquement si le suivi oculaire est activé. À partir de là, vous pouvez vérifier si l’utilisateur de l’appareil a un étalonnage de suivi oculaire en appelant [EyesPose :: IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Ensuite, utilisez la [propriété de](/uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) pointage pour récupérer le [SpatialRay](/uwp/api/windows.perception.spatial.spatialray) contenant la position et la direction de l’oeil. La propriété de pointage peut parfois avoir la valeur null. Assurez-vous de le vérifier. Cela peut se produire si un utilisateur calibré ferme temporairement ses yeux.
 
 L’exemple de code suivant montre comment accéder à l’œil-regard.
 
@@ -200,9 +200,9 @@ Pour plus d’informations, consultez les [considérations relatives](../../desi
 
 ## <a name="correlating-gaze-with-other-inputs"></a>Corrélation du regard avec d’autres entrées
 
-Il peut arriver que vous ayez besoin d’un [SpatialPointerPose](//uwp/api/windows.ui.input.spatial.spatialpointerpose) qui correspond à un événement dans le passé. Par exemple, si l’utilisateur fait un robinet d’air, votre application peut souhaiter savoir ce qu’elle recherchait. À cet effet, l’utilisation simple de [SpatialPointerPose :: TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) avec le temps de trame prédit serait inexacte en raison de la latence entre le traitement d’entrée du système et la durée d’affichage. En outre, si vous utilisez des yeux pour le ciblage, nos yeux ont tendance à se déplacer même avant de terminer une action de validation. Il s’agit d’un problème moins grave pour une pression aérienne simple, mais il devient plus critique lors de la combinaison de longues commandes vocales avec des mouvements d’œil rapides. L’une des façons de gérer ce scénario consiste à effectuer un appel supplémentaire à  [SpatialPointerPose :: TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp), à l’aide d’un horodateur historique qui correspond à l’événement d’entrée.  
+Il peut arriver que vous ayez besoin d’un [SpatialPointerPose](/uwp/api/windows.ui.input.spatial.spatialpointerpose) qui correspond à un événement dans le passé. Par exemple, si l’utilisateur fait un robinet d’air, votre application peut souhaiter savoir ce qu’elle recherchait. À cet effet, l’utilisation simple de [SpatialPointerPose :: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) avec le temps de trame prédit serait inexacte en raison de la latence entre le traitement d’entrée du système et la durée d’affichage. En outre, si vous utilisez des yeux pour le ciblage, nos yeux ont tendance à se déplacer même avant de terminer une action de validation. Il s’agit d’un problème moins grave pour une pression aérienne simple, mais il devient plus critique lors de la combinaison de longues commandes vocales avec des mouvements d’œil rapides. L’une des façons de gérer ce scénario consiste à effectuer un appel supplémentaire à  [SpatialPointerPose :: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp), à l’aide d’un horodateur historique qui correspond à l’événement d’entrée.  
 
-Toutefois, pour les entrées qui acheminent le SpatialInteractionManager, il existe une méthode plus simple. [SpatialInteractionSourceState](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) a sa propre fonction [TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) . L’appel de qui fournira un [SpatialPointerPose](//uwp/api/windows.ui.input.spatial.spatialpointerpose) parfaitement corrélé sans les deviner. Pour plus d’informations sur l’utilisation de SpatialInteractionSourceStates, jetez un coup d’œil aux [contrôleurs mains et motion dans](hands-and-motion-controllers-in-directx.md) la documentation DirectX.
+Toutefois, pour les entrées qui acheminent le SpatialInteractionManager, il existe une méthode plus simple. [SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) a sa propre fonction [TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) . L’appel de qui fournira un [SpatialPointerPose](/uwp/api/windows.ui.input.spatial.spatialpointerpose) parfaitement corrélé sans les deviner. Pour plus d’informations sur l’utilisation de SpatialInteractionSourceStates, jetez un coup d’œil aux [contrôleurs mains et motion dans](hands-and-motion-controllers-in-directx.md) la documentation DirectX.
 
 <br>
 
