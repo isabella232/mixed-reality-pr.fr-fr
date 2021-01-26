@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 53d22260603c4e52096eccf1d7af6a3b0732124e
-ms.sourcegitcommit: 672a7a145cfc656273af4ea34f99583eb9fa849c
+ms.openlocfilehash: e79b14c19a452b5b78c6f8cf7ea24bd65bfa0eaa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98225185"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605312"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
@@ -197,7 +197,7 @@ Pour choisir le rendu à partir de la caméra PV :
 Unreal va ensuite gérer les requêtes de capture de Réalité Mixte pour effectuer le rendu du point de vue de l’appareil photo/vidéo.
 
 > [!NOTE]
-> C’est seulement quand la [capture de Réalité Mixte](../../../mixed-reality-capture.md) est déclenchée qu’il est demandé à l’application de s’afficher du point de vue de l’appareil photo/vidéo.
+> C’est seulement quand la [capture de Réalité Mixte](/hololens/holographic-photos-and-videos) est déclenchée qu’il est demandé à l’application de s’afficher du point de vue de l’appareil photo/vidéo.
 
 ## <a name="using-the-pv-camera"></a>Utilisation de l’appareil photo/vidéo
 
@@ -224,4 +224,3 @@ Pour afficher l’image de l’appareil photo :
 5. Vérifiez que le matériau a un paramètre correspondant au nom indiqué dans **SetTextureParameterValue**, qui est lié à une entrée de couleur. Sans ce paramètre, l’image de la caméra ne peut pas s’afficher correctement.
 
 ![Texture de la caméra](../images/unreal-camera-material.PNG)
-

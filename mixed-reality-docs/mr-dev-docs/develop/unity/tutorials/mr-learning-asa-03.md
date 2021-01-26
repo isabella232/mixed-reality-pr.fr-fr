@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, sessions d’application
 ms.localizationpriority: high
-ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4bae36bfb24130fc7914563af07c09374162f3cb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008359"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582056"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Enregistrement, récupération et partage d’ancres spatiales Azure
 
@@ -58,7 +58,7 @@ Si vous générez l’application mise à jour dans votre HoloLens, vous pouvez 
 8. Rechercher l’ancre Azure (cela positionne le Rover Explorer à l’emplacement de l’étape 3)
 
 > [!NOTE]
-> Pour redémarrer complètement l’application après avoir quitté la vue d’application immersive, fermez la fenêtre de l’application dans l’accueil réalité mixte avant de la relancer à partir du menu Démarrer. Pour plus d’informations, consultez la documentation [Utilisation d’applications sur HoloLens](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens).
+> Pour redémarrer complètement l’application après avoir quitté la vue d’application immersive, fermez la fenêtre de l’application dans l’accueil réalité mixte avant de la relancer à partir du menu Démarrer. Pour plus d’informations, consultez la documentation [Utilisation d’applications sur HoloLens](/hololens/holographic-home#using-apps-on-hololens).
 
 ## <a name="sharing-azure-spatial-anchors-between-devices"></a>Partage d’ancres spatiales Azure entre des appareils
 

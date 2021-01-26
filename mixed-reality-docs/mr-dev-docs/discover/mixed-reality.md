@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Réalité mixte, holographique, RA, RV, RM, XR, réalité augmentée, réalité virtuelle, explication, étude de cas, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée
 ms.localizationpriority: high
-ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757697"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583017"
 ---
 # <a name="what-is-mixed-reality"></a>Qu’est-ce que la réalité mixte ?
 
@@ -34,7 +34,7 @@ Fusion des mondes physiques et numériques, la réalité mixte rend possible l�
 
 Au cours des dernières décennies, la relation entre les entrées humaines et celles des ordinateurs a continué, donnant lieu à une discipline appelée *interaction homme-machine* ou IHM. Les entrées humaines se font par divers moyens : clavier, souris, toucher, écriture manuscrite, voix et même suivi du squelette avec Kinect.
 
-Les avancées dans les capteurs et le traitement créent des types d’entrée d’ordinateur qui viennent de l’environnement. L’interaction entre un ordinateur et un environnement réside en fait dans la compréhension ou la *perception* de cet environnement. C’est pourquoi les API dans Windows qui révèlent des informations environnementales sont appelées [API de perception](https://docs.microsoft.com/uwp/api/Windows.Perception). Les entrées environnementales capturent des éléments tels que la position d’une personne dans le monde ([suivi de la tête](../design/coordinate-systems.md)), les surfaces et les limites ([cartographie spatiale](../design/spatial-mapping.md) et [compréhension des scènes](../design/scene-understanding.md)), l’éclairage ambiant, le son environnemental, la reconnaissance des objets et la localisation.
+Les avancées dans les capteurs et le traitement créent des types d’entrée d’ordinateur qui viennent de l’environnement. L’interaction entre un ordinateur et un environnement réside en fait dans la compréhension ou la *perception* de cet environnement. C’est pourquoi les API dans Windows qui révèlent des informations environnementales sont appelées [API de perception](/uwp/api/Windows.Perception). Les entrées environnementales capturent des éléments tels que la position d’une personne dans le monde ([suivi de la tête](../design/coordinate-systems.md)), les surfaces et les limites ([cartographie spatiale](../design/spatial-mapping.md) et [compréhension des scènes](../design/scene-understanding.md)), l’éclairage ambiant, le son environnemental, la reconnaissance des objets et la localisation.
 
 <br>
 
@@ -117,5 +117,3 @@ Si vous suivez le [parcours de découverte](get-started-with-mr.md) que nous avo
 
 > [!div class="nextstepaction"]
 > [Qu’est-ce qu’un hologramme ?](hologram.md)
-
-

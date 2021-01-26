@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, réalité mixte, développement, prise en main, nouveau projet, portage, fonctionnalité, caméra, simulation, émulation, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, MRTK, mixed reality toolkit, mappage spatial, entrée vocale, caméra localisable, émulateur, Azure, tutoriels
-ms.openlocfilehash: c5b7683574378565c71e95bc6205be3dbf92fcaf
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226438"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582997"
 ---
 # <a name="unity-development-for-hololens"></a>Développement Unity pour HoloLens
 
@@ -85,7 +85,7 @@ Le travail d’un développeur n’est jamais terminé, en particulier lorsqu’
 
 Si vous voulez effectuer le portage d’applications existantes, consultez les articles ci-dessous :
 
-* [HoloToolkit/MRTK vers MRTK v2](mrtk-porting-guide.md)
+* [HoloToolkit/MRTK vers MRTK v2](../porting-apps/porting-hl1-hl2.md)
 * [Guide de portage pour les applications immersives](../porting-apps/porting-guides.md)
 * [Guide de portage d’entrée](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 

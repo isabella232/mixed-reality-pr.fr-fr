@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, développement, documentation, guides, fonctionnalités, casque de réalité mixte, casque de réalité mixte Windows, casque de réalité virtuelle, publication, distribution, Microsoft Store
-ms.openlocfilehash: 41f081f11cdb9ac2fdf96a81bb761a1321d1776f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 3a975d9c66e64f56919163e9d3aa65a3126d6379
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010019"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583594"
 ---
 # <a name="publishing-to-the-microsoft-store"></a>Publication sur le Microsoft Store
 
@@ -111,4 +111,4 @@ if(Target.Platform == UnrealTargetPlatform.Win64)
 
 * [Envoi d’une application au Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Kit de certification des applications Windows](https://developer.microsoft.com/windows/downloads/app-certification-kit)
-* [Créer un fichier Programme d’installation d’application manuellement](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)
+* [Créer un fichier Programme d’installation d’application manuellement](/windows/msix/app-installer/how-to-create-appinstaller-file)

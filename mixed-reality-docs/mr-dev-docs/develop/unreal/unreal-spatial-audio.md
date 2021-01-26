@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, démarrage, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, son spatial
-ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: fdb4f401188a813b99884929cd835453dec5aaf0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009969"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580432"
 ---
 # <a name="spatial-audio-in-unreal"></a>Son spatial dans Unreal
 
@@ -124,6 +124,6 @@ Vous pouvez revenir aux [points de contrôle de développement Unreal](unreal-de
 
 
 ## <a name="see-also"></a>Voir aussi
-* [Son spatial](https://docs.microsoft.com/windows/mixed-reality/spatial-sound)
-* [Conception du son spatial](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)
-* [Réalité mixte - Fonctionnalités spatiales - Cours 220 : Son spatial](https://docs.microsoft.com/windows/mixed-reality/holograms-220)
+* [Son spatial](/windows/mixed-reality/spatial-sound)
+* [Conception du son spatial](/windows/mixed-reality/spatial-sound-design)
+* [Réalité mixte - Fonctionnalités spatiales - Cours 220 : Son spatial](/windows/mixed-reality/holograms-220)

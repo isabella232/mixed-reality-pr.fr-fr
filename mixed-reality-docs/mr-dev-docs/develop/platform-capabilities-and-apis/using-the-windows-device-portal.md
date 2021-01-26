@@ -7,18 +7,18 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portail d’appareil Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 75eda2775486b1ace82b574816db34a2f895c80b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c354a6f7c3afd6164182f915c39bbf1ce306ef39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007789"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583247"
 ---
 # <a name="using-the-windows-device-portal"></a>Utilisation du portail d’appareil Windows
 
 <table>
 <tr>
-<th>Fonctionnalité</th><th style="width:150px"><a href="../../hololens-hardware-details.md">HoloLens (1ère génération)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
+<th>Fonctionnalité</th><th style="width:150px"><a href="/hololens/hololens1-hardware">HoloLens (1ère génération)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
 </tr><tr>
 <td> Portail d’appareil Windows</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
@@ -26,19 +26,19 @@ ms.locfileid: "98007789"
 
 Le portail d’appareil Windows pour HoloLens vous permet de configurer et de gérer à distance votre appareil par le biais d’une connexion Wi-Fi ou USB. Le Device Portal est un serveur Web situé sur l'appareil auquel vous pouvez vous connecter depuis un navigateur Web sur votre PC. Le portail d’appareil comprend de nombreux outils qui vous aideront à gérer votre appareil HoloLens, ainsi qu’à déboguer et à optimiser vos applications.
 
-Cette documentation concerne spécifiquement le portail d’appareil Windows pour HoloLens. Si vous souhaitez utiliser le portail d’appareil Windows pour les ordinateurs de bureau (y compris pour Windows Mixed Reality), consultez [Vue d’ensemble du portail d’appareil Windows](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal).
+Cette documentation concerne spécifiquement le portail d’appareil Windows pour HoloLens. Si vous souhaitez utiliser le portail d’appareil Windows pour les ordinateurs de bureau (y compris pour Windows Mixed Reality), consultez [Vue d’ensemble du portail d’appareil Windows](/windows/uwp/debug-test-perf/device-portal).
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Configuration de HoloLens pour l’utilisation du portail d’appareil Windows
 
 1. Mettez HoloLens sous tension et allumez l’appareil.
-2. Pour lancer le menu principal, utilisez le [mouvement associé au menu Démarrer](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) sur un HoloLens 2 ou [écartez les doigts paume vers le haut](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) sur un HoloLens (1re génération). 
-3. Pointez du regard la vignette **Paramètres** et effectuez un [clic aérien](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) sur un HoloLens (1re génération). Vous pouvez également la sélectionner sur un HoloLens 2 [en la touchant ou en utilisant un rayon émanant de la main](https://docs.microsoft.com/hololens/hololens2-basic-usage). 
+2. Pour lancer le menu principal, utilisez le [mouvement associé au menu Démarrer](/hololens/hololens2-basic-usage#start-gesture) sur un HoloLens 2 ou [écartez les doigts paume vers le haut](/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) sur un HoloLens (1re génération). 
+3. Pointez du regard la vignette **Paramètres** et effectuez un [clic aérien](/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) sur un HoloLens (1re génération). Vous pouvez également la sélectionner sur un HoloLens 2 [en la touchant ou en utilisant un rayon émanant de la main](/hololens/hololens2-basic-usage). 
 4. Sélectionnez l’élément de menu **Mettre à jour**.
 5. Sélectionnez l’élément de menu **Pour les développeurs**.
 6. Activez **Mode développeur**.
 
 > [!IMPORTANT]
-> Si vous êtes dans un environnement multi-utilisateur et que vous n’êtes pas administrateur, la capacité à entrer en mode Développeur peut être grisée. Vérifiez que vous êtes **[administrateur sur l’appareil](https://docs.microsoft.com/hololens/security-adminless-os)** .
+> Si vous êtes dans un environnement multi-utilisateur et que vous n’êtes pas administrateur, la capacité à entrer en mode Développeur peut être grisée. Vérifiez que vous êtes **[administrateur sur l’appareil](/hololens/security-adminless-os)** .
 
 7. [Faites défiler](../../design/gaze-and-commit.md#composite-gestures) la liste et activez le **portail d’appareil**.
 8. Si vous configurez le portail d’appareil Windows afin de pouvoir déployer des applications sur cet HoloLens par le biais d’une connexion USB ou Wi-Fi, sélectionnez **Coupler** pour [générer un code PIN d’appairage](using-visual-studio.md). Dans l’application Paramètres, laissez le menu contextuel Code confidentiel ouvert jusqu’à ce que vous entriez le code confidentiel dans Visual Studio lors du premier déploiement.
@@ -47,7 +47,7 @@ Cette documentation concerne spécifiquement le portail d’appareil Windows pou
 
 ## <a name="connecting-over-wi-fi"></a>Connexion Wi-Fi
 
-1. [Connectez votre appareil HoloLens au Wi-Fi](../../connecting-to-wi-fi-on-hololens.md).
+1. [Connectez votre appareil HoloLens au Wi-Fi](/hololens/hololens-network).
 2. Recherchez l’adresse IP de votre appareil en effectuant l’une des opérations suivantes :
    * Accédez à **Paramètres > Réseau et Internet > Wi-Fi > Options avancées**.
    * Accédez à **Paramètres > Réseau et Internet** et sélectionnez **Propriétés matérielles**.
@@ -281,13 +281,13 @@ Tous les paramètres de cette page s’appliquent aux captures effectuées à l�
 ![Page Suivi des performances dans le portail d’appareil Windows sur Microsoft HoloLens](images/using-windows-portal-img-08.png)<br>
 *Page Suivi des performances dans le portail d’appareil Windows sur Microsoft HoloLens*
 
-Capturez les suivis de l’[Enregistreur de performance Windows](https://msdn.microsoft.com/library/windows/hardware/hh448205.aspx) (WPR) à partir de votre appareil HoloLens.
+Capturez les suivis de l’[Enregistreur de performance Windows](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448205(v=win.10)) (WPR) à partir de votre appareil HoloLens.
 * **Profils disponibles** : sélectionnez le profil WPR dans la liste déroulante, puis sélectionnez **Démarrer** ou appuyez dessus pour commencer le suivi.
 * **Profils personnalisés** : sélectionnez **Parcourir** ou appuyez dessus pour choisir un profil WPR sur votre PC. Sélectionnez **Charger et démarrer** ou appuyez dessus pour commencer le suivi.
 
 Pour arrêter le suivi, sélectionnez le lien Arrêter. Restez dans cette page jusqu’à ce que le fichier de suivi ait terminé le téléchargement.
 
-Les fichiers ETL capturés peuvent être ouverts pour analyse dans [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx).
+Les fichiers ETL capturés peuvent être ouverts pour analyse dans [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
 
 ### <a name="processes"></a>Processus
 
@@ -330,7 +330,7 @@ Gère les applications qui sont installées sur l’appareil HoloLens.
 ![Page Vidages sur incident des applications dans le portail d’appareil Windows sur Microsoft HoloLens](images/using-windows-portal-img-12.png)<br>
 *Page Vidages sur incident des applications dans le portail d’appareil Windows sur Microsoft HoloLens*
 
-Cette page vous permet de recueillir les vidages sur incident de vos applications chargées de manière indépendante. Cochez la case **Activation des vidages sur incident** pour chaque application pour laquelle vous souhaitez recueillir des vidages sur incident. Revenez à cette page pour recueillir les vidages sur incident. Les fichiers de vidage peuvent être [ouverts dans Visual Studio pour le débogage](https://msdn.microsoft.com/library/d5zhxt22.aspx).
+Cette page vous permet de recueillir les vidages sur incident de vos applications chargées de manière indépendante. Cochez la case **Activation des vidages sur incident** pour chaque application pour laquelle vous souhaitez recueillir des vidages sur incident. Revenez à cette page pour recueillir les vidages sur incident. Les fichiers de vidage peuvent être [ouverts dans Visual Studio pour le débogage](/previous-versions/visualstudio/visual-studio-2015/debugger/using-dump-files).
 
 ### <a name="file-explorer"></a>Explorateur de fichiers
 
@@ -342,11 +342,11 @@ Utilisez l’Explorateur de fichiers pour parcourir, charger et télécharger de
 ### <a name="kiosk-mode"></a>Mode plein écran
 
 >[!NOTE]
->Le mode plein écran est disponible uniquement avec la suite [Microsoft HoloLens Commercial Suite](../../commercial-features.md).
+>Le mode plein écran est disponible uniquement avec la suite [Microsoft HoloLens Commercial Suite](/hololens/hololens-commercial-features).
 
 ![Page Mode kiosque dans le portail d’appareil Windows sur Microsoft HoloLens](images/using-windows-portal-img-14.png)
 
-Pour obtenir des instructions à jour sur l’activation du mode plein écran via le portail d’appareil Windows, consultez l’article [Configurer HoloLens en mode plein écran](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) sur Windows IT Pro Center.
+Pour obtenir des instructions à jour sur l’activation du mode plein écran via le portail d’appareil Windows, consultez l’article [Configurer HoloLens en mode plein écran](/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) sur Windows IT Pro Center.
 
 ### <a name="logging"></a>Journalisation
 

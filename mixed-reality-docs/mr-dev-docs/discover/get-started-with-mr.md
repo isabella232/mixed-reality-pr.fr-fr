@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, découvrir, distribuer, index, page d’accueil, conception, développement, tutoriels, exemples d’applications, principes fondamentaux, études de cas, ressources, procédures HoloLens, projets open source, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009719"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583354"
 ---
 # <a name="get-started-with-mixed-reality"></a>Bien démarrer avec la réalité mixte
 
@@ -152,7 +152,7 @@ Si vous êtes curieux de voir comment les différents matériels et services de 
 |  Concept  |  Résultat  |
 | --- | --- |
 | [Matériel HoloLens](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offre l’expérience de réalité mixte la plus confortable et la plus immersive actuellement disponible, avec des solutions de pointe qui font la différence en quelques minutes, le tout amélioré par la fiabilité, la sécurité et la scalabilité des services cloud et des services d’IA de Microsoft. |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explorez une gamme de produits qui peuvent autonomiser les employés et optimiser les opérations avec Dynamics 365, notamment [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), Layout et [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). L’expérience du travail réel, des appareils réels et des utilisateurs réels apporte un savoir significatif. |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explorez une gamme de produits qui peuvent autonomiser les employés et optimiser les opérations avec Dynamics 365, notamment [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout et [Guides](/dynamics365/mixed-reality/guides/). L’expérience du travail réel, des appareils réels et des utilisateurs réels apporte un savoir significatif. |
 | [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Créez des expériences immersives attrayantes sur différentes plateformes avec la reconnaissance spatiale, des ancres spatiales et le rendu de modèle 3D complexe. |
 
 ## <a name="what-would-you-like-to-do-next"></a>Que voulez-vous faire à présent ?
@@ -181,5 +181,4 @@ Si vous êtes curieux de voir comment les différents matériels et services de 
 <br>
 
 >[!IMPORTANT]
->L’ensemble de la documentation concernant le développement de réalité mixte est fournie à titre de référence uniquement. Votre application, son utilisation et ses effets sur les utilisateurs finaux sont sous votre entière responsabilité en tant que développeur de l’application. En cette qualité, vous devez vous assurer que votre application ne cause aucune gêne, aucune blessure ni aucun autre préjudice physique aux utilisateurs finaux, et veiller à fournir les avertissements et clauses d’exclusion de responsabilité appropriés. Vous devez suivre les étapes de développement et de publication fournies, et ce, à tout moment, afin de garantir que votre application est sécurisée et qu’elle respecte toutes les obligations citées dans votre [Contrat du développeur d’application passé avec Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
-
+>L’ensemble de la documentation concernant le développement de réalité mixte est fournie à titre de référence uniquement. Votre application, son utilisation et ses effets sur les utilisateurs finaux sont sous votre entière responsabilité en tant que développeur de l’application. En cette qualité, vous devez vous assurer que votre application ne cause aucune gêne, aucune blessure ni aucun autre préjudice physique aux utilisateurs finaux, et veiller à fournir les avertissements et clauses d’exclusion de responsabilité appropriés. Vous devez suivre les étapes de développement et de publication fournies, et ce, à tout moment, afin de garantir que votre application est sécurisée et qu’elle respecte toutes les obligations citées dans votre [Contrat du développeur d’application passé avec Microsoft](/legal/windows/agreements/app-developer-agreement).

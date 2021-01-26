@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: graphiques, UC, GPU, rendu, garbage collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 3508edae9fa0e60e9d9b60000186dfd3e49ff134
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009349"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583183"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recommandations sur les performances pour Unity
 
@@ -84,7 +84,7 @@ public class ExampleClass : MonoBehaviour
 
 #### <a name="avoid-expensive-operations"></a>Éviter les opérations coûteuses
 
-1) **Éviter l’utilisation de [LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
+1) **Éviter l’utilisation de [LINQ](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
 
     Même si LINQ est très propre et facile à lire et à écrire, cette technologie nécessite généralement plus de calcul et de mémoire que l’écriture manuelle de l’algorithme.
 
@@ -120,7 +120,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **Attention à Boxing**
 
-    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) est un concept fondamental du langage et runtime C#. Il s’agit du processus qui consiste à wrapper des variables de type valeur, par exemple `char`, `int`, `bool`, etc., dans des variables de type référence. Quand une variable de type valeur fait l’objet d’un « boxing », elle est wrappée dans un `System.Object` stocké sur le tas managé. De la mémoire est allouée et, quand elle est supprimée, elle doit être traitée par le garbage collector. Ces allocations et désallocations entraînent un coût pour les performances et, dans de nombreux scénarios, s’avèrent inutiles ou peuvent être facilement remplacées par une alternative moins coûteuse.
+    [Boxing](/dotnet/csharp/programming-guide/types/boxing-and-unboxing) est un concept fondamental du langage et runtime C#. Il s’agit du processus qui consiste à wrapper des variables de type valeur, par exemple `char`, `int`, `bool`, etc., dans des variables de type référence. Quand une variable de type valeur fait l’objet d’un « boxing », elle est wrappée dans un `System.Object` stocké sur le tas managé. De la mémoire est allouée et, quand elle est supprimée, elle doit être traitée par le garbage collector. Ces allocations et désallocations entraînent un coût pour les performances et, dans de nombreux scénarios, s’avèrent inutiles ou peuvent être facilement remplacées par une alternative moins coûteuse.
 
     Pour éviter le boxing, vérifiez que les variables, les champs et les propriétés dans lesquels vous stockez des types numériques et des structs (notamment `Nullable<T>`) sont fortement typés en tant que types spécifiques comme `int`, `float?` ou `MyStruct` au lieu d’utiliser l’objet.  Si vous placez ces objets dans une liste, veillez à utiliser une liste fortement typée telle que `List<int>` au lieu de `List<object>` ou `ArrayList`.
 
@@ -180,7 +180,7 @@ Toutes les fonctions de rappel Unity répétitives (c.-à-d. Update) exécutées
 
 4) **Éviter de passer des structs par valeur**
 
-    Contrairement aux classes, les structs sont des types valeur et quand ils sont passés directement à une fonction, leur contenu est copié dans une instance nouvellement créée. Cette copie augmente le coût du processeur, ainsi que la mémoire supplémentaire sur la pile. Pour les petits structs, l’effet est minime et donc acceptable. En revanche, pour les fonctions appelées à plusieurs reprises, chaque frame ainsi que les fonctions acceptant des grands structs, modifiez si possible la définition de fonction pour qu’elle passe par référence. [En savoir plus ici](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    Contrairement aux classes, les structs sont des types valeur et quand ils sont passés directement à une fonction, leur contenu est copié dans une instance nouvellement créée. Cette copie augmente le coût du processeur, ainsi que la mémoire supplémentaire sur la pile. Pour les petits structs, l’effet est minime et donc acceptable. En revanche, pour les fonctions appelées à plusieurs reprises, chaque frame ainsi que les fonctions acceptant des grands structs, modifiez si possible la définition de fonction pour qu’elle passe par référence. [En savoir plus ici](/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### <a name="miscellaneous"></a>Divers
 
@@ -337,9 +337,9 @@ Unity propose une excellente page qui explique précisément comment le garbage 
 L’une des pratiques les plus courantes qui conduisent à un nettoyage de la mémoire excessif consiste à ne pas mettre en cache les références aux composants et aux classes dans le développement Unity. Toutes les références doivent être capturées pendant Start() ou Awake() et réutilisées dans des fonctions ultérieures comme Update() ou LateUpdate().
 
 Autres conseils rapides :
-- Utilisez la classe C# [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder) pour créer dynamiquement des chaînes complexes au moment de l’exécution.
+- Utilisez la classe C# [StringBuilder](/dotnet/api/system.text.stringbuilder) pour créer dynamiquement des chaînes complexes au moment de l’exécution.
 - Supprimez les appels à Debug.log() quand vous n’en avez plus besoin, car ils s’exécutent encore dans toutes les versions de build d’une application.
-- Si votre application holographique nécessite généralement beaucoup de mémoire, envisagez d’appeler [_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect) pendant les phases de chargement, par exemple lors de la présentation d’un écran de chargement ou de transition.
+- Si votre application holographique nécessite généralement beaucoup de mémoire, envisagez d’appeler [_**System.GC.Collect()**_](/dotnet/api/system.gc.collect) pendant les phases de chargement, par exemple lors de la présentation d’un écran de chargement ou de transition.
 
 #### <a name="object-pooling"></a>Mise en pool d’objets
 

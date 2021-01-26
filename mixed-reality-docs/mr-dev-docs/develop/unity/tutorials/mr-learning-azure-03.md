@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, azure custom vision, azure cognitive services, services cloud azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: bd99b2ca8f41c276db747dc7fc75328c31807512
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008209"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581934"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Intégration d’Azure Custom Vision
 
@@ -28,13 +28,13 @@ Dans ce tutoriel, vous allez apprendre à utiliser **Azure Custom Vision**. Vous
 
 **Azure Custom Vision** fait partie de la famille **Cognitive Services** et est utilisé pour l’entraînement des classifieurs d’images. Le classifieur d’images est un service IA qui utilise le modèle entraîné pour appliquer des étiquettes correspondantes. Cette fonctionnalité de classification sera utilisée par notre application pour détecter les *objets suivis*.
 
-Apprenez-en davantage sur [Azure Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
+Apprenez-en davantage sur [Azure Custom Vision](/azure/cognitive-services/custom-vision-service/home).
 
 ## <a name="preparing-azure-custom-vision"></a>Préparation d’Azure Custom Vision
 
 Avant de commencer, vous devez créer un projet Custom Vision ; le moyen le plus rapide consiste à utiliser le portail web.
 
-Suivez ce [tutoriel de démarrage rapide](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) pour configurer votre compte et votre projet jusqu’à la section *Charger et étiqueter des images*.
+Suivez ce [tutoriel de démarrage rapide](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) pour configurer votre compte et votre projet jusqu’à la section *Charger et étiqueter des images*.
 
 > [!WARNING]
 > Pour entraîner un modèle, vous devez avoir au moins deux étiquettes et cinq images par étiquette. Pour utiliser cette application, vous devez créer au moins une étiquette avec cinq images, afin que le processus d’entraînement n’échoue pas par la suite.

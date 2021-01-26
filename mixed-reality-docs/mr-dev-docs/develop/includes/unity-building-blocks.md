@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d6d5f40f94f490901d95d70583da38bf393b2599
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98195324"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582994"
 ---
 # <a name="available-in-mrtk"></a>[Disponible dans MRTK](#tab/mrtk)
 
@@ -15,7 +15,7 @@ ms.locfileid: "98195324"
 | [Pointage du regard](../unity/gaze-in-unity.md) | Autorisez des utilisateurs à cibler des hologrammes en les regardant |
 | [Contrôleurs de mouvement](../unity/motion-controllers-in-unity.md) | Ajoutez des actions spatiales à vos applications de réalité mixte |
 | [Mouvements](../unity/gestures-in-unity.md) | Utilisez les mouvements de la main comme entrée dans vos expériences de réalité mixte |
-| [Suivi du regard et des mains](../unity/hand-eye-in-unit.md) | Intégrez une entrée de suivi du regard et des mains dans votre expérience utilisateur |
+| [Suivi du regard et des mains](../unity/hand-eye-in-unity.md) | Intégrez une entrée de suivi du regard et des mains dans votre expérience utilisateur |
 | [Mappage spatial](../unity/spatial-mapping-in-unity.md) | Mappez votre espace physique avec une superposition de maillage virtuel afin de marquer les limites de votre environnement |
 | [Text](../unity/text-in-unity.md) | Obtenez un texte clair et de haute qualité avec une taille et un rendu de qualité gérables |
 | [Entrée vocale](../unity/voice-input-in-unity.md) | Capturez des mots clés, des expressions et une dictée à partir de vos utilisateurs|
@@ -34,5 +34,3 @@ ms.locfileid: "98195324"
 | [Son spatial](../unity/spatial-sound-in-unity.md) | Améliorez vos applications avec un son immersif en 3D |
 | [Text](../unity/text-in-unity.md) | Obtenez un texte clair et de haute qualité avec une taille et un rendu de qualité gérables |
 | [Entrée vocale](../unity/voice-input-in-unity.md) | Capturez des mots clés, des expressions et une dictée à partir de vos utilisateurs|
-
-

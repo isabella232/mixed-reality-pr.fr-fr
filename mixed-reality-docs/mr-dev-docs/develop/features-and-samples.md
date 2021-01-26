@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 keywords: réalité mixte, Unity, tutoriel, HoloLens, formation, exemples, MRTK, mode de recherche, HoloLens 2, codes QR, WebRTC, Capture de Réalité Mixte, communication à distance holographique, outils d’expérience utilisateur
 ms.localizationpriority: high
-ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007609"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583193"
 ---
 # <a name="samples-and-feature-apps"></a>Exemples d’applications et de fonctionnalités
 
@@ -30,7 +30,7 @@ Les exemples de fonctionnalités listés ci-dessous correspondent à des implém
 
 ### <a name="research-mode"></a>Mode Recherche
 
-Le mode Recherche a été introduit dans la 1re génération des HoloLens afin de permettre l’accès aux capteurs clés de l’appareil, en particulier pour les applications de recherche qui ne sont pas destinées au déploiement. Les exemples d’applications ci-dessous sont des exemples d’accès et d’enregistrement des flux du mode Recherche. Ils correspondent également à des exemples d’utilisation des propriétés [intrinsèques et extrinsèques](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
+Le mode Recherche a été introduit dans la 1re génération des HoloLens afin de permettre l’accès aux capteurs clés de l’appareil, en particulier pour les applications de recherche qui ne sont pas destinées au déploiement. Les exemples d’applications ci-dessous sont des exemples d’accès et d’enregistrement des flux du mode Recherche. Ils correspondent également à des exemples d’utilisation des propriétés [intrinsèques et extrinsèques](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
 
 <br>
 
@@ -67,7 +67,7 @@ La capture de réalité mixte (MRC) permet de capturer une expérience utilisate
 
 | Article de référence | Exemple |
 | --- | --- |
-| [Capture de réalité mixte](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Exemples de captures de réalité mixte](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [Capture de réalité mixte](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Exemples de captures de réalité mixte](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ### <a name="holographic-remoting"></a>Communication à distance holographique
 

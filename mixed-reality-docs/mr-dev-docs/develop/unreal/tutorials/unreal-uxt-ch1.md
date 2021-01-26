@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, tutoriel, bien démarrer, mrtk, uxt, UX Tools, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: 762247f550a3471bbbb6d1004283c6f901346503
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a46b9fef96f75f3d80b9ebbd5cbd724730374b41
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009789"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580565"
 ---
 # <a name="1-getting-started"></a>1. Mise en route
 
-Que vous soyez débutant ou expérimenté dans la réalité mixte, ce tutoriel est parfait pour démarrer votre parcours [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) et [Unreal Engine](https://www.unrealengine.com/en-US/). Cette série de tutoriels vous guide dans la création d’une application interactive de jeu d’échecs en utilisant le [plug-in UX Tools](https://github.com/microsoft/MixedReality-UXTools-Unreal), qui fait partie de [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). Ce plug-in vous permet d’ajouter des fonctionnalités d’expérience utilisateur courantes à vos projets à l’aide de code, de blueprints et d’exemples. 
+Que vous soyez débutant ou expérimenté dans la réalité mixte, ce tutoriel est parfait pour démarrer votre parcours [HoloLens 2](../../../index.yml) et [Unreal Engine](https://www.unrealengine.com/en-US/). Cette série de tutoriels vous guide dans la création d’une application interactive de jeu d’échecs en utilisant le [plug-in UX Tools](https://github.com/microsoft/MixedReality-UXTools-Unreal), qui fait partie de [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). Ce plug-in vous permet d’ajouter des fonctionnalités d’expérience utilisateur courantes à vos projets à l’aide de code, de blueprints et d’exemples. 
 
 ![Scène finale dans la fenêtre Viewport](images/unreal-uxt/5-endscene.PNG)
 
@@ -40,7 +40,7 @@ Avant de commencer, vérifiez que vous avez installé les éléments suivants :
 
 Vérifiez d’abord que votre installation a tous les packages Visual Studio nécessaires :
 1. Installez la dernière version de [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/).
-1. Installez les [charges de travail](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads) suivantes :
+1. Installez les [charges de travail](/visualstudio/install/modify-visual-studio#modify-workloads) suivantes :
     * Développement Desktop en C++
     * Développement .NET Desktop
     * Développement pour la plateforme Windows universelle
@@ -48,7 +48,7 @@ Vérifiez d’abord que votre installation a tous les packages Visual Studio né
     * Connectivité des périphériques USB
     * Outils de plateforme Windows universelle C++ (v142)
 
-1. Installez les [composants](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components) suivants :
+1. Installez les [composants](/visualstudio/install/modify-visual-studio#modify-individual-components) suivants :
     * Compilateurs, outils de build et runtimes > MSVC v142 - VS 2019 C++ ARM64 Build Tools (dernière version)
 
 Vous pouvez confirmer l’installation avec l’image suivante

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, ancres spatiales azure, services cloud azure, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 75c3f98c2f40f03240906716d9b942a157994130
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008169"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581894"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Intégration d’Azure Spatial Anchors
 
@@ -28,12 +28,12 @@ Dans ce tutoriel, vous allez découvrir comment utiliser **Azure Spatial Anchors
 
  **Azure Spatial Anchors** fait partie de la famille Azure Cloud Services. Sa fonction est d’enregistrer les emplacements d’ancrage. Les emplacements d’ancrage enregistrés peuvent être récupérés à partir du cloud d’après l’*ID d’ancre*. Ces emplacements d’ancrage peuvent être partagés et sollicités par des appareils multiplateformes tels que des appareils HoloLens, iOS et Android.
 
-Apprenez-en davantage sur [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview).
+Apprenez-en davantage sur [Azure Spatial Anchors](/azure/spatial-anchors/overview).
 
 ## <a name="preparing-azure-spatial-anchors"></a>Préparation d’Azure Spatial Anchors
 
 Avant de commencer, vous devez créer une ressource Spatial Anchors dans le portail Azure.
-Découvrez comment créer une [ressource Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
+Découvrez comment créer une [ressource Spatial Anchors](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
 
 ## <a name="preparing-the-scene"></a>Préparation de la scène
 

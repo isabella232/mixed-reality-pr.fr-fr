@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, déboguer, déployer
-ms.openlocfilehash: 20bda2cd247f18680d3f9fe95284e238a32e1140
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c4ffe3a426ad82c324efef20639cf836f16a7f63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97529964"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583610"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Utilisation de Visual Studio pour le déploiement et le débogage
 
@@ -129,7 +129,7 @@ Pour découpler votre HoloLens de tous les ordinateurs appairés :
 
 ## <a name="graphics-debugger-for-hololens-1st-gen"></a>Débogueur Graphics pour HoloLens (1re génération)
 
-Les outils Graphics Diagnostics de Visual Studio sont utiles quand vous écrivez et optimisez une application holographique. Pour plus d’informations, consultez [Visual Studio Graphics Diagnostics sur MSDN](https://msdn.microsoft.com/library/hh315751.aspx).
+Les outils Graphics Diagnostics de Visual Studio sont utiles quand vous écrivez et optimisez une application holographique. Pour plus d’informations, consultez [Visual Studio Graphics Diagnostics sur MSDN](/previous-versions/visualstudio/visual-studio-2015/debugger/visual-studio-graphics-diagnostics).
 
 **Pour démarrer le débogueur Graphics**
 1. Suivez les instructions données plus haut pour cibler un appareil ou un émulateur
@@ -138,7 +138,7 @@ Les outils Graphics Diagnostics de Visual Studio sont utiles quand vous écrivez
 
 ## <a name="profiling"></a>Profilage
 
-Les outils de profilage dans Visual Studio vous permettent d’analyser l’utilisation des ressources et les performances de votre application. Ces outils comprennent des outils pour optimiser l’utilisation du processeur, de la mémoire, des graphiques et du réseau. Pour plus d’informations, consultez [Exécuter les outils de diagnostic sans débogage sur MSDN](https://msdn.microsoft.com/library/dn957936.aspx).
+Les outils de profilage dans Visual Studio vous permettent d’analyser l’utilisation des ressources et les performances de votre application. Ces outils comprennent des outils pour optimiser l’utilisation du processeur, de la mémoire, des graphiques et du réseau. Pour plus d’informations, consultez [Exécuter les outils de diagnostic sans débogage sur MSDN](/previous-versions/visualstudio/visual-studio-2015/profiling/profiling-tools).
 
 **Pour démarrer les outils de profilage avec HoloLens**
 1. Suivez les instructions données plus haut pour cibler un appareil ou un émulateur
@@ -175,5 +175,5 @@ Vous pouvez revenir aux [points de contrôle de développement Unity](../../deve
 ## <a name="see-also"></a>Voir aussi
 * [Installer les outils](../install-the-tools.md)
 * [Utilisation de l’émulateur HoloLens](using-the-hololens-emulator.md)
-* [Déploiement et débogage d’applications de plateforme Windows universelle (UWP)](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
-* [Activer votre appareil pour le développement](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
+* [Déploiement et débogage d’applications de plateforme Windows universelle (UWP)](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps)
+* [Activer votre appareil pour le développement](/windows/uwp/get-started/enable-your-device-for-development)
