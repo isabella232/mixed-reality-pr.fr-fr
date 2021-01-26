@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: réalité mixte, conception, confort, HoloLens 2, HoloLens (1ère génération), casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens, MRTK, Mixed Reality Toolkit, locomotion
-ms.openlocfilehash: 74ead209beb3396db83e5e446490efe17293b14e
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847492"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582491"
 ---
 # <a name="comfort"></a>Confort
 
@@ -78,15 +78,15 @@ L’écart pupillaire fait référence à la distance qui sépare les deux pupil
 
 #### <a name="hololens-1st-gen"></a>HoloLens (1ère génération)
 
-Pour HoloLens (1ère génération), l’écart pupillaire est estimé et défini lors de l’[étalonnage](https://docs.microsoft.com/hololens/hololens-calibration) de l’appareil. Les nouveaux utilisateurs qui disposent d’un appareil déjà configuré doivent effectuer l’étalonnage ou définir manuellement l’écart pupillaire. Le décalage vertical dépend entièrement de la manière dont l’appareil est ajusté. En effet, pour réduire la valeur du décalage vertical, l’utilisateur doit placer le casque sur sa tête de telle sorte que l’écran soit au niveau de l’axe de ses yeux. 
+Pour HoloLens (1ère génération), l’écart pupillaire est estimé et défini lors de l’[étalonnage](/hololens/hololens-calibration) de l’appareil. Les nouveaux utilisateurs qui disposent d’un appareil déjà configuré doivent effectuer l’étalonnage ou définir manuellement l’écart pupillaire. Le décalage vertical dépend entièrement de la manière dont l’appareil est ajusté. En effet, pour réduire la valeur du décalage vertical, l’utilisateur doit placer le casque sur sa tête de telle sorte que l’écran soit au niveau de l’axe de ses yeux. 
 
 #### <a name="hololens-2"></a>HoloLens 2
 
-Pour HoloLens 2, l’écart pupillaire est estimé et défini au cours de l’[étalonnage](https://docs.microsoft.com/hololens/hololens-calibration) du regard ou de l’appareil. Les nouveaux utilisateurs qui disposent d’un appareil déjà configuré doivent effectuer l’étalonnage ou vérifier que l’écart pupillaire est correctement défini. Le décalage vertical est pris en compte automatiquement dans HoloLens 2. 
+Pour HoloLens 2, l’écart pupillaire est estimé et défini au cours de l’[étalonnage](/hololens/hololens-calibration) du regard ou de l’appareil. Les nouveaux utilisateurs qui disposent d’un appareil déjà configuré doivent effectuer l’étalonnage ou vérifier que l’écart pupillaire est correctement défini. Le décalage vertical est pris en compte automatiquement dans HoloLens 2. 
 
 ### <a name="guidance-for-immersive-devices"></a>Conseils pour les appareils immersifs
 
-Les casques audiovisuels immersifs Windows Mixed Reality ne permettent pas d’étalonner automatiquement l’écart pupillaire et le décalage vertical. L’écart pupillaire peut être défini manuellement dans le logiciel (dans les paramètres du portail de réalité mixte, sous [Étalonnage](https://docs.microsoft.com/hololens/hololens-calibration)). Certains casques audiovisuels comprennent un curseur mécanique qui permet à l’utilisateur d’ajuster l’espacement des verres sur une position confortable correspondant approximativement à son écart pupillaire. 
+Les casques audiovisuels immersifs Windows Mixed Reality ne permettent pas d’étalonner automatiquement l’écart pupillaire et le décalage vertical. L’écart pupillaire peut être défini manuellement dans le logiciel (dans les paramètres du portail de réalité mixte, sous [Étalonnage](/hololens/hololens-calibration)). Certains casques audiovisuels comprennent un curseur mécanique qui permet à l’utilisateur d’ajuster l’espacement des verres sur une position confortable correspondant approximativement à son écart pupillaire. 
 
 ## <a name="rendering-rates"></a>Fréquences d’images
 
@@ -177,4 +177,4 @@ Une fatigue musculaire peut s’installer si les utilisateurs sont censés garde
 * [Stabilité des hologrammes](../develop/platform-capabilities-and-apis/hologram-stability.md)
 * [Interactions instinctuelles](interaction-fundamentals.md)
 * [Image holographique](holographic-frame.md)
-* [Étalonnage](https://docs.microsoft.com/hololens/hololens-calibration)
+* [Étalonnage](/hololens/hololens-calibration)
