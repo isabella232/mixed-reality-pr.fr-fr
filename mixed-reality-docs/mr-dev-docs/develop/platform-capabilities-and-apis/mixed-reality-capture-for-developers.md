@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, photo, vidéo, capture, appareil photo
-ms.openlocfilehash: cbdd99ab7ab405163fb7e0ba366ee85f8bcc634d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2539c8e2a6f26ba1f36cd28502bf8d0f50803657
+ms.sourcegitcommit: bd9b2734903652b106db86686428c03acf104707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583676"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763716"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Capture de réalité mixte pour les développeurs
 
@@ -84,7 +84,7 @@ Une propriété [ViewConfiguration](/uwp/api/windows.graphics.holographic.hologr
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-unity"></a>Activer le HolographicViewConfiguration PhotoVideoCamera dans Unity
 
 > [!NOTE]
-> Cela nécessite **Unity 2018.4.13 F1**, **Unity 2019.3.0 F1** ou plus récent.
+> Si vous utilisez Unity 2018, vous devez utiliser **Unity 2018.4.13 F1** ou une version plus récente. Si vous utilisez Unity 2019, vous devez utiliser **unity 2019,4**, ou une version plus récente.
 
 Pour accepter le rendu à partir de l’appareil photo PV quand vous utilisez la [boîte à outils de réalité mixte](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), activez le fournisseur de [paramètres d’appareil photo Windows Mixed Reality](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) et vérifiez **afficher à partir de l’appareil photo PV**.
 
@@ -226,11 +226,11 @@ Effet vidéo MRC (**Windows. Media. MixedRealityCapture. MixedRealityCaptureVide
 |  StreamType  |  UINT32 ([MediaStreamType](/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Décrivez le flux de capture pour lequel cet effet est utilisé. L’audio n’est pas disponible. |
 |  HologramCompositionEnabled  |  boolean  |  true  |  Indicateur permettant d’activer ou de désactiver les hologrammes dans la capture vidéo. |
 |  RecordingIndicatorEnabled  |  boolean  |  true  |  Indicateur permettant d’activer ou de désactiver l’indicateur d’enregistrement à l’écran pendant la capture d’hologramme. |
-|  VideoStabilizationEnabled  |  boolean  |  false  |  Indicateur d’activation ou de désactivation de la stabilisation vidéo optimisée par le dispositif de suivi HoloLens. |
+|  VideoStabilizationEnabled  |  boolean  |  FALSE  |  Indicateur d’activation ou de désactivation de la stabilisation vidéo optimisée par le dispositif de suivi HoloLens. |
 |  VideoStabilizationBufferLength  |  UINT32  |  0  |  Définissez le nombre de frames d’historique utilisés pour la stabilisation vidéo. 0 est une latence de 0 et presque « gratuit » du point de vue de l’alimentation et des performances. 15 est recommandé pour une qualité optimale (au prix de 15 trames de latence et de mémoire). |
 |  GlobalOpacityCoefficient  |  float  |  0,9 (HoloLens) 1,0 (casque immersif)  |  Définissez le coefficient d’opacité globale de l’hologramme dans une plage allant de 0,0 (entièrement transparent) à 1,0 (entièrement opaque). |
-|  BlankOnProtectedContent  |  boolean  |  false  |  Indicateur d’activation ou de désactivation du retour d’un frame vide si une application UWP 2d présente un contenu protégé. Si cet indicateur a la valeur false et qu’une application UWP 2D affiche du contenu protégé, l’application UWP 2D est remplacée par une texture de contenu protégé dans le casque et dans la capture de la réalité mixte. |
-|  ShowHiddenMesh  |  boolean  |  false  |  Indicateur permettant d’activer ou de désactiver l’indication du maillage de zone masqué et du contenu voisin de l’appareil photo holographique. |
+|  BlankOnProtectedContent  |  boolean  |  FALSE  |  Indicateur d’activation ou de désactivation du retour d’un frame vide si une application UWP 2d présente un contenu protégé. Si cet indicateur a la valeur false et qu’une application UWP 2D affiche du contenu protégé, l’application UWP 2D est remplacée par une texture de contenu protégé dans le casque et dans la capture de la réalité mixte. |
+|  ShowHiddenMesh  |  boolean  |  FALSE  |  Indicateur permettant d’activer ou de désactiver l’indication du maillage de zone masqué et du contenu voisin de l’appareil photo holographique. |
 | En-dessous | Taille | 0, 0 | Définissez la taille de sortie souhaitée après rognage pour la stabilisation vidéo. Une taille de rognage par défaut est choisie si 0 ou si une taille de sortie non valide est spécifiée. |
 | PreferredHologramPerspective | UINT32 | **Rendre à partir des** paramètres de l’appareil photo dans le portail des appareils Windows | Énumération utilisée pour indiquer la configuration de vue d’appareil photo holographique à capturer : 0 (affichage) signifie que l’application n’est pas invitée à effectuer le rendu à partir de la caméra photo/vidéo, 1 (PhotoVideoCamera) demande à l’application de s’afficher à partir de la caméra photo/vidéo (si l’application la prend en charge). Pris en charge uniquement sur HoloLens 2 |
 
