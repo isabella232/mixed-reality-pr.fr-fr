@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98052796"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605137"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -17,8 +17,8 @@ Avec Unity, créez une application de réalité mixte multiplateforme dotée de 
 Quand vous créez des applications de réalité mixte avec Unity, plusieurs options s’offrent à vous concernant le matériel et l’émulateur. Bien que notre documentation pour les développeurs porte sur les appareils HoloLens, vous trouverez des sections comprenant des détails pour déployer des applications sur des casques immersifs.
 
 **Appareils de réalité augmentée**
-* [HoloLens (1re génération)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1re génération)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Casques VR immersifs**
 * HP Reverb et Reverb G2
@@ -48,7 +48,7 @@ Vous pouvez utiliser **Microsoft Dynamics 365 Guides** pour attacher visuelleme
 
 ## <a name="examples"></a>Exemples
 
-Nous mettons à votre disposition plusieurs [exemples d’applications](../unity/samples.md) open source que vous pouvez télécharger et manipuler pour vous familiariser avec un produit final de réalité mixte dans Unity. Vous trouverez également plusieurs exemples de scènes MRTK qui vous permettront de tester des fonctionnalités spécifiques :
+Nous mettons à votre disposition plusieurs [exemples d’applications](../features-and-samples.md) open source que vous pouvez télécharger et manipuler pour vous familiariser avec un produit final de réalité mixte dans Unity. Vous trouverez également plusieurs exemples de scènes MRTK qui vous permettront de tester des fonctionnalités spécifiques :
 * [Exemples de scènes d’interaraction avec les mains (MRTK) pour Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) - L’exemple de scène HandInteractionExamples.unity contient différents types d’interactions et de contrôles d’interface utilisateur qui mettent en lumière l’entrée manuelle articulée.
 
 * [Exemples de suivi oculaire (MRTK) pour Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html) - Cette page explique comment démarrer rapidement l’utilisation du suivi oculaire dans MRTK en vous appuyant sur les exemples de suivi oculaire MRTK fournis.
@@ -67,8 +67,8 @@ Avec Unreal, créez une application de réalité mixte multiplateforme dotée de
 Quand vous créez des applications de réalité mixte avec Unreal Engine, plusieurs options s’offrent à vous concernant le matériel, l’émulateur et la diffusion en streaming. Bien que notre documentation pour développeurs porte sur les appareils HoloLens, vous pouvez très bien packager vos projets Unreal en tant qu’applications de bureau x64 et les exécuter sur des casques immersifs.
 
 **Appareils de réalité augmentée**
-* [HoloLens (1re génération)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1re génération)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Casques VR immersifs**
 * HP Reverb et Reverb G2
@@ -84,7 +84,8 @@ Quand vous créez des applications de réalité mixte avec Unreal Engine, plusie
 
 |  Outil/SDK  |  Description  |
 | --- | --- |
-| [Mixed Reality Toolkit pour Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | Le Mixed Reality Toolkit pour Unreal (MRTK-Unreal) est un ensemble de composants sous forme de plug-ins, d’exemples et de documentations, conçus pour accélérer le développement d’applications de réalité mixte avec Unreal Engine. |
+| [UX Tools for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX Tools est le premier plug-in à être publié et il est actuellement pris en charge seulement sur HoloLens 2. Ce plug-in comprend du code C++, des blueprints et des exemples de ressources pour des fonctionnalités d’expérience utilisateur courantes comme la simulation d’entrée, les interactions manuelles, l’aimantation de surface, etc. |
+| [Graphics Tools for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | Graphics Tools est un plug-in de jeu UE avec du code, des blueprints et des exemples de ressources créés pour aider à améliorer la fidélité visuelle des applications de réalité mixte tout en restant dans les limites des budgets de performances. |
 
 ## <a name="cloud-services"></a>Services cloud
 
@@ -119,7 +120,7 @@ Créez des applications de réalité mixte avec une ligne directe aux API Window
 Quand vous créez des applications de réalité mixte avec OpenXR, plusieurs options s’offrent à vous concernant le matériel, l’émulateur et la diffusion en streaming. 
 
 **Appareils de réalité augmentée**
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Casques VR immersifs**
 * HP Reverb et Reverb G2

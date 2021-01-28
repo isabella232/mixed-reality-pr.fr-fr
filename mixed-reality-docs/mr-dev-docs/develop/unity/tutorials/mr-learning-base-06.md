@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, préfabriqués, hologrammes, info-bulles
 ms.localizationpriority: high
-ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008059"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635552"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Création d’interfaces utilisateur
 
@@ -97,17 +97,17 @@ Dans la fenêtre Hierarchy, attribuez le nom **Menu** à l’objet, puis dévelo
 
 ![Unity avec l’objet Menu sélectionné et l’objet ButtonCollection développé](images/mr-learning-base/base-06-section2-step1-2.png)
 
-Renommez le premier bouton **Indicator**, puis, dans la fenêtre Inspector, configurez le composant **Button Config Helper (Script)** de la façon suivante :
+Renommez le premier bouton de ButtonCollection en Indicator puis, dans la fenêtre Inspector, configurez le composant Button Config Helper (Script) comme suit :
 
 * Modifiez la valeur de **Main Label Text** pour qu’elle corresponde au nom du bouton.
-* Affectez l’objet **Indicator** au champ **None (Object)** .
+* Affectez l’objet Indicator qui ressemble à un chevron au champ None (Object).
 * Dans la liste déroulante **No Function**, sélectionnez **GameObject** > **SetActive (bool)** pour définir cette fonction en tant qu’action à exécuter lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **cochée**.
 * Remplacez la valeur **Icon** par l’icône de recherche.
 
 ![Unity avec l’objet de bouton Indicator et le Button Config Helper configuré](images/mr-learning-base/base-06-section2-step1-3.png)
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet **Indicator**, puis dans la fenêtre Inspector :
+Pour désactiver l’objet Indicator de chevron, dans la fenêtre Hierarchy, sélectionnez l’objet Indicator qui ressemble à un chevron, puis dans la fenêtre Inspector :
 
 * Décochez la case à côté de son nom pour le rendre inactif par défaut.
 * Utilisez le bouton **Add Component** pour ajouter le composant **Directional Indicator Controller (Script)**
@@ -115,7 +115,7 @@ Dans la fenêtre Hierarchy, sélectionnez l’objet **Indicator**, puis dans la 
 ![Unity avec l’objet Indicator sélectionné et désactivé, et le composant DirectionalIndicatorController ajouté](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> Désormais, lorsque l’application démarre, l’objet Indicator est désactivé par défaut. Vous pouvez l’activer en appuyant sur le bouton Indicator.
+> Maintenant, quand l’application démarre, l’objet Indicator de chevron est désactivé par défaut ; vous pouvez l’activer en appuyant sur le bouton Indicator.
 
 Renommez le deuxième bouton **TapToPlace**, puis, dans la fenêtre Inspector, configurez le composant **Button Config Helper (Script)** de la façon suivante :
 
@@ -169,7 +169,7 @@ Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **SDK** > 
 Dans la fenêtre Hierarchy, développez l’objet RoverExplorer > **RoverParts**, puis sélectionnez tous les objets enfants RoverParts. Ensuite, dans la fenêtre Inspector, utilisez le bouton **Add Component** (Ajouter un composant) pour ajouter le composant **ToolTipSpawner** et le configurer de la façon suivante :
 
 * Vérifiez que la case **Focus Enabled** (Focus activé) est cochée, afin que l’affichage de l’info-bulle soit déclenché lorsque l’utilisateur regarde le composant.
-* Affectez le préfabriqué **Simple Line ToolTip** de la fenêtre Project au champ **Tool Tip Prefab**.
+* Affectez le préfabriqué **Simple Line ToolTip** de la fenêtre Project au champ **Prefab**.
 * Configurez ToolTip Override Settings > **Settings Mode** sur **Override**.
 * Configurez ToolTip Override Settings > **Manual Pivot Local Position Y** sur **1.5**
 
@@ -196,4 +196,5 @@ Appuyez sur le bouton Play pour passer en mode jeu. Ensuite, maintenez le bouton
 
 Dans ce tutoriel, vous avez vu comment créer une interface utilisateur simple avec les préfabriqués de boutons et de menus MRTK, ainsi qu’avec le composant TextMeshPro d’Unity. Vous avez également vu comment configurer les boutons pour déclencher des événements lorsque l’utilisateur appuie dessus. Enfin, vous avez vu comment ajouter des info-bulles dynamiques pour fournir à l’utilisateur des informations supplémentaires.
 
-[Tutoriel suivant : 7. Interaction avec les objets 3D](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[Tutoriel suivant : 7. Interaction avec les objets 3D](mr-learning-base-07.md)

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 6cc77b32e9479bafeb53dcb99cba4f2f29865fd7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007209"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699059"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Connexion de plusieurs utilisateurs
 
@@ -63,13 +63,13 @@ Dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le
 
 Dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le composant **Photon View (Script)** à l’objet PhotonUser et configurez-le comme suit :
 
-* Affectez au champ **Observed Components** le composant **Generic Net Sync (Script)** .
+* Vérifiez que le champ **Observed Components** est défini sur le composant **Generic Net Sync (Script)**
 
 ![Unity avec le composant Photon View ajouté et configuré](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### <a name="2-create-the-avatar"></a>2. Créer l’avatar
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Materials** pour rechercher les matériaux MRTK.
+Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **StandardAssets** > **Materials** pour rechercher les matériaux de MRTK.
 
 Ensuite, dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **PhotonUser**, puis sélectionnez **3D Object** > **Sphere** pour créer un objet Sphere en tant qu’enfant de l’objet PhotonUser et configurez-le comme suit :
 
@@ -112,7 +112,7 @@ Vous pouvez à présent générer le projet Unity et le déployer sur votre Holo
 ![Animation montrant Unity avec des utilisateurs en réseau](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> Pour vous rappeler comment générer et déployer votre projet Unity sur HoloLens 2, vous pouvez vous référer aux instructions de [Génération de votre application sur votre HoloLens 2](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
+> Pour vous rappeler comment générer et déployer votre projet Unity sur HoloLens 2, vous pouvez vous référer aux instructions de [Génération de votre application sur votre HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).
 
 > [!CAUTION]
 > L’application doit se connecter à Photon : vérifiez donc que votre ordinateur/appareil est connecté à Internet.

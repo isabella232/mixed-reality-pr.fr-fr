@@ -7,21 +7,21 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, interactions avec des objets, cadres englobants
 ms.localizationpriority: high
-ms.openlocfilehash: c9acb72b2ad961737f5ce3f21c048fc80024b49d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 23cfe3d3746d6ab6dbc0757f32b95ddc8637a366
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007929"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578747"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interaction avec les objets 3D
 
-Dans ce tutoriel, vous allez apprendre à activer la manipulation proche et lointaine des objets 3D et à limiter les types de manipulation autorisés. Vous apprendrez également à ajouter des cadres englobants autour des objets 3D afin de faciliter le contrôle de la manipulation des objets.
+Dans ce tutoriel, vous allez apprendre à activer la manipulation proche et lointaine des objets 3D et à limiter les types de manipulation autorisés. Vous allez aussi découvrir comment ajouter des contrôles de limites autour des objets 3D afin de faciliter le contrôle de la manipulation des objets.
 
 ## <a name="objectives"></a>Objectifs
 
 * Apprendre à configurer des objets 3D afin de pouvoir interagir avec
-* Apprendre à ajouter des cadres englobants à des objets 3D
+* Découvrir comment ajouter un contrôle de limites à des objets 3D
 
 ## <a name="manipulating-3d-objects"></a>Manipulation d’objets 3D
 
@@ -59,6 +59,9 @@ Dans la fenêtre de hiérarchie, développez l’objet RoverExplorer > **RoverPa
 > Pour sélectionner plusieurs objets qui ne sont pas les uns à côté des autres, appuyez sur la touche Ctrl et maintenez-la enfoncée pendant que vous utilisez la souris pour sélectionner un objet.
 
 > [!NOTE]
+> Quand vous ajoutez un Object Manipulator (Script), dans ce cas, le Constraint Manager (Script) est ajouté automatiquement, car Object Manipulator (Script) en dépend.
+
+> [!NOTE]
 > Dans le cadre de ce tutoriel, des colliders ont déjà été ajoutés aux pièces du Rover. Pour plus d’informations sur les colliders, vous pouvez consulter la documentation <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collider</a> d’Unity.
 
 > [!NOTE]
@@ -73,7 +76,7 @@ Toujours avec les objets de pièces de Rover et l’objet RoverAssembly sélecti
 > [!NOTE]
 > À ce stade, vous avez activé la manipulation d’objet pour tous les objets de pièces de Rover et l’objet RoverAssembly.
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** pour localiser les clips audio :
+Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **StandardAssets** > **Audio** pour localiser les clips audio :
 
 ![Fenêtre de projet Unity avec le dossier Audio sélectionné](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -114,16 +117,16 @@ Pour en savoir plus sur le composant Object Manipulator et ses propriétés asso
 
 ## <a name="adding-bounding-boxes"></a>Ajout de cadres englobants
 
-Les cadres englobants facilitent et rendent plus intuitive la manipulation d’objets avec une main pour l’interaction proche et de loin en fournissant des poignées qui peuvent être utilisées pour la mise à l’échelle et la rotation.
+Les cadres englobants facilitent et rendent plus intuitive la manipulation d’objets avec une main pour l’interaction proche et lointaine, en fournissant des poignées qui peuvent être utilisées pour la mise à l’échelle et la rotation.
 
-Dans cet exemple, vous allez ajouter un cadre englobant à l’objet RoverExplorer afin de pouvoir effectuer facilement un déplacement, une rotation et une mise à l’échelle. Vous allez également configurer le menu afin de pouvoir activer ou désactiver le cadre englobant.
+Dans cet exemple, vous allez ajouter un cadre englobant à l’objet RoverExplorer afin de pouvoir facilement le déplacer, le faire pivoter et le mettre à l’échelle. Vous allez aussi configurer le menu afin de pouvoir activer ou désactiver le cadre englobant.
 
 Dans la fenêtre de hiérarchie, sélectionnez l’objet **RoverExplorer** puis, dans la fenêtre de l’inspecteur, utilisez le bouton **Add Component** pour ajouter les composants suivants :
 
 * Le composant **BoundingBox**
 * Le composant **Object Manipulator (Script)**
 
-Ensuite, **décochez** la case à côté des deux composants afin qu’ils soient **désactivés** par défaut :
+Ensuite, **décochez** la case en regard de tous les composants afin de les rendre **désactivés** par défaut :
 
 ![Unity avec l’objet RoverExplorer sélectionné, et des composants ajoutés et désactivés](images/mr-learning-base/base-07-section2-step1-1.png)
 
@@ -131,7 +134,10 @@ Ensuite, **décochez** la case à côté des deux composants afin qu’ils soien
 > La visualisation des cadres englobants est créée au moment de l’exécution, et n’est donc pas visible avant l’entrée en mode Game.
 
 > [!NOTE]
-> Le composant BoundingBox ajoutera automatiquement le composant NearInteractionGrabbable au moment de l’exécution. Par conséquent, nous n’avons pas besoin d’ajouter ce composant pour saisir les objets englobés avec les mouvements captés des mains.
+>Le composant BoundingBox ajoutera automatiquement le composant NearInteractionGrabbable au moment de l’exécution. Par conséquent, nous n’avons pas besoin d’ajouter ce composant pour saisir les objets englobés avec les mouvements captés des mains.
+
+> [!NOTE]
+>Object Manipulator (Script) ajoute automatiquement Constraint Manager (Script)
 
 Dans la fenêtre de hiérarchie, développez l’objet Menu > **ButtonCollection** pour afficher les quatre boutons et renommez le troisième bouton **BoundingBox_Enable** puis, dans la fenêtre de l’inspecteur, configurez le composant **Button Config Helper (Script)** comme suit :
 
@@ -143,7 +149,7 @@ Dans la fenêtre de hiérarchie, développez l’objet Menu > **ButtonCollection
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
 * Dans la liste déroulante **No Function**, sélectionnez **ObjectManipulator** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **cochée**.
-* Conservez « cube avec cadre englobant » comme **icône**.
+* Conservez « cube avec contrôle des limites » comme **icône**.
 
 ![Unity avec l’objet de bouton BoundingBox_Enable sélectionné et le composant Button Config Helper configuré](images/mr-learning-base/base-07-section2-step1-2.png)
 
@@ -157,11 +163,11 @@ Renommez **BoundingBox_Disable** les quatrième et dernier bouton puis, dans la 
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
 * Dans la liste déroulante **No Function**, sélectionnez **ObjectManipulator** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **décochée**.
-* Remplacez l’**icône** par « cube avec cadre englobant ».
+* Remplacez l’**icône** par « cube avec contrôle des limites ».
 
 ![Unity avec l’objet de bouton BoundingBox_Disable sélectionné et le composant Button Config Helper configuré](images/mr-learning-base/base-07-section2-step1-3.png)
 
-Si vous basculez maintenant en mode Game et que vous activez le cadre englobant en cliquant sur le bouton Enable, vous pouvez utiliser l’interaction proche ou lointaine pour déplacer, faire pivoter et mettre à l’échelle le cadre englobant, et utiliser le bouton Disable pour désactiver le cadre englobant :
+Si vous passez maintenant en mode Game et que vous activez le contrôle des limites en cliquant sur le bouton Enable, vous pouvez utiliser l’interaction proche ou lointaine pour déplacer, faire pivoter et mettre à l’échelle le cadre englobant, et utiliser le bouton Disable pour le désactiver à nouveau :
 
 ![Vue partagée du mode Play d’Unity avec le cadre englobant manipulé](images/mr-learning-base/base-07-section2-step1-4.png)
 
@@ -169,7 +175,7 @@ Pour plus d’informations sur le composant Bounding Box et ses propriétés ass
 
 ## <a name="congratulations"></a>Félicitations
 
-Dans ce tutoriel, vous avez appris à activer la manipulation proche et lointaine pour les objets 3D et comment limiter les types de manipulation autorisés. Vous avez également appris à ajouter des cadres englobants autour des objets 3D afin de faciliter le contrôle de la manipulation des objets.
+Dans ce tutoriel, vous avez appris à activer la manipulation proche et lointaine pour les objets 3D et comment limiter les types de manipulation autorisés. Vous avez également découvert comment ajouter des cadres englobants autour des objets 3D afin de faciliter le contrôle de la manipulation des objets.
 
 > [!div class="nextstepaction"]
 > [Tutoriel suivant : 8. Utilisation du suivi oculaire](mr-learning-base-08.md)

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, android, ios, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 545373ed169a77614b0a00264f5ba1bf1f3deb8e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 741c000de0ab2feb3dcbff33e2a0b0acc70838e8
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008389"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699244"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Azure Spatial Anchors pour Android et iOS
 
@@ -28,7 +28,7 @@ Dans ce tutoriel, vous allez découvrir comment créer votre projet pour des app
 Dans cette section, vous allez mettre à niveau et installer les packages intégrés suivants :
 
 * AR Foundation 3.1.3
-* XR Legacy Input Helpers 2.1.4
+* XR Legacy Input Helpers 2.1.6
 * ARCore XR Plugin 3.1.3 pour la prise en charge d’Android
 * ARKit XR plugin 3.1.3 pour la prise en charge d’iOS
 
@@ -73,6 +73,10 @@ Avec l’objet **MixedRealityToolkit** toujours sélectionné dans la fenêtre d
 > [!NOTE]
 > Lorsque vous ajoutez le composant AR Reference Point Manager (Script), le composant AR Session Origin (Script) est ajouté automatiquement, car il est demandé par le composant AR Reference Point Manager (Script).
 
+
+
+Mettez à jour les définitions du script MRTK UnityAR en appelant l’élément de menu : **Mixed Reality Toolkit** > **Utilities** > **UnityAR** > Update Scripting Defines
+
 ## <a name="building-your-application-to-your-android-device"></a>Génération de votre application sur votre appareil Android
 
 Dans cette section, vous allez découvrir comment configurer votre projet pour le générer et le déployer sur un appareil Android.
@@ -93,6 +97,10 @@ Dans le menu Unity, sélectionnez **Mixed Reality Toolkit** > **Utilities** > **
 Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, recherchez la section **Player** >  **Other Settings**, sélectionnez **Vulkan** et supprimez-le en cliquant sur le symbole **« - »**  :
 
 ![Fenêtre Other Settings d’Unity avec Vulcan sélectionné](images/mr-learning-asa/asa-05-section3-step1-3.png)
+
+Dans le menu Unity, sélectionnez **Edit** > **Project Settings...**  >**Player**> **XR Setting**, vérifiez que vous êtes dans la plateforme **Android** et cochez la case **Virtual Reality Supported**, puis cliquez sur l’icône + et sélectionnez None :
+
+![Fenêtre MRTK Project Configurator d’Unity - Android](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
 
 Fermez la fenêtre Player Settings et rouvrez la fenêtre Build Settings.
 
@@ -147,7 +155,7 @@ Choisissez un emplacement approprié où stocker votre projet Xcode, par exemple
 
 ![Fenêtre Build Settings d’Unity avec la fenêtre d’invite Save - iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
-Une fois le processus de génération terminé, suivez les instructions fournies dans [Exporter le projet Xcode](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) pour découvrir comment déployer votre projet Xcode sur votre appareil iOS.
+Une fois le processus de génération terminé, suivez les instructions fournies dans [Exporter le projet Xcode](/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) pour découvrir comment déployer votre projet Xcode sur votre appareil iOS.
 
 ## <a name="congratulations"></a>Félicitations
 

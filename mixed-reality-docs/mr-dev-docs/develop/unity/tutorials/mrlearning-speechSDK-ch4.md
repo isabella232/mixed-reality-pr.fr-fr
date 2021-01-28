@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, reconnaissance vocale, Windows 10, LUIS, portail LUIS, intention, entités, énoncés, compréhension du langage naturel
 ms.localizationpriority: high
-ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 8d840855321de5d4e055b944783649c9d8028f9a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007769"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581469"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Configuration des intentions et compréhension du langage naturel
 
@@ -55,7 +55,7 @@ Cliquez sur le bouton **Créer** pour créer une instance de ce service :
 Dans la page Créer, cliquez sur l’option **Prédiction** et entrez les valeurs suivantes :
 
 * Pour **Abonnement**, sélectionnez **Essai gratuit** si vous disposez d’un abonnement à l’essai, sinon, sélectionnez l’un de vos autres abonnements.
-* Pour **Groupe de ressource**, cliquez sur le lien **Créer nouveau**, entrez un nom approprié, par exemple *MRKT-Tutorials*, puis cliquez sur **OK**.
+* Pour le **Groupe de ressources**, cliquez sur le lien **Créer nouveau**, entrez un nom approprié, par exemple *MRKT-Tutorials*, puis cliquez sur **OK**.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
@@ -73,7 +73,7 @@ Toujours dans la page Créer, entrez les valeurs suivantes :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
-Accédez ensuite à l’onglet **Vérifier + créer**, passez en revue les détails, puis cliquez sur le bouton **Créer**, situé au bas de la page, pour créer la ressource, ainsi que le nouveau groupe de ressources si vous en avez créé un :
+Cliquez ensuite sur l’onglet **Vérifier + créer**, passez en revue les détails, puis cliquez sur le bouton **Créer** situé dans le bas de la page pour créer la ressource et le nouveau groupe de ressources si vous en avez créé un :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
@@ -107,13 +107,14 @@ Voici les principales étapes à suivre pour y parvenir :
 À l’aide du même compte d’utilisateur que celui que vous avez utilisé pour créer la ressource Azure dans la section précédente, connectez-vous à <a href="https://www.luis.ai" target="_blank">LUIS</a>, sélectionnez votre pays et acceptez les conditions d’utilisation. À l’étape suivante, lorsque vous êtes invité à **lier votre compte Azure**, choisissez **Continuer à utiliser votre clé d’essai**, pour utiliser une ressource de création Azure à la place.
 
 > [!NOTE]
-> Si vous êtes déjà inscrit à LUIS et que votre clé d’essai de création a expiré, vous pouvez consulter la documentation [Migrer vers une clé de création de ressource Azure](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring) pour basculer votre ressource de création LUIS vers Azure.
+> Si vous êtes déjà inscrit à LUIS et que votre clé d’essai de création a expiré, vous pouvez consulter la documentation [Migrer vers une clé de création de ressource Azure](/azure/cognitive-services/luis/luis-migration-authoring) pour basculer votre ressource de création LUIS vers Azure.
 
-Une fois connecté, accédez à la page **Mes applications**, puis cliquez sur **Créer une application** et entrez les valeurs suivantes dans la fenêtre contextuelle **Créer une application** :
+Une fois connecté, cliquez sur **Nouvelle application**, puis entrez les valeurs suivantes dans la fenêtre contextuelle **Créer une application** :
 
 * Pour **Nom**, entrez un nom approprié, par exemple, *MRTK Tutorials - AzureSpeechServices*.
 * Pour **Culture**, sélectionnez **Anglais**.
 * Pour **Description**, entrez éventuellement une description appropriée.
+* Pour **Ressource de prédiction**, sélectionnez dans la liste déroulante la ressource de prédiction qui avait été créée avec le portail Azure.
 
 Cliquez ensuite sur le bouton **Terminé** pour créer l’application :
 
@@ -125,7 +126,7 @@ Une fois l’application créée, vous êtes dirigé vers sa page **Tableau de b
 
 ### <a name="2-create-intents"></a>2. Créer des intentions
 
-À partir de la page Tableau de bord, accédez à la page Générer > Ressources d’application > **Intentions**, puis cliquez sur **Créer une intention** et entrez la valeur suivante dans la fenêtre contextuelle **Créer une intention** :
+À partir de la page Tableau de bord, accédez à la page Générer > Ressources d’application > **Intentions**, puis cliquez sur **Créer** et entrez la valeur suivante dans la fenêtre contextuelle **Créer une intention** :
 
 * Pour **Nom de l’intention**, entrez **PressButton**.
 
@@ -164,12 +165,12 @@ Une fois que tous les exemples d’énoncés ont été ajoutés, la page de l’
 
 ### <a name="4-create-entities"></a>4. Créer des entités
 
-À partir de la page de l’intention PressButton, accédez à la page Générer > Ressources d’application > **Entités**, puis cliquez sur **Créer une entité** et entrez les valeurs suivantes dans la fenêtre contextuelle **Créer une entité** :
+À partir de la page de l’intention PressButton, accédez à la page Générer > Ressources d’application > **Entités**, puis cliquez sur **Créer** et entrez les valeurs suivantes dans la fenêtre contextuelle **Créer une entité** :
 
 * Pour **Nom de l’entité**, entrez **Action**.
-* Pour **Type d’entité**, sélectionnez **Simple**.
+* Pour **Type d’entité**, sélectionnez **Appris par machine learning**.
 
-Cliquez ensuite sur le bouton **Terminé** pour créer l’entité :
+Cliquez ensuite sur le bouton **Créer** pour créer l’entité :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-1.png)
 
@@ -188,7 +189,7 @@ Dans cette page, cliquez sur le mot **procéder** et sur le mot **au**, puis sé
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
-La locution **procéder au** est maintenant définie en tant que valeur d’entité **Action**. Si vous placez le curseur de la souris au-dessus du nom de l’entité Action, vous pouvez voir la valeur d’entité Action associée :
+La locution **procéder au** est maintenant définie en tant que valeur d’entité **Action**. Vous pouvez maintenant noter la valeur de l’entité Action sous le mot « go ahead » :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
@@ -199,7 +200,7 @@ Ensuite, cliquez sur le mot **lancement**, puis sélectionnez **Cible (Simple)**
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
-Le mot **lancement** est maintenant défini en tant que valeur d’entité **Cible**. Si vous placez le curseur de la souris au-dessus du nom de l’entité Cible, vous pouvez voir la valeur d’entité Cible associée :
+Le mot **launch** est maintenant défini en tant valeur d’entité **Cible**. Vous pouvez maintenant noter la valeur de l’entité cible sous le mot « launch » :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
@@ -219,14 +220,6 @@ L’exemple d’énoncé de l’intention PressButton « procéder au lancement
 Une fois que tous les exemples d’énoncés ont été étiquetés, la page de l’intention PressButton doit ressembler à ceci :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-5.png)
-
-Pour revérifier que vous avez attribué les entités appropriées, cliquez sur le menu **Options d’affichage** et basculez l’affichage en mode **Afficher les valeurs d’entité** :
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-6.png)
-
-Maintenant, avec l’affichage défini de sorte à montrer les valeurs d’entité, vous pouvez placer le pointeur de la souris sur les mots et locutions étiquetés pour vérifier rapidement le nom de l’entité affectée :
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-7.png)
 
 ### <a name="6-train-test-and-publish-the-app"></a>6. Entraîner, tester et publier l’application
 
@@ -249,7 +242,7 @@ Une fois l’énoncé de test traité, cliquez sur **Inspecter** pour voir le r�
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-3.png)
 
-Pour publier l’application, cliquez sur le bouton **Publier** situé en haut à droite, puis dans la fenêtre contextuelle **Choisir l’emplacement et les paramètres de publication**, sélectionnez **Production** et cliquez sur le bouton **Publier** :
+Pour publier l’application, cliquez sur le bouton **Publier** en haut à droite puis, dans la fenêtre contextuelle **Choisir l’emplacement et les paramètres de publication**, sélectionnez **Production** et cliquez sur le bouton **Terminé** :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-4.png)
 
@@ -257,25 +250,9 @@ Attendez que le processus de publication se termine :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
-### <a name="7-assign-an-azure-prediction-resource-to-the-app"></a>7. Attribuer une ressource de prédiction Azure à l’application
+Accédez à la page Gérer > Paramètres d’application > **Ressources Azure**. Votre page Ressources Azure doit être similaire à ceci :
 
-Accédez à la page Gérer > Paramètres d’application >  **Ressources Azure** :
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-1.png)
-
-Dans la page Ressources Azure, cliquez sur le bouton **Ajouter une ressource de prédiction** et sélectionnez les valeurs suivantes dans la fenêtre contextuelle **Attribuer une ressource à votre application** :
-
-* Pour **Nom du locataire**, sélectionnez le nom de votre locataire.
-* Pour **Nom de l’abonnement**, sélectionnez l’abonnement que vous avez utilisé précédemment lors de la [création de la ressource Azure Language Understanding](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource).
-* Pour **Nom de la ressource LUIS**, sélectionnez la ressource de prédiction que vous avez créée précédemment lors de la [création de la ressource Azure Language Understanding](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource).
-
-Cliquez ensuite sur le bouton **Attribuer la ressource** pour attribuer la ressource de prédiction Azure à votre application :
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-2.png)
-
-Une fois la ressource attribuée, votre page Ressources Azure doit ressembler à ceci :
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-3.png)
+![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>Connexion du projet Unity à l’application LUIS
 

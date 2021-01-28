@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, démarrage, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, OpenXR
-ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247732"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580044"
 ---
 # <a name="unreal-development-overview"></a>Vue d’ensemble du développement Unreal
 
@@ -49,6 +49,8 @@ Il existe plusieurs fonctionnalités clés de réalité mixte que notre série d
 
 * [UX Tools for Unreal](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) est le premier plug-in à être publié et est actuellement pris en charge sur HoloLens 2 uniquement. Ce plug-in comprend du code C++, des blueprints et des exemples de ressources pour des fonctionnalités d’expérience utilisateur courantes comme la simulation d’entrée, les interactions manuelles, l’aimantation de surface, etc.
 
+* [Graphics Tools pour Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) est un plug-in de jeu UE avec du code, des blueprints et des exemples de ressources créés pour aider à améliorer la fidélité visuelle des applications de réalité mixte tout en restant dans les limites des budgets de performances.
+
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
 > [!NOTE]
@@ -82,7 +84,7 @@ Le travail d’un développeur n’est jamais terminé, en particulier lorsqu’
 
 ### <a name="debugging"></a>Débogage
 
-Si vous envisagez de déboguer l’application avec Visual Studio pendant qu’elle s’exécute sur un appareil, suivez ces [instructions](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote).
+Si vous envisagez de déboguer l’application avec Visual Studio pendant qu’elle s’exécute sur un appareil, suivez ces [instructions](/visualstudio/debugger/debug-installed-app-package#remote).
 
 ### <a name="performance"></a>Performances
 
@@ -104,7 +106,7 @@ Le développement pour la réalité mixte s’accompagne de points de contrôle 
 | Audio spatial | 4.23 | ✔️ |
 | Prise en charge d’un écran de spectateur pour le streaming | 4.24 |
 | LSR plan en streaming | 4.24 |
-| [Exemples d’application](unreal-samples.md) | 4.24 | ✔️ |
+| [Exemples d’application](../features-and-samples.md) | 4.24 | ✔️ |
 | Multivue mobile : Les performances atteignent 60 i/s | 4.25 | ✔️ |
 | Rendu 3ème caméra | 4.25 |
 | Streaming partir d’une application de poste de travail empaquetée | 4.25.1 | ✔️ |
