@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, stockage azure, services cloud azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 9c2041f9dac284fc4a7bea7d79b95e3e6240902a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fc049fc54674b4f7387ae937f142b9b4afe44e66
+ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581921"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98981708"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Intégration du stockage Azure
 
@@ -28,7 +28,7 @@ Dans ce tutoriel, vous allez apprendre à enregistrer des données d’entités 
 
 **Stockage Azure** est une solution de stockage Microsoft sur le cloud qui peut couvrir de nombreux scénarios et besoins. Elle est hautement scalable et aisément accessible aux développeurs. Tous les services peuvent être consommés dans le cadre d’un **compte de stockage Azure**. Pour notre cas d’usage, nous allons utiliser le *stockage Table* et le *stockage Blob*.
 
-Apprenez-en davantage sur les [services de stockage Azure](/azure/storage/blobs/storage-blobs-overview).
+Apprenez-en davantage sur les [services de stockage Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
 
 ### <a name="azure-table-storage"></a>Stockage Table Azure
 
@@ -36,18 +36,18 @@ Ce service nous permet de stocker des données de manière semblable à NoSQL. D
 
 Dans le contexte de l’application de démonstration, vous avez besoin de deux tables : une pour stocker des informations sur le projet, avec des informations relatives à l’état des modèles entraînés (nous y reviendrons dans le tutoriel [Intégration d’Azure Custom Vision](mr-learning-azure-03.md)), et une autre pour stocker des informations sur les *objets suivis*.
 
-Apprenez-en davantage sur le [stockage Table Azure](/azure/storage/tables/table-storage-overview).
+Apprenez-en davantage sur le [stockage Table Azure](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
 
 ### <a name="azure-blob-storage"></a>Stockage Blob Azure
 
 Ce service permet de stocker des fichiers binaires volumineux. Vous l’utiliserez pour stocker des photos des *objets suivis* sous forme de miniatures.
 Pour l’application de démonstration, vous avez besoin d’un conteneur d’objets blob pour stocker les images.
 
-Apprenez-en davantage sur le [stockage Blob Azure](/azure/storage/blobs/storage-blobs-introduction).
+Apprenez-en davantage sur le [stockage Blob Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction).
 
 ## <a name="preparing-azure-storage"></a>Préparation du stockage Azure
 
-Pour consommer les services de stockage Azure, vous avez besoin d’un compte Stockage Azure. Pour créer un compte de stockage, consultez [Créer un compte de stockage](/azure/storage/common/storage-account-create?tabs=azure-portal). Pour en savoir plus sur les comptes de stockage, consultez [Vue d’ensemble du compte de stockage](/azure/storage/common/storage-account-overview).
+Pour consommer les services de stockage Azure, vous avez besoin d’un compte Stockage Azure. Pour créer un compte de stockage, consultez [Créer un compte de stockage](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal). Pour en savoir plus sur les comptes de stockage, consultez [Vue d’ensemble du compte de stockage](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
 
 Une fois que vous avez un compte de stockage, vous pouvez récupérer la chaîne de connexion à partir du **portail Azure**. Vous en aurez besoin dans la section suivante de cette leçon.
 
@@ -57,7 +57,8 @@ Même si vous pouvez voir et vérifier toutes les modifications apportées aux d
 
 > [!TIP]
 > Pour les tests à partir de l’éditeur Unity, vous pouvez utiliser un émulateur local :
-> * Sur Windows 10, vous pouvez utiliser l’[émulateur de stockage Azure](/azure/storage/common/storage-use-emulator)
+>
+> * Sur Windows 10, vous pouvez utiliser l’[émulateur de stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
 > * Sur MacOS/Linux, vous pouvez utiliser l’[image Docker Azurite](https://hub.docker.com/_/microsoft-azure-storage-azurite) pour Docker
 
 ## <a name="preparing-the-scene"></a>Préparation de la scène
