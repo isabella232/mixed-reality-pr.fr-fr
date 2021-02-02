@@ -6,84 +6,57 @@ ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, réverbération, réverbération G2, réverbération HP G2, réalité mixte, développement, contrôleurs de mouvement, entrée d’utilisateur, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux
-ms.openlocfilehash: fa9b80076d65978ae1602fc4f9519d7e11c651b5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583574"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421391"
 ---
-# <a name="hp-reverb-g2-controllers-in-unity"></a><span data-ttu-id="62dfd-104">Contrôleurs de réverbération HP G2 dans Unity</span><span class="sxs-lookup"><span data-stu-id="62dfd-104">HP Reverb G2 Controllers in Unity</span></span>
+# <a name="hp-reverb-g2-controllers-in-unity"></a><span data-ttu-id="50595-104">Contrôleurs de réverbération HP G2 dans Unity</span><span class="sxs-lookup"><span data-stu-id="50595-104">HP Reverb G2 Controllers in Unity</span></span>
 
-<span data-ttu-id="62dfd-105">Les contrôleurs de mouvement HP sont un tout nouveau type de contrôleurs de réalité mixte Windows : la même technologie de suivi avec un ensemble légèrement différent d’entrées disponibles :</span><span class="sxs-lookup"><span data-stu-id="62dfd-105">HP Motion controllers are a brand new type of Windows Mixed Reality controllers: all the same tracking technology with a slightly different set of available inputs:</span></span> 
+<span data-ttu-id="50595-105">Les contrôleurs de mouvement HP sont un tout nouveau type de contrôleurs de réalité mixte Windows : la même technologie de suivi avec un ensemble légèrement différent d’entrées disponibles :</span><span class="sxs-lookup"><span data-stu-id="50595-105">HP Motion controllers are a brand new type of Windows Mixed Reality controllers: all the same tracking technology with a slightly different set of available inputs:</span></span> 
 
-* <span data-ttu-id="62dfd-106">Le pavé tactile a été remplacé par deux boutons : A et B pour le contrôleur de droite, et X et Y pour le contrôleur de gauche.</span><span class="sxs-lookup"><span data-stu-id="62dfd-106">Touchpad has been replaced by two buttons: A and B for the right controller, and X and Y for the left controller.</span></span> 
-* <span data-ttu-id="62dfd-107">Comprendre est maintenant un déclencheur qui publie un flux de valeurs entre 0,0 et 1,0 au lieu d’un bouton avec des États enfoncé et non enfoncé.</span><span class="sxs-lookup"><span data-stu-id="62dfd-107">Grasp is now a trigger that publishes a stream of values between 0.0 and 1.0 instead of a button with Pressed and Not Pressed states.</span></span> 
+* <span data-ttu-id="50595-106">Le pavé tactile a été remplacé par deux boutons : A et B pour le contrôleur de droite, et X et Y pour le contrôleur de gauche.</span><span class="sxs-lookup"><span data-stu-id="50595-106">Touchpad has been replaced by two buttons: A and B for the right controller, and X and Y for the left controller.</span></span> 
+* <span data-ttu-id="50595-107">Comprendre est maintenant un déclencheur qui publie un flux de valeurs entre 0,0 et 1,0 au lieu d’un bouton avec des États enfoncé et non enfoncé.</span><span class="sxs-lookup"><span data-stu-id="50595-107">Grasp is now a trigger that publishes a stream of values between 0.0 and 1.0 instead of a button with Pressed and Not Pressed states.</span></span> 
 
-<span data-ttu-id="62dfd-108">Étant donné que les nouvelles entrées ne sont pas accessibles via les API Windows et Unity existantes, vous devez disposer du package UPM **Microsoft. MixedReality. Input** dédié.</span><span class="sxs-lookup"><span data-stu-id="62dfd-108">Since the new inputs aren't accessible through existing Windows and Unity APIs, you need the dedicated **Microsoft.MixedReality.Input** UPM Package.</span></span> 
+<span data-ttu-id="50595-108">Étant donné que les nouvelles entrées ne sont pas accessibles via les API Windows et Unity existantes, vous devez disposer du package UPM **Microsoft. MixedReality. Input** dédié.</span><span class="sxs-lookup"><span data-stu-id="50595-108">Since the new inputs aren't accessible through existing Windows and Unity APIs, you need the dedicated **Microsoft.MixedReality.Input** UPM Package.</span></span> 
 
 > [!IMPORTANT]
-> <span data-ttu-id="62dfd-109">**Les classes de ce package ne remplacent pas les API Windows et Unity existantes, mais les complètent.**</span><span class="sxs-lookup"><span data-stu-id="62dfd-109">**Classes in this package do not replace existing Windows and Unity APIs but complement them.**</span></span> <span data-ttu-id="62dfd-110">Les fonctionnalités couramment disponibles pour les contrôleurs de réalité mixte Windows classiques et les contrôleurs de mouvement HP sont accessibles via le même chemin de code à l’aide des API existantes.</span><span class="sxs-lookup"><span data-stu-id="62dfd-110">Features commonly available to both classic Windows Mixed Reality controllers and HP Motion Controllers are accessible through the same code path using existing APIs.</span></span> <span data-ttu-id="62dfd-111">Seules les nouvelles entrées nécessitent l’utilisation du package Microsoft. MixedReality. Input supplémentaire.</span><span class="sxs-lookup"><span data-stu-id="62dfd-111">Only the new inputs require the use of the additional Microsoft.MixedReality.Input package.</span></span> 
+> <span data-ttu-id="50595-109">**Les classes de ce package ne remplacent pas les API Windows et Unity existantes, mais les complètent.**</span><span class="sxs-lookup"><span data-stu-id="50595-109">**Classes in this package do not replace existing Windows and Unity APIs but complement them.**</span></span> <span data-ttu-id="50595-110">Les fonctionnalités couramment disponibles pour les contrôleurs de réalité mixte Windows classiques et les contrôleurs de mouvement HP sont accessibles via le même chemin de code à l’aide des API existantes.</span><span class="sxs-lookup"><span data-stu-id="50595-110">Features commonly available to both classic Windows Mixed Reality controllers and HP Motion Controllers are accessible through the same code path using existing APIs.</span></span> <span data-ttu-id="50595-111">Seules les nouvelles entrées nécessitent l’utilisation du package Microsoft. MixedReality. Input supplémentaire.</span><span class="sxs-lookup"><span data-stu-id="50595-111">Only the new inputs require the use of the additional Microsoft.MixedReality.Input package.</span></span> 
 
-## <a name="hp-motion-controller-overview"></a><span data-ttu-id="62dfd-112">Présentation du contrôleur HP motion</span><span class="sxs-lookup"><span data-stu-id="62dfd-112">HP Motion Controller overview</span></span>
+## <a name="hp-motion-controller-overview"></a><span data-ttu-id="50595-112">Présentation du contrôleur HP motion</span><span class="sxs-lookup"><span data-stu-id="50595-112">HP Motion Controller overview</span></span>
 
-<span data-ttu-id="62dfd-113">*Microsoft. MixedReality. Input. MotionController* représente un contrôleur de mouvement.</span><span class="sxs-lookup"><span data-stu-id="62dfd-113">*Microsoft.MixedReality.Input.MotionController* represents a motion controller.</span></span> <span data-ttu-id="62dfd-114">Chaque instance *MotionController* a un *XR. WSA. Entrée. InteractionSource* , qui peut être corrélée à l’aide de la main, de l’ID de fournisseur, de l’ID de produit et de la version.</span><span class="sxs-lookup"><span data-stu-id="62dfd-114">Each *MotionController* instance has an *XR.WSA.Input.InteractionSource* peer, which can be correlated using handedness, vendor ID, product ID, and version.</span></span> 
+<span data-ttu-id="50595-113">*Microsoft. MixedReality. Input. MotionController* représente un contrôleur de mouvement.</span><span class="sxs-lookup"><span data-stu-id="50595-113">*Microsoft.MixedReality.Input.MotionController* represents a motion controller.</span></span> <span data-ttu-id="50595-114">Chaque instance *MotionController* a un *XR. WSA. Entrée. InteractionSource* , qui peut être corrélée à l’aide de la main, de l’ID de fournisseur, de l’ID de produit et de la version.</span><span class="sxs-lookup"><span data-stu-id="50595-114">Each *MotionController* instance has an *XR.WSA.Input.InteractionSource* peer, which can be correlated using handedness, vendor ID, product ID, and version.</span></span> 
 
-<span data-ttu-id="62dfd-115">Vous pouvez récupérer des instances MotionController en créant un *MotionControllerWatcher* et en vous abonnant à ses événements, de la même manière qu’en utilisant des événements *InteractionManager* pour découvrir de nouvelles instances *InteractionSource* .</span><span class="sxs-lookup"><span data-stu-id="62dfd-115">You can grab MotionController instances by creating a *MotionControllerWatcher* and subscribing to its events, similar to using *InteractionManager* events to discover new *InteractionSource* instances.</span></span> <span data-ttu-id="62dfd-116">Les méthodes et propriétés de MotionController décrivent les entrées prises en charge par le contrôleur, y compris ses boutons, déclencheurs, axe 2D et stick analogique.</span><span class="sxs-lookup"><span data-stu-id="62dfd-116">The MotionController’s methods and properties describe the inputs supported by the controller, including its buttons, triggers, 2D axis, and thumbstick.</span></span> <span data-ttu-id="62dfd-117">La classe MotionController expose également des méthodes permettant d’accéder aux États d’entrée par le biais de la classe *MotionControllerReading* .</span><span class="sxs-lookup"><span data-stu-id="62dfd-117">The MotionController class also exposes methods for accessing input states through the *MotionControllerReading* class.</span></span> <span data-ttu-id="62dfd-118">La classe MotionControllerReading représente un instantané de l’état du contrôleur à un moment donné.</span><span class="sxs-lookup"><span data-stu-id="62dfd-118">The MotionControllerReading class represents a snapshot of the controller’s state at a given time.</span></span> 
+<span data-ttu-id="50595-115">Vous pouvez récupérer des instances MotionController en créant un *MotionControllerWatcher* et en vous abonnant à ses événements, de la même manière qu’en utilisant des événements *InteractionManager* pour découvrir de nouvelles instances *InteractionSource* .</span><span class="sxs-lookup"><span data-stu-id="50595-115">You can grab MotionController instances by creating a *MotionControllerWatcher* and subscribing to its events, similar to using *InteractionManager* events to discover new *InteractionSource* instances.</span></span> <span data-ttu-id="50595-116">Les méthodes et propriétés de MotionController décrivent les entrées prises en charge par le contrôleur, y compris ses boutons, déclencheurs, axe 2D et stick analogique.</span><span class="sxs-lookup"><span data-stu-id="50595-116">The MotionController’s methods and properties describe the inputs supported by the controller, including its buttons, triggers, 2D axis, and thumbstick.</span></span> <span data-ttu-id="50595-117">La classe MotionController expose également des méthodes permettant d’accéder aux États d’entrée par le biais de la classe *MotionControllerReading* .</span><span class="sxs-lookup"><span data-stu-id="50595-117">The MotionController class also exposes methods for accessing input states through the *MotionControllerReading* class.</span></span> <span data-ttu-id="50595-118">La classe MotionControllerReading représente un instantané de l’état du contrôleur à un moment donné.</span><span class="sxs-lookup"><span data-stu-id="50595-118">The MotionControllerReading class represents a snapshot of the controller’s state at a given time.</span></span> 
 
-## <a name="installing-microsoftmixedrealityinput-using-the-unity-package-manager"></a><span data-ttu-id="62dfd-119">Installation de Microsoft. MixedReality. Input à l’aide du gestionnaire de package Unity</span><span class="sxs-lookup"><span data-stu-id="62dfd-119">Installing Microsoft.MixedReality.Input using the Unity Package Manager</span></span> 
+## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a><span data-ttu-id="50595-119">Installation de Microsoft. MixedReality. Input avec l’outil de la fonctionnalité de réalité mixte</span><span class="sxs-lookup"><span data-stu-id="50595-119">Installing Microsoft.MixedReality.Input with the Mixed Reality Feature Tool</span></span>
 
-<span data-ttu-id="62dfd-120">Le gestionnaire de package Unity utilise un [fichier manifeste](https://docs.unity3d.com/Manual/upm-manifestPkg.html) (manifest.js) pour déterminer les packages à installer et les registres (serveurs) à partir desquels ils peuvent être installés.</span><span class="sxs-lookup"><span data-stu-id="62dfd-120">The Unity Package Manager uses a [manifest file](https://docs.unity3d.com/Manual/upm-manifestPkg.html) (manifest.json) to determine which packages to install and the registries (servers) they can be installed from.</span></span> <span data-ttu-id="62dfd-121">Avant de pouvoir utiliser le package Microsoft. MixedReality. Input, vous devez inscrire le serveur de composants de la réalité mixte.</span><span class="sxs-lookup"><span data-stu-id="62dfd-121">Before you can use the Microsoft.MixedReality.Input package, you'll need to register the Mixed Reality component server.</span></span>
+<span data-ttu-id="50595-120">Installez le plug-in Microsoft. MixedReality. Input avec la nouvelle application outil de la fonctionnalité de réalité mixte.</span><span class="sxs-lookup"><span data-stu-id="50595-120">Install the Microsoft.MixedReality.Input plugin with the new Mixed Reality Feature Tool application.</span></span> <span data-ttu-id="50595-121">Suivez les [instructions d’installation et d’utilisation](welcome-to-mr-feature-tool.md) , puis sélectionnez le package **d’entrée de la réalité mixte** dans la catégorie de la réalité mixte Toolkit :</span><span class="sxs-lookup"><span data-stu-id="50595-121">Follow the [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality Input** package in the Mixed Reality Toolkit category:</span></span>
 
-### <a name="registering-the-mixed-reality-component-server"></a><span data-ttu-id="62dfd-122">Inscription du serveur de composants de la réalité mixte</span><span class="sxs-lookup"><span data-stu-id="62dfd-122">Registering the Mixed Reality component server</span></span> 
+![Outil de fonctionnalité de réalité mixte, fenêtre packages avec entrée de réalité mixte mise en surbrillance](images/feature-tool-mrinput.png)
 
-<span data-ttu-id="62dfd-123">Pour chaque projet qui utilisera le package d’entrée de réalité mixte, le manifest.jssur le fichier (dans le dossier Packages) nécessite l’ajout du Registre avec étendue de la réalité mixte.</span><span class="sxs-lookup"><span data-stu-id="62dfd-123">For each project that will be using the Mixed Reality Input package, the manifest.json file (in the Packages folder) needs the Mixed Reality scoped registry added.</span></span> <span data-ttu-id="62dfd-124">Pour modifier correctement manifest.jsdans pour prendre en charge la réalité mixte :</span><span class="sxs-lookup"><span data-stu-id="62dfd-124">To properly modify manifest.json to support Mixed Reality:</span></span> 
-    1. <span data-ttu-id="62dfd-125">Ouvrez <projectRoot> /Packages/manifest.jsdans un éditeur de texte, tel que Visual Studio code.</span><span class="sxs-lookup"><span data-stu-id="62dfd-125">Open <projectRoot>/Packages/manifest.json in a text editor, such as Visual Studio Code.</span></span> 
-    2. <span data-ttu-id="62dfd-126">En haut du fichier manifeste, ajoutez le serveur de réalité mixte à la section du Registre étendu et enregistrez le fichier.</span><span class="sxs-lookup"><span data-stu-id="62dfd-126">At the top of the manifest file, add the Mixed Reality server to the scoped registry section and save the file.</span></span> 
-    
-<pre>
-{ 
-  "scopedRegistries": [ 
-    { 
-      "name": "Microsoft Mixed Reality", 
-      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/", 
-      "scopes": [ 
-        "com.microsoft.mixedreality" 
-      ] 
-    } 
-  ], 
-</pre>
+## <a name="using-microsoftmixedrealityinput"></a><span data-ttu-id="50595-123">Utilisation de Microsoft. MixedReality. Input</span><span class="sxs-lookup"><span data-stu-id="50595-123">Using Microsoft.MixedReality.Input</span></span> 
 
-### <a name="adding-the-microsoftmixedrealityinput-package"></a><span data-ttu-id="62dfd-127">Ajout du package Microsoft. MixedReality. Input</span><span class="sxs-lookup"><span data-stu-id="62dfd-127">Adding the Microsoft.MixedReality.Input package</span></span> 
+### <a name="input-values"></a><span data-ttu-id="50595-124">Valeurs d’entrée</span><span class="sxs-lookup"><span data-stu-id="50595-124">Input values</span></span>
 
-<span data-ttu-id="62dfd-128">Modifiez la section des dépendances de l' <projectRoot> manifest.js/packages/sur le fichier dans l’éditeur de texte pour ajouter le package com. Microsoft. mixedreality. Input et enregistrez le fichier.</span><span class="sxs-lookup"><span data-stu-id="62dfd-128">Modify the dependencies section of the <projectRoot>/Packages/manifest.json file in the text editor to add com.microsoft.mixedreality.input package and save the file.</span></span> 
+<span data-ttu-id="50595-125">Un MotionController peut exposer deux types d’entrées :</span><span class="sxs-lookup"><span data-stu-id="50595-125">A MotionController can expose two kinds of inputs:</span></span> 
 
-<pre>
-  "dependencies": { 
-    "com.microsoft.mixedreality.input": "0.9.2006", 
-  }
-</pre>
+* <span data-ttu-id="50595-126">Les boutons et les États de déclencheur sont exprimés par une valeur flottante unique comprise entre 0,0 et 1,0, qui indique combien ils sont appuyés.</span><span class="sxs-lookup"><span data-stu-id="50595-126">Buttons and trigger states are expressed by a unique float value between 0.0 and 1.0 that indicates how much they're pressed.</span></span>
+    * <span data-ttu-id="50595-127">Un bouton peut retourner uniquement 0,0 (lorsqu’il n’est pas enfoncé) ou 1,0 (lorsqu’il est enfoncé) alors qu’un déclencheur peut retourner des valeurs continues entre 0,0 (entièrement relâché) et 1,0 (entièrement enfoncé).</span><span class="sxs-lookup"><span data-stu-id="50595-127">A button can only return 0.0 (when not pressed) or 1.0 (when pressed) while a trigger can return continuous values between 0.0 (fully released) to 1.0 (fully pressed).</span></span> 
+* <span data-ttu-id="50595-128">L’état du joystick est exprimé par un Vector2 dont les composants X et Y sont compris entre-1,0 et 1,0.</span><span class="sxs-lookup"><span data-stu-id="50595-128">Thumbstick state is expressed by a Vector2 whose X and Y components are between -1.0 and 1.0.</span></span> 
 
-## <a name="using-microsoftmixedrealityinput"></a><span data-ttu-id="62dfd-129">Utilisation de Microsoft. MixedReality. Input</span><span class="sxs-lookup"><span data-stu-id="62dfd-129">Using Microsoft.MixedReality.Input</span></span> 
+<span data-ttu-id="50595-129">Vous pouvez utiliser *MotionController. GetPressableInputs ()* pour retourner une liste d’entrées renvoyant une valeur appuyée (boutons et déclencheurs) ou la méthode *MotionController. GetXYInputs ()* pour retourner une liste d’entrées retournant une valeur à 2 axes.</span><span class="sxs-lookup"><span data-stu-id="50595-129">You can use *MotionController.GetPressableInputs()* to return a list of inputs returning a pressed value (buttons and triggers) or the *MotionController.GetXYInputs()* method to return a list of inputs returning a 2-axis value.</span></span> 
 
-### <a name="input-values"></a><span data-ttu-id="62dfd-130">Valeurs d’entrée</span><span class="sxs-lookup"><span data-stu-id="62dfd-130">Input values</span></span>
+<span data-ttu-id="50595-130">Une instance MotionControllerReading représente l’état du contrôleur à un moment donné :</span><span class="sxs-lookup"><span data-stu-id="50595-130">A MotionControllerReading instance represents the state of the controller at a given time:</span></span> 
 
-<span data-ttu-id="62dfd-131">Un MotionController peut exposer deux types d’entrées :</span><span class="sxs-lookup"><span data-stu-id="62dfd-131">A MotionController can expose two kinds of inputs:</span></span> 
+* <span data-ttu-id="50595-131">*GetPressedValue ()* récupère l’état d’un bouton ou d’un déclencheur.</span><span class="sxs-lookup"><span data-stu-id="50595-131">*GetPressedValue()* retrieves the state of a button or a trigger.</span></span> 
+* <span data-ttu-id="50595-132">*GetXYValue ()* récupère l’état d’un stick analogique.</span><span class="sxs-lookup"><span data-stu-id="50595-132">*GetXYValue()* retrieves the state of a thumbstick.</span></span> 
 
-* <span data-ttu-id="62dfd-132">Les boutons et les États de déclencheur sont exprimés par une valeur flottante unique comprise entre 0,0 et 1,0, qui indique combien ils sont appuyés.</span><span class="sxs-lookup"><span data-stu-id="62dfd-132">Buttons and trigger states are expressed by a unique float value between 0.0 and 1.0 that indicates how much they're pressed.</span></span>
-    * <span data-ttu-id="62dfd-133">Un bouton peut retourner uniquement 0,0 (lorsqu’il n’est pas enfoncé) ou 1,0 (lorsqu’il est enfoncé) alors qu’un déclencheur peut retourner des valeurs continues entre 0,0 (entièrement relâché) et 1,0 (entièrement enfoncé).</span><span class="sxs-lookup"><span data-stu-id="62dfd-133">A button can only return 0.0 (when not pressed) or 1.0 (when pressed) while a trigger can return continuous values between 0.0 (fully released) to 1.0 (fully pressed).</span></span> 
-* <span data-ttu-id="62dfd-134">L’état du joystick est exprimé par un Vector2 dont les composants X et Y sont compris entre-1,0 et 1,0.</span><span class="sxs-lookup"><span data-stu-id="62dfd-134">Thumbstick state is expressed by a Vector2 whose X and Y components are between -1.0 and 1.0.</span></span> 
+### <a name="creating-a-cache-to-maintain-a-collection-of-motioncontroller-instances-and-their-states"></a><span data-ttu-id="50595-133">Création d’un cache pour tenir à jour une collection d’instances MotionController et leurs États</span><span class="sxs-lookup"><span data-stu-id="50595-133">Creating a cache to maintain a collection of MotionController instances and their states</span></span> 
 
-<span data-ttu-id="62dfd-135">Vous pouvez utiliser *MotionController. GetPressableInputs ()* pour retourner une liste d’entrées renvoyant une valeur appuyée (boutons et déclencheurs) ou la méthode *MotionController. GetXYInputs ()* pour retourner une liste d’entrées retournant une valeur à 2 axes.</span><span class="sxs-lookup"><span data-stu-id="62dfd-135">You can use *MotionController.GetPressableInputs()* to return a list of inputs returning a pressed value (buttons and triggers) or the *MotionController.GetXYInputs()* method to return a list of inputs returning a 2-axis value.</span></span> 
-
-<span data-ttu-id="62dfd-136">Une instance MotionControllerReading représente l’état du contrôleur à un moment donné :</span><span class="sxs-lookup"><span data-stu-id="62dfd-136">A MotionControllerReading instance represents the state of the controller at a given time:</span></span> 
-
-* <span data-ttu-id="62dfd-137">*GetPressedValue ()* récupère l’état d’un bouton ou d’un déclencheur.</span><span class="sxs-lookup"><span data-stu-id="62dfd-137">*GetPressedValue()* retrieves the state of a button or a trigger.</span></span> 
-* <span data-ttu-id="62dfd-138">*GetXYValue ()* récupère l’état d’un stick analogique.</span><span class="sxs-lookup"><span data-stu-id="62dfd-138">*GetXYValue()* retrieves the state of a thumbstick.</span></span> 
-
-### <a name="creating-a-cache-to-maintain-a-collection-of-motioncontroller-instances-and-their-states"></a><span data-ttu-id="62dfd-139">Création d’un cache pour tenir à jour une collection d’instances MotionController et leurs États</span><span class="sxs-lookup"><span data-stu-id="62dfd-139">Creating a cache to maintain a collection of MotionController instances and their states</span></span> 
-
-<span data-ttu-id="62dfd-140">Commencez par instancier un MotionControllerWatcher et inscrire des gestionnaires pour ses événements *MotionControllerAdded* et *MotionControllerRemoved* afin de conserver un cache des instances MotionController disponibles.</span><span class="sxs-lookup"><span data-stu-id="62dfd-140">Start by instantiating a MotionControllerWatcher and registering handlers for its *MotionControllerAdded* and *MotionControllerRemoved* events to keep a cache of available MotionController instances.</span></span> <span data-ttu-id="62dfd-141">Ce cache doit être un monocomportement attaché à un GameObject, comme illustré dans le code suivant :</span><span class="sxs-lookup"><span data-stu-id="62dfd-141">This cache should be a MonoBehavior attached to a GameObject as demonstrated in the following code:</span></span>
+<span data-ttu-id="50595-134">Commencez par instancier un MotionControllerWatcher et inscrire des gestionnaires pour ses événements *MotionControllerAdded* et *MotionControllerRemoved* afin de conserver un cache des instances MotionController disponibles.</span><span class="sxs-lookup"><span data-stu-id="50595-134">Start by instantiating a MotionControllerWatcher and registering handlers for its *MotionControllerAdded* and *MotionControllerRemoved* events to keep a cache of available MotionController instances.</span></span> <span data-ttu-id="50595-135">Ce cache doit être un monocomportement attaché à un GameObject, comme illustré dans le code suivant :</span><span class="sxs-lookup"><span data-stu-id="50595-135">This cache should be a MonoBehavior attached to a GameObject as demonstrated in the following code:</span></span>
 
 ```csharp
 public class MotionControllerStateCache : MonoBehaviour 
@@ -168,9 +141,9 @@ public class MotionControllerStateCache : MonoBehaviour
 } 
 ```
 
-### <a name="reading-new-inputs-by-polling"></a><span data-ttu-id="62dfd-142">Lecture de nouvelles entrées par interrogation</span><span class="sxs-lookup"><span data-stu-id="62dfd-142">Reading new inputs by polling</span></span> 
+### <a name="reading-new-inputs-by-polling"></a><span data-ttu-id="50595-136">Lecture de nouvelles entrées par interrogation</span><span class="sxs-lookup"><span data-stu-id="50595-136">Reading new inputs by polling</span></span> 
 
-<span data-ttu-id="62dfd-143">Vous pouvez lire l’état actuel de chaque contrôleur connu par le biais de *MotionController. TryGetReadingAtTime* pendant la méthode *Update* de la classe monobehavior.</span><span class="sxs-lookup"><span data-stu-id="62dfd-143">You can read the current state of each known controller through *MotionController.TryGetReadingAtTime* during the *Update* method of the MonoBehavior class.</span></span> <span data-ttu-id="62dfd-144">Vous souhaitez passer *DateTime. Now* en tant que paramètre timestamp pour vous assurer que l’état le plus récent du contrôleur est Read.</span><span class="sxs-lookup"><span data-stu-id="62dfd-144">You want to pass *DateTime.Now* as the timestamp parameter to ensure that the latest state of the controller is read.</span></span> 
+<span data-ttu-id="50595-137">Vous pouvez lire l’état actuel de chaque contrôleur connu par le biais de *MotionController. TryGetReadingAtTime* pendant la méthode *Update* de la classe monobehavior.</span><span class="sxs-lookup"><span data-stu-id="50595-137">You can read the current state of each known controller through *MotionController.TryGetReadingAtTime* during the *Update* method of the MonoBehavior class.</span></span> <span data-ttu-id="50595-138">Vous souhaitez passer *DateTime. Now* en tant que paramètre timestamp pour vous assurer que l’état le plus récent du contrôleur est Read.</span><span class="sxs-lookup"><span data-stu-id="50595-138">You want to pass *DateTime.Now* as the timestamp parameter to ensure that the latest state of the controller is read.</span></span> 
 
 ```csharp
 public class MotionControllerStateCache : MonoBehaviour 
@@ -214,7 +187,7 @@ public class MotionControllerStateCache : MonoBehaviour
 } 
 ```
 
-<span data-ttu-id="62dfd-145">Vous pouvez récupérer la valeur d’entrée actuelle des contrôleurs à l’aide de la droitier du contrôleur :</span><span class="sxs-lookup"><span data-stu-id="62dfd-145">You can grab the controllers current input value using the Handedness of the controller:</span></span> 
+<span data-ttu-id="50595-139">Vous pouvez récupérer la valeur d’entrée actuelle des contrôleurs à l’aide de la droitier du contrôleur :</span><span class="sxs-lookup"><span data-stu-id="50595-139">You can grab the controllers current input value using the Handedness of the controller:</span></span> 
 
 ```csharp
 public class MotionControllerStateCache : MonoBehaviour 
@@ -267,7 +240,7 @@ public class MotionControllerStateCache : MonoBehaviour
 } 
 ```
 
-<span data-ttu-id="62dfd-146">Par exemple, pour lire la valeur de préhension analogique d’un InteractionSource :</span><span class="sxs-lookup"><span data-stu-id="62dfd-146">For example, to read the analog grasp value of an InteractionSource:</span></span> 
+<span data-ttu-id="50595-140">Par exemple, pour lire la valeur de préhension analogique d’un InteractionSource :</span><span class="sxs-lookup"><span data-stu-id="50595-140">For example, to read the analog grasp value of an InteractionSource:</span></span> 
 
 ```csharp
 /// Read the analog grasp value of all connected interaction sources 
@@ -284,9 +257,9 @@ void Update()
 } 
 ```
 
-### <a name="generating-events-from-the-new-inputs"></a><span data-ttu-id="62dfd-147">Génération d’événements à partir des nouvelles entrées</span><span class="sxs-lookup"><span data-stu-id="62dfd-147">Generating events from the new inputs</span></span> 
+### <a name="generating-events-from-the-new-inputs"></a><span data-ttu-id="50595-141">Génération d’événements à partir des nouvelles entrées</span><span class="sxs-lookup"><span data-stu-id="50595-141">Generating events from the new inputs</span></span> 
 
-<span data-ttu-id="62dfd-148">Au lieu d’interroger l’état d’un contrôleur une fois par Frame, vous avez la possibilité de gérer toutes les modifications d’État en tant qu’événements, ce qui vous permet de gérer même les actions les plus rapides qui sont moins qu’un cadre.</span><span class="sxs-lookup"><span data-stu-id="62dfd-148">Instead of polling for a controller's state once per frame, you have the option of handling all state changes as events, which lets you handle even the quickest actions lasting less than a frame.</span></span> <span data-ttu-id="62dfd-149">Pour que cette approche fonctionne, le cache des contrôleurs motion doit traiter tous les États publiés par un contrôleur depuis la dernière trame, ce que vous pouvez faire en stockant l’horodateur du dernier MotionControllerReading récupéré à partir d’un MotionController et en appelant *MotionController. TryGetReadingAfterTime ()*:</span><span class="sxs-lookup"><span data-stu-id="62dfd-149">In order for this approach to work, the cache of motion controllers needs to process all states published by a controller since the last frame, which you can do by storing the timestamp of the last MotionControllerReading retrieved from a MotionController and calling *MotionController.TryGetReadingAfterTime()*:</span></span> 
+<span data-ttu-id="50595-142">Au lieu d’interroger l’état d’un contrôleur une fois par Frame, vous avez la possibilité de gérer toutes les modifications d’État en tant qu’événements, ce qui vous permet de gérer même les actions les plus rapides qui sont moins qu’un cadre.</span><span class="sxs-lookup"><span data-stu-id="50595-142">Instead of polling for a controller's state once per frame, you have the option of handling all state changes as events, which lets you handle even the quickest actions lasting less than a frame.</span></span> <span data-ttu-id="50595-143">Pour que cette approche fonctionne, le cache des contrôleurs motion doit traiter tous les États publiés par un contrôleur depuis la dernière trame, ce que vous pouvez faire en stockant l’horodateur du dernier MotionControllerReading récupéré à partir d’un MotionController et en appelant *MotionController. TryGetReadingAfterTime ()*:</span><span class="sxs-lookup"><span data-stu-id="50595-143">In order for this approach to work, the cache of motion controllers needs to process all states published by a controller since the last frame, which you can do by storing the timestamp of the last MotionControllerReading retrieved from a MotionController and calling *MotionController.TryGetReadingAfterTime()*:</span></span> 
 
 ```csharp
 private class MotionControllerState 
@@ -373,7 +346,7 @@ private class MotionControllerState
 } 
 ```
 
-<span data-ttu-id="62dfd-150">Maintenant que vous avez mis à jour les classes internes du cache, la classe monobehavior peut exposer deux événements, appuyés et libérés, et les déclencher à partir de sa méthode Update () :</span><span class="sxs-lookup"><span data-stu-id="62dfd-150">Now that you've updated the cache internal classes, the MonoBehavior class can expose two events – Pressed and Released – and raise them from its Update() method:</span></span> 
+<span data-ttu-id="50595-144">Maintenant que vous avez mis à jour les classes internes du cache, la classe monobehavior peut exposer deux événements, appuyés et libérés, et les déclencher à partir de sa méthode Update () :</span><span class="sxs-lookup"><span data-stu-id="50595-144">Now that you've updated the cache internal classes, the MonoBehavior class can expose two events – Pressed and Released – and raise them from its Update() method:</span></span> 
 
 ```csharp
 /// <summary> 
@@ -471,7 +444,7 @@ public void Update()
 } 
 ```
 
-<span data-ttu-id="62dfd-151">La structure dans les exemples de code ci-dessus rend les événements d’inscription plus lisibles :</span><span class="sxs-lookup"><span data-stu-id="62dfd-151">The structure in the above code examples makes registering events much more readable:</span></span> 
+<span data-ttu-id="50595-145">La structure dans les exemples de code ci-dessus rend les événements d’inscription plus lisibles :</span><span class="sxs-lookup"><span data-stu-id="50595-145">The structure in the above code examples makes registering events much more readable:</span></span> 
 
 ```csharp
 public InteractionSourceHandedness handedness; 
@@ -505,7 +478,7 @@ private void stateCache_InputPressed(object sender, MotionControllerStateCache.M
 } 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="62dfd-152">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="62dfd-152">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="50595-146">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="50595-146">See also</span></span>
 
 <!-- ## Getting started
 
