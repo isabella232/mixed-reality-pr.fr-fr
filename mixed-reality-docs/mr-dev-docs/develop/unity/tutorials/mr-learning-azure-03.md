@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, azure custom vision, azure cognitive services, services cloud azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 7676a55a2276b88f3bc123dda90a1b8d39536a61
+ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581934"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98981718"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Intégration d’Azure Custom Vision
 
@@ -50,17 +50,17 @@ Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.Azur
 ![Unity avec les champs de configuration du composant de script ObjectDetectionManager affichés dans Inspector](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 Dans la fenêtre de hiérarchie, recherchez l’objet **ObjectDetectionManager** et sélectionnez-le.
-Le préfabriqué **ObjectDetectionManager** contient le composant **ObjectDetectionManager (script)** et, comme vous pouvez le voir dans la fenêtre de l’inspecteur, il dépend de plusieurs paramètres.
+Le préfabriqué **ObjectDetectionManager** contient le composant **ObjectDetectionManager (script)** et, comme vous pouvez le voir dans la fenêtre de l’inspecteur, il dépend des paramètres Azure et des paramètres du projet.
 
 ## <a name="retrieving-azure-api-resource-credentials"></a>Récupération des informations d’identification de la ressource API Azure
 
 Les informations d’identification nécessaires pour les paramètres d’**ObjectDetectionManager (script)** peuvent être récupérées à partir du portail Azure et du portail Custom Vision.
 
-### <a name="azure-portal"></a>Portail Azure
+### <a name="retrieving-azure-settings-credentials"></a>Récupération des informations d’identification des paramètres Azure
 
-Recherchez la ressource Custom Vision de type **Cognitive Services** que vous avez créée dans la section *Préparation de la scène* de ce tutoriel. Cliquez sur *Clés et point de terminaison* pour récupérer les informations d’identification nécessaires.
+Recherchez la ressource Custom Vision de type **Cognitive Services** que vous avez créée dans la section *Préparation de la scène* de ce tutoriel (sélectionnez les noms des ressources Custom Vision qui se terminent par *-Prediction*). Cliquez sur *Vue d’ensemble* ou sur *Clés et point de terminaison* pour récupérer les informations d’identification nécessaires.
 
-### <a name="custom-vision-dashboard"></a>Tableau de bord Custom Vision
+### <a name="retrieving-project-settings-credentials"></a>Récupération des informations d’identification des paramètres du projet
 
 Dans le tableau de bord [Custom Vision](https://www.customvision.ai/projects), ouvrez le projet que vous avez créé pour ce tutoriel, puis cliquez en haut à droite de la page sur l’icône d’engrenage pour ouvrir la page Paramètres. Dans la section de droite *Resources*, vous trouverez les informations d’identification nécessaires.
 
@@ -87,6 +87,10 @@ Une fois que vous avez suffisamment d’images, cliquez sur le bouton **Train** 
 > Le composant **ObjectDetectionManager (script)** charge directement les images prises dans le service Custom Vision. En guise d’alternative, l’API Custom Vision accepte les URL vers les images. Comme exercice, vous pouvez modifier l’**ObjectDetectionManager (script)** afin qu’il charge plutôt les images dans un stockage Blob.
 
 ## <a name="detect-objects"></a>Détecter des objets
+
+Avant de détecter les objets, nous devons modifier la clé d’API présente dans **ObjectDetectionManager (script)** sous les paramètres de projet auxquels une clé Custom Vision est déjà affectée.
+
+Recherchez la ressource Custom Vision dans le portail Azure, puis cliquez sur *Clés et point de terminaison* pour récupérer la clé d’API et remplacer l’ancienne clé d’API sous Paramètres du projet.
 
 Vous pouvez maintenant tester le modèle entraîné. Exécutez l’application et, dans le *menu principal*, cliquez sur **Search Object** (Rechercher un objet) et tapez le nom de l’**objet suivi** en question. La **fiche d’objet** apparaît. Cliquez sur le bouton **Custom Vision**. À partir de là, le composant **ObjectDetectionManager** commence à effectuer des captures d’images en arrière-plan à partir de l’appareil photo, et la progression sera indiquée dans le menu. Pointez l’appareil photo sur l’objet que vous avez utilisé pour l’entraînement du modèle, et vous constaterez qu’après quelques instants il détectera l’objet.
 

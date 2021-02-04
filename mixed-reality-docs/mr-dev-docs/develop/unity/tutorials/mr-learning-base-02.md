@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 4d82d0974a0a797e7f8d2de2d4943666f7d32a4f
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: ff479df81316ab5ceeabf045ad1bbae007190ed4
+ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635494"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99238147"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Initialisation de votre projet et déploiement de votre première application
 
@@ -86,7 +86,13 @@ Dans la fenêtre Import Unity Package (Importer un package Unity), cliquez sur l
 
 ## <a name="importing-the-mixed-reality-toolkit"></a>Importation du Mixed Reality Toolkit
 
-Téléchargez le package personnalisé Unity :
+### <a name="using-the-mixed-reality-feature-tool"></a>Utilisation de Mixed Reality Feature Tool
+
+Pour installer MRTK avec notre nouvelle application Mixed Reality Feature Tool, suivez nos [instructions d’installation et d’utilisation](../welcome-to-mr-feature-tool.md) et sélectionnez le package **Mixed Reality Toolkit Foundation** dans la catégorie Mixed Reality Toolkit.
+
+### <a name="using-unity-packages"></a>Utilisation des packages Unity
+
+Pour installer MRTK avec un package personnalisé :
 
 * [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.5.1/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage)
 
@@ -128,7 +134,7 @@ Dans le menu Unity, sélectionnez **Modifier** > **Paramètres du projet...** po
 
 Dans la fenêtre Project Settings, sélectionnez **XR Plug-in Managemen** > **Install XR Plug-in Management** pour installer XR Plug-in Management :
 
-![Fenêtre Publishing Settings d’Unity avec le nom du package configuré](images/mr-learning-base/base-02-section5-step2-2.png)
+![Paramètres du projet avec XR Plugin Management sélectionné](images/mr-learning-base/base-02-section5-step2-2.png)
 
 quand Unity a terminé l’installation de XR Plug-in Management. Vérifiez que vous êtes dans les paramètres de Plateforme Windows universelle et cochez la case Initialize XR on Startup.
 
@@ -142,10 +148,10 @@ Une fois que Unity a fini d’importer le SDK Windows Mixed Reality, la fenêtre
 
 Dans la fenêtre MRTK Project Configurator, utilisez la liste déroulante **Audio Spatializer** pour sélectionner le **MS HRTF Spatializer**, puis cliquez sur le bouton **Apply** pour appliquer le paramètre :
 
-![Paramètres XR d’Unity avec l’option d’ajout du SDK Windows Mixed Reality sélectionnée](images/mr-learning-base/base-02-section5-step2-5.png)
+![Fenêtre du configurateur de projet MRTK avec la propriété Spatializer audio mise en surbrillance](images/mr-learning-base/base-02-section5-step2-5.png)
 
 > [!TIP]
->La définition de la propriété Audio Spatializer est facultative mais peut améliorer l’expérience audio dans votre projet. Si vous la définissez sur MS HRTF Spatializer, ce plug-in Spatializer sera utilisé quand la propriété AudioSource.spatialize d’Unity est activée. Pour plus d’informations sur ce sujet, vous pouvez consulter les <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank">tutoriels d’audio spatiale</a>.
+>La définition de la propriété Audio Spatializer est facultative mais peut améliorer l’expérience audio dans votre projet. Si vous la définissez sur MS HRTF Spatializer, ce plug-in Spatializer sera utilisé quand la propriété AudioSource.spatialize d’Unity est activée. Pour plus d’informations sur ce sujet, vous pouvez consulter les <a href="https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank">tutoriels d’audio spatiale</a>.
 
 Dans la fenêtre Project Settings, sélectionnez **Player** > **XR Settings**, puis utilisez la liste déroulante **Depth Format** pour sélectionner **16-bit depth** :
 

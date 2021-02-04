@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: azure, réalité mixte, Unity, tutoriel, hololens, hololens 2, stockage blob azure, stockage table azure, ancres spatiales azure, azure bot framework, services cloud azure, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 8f8727074870d07ac9fcd7190f5f53931d75643f
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 02bb52653b8df38a497a9acc803a84eb09909a9f
+ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635544"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98981728"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Azure Cloud Services pour HoloLens 2
 
@@ -91,7 +91,7 @@ Suivez d’abord [Initialisation de votre projet et de votre première applicati
 5. [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project)
 6. [Création et configuration de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene), et affectation d’un nom pertinent à la scène, par exemple *AzureCloudServices*
 
-Ensuite, suivez les instructions de [Changer l’option d’affichage de la reconnaissance spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour remplacer le profil de configuration MRTK de votre scène par **DefaultHoloLens2ConfigurationProfile** et remplacer les options d’affichage du maillage de la reconnaissance spatiale par **Occlusion**.
+Ensuite, suivez les instructions de [Changement de l’option d’affichage de la reconnaissance spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour vérifier que le profil de configuration MRTK de votre scène est **DefaultXRSDKConfigurationProfile** et pour changer les options d’affichage du maillage de la reconnaissance spatiale en **Occlusion**.
 
 ## <a name="installing-inbuilt-unity-packages"></a>Installation de packages Unity intégrés
 
@@ -104,9 +104,10 @@ Dans le menu Unity, sélectionnez **Window** > **Package Manager** pour ouvrir l
 
 ## <a name="importing-the-tutorial-assets"></a>Importation des ressources du tutoriel
 
+Ajoutez le SDK AzurespatialAnchors V2.7.1 à votre projet Unity. Pour ajouter les packages, suivez ce [tutoriel](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
+
 Téléchargez et **importez** les packages personnalisés Unity suivants **dans l’ordre où ils sont listés** :
 
-* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
 * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
 * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 

@@ -1,5 +1,5 @@
 ---
-title: Création d’un projet HoloLens
+title: Création de votre première application HoloLens Unreal
 description: Découvrez comment configurer correctement un projet Unreal avec des objets de scène et des interactions d’entrée pour le développement de réalité mixte HoloLens.
 author: hferrone
 ms.author: safarooq
@@ -7,14 +7,27 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, éditeur Unreal, UE4, HoloLens, HoloLens 2, réalité mixte, développement, documentation, guides, fonctionnalités, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, portage, mise à niveau
-ms.openlocfilehash: 3b2b88ac897a8791fec1ca2942d0db34efcee598
-ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
+ms.openlocfilehash: 467987f69b50c0ec635c99899d6bcecab5a62af0
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98672736"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421428"
 ---
-# <a name="creating-a-hololens-project"></a>Création d’un projet HoloLens
+# <a name="creating-your-first-hololens-unreal-application"></a>Création de votre première application HoloLens Unreal
+
+Ce guide vous permet de créer votre première application de réalité mixte s’exécutant sur HoloLens dans Unreal Engine. Dans la tradition de « Hello World », vous allez créer une application simple qui affiche un cube à l’écran. Pour la rendre plus utile, vous allez également créer votre premier geste pour faire pivoter le cube et pour quitter l’application. 
+
+## <a name="objectives"></a>Objectifs
+
+* Démarrer un projet HoloLens
+* Activer les plug-ins corrects
+* Créer une ressource de données ARSessionConfig
+* Configurer les entrées de geste
+* Créer un niveau de base
+* Implémenter un geste de pincement
+
+## <a name="creating-a-new-project"></a>Création d’un projet
 
 La première chose dont vous avez besoin est un projet avec lequel travailler. Si vous commencez juste à développer dans Unreal, vous devez [télécharger les fichiers de prise en charge](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) auprès d’Epic Launcher.
 
@@ -29,7 +42,8 @@ La première chose dont vous avez besoin est un projet avec lequel travailler. S
 
 4. Dans **Project Settings**, définissez **C++, Scalable 3D or 2D, Mobile/Tablet** et **No Starter Content**, puis choisissez un emplacement d’enregistrement et cliquez sur **Create Project**.
 
-> [!NOTE] Vous utilisez un projet C++ au lieu d’un projet Blueprint pour être prêt à utiliser le plug-in OpenXR ultérieurement. Ce guide de démarrage rapide utilise le plug-in OpenXR par défaut qui est fourni avec Unreal Engine. Il est cependant recommandé de télécharger et d’utiliser le plug-in Microsoft OpenXR officiel. Cela nécessite que le projet soit un projet C++.
+> [!NOTE] 
+> Vous utilisez un projet C++ au lieu d’un projet Blueprint pour être prêt à utiliser le plug-in OpenXR ultérieurement. Ce guide de démarrage rapide utilise le plug-in OpenXR par défaut qui est fourni avec Unreal Engine. Il est cependant recommandé de télécharger et d’utiliser le plug-in Microsoft OpenXR officiel. Cela nécessite que le projet soit un projet C++.
 
 ![Fenêtre des paramètres de projet avec les choix pour le projet, les performances, la plateforme cible et le contenu au démarrage mis en évidence](images/unreal-quickstart-img-03.png)
 
@@ -131,13 +145,17 @@ Une fois cette opération effectuée, l’étape suivante consiste à faire en s
 
 ![Mappages d’actions avec les options Open XR Msft Hand Interaction en évidence](images/unreal-quickstart-img-16.jpg)
 
-4. Ouvrez le **Level Blueprint** et ajoutez un **InputAction RightPinch** et un **InputAction LeftPinch**.
+## <a name="setting-up-gestures"></a>Configuration des gestes
+
+Maintenant que nous avons configuré les entrées, nous pouvons accéder à la partie intéressante : L’ajout de gestes ! Faisons pivoter le cube sur le pincement à droite et quitter l’application sur le pincement à gauche.
+
+1. Ouvrez le **Level Blueprint** et ajoutez un **InputAction RightPinch** et un **InputAction LeftPinch**.
 * Connectez l’événement pincement droit à une **AddActorLocalRotation** avec votre **Cube**  comme cible, et **Delta Rotation** défini sur **X = 0, Y = 0** et **Z = 20**. Le cube va maintenant pivoter de 20 degrés chaque fois que vous pincez.
 * Connectez l’événement de pincement gauche à **Quit Game**.
 
 ![Blueprint de niveau ouvert avec des actions d’entrée pour les événements de pincement droit et gauche](images/unreal-quickstart-img-17.jpg)
 
-5. Dans les paramètres **Transform** du cube, définissez **Mobility** sur **Movable** pour qu’il puisse se déplacer dynamiquement :
+2. Dans les paramètres **Transform** du cube, définissez **Mobility** sur **Movable** pour qu’il puisse se déplacer dynamiquement :
 
 ![Paramètres de transformation avec la propriété de mobilité mis en évidence](images/unreal-quickstart-img-18.jpg)
 

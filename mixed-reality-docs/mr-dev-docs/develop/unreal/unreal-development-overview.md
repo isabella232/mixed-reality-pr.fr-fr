@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, démarrage, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, OpenXR
-ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99540b9cd3473097896d847943b9736300000305
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580044"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421418"
 ---
 # <a name="unreal-development-overview"></a>Vue d’ensemble du développement Unreal
 
@@ -38,6 +38,7 @@ Tout d’abord, vous devez installer les outils pour le développement HoloLens�
 |  Point de contrôle  |  Résultat  |
 | --- | --- |
 | [Installer les outils les plus récents](../install-the-tools.md) | Télécharger et installer la dernière version d’Unreal Engine, et configurer votre projet pour la réalité mixte |
+| [Création de votre première application HoloLens Unreal](unreal-quickstart.md) | Commencez votre parcours de développement Unreal et HoloLens en créant une application de réalité mixte de base |
 | [Série de tutoriels HoloLens 2](tutorials/unreal-uxt-ch1.md) | Préparer le développement d’applications de réalité mixte dans Unreal, créer votre première application avec MRTK et déployer votre application sur HoloLens 2 |
 | (Facultatif) Bien démarrer avec [OpenXR](../native/openxr.md) dans Unreal | Si vous envisagez de créer une application OpenXR dans Unreal, vous devez désactiver le plug-in de moteur suivant :<ul><li>Windows Mixed Reality</li></ul><br>Téléchargez et activez le plug-in suivant dans votre projet à partir de GitHub :<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>La liste complète des fonctionnalités actuellement prises en charge dans OpenXR figure [ci-dessous](#supported-features).|
 
