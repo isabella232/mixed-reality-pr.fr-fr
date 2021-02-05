@@ -3,19 +3,19 @@ title: Didacticiels audio spatiaux-2. Spatialisation des sons d’interaction av
 description: Ajoutez un bouton à votre projet et spatialez les sons d’interaction du bouton.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, prefabs, courbe de volume
-ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 12d159cb162cbf136483f7be94b0d297319a0737
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578486"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590761"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2. Spatialisation des sons d’interaction avec les boutons
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Dans ce didacticiel, vous allez apprendre à spatialiser les sons d’interaction du bouton et à utiliser un clip audio pour tester l’interaction de bouton spatiale.  
 
@@ -25,7 +25,7 @@ Dans ce didacticiel, vous allez apprendre à spatialiser les sons d’interactio
 
 ## <a name="add-a-button"></a>Ajouter un bouton
 
-Pour ajouter le bouton Prefab, dans la fenêtre **projet** , sélectionnez **ressources** , puis tapez « PressableButtonHoloLens2 » dans la barre de recherche.
+Pour ajouter le bouton Prefab, dans la fenêtre **projet** , sélectionnez **packages** , puis tapez « PressableButtonHoloLens2 » dans la barre de recherche.
 
 ![Bouton Prefab dans les ressources](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 

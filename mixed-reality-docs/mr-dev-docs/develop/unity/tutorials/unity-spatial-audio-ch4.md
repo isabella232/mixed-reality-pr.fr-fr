@@ -3,19 +3,19 @@ title: Didacticiels audio spatial-4. Activation et désactivation de contenu aud
 description: Utilisez un bouton pour activer et désactiver le Spatialization de l’audio au moment de l’exécution.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
-ms.openlocfilehash: 9239c45efa5196b94fe2e05f85a2e83df6c7789f
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 26143975707b2cd6141803a6335cec89db5bbd26
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578310"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590731"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. activation et désactivation de Spatialization au moment de l’exécution
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Dans ce didacticiel, vous allez apprendre à activer et à désactiver les Spatialization au moment de l’exécution et à les tester dans l’éditeur Unity et dans HoloLens 2.
 
