@@ -224,6 +224,8 @@
           href: unity/tracking-loss-in-unity.md
         - name: Saisie au clavier
           href: unity/keyboard-input-in-unity.md
+        - name: Paquets UDP dans des applications UWP
+          href: unity/udp-packets-in-unity.md
         - name: Utilisation de l’espace de noms Windows avec les applications Unity pour HoloLens
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
         - name: Objets natifs Mixed Reality
