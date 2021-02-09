@@ -3,16 +3,16 @@ title: Intégration du stockage Azure
 description: Suivez ce cours pour apprendre à implémenter Stockage Table Azure et Stockage Blob Azure dans une application HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, stockage azure, services cloud azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: fc049fc54674b4f7387ae937f142b9b4afe44e66
-ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
+ms.openlocfilehash: cebf86901ec7b91888e1e46a13e5dee47f640c6c
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98981708"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590561"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Intégration du stockage Azure
 
