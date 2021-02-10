@@ -3,16 +3,16 @@ title: Création d’interfaces utilisateur
 description: Ce cours vous montre comment utiliser Mixed Reality Toolkit (MRTK) pour créer des interfaces utilisateur statiques et dynamiques.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, préfabriqués, hologrammes, info-bulles
 ms.localizationpriority: high
-ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 3b32faab4be13d42f228659285244c206680466e
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635552"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590551"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Création d’interfaces utilisateur
 
@@ -86,7 +86,7 @@ et le bouton **Explode** pour activer ou désactiver la vue éclatée :
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>Création d’un menu dynamique qui suit l’utilisateur
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus**. Cliquez sur le préfabriqué **NearMenu4x1** puis faites-le glisser vers la fenêtre Hierarchy. Définissez la **Position** du composant Transform sur X = 0, Y =-0.4, Z = 0, puis configurez-le de la façon suivante :
+Dans la fenêtre Project, accédez au dossier **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus**. Cliquez sur le préfabriqué **NearMenu4x1** puis faites-le glisser vers la fenêtre Hierarchy. Définissez la **Position** du composant Transform sur X = 0, Y =-0.4, Z = 0, puis configurez-le de la façon suivante :
 
 * Vérifiez que le **Tracked Target Type** du composant **SolverHandler** est défini sur **Head**.
 * Cochez la case à côté de **RadialView** pour le composant Solver afin de l’activer par défaut.
@@ -162,7 +162,7 @@ Configurez ensuite le composant **TextMeshPro - Text** de la façon suivante :
 
 ## <a name="adding-tooltips"></a>Ajout d’info-bulles
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** pour localiser les préfabriqués d’info-bulle :
+Dans la fenêtre Project, accédez au dossier **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** pour trouver les préfabriqués d’info-bulle :
 
 ![Fenêtre de projet Unity avec le dossier ToolTips sélectionné](images/mr-learning-base/base-06-section4-step1-1.png)
 

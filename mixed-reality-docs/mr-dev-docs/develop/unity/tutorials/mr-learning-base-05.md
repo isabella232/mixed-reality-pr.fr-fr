@@ -3,16 +3,16 @@ title: Création de contenu dynamique avec des solveurs
 description: Ce cours vous montre comment utiliser les solveurs de Mixed Reality Toolkit (MRTK) pour créer du contenu dynamique.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, solveurs
 ms.localizationpriority: high
-ms.openlocfilehash: 6006bf5e3edaee13c8ede0bdc04fd5ea928f1757
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 73fbbc64eadec1e3b83d6e10866bd227217f0c9c
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579156"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590481"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Création de contenu dynamique avec des solveurs
 
@@ -26,14 +26,14 @@ Dans ce tutoriel, vous allez explorer différentes façons de placer dynamiqueme
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>Emplacement des solveurs dans le MRTK
 
- Les solveurs du MRTK se trouvent dans le dossier du SDK MRTK. Pour voir les solveurs disponibles dans votre projet, dans la fenêtre Project, accédez à **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers** :
+ Les solveurs du MRTK se trouvent dans le dossier du SDK MRTK. Pour voir les solveurs disponibles dans votre projet, dans la fenêtre Project, accédez à **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **Utilities** > **Solvers** :
 
 ![Fenêtre de projet Unity avec le dossier SOlvers sélectionné](images/mr-learning-base/base-05-section1-step1-1.png)
 
 Dans ce tutoriel, nous allons passer en revue l’implémentation du solveur Directional Indicator et Tap To Place. Pour en savoir plus sur l’ensemble des solveurs disponibles dans MRTK, consultez le guide [Solveurs](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) dans le [portail de la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 > [!NOTE]
-> Le solveur Directional Indicator ne se trouve pas dans les dossiers des solveurs référencés ci-dessus, mais dans les dossiers Assets > MRTK > SDK > Experimental > Features > Utilities, car il s’agit d’une fonctionnalité expérimentale.
+> Le solveur Directional Indicator ne se trouve pas dans les dossiers des solveurs référencés ci-dessus, mais dans les dossiers Packages > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities parce qu’il s’agit d’une fonctionnalité expérimentale.
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Utilisation du solveur Directional Indicator pour diriger l’utilisateur vers des objets
 

@@ -7,12 +7,12 @@ ms.date: 01/27/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: à jour, outils, prise en main, principes de base, unity, visual studio, toolkit, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, installation, Windows, HoloLens, émulateur, unreal, openxr
-ms.openlocfilehash: b9d54edb251cfe22d4f5fbea6fa8c923f6ff2d69
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0aad81ddd625467dd9159232d590b1a4bf68d06b
+ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243955"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570252"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Bienvenue dans Mixed Reality Feature Tool
 
@@ -33,9 +33,11 @@ Pour pouvoir exécuter Mixed Reality Feature Tool, voici ce dont vous avez besoi
 > [!NOTE]
 > Mixed Reality Feature Tool fonctionne actuellement seulement sur Windows, mais la prise en charge de MacOS sera bientôt disponible !
 
+## <a name="download"></a>Téléchargement 
+
 Une fois que votre environnement est configuré :
 
-* Téléchargez la dernière version de Mixed Reality Feature Tool à partir du [Centre de téléchargement Microsoft](https://aka.ms/MRFeatureTool).
+* [Téléchargez la dernière version de Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool) à partir du Centre de téléchargement Microsoft.
 * Une fois le téléchargement terminé, décompressez le fichier et enregistrez-le sur votre ordinateur.
     * Nous vous recommandons de créer un raccourci vers le fichier exécutable pour un accès plus rapide.
 

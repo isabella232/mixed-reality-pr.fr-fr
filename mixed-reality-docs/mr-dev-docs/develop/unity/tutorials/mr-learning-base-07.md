@@ -3,16 +3,16 @@ title: Interaction avec les objets 3D
 description: Ce cours vous montre comment utiliser Mixed Reality Toolkit (MRTK) pour interagir avec des objets 3D et les manipuler dans des applications de réalité mixte.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
-keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, interactions avec des objets, cadres englobants
+keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, interactions avec des objets, contrôle des limites
 ms.localizationpriority: high
-ms.openlocfilehash: 23cfe3d3746d6ab6dbc0757f32b95ddc8637a366
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: f92eca294e2114207a5e28ebe80aa480b9029b66
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578747"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590433"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interaction avec les objets 3D
 
@@ -76,7 +76,7 @@ Toujours avec les objets de pièces de Rover et l’objet RoverAssembly sélecti
 > [!NOTE]
 > À ce stade, vous avez activé la manipulation d’objet pour tous les objets de pièces de Rover et l’objet RoverAssembly.
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK** > **StandardAssets** > **Audio** pour localiser les clips audio :
+Dans la fenêtre Project, accédez au dossier **Packages** > **Mixed Reality Toolkit Standard Assets** > **Audio** pour trouver les clips audio :
 
 ![Fenêtre de projet Unity avec le dossier Audio sélectionné](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -115,15 +115,15 @@ Si vous basculez maintenant en mode Game, vous pouvez utiliser l’interaction p
 
 Pour en savoir plus sur le composant Object Manipulator et ses propriétés associées, vous pouvez consulter le guide [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) dans le [portail de la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
-## <a name="adding-bounding-boxes"></a>Ajout de cadres englobants
+## <a name="adding-bounds-control"></a>Ajout d’un contrôle des limites
 
-Les cadres englobants facilitent et rendent plus intuitive la manipulation d’objets avec une main pour l’interaction proche et lointaine, en fournissant des poignées qui peuvent être utilisées pour la mise à l’échelle et la rotation.
+Un contrôle des limites (BoundsControl) rend plus facile et plus intuitive la manipulation d’objets avec une main pour l’interaction proche et lointaine, en fournissant des poignées qui peuvent être utilisées pour la mise à l’échelle et la rotation.
 
-Dans cet exemple, vous allez ajouter un cadre englobant à l’objet RoverExplorer afin de pouvoir facilement le déplacer, le faire pivoter et le mettre à l’échelle. Vous allez aussi configurer le menu afin de pouvoir activer ou désactiver le cadre englobant.
+Dans cet exemple, vous allez ajouter un BoundsControl à l’objet RoverExplorer pour faciliter son déplacement, sa rotation et sa mise à l’échelle. Vous allez aussi configurer le menu afin de pouvoir activer ou désactiver le contrôle des limites.
 
 Dans la fenêtre de hiérarchie, sélectionnez l’objet **RoverExplorer** puis, dans la fenêtre de l’inspecteur, utilisez le bouton **Add Component** pour ajouter les composants suivants :
 
-* Le composant **BoundingBox**
+* Composant **BoundsControl**
 * Le composant **Object Manipulator (Script)**
 
 Ensuite, **décochez** la case en regard de tous les composants afin de les rendre **désactivés** par défaut :
@@ -131,19 +131,19 @@ Ensuite, **décochez** la case en regard de tous les composants afin de les rend
 ![Unity avec l’objet RoverExplorer sélectionné, et des composants ajoutés et désactivés](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> La visualisation des cadres englobants est créée au moment de l’exécution, et n’est donc pas visible avant l’entrée en mode Game.
+> La visualisation du contrôle des limites est créée au moment de l’exécution et n’est donc pas visible avant l’entrée en mode Game.
 
 > [!NOTE]
->Le composant BoundingBox ajoutera automatiquement le composant NearInteractionGrabbable au moment de l’exécution. Par conséquent, nous n’avons pas besoin d’ajouter ce composant pour saisir les objets englobés avec les mouvements captés des mains.
+>Le composant BoundsControl ajoutera automatiquement le composant NearInteractionGrabbable au moment de l’exécution. Par conséquent, nous n’avons pas besoin d’ajouter ce composant pour saisir les objets englobés avec les mouvements captés des mains.
 
 > [!NOTE]
 >Object Manipulator (Script) ajoute automatiquement Constraint Manager (Script)
 
-Dans la fenêtre de hiérarchie, développez l’objet Menu > **ButtonCollection** pour afficher les quatre boutons et renommez le troisième bouton **BoundingBox_Enable** puis, dans la fenêtre de l’inspecteur, configurez le composant **Button Config Helper (Script)** comme suit :
+Dans la fenêtre de hiérarchie, développez l’objet Menu > **ButtonCollection** pour afficher les quatre boutons et renommez le troisième bouton **BoundsControl_Enable** puis, dans la fenêtre de l’inspecteur, configurez le composant **Button Config Helper (Script)** comme suit :
 
 * Affectez la valeur **Enable** à **Main Label Text** (Texte de l'étiquette principale).
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function**, sélectionnez **BoundingBox** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **BoundsControl** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **cochée**.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
@@ -151,13 +151,13 @@ Dans la fenêtre de hiérarchie, développez l’objet Menu > **ButtonCollection
 * Vérifiez que la case de l’argument est **cochée**.
 * Conservez « cube avec contrôle des limites » comme **icône**.
 
-![Unity avec l’objet de bouton BoundingBox_Enable sélectionné et le composant Button Config Helper configuré](images/mr-learning-base/base-07-section2-step1-2.png)
+![Unity avec l’objet de bouton BoundsControl_Enable sélectionné et le composant Button Config Helper configuré](images/mr-learning-base/base-07-section2-step1-2.png)
 
-Renommez **BoundingBox_Disable** les quatrième et dernier bouton puis, dans la fenêtre de l’inspecteur, configurez le composant **Button Config Helper (Script)** comme suit :
+Renommez **BoundsControl_Disable** le quatrième et dernier bouton puis, dans la fenêtre de l’inspecteur, configurez le composant **Button Config Helper (Script)** comme suit :
 
 * Affectez la valeur **Disable** à **Main Label Text**.
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function**, sélectionnez **BoundingBox** > **bool Enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **No Function**, sélectionnez **BoundsControl** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
 * Vérifiez que la case de l’argument est **décochée**.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Assignez l’objet **RoverExplorer** au champ **None (Object)** .
@@ -165,17 +165,17 @@ Renommez **BoundingBox_Disable** les quatrième et dernier bouton puis, dans la 
 * Vérifiez que la case de l’argument est **décochée**.
 * Remplacez l’**icône** par « cube avec contrôle des limites ».
 
-![Unity avec l’objet de bouton BoundingBox_Disable sélectionné et le composant Button Config Helper configuré](images/mr-learning-base/base-07-section2-step1-3.png)
+![Unity avec l’objet de bouton BoundsControl_Disable sélectionné et le composant Button Config Helper configuré](images/mr-learning-base/base-07-section2-step1-3.png)
 
-Si vous passez maintenant en mode Game et que vous activez le contrôle des limites en cliquant sur le bouton Enable, vous pouvez utiliser l’interaction proche ou lointaine pour déplacer, faire pivoter et mettre à l’échelle le cadre englobant, et utiliser le bouton Disable pour le désactiver à nouveau :
+Si vous passez maintenant en mode Game et que vous activez le contrôle des limites en cliquant sur le bouton Enable, vous pouvez utiliser l’interaction proche ou lointaine pour le déplacer, faire pivoter et mettre à l’échelle, et utiliser le bouton Disable pour le désactiver à nouveau :
 
-![Vue partagée du mode Play d’Unity avec le cadre englobant manipulé](images/mr-learning-base/base-07-section2-step1-4.png)
+![Vue partagée du mode Play de Unity avec le contrôle des limites en train d’être manipulé](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Pour plus d’informations sur le composant Bounding Box et ses propriétés associées, vous pouvez consulter le guide [Bounding Box](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) dans le [portail de la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Pour plus d’informations sur le composant BoundsControl et ses propriétés associées, vous pouvez consulter le guide [Bounds Control](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) dans le [portail de la documentation MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 ## <a name="congratulations"></a>Félicitations
 
-Dans ce tutoriel, vous avez appris à activer la manipulation proche et lointaine pour les objets 3D et comment limiter les types de manipulation autorisés. Vous avez également découvert comment ajouter des cadres englobants autour des objets 3D afin de faciliter le contrôle de la manipulation des objets.
+Dans ce tutoriel, vous avez appris à activer la manipulation proche et lointaine pour les objets 3D et comment limiter les types de manipulation autorisés. Vous avez aussi appris à ajouter un contrôle des limites autour des objets 3D afin de faciliter le contrôle de la manipulation des objets.
 
 > [!div class="nextstepaction"]
 > [Tutoriel suivant : 8. Utilisation du suivi oculaire](mr-learning-base-08.md)

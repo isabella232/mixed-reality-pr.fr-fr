@@ -3,16 +3,16 @@ title: Créer une application PC de communication à distance holographique
 description: Suivez ce cours pour découvrir comment créer une application pour PC afin d’effectuer à distance une expérience de réalité mixte depuis votre PC vers HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, communication à distance holographique sur PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: fd357b0b487b948afb6ae15c9e84362e2bc1ef90
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 916a9396c0b29637d5619bac203718e05112b598
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007329"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590301"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Création d’une application PC de communication à distance holographique
 
@@ -53,11 +53,11 @@ Dans la section **XR Settings**, cochez la case **WSA Holographic Remoting Suppo
 
 Dans le menu Unity, sélectionnez File > Build Settings pour ouvrir la fenêtre Build Settings.
 
-Dans la fenêtre Build Settings, cliquez sur le bouton **_Add Open Scenes_* _ pour ajouter votre scène actuelle aux scènes. Dans la liste Build, cliquez sur le _*_bouton Build_*_ pour ouvrir la fenêtre Build Universal Windows Platform :
+Dans la fenêtre Build Settings, cliquez sur le bouton ***Add Open Scenes** _ pour ajouter votre scène actuelle aux scènes. Dans la liste Build, cliquez sur le _ *_bouton Build_** pour ouvrir la fenêtre Build Universal Windows Platform :
 
 ![Fenêtre Build Settings d’Unity avec une scène ajoutée](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
 
-Dans la fenêtre Build Universal Windows Platform, choisissez un emplacement pour stocker votre build, par exemple Documents\MixedRealityLearning. Créez un dossier et donnez-lui un nom approprié, par exemple PCHolographicRemoting. Cliquez ensuite sur le bouton _*_Select Folder_*_ pour démarrer le processus de génération :
+Dans la fenêtre Build Universal Windows Platform, choisissez un emplacement pour stocker votre build, par exemple Documents\MixedRealityLearning. Créez un dossier et donnez-lui un nom approprié, par exemple PCHolographicRemoting. Cliquez ensuite sur le bouton ***Select Folder*** pour démarrer le processus de génération :
 
 ![Fenêtre Build Settings d’Unity avec la fenêtre d’invite Select Folder](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
 
@@ -78,7 +78,7 @@ Configurez Visual Studio pour PC en sélectionnant la configuration Release, l�
 
 ![Visual Studio configuré pour la machine locale](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
 
-Cliquez sur le bouton indiquant _*_Machine locale_*_. La procédure de génération et de déploiement de l’application sur votre PC démarre. L’application est installée sur votre PC par défaut.
+Cliquez sur le bouton qui indique ***Ordinateur local***. La procédure de génération et de déploiement de l’application sur votre PC démarre. L’application est installée sur votre PC par défaut.
 
 ## <a name="testing-holographic-remoting-remote-application"></a>Test d’une application de communication à distance holographique
 
@@ -86,7 +86,7 @@ Pour connecter votre application PC à votre HoloLens 2, effectuez les étapes 
 
 ### <a name="1-install-the-remoting-player-application-on-hololens-2-device"></a>1. Installer l’application Remoting Player sur l’appareil HoloLens 2
 
-_ Sur votre HoloLens 2, accédez à l’application Store et recherchez « **Remoting Player** ».
+* Sur votre HoloLens 2, accédez à l’application Store et recherchez « **Remoting Player** ».
 * Sélectionnez l’application **Remoting Player**.
 * Appuyez sur **Install** pour télécharger et installer l’application.
 

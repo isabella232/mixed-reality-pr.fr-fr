@@ -3,16 +3,16 @@ title: Configuration de Photon Unity Networking
 description: Suivez ce cours pour découvrir comment implémenter Photon Unity Network dans une application de réalité mixte HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 1c47da28b3ccdc706f372749f265ac0329a2327b
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 372cb7c9516a994cb7c3da1efb6cade792e862d1
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699139"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590311"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configuration de Photon Unity Networking
 
@@ -82,7 +82,7 @@ Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Proje
 ![Fenêtres Hierarchy, Scene et Project dans Unity, après l’importation des ressources du tutoriel](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, vous pouvez vous référer aux instructions fournies dans [Importation de Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
+> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 > [!NOTE]
 > Après l’importation du package de ressources du tutoriel MultiUserCapabilities, la fenêtre de console contient plusieurs erreurs [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) qui indiquent que le type ou l’espace de noms est manquant. Ces erreurs sont attendues et seront résolues dans la section suivante quand vous importerez les ressources PUN.
