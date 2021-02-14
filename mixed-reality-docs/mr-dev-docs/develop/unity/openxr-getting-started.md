@@ -6,68 +6,68 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: 1adfb979cfc22be5da18ed990c9db55e6bad97f3
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: cae588acbcddeefae45a555f335f1c74389f1824
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99238140"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496167"
 ---
-# <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a><span data-ttu-id="9df56-104">Utilisation du plug-in OpenXR de la réalité mixte pour Unity</span><span class="sxs-lookup"><span data-stu-id="9df56-104">Using the Mixed Reality OpenXR Plugin for Unity</span></span>
+# <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a><span data-ttu-id="2e4c6-104">Utilisation du plug-in OpenXR de la réalité mixte pour Unity</span><span class="sxs-lookup"><span data-stu-id="2e4c6-104">Using the Mixed Reality OpenXR Plugin for Unity</span></span>
 
-<span data-ttu-id="9df56-105">À partir de Unity version 2020,2, le package de plug-in OpenXR de réalité mixte de Microsoft est disponible à l’aide du gestionnaire de package Unity (UPM).</span><span class="sxs-lookup"><span data-stu-id="9df56-105">Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the Unity Package Manager (UPM).</span></span>
+<span data-ttu-id="2e4c6-105">À partir de Unity version 2020,2, le package de plug-in OpenXR de réalité mixte de Microsoft est disponible à l’aide du gestionnaire de package Unity (UPM).</span><span class="sxs-lookup"><span data-stu-id="2e4c6-105">Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the Unity Package Manager (UPM).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9df56-106">Prérequis</span><span class="sxs-lookup"><span data-stu-id="9df56-106">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2e4c6-106">Prérequis</span><span class="sxs-lookup"><span data-stu-id="2e4c6-106">Prerequisites</span></span>
 
-* <span data-ttu-id="9df56-107">Unity 2020,2 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="9df56-107">Unity 2020.2 or later</span></span>
-* <span data-ttu-id="9df56-108">Plug-in Unity OpenXR 0.1.2 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="9df56-108">Unity OpenXR plugin 0.1.2 or later</span></span>
-* <span data-ttu-id="9df56-109">Visual Studio 2019 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="9df56-109">Visual Studio 2019 or later</span></span>
-* <span data-ttu-id="9df56-110">Installer la prise en charge de plateforme **UWP** dans Unity pour les applications HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="9df56-110">Install **UWP** platform support in Unity for HoloLens 2 apps</span></span>
+* <span data-ttu-id="2e4c6-107">Unity 2020,2 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="2e4c6-107">Unity 2020.2 or later</span></span>
+* <span data-ttu-id="2e4c6-108">Plug-in Unity OpenXR 0.1.3 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="2e4c6-108">Unity OpenXR plugin 0.1.3 or later</span></span>
+* <span data-ttu-id="2e4c6-109">Visual Studio 2019 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="2e4c6-109">Visual Studio 2019 or later</span></span>
+* <span data-ttu-id="2e4c6-110">Installer la prise en charge de plateforme **UWP** dans Unity pour les applications HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="2e4c6-110">Install **UWP** platform support in Unity for HoloLens 2 apps</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="9df56-111">Si vous générez des applications VR sur un PC Windows, le plug-in OpenXR de réalité mixte n’est pas obligatoire.</span><span class="sxs-lookup"><span data-stu-id="9df56-111">If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required.</span></span> <span data-ttu-id="9df56-112">Toutefois, vous souhaiterez installer le plug-in si vous personnalisez le mappage de contrôleur pour les contrôleurs de reréverbérations de HP ou si vous créez des applications qui fonctionnent à la fois sur les casques HoloLens 2 et VR.</span><span class="sxs-lookup"><span data-stu-id="9df56-112">However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.</span></span>
+> <span data-ttu-id="2e4c6-111">Si vous générez des applications VR sur un PC Windows, le plug-in OpenXR de réalité mixte n’est pas obligatoire.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-111">If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required.</span></span> <span data-ttu-id="2e4c6-112">Toutefois, vous souhaiterez installer le plug-in si vous personnalisez le mappage de contrôleur pour les contrôleurs de reréverbérations de HP ou si vous créez des applications qui fonctionnent à la fois sur les casques HoloLens 2 et VR.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-112">However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.</span></span>
 
-## <a name="installing-openxr-with-the-mixed-reality-feature-tool"></a><span data-ttu-id="9df56-113">Installation de OpenXR avec l’outil de la fonctionnalité de réalité mixte</span><span class="sxs-lookup"><span data-stu-id="9df56-113">Installing OpenXR with the Mixed Reality Feature Tool</span></span>
+## <a name="installing-openxr-with-the-mixed-reality-feature-tool"></a><span data-ttu-id="2e4c6-113">Installation de OpenXR avec l’outil de la fonctionnalité de réalité mixte</span><span class="sxs-lookup"><span data-stu-id="2e4c6-113">Installing OpenXR with the Mixed Reality Feature Tool</span></span>
 
-<span data-ttu-id="9df56-114">Installez le plug-in OpenXR avec la nouvelle application outil de la fonctionnalité de réalité mixte.</span><span class="sxs-lookup"><span data-stu-id="9df56-114">Install the OpenXR plugin with the new Mixed Reality Feature Tool application.</span></span> <span data-ttu-id="9df56-115">Suivez les [instructions d’installation et d’utilisation](welcome-to-mr-feature-tool.md) , puis sélectionnez le package de **plug-in OpenXR de la réalité mixte** dans la catégorie de la réalité mixte Toolkit :</span><span class="sxs-lookup"><span data-stu-id="9df56-115">Follow the [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:</span></span>
+<span data-ttu-id="2e4c6-114">Installez le plug-in OpenXR avec la nouvelle application outil de la fonctionnalité de réalité mixte.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-114">Install the OpenXR plugin with the new Mixed Reality Feature Tool application.</span></span> <span data-ttu-id="2e4c6-115">Suivez les [instructions d’installation et d’utilisation](welcome-to-mr-feature-tool.md) , puis sélectionnez le package de **plug-in OpenXR de la réalité mixte** dans la catégorie de la réalité mixte Toolkit :</span><span class="sxs-lookup"><span data-stu-id="2e4c6-115">Follow the [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:</span></span>
 
 ![Fenêtre packages de l’outil de réalité mixte avec plug-in Open XR mis en surbrillance](images/feature-tool-openxr.png)
 
-## <a name="configuring-xr-plugin-management-for-openxr"></a><span data-ttu-id="9df56-117">Configuration de la gestion des plug-ins XR pour OpenXR</span><span class="sxs-lookup"><span data-stu-id="9df56-117">Configuring XR Plugin Management for OpenXR</span></span>
+## <a name="configuring-xr-plugin-management-for-openxr"></a><span data-ttu-id="2e4c6-117">Configuration de la gestion des plug-ins XR pour OpenXR</span><span class="sxs-lookup"><span data-stu-id="2e4c6-117">Configuring XR Plugin Management for OpenXR</span></span>
 
-<span data-ttu-id="9df56-118">Pour définir OpenXR comme Runtime dans Unity :</span><span class="sxs-lookup"><span data-stu-id="9df56-118">To set OpenXR as the the runtime in Unity:</span></span>
+<span data-ttu-id="2e4c6-118">Pour définir OpenXR comme Runtime dans Unity :</span><span class="sxs-lookup"><span data-stu-id="2e4c6-118">To set OpenXR as the the runtime in Unity:</span></span>
 
-1. <span data-ttu-id="9df56-119">Dans l’éditeur Unity, accédez à **modifier > paramètres du projet**</span><span class="sxs-lookup"><span data-stu-id="9df56-119">In the Unity Editor, navigate to **Edit > Project Settings**</span></span>
-2. <span data-ttu-id="9df56-120">Dans la liste des paramètres, sélectionnez **gestion des plug-ins XR**</span><span class="sxs-lookup"><span data-stu-id="9df56-120">In the list of Settings, select **XR Plugin Management**</span></span>
-3. <span data-ttu-id="9df56-121">Cochez les cases **Initialize XR on Startup** et **OpenXR (Preview)**</span><span class="sxs-lookup"><span data-stu-id="9df56-121">Check the **Initialize XR on Startup** and **OpenXR (Preview)** boxes</span></span>
-4. <span data-ttu-id="9df56-122">Si vous ciblez HoloLens 2, assurez-vous que vous êtes sur la plateforme UWP et sélectionnez **ensemble de fonctionnalités Microsoft HoloLens** .</span><span class="sxs-lookup"><span data-stu-id="9df56-122">If targeting HoloLens 2, make sure you're on the UWP platform and select **Microsoft HoloLens Feature Set**</span></span>
+1. <span data-ttu-id="2e4c6-119">Dans l’éditeur Unity, accédez à **modifier > paramètres du projet**</span><span class="sxs-lookup"><span data-stu-id="2e4c6-119">In the Unity Editor, navigate to **Edit > Project Settings**</span></span>
+2. <span data-ttu-id="2e4c6-120">Dans la liste des paramètres, sélectionnez **gestion des plug-ins XR**</span><span class="sxs-lookup"><span data-stu-id="2e4c6-120">In the list of Settings, select **XR Plugin Management**</span></span>
+3. <span data-ttu-id="2e4c6-121">Cochez les cases **Initialize XR on Startup** et **OpenXR (Preview)**</span><span class="sxs-lookup"><span data-stu-id="2e4c6-121">Check the **Initialize XR on Startup** and **OpenXR (Preview)** boxes</span></span>
+4. <span data-ttu-id="2e4c6-122">Si vous ciblez HoloLens 2, assurez-vous que vous êtes sur la plateforme UWP et sélectionnez **ensemble de fonctionnalités Microsoft HoloLens** .</span><span class="sxs-lookup"><span data-stu-id="2e4c6-122">If targeting HoloLens 2, make sure you're on the UWP platform and select **Microsoft HoloLens Feature Set**</span></span>
 
 ![Capture d’écran du panneau Paramètres du projet ouvert dans l’éditeur Unity avec la gestion du plug-in XR mise en surbrillance](images/openxr-img-05.png)
 
 > [!IMPORTANT]
-> <span data-ttu-id="9df56-124">Si une icône d’avertissement rouge s’affiche en regard du **plug-in OpenXR (version préliminaire)**, cliquez sur l’icône et sélectionnez **corriger tout** avant de continuer.</span><span class="sxs-lookup"><span data-stu-id="9df56-124">If you see a red warning icon next to **OpenXR Plugin (Preview)**, click the icon and select **Fix all** before continuing.</span></span> <span data-ttu-id="9df56-125">L’éditeur Unity peut avoir besoin de redémarrer lui-même pour que les modifications prennent effet.</span><span class="sxs-lookup"><span data-stu-id="9df56-125">The Unity Editor may need to restart itself for the changes to take effect.</span></span>
+> <span data-ttu-id="2e4c6-124">Si une icône d’avertissement rouge s’affiche en regard du **plug-in OpenXR (version préliminaire)**, cliquez sur l’icône et sélectionnez **corriger tout** avant de continuer.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-124">If you see a red warning icon next to **OpenXR Plugin (Preview)**, click the icon and select **Fix all** before continuing.</span></span> <span data-ttu-id="2e4c6-125">L’éditeur Unity peut avoir besoin de redémarrer lui-même pour que les modifications prennent effet.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-125">The Unity Editor may need to restart itself for the changes to take effect.</span></span>
 
 ![Capture d’écran de la fenêtre de validation du projet OpenXR](images/openxr-img-06.png)
 
-<span data-ttu-id="9df56-127">Vous êtes maintenant prêt à commencer à développer avec OpenXR dans Unity !</span><span class="sxs-lookup"><span data-stu-id="9df56-127">You're now ready to begin developing with OpenXR in Unity!</span></span>  <span data-ttu-id="9df56-128">Passez à la section suivante pour savoir comment utiliser les exemples OpenXR.</span><span class="sxs-lookup"><span data-stu-id="9df56-128">Continue on to the next section to learn how to use the OpenXR samples.</span></span>
+<span data-ttu-id="2e4c6-127">Vous êtes maintenant prêt à commencer à développer avec OpenXR dans Unity !</span><span class="sxs-lookup"><span data-stu-id="2e4c6-127">You're now ready to begin developing with OpenXR in Unity!</span></span>  <span data-ttu-id="2e4c6-128">Passez à la section suivante pour savoir comment utiliser les exemples OpenXR.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-128">Continue on to the next section to learn how to use the OpenXR samples.</span></span>
 
-## <a name="optimization"></a><span data-ttu-id="9df56-129">Optimization</span><span class="sxs-lookup"><span data-stu-id="9df56-129">Optimization</span></span>
+## <a name="optimization"></a><span data-ttu-id="2e4c6-129">Optimization</span><span class="sxs-lookup"><span data-stu-id="2e4c6-129">Optimization</span></span>
 
-<span data-ttu-id="9df56-130">Si vous développez pour HoloLens 2, accédez à la **réalité mixte> OpenXR > appliquer les paramètres de projet recommandés pour HoloLens 2** afin d’obtenir de meilleures performances d’application.</span><span class="sxs-lookup"><span data-stu-id="9df56-130">If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.</span></span>
+<span data-ttu-id="2e4c6-130">Si vous développez pour HoloLens 2, accédez à la **réalité mixte> OpenXR > appliquer les paramètres de projet recommandés pour HoloLens 2** afin d’obtenir de meilleures performances d’application.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-130">If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.</span></span>
 
 ![Capture d’écran de l’élément de menu de réalité mixte ouvert avec OpenXR sélectionné](images/openxr-img-08.png)
 
-## <a name="try-out-the-unity-sample-scenes"></a><span data-ttu-id="9df56-132">Essayer les scènes de l’exemple Unity</span><span class="sxs-lookup"><span data-stu-id="9df56-132">Try out the Unity sample scenes</span></span>
+## <a name="try-out-the-unity-sample-scenes"></a><span data-ttu-id="2e4c6-132">Essayer les scènes de l’exemple Unity</span><span class="sxs-lookup"><span data-stu-id="2e4c6-132">Try out the Unity sample scenes</span></span>
 
-<span data-ttu-id="9df56-133">Pour utiliser un ou plusieurs des exemples, installez [ARFoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) à partir du **Gestionnaire de package**:</span><span class="sxs-lookup"><span data-stu-id="9df56-133">To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) from the **Package Manager**:</span></span>
+<span data-ttu-id="2e4c6-133">Pour utiliser un ou plusieurs des exemples, installez [ARFoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) à partir du **Gestionnaire de package**:</span><span class="sxs-lookup"><span data-stu-id="2e4c6-133">To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) from the **Package Manager**:</span></span>
 
 ![Capture d’écran du gestionnaire de package Unity ouverte dans l’éditeur Unity avec AR Foundation en surbrillance](images/openxr-img-09.png)
 
-### <a name="hololens-2-samples"></a><span data-ttu-id="9df56-135">Exemples HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="9df56-135">HoloLens 2 samples</span></span>
+### <a name="hololens-2-samples"></a><span data-ttu-id="2e4c6-135">Exemples HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="2e4c6-135">HoloLens 2 samples</span></span>
 
-1. <span data-ttu-id="9df56-136">Dans l’éditeur Unity, accédez à **fenêtre > gestionnaire de package**</span><span class="sxs-lookup"><span data-stu-id="9df56-136">In the Unity Editor, navigate to **Window > Package Manager**</span></span>
-2. <span data-ttu-id="9df56-137">Dans la liste des packages, sélectionnez le **plug-in OpenXR de réalité mixte**</span><span class="sxs-lookup"><span data-stu-id="9df56-137">In the list of packages, select **Mixed Reality OpenXR Plugin**</span></span>
-3. <span data-ttu-id="9df56-138">Recherchez l’exemple dans la liste d' **exemples** et sélectionnez **Importer**</span><span class="sxs-lookup"><span data-stu-id="9df56-138">Locate the sample in the **Samples** list and select **Import**</span></span>
+1. <span data-ttu-id="2e4c6-136">Dans l’éditeur Unity, accédez à **fenêtre > gestionnaire de package**</span><span class="sxs-lookup"><span data-stu-id="2e4c6-136">In the Unity Editor, navigate to **Window > Package Manager**</span></span>
+2. <span data-ttu-id="2e4c6-137">Dans la liste des packages, sélectionnez le **plug-in OpenXR de réalité mixte**</span><span class="sxs-lookup"><span data-stu-id="2e4c6-137">In the list of packages, select **Mixed Reality OpenXR Plugin**</span></span>
+3. <span data-ttu-id="2e4c6-138">Recherchez l’exemple dans la liste d' **exemples** et sélectionnez **Importer**</span><span class="sxs-lookup"><span data-stu-id="2e4c6-138">Locate the sample in the **Samples** list and select **Import**</span></span>
 
 ![Capture d’écran du gestionnaire de package Unity ouverte dans l’éditeur Unity avec le plug-in OpenXR de réalité mixte sélectionné et le bouton d’importation en surbrillance](images/openxr-img-03.png)
 
@@ -80,49 +80,35 @@ ms.locfileid: "99238140"
 ![Screenshot of Unity Package Manager open in Unity editor with OpenXR Plugin selected and samples import button highlighted](images/openxr-img-10.png) -->
 
 > [!NOTE]
-> <span data-ttu-id="9df56-140">Lorsqu’un package est mis à jour, Unity offre la possibilité de mettre à jour les exemples importés.</span><span class="sxs-lookup"><span data-stu-id="9df56-140">When a package is updated, Unity provides the option to update imported samples.</span></span>  <span data-ttu-id="9df56-141">La mise à jour d’un échantillon importé remplace toutes les modifications apportées à l’exemple et aux ressources associées.</span><span class="sxs-lookup"><span data-stu-id="9df56-141">Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.</span></span>
+> <span data-ttu-id="2e4c6-140">Lorsqu’un package est mis à jour, Unity offre la possibilité de mettre à jour les exemples importés.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-140">When a package is updated, Unity provides the option to update imported samples.</span></span>  <span data-ttu-id="2e4c6-141">La mise à jour d’un échantillon importé remplace toutes les modifications apportées à l’exemple et aux ressources associées.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-141">Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.</span></span>
 
-## <a name="using-mrtk-with-openxr-support"></a><span data-ttu-id="9df56-142">Utilisation de MRTK avec prise en charge de OpenXR</span><span class="sxs-lookup"><span data-stu-id="9df56-142">Using MRTK with OpenXR support</span></span>
+## <a name="using-mrtk-with-openxr-support"></a><span data-ttu-id="2e4c6-142">Utilisation de MRTK avec prise en charge de OpenXR</span><span class="sxs-lookup"><span data-stu-id="2e4c6-142">Using MRTK with OpenXR support</span></span>
 
-<span data-ttu-id="9df56-143">MRTK Unity prend en charge le plug-in OpenXR de réalité mixte à partir de la version 2.5.3.</span><span class="sxs-lookup"><span data-stu-id="9df56-143">MRTK Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.</span></span>  
+<span data-ttu-id="2e4c6-143">MRTK Unity prend en charge le plug-in OpenXR de réalité mixte à partir de la version 2.5.3.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-143">MRTK Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.</span></span>  
 
-1. <span data-ttu-id="9df56-144">Ouvrez de nouveau l' [outil de fonctionnalité de réalité mixte](welcome-to-mr-feature-tool.md) et sélectionnez le package de **plug-in OpenXR de réalité mixte** dans la catégorie prise en charge des plateformes.</span><span class="sxs-lookup"><span data-stu-id="9df56-144">Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again and select the **Mixed Reality OpenXR Plugin** package in the Platform Support category</span></span>
-
-<!-- MRTK plugins can be installed from the same scoped registries as you set up when [installing the Mixed Reality OpenXR plugin](#installing-the-mixed-reality-openxr-plugin). You can find more detailed information in the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
-
-1. Add following packages in your **[projectRoot]/Packages/manifest.json** file:
-
-```json
-"dependencies": {
-    "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
-    …
-}
-``` -->
-
-2. <span data-ttu-id="9df56-145">Accédez au script du composant MixedReality Toolkit dans l’inspecteur et basculez vers le profil **DefaultOpenXRConfigurationProfile** :</span><span class="sxs-lookup"><span data-stu-id="9df56-145">Go to the MixedReality Toolkit component script in the Inspector and switch to the **DefaultOpenXRConfigurationProfile** profile:</span></span>
+1. <span data-ttu-id="2e4c6-144">Ouvrez de nouveau l' [outil de fonctionnalité de réalité mixte](welcome-to-mr-feature-tool.md) et sélectionnez le package de **plug-in OpenXR de réalité mixte** dans la catégorie prise en charge des plateformes.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-144">Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again and select the **Mixed Reality OpenXR Plugin** package in the Platform Support category</span></span>
+2. <span data-ttu-id="2e4c6-145">Accédez au script du composant MixedReality Toolkit dans l’inspecteur et basculez vers le profil **DefaultOpenXRConfigurationProfile** :</span><span class="sxs-lookup"><span data-stu-id="2e4c6-145">Go to the MixedReality Toolkit component script in the Inspector and switch to the **DefaultOpenXRConfigurationProfile** profile:</span></span>
 
 ![Capture d’écran de basculement de la configuration MRTK dans le composant de la réalité mixte du composant dans l’inspecteur](images/openxr-img-11.png)
 
-### <a name="known-issues"></a><span data-ttu-id="9df56-147">Problèmes connus</span><span class="sxs-lookup"><span data-stu-id="9df56-147">Known issues</span></span> 
+### <a name="known-issues"></a><span data-ttu-id="2e4c6-147">Problèmes connus</span><span class="sxs-lookup"><span data-stu-id="2e4c6-147">Known issues</span></span> 
 
-<span data-ttu-id="9df56-148">Lorsque vous utilisez la fonctionnalité de suivi de la main, ajoutez la ligne suivante dans le fichier **Assets/MixedRealityToolkit. generated/link.xml** :</span><span class="sxs-lookup"><span data-stu-id="9df56-148">When using the Hand Tracking feature, add following line in the **Assets/MixedRealityToolkit.Generated/link.xml** file:</span></span>
+<span data-ttu-id="2e4c6-148">Lorsque vous utilisez la fonctionnalité de suivi de la main, ajoutez la ligne suivante dans le fichier **Assets/MixedRealityToolkit. generated/link.xml** :</span><span class="sxs-lookup"><span data-stu-id="2e4c6-148">When using the Hand Tracking feature, add following line in the **Assets/MixedRealityToolkit.Generated/link.xml** file:</span></span>
 
 ```
 <assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="9df56-149">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="9df56-149">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="2e4c6-149">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="2e4c6-149">Next steps</span></span>
 
-<span data-ttu-id="9df56-150">Maintenant que votre projet est configuré pour OpenXR et que vous avez accès à des exemples, consultez les [fonctionnalités](openxr-supported-features.md) actuellement prises en charge dans notre plug-in OpenXR.</span><span class="sxs-lookup"><span data-stu-id="9df56-150">Now that you have your project configured for OpenXR and have access to samples, check out what [features](openxr-supported-features.md) are currently supported in our OpenXR plugin.</span></span>
+<span data-ttu-id="2e4c6-150">Maintenant que votre projet est configuré pour OpenXR et que vous avez accès à des exemples, consultez les [fonctionnalités](openxr-supported-features.md) actuellement prises en charge dans notre plug-in OpenXR.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-150">Now that you have your project configured for OpenXR and have access to samples, check out what [features](openxr-supported-features.md) are currently supported in our OpenXR plugin.</span></span>
 
-## <a name="have-feedback"></a><span data-ttu-id="9df56-151">Vous avez des commentaires ?</span><span class="sxs-lookup"><span data-stu-id="9df56-151">Have Feedback?</span></span>
+## <a name="have-feedback"></a><span data-ttu-id="2e4c6-151">Vous avez des commentaires ?</span><span class="sxs-lookup"><span data-stu-id="2e4c6-151">Have Feedback?</span></span>
 
-<span data-ttu-id="9df56-152">OpenXR est toujours expérimental. nous apprécions donc des commentaires que vous pouvez nous aider à améliorer.</span><span class="sxs-lookup"><span data-stu-id="9df56-152">OpenXR is still experimental, so we’d appreciate any feedback you can give us to help make it better.</span></span> <span data-ttu-id="9df56-153">Vous les trouverez sur les [Forums Unity](https://aka.ms/unityforums) en marquant votre billet de forum avec **Microsoft**  +  **OpenXR** et **HoloLens 2** ou **Windows Mixed Reality**.</span><span class="sxs-lookup"><span data-stu-id="9df56-153">You'll find us on the [Unity Forums](https://aka.ms/unityforums) by tagging your forum post with **Microsoft** + **OpenXR** and either **HoloLens 2** or **Windows Mixed Reality**.</span></span>
+<span data-ttu-id="2e4c6-152">OpenXR est toujours expérimental. nous apprécions donc des commentaires que vous pouvez nous aider à améliorer.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-152">OpenXR is still experimental, so we’d appreciate any feedback you can give us to help make it better.</span></span> <span data-ttu-id="2e4c6-153">Vous les trouverez sur les [Forums Unity](https://aka.ms/unityforums) en marquant votre billet de forum avec **Microsoft**  +  **OpenXR** et **HoloLens 2** ou **Windows Mixed Reality**.</span><span class="sxs-lookup"><span data-stu-id="2e4c6-153">You'll find us on the [Unity Forums](https://aka.ms/unityforums) by tagging your forum post with **Microsoft** + **OpenXR** and either **HoloLens 2** or **Windows Mixed Reality**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9df56-154">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="9df56-154">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2e4c6-154">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="2e4c6-154">See also</span></span>
 
-* [<span data-ttu-id="9df56-155">Configuration de votre projet sans MRTK</span><span class="sxs-lookup"><span data-stu-id="9df56-155">Configuring your project without MRTK</span></span>](configure-unity-project.md)
-* [<span data-ttu-id="9df56-156">Paramètres recommandés pour Unity</span><span class="sxs-lookup"><span data-stu-id="9df56-156">Recommended settings for Unity</span></span>](recommended-settings-for-unity.md)
-* [<span data-ttu-id="9df56-157">Recommandations de performances pour Unity</span><span class="sxs-lookup"><span data-stu-id="9df56-157">Performance recommendations for Unity</span></span>](performance-recommendations-for-unity.md#how-to-profile-with-unity)
+* [<span data-ttu-id="2e4c6-155">Configuration de votre projet sans MRTK</span><span class="sxs-lookup"><span data-stu-id="2e4c6-155">Configuring your project without MRTK</span></span>](configure-unity-project.md)
+* [<span data-ttu-id="2e4c6-156">Paramètres recommandés pour Unity</span><span class="sxs-lookup"><span data-stu-id="2e4c6-156">Recommended settings for Unity</span></span>](recommended-settings-for-unity.md)
+* [<span data-ttu-id="2e4c6-157">Recommandations de performances pour Unity</span><span class="sxs-lookup"><span data-stu-id="2e4c6-157">Performance recommendations for Unity</span></span>](performance-recommendations-for-unity.md#how-to-profile-with-unity)
