@@ -6,17 +6,29 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, historique des versions, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: e1f80d0d2cbd02b78ed07e3ec60825ffe1059309
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699008"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496037"
 ---
 # <a name="holographic-remoting-version-history"></a>Historique des versions de la communication à distance holographique
 
 > [!IMPORTANT]
 > Ce guide est spécifique à la communication à distance holographique sur HoloLens 2.
+
+## <a name="version-250-february-12-2021"></a>Version 2.5.0 (12 février 2021) <a name="v2.5.0"></a>
+* La communication à distance holographique à l’aide de l' [API OpenXR](../native/openxr.md) prend désormais en charge :
+  * Extension de XR_MSFT_spatial_anchor. Cette extension permet à une application de créer des ancres spatiales, qui sont des points d’espace libre arbitraires dans l’environnement physique de l’utilisateur qui feront l’élément d’un suivi par le Runtime.
+  * Extension de XR_MSFT_controller_model. Cette extension fournit un mécanisme permettant de charger des modèles GLTF pour les contrôleurs.
+  * Canaux de données personnalisés dans le cadre de l’extension de XR_MSFT_holographic_remoting. Un exemple pour cela est illustré dans l' [exemple distant OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+* Synchronisation améliorée entre le joueur et le côté distant. Cela permet de modifier dynamiquement la mise en mémoire tampon de pose et de trame, ce qui garantit que le contenu rendu distant atteint correctement les affichages à la fréquence d’images cible attendue.
+* Amélioration des performances du lecteur de communication à distance holographique disponible via le Microsoft Store. Sur HoloLens 2, le lecteur s’exécute à présent sur 60 images par seconde.
+* Transmission optimisée des maillages de surface spatiale qui peuvent être interrogés via [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) par une application distante.
+* Correction d’un problème dans lequel l’appel de méthodes SpatialAnchorManager ou la libération d’ancres entraînait des exceptions lors de la déconnexion.
+* Résolution des problèmes liés aux threads entraînant des blocages lors de la fermeture des instances PlayerContext ou RemoteContext.
+* De nombreux autres correctifs de bogues et améliorations de la stabilité.
 
 ## <a name="version-241-january-22-2021"></a>Version 2.4.1 (22 janvier 2021) <a name="v2.4.1"></a>
 

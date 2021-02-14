@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality, OpenXR Outils de développement, DirectX, native, application native, moteur personnalisé, intergiciel, prise en main, 101, extensions préliminaires, version du runtime OpenXR, état du système
-ms.openlocfilehash: 918dfb1f336598548735b1699c61d1b350fed293
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 99bf2e19c0bd7708f8c2421d7a466e77a6a75d84
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613193"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496067"
 ---
 # <a name="getting-started-with-openxr"></a>Bien démarrer avec OpenXR
 
@@ -35,7 +35,7 @@ Pour commencer à développer des applications OpenXR pour des casques Windows m
 1. Assurez-vous que vous exécutez au moins la mise à jour Windows 10 2019 (1903), qui est la configuration minimale requise pour que les utilisateurs finaux Windows Mixed realisation exécutent des applications OpenXR.  Si vous utilisez une version antérieure de Windows 10, vous pouvez procéder à une mise à niveau à l’aide de l' <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Assistant Mise à jour de Windows 10</a>.
 2. Configurez un casque Windows Mixed Reality ou suivez les instructions pour [activer le simulateur Windows Mixed Reality](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md).
 
-C’est tout !  Le runtime OpenXR Windows Mixed Reality est installé et activé automatiquement pour tous les utilisateurs de Windows Mixed Reality.  Le Microsoft Store maintient le runtime à jour.
+Et voilà !  Le runtime OpenXR Windows Mixed Reality est installé et activé automatiquement pour tous les utilisateurs de Windows Mixed Reality.  Le Microsoft Store maintient le runtime à jour.
 
 Pour réactiver le runtime OpenXR Windows Mixed Reality, lancez le portail de réalité mixte à partir du menu Démarrer, puis sélectionnez « corriger » en haut de la fenêtre.  Si ce bouton est manquant, le runtime OpenXR est déjà actif.<br>
 
