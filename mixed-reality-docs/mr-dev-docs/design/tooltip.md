@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, info-bulle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: bed9e83cac381fceddbf94cd4048d36427a27874
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ac8d12dbf681fb02df6fe70f3fd7b67615f4a5d6
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009409"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759775"
 ---
 # <a name="tooltip"></a>Info-bulle
 
@@ -25,7 +25,7 @@ Une info-bulle est une brève description qui est liée à un autre contrôle ou
 
 ## <a name="tooltip-in-mrtk-mixed-reality-toolkit-for-unity"></a>Info-bulle dans MRTK (ensemble d’outils de réalité mixte) pour Unity
 
-* [MRTK-info-bulle](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Tooltip.html)
+* [MRTK-info-bulle](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/tooltip.md)
 
 <br>
 

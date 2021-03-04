@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: mouvements, Unity, point d’entrée, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 44c42abdd4628cacd6af334a916fb725da8bb022
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4c3db98e3047cdc74663c5cbee1c4607b77008e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583891"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759080"
 ---
 # <a name="gestures-in-unity"></a>Mouvements dans Unity
 
@@ -131,11 +131,11 @@ Vous trouverez un exemple de la façon dont nous vous recommandons d’implémen
 
 La génération continuera à s’améliorer avec les futures mises à jour de Windows, et vous pouvez vous attendre à trouver plus d’informations ici.
 
-## <a name="gesture-and-motion-controllers-in-mrtk-v2"></a>Contrôleurs de mouvement et de mouvement dans MRTK v2
+## <a name="gesture-and-motion-controllers-in-mrtk"></a>Contrôleurs de mouvement et de mouvement dans MRTK
 
 Vous pouvez accéder au contrôleur de mouvement et de mouvement à partir du gestionnaire d’entrée.
-* [Mouvement dans MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Gestures.html)
-* [Contrôleur de mouvement dans MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html)
+* [Mouvement dans MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/gestures.md)
+* [Contrôleur de mouvement dans MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md)
 
 
 ## <a name="follow-along-with-tutorials"></a>Avancer avec des tutoriels

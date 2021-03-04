@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: application 2D, UWP, application plate, HoloLens, casque immersif, modèle d’application, bouton précédent, barre d’application, PPP, résolution, mise à l’échelle, Portage, HoloLens 1ère génération, HoloLens 2, casque de réalité mixte, casque de réalité mixte, migration, Windows 10
-ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6e8e000f694b40f637c932ee9764415ec3a57698
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583532"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759795"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Mise à jour des applications UWP 2D pour Windows Mixed Reality
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: contrôleurs de mouvement, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6dee5f03ab5fe84ac11a4eb10ef0483fea6e0083
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583504"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759060"
 ---
 # <a name="motion-controllers-in-unity"></a>Contrôleurs de mouvement dans Unity
 
@@ -434,9 +434,9 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 }
 ```
 
-## <a name="motion-controllers-in-mrtk-v2"></a>Contrôleurs de mouvement dans MRTK v2
+## <a name="motion-controllers-in-mrtk"></a>Contrôleurs de mouvement dans MRTK
 
-Vous pouvez accéder au contrôleur de mouvement [et de mouvement](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html) à partir du gestionnaire d’entrée.
+Vous pouvez accéder au contrôleur de mouvement [et de mouvement](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md) à partir du gestionnaire d’entrée.
 
 ## <a name="follow-along-with-tutorials"></a>Avancer avec des tutoriels
 

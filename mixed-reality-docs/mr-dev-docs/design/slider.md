@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, Slider, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 15a536074f8f873456482a55c1c9dbe418602bb1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 29a10389e476fcb40edd97619796a56cbb579c89
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009559"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759825"
 ---
 # <a name="slider"></a>Slider
 
@@ -25,7 +25,7 @@ Un curseur est un composant d’interface utilisateur utilisé pour définir une
 
 ## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Curseur dans MRTK (mode de réalité mixte) pour Unity
 
-* [MRTK-Slider](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Sliders.html)
+* [MRTK-Slider](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/sliders.md)
 
 <br>
 

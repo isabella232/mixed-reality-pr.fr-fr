@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (1re génération), HoloLens 2, réalité mixte, curseurs, ciblage, point de regard, mouvements, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, rayons, entrée
-ms.openlocfilehash: 0525bb9b30dfe71fba7b8ebf2afd2c87a8c97a27
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 0b35c832e6d13ff10d14686909754de60b83fa23
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582402"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759415"
 ---
 # <a name="cursors"></a>Curseurs
 
@@ -165,9 +165,9 @@ La conception sans curseur est recommandée lorsque le sens de l’immersion est
 
 Par défaut, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit un Prefab de curseur ([DefaultCursor. Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) qui a le même état visuel que le curseur système de l’interpréteur de commandes. Il est attribué dans le profil d’entrée de MRTK, sous Pointeurs. Vous pouvez remplacer/personnaliser ce curseur pour votre expérience. Pour l’expérience avec l’entrée de suivi oculaire, MRTK fournit également EyeGazeCursor, qui a un visuel subtil pour réduire la distraction.
 
-* [MRTK - Profil de pointeur](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK - Système d’entrée](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK - Pointeurs](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK - Profil de pointeur](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/mixed-reality-configuration-guide.md#pointer-configuration)
+* [MRTK - Système d’entrée](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
+* [MRTK - Pointeurs](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
 
 ---
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, signaux, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, audio
-ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007199"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759875"
 ---
 # <a name="interactable-object"></a>Objet avec interaction possible
 
@@ -41,19 +41,19 @@ Pour tous les objets que l’utilisateur peut interagir avec le point de vue du 
 
 :::row:::
     :::column:::
-       ![interactibleobject-États-par défaut](images/interactibleobject-states-default.jpg)<br>
+       ![Objet interagiable avec état par défaut](images/interactibleobject-states-default.jpg)<br>
        **État par défaut (observation)**<br>
         État d’inactivité par défaut de l’objet.
     Le curseur ne se trouve pas sur l’objet. La main n’est pas détectée.
     :::column-end:::
     :::column:::
-       ![interactibleobject-États-ciblés](images/interactibleobject-states-targeted.jpg)<br>
+       ![Objet interactif avec état cible et survol](images/interactibleobject-states-targeted.jpg)<br>
         **État ciblé (survol)**<br>
         Lorsque l’objet est ciblé avec un curseur en forme de pointage, le pointeur de proximité d’un doigt ou d’un contrôleur de mouvement.
     Le curseur se trouve sur l’objet. La main est détectée, prête.
     :::column-end:::
     :::column:::
-       ![interactibleobject-États activés](images/interactibleobject-states-pressed.jpg)<br>
+       ![Objet interagiable avec état appuyé](images/interactibleobject-states-pressed.jpg)<br>
        **État appuyé**<br>
         Quand l’objet est enfoncé avec un mouvement d’appui sur l’air, appuyez sur le bouton de sélection du contrôleur de mouvement ou du doigt.
     Le curseur se trouve sur l’objet. La main est détectée, frappée d’air.
@@ -70,15 +70,15 @@ Voici à quoi ressemblent ces États sur un **bouton holographique**:
 
 :::row:::
     :::column:::
-       ![interactibleobject-États-par défaut](images/MRTK_InteractableState-default.jpg)<br>
+       ![Bouton holographique dans l’État par défaut](images/MRTK_InteractableState-default.jpg)<br>
        **État par défaut (observation)**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-États-ciblés](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![Bouton holographique dans l’État cible et survol](images/MRTK_InteractableState-targeted.jpg)<br>
         **État ciblé (survol)**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-États activés](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![Bouton holographique dans un état appuyé](images/MRTK_InteractableState-pressed.jpg)<br>
        **État appuyé**<br>
     :::column-end:::
 :::row-end:::
@@ -264,12 +264,12 @@ Lorsque vous créez des boutons pour une interaction directe, nous vous recomman
 
 Dans **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, vous pouvez utiliser le script en [**interaction**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) pour faire en sorte que les objets répondent à différents types d’États d’interaction d’entrée. Il prend en charge différents types de thèmes qui vous permettent de définir des États visuels en contrôlant des propriétés d’objet telles que la couleur, la taille, le matériau et le nuanceur.
 
-* [Sur](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [Sur](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
+* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
 * [Scène d’exemples d’interaction manuelle](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 Le nuanceur standard de MixedRealityToolkit fournit diverses options telles que la **lumière de proximité** qui vous aide à créer des signaux visuels et audio.
-* [Nuanceur standard MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
+* [Nuanceur standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 
 <br>

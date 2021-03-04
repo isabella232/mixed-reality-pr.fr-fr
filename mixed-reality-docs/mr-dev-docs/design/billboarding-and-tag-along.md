@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, l’intégration, le balisage, le casque de réalité mixte, le casque de réalité mixte, le casque de réalité virtuelle, HoloLens, MRTK, le kit de temps de réalité mixte
-ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f0a5c4fc66e287c04fe8fa42c0c671e895a26169
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009610"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759405"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding et tag-along
 
@@ -49,7 +49,7 @@ Des paramètres supplémentaires peuvent faire en sorte que l’objet de la bali
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Superpointage et balise dans MRTK (kit de temps de réalité mixte) pour Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit des scripts pour le comportement de l’analyseur et de la balise. Affectez le script Billboard.cs à n’importe quel objet pour ajouter un comportement d’emboutment et faire en sorte que l’objet soit toujours à votre Confront. Pour ajouter un comportement avec balise, utilisez le script RadialView.cs. Vous pouvez ajuster diverses options, telles que le temps de lerping, la distance et le degré.
 
-* [MRTK : solveur de vue radiale](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#radialview)
+* [MRTK : solveur de vue radiale](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
 * [Script MRTK-Billboard](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, bouton
-ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847591"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759425"
 ---
 # <a name="button"></a>Button
 
@@ -46,13 +46,13 @@ Un bouton permet à vos utilisateurs de déclencher des actions immédiates dans
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Bouton dans MRTK (ensemble d’outils de réalité mixte) pour Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit différents types de prefabs Button, y compris les boutons de style Shell pour hololens 2 et hololens (1re génération). Le bouton HoloLens 2 Prefab contient plusieurs intuitivité détaillés qui permettent d’améliorer la confiance de l’utilisateur :
+**[MRTK pour Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit différents types de prefabs Button, y compris les boutons de style Shell pour hololens 2 et hololens (1re génération). Le bouton HoloLens 2 Prefab contient plusieurs intuitivité détaillés qui permettent d’améliorer la confiance de l’utilisateur :
 
 * Surbrillance basée sur la proximité
 * Compression de la cage avant
 * Effet d’impulsion sur le déclencheur.
 
-* Pour obtenir des instructions et des exemples personnalisés, consultez le [bouton MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) .
+* Pour obtenir des instructions et des exemples personnalisés, consultez le [bouton MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) .
 
 <br>
 

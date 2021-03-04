@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendu holographique, holographique, immersif, point de focus, mémoire tampon de profondeur, orientation uniquement, positionnelle, opaque, transparent, clip, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 865d19482e5f612eab95fa2f74cb2bad59171496
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581127"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759765"
 ---
 # <a name="camera-in-unity"></a>Appareil photo dans Unity
 
@@ -93,7 +93,7 @@ Une mémoire tampon de profondeur peut améliorer la qualité visuelle tant que 
 
 ## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>Configuration automatique de la scène et de l’appareil photo avec Mixed Reality Toolkit 
 
-Suivez le guide [pas à pas](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) pour ajouter le Toolkit de réalité mixte à votre projet Unity et configurez votre projet automatiquement. Vous pouvez également configurer manuellement le projet sans MRTK avec le Guide de la section ci-dessous.
+Suivez le guide [pas à pas](tutorials/mr-learning-base-01.md) pour ajouter le Toolkit de réalité mixte à votre projet Unity et configurez votre projet automatiquement. Vous pouvez également configurer manuellement le projet sans MRTK avec le Guide de la section ci-dessous.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 

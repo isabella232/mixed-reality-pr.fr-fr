@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, performances
 appliesto:
 - Windows 10
-ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
-ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
+ms.openlocfilehash: 9b477042ebed33600a007778cd534d3074e34770
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98242533"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759284"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Forum aux questions sur les réverbérations HP G2
 
@@ -102,3 +102,8 @@ Vérifiez que le câble connecté au casque est bien assis. Il y a un petit poin
 ## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>Comment puis-je éteindre le casque tout en continuant à utiliser mon PC ?
 
 Débranchez la carte de connexion AC de la zone de liaison sur le câble du casque pour débrancher l’alimentation du casque.
+
+## <a name="the-image-of-the-displays-of-the-reverb-g2-is-smaller-and-only-in-the-upper-left"></a>L’image des affichages de la réverbération G2 est plus petite et uniquement en haut à gauche
+
+Si vous avez un processeur graphique AMD Power, vous devez désactiver la mise à l’échelle automatique. Pendant que votre casque est connecté, accédez à paramètres-> la réalité mixte-> casque-> résolution.
+Dans le menu déroulant, sélectionnez l’option « 4320 x 2160 (qualité optimale) ». Lorsque l’option « mise à l’échelle automatique (meilleures performances) » est sélectionnée, le problème peut survenir avec l’affichage.

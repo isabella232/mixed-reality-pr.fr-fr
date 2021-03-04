@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, barre d’application, cadre englobant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 0f94aa3842afbfbd544716b801c7cb88d7be3abc
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: aba2e318439fec2bbb9e986c2ff7cac7a8a5fb3a
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847655"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759435"
 ---
 # <a name="bounding-box-and-app-bar"></a>Rectangle englobant et barre de l’application
 ![La délimitation est l’interface standard pour la manipulation d’objets en réalité mixte.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -95,7 +95,7 @@ La barre de l’application est un menu de niveau objet, qui contient une série
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Cadre englobant dans MRTK (ensemble d’outils de réalité mixte) pour Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit des scripts et des prefabs pour le cadre englobant et la barre de l’application. Vous pouvez ajouter un cadre englobant en affectant le script BoundingBox.cs à n’importe quel objet.
 
-* [MRTK-zone englobante](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
+* [MRTK-zone englobante](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/bounding-box.md)
 
 
 <br>

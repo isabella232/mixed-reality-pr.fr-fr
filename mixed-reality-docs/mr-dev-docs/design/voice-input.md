@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: GGv, voix, Cortana, voix, entrée, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, HoloLens, MRTK, Toolkit de réalité mixte, point de regard
-ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583223"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759140"
 ---
 # <a name="voice-input"></a>Entrée vocale
 
@@ -273,11 +273,11 @@ Pour les applications qui souhaitent tirer parti des options de traitement d’e
 
 Tout ce traitement audio est l’accélération matérielle, ce qui signifie que les fonctionnalités se déchargent beaucoup moins d’énergie que si le même traitement a été effectué sur l’UC HoloLens. Évitez d’exécuter d’autres traitements d’entrée audio sur le processeur pour maximiser la durée de vie de la batterie du système et tirer parti du traitement d’entrée audio déchargé et intégré.
 
-## <a name="languages"></a>Langages
+## <a name="languages"></a>Languages
 
 HoloLens 2 [prend en charge plusieurs langues](/hololens/hololens2-language-support). N’oubliez pas que les commandes vocales s’exécutent toujours dans la langue d’affichage du système même si plusieurs claviers sont installés ou si les applications essaient de créer un module de reconnaissance vocale dans une autre langue.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Si vous rencontrez des problèmes à l’aide de « SELECT » et de « Hey Cortana », essayez de passer à un espace plus silencieux, à l’extérieur de la source de bruit, ou en parlant plus fort. À ce stade, toute la reconnaissance vocale sur HoloLens est réglée et optimisée spécifiquement pour les intervenants natifs de États-Unis anglais.
 
@@ -290,7 +290,7 @@ Pour la version 2017 de Windows Mixed Reality Edition, la logique de gestion des
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Entrée vocale dans MRTK (ensemble d’outils de réalité mixte) pour Unity
 Avec **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, vous pouvez facilement affecter une commande vocale à n’importe quel objet. Utilisez le **profil d’entrée vocale** de MRTK pour définir vos mots clés. En affectant le script **SpeechInputHandler** , vous pouvez faire en sorte qu’un objet réponde aux mots clés définis dans le profil d’entrée vocal. SpeechInputHandler fournit également une étiquette de confirmation vocale pour améliorer la confiance de l’utilisateur.
 
-* [Commande MRTK-Voice](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+* [Commande MRTK-Voice](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
 
 ---
 
