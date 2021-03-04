@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, réalité mixte, développement, prise en main, nouveau projet, Windows Mixed Reality, UWP, XR, performances
-ms.openlocfilehash: 6a9bc0d9a565de1d25e1906c439e39773cb99244
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: bd25c56947007f90c0310ea9802bba91a81b0914
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496077"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117623"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Configuration de votre projet sans MRTK
 
@@ -56,8 +56,10 @@ Après avoir défini votre plateforme, vous devez permettre à Unity de créer u
 
 ![Capture d’écran de la fenêtre Paramètres du projet ouverte dans l’éditeur Unity avec la gestion du plug-in XR sélectionnée](images/wmr-config-img-7.png)
 
-4. Développez la section **gestion du plug-in XR** et sélectionnez **Windows Mixed Reality** .
-5. Cochez toutes les cases et définissez le **mode de soumission profondeur** sur **16 bits**
+4. Développez la section **gestion du plug-in XR** et sélectionnez universels onglet Paramètres de la **plateforme Windows** .
+5. Si vous utilisez Unity 2020 ou une version ultérieure, vous verrez les options permettant de vérifier **OpenXR (version préliminaire)** ou **Windows Mixed Reality**
+6. Vous pouvez choisir l’un ou l’autre Runtime.  Si vous développez spécifiquement pour HoloLens 2 ou la réverbération HP G2 et que vous décidez d’essayer **OpenXR (** préversion), sélectionnez la zone OpenXR (préversion) et consultez notre guide pour [utiliser le plug-in OpenXR de réalité mixte pour Unity](openxr-getting-started.md) afin de vous préparer correctement à ces appareils avant de revenir à ce didacticiel.
+7. Si vous décidez de choisir le plug-in **Windows Mixed Reality** , cochez toutes les cases et définissez le **mode d’envoi de profondeur** sur une profondeur de **16 bits**
 
 ![Capture d’écran de la fenêtre Paramètres du projet ouverte dans l’éditeur Unity avec la section Windows Mixed Reality mise en surbrillance](images/wmr-config-img-8.png)
 
@@ -90,11 +92,11 @@ Il est recommandé de rendre les déclarations de manifeste dans Unity pour les 
 
 ### <a name="quality-settings"></a>Paramètres de qualité
 
-HoloLens possède un GPU de classe mobile. Si votre application cible HoloLens, vous souhaiterez que les paramètres de qualité de votre application soient réglés pour des performances plus rapides afin de garantir qu’elle gère la fréquence d’images complète :
+HoloLens possède un GPU de classe mobile. Si votre application cible HoloLens, vous devez commencer par les paramètres de qualité de votre application réglés pour des performances plus rapides afin de garantir qu’elle gère la fréquence d’images complète.  Une fois que vous avez plus d’informations sur votre développement, vous pouvez envisager de Upping les paramètres de qualité pour trouver le juste équilibre entre qualité et performances : 
 
-1. Sélectionnez **modifier > paramètres du projet > qualité**
-2. Sélectionnez la **liste déroulante** sous le logo du **Windows Store** et sélectionnez **très faible**. Vous saurez que le paramètre est appliqué correctement lorsque la zone de la colonne du Windows Store et la ligne **très basse** sont vertes
-3. Dans la section **Shadows** , sélectionnez **Disable Shadows** .
+1. Sélectionnez **modifier > paramètres du projet > qualité** 
+2. Sélectionnez la **liste déroulante** sous le logo du  **Windows Store**   et sélectionnez  **très faible**. Vous saurez que le paramètre est appliqué correctement lorsque la zone de la colonne du Windows Store et la ligne très basse sont vertes 
+3. Dans la section **Shadows**   , sélectionnez **Disable Shadows** . 
 
 ![Capture d’écran de la fenêtre Paramètres du projet ouverte dans l’éditeur Unity avec la section paramètres de qualité mise en surbrillance](images/wmr-config-img-10.png)<br>
 *Paramètres de qualité Unity*

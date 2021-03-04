@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, suivi manuel, non réel, UE4, HoloLens, HoloLens 2, réalité mixte, développement, fonctionnalités, documentation, guides, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ea4ba3ad5905e899eae474e4d571585fef77c0c2
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581109"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117653"
 ---
 # <a name="hand-tracking-in-unreal"></a>Suivi de la main dans Unreal
 
@@ -21,7 +21,7 @@ Le système de suivi de la main utilise les paumes et les doigts d’une personn
 
 La pose de main vous permet de suivre et d’utiliser les mains et les doigts de vos utilisateurs comme entrée, qui sont accessibles à la fois dans les plans et C++. L’API inréelle envoie les données sous forme de système de coordonnées, avec les battements synchronisés avec le moteur inréel.
 
-![Squelette de main](../native/images/hand-skeleton.png)
+![Squelette de main](images/hand-tracking-skeleton-update.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 
