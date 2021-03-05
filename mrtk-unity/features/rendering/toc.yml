@@ -1,0 +1,12 @@
+- name: Primitive de découpage
+  href: clipping-primitive.md
+- name: Lumière lointaine
+  href: hover-light.md
+- name: Instance de matériau
+  href: material-instance.md
+- name: Nuanceur standard MRTK
+  href: mrtk-standard-shader.md
+- name: Lumière proche
+  href: proximity-light.md
+- name: Nuanceur animé
+  href: pulse-shader.md

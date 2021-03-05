@@ -1,0 +1,4 @@
+- name: Vue d’ensemble des résolveurs
+  href: solver.md
+- name: Tap To Place
+  href: tap-to-place.md
