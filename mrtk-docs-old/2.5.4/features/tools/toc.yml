@@ -1,0 +1,16 @@
+- name: Outil de mappage de contrôleur
+  href: controller-mapping-tool.md
+- name: Fenêtre de dépendance
+  href: dependency-window.md
+- name: Assistant Création de service d’extension
+  href: extension-service-creation-wizard.md
+- name: Communication à distance holographique
+  href: holographic-remoting.md
+- name: Outil d’utilisation des fonctionnalités d’entrée
+  href: input-feature-usage-tool.md
+- name: Fenêtre de migration
+  href: migration-window.md
+- name: Fenêtre d’optimisation
+  href: optimize-window.md
+- name: Utilitaire de capture d’écran
+  href: screenshot-utility.md

@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: événement, Calendar, Academy, planification, DF, San Francisco, réacteur
-ms.openlocfilehash: 2e7cb5d06cb0903e3dc3f850f452ded6597cd929
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760055"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230880"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Événements de réalité mixte Microsoft
 
@@ -30,5 +30,7 @@ Rejoignez l’équipe Microsoft Mixed Reality à ces événements à venir !
 | HoloLens & Meetup de la réalité mixte|8 septembre 2020|[Perception humaine et réalité mixte](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
 | Série de haut-parleurs de réalité mixte|22 septembre 2020|[Échappement de kippy : Introduction aux MRTK de & non réels pour HoloLens 2](../develop/unreal/unreal-kippys-escape.md)|
 | Série de haut-parleurs de réalité mixte|22 octobre, 2020|[Présentation de WebXR avec BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
+| Série de haut-parleurs de réalité mixte|3 novembre 2020|[Effets visuels en réalité mixte](https://channel9.msdn.com/Shows/Mixed-Reality/Visual-Effects-in-Mixed-Reality)|
 | Série de haut-parleurs de réalité mixte|17 novembre 2020|[Développement de l’avenir : nouveautés dans MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Série de haut-parleurs de réalité mixte|1er décembre 2020|[Conception d’hologrammes](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
+| Série de haut-parleurs de réalité mixte|11 février 2021|[Un jour dans Monsieur m : comment le calcul spatial a des répercussions chaque jour](https://channel9.msdn.com/Shows/Mixed-Reality/One-Day-In-MR-How-Spatial-Computing-Effects-Every-Day-Life)|

@@ -1,0 +1,4 @@
+- name: Système de limites - Bien démarrer
+  href: boundary-system-getting-started.md
+- name: Configuration-visualisation-limites
+  href: configuring-boundary-visualization.md

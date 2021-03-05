@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: bad18c5f30465120bce370aa91c13ff3f229bef6
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 0501abe5a417c17283347455ccea8ec6f49a6a45
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496136"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230740"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>OpenXR en réalité mixte fonctionnalités prises en charge dans Unity
 
@@ -34,6 +34,7 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * Compatible avec MRTK Unity 2.5.3 et versions ultérieures via la [prise en charge des fournisseurs MRTK OpenXR](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatible avec Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) ou version ultérieure.
 * (Ajouté dans 0.1.3) Prend en charge la [communication à distance holographique des applications de bureau](#holographic-remoting-in-desktop-app) à partir d’une application Windows autonome créée et déployée.
+* (Ajouté dans 0.1.4) Prend en charge le [suivi du code QR](#qr-codes) sur HoloLens2 via SpatialGraphNode
 
 ## <a name="holographic-remoting-setup"></a>Configuration de la communication à distance holographique
 
@@ -205,17 +206,23 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 
 Pour plus d’informations sur l’utilisation des haptique dans le système d’entrée XR Unity, consultez le [Manuel Unity pour Unity XR Input-haptiques](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics).
 
+## <a name="qr-codes"></a>Codes QR
+
+HoloLens 2 peut détecter les codes QR dans l’environnement situé autour du casque, ce qui permet d’établir un système de coordonnées à l’emplacement réel de chaque code. Pour plus d’informations, consultez notre documentation sur le [suivi du code QR](../platform-capabilities-and-apis/qr-code-tracking.md) .  Lorsque vous utilisez le plug-in OpenXR, récupérez le [ `SpatialGraphNodeId` à partir de l’API QR](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference) et utilisez l' `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API pour localiser le code QR.
+
+Pour référence, nous disposons d’un [exemple de projet de suivi QR sur GitHub](https://github.com/yl-msft/QRTracking) avec davantage d’explications sur l’utilisation de l' [ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
+
 ## <a name="whats-coming-soon"></a>Bientôt disponible
 
 Les problèmes suivants et les fonctionnalités manquantes sont connus avec le plug-in OpenXR de réalité mixte **version 0.1.0**. Nous travaillons sur ces versions et publierons des correctifs et de nouvelles fonctionnalités dans les versions à venir.
 
 * **ARPlaneSubsystem** n’est pas encore pris en charge. **ARPlaneManager**, **ARRAYCASTMANAGER** et l’API associée comme **ARAnchorManager. AttachAnchor** ne sont pas non plus prises en charge sur HoloLens 2.
-* Le **point d’ancrage** n’est pas encore pris en charge par la communication à distance holographique, mais dans un avenir proche.
-* Le suivi du maillage de la **main** , les **codes QR** et les **XRMeshSubsystem** ne sont pas encore pris en charge.
+* La **persistance d’ancrage** n’est pas encore prise en charge par la communication à distance holographique, mais elle est bientôt disponible.
+* Le suivi du maillage de la **main** et les **XRMeshSubsystem** ne sont pas encore pris en charge.
 * La prise en charge des **ancres spatiales Azure** est disponible dans une version ultérieure.
 * **ARM64** est la seule plateforme prise en charge pour les applications HoloLens 2. La plateforme **ARM** est disponible dans une version ultérieure.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Lorsque vous suspendez et reprenez une application Unity sur HoloLens 2, l’application ne peut pas reprendre correctement, ce qui a pour conséquence 4 points de rotation dans la vue HoloLens.
 

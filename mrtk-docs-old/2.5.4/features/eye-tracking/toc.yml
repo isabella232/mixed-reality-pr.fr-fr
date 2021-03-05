@@ -1,0 +1,18 @@
+- name: Suivi oculaire - Configuration de base
+  href: eye-tracking-basic-setup.md
+- name: Vue d’ensemble des exemples de suivi oculaire
+  href: eye-tracking-examples-overview.md
+- name: Suivi oculaire - Fournisseur de suivi du regard
+  href: eye-tracking-eye-gaze-provider.md
+- name: Suivi oculaire - Yeux et mains
+  href: eye-tracking-eyes-and-hands.md
+- name: Le suivi oculaire est calibré par l’utilisateur
+  href: eye-tracking-is-user-calibrated.md
+- name: Suivi oculaire - Principal
+  href: eye-tracking-main.md
+- name: Suivi oculaire - Navigation
+  href: eye-tracking-navigation.md
+- name: Suivi oculaire - Positionnement
+  href: eye-tracking-positioning.md
+- name: Sélection-cible-suivi-oculaire
+  href: eye-tracking-target-selection.md
