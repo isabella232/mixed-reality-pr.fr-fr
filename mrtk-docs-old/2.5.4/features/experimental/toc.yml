@@ -1,0 +1,12 @@
+- name: Boîte de dialogue
+  href: dialog.md
+- name: Ancrer
+  href: dock.md
+- name: Coach de main
+  href: hand-coach.md
+- name: Service de physique des mains
+  href: hand-physics-service.md
+- name: Clavier de réalité mixte
+  href: mixed-reality-keyboard.md
+- name: Nuanceur animé
+  href: pulse-shader.md

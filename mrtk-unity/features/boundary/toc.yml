@@ -1,0 +1,4 @@
+- name: Vue d’ensemble du système de limites
+  href: boundary-system-getting-started.md
+- name: Configuration de la visualisation des limites
+  href: configuring-boundary-visualization.md

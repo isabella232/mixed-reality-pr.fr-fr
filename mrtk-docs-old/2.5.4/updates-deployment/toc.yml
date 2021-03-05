@@ -1,0 +1,8 @@
+- name: Génération et déploiement
+  href: build-and-deploy.md
+- name: Guide de portage de HRTK vers MRTK
+  href: hrtk-to-mrtk-porting-guide.md
+- name: MRTK et suppression du code managé
+  href: mrtk-and-managed-code-stripping.md
+- name: Mise à jour
+  href: updating.md

@@ -1,0 +1,18 @@
+- name: Dernières modifications
+  href: breaking-changes.md
+- name: Directives de codage
+  href: coding-guidelines.md
+- name: CONTRIBUTION
+  href: contributing.md
+- name: DevDocGuide
+  href: dev-doc-guide.md
+- name: Guide de la documentation
+  href: documentation-guide.md
+- name: Fonctionnalités expérimentales
+  href: experimental-features.md
+- name: Processus_contribution_fonctionnalité
+  href: feature-contribution-process.md
+- name: Demandes de tirage
+  href: pull-requests.md
+- name: Tests unitaires
+  href: unit-tests.md
