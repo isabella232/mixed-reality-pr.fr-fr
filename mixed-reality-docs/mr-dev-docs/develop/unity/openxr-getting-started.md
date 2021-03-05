@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: cae588acbcddeefae45a555f335f1c74389f1824
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: a4606eeb1fa6c8dc0858653a196c1e536ae473d4
+ms.sourcegitcommit: e2228b9585302eeff1d853ddb54be8421a21c954
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496167"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102189121"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Utilisation du plug-in OpenXR de la réalité mixte pour Unity
 
@@ -84,20 +84,23 @@ Pour utiliser un ou plusieurs des exemples, installez [ARFoundation 4.0 +](https
 
 ## <a name="using-mrtk-with-openxr-support"></a>Utilisation de MRTK avec prise en charge de OpenXR
 
-MRTK Unity prend en charge le plug-in OpenXR de réalité mixte à partir de la version 2.5.3.  
+MRTK-Unity prend en charge le plug-in OpenXR de réalité mixte à partir de la version 2.5.3.
 
-1. Ouvrez de nouveau l' [outil de fonctionnalité de réalité mixte](welcome-to-mr-feature-tool.md) et sélectionnez le package de **plug-in OpenXR de réalité mixte** dans la catégorie prise en charge des plateformes.
+1. Ouvrez de nouveau l' [outil Mixed Reality Feature](welcome-to-mr-feature-tool.md) pour installer la boîte à outils de la réalité mixte, si ce n’est déjà fait. La prise en charge de OpenXR est dans le package de **base** .
 2. Accédez au script du composant MixedReality Toolkit dans l’inspecteur et basculez vers le profil **DefaultOpenXRConfigurationProfile** :
 
-![Capture d’écran de basculement de la configuration MRTK dans le composant de la réalité mixte du composant dans l’inspecteur](images/openxr-img-11.png)
+    ![Capture d’écran de basculement de la configuration MRTK dans le composant de la réalité mixte du composant dans l’inspecteur](images/openxr-img-11.png)
 
-### <a name="known-issues"></a>Problèmes connus 
+    1. Pour [plus d’informations sur la migration vers OpenXR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline), consultez la documentation MRTK.
 
-Lorsque vous utilisez la fonctionnalité de suivi de la main, ajoutez la ligne suivante dans le fichier **Assets/MixedRealityToolkit. generated/link.xml** :
-
-```
-<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
-```
+> [!NOTE]
+> Lorsque vous effectuez une mise à niveau à partir d’une version antérieure de MRTK, vérifiez que la ligne suivante se trouve dans le fichier **Assets/MixedRealityToolkit. generated/link.xml** :
+>
+> ```xml
+> <assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
+> ```
+>
+> Cette ligne sera ajoutée par défaut si vous avez démarré avec MRTK 2.5.4 ou une version plus récente.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
