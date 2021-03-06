@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: photo, vidéo, hololens, appareil photo, Unity, localisable, PVC, caméra vidéo photo, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, webcam, capture de photos, capture vidéo
-ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: ccf0c17a5f419341e64a87fb9ef04ef0a40c2a33
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226418"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236900"
 ---
 # <a name="locatable-camera-in-unity"></a>Appareil photo localisable dans Unity
 
@@ -26,7 +26,8 @@ Une seule opération peut être effectuée avec la caméra à la fois. Vous pouv
 
 ## <a name="photo-capture"></a>Capture de photos
 
-**Espace de noms :** *UnityEngine. XR. WSA. Webcam*<br>
+**Espace de noms :**  
+*UnityEngine. XR. WSA. WebCam (Unity \~ 2018) UnityEngine. Windows. Webcam (unity 2019 \~ )*<br>
 **Type :** *PhotoCapture*
 
 Le type *PhotoCapture* vous permet de prendre des photographies avec la caméra photo. Le modèle général d’utilisation de *PhotoCapture* pour prendre une photo est le suivant :

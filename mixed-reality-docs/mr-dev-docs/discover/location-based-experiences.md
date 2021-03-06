@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: en réalité mixte, VR, LBE, emplacement, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, matériel, HoloLens, Multi-Player, services Cloud, Azure
-ms.openlocfilehash: 1cc54ad0ef4b9892c49e13c7437a4d5356093c79
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 49e96b99d3f74bd24a4a0e71f212018108148ad2
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810104"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236910"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Divertissement basé sur l’emplacement avec Windows Mixed Reality
 
@@ -49,7 +49,7 @@ Pour les expériences de VR du PC, nos fabricants d’ordinateurs OEM offrent un
 
 HP vient de lancer son sac à dos HP VR G2, le PC portable le plus puissant au monde : optimisé pour les expériences gratuites-itinérantes, avec une puissance de 30% avec un GPU RTX 2080 à l’intérieur. [Détails](https://www8.hp.com/us/en/vr/vr-backpack.html)
 
-### <a name="setup"></a>Configuration
+### <a name="setup"></a>Programme d’installation
 
 **Q : Comment puis-je configurer plus facilement le programme d’installation et personnaliser le portail de réalité mixte pour LBE ?**
 
@@ -68,7 +68,7 @@ Ignorer l’installation d’applications à partir du Store : le programme d�
 
 Afficher l’aperçu en mode plein écran : le portail de réalité mixte affiche par défaut la préversion du casque en mode plein écran sur le PC de bureau pendant que le casque est en cours d’utilisation.  
 
-Masquer nouveau pour le panneau latéral : empêche la nouvelle extension de votre panneau au lancement du portail de réalité mixte.  
+Masquer le nouveau volet pour vous : empêche le nouveau panneau pour vous d’être développé au lancement du portail de réalité mixte.  
 
 #### <a name="how-to-configure"></a>Pour effectuer la configuration :  
 

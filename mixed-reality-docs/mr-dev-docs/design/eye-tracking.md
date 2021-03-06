@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de regard, étalonnage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, intention, actions
-ms.openlocfilehash: d603e2576856fe48080a1a1f06c1814a78381192
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c72eb830d87a435a579256b85747822ad4ef8be5
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582327"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236920"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Eye-tracking sur HoloLens 2
 
@@ -81,7 +81,7 @@ L’eye-tracking permet aux applications de savoir où l’utilisateur regarde e
 Ces cas d’usage ne font pas encore partie de l’expérience d’interpréteur de commandes holographique (autrement dit, l’interface que vous voyez quand vous démarrez votre HoloLens 2).
 Vous pouvez essayer certaines d’entre elles dans le kit de fonctionnalités de la [réalité mixte](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html), qui fournit plusieurs exemples intéressants et puissants pour l’utilisation du suivi oculaire, tels que les sélections de cibles rapides et faciles à utiliser par l’œil, et le défilement automatique dans le texte en fonction de ce que l’utilisateur examine. 
 
-### <a name="user-intent"></a>Intention de l'utilisateur    
+### <a name="user-intent"></a>Intention de l'utilisateur
 
 Des informations sur l’emplacement et le rôle d’un utilisateur fournissent un **contexte puissant pour d’autres entrées**, telles que la voix, les mains et les contrôleurs.
 Cela peut être utile pour diverses tâches.
@@ -101,12 +101,11 @@ D’autres cas d’usage pour les _actions implicites_ peuvent inclure :
 - **Notifications intelligentes :** Vous vous êtes sans doute en désdans les notifications qui s’affichent directement là où vous êtes en train de regarder ? En tenant compte de ce à quoi un utilisateur fait attention, vous pouvez améliorer cette expérience en décalant les notifications à partir de l’endroit où l’utilisateur est actuellement Gazing. Cela limite les distractions et les ignore automatiquement une fois que l’utilisateur a terminé la lecture. 
 - **Hologrammes précis :** Des hologrammes qui réagissent à la légère sur le regard. Cela peut aller d’un léger éclat aux éléments de l’interface utilisateur, une fleur très lente à un chien virtuel qui commence à regarder l’utilisateur et wagging sa queue. Cette interaction peut fournir un sens intéressant de la connectivité et de la satisfaction dans votre application.
 
-### <a name="attention-tracking"></a>Suivi de l’attention   
+### <a name="attention-tracking"></a>Suivi de l’attention
 
 Les informations sur l’emplacement ou le contenu des utilisateurs peuvent être un outil très puissant. Il peut aider à évaluer la convivialité des conceptions et à identifier les problèmes dans les workflows afin de les rendre plus efficaces.
 La visualisation et l’analyse du suivi oculaire sont une pratique courante dans différents domaines d’application. Avec HoloLens 2, nous fournissons une nouvelle dimension à cette compréhension, car les hologrammes 3D peuvent être placés dans des contextes réels et évalués en conséquence. La [boîte à outils de la réalité mixte](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) fournit des exemples de base pour la journalisation et le chargement des données de suivi visuel et comment les visualiser.
 Microsoft s’attache à faciliter l’innovation tout en veillant à ce que les utilisateurs bénéficient d’une expérience éclairée et transparente quant à l’utilisation de leurs informations de suivi visuel.  Nous travaillons avec nos développeurs et nos équipes d’expérience utilisateur pour fournir des conseils à des tiers afin de s’assurer que les expériences sont centrées autour de l’utilisateur.  
-
 
 Autres applications possibles dans ce domaine : 
 -   **Œil à distance-visualisation du regard :** Yeux à distance-visualisations de regard : visualiser ce que les collaborateurs distants examinent, pour pouvoir fournir des commentaires immédiats et faciliter le traitement des informations plus précises.
@@ -139,19 +138,17 @@ Cela peut être dû à différentes raisons, parmi lesquelles les plus courantes
 * L’utilisateur a ignoré l' [étalonnage](/hololens/hololens-calibration).   
 * L’utilisateur est étalonné, mais il a décidé de ne pas accorder à votre application l’autorisation d’utiliser ses données de suivi visuel.    
 * L’utilisateur dispose de lunettes uniques ou d’une condition oculaire que le système ne prend pas encore en charge. 
-* Facteurs externes qui empêchent le suivi des yeux fiables, tels que les taches sur le visière ou les lunettes, le soleil intense et les occlusions en raison des cheveux devant les yeux.  
+* Facteurs externes qui empêchent le suivi des yeux fiables, tels que les taches sur le visière ou les lunettes, le soleil intense et les occlusions en raison des cheveux devant les yeux.
 
 Les développeurs doivent s’assurer qu’il existe une prise en charge de secours appropriée pour ces utilisateurs. Sur la page [suivi des yeux dans DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) , nous expliquons les API requises pour détecter si les données de suivi visuel sont disponibles. 
 
 Alors que certains utilisateurs peuvent avoir des axent décidés de révoquer, d’accéder à leurs données de suivi visuel et d’avoir le compromis entre une expérience utilisateur insuffisante et la confidentialité de ne pas fournir l’accès à leurs données de suivi visuel, dans certains cas cela peut ne pas être intentionnel. Si votre application utilise le suivi oculaire et qu’il s’agit d’une partie importante de l’expérience, nous vous recommandons de le communiquer clairement à l’utilisateur.   
 
-En informant la raison pour laquelle le suivi oculaire est essentiel pour votre application (peut-être même répertorier certaines fonctionnalités améliorées) pour tirer le meilleur parti de votre application, peut aider l’utilisateur à mieux comprendre ce qu’il abandonne.    
-Aidez l’utilisateur à identifier la raison pour laquelle le suivi oculaire peut ne pas fonctionner (sur la base des vérifications ci-dessus) et propose des suggestions pour résoudre rapidement les problèmes potentiels. 
-    
-Par exemple, si vous pouvez détecter que le système prend en charge le suivi oculaire, l’utilisateur est étalonné et lui a donné son autorisation, mais aucune donnée de suivi oculaire n’est reçue, alors cela peut pointer vers d’autres problèmes tels que les traînées ou les yeux bloqués.    
+En informant la raison pour laquelle le suivi oculaire est essentiel pour votre application (peut-être même répertorier certaines fonctionnalités améliorées) pour tirer le meilleur parti de votre application, peut aider l’utilisateur à mieux comprendre ce qu’il abandonne. Aidez l’utilisateur à identifier la raison pour laquelle le suivi oculaire peut ne pas fonctionner (sur la base des vérifications ci-dessus) et propose des suggestions pour résoudre rapidement les problèmes potentiels. 
 
-Il existe des cas rares d’utilisateurs pour lesquels le suivi oculaire peut ne pas fonctionner.   
-Par conséquent, n’hésitez pas à le faire en autorisant à ignorer ou même à désactiver les rappels pour activer le suivi visuel dans votre application.
+Par exemple, si vous pouvez détecter que le système prend en charge le suivi oculaire, l’utilisateur est étalonné et lui a donné son autorisation, mais aucune donnée de suivi oculaire n’est reçue, alors cela peut pointer vers d’autres problèmes tels que les traînées ou les yeux bloqués. 
+
+Il existe des cas rares d’utilisateurs pour lesquels le suivi oculaire peut ne pas fonctionner. Par conséquent, n’hésitez pas à le faire en autorisant à ignorer ou même à désactiver les rappels pour activer le suivi visuel dans votre application.
 
 ### <a name="fall-back-for-apps-using-eye-gaze-as-a-primary-input-pointer"></a>Revenir en arrière pour les applications en utilisant les yeux en forme de point d’entrée principal
 
