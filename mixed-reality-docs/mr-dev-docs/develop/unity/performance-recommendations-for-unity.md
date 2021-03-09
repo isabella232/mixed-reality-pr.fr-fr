@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: graphiques, UC, GPU, rendu, garbage collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583183"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759725"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recommandations sur les performances pour Unity
 
@@ -309,7 +309,7 @@ Par conséquent, la réduction du nombre d’opérations dans le nuanceur de fra
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternatives aux nuanceurs standard Unity
 
-Au lieu d’utiliser un rendu physique ou un autre nuanceur haute qualité, envisagez d’utiliser un nuanceur plus performant et moins onéreux. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit le [nuanceur standard MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) optimisé pour les projets de réalité mixte.
+Au lieu d’utiliser un rendu physique ou un autre nuanceur haute qualité, envisagez d’utiliser un nuanceur plus performant et moins onéreux. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit le [nuanceur standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) optimisé pour les projets de réalité mixte.
 
 Unity fournit également des options de nuanceur simplifiées, comme l’absence d’éclairage, l’éclairage des vertex et la lumière diffuse, qui sont plus rapides par rapport au nuanceur Unity standard. Pour plus d’informations, consultez [Utilisation et performances des nuanceurs intégrés](https://docs.unity3d.com/Manual/shader-Performance.html).
 

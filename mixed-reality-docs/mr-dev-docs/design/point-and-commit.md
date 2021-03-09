@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Réalité mixte, interaction, conception, HoloLens, mains, loin, pointer et valider, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens, rayons émanant de la main, manipulation d’objets, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 3351a38cad99089a60555ffe450447fc5c356fdc
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8196b67f103bae346ba4da065ee6045ff231b004
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583200"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759865"
 ---
 # <a name="point-and-commit-with-hands"></a>Pointer et valider avec les mains
 
@@ -204,9 +204,9 @@ Le concept Pointer et valider pour l’interaction éloignée a été initialeme
 
 Par défaut, MRTK fournit un préfabriqué de rayon émanant de la main ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) qui a le même état visuel que le rayon système du shell. Il est attribué dans le profil d’entrée de MRTK, sous Pointeurs. Dans le casque immersif, les mêmes rayons sont utilisés pour les contrôleurs de mouvement.
 
-* [MRTK - Profil de pointeur](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK - Système d’entrée](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK - Pointeurs](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK - Profil de pointeur](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md#pointer-configuration)
+* [MRTK - Système d’entrée](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
+* [MRTK - Pointeurs](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
 
 ---
 
