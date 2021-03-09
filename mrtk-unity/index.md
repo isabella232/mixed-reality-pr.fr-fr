@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: e763b603d7cbc1c0c07518126c26ad4efc8dbcc0
-ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
+ms.openlocfilehash: 3ac16a1aae6681ddd7e144679b76b4d2b778306f
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102126652"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237250"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Présentation du Mixed Reality Toolkit
 
@@ -285,9 +285,9 @@ Consultez la [page README du hub d’exemples](features/example-scenes/example-h
 
 ## <a name="sample-apps-made-with-mrtk"></a>Exemples d’applications créées avec MRTK
 
-| [![Tableau périodique des éléments](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![Galaxy Explorer 1](features/images/MRTK_GalaxyExplorer.jpg)](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer-update)| [![Galaxy Explorer 2](features/images/MRDL_Surfaces.jpg)](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer-update)|
+| [![Tableau périodique des éléments](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![Galaxy Explorer](features/images/MRTK_GalaxyExplorer.jpg)](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer-update)| [![Exemple d’application Surfaces](features/images/MRDL_Surfaces.jpg)](https://docs.microsoft.com/windows/mixed-reality/sampleapp-surfaces)|
 |:--- | :--- | :--- |
-| [Tableau périodique des éléments](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) est un exemple d’application open source qui montre comment utiliser le système d’entrée et les composants du MRTK afin de créer une expérience d’application pour les casques immersifs et HoloLens. Lisez le récit sur le portage qui raconte comment [importer l’application Tableau périodique des éléments vers HoloLens 2 avec MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) est un exemple d’application open source qui a été initialement développé en mars 2016 dans le cadre de la campagne HoloLens « Partagez vos idées ». L’application Galaxy Explorer a été mise à jour avec de nouvelles fonctionnalités pour HoloLens 2, avec MRTK v2. Lisez le récit sur la [conception de Galaxy Explorer pour HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/Microsoft/GalaxyExplorer) est un exemple d’application open source pour HoloLens 2, qui explore la manière dont nous pouvons créer une sensation tactile en utilisant le suivi oculaire, audio et avec la main entièrement articulée. Regardez la session Microsoft MR Dev Days [Enseignements tirés de l’application Surfaces](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) pour lire le récit détaillé de la conception et du développement. |
+| [Tableau périodique des éléments](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) est un exemple d’application open source qui montre comment utiliser le système d’entrée et les composants du MRTK afin de créer une expérience d’application pour les casques immersifs et HoloLens. Lisez le récit sur le portage qui raconte comment [importer l’application Tableau périodique des éléments vers HoloLens 2 avec MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) est un exemple d’application open source qui a été initialement développé en mars 2016 dans le cadre de la campagne HoloLens « Partagez vos idées ». L’application Galaxy Explorer a été mise à jour avec de nouvelles fonctionnalités pour HoloLens 2, avec MRTK v2. Lisez le récit sur la [conception de Galaxy Explorer pour HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces) est un exemple d’application open source pour HoloLens 2, qui explore la manière dont nous pouvons créer une sensation tactile en utilisant le suivi oculaire, audio et avec la main entièrement articulée. Regardez la session Microsoft MR Dev Days [Enseignements tirés de l’application Surfaces](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) pour lire le récit détaillé de la conception et du développement. |
 
 ## <a name="session-videos-from-mixed-reality-dev-days-2020"></a>Vidéos de la session Mixed Reality Dev Days 2020
 
