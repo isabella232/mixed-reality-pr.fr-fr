@@ -3,63 +3,39 @@ title: Objets natifs de réalité mixte dans Unity
 description: Découvrez comment obtenir l’accès aux objets natifs holographiques sous-jacents dans Unity à l’aide de l’espace de noms XR.
 author: vladkol
 ms.author: vladkol
-ms.date: 05/20/2018
+ms.date: 02/25/2021
 ms.topic: article
 keywords: Unity, la réalité mixte, native, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 64e83e04e56b1296d5115353eed68baadeba193c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c202c698fe55bcd3215850579166ebcb8d4b8910
+ms.sourcegitcommit: 441ef99e6090081c6cd3aa88ed21e13e941f0cc6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583567"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102475071"
 ---
-# <a name="mixed-reality-native-objects-in-unity"></a>Objets natifs de réalité mixte dans Unity
+# <a name="mixed-reality-native-interop-in-unity"></a>Interopérabilité native de la réalité mixte dans Unity
 
 Chaque application de réalité mixte [obtient un HolographicSpace avant de](../native/getting-a-holographicspace.md) commencer à recevoir des données de caméra et des frames de rendu. Dans Unity, le moteur prend en charge ces étapes pour vous, en gérant des objets holographiques et en effectuant une mise à jour en interne dans le cadre de sa boucle de rendu.
 
-Toutefois, dans les scénarios avancés, vous devrez peut-être accéder aux objets natifs sous-jacents, tels que <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> et <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>actuel. <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine. XR. XRDevice</a> est ce qui permet d’accéder à ces objets natifs.
+Toutefois, dans les scénarios avancés, vous devrez peut-être accéder aux objets natifs sous-jacents, tels que <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> et <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>actuel.
 
-## <a name="xrdevice"></a>XRDevice 
-
-**Espace de noms :** *UnityEngine. XR*<br>
-**Type :** *XRDevice*
-
-Le type *XRDevice* vous permet d’accéder aux objets natifs sous-jacents à l’aide de la méthode <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr</a> . Ce que GetNativePtr retourne varie entre différentes plateformes. Sur la plateforme Windows universelle, quand vous ciblez le kit de développement logiciel (SDK) XR Windows Mixed Reality, XRDevice. GetNativePtr retourne un pointeur (IntPtr) à la structure suivante : 
-
-```cs
-using System;
-using System.Runtime.InteropServices;
-
-[StructLayout(LayoutKind.Sequential)]
-struct HolographicFrameNativeData
-{
-    public uint VersionNumber;
-    public uint MaxNumberOfCameras;
-    public IntPtr ISpatialCoordinateSystemPtr; // Windows::Perception::Spatial::ISpatialCoordinateSystem
-    public IntPtr IHolographicFramePtr; // Windows::Graphics::Holographic::IHolographicFrame 
-    public IntPtr IHolographicCameraPtr; // // Windows::Graphics::Holographic::IHolographicCamera
-}
-```
-Vous pouvez la convertir en HolographicFrameNativeData à l’aide de la méthode Marshal. PtrToStructure provoquent :
-```cs
-var nativePtr = UnityEngine.XR.XRDevice.GetNativePtr();
-HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeData>(nativePtr);
-```
-***IHolographicCameraPtr** est un tableau de IntPtr marshalé en tant que UnmanagedType. ByValArray avec une longueur égale à MaxNumberOfCameras* 
+[!INCLUDE[](includes/unity-native-ptrs.md)]
 
 ### <a name="unmarshaling-native-pointers"></a>Démarshaler des pointeurs natifs
+
+Après avoir obtenu le `IntPtr` à partir de l’une des méthodes ci-dessus (inutile pour MRTK), utilisez les extraits de code suivants pour les marshaler vers des objets managés.
 
 Si vous utilisez [Microsoft. Windows. MixedReality. DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT), vous pouvez construire un objet managé à partir d’un pointeur natif à l’aide de la `FromNativePtr()` méthode :
 
 ```cs
-var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(hfd.ISpatialCoordinateSystemPtr);
+var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(spatialCoordinateSystemPtr);
 ```
 
 Sinon, utilisez `Marshal.GetObjectForIUnknown()` et effectuez un cast vers le type souhaité :
 
 ```cs
 #if ENABLE_WINMD_SUPPORT
-var worldOrigin = (Windows.Perception.Spatial.SpatialCoordinateSystem)Marshal.GetObjectForIUnknown(hfd.ISpatialCoordinateSystemPtr);
+var worldOrigin = Marshal.GetObjectForIUnknown(spatialCoordinateSystemPtr) as Windows.Perception.Spatial.SpatialCoordinateSystem;
 #endif
 ```
 
@@ -73,7 +49,7 @@ namespace NumericsConversion
     public static class NumericsConversionExtensions
     {
         public static UnityEngine.Vector3 ToUnity(this System.Numerics.Vector3 v) => new UnityEngine.Vector3(v.X, v.Y, -v.Z);
-        public static UnityEngine.Quaternion ToUnity(this System.Numerics.Quaternion q) => new UnityEngine.Quaternion(-q.X, -q.Y, q.Z, q.W);
+        public static UnityEngine.Quaternion ToUnity(this System.Numerics.Quaternion q) => new UnityEngine.Quaternion(q.X, q.Y, -q.Z, -q.W);
         public static UnityEngine.Matrix4x4 ToUnity(this System.Numerics.Matrix4x4 m) => new UnityEngine.Matrix4x4(
             new Vector4( m.M11,  m.M12, -m.M13,  m.M14),
             new Vector4( m.M21,  m.M22, -m.M23,  m.M24),
@@ -81,7 +57,7 @@ namespace NumericsConversion
             new Vector4( m.M41,  m.M42, -m.M43,  m.M44));
 
         public static System.Numerics.Vector3 ToSystem(this UnityEngine.Vector3 v) => new System.Numerics.Vector3(v.x, v.y, -v.z);
-        public static System.Numerics.Quaternion ToSystem(this UnityEngine.Quaternion q) => new System.Numerics.Quaternion(-q.x, -q.y, q.z, q.w);
+        public static System.Numerics.Quaternion ToSystem(this UnityEngine.Quaternion q) => new System.Numerics.Quaternion(q.x, q.y, -q.z, -q.w);
         public static System.Numerics.Matrix4x4 ToSystem(this UnityEngine.Matrix4x4 m) => new System.Numerics.Matrix4x4(
             m.m00,  m.m10, -m.m20,  m.m30,
             m.m01,  m.m11, -m.m21,  m.m31,
@@ -94,11 +70,11 @@ namespace NumericsConversion
 ### <a name="using-holographicframe-native-data"></a>Utilisation de données natives HolographicFrame
 
 > [!NOTE]
-> La modification de l’état des objets natifs reçus via HolographicFrameNativeData peut entraîner un comportement imprévisible et des artefacts de rendu, en particulier si Unity a également des raisons de ce même État.  Par exemple, vous ne devez pas appeler HolographicFrame. UpdateCurrentPrediction, ou la prédiction de pose que les rendus Unity avec cette image ne seront pas synchronisées avec la pose attendue par Windows, ce qui réduira la stabilité de l' [hologramme](../platform-capabilities-and-apis/hologram-stability.md).
+> La modification de l’état des objets natifs reçus via HolographicFrameNativeData peut entraîner un comportement imprévisible et des artefacts de rendu, en particulier si Unity a également des raisons à ce même État.  Par exemple, vous ne devez pas appeler HolographicFrame. UpdateCurrentPrediction, ou la prédiction de pose que les rendus Unity avec cette image ne seront pas synchronisées avec la pose attendue par Windows, ce qui réduira la stabilité de l' [hologramme](../platform-capabilities-and-apis/hologram-stability.md).
 
-Si vous avez besoin d’accéder à des interfaces natives à des fins de rendu ou de débogage, utilisez les données de HolographicFrameNativeData dans vos plug-ins natifs ou votre code C#. 
+Si vous avez besoin d’accéder à des interfaces natives à des fins de rendu ou de débogage, utilisez les données de HolographicFrameNativeData dans vos plug-ins natifs ou votre code C#.
 
-Voici un exemple de la façon dont vous pouvez utiliser HolographicFrameNativeData pour obtenir la prédiction de l’image actuelle pour l’heure de la photonique. 
+Voici un exemple de la façon dont vous pouvez utiliser HolographicFrameNativeData pour obtenir la prédiction de l’image actuelle pour le temps de la photonique à l’aide des extensions du kit de développement logiciel (SDK) XR.
 
 ```cs
 using System;
@@ -106,27 +82,20 @@ using System.Runtime.InteropServices;
 
 public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 {
-#if (!UNITY_EDITOR && UNITY_WSA) || ENABLE_WINMD_SUPPORT
-    IntPtr nativeStruct = UnityEngine.XR.XRDevice.GetNativePtr();
+#if ENABLE_WINMD_SUPPORT
+    IntPtr holographicFramePtr = UnityEngine.XR.WindowsMR.WindowsMREnvironment.CurrentHolographicRenderFrame;
 
-    if (nativeStruct != IntPtr.Zero)
+    if (holographicFramePtr != IntPtr.Zero)
     {
-        HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeData>(nativeStruct);
-
-        if (hfd.IHolographicFramePtr != IntPtr.Zero)
-        {
-            var holographicFrame = (Windows.Graphics.Holographic.HolographicFrame)Marshal.GetObjectForIUnknown(hfd.IHolographicFramePtr);
-            frameDateTime = holographicFrame.CurrentPrediction.Timestamp.TargetTime.DateTime;
-            return true;
-        }
+        var holographicFrame = Marshal.GetObjectForIUnknown(holographicFramePtr) as Windows.Graphics.Holographic.HolographicFrame;
+        frameDateTime = holographicFrame.CurrentPrediction.Timestamp.TargetTime.DateTime;
+        return true;
     }
-
 #endif
 
     frameDateTime = DateTime.MinValue;
     return false;
 }
-
 ```
 
 ## <a name="see-also"></a>Voir aussi
