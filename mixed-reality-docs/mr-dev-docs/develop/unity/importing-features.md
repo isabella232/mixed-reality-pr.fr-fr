@@ -3,16 +3,16 @@ title: Importation des fonctionnalités
 description: Découvrez comment importer et installer des fonctionnalités à partir de Mixed Reality Feature Tool pour le développement HoloLens et VR.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: à jour, outils, prise en main, principes de base, unity, visual studio, toolkit, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, installation, Windows, HoloLens, émulateur, unreal, openxr
-ms.openlocfilehash: a82eea93a07b662314f3a718eef0c1bd18a4ca4e
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0d9139835b9eb4e3e5ce3d1f378c56a4724bfa55
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243914"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230811"
 ---
 # <a name="importing-features"></a>Importation des fonctionnalités
 
@@ -22,26 +22,18 @@ Une fois que vos fonctionnalités ont été téléchargées, elles peuvent être
 
 ## <a name="features-list"></a>Features list
 
-La liste **Features** contient la collection de packages sélectionnés lors de la découverte. 
-* Chaque fonctionnalité peut être sélectionnée ou désélectionnée avant d’être importée. Vous pouvez consulter les détails des packages en utilisant le lien **Details** montré ci-dessous.
+La liste **Features** contient la collection de packages sélectionnés lors de la découverte. Chaque fonctionnalité peut être sélectionnée ou désélectionnée avant d’être importée. Vous pouvez consulter les détails des packages en utilisant le lien **Details** montré ci-dessous.
 
 ![Features list](images/FeaturesList.png)
 
 ## <a name="required-dependencies-list"></a>Liste des dépendances requises
 
-La liste **Required dependencies** contient les packages requis par une ou plusieurs des fonctionnalités sélectionnées pour fonctionner. Cette liste contient également les dépendances des dépendances.
-* Chaque dépendance peut être sélectionnée ou désélectionnée avant d’être importée. Vous pouvez consulter les détails des packages en utilisant le lien **Details** montré ci-dessous.
+La liste **Required dependencies** contient les packages requis par une ou plusieurs des fonctionnalités sélectionnées pour fonctionner. Cette liste contient également les dépendances des dépendances. Chaque dépendance peut être sélectionnée ou désélectionnée avant d’être importée. Vous pouvez consulter les détails des packages en utilisant le lien **Details** montré ci-dessous.
 
 ![Liste des dépendances](images/RequiredDependencyList.png)
 
 > [!NOTE]
 > La désélection des dépendances requises entraîne une ou plusieurs erreurs de dépendances manquantes lors du chargement du projet dans Unity. Ces fonctionnalités ne seront pas utilisables dans le projet.
-
-## <a name="specifying-the-unity-project-path"></a>Spécification du chemin du projet Unity
-
-Avant de pouvoir importer des fonctionnalités dans le projet, vous devez inscrire le chemin auprès de Mixed Reality Feature Tool.
-
-![Définition du chemin du projet](images/ProjectPath.png)
 
 ## <a name="validating-selections"></a>Validation des sélections
 
@@ -50,11 +42,6 @@ Nous vous recommandons fortement de valider les sélections de fonctionnalités 
 ![Problèmes de validation](images/ValidationIssues.png)
 
 Mixed Reality Feature Tool fournit deux résolutions de problème automatiques (décrites dans les sections suivantes), et la possibilité d’annuler et de résoudre les problèmes manuellement.
-
-> [!IMPORTANT]
-> Mixed Reality Feature Tool ne peut pas résoudre automatiquement les problèmes liés aux versions requises d’Unity. Ces problèmes doivent être traités manuellement en mettant à niveau la version de Unity utilisée par le projet, ou en désactivant la ou les fonctionnalités nécessitant une version plus récente.
->
-> Une version ultérieure de Mixed Reality Feature Tool fournira un meilleur filtrage des fonctionnalités en fonction de la version d’Unity utilisée par le projet.
 
 ### <a name="enable-dependencies"></a>Activer les dépendances
 
