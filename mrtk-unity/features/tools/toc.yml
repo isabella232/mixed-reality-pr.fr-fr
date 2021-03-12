@@ -1,3 +1,5 @@
+- name: Utilitaire d’échange de ressources
+  href: asset-swap-utility.md
 - name: Outil de mappage de contrôleur
   href: controller-mapping-tool.md
 - name: Fenêtre de dépendance
