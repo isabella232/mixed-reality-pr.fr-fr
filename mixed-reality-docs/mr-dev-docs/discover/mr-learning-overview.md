@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: réalité mixte, Unity, tutoriel, hololens, learn, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, MRTK, mixed reality toolkit, traduction linguistique, Azure, Azure Cognitive Services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: f8188cc8c417b60864cd963120ad004d6169c3c2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
+ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583522"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770327"
 ---
 # <a name="mixed-reality-learn-overview"></a>Vue d’ensemble Learn de réalité mixte
 
@@ -69,3 +69,15 @@ Créez une application de traduction pour votre appareil de réalité mixte (Win
 * Configurer un projet Unity pour le service Speech dans Azure Cognitive Services
 * Intégrer le service Speech à une application Windows Mixed Reality
 * utiliser la reconnaissance vocale pour translater du texte
+
+### <a name="render-a-model-with-azure-remote-rendering"></a>[Afficher un modèle avec Azure Remote Rendering](/learn/modules/render-model-azure-remote-rendering-unity/)
+
+Créez une session Azure Remote Rendering et affichez un modèle 3D.
+
+**Objectifs d’apprentissage**
+
+À la fin de ce module, vous saurez :
+
+* Créer une session Remote Rendering
+* Charger un modèle 3D
+* Afficher un modèle 3D
