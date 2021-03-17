@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: VR, LBE, divertissement basé sur l’emplacement, VR arcade, arcade, immersif, QR, code QR, hololens2
-ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 2617d5f811b9d437ece0d5ba2e7dbc909eb16988
+ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635431"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574945"
 ---
 # <a name="qr-code-tracking"></a>Suivi des codes QR
 
@@ -209,9 +209,10 @@ La durée exacte de la détection des codes dépend non seulement de la taille d
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>Distance et position angulaire à partir du code QR
 Les caméras de suivi peuvent uniquement détecter un certain niveau de détail. Pour les petits codes < 10 cm sur les côtés, vous devez être assez proche. Pour un code QR de version 1 variant de 10 cm à 25 cm de large, la distance de détection minimale est comprise entre 0,15 mètres et 0,5 mètres. 
 
-La distance de détection pour la taille augmente de façon linéaire. 
+La distance de détection pour la taille augmente de façon linéaire, mais dépend également de la version QR ou de la taille du module. Plus la version est élevée, plus les modules sont petits, ce qui ne peut être détecté qu’à partir d’une position plus proche. Vous pouvez également essayer les codes Micro QR si vous souhaitez que la distance de détection soit plus longue. La détection QR fonctionne avec une plage d’angles + = 45 deg pour garantir une résolution correcte de la détection du code.
 
-La détection QR fonctionne avec une plage d’angles + = 45 deg pour garantir une résolution correcte de la détection du code.
+> [!IMPORTANT]
+> Veillez à toujours avoir un contraste suffisant et une bordure appropriée.
 
 ### <a name="qr-codes-with-logos"></a>Codes QR avec logos
 Les codes QR avec des logos n’ont pas été testés et ne sont actuellement pas pris en charge.

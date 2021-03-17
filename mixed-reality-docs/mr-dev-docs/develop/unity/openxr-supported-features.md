@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: 0501abe5a417c17283347455ccea8ec6f49a6a45
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.openlocfilehash: 1c9e185c63d3efef66cdc2782d8d8d4e3692c705
+ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102230740"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103623629"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>OpenXR en réalité mixte fonctionnalités prises en charge dans Unity
 
@@ -24,7 +24,7 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * Prend en charge les applications UWP pour HoloLens 2 et optimise le modèle d’application HoloLens 2.
 * Prend en charge les applications Win32 VR pour le casque Windows Mixed Reality avec les derniers profils de contrôleur et la communication à distance des applications holographiques.
 * Suivi de la mise à l’échelle mondiale utilisant les ancres et l’espace non limité.
-* [API de stockage d’ancrage pour rendre les ancres persistantes](#anchors-and-anchor-persistence) dans le stockage local HoloLens 2.
+* [API de stockage d’ancrage pour rendre les ancres persistantes](spatial-anchors-in-unity.md) dans le stockage local HoloLens 2.
 * [Interactions entre le contrôleur de mouvement et la main](#motion-controller-and-hand-interactions), y compris le nouveau contrôleur de réverbération HP G2.
 * Suivi articulé à l’aide de 26 jointures et d’entrées RADIUS jointes.
 * Interaction de regard sur HoloLens 2.
@@ -33,7 +33,7 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * Prend en charge [la « lecture » dans HoloLens 2 avec l’application de communication à distance holographique](#holographic-remoting-in-unity-editor-play-mode), ce qui permet aux développeurs de déboguer les scripts sans les générer et les déployer sur l’appareil.
 * Compatible avec MRTK Unity 2.5.3 et versions ultérieures via la [prise en charge des fournisseurs MRTK OpenXR](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatible avec Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) ou version ultérieure.
-* (Ajouté dans 0.1.3) Prend en charge la [communication à distance holographique des applications de bureau](#holographic-remoting-in-desktop-app) à partir d’une application Windows autonome créée et déployée.
+* (Ajouté dans 0.1.3) Prend en charge la [communication à distance holographique des applications de bureau](holographic-remoting-desktop.md) à partir d’une application Windows autonome créée et déployée.
 * (Ajouté dans 0.1.4) Prend en charge le [suivi du code QR](#qr-codes) sur HoloLens2 via SpatialGraphNode
 
 ## <a name="holographic-remoting-setup"></a>Configuration de la communication à distance holographique
@@ -62,110 +62,6 @@ Vous pouvez maintenant cliquer sur le bouton « lecture » pour lire votre app
 
 > [!NOTE]
 > À partir de la version 0.1.0, le runtime de communication à distance holographique ne prend pas en charge les ancres, et les fonctionnalités ARAnchorManager ne fonctionnent pas via la communication à distance.  Cette fonctionnalité est disponible dans les versions ultérieures.
-
-## <a name="holographic-remoting-in-desktop-app"></a>Communication à distance holographique dans une application de bureau
-
-> [!NOTE]
-> La prise en charge de l’accès distant aux applications autonomes Windows a été ajoutée dans la version du package 0.1.3.
-> À partir de la version 0.1.3, cette fonctionnalité ne prend pas en charge les builds UWP.
-
-1. Suivez les étapes de la configuration de la [communication à distance holographique](#holographic-remoting-setup)
-2. Ouvrez les **paramètres du projet de modification >**, accédez à **gestion du plug-in XR**, puis cochez la case **Windows Mixed Reality Feature Set** . Désactivez également **l’option initialiser XR au démarrage**:
-
-    ![Capture d’écran du panneau Paramètres du projet ouvrir dans l’éditeur Unity avec l’option initialiser XR au démarrage désactivée](images/openxr-features-img-02-app.png)
-
-3. Développez la section **fonctionnalités** sous **OpenXR** et sélectionnez **Afficher tout** .
-4. Cochez la case **accès distant aux applications holographiques** :
-
-    ![Capture d’écran du panneau Paramètres du projet ouvert dans l’éditeur Unity avec l’accès distant à l’application activé](images/openxr-features-img-03-app.png)
-
-5. Ensuite, écrivez du code pour définir la configuration de communication à distance et déclencher l’initialisation XR. L’exemple d’application distribué avec le [plug-in OpenXR de réalité mixte](openxr-getting-started.md#hololens-2-samples) contient AppRemoting.cs, qui montre un exemple de scénario de connexion à une adresse IP spécifique au moment de l’exécution. À ce stade, le déploiement de l’exemple d’application sur un ordinateur local affiche un champ d’entrée d’adresse IP avec un bouton de connexion. Tapez une adresse IP et cliquez sur connecter pour initialiser XR et tenter de vous connecter à l’appareil cible :
-
-    ![Capture d’écran de l’exemple d’application affichant un exemple d’interface utilisateur de communication à distance d’application](images/openxr-sample-app-remoting.png)
-
-6. Pour écrire du code de connexion personnalisé, appelez `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` avec un rempli `RemotingConfiguration` . L’exemple d’application l’expose dans l’inspecteur et montre comment renseigner l’adresse IP à partir d’un champ de texte. L’appel de `Connect` va définir la configuration et initialiser automatiquement XR, c’est pourquoi il doit être appelé en tant que Coroutine :
-
-    ``` cs
-    StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
-    ```
-
-7. Lors de l’exécution de, vous pouvez obtenir l’état actuel de la connexion avec l' `AppRemoting.TryGetConnectionState` API et éventuellement déconnecter et déinitialiser XR à l’aide de `AppRemoting.Disconnect()` . Cela peut être utilisé pour se déconnecter et se reconnecter à un autre périphérique au cours de la même session d’application. L’exemple d’application fournit un cube tappable qui déconnecte la session de communication à distance si elle est exploitée.
-
-### <a name="migration-from-previous-apis"></a>Migration à partir des API précédentes
-
-#### <a name="unityenginexrwsaholographicremoting"></a>UnityEngine. XR. WSA. HolographicRemoting
-
-À partir de l’exemple de code sur les [documents Unity](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.HolographicRemoting.html):
-
-| XR. WSA. HolographicRemoting | OpenXR. Remoting. AppRemoting |
-| ---- | ---- |
-| `HolographicRemoting.Connect(String)` | `AppRemoting.Connect(RemotingConfiguration)` |
-| `HolographicRemoting.ConnectionState` | `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
-| `StartCoroutine(LoadDevice("WindowsMR"))`| [N/A : se produit automatiquement lors de l’appel de `AppRemoting.Connect` ]  |
-
-#### <a name="unityenginexrwindowsmrwindowsmrremoting"></a>UnityEngine. XR. WindowsMR. WindowsMRRemoting
-
-| XR. WindowsMR.WindowsMRRemoting | OpenXR. Remoting. AppRemoting |
-| ---- | ---- |
-| `WindowsMRRemoting.Connect()` | `AppRemoting.Connect(RemotingConfiguration)` |
-| `WindowsMRRemoting.Disconnect()` | `AppRemoting.Disconnect()` |
-| `WindowsMRRemoting.TryGetConnectionState(out ConnectionState)` et `WindowsMRRemoting.TryGetConnectionFailureReason(out ConnectionFailureReason)`| `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
-| `WindowsMRRemoting.isAudioEnabled`, `WindowsMRRemoting.maxBitRateKbps`, `WindowsMRRemoting.remoteMachineName` | Passé `AppRemoting.Connect` par le biais du `RemotingConfiguration` struct |
-| `WindowsMRRemoting.isConnected` | `AppRemoting.TryGetConnectionState(out ConnectionState state, out _) && state == ConnectionState.Connected`
-
-## <a name="anchors-and-anchor-persistence"></a>Ancres et persistance d’ancrage
-
-Le plug-in OpenXR de réalité mixte fournit des fonctionnalités d’ancre de base via une implémentation du **ARAnchorManager** ARFoundation d’Unity. Pour en savoir plus sur les principes de base de **ARAnchor** dans ARFoundation, consultez le [Manuel ARFoundation du gestionnaire d’ancrage AR](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html). À partir de la version 0.1.0, ce plug-in prend en charge toutes les fonctionnalités ARAnchorManager, à l’exception de la création d’ancres attachées à un plan, qui est disponible dans une version ultérieure.
-
-### <a name="anchor-persistence-and-the-xranchorstore"></a>Persistance d’ancrage et XRAnchorStore
-
-Une API supplémentaire appelée **XRAnchorStore** permet aux ancres d’être rendues persistantes entre les sessions. Le XRAnchorStore est une représentation des ancres enregistrées sur votre appareil. Les ancres peuvent être rendues persistantes à partir de **ARAnchors** dans la scène Unity, chargées à partir du stockage dans un nouveau **ARAnchors**, ou supprimées du stockage.
-
-> [!NOTE]
-> Ces ancres doivent être enregistrées et chargées sur le même appareil. Le stockage d’ancrage entre appareils sera pris en charge via les ancres spatiales Azure dans une version ultérieure.
-
-``` cs
-public class Microsoft.MixedReality.ARSubsystems.XRAnchorStore
-{
-    // A list of all persisted anchors, which can be loaded.
-    public IReadOnlyList<string> PersistedAnchorNames { get; }
-
-    // Clear all persisted anchors
-    public void Clear();
-
-    // Load a single persisted anchor by name. The ARAnchorManager will create this new anchor and report it in
-    // the ARAnchorManager.anchorsChanged event. The TrackableId returned here is the same TrackableId the
-    // ARAnchor will have when it is instantiated.
-    public TrackableId LoadAnchor(string name);
-
-    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if
-    // the storage is successful, false otherwise.
-    public bool TryPersistAnchor(string name, TrackableId trackableId);
-
-    // Removes a single persisted anchor from the anchor store. This will not affect any ARAnchors in the Unity
-    // scene, only the anchors in storage.
-    public void UnpersistAnchor(string name);
-}
-```
-
-Pour charger XRAnchorStore, le plug-in fournit une méthode d’extension sur XRAnchorSubsystem, le sous-système d’un ARAnchorManager :
-
-``` cs
-public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
-```
-
-Pour utiliser cette méthode d’extension, accédez à celle-ci à partir du sous-système d’un ARAnchorManager, comme suit :
-
-``` cs
-ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
-XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
-```
-
-Pour voir un exemple complet d’ancres persistantes/non persistantes, consultez l’exemple d’ancres-> ancrages GameObject et AnchorsSample.cs script dans l' [exemple de scène de plug-in de réalité mixte OpenXR](openxr-getting-started.md#hololens-2-samples):
-
-![Capture d’écran de l’ouverture du panneau de la hiérarchie dans l’éditeur Unity avec l’exemple ancres mis en surbrillance](images/openxr-features-img-04.png)
-
-![Capture d’écran du panneau Inspecteur ouvert dans l’éditeur Unity avec l’exemple de script Anchors mis en surbrillance](images/openxr-features-img-05.png)
 
 ## <a name="motion-controller-and-hand-interactions"></a>Interactions entre le contrôleur de mouvement et la main
 
@@ -222,7 +118,7 @@ Les problèmes suivants et les fonctionnalités manquantes sont connus avec le p
 * La prise en charge des **ancres spatiales Azure** est disponible dans une version ultérieure.
 * **ARM64** est la seule plateforme prise en charge pour les applications HoloLens 2. La plateforme **ARM** est disponible dans une version ultérieure.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Lorsque vous suspendez et reprenez une application Unity sur HoloLens 2, l’application ne peut pas reprendre correctement, ce qui a pour conséquence 4 points de rotation dans la vue HoloLens.
 
