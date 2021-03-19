@@ -192,24 +192,24 @@
               href: unity/reviewing-changes.md
     - name: Modules de base
       items:
-        - name: Appareil photo
+        - name: Installation de l'appareil photo
           href: unity/camera-in-unity.md
-        - name: Systèmes de coordonnées
-          href: unity/coordinate-systems-in-unity.md
-        - name: Persistance
-          href: unity/persistence-in-unity.md
-        - name: Suivi de la tête
-          href: unity/gaze-in-unity.md
+        - name: Ancres spatiales
+          href: unity/spatial-anchors-in-unity.md
+        - name: Interactions
+          items:
+            - name: Contrôleurs de mouvement
+              href: unity/motion-controllers-in-unity.md
+            - name: Mouvements
+              href: unity/gestures-in-unity.md
+            - name: Suivi du regard et des mains
+              href: unity/hand-eye-in-unity.md
+            - name: Suivi de la tête
+              href: unity/gaze-in-unity.md
+            - name: Entrée vocale
+              href: unity/voice-input-in-unity.md
         - name: Texte
           href: unity/text-in-unity.md
-        - name: Contrôleurs de mouvement
-          href: unity/motion-controllers-in-unity.md
-        - name: Mouvements
-          href: unity/gestures-in-unity.md
-        - name: Suivi du regard et des mains
-          href: unity/hand-eye-in-unit.md
-        - name: Entrée vocale
-          href: unity/voice-input-in-unity.md
         - name: Mappage spatial
           href: unity/spatial-mapping-in-unity.md
         - name: Son spatial
@@ -220,6 +220,8 @@
           href: unity/shared-experiences-in-unity.md
         - name: Appareil photo localisable
           href: unity/locatable-camera-in-unity.md
+        - name: Communication à distance holographique dans une application de bureau
+          href: unity/holographic-remoting-desktop.md
         - name: Point de focus
           href: unity/focus-point-in-unity.md
         - name: Perte de suivi
