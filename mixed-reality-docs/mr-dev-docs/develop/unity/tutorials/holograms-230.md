@@ -1,19 +1,19 @@
 ---
-title: MR Spatial 230 - Mappage spatial
+title: HoloLens (1re génération) spatiale 230-mappage spatial
 description: Suivez cette procédure pas à pas de codage à l’aide d’Unity, Visual Studio et HoloLens pour apprendre les concepts de mappage spatial.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, mappage spatial, reconstruction de surface, maille, HoloLens, Académie de la réalité mixte, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582938"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730136"
 ---
-# <a name="mr-spatial-230-spatial-mapping"></a>Réalité mixte - Fonctionnalités spatiales - Cours 230 : Mappage spatial
+# <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>HoloLens (1re génération) spatial 230 : mappage spatial
 
 >[!NOTE]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.
@@ -151,7 +151,7 @@ Voyons maintenant comment le mappage spatial peut affecter les performances.
 * Cliquez sur **Connecter**.
 * Observez le nombre de millisecondes nécessaires au rendu d’une trame par le GPU.
 * Arrêtez l’exécution de l’application sur l’appareil.
-* Revenez à Visual Studio et ouvrez **SpatialMappingObserver.cs**. Vous le trouverez dans le dossier HoloToolkit\SpatialMapping du projet Assembly-CSharp (Windows universel).
+* Revenez à Visual Studio et ouvrez **SpatialMappingObserver. cs**. Vous le trouverez dans le dossier HoloToolkit\SpatialMapping du projet Assembly-CSharp (Windows universel).
 * Recherchez la fonction **éveillé ()** , puis ajoutez la ligne de code suivante : **TrianglesPerCubicMeter = 1200 ;**
 * Redéployez le projet sur votre appareil, puis **reconnectez le profileur**. Observez la modification du nombre de millisecondes pour le rendu d’un frame.
 * Arrêtez l’exécution de l’application sur l’appareil.
@@ -231,15 +231,15 @@ Unity fait un excellent travail d’aperçu des documents, mais il est toujours 
 * Dans le panneau **projet** d’Unity, dans le dossier **hologrammes** , recherchez l’objet **SpatialProcessing** .
 * Faites glisser & déposez l’objet **SpatialProcessing** dans le panneau de **hiérarchie** .
 
-SpatialProcessing Prefab comprend des composants pour traiter les données de mappage spatiale. **SurfaceMeshesToPlanes.cs** trouvera et générera des plans basés sur les données de mappage spatiale. Nous utiliserons des plans dans notre application pour représenter les murs, les étages et les plafonds. Ce Prefab comprend également **RemoveSurfaceVertices.cs** qui peut supprimer des vertex du maillage de mappage spatial. Cela peut être utilisé pour créer des trous dans la maille ou pour supprimer les triangles excédentaires qui ne sont plus nécessaires (car les plans peuvent être utilisés à la place).
+SpatialProcessing Prefab comprend des composants pour traiter les données de mappage spatiale. **SurfaceMeshesToPlanes. cs** trouvera et générera des plans basés sur les données de mappage spatiale. Nous utiliserons des plans dans notre application pour représenter les murs, les étages et les plafonds. Ce Prefab comprend également **RemoveSurfaceVertices. cs** qui peut supprimer des vertex du maillage de mappage spatial. Cela peut être utilisé pour créer des trous dans la maille ou pour supprimer les triangles excédentaires qui ne sont plus nécessaires (car les plans peuvent être utilisés à la place).
 
 * Dans le panneau **projet** d’Unity, dans le dossier **hologrammes** , recherchez l’objet **SpaceCollection** .
 * Faites glisser et déposez l’objet **SpaceCollection** dans le panneau de **hiérarchie** .
 * Dans le volet **hiérarchie** , sélectionnez l’objet **SpatialProcessing** .
 * Dans le volet de l' **inspecteur** , recherchez le composant **Gestionnaire d’espace de lecture (script)** .
-* Double-cliquez sur **PlaySpaceManager.cs** pour l’ouvrir dans Visual Studio.
+* Double-cliquez sur **PlaySpaceManager. cs** pour l’ouvrir dans Visual Studio.
 
-PlaySpaceManager.cs contient le code spécifique à l’application. Nous ajouterons des fonctionnalités à ce script pour activer le comportement suivant :
+PlaySpaceManager. cs contient du code spécifique à l’application. Nous ajouterons des fonctionnalités à ce script pour activer le comportement suivant :
 
 1. Arrêtez la collecte des données de mappage spatiale après avoir dépassé la limite de temps d’analyse (10 secondes).
 2. Traiter les données de mappage spatiale :
@@ -247,7 +247,7 @@ PlaySpaceManager.cs contient le code spécifique à l’application. Nous ajoute
     2. Utilisez RemoveSurfaceVertices pour supprimer les triangles de surface qui se trouvent dans les limites du plan.
 3. Générez un ensemble d’hologrammes dans le monde et placez-les sur des plans muraux et de plancher près de l’utilisateur.
 
-Effectuez les exercices de codage marqués dans PlaySpaceManager.cs ou remplacez le script par la solution terminée ci-dessous :
+Effectuez les exercices de codage marqués dans PlaySpaceManager. cs ou remplacez le script par la solution terminée ci-dessous :
 
 ```cs
 using System.Collections.Generic;
@@ -470,7 +470,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 * Dans le volet de l' **inspecteur** , recherchez les **maillages des surfaces du composant plans (script)** .
 * Remplacez la valeur de la propriété **dessiner des plans** par **Nothing** pour effacer la sélection.
 * Remplacez la propriété **dessiner des plans** par **Wall**, afin que seuls les plans muraux soient rendus.
-* Dans le panneau **projet** , cliquez sur le dossier **scripts** , double-cliquez sur **Placeable.cs** pour l’ouvrir dans Visual Studio.
+* Dans le panneau **projet** , dans le dossier **scripts** , double-cliquez sur **positionnable. cs** pour l’ouvrir dans Visual Studio.
 
 Le script **positionnable** est déjà associé aux affiches et à la boîte de projection créées après la recherche du plan. Tout ce que nous devons faire, c’est supprimer les marques de commentaire de code, et ce script va obtenir ce qui suit :
 
@@ -482,7 +482,7 @@ Le script **positionnable** est déjà associé aux affiches et à la boîte de 
 6. Réorienter l’hologramme pour qu’il s’aligne avec le type de surface (vertical ou horizontal) auquel il a une affinité.
 7. Placez en douceur l’hologramme sur la surface sélectionnée pour éviter le comportement de saut ou d’alignement.
 
-Supprimez les marques de commentaire de tout le code dans l’exercice de codage ci-dessous, ou utilisez cette solution terminée dans **Placeable.cs**:
+Supprimez les marques de commentaire de tout le code dans l’exercice de codage ci-dessous, ou utilisez cette solution terminée dans la solution **. cs**:
 
 ```cs
 using System.Collections.Generic;
@@ -1098,13 +1098,13 @@ Nous allons ensuite ajouter un comportement spécial à la terre, afin qu’elle
 * Dans le panneau **inspecteur** , recherchez le matériau de la terre (composant le plus bas).
 * Dans la **liste déroulante nuanceur**, remplacez le nuanceur par **personnalisé > OcclusionRim**. Cela permet d’afficher une surbrillance bleue autour de la terre chaque fois qu’elle est bloqués par un autre objet.
 
-Enfin, nous allons activer un effet de vision x-ray pour les planètes dans notre système solaire. Nous devons modifier **PlanetOcclusion.cs** (qui se trouve dans le dossier Scripts\SolarSystem) afin d’obtenir les informations suivantes :
+Enfin, nous allons activer un effet de vision x-ray pour les planètes dans notre système solaire. Nous devons modifier **PlanetOcclusion. cs** (qui se trouve dans le dossier Scripts\SolarSystem) pour obtenir les informations suivantes :
 
 1. Déterminez si une planète est bloqués par la couche SpatialMapping (maillages et plans d’espace).
 2. Affichez la représentation filaire d’une planète chaque fois qu’elle est bloqués par la couche SpatialMapping.
 3. Masquer la représentation filaire d’une planète lorsqu’elle n’est pas bloquée par la couche SpatialMapping.
 
-Suivez l’exercice de codage dans PlanetOcclusion.cs ou utilisez la solution suivante :
+Suivez l’exercice de codage dans PlanetOcclusion. cs ou utilisez la solution suivante :
 
 ```cs
 using UnityEngine;

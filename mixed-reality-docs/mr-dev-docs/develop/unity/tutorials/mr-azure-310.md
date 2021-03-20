@@ -1,19 +1,19 @@
 ---
-title: MR and Azure 310 - Détection d’objets
+title: HoloLens (1ère génération) et Azure 310-détection d’objets
 description: Suivez ce cours pour apprendre à former et à utiliser un modèle de Machine Learning pour reconnaître des objets similaires et leur position dans le monde réel.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, vision personnalisée, détection d’objets, réalité mixte, Académie, Unity, didacticiel, API, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: edbd583c5361f8074dc57fedb66d6ab01df16de8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 29b3622e510a0d97ee3f1dea04661b7d6ab51f9f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583474"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730346"
 ---
-# <a name="mr-and-azure-310-object-detection"></a>Mr et Azure 310 : détection d’objets
+# <a name="hololens-1st-gen-and-azure-310-object-detection"></a>HoloLens (1re génération) et Azure 310 : détection d’objets
 
 >[!NOTE]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une nouvelle série de didacticiels sera publiée à l’avenir qui vous montrera comment développer pour HoloLens 2.  Cet avis sera mis à jour avec un lien vers ces didacticiels lors de leur publication.

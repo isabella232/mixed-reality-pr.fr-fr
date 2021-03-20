@@ -1,19 +1,19 @@
 ---
-title: MR Basics 101 - Projet complet avec appareil
+title: HoloLens (1re génération) notions de base 101-finaliser le projet avec l’appareil
 description: Suivez cette procédure pas à pas de codage à l’aide d’Unity, Visual Studio et HoloLens pour apprendre les principes fondamentaux de Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: réalité mixte, Windows Mixed Reality, HoloLens, hologramme, Academy, didacticiel, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 4ca16542060e1cee746ba5095a7bf68ca8136267
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5015dff1487dce9ff761a4ca606657eca6f75406
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583711"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730336"
 ---
-# <a name="mr-basics-101-complete-project-with-device"></a>Réalité mixte - Principes fondamentaux - Cours 101 : Projet complet avec appareil
+# <a name="hololens-1st-gen-basics-101-complete-project-with-device"></a>HoloLens (1re génération) notions de base 101 : terminer le projet avec l’appareil
 
 <br>
 
@@ -150,7 +150,7 @@ Dans ce chapitre, nous allons présenter la première des trois façons d’inte
 * Sélectionnez l’objet **curseur** dans le **panneau hiérarchie**.
 * Glissez-déplacez le script **WorldCursor** dans le panneau de l' **inspecteur**.
 * Double-cliquez sur le script **WorldCursor** pour l’ouvrir dans Visual Studio.
-* Copiez et collez ce code dans **WorldCursor.cs** et **Enregistrez All**.
+* Copiez et collez ce code dans **WorldCursor. cs** et **Enregistrez tout**.
 
 ```cs
 using UnityEngine;
@@ -330,7 +330,7 @@ Dans ce chapitre, nous allons ajouter la prise en charge de deux [commandes voca
 * Dans le dossier **scripts** , créez un script nommé **SpeechManager**.
 * Faites glisser le script **SpeechManager** sur l’objet **OrigamiCollection** dans la hiérarchie.
 * Ouvrez le script **SpeechManager** dans Visual Studio.
-* Copiez et collez ce code dans **SpeechManager.cs** et **Enregistrez All**:
+* Copiez et collez ce code dans **SpeechManager. cs** et **Enregistrez All**:
 
 ```cs
 using System.Collections.Generic;

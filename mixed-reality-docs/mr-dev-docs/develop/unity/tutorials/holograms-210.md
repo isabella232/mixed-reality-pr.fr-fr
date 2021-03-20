@@ -1,19 +1,19 @@
 ---
-title: MR Input 210 - Pointage du regard
+title: HoloLens (1re génération) entrée 210-point de regard
 description: Suivez cette procédure pas à pas de codage avec Unity, Visual Studio et HoloLens pour apprendre les détails des concepts de regard.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, point de présence, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 7e8d72bc4d37d76f8f9ec40956cb85591e237ac8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583865"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730326"
 ---
-# <a name="mr-input-210-gaze"></a>Réalité mixte - Entrées - Cours 210 : Pointage du regard
+# <a name="hololens-1st-gen-input-210-gaze"></a>HoloLens (1re génération) entrée 210 : point de regard
 
 >[!NOTE]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.
@@ -206,8 +206,8 @@ Nous allons baser notre travail sur certains principes de conception de curseur,
 ### <a name="instructions"></a>Instructions
 
 1. Dans le volet **hiérarchie** , développez l’objet **AstroMan** -> **GEO_G** -> **Back_Center** .
-2. Double-cliquez sur **Interactible.cs** pour l’ouvrir dans Visual Studio.
-3. Supprimez les marques de commentaire des lignes dans les rappels **IFocusable. OnFocusEnter ()** et **IFocusable. OnFocusExit ()** dans **Interactible.cs**. Celles-ci sont appelées par le InputManager du Toolkit de la réalité mixte lorsque le focus (soit par le point de présence ou par le contrôleur pointant) entre et quitte le conflit du GameObject spécifique.
+2. Double-cliquez sur **Interactible. cs** pour l’ouvrir dans Visual Studio.
+3. Supprimez les marques de commentaire des lignes dans les rappels **IFocusable. OnFocusEnter ()** et **IFocusable. OnFocusExit ()** dans **Interactible. cs**. Celles-ci sont appelées par le InputManager du Toolkit de la réalité mixte lorsque le focus (soit par le point de présence ou par le contrôleur pointant) entre et quitte le conflit du GameObject spécifique.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -265,13 +265,13 @@ void IFocusable.OnFocusExit()
 
 ### <a name="instructions"></a>Instructions
 
-Nous allons utiliser le fichier **DirectionIndicator.cs** , qui :
+Nous allons utiliser le fichier **DirectionIndicator. cs** qui :
 
 1. Affichez l’indicateur directionnel si l’utilisateur n’est pas Gazing sur les hologrammes.
 2. Masquer l’indicateur directionnel si l’utilisateur est Gazing sur les hologrammes.
 3. Mettez à jour l’indicateur directionnel pour pointer vers les hologrammes.
 
-C’est parti !
+Commençons.
 
 1. Cliquez sur l’objet **AstroMan** dans le volet de **hiérarchie** , puis **cliquez sur la flèche pour le** développer.
 2. Dans le volet **hiérarchie** , sélectionnez l’objet **DirectionalIndicator** sous **AstroMan**.
@@ -290,7 +290,7 @@ C’est parti !
 
 * Utilisez le billboarding pour que les hologrammes soient toujours face à vous.
 
-Nous utiliserons le fichier **Billboard.cs** pour garder un gameobject orienté de manière à ce qu’il soit à tout moment destiné à l’utilisateur.
+Nous allons utiliser le fichier **Billboard. cs** pour garder un gameobject orienté vers l’utilisateur de manière à ce qu’il soit à tout moment destiné à l’utilisateur.
 
 1. Dans le volet **hiérarchie** , sélectionnez l’objet **AstroMan** .
 2. Dans le volet de l' **inspecteur** , cliquez sur le bouton **Ajouter un composant** .
@@ -318,15 +318,15 @@ La solution utilisée ici consiste à utiliser une approche « avec balises »
 
 Une balise avec un objet ne quitte jamais entièrement la vue de l’utilisateur. Vous pouvez considérer la balise comme un objet attaché à la tête de l’utilisateur par les bandes de caoutchouc. Au fur et à mesure que l’utilisateur se déplace, le contenu reste dans un aperçu facile en faisant glisser vers le bord de la vue sans quitter complètement. Lorsque l’utilisateur fait un regard sur l’objet tag, il est plus complet à afficher.
 
-Nous allons utiliser le fichier **SimpleTagalong.cs** , qui :
+Nous allons utiliser le fichier **SimpleTagalong. cs** qui :
 
 1. Déterminez si l’objet Tag-Along se trouve dans les limites de l’appareil photo.
 2. Si ce n’est pas le cas dans la vue frustum, positionnez le Tag-Along sur partiellement dans la vue frustum.
 3. Sinon, placez le Tag-Along à une distance par défaut de l’utilisateur.
 
-Pour ce faire, nous devons d’abord modifier le script **Interactible.cs** pour appeler **TagalongAction**.
+Pour ce faire, nous devons d’abord modifier le script **Interactible. cs** pour appeler **TagalongAction**.
 
-1. Modifiez **Interactible.cs** en terminant le codage de l’exercice 6. a (supprimer les commentaires des lignes 84 à 87).
+1. Modifiez **Interactible. cs** en terminant le code de l’exercice 6. a (supprimer les commentaires des lignes 84 à 87).
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 6.a */
@@ -337,9 +337,9 @@ if (interactibleAction != null)
 }
 ```
 
-Le script **InteractibleAction.cs** , associé à **Interactible.cs** , effectue des actions personnalisées lorsque vous appuyez sur des hologrammes. Dans ce cas, nous allons en utiliser un spécifiquement pour la balise.
+Le script **InteractibleAction. cs** , couplé à **Interactible. cs** , exécute des actions personnalisées lorsque vous appuyez sur des hologrammes. Dans ce cas, nous allons en utiliser un spécifiquement pour la balise.
 
-* Dans le dossier **scripts** , cliquez sur la ressource **TagalongAction.cs** pour l’ouvrir dans Visual Studio.
+* Dans le dossier **scripts** , cliquez sur la ressource **TagalongAction. cs** pour l’ouvrir dans Visual Studio.
 * Terminez l’exercice de codage ou remplacez-le par ce qui suit :
   * En haut de la **hiérarchie**, dans la barre de recherche, tapez **ChestButton_Center** et sélectionnez le résultat.
   * Dans le volet de l' **inspecteur** , cliquez sur le bouton **Ajouter un composant** .
@@ -357,7 +357,7 @@ Nous devons ajouter ce qui suit :
 * Ajoutez un billboarding à l’objet pointant vers le regard et définissez l’axe pivot sur XY.
 * Ajoutez ensuite un Tag-Along simple à l’objet.
 
-Voici notre solution, de **TagalongAction.cs**:
+Voici notre solution, de **TagalongAction. cs**:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.

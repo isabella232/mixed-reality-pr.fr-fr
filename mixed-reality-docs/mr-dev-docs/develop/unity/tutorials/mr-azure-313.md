@@ -1,19 +1,19 @@
 ---
-title: MR and Azure 313 - Service IoT Hub
+title: HoloLens (1er génération) et Azure 313-service IoT Hub
 description: Découvrez comment implémenter Azure IoT Hub service sur une machine virtuelle exécutant Ubuntu 16,4 et visualiser les données de message à l’aide du casque Microsoft HoloLens ou VR.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, périphérie, IOT Edge, didacticiel, API, notification, fonctions, tables, hololens, immersif, VR, IOT, machine virtuelle, Ubuntu, Python, Windows 10, Visual Studio
-ms.openlocfilehash: f23a9bf5bcdb0868ef9b0e6f77fbdb7a15dfdce1
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f4306e7940e2447fe31afb8c7071c00abc98dd34
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582810"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730496"
 ---
-# <a name="mr-and-azure-313-iot-hub-service"></a>Réalité mixte - Azure - Cours 313 : Service IoT Hub
+# <a name="hololens-1st-gen-and-azure-313-iot-hub-service"></a>HoloLens (1re génération) et Azure 313 : service IoT Hub
 
 >[!NOTE]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une nouvelle série de didacticiels sera publiée à l’avenir qui vous montrera comment développer pour HoloLens 2.  Cet avis sera mis à jour avec un lien vers ces didacticiels lors de leur publication.
@@ -362,7 +362,7 @@ Vous pouvez maintenant passer à la configuration de votre appareil **exécutant
 
 3. Recherchez et installez les extensions suivantes (comme indiqué dans l’image ci-dessous) :
 
-    1. Azure IoT Edge
+    1. Azure IoT Edge
     2. Azure IoT Toolkit
     3. Docker   
 
