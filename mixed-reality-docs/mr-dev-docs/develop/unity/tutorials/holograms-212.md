@@ -1,19 +1,19 @@
 ---
-title: MR Input 212 - Voix
+title: HoloLens (1ère génération) entrée 212-voix
 description: Suivez cette procédure pas à pas de codage avec Unity, Visual Studio et HoloLens pour apprendre les détails des concepts vocaux.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, tutorial, voix, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 6fb3e10cb440fdda941a6d68b106da1bbaaedbc9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 3218585c8c485e05fc511cf06b32542709027493
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583679"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730446"
 ---
-# <a name="mr-input-212-voice"></a>Réalité mixte - Entrées - Cours 212 : Voix
+# <a name="hololens-1st-gen-input-212-voice"></a>HoloLens (1ère génération) entrée 212 : voix
 
 >[!NOTE]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.
@@ -159,7 +159,7 @@ Dans ce chapitre, vous allez apprendre à concevoir des commandes vocales. Lors 
 * Dans le volet de l' **inspecteur** , localisez le composant **source d’entrée vocale (script)** .
 * Développez la section **Mots clés** pour voir la commande vocale prise en charge : **ouvrir Communicator**.
 * Cliquez sur le roue dentée situé à droite, puis sélectionnez **modifier le script**.
-* Explorez **SpeechInputSource.cs** pour comprendre comment il utilise **KeywordRecognizer** pour ajouter des commandes vocales.
+* Explorez **SpeechInputSource. cs** pour comprendre comment il utilise **KeywordRecognizer** pour ajouter des commandes vocales.
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
@@ -203,9 +203,9 @@ Dans ce chapitre, vous allez apprendre à concevoir des commandes vocales. Lors 
 * Notez que l’objet **Communicator** possède un composant **Gestionnaire d’entrée vocale (script)** pour répondre à la commande **Envoyer un message** .
 * Examinez le composant **Communicator (script)** et double-cliquez sur le script pour l’ouvrir dans Visual Studio.
 
-Communicator.cs est chargé de définir les États de bouton appropriés sur le périphérique Communicator. Cela permet à nos utilisateurs d’enregistrer un message, de le lire et d’envoyer le message à astronautes. Il démarre et arrête également un formulaire d’onde animée, pour accuser réception à l’utilisateur que sa voix a été entendue.
+Communicator. cs est chargé de définir les États de bouton appropriés sur le périphérique Communicator. Cela permet à nos utilisateurs d’enregistrer un message, de le lire et d’envoyer le message à astronautes. Il démarre et arrête également un formulaire d’onde animée, pour accuser réception à l’utilisateur que sa voix a été entendue.
 
-* Dans **Communicator.cs**, supprimez les lignes suivantes (81 et 82) de la méthode **Start** . Cela active le bouton « enregistrer » sur le Communicator.
+* Dans **Communicator. cs**, supprimez les lignes suivantes (81 et 82) de la méthode **Start** . Cela active le bouton « enregistrer » sur le Communicator.
 
 ```cs
 // TODO: 2.a Delete the following two lines:
@@ -250,7 +250,7 @@ Dans ce chapitre, nous allons utiliser le module de reconnaissance de dictée po
 
 ### <a name="instructions"></a>Instructions
 
-Nous allons modifier **MicrophoneManager.cs** pour utiliser le module de reconnaissance de dictée. Voici ce que nous allons ajouter :
+Nous allons modifier **MicrophoneManager. cs** pour utiliser le module de reconnaissance de dictée. Voici ce que nous allons ajouter :
 
 1. Lorsque vous appuyez sur le **bouton d’enregistrement** , nous allons **Démarrer le DictationRecognizer**.
 2. Montrez l' **hypothèse** de ce que le DictationRecognizer a compris.
@@ -259,7 +259,7 @@ Nous allons modifier **MicrophoneManager.cs** pour utiliser le module de reconna
 5. Lorsque vous appuyez sur le **bouton arrêter** ou que la session MIC expire, **Arrêtez le DictationRecognizer**.
 6. Redémarrez **KeywordRecognizer**, qui écoutera la commande **Envoyer un message** .
 
-C’est parti ! Terminez tous les exercices de codage pour 3. a dans **MicrophoneManager.cs**, ou copiez et collez le code final trouvé ci-dessous :
+Commençons. Effectuez tous les exercices de codage pour 3. a dans **MicrophoneManager. cs**, ou copiez et collez le code final trouvé ci-dessous :
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.

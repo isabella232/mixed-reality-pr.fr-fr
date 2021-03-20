@@ -1,19 +1,19 @@
 ---
-title: MR et Azure 303-compréhension du langage naturel (LUIS)
+title: HoloLens (1ère génération) et Azure 303-compréhension du langage naturel (LUIS)
 description: Suivez ce cours pour apprendre à implémenter Azure Language Understanding Intelligence Service (LUIS) dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, Language Understanding Intelligence Service, Luis, hololens, immersifive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 663ac44dbf15ce2db63d7ffe0ecc605d3555857f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583435"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730556"
 ---
-# <a name="mr-and-azure-303-natural-language-understanding-luis"></a>MR et Azure 303 : compréhension du langage naturel (LUIS)
+# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens (1ère génération) et Azure 303 : compréhension du langage naturel (LUIS)
 
 <br>
 
@@ -399,7 +399,7 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
     1. *Sphere*
     2. *Cylindre*
-    3. *Cube*
+    3. *Dernier*
     4. *Texte 3D*
 
 4.  La *hiérarchie* de scène qui en résulte doit être semblable à celle de l’image ci-dessous :

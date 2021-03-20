@@ -1,19 +1,19 @@
 ---
-title: MR and Azure 302 - Vision par ordinateur
+title: HoloLens (1ère génération) et Azure 302-vision par ordinateur
 description: Suivez ce cours pour apprendre à reconnaître le contenu visuel dans une image fournie, à l’aide d’Azure Vision par ordinateur dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, vision par ordinateur, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 2ba5f01b0b14c655f8639f74590a511629350fbb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 119d83ec9fef97b4e4017b2226a9593404847a71
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583280"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730536"
 ---
-# <a name="mr-and-azure-302-computer-vision"></a>Réalité mixte - Azure - Cours 302 : Vision par ordinateur
+# <a name="hololens-1st-gen-and-azure-302-computer-vision"></a>HoloLens (1ère génération) et Azure 302 : vision par ordinateur
 
 <br>
 

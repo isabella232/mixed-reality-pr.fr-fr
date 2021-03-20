@@ -1,19 +1,19 @@
 ---
-title: MR and Azure 304 - Reconnaissance faciale
+title: HoloLens (1re génération) et Azure 304-reconnaissance faciale
 description: Suivez ce cours pour découvrir comment implémenter la reconnaissance faciale Azure au sein d’une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, reconnaissance faciale, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 6cdb8b7af9988bbfbc6670d0ef79f00487db7f3c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6266cb206a0686745bcd7a92f64d78436c71a228
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583370"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730506"
 ---
-# <a name="mr-and-azure-304-face-recognition"></a>Réalité mixte - Azure - Cours 304 : Reconnaissance faciale
+# <a name="hololens-1st-gen-and-azure-304-face-recognition"></a>HoloLens (1ère génération) et Azure 304 : reconnaissance faciale
 
 <br>
 

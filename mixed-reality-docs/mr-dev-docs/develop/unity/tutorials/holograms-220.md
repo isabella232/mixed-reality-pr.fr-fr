@@ -1,19 +1,19 @@
 ---
-title: MR Spatial 220 - Son spatial
+title: HoloLens (1re génération) spatiale 220-son spatial
 description: Suivez cette procédure pas à pas de codage à l’aide de Unity, Visual Studio et HoloLens pour apprendre les concepts de son spatial.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, son spatial, HoloLens, Académie de la réalité mixte, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: da130a5a93ec261d2e767874faa31dbc50d51b12
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: aea093aa8f5e6c983cd66acf8cec89d8e7ecf52d
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582768"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730306"
 ---
-# <a name="mr-spatial-220-spatial-sound"></a>Réalité mixte - Fonctionnalités spatiales - Cours 220 : Son spatial
+# <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>HoloLens (1re génération) spatial 220 : son spatial
 
 >[!NOTE]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.

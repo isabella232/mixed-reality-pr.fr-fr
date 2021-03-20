@@ -1,19 +1,19 @@
 ---
-title: MR Basics 100 - Bien démarrer avec Unity
+title: HoloLens (1re génération) notions de base 100-prise en main d’Unity
 description: Découvrez comment créer votre première application de base « Hello World » de base pour les appareils HoloLens et Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: la réalité mixte, Windows Mixed Reality, HoloLens, immersif, VR, Mr, prise en main, hologramme, Academy, didacticiel, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583734"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730356"
 ---
-# <a name="mr-basics-100-getting-started-with-unity"></a>Réalité mixte - Principes fondamentaux - Cours 100 : Bien démarrer avec Unity
+# <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>HoloLens (1re génération) notions de base 100 : prise en main d’Unity
 
 >[!IMPORTANT]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.

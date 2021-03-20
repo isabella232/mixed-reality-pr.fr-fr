@@ -1,19 +1,19 @@
 ---
-title: MR Input 211 - Geste
+title: Entrée HoloLens (1re génération) 211-geste
 description: Suivez cette procédure pas à pas de codage à l’aide de Unity, Visual Studio et HoloLens pour apprendre les concepts de mouvement.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, tutorial, geste, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583707"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730456"
 ---
-# <a name="mr-input-211-gesture"></a>Réalité mixte - Entrées - Cours 211 : Mouvement
+# <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (1ère génération) entrée 211 : geste
 
 >[!NOTE]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.
@@ -129,7 +129,7 @@ En cas de déploiement sur un casque immersif :
 * Dans le volet **hiérarchie** , développez l’objet **InputManager** .
 * Recherchez et sélectionnez l’objet **GesturesInput** .
 
-Le script **InteractionInputSource.cs** effectue les étapes suivantes :
+Le script **InteractionInputSource. cs** effectue les étapes suivantes :
 
 1. S’abonne aux événements InteractionSourceDetected et InteractionSourceLost.
 2. Définit l’État HandDetected.
@@ -172,7 +172,7 @@ Les **données d’État du curseur** fonctionnent de la manière suivante :
 
 ### <a name="instructions"></a>Instructions
 
-Pour utiliser des mouvements de navigation dans notre application, nous allons modifier **GestureAction.cs** pour faire pivoter les objets lorsque le mouvement de navigation se produit. En outre, nous ajouterons des commentaires au curseur à afficher lorsque la navigation est disponible.
+Pour utiliser des mouvements de navigation dans notre application, nous allons modifier **GestureAction. cs** pour faire pivoter les objets lorsque le mouvement de navigation se produit. En outre, nous ajouterons des commentaires au curseur à afficher lorsque la navigation est disponible.
 
 1. Dans le volet **hiérarchie** , développez **CursorWithFeedback**.
 2. Dans le dossier **hologrammes** , recherchez la ressource **ScrollFeedback** .
@@ -185,7 +185,7 @@ Pour utiliser des mouvements de navigation dans notre application, nous allons m
 9. Dans le volet de l' **inspecteur** , cliquez sur le bouton **Ajouter un composant** .
 10. Dans le menu, tapez dans l’action de **mouvement** de zone de recherche. Sélectionnez le résultat de la recherche.
 
-Ensuite, ouvrez **GestureAction.cs** dans Visual Studio. Dans l’exercice de codage 2. c, modifiez le script pour effectuer les opérations suivantes :
+Ensuite, ouvrez **GestureAction. cs** dans Visual Studio. Dans l’exercice de codage 2. c, modifiez le script pour effectuer les opérations suivantes :
 
 1. **Faites pivoter l’objet AstroMan** chaque fois qu’un mouvement de navigation est effectué.
 2. Calcule le **rotationFactor** pour contrôler la quantité de rotation appliquée à l’objet.
@@ -341,12 +341,12 @@ Vous remarquerez que les autres événements de navigation sont déjà renseign�
 
 ### <a name="instructions"></a>Instructions
 
-GestureManager.cs et AstronautManager.cs nous permettront d’effectuer les opérations suivantes :
+GestureManager. cs et AstronautManager. cs nous permettront d’effectuer les opérations suivantes :
 
 1. Utilisez le mot clé Speech «**Move astronautes**» pour activer les gestes de **manipulation** et «**Rotate astronautes**» pour les désactiver.
 2. Passez à la réponse à la **reconnaissance de mouvement de manipulation**.
 
-C’est parti !
+Commençons.
 
 1. Dans le volet **hiérarchie** , créez un gameobject vide. Nommez-le «**AstronautManager**».
 2. Dans le volet de l' **inspecteur** , cliquez sur le bouton **Ajouter un composant** .
@@ -361,7 +361,7 @@ Nous allons maintenant ajouter les commandes vocales requises pour contrôler l�
 3. Tapez le mot clé en tant que **Move astronautes**. N’hésitez pas à ajouter un raccourci clavier si vous le souhaitez.
 4. Cliquez sur le **+** côté droit pour ajouter un nouveau mot clé.
 5. Tapez le mot clé **Rotate astronautes**. N’hésitez pas à ajouter un raccourci clavier si vous le souhaitez.
-6. Le code du gestionnaire correspondant se trouve dans **GestureAction.cs**, dans le gestionnaire **ISpeechHandler. OnSpeechKeywordRecognized** .
+6. Le code du gestionnaire correspondant se trouve dans **GestureAction. cs**, dans le gestionnaire **ISpeechHandler. OnSpeechKeywordRecognized** .
 
 ![Comment configurer la source d’entrée vocale pour le chapitre 4](images/holograms211-speech.png)
 
@@ -372,13 +372,13 @@ Ensuite, nous allons configurer les commentaires de manipulation sur le curseur.
 3. Dans le volet **hiérarchie** , cliquez sur **CursorWithFeedback**.
 4. Faites glisser et déposez l’objet **PathingFeedback** à partir de la **hiérarchie** vers la propriété **d’objet de jeu Pathing détectée** dans le composant de **retour de curseur** de l' **inspecteur**.
 
-À présent, nous devons ajouter du code à **GestureAction.cs** pour activer les éléments suivants :
+À présent, nous devons ajouter du code à **GestureAction. cs** pour activer les éléments suivants :
 
 1. Ajoutez du code à la fonction **IManipulationHandler. OnManipulationUpdated** , qui déplacera le astronautes lorsqu’un mouvement de **manipulation** sera détecté.
 2. Calculez le **vecteur de déplacement** pour déterminer où le astronautes doit être déplacé en fonction de la position de la main.
 3. **Déplacez** le astronautes vers la nouvelle position.
 
-Effectuez le codage de l’exercice 4. a dans **GestureAction.cs** ou utilisez notre solution complète ci-dessous :
+Effectuez le codage de l’exercice 4. a dans **GestureAction. cs**, ou utilisez notre solution complète ci-dessous :
 
 ```cs
 using HoloToolkit.Unity.InputModule;

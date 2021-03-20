@@ -1,19 +1,19 @@
 ---
-title: MR and Azure 301 - Traduction de langue
+title: HoloLens (1ère génération) et Azure 301-traduction en langage
 description: Suivez ce cours pour apprendre à implémenter le API de traduction de texte Translator Text Azure dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, texte de traducteur, hololens, immersif, VR, traduction de langue, Windows 10, Visual Studio
-ms.openlocfilehash: 0b7e7c2e4146d3c60e62c25764aae48260fdf3ef
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: d02b86b6e62a46cd3ed4ebe7e6188cfda18e0d49
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583295"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730576"
 ---
-# <a name="mr-and-azure-301-language-translation"></a>Réalité mixte - Azure - Cours 301 : Traduction
+# <a name="hololens-1st-gen-and-azure-301-language-translation"></a>HoloLens (1ère génération) et Azure 301 : traduction de langue
 
 <br>
 
@@ -88,7 +88,7 @@ Pour utiliser l’API Azure translator, vous devez configurer une instance du se
     > [!NOTE]
     > Si vous n’avez pas encore de compte Azure, vous devez en créer un. Si vous suivez ce didacticiel dans une situation de classe ou de laboratoire, demandez à votre formateur ou à l’un des prostructors de vous aider à configurer votre nouveau compte.
 
-2.  Une fois que vous êtes connecté, cliquez sur **nouveau** dans l’angle supérieur gauche et recherchez « API de traduction de texte Translator Text ». Sélectionnez **Entrée**.
+2.  Une fois que vous êtes connecté, cliquez sur **nouveau** dans l’angle supérieur gauche et recherchez « API de traduction de texte Translator Text ». Sélectionnez **Enter** (Entrer).
 
     ![Nouvelle ressource](images/AzureLabs-Lab1-02.png)
 

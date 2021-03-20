@@ -1,19 +1,19 @@
 ---
-title: MR and Azure 306 - Streaming de vidéo
+title: HoloLens (1re génération) et Azure 306-diffusion vidéo en continu
 description: Suivez ce cours pour apprendre à implémenter Azure Media Services dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Academy, Unity, didacticiel, API, Media Services, streaming video, 360, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c6afedfd2dae9da3bcd6b044381a6dc20604ded8
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583456"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730566"
 ---
-# <a name="mr-and-azure-306-streaming-video"></a>Réalité mixte - Azure - Cours 306 : Diffusion de vidéos en streaming
+# <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>HoloLens (1re génération) et Azure 306 : diffusion vidéo en continu
 
 <br>
 
@@ -285,7 +285,7 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
     ![Le portail Azure](images/AzureLabs-Lab6-30.png)
 
-4.  Ensuite, accédez à **_fichier_ *paramètres de build*** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
+4.  Ensuite, accédez à ***fichier* *paramètres de build*** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
 
 5.  Assurez-vous également que :
 
@@ -367,7 +367,7 @@ Comment importer les **pour Unity**:
 
 4.  Dans la **hiérarchie**, sélectionnez l’objet **Camera principal** et mettez à jour les composants suivants :
 
-    1.  **Transformer**
+    1.  **Transform**
 
         1.  Position = **X**: 0, **Y**: 0, **Z**: 0.
 
@@ -629,7 +629,7 @@ Pour créer cette classe :
 
 2.  Cliquez avec le bouton droit dans le panneau **projet** , **créer* un script * C * \# *. Nommez le script point de **regard**.
 
-3.  Double-cliquez sur le nouveau script de **_regard_*pour l’ouvrir avec _* Visual Studio 2017.**
+3.  Double-cliquez sur le nouveau script * en **regard** pour l’ouvrir avec _ *Visual Studio 2017.**
 
 4.  Assurez-vous que l’espace de noms suivant figure en haut du script et supprimez les autres :
 

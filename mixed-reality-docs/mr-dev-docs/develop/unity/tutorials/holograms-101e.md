@@ -1,19 +1,19 @@
 ---
-title: MR Basics 101E - Projet complet avec émulateur
+title: Principes de base de HoloLens (1re génération) 101E-finaliser le projet avec l’émulateur
 description: Suivez cette procédure pas à pas de codage à l’aide d’Unity, de Visual Studio et de l’émulateur HoloLens pour apprendre les principes de base d’une application holographique.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: en réalité mixte, Windows Mixed Reality, hologramme, Academy, didacticiel, émulateur, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10, point de regard, mouvements, entrée vocale, son spatial, mappage spatial
-ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8d75ee610f352d11ac8396ad50c336b541a062a2
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583690"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730286"
 ---
-# <a name="mr-basics-101e-complete-project-with-emulator"></a>Réalité mixte - Principes fondamentaux - Cours 101E : Projet complet avec émulateur
+# <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a>Principes fondamentaux de HoloLens (1re génération) 101E : terminer le projet avec l’émulateur
 
 >[!NOTE]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
@@ -141,7 +141,7 @@ Dans ce chapitre, nous allons présenter la première des trois façons d’inte
 * Sélectionnez l’objet **curseur** dans le **panneau hiérarchie**.
 * Glissez-déplacez le script **WorldCursor** dans le panneau de l' **inspecteur**.
 * Double-cliquez sur le script **WorldCursor** pour l’ouvrir dans Visual Studio.
-* Copiez et collez ce code dans **WorldCursor.cs** et **Enregistrez All**.
+* Copiez et collez ce code dans **WorldCursor. cs** et **Enregistrez tout**.
 
 ```cs
 using UnityEngine;
@@ -321,7 +321,7 @@ Dans ce chapitre, nous allons ajouter la prise en charge de deux [commandes voca
 * Dans le dossier **scripts** , créez un script nommé **SpeechManager**.
 * Faites glisser le script **SpeechManager** sur l’objet **OrigamiCollection** dans la hiérarchie.
 * Ouvrez le script **SpeechManager** dans Visual Studio.
-* Copiez et collez ce code dans **SpeechManager.cs** et **Enregistrez All**:
+* Copiez et collez ce code dans **SpeechManager. cs** et **Enregistrez All**:
 
 ```cs
 using System.Collections.Generic;

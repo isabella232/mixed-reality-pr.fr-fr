@@ -1,19 +1,19 @@
 ---
-title: MR et Azure 307-machine learning
+title: HoloLens (1ère génération) et Azure 307-machine learning
 description: Suivez ce cours pour apprendre à implémenter Azure Machine Learning Studio (Classic) dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Academy, Unity, didacticiel, API, Machine Learning, ml, Machine Learning Studio, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c9d6408d41340b1c0fcb1f41b61d84ba115258c3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583397"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730516"
 ---
-# <a name="mr-and-azure-307-machine-learning"></a>Réalité mixte - Azure - Cours 307 : Machine Learning
+# <a name="hololens-1st-gen-and-azure-307-machine-learning"></a>HoloLens (1re génération) et Azure 307 : machine learning
 
 <br>
 
@@ -242,7 +242,7 @@ Pour commencer à créer une expérience :
 
     ![Machine Learning Studio (classique) : l’expérience](images/AzureLabs-Lab7-20.png)
 
-8.  En **_bas à gauche_*de l’élément de données de* fractionnement** , faites glisser une connexion en haut à **droite** de l’élément **former le modèle** . La première division de 70% du jeu de données sera utilisée par le modèle de formation pour former l’algorithme.
+8.  À partir du * en **bas à gauche** de l’élément _ *fractionner les données**, faites glisser une connexion en haut à **droite** de l’élément **former le modèle** . La première division de 70% du jeu de données sera utilisée par le modèle de formation pour former l’algorithme.
 
     ![Machine Learning Studio (classique) : l’expérience](images/AzureLabs-Lab7-21.png)
 
@@ -338,11 +338,11 @@ Configurez et testez votre casque immersif en réalité mixte.
 
 2.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à **modifier**  >  les **Préférences** , puis à partir de la nouvelle fenêtre, accédez à **outils externes**. Remplacez l' **éditeur de script externe** par **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
 
-3.  Ensuite, accédez à **fichier**  >  **paramètres de build** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **_changer de plateforme_* _.
+3.  Ensuite, accédez à **fichier**  >  **paramètres de build** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **_changer de plateforme_** .
 
 4.  Assurez-vous également que :
 
-    1.  _ L'*appareil cible** est défini sur **n’importe quel appareil**.
+    1.  L' **appareil cible** est défini sur **n’importe quel appareil**.
 
         > Pour Microsoft HoloLens, définissez **appareil cible** sur *HoloLens*.
 
@@ -368,9 +368,9 @@ Configurez et testez votre casque immersif en réalité mixte.
 
         1.  La **version du runtime** de **script** doit être **expérimentale** (équivalent .net 4,6)
 
-        2. Le **backend de script** doit être **_.net_* _
+        2. Le **backend de script** doit être **_.net_**
 
-        3. _ Le *niveau de compatibilité* de l’API * doit être **.net 4,6**
+        3. Le **niveau de compatibilité** de l’API doit être **.net 4,6**
 
             ![Configuration du projet Unity](images/AzureLabs-Lab7-36.png)
 

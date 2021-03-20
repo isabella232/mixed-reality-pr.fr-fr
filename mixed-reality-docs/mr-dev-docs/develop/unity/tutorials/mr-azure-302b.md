@@ -1,19 +1,19 @@
 ---
-title: MR and Azure 302b - Custom vision
+title: HoloLens (1ère génération) et Azure 302b-vision personnalisée
 description: Suivez ce cours pour apprendre à former un modèle de Machine Learning, puis à utiliser le modèle formé pour reconnaître des objets similaires dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
 keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, vision personnalisée, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: cba2df5841911df6d60a7060a70f835975a21f62
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 97fd0ae72401b67a83752cb2cf6799fa2b1ccc0c
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583408"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730526"
 ---
-# <a name="mr-and-azure-302b-custom-vision"></a>Réalité mixte - Azure - Cours 302b : Vision personnalisée
+# <a name="hololens-1st-gen-and-azure-302b-custom-vision"></a>HoloLens (1ère génération) et Azure 302b : vision personnalisée
 
 <br>
 
