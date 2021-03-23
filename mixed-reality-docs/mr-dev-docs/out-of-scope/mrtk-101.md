@@ -8,10 +8,10 @@ ms.topic: article
 keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, conception, exemple d’application, contrôles, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
 ms.localizationpriority: high
 ms.openlocfilehash: 8b9af843dc059ef4d50aa5508356c7aeed968a4e
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98248084"
 ---
 # <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-common-spatial-interactions"></a>MRTK 101 : Guide pratique pour utiliser Mixed Reality Toolkit d’Unity pour les interactions spatiales courantes
