@@ -9,10 +9,10 @@ ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, développer, développement, HoloLens, unity, unreal, directx, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, développement de réalité virtuelle, développement de réalité augmentée
 ms.openlocfilehash: 9bb0f1c62315bf106a0d6d45b8a2a24203ac9296
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98007629"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Introduction au développement de réalité mixte
