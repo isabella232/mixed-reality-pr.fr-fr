@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, commandes vocales, entrée vocale
 ms.localizationpriority: high
-ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590391"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237209"
 ---
 # <a name="9-using-speech-commands"></a>9. Utilisation des commandes vocales
 
@@ -49,8 +49,8 @@ Dans la section Speech > **Speech Commands**, cliquez à quatre reprises sur le 
 
 * Activer l’indicateur
 * Activer l’appui pour placement
-* Activer le cadre englobant
-* Désactiver le cadre englobant
+* Activer le contrôle des limites
+* Désactiver le contrôle des limites
 
 ![Ajout de nouvelles commandes vocales](images/mr-learning-base/base-09-section2-step1-2.png)
 
@@ -88,10 +88,10 @@ Développez **Element 0** et configurez-le comme suit :
 
 Développez **Element 1** et configurez-le comme suit :
 
-* Dans le champ **Keyword**, entrez **Activer le cadre englobant** afin de référencer la commande vocale Activer le cadre englobant que vous avez créée dans la section précédente.
+* Dans le champ **Mot clé**, entrez **Activer le cadre des limites** afin de référencer la commande Activer le contrôle des limites que vous avez créée dans la section précédente
 * Cliquez sur la petite icône **+** pour ajouter un événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function**, sélectionnez **BoundingBox** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **Aucune fonction**, sélectionnez **BoundsControl** > **bool activé** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché
 * **Cochez** la case de l’argument.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .
@@ -102,10 +102,10 @@ Développez **Element 1** et configurez-le comme suit :
 
 Développez **Element 2** et configurez-le comme suit :
 
-* Dans le champ **Keyword**, entrez **Désactiver le cadre englobant** afin de référencer la commande vocale Désactiver le cadre englobant que vous avez créée dans la section précédente.
+* Dans le champ **Mot clé**, entrez **Désactiver le contrôle des limites** afin de référencer la commande Activer le contrôle des limites que vous avez créée dans la section précédente
 * Cliquez sur la petite icône **+** pour ajouter un événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .
-* Dans la liste déroulante **No Function**, sélectionnez **BoundingBox** > **bool enabled** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
+* Dans la liste déroulante **Aucune fonction**, sélectionnez **BoundsControl** > **bool activé** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché
 * Vérifiez que la case de l’argument est **décochée**.
 * Cliquez sur la petite icône **+** pour ajouter un autre événement.
 * Dans la fenêtre de hiérarchie, affectez l’objet **RoverExplorer** au champ **None (Object)** .

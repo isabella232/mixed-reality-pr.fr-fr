@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, tutoriel, bien démarrer, mrtk, uxt, UX Tools, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: c26f5579aad29624c9a8f374caa4799423d0637e
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 2ceb16d31c793629e93c3dca00cb215fcbe38c6a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635440"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237150"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. Rendre votre scène interactive
 
@@ -69,7 +69,7 @@ Votre graphe d’événements (**Event Graph**) doit correspondre à la capture 
 
 ![Générer des acteurs d’interaction manuelle UXT](images/unreal-uxt/4-spawnactor.PNG)
 
-Les deux acteurs d’interaction manuelle Uxt ont besoin de propriétaires et d’emplacements de transformation initiale. La transformation initiale n’a pas d’importance dans ce cas, car UX Tools utilisera les mains virtuelles dès qu’elles seront visibles. Toutefois, la fonction `SpawnActor` nécessite une entrée de transformation pour éviter une erreur du compilateur. Vous devez donc utiliser les valeurs par défaut.
+Les deux acteurs d’interaction manuelle Uxt ont besoin de propriétaires et d’emplacements de transformation initiale. La transformation initiale n’a pas d’importance dans ce cas, car les Acteurs d’interaction manuelle utiliseront les Outils UX pour accéder aux mains virtuelles dès qu’elles seront visibles. Toutefois, la fonction `SpawnActor` nécessite une entrée de transformation pour éviter une erreur du compilateur. Vous devez donc utiliser les valeurs par défaut.
 
 1. Faites glisser puis relâchez la broche de l’une des broches **Spawn Transform** pour placer un nouveau nœud.
     * Recherchez le nœud **Make Transform** (Effectuer une transformation), puis faites glisser la valeur de retour (**Return Value**) vers le **Spawn Transform** de l’autre main, afin que les deux nœuds **SpawnActor** soient connectés.

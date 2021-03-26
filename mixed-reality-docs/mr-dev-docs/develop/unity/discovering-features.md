@@ -1,18 +1,18 @@
 ---
 title: Découverte et acquisition de fonctionnalités
-description: Découvrez et téléchargez des fonctionnalités de réalité mixte.
+description: Découvrez et téléchargez des fonctionnalités de Réalité Mixte.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: à jour, outils, prise en main, principes de base, unity, visual studio, toolkit, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, installation, Windows, HoloLens, émulateur, unreal, openxr
-ms.openlocfilehash: 4da6b6fdfc0205d4fa7fb5bf4ae9e48993d7c1e6
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102230713"
 ---
 # <a name="discovering-and-acquiring-features"></a>Découverte et acquisition de fonctionnalités
 
@@ -51,8 +51,7 @@ Les fonctionnalités sont listées dans leur catégorie appropriée. De gauche �
 
 ## <a name="refresh-the-feature-catalog"></a>Actualiser le catalogue des fonctionnalités
 
-Pour rechercher les fonctionnalités nouvelles et mises à jour, cliquez sur le bouton ![Refresh](images/RefreshButton.png) . Ceci permet de se connecter au site du catalogue et de récupérer les informations les plus récentes.
-* Une fois que le catalogue a été lu, la date et l’heure de la dernière mise à jour sont affichées.
+Pour rechercher les fonctionnalités nouvelles et mises à jour, cliquez sur le bouton ![Refresh](images/RefreshButton.png) . Ceci permet de se connecter au site du catalogue et de récupérer les informations les plus récentes. Une fois que le catalogue a été lu, la date et l’heure de la dernière mise à jour sont affichées.
 
 ## <a name="select-features"></a>Sélectionner les caractéristiques
 
@@ -73,7 +72,7 @@ Une fois le téléchargement terminé, Mixed Reality Feature Tool passe à l’�
 
 ## <a name="going-back-to-the-previous-step"></a>Revenir à l’étape précédente
 
-Dans **Discover features**, Mixed Reality Feature Tool permet de revenir en arrière jusqu’au début. Sélectionnez **Go back** pour recommencer.
+Dans les **fonctionnalités Discover**, l’outil Fonctionnalité de Réalité mixte permet de revenir en arrière jusqu’à la sélection du projet. Sélectionnez **Go back** pour recommencer.
 
 ## <a name="see-also"></a>Voir aussi
 

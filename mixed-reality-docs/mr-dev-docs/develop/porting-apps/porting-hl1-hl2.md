@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2, unity, portage, HoloLens 1ère génération, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, migration, bonnes pratiques, ARM
-ms.openlocfilehash: c55eb47c7fa8e87fd1fe96fd3b81f3cd3a3ee5a0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6f3c12bf54a4f4339c54908a47369746e0d743a4
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009909"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "101759130"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>Portage des applications HoloLens (1ère gén.) sur HoloLens 2
 
@@ -80,26 +80,26 @@ Après l’ingestion des DLL nécessaires, créez une solution Visual Studio dan
 
 Pour plus d’informations sur l’utilisation de MRTK version 2, consultez les ressources suivantes :
 
-- [Page d’accueil de la documentation MRTK (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+- [Page d’accueil Documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)
 - [Guide d’installation (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-- [MRTK - Suivi des mains (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
-- [MRTK - Suivi du regard (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
+- [MRTK - Suivi des mains (GitHub)](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/hand-tracking.md)
+- [MRTK - Suivi du regard (GitHub)](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/eye-tracking/eye-tracking-main.md)
 
 ### <a name="prepare-for-the-migration"></a>Se préparer à la migration
 
-Avant d’ingérer les nouveaux [fichiers *.unitypackage pour MRTK v2](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases), il est recommandé d’effectuer un inventaire de **1) tout code personnalisé intégré à MRTK v1** et **2) tout code personnalisé pour les interactions d’entrée ou les composants d’expérience utilisateur**. Lors de l’ingestion de MRTK v2, le conflit le plus fréquemment rencontré par les développeurs de réalité mixte concerne les entrées et les interactions. Nous vous recommandons de lire l’article concernant le [modèle d’entrée MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html).
+Avant d’ingérer les nouveaux [fichiers *.unitypackage pour MRTK v2](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases), il est recommandé d’effectuer un inventaire de **1) tout code personnalisé intégré à MRTK v1** et **2) tout code personnalisé pour les interactions d’entrée ou les composants d’expérience utilisateur**. Lors de l’ingestion de MRTK v2, le conflit le plus fréquemment rencontré par les développeurs de réalité mixte concerne les entrées et les interactions. Nous vous recommandons de lire l’article concernant le [modèle d’entrée MRTK v2](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md).
 
-Enfin, [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) est passé d’un modèle de scripts et d’objets gestionnaires en scène à une architecture de configuration et de fournisseur de services. La hiérarchie de scène et le modèle d’architecture sont désormais plus propres. Toutefois, ce changement nécessite que vous compreniez les nouveaux profils de configuration. Lisez le [Guide de configuration de Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) pour vous familiariser avec les profils et les paramètres importants que vous devez adapter aux besoins de votre application.
+Enfin, [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) est passé d’un modèle de scripts et d’objets gestionnaires en scène à une architecture de configuration et de fournisseur de services. La hiérarchie de scène et le modèle d’architecture sont désormais plus propres. Toutefois, ce changement nécessite que vous compreniez les nouveaux profils de configuration. Lisez le [Guide de configuration de Mixed Reality Toolkit](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md) pour vous familiariser avec les profils et les paramètres importants que vous devez adapter aux besoins de votre application.
 
 ### <a name="migrating-the-project"></a>Migration du projet
 
 Après l’importation de [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), votre projet Unity comprend probablement plusieurs erreurs liées au compilateur. Ces erreurs sont généralement dues à la nouvelle structure des espaces de noms et aux nouveaux noms de composants. Pour corriger ces erreurs, dans vos scripts, remplacez les anciens espaces de noms et composants par les nouveaux.
 
-Pour plus d’informations sur les différences entre HTK/MRTK et MRTK v2 au niveau des API, consultez le guide de portage sur le [wiki MRTK Version 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html).
+Pour plus d’informations sur les différences entre HTK/MRTK et MRTK v2 au niveau des API, consultez le guide de portage sur le [wiki MRTK Version 2](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/updates-deployment/hrtk-to-mrtk-porting-guide.md).
 
 ### <a name="best-practices"></a>Bonnes pratiques
 
-- Privilégier l’utilisation du [nuanceur MRTK standard](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html).
+- Privilégier l’utilisation du [nuanceur MRTK standard](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shading.md).
 - Travailler sur un seul changement important à la fois (par exemple, passer de IFocusable à [IMixedRealityFocusHandler](https://microsoft.github.io/MixedRealityToolkit-Unity/api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler.html)).
 - Effectuer des tests après chaque modification et utiliser le contrôle de code source.
 - Utiliser l’expérience utilisateur MRTK par défaut (boutons, fenêtres, etc.) dans la mesure du possible.
@@ -109,7 +109,7 @@ Pour plus d’informations sur les différences entre HTK/MRTK et MRTK v2 au ni
 - Recréer une interface utilisateur basée sur les canevas avec des quadrants, des colliders et du texte TextMeshPro.
 - Activer [Partage de mémoire tampon en profondeur](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows) ou [définir le point de focus](../unity/focus-point-in-unity.md) ; préférer utiliser une mémoire tampon de profondeur 16 bits pour obtenir de meilleures performances. Vérifier lors de l’affichage de la couleur que la profondeur est également affichée. Unity n’écrit généralement pas de profondeur pour les gameobjects transparents et de texte. 
 - Définir le chemin de rendu d’instance à passage unique.
-- Utilisez le [profil de configuration HoloLens 2 pour MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html#hololens-2-profile).
+- Utilisez le [profil de configuration HoloLens 2 pour MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md#hololens-2-profile).
 
 ### <a name="testing-your-application"></a>Test de votre application
 
@@ -152,8 +152,8 @@ Les applications et les scénarios ont tous leurs propres spécificités. Nous c
 ## <a name="see-also"></a>Voir aussi
 * [Installer les outils](../install-the-tools.md)
 * [MRTK - Guide d’installation (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-* [Page d’accueil de la documentation MRTK (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-* [Portage de HoloToolkit/MRTK vers MRTK version 2 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [Page d’accueil Documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)
+* [Portage de HoloToolkit/MRTK vers MRTK version 2 (GitHub)] ([page d’accueil Documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/updates-deployment/hrtk-to-mrtk-porting-guide.md)
 * [Paramètres recommandés pour Unity](../unity/recommended-settings-for-unity.md)
 * [Comprendre les performances pour la réalité mixte](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 

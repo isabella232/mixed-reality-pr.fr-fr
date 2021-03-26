@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, suivi oculaire
 ms.localizationpriority: high
-ms.openlocfilehash: e4104dfd0d7b27425217c8cb92fa36c807053081
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 08793622917ca977c51be56267d8710e5abb78e8
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590371"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237169"
 ---
 # <a name="8-using-eye-tracking"></a>8. Utilisation du suivi oculaire
 
@@ -61,35 +61,34 @@ Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ens
 
 ## <a name="adding-eye-tracking-to-objects"></a>Ajout du suivi oculaire aux objets
 
-Dans la fenêtre Hierarchy, développez l’objet RoverExplorer > **Buttons**, puis, pour chacun des trois objets enfants Buttons, développez et sélectionnez l’objet SeeItSayItLabel > **TextMeshPro** :
+Dans la fenêtre Hiérarchie, développez les **boutons** > **RoverExplorerButtons**, puis sélectionnez les trois objets bouton enfants :
 
-![Unity avec l’objet TextMeshPro sélectionné](images/mr-learning-base/base-08-section4-step1-1.png)
+![Unity avec l’objet Bouton sélectionné](images/mr-learning-base/base-08-section4-step1-1.png)
 
-Avec les trois objets TextMeshPro toujours sélectionnés, dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter les composants suivants à tous les objets sélectionnés :
-
-* Composant **Box Collider**
-* Composant **EyeTrackingTarget**
+Avec les trois objets Bouton toujours sélectionnés, dans la fenêtre Inspecteur, utilisez le bouton **Ajouter composant** pour ajouter le composant **EyeTrackingTarget** à tous les objets sélectionnés :
 
 ![Unity avec l’objet TextMeshPro sélectionné et des composants ajoutés](images/mr-learning-base/base-08-section4-step1-2.png)
 
-Dans la fenêtre Hierarchy, sélectionnez l’objet **Hints** > SeeItSayItLabel > **TextMeshPro**, puis configurez le composant **EyeTrackingTarget** de la façon suivante :
+Dans la fenêtre Hiérarchie, développez **RoverExplorer** > **Boutons** > **Indicateurs** > **SeeItSayItLabel** > **TextMeshPro**
+
+Ensuite, dans la fenêtre Hiérarchie, sélectionnez l’objet bouton **Indicateurs**, puis configurez le composant **EyeTrackingTarget** comme suit :
 
 * Dans la section d’événement **On Look At Start ()**
   * Cliquez sur la petite icône **+** pour ajouter un autre événement.
-  * Affectez l’objet **TextMeshPro** au champ **None (Object)** .
+  * Assignez l’objet **TextMeshPro** à partir du bouton **Indicateurs** au champ **Aucun (objet)**
   * Dans la liste déroulante **No Function**, sélectionnez **TextMeshPro** > **float fontSize** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
   * Définissez l’argument sur **0.06** pour augmenter la taille de police actuelle (0.04) de 50 %.
 * Dans la section d’événement **On Look Away ()**
   * Cliquez sur la petite icône **+** pour ajouter un autre événement.
-  * Affectez l’objet **TextMeshPro** au champ **None (Object)** .
+  * Assignez l’objet **TextMeshPro** à partir du bouton **Indicateurs** au champ **Aucun (objet)**
   * Dans la liste déroulante **No Function**, sélectionnez **TextMeshPro** > **float fontSize** pour mettre à jour cette valeur de propriété lorsque l’événement est déclenché.
   * Définissez l’argument sur **0.04** pour rétablir la taille de la police à 0.04.
 
 ![Unity avec l’objet Hints TextMeshPro sélectionné et le composant EyeTrackingTarget configuré](images/mr-learning-base/base-08-section4-step1-3.png)
 
-**Répétez** cette étape pour l’objet **Explode** > SeeItSayItLabel > **TextMeshPro** et pour l’objet **Reset** > SeeItSayItLabel > **TextMeshPro**.
+**Répétez** cette étape pour l’objet bouton **Éclater** et **Réinitialiser** pour configurer le suivi oculaire des boutons restants.
 
-Si vous passez maintenant en mode jeu, puis maintenez enfoncé le bouton droit de la souris tout en déplaçant la souris jusqu’à ce que le regard atteigne l’une des étiquettes, vous verrez que la taille de police augmente de 50 % et retourne à sa taille d’origine lorsque l’utilisateur regarde ailleurs :
+Si vous passez maintenant en mode jeu, puis maintenez enfoncé le bouton de droite tout en déplaçant la souris jusqu’à ce que le regard atteigne l’un des boutons, vous verrez que la taille de police du texte augmente de 50 % et revient à sa taille d’origine lorsque l’utilisateur regarde ailleurs :
 
 ![Vue partagée du mode Play d’Unity avec le suivi atteignant Eye Tracking Target - Étiquette du bouton Explode](images/mr-learning-base/base-08-section4-step1-4.png)
 
