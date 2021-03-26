@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, performances, optimisation, UC, GPU
-ms.openlocfilehash: 5012c30dce1ca4149324c916355922086a33c258
-ms.sourcegitcommit: 6725b83adf13f6573faacb27db2bcaafe80df472
+ms.openlocfilehash: eabc151382652bc2588249ef78d2f9f3b0f8cd99
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98615125"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550119"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Comprendre les performances de la réalité mixte
 
@@ -144,7 +144,7 @@ Le mise en pool d’objets est une technique populaire pour réduire le coût de
 - [Paramètres recommandés pour Unity](../unity/recommended-settings-for-unity.md)
 - [Recommandations sur les performances pour Unreal](../unreal/performance-recommendations-for-unreal.md)
 - [Recommandations matérielles dans Unreal](../unreal/unreal-materials.md)
-- [Optimiser les modèles 3D](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [Meilleures pratiques pour la conversion et l’optimisation des modèles 3D en temps réel](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
+- [Optimiser les modèles 3D](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [Meilleures pratiques pour la conversion et l’optimisation des modèles 3D en temps réel](/dynamics365/mixed-reality/import-tool/best-practices)
 - [Instructions relatives aux performances pour les artistes et les concepteurs pour les](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/Guidelines/index.html)
 - [Bonnes pratiques pour les](https://docs.unrealengine.com/en-US/SharingAndReleasing/XRDevelopment/VR/DevelopVR/ContentSetup/index.html)

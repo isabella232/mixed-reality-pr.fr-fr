@@ -6,17 +6,17 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Entrée vocale, KeywordRecognizer, GrammarRecognizer, microphone, dictée, voix, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 7268a4df9c7fce03029937c72540ed274574067d
-ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
+ms.openlocfilehash: c062289a1a26365528a86761b6b68a9a24041f7c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99606114"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550379"
 ---
 # <a name="voice-input-in-unity"></a>Entrée vocale dans Unity
 
 > [!CAUTION]
-> Avant de commencer, envisagez d’utiliser le plug-in Unity pour le kit de développement logiciel (SDK) cognitive Speech services. Le plug-in offre de meilleurs résultats de précision vocale et un accès facile au décodage vocal en texte, ainsi que des fonctionnalités vocales avancées telles que la boîte de dialogue, l’interaction fondée sur l’intention, la traduction, la synthèse vocale et la reconnaissance vocale en langage naturel. Pour commencer, consultez l' [exemple et la documentation](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-unity).
+> Avant de commencer, envisagez d’utiliser le plug-in Unity pour le kit de développement logiciel (SDK) cognitive Speech services. Le plug-in offre de meilleurs résultats de précision vocale et un accès facile au décodage vocal en texte, ainsi que des fonctionnalités vocales avancées telles que la boîte de dialogue, l’interaction fondée sur l’intention, la traduction, la synthèse vocale et la reconnaissance vocale en langage naturel. Pour commencer, consultez l' [exemple et la documentation](/azure/cognitive-services/speech-service/quickstart-csharp-unity).
 
 Unity expose trois façons d’ajouter une [entrée vocale](../../design/voice-input.md) à votre application Unity, les deux premières étant des types de PhraseRecognizer :
 * Le `KeywordRecognizer` fournit à votre application un tableau de commandes de chaîne à écouter.

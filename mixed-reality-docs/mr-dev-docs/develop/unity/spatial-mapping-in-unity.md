@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mappage spatial, convertisseur, conflit, maillage, numérisation, composant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759745"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549949"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mappage spatial dans Unity
 
@@ -311,7 +311,7 @@ struct TopologyResult
 ```
 
 > [!NOTE]
-> Dans l’exemple Unity, chacune de ces requêtes est liée à un bouton dans le panneau de l’interface utilisateur virtuelle. L’exemple code en dur les paramètres de chacune de ces requêtes à des valeurs raisonnables. Pour plus d’exemples, consultez SpaceVisualizer.cs dans l’exemple de code.
+> Dans l’exemple Unity, chacune de ces requêtes est liée à un bouton dans le panneau de l’interface utilisateur virtuelle. L’exemple code en dur les paramètres de chacune de ces requêtes à des valeurs raisonnables. Pour plus d’exemples, consultez SpaceVisualizer. cs dans l’exemple de code.
 
 ### <a name="shape-queries"></a>Requêtes de forme
 
@@ -319,7 +319,7 @@ Dans la dll, l’analyseur de forme (« ShapeAnalyzer_W ») utilise l’analys
 
 L’analyse des formes fonctionne uniquement sur des surfaces horizontales. Un canapé, par exemple, est défini par la surface du siège plat et le haut à l’arrière de la canapé. La requête Shape recherche deux surfaces d’une taille, d’une hauteur et d’une plage d’aspect spécifiques, les deux surfaces étant alignées et connectées. En utilisant la terminologie des API, le siège de la canapé et l’arrière-plan sont des composants de forme et les exigences d’alignement sont des contraintes de composant de forme.
 
-Voici un exemple de requête défini dans l’exemple Unity (ShapeDefinition.cs) pour les objets « sittable ».
+Voici un exemple de requête défini dans l’exemple Unity (ShapeDefinition. cs) pour les objets « sittable ».
 
 ```cs
 shapeComponents = new List<ShapeComponent>()
@@ -350,7 +350,7 @@ shapeConstraints = new List<ShapeConstraint>()
 };
 ```
 
-Les fonctions wrapper sont fournies dans le module Unity pour faciliter la création de définitions de formes personnalisées. La liste complète des contraintes de composant et de forme se trouve dans « SpatialUnderstandingDll.cs » dans les structures « ShapeComponentConstraint » et « ShapeConstraint ».
+Les fonctions wrapper sont fournies dans le module Unity pour faciliter la création de définitions de formes personnalisées. La liste complète des contraintes de composant et de forme se trouve dans « SpatialUnderstandingDll. cs » dans les structures « ShapeComponentConstraint » et « ShapeConstraint ».
 
 ![Forme de rectangle trouvée sur cette surface](images/su-shapequery-300px.jpg)<br>
 *Forme de rectangle trouvée sur cette surface*
@@ -421,7 +421,7 @@ Solver_PlaceObject(
     UnderstandingDLL.GetStaticObjectPlacementResultPtr());
 ```
 
-En cas de réussite, une structure « ObjectPlacementResult » contenant la position, les dimensions et l’orientation de placement est retournée. En outre, le placement est ajouté à la liste interne des objets placés de la dll. Les requêtes d’emplacement suivantes prennent en compte cet objet. Le fichier « LevelSolver.cs » dans l’exemple Unity contient plus d’exemples de requêtes.
+En cas de réussite, une structure « ObjectPlacementResult » contenant la position, les dimensions et l’orientation de placement est retournée. En outre, le placement est ajouté à la liste interne des objets placés de la dll. Les requêtes d’emplacement suivantes prennent en compte cet objet. Le fichier « LevelSolver. cs » dans l’exemple Unity contient plus d’exemples de requêtes.
 
 ![Résultats de l’emplacement des objets](images/su-objectplacement-1000px.jpg)<br>
 *Figure 3 : zone bleue comment le résultat de trois emplacements sur les requêtes d’étage à l’extérieur des règles de position de l’appareil photo*
@@ -441,7 +441,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-« Peinture » PlaySpace pilotée par l’utilisateur : au cours de la phase d’analyse, l’utilisateur se déplace et regarde le rythme des lectures, en peignant efficacement les zones qui doivent être incluses. La maille générée est importante pour fournir des commentaires de l’utilisateur au cours de cette phase. Installation à la page d’hébergement ou d’Office : les fonctions de requête sont conçues autour des surfaces plates et des parois à des angles droits. Il s’agit d’une limitation souple. Toutefois, pendant la phase d’analyse, une analyse de l’axe principal est effectuée pour optimiser la facettisation du maillage le long de l’axe principal et de l’axe secondaire. Le fichier SpatialUnderstanding.cs inclus gère le processus de phase d’analyse. Il appelle les fonctions suivantes.
+« Peinture » PlaySpace pilotée par l’utilisateur : au cours de la phase d’analyse, l’utilisateur se déplace et regarde le rythme des lectures, en peignant efficacement les zones qui doivent être incluses. La maille générée est importante pour fournir des commentaires de l’utilisateur au cours de cette phase. Installation à la page d’hébergement ou d’Office : les fonctions de requête sont conçues autour des surfaces plates et des parois à des angles droits. Il s’agit d’une limitation souple. Toutefois, pendant la phase d’analyse, une analyse de l’axe principal est effectuée pour optimiser la facettisation du maillage le long de l’axe principal et de l’axe secondaire. Le fichier SpatialUnderstanding. cs inclus gère le processus de phase d’analyse. Il appelle les fonctions suivantes.
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
@@ -475,12 +475,12 @@ La dll de compréhension stocke en interne le PlaySpace sous la forme d’une gr
 ![Maille générée produite à partir du volume voxel](images/su-custommesh.jpg)<br>
 *Maille générée produite à partir du volume voxel*
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 * Vérifiez que vous avez défini la fonctionnalité [SpatialPerception](#setting-the-spatialperception-capability)
 * Lorsque le suivi est perdu, l’événement OnSurfaceChanged suivant supprime tous les maillages.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mappage spatial dans le Toolkit de réalité mixte
-Pour plus d’informations sur l’utilisation du mappage spatial avec Mixed Reality Toolkit v2, consultez la <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">section relative à la sensibilisation spatiale</a> des documents MRTK.
+Pour plus d’informations sur l’utilisation du mappage spatial avec Mixed Reality Toolkit v2, consultez la <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">section relative à la sensibilisation spatiale</a> des documents MRTK.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
