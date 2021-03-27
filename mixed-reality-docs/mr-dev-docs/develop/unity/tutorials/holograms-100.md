@@ -1,17 +1,17 @@
 ---
-title: HoloLens (1re génération) notions de base 100-prise en main d’Unity
+title: HoloLens (1ère génération) - Bases 100 - Bien démarrer avec Unity
 description: Découvrez comment créer votre première application de base « Hello World » de base pour les appareils HoloLens et Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: la réalité mixte, Windows Mixed Reality, HoloLens, immersif, VR, Mr, prise en main, hologramme, Academy, didacticiel, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730356"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636171"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>HoloLens (1re génération) notions de base 100 : prise en main d’Unity
 
@@ -77,7 +77,7 @@ Deuxièmement, l’arrière-plan de la caméra par défaut a besoin d’une pens
 
 Troisièmement, examinons le plan near clip dans Unity et empêchez les objets d’être rendus trop près des yeux des utilisateurs, car un utilisateur approche un objet ou un objet s’approche d’un utilisateur.
 
-**Pour les applications HoloLens**, le plan near clip peut être défini sur les 0,85 compteurs [recommandés pour hololens](../camera-in-unity.md#clip-planes) .
+**Pour les applications HoloLens**, le plan near clip peut être défini sur les 0,85 compteurs [recommandés pour hololens](../camera-in-unity.md#using-clipping-planes) .
 
 1. Avec la **caméra principale** toujours sélectionnée dans le volet de **hiérarchie** , recherchez le composant **Camera** dans le panneau **inspecteur** , puis modifiez le champ **near clip plan** de la valeur par défaut **0,3** en HoloLens Recommended **0,85**.
 

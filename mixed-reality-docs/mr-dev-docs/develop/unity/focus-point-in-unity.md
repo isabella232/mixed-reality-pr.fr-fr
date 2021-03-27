@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, point de focalisation, plan de focalisation, plan de stabilisation, point de stabilisation, reprojection, LSR, mémoire tampon de profondeur, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 2ceb5f2b58cbd1571b2d9f4de79acfe45779bfea
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 16f359e1742b86c5f12c0c5965ac9e818ea76aee
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226398"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636221"
 ---
 # <a name="focus-point-in-unity"></a>Point de focus dans Unity
 
@@ -29,7 +29,7 @@ Si vous souhaitez définir le point de focus dans Unity, vous devez définir cha
 >
 > L’une ou l’autre approche devrait offrir une meilleure qualité d’image sans travail explicite de votre application pour sélectionner un point de focus pour chaque frame.  Notez que si vous fournissez un point de focalisation manuellement, cela remplacera le comportement automatique décrit ci-dessus et réduira généralement la stabilité de l’hologramme.  En règle générale, vous devez uniquement spécifier un point de focus manuel lorsque votre application s’exécute sur un HoloLens qui n’a pas encore été mis à jour vers la mise à jour 2018 d’avril de Windows 10.
 
-### <a name="example"></a> Exemple
+### <a name="example"></a>Exemple
 
 Il existe de nombreuses façons de définir le point de focus, comme suggéré par les surcharges disponibles sur la fonction statique *SetFocusPointForFrame* . Vous trouverez ci-dessous un exemple simple pour définir le plan de focus sur l’objet fourni pour chaque frame :
 
@@ -49,7 +49,7 @@ void Update()
 ```
 
 > [!NOTE]
-> Le code simple ci-dessus peut réduire la stabilité des hologrammes si l’objet ayant le focus se termine derrière l’utilisateur. Nous recommandons généralement de définir le **[partage de mémoire tampon de profondeur](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** au lieu de spécifier manuellement un point de focus.
+> Le code simple ci-dessus peut réduire la stabilité des hologrammes si l’objet ayant le focus se termine derrière l’utilisateur. Nous recommandons généralement de définir le **[partage de mémoire tampon de profondeur](camera-in-unity.md#sharing-depth-buffers)** au lieu de spécifier manuellement un point de focus.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
