@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: 1c9e185c63d3efef66cdc2782d8d8d4e3692c705
-ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
+ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103623629"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937425"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>OpenXR en réalité mixte fonctionnalités prises en charge dans Unity
 
-Le package de **plug-in OpenXR de réalité mixte** est une extension du **plug-in OpenXR** d’Unity et prend en charge une suite de fonctionnalités pour les casques HoloLens 2 et Windows Mixed Reality. Avant de continuer, vérifiez que vous avez installé **unity 2020,2** ou une version ultérieure, le **plug-in OpenXR version 0.1.3** ou ultérieure et votre projet Unity est [configuré pour OpenXR](openxr-getting-started.md).
+Le package de **plug-in OpenXR de réalité mixte** est une extension du **plug-in OpenXR** d’Unity et prend en charge une suite de fonctionnalités pour les casques HoloLens 2 et Windows Mixed Reality. Avant de continuer, assurez-vous que votre projet Unity est [configuré pour OpenXR](openxr-getting-started.md).
 
 ## <a name="whats-supported"></a>Opérations prises en charge
 
@@ -35,6 +35,9 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * Compatible avec Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) ou version ultérieure.
 * (Ajouté dans 0.1.3) Prend en charge la [communication à distance holographique des applications de bureau](holographic-remoting-desktop.md) à partir d’une application Windows autonome créée et déployée.
 * (Ajouté dans 0.1.4) Prend en charge le [suivi du code QR](#qr-codes) sur HoloLens2 via SpatialGraphNode
+* (Ajouté dans 0.2.0) Prend en charge l' **ancrage** dans la communication à distance holographique
+* (Ajouté dans 0.2.0) Prend en charge les **jointures manuelle et le suivi de maillage de main**
+* (Ajouté dans 0.2.0) Prend en charge **ARPlaneSubsystems** pour la détection de plan et place l’hologramme à l’aide de **ARRaycastManager**.
 
 ## <a name="holographic-remoting-setup"></a>Configuration de la communication à distance holographique
 
@@ -112,9 +115,6 @@ Pour référence, nous disposons d’un [exemple de projet de suivi QR sur GitHu
 
 Les problèmes suivants et les fonctionnalités manquantes sont connus avec le plug-in OpenXR de réalité mixte **version 0.1.0**. Nous travaillons sur ces versions et publierons des correctifs et de nouvelles fonctionnalités dans les versions à venir.
 
-* **ARPlaneSubsystem** n’est pas encore pris en charge. **ARPlaneManager**, **ARRAYCASTMANAGER** et l’API associée comme **ARAnchorManager. AttachAnchor** ne sont pas non plus prises en charge sur HoloLens 2.
-* La **persistance d’ancrage** n’est pas encore prise en charge par la communication à distance holographique, mais elle est bientôt disponible.
-* Le suivi du maillage de la **main** et les **XRMeshSubsystem** ne sont pas encore pris en charge.
 * La prise en charge des **ancres spatiales Azure** est disponible dans une version ultérieure.
 * **ARM64** est la seule plateforme prise en charge pour les applications HoloLens 2. La plateforme **ARM** est disponible dans une version ultérieure.
 
