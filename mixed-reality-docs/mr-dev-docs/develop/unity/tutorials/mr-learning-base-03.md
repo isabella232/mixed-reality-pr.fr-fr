@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, reconnaissance spatiale
 ms.localizationpriority: high
-ms.openlocfilehash: 0a8beb647516ebcb5bc07cb58d0193e8fe71e9fc
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 994d2d42d8b6939496e84a730c4a73eff39c72e3
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101760015"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550319"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Configuration des profils MRTK
 
@@ -20,11 +20,11 @@ ms.locfileid: "101760015"
 
 Dans ce tutoriel, vous allez voir comment personnaliser et configurer les profils MRTK.
 
-Les <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md" target="_blank">profils MRTK</a> sont une arborescence de profils imbriqués qui constituent les informations de configuration déterminant comment les systèmes et les fonctionnalités de MRTK doivent être initialisés. Le profil de plus haut niveau, le profil de configuration, contient des profils imbriqués pour chacun des systèmes principaux. Chaque profil imbriqué est conçu pour configurer le comportement de son système correspondant.
+Les <a href="/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md" target="_blank">profils MRTK</a> sont une arborescence de profils imbriqués qui constituent les informations de configuration déterminant comment les systèmes et les fonctionnalités de MRTK doivent être initialisés. Le profil de plus haut niveau, le profil de configuration, contient des profils imbriqués pour chacun des systèmes principaux. Chaque profil imbriqué est conçu pour configurer le comportement de son système correspondant.
 
 Cet exemple va vous montrer comment masquer le maillage de la reconnaissance spatiale en modifiant les paramètres de l’observateur de maillage spatial. Vous pouvez cependant suivre ces mêmes principes pour personnaliser des paramètres ou des valeurs dans les profils MRTK.
 
-Comme vous en avez fait l’expérience quand vous avez déployé votre projet sur votre HoloLens 2 dans le [tutoriel précédent](mr-learning-base-02.md#congratulations), le maillage de <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">reconnaissance spatiale</a> est un ensemble de mailles représentant la géométrie de l’environnement. C’est une visualisation utile à voir initialement, mais elle est généralement désactivée pour éviter de distraire visuellement l’utilisateur et d’impacter les performances en raison des ressources nécessaires à son affichage.
+Comme vous en avez fait l’expérience quand vous avez déployé votre projet sur votre HoloLens 2 dans le [tutoriel précédent](mr-learning-base-02.md#congratulations), le maillage de <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">reconnaissance spatiale</a> est un ensemble de mailles représentant la géométrie de l’environnement. C’est une visualisation utile à voir initialement, mais elle est généralement désactivée pour éviter de distraire visuellement l’utilisateur et d’impacter les performances en raison des ressources nécessaires à son affichage.
 
 ## <a name="objectives"></a>Objectifs
 

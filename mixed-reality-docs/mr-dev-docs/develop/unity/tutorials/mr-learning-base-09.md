@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, commandes vocales, entrée vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c87f3bb801b2fc32ed1aa42f2a4754bc83320587
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237209"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550249"
 ---
 # <a name="9-using-speech-commands"></a>9. Utilisation des commandes vocales
 
@@ -144,6 +144,6 @@ Dans les deux prochaines séries de tutoriels, [Tutoriels Azure Spatial Anchors]
 Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, la tâche suivante consiste à vous familiariser avec les composants de base des applications de réalité mixte.
 
 > [!div class="nextstepaction"]
-> [Interactions de base](../mrtk-101.md)
+> [Interactions de base](../../../out-of-scope/mrtk-101.md)
 
 Vous pouvez revenir aux [points de contrôle de développement Unity](../unity-development-overview.md#1-getting-started) à tout moment.
