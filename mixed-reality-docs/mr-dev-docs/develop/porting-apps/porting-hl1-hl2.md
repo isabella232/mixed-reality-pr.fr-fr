@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2, unity, portage, HoloLens 1ère génération, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, migration, bonnes pratiques, ARM
-ms.openlocfilehash: 6f3c12bf54a4f4339c54908a47369746e0d743a4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 52055f35df05c2cc69e960c681598adac7bd6f1c
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759130"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636231"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>Portage des applications HoloLens (1ère gén.) sur HoloLens 2
 
@@ -107,7 +107,7 @@ Pour plus d’informations sur les différences entre HTK/MRTK et MRTK v2 au ni
     - Cette action facilite les futures ingestions et mises à jour de MRTK.
 - Explorer les exemples de scènes fournis dans MRTK (surtout *HandInteractionExamples.scene*).
 - Recréer une interface utilisateur basée sur les canevas avec des quadrants, des colliders et du texte TextMeshPro.
-- Activer [Partage de mémoire tampon en profondeur](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows) ou [définir le point de focus](../unity/focus-point-in-unity.md) ; préférer utiliser une mémoire tampon de profondeur 16 bits pour obtenir de meilleures performances. Vérifier lors de l’affichage de la couleur que la profondeur est également affichée. Unity n’écrit généralement pas de profondeur pour les gameobjects transparents et de texte. 
+- Activer [Partage de mémoire tampon en profondeur](../unity/camera-in-unity.md#sharing-depth-buffers) ou [définir le point de focus](../unity/focus-point-in-unity.md) ; préférer utiliser une mémoire tampon de profondeur 16 bits pour obtenir de meilleures performances. Vérifier lors de l’affichage de la couleur que la profondeur est également affichée. Unity n’écrit généralement pas de profondeur pour les gameobjects transparents et de texte. 
 - Définir le chemin de rendu d’instance à passage unique.
 - Utilisez le [profil de configuration HoloLens 2 pour MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md#hololens-2-profile).
 

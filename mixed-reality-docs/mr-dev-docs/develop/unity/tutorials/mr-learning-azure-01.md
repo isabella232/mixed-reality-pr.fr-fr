@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, réalité mixte, Unity, tutoriel, hololens, hololens 2, stockage blob azure, stockage table azure, ancres spatiales azure, azure bot framework, services cloud azure, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 60ca15ebccaa8348ebd47f7d4bf6245ca1496775
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: fbb48cfd3c2c9d5c48099f3dfe8ddca8c6136c87
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590701"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550389"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Azure Cloud Services pour HoloLens 2
 
@@ -76,7 +76,7 @@ L’application est pilotée principalement par une interface utilisateur tradit
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2019 LTS installé et le module de prise en charge de la build d’applications de plateforme Windows universelle ajouté
 
 > [!CAUTION]
-> La version d’Unity recommandée pour cette série de tutoriels est Unity 2019 LTS. Elle remplace toutes les versions Unity requises ou recommandées qui sont indiquées dans les prérequis ci-dessus.
+> La version d’Unity recommandée pour cette série de tutoriels est Unity 2019 LTS. Cela remplace toute exigence ou recommandation de version Unity énoncée dans les prérequis indiqués ci-dessus.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Création et préparation du projet Unity
 
@@ -104,7 +104,7 @@ Dans le menu Unity, sélectionnez **Window** > **Package Manager** pour ouvrir l
 
 ## <a name="importing-the-tutorial-assets"></a>Importation des ressources du tutoriel
 
-Ajoutez le SDK AzurespatialAnchors V2.7.1 à votre projet Unity. Pour ajouter les packages, suivez ce [tutoriel](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
+Ajoutez le SDK AzurespatialAnchors V2.7.1 à votre projet Unity. Pour ajouter les packages, suivez ce [tutoriel](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
 
 Téléchargez et **importez** les packages personnalisés Unity suivants **dans l’ordre où ils sont listés** :
 
