@@ -1,22 +1,22 @@
 ---
-title: HoloLens (1re génération) entrée 210-point de regard
+title: HoloLens (1ère génération) - Entrées 210 - Pointage du regard
 description: Suivez cette procédure pas à pas de codage avec Unity, Visual Studio et HoloLens pour apprendre les détails des concepts de regard.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, point de présence, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 7598e6f6822c86fa34ac526fbe7468d535f7fba7
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730326"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269965"
 ---
 # <a name="hololens-1st-gen-input-210-gaze"></a>HoloLens (1re génération) entrée 210 : point de regard
 
->[!NOTE]
->Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.
+>[!IMPORTANT]
+>Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
 Le point de [regard](../../../design/gaze-and-commit.md) est la première forme d’entrée et révèle l’intention et la sensibilisation de l’utilisateur. Monsieur l’entrée 210 (également appelée l’Explorateur de projets) est une présentation approfondie des concepts liés au regard de Windows Mixed Reality. Nous ajouterons une sensibilisation contextuelle à notre curseur et à vos hologrammes, en tirant pleinement parti de ce que votre application connaît sur le regard de l’utilisateur.
 

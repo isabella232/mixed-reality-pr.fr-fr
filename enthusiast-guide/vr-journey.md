@@ -1,19 +1,19 @@
 ---
-title: Commencer votre parcours de réalité virtuelle
+title: Commencez votre voyage VR
 description: Explorez nos points de contrôle organisés pour guider les nouveaux utilisateurs d’appareils grâce à la configuration et à l’utilisation de leurs appareils de VR immersifs.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR,
-ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
+ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007059"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223930"
 ---
-# <a name="start-your-vr-journey"></a>Commencer votre parcours de réalité virtuelle
+# <a name="start-your-vr-journey"></a>Commencez votre voyage VR
 
 ![Image stock de l’environnement de VR superposé](images/mr-win32-slates-pinspanel.png)
 
@@ -60,7 +60,7 @@ Il existe différents services et fonctionnalités disponibles via Windows Mixed
 
 <br>
 
-|  Point de contrôle  |  Caractéristique  |
+|  Point de contrôle  |  Fonctionnalité  |
 | --- | --- |
 | [Découvrir la réalité mixte](learn-mixed-reality.md) | En savoir plus sur l’utilisation de vos entrées en regard, en voix, en contrôleurs et au clavier et à la souris |
 | [Naviguer dans la page d’hébergement Windows Mixed Reality](your-mixed-reality-home.md) | Explorez l’environnement virtuel de Windows Mixed Reality  |
@@ -76,12 +76,13 @@ Recherchez des jeux immersifs, des applications de bureau et du contenu VR dans 
 
 <br>
 
-|  Point de contrôle  |  Caractéristique  |
+|  Point de contrôle  |  Fonctionnalité  |
 | --- | --- |
 | [Jeux, vidéo 360 et applications](using-games-and-apps-in-windows-mixed-reality.md) | Commencez avec votre premier jeu immersif, les ardoises du Store 2D, les applications de bureau et les expériences WebVR |
 | [Utilisation de SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connectez votre appareil et jouez à SteamVR Games pour en savoir plus sur le programme Windows Insider |
 | [Utilisation de Microsoft Edge](using-microsoft-edge.md) | Installer la dernière version de Microsoft Edge sur votre appareil immersif |
 | [Utilisation de WebVR](webvr.md) | Obtenir le programme d’installation pour découvrir VR dans votre environnement de navigateur |
+| [Explorez AltspaceVR](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | Explorez le monde grandissant des événements VR avec AltspaceVR |
 
 ## <a name="troubleshooting-tips--resources"></a>Résolution des problèmes, conseils & ressources
 

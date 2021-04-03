@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: d45cc9ab0c0c922c1946f4c188202a99f049f4fc
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937425"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088488"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>OpenXR en réalité mixte fonctionnalités prises en charge dans Unity
 
@@ -38,6 +38,7 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * (Ajouté dans 0.2.0) Prend en charge l' **ancrage** dans la communication à distance holographique
 * (Ajouté dans 0.2.0) Prend en charge les **jointures manuelle et le suivi de maillage de main**
 * (Ajouté dans 0.2.0) Prend en charge **ARPlaneSubsystems** pour la détection de plan et place l’hologramme à l’aide de **ARRaycastManager**.
+* (0.9.0) prend en charge **XRMeshSubsystem** et **ARMeshManager** pour le mappage spatial.
 
 ## <a name="holographic-remoting-setup"></a>Configuration de la communication à distance holographique
 
@@ -113,7 +114,7 @@ Pour référence, nous disposons d’un [exemple de projet de suivi QR sur GitHu
 
 ## <a name="whats-coming-soon"></a>Bientôt disponible
 
-Les problèmes suivants et les fonctionnalités manquantes sont connus avec le plug-in OpenXR de réalité mixte **version 0.1.0**. Nous travaillons sur ces versions et publierons des correctifs et de nouvelles fonctionnalités dans les versions à venir.
+Les problèmes suivants et les fonctionnalités manquantes sont connus avec le plug-in OpenXR de réalité mixte **version 0.9.0**. Nous travaillons sur ces versions et publierons des correctifs et de nouvelles fonctionnalités dans les versions à venir.
 
 * La prise en charge des **ancres spatiales Azure** est disponible dans une version ultérieure.
 * **ARM64** est la seule plateforme prise en charge pour les applications HoloLens 2. La plateforme **ARM** est disponible dans une version ultérieure.

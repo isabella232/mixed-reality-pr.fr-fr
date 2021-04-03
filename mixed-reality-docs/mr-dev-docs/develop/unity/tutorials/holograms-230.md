@@ -1,22 +1,22 @@
 ---
-title: HoloLens (1re génération) spatiale 230-mappage spatial
+title: HoloLens (1ère génération) - Spatial 230 - Mappage spatial
 description: Suivez cette procédure pas à pas de codage à l’aide d’Unity, Visual Studio et HoloLens pour apprendre les concepts de mappage spatial.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, mappage spatial, reconstruction de surface, maille, HoloLens, Académie de la réalité mixte, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 24814925bfc154989822e326d2f088fe459c7aa0
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730136"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269906"
 ---
 # <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>HoloLens (1re génération) spatial 230 : mappage spatial
 
->[!NOTE]
->Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.
+>[!IMPORTANT]
+>Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
 Le [mappage spatial](../../../design/spatial-mapping.md) combine le monde réel et le monde virtuel ensemble en apprenant des hologrammes sur l’environnement. Dans l’spatial spatial 230 (Project Planetarium), nous allons apprendre à :
 

@@ -1,22 +1,22 @@
 ---
-title: HoloLens (1re génération) spatiale 220-son spatial
+title: HoloLens (1ère génération) - Spatial 220 - Son spatial
 description: Suivez cette procédure pas à pas de codage à l’aide de Unity, Visual Studio et HoloLens pour apprendre les concepts de son spatial.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, son spatial, HoloLens, Académie de la réalité mixte, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: aea093aa8f5e6c983cd66acf8cec89d8e7ecf52d
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 789f4da924c00554042ad991cc5610d3e816f12d
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730306"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269995"
 ---
 # <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>HoloLens (1re génération) spatial 220 : son spatial
 
->[!NOTE]
->Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.
+>[!IMPORTANT]
+>Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
 Le [son spatial](../../../design/spatial-sound.md) passe par des hologrammes et leur donne la présence dans notre monde. Les hologrammes sont composés de la lumière et du son, et si vous perdez la vision de vos hologrammes, le son spatial peut vous aider à les trouver. Le son spatial n’est pas comme le son classique que vous entendez sur la radio, il s’agit d’un son positionné dans l’espace 3D. Avec un son spatial, vous pouvez faire en sorte que les hologrammes s’affichent derrière vous, en regard de vous ou même en tête. Dans ce cours, vous allez :
 

@@ -1,22 +1,22 @@
 ---
-title: Principes de base de HoloLens (1re génération) 101E-finaliser le projet avec l’émulateur
+title: HoloLens (1ère génération) - Bases 101E - Projet complet avec un émulateur
 description: Suivez cette procédure pas à pas de codage à l’aide d’Unity, de Visual Studio et de l’émulateur HoloLens pour apprendre les principes de base d’une application holographique.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: en réalité mixte, Windows Mixed Reality, hologramme, Academy, didacticiel, émulateur, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10, point de regard, mouvements, entrée vocale, son spatial, mappage spatial
-ms.openlocfilehash: 8d75ee610f352d11ac8396ad50c336b541a062a2
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: b1099c7db8c320c456c8eb726caef44cb5b52def
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730286"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269935"
 ---
 # <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a>Principes fondamentaux de HoloLens (1re génération) 101E : terminer le projet avec l’émulateur
 
->[!NOTE]
->Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
+>[!IMPORTANT]
+>Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
 <br>
 

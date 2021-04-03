@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: la réalité mixte, Windows Mixed Reality, HoloLens, immersif, VR, Mr, prise en main, hologramme, Academy, didacticiel, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 68939eda0a18e2d49948d2a87b9f709389857bf3
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636171"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269975"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>HoloLens (1re génération) notions de base 100 : prise en main d’Unity
 
 >[!IMPORTANT]
->Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
+>Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
 Ce didacticiel vous guide dans la création d’une application de réalité mixte de base créée avec Unity.
 

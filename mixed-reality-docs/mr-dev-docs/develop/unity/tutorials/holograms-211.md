@@ -1,22 +1,22 @@
 ---
-title: Entrée HoloLens (1re génération) 211-geste
+title: HoloLens (1ère génération) - Entrées 211 - Geste
 description: Suivez cette procédure pas à pas de codage à l’aide de Unity, Visual Studio et HoloLens pour apprendre les concepts de mouvement.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, tutorial, geste, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 1431c9b53657e2cec1bd6ade1a3629e628e15917
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730456"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269985"
 ---
 # <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (1ère génération) entrée 211 : geste
 
->[!NOTE]
->Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](./mr-learning-base-01.md) a été publiée pour HoloLens 2.
+>[!IMPORTANT]
+>Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
 Les [gestes](../../../design/gaze-and-commit.md#composite-gestures) transforment l’intention de l’utilisateur en action. En effectuant des mouvements, les utilisateurs peuvent interagir avec des hologrammes. Dans ce cours, nous allons apprendre à suivre les mains de l’utilisateur, à répondre aux entrées de l’utilisateur et à envoyer des commentaires à l’utilisateur en fonction de l’État et de l’emplacement de la main.
 

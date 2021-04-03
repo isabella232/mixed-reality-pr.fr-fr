@@ -6,16 +6,21 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, performances, optimisation, UC, GPU
-ms.openlocfilehash: eabc151382652bc2588249ef78d2f9f3b0f8cd99
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: d0218902864586e678f6d51dfade58bd567bcc02
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550119"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269955"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Comprendre les performances de la réalité mixte
 
 Cet article est une introduction à la compréhension de l’importance des performances de votre application de réalité mixte.  L’expérience utilisateur peut être très détériorée si votre application n’est pas exécutée à la fréquence d’images optimale. Les hologrammes apparaissent instables et le suivi des têtes de l’environnement n’est pas exact, ce qui entraîne une mauvaise expérience de l’utilisateur. Les performances doivent être considérées comme une fonctionnalité de première classe pour le développement de la réalité mixte et non pour une tâche polonaise.
+
+Nous avons récemment publié une application appelée notions de base de la qualité qui couvre les problèmes courants liés aux performances, à la conception et à l’environnement, ainsi que les solutions pour les applications HoloLens 2. Cette application est une excellente démonstration visuelle du contenu qui suit.
+
+> [!div class="nextstepaction"]
+> [Télécharger l’application de notions de base sur la qualité](https://www.microsoft.com/en-us/p/quality-fundamentals/9mwz852q88fw)
 
 Les valeurs de fréquence d’images performante pour chaque plateforme cible sont répertoriées ci-dessous.
 
