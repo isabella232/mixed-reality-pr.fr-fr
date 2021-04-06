@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 53cb83725bcc9f8f810ba40df5d08e81ec545f19
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98582994"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105582591"
 ---
 # <a name="available-in-mrtk"></a>[Disponible dans MRTK](#tab/mrtk)
 
 |  Fonctionnalité  |  Fonctions  |
 | --- | --- |
-| [Interactions de base](../unity/mrtk-101.md) | Découvrez les principes de base de l’interaction avec des objets dans l’espace immersif |
+| [Interactions de base](../../out-of-scope/mrtk-101.md) | Découvrez les principes de base de l’interaction avec des objets dans l’espace immersif |
 | [Appareil photo](../unity/camera-in-unity.md) | Optimisez de manière exhaustive la qualité visuelle et la stabilité des hologrammes dans vos applications de réalité mixte |
 | [Pointage du regard](../unity/gaze-in-unity.md) | Autorisez des utilisateurs à cibler des hologrammes en les regardant |
 | [Contrôleurs de mouvement](../unity/motion-controllers-in-unity.md) | Ajoutez des actions spatiales à vos applications de réalité mixte |

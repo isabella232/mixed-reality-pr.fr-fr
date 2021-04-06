@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, réalité mixte, Unity, tutoriel, hololens, hololens 2, stockage blob azure, stockage table azure, ancres spatiales azure, azure bot framework, services cloud azure, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: fbb48cfd3c2c9d5c48099f3dfe8ddca8c6136c87
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: f82253ce4894038a8d8e34b06f5d699289fef691
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550389"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982912"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Azure Cloud Services pour HoloLens 2
 
@@ -112,7 +112,7 @@ Téléchargez et **importez** les packages personnalisés Unity suivants **dans 
 * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-04.md#importing-the-tutorial-assets).
+> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-02.md#importing-the-tutorial-assets).
 
 Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Project doit ressembler à ceci :
 

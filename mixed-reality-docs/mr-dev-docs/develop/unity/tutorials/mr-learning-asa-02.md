@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure
 ms.localizationpriority: high
-ms.openlocfilehash: ca7eef92721afb24ae359ddf00e810ecc63c2eb4
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 5f16d3c12e6dbb977ecedc1598a28073cfb39222
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550399"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105983142"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Bien démarrer avec Azure Spatial Anchors
 
@@ -56,7 +56,6 @@ Ajoutez le SDK AzurespatialAnchors V2.7.1 à votre projet Unity. Pour ajouter le
 
 Téléchargez et **importez** les packages personnalisés Unity suivants **dans l’ordre où ils sont listés** :
 
-
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
 
@@ -68,7 +67,7 @@ Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Proje
 > Si vous voyez des avertissements CS0618 signalant que « WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr) » est obsolète, vous pouvez les ignorer.
 
 > [!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-04.md#importing-the-tutorial-assets).
+> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-02.md#importing-the-tutorial-assets).
 
 ## <a name="preparing-the-scene"></a>Préparation de la scène
 

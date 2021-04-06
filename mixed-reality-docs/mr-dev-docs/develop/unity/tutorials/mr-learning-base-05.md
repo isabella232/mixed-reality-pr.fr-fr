@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, solveurs
 ms.localizationpriority: high
-ms.openlocfilehash: 11d25a13e679308ef7f0f4302dd7df29e413a435
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5e231fe91c96dc8b6a7c07c6fdbc2c07286d6ab2
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237058"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982982"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Création de contenu dynamique avec des solveurs
 
@@ -30,7 +30,7 @@ Dans ce tutoriel, vous allez explorer différentes façons de placer dynamiqueme
 
 ![Fenêtre de projet Unity avec le dossier SOlvers sélectionné](images/mr-learning-base/base-05-section1-step1-1.png)
 
-Dans ce tutoriel, nous allons passer en revue l’implémentation du solveur Directional Indicator et Tap To Place. Pour en savoir plus sur l’ensemble des solveurs disponibles dans MRTK, consultez le guide [Solveurs](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs).
+Dans ce tutoriel, nous allons passer en revue l’implémentation du solveur Directional Indicator et Tap To Place. Pour en savoir plus sur l’ensemble des solveurs disponibles dans MRTK, consultez le guide [Solveurs](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver.md) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
 
 > [!NOTE]
 > Le solveur Directional Indicator ne se trouve pas dans les dossiers des solveurs référencés ci-dessus, mais dans les dossiers Packages > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities parce qu’il s’agit d’une fonctionnalité expérimentale.
@@ -72,7 +72,7 @@ Appuyez sur le bouton de lecture pour passer en mode Game, appuyez sur le bouton
 > Si vous ne voyez pas le rayon de la caméra dans votre fenêtre Scene, vérifiez que votre menu Gizmos est activé, comme illustré dans l’image ci-dessus.
 
 > [!TIP]
-> Pour découvrir comment utiliser la simulation d’entrée dans l’éditeur, consultez le guide [Utilisation de la simulation d’entrée avec les mains dans l’éditeur pour tester une scène](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs).
+> Pour découvrir comment utiliser la simulation d’entrée dans l’éditeur, consultez le guide [Utilisation de la simulation d’entrée avec les mains dans l’éditeur pour tester une scène](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
 
 > [!TIP]
 > Si votre ordinateur dispose d’un microphone, vous pouvez facilement basculer l’état actif du volet Diagnostics qui apparaît dans la fenêtre Game avec la commande vocale « toggle diagnostics ». Vous pouvez aussi le désactiver dans MRTK Configuration Profile > Diagnostics > Enable Diagnostics System. D’une façon générale, il est cependant recommandé de conserver Diagnostics System actif pendant le développement.
@@ -140,7 +140,7 @@ Une fois que vous avez fini de tester la fonctionnalité en mode Game, cliquez a
 
 Dans ce tutoriel, vous avez appris à utiliser le solveur Directional Indicator de MRTK pour qu’un élément de l’interface utilisateur dirige intuitivement l’utilisateur vers des objets. Vous avez aussi appris à utiliser le solveur Tap To Place pour repositionner facilement des objets.
 
-Pour en savoir plus sur ces solveurs et sur d’autres solveurs fournis avec le MRTK, consultez le guide [Solveurs](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
+Pour en savoir plus sur ces solveurs et sur d’autres solveurs fournis avec le MRTK, consultez le guide [Solveurs](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver.md) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
 
 > [!div class="nextstepaction"]
 >[Tutoriel suivant : 6. Création d’interfaces utilisateur](mr-learning-base-06.md)

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: dd4eb8400a7aac491cb893d19e18afc6d6401d1b
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 4b81ed3a78cc47f4ad0463cab085621102060dc8
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550239"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982762"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configuration de Photon Unity Networking
 
@@ -82,7 +82,7 @@ Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Proje
 ![Fenêtres Hierarchy, Scene et Project dans Unity, après l’importation des ressources du tutoriel](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-04.md#importing-the-tutorial-assets).
+> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-02.md#importing-the-tutorial-assets).
 
 > [!NOTE]
 > Après l’importation du package de ressources du tutoriel MultiUserCapabilities, la fenêtre de console contient plusieurs erreurs [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) qui indiquent que le type ou l’espace de noms est manquant. Ces erreurs sont attendues et seront résolues dans la section suivante quand vous importerez les ressources PUN.

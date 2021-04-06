@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, interactions avec des objets, contrôle des limites
 ms.localizationpriority: high
-ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c2cca67afe19665ea899eb56140011bd9c756a7f
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237240"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982862"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interaction avec les objets 3D
 
@@ -113,7 +113,7 @@ Si vous basculez maintenant en mode Game, vous pouvez utiliser l’interaction p
 
 ![Vue partagée du mode Play d’Unity avec le bouton Reset enfoncé](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Pour en savoir plus sur le composant Object Manipulator et ses propriétés associées, vous pouvez consulter le guide [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
+Pour en savoir plus sur le composant Object Manipulator et ses propriétés associées, vous pouvez consulter le guide [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
 
 ## <a name="adding-bounds-control"></a>Ajout d’un contrôle des limites
 
@@ -168,7 +168,7 @@ Si vous passez maintenant en mode Game et que vous activez le contrôle des limi
 
 ![Vue partagée du mode Play de Unity avec le contrôle des limites en train d’être manipulé](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Pour plus d’informations sur le composant BoundsControl et ses propriétés associées, vous pouvez consulter le guide [Bounds Control](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
+Pour plus d’informations sur le composant BoundsControl et ses propriétés associées, vous pouvez consulter le guide [Bounds Control](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
 
 ## <a name="congratulations"></a>Félicitations
 

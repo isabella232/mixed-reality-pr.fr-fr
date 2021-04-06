@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, commandes vocales, entrée vocale
 ms.localizationpriority: high
-ms.openlocfilehash: c87f3bb801b2fc32ed1aa42f2a4754bc83320587
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 3aea23d5a259e555f47ca9ea41d77f345c977aeb
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550249"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982931"
 ---
 # <a name="9-using-speech-commands"></a>9. Utilisation des commandes vocales
 
@@ -23,14 +23,7 @@ Dans ce tutoriel, vous allez apprendre à créer des commandes vocales et à les
 * Apprendre à créer des commandes vocales
 * Apprendre à contrôler les commandes vocales globalement et localement
 
-## <a name="ensuring-the-microphone-capability-is-enabled"></a>Vérification de l’activation de la fonctionnalité Microphone
-
-Dans le menu Unity, sélectionnez Mixed Reality Toolkit > Utilities > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator** puis, dans la section **UWP Capabilities**, vérifiez que l’option **Enable Microphone Capability** est grisée :
-
-![Activer la fonctionnalité du microphone](images/mr-learning-base/base-09-section1-step1-1.png)
-
-> [!NOTE]
-> La fonctionnalité Microphone doit avoir été activée lors des instructions [Appliquer les paramètres de MRTK Project Configurator](mr-learning-base-02.md#creating-and-configuring-the-scene) lorsque vous avez configuré le projet Unity au début de cette série de tutoriels. Toutefois, si elle n’est pas activée, veillez à l’activer maintenant.
+[!INCLUDE[](includes/ensuring-microphone-capabality.md)]
 
 ## <a name="creating-speech-commands"></a>Création de commandes vocales
 

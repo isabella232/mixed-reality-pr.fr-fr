@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, reconnaissance vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 818e4c7ab60a2b17b60bfc97f564a4a87bf33a9b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9a149e5b80c5989ab960db3e9522b67473b2095c
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590121"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982772"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Intégration et utilisation de la reconnaissance vocale et de la transcription
 
@@ -37,7 +37,7 @@ Dans cette série de tutoriels, vous allez créer une application de réalité m
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2019 LTS installé et le module de prise en charge de la build d’applications de plateforme Windows universelle ajouté
 
 > [!IMPORTANT]
-> La version d’Unity recommandée pour cette série de tutoriels est Unity 2019 LTS. Elle remplace toutes les versions Unity requises ou recommandées qui sont indiquées dans les prérequis ci-dessus.
+> La version d’Unity recommandée pour cette série de tutoriels est Unity 2019 LTS. Cela remplace toute exigence ou recommandation de version Unity énoncée dans les prérequis indiqués ci-dessus.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Création et préparation du projet Unity
 
@@ -63,7 +63,7 @@ Avec l’objet **MixedRealityToolkit** sélectionné dans la fenêtre Hierarchy,
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
 
 > [!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-04.md#importing-the-tutorial-assets).
+> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-02.md#importing-the-tutorial-assets).
 
 ## <a name="configuring-the-capabilities"></a>Configuration des fonctionnalités
 

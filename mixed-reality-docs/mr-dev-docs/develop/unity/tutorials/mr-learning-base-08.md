@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, suivi oculaire
 ms.localizationpriority: high
-ms.openlocfilehash: 08793622917ca977c51be56267d8710e5abb78e8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: bf7bd266eb471193979c588d97d14dd37aed175e
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237169"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982881"
 ---
 # <a name="8-using-eye-tracking"></a>8. Utilisation du suivi oculaire
 
@@ -26,14 +26,7 @@ Dans ce tutoriel, vous allez voir comment activer le suivi oculaire (eye-trackin
 * Apprendre à activer le suivi oculaire pour HoleLens 2
 * Apprendre à utiliser le suivi oculaire pour déclencher une action
 
-## <a name="ensuring-the-eye-gaze-input-capability-is-enabled"></a>Vérifier que la fonctionnalité d’entrée avec le pointage du regard est activée
-
-Dans le menu Unity, sélectionnez Mixed Reality Toolkit > Utilities > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator** puis, dans la section **UWP Capabilities**, vérifiez que l’option **Enable Eye Gaze Input Capability** est grisée :
-
-![Fenêtre MRTK Project Configurator d’Unity](images/mr-learning-base/base-08-section1-step1-1.png)
-
-> [!NOTE]
-> La fonctionnalité Gaze Input doit avoir été activée lors des instructions [Appliquer les paramètres de MRTK Project Configurator](mr-learning-base-02.md#creating-and-configuring-the-scene) lorsque vous avez configuré le projet Unity au début de cette série de tutoriels. Toutefois, si elle n’est pas activée, activez-la maintenant.
+[!INCLUDE[](includes/ensuring-eye-gaze-capabality.md)]
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Activation du pointage du regard dans le fournisseur de regard
 

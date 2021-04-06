@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, communication à distance holographique sur PC, info-bulles, suivi oculaire
 ms.localizationpriority: high
-ms.openlocfilehash: 5a779ca03921701b2111e4ed5525b6f7bc250070
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3c564c28485ca7e0595b9fd438af961dc5bc5986
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590381"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982962"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Bien démarrer avec la communication à distance holographique de PC
 
@@ -67,7 +67,7 @@ Ensuite, suivez les instructions fournies dans [Changement de l’option d’aff
 Téléchargez et **importez** le package [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-04.md#importing-the-tutorial-assets).
+> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-02.md#importing-the-tutorial-assets).
 
 Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Project doit ressembler à ceci :
 
