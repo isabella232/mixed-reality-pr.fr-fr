@@ -7,58 +7,36 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, solveurs, collection d’objets de grille
 ms.localizationpriority: high
-ms.openlocfilehash: 9087800eca3536704ed4ef01a5d8178720b6a875
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 28cebe871e1046e8668a079affabf6167632cfa4
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590503"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105983034"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Positionnement des objets dans la scène
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Dans ce tutoriel, vous allez importer les ressources du tutoriel et positionner les objets fournis dans la scène.
+Dans ce tutoriel, vous allez positionner les objets fournis comme ressources du tutoriel dans la scène.
 
 ## <a name="objectives"></a>Objectifs
 
 * Apprendre à positionner des objets dans la scène
 * Apprendre à utiliser la fonctionnalité Grid Object Collection du MRTK
 
-## <a name="importing-the-tutorial-assets"></a>Importation des ressources du tutoriel
-
-Téléchargez le package personnalisé Unity suivant :
-
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-
-Pour importer un package personnalisé Unity, dans le menu Unity, sélectionnez **Assets** > **Import Package** > **Custom Package...** pour ouvrir la fenêtre Import package :
-
-![Fenêtres Hierarchy, Scene et Project dans Unity, après l’importation des ressources du tutoriel](images/mr-learning-base/base-04-section1-step1-1.png)
-
-Dans la fenêtre Import package, sélectionnez le package **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage** que vous avez téléchargé, puis cliquez sur le bouton Open :
-
-![Fenêtres Hierarchy, Scene et Project dans Unity, après l’importation des ressources du tutoriel](images/mr-learning-base/base-04-section1-step1-2.png)
-
-Dans la fenêtre Import Unity Package (Importer un package Unity), cliquez sur le bouton Tous pour vous assurer que toutes les ressources sont sélectionnées, puis sur le bouton Importer pour importer les ressources :
-
-![Fenêtres Hierarchy, Scene et Project dans Unity, après l’importation des ressources du tutoriel](images/mr-learning-base/base-04-section1-step1-3.png)
-
-Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Project doit ressembler à ceci :
-
-![Fenêtres Hierarchy, Scene et Project dans Unity, après l’importation des ressources du tutoriel](images/mr-learning-base/base-04-section1-step1-4.png)
-
 ## <a name="creating-the-parent-object"></a>Création de l’objet parent
 
 Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur une zone vide et sélectionnez **Create Empty** pour ajouter un objet vide à votre scène :
 
-![Menu contextuel Create Empty d’Unity](images/mr-learning-base/base-04-section2-step1-1.png)
+![Menu contextuel Create Empty d’Unity](images/mr-learning-base/base-04-section1-step1-1.png)
 
 > [!TIP]
 > Pour afficher côte à côte les fenêtres Scene et Game comme dans l’image ci-dessus, faites glisser la fenêtre Game à droite de la fenêtre Scene. Pour en savoir plus, consultez la page consacrée à la <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">personnalisation de votre espace de travail</a> dans la documentation Unity.
 
 Cliquez avec le bouton droit sur l’objet que vous venez de créer, sélectionnez **Rename**, puis remplacez le nom par **RoverExplorer** :
 
-![Menu contextuel Rename d’Unity](images/mr-learning-base/base-04-section2-step1-2.png)
+![Menu contextuel Rename d’Unity](images/mr-learning-base/base-04-section1-step1-2.png)
 
 L’objet RoverExplorer étant toujours sélectionné, dans la fenêtre Inspector, configurez le composant **Transform** comme ceci :
 
@@ -66,7 +44,7 @@ L’objet RoverExplorer étant toujours sélectionné, dans la fenêtre Inspecto
 * **Rotation** : X = 0, Y = 0, Z = 0
 * **Scale** : X = 1, Y = 1, Z = 1
 
-![Unity avec un objet RoverExplorer sélectionné et positionné](images/mr-learning-base/base-04-section2-step1-3.png)
+![Unity avec un objet RoverExplorer sélectionné et positionné](images/mr-learning-base/base-04-section1-step1-3.png)
 
 > [!NOTE]
 > L’appareil photo, qui représente la tête de l’utilisateur, est positionné à l’origine (X = 0, Y = 0, Z = 0). En règle générale, 1 unité dans Unity correspond à peu près à 1 mètre dans le monde physique. Il y a cependant des exceptions à cela, par exemple quand les objets sont des enfants d’objets mis à l’échelle. Dans le scénario ci-dessus, l’objet RoverExplorer est positionné 2 mètres devant la tête de l’utilisateur et 0,6 mètre en dessous.
@@ -75,7 +53,7 @@ L’objet RoverExplorer étant toujours sélectionné, dans la fenêtre Inspecto
 
 Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** :
 
-![Fenêtre de projet Unity avec le dossier Prefabs sélectionné](images/mr-learning-base/base-04-section3-step1-1.png)
+![Fenêtre de projet Unity avec le dossier Prefabs sélectionné](images/mr-learning-base/base-04-section2-step1-1.png)
 
 > [!TIP]
 > Un <a href="https://docs.unity3d.com/Manual/Prefabs.html" target="_blank">préfabriqué</a> (Prefab) est un GameObject préconfiguré stocké en tant que ressource Unity et qui peut être réutilisé dans tout votre projet.
@@ -86,7 +64,7 @@ Dans la fenêtre Project, cliquez sur le préfabriqué **Table** et faites-le gl
 * **Rotation** : X = 0, Y = 0, Z = 0
 * **Scale** : X = 1.2, Y = 0.01, Z = 1.2
 
-![Unity avec le préfabriqué nouvellement ajouté Table, sélectionné et positionné](images/mr-learning-base/base-04-section3-step1-2.png)
+![Unity avec le préfabriqué nouvellement ajouté Table, sélectionné et positionné](images/mr-learning-base/base-04-section2-step1-2.png)
 
 > [!TIP]
 > Pour afficher votre scène comme dans l’image ci-dessus, utilisez le <a href="https://docs.unity3d.com/Manual/SceneViewNavigation.html" target="_blank">gizmo Scene</a> en haut à droite de la fenêtre Scene pour ajuster l’angle de visualisation sur l’axe Z vers l’avant, double-cliquez sur l’objet MixedRealityPlayspace dans la fenêtre Hierarchy pour avoir le focus sur l’appareil photo, puis faites un zoom avant si nécessaire.
@@ -97,7 +75,7 @@ Dans la fenêtre Project, cliquez sur le préfabriqué **RoverAssembly** et fait
 * **Rotation** : X = 0, Y = -135, Z = 0
 * **Scale** : X = 1, Y = 1, Z = 1
 
-![Unity avec le préfabriqué nouvellement ajouté RoverAssembly, sélectionné et positionné](images/mr-learning-base/base-04-section3-step1-3.png)
+![Unity avec le préfabriqué nouvellement ajouté RoverAssembly, sélectionné et positionné](images/mr-learning-base/base-04-section2-step1-3.png)
 
 ## <a name="organizing-objects-in-a-collection"></a>Organisation des objets dans une collection
 
@@ -107,33 +85,33 @@ Dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **RoverEx
 * **Rotation** : X = 0, Y = 90, Z = 0
 * **Scale** : X = 1, Y = 1, Z = 1
 
-![Unity avec l’objet RoverParts nouvellement créé, sélectionné et positionné](images/mr-learning-base/base-04-section4-step1-1.png)
+![Unity avec l’objet RoverParts nouvellement créé, sélectionné et positionné](images/mr-learning-base/base-04-section3-step1-1.png)
 
 Dans la fenêtre Hierarchy, sélectionnez tous les objets enfants RoverExplorer > RoverAssembly > RoverModel > **Parts**, cliquez dessus avec le bouton droit, puis sélectionnez **Duplicate** pour créer une copie de chaque élément :
 
-![Unity avec toutes les pièces (Parts) sélectionnées et le menu contextuel Duplicate](images/mr-learning-base/base-04-section4-step1-2.png)
+![Unity avec toutes les pièces (Parts) sélectionnées et le menu contextuel Duplicate](images/mr-learning-base/base-04-section3-step1-2.png)
 
 > [!TIP]
 > Pour sélectionner plusieurs objets adjacents, maintenez la touche Maj enfoncée tout en utilisant la souris pour sélectionner le premier et le dernier objet.
 
 Les objets enfants Parts que vous venez de dupliquer étant toujours sélectionnés, cliquez dessus et faites-les glisser sur l’objet **RoverParts** pour en faire des objets enfants de cet objet :
 
-![Unity avec les pièces (parts) nouvellement dupliquées en tant qu’enfants de l’objet RoverParts](images/mr-learning-base/base-04-section4-step1-3.png)
+![Unity avec les pièces (parts) nouvellement dupliquées en tant qu’enfants de l’objet RoverParts](images/mr-learning-base/base-04-section3-step1-3.png)
 
 Pour faciliter l’utilisation de votre scène, dans la fenêtre Hierarchy, cliquez sur l’icône **œil** à gauche de l’objet pour désactiver la **visibilité de la scène** pour l’objet **RoverAssembly**. Cette opération masque l’objet dans la fenêtre Scene sans changer sa visibilité dans le jeu :
 
-![Unity avec la visibilité de la scène RoverAssembly désactivée](images/mr-learning-base/base-04-section4-step1-4.png)
+![Unity avec la visibilité de la scène RoverAssembly désactivée](images/mr-learning-base/base-04-section3-step1-4.png)
 
 > [!TIP]
 > Pour en savoir plus sur les contrôles de visibilité de la scène et sur la façon dont vous pouvez les utiliser pour optimiser l’affichage et le workflow de votre scène, reportez-vous à la documentation <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> d’Unity.
 
 Dans la fenêtre Hierarchy, nettoyez les noms des objets enfants RoverParts en remplaçant le suffixe **(1)** par **_Part** :
 
-![Unity avec le nom des pièces (parts) dupliquées effacé](images/mr-learning-base/base-04-section4-step1-5.png)
+![Unity avec le nom des pièces (parts) dupliquées effacé](images/mr-learning-base/base-04-section3-step1-5.png)
 
 Dans la fenêtre Hierarchy, sélectionnez l’objet **RoverParts**. Dans la fenêtre Inspector, cliquez sur le bouton **Add Component**, puis recherchez et sélectionnez **GridObjectCollection** pour ajouter le composant GridObjectCollection à l’objet RoverParts :
 
-![Objet RoverParts d’Unity avec l’ajout du composant de collection d’objets de grille en cours](images/mr-learning-base/base-04-section4-step1-6.png)
+![Objet RoverParts d’Unity avec l’ajout du composant de collection d’objets de grille en cours](images/mr-learning-base/base-04-section3-step1-6.png)
 
 Configurez les valeurs du composant **GridObjectCollection** comme ceci :
 
@@ -142,11 +120,11 @@ Configurez les valeurs du composant **GridObjectCollection** comme ceci :
 * **Cell Width** : 0.25
 * **Distance from parent** : 0.38
 
-![Unity avec le composant GridObjectCollection configuré](images/mr-learning-base/base-04-section4-step1-7.png)
+![Unity avec le composant GridObjectCollection configuré](images/mr-learning-base/base-04-section3-step1-7.png)
 
 Cliquez ensuite sur le bouton **Update Collection** pour mettre à jour la position des objets enfants de RoverParts :
 
-![Unity avec le composant GridObjectCollection appliqué](images/mr-learning-base/base-04-section4-step1-8.png)
+![Unity avec le composant GridObjectCollection appliqué](images/mr-learning-base/base-04-section3-step1-8.png)
 
 ## <a name="congratulations"></a>Félicitations
 
