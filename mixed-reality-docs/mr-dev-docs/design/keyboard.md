@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, clavier, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 9f42940b689a8fef77c9cf2f269100fccccfe6e0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d20fabb2536b028ce4c48aac84592bbdc3a0c291
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759855"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300434"
 ---
 # <a name="keyboard"></a>Clavier
 
@@ -25,7 +25,7 @@ Votre application de réalité mixte peut appeler le clavier système à tout mo
 
 ## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>Clavier système dans MRTK (Mixed Reality Toolkit) pour Unity
 
-* [MRTK-clavier du système](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/system-keyboard.md)
+* [MRTK-clavier du système](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard)
 
 <br>
 
@@ -33,7 +33,7 @@ Votre application de réalité mixte peut appeler le clavier système à tout mo
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, la tâche suivante consiste à déployer votre application sur un appareil ou un émulateur. 
+Si vous suivez le parcours de développement Unity que nous avons disposé, la tâche suivante consiste à déployer votre application sur un appareil ou un émulateur.
 
 > [!div class="nextstepaction"]
 > [Déployer sur HoloLens ou sur des casques immersifs Windows Mixed Reality](../develop/platform-capabilities-and-apis/using-visual-studio.md)

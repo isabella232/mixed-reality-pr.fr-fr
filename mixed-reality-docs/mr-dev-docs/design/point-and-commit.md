@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Réalité mixte, interaction, conception, HoloLens, mains, loin, pointer et valider, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens, rayons émanant de la main, manipulation d’objets, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 8196b67f103bae346ba4da065ee6045ff231b004
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 78a3ff87a48bbff838df4ee8baab7f8ea80203c0
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759865"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299804"
 ---
 # <a name="point-and-commit-with-hands"></a>Pointer et valider avec les mains
 
@@ -202,15 +202,16 @@ Le concept Pointer et valider pour l’interaction éloignée a été initialeme
 
 ## <a name="hand-ray-in-mrtk-mixed-reality-toolkit-for-unity"></a>Rayon émanant de la main dans MRTK (Mixed Reality Toolkit) pour Unity
 
-Par défaut, MRTK fournit un préfabriqué de rayon émanant de la main ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) qui a le même état visuel que le rayon système du shell. Il est attribué dans le profil d’entrée de MRTK, sous Pointeurs. Dans le casque immersif, les mêmes rayons sont utilisés pour les contrôleurs de mouvement.
+Par défaut, MRTK fournit un préfabriqué de rayon émanant de la main ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) qui a le même état visuel que le rayon système du shell. Il est attribué dans le profil d’entrée de MRTK, sous Pointeurs. Dans le casque immersif, les mêmes rayons sont utilisés pour les contrôleurs de mouvement.
 
-* [MRTK - Profil de pointeur](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md#pointer-configuration)
-* [MRTK - Système d’entrée](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
-* [MRTK - Pointeurs](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
+* [MRTK - Profil de pointeur](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK - Système d’entrée](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK - Pointeurs](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 
 ## <a name="see-also"></a>Voir également
+
 * [Manipulation directe avec les mains](direct-manipulation.md)
 * [Pointer et valider](gaze-and-commit.md)
 * [Mains : Manipulation directe](direct-manipulation.md)

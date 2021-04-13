@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: graphiques, UC, GPU, rendu, garbage collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759725"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300154"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recommandations sur les performances pour Unity
 
@@ -301,15 +301,15 @@ Une approximation facile pour comparer les performances des nuanceurs consiste �
 
 #### <a name="optimize-pixel-shaders"></a>Optimiser les nuanceurs de pixels
 
-En examinant les résultats des statistiques compilés à l’aide de la méthode ci-dessus, le [nuanceur de fragments](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) exécute généralement plus d’opérations que le [nuanceur de vertex](https://en.wikipedia.org/wiki/Shader#Vertex_shaders), en moyenne. Le nuanceur de fragments, également connu sous le nom de nuanceur de pixels, est exécuté par pixel sur la sortie d’écran, tandis que le nuanceur de vertex est exécuté uniquement par vertex de tous les maillages dessinés à l’écran. 
+En examinant les résultats des statistiques compilés à l’aide de la méthode ci-dessus, le [nuanceur de fragments](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) exécute généralement plus d’opérations que le [nuanceur de vertex](https://en.wikipedia.org/wiki/Shader#Vertex_shaders), en moyenne. Le nuanceur de fragments, également connu sous le nom de nuanceur de pixels, est exécuté par pixel sur la sortie d’écran, tandis que le nuanceur de vertex est exécuté uniquement par vertex de tous les maillages dessinés à l’écran.
 
-Ainsi, non seulement les nuanceurs de fragments ont plus d’instructions que les nuanceurs de vertex en raison de tous les calculs d’éclairage, mais les nuanceurs de fragments sont aussi presque toujours exécutés sur un jeu de données plus volumineux. Par exemple, si la sortie d’écran est une image 2k par 2k, alors le nuanceur de fragments peut être exécuté 2 000 * 2 000 = 4 millions de fois. En cas de rendu de deux yeux, ce nombre double puisqu’il y a deux écrans. Si une application de réalité mixte a plusieurs passes, des effets de post-traitement plein écran ou un rendu de plusieurs maillages sur le même pixel, ce nombre augmente considérablement. 
+Ainsi, non seulement les nuanceurs de fragments ont plus d’instructions que les nuanceurs de vertex en raison de tous les calculs d’éclairage, mais les nuanceurs de fragments sont aussi presque toujours exécutés sur un jeu de données plus volumineux. Par exemple, si la sortie d’écran est une image 2k par 2k, alors le nuanceur de fragments peut être exécuté 2 000 * 2 000 = 4 millions de fois. En cas de rendu de deux yeux, ce nombre double puisqu’il y a deux écrans. Si une application de réalité mixte a plusieurs passes, des effets de post-traitement plein écran ou un rendu de plusieurs maillages sur le même pixel, ce nombre augmente considérablement.
 
 Par conséquent, la réduction du nombre d’opérations dans le nuanceur de fragments peut entraîner des gains de performance bien supérieurs aux optimisations dans le nuanceur de vertex.
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternatives aux nuanceurs standard Unity
 
-Au lieu d’utiliser un rendu physique ou un autre nuanceur haute qualité, envisagez d’utiliser un nuanceur plus performant et moins onéreux. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit le [nuanceur standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) optimisé pour les projets de réalité mixte.
+Au lieu d’utiliser un rendu physique ou un autre nuanceur haute qualité, envisagez d’utiliser un nuanceur plus performant et moins onéreux. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit le [nuanceur standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) optimisé pour les projets de réalité mixte.
 
 Unity fournit également des options de nuanceur simplifiées, comme l’absence d’éclairage, l’éclairage des vertex et la lumière diffuse, qui sont plus rapides par rapport au nuanceur Unity standard. Pour plus d’informations, consultez [Utilisation et performances des nuanceurs intégrés](https://docs.unity3d.com/Manual/shader-Performance.html).
 

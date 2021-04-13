@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: œil-point de présence, point de présence, unité, hologramme, réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 7602eb27da19dc77e4eab1c1a428dc9a1cf8b252
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759685"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300364"
 ---
 # <a name="head-gaze-in-unity"></a>Tête-pointage dans Unity
 
@@ -51,8 +51,9 @@ Bien que l’exemple ci-dessus déclenche un raycast unique à partir de la bouc
 
 Comme avec un pointeur de souris sur un ordinateur, vous devez implémenter un [curseur](../../design/cursors.md) qui représente le point de regard de l’utilisateur. Le fait de connaître le contenu ciblé par un utilisateur augmente la confiance en ce qui concerne l’interaction avec.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Tête-regard du kit de réalité mixte 
-Vous pouvez accéder au point de regard du [Gestionnaire d’entrée](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md) dans MRTK.
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Tête-regard du kit de réalité mixte
+
+Vous pouvez accéder au point de regard du [Gestionnaire d’entrée](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) dans MRTK.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 

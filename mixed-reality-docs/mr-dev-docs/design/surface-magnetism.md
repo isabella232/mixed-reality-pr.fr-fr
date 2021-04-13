@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de la réalité mixte, casque de la réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, magnétisme de surface
-ms.openlocfilehash: e8a77d2fb1c147c353d74349961977f27aea71e0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c8e1c7e03f46992dd584f974c9573deb1d0e6474
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759785"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300334"
 ---
 # <a name="surface-magnetism"></a>Aimantation de surface
 
@@ -27,7 +27,7 @@ Le magnétisme des surfaces vous permet de placer des objets holographiques sur 
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit des scripts et des exemples de scènes pour la technique du magnétisme de la surface. Vous pouvez utiliser le magnétisme des surfaces avec différents types d’entrées, telles que des contrôleurs à main, des regards oculaires et des contrôleurs de mouvement.
 
-* [MRTK-solveur de magnétisation de surface](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#surfacemagnetism)
+* [MRTK-solveur de magnétisation de surface](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#surfacemagnetism)
 * [MRTK-sensibilité spatiale + scènes exemples d’aimantation de surface](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
 
 <br>

@@ -6,18 +6,19 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mappage spatial, convertisseur, conflit, maillage, numérisation, composant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: f7fe6e86f9672f36a34f9d7c32d25fccd7760f5e
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549949"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300164"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mappage spatial dans Unity
 
 le [mappage spatial](../../design/spatial-mapping.md) vous permet de récupérer des maillages de triangles qui représentent les surfaces dans le monde autour d’un appareil HoloLens. Vous pouvez utiliser les données de surface pour le placement, l’occlusion et l’analyse de la salle pour que vos projets Unity fassent une dose supplémentaire d’immersion.
 
 Unity comprend la prise en charge complète du mappage spatial, qui est exposé aux développeurs des manières suivantes :
+
 1. Composants de mappage spatial disponibles dans MixedRealityToolkit, qui fournissent un chemin d’accès pratique et rapide pour la prise en main du mappage spatial
 2. API de mappage spatial de niveau inférieur, qui fournissent un contrôle total et permettent une personnalisation plus sophistiquée des applications
 
@@ -51,6 +52,7 @@ Pour utiliser le mappage spatial dans votre application, vous devez définir la 
 Pour qu’une application consomme des données de mappage spatiales, la capacité SpatialPerception doit être activée.
 
 Comment activer la fonctionnalité SpatialPerception :
+
 1. Dans l’éditeur Unity, ouvrez le volet **« paramètres du lecteur »** (modifier > paramètres du projet > Player)
 2. Sélectionnez sous l’onglet **Windows Store**
 3. Développez **« paramètres de publication »** et cochez la fonctionnalité **« SpatialPerception »** dans la liste **« fonctionnalités »** .
@@ -59,6 +61,7 @@ Comment activer la fonctionnalité SpatialPerception :
 > Si vous avez déjà exporté votre projet Unity vers une solution Visual Studio, vous devez l’exporter vers un nouveau dossier ou définir manuellement [cette fonctionnalité dans AppxManifest dans Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 Le mappage spatial nécessite également un MaxVersionTested d’au moins 10.0.10586.0 :
+
 1. Dans Visual Studio, cliquez avec le bouton droit sur **Package. appxmanifest** dans le Explorateur de solutions puis sélectionnez **afficher le code** .
 2. Recherchez la ligne qui spécifie **TargetDeviceFamily** et remplacez **MaxVersionTested = "10.0.10240.0"** par **MaxVersionTested = "10.0.10586.0"**
 3. **Enregistrez** le package. appxmanifest.
@@ -84,6 +87,7 @@ Le conflit de mappage spatial permet l’interaction entre le contenu holographi
 Vous pouvez ajouter les deux composants à votre application si vous souhaitez visualiser et interagir avec les surfaces physiques.
 
 Pour utiliser ces deux composants dans votre application Unity :
+
 1. Sélectionnez un GameObject au centre de la zone dans laquelle vous souhaitez détecter les maillages de surface spatiale.
 2. Dans la fenêtre de l’inspecteur, **Ajoutez le composant**  >  **XR**  >  **mappage spatial de conflit** ou le **convertisseur de mappage spatial**.
 
@@ -92,6 +96,7 @@ Vous trouverez plus d’informations sur l’utilisation de ces composants sur l
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Aller au-delà des composants de mappage spatial intégrés
 
 Ces composants facilitent le glisser-déplacer pour la prise en main du mappage spatial.  Lorsque vous souhaitez aller plus loin, il existe deux chemins principaux à explorer :
+
 * Pour effectuer votre propre traitement de maillage de niveau inférieur, consultez la section ci-dessous sur l’API de script de mappage spatial de bas niveau.
 * Pour effectuer une analyse de maillage de niveau supérieur, consultez la section ci-dessous sur la bibliothèque SpatialUnderstanding dans <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
@@ -137,6 +142,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 ### <a name="handling-surface-changes"></a>Gestion des modifications de surface
 
 Il existe plusieurs cas principaux à gérer : ajouté et mis à jour, qui peuvent utiliser le même chemin d’accès de code et être supprimés.
+
 * Dans les cas ajoutés et mis à jour, nous ajoutons ou obtenons le GameObject représentant ce maillage du dictionnaire, nous créons un struct SurfaceData avec les composants nécessaires, puis appelons RequestMeshDataAsync pour remplir le GameObject avec les données de maillage et la position dans la scène.
 * Dans le cas supprimé, nous supprimons le GameObject représentant ce maillage du dictionnaire et le détruisons.
 
@@ -268,7 +274,7 @@ Dans l’exemple Unity, le curseur convertit chaque image de rayon. Tout d’abo
 
 ### <a name="topology-queries"></a>Requêtes de topologie
 
-Dans la DLL, le gestionnaire de topologie gère l’étiquetage de l’environnement. Comme indiqué ci-dessus, la plupart des données sont stockées dans surfels, contenues dans un volume voxel. En outre, la structure « PlaySpaceInfos » est utilisée pour stocker des informations sur le PlaySpace, y compris l’alignement universel (plus de détails à ce niveau ci-dessous), le plancher et la hauteur du plafond. Les heuristiques sont utilisées pour déterminer l’étage, le plafond et les murs. Par exemple, la surface horizontale la plus grande et la plus basse avec une surface d’exposition supérieure à 1-m2 est considérée comme le plancher. 
+Dans la DLL, le gestionnaire de topologie gère l’étiquetage de l’environnement. Comme indiqué ci-dessus, la plupart des données sont stockées dans surfels, contenues dans un volume voxel. En outre, la structure « PlaySpaceInfos » est utilisée pour stocker des informations sur le PlaySpace, y compris l’alignement universel (plus de détails à ce niveau ci-dessous), le plancher et la hauteur du plafond. Les heuristiques sont utilisées pour déterminer l’étage, le plafond et les murs. Par exemple, la surface horizontale la plus grande et la plus basse avec une surface d’exposition supérieure à 1-m2 est considérée comme le plancher.
 
 > [!NOTE]
 > Le chemin d’accès de l’appareil photo pendant le processus d’analyse est également utilisé dans ce processus.
@@ -470,21 +476,23 @@ Le workflow d’analyse, piloté par le comportement « SpatialUnderstanding �
 
 ### <a name="understanding-mesh"></a>Fonctionnement de la maille
 
-La dll de compréhension stocke en interne le PlaySpace sous la forme d’une grille de cubes voxel de 8 cm de taille. Au cours de la phase initiale d’analyse, une analyse de composant principale est effectuée pour déterminer les axes de la salle. En interne, elle stocke son espace voxel aligné sur ces axes. Une maille est générée environ chaque seconde en extrayant le isosurface du volume voxel. 
+La dll de compréhension stocke en interne le PlaySpace sous la forme d’une grille de cubes voxel de 8 cm de taille. Au cours de la phase initiale d’analyse, une analyse de composant principale est effectuée pour déterminer les axes de la salle. En interne, elle stocke son espace voxel aligné sur ces axes. Une maille est générée environ chaque seconde en extrayant le isosurface du volume voxel.
 
 ![Maille générée produite à partir du volume voxel](images/su-custommesh.jpg)<br>
 *Maille générée produite à partir du volume voxel*
 
 ## <a name="troubleshooting"></a>Dépannage
+
 * Vérifiez que vous avez défini la fonctionnalité [SpatialPerception](#setting-the-spatialperception-capability)
 * Lorsque le suivi est perdu, l’événement OnSurfaceChanged suivant supprime tous les maillages.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mappage spatial dans le Toolkit de réalité mixte
-Pour plus d’informations sur l’utilisation du mappage spatial avec Mixed Reality Toolkit v2, consultez la <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">section relative à la sensibilisation spatiale</a> des documents MRTK.
+
+Pour plus d’informations sur l’utilisation du mappage spatial avec Mixed Reality Toolkit v2, consultez la <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">section relative à la sensibilisation spatiale</a> des documents MRTK.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au module suivant : 
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au module suivant :
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
@@ -497,6 +505,7 @@ Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Systèmes de coordonnées](../../design/coordinate-systems.md)
 * [Systèmes de coordonnées dans Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

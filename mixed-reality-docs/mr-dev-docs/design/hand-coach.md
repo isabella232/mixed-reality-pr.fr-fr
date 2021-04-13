@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, conception, coach, casque immersif, MRTK, mains, assistance mains, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ec302cecb106b339828adf1c8777c2ea7ec7fa30
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550069"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300044"
 ---
 # <a name="hand-coach"></a>Coach de main
 
@@ -157,7 +157,7 @@ Une fois que vous êtes satisfait de votre animation
 *   Si vous avez enseigné les mains au moins une fois, répétez uniquement le mouvement s’il est détecté que l’utilisateur est bloqué.
 *   Si les positions de doigt/main spécifiques sont critiques, assurez-vous que les utilisateurs peuvent voir clairement ces nuances dans l’animation. Essayez droite les mains pour que les parties les plus importantes soient clairement visibles. 
 * Si vous constatez une distorsion des mains, vous devez accéder aux paramètres de qualité de Unity pour augmenter le nombre d’os. 
- Accédez à modifier > paramètres du projet > qualité > autres > poids de la fusion. Assurez-vous que « 4 segments » sont sélectionnés pour afficher des articulations lisses. 
+ Accédez à modifier > paramètres du projet > qualité > autres > poids de la fusion. Assurez-vous que « 4 segments » sont sélectionnés pour afficher des articulations lisses.
 
    ![Exemple : fenêtre Paramètres du projet](images/HandCoach/ProjectSettings.png)<br>
 
@@ -167,11 +167,11 @@ Une fois que vous êtes satisfait de votre animation
 * Mise à l’échelle des mains trop grandes
 * le placement des mains trop près de l’utilisateur
 * Les mains ne doivent être enseignées qu’une seule fois. L’apprentissage peut entraîner des confusions et des opérations
-*   En le plaçant dans Unity, téléchargez les MRTK les plus récents ici : https://github.com/microsoft/MixedRealityToolkit-Unity
-    *   Matériel : Teaching_Hand2
-    *   Scripts : consultez MRTK Guidelines for <a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK main coach </a>
-    *   Paramètre par projet
-        *   Scène définie sur UWP : l’instruction se trouve dans le [projet configurer Unity](../develop/unity/Configure-Unity-Project.md) pour Windows Mixed Reality
+* En le plaçant dans Unity, téléchargez les MRTK les plus récents ici : https://github.com/microsoft/MixedRealityToolkit-Unity
+  * Matériel : Teaching_Hand2
+  * Scripts : consultez MRTK Guidelines for <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> MRTK main coach </a>
+  * Paramètre par projet
+    * Scène définie sur UWP : l’instruction se trouve dans le [projet configurer Unity](../develop/unity/Configure-Unity-Project.md) pour Windows Mixed Reality
 
 ## <a name="see-also"></a>Voir aussi
 

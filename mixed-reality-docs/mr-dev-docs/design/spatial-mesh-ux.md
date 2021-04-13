@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Réalité mixte, HoloLens, contrôles d’interface utilisateur, interaction, interface utilisateur, expérience utilisateur, conception UX, interface utilisateur spatiale, interaction spatiale, interface utilisateur 3D, expérience utilisateur 3D, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de mise en réalité mixte
-ms.openlocfilehash: 5e8ffbb90b1143cd4e11bf45a889c11c233232df
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0d8d2811c2fae96f679eeb1df2f1053e7ecf5def
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759805"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300344"
 ---
 # <a name="spatial-mesh"></a>Maillage spatial
 
@@ -35,7 +35,8 @@ MRTK fournit plusieurs documents pour la visualisation de maillage spatial.
 - **MRTK_SurfaceReconstruction. mat**: ce matériau vous donne un effet d’impulsion animée sur le maillage spatial. Vous pouvez utiliser ce document pour visualiser l’environnement à un moment donné ou sur l’entrée d’air de l’utilisateur. Consultez la scène **PulseShaderExamples. Unity** pour obtenir des exemples.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
-* Pour plus d’informations, consultez [MRTK-spatial Awareness](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md) et [MRTK-Pulse Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/pulse-shader.md).
+
+* Pour plus d’informations, consultez [MRTK-spatial Awareness](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) et [MRTK-Pulse Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/experimental/pulse-shader).
 
 <br>
 
