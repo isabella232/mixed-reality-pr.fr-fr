@@ -358,7 +358,7 @@ Lorsque vous appuyez sur le bouton, il déplace et génère les événements app
 
 <img src="../images/button/MRTK_PressableButtonCubeRun1.jpg" alt="Pressable button cube run 1">
 
-#### <a name="troubleshooting"></a>Dépannage
+#### <a name="troubleshooting"></a>Résolution des problèmes
 
 Si votre bouton exécute une double pression, assurez-vous que la propriété **appliquer le push frontal** est active et que le plan de la **distance de départ** est placé devant le plan **touchable near interaction** . Le plan **touchable near interaction** est indiqué par le plan bleu placé devant l’origine de la flèche blanche dans le GIF ci-dessous :
 
