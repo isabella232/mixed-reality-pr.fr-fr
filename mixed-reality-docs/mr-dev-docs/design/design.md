@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: réalité mixte, découvrir, distribuer, index, page d’accueil, conception, développement, tutoriels, exemples d’applications, principes fondamentaux, études de cas, ressources, procédures HoloLens, projets open source, concepts principaux, interaction, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 36af6b1c439c47eef2126408d1185ecfe151cf8b
+ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98110447"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107221561"
 ---
 # <a name="start-designing-and-prototyping"></a>Commencer à concevoir et à créer des prototypes
 
@@ -40,6 +40,7 @@ Comme tout parcours, votre aventure dans la conception d’applications de réal
 | [Types d’applications de réalité mixte](types-of-mixed-reality-apps.md) | Décidez de l’emplacement de votre application sur le spectre de la réalité mixte. |
 | [Application Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Découvrez les bases de la conception d’une expérience utilisateur de réalité mixte à l’aide des comportements, conseils et recommandations pour créer des applications HoloLens incroyables (disponibles en téléchargement sur le Microsoft Store dans HoloLens 2). |
 | [Hub d’exemples MRTK](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Découvrez les interactions spatiales et les composants de création UX courants pour la réalité mixte (disponibles en téléchargement sur le Microsoft Store dans HoloLens 2) |
+| **Facultatif** [Télécharger le toolkit Figma](figma-toolkit.md) | Le toolkit Figma fournit des ressources que vous pouvez utiliser pour esquisser et disposer l’interface utilisateur en fonction des composants disponibles dans MRTK |
 
 ### <a name="2-core-concepts"></a>2. Concepts principaux
 
