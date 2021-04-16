@@ -1,32 +1,61 @@
 ---
-title: Ancres spatiales dans Unity
-description: Découvrez comment créer, stocker et récupérer des ancres spatiales dans des applications de réalité mixte Unity.
+title: Verrouillage universel et ancrages spatiaux dans Unity
+description: Découvrez comment utiliser les outils de verrouillage universel et les ancres spatiales dans les applications de réalité mixte Unity.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 03/16/2021
+ms.date: 04/7/2021
 ms.topic: article
-keywords: Unity, ancres spatiales, magasin d’ancrage, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 665cdae56f271a061972922af835ff64bdc35496
-ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
+keywords: Unity, ancres spatiales, magasin d’ancrage, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, outils de verrouillage universel, hologrammes
+ms.openlocfilehash: 4fc982244a766bb34f15b356d608f2aad18f7a88
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103623619"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528804"
 ---
-# <a name="spatial-anchors-in-unity"></a>Ancres spatiales dans Unity
+# <a name="world-locking-and-spatial-anchors-in-unity"></a>Verrouillage universel et ancrages spatiaux dans Unity
+
+![Image du héros de l’outil de verrouillage universel](images/wlt-img-01.jpeg)
+
+La mise en place de vos hologrammes, le déplacement avec vous ou, dans certains cas, la position par rapport à d’autres hologrammes est une partie importante de la création d’applications de réalité mixte. Cet article vous guide tout au long de la solution recommandée à l’aide des outils de verrouillage universel, mais nous aborderons également la configuration manuelle des ancres spatiales dans vos projets Unity. Avant de passer à un code, il est important de comprendre comment Unity gère l’espace de coordonnées et les ancres dans son propre moteur.
+
+## <a name="world-scale-coordinate-systems"></a>Systèmes de coordonnées à l’échelle mondiale
+
+Aujourd’hui, lors de l’écriture de jeux, d’applications de visualisation de données ou d’applications de réalité virtuelle, l’approche classique consiste à établir un **système de coordonnées universel** unique sur lequel toutes les autres coordonnées peuvent être mappées de manière fiable. Dans cet environnement, vous pouvez toujours trouver une transformation stable qui définit une relation entre deux objets dans ce monde. Si vous n’avez pas déplacé ces objets, leurs transformations relatives restent toujours les mêmes. Ce type de système de coordonnées global est facile à trouver lors du rendu d’un monde purement virtuel où vous connaissez toute la géométrie à l’avance. Aujourd’hui, les applications de la mise à l’échelle de la salle établissent généralement ce type de système de coordonnées à l’échelle de la pièce, avec son origine sur le plancher.
+
+En revanche, un appareil de réalité mixte non attaché, tel que HoloLens, a une compréhension dynamique pilotée par les capteurs du monde, en ajustant en permanence ses connaissances dans le temps de l’environnement de l’utilisateur lorsqu’il parcourt de nombreux compteurs à travers l’ensemble d’un étage d’un bâtiment. Dans le cas d’une expérience à l’échelle mondiale, si vous avez placé tous vos hologrammes dans un système de coordonnées rigides naïve, ces hologrammes finissent par être décomposés au fil du temps, soit en se basant sur le monde, soit de l’un par rapport à l’autre.
+
+Par exemple, le casque peut considérer deux endroits du monde comme étant séparés de 4 mètres, puis affiner cette compréhension, en sachant que les emplacements sont en fait de 3,9 mètres de distance. Si ces hologrammes avaient initialement été placés à 4 mètres en un seul système de coordonnées rigides, l’un d’eux présenterait toujours 0,1 mètres du monde réel.
+
+Vous pouvez placer manuellement les **ancres spatiales** dans Unity pour maintenir la position d’un hologramme dans le monde physique lorsque l’utilisateur est mobile. Toutefois, cela sacrifie l’auto-cohérence dans le monde virtuel. Les différentes ancres se déplacent constamment les unes par rapport aux autres et se déplacent également dans l’espace de coordonnées global. Dans ce scénario, des tâches simples telles que la mise en page deviennent difficiles et la simulation physique pose problème.
+
+Les **outils de verrouillage universel** vous offrent le meilleur des deux mondes, en stabilisant un système de coordonnées rigides unique à l’aide d’une alimentation interne d’ancres spatiales réparties sur l’ensemble de la scène virtuelle à mesure que l’utilisateur se déplace. Les outils analysent les coordonnées de l’appareil photo et les ancres spatiales de chaque image. Au lieu de modifier les coordonnées de tout le monde pour compenser les corrections dans les coordonnées de la tête de l’utilisateur, les outils corrigent simplement les coordonnées de l’en-tête à la place.
+
+## <a name="choosing-your-world-locking-approach"></a>Choix de votre approche de verrouillage universel
+
+* **Nous vous recommandons** d’utiliser les **outils de verrouillage universel** pour tous vos besoins en matière de positionnement d’hologramme. 
+    * Les outils de verrouillage universel offrent un système de coordonnées stable qui réduit les incohérences visibles entre les marqueurs virtuels et réels. En d’autres termes, il verrouille l’ensemble de la scène avec un pool partagé d’ancres, au lieu de verrouiller chaque groupe d’objets avec la propre ancre individuelle du groupe.
+* **Pour unity 2019/2020 utilisant OpenXR ou le plug-in Windows XR**, vous devez utiliser **ARAnchorManager**
+* **Pour les versions Unity plus anciennes ou les projets WSA** , vous devez utiliser **WorldAnchor**
+
+## <a name="setting-up-world-locking"></a>Configuration du verrouillage universel 
+
+[!INCLUDE[](includes/world-locking/world-locking-setup.md)]
+
+## <a name="persistent-world-locking"></a>Verrouillage de monde persistant
 
 Les ancres spatiales enregistrent les hologrammes dans un espace réel entre les sessions d’application. Une fois enregistrées dans le magasin d’ancres HoloLens, elles peuvent être recherchées et chargées dans différentes sessions et constituent une solution de secours idéale en l’absence de connectivité Internet.
 
 > [!IMPORTANT]
 > Les ancres locales sont stockées sur l’appareil, alors que les ancres spatiales Azure sont stockées dans le cloud. Si vous envisagez d’utiliser les services cloud Azure pour stocker vos ancres, nous avons créé un guide qui vous aidera à intégrer [Azure Spatial Anchors](../mixed-reality-cloud-services.md#azure-spatial-anchors). Notez que vous pouvez avoir des ancres locales et Azure dans le même projet sans conflit.
 
-## <a name="understanding-anchors"></a>Comprendre les points d’ancrage
+[!INCLUDE[](includes/world-locking/world-locking-persistence.md)]
 
-[!INCLUDE[](includes/unity-understanding-anchors.md)]
+## <a name="sharing-coordinate-spaces"></a>Partage des espaces de coordonnées 
 
-## <a name="using-the-anchorstore"></a>Utilisation de AnchorStore
+Si vous souhaitez partager un espace de coordonnées universel, consultez notre documentation complète sur l' [expérience partagée](shared-experiences-in-unity.md).
 
-[!INCLUDE[](includes/unity-spatial-anchorstore.md)]
+Notez que les ancres spatiales Azure ne sont pas encore prises en charge directement dans les outils de verrouillage universel, et les expériences partagées vous obligent donc à créer manuellement des ancres spatiales.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
@@ -43,6 +72,10 @@ Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
 ## <a name="see-also"></a>Voir aussi
+* [Présentation des outils de verrouillage universel](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/IntroFAQ.html)
+* [Guides de démarrage rapide](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/QuickStart.html)
+* [Tutoriels](https://microsoft.github.io/MixedReality-WorldLockingTools-Samples/Tutorial/01_Minimal/01_Minimal.html)
+* [Exemples](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/SampleApplications.html)
 * [Persistance d’ancrage spatial](../../design/coordinate-systems.md#spatial-anchor-persistence)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Kit de développement logiciel (SDK) d’ancre spatiale Azure pour Unity</a>

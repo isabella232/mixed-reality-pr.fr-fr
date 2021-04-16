@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: système de coordonnées, système de coordonnées spatiales, orientation uniquement, à l’échelle assise, à l’échelle debout, mise à l’échelle de l’espace, à l’échelle mondiale, 360 de degrés, assis, debout, salle, monde, échelle, position, orientation, Unity, Ancre, ancrage spatial, point d’ancrage universel, verrouillage universel, verrouillage universel, verrouillage du corps, verrouillage du corps, perte de suivi, localisabilité, limites, recentre, casque de réalité mixte, casque de réalité
-ms.openlocfilehash: aa68ae44e09dfe579f8ab8924d1b300506a1f00e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 91b1adf6dcf1c54d0d29a02bfb97ac4674a87c88
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581063"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528743"
 ---
 # <a name="coordinate-systems-in-unity"></a>Systèmes de coordonnées dans Unity
 
-Windows Mixed Reality prend en charge les applications à travers une large gamme d' [expériences](../../design/coordinate-systems.md), des applications en orientation seule et à l’échelle à l’échelle jusqu’à des applications à l’échelle de la place. Sur HoloLens, vous pouvez aller plus loin et créer des applications à l’échelle mondiale qui permettent aux utilisateurs d’aller au-delà de 5 mètres, en explorant un étage entier d’un immeuble et au-delà.
+Windows Mixed Reality prend en charge les applications à travers une large gamme d’expériences, des applications en orientation seule et à l’échelle à l’échelle jusqu’à des applications à l’échelle de la place. Sur HoloLens, vous pouvez aller plus loin et créer des applications à l’échelle mondiale qui permettent aux utilisateurs d’aller au-delà de 5 mètres, en explorant un étage entier d’un immeuble et au-delà.
 
-La première étape de la création d’une expérience de réalité mixte dans Unity consiste à déterminer la mise à l' [échelle](../../design/coordinate-systems.md) ciblée par votre application.
+La première étape de la création d’une expérience de réalité mixte dans Unity consiste à comprendre [les systèmes de coordonnées et à choisir la mise à l’échelle](../../design/coordinate-systems.md) ciblée par votre application.
 
 ## <a name="building-an-orientation-only-or-seated-scale-experience"></a>Création d’une expérience d’orientation seule ou de mise à l’échelle installée
 
@@ -102,7 +102,7 @@ Pour ajouter une ancre universelle, appelez AddComponent <WorldAnchor> () sur l�
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-C’est tout ! Cet objet de jeu sera désormais ancré à son emplacement actuel dans le monde physique : vous pouvez constater que ses coordonnées universelles s’ajustent légèrement au fil du temps pour garantir l’alignement physique. Utilisez la [persistance](persistence-in-unity.md) pour rechercher à nouveau cet emplacement d’ancrage dans une session d’application future.
+Et c’est tout ! Cet objet de jeu sera désormais ancré à son emplacement actuel dans le monde physique : vous pouvez constater que ses coordonnées universelles s’ajustent légèrement au fil du temps pour garantir l’alignement physique. Utilisez la [persistance](persistence-in-unity.md) pour rechercher à nouveau cet emplacement d’ancrage dans une session d’application future.
 
 ### <a name="removing-a-world-anchor"></a>Suppression d’une ancre mondiale
 
