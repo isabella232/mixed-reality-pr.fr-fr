@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, réalité mixte, développement, prise en main, nouveau projet, portage, fonctionnalité, caméra, simulation, émulation, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, MRTK, mixed reality toolkit, entrée vocale, caméra localisable, émulateur, Azure, tutoriels
-ms.openlocfilehash: e80c5411c7d180e0d78e031599455235dabaceb7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 50300ff08dd06c5fc250bc93979d537e10b38044
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237140"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528714"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Développement Unity pour VR et Windows Mixed Reality
 
@@ -34,13 +34,23 @@ Vous devrez modifier manuellement un petit ensemble de paramètres Unity pour le
 |  Point de contrôle  |  Résultat  |
 | --- | --- |
 | [Installer les outils les plus récents](../install-the-tools.md) | Téléchargez et installez le dernier package Unity et configurez votre projet pour la réalité mixte. |
-| [Configuration de votre projet pour WMR](configure-unity-project.md) | Découvrez comment créer des applications qui restituent du contenu numérique sur des périphériques d‘affichage holographiques et VR |
+| [Configuration de votre projet pour WMR](windows-xr-plugin.md) | Découvrez comment créer des applications qui restituent du contenu numérique sur des périphériques d‘affichage holographiques et VR |
+
+> [!IMPORTANT]
+> Pour plus d’informations sur la configuration de vos projets, consultez notre [guide de configuration](choosing-unity-version.md) des projets Unity.
 
 ### <a name="2-core-building-blocks"></a>2. Fonctionnalités principales
 
 Après avoir démarré un nouveau projet immersif, vous aurez besoin de quelques composants de base pour développer des applications immersives. Tous les composants principaux pour les applications de réalité mixte sont exposés de manière cohérente avec les autres API Unity. Vous n’aurez peut-être pas besoin de tous les composants à la fois, mais nous vous recommandons de les explorer dès le départ. Après avoir exploré les composants de base listés ci-dessous, vous disposerez d’une boîte à outils riche en fonctionnalités, que vous pourrez intégrer dans un projet VR.
 
-[!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
+|  Fonctionnalité  |  Fonctions  |
+| --- | --- |
+| [Appareil photo](../unity/camera-in-unity.md) | Optimisez de manière exhaustive la qualité visuelle et la stabilité des hologrammes dans vos applications de réalité mixte |
+| [Verrouillage du monde et ancres spatiales](spatial-anchors-in-unity.md) | Corrigez les problèmes de stabilisation, ajustez la caméra et intégrez une solution offrant un système de coordonnées stable || [Contrôleurs de mouvement](../unity/motion-controllers-in-unity.md) | Ajoutez des actions spatiales à vos applications de réalité mixte |
+| [Mouvements](../unity/gestures-in-unity.md) | Utilisez les mouvements de la main comme entrée dans vos expériences de réalité mixte |
+| [Son spatial](../unity/spatial-sound-in-unity.md) | Améliorez vos applications avec un son immersif en 3D |
+| [Text](../unity/text-in-unity.md) | Obtenez un texte clair et de haute qualité avec une taille et un rendu de qualité gérables |
+| [Entrée vocale](../unity/voice-input-in-unity.md) | Capturez des mots clés, des expressions et une dictée à partir de vos utilisateurs|
 
 ### <a name="3-advanced-features"></a>3. Fonctionnalités avancées
 

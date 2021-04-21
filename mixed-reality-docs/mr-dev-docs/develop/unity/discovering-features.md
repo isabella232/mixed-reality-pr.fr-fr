@@ -3,16 +3,16 @@ title: Découverte et acquisition de fonctionnalités
 description: Découvrez et téléchargez des fonctionnalités de Réalité Mixte.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 03/04/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: à jour, outils, prise en main, principes de base, unity, visual studio, toolkit, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, installation, Windows, HoloLens, émulateur, unreal, openxr
-ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9f12a1eba0c28b89000f1541ba62747a03e3564b
+ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102230713"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107732003"
 ---
 # <a name="discovering-and-acquiring-features"></a>Découverte et acquisition de fonctionnalités
 
@@ -37,6 +37,10 @@ L’en-tête de catégorie dans la capture d’écran ci-dessus contient les pro
 - Nom de la catégorie (par exemple : Mixed Reality Toolkit)
 - Nombre de fonctionnalités sélectionnées
 - Nombre de fonctionnalités disponibles
+- Boutons de sélection
+
+> [!NOTE]
+> Les boutons de sélection varient selon le contexte. En fonction de l’état de la sélection des fonctionnalités dans la catégorie, un ou plusieurs boutons `Select All` et `Select None` sont affichés.
 
 ### <a name="feature"></a>Fonctionnalité
 
@@ -49,6 +53,9 @@ Les fonctionnalités sont listées dans leur catégorie appropriée. De gauche �
 - Liste des versions disponibles
 - Lien vers les [détails des packages de fonctionnalités](viewing-package-details.md)
 
+> [!NOTE]
+> Si une fonctionnalité est fournie par un programme accessible en avant-première (on parle également de « préversion privée »), l’icône ![accès en avant-première](images/EarlyAccess.png) s’affiche.
+
 ## <a name="refresh-the-feature-catalog"></a>Actualiser le catalogue des fonctionnalités
 
 Pour rechercher les fonctionnalités nouvelles et mises à jour, cliquez sur le bouton ![Refresh](images/RefreshButton.png) . Ceci permet de se connecter au site du catalogue et de récupérer les informations les plus récentes. Une fois que le catalogue a été lu, la date et l’heure de la dernière mise à jour sont affichées.
@@ -58,6 +65,8 @@ Pour rechercher les fonctionnalités nouvelles et mises à jour, cliquez sur le 
 Vous sélectionnez les fonctionnalités en développant une catégorie, en sélectionnant une version, puis en cliquant sur la case à cocher :
 
 ![Fonctionnalités sélectionnées](images/SelectedFeatures.png)
+
+Pour sélectionner chaque package dans une catégorie, un bouton `Select All` est fourni. `Select None` désélectionne tous les packages sélectionnés. 
 
 Chaque catégorie avec une ou plusieurs fonctionnalités sélectionnées est alors mise à jour pour afficher le nombre de ces fonctionnalités.
 
