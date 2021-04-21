@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5b99eda2ca8bc2ba48a46513b867e94c45b198c1
-ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
+ms.openlocfilehash: ab95f0c89a4b77c6ea69fefa331bfbdccf35f79d
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105105649"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107564680"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -35,6 +35,7 @@ Quand vous créez des applications de réalité mixte avec Unity, plusieurs opti
 |  Outil/SDK  |  Description  |
 | --- | --- |
 | [Mixed Reality Toolkit pour Unity](../unity/mrtk-getting-started.md) | Le Mixed Reality Toolkit pour Unity est un kit de développement multiplateforme open source conçu pour accélérer le développement d’applications qui ciblent Microsoft HoloLens, les casques immersifs (VR) Windows Mixed Reality et la plateforme OpenVR. |
+| [Microsoft World Locking Tools](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/GettingStartedWithWorldLocking.html) | Fournit un système de coordonnées stable et un réglage de la caméra qui minimise les incohérences visibles. |
 | [Microsoft Mesh](/mesh/overview) (préversion privée) | Remplissez le [formulaire d’inscription](https://aka.ms/meshsignup) pour vous tenir informé des annonces et des actualités en rapport avec Microsoft Mesh. Grâce à Mesh, vous pouvez améliorer vos réunions virtuelles, organiser des sessions de conception virtuelles, aider d’autres personnes à distance et héberger des réunions virtuelles. |
 
 ## <a name="cloud-services"></a>Services cloud

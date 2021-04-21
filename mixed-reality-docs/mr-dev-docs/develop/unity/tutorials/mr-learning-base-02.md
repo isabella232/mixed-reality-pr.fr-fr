@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: c9cf580b1123002e9e8cdfd5c3914c3aa39e2825
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+ms.openlocfilehash: b0b8d97471dfae9d6dc6bbee26079af04f97de62
+ms.sourcegitcommit: 94ae851f78e5b861af601b445f8f0a3405197c40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003128"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107716020"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Initialisation de votre projet et déploiement de votre première application
 
@@ -186,7 +186,7 @@ Répétez la même procédure pour ajouter un **script Near Interaction Grabbabl
 > [!NOTE]
 > Dans le cadre de ce tutoriel, les colliders ont déjà été ajoutés à l’objet Cube. Pour plus d’informations sur les colliders, vous pouvez consulter la documentation <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collider</a> d’Unity.
 
-Pour tester cela dans l’éditeur Unity, vous pouvez entrer en mode lecture et maintenir la touche **Maj gauche** ou **Espace** enfoncée pour activer le contrôleur. Un déplacement de la souris permet de déplacer le contrôleur, et vous pouvez également le rapprocher ou l’éloigner de la caméra à l’aide de la roulette de la souris. Une fois que le pointeur se trouve sur le cube, appuyez sur le **bouton droit de la souris** pour déplacer l’objet Cube.
+Pour tester cela dans l’éditeur Unity, vous pouvez entrer en mode lecture et maintenir la touche **Maj gauche** ou **Espace** enfoncée pour activer le contrôleur. Un déplacement de la souris permet de déplacer le contrôleur, et vous pouvez également le rapprocher ou l’éloigner de la caméra à l’aide de la roulette de la souris. Une fois que le pointeur se trouve sur le cube, appuyez sur le **bouton gauche de la souris** pour déplacer l’objet Cube.
 
 ![Mode jeu](images/mr-learning-base/base-02-section8-step1-4.png)
 
