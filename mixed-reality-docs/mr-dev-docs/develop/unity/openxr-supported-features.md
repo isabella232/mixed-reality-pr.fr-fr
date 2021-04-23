@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: d45cc9ab0c0c922c1946f4c188202a99f049f4fc
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: e6756df7f082e56b029b6e82e06d960ba39ed04a
+ms.sourcegitcommit: aca5fddb98fbbd9aa22bdf8174d7fdcdb9d4c08a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088488"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107893999"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>OpenXR en réalité mixte fonctionnalités prises en charge dans Unity
 
@@ -39,6 +39,8 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * (Ajouté dans 0.2.0) Prend en charge les **jointures manuelle et le suivi de maillage de main**
 * (Ajouté dans 0.2.0) Prend en charge **ARPlaneSubsystems** pour la détection de plan et place l’hologramme à l’aide de **ARRaycastManager**.
 * (0.9.0) prend en charge **XRMeshSubsystem** et **ARMeshManager** pour le mappage spatial.
+* (Ajouté dans 0.9.0) Prend en charge le plug-in du kit de développement logiciel (SDK) d’ancrage spatial Azure pour Windows. Pour plus d’informations, consultez l' [exemple de projet Mixed Reality + OpenXR Azure spatial Anchors sur GitHub](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/tree/main/AzureSpatialAnchorsSample).
+* (Ajouté dans 0.9.1) Prend en charge la communication à distance holographique des applications de bureau à partir d’une application Windows UWP créée et déployée.
 
 ## <a name="holographic-remoting-setup"></a>Configuration de la communication à distance holographique
 
@@ -114,12 +116,11 @@ Pour référence, nous disposons d’un [exemple de projet de suivi QR sur GitHu
 
 ## <a name="whats-coming-soon"></a>Bientôt disponible
 
-Les problèmes suivants et les fonctionnalités manquantes sont connus avec le plug-in OpenXR de réalité mixte **version 0.9.0**. Nous travaillons sur ces versions et publierons des correctifs et de nouvelles fonctionnalités dans les versions à venir.
+Les problèmes suivants et les fonctionnalités manquantes sont connus avec le plug-in OpenXR de réalité mixte **version 0.9.2**. Nous travaillons sur ces versions et publierons des correctifs et de nouvelles fonctionnalités dans les versions à venir.
 
-* La prise en charge des **ancres spatiales Azure** est disponible dans une version ultérieure.
 * **ARM64** est la seule plateforme prise en charge pour les applications HoloLens 2. La plateforme **ARM** est disponible dans une version ultérieure.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Lorsque vous suspendez et reprenez une application Unity sur HoloLens 2, l’application ne peut pas reprendre correctement, ce qui a pour conséquence 4 points de rotation dans la vue HoloLens.
 
