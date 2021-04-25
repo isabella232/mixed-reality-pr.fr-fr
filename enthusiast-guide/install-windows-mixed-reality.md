@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, prise en main, configuration, portail de réalité mixte
 appliesto:
 - Windows 10
-ms.openlocfilehash: 72782d14218e0a95b5a88297310f791c977fe094
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a0ce559372d854e5f0bd51d25d112ba285e4d81e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726070"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944740"
 ---
 # <a name="install-windows-mixed-reality-software"></a>Installer le logiciel Windows Mixed Reality
 
@@ -96,5 +96,5 @@ Vous verrez un message « se préparer à vous préparer » sur votre écran a
 * [Demander à la communauté](https://answers.microsoft.com)
 * [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
 * [Résolution des problèmes d’installation](installation_errors.md)
-* [Résolution des problèmes d’installation](wmr-setup-faq.md)
+* [Résolution des problèmes d’installation](wmr-setup-faq.yml)
 * [Configurer Windows Mixed Reality](set-up-windows-mixed-reality.md)

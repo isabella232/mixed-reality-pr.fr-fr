@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, historique des versions, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 101061f69fcd4bd3885aa265f32ba2a8f93bf3dc
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 93ab38108d5ad557d61ad366ebb7aebd8cb65ab7
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550129"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944701"
 ---
 # <a name="holographic-remoting-version-history"></a>Historique des versions de la communication à distance holographique
 
@@ -28,6 +28,7 @@ ms.locfileid: "105550129"
 * Transmission optimisée des maillages de surface spatiale qui peuvent être interrogés via [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) par une application distante.
 * Correction d’un problème dans lequel l’appel de méthodes SpatialAnchorManager ou la libération d’ancres entraînait des exceptions lors de la déconnexion.
 * Résolution des problèmes liés aux threads entraînant des blocages lors de la fermeture des instances PlayerContext ou RemoteContext.
+* Lecteur de communication à distance holographique sur le Bureau : affiche un message d’erreur lorsque Windows Mixed Reality n’est pas installé au lieu de se fermer en mode silencieux.
 * De nombreux autres correctifs de bogues et améliorations de la stabilité.
 
 ## <a name="version-241-january-22-2021"></a>Version 2.4.1 (22 janvier 2021) <a name="v2.4.1"></a>

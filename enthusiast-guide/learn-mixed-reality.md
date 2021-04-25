@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, didacticiel, prise en main
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9210f9bb7dd4c922c0d202ddc114beab60e66de8
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726050"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944730"
 ---
 # <a name="learn-mixed-reality"></a>Découvrir la réalité mixte
 
@@ -54,5 +54,5 @@ Appuyez simplement sur l’icône de **lecture** en bas de l’application porta
 ## <a name="see-also"></a>Voir aussi
 
 * [Résolution des problèmes liés à l’installation](installation_errors.md)
-* [Résolution des problèmes d’installation](wmr-setup-faq.md)
+* [Résolution des problèmes d’installation](wmr-setup-faq.yml)
 * [Votre foyer de réalité mixte](your-mixed-reality-home.md)

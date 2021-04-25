@@ -3,12 +3,12 @@ title: Configurer Windows Mixed Reality
 description: Comment configurer vos contrôleurs de mouvement Windows Mixed Reality, la voix et l’audio, et définir la limite de votre espace pour un espace de lecture sécurisé.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, prise en main, configuration, contrôleur de mouvement, contrôleur, voix, audio, assis, debout, limite, pilotes graphiques, Microsoft Edge, chrome
-ms.openlocfilehash: 8cd313651665fe2e50deb21e2ba2434883dc873a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a08982112fea4d1b67b690233ae387b76afc2f90
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725940"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944750"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurer Windows Mixed Reality
 
@@ -106,7 +106,7 @@ Vous pouvez activer les commandes Cortana en réalité mixte, ce qui vous permet
 
 Windows Mixed Reality choisit automatiquement les paramètres d’affichage qui équilibrent la qualité et les performances, en fonction de la configuration matérielle de votre PC. Pour ajuster ces paramètres, accédez à **paramètres > la réalité mixte > l’affichage du casque**.
 
-### <a name="visuals"></a>Objets visuels
+### <a name="visuals"></a>Visuels
 
 Ce paramètre contrôle la qualité visuelle de votre page d’hébergement de la réalité mixte. La valeur par défaut est « Automatic ».
 
@@ -182,7 +182,7 @@ L’entrée de la réalité mixte est aussi facile que le fait de remettre le ca
 * [Demander à la communauté](https://answers.microsoft.com)
 * [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
 * [Résolution des problèmes liés à l’installation](installation_errors.md)
-* [Résolution des problèmes d’installation](wmr-setup-faq.md)
+* [Résolution des problèmes d’installation](wmr-setup-faq.yml)
 * [Découvrir la réalité mixte](learn-mixed-reality.md)
 * [Contrôleurs de mouvement](controllers-in-wmr.md)
 * [Fonctionnement du suivi intérieur-extérieur](tracking-system.md)

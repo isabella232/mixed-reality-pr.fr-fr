@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 66b352696016577ab121520102dd766b030ccf0e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580541"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944630"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Contrôleurs de mouvement dans Windows Mixed Reality
 
@@ -36,7 +36,7 @@ La plupart des casques sont précouplés directement sur le casque, mais certain
 > * Pour les contrôleurs qui se couplent directement à votre PC, vous devez les mettre en mode de jumelage en les mettant sous tension, puis en appuyant sur le bouton d’appariement dans le compartiment de la batterie jusqu’à ce que les lumières commencent à clignoter.
 > * Les contrôleurs de mouvement ne prennent en charge que l’appariement à un seul PC à la fois. Si vous devez les utiliser avec un autre casque, vous devez passer par le processus d’appariement. Consultez [configurer la réalité mixte Windows](set-up-windows-mixed-reality.md)
 
-[Obtenir de l’aide pour la connexion](wmr-setup-faq.md#my-motion-controllers-arent-working)
+[Obtenir de l’aide pour la connexion](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 
 > [!IMPORTANT]
 > **Vous avez un contrôleur Xbox ?**
@@ -75,7 +75,7 @@ Une fois le couplage terminé, les LED sont solides et brillants.
 
 ### <a name="common-issues"></a>Problèmes courants
 
-* Vérifiez que vous n’avez qu’une seule radio Bluetooth active sur votre PC. Si vous disposez de plusieurs radios Bluetooth, vous devez désactiver les autres radios dans Device Manager.
+* Vérifiez que vous n’avez qu’une seule radio Bluetooth active sur votre PC. Si vous disposez de plusieurs radios Bluetooth, vous devez désactiver les autres radios dans Gestionnaire de périphériques.
 * Placez votre dongle Bluetooth dans un port disposant d’un éclairage clair sur vos contrôleurs, et loin de brancher des appareils USB 3,0. USB 3,0 est connu pour avoir des interférences RF avec Bluetooth (lisez [ce document](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) d’Intel pour plus d’informations). Les ports USB 2,0 peuvent fonctionner mieux pour votre dongle Bluetooth.
 * Assurez-vous que votre dongle Bluetooth n’est pas branché sur un port USB à côté du câble USB de votre HMD. Le câble du casque a été connu pour causer des interférences avec les dongles Bluetooth également. Branchez le dongle sur le port USB avant de votre ordinateur pour obtenir des résultats optimaux.
 * Pour les Notebooks, assurez-vous que le Wi-Fi est connecté à une bande de 5 GHz pour une expérience optimale. Sélectionnez l’icône de réseau sans fil en bas à droite de la barre d’État et sélectionnez les propriétés du réseau que vous utilisez. Les blocs-notes conçus pour partager une antenne 2,4 GHz pour la connectivité Bluetooth et WiFi voient la congestion des données en cas de lenteur des vitesses de réseau ou de performances de suivi du contrôleur de mouvement médiocre.
@@ -116,7 +116,7 @@ Votre contrôleur vous communique ce qu’il fait en vibrant et en faisant clign
 | --- | --- |
 | Les LED allument et le contrôleur vibre une fois | **Activation** |  
 | Les LED éteignent et le contrôleur vibre deux fois | **Désactivation** |
-| Clignotement de LED toutes les 3 secondes | **En état de veille** |
+| Clignotement de LED toutes les 3 secondes | **En veille** |
 | Clignotement clignotant et le contrôleur vibre une fois | **Entrée en mode de jumelage** |
 | Le contrôleur vibre une fois | **Connexion ou déconnexion de votre PC** |
 | Les LED sont éclairées | **Contrôleurs suivis par le casque** |
@@ -135,7 +135,7 @@ Votre contrôleur vous communique ce qu’il fait en vibrant et en faisant clign
   * Lancez le **portail de réalité mixte** et entrez votre page d’hébergement de la réalité mixte.
   * Déplacez vos contrôleurs et vérifiez le suivi, les boutons de test et vérifiez que la téléportage fonctionne. Si ce n’est pas le cas, consultez [la section résolution des problèmes du contrôleur de mouvement](motion-controller-problems.md)
 
-## <a name="faq"></a>Questions fréquentes (FAQ)
+## <a name="faq"></a>FORUM AUX QUESTIONS
 
 ### <a name="how-can-i-check-battery-level"></a>Comment puis-je vérifier le niveau de la batterie ?
 

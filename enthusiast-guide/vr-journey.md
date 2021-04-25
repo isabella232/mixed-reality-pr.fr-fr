@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR,
-ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
-ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
+ms.openlocfilehash: c238ec41c75e565cc3eb2bb8bcb9b68eff015f59
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106223930"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944650"
 ---
 # <a name="start-your-vr-journey"></a>Commencez votre voyage VR
 
@@ -47,7 +47,7 @@ Une fois que vous avez votre appareil, vous devez l’installer et le configurer
 |  Point de contrôle  |  Résultat  |
 | --- | --- |
 | [Configurer Windows Mixed Reality](set-up-windows-mixed-reality.md) | Familiarisez-vous avec vos contrôleurs, vos limites de salle, vos entrées vocales et Microsoft Edge sur votre nouvel appareil VR |
-| [FAQ sur l’installation de Windows Mixed Reality](wmr-setup-faq.md) | Obtenir des réponses et résoudre les problèmes liés aux problèmes connus lors de la configuration de Windows Mixed Reality |
+| [FAQ sur l’installation de Windows Mixed Reality](wmr-setup-faq.yml) | Obtenir des réponses et résoudre les problèmes liés aux problèmes connus lors de la configuration de Windows Mixed Reality |
 | [Instructions relatives à l’intégrité, à la sécurité et au confort](wmr-health-safety-comfort.md) | Recommandations pour rester sécurisé lors de l’utilisation de Windows Mixed Reality avant d’utiliser votre casque  |
 
 ### <a name="3-using-windows-mixed-reality"></a>3. utilisation de Windows Mixed Reality
@@ -68,7 +68,7 @@ Il existe différents services et fonctionnalités disponibles via Windows Mixed
 | [Utilisation d’entrées vocales](using-speech-in-wmr.md) | Familiarisez-vous avec différentes commandes vocales qui peuvent interagir avec les objets 3D, la barre d’application, le menu Démarrer et Cortana |
 
 > [!NOTE]
-> Si vous rencontrez des problèmes avec les fonctionnalités ci-dessus, consultez le **[Forum aux questions sur l’utilisation de Windows Mixed Reality](using-wmr-faq.md)**.
+> Si vous rencontrez des problèmes avec les fonctionnalités ci-dessus, consultez le **[Forum aux questions sur l’utilisation de Windows Mixed Reality](using-wmr-faq.yml)**.
 
 ## <a name="4-discover-apps-and-content"></a>4. découvrir des applications et du contenu
 

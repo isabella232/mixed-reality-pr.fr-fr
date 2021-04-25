@@ -3,12 +3,12 @@ title: Résolution des problèmes de Windows Mixed Reality
 description: Restez à jour avec le dépannage de Windows Mixed realisation qui va au-delà de notre documentation de support technique standard.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support
-ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2fbdb434eb3ccc0a327af990b4f4854faafbdf85
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009479"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944640"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Résolution des problèmes de Windows Mixed Reality (FAQ)
 
@@ -16,7 +16,7 @@ ms.locfileid: "98009479"
 
 ## <a name="whats-new"></a>Nouveautés !
 
-En respectant les nouveaux contrôleurs et les contrôleurs de la nouvelle réverbération de HP, nous avons compilé une [page de FAQ dédiée](reverbG2-faq.md) pour tous les éléments G2. Cet article aborde tout ce qui est lié aux problèmes de connexion et la clarté des images aux problèmes des contrôleurs motion et à l’exécution de la réalité mixte.
+En respectant les nouveaux contrôleurs et les contrôleurs de la nouvelle réverbération de HP, nous avons compilé une [page de FAQ dédiée](reverbG2-faq.yml) pour tous les éléments G2. Cet article aborde tout ce qui est lié aux problèmes de connexion et la clarté des images aux problèmes des contrôleurs motion et à l’exécution de la réalité mixte.
 
 ## <a name="troubleshooting-topics"></a>Rubriques de dépannage
 
@@ -27,7 +27,7 @@ Lorsque vous rencontrez des problèmes avec votre matériel immersif, il est imp
 Pour les problèmes liés à l’installation, à l’exécution de Windows Mixed Reality, aux erreurs d’installation, aux exigences minimales du PC ou aux autorisations d’administrateur, consultez ces deux FAQ :
 
 - [Erreurs d'installation](installation_errors.md)
-- [Paramétrage](wmr-setup-faq.md)
+- [Paramétrage](wmr-setup-faq.yml)
 
 ### <a name="hardware-issues"></a>Problèmes matériels
 

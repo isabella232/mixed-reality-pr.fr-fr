@@ -8,18 +8,18 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007669"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944676"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Utilisation de la reconnaissance vocale dans Windows Mixed Reality
 
 Vous pouvez utiliser votre voix pour vous familiariser plus rapidement avec Windows Mixed Reality. Une photo rapide, l’ouverture d’une application, même le téléportage sans contrôleur, sont tous un mot. Pour un moyen simple de taper, essayez le mode dictée sur le clavier de la réalité mixte. 
 
-Vous rencontrez des problèmes avec la reconnaissance vocale ? [Obtenir de l’aide](using-wmr-faq.md#speech-commands-arent-working)
+Vous rencontrez des problèmes avec la reconnaissance vocale ? [Obtenir de l’aide](using-wmr-faq.yml#speech-commands-aren-t-working)
 
 <!-- NEED VIDEO: https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality -->
 
@@ -38,7 +38,7 @@ Utilisez les commandes vocales suivantes dans Windows Mixed Reality pour une plu
 
 | Pour | Disons cela |
 | --- | --- |
-| Sélectionner | Dites « sélectionner » pour afficher le curseur en regard. Ensuite, tournez votre tête pour positionner le curseur sur l’élément que vous souhaitez sélectionner et dites « sélectionner » à nouveau. |
+| Sélectionnez | Dites « sélectionner » pour afficher le curseur en regard. Ensuite, tournez votre tête pour positionner le curseur sur l’élément que vous souhaitez sélectionner et dites « sélectionner » à nouveau. |
 | Ouverture du menu Démarrer | Aller à démarrer |
 | Conserver une application immersif | Dites « aller à démarrer » pour afficher le menu actions rapides, puis « Accueil de la réalité mixte ». |
 | Allumer/éteindre l’torche | Dites « aller à démarrer » pour afficher le menu actions rapides, puis « Accueil de la réalité mixte ». |
@@ -57,7 +57,7 @@ Pointez sur un objet 3D, une fenêtre d’hologramme ou une fenêtre d’applica
 | Pour | Disons cela |
 | --- | --- |
 | Augmentez la taille des | Plus |
-| Réduire la taille | Grande |
+| Réduire la taille | Plus petite |
 | Faites-le face pour vous | Me faire face |
 | Préparez-le en déplacement. il suivra votre point de regard | Déplacer |
 | Placez-le quand vous avez terminé de le déplacer | Emplacement |
@@ -88,7 +88,7 @@ Pointez le regard du menu Démarrer pour utiliser ces commandes :
 | Revenir au menu Démarrer à partir de toutes les applications | Revenir |
 | Prendre une photo | Appareil photo |
 | Prendre une vidéo | Vidéo |
-| Afficher la vue du casque dans le portail de réalité mixte sur votre bureau | Aperçu |
+| Afficher la vue du casque dans le portail de réalité mixte sur votre bureau | Préversion |
 | Ouvrir le contrôle du volume au démarrage | Modifier le volume |
 | Désactiver le son | Désactiver le son |
 | Réactiver le son | Réactiver le son |
@@ -133,7 +133,7 @@ Basculez en mode dictée chaque fois que le clavier est actif pour une méthode 
 | Démarrer la dictée | Démarrer la dictée |
 | Arrêter la dictée | Arrêter la dictée |
 | Supprimer ce que vous avez dicté | Supprimer ce |
-| Sélectionnez tout dans la zone dictée. | Sélectionner tout |
+| Sélectionnez tout dans la zone dictée. | Tout sélectionner |
 
 ### <a name="punctuation"></a>Ponctuation
 

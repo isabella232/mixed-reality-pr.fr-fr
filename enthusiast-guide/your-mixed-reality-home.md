@@ -3,12 +3,12 @@ title: Votre foyer de réalité mixte
 description: Comment naviguer et vous téléporter dans Windows Mixed Reality, lancer des applications et des jeux, personnaliser la page d’hébergement et modifier les paramètres visuels, audio et vocaux.
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, famille, naviguer, découvrir, applications, jeux
-ms.openlocfilehash: 4fd4fb70edf9aadb9b34187f4d8fd421ca1e8a95
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 440660b12b92e0c818cd3601be486d6fd1dfdb92
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725540"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944690"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Votre accueil Windows Mixed Reality
 
@@ -84,7 +84,7 @@ La page d’hébergement de la réalité Windows Mixed comprend une simulation d
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Résolution des problèmes de Windows Mixed Reality](wmr-setup-faq.md#my-motion-controllers-arent-working)
+* [Résolution des problèmes de Windows Mixed Reality](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 * [Utilisation de jeux et d’applications dans Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
 * [Fonctionnement du suivi intérieur-extérieur](tracking-system.md)
 * [Fonctionnement des contrôleurs de mouvement](controllers-in-wmr.md)
