@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, contrôleurs de mouvement
 appliesto:
 - Windows 10
-ms.openlocfilehash: 372e9ca294e7b65d3450e76b1dbd826a7b5b736b
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: cf45794d5c5c6c790578e76be4b222d851b5a73c
+ms.sourcegitcommit: 229c33afab7c70341982f48962028aad13956356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726030"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108069193"
 ---
 # <a name="motion-controller-faqs"></a>FAQ sur le contrôleur de mouvement
 
@@ -21,11 +21,11 @@ ms.locfileid: "97726030"
 
 L’anneau et les haptiques de la constellation LED indiquent l’état du contrôleur de mouvement.
 
-| État    | Comportement associé à l’État | Comment passer à l’État |
+| State    | Comportement associé à l’État | Comment passer à l’État |
 |----------------------------|-----------------------------|----------------------------------------------------------------------|
 | **Mise sous tension**               | Les LED allument et le contrôleur vibre une fois. | Appuyez sur le bouton Windows du contrôleur et maintenez-le enfoncé pendant deux secondes pour activer le contrôleur.  |
 | **Mise hors tension**              |  Les voyants sont éteints et le contrôleur vibre deux fois. | Appuyez sur le bouton Windows du contrôleur et maintenez-le enfoncé pendant quatre secondes pour désactiver le contrôleur.   |
-| **En état de veille**               |  Les voyants s’éteignent et clignotent toutes les trois secondes en état de veille. | Le contrôleur passe automatiquement à l’état de veille lorsqu’il est motionless pendant 30 secondes. Le contrôleur sort de veille lorsqu’il détecte motion, sauf si l’appareil n’est pas couplé avec le PC hôte. Appuyez sur le bouton pour le mettre en éveil dans ce cas. |
+| **En veille**               |  Les voyants s’éteignent et clignotent toutes les trois secondes en état de veille. | Le contrôleur passe automatiquement à l’état de veille lorsqu’il est motionless pendant 30 secondes. Le contrôleur sort de veille lorsqu’il détecte motion, sauf si l’appareil n’est pas couplé avec le PC hôte. Appuyez sur le bouton pour le mettre en éveil dans ce cas. |
 | **Jumelage**                |  Clignotement de LED lentement en mode de couplage, et est solide lorsque vous quittez le mode de couplage. Le contrôleur vibre une fois si le jumelage a réussi ou trois fois si le jumelage a échoué, puis expire. | Appuyez sur le bouton d’appariement et maintenez-le enfoncé pendant trois secondes.     |
 | **Le contrôleur se connecte/se déconnecte du PC** |  Le contrôleur vibre une fois sur la connexion du PC ou la déconnexion. | Se produit lorsque le contrôleur se connecte correctement au PC après l’avoir mis sous tension ou si le contrôleur se déconnecte du PC en cours d’utilisation.|
 | **Niveau de batterie faible**      | Les haptique sont désactivées lorsque la batterie est faible (il n’y a pas d’indication de LED). L’icône d’indicateur de batterie sur le handle de contrôleur du casque affiche 1/4 lorsque la batterie est faible. | Remplacez vos batteries. | 
@@ -45,7 +45,7 @@ Si vos [contrôleurs de mouvement](controllers-in-wmr.md) ne fonctionnent pas, s
     * Suivi perdu : le portail de réalité mixte ne trouve pas vos contrôleurs. Tenez-les devant votre casque et redémarrez-les en appuyant sur le bouton Windows pendant quatre secondes, puis de nouveau pendant deux secondes.
     * Batterie faible : remplacez les piles du contrôleur.
 7. Si vous utilisez une carte Bluetooth USB externe, assurez-vous qu’elle est connectée à un port USB 2,0 (ce qui n’est souvent pas toujours le noir). Elle doit également être branchée autant que possible à partir de tout autre transmetteur sans fil ou disque mémoire flash USB, y compris le connecteur USB pour votre casque. 
-8. Accédez à **Device Manager > Bluetooth** et recherchez une carte pour vérifier qu’il n’y a qu’une seule radio Bluetooth dans le PC. Si vous utilisez la configuration de l’ordinateur de bureau avec la radio intégrée, vérifiez si une antenne externe est connectée. Si aucune antenne externe n’est connectée, cela peut entraîner des problèmes de suivi. Vous avez la possibilité d’utiliser une clé Bluetooth externe (USB), de désactiver la fonctionnalité Bluetooth interne et de réessayer le jumelage et la connexion.
+8. Accédez à **Gestionnaire de périphériques > Bluetooth** et recherchez une carte pour vérifier qu’il n’y a qu’une seule radio Bluetooth dans le PC. Si vous utilisez la configuration de l’ordinateur de bureau avec la radio intégrée, vérifiez si une antenne externe est connectée. Si aucune antenne externe n’est connectée, cela peut entraîner des problèmes de suivi. Vous avez la possibilité d’utiliser une clé Bluetooth externe (USB), de désactiver la fonctionnalité Bluetooth interne et de réessayer le jumelage et la connexion.
 9. Si la fenêtre Paramètres Bluetooth est ouverte en arrière-plan, de nombreux appels supplémentaires sont effectués au protocole Bluetooth. Fermez-le.
 10. Vérifiez le niveau de la batterie virtuelle sur le contrôleur de mouvement en activant les contrôleurs dans la réalité mixte pour voir l’icône de la batterie. Attendez environ 15 secondes avant de lire le niveau, car le niveau signalé est supérieur au niveau réel immédiatement après la connexion d’un contrôleur. Remplacez les piles si l’icône est rouge.
 11. Retirez les écouteurs et les haut-parleurs Bluetooth dans **paramètres > appareils > Bluetooth & d’autres appareils** et éteignez les appareils. Utilisez la prise casque ou les haut-parleurs intégrés sur votre casque de réalité mixte pour une expérience audio optimale.
@@ -54,7 +54,7 @@ Si vos [contrôleurs de mouvement](controllers-in-wmr.md) ne fonctionnent pas, s
 14. Les voyants du contrôleur clignotent lorsqu’ils sont en cours de mise à jour du microprogramme. Attendez la fin de la mise à jour et les contrôleurs doivent apparaître dans la réalité mixte.
 15. Assurez-vous que votre ordinateur est connecté à un réseau Wi-Fi de 5 GHz. Si votre ordinateur portable est connecté à un réseau Wi-Fi de 2,4 GHz, il partage généralement la connexion Bluetooth. Cela peut avoir un impact négatif sur les performances de Wi-Fi ou de Bluetooth, en fonction de la conception du produit. Modifiez la bande par défaut à 5 GHz dans les paramètres de carte réseau. Si votre réseau ne prend pas en charge 5 GHz, une clé Bluetooth peut être utilisée à la place de la fonctionnalité Bluetooth interne.
 16. Si vos paramètres Bluetooth ont déjà des contrôleurs de mouvement couplés, Windows ne détectera pas les nouveaux périphériques tant que ceux-ci ne seront pas supprimés. Si elles ont été ajoutées à l’aide d’une clé spécifique, elles ne peuvent être supprimées qu’avec cette clé.
-17. Si votre PC intègre Bluetooth et que vous rencontrez des problèmes de connexion, essayez d’utiliser une carte Bluetooth USB. Pour ce faire, désactivez votre radio Bluetooth intégrée dans Device Manager puis couplez vos autres appareils Bluetooth avec la nouvelle carte.
+17. Si votre PC intègre Bluetooth et que vous rencontrez des problèmes de connexion, essayez d’utiliser une carte Bluetooth USB. Pour ce faire, désactivez votre radio Bluetooth intégrée dans Gestionnaire de périphériques puis couplez vos autres appareils Bluetooth avec la nouvelle carte.
 
 ## <a name="my-controllers-jitter-get-stuck-or-flicker-and-disappear-in-mixed-reality"></a>Mes contrôleurs sont instables, se bloquent ou scintillent et disparaissent en réalité mixte
 
@@ -90,11 +90,9 @@ Tout d’abord, assurez-vous que les batteries de votre contrôleur sont factur�
 Si vous pouvez voir vos contrôleurs dans la maison de la falaise, mais pas dans les applications et jeux SteamVR, le pilote du modèle de contrôleur de mouvement n’est peut-être pas installé correctement. Pour vérifier que le pilote du modèle de contrôleur de mouvement est correctement installé :
 
 1. Activez les deux contrôleurs de mouvement. Vérifiez si vos contrôleurs de mouvement sont [correctement couplés](controllers-in-wmr.md#pair-motion-controllers).
-2. Accédez à **Device Manager > Bluetooth** et recherchez « contrôleur de mouvement ».
-3. Sélectionnez l’appareil, puis accédez à **afficher > appareils par connexion**.
-4. Accédez à **paramètres système > appareils > Bluetooth & autres périphériques > autres périphériques** pour voir s’ils sont visibles. Il y aura deux appareils « Bluetooth HID device », et sous chaque périphérique Bluetooth HID doit être un appareil nommé « contrôleur de mouvement » (avec des icônes grises) dans le même nœud que le contrôleur de mouvement.
-5. Double-cliquez sur chaque appareil « contrôleur de mouvement » et accédez à l’onglet « pilote ». Vérifiez que la version du pilote indiquée correspond à l’une de [ces versions](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history).
-6. Si ce n’est pas le cas, exécutez Windows Update, qui télécharge et installe automatiquement le pilote. Si vous êtes sur un PC avec des stratégies d’entreprise ou si Windows Update n’est pas limité, vous devrez peut-être installer le pilote de modèle de contrôleur de mouvement manuellement. Pour ce faire, accédez à [cette page](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) et recherchez la version du pilote correspondant à votre version de Windows 10. Les instructions d’installation sont disponibles sur la page de téléchargement.
+2. Accédez à **Gestionnaire de périphériques > périphériques d’interface utilisateur** et recherchez « contrôleur de mouvement ».
+3. Double-cliquez sur chaque appareil « contrôleur de mouvement » et accédez à l’onglet « pilote ». Vérifiez que la version du pilote indiquée correspond à l’une de [ces versions](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history).
+4. Si la version du pilote ne correspond pas ou si vous ne trouvez pas d’appareil appelé « contrôleur de mouvement », exécutez Windows Update.  Cela permet de télécharger et d’installer automatiquement le pilote. Si vous êtes sur un PC avec des stratégies d’entreprise ou si Windows Update n’est pas limité, vous devrez peut-être installer le pilote de modèle de contrôleur de mouvement manuellement. Pour ce faire, accédez à [cette page](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) et recherchez la version du pilote correspondant à votre matériel de contrôleur. Les instructions d’installation sont disponibles sur la page de téléchargement.
 
 ## <a name="the-controller-firmware-update-takes-longer-than-two-minutes"></a>La mise à jour du microprogramme du contrôleur prend plus de deux minutes
 
@@ -166,16 +164,16 @@ Remarque : si un autre ensemble de contrôleurs de mouvement est associé à vo
 
 Les contrôleurs de mouvement utilisent la même technologie Bluetooth que sur de nombreux appareils grand public et sont conçus pour fonctionner avec la fonctionnalité Bluetooth incluse dans tout ordinateur récent. Votre ordinateur doit avoir une radio Bluetooth si la vérification de la compatibilité avec la réalité mixte a réussi. Pour vérifier :
 
-* Ouvrez « Device Manager ».
+* Ouvrez « Gestionnaire de périphériques ».
 * Développez la section Bluetooth et recherchez un adaptateur.
 
-![Capture d’écran d’un exemple de Device Manager. L’adaptateur est la radio Bluetooth.](images/devicemanagerbtadapterpic.png)
+![Capture d’écran d’un exemple de Gestionnaire de périphériques. L’adaptateur est la radio Bluetooth.](images/devicemanagerbtadapterpic.png)
 
 Si votre ordinateur n’est pas équipé de Bluetooth, utilisez un micro-adaptateur USB Bluetooth 4,0 basse énergie.
 
 ## <a name="wi-fi-slows-down-on-my-notebook-when-motion-controllers-are-turned-on"></a>Wi-Fi ralentit sur mon Notebook quand les contrôleurs de mouvement sont activés
 
-Votre Notebook peut partager son antenne Wi-Fi avec Bluetooth lorsqu’il est connecté à un point d’accès 2,4 GHz. Vérifiez Device Manager si vous pouvez basculer la préférence de bande à 5 GHz. Si un réseau de 5 GHz n’est pas disponible et que les performances sont gravement affectées, envisagez d’utiliser une clé Bluetooth.
+Votre Notebook peut partager son antenne Wi-Fi avec Bluetooth lorsqu’il est connecté à un point d’accès 2,4 GHz. Vérifiez Gestionnaire de périphériques si vous pouvez basculer la préférence de bande à 5 GHz. Si un réseau de 5 GHz n’est pas disponible et que les performances sont gravement affectées, envisagez d’utiliser une clé Bluetooth.
 
 ![Les paramètres de sélection de la bande wifi sont accessibles via le gestionnaire de périphériques](images/wifi5ghz.png)
 
@@ -183,7 +181,7 @@ Votre Notebook peut partager son antenne Wi-Fi avec Bluetooth lorsqu’il est co
 
 Les contrôleurs de mouvement doivent fonctionner avec d’autres claviers, souris et contrôleurs de jeu Bluetooth. L’expérience varie en fonction du modèle de clavier, de souris ou de contrôleur de jeu que vous utilisez. Voici quelques opérations que vous pouvez effectuer pour améliorer les performances :
 
-* Si votre ordinateur possède le Bluetooth, mais que vous rencontrez toujours des problèmes avec les contrôleurs de mouvement, envisagez de remplacer votre radio Bluetooth par une carte Bluetooth externe enfichable connectée à l’USB. Vous ne pouvez avoir qu’une seule carte radio Bluetooth active à la fois. Si vous branchez une radio externe avec une radio existante, vous devez désactiver votre radio Bluetooth existante dans Device Manager. Cliquez avec le bouton droit sur la carte et sélectionnez « Désactiver l’appareil » et désassocier/recoupler tous vos périphériques Bluetooth précédents.
+* Si votre ordinateur possède le Bluetooth, mais que vous rencontrez toujours des problèmes avec les contrôleurs de mouvement, envisagez de remplacer votre radio Bluetooth par une carte Bluetooth externe enfichable connectée à l’USB. Vous ne pouvez avoir qu’une seule carte radio Bluetooth active à la fois. Si vous branchez une radio externe avec une radio existante, vous devez désactiver votre radio Bluetooth existante dans Gestionnaire de périphériques. Cliquez avec le bouton droit sur la carte et sélectionnez « Désactiver l’appareil » et désassocier/recoupler tous vos périphériques Bluetooth précédents.
 * Si vous utilisez une carte Bluetooth USB, connectez-la à un port USB 2,0 (les ports 2,0 sont souvent noirs et ne sont pas étiquetés « SS »), le cas échéant. Le port doit être physiquement séparé des éléments suivants :
     - le connecteur USB HMD
     - disques mémoire flash
@@ -206,4 +204,4 @@ Les pilotes radio Qualcomm (QCA) Bluetooth antérieurs à 10.0.0.448 peuvent se 
 
 ## <a name="im-experiencing-poor-controller-tracking-with-marvell-radio"></a>Je rencontre un mauvais suivi de contrôleur avec la radio Marvell
 
-Accédez à **Device Manager > > de la carte radio Bluetooth Marvell AVASTAR > propriétés > pilote** et assurez-vous que vous utilisez le pilote 15.68.9210.47 ou version ultérieure.
+Accédez à **Gestionnaire de périphériques > > de la carte radio Bluetooth Marvell AVASTAR > propriétés > pilote** et assurez-vous que vous utilisez le pilote 15.68.9210.47 ou version ultérieure.

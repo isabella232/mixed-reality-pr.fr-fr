@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, les composants logiciels, l’historique des versions, les notes de publication, l’historique des versions
 appliesto:
 - Windows 10
-ms.openlocfilehash: ea65dd2c6c821189b1248bf3b418e38fdd7a6d7f
-ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
+ms.openlocfilehash: 5e6cdcbc7d91a6c1fadb519f94fc0339bdd39ca7
+ms.sourcegitcommit: 229c33afab7c70341982f48962028aad13956356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105029387"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108069203"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Vue d’ensemble des logiciels Mixed Reality et historique des versions
 
@@ -105,7 +105,7 @@ Ce pilote est téléchargé et installé automatiquement via Windows Update, mai
 
    | Version          | Date de sortie          | Modifications majeures                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
-   | [10.0.19041.2041](https://www.microsoft.com/download/details.aspx?id=102903)  | 23 mars, 2021  | Compatible avec Windows 10, version 1903 et versions ultérieures.<br/><ul><li>Mettez à jour l’ordre d’enroulement du maillage de la zone masquée pour que la réverbération HP G2 soit cohérente avec d’autres casques.</li><li>Améliorations de la qualité des visuels pour les casques de réverbération de HP G2.</li><li>Améliorations de la plateforme et de la fiabilité du casque Windows Mixed Reality.</li>|
+   | [10.0.19041.2041](https://www.microsoft.com/download/details.aspx?id=102903)  | 23 mars 2021  | Compatible avec Windows 10, version 1903 et versions ultérieures.<br/><ul><li>Mettez à jour l’ordre d’enroulement du maillage de la zone masquée pour que la réverbération HP G2 soit cohérente avec d’autres casques.</li><li>Améliorations de la qualité des visuels pour les casques de réverbération de HP G2.</li><li>Améliorations de la plateforme et de la fiabilité du casque Windows Mixed Reality.</li>|
    | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 10 décembre 2020  | Compatible avec Windows 10, version 1903 et versions ultérieures.<br/><ul><li>Nouveau microprogramme de contrôleur pour le contrôleur HP afin de résoudre un problème où certains contrôleurs ont des déclencheurs non fonctionnels.</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8 octobre 2020  | Compatible avec Windows 10, version 1903 et versions ultérieures.<br/><ul><li>Prise en charge officielle de la réverbération HP G2, HP Omnicept et du nouveau contrôleur HP.</li><li>Corrections d’affichage mineur pour les casques HP et Samsung Odyssey +. (Nécessite la version 19041,546 ou une version ultérieure [du système d’exploitation](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) ou [des versions de système d’exploitation 18362,1110 et 18363,1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) ).</li><li>Améliorations de la transition de l’état d’alimentation de l’ordinateur du mode veille à la réduction des erreurs SWW 1-4.</li><li>Correctifs de la plateforme du casque Windows Mixed realisation et améliorations de la fiabilité.|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 7 mai, 2020      | Compatible avec Windows 10, version 1903 et versions ultérieures.<br/><ul><li>Correctifs de la plateforme du casque Windows Mixed realisation et améliorations de la fiabilité.</li></ul>  |
@@ -168,7 +168,8 @@ Dans Windows 10, la version 1809 et les versions ultérieures, le [portail de r�
 
    | Version            | Date de sortie          | Modifications majeures                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
-   | 2000.20111.1381.0  | 10 décembre 2020        | <ul><li>Met à jour la page d’accueil du portail de réalité mixte.</li><li>Réduit les erreurs de connectivité du casque lors des mises à jour du microprogramme. </li></ul>  |    | 2000.20071.1133.0  | 5 août 2020        | <ul><li>Prise en charge de [OpenXR](/windows/mixed-reality/openxr) pour suspendre la fenêtre d’aperçu.</li></ul>  | 
+   | 2000.21041.1051.0  | 26 avril 2020        | <ul><li>Met à jour l’icône d’application pour le portail de réalité mixte.</li></ul>  |
+   | 2000.20111.1381.0  | 10 décembre 2020        | <ul><li>Met à jour la page d’accueil du portail de réalité mixte.</li><li>Réduit les erreurs de connectivité du casque lors des mises à jour du microprogramme. </li></ul>  |
    | 2000.20071.1133.0  | 5 août 2020        | <ul><li>Prise en charge de [OpenXR](/windows/mixed-reality/openxr) pour suspendre la fenêtre d’aperçu.</li></ul>  | 
    | 2000.20041.1212.0  | 11 mai 2020          | <ul><li>Résout un problème de minutage qui provoquait une erreur 15-5 incohérente.</li><li>Amélioration de la prise en charge de l’exécution de Windows Mixed Reality sans connexion Internet.</li><li>Amélioration de la prise en charge des contrôleurs de mouvement couplés via les **contrôleurs d’installation**.</li></ul>  | 
    | 2000.20031.1202.0  | 14 avril 2020        | <ul><li>Prise en charge de l’inscription à des informations, des conseils et des offres sur Windows Mixed Reality.</li></ul>  | 
