@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 2b0dc328a1a47d9a0bd385cac6a88563dcc3938d
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: d8d46da1a1a095074f059b53ebd997e1b6f89961
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107327674"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107984428"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Plug-in Windows XR](#tab/winxr)
 
@@ -60,13 +60,13 @@ quand Unity a terminé l’installation de XR Plug-in Management. Vérifiez que 
 
 ![Paramètres XR d’Unity avec les options OpenXR et Microsoft HoloLens feature set sélectionnées](../images/mr-learning-base/base-02-section5-step2-2-1-openxr.png)
 
-Dans la barre de menus en haut de l’écran, accédez à **Mixed Reality > OpenXR > Apply recommended project settings for HoloLens 2** pour optimiser les performances de l’application.
-
-![Menu Mixed Reality avec les options OpenXR et Apply recommended project settings for HoloLens 2 sélectionnées](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
-
 >[!Important]
 >Si une icône d’avertissement rouge apparaît à côté d’OpenXR Plugin (Preview), cliquez dessus et sélectionnez Fix all avant de continuer. L’éditeur Unity devra peut-être redémarrer pour que les modifications prennent effet.
 >![Menu de validation du projet OpenXR avec tous les problèmes à corriger sélectionnés.](../images/mr-learning-base/base-02-section5-step2-openxr-3.png)
+
+Dans la barre de menus en haut de l’écran, accédez à **Mixed Reality > OpenXR > Apply recommended project settings for HoloLens 2** pour optimiser les performances de l’application.
+
+![Menu Mixed Reality avec les options OpenXR et Apply recommended project settings for HoloLens 2 sélectionnées](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
 
 Une fois qu’Unity a fini d’importer les fichiers nécessaires, la fenêtre MRTK Project Configurator doit réapparaître. Si ce n’est pas le cas, utilisez le menu Unity pour l’ouvrir.
 
