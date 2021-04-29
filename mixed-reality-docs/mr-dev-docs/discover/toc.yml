@@ -9,7 +9,7 @@
 - name: Développer votre processus de conception
   href: case-study-expanding-the-design-process-for-mixed-reality.md
 - name: Exécution du hub d’exemples MRTK
-  href: running-examples-hub.md
+  href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/running-examples-hub'
 - name: Conception d’hologrammes
   href: designing-holograms.md
 - name: Vue d’ensemble des études de cas
