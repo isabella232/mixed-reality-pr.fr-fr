@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: VR, matériel, spécifications, spécifications, Tech, capteurs, optiques, affichage, casque de réalité mixte, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, les casques immersifs
-ms.openlocfilehash: c4c6457f3a32994dc242f603c48fe90eb8194ed0
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: a8febeb10dde40cbb4faba49881ee156544d698f
+ms.sourcegitcommit: 9ab1d2de03bb046bb73bddbaa38907d0890f6e66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757707"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108293547"
 ---
 # <a name="immersive-headset-hardware-details"></a>Informations détaillées sur les casques immersifs
 
 ![Nombreux casques Windows mixtes de réalité](images/MR-headsets.png)
 
-Vous pouvez acheter l’un des casques immersifs de Windows Mixed Realing disponibles au public auprès de divers détaillants mondiaux. Vous pouvez également trouver des casques à la [Microsoft Store en ligne](https://www.microsoft.com/store/collections/VRandMixedrealityheadsets), qui peuvent tous être utilisés pour le développement de la réalité mixte. Ces casques immersifs fournissent un suivi interne intégré, ce qui signifie que vous n’avez pas besoin d’acheter ou d’installer des dispositifs de traçage externes ni de placer des capteurs sur le mur. Il n’y a pas d’installation compliquée, qui est simplement plug-and-Play.
+Vous pouvez acheter l’un des casques immersifs de Windows Mixed Realing disponibles au public auprès de divers détaillants mondiaux. Vous pouvez également trouver des casques à la [Microsoft Store en ligne](https://www.microsoft.com/en-us/store/collections/AR-MR-VRheadsets), qui peuvent tous être utilisés pour le développement de la réalité mixte. Ces casques immersifs fournissent un suivi interne intégré, ce qui signifie que vous n’avez pas besoin d’acheter ou d’installer des dispositifs de traçage externes ni de placer des capteurs sur le mur. Il n’y a pas d’installation compliquée, qui est simplement plug-and-Play.
 
 ## <a name="device-specifications"></a>Spécifications de l’appareil
 
