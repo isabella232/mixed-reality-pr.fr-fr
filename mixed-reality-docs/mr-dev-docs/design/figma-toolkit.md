@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, croquis, Adobe XD, design, designer, fichier de conception, conception d’expérience utilisateur, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 1386ce6238a406c2e2b45c9a6a551ae57c52cc59
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: a24f06b29accaa64a9095054f1e6f8df13a9162e
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299943"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644855"
 ---
 # <a name="figma-toolkit"></a>Toolkit Figma
 
@@ -24,6 +24,7 @@ Figma Toolkit fournit les ressources qui peuvent être utilisées pour l’esqui
 
 ## <a name="how-to-use-figma-toolkit"></a>Comment utiliser Figma Toolkit
 Utilisez **le double dans le menu brouillons** pour effectuer une copie.
+
 <img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
 
 Cliquez sur **revenir aux fichiers** pour voir la copie dupliquée. Vous pouvez utiliser cette copie pour votre propre création.

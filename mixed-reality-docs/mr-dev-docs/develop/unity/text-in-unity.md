@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, conception, contrôles, police, typographie, UI, UX, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: da2932234793a6db160d3bc2bd6dba02318c83bd
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: dde8989998cf422c40ada927c0d8462cb4cd97b9
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010490"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489279"
 ---
 # <a name="text-in-unity"></a>Texte dans Unity
 
@@ -59,6 +59,7 @@ Avec le texte de la maille Pro de Unity, vous pouvez sécuriser la qualité de r
 *Mise à l’échelle des valeurs pour le texte 3D Unity et l’interface utilisateur*
 
 ## <a name="recommended-text-size"></a>Taille de texte recommandée
+
 Comme vous pouvez vous y attendre, les tailles de type que nous utilisons sur un PC ou un appareil tablette (généralement entre 12 et 32 points) semblent petite à une distance de 2 mètres. Elle dépend des caractéristiques de chaque police, mais en général, l’angle de visualisation minimal recommandé et la hauteur de police pour la lisibilité sont autour de 0.35 °-0,4 °/12.21-13.97 mm en fonction de nos études de recherche des utilisateurs. Il s’agit d’environ 35-40 PT avec le facteur de mise à l’échelle présenté ci-dessus.
 
 Pour l’interaction proche à 0,45 m (45 cm), l’angle d’affichage de la police et de la hauteur au minimum est de 0,4 °-0,5 °/3.14 – 3,9 mm. Il s’agit d’environ 9-12 PT avec le facteur de mise à l’échelle présenté ci-dessus.
@@ -67,6 +68,7 @@ Pour l’interaction proche à 0,45 m (45 cm), l’angle d’affichage de la pol
  *dans une plage d’interaction proche et éloignée*
 
 ### <a name="the-minimum-legible-font-size"></a>Taille de police minimale lisible
+
 | Distance | Angle d’affichage | Hauteur du texte | Taille de police |
 |---------|---------|---------|---------|
 | 45 cm (distance de manipulation directe) | 0,4 °-0,5 ° | 3.14 – 3,9 mm | 8,9 – 11.13 PT |
@@ -74,6 +76,7 @@ Pour l’interaction proche à 0,45 m (45 cm), l’angle d’affichage de la pol
 
 
 ### <a name="the-comfortably-legible-font-size"></a>Taille de police lisible
+
 | Distance | Angle d’affichage | Hauteur du texte | Taille de police |
 |---------|---------|---------|---------|
 | 45 cm (distance de manipulation directe) | 0,65 °-0,8 ° | 5.1-6.3 mm | 14.47-17.8 PT |
@@ -88,21 +91,21 @@ Segoe UI (police par défaut pour Windows) fonctionne bien dans la plupart des c
 
 ### <a name="sharp-text-rendering-quality-with-proper-dimension"></a>Qualité de rendu de texte précise avec une dimension appropriée
 
-En fonction de ces facteurs de mise à l’échelle, nous avons créé le [texte prefabs avec le texte de l’interface utilisateur et le maillage de texte 3D](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text). Les développeurs peuvent utiliser ces prefabs pour optimiser le texte et la taille de police.
+En fonction de ces facteurs de mise à l’échelle, nous avons créé le [texte prefabs avec le texte de l’interface utilisateur et le maillage de texte 3D](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Prefabs/Text). Les développeurs peuvent utiliser ces prefabs pour optimiser le texte et la taille de police.
 
 ![Qualité de rendu de texte précise avec une dimension appropriée](images/hug-text-06-1000px.png)<br>
 *Qualité de rendu de texte précise avec une dimension appropriée*
 
 ### <a name="shader-with-occlusion-support"></a>Nuanceur avec prise en charge d’occlusion
 
-La matière de police par défaut d’Unity ne prend pas en charge l’occlusion. Pour cette raison, le texte derrière les objets est affiché par défaut. Nous avons inclus un [nuanceur simple qui prend en charge l’occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader). L’image ci-dessous montre le texte avec les éléments de police par défaut (à gauche) et le texte avec une occlusion appropriée (à droite).
+La matière de police par défaut d’Unity ne prend pas en charge l’occlusion. Pour cette raison, le texte derrière les objets est affiché par défaut. Nous avons inclus un [nuanceur simple qui prend en charge l’occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader). L’image ci-dessous montre le texte avec les éléments de police par défaut (à gauche) et le texte avec une occlusion appropriée (à droite).
 
 ![Nuanceur avec prise en charge d’occlusion](images/hug-text-07-1000px.png)<br>
 *Nuanceur avec prise en charge d’occlusion*
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au bloc de construction suivant :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir d’ici, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Entrée vocale](voice-input-in-unity.md)
@@ -114,7 +117,7 @@ Ou accéder aux API et fonctionnalités de la plateforme Mixed Reality :
 
 Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#2-core-building-blocks) à tout moment.
 
-
 ## <a name="see-also"></a>Voir aussi
-* [Texte Prefab dans le MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
+
+* [Texte Prefab dans le MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [Typographie](../../design/typography.md)

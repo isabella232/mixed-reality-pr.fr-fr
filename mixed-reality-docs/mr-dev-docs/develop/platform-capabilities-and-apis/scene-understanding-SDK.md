@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity
-ms.openlocfilehash: 2a1bf87ae4ce13b47d373f44e398d02382674fe7
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 2f6e0c9d0370caed2b2bc01399b9e4fc00836556
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810133"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644835"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Présentation du SDK présentation de Scene
 
@@ -19,17 +19,13 @@ La compréhension de la scène transforme les données de capteur d’environnem
 
 ## <a name="where-do-i-get-the-sdk"></a>Où puis-je me procurer le kit de développement logiciel ?
 
-Le kit de développement logiciel (SDK) SceneUnderstanding peut être téléchargé via NuGet.
-
-[SDK SceneUnderstanding](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
+Le kit de développement logiciel (SDK) SceneUnderstanding peut être téléchargé via l’outil de la [fonctionnalité de réalité mixte](../unity/welcome-to-mr-feature-tool.md).
 
 **Remarque :** la version la plus récente dépend des packages de préversion et vous devez activer les packages de préversions pour les afficher.
 
 Pour la version 0.5.2022-RC et les versions ultérieures, Scene Understanding prend en charge les projections de langage pour C# et C++ permettant aux applications de développer des applications pour les plateformes Win32 ou UWP. À compter de cette version, SceneUnderstanding prend en charge Unity dans le cadre de la prise en charge de l’éditeur, qui est utilisée uniquement pour communiquer avec HoloLens2. 
 
 SceneUnderstanding requiert SDK Windows version 18362 ou ultérieure. 
-
-Si vous utilisez le kit de développement logiciel (SDK) dans un projet Unity, utilisez [NuGet pour Unity](https://github.com/GlitchEnzo/NuGetForUnity) pour installer le package dans votre projet.
 
 ## <a name="conceptual-overview"></a>Vue d'ensemble conceptuelle
 
@@ -47,7 +43,7 @@ Sur le côté gauche figure un diagramme du runtime de la réalité mixte, qui e
 
 Étant donné que chaque scène stocke ses données dans l’espace mémoire de votre application, vous pouvez supposer que toutes les fonctions de l’objet de la scène ou de ses données internes sont toujours exécutées dans le processus de votre application.
 
-### <a name="layout"></a>Mise en page
+### <a name="layout"></a>Disposition
 
 Pour travailler avec la compréhension des scènes, il peut être utile de savoir et de comprendre comment le runtime représente des composants logiquement et physiquement. La scène représente des données avec une disposition spécifique qui a été choisie comme simple tout en conservant une structure sous-jacente qui est pliable pour répondre aux exigences futures sans avoir besoin de révisions majeures. Pour ce faire, la scène stocke tous les composants (blocs de construction pour tous les objets de scène) dans une liste plate et définit la hiérarchie et la composition par le biais de références où des composants spécifiques référencent d’autres.
 
@@ -222,7 +218,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 ### <a name="component-update-and-refinding-components"></a>Mise à jour des composants et rerecherche de composants
 
-Il existe une autre fonction qui récupère les composants dans la scène appelée **_FindComponent_* _. Cette fonction est utile lors de la mise à jour des objets de suivi et leur recherche dans des scènes ultérieures. Le code suivant calcule une nouvelle scène par rapport à une scène précédente, puis trouve le plancher dans la nouvelle scène.
+Il existe une autre fonction qui récupère les composants de la scène appelée ***FindComponent***. Cette fonction est utile lors de la mise à jour des objets de suivi et leur recherche dans des scènes ultérieures. Le code suivant calcule une nouvelle scène par rapport à une scène précédente, puis trouve le plancher dans la nouvelle scène.
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -239,7 +235,7 @@ if (firstFloor != null)
 
 ## <a name="accessing-meshes-and-quads-from-scene-objects"></a>Accès aux maillages et aux quads à partir d’objets de scène
 
-Une fois les SceneObjects trouvés, votre application souhaitera probablement accéder aux données contenues dans les quadruples/les maillages dont elle est composée. Ces données sont accessibles avec les propriétés _*_quads_*_ et _*_meshes_*_ . Le code suivant énumère tous les Quad et les maillages de notre objet Floor.
+Une fois les SceneObjects trouvés, votre application souhaitera probablement accéder aux données contenues dans les quadruples/les maillages dont elle est composée. Ces données sont accessibles avec les propriétés ***quads** _ et _ *_meshes_**. Le code suivant énumère tous les Quad et les maillages de notre objet Floor.
 
 ```cs
 
@@ -351,7 +347,7 @@ SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix
 
 Les Quad sont conçus pour aider les scénarios de placement 2D et doivent être considérés comme des extensions aux éléments d’expérience utilisateur 2D Canvas. Alors que les Quad sont des composants de SceneObjects et peuvent être rendus en 3D, les API Quad elles-mêmes partent du principe que les quatre cœurs sont des structures 2D. Elles offrent des informations telles que l’étendue, la forme et fournissent des API pour le positionnement.
 
-Les Quad présentent des étendues rectangulaires, mais elles représentent des surfaces 2D de forme arbitraire. Pour activer la position sur ces surfaces 2D qui interagissent avec les utilitaires de l’environnement 3D quads, vous pouvez faire en sorte que cette interaction soit possible. Actuellement, la compréhension des scènes fournit deux fonctions, _ *FindCentermostPlacement** et **GetSurfaceMask**. FindCentermostPlacement est une API de haut niveau qui localise une position sur le quadruple dans laquelle un objet peut être placé et tente de trouver le meilleur emplacement pour votre objet, garantissant ainsi que le cadre englobant que vous fournissez reste sur la surface sous-jacente.
+Les Quad présentent des étendues rectangulaires, mais elles représentent des surfaces 2D de forme arbitraire. Pour activer la position sur ces surfaces 2D qui interagissent avec les utilitaires de l’environnement 3D quads, vous pouvez faire en sorte que cette interaction soit possible. Actuellement, la compréhension des scènes fournit deux fonctions telles que **FindCentermostPlacement** et **GetSurfaceMask**. FindCentermostPlacement est une API de haut niveau qui localise une position sur le quadruple dans laquelle un objet peut être placé et tente de trouver le meilleur emplacement pour votre objet, garantissant ainsi que le cadre englobant que vous fournissez reste sur la surface sous-jacente.
 
 > [!NOTE]
 > Les coordonnées de la sortie sont relatives au Quad dans « espace quadruple » avec le coin supérieur gauche (x = 0, y = 0), comme c’est le cas avec d’autres types de fenêtres Rect. Veillez à prendre cela en compte lorsque vous travaillez avec les origines de vos propres objets. 

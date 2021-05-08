@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, les composants logiciels, l’historique des versions, les notes de publication, l’historique des versions
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e6cdcbc7d91a6c1fadb519f94fc0339bdd39ca7
-ms.sourcegitcommit: 229c33afab7c70341982f48962028aad13956356
+ms.openlocfilehash: 5e0673f8ead5bd1211b403a7b67287cec95c0d4a
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "108069203"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644825"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Vue d’ensemble des logiciels Mixed Reality et historique des versions
 
@@ -168,7 +168,7 @@ Dans Windows 10, la version 1809 et les versions ultérieures, le [portail de r�
 
    | Version            | Date de sortie          | Modifications majeures                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
-   | 2000.21041.1051.0  | 26 avril 2020        | <ul><li>Met à jour l’icône d’application pour le portail de réalité mixte.</li></ul>  |
+   | 2000.21041.1051.0  | 26 avril 2021        | <ul><li>Met à jour l’icône d’application pour le portail de réalité mixte.</li></ul>  |
    | 2000.20111.1381.0  | 10 décembre 2020        | <ul><li>Met à jour la page d’accueil du portail de réalité mixte.</li><li>Réduit les erreurs de connectivité du casque lors des mises à jour du microprogramme. </li></ul>  |
    | 2000.20071.1133.0  | 5 août 2020        | <ul><li>Prise en charge de [OpenXR](/windows/mixed-reality/openxr) pour suspendre la fenêtre d’aperçu.</li></ul>  | 
    | 2000.20041.1212.0  | 11 mai 2020          | <ul><li>Résout un problème de minutage qui provoquait une erreur 15-5 incohérente.</li><li>Amélioration de la prise en charge de l’exécution de Windows Mixed Reality sans connexion Internet.</li><li>Amélioration de la prise en charge des contrôleurs de mouvement couplés via les **contrôleurs d’installation**.</li></ul>  | 
