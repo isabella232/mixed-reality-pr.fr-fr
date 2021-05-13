@@ -2,8 +2,6 @@
   href: boundary/toc.yml
 - name: Système de caméra
   href: camera-system/toc.yml
-- name: Multiplateforme
-  href: cross-platform/toc.yml
 - name: Diagnostics
   href: diagnostics/toc.yml
 - name: Exemples de scène
