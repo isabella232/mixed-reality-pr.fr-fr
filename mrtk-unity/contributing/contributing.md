@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/17/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, rapport de bogue,
-ms.openlocfilehash: 525e704ae2f09580c8c19ca7e8a25dad4aed2647
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 11a62708b4cb1a5acc3d230f933be2e88e0ac87b
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489259"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850365"
 ---
 # <a name="contributing"></a>Contribution
 
@@ -51,7 +51,7 @@ Si vous débutez avec le flux de travail git, [consultez cette présentation de 
 
 Quand vous ajoutez une correction ou une fonctionnalité de bogue, procédez comme suit :
 
-1. Implémentez la fonctionnalité ou la résolution de bogue. Les instructions pour la création et le déploiement de MRTK sont disponibles sur [BuildAndDeploy](../updates-deployment/build-and-deploy.md). N’oubliez pas de suivre les [instructions de codage](../contributing/coding-guidelines.md).
+1. Implémentez la fonctionnalité ou la résolution de bogue. Les instructions pour la création et le déploiement de MRTK sont lors du [déploiement sur les appareils Hololens et WMR](../supported-devices/wmr-mrtk.md). N’oubliez pas de suivre les [instructions de codage](../contributing/coding-guidelines.md).
 1. Si vous ajoutez une fonctionnalité, ajoutez également un exemple de scène qui illustre la fonctionnalité.
 1. Si vous ajoutez une fonctionnalité expérimentale, il n’est pas nécessaire d’écrire des tests et de la documentation. Au lieu de cela, suivez [les recommandations relatives aux fonctionnalités expérimentales](../contributing/experimental-features.md).
 1. Ajoutez des tests pour vérifier la fonctionnalité et la résolution de bogue. Les instructions relatives à l’écriture et à l’exécution de tests se trouvent sur [UnitTests](../contributing/unit-tests.md).

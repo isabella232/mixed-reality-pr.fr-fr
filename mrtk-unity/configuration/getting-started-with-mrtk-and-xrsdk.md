@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, XRSDK,
-ms.openlocfilehash: d5ab9bf51828c84759b72e87e1c41f885c7d6738
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: fe50de31ae24b415738db64073822b2aff061636
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300410"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850425"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Prise en main de MRTK et du kit de développement logiciel (SDK) XR
 
@@ -47,7 +47,7 @@ Accédez au **Gestionnaire de package de Unity** et installez le package de plug
 
 ### <a name="oculus"></a>Oculus
 
-1. Pour terminer, suivez la [procédure de configuration de Oculus Quest dans MRTK à l’aide du Guide de pipeline du kit de développement logiciel (SDK) XR](../features/cross-platform/oculus-quest-mrtk.md) . Le guide décrit les étapes nécessaires à la configuration de Unity et de MRTK pour utiliser le pipeline du kit de développement logiciel (SDK) XR pour Oculus Quest.
+1. Pour terminer, suivez la [procédure de configuration de Oculus Quest dans MRTK à l’aide du Guide de pipeline du kit de développement logiciel (SDK) XR](../supported-devices/oculus-quest-mrtk.md) . Le guide décrit les étapes nécessaires à la configuration de Unity et de MRTK pour utiliser le pipeline du kit de développement logiciel (SDK) XR pour Oculus Quest.
 
 ### <a name="openxr-preview"></a>OpenXR (préversion)
 
@@ -91,7 +91,7 @@ De [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.Mixe
 
 ![Paramètres de l’appareil photo hérité](../features/images/xrsdk/CameraSystemLegacy.png)
 
-par
+to
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -105,7 +105,7 @@ De [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft
 
 ![Paramètres d’entrée hérités](../features/images/xrsdk/InputSystemWMRLegacy.png)
 
-par
+to
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -125,7 +125,7 @@ De [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.M
 
 ![Paramètres des limites héritées](../features/images/xrsdk/BoundarySystemLegacy.png)
 
-par
+to
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -139,7 +139,7 @@ De [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver
 
 ![Paramètres de sensibilisation spatiale hérités](../features/images/xrsdk/SpatialAwarenessLegacy.png)
 
-par
+to
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|

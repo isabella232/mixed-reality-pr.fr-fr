@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: cb8b95cf9e563e8a277fa0d4b253639a763f5ad5
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: cef4bcf671caaaf8d5cb7cdc639446c6c6e91fa0
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489299"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850435"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Présentation du Mixed Reality Toolkit
 
@@ -47,10 +47,10 @@ Si vous débutez avec le développement MRTK ou Mixed Reality dans Unity, nous v
 Une fois que vous avez pris en main Mixed Reality et MRTK, installez les outils nécessaires et suivez notre série de tutoriels HoloLens 2 niveau débutant.
 
 > [!div class="nextstepaction"]
-> [Installer les outils](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+> [Installer les outils](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 
 > [!div class="nextstepaction"]
-> [Série de tutoriels HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [Série de tutoriels HoloLens 2](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 Vous voulez voir ce qui se passe en coulisses ?
 > [!div class="nextstepaction"]
@@ -90,8 +90,8 @@ Vous voulez voir ce qui se passe en coulisses ?
 
 :::row:::
     :::column:::
-       [![Suivi de la main (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md)<br>
-        **[Suivi de la main <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
+       [![Suivi de la main (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](supported-devices/leap-motion-mrtk.md)<br>
+        **[Suivi de la main <br/> (Ultraleap)](supported-devices/leap-motion-mrtk.md)**<br>
     :::column-end:::
     :::column:::
         [![Contrôles d’interface utilisateur](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks)<br>
