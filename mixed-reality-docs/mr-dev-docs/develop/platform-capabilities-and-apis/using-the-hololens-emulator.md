@@ -3,16 +3,16 @@ title: Utilisation de l’émulateur HoloLens
 description: Découvrez comment utiliser l’émulateur HoloLens pour tester des applications de réalité mixte sur votre PC sans un appareil HoloLens physique.
 author: hamalawi
 ms.author: moelhama
-ms.date: 04/13/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, émulateur
-ms.openlocfilehash: 9f5a8e91f3041134f60877bcac8f3e2d4f43674a
-ms.sourcegitcommit: be79d8e9ebac553aabec7c57c44eee56123aa00e
+ms.openlocfilehash: d6c3cf478977de2604e1e3bbc22d9af931231cf3
+ms.sourcegitcommit: f77adfa23a98ccc0412eb6be5871ad4b1da0f755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107369882"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109740640"
 ---
 # <a name="using-the-hololens-emulator"></a>Utilisation de l’émulateur HoloLens
 
@@ -28,7 +28,7 @@ Si vous devez développer des applications ou jeux avec casques immersifs de ré
 Téléchargez l’émulateur HoloLens.
 
 Versions :
-* [Émulateur HoloLens 2 (Windows Holographique, version 20H2, mise à jour d’avril 2021)](https://go.microsoft.com/fwlink/?linkid=2160829).
+* [Émulateur HoloLens 2 (Windows Holographique, version21H1, mise à jour de mai  2021)](https://go.microsoft.com/fwlink/?linkid=2162581).
 * [Émulateur HoloLens (1re génération) et modèles de projet holographiques](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 Des notes de publication et des versions antérieures de l’émulateur HoloLens sont disponibles dans la page [Archive de l’émulateur HoloLens](hololens-emulator-archive.md).
