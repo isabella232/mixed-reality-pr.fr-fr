@@ -1,16 +1,16 @@
 ---
-title: PullRequests
+title: Demandes de tirage
 description: Détails relatifs aux demandes de tirage.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK, demande de tirage
-ms.openlocfilehash: 008e719cd2fd3c854cbbe6876090b2de96f369be
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 7fb0dea4616acbf91b0459397f4a05f05a167947
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489229"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144745"
 ---
 # <a name="pull-requests"></a>Demandes de tirage
 

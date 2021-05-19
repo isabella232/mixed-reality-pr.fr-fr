@@ -1,16 +1,16 @@
 ---
-title: LeapMotionMRTK
+title: Leap Motion dans MRTK
 description: Documentation à configurer pour le mouvement LEAP
 author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, mouvement LEAP,
-ms.openlocfilehash: ea9e257815116c364fe2f1e37ca3477ec56262cb
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 285328b1248f04504f30192f1294e9ae665b3fc9
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852396"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145189"
 ---
 # <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Comment configurer le suivi des mouvements LEAP (par Ultraleap) dans MRTK
 

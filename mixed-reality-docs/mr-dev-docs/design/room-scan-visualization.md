@@ -6,12 +6,12 @@ ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, modèles d’application, conception, HoloLens, Scan Room, mappage spatial, maille, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 0bef09d7f023127f1f5eedf28065758b4a438f3e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8c7f1ae95cfdb520e84835f7fd5d78522e62e341
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583605"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143614"
 ---
 # <a name="room-scan-visualization"></a>Visualisation du balayage d’une pièce
 
@@ -22,7 +22,9 @@ Pour garantir l’utilité des données de mappage spatiale, les développeurs d
 * Demandez à l’utilisateur d’utiliser le geste fleuri pour accéder à la page d’hébergement Windows Mixed Reality, puis explorez la zone qu’il souhaite utiliser pour l’expérience. Ils peuvent utiliser l’utilisation de l’air pour confirmer que toutes les zones nécessaires sont connues de l’appareil.
 * Créez une expérience d’exploration personnalisée dans leur propre application.
 
-Dans tous ces cas, les données réelles recueillies lors de l’exploration sont stockées par le système et l’application n’a pas besoin de le faire.
+Dans tous ces cas, les données réelles recueillies lors de l’exploration sont stockées par le système et l’application n’a pas besoin de le faire. Si vous souhaitez voir la visualisation de l’analyse de la salle en action, consultez notre démonstration [conception d’hologrammes-spatiales de sensibilisation]() ci-dessous :
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -43,8 +45,6 @@ Dans tous ces cas, les données réelles recueillies lors de l’exploration son
         <td>❌</td>
     </tr>
 </table>
-
-
 
 ## <a name="building-a-custom-scanning-experience"></a>Création d’une expérience d’analyse personnalisée
 

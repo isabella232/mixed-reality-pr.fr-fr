@@ -6,16 +6,16 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, occlusion, kit de développement logiciel (SDK)
-ms.openlocfilehash: 1458ca9e70a52913ae150c58393c3e030e2c1add
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 06a4fdb6f3ad777c47151950acbd4ccdec9935ca
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583334"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143595"
 ---
 # <a name="scene-understanding"></a>Compréhension des scènes
 
-La présentation des scènes fournit aux développeurs de réalité mixte une représentation d’environnement structurée et de haut niveau, conçue pour rendre le développement pour les applications compatibles avec l’environnement intuitif. Pour ce faire, il combine la puissance des runtimes de réalité mixte existants, comme le [mappage spatial](spatial-mapping.md) très précis mais moins structuré et les nouveaux runtimes reposant sur l’intelligence artificielle. En combinant ces technologies, la compréhension des scènes génère des représentations d’environnements 3D similaires à celles que vous avez pu utiliser dans des infrastructures telles que Unity ou ARKit/ARCore. La scène comprendre le point d’entrée commence par un observateur de scène, qui est appelé par votre application pour calculer une nouvelle scène. Aujourd’hui, la technologie peut générer 3 catégories d’objets distinctes, mais connexes : 
+La présentation des scènes fournit aux développeurs de réalité mixte une représentation d’environnement structurée et de haut niveau, conçue pour rendre le développement pour les applications compatibles avec l’environnement intuitif. Pour ce faire, il combine la puissance des runtimes de réalité mixte existants, comme le [mappage spatial](spatial-mapping.md) très précis mais moins structuré et les nouveaux runtimes reposant sur l’intelligence artificielle. En combinant ces technologies, la compréhension des scènes génère des représentations d’environnements 3D similaires à celles que vous avez pu utiliser dans des infrastructures telles que Unity ou ARKit/ARCore. La scène comprendre le point d’entrée commence par un observateur de scène, qui est appelé par votre application pour calculer une nouvelle scène. Aujourd’hui, la technologie peut générer 3 catégories d’objets distinctes, mais connexes :
 
 * Maillages d’environnement étanches simplifiés qui déduirent la structure de la pièce planaire sans encombrement
 * Régions de plan pour le positionnement que nous appelons quads
@@ -23,7 +23,9 @@ La présentation des scènes fournit aux développeurs de réalité mixte une re
 
 ![Maillage de mappage spatial, intitulé surfaces planées, maillage étanche](images/SUScenarios.png)
 
-Ce document est destiné à fournir une vue d’ensemble du scénario et à clarifier la relation avec la compréhension des scènes et le partage spatial.
+Ce document est destiné à fournir une vue d’ensemble du scénario et à clarifier la relation avec la compréhension des scènes et le partage spatial. Si vous souhaitez voir la compréhension de la scène en action, consultez notre démonstration sur la [conception d’hologrammes-spatial Awareness]() ci-dessous :
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 ## <a name="developing-with-scene-understanding"></a>Développement avec la compréhension de la scène
 

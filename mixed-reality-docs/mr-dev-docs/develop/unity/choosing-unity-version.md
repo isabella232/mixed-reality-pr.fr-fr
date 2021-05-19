@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/26/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-Unity, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, Unity
-ms.openlocfilehash: b8f5f0131da811393ee053541e0c2fa0c735472e
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: 3bdaa35f495d7a647a7cbf37ddcd4f85e96d74d0
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105938116"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143670"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>Choix d’une version Unity et d’un plug-in XR
 
@@ -29,14 +29,14 @@ La meilleure façon d’installer et de gérer Unity consiste à utiliser <a hre
 ![Unity Hub instal New version](images/unity-hub-img-01.png)
 
 3. Vérifiez les composants suivants sous **« plateformes »**
-    * **plateforme Windows universelle la prise en charge de la Build** 
-    * **Prise en charge de Windows Build (IL2CPP)**
+    * **Universal Windows Platform Build Support** 
+    * **Windows Build Support (IL2CPP)**
 
-![Option Unity plateforme Windows universelle support Build](../images/Unity_Install_Option_UWP.png)
+![Option Universal Windows Platform Build Support d’Unity](../images/Unity_Install_Option_UWP.png)
 
 4. Si vous avez installé Unity sans ces options, vous pouvez les ajouter via le menu **Ajouter des modules** dans Unity Hub :
 
-![Option de support Windows Build Unity](../images/Unity_Install_Option_UWP2.png)
+![Option Windows Build Support d’Unity](../images/Unity_Install_Option_UWP2.png)
 
 Pour vous familiariser avec les XR intégrées héritées dans Unity 2019,4 LTS, cliquez ici :
 
@@ -54,7 +54,6 @@ Si vous utilisez **unity 2020,3 LTS**, vous pouvez utiliser le **plug-in Windows
 
 Toutefois, il existe des problèmes connus qui affectent la stabilité des hologrammes et d’autres fonctionnalités de HoloLens 2 : 
 
-* La soumission de mémoire tampon de profondeur a régressé dans les builds 2020 Unity récente, ce qui entraîne une sérieuse instabilité de l’hologramme.
 * Les applications de communication à distance des applications holographiques utilisant la cible de génération plateforme Windows universelle ne fonctionnent pas.
 * Le système de travaux graphiques Unity est activé par défaut, même s’il n’est pas compatible avec les projets HoloLens.
 
@@ -69,7 +68,7 @@ Unity 2020,3 LTS prend également en charge une version préliminaire publique d
 
 Le plug-in OpenXR de réalité mixte prend entièrement en charge les implémentations de 4,0 base de ARPlaneManager et de ARRaycastManager. Cela vous permet d’écrire du code de test de positionnement une fois qui s’étend sur les téléphones et tablettes HoloLens 2 et ARCore/ARKit. 
 
-Plus tard cette année, **unity 2020,3 LTS avec le plug-in OpenXR** deviendra la configuration Unity recommandée, et les futures fonctionnalités HoloLens 2 d’Unity seront exposées uniquement par le biais de ce plug-in.  Vous pouvez démarrer votre projet ici pour l’instant. Toutefois, si votre projet cible HoloLens 2, vous rencontrerez actuellement la stabilité de l’hologramme Unity 2020 et d’autres problèmes répertoriés ci-dessus.  Veillez à consulter les mois à venir pour les builds Unity mises à jour et les builds de plug-in OpenXR avant d’expédier votre application.  Cela permet de s’assurer que vos utilisateurs connaissent une stabilité d’hologramme appropriée. 
+Plus tard cette année, **unity 2020,3 LTS avec le plug-in OpenXR** deviendra la configuration Unity recommandée, et les futures fonctionnalités HoloLens 2 d’Unity seront exposées uniquement par le biais de ce plug-in.
 
 > [!div class="nextstepaction"]
 > [Utilisation du plug-in OpenXR](openxr-getting-started.md)

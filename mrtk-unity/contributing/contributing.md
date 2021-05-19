@@ -1,16 +1,16 @@
 ---
-title: Contribution
+title: Contribution à MRTK
 description: Comment contribuer à la réalité mixte Toolkit
 author: polar-kev
 ms.author: kesemple
 ms.date: 03/17/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, rapport de bogue,
-ms.openlocfilehash: 11a62708b4cb1a5acc3d230f933be2e88e0ac87b
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 8132c39a2bac7ae0926f125a6362e411100c8406
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109850365"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144516"
 ---
 # <a name="contributing"></a>Contribution
 

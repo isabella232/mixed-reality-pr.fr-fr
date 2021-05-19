@@ -1,16 +1,16 @@
 ---
-title: DetectingPlatformCapabilities
+title: Détection des fonctionnalités de plateforme
 description: Détails des différentes fonctionnalités prises en charge par MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, fonctionnalités,
-ms.openlocfilehash: 62e03c6d47deb079d3460759b5c694dd258a7767
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: e6f5a70120b2634a4c8c75cdca3d8b369967c4b0
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852369"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143862"
 ---
 # <a name="detecting-platform-capabilities"></a>Détection des fonctionnalités de la plateforme
 

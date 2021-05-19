@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, Windows Mixed Reality, cadre holographique, champ de vision, angle de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, interactions, navigation, menu
-ms.openlocfilehash: 5898f98054afadb58fb059ff54be23f015232d55
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: fee6af6370f9f3d166768144e689e09fd3fda2db
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009589"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143251"
 ---
 # <a name="holographic-frame"></a>Image holographique
 
@@ -64,6 +64,10 @@ Vous pouvez également placer des éléments d’interface directement sur le co
 Le cadre holographique présente un outil permettant au développeur de déclencher des interactions et de déterminer où se trouve l’attention d’un utilisateur. Le point de [regard](gaze-and-commit.md) est l’une des [interactions clés sur HoloLens](interaction-fundamentals.md), où le point de regard peut être couplé à des [gestes](gaze-and-commit.md#composite-gestures) (par exemple, une pression aérienne) ou une [voix](voice-input.md) (permettant des interactions plus courtes et plus naturelles). Ainsi, le frame holographique fait à la fois un espace pour observer le contenu numérique et interagir avec lui. Si l’expérience nécessite l’interaction avec plusieurs objets autour de l’espace de l’utilisateur (par exemple, la sélection de plusieurs objets autour de l’espace de l’utilisateur avec le point de vue + geste), envisagez de placer ces objets dans l’affichage de l’utilisateur ou de limiter le nombre de mouvements de tête nécessaires pour promouvoir le confort de l' [utilisateur](comfort.md).
 
 Vous pouvez également utiliser le point de regard pour suivre l’attention des utilisateurs via une expérience et voir quels objets ou parties de la scène l’utilisateur a payé le plus d’attention. Cela peut être particulièrement utile pour déboguer une expérience, permettant à des outils analytiques comme cartes thermiques de voir où les utilisateurs passent le plus de temps ou qui manquent certains objets ou interactions. Le suivi du regard peut également fournir un outil puissant pour les animateurs dans les expériences (Voir l’exemple [de cuisine de Lowe](holographic-frame.md#lowes-kitchen) ).
+
+Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration [conception d’hologrammes-TETE Tracking and Eye Tracking (]() en anglais) ci-dessous :
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
 <br>
 
@@ -142,6 +146,6 @@ La représentation réaliste de l’oreille a fourni un point focal puissant, co
 ## <a name="see-also"></a>Voir aussi
 * [Interactions instinctuelles](interaction-fundamentals.md)
 * [Confort](comfort.md)
-* [Mettre à l'échelle](scale.md)
+* [Mise à l’échelle](scale.md)
 * [Suivre de la tête et stabiliser](gaze-and-dwell.md)
 * [Stabilité des hologrammes](../develop/platform-capabilities-and-apis/hologram-stability.md)

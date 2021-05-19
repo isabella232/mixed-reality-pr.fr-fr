@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: mappage spatial, HoloLens, réalité mixte, reconstruction de surface, maille, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, présentation de la scène, maillage universel, occlusion, physique, navigation, observateur de surface, rendu, traitement de maillage
-ms.openlocfilehash: 1c41706abc0a393e8530b38be83fed49ed3e20a6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 941e72b441771849e48e8ebc4924605750804831
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583275"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143723"
 ---
 # <a name="spatial-mapping"></a>Mappage spatial
 
@@ -63,6 +63,12 @@ L’application fournit l’observateur de surface spatiale avec un ou plusieurs
 Ces volumes peuvent être fixes (dans un emplacement fixe basé sur le monde réel) ou ils peuvent être attachés au HoloLens (ils se déplacent, mais ne pivotent pas avec le HoloLens à mesure qu’il progresse dans l’environnement). Chaque surface spatiale décrit des surfaces réelles dans un petit volume d’espace, représentée sous la forme d’un maillage de triangles attaché à un [système de coordonnées spatiales](coordinate-systems.md)verrouillé.
 
 À mesure que le HoloLens recueille de nouvelles données sur l’environnement et que les modifications apportées à l’environnement se produisent, les surfaces spatiales s’affichent, disparaissent et changent.
+
+## <a name="spatial-awareness-design-concepts-demo"></a>Démonstration des concepts de conception de la sensibilisation spatiale
+
+Si vous souhaitez voir les concepts de conception de la sensibilisation spatiale en action, consultez notre démonstration de la vidéo [conception d’hologrammes-spatiales de sensibilisation]() ci-dessous. Une fois que vous avez terminé, poursuivez sur pour obtenir une présentation plus détaillée des rubriques spécifiques.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 ## <a name="spatial-mapping-vs-scene-understanding-worldmesh"></a>Mappage spatial et compréhension de scène WorldMesh
 

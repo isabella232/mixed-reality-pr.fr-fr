@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK, boîte à outils de réalité mixte, hologrammes, conception d’hologrammes, apprentissage, exemple d’application, casque de réalité mixte, casque de réalité virtuelle, présentation de la réalité virtuelle
-ms.openlocfilehash: 2480b5e0b4dca502c746dad6f070226ffa8cd1f9
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 6e37c3f1ba98f202addb9c323632bca8bffae3b6
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757757"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143631"
 ---
 # <a name="the-making-of-designing-holograms"></a>Création d’hologrammes
 
@@ -123,7 +123,19 @@ Dans un premier temps, nous avons commencé à ajouter de l’épaisseur aux pan
 
 ![GIF animé d’un système de menu holographique interactif](images/designing-holograms/creative-process.gif)
 
-## <a name="core-concepts"></a>Principaux concepts
+## <a name="core-concepts"></a>Concepts principaux
+
+**Suivi des têtes et suivi des yeux**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+**Suivi de la main**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+**Sensibilisation spatiale**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 **Image holographique**
 
