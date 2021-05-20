@@ -5,12 +5,12 @@ author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, mouvement LEAP,
-ms.openlocfilehash: 285328b1248f04504f30192f1294e9ae665b3fc9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 44593713f08a00fa53325eebfae2cf9042d386be
+ms.sourcegitcommit: 62beb626b2db6ce7df86014bd22bf1946b8906b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145189"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110207471"
 ---
 # <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Comment configurer le suivi des mouvements LEAP (par Ultraleap) dans MRTK
 
@@ -22,15 +22,16 @@ Le Fournisseur de données de mouvement LEAP active le suivi articulé pour VR e
 
 Ce fournisseur peut être utilisé dans l’éditeur et sur l’appareil sur la plateforme autonome.  Il peut également être utilisé dans l’éditeur sur la plateforme UWP, mais pas dans une génération UWP.
 
-|Versions des modules Unity de mouvement LEAP prises en charge|
-|---|
-|4.5.0|
-|4.5.1|
+| Version de MRTK | Versions des modules Unity de mouvement LEAP prises en charge |
+| --- | --- |
+|2.6. x | 4.5.0, 4.5.1|
+|2.7. x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1|
+
 
 ## <a name="using-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Utilisation du suivi des mouvements LEAP (par Ultraleap) dans MRTK
 
 1. Importation de MRTK et des modules Unity de mouvement LEAP
-    - Installez le [Kit de développement logiciel (SDK) LEAP](https://developer.leapmotion.com/releases/?category=orion) , si celui-ci n’est pas déjà installé.
+    - Installer le dernier [Kit de développement logiciel (SDK) LEAP](https://developer.leapmotion.com/releases/?category=orion) le plus récent s’il n’est pas déjà installé
     - Importez le package **Microsoft. MixedReality. Toolkit. Foundation** dans le projet Unity.
     - Téléchargez et importez la dernière version des [modules Unity LEAP](https://developer.leapmotion.com/unity) dans le projet
         - Importer uniquement le package de **base** dans les modules Unity
@@ -199,5 +200,5 @@ L’exemple de scène est contenu dans le package **Microsoft. MixedReality. Too
 
 ## <a name="see-also"></a>Voir aussi
 
--[Fournisseurs](../features/input/input-providers.md) 
-- d’entrée [Suivi](../features/input/hand-tracking.md) de la main
+- [Fournisseurs d’entrée](../features/input/input-providers.md)
+- [Suivi de la main](../features/input/hand-tracking.md)

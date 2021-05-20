@@ -1,3 +1,5 @@
+- name: Fenêtre de build
+  href: build-window.md
 - name: Utilitaire d’échange de ressources
   href: asset-swap-utility.md
 - name: Outil de mappage de contrôleur

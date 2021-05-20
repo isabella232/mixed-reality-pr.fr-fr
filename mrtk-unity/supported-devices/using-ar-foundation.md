@@ -4,13 +4,13 @@ description: Documentation relative à l’utilisation de ARFoundation dans Unit
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, AR Core, kit AR
-ms.openlocfilehash: 1c39950e8b64968e182ddc551ef344dee42060e9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, de réalité mixte, développement, MRTK, AR Core, kit AR, iOS, IOS, Android, comptabilité basique
+ms.openlocfilehash: 0f02eb94d95c2900348adaa9e1a02c3e54832a96
+ms.sourcegitcommit: 62beb626b2db6ce7df86014bd22bf1946b8906b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143946"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110207447"
 ---
 # <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Configuration de MRTK pour iOS et Android [expérimental]
 
@@ -41,7 +41,10 @@ ms.locfileid: "110143946"
     | Fondement de base  <br/> Version : 3.1.3 |  Fondement de base  <br/> Version : 3.1.3 |
     | Plug-in ARCore XR <br/> Version : 3.1.4 | Plug-in ARKit XR <br/> Version : 3.1.3 |
 
-1. Mettez à jour les définitions de script MRTK Unity en appelant l’élément de menu : **Mixed Reality Toolkit > Utilities > unity > script Update définit**
+1. Mettez à jour les définitions de script MRTK Unity en appelant l’élément de menu : **Mixed reality > Toolkit > Utilities > unity > de mise à jour des scripts de mise à jour définit**
+
+    ![Les scripts de mise à jour définissent](../features/images/UpdateScriptingDefineUnityAR.png)
+
 
 ## <a name="enabling-the-unity-ar-camera-settings-provider"></a>Activation du fournisseur de paramètres d’appareil photo Unity AR
 
@@ -84,20 +87,9 @@ Les étapes suivantes supposent l’utilisation de l’objet MixedRealityToolkit
 
 1. Basculer la plateforme sur Android ou iOS dans les paramètres de build Unity
 
-    Lorsque vous basculez la plateforme, vous devez voir la fenêtre du Configurateur de projet MRTK avec les paramètres de la plateforme que vous avez choisie.  Cliquez sur appliquer pour activer les paramètres spécifiques à la plateforme.
+1. Vérifier que le fournisseur de gestion du plug-in XR associé est activé
 
-    Paramètres du Configurateur de projet iOS
-
-    ![Configurateur de projet iOS](../features/images/camera-system/MRTKProjectConfigurator.png)
-
-1. Il n’y a aucune étape supplémentaire après avoir basculé la plateforme pour Android.
-
-1. Si la plateforme est iOS, modifiez > paramètres du projet > lecteur > d’autres paramètres, sous l’en-tête optimisation, **décochez l’option** supprimer le code du moteur.
-
-    ![Paramètres iOS](../features/images/camera-system/UncheckStripEngineCodeiOS.png)
-
-    > [!NOTE]
-    > Le fait de décocher le code du moteur de bandes est la solution à terme pour une erreur dans Xcode [#6646](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6646).  Nous travaillons sur une solution à long terme.
+    Gestion du plug-in XR iOS :  ![ gestion du plug-in XR iOS](../features/images/XRManagementiOS.png)
 
 1. Générer et exécuter la scène
 
