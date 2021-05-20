@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de présence oculaire, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de la réalité mixte, conception, interactions
-ms.openlocfilehash: db3cb774d72de13c2f1e51d446969ee7a4cdf2b7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 207f8d0f179f722a2e4dd6d6e2bdd9cbf75b2250
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582386"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196574"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interaction Eye-orientée vers le regard de HoloLens 2
 
@@ -47,6 +47,13 @@ Vous en apprendrez davantage sur les principaux avantages et les défis uniques 
 </tr>
 </table>
 
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Démonstration des concepts de conception du suivi des têtes et des yeux
+
+Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration **conception d’hologrammes-TETE Tracking and Eye Tracking (** en anglais) ci-dessous. Une fois que vous avez terminé, poursuivez sur pour obtenir une présentation plus détaillée des rubriques spécifiques.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="eye-gaze-input-design-guidelines"></a>Conseils pour la conception d’entrées de regard
 

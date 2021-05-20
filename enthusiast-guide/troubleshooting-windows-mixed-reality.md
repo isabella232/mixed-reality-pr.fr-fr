@@ -2,21 +2,46 @@
 title: Résolution des problèmes de Windows Mixed Reality
 description: Restez à jour avec le dépannage de Windows Mixed realisation qui va au-delà de notre documentation de support technique standard.
 ms.topic: article
+ms.author: rajhawar
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support
-ms.openlocfilehash: 2fbdb434eb3ccc0a327af990b4f4854faafbdf85
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: b347145e73c3e3f96d9a387edbfdb6dc0360b094
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944640"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196644"
 ---
-# <a name="troubleshooting-windows-mixed-reality-faqs"></a>Résolution des problèmes de Windows Mixed Reality (FAQ)
+# <a name="troubleshooting-in-windows-mixed-reality"></a>Résolution des problèmes dans Windows Mixed Reality
 
 ![Logo de l’en-tête de dépannage](images/1050px-Mixedrealityportal.png)
 
-## <a name="whats-new"></a>Nouveautés !
+Si vous rencontrez des problèmes avec votre matériel immersif, il est important de diagnostiquer la zone de problème général et de consulter les articles suivants pour obtenir une aide plus détaillée.
 
-En respectant les nouveaux contrôleurs et les contrôleurs de la nouvelle réverbération de HP, nous avons compilé une [page de FAQ dédiée](reverbG2-faq.yml) pour tous les éléments G2. Cet article aborde tout ce qui est lié aux problèmes de connexion et la clarté des images aux problèmes des contrôleurs motion et à l’exécution de la réalité mixte.
+Vous trouverez ici les options de support pour les options suivantes, qui vous permettent de vous diriger vers les bonnes informations avec moins de tracas. Nous abordons également les ressources de la communauté et les options de contenu libre-service que vous pouvez explorer :
+
+>[!Note]
+>En respectant les nouveaux contrôleurs et les contrôleurs de la nouvelle réverbération de HP, nous avons compilé une [page de FAQ dédiée](reverbG2-faq.yml) pour tous les éléments G2. Cet article aborde tout ce qui est lié aux problèmes de connexion et la clarté des images aux problèmes des contrôleurs motion et à l’exécution de la réalité mixte.
+
+- [Obtenir les options d’aide de votre communauté](#community-help-options)
+- [Obtenir les options de votre propre aide](#troubleshooting-topics)
+
+## <a name="community-help-options"></a>Options de l’aide de la communauté
+
+Pour obtenir des réponses à vos questions de développeur à partir de l’écosystème de développement de la Communauté, posez votre question sur Stack Overflow ou Reddit.
+
+### <a name="post-a-question-on-reddit"></a>Publication d’une question sur Reddit
+<div class='icon is-large'>
+    <img alt='Reddit' src='https://docs.microsoft.com/media/logos/logo_reddit.svg'>
+</div><br/>
+
+- [Windows Mixed Reality sur Reddit](https://www.reddit.com/r/WindowsMR/)
+
+### <a name="post-a-question-on-stack-overflow"></a>Poser une question sur Stack Overflow
+<div class='icon is-large'>
+    <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
+</div><br/>
+
+- [Windows Mixed Reality sur Stack Overflow](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
 
 ## <a name="troubleshooting-topics"></a>Rubriques de dépannage
 
@@ -27,7 +52,7 @@ Lorsque vous rencontrez des problèmes avec votre matériel immersif, il est imp
 Pour les problèmes liés à l’installation, à l’exécution de Windows Mixed Reality, aux erreurs d’installation, aux exigences minimales du PC ou aux autorisations d’administrateur, consultez ces deux FAQ :
 
 - [Erreurs d'installation](installation_errors.md)
-- [Paramétrage](wmr-setup-faq.yml)
+- [Problèmes d’installation de liés](wmr-setup-faq.yml)
 
 ### <a name="hardware-issues"></a>Problèmes matériels
 
@@ -41,22 +66,20 @@ Pour les problèmes liés à votre périphérique de casque physique, aux connex
 
 Si vous rencontrez des problèmes lors de la création de limites, de l’audition ou de la non-audition du son, de l’audio Bluetooth ou du suivi des casques, consultez les FAQ suivantes :
 
-- [Limites](boundary-questions.md)
-- [Voix et audio](speech-and-audio.md)
+- [Aide sur les limites](boundary-questions.md)
+- [Suppprt pour les problèmes vocaux et audio les plus courants](speech-and-audio.md)
 - [Système de suivi](tracking.md)
 
 ### <a name="vr-experience-issues"></a>Problèmes d’expérience VR
 
 Si vous rencontrez des problèmes avec les jeux SteamVR, l’installation du mode développeur Windows ou l’affichage du contenu WebVR dans un navigateur, les articles ci-dessous sont les suivants :
 
-- [SteamVR](steamvr-questions.md)
-- [WebVR](webvr-questions.md)
+- [Prise en charge avec SteamVR](steamvr-questions.md)
+- [Prise en charge avec WebVR](webvr-questions.md)
 
-### <a name="performance-issues"></a>Problèmes de performance 
+### <a name="performance-issues-and-immersice-hardware-related-issues"></a>Problèmes de performances et problèmes liés au matériel immersice
 
 Si votre ordinateur est lent, qu’il est trop chaud ou qu’il se trouve dans des visuels saccadés, nous vous proposons ce qui suit :
 
-- [Performances](performance-questions.md)
-
-## <a name="see-also"></a>Voir aussi
-- [Autres questions](other-questions.md)
+- [Problèmes généraux liés aux performances](performance-questions.md)
+- [Problèmes liés au matériel immersif](other-questions.md)

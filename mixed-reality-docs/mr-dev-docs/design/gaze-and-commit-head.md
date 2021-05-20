@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: La réalité mixte, le point de présence, le regard, l’interaction, la conception, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de la réalité virtuelle, HoloLens, MRTK, le kit de configuration de la réalité mixte, la cible, le lissage
-ms.openlocfilehash: a69b855e2246327affeeb0f771f565b94ea65cb2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 74f963a6b450d1fb7f1302886a01c12cf79ce28a
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582285"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196514"
 ---
 # <a name="head-gaze-and-commit"></a>Suivre de la tête et valider
 
@@ -41,6 +41,14 @@ Le _point de regard et la validation de tête_ est un cas particulier du modèle
 </table>
 
 ---
+
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Démonstration des concepts de conception du suivi des têtes et des yeux
+
+Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration **conception d’hologrammes-TETE Tracking and Eye Tracking (** en anglais) ci-dessous. Une fois que vous avez terminé, poursuivez sur pour obtenir une présentation plus détaillée des rubriques spécifiques.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="target-sizing-and-feedback"></a>Dimensionnement des cibles et retour
 

@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de regard, étalonnage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, intention, actions
-ms.openlocfilehash: a4010e5244539909d2b04cdb9e2044672d1decab
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: b76fd2e05999e5807156714fcdf12ca2863501bc
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143242"
+ms.locfileid: "110196504"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Eye-tracking sur HoloLens 2
 
@@ -48,9 +48,11 @@ L’API de suivi oculaire a été conçue en tenant compte de la confidentialit�
 
 ## <a name="head-and-eye-tracking-design-concepts-demo"></a>Démonstration des concepts de conception du suivi des têtes et des yeux
 
-Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration [conception d’hologrammes-TETE Tracking and Eye Tracking (]() en anglais) ci-dessous. Une fois que vous avez terminé, poursuivez sur pour obtenir une présentation plus détaillée des rubriques spécifiques.
+Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration **conception d’hologrammes-TETE Tracking and Eye Tracking (** en anglais) ci-dessous. Une fois que vous avez terminé, poursuivez sur pour obtenir une présentation plus détaillée des rubriques spécifiques.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="calibration"></a>Étalonnage 
 

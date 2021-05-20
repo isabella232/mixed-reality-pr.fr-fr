@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, pré-vente, recherche, achat, avant l’achat
 appliesto:
 - Windows 10
-ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 82ae2af5a8edd60317ba7d7c343c80a25b226301
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580292"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196614"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>Avant d’acheter le Forum aux questions
 
@@ -59,9 +59,9 @@ En savoir plus sur la réalité mixte ici : <https://docs.microsoft.com/windows
 
 ### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>Qu’est-ce que le suivi à l’intérieur ? En quoi est-il différent du suivi extérieur-dans le suivi ou du phare
 
-* **Suivi interne** Windows Mixed Reality utilise le suivi à l’intérieur de la sortie. Avec les caméras de suivi à l’extérieur sont intégrées au casque et suivent les modifications apportées à l’environnement pour déterminer la position des casques en fonction de l’environnement à mesure que vous vous déplacez.
+* **Suivi interne** Les systèmes Windows Mixed Reality, Oculus Quest et vive/index utilisent le suivi à l’intérieur de la sortie. Avec les caméras de suivi à l’extérieur sont intégrées au casque et suivent les modifications apportées à l’environnement pour déterminer la position du casque en fonction de l’environnement à mesure que vous vous déplacez. Certains systèmes, tels que l’index de la vive et de la vanne HTC, utilisent des capteurs infrarouges à la place des appareils photo et dépendent de « phares » externes ou de « stations de base » qui projetent la lumière infrarouge pour suivre leur environnement.
 
-* **Suivi externe** Oculus, vive et autres utilisent le suivi externe.  Avec le suivi extérieur, le casque est suivi par un ou plusieurs périphériques externes. Les caméras sont intégrées à ces périphériques externes, placées autour de l’environnement et utilisées pour déterminer la position du casque en fonction de l’environnement.
+* **Suivi externe** Les systèmes tels que le rift Oculus et la PlayStation VR utilisent le suivi externe.  Avec le suivi extérieur, le casque est suivi par un ou plusieurs périphériques externes. Les caméras sont intégrées à ces périphériques externes, placées autour de l’environnement et utilisées pour déterminer la position du casque en fonction de l’environnement.
 
 En savoir plus sur [le suivi à l’intérieur](./tracking-system.md).
 
@@ -368,7 +368,7 @@ Les détails techniques répertoriés ci-dessus sont référencés à partir des
 
 **Réponse rapide :** Oui, Windows Mixed Reality fonctionne même si vous n’avez pas suffisamment d’espace. Vous pouvez définir ce paramètre lors de l’installation en sélectionnant l’expérience « Bureau-échelle ».
 
-## <a name="content"></a>Content
+## <a name="content"></a>Contenu
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Quels sont les jeux et les applications qui s’exécutent sur Windows Mixed Reality ?
 

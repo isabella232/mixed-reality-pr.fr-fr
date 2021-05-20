@@ -6,12 +6,12 @@ ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, modèles d’application, conception, HoloLens, Scan Room, mappage spatial, maille, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 8c7f1ae95cfdb520e84835f7fd5d78522e62e341
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 87312a5d5361ac0e8c24a622cf69fe3e9b147ff5
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143614"
+ms.locfileid: "110196404"
 ---
 # <a name="room-scan-visualization"></a>Visualisation du balayage d’une pièce
 
@@ -22,9 +22,11 @@ Pour garantir l’utilité des données de mappage spatiale, les développeurs d
 * Demandez à l’utilisateur d’utiliser le geste fleuri pour accéder à la page d’hébergement Windows Mixed Reality, puis explorez la zone qu’il souhaite utiliser pour l’expérience. Ils peuvent utiliser l’utilisation de l’air pour confirmer que toutes les zones nécessaires sont connues de l’appareil.
 * Créez une expérience d’exploration personnalisée dans leur propre application.
 
-Dans tous ces cas, les données réelles recueillies lors de l’exploration sont stockées par le système et l’application n’a pas besoin de le faire. Si vous souhaitez voir la visualisation de l’analyse de la salle en action, consultez notre démonstration [conception d’hologrammes-spatiales de sensibilisation]() ci-dessous :
+Dans tous ces cas, les données réelles recueillies lors de l’exploration sont stockées par le système et l’application n’a pas besoin de le faire. Si vous souhaitez voir la visualisation de l’analyse de la salle en action, consultez notre démonstration **conception d’hologrammes-spatiales de sensibilisation** ci-dessous :
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
+*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="device-support"></a>Prise en charge des appareils
 

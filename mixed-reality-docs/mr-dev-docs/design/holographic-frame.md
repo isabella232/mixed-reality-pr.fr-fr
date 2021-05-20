@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, Windows Mixed Reality, cadre holographique, champ de vision, angle de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, interactions, navigation, menu
-ms.openlocfilehash: fee6af6370f9f3d166768144e689e09fd3fda2db
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 5edab22751b9f2196f02a500279c4de385b57b5d
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143251"
+ms.locfileid: "110196554"
 ---
 # <a name="holographic-frame"></a>Image holographique
 
@@ -65,9 +65,11 @@ Le cadre holographique présente un outil permettant au développeur de déclenc
 
 Vous pouvez également utiliser le point de regard pour suivre l’attention des utilisateurs via une expérience et voir quels objets ou parties de la scène l’utilisateur a payé le plus d’attention. Cela peut être particulièrement utile pour déboguer une expérience, permettant à des outils analytiques comme cartes thermiques de voir où les utilisateurs passent le plus de temps ou qui manquent certains objets ou interactions. Le suivi du regard peut également fournir un outil puissant pour les animateurs dans les expériences (Voir l’exemple [de cuisine de Lowe](holographic-frame.md#lowes-kitchen) ).
 
-Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration [conception d’hologrammes-TETE Tracking and Eye Tracking (]() en anglais) ci-dessous :
+Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration **conception d’hologrammes-TETE Tracking and Eye Tracking (** en anglais) ci-dessous :
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 <br>
 

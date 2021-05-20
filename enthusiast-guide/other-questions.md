@@ -1,5 +1,5 @@
 ---
-title: Autres questions
+title: FAQ sur le matériel liés
 description: Autres conseils de dépannage Windows Mixed realisation qui vont au-delà de notre documentation de support technique standard.
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, désinstallation de Windows Mixed Reality, langues prises en charge
 appliesto:
 - Windows 10
-ms.openlocfilehash: cf23d52fc72fa3b499b32d3770151306111afaa4
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: ede2620ca6a47b085a3d7b54fd6df073bfaa528e
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726010"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196594"
 ---
 # <a name="other-questions"></a>Autres questions
 
@@ -21,7 +21,7 @@ ms.locfileid: "97726010"
 Recherchez et exécutez « dxdiag » :
 
 1.  Si le résultat est « Rendering de base », le pilote Graphics n’est pas installé. Pour résoudre ce problème :
-    * Accédez à **Device Manager > Action > Rechercher les modifications matérielles**.
+    * Accédez à **Gestionnaire de périphériques > Action > Rechercher les modifications matérielles**.
     * Utilisez Windows Update pour mettre à jour le pilote.
     * Si cela ne résout pas le problème, accédez au site Web du fabricant et installez la dernière mise à jour du pilote. 
     * Si une mise à jour n’est pas disponible pour votre GPU, WMR peut ne pas être pris en charge sur votre appareil. Si vous pensez que c’est le cas, contactez le [support technique](https://support.microsoft.com).

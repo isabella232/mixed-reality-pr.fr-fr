@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, occlusion, kit de développement logiciel (SDK)
-ms.openlocfilehash: 06a4fdb6f3ad777c47151950acbd4ccdec9935ca
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: dd54be85ed71c3359408c02914470e97ab42b90e
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143595"
+ms.locfileid: "110196394"
 ---
 # <a name="scene-understanding"></a>Compréhension des scènes
 
@@ -23,9 +23,11 @@ La présentation des scènes fournit aux développeurs de réalité mixte une re
 
 ![Maillage de mappage spatial, intitulé surfaces planées, maillage étanche](images/SUScenarios.png)
 
-Ce document est destiné à fournir une vue d’ensemble du scénario et à clarifier la relation avec la compréhension des scènes et le partage spatial. Si vous souhaitez voir la compréhension de la scène en action, consultez notre démonstration sur la [conception d’hologrammes-spatial Awareness]() ci-dessous :
+Ce document est destiné à fournir une vue d’ensemble du scénario et à clarifier la relation avec la compréhension des scènes et le partage spatial. Si vous souhaitez voir la compréhension de la scène en action, consultez notre démonstration sur la **conception d’hologrammes-spatial Awareness** ci-dessous :
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
+*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="developing-with-scene-understanding"></a>Développement avec la compréhension de la scène
 
