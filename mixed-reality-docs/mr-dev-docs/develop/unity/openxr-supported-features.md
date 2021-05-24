@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: e6756df7f082e56b029b6e82e06d960ba39ed04a
-ms.sourcegitcommit: aca5fddb98fbbd9aa22bdf8174d7fdcdb9d4c08a
+ms.openlocfilehash: e622cd617ccf67c0877b9064efe791743e4c34b6
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107893999"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110333371"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>OpenXR en réalité mixte fonctionnalités prises en charge dans Unity
 
@@ -30,7 +30,7 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * Interaction de regard sur HoloLens 2.
 * Recherche de l’appareil photo/vidéo (PV) sur HoloLens 2.
 * Capture de la réalité mixte à l’aide d’un rendu de 3e œil via l’appareil photo PV.
-* Prend en charge [la « lecture » dans HoloLens 2 avec l’application de communication à distance holographique](#holographic-remoting-in-unity-editor-play-mode), ce qui permet aux développeurs de déboguer les scripts sans les générer et les déployer sur l’appareil.
+* Prend en charge [la « lecture » dans HoloLens 2 avec l’application de communication à distance holographique](unity-play-mode.md#holographic-remoting-in-unity-editor-play-mode), ce qui permet aux développeurs de déboguer les scripts sans les générer et les déployer sur l’appareil.
 * Compatible avec MRTK Unity 2.5.3 et versions ultérieures via la [prise en charge des fournisseurs MRTK OpenXR](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatible avec Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) ou version ultérieure.
 * (Ajouté dans 0.1.3) Prend en charge la [communication à distance holographique des applications de bureau](holographic-remoting-desktop.md) à partir d’une application Windows autonome créée et déployée.
@@ -41,33 +41,7 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * (0.9.0) prend en charge **XRMeshSubsystem** et **ARMeshManager** pour le mappage spatial.
 * (Ajouté dans 0.9.0) Prend en charge le plug-in du kit de développement logiciel (SDK) d’ancrage spatial Azure pour Windows. Pour plus d’informations, consultez l' [exemple de projet Mixed Reality + OpenXR Azure spatial Anchors sur GitHub](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/tree/main/AzureSpatialAnchorsSample).
 * (Ajouté dans 0.9.1) Prend en charge la communication à distance holographique des applications de bureau à partir d’une application Windows UWP créée et déployée.
-
-## <a name="holographic-remoting-setup"></a>Configuration de la communication à distance holographique
-
-1. Tout d’abord, vous devez [installer l’application de lecteur de communication à distance holographique](https://www.microsoft.com/store/productId/9NBLGGH4SV40) à partir du Microsoft Store sur votre HoloLens 2
-2. Exécutez l’application de lecteur de communication à distance holographique sur HoloLens 2 et vous verrez le numéro de version et l’adresse IP à laquelle se connecter.
-    * V 2.4 ou version ultérieure est nécessaire pour fonctionner avec le plug-in OpenXR
-
-    ![Capture d’écran du lecteur de communication à distance holographique s’exécutant dans HoloLens](images/openxr-features-img-01.png)
-
-## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Communication à distance holographique en mode de lecture de l’éditeur Unity
-
-La création d’un projet Unity UWP dans Visual Studio Project et son empaquetage et son déploiement sur un appareil HoloLens 2 peuvent prendre un certain temps. Une solution consiste à activer la fonctionnalité de communication à distance de l’éditeur holographique, qui vous permet de déboguer votre script C# en mode « lecture » directement sur un appareil HoloLens 2 sur votre réseau. Ce scénario évite la surcharge liée à la création et au déploiement d’un package UWP sur un appareil distant.
-
-1. Suivez les étapes de la configuration de la [communication à distance holographique](#holographic-remoting-setup)
-2. Ouvrez les **paramètres du projet de modification >**, accédez à **gestion du plug-in XR**, puis cochez la case **Windows Mixed Reality Feature Set** :
-
-    ![Capture d’écran du panneau Paramètres du projet ouvert dans l’éditeur Unity avec la gestion du plug-in XR mise en surbrillance](images/openxr-features-img-02.png)
-
-3. Développez la section **fonctionnalités** sous **OpenXR** et sélectionnez **Afficher tout** .
-4. Cochez la case **accès distant de l’éditeur holographique** et entrez l’adresse IP obtenue à partir de l’application de communication à distance holographique :
-
-    ![Capture d’écran du panneau Paramètres du projet ouvert dans l’éditeur Unity avec les fonctionnalités mises en surbrillance](images/openxr-features-img-03.png)
-
-Vous pouvez maintenant cliquer sur le bouton « lecture » pour lire votre application Unity dans l’application de communication à distance holographique sur votre HoloLens. Vous pouvez également [attacher Visual Studio à Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows) pour déboguer des scripts C# en mode lecture.
-
-> [!NOTE]
-> À partir de la version 0.1.0, le runtime de communication à distance holographique ne prend pas en charge les ancres, et les fonctionnalités ARAnchorManager ne fonctionnent pas via la communication à distance.  Cette fonctionnalité est disponible dans les versions ultérieures.
+* (Ajouté dans 0.9.4) Prend en charge la plateforme ARM en plus de ARM64 pour l’application HoloLens 2.
 
 ## <a name="motion-controller-and-hand-interactions"></a>Interactions entre le contrôleur de mouvement et la main
 
@@ -114,13 +88,7 @@ HoloLens 2 peut détecter les codes QR dans l’environnement situé autour du 
 
 Pour référence, nous disposons d’un [exemple de projet de suivi QR sur GitHub](https://github.com/yl-msft/QRTracking) avec davantage d’explications sur l’utilisation de l' [ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
 
-## <a name="whats-coming-soon"></a>Bientôt disponible
-
-Les problèmes suivants et les fonctionnalités manquantes sont connus avec le plug-in OpenXR de réalité mixte **version 0.9.2**. Nous travaillons sur ces versions et publierons des correctifs et de nouvelles fonctionnalités dans les versions à venir.
-
-* **ARM64** est la seule plateforme prise en charge pour les applications HoloLens 2. La plateforme **ARM** est disponible dans une version ultérieure.
-
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Lorsque vous suspendez et reprenez une application Unity sur HoloLens 2, l’application ne peut pas reprendre correctement, ce qui a pour conséquence 4 points de rotation dans la vue HoloLens.
 

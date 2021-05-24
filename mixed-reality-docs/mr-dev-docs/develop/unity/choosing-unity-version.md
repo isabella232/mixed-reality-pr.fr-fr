@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/26/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-Unity, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, Unity
-ms.openlocfilehash: 3bdaa35f495d7a647a7cbf37ddcd4f85e96d74d0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: febeb46972935a02d9c945e2a0cafabebedd0715
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143670"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110333381"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>Choix d’une version Unity et d’un plug-in XR
 
@@ -57,7 +57,7 @@ Toutefois, il existe des problèmes connus qui affectent la stabilité des holog
 * Les applications de communication à distance des applications holographiques utilisant la cible de génération plateforme Windows universelle ne fonctionnent pas.
 * Le système de travaux graphiques Unity est activé par défaut, même s’il n’est pas compatible avec les projets HoloLens.
 
-Si vous choisissez de démarrer un nouveau projet dans Unity 2020 aujourd’hui, veillez à suivre les mois à venir pour les builds Unity mises à jour et les builds de plug-in Windows XR avant d’expédier votre application.  Cela permet de s’assurer que vos utilisateurs connaissent une stabilité d’hologramme appropriée.
+Si vous choisissez d’utiliser Unity 2020, veillez à effectuer une mise à niveau vers Unity 2020.3.6 F1 ou versions ultérieures pour garantir une stabilité de l’hologramme adaptée à votre utilisateur.
 
 > [!div class="nextstepaction"]
 > [Utilisation du plug-in XR Windows](windows-xr-plugin.md)
