@@ -50,7 +50,9 @@
       "build_output_subfolder": "mrtk-unity",
       "locale": "fr-fr",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [
+       ">= mrtkunity-2021-01"
+      ],
       "xref_query_tags": [
         "/dotnet"
       ],
