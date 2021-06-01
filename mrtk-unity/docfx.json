@@ -1,5 +1,21 @@
 {
   "build": {
+    "globalMetadata": {
+      "breadcrumb_path": "/windows/mixed-reality/mrtk-unity/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "uhfHeaderId": "MSDocsHeader-Hololens",
+      "ms.prod": "mixed-reality",
+      "ms.topic": "conceptual",
+      "titleSuffix": "Mixed Reality Toolkit",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/mixed-reality",
+      "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback"
+    },
+    "fileMetadata": {
+      "monikerRange": {
+        "./**/*.md": ">= mrtkunity-2021-01"
+      }
+    },
     "content": [
       {
         "group": "mrtk-unity-all-up",
@@ -41,25 +57,6 @@
         ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "/windows/mixed-reality/mrtk-unity/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
-      "uhfHeaderId": "MSDocsHeader-Hololens",
-      "ms.prod": "mixed-reality",
-      "feedback_system": "None",
-      "feedback_github_repo": "",
-      "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback"
-    },
-    "fileMetadata": {
-      "monikerRange": {
-        "./**/*.md": ">= mrtkunity-2021-01"
-      }
-    },
-    "template": [],
-    "dest": "mrtk-unity",
-    "markdownEngineName": "markdig",
     "groups": {
       "mrtk-unity-all-up": {
         "dest": "temp-mrtk-unity",
