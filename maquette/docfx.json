@@ -1,5 +1,12 @@
 {
   "build": {
+    "globalMetadata": {
+      "breadcrumb_path": "/windows/mixed-reality/maquette/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "feedback_system": "None",
+      "ms.prod": "mixed-reality"
+    },
+    "fileMetadata": {},
     "content": [
       {
         "files": [
@@ -24,7 +31,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.zip"
         ],
         "exclude": [
           "**/obj/**",
@@ -35,17 +43,6 @@
           "_repo.en-us/**"
         ]
       }
-    ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "/windows/mixed-reality/maquette/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
-      "feedback_system": "None"
-    },
-    "fileMetadata": {},
-    "template": [],
-    "dest": "maquette",
-    "markdownEngineName": "markdig"
+    ]
   }
 }
