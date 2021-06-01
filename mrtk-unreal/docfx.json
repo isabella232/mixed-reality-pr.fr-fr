@@ -1,5 +1,11 @@
 {
   "build": {
+    "globalMetadata": {
+      "breadcrumb_path": "/windows/mixed-reality/mrtk-unreal/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "feedback_system": "None"
+    },
+    "fileMetadata": {},
     "content": [
       {
         "files": [
@@ -35,17 +41,6 @@
           "_repo.en-us/**"
         ]
       }
-    ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "/windows/mixed-reality/mrtk-unreal/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
-      "feedback_system": "None"
-    },
-    "fileMetadata": {},
-    "template": [],
-    "dest": "mrtk-unreal",
-    "markdownEngineName": "markdig"
+    ]
   }
 }
