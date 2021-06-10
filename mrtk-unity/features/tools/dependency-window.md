@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 22ecbb09ebf759e15f1f21085a7b7696cb24bc6e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: fd17db3f365d8bd97b8cd9c43a6111e2b82a61fe
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144442"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647033"
 ---
 # <a name="dependency-window"></a>Fenêtre de dépendance
 
@@ -18,9 +18,9 @@ Dans Unity, il est souvent difficile de Gleam les ressources qui sont utilisées
 
 La fenêtre dépendance affiche la manière dont les ressources référencent et dépendent les unes des autres. Les dépendances sont calculées en analysant les GUID dans les fichiers projet YAML (Remarque : les dépendances de script à script ne sont pas prises en compte).
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
-Pour ouvrir la fenêtre, sélectionnez *Mixed Reality Toolkit->Utilities->fenêtre de dépendance* qui ouvre la fenêtre et commence automatiquement à générer le graphique de dépendance de votre projet. Une fois le graphique de dépendance créé, vous pouvez sélectionner des éléments multimédias dans l’onglet projet pour inspecter leurs dépendances.
+Pour ouvrir la fenêtre, sélectionnez la  >  fenêtre de dépendance utilitaires de la boîte à **Outils**  >    >   de la réalité mixte qui ouvre la fenêtre et commence automatiquement à générer le graphique de dépendance de votre projet. Une fois le graphique de dépendance créé, vous pouvez sélectionner des éléments multimédias dans l’onglet projet pour inspecter leurs dépendances.
 
 ![Fenêtre de dépendance](../images/dependency-window/MRTK_Dependency_Window.png)
 

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 23e3ea9014612d5df8935552d7b767454b9eefa7
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944676"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647021"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Utilisation de la reconnaissance vocale dans Windows Mixed Reality
 
@@ -41,7 +41,7 @@ Utilisez les commandes vocales suivantes dans Windows Mixed Reality pour une plu
 | Sélectionnez | Dites « sélectionner » pour afficher le curseur en regard. Ensuite, tournez votre tête pour positionner le curseur sur l’élément que vous souhaitez sélectionner et dites « sélectionner » à nouveau. |
 | Ouverture du menu Démarrer | Aller à démarrer |
 | Conserver une application immersif | Dites « aller à démarrer » pour afficher le menu actions rapides, puis « Accueil de la réalité mixte ». |
-| Allumer/éteindre l’torche | Dites « aller à démarrer » pour afficher le menu actions rapides, puis « Accueil de la réalité mixte ». |
+| Allumer/éteindre l’torche | Lampe ou lampe torche |
 | Porte | Transformez votre tête vers l’endroit où vous souhaitez accéder, puis dites « téléporter ». (Pour un ciblage plus précis, dites tout d’abord « SELECT » pour afficher le curseur en regard, puis dites « la téléporter ».) |
 | Tourner vers la gauche ou la droite | Tourner vers la gauche/droite |
 | Tourner de 180 degrés | Tourne-toi |
@@ -133,7 +133,7 @@ Basculez en mode dictée chaque fois que le clavier est actif pour une méthode 
 | Démarrer la dictée | Démarrer la dictée |
 | Arrêter la dictée | Arrêter la dictée |
 | Supprimer ce que vous avez dicté | Supprimer ce |
-| Sélectionnez tout dans la zone dictée. | Tout sélectionner |
+| Sélectionnez tout dans la zone dictée. | Sélectionner tout |
 
 ### <a name="punctuation"></a>Ponctuation
 

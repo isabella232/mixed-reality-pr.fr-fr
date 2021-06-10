@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 7470690a96380184ead7319d4461005042c6db82
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 6e751f5376110ddc6ae92c75b4182fba8240a356
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636286"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748469"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Suivez ce [didacticiel pas à pas](../../tutorials/mr-learning-base-01.md) pour ajouter et configurer automatiquement la boîte à outils de réalité mixte dans votre projet Unity. Il est également possible de travailler directement avec la classe [MixedRealityPlayspace](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) à partir de MRTK pour Unity et de définir la mise à l' **échelle cible** sur le **monde**:
+Suivez ce [didacticiel pas à pas](../../tutorials/mr-learning-base-01.md) pour ajouter et configurer automatiquement la boîte à outils de réalité mixte dans votre projet Unity. Il est également possible de travailler directement avec la classe [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) à partir de MRTK pour Unity et de définir la mise à l' **échelle cible** sur le **monde**:
 
 ![Fenêtre Paramètres MRTK](../../images/mrtk-target-scale.png)
 

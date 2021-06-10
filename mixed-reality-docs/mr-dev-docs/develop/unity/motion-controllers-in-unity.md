@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: contrôleurs de mouvement, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: d3df49c2f6c626e9f4eb47c38f4a8e61059a8438
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: ff1eedcc337edd2d7edfe8d961bb88bcb859cd23
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300474"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743482"
 ---
 # <a name="motion-controllers-in-unity"></a>Contrôleurs de mouvement dans Unity
 
@@ -138,11 +138,11 @@ Si l’utilisateur déplace les contrôleurs en dehors du champ de vue du casque
 
 À ce stade, le système va verrouiller le contrôleur à l’utilisateur, en effectuant le suivi de la position de l’utilisateur lors de son déplacement, tout en exposant l’orientation réelle du contrôleur à l’aide de ses capteurs d’orientation internes. De nombreuses applications qui utilisent des contrôleurs pour pointer et activer des éléments d’interface utilisateur peuvent fonctionner normalement avec une précision approximative sans que l’utilisateur ne remarque.
 
-La meilleure façon de vous en faire une idée est de l’essayer vous-même. Consultez cette vidéo avec des exemples de contenu immersif qui fonctionne avec les contrôleurs de mouvement dans différents États de suivi :
+<!-- The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
 
 <br>
 
- >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g]
+ >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g] -->
 
 ### <a name="reasoning-about-tracking-state-explicitly"></a>Raisonnement sur le suivi de l’État explicitement
 
@@ -152,9 +152,9 @@ Les applications qui souhaitent traiter différemment les positions en fonction 
 <tr>
 <th> État du suivi </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Précision approximative</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Approximatif </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -436,7 +436,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 
 ## <a name="motion-controllers-in-mrtk"></a>Contrôleurs de mouvement dans MRTK
 
-Vous pouvez accéder au contrôleur de mouvement [et de mouvement](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers) à partir du gestionnaire d’entrée.
+Vous pouvez accéder au contrôleur de mouvement [et de mouvement](/windows/mixed-reality/mrtk-unity/features/input/controllers) à partir du gestionnaire d’entrée.
 
 ## <a name="follow-along-with-tutorials"></a>Avancer avec des tutoriels
 

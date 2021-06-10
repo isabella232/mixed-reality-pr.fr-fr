@@ -1,16 +1,16 @@
 ---
-title: Prise en main avec MRTK et XRSDK
-description: Page d’accueil de MRTK avec XRSDK
+title: Prise en main de MRTK et du kit de développement logiciel (SDK) XR
+description: Page d’accueil de MRTK avec le kit de développement logiciel (SDK) XR
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, XRSDK,
-ms.openlocfilehash: ef6d8c9205a9d801e8cb0ec2690d77b74c72b5fb
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, XRSDK, SDK XR
+ms.openlocfilehash: d3ff4306205cc6548bc5617d727f32a780855439
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143519"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647213"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Prise en main de MRTK et du kit de développement logiciel (SDK) XR
 
@@ -76,7 +76,73 @@ Accédez au **Gestionnaire de package de Unity** et installez le package de plug
 > Pour la version initiale de MRTK et OpenXR, seuls les contrôleurs de mouvement HoloLens 2 et Windows Mixed Reality sont pris en charge en mode natif. La prise en charge d’un matériel supplémentaire sera ajoutée dans les versions à venir.
 
 ## <a name="configuring-mrtk-for-the-xr-sdk-pipeline"></a>Configuration de MRTK pour le pipeline du kit de développement logiciel (SDK) XR
+::: moniker range=">= mrtkunity-2021-05" 
+Si vous utilisez OpenXR, choisissez « DefaultOpenXRConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.
 
+Si vous utilisez d’autres runtimes XR dans la configuration de gestion du plug-in XR, comme Windows Mixed Reality ou Oculus, choisissez « DefaultXRSDKConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.
+
+Ces profils sont configurés avec les systèmes et fournisseurs appropriés, si nécessaire. Pour plus d’informations sur le profil et l’exemple de prise en charge avec XR SDK, consultez [la documentation](../features/profiles/profiles.md#xr-sdk) relative aux profils.
+
+Pour migrer un profil existant vers le kit de développement logiciel (SDK) XR, vous devez ajouter les services et les fournisseurs de données suivants. Vous pourrez voir les nouveaux fournisseurs de données sous l’onglet Kit de développement logiciel (SDK) XR
+
+![Onglet Kit de développement logiciel (SDK) XR](../features/images/xrsdk/XrsdkTabView.png)
+
+### <a name="camera"></a>Appareil photo
+
+Ajouter les fournisseurs de données suivants 
+
+| OpenXR | Windows Mixed Reality |
+|--------|-----------------------|
+| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings)**et**[`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
+
+![Paramètres de l’appareil photo SDK XR](../features/images/xrsdk/CameraSystemXRSDK.png)
+
+### <a name="input"></a>Entrée
+
+Ajouter les fournisseurs de données suivants 
+
+| OpenXR | Windows Mixed Reality |
+|--------|-----------------------|
+| [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager) |
+
+__OpenXR__:
+
+![Paramètres d’entrée OpenXR](../features/images/xrsdk/InputSystemOpenXR.png)
+
+__Windows Mixed Reality__:
+
+![Paramètres d’entrée du SDK XR](../features/images/xrsdk/InputSystemWMRXRSDK.png)
+
+### <a name="boundary"></a>Limite
+
+Ajouter les fournisseurs de données suivants 
+
+| OpenXR | Windows Mixed Reality |
+|--------|-----------------------|
+| [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
+
+![Paramètres des limites du SDK XR](../features/images/xrsdk/BoundarySystemXRSDK.png)
+
+### <a name="spatial-awareness"></a>Sensibilisation spatiale
+
+Ajouter les fournisseurs de données suivants 
+
+| OpenXR | Windows Mixed Reality |
+|--------|-----------------------|
+| En cours | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
+
+![Paramètres de sensibilisation spatiale du SDK XR](../features/images/xrsdk/SpatialAwarenessXRSDK.png)
+
+### <a name="controller-mappings"></a>Mappages de contrôleur
+
+Si vous utilisez des profils de mappage de contrôleur personnalisés, ouvrez l’un d’eux et exécutez la boîte à outils de réalité mixte-> utilitaires-> mise à jour-> les profils de mappage de contrôleur pour vous assurer que les nouveaux types de contrôleur du kit de développement logiciel (SDK) XR sont définis.
+
+## <a name="see-also"></a>Voir aussi
+
+* [Prise en main du développement de clients dans Unity](https://docs.unity3d.com/Manual/AROverview.html)
+* [Prise en main du développement VR dans Unity](https://docs.unity3d.com/Manual/VROverview.html)
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 Si vous utilisez OpenXR, choisissez « DefaultOpenXRConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.
 
 Si vous utilisez d’autres runtimes XR dans la configuration de gestion du plug-in XR, comme Windows Mixed Reality ou Oculus, choisissez « DefaultXRSDKConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.
@@ -155,3 +221,4 @@ Si vous utilisez des profils de mappage de contrôleur personnalisés, ouvrez l�
 
 * [Prise en main du développement de clients dans Unity](https://docs.unity3d.com/Manual/AROverview.html)
 * [Prise en main du développement VR dans Unity](https://docs.unity3d.com/Manual/VROverview.html)
+::: moniker-end

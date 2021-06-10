@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/26/2021
 ms.topic: article
 keywords: Unity, réalité mixte, développement, prise en main, nouveau projet, Windows Mixed Reality, UWP, XR, performance, Legacy, mrtk
-ms.openlocfilehash: 09989b3b2b7fa1d351235a2cc9b885d4795dc2b6
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: b5faa48ec913c5095b12361318729b6f14276f30
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088528"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743499"
 ---
 # <a name="using-legacy-built-in-xr-support"></a>Utilisation du support XR intégré hérité
 
@@ -20,9 +20,9 @@ ms.locfileid: "106088528"
 MRTK pour Unity fournit un système d’entrée multiplateforme, des composants fondamentaux et des modules courants pour les interactions spatiales. MRTK version 2 vise à accélérer le développement des applications qui ciblent Microsoft HoloLens, les casques immersifs Windows Mixed Reality (VR) et la plateforme OpenVR. Le projet a pour but de réduire le nombre d’obstacles qui gênent la création d’applications de réalité mixte et d’apporter une contribution à la Communauté de la réalité mixte.
 
 > [!div class="nextstepaction"]
-> [Essayez nos didacticiels MRTK](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=wsa)
+> [Essayer nos tutoriels MRTK](./tutorials/mr-learning-base-02.md?tabs=wsa)
 
-Pour plus d’informations sur les fonctionnalités, consultez la [documentation de MRTK](/windows/mixed-reality/mrtk-unity) .
+Pour plus d’informations sur les fonctionnalités, consultez la [documentation de MRTK](/windows/mixed-reality/mrtk-unity).
 
 ## <a name="manual-setup-without-mrtk"></a>Configuration manuelle sans MRTK
 
@@ -34,11 +34,11 @@ Si vous ciblez HoloLens 2, vous devez basculer vers l’plateforme Windows unive
 
 1.  Sélectionner le **fichier > les paramètres de Build...**
 2.  Sélectionnez **plateforme Windows universelle** dans la liste plateforme et sélectionnez **basculer la plateforme**
-3.  Définir l' **architecture** sur **ARM 64**
-4.  Définir l' **appareil cible** sur **HoloLens**
-5.  Définir le **type de build** sur **D3D**
-6.  Définir le **SDK UWP** sur le **dernier installé**
-7.  Définir la **configuration de build** sur **Release** en raison de problèmes de performances connus avec Debug
+3.  Définissez **Architecture** sur **ARM 64**.
+4.  Définissez **Target device** sur **HoloLens**.
+5.  Définissez **Build Type** sur **D3D**.
+6.  Définissez **UWP SDK** sur **Latest installed**.
+7.  Définissez **Build configuration** sur **Release** en raison de problèmes de performances connus avec Debug.
 
 ![Capture d’écran de la fenêtre des paramètres de build ouverte dans l’éditeur Unity avec plateforme Windows universelle mis en surbrillance](images/wmr-config-img-4.png)
 

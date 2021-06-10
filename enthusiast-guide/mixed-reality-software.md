@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, les composants logiciels, l’historique des versions, les notes de publication, l’historique des versions
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e0673f8ead5bd1211b403a7b67287cec95c0d4a
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+ms.openlocfilehash: 2d11a43e96843073bf86919f1c4a10425fa12c00
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644825"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741911"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Vue d’ensemble des logiciels Mixed Reality et historique des versions
 
@@ -168,8 +168,9 @@ Dans Windows 10, la version 1809 et les versions ultérieures, le [portail de r�
 
    | Version            | Date de sortie          | Modifications majeures                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
+   | 2000.21051.1282.0  | 8 juin 2021          | <ul><li>Ajoute des liens de résolution des problèmes à l’application obtenir de l’aide pour les erreurs courantes du casque.</li><li>Résout un problème où l’application auxiliaire de l’appareil du casque peut être ignorée lors de la configuration initiale.</li><li>Met à jour la page Configuration requise avec des informations supplémentaires sur les casques haute résolution.</li><li>Met à jour l’écran de démarrage et la page d’accueil avec de nouveaux visuels.</li></ul>  |
    | 2000.21041.1051.0  | 26 avril 2021        | <ul><li>Met à jour l’icône d’application pour le portail de réalité mixte.</li></ul>  |
-   | 2000.20111.1381.0  | 10 décembre 2020        | <ul><li>Met à jour la page d’accueil du portail de réalité mixte.</li><li>Réduit les erreurs de connectivité du casque lors des mises à jour du microprogramme. </li></ul>  |
+   | 2000.20111.1381.0  | 10 décembre 2020     | <ul><li>Met à jour la page d’accueil du portail de réalité mixte.</li><li>Réduit les erreurs de connectivité du casque lors des mises à jour du microprogramme. </li></ul>  |
    | 2000.20071.1133.0  | 5 août 2020        | <ul><li>Prise en charge de [OpenXR](/windows/mixed-reality/openxr) pour suspendre la fenêtre d’aperçu.</li></ul>  | 
    | 2000.20041.1212.0  | 11 mai 2020          | <ul><li>Résout un problème de minutage qui provoquait une erreur 15-5 incohérente.</li><li>Amélioration de la prise en charge de l’exécution de Windows Mixed Reality sans connexion Internet.</li><li>Amélioration de la prise en charge des contrôleurs de mouvement couplés via les **contrôleurs d’installation**.</li></ul>  | 
    | 2000.20031.1202.0  | 14 avril 2020        | <ul><li>Prise en charge de l’inscription à des informations, des conseils et des offres sur Windows Mixed Reality.</li></ul>  | 

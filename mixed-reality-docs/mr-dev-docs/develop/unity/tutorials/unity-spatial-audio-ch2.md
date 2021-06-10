@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, prefabs, courbe de volume
-ms.openlocfilehash: 12d159cb162cbf136483f7be94b0d297319a0737
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: f3f2faf8220eaebcc674bcf02a45d99d58169076
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590761"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712806"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2. Spatialisation des sons d’interaction avec les boutons
 
@@ -27,7 +27,7 @@ Dans ce didacticiel, vous allez apprendre à spatialiser les sons d’interactio
 
 Pour ajouter le bouton Prefab, dans la fenêtre **projet** , sélectionnez **packages** , puis tapez « PressableButtonHoloLens2 » dans la barre de recherche.
 
-![Bouton Prefab dans les ressources](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
+![Bouton Prefab dans les ressources](images/spatial-audio/spatial-audio-02-section1-step1-1.PNG)
 
 Le bouton Prefab est l’entrée représentée par une icône bleue. Cliquez et faites glisser le Prefab **PressableButtonHoloLens2** dans la hiérarchie. L’objet **PressableButtonHoloLens2** étant toujours sélectionné, dans la fenêtre de l’inspecteur, configurez le composant **transformer** comme suit :
 
@@ -35,7 +35,7 @@ Le bouton Prefab est l’entrée représentée par une icône bleue. Cliquez et 
 * **Rotation** : X = 0, Y = 0, Z = 0
 * **Scale** : X = 1, Y = 1, Z = 1
 
-![Transformation de bouton](images/spatial-audio/spatial-audio-02-section1-step1-2.png)
+![Transformation de bouton](images/spatial-audio/spatial-audio-02-section1-step1-2.PNG)
 
 Pour vous concentrer sur les objets de la scène, vous pouvez double-cliquer sur l’objet **PressableButtonHoloLens2** , puis effectuer un zoom légèrement en arrière :
 
@@ -45,11 +45,11 @@ Dans cette étape, vous allez spatialiser les commentaires audio pour le bouton.
 
 Dans la fenêtre **mixage audio** , vous allez définir des destinations appelées **groupes de mixage**, pour la lecture audio à partir de composants **sources audio** .
 
-Pour ouvrir la fenêtre **mixage audio** , dans le menu Unity, **Sélectionnez** mixer audio audio fenêtre  >    >  **mixer**: ouvrir la fenêtre de ![ mixage audio](images/spatial-audio/spatial-audio-02-section2-step1-1.png)
+Pour ouvrir la fenêtre **mixage audio** , dans le menu Unity, **Sélectionnez** mixer audio audio fenêtre  >    >  **mixer**: ouvrir la fenêtre de ![ mixage audio](images/spatial-audio/spatial-audio-02-section2-step1-1.PNG)
 
  Créez un **mélangeur** en cliquant sur le signe « + » en regard de **mixages** , puis entrez un nom approprié pour le mélangeur, par exemple, le _mixer audio spatial_. Le nouveau mélangeur inclura un **groupe** par défaut nommé **maître**.
 
-![Panneau de mixage avec le premier mélangeur](images/spatial-audio/spatial-audio-02-section2-step1-2.png)
+![Panneau de mixage avec le premier mélangeur](images/spatial-audio/spatial-audio-02-section2-step1-2.PNG)
 
 > [!NOTE]
 > Tant que la réverbération n’est pas activée dans le [cinquième chapitre : l’utilisation de la réverbération pour ajouter de la distance à l’audio spatial](unity-spatial-audio-ch5.md), le compteur de volume du mélangeur n’affiche pas l’activité des sons joués par Microsoft Spatializer
@@ -60,7 +60,7 @@ Dans la fenêtre hiérarchie, sélectionnez le **PressableButtonHoloLens2** puis
 2. Cochez la case **spatialiser** .
 3. Déplacez le curseur de **lissage spatial** vers 3D (1).
 
-![Source audio du bouton](images/spatial-audio/spatial-audio-02-section2-step1-3.png)
+![Source audio du bouton](images/spatial-audio/spatial-audio-02-section2-step1-3.PNG)
 
 > [!NOTE]
 > Si vous déplacez le **lissage spatial** sur 1 (3d) sans activer la case à cocher **spatialiser** , Unity utilise son Spatializer panoramique, au lieu du **Spatializer Microsoft** avec HRTFs.
@@ -77,7 +77,7 @@ Dans la fenêtre hiérarchie, sélectionnez le **PressableButtonHoloLens2** puis
 2. Faites glisser le point de terminaison sur la courbe de **volume** (la courbe rouge) de « 0 » sur l’axe y jusqu’à « 1 »
 3. Pour ajuster la forme de la courbe de **volume** à plat, faites glisser le contrôle de forme de courbe blanche pour qu’il soit parallèle à l’axe X.
 
-![Paramètres audio de bouton 3D](images/spatial-audio/spatial-audio-02-section3-step1-1.png)
+![Paramètres audio de bouton 3D](images/spatial-audio/spatial-audio-02-section3-step1-1.PNG)
 
 ## <a name="testing-the-spatialize-audio"></a>Test du son spatial
 

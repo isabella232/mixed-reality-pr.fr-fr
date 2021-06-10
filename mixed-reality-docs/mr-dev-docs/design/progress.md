@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, conception, contrôles, UI, UX, indicateur de progression, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de temps de réalité mixte
-ms.openlocfilehash: e949d8805446429d3853a3fedb1b776c50c710dd
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 01f032efb887ecfc6f8d66683fb954cd0574a4f3
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299734"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600548"
 ---
 # <a name="progress-indicator"></a>Indicateur de progression
 
@@ -92,7 +92,7 @@ Il est important de fournir les informations de l’utilisateur sur ce qui se pa
 ## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Indicateur de progression dans MRTK (ensemble d’outils de réalité mixte) pour Unity
 
 * [MRTK-indicateur de progression prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
-* [MRTK-service de transition de scène](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)
+* [MRTK-service de transition de scène](/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)
 
 
 <br>

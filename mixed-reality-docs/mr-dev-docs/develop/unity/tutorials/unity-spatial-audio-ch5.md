@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, mélangeur audio, réverbération SFX
-ms.openlocfilehash: f7a5270d969f2e462db0244bd6c68b99347ae1a7
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 6f41fe904c21591915e0ef13b61dc6bff04527fe
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590721"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712686"
 ---
 # <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5. Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
 
@@ -28,11 +28,11 @@ Dans le didacticiel précédent, vous avez ajouté Spatialization pour les sons 
 
 Dans le didacticiel sur l' [aménagement des sons d’interaction du bouton](unity-spatial-audio-ch2.md), nous avons ajouté un mélangeur. Le mélangeur comprend un **groupe** par défaut nommé **maître**. Étant donné que nous voulons uniquement appliquer un effet de réverbération à certains sons, nous allons ajouter un deuxième groupe pour ces sons. Pour ajouter un groupe, cliquez avec le bouton droit sur le groupe principal dans le **panneau Mixage audio** , choisissez **Ajouter un groupe enfant** et donnez un nom approprié pour exemple d' _espace_:
 
-![Ajouter un groupe enfant](images/spatial-audio/spatial-audio-05-section1-step1-1.png)
+![Ajouter un groupe enfant](images/spatial-audio/spatial-audio-05-section1-step1-1.PNG)
 
 Chaque **groupe** a son propre ensemble d’effets. Ajoutez un effet de réverbération au nouveau groupe en cliquant sur **Ajouter...** dans le nouveau groupe, puis en choisissant **réverbe SFX**:
 
-![Ajouter une réverbération SFX](images/spatial-audio/spatial-audio-05-section1-step1-2.png)
+![Ajouter une réverbération SFX](images/spatial-audio/spatial-audio-05-section1-step1-2.PNG)
 
 Dans la terminologie audio, le son original, unreverberated, est appelé le chemin à l' _état sec_, et l’audio après le filtrage avec le filtre de réverbération est appelé le _chemin d’accès humide_. Les deux chemins d’accès sont envoyés à la sortie audio, et leurs forces relatives dans ce mélange sont appelées la _combinaison humide/sèche_. La combinaison humide/sèche affecte fortement le sens de la distance.
 
@@ -41,7 +41,7 @@ Le **reverbe SFX** comprend des contrôles pour ajuster la combinaison humide/s�
 * Définir la propriété de **niveau Dry** sur le paramètre le plus bas (-10000 Mo)
 * Définir la **propriété Room** sur le paramètre le plus élevé (0 Mo)
 
-![Propriétés de la réverbération SFX](images/spatial-audio/spatial-audio-05-section1-step1-3.png)
+![Propriétés de la réverbération SFX](images/spatial-audio/spatial-audio-05-section1-step1-3.PNG)
 
 Les autres paramètres contrôlent l’apparence de la salle simulée. En particulier, le **temps de désintégration** est lié à la taille de l’espace perçu.
 
@@ -56,14 +56,14 @@ Dans les étapes suivantes, vous allez ajuster le script pour contrôler le rout
 
 Après avoir sélectionné le **Quad** dans la hiérarchie, cliquez sur **Ajouter un composant** dans la fenêtre de l’inspecteur et ajoutez le niveau d’envoi de l' **effet de pièce (script)**:
 
-![Ajouter un script de niveau d’envoi](images/spatial-audio/spatial-audio-05-section2-step1-1.png)
+![Ajouter un script de niveau d’envoi](images/spatial-audio/spatial-audio-05-section2-step1-1.PNG)
 
 > [!NOTE]
 > À moins que vous activiez la fonctionnalité de niveau d’envoi de l' **effet de salle** du plug-in **Microsoft Spatializer** , il n’envoie pas d’audio au moteur audio Unity pour le traitement de l’effet.
 
 Le composant de niveau d’envoi de l' **effet de salle** comprend un contrôle de graphique qui définit le niveau de l’audio envoyé au moteur audio Unity pour le traitement de la réverbération. Pour ouvrir le contrôle de graphique, cliquez sur le niveau d’envoi de l' **effet de salle**.  Cliquez et faites glisser la courbe verte vers le bas pour définir le niveau sur about-30dB :
 
-![Ajuster la courbe de réverbération](images/spatial-audio/spatial-audio-05-section2-step1-2.png)
+![Ajuster la courbe de réverbération](images/spatial-audio/spatial-audio-05-section2-step1-2.PNG)
 
 Ensuite, supprimez les marques de commentaire des 4 lignes commentées dans le script **SpatializeOnOff** . Le script ressemble maintenant à ce qui suit :
 
@@ -129,7 +129,7 @@ Lorsque l’objet Quad est toujours sélectionné dans la hiérarchie, dans la f
 * Définir la propriété **groupe d’effets** de la salle sur votre nouveau groupe de mixeur d’effets d’espace
 * Définir la propriété de **groupe maître** sur le groupe de mixages principaux
 
-![Spatialiser sur OFF étendu](images/spatial-audio/spatial-audio-05-section2-step1-3.png)
+![Spatialiser sur OFF étendu](images/spatial-audio/spatial-audio-05-section2-step1-3.PNG)
 
 ## <a name="congratulations"></a>Félicitations
 

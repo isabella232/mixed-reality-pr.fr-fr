@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
-ms.openlocfilehash: 7964ecdc8adee7c61c4c7086b8d04983f6e3903f
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 112531a3248461a5b380ad4b93de34545a2f2c3f
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982792"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403360"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Ajout de l’audio spatial à votre projet Unity
 
@@ -37,13 +37,12 @@ Le traitement de l’audio à l’aide d’algorithmes basés sur HRTF nécessit
 * PC Windows 10 configuré avec les [outils appropriés installés](../../install-the-tools.md)
 * Connaissances de base de la programmation en C++
 * Appareil HoloLens 2 [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2019 LTS monté et le module Universal Windows Platform Build Support ajouté
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub Unity</a> avec unity 2020/2019 LTS monté et le module de prise en charge de la génération plateforme Windows universelle ajoutée
 
 Nous **vous recommandons vivement** de suivre la série des didacticiels de [prise](mr-learning-base-01.md) en main ou de bénéficier d’une expérience de base avec Unity et MRTK avant de continuer.
 
-> [!IMPORTANT]
->
-> * La version d’Unity recommandée pour cette série de tutoriels est Unity 2019 LTS. Elle remplace toutes les versions Unity requises ou recommandées qui sont indiquées dans les prérequis ci-dessus.
+> [!Important]
+> Cette série de didacticiels prend en charge Unity 2020 LTS (actuellement 2020.3. x) si vous utilisez un plug-in XR ouvert ou Windows XR, et également Unity 2019 LTS (actuellement 2019.4. x) si vous utilisez le plug-in WSA hérité ou Windows XR. Elle remplace toutes les versions Unity requises qui sont indiquées dans les prérequis ci-dessus.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Création et préparation du projet Unity
 
@@ -57,11 +56,9 @@ Pour cela, suivez d’abord [Initialisation de votre projet et de votre premièr
 
 1. [Importation des ressources TextMeshPro Essential](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-1. [Importation du Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+1. [Importation du Toolkit de réalité mixte et configuration du projet Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 
-1. [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project)
-
-1. [Création et définition de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene) et attribution d’un nom approprié à la scène, par exemple, *SpatialAudio*
+1. [Création et configuration de la scène](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) et donnez un nom approprié à la scène, par exemple *SpatialAudio*
 
 Suivez ensuite les instructions relatives à la modification des options d’affichage de la [sensibilisation spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour vous assurer que le profil de configuration MRTK pour votre scène est **DefaultHoloLens2ConfigurationProfile** et modifiez les options d’affichage du maillage de la sensibilisation spatiale à **occlusion**.
 
@@ -74,15 +71,19 @@ Téléchargez et importez Microsoft Spatializer  <a href="https://github.com/mic
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Activer le plug-in Microsoft Spatializer
 
-Après l’importation de **Microsoft Spatializer** , vous devez l’activer. Ouvrez les **paramètres de projet Edit->-> audio**, puis remplacez le **plug-in Spatializer** par "Microsoft Spatializer".
+Une fois que vous importez le Spatializer Microsoft dans votre projet Unity, la fenêtre du **Configurateur de projet MRTK** s’affiche, utilisez la liste déroulante **Spatializer audio** pour sélectionner le **Spatializer Microsoft**, puis cliquez sur le bouton appliquer pour appliquer le paramètre :
 
-![Paramètres du projet présentant le plug-in Spatializer](images/spatial-audio/spatial-audio-01-section3-step1-1.png)
+![Configurateur de projet MRTK](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
+
+vous pouvez également activer manuellement les paramètres de projet Microsoft Spatializer : Open **Edit->-> audio**, et changer le **plug-in Spatializer** en « Microsoft Spatializer ».
+
+![Paramètres du projet présentant le plug-in Spatializer](images/spatial-audio/spatial-audio-01-section3-step1-2.PNG)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>Activer l’audio spatial sur votre station de travail
 
 Sur les versions de bureau de Windows, l’audio spatial est désactivé par défaut. Pour l’activer, cliquez avec le bouton droit sur l’icône de volume dans la barre des tâches. Pour obtenir la meilleure représentation de ce que vous entendez sur HoloLens 2, choisissez **son Spatial > Windows Sonic pour casque**.
 
-![Paramètres audio spatiaux du Bureau](images/spatial-audio/spatial-audio-01-section4-step1-1.png)
+![Paramètres audio spatiaux du Bureau](images/spatial-audio/spatial-audio-01-section4-step1-1.PNG)
 
 > [!NOTE]
 > Ce paramètre est requis uniquement si vous envisagez de tester votre projet dans l’éditeur Unity.

@@ -6,12 +6,12 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, Color, Light, Materials, mixed realing casque, Windows Mixed Reality casque, Virtual realer casque, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: b3ee769208bdcd0d86beb05760de377f2a776a47
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 2e1626e72d49107c2a83bf1123b306d3ee5c8640
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299744"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600358"
 ---
 # <a name="color-light-and-materials"></a>Couleurs, éclairage et matériaux
 
@@ -88,7 +88,7 @@ Le clair et la couleur permettent de faire apparaître vos hologrammes plus natu
     :::column:::
 Les matériaux sont des éléments essentiels pour créer des hologrammes réalistes. En fournissant des caractéristiques visuelles appropriées, vous pouvez créer des objets holographiques attrayants qui peuvent être correctement mélangés avec l’environnement physique. Les matériaux sont également importants pour fournir des commentaires visuels sur les différents types d’interactions utilisateur en entrée.  
 
-[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit un nuanceur standard MRTK avec diverses options d’effet visuel qui peuvent être utilisées pour les commentaires visuels. Par exemple, vous pouvez utiliser la propriété « proximite Light » pour fournir un effet d’éclairage lorsque le doigt de l’utilisateur approche la surface de l’objet. En savoir plus sur le [nuanceur standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
+[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit un nuanceur standard MRTK avec diverses options d’effet visuel qui peuvent être utilisées pour les commentaires visuels. Par exemple, vous pouvez utiliser la propriété « proximite Light » pour fournir un effet d’éclairage lorsque le doigt de l’utilisateur approche la surface de l’objet. En savoir plus sur le [nuanceur standard MRTK](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
     :::column-end:::
         :::column:::
     *Boucle vidéo : exemple de retour visuel basé sur la proximité d’un cadre* 

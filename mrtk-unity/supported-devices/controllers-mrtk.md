@@ -5,18 +5,18 @@ author: RogPodge
 ms.author: roliu
 ms.date: 05/13/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, contrôleurs, réverbération HP, Oculus, HTC vive, mains
-ms.openlocfilehash: 953b1cd56dbf7d7a548a3aba8da07ce5875fec74
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 111ebf2b1eb26bbef8cde16832f780acfa758595
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145469"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743586"
 ---
 # <a name="controllers-in-mrtk"></a>Contrôleurs dans MRTK
 
 MRTK prend en charge de nombreux contrôleurs différents. De nombreux contrôleurs, tels que les baguettes de type HTC vive Knuckles et HTC vive, fonctionnent en mode natif une fois qu’une application générée avec MRTK est lancée sur l’appareil compatible. D’autres contrôleurs, tels que les mains articulées sur la Oculus Quest et les contrôleurs de réverbération HP, requièrent des packages supplémentaires avant d’être reconnus par MRTK.
 
-Ce document décrit les scénarios courants dans lesquels des packages supplémentaires doivent être installés. Pour plus d’informations sur les contrôleurs, consultez la [**page fonctionnalités**](../features/input/controllers.md). Pour déboguer les problèmes liés aux contrôleurs, consultez l' [ **outil de mappage de contrôleur** .](../features/tools/controller-mapping-tool.md)
+Ce document décrit les scénarios courants dans lesquels des packages supplémentaires doivent être installés. Pour obtenir des instructions sur le déploiement sur votre appareil, consultez les pages de déploiement [**Hololens/WMR**](./wmr-mrtk.md) ou [**Oculus Quest**](/windows/mixed-reality/mrtk-unity/supported-devices/oclus-quest-mrtk) . Pour plus d’informations sur les contrôleurs, consultez la [**page fonctionnalités**](../features/input/controllers.md). Pour déboguer les problèmes liés aux contrôleurs, consultez l' [ **outil de mappage de contrôleur** .](../features/tools/controller-mapping-tool.md)
 
 ## <a name="hp-reverb-g2-controllers"></a>Contrôleurs de réverbération HP G2
 

@@ -6,18 +6,19 @@ ms.author: roliu
 ms.date: 03/25/2021
 ms.localizationpriority: medium
 keywords: Unity, hololens, hololens 2, réalité mixte, développement, MRTK, système de téléchaud, point d’accès de
-ms.openlocfilehash: 0cbdad3c038d457109077b742d3f453d63436ae4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+monikerRange: '>= mrtkunity-2021-05'
+ms.openlocfilehash: 2d6160570b43ca931d46f4ec04c604b53b18d731
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144434"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647042"
 ---
-# <a name="teleport-hotspot-experimental"></a>Point d’accès de téléhébergement [expérimental]
+# <a name="teleport-hotspot"></a>Point d’accès de télérelais
 
 La zone réactive de télétentative est un composant que vous pouvez ajouter à votre gameobject pour vous assurer que l’utilisateur est dans une certaine position et orientation lorsqu’il se téléporte à cet emplacement.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 ### <a name="how-to-create-a-teleport-hotspot"></a>Comment créer une zone réactive de télétentative
 

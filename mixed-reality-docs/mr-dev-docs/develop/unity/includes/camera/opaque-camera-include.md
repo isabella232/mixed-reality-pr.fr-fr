@@ -1,20 +1,20 @@
 ---
-ms.openlocfilehash: 0dfbe2cda2779c2eafe54b01d2d28e703444fd1a
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 76f72ac81b677acabf98444f626b7a6b908c29fb
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636294"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748454"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-MRTK gère automatiquement les paramètres spécifiques de l’appareil photo, en fonction de la [configuration du profil système de l’appareil photo](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/camera-system/camera-system-overview#display-settings).
+MRTK gère automatiquement les paramètres spécifiques de l’appareil photo, en fonction de la [configuration du profil système de l’appareil photo](/windows/mixed-reality/mrtk-unity/features/camera-system/camera-system-overview#display-settings).
 
 **Espace de noms :** *Microsoft. MixedReality. Toolkit. CameraSystem*<br>
 **Type :** *MixedRealityCameraSystem*
 
-Pour vérifier l’opacité de l’appareil photo, le système MixedRealityCamera a [une `IsOpaque` propriété](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.camerasystem.mixedrealitycamerasystem.isopaque).
+Pour vérifier l’opacité de l’appareil photo, le système MixedRealityCamera a [une `IsOpaque` propriété](/dotnet/api/microsoft.mixedreality.toolkit.camerasystem.mixedrealitycamerasystem.isopaque).
 
 ```cs
 CoreServices.CameraSystem.IsOpaque;

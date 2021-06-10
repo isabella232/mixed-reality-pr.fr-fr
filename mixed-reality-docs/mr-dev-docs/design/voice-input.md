@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: GGv, voix, Cortana, voix, entrée, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, HoloLens, MRTK, Toolkit de réalité mixte, point de regard
-ms.openlocfilehash: 3f178442d892e284ed3e3454d2d54ed68c732313
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 6773bb71da7d98b1dd00d2246084d469e5e7c6ba
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300294"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600578"
 ---
 # <a name="voice-input"></a>Entrée vocale
 
@@ -44,7 +44,7 @@ Lorsque vous utilisez des commandes vocales, le point de vue de la tête ou de l
     <tr>
         <td><strong>Fonctionnalité</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
      <tr>
@@ -290,7 +290,7 @@ Pour la version 2017 de Windows Mixed Reality Edition, la logique de gestion des
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Entrée vocale dans MRTK (ensemble d’outils de réalité mixte) pour Unity
 Avec **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, vous pouvez facilement affecter une commande vocale à n’importe quel objet. Utilisez le **profil d’entrée vocale** de MRTK pour définir vos mots clés. En affectant le script **SpeechInputHandler** , vous pouvez faire en sorte qu’un objet réponde aux mots clés définis dans le profil d’entrée vocal. SpeechInputHandler fournit également une étiquette de confirmation vocale pour améliorer la confiance de l’utilisateur.
 
-* [Commande MRTK-Voice](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/speech)
+* [Commande MRTK-Voice](/windows/mixed-reality/mrtk-unity/features/input/speech)
 
 ---
 

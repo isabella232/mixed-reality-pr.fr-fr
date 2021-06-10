@@ -4,12 +4,12 @@ description: Restez à jour avec le dépannage de Windows Mixed realisation qui 
 ms.topic: article
 ms.author: rajhawar
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support
-ms.openlocfilehash: b347145e73c3e3f96d9a387edbfdb6dc0360b094
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 24120e9c1bb34b8b32c00e2b677f530c4ba563ab
+ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196644"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110345082"
 ---
 # <a name="troubleshooting-in-windows-mixed-reality"></a>Résolution des problèmes dans Windows Mixed Reality
 
@@ -52,7 +52,7 @@ Lorsque vous rencontrez des problèmes avec votre matériel immersif, il est imp
 Pour les problèmes liés à l’installation, à l’exécution de Windows Mixed Reality, aux erreurs d’installation, aux exigences minimales du PC ou aux autorisations d’administrateur, consultez ces deux FAQ :
 
 - [Erreurs d'installation](installation_errors.md)
-- [Problèmes d’installation de liés](wmr-setup-faq.yml)
+- [Problèmes liés à l’installation](wmr-setup-faq.yml)
 
 ### <a name="hardware-issues"></a>Problèmes matériels
 

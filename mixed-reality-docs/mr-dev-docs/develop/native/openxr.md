@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR, Roadmap, extensions, Khronos, BasicXRApp, DirectX, native, application native, moteur personnalisé, intergiciel
-ms.openlocfilehash: cf2613bcd7c31ee5fc09d2708688d8f7356433be
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+ms.openlocfilehash: 98b75f8b6059e6537d4cb4a10ecf8d057ad19a07
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003088"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110711538"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -89,7 +89,7 @@ Pour découvrir comment vous pouvez commencer à utiliser OpenXR dans Unity, un 
 
 Aujourd’hui, le chemin de développement Unity pris en charge pour les casques HoloLens 2, HoloLens (1er génération) et Windows Mixed Reality est **unity 2019 LTS** avec le backend de l’API WinRT existante.  Vous pouvez accéder à [OpenXR avec Unity](../unity/openxr-getting-started.md); Si vous ciblez le nouveau contrôleur de reréverbérations de HP G2 dans une application Unity 2019, consultez nos [documents d’entrée de réverbération de HP G2](../unity/unity-reverb-g2-controllers.md).
 
-À partir de **unity 2020 LTS**, [Unity expédie un backend OpenXR](https://forum.unity.com/threads/unitys-plans-for-openxr.993225/) qui prend en charge les casques HoloLens 2 et Windows Mixed Reality.  Cela inclut la prise en charge des extensions OpenXR qui mettent en lumière les [fonctionnalités complètes des casques HoloLens 2 et Windows Mixed Reality](#roadmap), notamment le suivi des mains/yeux, les ancres spatiales et les contrôleurs de réverbération de HP.  MRTK-Unity prend en charge OpenXR à partir de [MRTK 2,7](../unity/tutorials/mr-learning-base-02.md?tabs=openxr#importing-the-mixed-reality-toolkit).  Pour plus d’informations sur l’état actuel de la prise en charge Unity 2020 LTS pour HoloLens 2, consultez [choix d’une version Unity](../unity/choosing-unity-version.md).
+À partir de **unity 2020 LTS**, [Unity expédie un backend OpenXR](https://forum.unity.com/threads/unitys-plans-for-openxr.993225/) qui prend en charge les casques HoloLens 2 et Windows Mixed Reality.  Cela inclut la prise en charge des extensions OpenXR qui mettent en lumière les [fonctionnalités complètes des casques HoloLens 2 et Windows Mixed Reality](#roadmap), notamment le suivi des mains/yeux, les ancres spatiales et les contrôleurs de réverbération de HP.  MRTK-Unity prend en charge OpenXR à partir de [MRTK 2,7](../unity/tutorials/mr-learning-base-02.md?tabs=openxr#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project).  Pour plus d’informations sur l’état actuel de la prise en charge Unity 2020 LTS pour HoloLens 2, consultez [choix d’une version Unity](../unity/choosing-unity-version.md).
 
 À partir de **unity 2021**, OpenXR sera alors le seul backend Unity pris en charge pour le ciblage des casques HoloLens 2 et Windows Mixed Reality.
 

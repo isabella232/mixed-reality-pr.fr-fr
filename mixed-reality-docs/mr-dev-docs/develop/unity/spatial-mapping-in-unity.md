@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mappage spatial, convertisseur, conflit, maillage, numérisation, composant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: f7fe6e86f9672f36a34f9d7c32d25fccd7760f5e
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: fa571a13ce192b29b2a35033b55061f3ffb707da
+ms.sourcegitcommit: ec80ef1e496bf0b17a161735535517e87ffdd364
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300164"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110351777"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mappage spatial dans Unity
 
@@ -26,26 +26,9 @@ Pour utiliser le mappage spatial dans votre application, vous devez définir la 
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
-<table>
-    <colgroup>
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    </colgroup>
-    <tr>
-        <td><strong>Fonctionnalité</strong></td>
-        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (première génération)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
-    </tr>
-     <tr>
-        <td>Mappage spatial</td>
-        <td>✔️</td>
-        <td>✔️</td>
-        <td>❌</td>
-    </tr>
-</table>
+| Fonctionnalité | [HoloLens (première génération)](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hololens2-hardware) | [Casques immersifs](../../discover/immersive-headset-hardware-details.md) |
+| ---- | ---- | ---- | ---- |
+| Mappage spatial | ✔️ | ✔️ | ❌ |
 
 ## <a name="setting-the-spatialperception-capability"></a>Définition de la fonctionnalité SpatialPerception
 
@@ -116,17 +99,18 @@ Instanciez un objet SurfaceObserver pour chaque région d’espace définie par 
 ```cs
 SurfaceObserver surfaceObserver;
 
- void Start () {
-     surfaceObserver = new SurfaceObserver();
- }
+private void Start()
+{
+    surfaceObserver = new SurfaceObserver();
+}
 ```
 
 Spécifiez la région d’espace pour laquelle chaque objet SurfaceObserver fournira des données en appelant SetVolumeAsSphere, SetVolumeAsAxisAlignedBox, SetVolumeAsOrientedBox ou SetVolumeAsFrustum. Vous pouvez redéfinir la région de l’espace à l’avenir en appelant une nouvelle fois l’une de ces méthodes.
 
 ```cs
-void Start () {
-    ...
-     surfaceObserver.SetVolumeAsAxisAlignedBox(Vector3.zero, new Vector3(3, 3, 3));
+private void Start()
+{
+    surfaceObserver.SetVolumeAsAxisAlignedBox(Vector3.zero, new Vector3(3, 3, 3));
 }
 ```
 
@@ -134,9 +118,9 @@ Quand vous appelez SurfaceObserver. Update (), vous devez fournir un gestionnair
 
 ```cs
 private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
- {
-    //see Handling Surface Changes
- }
+{
+    // see Handling Surface Changes
+}
 ```
 
 ### <a name="handling-surface-changes"></a>Gestion des modifications de surface
@@ -147,51 +131,51 @@ Il existe plusieurs cas principaux à gérer : ajouté et mis à jour, qui peuv
 * Dans le cas supprimé, nous supprimons le GameObject représentant ce maillage du dictionnaire et le détruisons.
 
 ```cs
-System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects = 
+System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects =
     new System.Collections.Generic.Dictionary<SurfaceId, GameObject>();
 
-   private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
-   {
-       switch (changeType)
-       {
-           case SurfaceChange.Added:
-           case SurfaceChange.Updated:
-               if (!spatialMeshObjects.ContainsKey(surfaceId))
-               {
-                   spatialMeshObjects[surfaceId] = new GameObject("spatial-mapping-" + surfaceId);
-                   spatialMeshObjects[surfaceId].transform.parent = this.transform;
-                   spatialMeshObjects[surfaceId].AddComponent<MeshRenderer>();
-               }
-               GameObject target = spatialMeshObjects[surfaceId];
-               SurfaceData sd = new SurfaceData(
-                   //the surface id returned from the system
-                   surfaceId,
-                   //the mesh filter that is populated with the spatial mapping data for this mesh
-                   target.GetComponent<MeshFilter>() ?? target.AddComponent<MeshFilter>(),
-                   //the world anchor used to position the spatial mapping mesh in the world
-                   target.GetComponent<WorldAnchor>() ?? target.AddComponent<WorldAnchor>(),
-                   //the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
-                   target.GetComponent<MeshCollider>() ?? target.AddComponent<MeshCollider>(),
-                   //triangles per cubic meter requested for this mesh
-                   1000,
-                   //bakeMeshes - if true, the mesh collider is populated, if false, the mesh collider is empty.
-                   true
-                   );
+private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
+{
+    switch (changeType)
+    {
+        case SurfaceChange.Added:
+        case SurfaceChange.Updated:
+            if (!spatialMeshObjects.ContainsKey(surfaceId))
+            {
+                spatialMeshObjects[surfaceId] = new GameObject("spatial-mapping-" + surfaceId);
+                spatialMeshObjects[surfaceId].transform.parent = this.transform;
+                spatialMeshObjects[surfaceId].AddComponent<MeshRenderer>();
+            }
+            GameObject target = spatialMeshObjects[surfaceId];
+            SurfaceData sd = new SurfaceData(
+                // the surface id returned from the system
+                surfaceId,
+                // the mesh filter that is populated with the spatial mapping data for this mesh
+                target.GetComponent<MeshFilter>() ?? target.AddComponent<MeshFilter>(),
+                // the world anchor used to position the spatial mapping mesh in the world
+                target.GetComponent<WorldAnchor>() ?? target.AddComponent<WorldAnchor>(),
+                // the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
+                target.GetComponent<MeshCollider>() ?? target.AddComponent<MeshCollider>(),
+                // triangles per cubic meter requested for this mesh
+                1000,
+                // bakeMeshes - if true, the mesh collider is populated, if false, the mesh collider is empty.
+                true
+            );
 
-               SurfaceObserver.RequestMeshAsync(sd, OnDataReady);
-               break;
-           case SurfaceChange.Removed:
-               var obj = spatialMeshObjects[surfaceId];
-               spatialMeshObjects.Remove(surfaceId);
-               if (obj != null)
-               {
-                   GameObject.Destroy(obj);
-               }
-               break;
-           default:
-               break;
-       }
-   }
+            SurfaceObserver.RequestMeshAsync(sd, OnDataReady);
+            break;
+        case SurfaceChange.Removed:
+            var obj = spatialMeshObjects[surfaceId];
+            spatialMeshObjects.Remove(surfaceId);
+            if (obj != null)
+            {
+                GameObject.Destroy(obj);
+            }
+            break;
+        default:
+            break;
+    }
+}
 ```
 
 ### <a name="handling-data-ready"></a>Gestion des données prêtes
@@ -203,23 +187,26 @@ Le gestionnaire OnDataReady reçoit un objet SurfaceData. Les objets WorldAnchor
 SurfaceObserver. Update () doit être appelé sur un délai, et non sur tous les frames.
 
 ```cs
-void Start () {
-    ...
-     StartCoroutine(UpdateLoop());
+void Start ()
+{
+    StartCoroutine(UpdateLoop());
 }
 
- IEnumerator UpdateLoop()
+IEnumerator UpdateLoop()
+{
+    var wait = new WaitForSeconds(2.5f);
+    while(true)
     {
-        var wait = new WaitForSeconds(2.5f);
-        while(true)
-        {
-            surfaceObserver.Update(OnSurfaceChanged);
-            yield return wait;
-        }
+        surfaceObserver.Update(OnSurfaceChanged);
+        yield return wait;
     }
+}
 ```
 
-## <a name="higher-level-mesh-analysis-spatialunderstanding"></a>Analyse de maillage de niveau supérieur : SpatialUnderstanding
+## <a name="higher-level-mesh-analysis-spatial-understanding"></a>Analyse de maillage de niveau supérieur : compréhension spatiale
+
+> [!CAUTION]
+> La compréhension spatiale a été dépréciée en faveur de la compréhension de la [scène](../../design/scene-understanding.md).
 
 Le <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a> est une collection de code utilitaire pour le développement holographique reposant sur des API holographiques Unity.
 
@@ -237,7 +224,7 @@ Il existe trois interfaces principales exposées par le module : la topologie p
 
 ### <a name="ray-casting"></a>Conversion de rayon
 
-Une fois l’analyse de la salle terminée, les étiquettes sont générées en interne pour les surfaces telles que le plancher, le plafond et les murs. La fonction « PlayspaceRaycast » prend un rayon et retourne si le rayon entre en conflit avec une surface connue et, le cas échéant, des informations sur cette surface sous la forme d’un « RaycastResult ».
+Une fois l’analyse de la salle terminée, les étiquettes sont générées en interne pour les surfaces telles que le plancher, le plafond et les murs. La `PlayspaceRaycast` fonction prend un rayon et retourne si le rayon entre en conflit avec une surface connue et, le cas échéant, des informations sur cette surface sous la forme d’un `RaycastResult` .
 
 ```cpp
 struct RaycastResult
@@ -247,18 +234,18 @@ struct RaycastResult
         Invalid,    // No intersection
         Other,
         Floor,
-        FloorLike,  // Not part of the floor topology, 
+        FloorLike,  // Not part of the floor topology,
                     //  but close to the floor and looks like the floor
-        Platform,   // Horizontal platform between the ground and 
+        Platform,   // Horizontal platform between the ground and
                     //  the ceiling
         Ceiling,
         WallExternal,
-        WallLike,   // Not part of the external wall surface, 
-                    //  but vertical surface that looks like a 
+        WallLike,   // Not part of the external wall surface,
+                    //  but vertical surface that looks like a
                     //  wall structure
     };
     SurfaceTypes SurfaceType;
-    float SurfaceArea;  // Zero if unknown 
+    float SurfaceArea;  // Zero if unknown
                         //  (i.e. if not part of the topology analysis)
     DirectX::XMFLOAT3 IntersectPoint;
     DirectX::XMFLOAT3 IntersectNormal;
@@ -307,11 +294,11 @@ Chacune de ces requêtes utilise un tableau pré-alloué de structures « Topol
 « TopologyResult » contient la position centrale du volume retourné, le sens de face (c’est-à-dire normal) et les dimensions de l’espace trouvé.
 
 ```cpp
-struct TopologyResult 
-{ 
-    DirectX::XMFLOAT3 position; 
-    DirectX::XMFLOAT3 normal; 
-    float width; 
+struct TopologyResult
+{
+    DirectX::XMFLOAT3 position;
+    DirectX::XMFLOAT3 normal;
+    float width;
     float length;
 };
 ```
@@ -380,17 +367,17 @@ Cette fonction accepte un nom d’objet, une définition de placement et une lis
 
 ```cpp
 public enum PlacementType
-            {
-                Place_OnFloor,
-                Place_OnWall,
-                Place_OnCeiling,
-                Place_OnShape,
-                Place_OnEdge,
-                Place_OnFloorAndCeiling,
-                Place_RandomInAir,
-                Place_InMidAir,
-                Place_UnderFurnitureEdge,
-            };
+{
+    Place_OnFloor,
+    Place_OnWall,
+    Place_OnCeiling,
+    Place_OnShape,
+    Place_OnEdge,
+    Place_OnFloorAndCeiling,
+    Place_RandomInAir,
+    Place_InMidAir,
+    Place_UnderFurnitureEdge,
+};
 ```
 
 Chacun des types de placement a un ensemble de paramètres propre au type. La structure « ObjectPlacementDefinition » contient un ensemble de fonctions d’assistance statiques pour la création de ces définitions. Par exemple, pour trouver un endroit où placer un objet sur l’étage, vous pouvez utiliser la fonction suivante. public static ObjectPlacementDefinition Create_OnFloor (Vector3 halfDims) en plus du type de placement, vous pouvez fournir un ensemble de règles et de contraintes. Les règles ne peuvent pas être violées. Les emplacements d’emplacement possibles qui satisfont au type et aux règles sont ensuite optimisés par rapport au jeu de contraintes afin de sélectionner l’emplacement de placement optimal. Chacune des règles et contraintes peut être créée par les fonctions de création statique fournies. Vous trouverez ci-dessous un exemple de fonction de construction de règle et de contrainte.
@@ -405,12 +392,12 @@ public static ObjectPlacementConstraint Create_NearPoint(
 La requête de placement d’objet ci-dessous recherche un endroit où placer un cube demi-mètre sur le bord d’une surface, à l’écart des autres objets placés précédemment et près du centre de la pièce.
 
 ```cs
-List<ObjectPlacementRule> rules = 
+List<ObjectPlacementRule> rules =
     new List<ObjectPlacementRule>() {
         ObjectPlacementRule.Create_AwayFromOtherObjects(1.0f),
     };
 
-List<ObjectPlacementConstraint> constraints = 
+List<ObjectPlacementConstraint> constraints =
     new List<ObjectPlacementConstraint> {
         ObjectPlacementConstraint.Create_NearCenter(),
     };
@@ -418,7 +405,7 @@ List<ObjectPlacementConstraint> constraints =
 Solver_PlaceObject(
     “MyCustomObject”,
     new ObjectPlacementDefinition.Create_OnEdge(
-        new Vector3(0.25f, 0.25f, 0.25f), 
+        new Vector3(0.25f, 0.25f, 0.25f),
         new Vector3(0.25f, 0.25f, 0.25f)),
     rules.Count,
     UnderstandingDLL.PinObject(rules.ToArray()),
@@ -438,37 +425,37 @@ Lors de la résolution de l’emplacement de positionnement de plusieurs objets 
 
 Bien que la solution de mappage spatial fournie par le HoloLens soit conçue pour être suffisamment générique pour répondre aux besoins de la gamme complète des espaces à problème, le module de compréhension spatiale a été conçu pour prendre en charge les besoins de deux jeux spécifiques. Sa solution est structurée autour d’un processus et d’un ensemble d’hypothèses spécifiques, résumés ci-dessous.
 
-```
+```txt
 Fixed size playspace – The user specifies the maximum playspace size in the init call.
 
-One-time scan process – 
+One-time scan process –
     The process requires a discrete scanning phase where the user walks around,
-    defining the playspace. 
+    defining the playspace.
     Query functions will not function until after the scan has been finalized.
 ```
 
 « Peinture » PlaySpace pilotée par l’utilisateur : au cours de la phase d’analyse, l’utilisateur se déplace et regarde le rythme des lectures, en peignant efficacement les zones qui doivent être incluses. La maille générée est importante pour fournir des commentaires de l’utilisateur au cours de cette phase. Installation à la page d’hébergement ou d’Office : les fonctions de requête sont conçues autour des surfaces plates et des parois à des angles droits. Il s’agit d’une limitation souple. Toutefois, pendant la phase d’analyse, une analyse de l’axe principal est effectuée pour optimiser la facettisation du maillage le long de l’axe principal et de l’axe secondaire. Le fichier SpatialUnderstanding. cs inclus gère le processus de phase d’analyse. Il appelle les fonctions suivantes.
 
-```
+```txt
 SpatialUnderstanding_Init – Called once at the start.
 
 GeneratePlayspace_InitScan – Indicates that the scan phase should begin.
 
-GeneratePlayspace_UpdateScan_DynamicScan – 
-    Called each frame to update the scanning process. The camera position and 
-    orientation is passed in and is used for the playspace painting process, 
+GeneratePlayspace_UpdateScan_DynamicScan –
+    Called each frame to update the scanning process. The camera position and
+    orientation is passed in and is used for the playspace painting process,
     described above.
 
-GeneratePlayspace_RequestFinish – 
-    Called to finalize the playspace. This will use the areas “painted” during 
-    the scan phase to define and lock the playspace. The application can query 
-    statistics during the scanning phase as well as query the custom mesh for 
+GeneratePlayspace_RequestFinish –
+    Called to finalize the playspace. This will use the areas “painted” during
+    the scan phase to define and lock the playspace. The application can query
+    statistics during the scanning phase as well as query the custom mesh for
     providing user feedback.
 
-Import_UnderstandingMesh – 
-    During scanning, the “SpatialUnderstandingCustomMesh” behavior provided by 
-    the module and placed on the understanding prefab will periodically query the 
-    custom mesh generated by the process. In addition, this is done once more 
+Import_UnderstandingMesh –
+    During scanning, the “SpatialUnderstandingCustomMesh” behavior provided by
+    the module and placed on the understanding prefab will periodically query the
+    custom mesh generated by the process. In addition, this is done once more
     after scanning has been finalized.
 ```
 
@@ -488,7 +475,7 @@ La dll de compréhension stocke en interne le PlaySpace sous la forme d’une gr
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mappage spatial dans le Toolkit de réalité mixte
 
-Pour plus d’informations sur l’utilisation du mappage spatial avec Mixed Reality Toolkit v2, consultez la <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">section relative à la sensibilisation spatiale</a> des documents MRTK.
+Pour plus d’informations sur l’utilisation du mappage spatial avec la boîte à outils de réalité mixte, consultez la [section relative à la sensibilisation spatiale](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) des documents MRTK.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 

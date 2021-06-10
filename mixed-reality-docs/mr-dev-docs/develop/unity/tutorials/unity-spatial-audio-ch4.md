@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
-ms.openlocfilehash: 26143975707b2cd6141803a6335cec89db5bbd26
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 9d0fa432f2e653cdd6820cb6c779cc1acc5c4b15
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590731"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712750"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. activation et désactivation de Spatialization au moment de l’exécution
 
@@ -28,7 +28,7 @@ Dans ce didacticiel, vous allez apprendre à activer et à désactiver les Spati
 
  Cliquez avec le bouton droit dans la fenêtre du projet et choisissez **créer**  >  un **script c#** pour créer un script c#, entrez un nom approprié pour le script, par exemple, _SpatializeOnOff_:
 
-![Création du script](images/spatial-audio/spatial-audio-04-section1-step1-1.png)
+![Création du script](images/spatial-audio/spatial-audio-04-section1-step1-1.PNG)
 
 Double-cliquez sur le script dans la fenêtre projet pour l’ouvrir dans Visual Studio. Remplacez le contenu du script par défaut par ce qui suit :
 
@@ -98,13 +98,13 @@ public class SpatializeOnOff : MonoBehaviour
 
 Sélectionnez **Quad** dans la hiérarchie et dans la fenêtre Inspector, utilisez le bouton Ajouter un composant pour ajouter **SpatializeOnOff (script)**
 
-![Ajouter un script à quatre cœurs](images/spatial-audio/spatial-audio-04-section2-step1-1.png)
+![Ajouter un script à quatre cœurs](images/spatial-audio/spatial-audio-04-section2-step1-1.PNG)
 
 Dans la hiérarchie, recherchez **PressableButtonHoloLens2**  >  **IconAndText**  >  **TextMeshPro**.
 
 Lorsque l’objet **Quad** est toujours sélectionné dans la hiérarchie, dans la fenêtre Inspector, localisez le composant **spatialiser on off (script)** et faites glisser le composant **TextMeshPro** du PressableButtonHoloLens2.
 
-![Rechercher l’objet PressableButtonHoloLens2 dans la hiérarchie](images/spatial-audio/spatial-audio-04-section2-step1-2.png)
+![Rechercher l’objet PressableButtonHoloLens2 dans la hiérarchie](images/spatial-audio/spatial-audio-04-section2-step1-2.PNG)
 
 Pour définir le bouton pour appeler le script **SpatializeOnOff** quand le bouton est relâché, vous devez configurer un script d’interaction.
 
@@ -114,7 +114,7 @@ Dans la fenêtre hiérarchie, sélectionnez **PressableButtonHoloLens2**. Dans l
 
 * Cliquez sur la liste déroulante **No Function** du même événement. Sélectionnez ensuite **SpatializeOnOff**  >  **SwapSpatialization ()** pour activer et désactiver le son spatial
 
-![Paramètres d’action du bouton](images/spatial-audio/spatial-audio-04-section2-step1-3.png)
+![Paramètres d’action du bouton](images/spatial-audio/spatial-audio-04-section2-step1-3.PNG)
 
 ## <a name="congratulations"></a>Félicitations
 

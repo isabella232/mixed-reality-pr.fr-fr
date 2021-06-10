@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR,
-ms.openlocfilehash: c238ec41c75e565cc3eb2bb8bcb9b68eff015f59
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 88aab47a943fd004ef0a90a8c6749da1a403ff2f
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944650"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600508"
 ---
 # <a name="start-your-vr-journey"></a>Commencez votre voyage VR
 
@@ -82,7 +82,7 @@ Recherchez des jeux immersifs, des applications de bureau et du contenu VR dans 
 | [Utilisation de SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connectez votre appareil et jouez à SteamVR Games pour en savoir plus sur le programme Windows Insider |
 | [Utilisation de Microsoft Edge](using-microsoft-edge.md) | Installer la dernière version de Microsoft Edge sur votre appareil immersif |
 | [Utilisation de WebVR](webvr.md) | Obtenir le programme d’installation pour découvrir VR dans votre environnement de navigateur |
-| [Explorez AltspaceVR](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | Explorez le monde grandissant des événements VR avec AltspaceVR |
+| [Explorer AltspaceVR](/windows/mixed-reality/altspace-vr/journey) | Explorez le monde grandissant des événements VR avec AltspaceVR |
 
 ## <a name="troubleshooting-tips--resources"></a>Résolution des problèmes, conseils & ressources
 

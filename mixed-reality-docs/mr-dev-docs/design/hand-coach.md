@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, conception, coach, casque immersif, MRTK, mains, assistance mains, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: ec302cecb106b339828adf1c8777c2ea7ec7fa30
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 0fe0d87e26d06838c0d1b7935573d9bd8ce258ee
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300044"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600428"
 ---
 # <a name="hand-coach"></a>Coach de main
 
@@ -85,7 +85,7 @@ Ne vous attendez pas à ce que les utilisateurs puissent écouter un ensemble d�
 
 ## <a name="can-i-create-my-own"></a>Puis-je créer mon propre ?
 
-Oui ! Nous vous encourageons à créer votre propre geste unique pour votre jeu et à contribuer à la communauté !
+Oui. Nous vous encourageons à créer votre propre geste unique pour votre jeu et à contribuer à la communauté !
 Nous avons fourni un fichier maya d’une main qui peut être utilisée pour votre application, qui peut être téléchargée ici : <a href="files/HandCoach_MRTK.zip"> télécharger HandCoach_MRTK.zip </a>
 
 ![Exemple de mains animées dans des Maya](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -181,4 +181,4 @@ Une fois que vous êtes satisfait de votre animation
 * [Installer les outils](../develop/install-the-tools.md)
 * [Configurer le projet Unity](../develop/unity/Configure-Unity-Project.md)
 * [Vue d’ensemble du développement Unity](../develop/unity/unity-development-overview.md)
-* [MRTK 101](../out-of-scope/mrtk-101.md)
+* [MRTK 101](/windows/mixed-reality/mrtk-unity/)

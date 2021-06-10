@@ -3,14 +3,14 @@ title: Compréhension des scènes
 description: décrit la compréhension des scènes dans MRTK
 author: MaxWang-MS
 ms.author: wangmax
-ms.date: 03/02/2021
+ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, compréhension des scènes
-ms.openlocfilehash: ac90359a71267dc64e659f446f35ec2510c42599
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1ed6f93216fc90e7c6332f2b9c40911d25d96d2a
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143879"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743550"
 ---
 # <a name="scene-understanding"></a>Compréhension des scènes
 
@@ -22,7 +22,10 @@ Voici quelques cas d’utilisation attendus de cette technologie :
 * Fournir une géométrie conviviale du moteur physique sous forme de quatre cœurs
 * Accélérez le développement en évitant d’avoir à écrire des algorithmes similaires
 
-La compréhension des scènes est disponible sous la forme d’une fonctionnalité __expérimentale__ démarrant à partir de MRTK 2,6. Il est intégré à MRTK en tant qu' [Observateur spatial](spatial-awareness-getting-started.md#register-observers) appelé [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . La compréhension des scènes fonctionne avec le pipeline XR hérité et le pipeline du kit de développement logiciel (SDK) XR. Dans les deux cas, `WindowsSceneUnderstandingObserver` est utilisé.
+La compréhension des scènes est introduite en tant que fonctionnalité __expérimentale__ dans MRTK 2,6. Il est intégré à MRTK en tant qu' [Observateur spatial](spatial-awareness-getting-started.md#register-observers) appelé [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . La compréhension des scènes fonctionne à la fois avec le pipeline XR hérité et le pipeline du kit de développement logiciel (SDK) XR (OpenXR (à partir de MRTK 2,7) et le plug-in XR Windows). Dans les deux cas, `WindowsSceneUnderstandingObserver` est utilisé.
+
+> [!NOTE] 
+> L’utilisation de la compréhension des scènes dans la communication à distance n’est pas prise en charge.
 
 ## <a name="observer-overview"></a>Vue d’ensemble de l’observateur
 
@@ -44,9 +47,11 @@ La façon la plus rapide de prendre en main la compréhension des scènes consis
 
 Dans Unity, utilisez l’Explorateur de projets pour ouvrir le fichier de scène dans `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` et appuyez sur Play !
 
+::: moniker range="< mrtkunity-2021-05"
 > [!IMPORTANT]
-> Lors de l’utilisation de l’outil de fonctionnalité de réalité mixte ou de l’importation via UPM, importez l’exemple de démonstrations-SpatialAwareness avant d’importer l’exemple expérimental-SceneUnderstanding en raison d’un problème de dépendance. Pour plus d’informations, consultez [ce problème GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) .
+> S’applique uniquement à MRTK 2.6.0-lors de l’utilisation de l’outil de fonctionnalité de réalité mixte ou de l’importation via UPM, importez l’exemple de démonstrations-SpatialAwareness avant d’importer l’exemple expérimental-SceneUnderstanding en raison d’un problème de dépendance. Pour plus d’informations, consultez [ce problème GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) .
 
+::: moniker-end
 La scène illustre les éléments suivants :
 
 * Visualisation des objets de scène observés avec l’interface utilisateur de l’application pour la configuration de l’observateur
@@ -54,8 +59,18 @@ La scène illustre les éléments suivants :
 * Enregistrement des données de scène sur un appareil pour un développement hors connexion
 * Chargement des données de scène précédemment enregistrées (fichiers. bytes) pour prendre en charge le flux de travail de développement dans l’éditeur
 
+> [!IMPORTANT]
+> Par défaut, la `ShouldLoadFromFile` propriété de l’observateur a la valeur false. Pour afficher la visualisation d’une salle sérialisée, reportez-vous à la section [configuration du service observateur](#configuring-the-observer-service) ci-dessous et affectez la valeur true à la propriété dans l’éditeur.
+::: moniker range="< mrtkunity-2021-05"
+
 > [!NOTE] 
 > L’exemple de scène est basé sur le pipeline XR hérité. Si vous utilisez le pipeline du kit de développement logiciel (SDK) XR, vous devez modifier les profils en conséquence. Le profil de système de sensibilisation spatiale fourni ( `DemoSceneUnderstandingSystemProfile` ) et la scène comprenant les profils d’observateur ( `DefaultSceneUnderstandingObserverProfile` et `DemoSceneUnderstandingObserverProfile` ) fonctionnent pour les deux pipelines.
+::: moniker-end
+::: moniker range="= mrtkunity-2021-05"
+
+> [!NOTE] 
+> L’exemple de scène enregistre un `There is no active AsyncCoroutineRunner when an action is posted.` avertissement dans certaines circonstances en raison de l’ordre d’initialisation/de thread d’exécution. Si vous pouvez vérifier que le `AsyncCoroutineRunner` composant est attaché au gameobject « contrôleur de démonstration » et que le composant/gameobject reste activé/actif dans la scène (cas par défaut), l’avertissement peut être ignoré en toute sécurité.
+::: moniker-end
 
 #### <a name="configuring-the-observer-service"></a>Configuration du service Observateur
 
@@ -95,5 +110,5 @@ Les fichiers de scène enregistrés sont accessibles via le portail de l' [appar
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Vue d’ensemble du mappage spatial WMR](/windows/mixed-reality/scene-understanding)
-* [Vue d’ensemble du mappage spatial WMR](/windows/mixed-reality/scene-understanding-sdk)
+* [Présentation de la présentation des scènes](/windows/mixed-reality/scene-understanding)
+* [Présentation du SDK présentation de Scene](/windows/mixed-reality/scene-understanding-sdk)

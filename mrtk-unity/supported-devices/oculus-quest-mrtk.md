@@ -5,24 +5,23 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Oculus Quest,
-ms.openlocfilehash: c0eccd0b366d39529eafc51d23031fc30144b1ae
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0892e0d416cd07d1bedbeea0ddb316e3eb012b94
+ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143965"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110441173"
 ---
-# <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xr-sdk-pipeline"></a>Comment configurer Oculus Quest dans MRTK à l’aide du pipeline du kit de développement logiciel (SDK) XR
+# <a name="building-and-deploying-mrtk-to-oculus-quest-using-the-xr-sdk-pipeline"></a>Génération et déploiement de MRTK sur Oculus Quest à l’aide du pipeline du kit de développement logiciel (SDK) XR
 
-Une [Oculus Quest](https://www.oculus.com/quest/) est nécessaire.
+Une [quête Oculus](https://www.oculus.com/quest/) est requise.
 
-La prise en charge de MRTK pour Oculus Quest est fournie par le biais de deux sources différentes : le pipeline XR de Unity et le package Unity d’intégration Oculus. Le **fournisseur de données XRSDK Oculus** permet l’utilisation des deux sources et doit être utilisé pour utiliser MRTK sur Oculus Quest.
+La prise en charge de MRTK pour Oculus Quest est fournie par le biais de deux sources différentes : le pipeline SDK XR de Unity et le package Unity d’intégration Oculus. Le **fournisseur de données XRSDK Oculus** permet l’utilisation des deux sources et doit être utilisé pour déployer MRTK sur Oculus Quest.
 
-Le [pipeline XR de l’Unity](https://docs.unity3d.com/Manual/XR.html) permet d’utiliser les contrôleurs tactiles Oculus et le suivi des têtes avec le Oculus Quest.
-Ce pipeline est la norme pour le développement d’applications XR dans Unity 2019,3 et les versions ultérieures. Pour utiliser ce pipeline, assurez-vous que vous utilisez **unity 2019,3 ou une version plus récente**.
+Le [pipeline Unity XR SDK](https://docs.unity3d.com/Manual/XR.html) permet d’utiliser les contrôleurs tactiles Oculus et le suivi des têtes avec le Oculus Quest.
+Ce pipeline est la norme pour le développement d’applications XR dans Unity 2019,3 et les versions ultérieures. Pour utiliser ce pipeline, assurez-vous que vous utilisez **unity 2019,3 ou une version plus récente**. Cela est **nécessaire** pour déployer des applications MRTK sur Oculus Quest. 
 
-Le [package Unity d’intégration Oculus](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) permet d’utiliser le suivi de la **main** avec Oculus Quest.
-Ce fournisseur de données n’utilise **pas** le **pipeline XR** ou le **pipeline XR hérité** de Unity, mais comme les contrôleurs et headtracking sont gérés par le pipeline XR de l’Unity, les étapes de **configuration de Project pour la Quest Oculus** doivent être suivies pour s’assurer que vous utilisez le **pipeline XR** et non le **pipeline XR hérité** à déprécier.
+Le [package Unity d’intégration Oculus](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) permet d’utiliser le suivi de la **main** avec Oculus Quest. Ce fournisseur de données n’utilise **pas** le **pipeline du kit de développement logiciel (SDK) XR** d’Unity ou le **pipeline XR hérité**.
 
 ## <a name="setting-up-project-for-the-oculus-quest"></a>Configuration de Project pour Oculus Quest
 
@@ -30,7 +29,7 @@ Ce fournisseur de données n’utilise **pas** le **pipeline XR** ou le **pipeli
 
 1. Assurez-vous que le [mode développeur](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) est activé sur votre appareil. L’installation des pilotes ADB Oculus est facultative.
 
-## <a name="setting-up-the-xr-pipeline-for-oculus-quest"></a>Configuration du pipeline XR pour Oculus Quest
+## <a name="setting-up-the-xr-sdk-pipeline-for-oculus-quest"></a>Configuration du pipeline du kit de développement logiciel (SDK) XR pour Oculus Quest
 
 1. Assurez-vous que le **plug-in Oculus XR** est installé sous **Window--> gestionnaire de package**
 

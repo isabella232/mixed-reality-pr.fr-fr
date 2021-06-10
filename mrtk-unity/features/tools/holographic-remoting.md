@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 637f68e5ad5f360aea4b5c0603a682d61d152a89
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 196bbb7027389ea75ddc577e4efc397ca779d550
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144586"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647182"
 ---
 # <a name="holographic-remoting"></a>Communication à distance holographique
 
@@ -35,7 +35,7 @@ Les instructions ci-dessous s’appliquent uniquement à la communication à dis
 
 Lors de l’utilisation d’un HoloLens 2, la prise en charge de la main et des données de suivi oculaire à distance a été ajoutée à MRTK. Pour activer ces fonctionnalités, suivez les étapes décrites dans [importer des DotNetWinRT dans le projet](#import-dotnetwinrt-into-the-project).
 
-Une fois l’importation effectuée, l’étape suivante consiste à sélectionner la configuration de la vérification de la  >    >  **réalité mixte Windows Mixed Reality** Toolkit  >  . Cette étape ajoute une définition de script qui active la dépendance DotNetWinRT.
+Une fois l’importation effectuée, l’étape suivante consiste **à sélectionner la** configuration de la vérification de la réalité mixte  >    >    >  **Windows Mixed Reality** Toolkit  >  . Cette étape ajoute une définition de script qui active la dépendance DotNetWinRT.
 
 > [!NOTE]
 > Si vous utilisez Unity 2019,4 et versions ultérieures, il n’est pas nécessaire d’exécuter l’utilitaire de vérification de la configuration.
@@ -100,7 +100,7 @@ Une fois que le projet a été configuré, une connexion peut être établie ave
 
     ![Entrer l’adresse IP](../images/tools/remoting/EnterIPAddress.png)
 
-1. Cliquez sur **Connecter**.
+1. Cliquez sur **Se connecter**.
 
 > [!NOTE]
 > Si vous ne pouvez pas vous connecter, assurez-vous que votre HoloLens 2 n’est pas branché sur votre ordinateur et redémarrez Unity.

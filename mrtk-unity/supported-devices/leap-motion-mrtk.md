@@ -5,12 +5,12 @@ author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, mouvement LEAP,
-ms.openlocfilehash: 44593713f08a00fa53325eebfae2cf9042d386be
-ms.sourcegitcommit: 62beb626b2db6ce7df86014bd22bf1946b8906b9
+ms.openlocfilehash: 8ef5d26512d50a93691932789e84c099c6246bc3
+ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "110207471"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110543235"
 ---
 # <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Comment configurer le suivi des mouvements LEAP (par Ultraleap) dans MRTK
 
@@ -25,7 +25,7 @@ Ce fournisseur peut être utilisé dans l’éditeur et sur l’appareil sur la 
 | Version de MRTK | Versions des modules Unity de mouvement LEAP prises en charge |
 | --- | --- |
 |2.6. x | 4.5.0, 4.5.1|
-|2.7. x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1|
+|2.7. x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1, 4.8.0|
 
 
 ## <a name="using-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Utilisation du suivi des mouvements LEAP (par Ultraleap) dans MRTK
@@ -91,7 +91,7 @@ Ce fournisseur peut être utilisé dans l’éditeur et sur l’appareil sur la 
 1. Génération de votre projet
     - Accédez à **fichier > paramètres de build**
     - Seules les builds autonomes sont prises en charge si vous utilisez la Fournisseur de données de mouvement LEAP.
-    - Pour obtenir des instructions sur l’utilisation d’un casque Windows Mixed Reality pour les builds autonomes, consultez [génération et déploiement de MRTK (autonome)](wmr-mrtk.md#building-and-deploying-mrtk-standalone).
+    - Pour obtenir des instructions sur l’utilisation d’un casque Windows Mixed Reality pour des builds autonomes, consultez la page [création et déploiement de MRTK sur des casques WMR (autonomes)](wmr-mrtk.md#building-and-deploying-mrtk-to-wmr-headsets-standalone).
 
 ## <a name="getting-the-hand-joints"></a>Obtention des articulations de la main
 

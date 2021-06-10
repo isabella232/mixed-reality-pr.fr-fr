@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 8e03848097c313a518f638de591f692ab71f0985
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a6e268dd28be2a3d485f937ec5b5ce6b1f29851f
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143874"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647122"
 ---
 # <a name="migration-window"></a>Fenêtre de migration
 
@@ -19,9 +19,9 @@ La fenêtre de migration est un outil qui permet aux utilisateurs de migrer auto
 
 ![Fenêtre de migration](../images/migration-window/MRTK_Migration_Window.png)
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
-Pour ouvrir la fenêtre, sélectionnez la fenêtre de migration utilitaires d’outils de *réalité mixte*  >    >  . Une fois la fenêtre de migration ouverte, les onglets de navigation du mode de sélection peuvent être activés en choisissant l’implémentation spécifique au composant du gestionnaire de migration.  
+Pour ouvrir la fenêtre, sélectionnez la fenêtre de  >    >    >  **migration** utilitaires d’outils de réalité mixte. Une fois la fenêtre de migration ouverte, les onglets de navigation du mode de sélection peuvent être activés en choisissant l’implémentation spécifique au composant du gestionnaire de migration.  
 
 ![Modes de sélection de la migration](../images/migration-window/MRTK_Migration_Modes.png)
 

@@ -1,16 +1,16 @@
 ---
-title: Guide de configuration de Mixed Reality
+title: Guide de configuration de la réalité mixte
 description: Documentation pour configurer MRTK dans Unity.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: fc97a2d7c6182b4836d644d91be237e2aef01feb
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK,
+ms.openlocfilehash: b714e01a0969b88a4ca7a3a5047bc5d61516e3f3
+ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143576"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110345142"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>Guide de configuration du profil du Toolkit de réalité mixte
 
@@ -193,7 +193,7 @@ Pour créer une nouvelle action d’entrée, cliquez simplement sur le bouton «
 
 | Contrainte d’axe | Type de données | Description | Exemple d’utilisation |
 | :--- | :--- | :--- | :--- |
-| None | Pas de données | Utilisé pour une action ou un événement vide | Déclencheur d’événement |
+| Aucun | Pas de données | Utilisé pour une action ou un événement vide | Déclencheur d’événement |
 | Brut (réservé) | object | Paramètres réservés pour un usage ultérieur | N/A |
 | Digital | bool | Données de type Boolean on ou OFF | Bouton de contrôleur |
 | Axe unique | float | Une valeur de données de précision unique | Une entrée étendue, par exemple un déclencheur |

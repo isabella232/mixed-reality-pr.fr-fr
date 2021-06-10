@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: œil-point de présence, point de présence, unité, hologramme, réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: f10079d36f737e5d8a2ee74a88ca0f8b2b3d791c
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300364"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600148"
 ---
 # <a name="head-gaze-in-unity"></a>Tête-pointage dans Unity
 
@@ -53,7 +53,7 @@ Comme avec un pointeur de souris sur un ordinateur, vous devez implémenter un [
 
 ## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Tête-regard du kit de réalité mixte
 
-Vous pouvez accéder au point de regard du [Gestionnaire d’entrée](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) dans MRTK.
+Vous pouvez accéder au point de regard du [Gestionnaire d’entrée](/windows/mixed-reality/mrtk-unity/features/input/overview) dans MRTK.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 

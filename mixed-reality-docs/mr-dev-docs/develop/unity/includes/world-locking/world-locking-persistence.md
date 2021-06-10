@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 25e42ba872764a98d4cb966b5a4922cc1dea0dc9
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 96da41f28533c227fb106d8842907747f34098ec
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528774"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349953"
 ---
 # <a name="world-locking-tools-recommended"></a>[Outils de verrouillage universel (recommandé)](#tab/wlt)
 
@@ -99,7 +99,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-Pour voir un exemple complet d’ancres persistantes/non persistantes, consultez l’exemple d’ancres-> ancres GameObject et AnchorsSample. cs dans la [scène exemple de plug-in de réalité mixte OpenXR](../../openxr-getting-started.md#hololens-2-samples):
+Pour voir un exemple complet d’ancres persistantes/non persistantes, consultez l’exemple d’ancres-> ancres GameObject et AnchorsSample. cs dans la [scène exemple de plug-in de réalité mixte OpenXR](../../openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2):
 
 ![Capture d’écran de l’ouverture du panneau de la hiérarchie dans l’éditeur Unity avec l’exemple ancres mis en surbrillance](../../images/openxr-features-img-04.png)
 

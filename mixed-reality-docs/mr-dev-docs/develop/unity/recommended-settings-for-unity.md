@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, paramètres, réalité mixte, HoloLens, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, performances, paramètres de qualité, paramètres d’éclairage, mémoire tampon de profondeur, XR, perte de suivi
-ms.openlocfilehash: b8da51bdc57d8586706d11e86ca3b7543023c119
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 7516ec89c49a12e7cb143d7e53d00efde0e44c4e
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300124"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743381"
 ---
 # <a name="recommended-settings-for-unity"></a>Paramètres recommandés pour Unity
 
@@ -68,7 +68,7 @@ En outre, il est recommandé de sélectionner **une profondeur de 16 bits** sous
 
 Pour que la plateforme Windows Mixed realisation optimise la stabilité des hologrammes, elle s’appuie sur la mémoire tampon de profondeur pour être exacte et correspond à n’importe quel hologramme rendu sur l’écran. Ainsi, avec le partage de mémoire tampon de profondeur sur, il est important de rendre la couleur de rendu, afin de rendre également la profondeur. Dans Unity, la plupart des matériaux opaques ou TransparentCutout affichent la profondeur par défaut, mais les objets transparents et textuels n’affichent pas de profondeur, bien qu’ils soient dépendants du nuanceur, etc.
 
-Si vous utilisez le [nuanceur standard](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)de la boîte à outils de la réalité mixte, pour restituer la profondeur des objets transparents :
+Si vous utilisez le [nuanceur standard](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)de la boîte à outils de la réalité mixte, pour restituer la profondeur des objets transparents :
 
 1) Sélectionner la matière transparente qui utilise le nuanceur standard MRTK et ouvrir la fenêtre de l’éditeur de l’inspecteur
 2) Sélectionnez le bouton **corriger maintenant** dans l’avertissement de partage de la mémoire tampon de profondeur. Vous pouvez également effectuer cette opération manuellement en définissant le **mode de rendu** sur **personnalisé**. puis définissez **mode** sur **transparent** et enfin définir l' **écriture de profondeur** **sur activé**
@@ -114,10 +114,10 @@ Pour activer/désactiver l’écran de démarrage holographique :
 
 |  Afficher l’écran de démarrage Unity  |  Image de démarrage holographique  |  Comportement |
 |----------|----------|----------|
-|  Activé  |  None  |  Affiche l’écran de démarrage Unity par défaut pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
-|  Activé  |  Personnalisé  |  Affichez l’écran de démarrage personnalisé pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
-|  Désactivé  |  None  |  Affichez le noir transparent (rien) jusqu’à ce que l’application soit chargée. |
-|  Désactivé  |  Personnalisé  |  Affichez l’écran de démarrage personnalisé pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
+|  Activé  |  Aucun  |  Affiche l’écran de démarrage Unity par défaut pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
+|  Activé  |  Custom  |  Affichez l’écran de démarrage personnalisé pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
+|  Désactivé  |  Aucun  |  Affichez le noir transparent (rien) jusqu’à ce que l’application soit chargée. |
+|  Désactivé  |  Custom  |  Affichez l’écran de démarrage personnalisé pendant 5 secondes ou jusqu’à ce que l’application soit chargée, selon la valeur la plus longue. |
 
 Pour plus d’informations, consultez [la documentation de l’écran de démarrage Unity](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html) .
 
@@ -147,7 +147,7 @@ Pour refuser le comportement de pause automatique :
 
 Pour définir un comportement personnalisé lorsque le suivi est perdu, gérez les [événements de perte de suivi](tracking-loss-in-unity.md)global.
 
-### <a name="capabilities"></a>Fonctions
+### <a name="capabilities"></a>Fonctionnalités
 
 Pour qu’une application tire parti de certaines fonctionnalités, elle doit déclarer les fonctionnalités appropriées dans son manifeste. Les déclarations de manifeste peuvent être effectuées dans Unity afin qu’elles soient incluses dans chaque prochaine exportation de projet.
 

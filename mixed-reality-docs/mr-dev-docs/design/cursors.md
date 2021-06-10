@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (1re génération), HoloLens 2, réalité mixte, curseurs, ciblage, point de regard, mouvements, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, rayons, entrée
-ms.openlocfilehash: 744e75f4212046b7c237a6c6634a4980e9148b0e
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 829d7b3f766f848228946ee0a623f9f3013adca3
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300084"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600378"
 ---
 # <a name="cursors"></a>Curseurs
 
@@ -33,7 +33,7 @@ Il existe 3 types de curseurs : **Finger, Ray** et **point-regard**. Ces curseu
     <tr>
         <td><strong>Fonctionnalité</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ère génération)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Casques immersifs</strong></a></td>
     </tr>
      <tr>
@@ -165,9 +165,9 @@ La conception sans curseur est recommandée lorsque le sens de l’immersion est
 
 Par défaut, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit un Prefab de curseur ([DefaultCursor. Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) qui a le même état visuel que le curseur système de l’interpréteur de commandes. Il est attribué dans le profil d’entrée de MRTK, sous Pointeurs. Vous pouvez remplacer/personnaliser ce curseur pour votre expérience. Pour l’expérience avec l’entrée de suivi oculaire, MRTK fournit également EyeGazeCursor, qui a un visuel subtil pour réduire la distraction.
 
-* [MRTK - Profil de pointeur](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
-* [MRTK - Système d’entrée](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
-* [MRTK - Pointeurs](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
+* [MRTK - Profil de pointeur](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK - Système d’entrée](/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK - Pointeurs](/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 

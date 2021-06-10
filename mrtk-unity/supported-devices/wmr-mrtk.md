@@ -1,24 +1,33 @@
 ---
-title: Déploiement sur les appareils Hololens et WMR
+title: Déploiement sur des casques Hololens et WMR
 description: Documentation pour créer et déployer des applications sur différents appareils.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Visual Studio
-ms.openlocfilehash: ec66c6ccb8cf1c702fed804230f5cf3ca0526139
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 1547f0630d307e9e87505890adef4cad366d6c00
+ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852374"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110441151"
 ---
-# <a name="building-and-deploying-mrtk-uwp"></a>Génération et déploiement de MRTK (UWP)
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>Déploiement sur des casques Hololens et WMR
 
-Pour exécuter une application sur un appareil en tant qu’application autonome (pour HoloLens, Android, iOS, etc.), l’étape de génération et de déploiement doit être exécutée dans le projet Unity. La création et le déploiement d’une application qui utilise le MRTK ressemble à la création et au déploiement d’une autre application Unity. Il n’existe aucune instruction propre au MRTK. Lisez les informations ci-dessous pour obtenir des instructions détaillées sur la création et le déploiement d’une application Unity pour HoloLens. Pour en savoir plus sur la création de solutions pour d’autres plateformes, consultez la page sur la [publication de builds](https://docs.unity3d.com/Manual/PublishingBuilds.html).
+Il existe deux façons de déployer des applications générées avec MRTK sur votre appareil Windows, la plateforme Windows universels (UWP) et la plateforme autonome. Les applications conçues pour HoloLens 1 ou HoloLens 2 doivent cibler UWP, tandis que les applications conçues pour les casques WMR peuvent cibler UWP ou autonome.
 
 ## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>Génération et déploiement de MRTK sur HoloLens 1, HoloLens 2 et WMR casques (UWP)
 
 Vous trouverez des instructions sur la génération et le déploiement de **hololens 1** et **hololens 2** (UWP) dans la rubrique [création de votre application sur un appareil](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device). Ces étapes vous permettent également de déployer sur des **casques WMR**.
+
+> [!NOTE]
+> Lors du déploiement de votre application sur votre appareil dans Visual Studio, vous devez configurer Visual Studio légèrement différemment en fonction de l’appareil. Les configurations sont les suivantes :
+>
+>| Plateforme | Configuration | Architecture | Cible |
+|---|---|---|---|
+| HoloLens 2 | Release ou Master | ARM64 | Périphérique |
+| HoloLens 1 | Release ou Master | x86 | Périphérique |
+| Casques WMR | Release ou Master | x64 | Ordinateur local |
 
 **Conseil :** Lors de la génération pour HoloLens 1, HoloLens 2 ou WMR, il est recommandé que les paramètres de build « version du kit de développement logiciel (SDK) cible » et « version de plateforme minimale » se présentent comme dans l’image ci-dessous :
 
@@ -50,7 +59,7 @@ Si vous utilisez le plug-in XR :
 >
 > Si l’architecture ARM est requise, accédez à **Edit (Modifier) > Project Settings (Paramètres du projet), Player (Lecteur)** , puis dans le menu **Other Settings (Autres paramètres)** , désactivez **Graphics Jobs (Travaux graphiques)** . Même si la désactivation de **Graphics Jobs (Travaux graphiques)** permettra à l’application de se déployer à l’aide de l’architecture de build ARM pour Unity 2019.3.x, ARM64 est recommandé.
 
-## <a name="building-and-deploying-mrtk-standalone"></a>Génération et déploiement de MRTK (autonome)
+## <a name="building-and-deploying-mrtk-to-wmr-headsets-standalone"></a>Génération et déploiement de MRTK sur des casques WMR (autonomes)
 
 Les versions autonomes de MRTK peuvent être utilisées sur des casques WMR. Une version autonome d’un casque WMR requiert d’effectuer les étapes supplémentaires suivantes :
 

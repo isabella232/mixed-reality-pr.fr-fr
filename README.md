@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d9b8bc79859ab74c799188326731b3c8722bc49a
-ms.sourcegitcommit: b9d0155ae0d37a9f55f2cf0bcd954a2b148a26e0
+ms.openlocfilehash: 3f65fa90279e9a10c1aad9bd46f02233808936b8
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98181736"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647013"
 ---
 ![Colibri virtuel avec une main humaine](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
@@ -12,10 +12,10 @@ Bienvenue dans la documentation relative à la réalité mixte, l’emplacement 
 
 ## <a name="contributing"></a>Contribution
 
-Si vous participez ou mettez à jour du contenu de docs, veuillez faire en sorte que vos demandes de tirage ciblent le sous-docset (Mr-dev-docs, passionné-guide, etc.) correct. Les nouveaux contributeurs doivent consulter nos conseils de contribution plus détaillés pour chaque subdocset :
+Si vous participez ou mettez à jour du contenu de docs, vérifiez que vos demandes de tirage ciblent le sous-docset (Mr-dev-docs, passionné-guide, etc.). Les nouveaux contributeurs doivent consulter nos conseils de contribution plus détaillés pour chaque subdocset :
 
 * [Contributeurs de réalité mixte](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
-* [Contributeurs du Guide du passionné de VR](mixed-reality-docs/enthusiast-guide/CONTRIBUTING.md)
+* [Contributeurs du Guide du passionné de VR](enthusiast-guide/CONTRIBUTING.md)
 
 Pour les problèmes liés à docs, utilisez les pieds de page en bas de chaque document ou envoyez-les directement à [MicrosoftDocs/Mixed-Reality/Problems](https://github.com/MicrosoftDocs/mixed-reality/issues).
 

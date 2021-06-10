@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 05/11/2021
 ms.topic: article
 keywords: HoloLens, émulateur, builds, versions, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Archive
-ms.openlocfilehash: 3af8aaad722715bfcac279a2ad9cd0f2382ae6bb
-ms.sourcegitcommit: f77adfa23a98ccc0412eb6be5871ad4b1da0f755
+ms.openlocfilehash: 4e01cf05782223a88bc90743daea20000e7597d1
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109740620"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772312"
 ---
 # <a name="hololens-2-emulator-archive"></a>Archive de l’émulateur HoloLens 2
 
@@ -19,8 +19,10 @@ L’émulateur HoloLens (First Gen) et l’émulateur HoloLens 2 s’installent 
 
 |  Build |  Date de sortie |  Notes |
 |----------|----------|----------|
-|  [10.0.20346.1002 de build de l’émulateur HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2162581) | 11 mai, 2021 | Windows holographique, version 21H1 mai 2021 Update.  Pour les notes de publication générales de HoloLens 2, consultez https://docs.microsoft.com/hololens/hololens-release-notes |
-|  [10.0.19041.1146 de build de l’émulateur HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2162751) | 11 mai, 2021 | Windows holographique, version 20H2 mai 2021 Update.  Pour les notes de publication générales de HoloLens 2, consultez https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [10.0.20348.1007 de build de l’émulateur HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2165258) | 8 juin 2021 | Windows holographique, version 21H1, mise à jour 2021 de juin.  Pour les notes de publication générales de HoloLens 2, consultez https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [10.0.19041.1154 de build de l’émulateur HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2165269) | 8 juin 2021 | Windows holographique, version 20H2, mise à jour 2021 de juin.  Pour les notes de publication générales de HoloLens 2, consultez https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [10.0.20346.1002 de build de l’émulateur HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2162581) | 11 mai 2021 | Windows holographique, version 21H1 mai 2021 Update.  Pour les notes de publication générales de HoloLens 2, consultez https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [10.0.19041.1146 de build de l’émulateur HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2162751) | 11 mai 2021 | Windows holographique, version 20H2 mai 2021 Update.  Pour les notes de publication générales de HoloLens 2, consultez https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.19041.1144 de build de l’émulateur HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2160829) | 13 avril 2021 | Windows holographique, version 20H2 mise à jour 2021 d’avril.  Pour les notes de publication générales de HoloLens 2, consultez https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1108 de build de l’émulateur HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2160820) | 13 avril 2021 | Windows holographique, version 1903 avril 2021 mise à jour.  Pour les notes de publication générales de HoloLens 2, consultez https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.19041.1140 de build de l’émulateur HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2156684) | 9 mars 2021 | Windows holographique, version 20H2 mise à jour de mars 2021.  Pour les notes de publication générales de HoloLens 2, consultez https://docs.microsoft.com/hololens/hololens-release-notes |
