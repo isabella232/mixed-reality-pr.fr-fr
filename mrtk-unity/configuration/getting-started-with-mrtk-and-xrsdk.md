@@ -1,157 +1,224 @@
 ---
-title: Prise en main avec MRTK et XRSDK
-description: Page d’accueil de MRTK avec XRSDK
+title: Prise en main de MRTK et du kit de développement logiciel (SDK) XR
+description: Page d’accueil de MRTK avec le kit de développement logiciel (SDK) XR
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, XRSDK,
-ms.openlocfilehash: ef6d8c9205a9d801e8cb0ec2690d77b74c72b5fb
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, XRSDK, SDK XR
+ms.openlocfilehash: d3ff4306205cc6548bc5617d727f32a780855439
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143519"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647213"
 ---
-# <a name="getting-started-with-mrtk-and-xr-sdk"></a><span data-ttu-id="9d4c2-104">Prise en main de MRTK et du kit de développement logiciel (SDK) XR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-104">Getting started with MRTK and XR SDK</span></span>
+# <a name="getting-started-with-mrtk-and-xr-sdk"></a><span data-ttu-id="e2cbf-104">Prise en main de MRTK et du kit de développement logiciel (SDK) XR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-104">Getting started with MRTK and XR SDK</span></span>
 
-<span data-ttu-id="9d4c2-105">Le kit de développement logiciel (SDK) XR est le [nouveau pipeline XR unity 2019,3 et ultérieur](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/).</span><span class="sxs-lookup"><span data-stu-id="9d4c2-105">XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/).</span></span> <span data-ttu-id="9d4c2-106">Dans Unity 2019, il fournit une alternative au pipeline XR existant.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-106">In Unity 2019, it provides an alternative to the existing XR pipeline.</span></span> <span data-ttu-id="9d4c2-107">Dans Unity 2020, il deviendra le seul pipeline XR dans Unity.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-107">In Unity 2020, it will become the only XR pipeline in Unity.</span></span>
+<span data-ttu-id="e2cbf-105">Le kit de développement logiciel (SDK) XR est le [nouveau pipeline XR unity 2019,3 et ultérieur](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/).</span><span class="sxs-lookup"><span data-stu-id="e2cbf-105">XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/).</span></span> <span data-ttu-id="e2cbf-106">Dans Unity 2019, il fournit une alternative au pipeline XR existant.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-106">In Unity 2019, it provides an alternative to the existing XR pipeline.</span></span> <span data-ttu-id="e2cbf-107">Dans Unity 2020, il deviendra le seul pipeline XR dans Unity.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-107">In Unity 2020, it will become the only XR pipeline in Unity.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9d4c2-108">Prérequis</span><span class="sxs-lookup"><span data-stu-id="9d4c2-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e2cbf-108">Prérequis</span><span class="sxs-lookup"><span data-stu-id="e2cbf-108">Prerequisites</span></span>
 
-<span data-ttu-id="9d4c2-109">Pour commencer à utiliser le Toolkit de réalité mixte, suivez [les étapes fournies](../install-the-tools.md#importing-the-mixed-reality-toolkit) pour ajouter MRTK à un projet.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-109">To get started with the Mixed Reality Toolkit, follow [the provided steps](../install-the-tools.md#importing-the-mixed-reality-toolkit) to add MRTK to a project.</span></span>
+<span data-ttu-id="e2cbf-109">Pour commencer à utiliser le Toolkit de réalité mixte, suivez [les étapes fournies](../install-the-tools.md#importing-the-mixed-reality-toolkit) pour ajouter MRTK à un projet.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-109">To get started with the Mixed Reality Toolkit, follow [the provided steps](../install-the-tools.md#importing-the-mixed-reality-toolkit) to add MRTK to a project.</span></span>
 
-## <a name="configuring-unity-for-the-xr-sdk-pipeline"></a><span data-ttu-id="9d4c2-110">Configuration d’Unity pour le pipeline du kit de développement logiciel (SDK) XR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-110">Configuring Unity for the XR SDK pipeline</span></span>
+## <a name="configuring-unity-for-the-xr-sdk-pipeline"></a><span data-ttu-id="e2cbf-110">Configuration d’Unity pour le pipeline du kit de développement logiciel (SDK) XR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-110">Configuring Unity for the XR SDK pipeline</span></span>
 
-<span data-ttu-id="9d4c2-111">Le pipeline du kit de développement logiciel (SDK) XR prend actuellement en charge 3 plateformes : Windows Mixed Reality, Oculus et OpenXR.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-111">The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculus, and OpenXR.</span></span> <span data-ttu-id="9d4c2-112">Les sections ci-dessous décrivent les étapes nécessaires à la configuration du kit de développement logiciel (SDK) XR pour chaque plateforme.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-112">The sections below will cover the steps needed to configure XR SDK for each platform.</span></span>
+<span data-ttu-id="e2cbf-111">Le pipeline du kit de développement logiciel (SDK) XR prend actuellement en charge 3 plateformes : Windows Mixed Reality, Oculus et OpenXR.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-111">The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculus, and OpenXR.</span></span> <span data-ttu-id="e2cbf-112">Les sections ci-dessous décrivent les étapes nécessaires à la configuration du kit de développement logiciel (SDK) XR pour chaque plateforme.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-112">The sections below will cover the steps needed to configure XR SDK for each platform.</span></span>
 
-### <a name="windows-mixed-reality"></a><span data-ttu-id="9d4c2-113">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="9d4c2-113">Windows Mixed Reality</span></span>
+### <a name="windows-mixed-reality"></a><span data-ttu-id="e2cbf-113">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="e2cbf-113">Windows Mixed Reality</span></span>
 
-<span data-ttu-id="9d4c2-114">Accédez au **Gestionnaire de package de Unity** et installez le package de plug-in XR Windows, qui ajoute la prise en charge de Windows Mixed Reality dans le kit de développement logiciel (SDK) XR.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-114">Go into **Unity's Package Manager** and install the Windows XR Plugin package, which adds support for Windows Mixed Reality on XR SDK.</span></span> <span data-ttu-id="9d4c2-115">Cela entraîne également l’extraction de quelques packages de dépendance.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-115">This will pull down a few dependency packages as well.</span></span> 
+<span data-ttu-id="e2cbf-114">Accédez au **Gestionnaire de package de Unity** et installez le package de plug-in XR Windows, qui ajoute la prise en charge de Windows Mixed Reality dans le kit de développement logiciel (SDK) XR.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-114">Go into **Unity's Package Manager** and install the Windows XR Plugin package, which adds support for Windows Mixed Reality on XR SDK.</span></span> <span data-ttu-id="e2cbf-115">Cela entraîne également l’extraction de quelques packages de dépendance.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-115">This will pull down a few dependency packages as well.</span></span> 
 
-1. <span data-ttu-id="9d4c2-116">Vérifiez que les éléments suivants ont été correctement installés :</span><span class="sxs-lookup"><span data-stu-id="9d4c2-116">Ensure that the following all successfully installed:</span></span>
-   * <span data-ttu-id="9d4c2-117">Gestion du plug-in XR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-117">XR Plugin Management</span></span>
-   * <span data-ttu-id="9d4c2-118">Plug-in XR Windows</span><span class="sxs-lookup"><span data-stu-id="9d4c2-118">Windows XR Plugin</span></span>
-   * <span data-ttu-id="9d4c2-119">XR des assistances d’entrée héritées</span><span class="sxs-lookup"><span data-stu-id="9d4c2-119">XR Legacy Input Helpers</span></span>
+1. <span data-ttu-id="e2cbf-116">Vérifiez que les éléments suivants ont été correctement installés :</span><span class="sxs-lookup"><span data-stu-id="e2cbf-116">Ensure that the following all successfully installed:</span></span>
+   * <span data-ttu-id="e2cbf-117">Gestion du plug-in XR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-117">XR Plugin Management</span></span>
+   * <span data-ttu-id="e2cbf-118">Plug-in XR Windows</span><span class="sxs-lookup"><span data-stu-id="e2cbf-118">Windows XR Plugin</span></span>
+   * <span data-ttu-id="e2cbf-119">XR des assistances d’entrée héritées</span><span class="sxs-lookup"><span data-stu-id="e2cbf-119">XR Legacy Input Helpers</span></span>
 
-2. <span data-ttu-id="9d4c2-120">Accédez à **Edit > Project Settings**.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-120">Go to **Edit > Project Settings**.</span></span>
-3. <span data-ttu-id="9d4c2-121">Cliquez sur l’onglet gestion du plug-in XR dans la fenêtre Paramètres du projet.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-121">Click on the XR Plug-in Management tab in the Project Settings window.</span></span>
-4. <span data-ttu-id="9d4c2-122">Accédez aux paramètres de plateforme Windows universelle et vérifiez que Windows Mixed Reality est vérifié sous les fournisseurs de plug-in.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-122">Go to the Universal Windows Platform settings and ensure Windows Mixed Reality is checked under Plug-in Providers.</span></span>
-5. <span data-ttu-id="9d4c2-123">Vérifiez que l’option initialiser XR au démarrage est cochée.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-123">Ensure that Initialize XR on Startup is checked.</span></span>
-6. <span data-ttu-id="9d4c2-124">(**_Requis pour la communication à distance HoloLens dans l’éditeur, sinon facultatif_**) Accédez aux paramètres autonomes et assurez-vous que Windows Mixed Reality est coché sous fournisseurs de plug-ins.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-124">(**_Required for in-editor HoloLens Remoting, otherwise optional_**) Go to the Standalone settings and ensure Windows Mixed Reality is checked under Plug-in Providers.</span></span> <span data-ttu-id="9d4c2-125">Vérifiez également que l’option initialiser XR au démarrage est cochée.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-125">Also ensure that Initialize XR on Startup is checked.</span></span>
+2. <span data-ttu-id="e2cbf-120">Accédez à **Edit > Project Settings**.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-120">Go to **Edit > Project Settings**.</span></span>
+3. <span data-ttu-id="e2cbf-121">Cliquez sur l’onglet gestion du plug-in XR dans la fenêtre Paramètres du projet.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-121">Click on the XR Plug-in Management tab in the Project Settings window.</span></span>
+4. <span data-ttu-id="e2cbf-122">Accédez aux paramètres de plateforme Windows universelle et vérifiez que Windows Mixed Reality est vérifié sous les fournisseurs de plug-in.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-122">Go to the Universal Windows Platform settings and ensure Windows Mixed Reality is checked under Plug-in Providers.</span></span>
+5. <span data-ttu-id="e2cbf-123">Vérifiez que l’option initialiser XR au démarrage est cochée.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-123">Ensure that Initialize XR on Startup is checked.</span></span>
+6. <span data-ttu-id="e2cbf-124">(**_Requis pour la communication à distance HoloLens dans l’éditeur, sinon facultatif_**) Accédez aux paramètres autonomes et assurez-vous que Windows Mixed Reality est coché sous fournisseurs de plug-ins.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-124">(**_Required for in-editor HoloLens Remoting, otherwise optional_**) Go to the Standalone settings and ensure Windows Mixed Reality is checked under Plug-in Providers.</span></span> <span data-ttu-id="e2cbf-125">Vérifiez également que l’option initialiser XR au démarrage est cochée.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-125">Also ensure that Initialize XR on Startup is checked.</span></span>
 
 ![Onglet gestion du plug-in XR avec option autonome sélectionnée](images/xr-management-img-02.png)
 
-7. <span data-ttu-id="9d4c2-127">(**_Facultatif_**) Cliquez sur l’onglet Windows Mixed Reality sous gestion du plug-in XR, puis créez un profil de paramètres personnalisés pour modifier les valeurs par défaut.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-127">(**_Optional_**) Click on the Windows Mixed Reality tab under XR Plug-in Management and create a custom settings profile to change the defaults.</span></span> <span data-ttu-id="9d4c2-128">Si la liste des paramètres existe déjà, aucun profil ne doit être créé.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-128">If the list of settings are already there, no profile needs to be created.</span></span>
+7. <span data-ttu-id="e2cbf-127">(**_Facultatif_**) Cliquez sur l’onglet Windows Mixed Reality sous gestion du plug-in XR, puis créez un profil de paramètres personnalisés pour modifier les valeurs par défaut.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-127">(**_Optional_**) Click on the Windows Mixed Reality tab under XR Plug-in Management and create a custom settings profile to change the defaults.</span></span> <span data-ttu-id="e2cbf-128">Si la liste des paramètres existe déjà, aucun profil ne doit être créé.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-128">If the list of settings are already there, no profile needs to be created.</span></span>
 
 ![Onglet gestion du plug-in XR avec Windows sélectionné](images/xr-management-img-01.png)
 
-### <a name="oculus"></a><span data-ttu-id="9d4c2-130">Oculus</span><span class="sxs-lookup"><span data-stu-id="9d4c2-130">Oculus</span></span>
+### <a name="oculus"></a><span data-ttu-id="e2cbf-130">Oculus</span><span class="sxs-lookup"><span data-stu-id="e2cbf-130">Oculus</span></span>
 
-1. <span data-ttu-id="9d4c2-131">Pour terminer, suivez la [procédure de configuration de Oculus Quest dans MRTK à l’aide du Guide de pipeline du kit de développement logiciel (SDK) XR](../supported-devices/oculus-quest-mrtk.md) .</span><span class="sxs-lookup"><span data-stu-id="9d4c2-131">Follow the [How to configure Oculus Quest in MRTK using the XR SDK pipeline](../supported-devices/oculus-quest-mrtk.md) guide to the end.</span></span> <span data-ttu-id="9d4c2-132">Le guide décrit les étapes nécessaires à la configuration de Unity et de MRTK pour utiliser le pipeline du kit de développement logiciel (SDK) XR pour Oculus Quest.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-132">The guide outlines the steps needed to configure both Unity and MRTK to use the XR SDK pipeline for the Oculus Quest.</span></span>
+1. <span data-ttu-id="e2cbf-131">Pour terminer, suivez la [procédure de configuration de Oculus Quest dans MRTK à l’aide du Guide de pipeline du kit de développement logiciel (SDK) XR](../supported-devices/oculus-quest-mrtk.md) .</span><span class="sxs-lookup"><span data-stu-id="e2cbf-131">Follow the [How to configure Oculus Quest in MRTK using the XR SDK pipeline](../supported-devices/oculus-quest-mrtk.md) guide to the end.</span></span> <span data-ttu-id="e2cbf-132">Le guide décrit les étapes nécessaires à la configuration de Unity et de MRTK pour utiliser le pipeline du kit de développement logiciel (SDK) XR pour Oculus Quest.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-132">The guide outlines the steps needed to configure both Unity and MRTK to use the XR SDK pipeline for the Oculus Quest.</span></span>
 
-### <a name="openxr-preview"></a><span data-ttu-id="9d4c2-133">OpenXR (préversion)</span><span class="sxs-lookup"><span data-stu-id="9d4c2-133">OpenXR (Preview)</span></span>
+### <a name="openxr-preview"></a><span data-ttu-id="e2cbf-133">OpenXR (préversion)</span><span class="sxs-lookup"><span data-stu-id="e2cbf-133">OpenXR (Preview)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="9d4c2-134">OpenXR dans Unity est pris en charge uniquement sur Unity 2020,2 et les versions ultérieures.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-134">OpenXR in Unity is only supported on Unity 2020.2 and higher.</span></span>
+> <span data-ttu-id="e2cbf-134">OpenXR dans Unity est pris en charge uniquement sur Unity 2020,2 et les versions ultérieures.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-134">OpenXR in Unity is only supported on Unity 2020.2 and higher.</span></span>
 >
-> <span data-ttu-id="9d4c2-135">Actuellement, il prend également en charge uniquement les versions x64 et ARM64.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-135">Currently, it also only supports x64 and ARM64 builds.</span></span>
+> <span data-ttu-id="e2cbf-135">Actuellement, il prend également en charge uniquement les versions x64 et ARM64.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-135">Currently, it also only supports x64 and ARM64 builds.</span></span>
 
-1. <span data-ttu-id="9d4c2-136">Suivez les étapes de la section [utilisation du plug-in OpenXR de la réalité mixte pour Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) guide, y compris les étapes de configuration de la gestion et de l’optimisation du plug-in XR pour installer le plug-in OpenXR dans votre projet.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-136">Follow the [Using the Mixed Reality OpenXR Plugin for Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) guide, including the steps for configuring XR Plugin Management and Optimization to install the OpenXR plug-in to your project.</span></span> <span data-ttu-id="9d4c2-137">Assurez-vous que les éléments suivants ont été correctement installés :</span><span class="sxs-lookup"><span data-stu-id="9d4c2-137">Ensure that the following have successfully installed:</span></span>
-   1. <span data-ttu-id="9d4c2-138">Gestion du plug-in XR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-138">XR Plugin Management</span></span>
-   1. <span data-ttu-id="9d4c2-139">Plug-in OpenXR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-139">OpenXR Plugin</span></span>
-   1. <span data-ttu-id="9d4c2-140">Plug-in OpenXR de réalité mixte</span><span class="sxs-lookup"><span data-stu-id="9d4c2-140">Mixed Reality OpenXR Plugin</span></span>
-1. <span data-ttu-id="9d4c2-141">Accédez à modifier > paramètres du projet.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-141">Go to Edit > Project Settings.</span></span>
-1. <span data-ttu-id="9d4c2-142">Cliquez sur l’onglet gestion du plug-in XR dans la fenêtre Paramètres du projet.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-142">Click on the XR Plug-in Management tab in the Project Settings window.</span></span>
-1. <span data-ttu-id="9d4c2-143">Vérifiez que l’option initialiser XR au démarrage est cochée.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-143">Ensure that Initialize XR on Startup is checked.</span></span>
-1. <span data-ttu-id="9d4c2-144">(**_Facultatif_**) Si vous ciblez HoloLens 2, assurez-vous que vous êtes sur la plateforme UWP et sélectionnez ensemble de fonctionnalités Microsoft HoloLens.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-144">(**_Optional_**) If targeting HoloLens 2, make sure you're on the UWP platform and select Microsoft HoloLens Feature Set</span></span>
+1. <span data-ttu-id="e2cbf-136">Suivez les étapes de la section [utilisation du plug-in OpenXR de la réalité mixte pour Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) guide, y compris les étapes de configuration de la gestion et de l’optimisation du plug-in XR pour installer le plug-in OpenXR dans votre projet.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-136">Follow the [Using the Mixed Reality OpenXR Plugin for Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) guide, including the steps for configuring XR Plugin Management and Optimization to install the OpenXR plug-in to your project.</span></span> <span data-ttu-id="e2cbf-137">Assurez-vous que les éléments suivants ont été correctement installés :</span><span class="sxs-lookup"><span data-stu-id="e2cbf-137">Ensure that the following have successfully installed:</span></span>
+   1. <span data-ttu-id="e2cbf-138">Gestion du plug-in XR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-138">XR Plugin Management</span></span>
+   1. <span data-ttu-id="e2cbf-139">Plug-in OpenXR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-139">OpenXR Plugin</span></span>
+   1. <span data-ttu-id="e2cbf-140">Plug-in OpenXR de réalité mixte</span><span class="sxs-lookup"><span data-stu-id="e2cbf-140">Mixed Reality OpenXR Plugin</span></span>
+1. <span data-ttu-id="e2cbf-141">Accédez à modifier > paramètres du projet.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-141">Go to Edit > Project Settings.</span></span>
+1. <span data-ttu-id="e2cbf-142">Cliquez sur l’onglet gestion du plug-in XR dans la fenêtre Paramètres du projet.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-142">Click on the XR Plug-in Management tab in the Project Settings window.</span></span>
+1. <span data-ttu-id="e2cbf-143">Vérifiez que l’option initialiser XR au démarrage est cochée.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-143">Ensure that Initialize XR on Startup is checked.</span></span>
+1. <span data-ttu-id="e2cbf-144">(**_Facultatif_**) Si vous ciblez HoloLens 2, assurez-vous que vous êtes sur la plateforme UWP et sélectionnez ensemble de fonctionnalités Microsoft HoloLens.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-144">(**_Optional_**) If targeting HoloLens 2, make sure you're on the UWP platform and select Microsoft HoloLens Feature Set</span></span>
 
 ![Gestion des plug-ins ouverte XR](../features/images/xrsdk/PluginManagementOpenXR.png)
 
 > [!NOTE]
-> <span data-ttu-id="9d4c2-146">Si vous avez un projet préexistant qui utilise MRTK à partir de UPM, assurez-vous que la ligne suivante se trouve dans le fichier **link.xml** situé dans le dossier MixedRealityToolkit. generated.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-146">If you have a pre-existing project that is using MRTK from UPM, make sure that the following line is in the **link.xml** file located in the MixedRealityToolkit.Generated folder.</span></span>
+> <span data-ttu-id="e2cbf-146">Si vous avez un projet préexistant qui utilise MRTK à partir de UPM, assurez-vous que la ligne suivante se trouve dans le fichier **link.xml** situé dans le dossier MixedRealityToolkit. generated.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-146">If you have a pre-existing project that is using MRTK from UPM, make sure that the following line is in the **link.xml** file located in the MixedRealityToolkit.Generated folder.</span></span>
 
 `<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>`
 
 > [!NOTE]
-> <span data-ttu-id="9d4c2-147">Pour la version initiale de MRTK et OpenXR, seuls les contrôleurs de mouvement HoloLens 2 et Windows Mixed Reality sont pris en charge en mode natif.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-147">For the initial release of MRTK and OpenXR, only the HoloLens 2 articulated hands and Windows Mixed Reality motion controllers are natively supported.</span></span> <span data-ttu-id="9d4c2-148">La prise en charge d’un matériel supplémentaire sera ajoutée dans les versions à venir.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-148">Support for additional hardware will be added in upcoming releases.</span></span>
+> <span data-ttu-id="e2cbf-147">Pour la version initiale de MRTK et OpenXR, seuls les contrôleurs de mouvement HoloLens 2 et Windows Mixed Reality sont pris en charge en mode natif.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-147">For the initial release of MRTK and OpenXR, only the HoloLens 2 articulated hands and Windows Mixed Reality motion controllers are natively supported.</span></span> <span data-ttu-id="e2cbf-148">La prise en charge d’un matériel supplémentaire sera ajoutée dans les versions à venir.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-148">Support for additional hardware will be added in upcoming releases.</span></span>
 
-## <a name="configuring-mrtk-for-the-xr-sdk-pipeline"></a><span data-ttu-id="9d4c2-149">Configuration de MRTK pour le pipeline du kit de développement logiciel (SDK) XR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-149">Configuring MRTK for the XR SDK pipeline</span></span>
+## <a name="configuring-mrtk-for-the-xr-sdk-pipeline"></a><span data-ttu-id="e2cbf-149">Configuration de MRTK pour le pipeline du kit de développement logiciel (SDK) XR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-149">Configuring MRTK for the XR SDK pipeline</span></span>
+::: moniker range=">= mrtkunity-2021-05" 
+<span data-ttu-id="e2cbf-150">Si vous utilisez OpenXR, choisissez « DefaultOpenXRConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-150">If using OpenXR, choose "DefaultOpenXRConfigurationProfile" as the active profile or clone it to make customizations.</span></span>
 
-<span data-ttu-id="9d4c2-150">Si vous utilisez OpenXR, choisissez « DefaultOpenXRConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-150">If using OpenXR, choose "DefaultOpenXRConfigurationProfile" as the active profile or clone it to make customizations.</span></span>
+<span data-ttu-id="e2cbf-151">Si vous utilisez d’autres runtimes XR dans la configuration de gestion du plug-in XR, comme Windows Mixed Reality ou Oculus, choisissez « DefaultXRSDKConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-151">If using other XR runtimes in the XR Plug-in Management configuration, like Windows Mixed Reality or Oculus, choose "DefaultXRSDKConfigurationProfile" as the active profile or clone it to make customizations.</span></span>
 
-<span data-ttu-id="9d4c2-151">Si vous utilisez d’autres runtimes XR dans la configuration de gestion du plug-in XR, comme Windows Mixed Reality ou Oculus, choisissez « DefaultXRSDKConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-151">If using other XR runtimes in the XR Plug-in Management configuration, like Windows Mixed Reality or Oculus, choose "DefaultXRSDKConfigurationProfile" as the active profile or clone it to make customizations.</span></span>
+<span data-ttu-id="e2cbf-152">Ces profils sont configurés avec les systèmes et fournisseurs appropriés, si nécessaire.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-152">These profiles are set up with the correct systems and providers, where needed.</span></span> <span data-ttu-id="e2cbf-153">Pour plus d’informations sur le profil et l’exemple de prise en charge avec XR SDK, consultez [la documentation](../features/profiles/profiles.md#xr-sdk) relative aux profils.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-153">See [the profiles docs](../features/profiles/profiles.md#xr-sdk) for more information on profile and sample support with XR SDK.</span></span>
 
-<span data-ttu-id="9d4c2-152">Ces profils sont configurés avec les systèmes et fournisseurs appropriés, si nécessaire.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-152">These profiles are set up with the correct systems and providers, where needed.</span></span> <span data-ttu-id="9d4c2-153">Pour plus d’informations sur le profil et l’exemple de prise en charge avec XR SDK, consultez [la documentation](../features/profiles/profiles.md#xr-sdk) relative aux profils.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-153">See [the profiles docs](../features/profiles/profiles.md#xr-sdk) for more information on profile and sample support with XR SDK.</span></span>
+<span data-ttu-id="e2cbf-154">Pour migrer un profil existant vers le kit de développement logiciel (SDK) XR, vous devez ajouter les services et les fournisseurs de données suivants.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-154">To migrate an existing profile to XR SDK, the following services and data providers should be added.</span></span> <span data-ttu-id="e2cbf-155">Vous pourrez voir les nouveaux fournisseurs de données sous l’onglet Kit de développement logiciel (SDK) XR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-155">You will be able to see the new data providers under the XR SDK tab</span></span>
 
-<span data-ttu-id="9d4c2-154">Pour migrer un profil existant vers le kit de développement logiciel (SDK) XR, les services et fournisseurs de données suivants doivent être mis à jour :</span><span class="sxs-lookup"><span data-stu-id="9d4c2-154">To migrate an existing profile to XR SDK, the following services and data providers should be updated:</span></span>
+![Onglet Kit de développement logiciel (SDK) XR](../features/images/xrsdk/XrsdkTabView.png)
 
-### <a name="camera"></a><span data-ttu-id="9d4c2-155">Appareil photo</span><span class="sxs-lookup"><span data-stu-id="9d4c2-155">Camera</span></span>
+### <a name="camera"></a><span data-ttu-id="e2cbf-157">Appareil photo</span><span class="sxs-lookup"><span data-stu-id="e2cbf-157">Camera</span></span>
 
-<span data-ttu-id="9d4c2-156">De [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings)</span><span class="sxs-lookup"><span data-stu-id="9d4c2-156">From [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings)</span></span>
+<span data-ttu-id="e2cbf-158">Ajouter les fournisseurs de données suivants</span><span class="sxs-lookup"><span data-stu-id="e2cbf-158">Add the following data providers</span></span> 
 
-![Paramètres de l’appareil photo hérité](../features/images/xrsdk/CameraSystemLegacy.png)
-
-<span data-ttu-id="9d4c2-158">to</span><span class="sxs-lookup"><span data-stu-id="9d4c2-158">to</span></span>
-
-| <span data-ttu-id="9d4c2-159">OpenXR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-159">OpenXR</span></span> | <span data-ttu-id="9d4c2-160">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="9d4c2-160">Windows Mixed Reality</span></span> |
+| <span data-ttu-id="e2cbf-159">OpenXR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-159">OpenXR</span></span> | <span data-ttu-id="e2cbf-160">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="e2cbf-160">Windows Mixed Reality</span></span> |
 |--------|-----------------------|
-| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | <span data-ttu-id="9d4c2-161">[`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings)**et**[`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings)</span><span class="sxs-lookup"><span data-stu-id="9d4c2-161">[`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) **and** [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings)</span></span> |
+| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | <span data-ttu-id="e2cbf-161">[`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings)**et**[`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings)</span><span class="sxs-lookup"><span data-stu-id="e2cbf-161">[`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) **and** [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings)</span></span> |
 
 ![Paramètres de l’appareil photo SDK XR](../features/images/xrsdk/CameraSystemXRSDK.png)
 
-### <a name="input"></a><span data-ttu-id="9d4c2-163">Entrée</span><span class="sxs-lookup"><span data-stu-id="9d4c2-163">Input</span></span>
+### <a name="input"></a><span data-ttu-id="e2cbf-163">Entrée</span><span class="sxs-lookup"><span data-stu-id="e2cbf-163">Input</span></span>
 
-<span data-ttu-id="9d4c2-164">De [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)</span><span class="sxs-lookup"><span data-stu-id="9d4c2-164">From [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)</span></span>
+<span data-ttu-id="e2cbf-164">Ajouter les fournisseurs de données suivants</span><span class="sxs-lookup"><span data-stu-id="e2cbf-164">Add the following data providers</span></span> 
 
-![Paramètres d’entrée hérités](../features/images/xrsdk/InputSystemWMRLegacy.png)
-
-<span data-ttu-id="9d4c2-166">to</span><span class="sxs-lookup"><span data-stu-id="9d4c2-166">to</span></span>
-
-| <span data-ttu-id="9d4c2-167">OpenXR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-167">OpenXR</span></span> | <span data-ttu-id="9d4c2-168">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="9d4c2-168">Windows Mixed Reality</span></span> |
+| <span data-ttu-id="e2cbf-165">OpenXR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-165">OpenXR</span></span> | <span data-ttu-id="e2cbf-166">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="e2cbf-166">Windows Mixed Reality</span></span> |
 |--------|-----------------------|
 | [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager) |
 
-<span data-ttu-id="9d4c2-169">__OpenXR__:</span><span class="sxs-lookup"><span data-stu-id="9d4c2-169">__OpenXR__:</span></span>
+<span data-ttu-id="e2cbf-167">__OpenXR__:</span><span class="sxs-lookup"><span data-stu-id="e2cbf-167">__OpenXR__:</span></span>
 
 ![Paramètres d’entrée OpenXR](../features/images/xrsdk/InputSystemOpenXR.png)
 
-<span data-ttu-id="9d4c2-171">__Windows Mixed Reality__:</span><span class="sxs-lookup"><span data-stu-id="9d4c2-171">__Windows Mixed Reality__:</span></span>
+<span data-ttu-id="e2cbf-169">__Windows Mixed Reality__:</span><span class="sxs-lookup"><span data-stu-id="e2cbf-169">__Windows Mixed Reality__:</span></span>
 
 ![Paramètres d’entrée du SDK XR](../features/images/xrsdk/InputSystemWMRXRSDK.png)
 
-### <a name="boundary"></a><span data-ttu-id="9d4c2-173">Limite</span><span class="sxs-lookup"><span data-stu-id="9d4c2-173">Boundary</span></span>
+### <a name="boundary"></a><span data-ttu-id="e2cbf-171">Limite</span><span class="sxs-lookup"><span data-stu-id="e2cbf-171">Boundary</span></span>
 
-<span data-ttu-id="9d4c2-174">De [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)</span><span class="sxs-lookup"><span data-stu-id="9d4c2-174">From [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)</span></span>
+<span data-ttu-id="e2cbf-172">Ajouter les fournisseurs de données suivants</span><span class="sxs-lookup"><span data-stu-id="e2cbf-172">Add the following data providers</span></span> 
 
-![Paramètres des limites héritées](../features/images/xrsdk/BoundarySystemLegacy.png)
-
-<span data-ttu-id="9d4c2-176">to</span><span class="sxs-lookup"><span data-stu-id="9d4c2-176">to</span></span>
-
-| <span data-ttu-id="9d4c2-177">OpenXR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-177">OpenXR</span></span> | <span data-ttu-id="9d4c2-178">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="9d4c2-178">Windows Mixed Reality</span></span> |
+| <span data-ttu-id="e2cbf-173">OpenXR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-173">OpenXR</span></span> | <span data-ttu-id="e2cbf-174">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="e2cbf-174">Windows Mixed Reality</span></span> |
 |--------|-----------------------|
 | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
 
 ![Paramètres des limites du SDK XR](../features/images/xrsdk/BoundarySystemXRSDK.png)
 
-### <a name="spatial-awareness"></a><span data-ttu-id="9d4c2-180">Sensibilisation spatiale</span><span class="sxs-lookup"><span data-stu-id="9d4c2-180">Spatial awareness</span></span>
+### <a name="spatial-awareness"></a><span data-ttu-id="e2cbf-176">Sensibilisation spatiale</span><span class="sxs-lookup"><span data-stu-id="e2cbf-176">Spatial awareness</span></span>
 
-<span data-ttu-id="9d4c2-181">De [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver)</span><span class="sxs-lookup"><span data-stu-id="9d4c2-181">From [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver)</span></span>
+<span data-ttu-id="e2cbf-177">Ajouter les fournisseurs de données suivants</span><span class="sxs-lookup"><span data-stu-id="e2cbf-177">Add the following data providers</span></span> 
 
-![Paramètres de sensibilisation spatiale hérités](../features/images/xrsdk/SpatialAwarenessLegacy.png)
-
-<span data-ttu-id="9d4c2-183">to</span><span class="sxs-lookup"><span data-stu-id="9d4c2-183">to</span></span>
-
-| <span data-ttu-id="9d4c2-184">OpenXR</span><span class="sxs-lookup"><span data-stu-id="9d4c2-184">OpenXR</span></span> | <span data-ttu-id="9d4c2-185">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="9d4c2-185">Windows Mixed Reality</span></span> |
+| <span data-ttu-id="e2cbf-178">OpenXR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-178">OpenXR</span></span> | <span data-ttu-id="e2cbf-179">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="e2cbf-179">Windows Mixed Reality</span></span> |
 |--------|-----------------------|
-| <span data-ttu-id="9d4c2-186">En cours</span><span class="sxs-lookup"><span data-stu-id="9d4c2-186">In progress</span></span> | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
+| <span data-ttu-id="e2cbf-180">En cours</span><span class="sxs-lookup"><span data-stu-id="e2cbf-180">In progress</span></span> | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
 
 ![Paramètres de sensibilisation spatiale du SDK XR](../features/images/xrsdk/SpatialAwarenessXRSDK.png)
 
-### <a name="controller-mappings"></a><span data-ttu-id="9d4c2-188">Mappages de contrôleur</span><span class="sxs-lookup"><span data-stu-id="9d4c2-188">Controller mappings</span></span>
+### <a name="controller-mappings"></a><span data-ttu-id="e2cbf-182">Mappages de contrôleur</span><span class="sxs-lookup"><span data-stu-id="e2cbf-182">Controller mappings</span></span>
 
-<span data-ttu-id="9d4c2-189">Si vous utilisez des profils de mappage de contrôleur personnalisés, ouvrez l’un d’eux et exécutez la boîte à outils de réalité mixte-> utilitaires-> mise à jour-> les profils de mappage de contrôleur pour vous assurer que les nouveaux types de contrôleur du kit de développement logiciel (SDK) XR sont définis.</span><span class="sxs-lookup"><span data-stu-id="9d4c2-189">If using custom controller mapping profiles, open one of them and run the Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles menu item to ensure the new XR SDK controller types are defined.</span></span>
+<span data-ttu-id="e2cbf-183">Si vous utilisez des profils de mappage de contrôleur personnalisés, ouvrez l’un d’eux et exécutez la boîte à outils de réalité mixte-> utilitaires-> mise à jour-> les profils de mappage de contrôleur pour vous assurer que les nouveaux types de contrôleur du kit de développement logiciel (SDK) XR sont définis.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-183">If using custom controller mapping profiles, open one of them and run the Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles menu item to ensure the new XR SDK controller types are defined.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9d4c2-190">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="9d4c2-190">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e2cbf-184">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="e2cbf-184">See also</span></span>
 
-* [<span data-ttu-id="9d4c2-191">Prise en main du développement de clients dans Unity</span><span class="sxs-lookup"><span data-stu-id="9d4c2-191">Getting started with AR development in Unity</span></span>](https://docs.unity3d.com/Manual/AROverview.html)
-* [<span data-ttu-id="9d4c2-192">Prise en main du développement VR dans Unity</span><span class="sxs-lookup"><span data-stu-id="9d4c2-192">Getting started with VR development in Unity</span></span>](https://docs.unity3d.com/Manual/VROverview.html)
+* [<span data-ttu-id="e2cbf-185">Prise en main du développement de clients dans Unity</span><span class="sxs-lookup"><span data-stu-id="e2cbf-185">Getting started with AR development in Unity</span></span>](https://docs.unity3d.com/Manual/AROverview.html)
+* [<span data-ttu-id="e2cbf-186">Prise en main du développement VR dans Unity</span><span class="sxs-lookup"><span data-stu-id="e2cbf-186">Getting started with VR development in Unity</span></span>](https://docs.unity3d.com/Manual/VROverview.html)
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+<span data-ttu-id="e2cbf-187">Si vous utilisez OpenXR, choisissez « DefaultOpenXRConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-187">If using OpenXR, choose "DefaultOpenXRConfigurationProfile" as the active profile or clone it to make customizations.</span></span>
+
+<span data-ttu-id="e2cbf-188">Si vous utilisez d’autres runtimes XR dans la configuration de gestion du plug-in XR, comme Windows Mixed Reality ou Oculus, choisissez « DefaultXRSDKConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-188">If using other XR runtimes in the XR Plug-in Management configuration, like Windows Mixed Reality or Oculus, choose "DefaultXRSDKConfigurationProfile" as the active profile or clone it to make customizations.</span></span>
+
+<span data-ttu-id="e2cbf-189">Ces profils sont configurés avec les systèmes et fournisseurs appropriés, si nécessaire.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-189">These profiles are set up with the correct systems and providers, where needed.</span></span> <span data-ttu-id="e2cbf-190">Pour plus d’informations sur le profil et l’exemple de prise en charge avec XR SDK, consultez [la documentation](../features/profiles/profiles.md#xr-sdk) relative aux profils.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-190">See [the profiles docs](../features/profiles/profiles.md#xr-sdk) for more information on profile and sample support with XR SDK.</span></span>
+
+<span data-ttu-id="e2cbf-191">Pour migrer un profil existant vers le kit de développement logiciel (SDK) XR, les services et fournisseurs de données suivants doivent être mis à jour :</span><span class="sxs-lookup"><span data-stu-id="e2cbf-191">To migrate an existing profile to XR SDK, the following services and data providers should be updated:</span></span>
+
+### <a name="camera"></a><span data-ttu-id="e2cbf-192">Appareil photo</span><span class="sxs-lookup"><span data-stu-id="e2cbf-192">Camera</span></span>
+
+<span data-ttu-id="e2cbf-193">De [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings)</span><span class="sxs-lookup"><span data-stu-id="e2cbf-193">From [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings)</span></span>
+
+![Paramètres de l’appareil photo hérité](../features/images/xrsdk/CameraSystemLegacy.png)
+
+<span data-ttu-id="e2cbf-195">to</span><span class="sxs-lookup"><span data-stu-id="e2cbf-195">to</span></span>
+
+| <span data-ttu-id="e2cbf-196">OpenXR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-196">OpenXR</span></span> | <span data-ttu-id="e2cbf-197">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="e2cbf-197">Windows Mixed Reality</span></span> |
+|--------|-----------------------|
+| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | <span data-ttu-id="e2cbf-198">[`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings)**et**[`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings)</span><span class="sxs-lookup"><span data-stu-id="e2cbf-198">[`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) **and** [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings)</span></span> |
+
+![Paramètres de l’appareil photo SDK XR](../features/images/xrsdk/CameraSystemXRSDK.png)
+
+### <a name="input"></a><span data-ttu-id="e2cbf-200">Entrée</span><span class="sxs-lookup"><span data-stu-id="e2cbf-200">Input</span></span>
+
+<span data-ttu-id="e2cbf-201">De [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)</span><span class="sxs-lookup"><span data-stu-id="e2cbf-201">From [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)</span></span>
+
+![Paramètres d’entrée hérités](../features/images/xrsdk/InputSystemWMRLegacy.png)
+
+<span data-ttu-id="e2cbf-203">to</span><span class="sxs-lookup"><span data-stu-id="e2cbf-203">to</span></span>
+
+| <span data-ttu-id="e2cbf-204">OpenXR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-204">OpenXR</span></span> | <span data-ttu-id="e2cbf-205">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="e2cbf-205">Windows Mixed Reality</span></span> |
+|--------|-----------------------|
+| [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager) |
+
+<span data-ttu-id="e2cbf-206">__OpenXR__:</span><span class="sxs-lookup"><span data-stu-id="e2cbf-206">__OpenXR__:</span></span>
+
+![Paramètres d’entrée OpenXR](../features/images/xrsdk/InputSystemOpenXR.png)
+
+<span data-ttu-id="e2cbf-208">__Windows Mixed Reality__:</span><span class="sxs-lookup"><span data-stu-id="e2cbf-208">__Windows Mixed Reality__:</span></span>
+
+![Paramètres d’entrée du SDK XR](../features/images/xrsdk/InputSystemWMRXRSDK.png)
+
+### <a name="boundary"></a><span data-ttu-id="e2cbf-210">Limite</span><span class="sxs-lookup"><span data-stu-id="e2cbf-210">Boundary</span></span>
+
+<span data-ttu-id="e2cbf-211">De [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)</span><span class="sxs-lookup"><span data-stu-id="e2cbf-211">From [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)</span></span>
+
+![Paramètres des limites héritées](../features/images/xrsdk/BoundarySystemLegacy.png)
+
+<span data-ttu-id="e2cbf-213">to</span><span class="sxs-lookup"><span data-stu-id="e2cbf-213">to</span></span>
+
+| <span data-ttu-id="e2cbf-214">OpenXR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-214">OpenXR</span></span> | <span data-ttu-id="e2cbf-215">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="e2cbf-215">Windows Mixed Reality</span></span> |
+|--------|-----------------------|
+| [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
+
+![Paramètres des limites du SDK XR](../features/images/xrsdk/BoundarySystemXRSDK.png)
+
+### <a name="spatial-awareness"></a><span data-ttu-id="e2cbf-217">Sensibilisation spatiale</span><span class="sxs-lookup"><span data-stu-id="e2cbf-217">Spatial awareness</span></span>
+
+<span data-ttu-id="e2cbf-218">De [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver)</span><span class="sxs-lookup"><span data-stu-id="e2cbf-218">From [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver)</span></span>
+
+![Paramètres de sensibilisation spatiale hérités](../features/images/xrsdk/SpatialAwarenessLegacy.png)
+
+<span data-ttu-id="e2cbf-220">to</span><span class="sxs-lookup"><span data-stu-id="e2cbf-220">to</span></span>
+
+| <span data-ttu-id="e2cbf-221">OpenXR</span><span class="sxs-lookup"><span data-stu-id="e2cbf-221">OpenXR</span></span> | <span data-ttu-id="e2cbf-222">Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="e2cbf-222">Windows Mixed Reality</span></span> |
+|--------|-----------------------|
+| <span data-ttu-id="e2cbf-223">En cours</span><span class="sxs-lookup"><span data-stu-id="e2cbf-223">In progress</span></span> | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
+
+![Paramètres de sensibilisation spatiale du SDK XR](../features/images/xrsdk/SpatialAwarenessXRSDK.png)
+
+### <a name="controller-mappings"></a><span data-ttu-id="e2cbf-225">Mappages de contrôleur</span><span class="sxs-lookup"><span data-stu-id="e2cbf-225">Controller mappings</span></span>
+
+<span data-ttu-id="e2cbf-226">Si vous utilisez des profils de mappage de contrôleur personnalisés, ouvrez l’un d’eux et exécutez la boîte à outils de réalité mixte-> utilitaires-> mise à jour-> les profils de mappage de contrôleur pour vous assurer que les nouveaux types de contrôleur du kit de développement logiciel (SDK) XR sont définis.</span><span class="sxs-lookup"><span data-stu-id="e2cbf-226">If using custom controller mapping profiles, open one of them and run the Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles menu item to ensure the new XR SDK controller types are defined.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="e2cbf-227">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="e2cbf-227">See also</span></span>
+
+* [<span data-ttu-id="e2cbf-228">Prise en main du développement de clients dans Unity</span><span class="sxs-lookup"><span data-stu-id="e2cbf-228">Getting started with AR development in Unity</span></span>](https://docs.unity3d.com/Manual/AROverview.html)
+* [<span data-ttu-id="e2cbf-229">Prise en main du développement VR dans Unity</span><span class="sxs-lookup"><span data-stu-id="e2cbf-229">Getting started with VR development in Unity</span></span>](https://docs.unity3d.com/Manual/VROverview.html)
+::: moniker-end
