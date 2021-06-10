@@ -6,25 +6,28 @@ ms.author: v-hferrone
 ms.date: 01/14/2021
 ms.topic: article
 keywords: boîte à outils de réalité mixte, MRTK, exemples, HoloLens, HoloLens 2, nuanceurs, info-bulles, interaction manuelle, découpage, zones englobantes, boutons, menus main, ardoise, curseur
-ms.openlocfilehash: fe76c7cb9bc7e96e0db10ac3062521a07edd8e03
-ms.sourcegitcommit: 728f4523188628950478cc03ec7145e89569e0d3
+ms.openlocfilehash: afce5da9f574f8788df3691451e30bb22d373e20
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108173066"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908257"
 ---
 # <a name="running-the-mrtk-examples-hub-app"></a>Exécution de l’application MRTK d’exemples de Hub
 
-Avec le hub d’exemples de la boîte à outils de la réalité mixte, vous pouvez découvrir des exemples de scènes générées avec MRTK sur votre HoloLens. Les exemples de scènes incluent l’interaction manuelle, le découpage, les info-bulles, les nuanceurs, les zones englobantes, les boutons de presse, les menus manuels, les ardoises, les curseurs et bien plus encore !
+MRTK exemple d’application Hub vous permet de découvrir des exemples importants de MRTK sur votre appareil HoloLens sans les générer et les déployer. L’application comprend des exemples d’interactions de suivi des mains, des interactions de suivi oculaire, des découpages, des info-bulles, des nuanceurs, des zones englobantes, des boutons de presse, des menus manuels, des ardoises, des curseurs et bien plus encore !
 
 ## <a name="hololens-2-and-hololens-1st-gen"></a>HoloLens 2 et HoloLens (1ère génération)
+![Page du Hub exemples MRTK dans le Microsoft Store](features/images/examples-hub/ExamplesHubStore.jpg)
 
-1. Sur votre appareil Hololens, accéder au Microsoft Store vérifier que l’appareil est connecté à Internet
+1. Sur votre appareil Hololens, ouvrez l’application Microsoft Store
 2. Rechercher des **exemples de MRTK Hub**:
-
-![Page du Hub exemples MRTK dans le Microsoft Store](images/mrtk-examples-hub-img-01.png)
-
 3. Télécharger l’application sur votre appareil
 4. Accédez à la liste des applications sur votre Hololens et exécutez le **hub d’exemples MRTK**
-5. Lorsque l’application démarre, choisissez parmi une sélection d' **exemples** de scènes pour tester la fonctionnalité MRTK
+
+## <a name="install-from-the-microsoft-store-web-page"></a>Installation à partir de la page Web Microsoft Store
+
+Vous pouvez accéder à cette page et cliquer sur **installer sur mes appareils**. Sélectionnez votre appareil HoloLens dans la liste. Lorsque vous ouvrez Microsoft Store application dans votre appareil, l’application est téléchargée et installée automatiquement.
+
+[Hub exemples MRTK-Microsoft Store](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
 

@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, profils,
-ms.openlocfilehash: 384614f27c099af197ea8a9aedc72c711f0c099e
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
-ms.translationtype: HT
+ms.openlocfilehash: 785d402e924a534627dfd1d742d2019d9ce9dd5a
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881226"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908243"
 ---
 # <a name="profiles"></a>Profils
 
@@ -31,9 +31,14 @@ Il existe également des profils basés sur les fonctionnalités d’entrée de 
 
 ## <a name="xr-sdk"></a>Kit de développement logiciel (SDK) XR
 
+::: moniker range=">= mrtkunity-2021-05"
+Utilisez l’un des profils MRTK par défaut, qui sont tous configurés dans les pipelines XR d’Unity. Les « DefaultOpenXRConfigurationProfile » et « DefaultXRSDKConfigurationProfile » précédents sont maintenant marqués comme obsolètes.
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 Actuellement, il existe deux profils fournis pour le kit de développement logiciel (SDK) XR `DefaultXRSDKConfigurationProfile` et `DefaultHoloLens2XRSDKConfigurationProfile`. Par conséquent, les scènes des exemples ne sont pas entièrement prises en charge en raison des configurations spécifiques aux scènes et aux scénarios. Les exemples qui utilisent `DefaultMixedRealityToolkitConfigurationProfile` et `DefaultHoloLens2ConfigurationProfile` _peuvent_ être permutés à leurs profils du kit de développement logiciel (SDK) XR correspondants. Si vous utilisez OpenXR avec le kit de développement logiciel (SDK) XR, utilisez à la `DefaultOpenXRConfigurationProfile` place.
 
 Un travail supplémentaire est entrepris pour faciliter la configuration et prendre en charge tous les exemples de scènes, ce qui permet de configurer côte à côte les XR et kit de développement logiciel (SDK) XR hérités. Consultez le problème [#9419](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9419) pour le suivi.
+::: moniker-end
 
 Pour plus d’informations sur la conversion des profils entre XR et le kit de développement logiciel (SDK) XR hérités, consultez [Configuration de MRTK pour le pipeline du kit de développement logiciel (SDK) XR](../../configuration/getting-started-with-mrtk-and-xrsdk.md#configuring-mrtk-for-the-xr-sdk-pipeline).
 

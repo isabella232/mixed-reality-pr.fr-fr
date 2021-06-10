@@ -3,20 +3,39 @@ title: Historique des versions de la communication à distance holographique
 description: Restez à jour dans l’historique des versions de la fonctionnalité de communication à distance holographique pour HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 12/01/2020
+ms.date: 06/10/2021
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, historique des versions, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 93ab38108d5ad557d61ad366ebb7aebd8cb65ab7
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: dae7bc0dac792cbe1a8472415d5e9fa34532e918
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944701"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908217"
 ---
 # <a name="holographic-remoting-version-history"></a>Historique des versions de la communication à distance holographique
 
 > [!IMPORTANT]
 > Ce guide est spécifique à la communication à distance holographique sur HoloLens 2.
+
+## <a name="version-260-june-10-2021"></a>Version 2.6.0 (10 juin 2021) <a name="v2.6.0"></a>
+* La communication à distance holographique à l’aide de l’API OpenXR prend désormais en charge :
+  * Nouvelle extension de XR_MSFT_holographic_remoting_speech, qui permet aux applications d’écouter des commandes vocales personnalisées dans différentes langues.
+  * L’extension XR_MSFT_scene_understanding, qui fournit aux applications une représentation structurée et de haut niveau des plans, des mailles et des objets dans l’environnement de l’utilisateur, ce qui permet le développement d’applications spatialement compatibles. Toutefois, avec l’inconvénient que XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT est la seule cohérence prise en charge par xrComputeNewSceneMSFT.
+  * L’extension XR_MSFT_spatial_graph_bridge, qui permet aux applications de créer des handles XrSpace pour effectuer le suivi des nœuds de graphique spatial d’autres API ou bibliothèques de plateformes d’appareils Windows Mixed Reality. Toutefois, avec l’inconvénient que XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT est le seul type de nœud pris en charge par xrCreateSpatialGraphNodeSpaceMSFT. 
+* La communication à distance holographique à l’aide de l’API de réalité mixte prend désormais en charge :
+  * Les surcharges SpatialGraphInteropPreview. CreateCoordinateSystemForNode, qui permettent aux applications d’effectuer le suivi des nœuds de graphique spatial statique afin que les utilisateurs puissent connaître les emplacements et les éléments de leur environnement.
+* La communication à distance holographique utilisant à la fois les API OpenXR et de réalité mixte prend désormais en charge :
+  * Le kit de développement logiciel (SDK) Microsoft. MixedReality. SceneUnderstanding, qui permet aux applications de calculer une description de la scène entourant l’utilisateur (par exemple, murs, planchers et surfaces) fournissant des Quad, des maillages et des signaux de placement du contenu.
+  * Le kit de développement logiciel (SDK) Microsoft. MixedReality. QR, qui permet aux applications de suivre l’emplacement, la taille et le contenu des codes QR détectés.
+* L’exemple distant OpenXR a été mis à jour pour inclure les éléments suivants : 
+  * Exemple d’utilisation de l’extension de XR_MSFT_holographic_remoting_speech.
+* L’exemple distant Mixed Reality a été mis à jour pour inclure les éléments suivants :  
+  * Exemple d’utilisation du kit de développement logiciel (SDK) Microsoft. MixedReality. SceneUnderstanding.
+  * Exemple d’utilisation du kit de développement logiciel (SDK) Microsoft. MixedReality. QR (qui remplace le mécanisme de détection du code QR précédent).
+* Le lecteur de communication à distance holographique affiche maintenant une animation de chargement pendant l’établissement de la connexion.
+* Résolution des problèmes de compatibilité RenderDoc dans le runtime d’API OpenXR et dans l’exemple d’API de réalité mixte.
+* Plusieurs correctifs de bogues et améliorations de stabilité.
 
 ## <a name="version-250-february-12-2021"></a>Version 2.5.0 (12 février 2021) <a name="v2.5.0"></a>
 * La communication à distance holographique à l’aide de l' [API OpenXR](../native/openxr.md) prend désormais en charge :
