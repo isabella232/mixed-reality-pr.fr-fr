@@ -3,12 +3,12 @@ title: Utilisation de SteamVR avec Windows Mixed Reality
 description: Découvrez comment configurer et jouer des jeux SteamVR sur des casques et des contrôleurs Windows Mixed Reality avec des PC compatibles.
 ms.topic: article
 keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, jeux, SteamVR, Steam, configuration système requise
-ms.openlocfilehash: 4a2d3065a12cdc413eae5b7ad164db6e820455ae
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 641f2b7db890229b88c0614b6b2bc2e3e88ec309
+ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581797"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112064117"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Utilisation de SteamVR avec Windows Mixed Reality
 
@@ -30,6 +30,24 @@ Windows Mixed Reality for SteamVR permet aux utilisateurs d’exécuter des exp�
 > 2. Installez [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). Une fois votre casque branché, lancez la vapeur. vous devriez voir une boîte de dialogue vous invitant à installer SteamVR. Suivez les invites de la boîte de dialogue pour l’installer.
     * Si vous ne voyez pas la fenêtre contextuelle, installez SteamVR en accédant à la section *Outils* de votre *bibliothèque*. Recherchez SteamVR dans la liste, puis cliquez avec le bouton droit et sélectionnez *installer le jeu*.
 > 3. Installez [Windows Mixed Reality pour SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
+
+## <a name="set-up-windows-mixed-reality-for-steamvr-in-an-environment-without-internet-access"></a>Configurer Windows Mixed Reality pour SteamVR dans un environnement sans accès à Internet
+
+**Stockage des médias nécessaires sur un dispositif de stockage portable**
+1. Installez [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) et [Windows Mixed Reality pour SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/) comme indiqué ci-dessus à l’aide de [vapeur](http://store.steampowered.com/about/) sur un PC disposant d’un accès Internet complet.
+2. Dans Steam, ouvrez la section Bibliothèque et recherchez la partie intitulée « outils ».
+3. Une fois SteamVR installé, cliquez avec le bouton droit sur l’entrée « SteamVR » et dans le menu contextuel qui s’est produit, cliquez sur l’entrée « propriétés ».
+4. Une nouvelle fenêtre avec plusieurs onglets s’ouvre. Sélectionnez l’onglet « fichiers locaux », puis cliquez sur le bouton « Parcourir les fichiers locaux ».
+5. Le répertoire contenant le runtime SteamVR s’ouvre. Copiez l’intégralité du répertoire (nommé SteamVR) sur un support portable de votre choix (par exemple, un lecteur USB).
+6. Faites de même avec Windows Mixed Reality pour SteamVR et toutes les applications compatibles SteamVR que vous souhaitez installer sur le PC cible.
+
+**Exécuter SteamVR sur le PC cible**
+1. Une fois le périphérique de stockage portable branché sur le PC cible, déplacez les dossiers SteamVR, MixedRealityVRDriver et autres vers un emplacement pratique sur le PC cible.
+2. En veillant à ce que SteamVR et MixedRealityVRDriver se trouvent dans le même dossier, téléchargez [steamvr-add-wmr-driver.bat](scripts/steamvr-add-wmr-driver.bat) dans le dossier conteneur, puis double-cliquez dessus. Cela permettra au runtime de rechercher le pilote Windows Mixed Reality for SteamVR dans votre installation personnalisée.
+![SteamVR et Windows Mixed Reality pour SteamVR installés sur le PC cible](images/steamvr-install-files.png)
+3. Pour exécuter SteamVR, vous devez double-cliquer sur le fichier « vrstartup.exe » situé sur *SteamVR\bin\win64\vrstartup.exe* ou *SteamVR\bin\win32\vrstartup.exe* si le PC cible exécute une version 32 bits de Windows.
+
+[Pour plus d’informations et pour résoudre les problèmes, consultez la page de documentation Steamworks](https://partner.steamgames.com/doc/features/steamvr/enterprise#2).
 
 ## <a name="play-steamvr-games"></a>Jouer à des jeux SteamVR
 
