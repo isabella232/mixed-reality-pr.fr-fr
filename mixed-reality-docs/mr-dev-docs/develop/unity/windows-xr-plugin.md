@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 03/26/2021
 ms.topic: article
 keywords: Unity, réalité mixte, développement, prise en main, nouveau projet, Windows Mixed Reality, UWP, XR, performance, Legacy, mrtk, Windows
-ms.openlocfilehash: 44de6b418995b75d9e199f03922f89016b76c5cd
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: c9733d58236d97db370ce4f58dc1760bdf4eda86
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743642"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110237"
 ---
 # <a name="using-windows-xr-plugin"></a>Utilisation du plug-in XR Windows
 
 Pour les développeurs ciblant Unity 2020, le plug-in Windows XR permet d’accéder aux fonctionnalités de réalité mixte sur les casques HoloLens 2 et Windows Mixed Reality.  Ce plug-in est également pris en charge sur Unity 2019, bien qu’il existe des incompatibilités connues avec les ancres spatiales Azure lors de l’utilisation de ce plug-in sur cette version.
 
-Alors que Microsoft et la communauté ont créé des outils open source tels que le [Kit de MRTK (Mixed Reality Toolkit)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) qui configure automatiquement l’environnement WMR, de nombreux développeurs souhaitent créer leurs expériences dès le départ.  La documentation suivante montre comment configurer correctement un projet pour le développement de réalité mixte, que vous utilisiez MRTK ou non.  Les paramètres que vous devez modifier sont divisés en deux catégories : les paramètres par projet et les paramètres par scène.
+Alors que Microsoft et la communauté ont créé des outils open source tels que le [Kit de MRTK (Mixed Reality Toolkit)](/windows/mixed-reality/mrtk-unity/configuration/usingupm) qui configure automatiquement l’environnement WMR, de nombreux développeurs souhaitent créer leurs expériences dès le départ.  La documentation suivante montre comment configurer correctement un projet pour le développement de réalité mixte, que vous utilisiez MRTK ou non.  Les paramètres que vous devez modifier sont divisés en deux catégories : les paramètres par projet et les paramètres par scène.
 
 ## <a name="setting-up-your-project-with-mrtk"></a>Configuration de votre projet avec MRTK
 

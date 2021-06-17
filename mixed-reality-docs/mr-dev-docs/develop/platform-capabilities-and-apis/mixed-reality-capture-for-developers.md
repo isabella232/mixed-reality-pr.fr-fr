@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, photo, vidéo, capture, appareil photo
-ms.openlocfilehash: 2539c8e2a6f26ba1f36cd28502bf8d0f50803657
-ms.sourcegitcommit: bd9b2734903652b106db86686428c03acf104707
+ms.openlocfilehash: ec1a53d2f623a8047c2ee1973d8d6f20458ade88
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98763716"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110250"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Capture de réalité mixte pour les développeurs
 
@@ -86,7 +86,7 @@ Une propriété [ViewConfiguration](/uwp/api/windows.graphics.holographic.hologr
 > [!NOTE]
 > Si vous utilisez Unity 2018, vous devez utiliser **Unity 2018.4.13 F1** ou une version plus récente. Si vous utilisez Unity 2019, vous devez utiliser **unity 2019,4**, ou une version plus récente.
 
-Pour accepter le rendu à partir de l’appareil photo PV quand vous utilisez la [boîte à outils de réalité mixte](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), activez le fournisseur de [paramètres d’appareil photo Windows Mixed Reality](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) et vérifiez **afficher à partir de l’appareil photo PV**.
+Pour accepter le rendu à partir de l’appareil photo PV quand vous utilisez la [boîte à outils de réalité mixte](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), activez le fournisseur de [paramètres d’appareil photo Windows Mixed Reality](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings) et vérifiez **afficher à partir de l’appareil photo PV**.
 
 Si vous n’utilisez pas la boîte à outils de réalité mixte, vous pouvez utiliser un composant pour vous [abonner manuellement](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) comme décrit ci-dessus pour DirectX.
 

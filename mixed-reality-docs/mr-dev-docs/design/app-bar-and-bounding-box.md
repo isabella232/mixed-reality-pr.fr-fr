@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, barre d’application, cadre englobant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 750fb238e5b7f22998a86f71607498c8f6982076
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 5c437b303ec5462179a1ddf43687aa1653419b08
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600518"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110093"
 ---
 # <a name="bounding-box-and-app-bar"></a>Rectangle englobant et barre de l’application
 ![La délimitation est l’interface standard pour la manipulation d’objets en réalité mixte.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -66,7 +66,7 @@ La délimitation est l’interface standard pour la manipulation d’objets en r
 
 <br>
 
-**Pour le développement d’applications Unity, consultez [cadre englobant dans le Toolkit de réalité mixte-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**
+**Pour le développement d’applications Unity, consultez [cadre englobant dans le Toolkit de réalité mixte-Unity.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)**
 
 <br>
 

@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de regard, étalonnage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, intention, actions
-ms.openlocfilehash: b76fd2e05999e5807156714fcdf12ca2863501bc
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 4dac059f72dd043802286081a54137c392c1e912
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196504"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110113"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Eye-tracking sur HoloLens 2
 
@@ -87,13 +87,13 @@ Le point de regard prédit est approximativement de 1,5 degrés d’angle visuel
 
 L’eye-tracking permet aux applications de savoir où l’utilisateur regarde en temps réel. Les cas d’usage suivants décrivent certaines interactions possibles avec le suivi oculaire sur HoloLens 2 en réalité mixte.
 Ces cas d’usage ne font pas encore partie de l’expérience d’interpréteur de commandes holographique (autrement dit, l’interface que vous voyez quand vous démarrez votre HoloLens 2).
-Vous pouvez essayer certaines d’entre elles dans le kit de fonctionnalités de la [réalité mixte](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html), qui fournit plusieurs exemples intéressants et puissants pour l’utilisation du suivi oculaire, tels que les sélections de cibles rapides et faciles à utiliser par l’œil, et le défilement automatique dans le texte en fonction de ce que l’utilisateur examine. 
+Vous pouvez essayer certaines d’entre elles dans le kit de fonctionnalités de la [réalité mixte](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main), qui fournit plusieurs exemples intéressants et puissants pour l’utilisation du suivi oculaire, tels que les sélections de cibles rapides et faciles à utiliser par l’œil, et le défilement automatique dans le texte en fonction de ce que l’utilisateur examine. 
 
 ### <a name="user-intent"></a>Intention de l'utilisateur
 
 Des informations sur l’emplacement et le rôle d’un utilisateur fournissent un **contexte puissant pour d’autres entrées**, telles que la voix, les mains et les contrôleurs.
 Cela peut être utile pour diverses tâches.
-Par exemple, cette opération peut être effectuée rapidement et facilement **sur la** scène en regardant un hologramme et en disant *« Sélectionner »* (voir également le point d’insertion et de [validation](gaze-and-commit.md)) ou *« Placer cela... »*, puis passer à l’endroit où l’utilisateur veut placer l’hologramme et dire *«... là»*. Vous trouverez des exemples à ce sujet dans [Mixed Reality Toolkit - Sélection d’une cible à l’aide du regard](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) et [Mixed Reality Toolkit - Positionnement d’une cible à l’aide du regard](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
+Par exemple, cette opération peut être effectuée rapidement et facilement **sur la** scène en regardant un hologramme et en disant *« Sélectionner »* (voir également le point d’insertion et de [validation](gaze-and-commit.md)) ou *« Placer cela... »*, puis passer à l’endroit où l’utilisateur veut placer l’hologramme et dire *«... là»*. Vous trouverez des exemples à ce sujet dans [Mixed Reality Toolkit - Sélection d’une cible à l’aide du regard](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) et [Mixed Reality Toolkit - Positionnement d’une cible à l’aide du regard](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-positioning).
 
 En outre, un exemple d’intention de l’utilisateur peut inclure des informations sur ce que les utilisateurs cherchent pour améliorer l’engagement avec des agents virtuels et des hologrammes interactifs. Par exemple, les agents virtuels peuvent adapter les options disponibles et leur comportement, en fonction du contenu actuellement affiché. 
 
@@ -103,7 +103,7 @@ La catégorie des actions implicites est étroitement liée à l’intention de 
 L’idée est que les hologrammes ou les éléments d’interface utilisateur réagissent de manière instinctuale, qui peut ne pas avoir l’impression que l’utilisateur interagit avec le système, mais plutôt que le système et l’utilisateur sont synchronisés. Par exemple, le **défilement automatique orienté vers le regard** de l’utilisateur peut lire un texte long, qui commence à faire défiler automatiquement une fois que l’utilisateur accède au bas de la zone de texte pour que l’utilisateur reste dans le sens de la lecture, sans soulever de doigt.  
 Un aspect clé de cela est que la vitesse de défilement s’adapte à la vitesse de lecture de l’utilisateur.
 Un autre exemple est un **Zoom et un panoramique pris en charge par l’œil,** où l’utilisateur peut sembler se plonger exactement sur ce qui lui est consacré. Le déclenchement et le contrôle de la vitesse de zoom peuvent être contrôlés par une entrée vocale ou manuelle, ce qui est important pour fournir à l’utilisateur le sentiment de contrôle tout en évitant d’être submergé. Nous parlerons de ces considérations de conception plus en détail ci-dessous. Une fois le zoom avant effectué, l’utilisateur peut suivre facilement, par exemple, le cours d’une rue pour explorer son voisinage en utilisant le regard.
-Vous trouverez des démonstrations de ces types d’interaction dans l’exemple [Mixed Reality Toolkit - Navigation à l’aide du regard](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html).
+Vous trouverez des démonstrations de ces types d’interaction dans l’exemple [Mixed Reality Toolkit - Navigation à l’aide du regard](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation).
 
 D’autres cas d’usage pour les _actions implicites_ peuvent inclure :
 - **Notifications intelligentes :** Vous vous êtes sans doute en désdans les notifications qui s’affichent directement là où vous êtes en train de regarder ? En tenant compte de ce à quoi un utilisateur fait attention, vous pouvez améliorer cette expérience en décalant les notifications à partir de l’endroit où l’utilisateur est actuellement Gazing. Cela limite les distractions et les ignore automatiquement une fois que l’utilisateur a terminé la lecture. 
@@ -112,7 +112,7 @@ D’autres cas d’usage pour les _actions implicites_ peuvent inclure :
 ### <a name="attention-tracking"></a>Suivi de l’attention
 
 Les informations sur l’emplacement ou le contenu des utilisateurs peuvent être un outil très puissant. Il peut aider à évaluer la convivialité des conceptions et à identifier les problèmes dans les workflows afin de les rendre plus efficaces.
-La visualisation et l’analyse du suivi oculaire sont une pratique courante dans différents domaines d’application. Avec HoloLens 2, nous fournissons une nouvelle dimension à cette compréhension, car les hologrammes 3D peuvent être placés dans des contextes réels et évalués en conséquence. La [boîte à outils de la réalité mixte](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) fournit des exemples de base pour la journalisation et le chargement des données de suivi visuel et comment les visualiser.
+La visualisation et l’analyse du suivi oculaire sont une pratique courante dans différents domaines d’application. Avec HoloLens 2, nous fournissons une nouvelle dimension à cette compréhension, car les hologrammes 3D peuvent être placés dans des contextes réels et évalués en conséquence. La [boîte à outils de la réalité mixte](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) fournit des exemples de base pour la journalisation et le chargement des données de suivi visuel et comment les visualiser.
 Microsoft s’attache à faciliter l’innovation tout en veillant à ce que les utilisateurs bénéficient d’une expérience éclairée et transparente quant à l’utilisation de leurs informations de suivi visuel.  Nous travaillons avec nos développeurs et nos équipes d’expérience utilisateur pour fournir des conseils à des tiers afin de s’assurer que les expériences sont centrées autour de l’utilisateur.  
 
 Autres applications possibles dans ce domaine : 

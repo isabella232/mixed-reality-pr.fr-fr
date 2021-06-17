@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 10/21/2019
 ms.topic: article
 keywords: Réalité mixte, développement, développement, conception, HoloLens, services Azure, Actualités, HoloLens 2
-ms.openlocfilehash: d0955d85c3f7496c28f858657cafeebbb7dbb146
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8fc2f7c54cdc941150558aac59dd240ee293d1f8
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678940"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110087"
 ---
 # <a name="mixed-reality-news-and-notes"></a>Nouveautés et notes relatives à la réalité mixte
 
@@ -32,13 +32,13 @@ Comme promis, nous allons vous faire découvrir d’incroyables outils de réali
 <tr>
 <td><b>Guides de Portage</b> <br>1. HoloToolKit (HTK)/Mixed Reality Toolkit (MRTK) vers MRTK version 2
 <br>2. HoloLens (1ère génération) vers HoloLens 2 (x86 vers ARM, recommandations relatives aux interactions et à la conception)
-</td></td><td>Mai 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide>Préparation d’une application existante pour HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>HoloToolKit to MRTK APIs</a></td>
+</td></td><td>Mai 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide>Préparation d’une application existante pour HoloLens 2</a><li><a href=/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide>HoloToolKit to MRTK APIs</a></td>
 </tr>
 <tr>
 <td>Modules développeur open source mensuels (tutoriels/exemples d’applications)</td><td>Juin 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1>Module d’apprentissage de base sur la réalité mixte</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-asa-ch1>Tutoriels Azure Spatial Anchors</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-speechsdk-ch1>Tutoriels sur les services de reconnaissance vocale Azure</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-sharing(photon)-ch1>Tutoriels sur les fonctionnalités multiutilisateurs</a></td>
 </tr>
 <tr>
-<td>MRTK pour HoloLens 2</td><td>2 octobre 2019</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>MRTK docs</a><li><a href=https://github.com/Microsoft/MixedRealityToolkit-Unity/releases>MRTK version 2.1.0</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-getting-started>Bien démarrer avec le MRTK v2</a></td>
+<td>MRTK pour HoloLens 2</td><td>2 octobre 2019</td><td> <ul><li><a href=/windows/mixed-reality/mrtk-unity>MRTK docs</a><li><a href=https://github.com/Microsoft/MixedRealityToolkit-Unity/releases>MRTK version 2.1.0</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-getting-started>Bien démarrer avec le MRTK v2</a></td>
 </tr>
 <tr>
 <td>Utilitaires d’application multi-utilisateur</td><td>2 octobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>SpectatorView pour les démonstrations</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>WebRTC optimisé pour HoloLens</a>></td>

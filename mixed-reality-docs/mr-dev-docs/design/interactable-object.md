@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Réalité mixte, contrôles, interaction, signaux, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, audio
-ms.openlocfilehash: 8a68006d68b985f8d26a3d1a11e4d52fcfb5acb5
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: b25c25a6dd48bcc85a556787099734d147d18df2
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600438"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110212"
 ---
 # <a name="interactable-object"></a>Objet avec interaction possible
 
@@ -135,7 +135,7 @@ Utilisez les commentaires visuels pour communiquer les États suivants :
 
 ---
 
-Un [bouton sur HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) est un exemple de la façon dont les différents États d’interaction d’entrée sont visualisés :
+Un [bouton sur HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) est un exemple de la façon dont les différents États d’interaction d’entrée sont visualisés :
 
 :::row:::
     :::column:::

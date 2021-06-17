@@ -8,12 +8,12 @@ ms.topic: article
 keywords: hologrammes, stabilité, hololens, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, fréquence d’images, rendu, reprojection, séparation des couleurs
 appliesto:
 - HoloLens
-ms.openlocfilehash: 064e42f771391e77874796e91ea8e4d563c08ec2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 560b1551b153f1735b0106869c6a82c977693968
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582883"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110106"
 ---
 # <a name="hologram-stability"></a>Stabilité des hologrammes
 
@@ -91,7 +91,7 @@ Il existe quatre types principaux de reprojection
 Les applications doivent prendre des mesures spécifiques pour activer les différents types de reprojection
 * **Reprojection de profondeur :** L’application soumet son tampon de profondeur au système pour chaque frame rendu.  Sur Unity, la reprojection de profondeur s’effectue à l’aide de l’option de **mémoire tampon de profondeur partagée** dans le volet **Windows Mixed Reality Settings** sous **gestion du plug-in XR**.  Les applications DirectX appellent CommitDirect3D11DepthBuffer.  L’application ne doit pas appeler SetFocusPoint.
 * **Reprojection planaire :** Sur chaque image, les applications indiquent au système l’emplacement d’un plan à stabiliser.  Les applications Unity appellent SetFocusPointForFrame et doivent avoir une **mémoire tampon de profondeur partagée** désactivée.  Les applications DirectX appellent SetFocusPoint et ne doivent pas appeler CommitDirect3D11DepthBuffer.
-* **Reprojection plan automatique :** Pour activer, l’application doit envoyer son tampon de profondeur au système comme pour la reprojection de profondeur. Les applications qui utilisent la boîte à outils de la réalité mixte (MRTK) peuvent configurer le [fournisseur de paramètres d’appareil photo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) pour qu’il utilise la reprojection autoplanaire. Les applications natives doivent définir le `DepthReprojectionMode` [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) sur `AutoPlanar` chaque frame. Pour la génération de HoloLens 1, l’application ne doit pas appeler SetFocusPoint.
+* **Reprojection plan automatique :** Pour activer, l’application doit envoyer son tampon de profondeur au système comme pour la reprojection de profondeur. Les applications qui utilisent la boîte à outils de la réalité mixte (MRTK) peuvent configurer le [fournisseur de paramètres d’appareil photo](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings#hololens-2-reprojection-method) pour qu’il utilise la reprojection autoplanaire. Les applications natives doivent définir le `DepthReprojectionMode` [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) sur `AutoPlanar` chaque frame. Pour la génération de HoloLens 1, l’application ne doit pas appeler SetFocusPoint.
 
 ### <a name="choosing-reprojection-technique"></a>Choix de la technique de reprojection
 
@@ -185,4 +185,4 @@ Comme précédemment, le rendu à 60 FPS et la définition du plan de stabilisat
 * [Comprendre les performances de la réalité mixte](understanding-performance-for-mixed-reality.md)
 * [Couleurs, éclairage et matériaux](../../design/color-light-and-materials.md)
 * [Interactions instinctuelles](../../design/interaction-fundamentals.md)
-* [Stabilisation de l’hologramme MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)
+* [Stabilisation de l’hologramme MRTK](/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization)
