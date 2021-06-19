@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: VR, LBE, divertissement basé sur l’emplacement, VR arcade, arcade, immersif, QR, code QR, hololens2
-ms.openlocfilehash: 2617d5f811b9d437ece0d5ba2e7dbc909eb16988
-ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
+ms.openlocfilehash: 9d3a5d9696fbf875b2e6a890ed837efc055a9e6e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103574945"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394333"
 ---
 # <a name="qr-code-tracking"></a>Suivi des codes QR
 
@@ -33,6 +33,12 @@ HoloLens 2 peut détecter les codes QR dans l’environnement situé autour du 
 ## <a name="getting-the-qr-package"></a>Obtention du package QR
 
 Vous pouvez télécharger le package NuGet pour la détection du code QR [ici](https://nuget.org/Packages/Microsoft.MixedReality.QR).
+
+## <a name="using-openxr"></a>Utilisation de OpenXR
+
+Lorsque vous utilisez le plug-in OpenXR, récupérez le [ `SpatialGraphNodeId` à partir de l’API QR](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference) et utilisez l' `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API pour localiser le code QR.
+
+Pour référence, nous disposons d’un [exemple de projet de suivi QR sur GitHub](https://github.com/yl-msft/QRTracking) avec davantage d’explications sur l’utilisation de l' [ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
 
 ## <a name="detecting-qr-codes"></a>Détection des codes QR
 

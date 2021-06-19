@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Unity, Visual Studio, débogage, il2cpp, HoloLens, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, UWP
-ms.openlocfilehash: 8e3967971220fa453f4e60639bd08f2554a8dd7e
-ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
+ms.openlocfilehash: 48f5fbd4b2ac217a3f840117595aa36fb3d7c10e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111547076"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394503"
 ---
 # <a name="managed-debugging-with-unity"></a>Débogage managé avec Unity
 
@@ -41,3 +41,7 @@ Procédez comme suit pour attacher un débogueur géré à votre Build IL2CPP Un
 10. Sélectionnez votre appareil dans la liste et cliquez sur OK pour l’attacher.
 
     ![Liste des appareils](images/il2cpp-debugging-machines.png)
+
+## <a name="see-also"></a>Voir aussi 
+
+* [Débogage C#](/visualstudio/get-started/csharp/tutorial-debugger)

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: contrôleurs de mouvement, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: ff1eedcc337edd2d7edfe8d961bb88bcb859cd23
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: d8f9ce292c0ab1cfa89faf58f0e5b90322192b35
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743482"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394513"
 ---
 # <a name="motion-controllers-in-unity"></a>Contrôleurs de mouvement dans Unity
 
@@ -101,6 +101,23 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 </tr>
 </table> -->
 
+### <a name="openxr"></a>OpenXR
+
+Pour connaître les principes de base des interactions de réalité mixte dans Unity, visitez le [Manuel Unity pour l’entrée Unity XR](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html). Cette documentation Unity couvre les mappages entre les entrées spécifiques au contrôleur et les **InputFeatureUsages** plus généralisables, la manière dont les entrées XR disponibles peuvent être identifiées et catégorisées, comment lire les données à partir de ces entrées, et bien plus encore.
+
+Le plug-in OpenXR de réalité mixte fournit des profils d’interaction d’entrée supplémentaires, mappés à des **InputFeatureUsage** standard, comme indiqué ci-dessous :
+
+| InputFeatureUsage | Contrôleur de réverbération HP G2 (OpenXR) | Manuel HoloLens (OpenXR) |
+| ---- | ---- | ---- |
+| primary2DAxis | Croix | |
+| primary2DAxisClick | Manette de jeu-clic | |
+| déclencheur | Déclencheur  | |
+| délicat | Délicat | Appuyez ou appuyez sur l’air |
+| primaryButton | [X/A]-Appuyez sur | Clic aérien |
+| secondaryButton | [Y/B]-Appuyez sur | |
+| gripButton | Appuyez sur la poignée | |
+| triggerButton | Déclencher-appuyer sur | |
+| menuButton | Menu | |
 
 ## <a name="grip-pose-vs-pointing-pose"></a>Poignée de pose et pose de pointage
 
@@ -130,6 +147,27 @@ Le pointeur fourni par le système est le mieux utilisé pour raycast lorsque vo
 
 Actuellement, le pointeur de pose est disponible dans Unity uniquement par le biais de l’API propre à Windows MR, *sourceState. sourcePose. TryGetPosition/rotation*, en passant *InteractionSourceNode. pointeur* comme argument.
 
+### <a name="openxr"></a>OpenXR 
+
+Vous avez accès à deux ensembles de poses via des interactions d’entrée OpenXR :
+
+* La poignée pose le rendu des objets de la main
+* L’objectif est de pointer dans le monde.
+
+Pour plus d’informations sur cette conception et les différences entre les deux poses, consultez la [spécification OpenXR-sous-chemins d’entrée](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-input).
+
+Les poses fournies par les InputFeatureUsages **DevicePosition**, **DeviceRotation**, **DeviceVelocity** et **DeviceAngularVelocity** représentent toutes la pose de la **poignée** OpenXR. Les InputFeatureUsages relatives aux poses de poignée sont définis dans les [CommonUsages](https://docs.unity3d.com/2020.2/Documentation/ScriptReference/XR.CommonUsages.html)d’Unity.
+
+Les poses fournies par les InputFeatureUsages **PointerPosition**, **PointerRotation**, **PointerVelocity** et **PointerAngularVelocity** représentent toutes **la pose du** OpenXR. Ces InputFeatureUsages ne sont pas définis dans les fichiers C# inclus. vous devez donc définir votre propre InputFeatureUsages comme suit :
+
+``` cs
+public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFeatureUsage<Vector3>("PointerPosition");
+```
+
+## <a name="haptics"></a>Haptique
+
+Pour plus d’informations sur l’utilisation des haptique dans le système d’entrée XR Unity, consultez le [Manuel Unity pour Unity XR Input-haptiques](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics).
+
 ## <a name="controller-tracking-state"></a>État du suivi du contrôleur
 
 À l’instar des casques, le contrôleur de mouvement Windows Mixed Reality ne nécessite pas de configuration de capteurs de suivi externe. Au lieu de cela, les contrôleurs sont suivis par des capteurs dans le casque lui-même.
@@ -152,9 +190,9 @@ Les applications qui souhaitent traiter différemment les positions en fonction 
 <tr>
 <th> État du suivi </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Précision approximative</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Approximatif </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>

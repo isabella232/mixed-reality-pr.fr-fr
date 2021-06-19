@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: port, Unity, inreal, middleware, Engine, UWP, Win32, Portage, HoloLens 1ère génération, casque de réalité mixte, casque Windows Mixed realisation, migration, Windows 10, mappage d’entrée,
-ms.openlocfilehash: dd09c6479bfcf3659b3e9355be898d77bccc6dc6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: bb76325c0a2d10150cff6604e29c7ead8a97df8e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580585"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394463"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portage d’applications VR sur Windows Mixed Reality
 
@@ -30,7 +30,7 @@ Windows 10 prend en charge les casques immersifs et holographiques. Si vous avez
 
 ### <a name="1-make-sure-you-have-the-right-development-hardware"></a>1. Assurez-vous de disposer du bon matériel de développement
 
-La page [installer les outils](../install-the-tools.md#immersive-vr-headset-requirements) répertorie le matériel de développement recommandé.
+La page du [Guide du passionné de VR](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) répertorie le matériel de développement recommandé.
 
 ### <a name="2-upgrade-to-the-latest-flight-of-windows-10"></a>2. effectuez une mise à niveau vers le dernier vol de Windows 10
 
