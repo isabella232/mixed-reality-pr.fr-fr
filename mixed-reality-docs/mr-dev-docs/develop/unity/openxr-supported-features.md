@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
-ms.openlocfilehash: e622cd617ccf67c0877b9064efe791743e4c34b6
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+ms.openlocfilehash: 371815d6410a7add8ee9c62f72d746d74ad397b0
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110333371"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392667"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>OpenXR en réalité mixte fonctionnalités prises en charge dans Unity
 
@@ -30,7 +30,7 @@ Les fonctionnalités suivantes sont actuellement prises en charge :
 * Interaction de regard sur HoloLens 2.
 * Recherche de l’appareil photo/vidéo (PV) sur HoloLens 2.
 * Capture de la réalité mixte à l’aide d’un rendu de 3e œil via l’appareil photo PV.
-* Prend en charge [la « lecture » dans HoloLens 2 avec l’application de communication à distance holographique](unity-play-mode.md#holographic-remoting-in-unity-editor-play-mode), ce qui permet aux développeurs de déboguer les scripts sans les générer et les déployer sur l’appareil.
+* Prend en charge [la « lecture » dans HoloLens 2 avec l’application de communication à distance holographique](unity-play-mode.md#unity-play-mode-with-holographic-remoting), ce qui permet aux développeurs de déboguer les scripts sans les générer et les déployer sur l’appareil.
 * Compatible avec MRTK Unity 2.5.3 et versions ultérieures via la [prise en charge des fournisseurs MRTK OpenXR](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatible avec Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) ou version ultérieure.
 * (Ajouté dans 0.1.3) Prend en charge la [communication à distance holographique des applications de bureau](holographic-remoting-desktop.md) à partir d’une application Windows autonome créée et déployée.

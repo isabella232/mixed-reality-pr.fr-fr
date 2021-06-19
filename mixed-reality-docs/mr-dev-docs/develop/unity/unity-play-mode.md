@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 05/21/2021
 ms.topic: article
 keywords: Unity, communication à distance, accès distant holographique, lecteur de communication à distance holographique, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, mode de lecture Unity
-ms.openlocfilehash: caa9d7bf11104ee168fda24fc369de490feb7817
-ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
+ms.openlocfilehash: b998233fda34beee0c98795a1efa2c86a53541ba
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111547097"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392289"
 ---
 # <a name="unity-play-mode"></a>Mode Lecture Unity
 
@@ -24,24 +24,6 @@ Un moyen rapide de travailler sur votre projet Unity consiste à utiliser le «�
     * V 2.4 ou version ultérieure est nécessaire pour fonctionner avec le plug-in OpenXR
 
     ![Capture d’écran du lecteur de communication à distance holographique s’exécutant dans HoloLens](images/openxr-features-img-01.png)
-
-## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Communication à distance holographique en mode de lecture de l’éditeur Unity
-
-La création d’un projet Unity UWP dans Visual Studio Project et son empaquetage et son déploiement sur un appareil HoloLens 2 peuvent prendre un certain temps. Une solution consiste à activer la fonctionnalité de communication à distance de l’éditeur holographique, qui vous permet de déboguer votre script C# en mode « lecture » directement sur un appareil HoloLens 2 sur votre réseau. Ce scénario évite la surcharge liée à la création et au déploiement d’un package UWP sur un appareil distant.
-
-1. Suivez les étapes de la configuration de la [communication à distance holographique](#holographic-remoting-setup)
-2. Ouvrez la communication à distance de l' **éditeur Windows > XR > OpenXR**:
-
-    ![Capture d’écran du panneau Paramètres du projet ouvert dans l’éditeur Unity avec la gestion du plug-in XR mise en surbrillance](images/openxr-features-img-02.png)
-
-3. Entrez l’adresse IP obtenue à partir de l’application de communication à distance holographique, puis sélectionnez **activer l’accès distant** de l’éditeur.
-
-    ![Capture d’écran du panneau Paramètres du projet ouvert dans l’éditeur Unity avec les fonctionnalités mises en surbrillance](images/openxr-features-img-03.png)
-
-Vous pouvez maintenant cliquer sur le bouton « lecture » pour lire votre application Unity dans l’application de communication à distance holographique sur votre HoloLens. Vous pouvez également [attacher Visual Studio à Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows) pour déboguer des scripts C# en mode lecture.
-
-> [!NOTE]
-> À partir de la version 0.1.0, le runtime de communication à distance holographique ne prend pas en charge les ancres, et les fonctionnalités ARAnchorManager ne fonctionnent pas via la communication à distance.  Cette fonctionnalité est disponible dans les versions ultérieures.
 
 ## <a name="unity-play-mode-with-holographic-remoting"></a>Mode de lecture Unity avec accès distant holographique
 

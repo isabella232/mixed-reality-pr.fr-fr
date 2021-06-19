@@ -7,11 +7,11 @@ ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, réalité mixte, MRTK, boîte à outils de réalité mixte, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main
 ms.openlocfilehash: ffec0cbe2ea9fd87cbb5f38010dad2d64e2e82ee
-ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112270434"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392677"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin"></a>Utilisation du plug-in OpenXR Mixed Reality
 
