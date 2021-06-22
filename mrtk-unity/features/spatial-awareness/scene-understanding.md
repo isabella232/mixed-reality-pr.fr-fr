@@ -5,12 +5,12 @@ author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, compréhension des scènes
-ms.openlocfilehash: 1ed6f93216fc90e7c6332f2b9c40911d25d96d2a
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 67a8b99a281b6deecd621edb5600578806812d8a
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743550"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449748"
 ---
 # <a name="scene-understanding"></a>Compréhension des scènes
 
@@ -69,7 +69,7 @@ La scène illustre les éléments suivants :
 ::: moniker range="= mrtkunity-2021-05"
 
 > [!NOTE] 
-> L’exemple de scène enregistre un `There is no active AsyncCoroutineRunner when an action is posted.` avertissement dans certaines circonstances en raison de l’ordre d’initialisation/de thread d’exécution. Si vous pouvez vérifier que le `AsyncCoroutineRunner` composant est attaché au gameobject « contrôleur de démonstration » et que le composant/gameobject reste activé/actif dans la scène (cas par défaut), l’avertissement peut être ignoré en toute sécurité.
+> L’exemple de scène enregistre un `There is no active AsyncCoroutineRunner when an action is posted.` avertissement dans certaines circonstances en raison de l’ordre d’initialisation/de thread d’exécution. Si vous pouvez vérifier que le `AsyncCoroutineRunner` composant est attaché au gameobject « contrôleur de démonstration » et que le composant/gameobject reste activé/actif dans la scène (cas par défaut), l’avertissement peut être ignoré en toute sécurité. **Toutefois, lors de la création d’une scène avec la compréhension de scène, veillez à créer un GameObject vide à la racine et à y attacher le `AsyncCoroutineRunner` script. sinon, la compréhension de la scène peut ne pas fonctionner correctement.**
 ::: moniker-end
 
 #### <a name="configuring-the-observer-service"></a>Configuration du service Observateur

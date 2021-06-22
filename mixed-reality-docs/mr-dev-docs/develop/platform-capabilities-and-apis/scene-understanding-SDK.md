@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity
-ms.openlocfilehash: 2f6e0c9d0370caed2b2bc01399b9e4fc00836556
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+ms.openlocfilehash: dee561e49a9457aa35c44037f4573caaefd00f2a
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644835"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449728"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Présentation du SDK présentation de Scene
 
@@ -43,7 +43,7 @@ Sur le côté gauche figure un diagramme du runtime de la réalité mixte, qui e
 
 Étant donné que chaque scène stocke ses données dans l’espace mémoire de votre application, vous pouvez supposer que toutes les fonctions de l’objet de la scène ou de ses données internes sont toujours exécutées dans le processus de votre application.
 
-### <a name="layout"></a>Disposition
+### <a name="layout"></a>Layout
 
 Pour travailler avec la compréhension des scènes, il peut être utile de savoir et de comprendre comment le runtime représente des composants logiquement et physiquement. La scène représente des données avec une disposition spécifique qui a été choisie comme simple tout en conservant une structure sous-jacente qui est pliable pour répondre aux exigences futures sans avoir besoin de révisions majeures. Pour ce faire, la scène stocke tous les composants (blocs de construction pour tous les objets de scène) dans une liste plate et définit la hiérarchie et la composition par le biais de références où des composants spécifiques référencent d’autres.
 
@@ -144,6 +144,9 @@ Un SceneQuad est un SceneComponent qui représente des surfaces 2D qui occupent 
 SceneQuads définit une surface rectangulaire délimitée en 2D. Toutefois, les SceneQuads représentent des surfaces avec des formes arbitraires et potentiellement complexes (par exemple, une table en forme de bouée). Pour représenter la forme complexe de la surface d’un quadruple, vous pouvez utiliser l’API GetSurfaceMask pour afficher la forme de la surface dans une mémoire tampon d’image que vous fournissez. Si le SceneObject qui a le quad a également une maille, les triangles de maillage doivent être équivalents à cette image rendue, ils représentent tous les deux une géométrie réelle de la surface, soit en coordonnées 2D, soit en coordonnées 3D.
 
 ## <a name="scene-understanding-sdk-details-and-reference"></a>Description et informations de référence du SDK
+
+> [!NOTE] 
+> Lorsque vous utilisez MRTK, Notez que vous interagissez avec MRTK [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) et que vous pouvez donc ignorer cette section dans la plupart des cas. Pour plus d’informations, reportez-vous à la [documentation de MRTK Scene](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding) .
 
 La section suivante vous aidera à vous familiariser avec les principes fondamentaux de SceneUnderstanding. Cette section doit vous fournir les principes de base, à partir desquels vous devez disposer d’un contexte suffisant pour parcourir les exemples d’applications et voir comment SceneUnderstanding est utilisé de manière holistique.
 

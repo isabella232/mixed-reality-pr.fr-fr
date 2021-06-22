@@ -1,18 +1,18 @@
 ---
-title: Oculus Quest dans MRTK
+title: Génération et déploiement sur Oculus Quest
 description: Documentation à configurer pour Oculus Quest dans MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Oculus Quest,
-ms.openlocfilehash: 6b9c3a8f51388785f685714ef02be680bb98e14c
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Oculus Quest
+ms.openlocfilehash: 96b4b5b8a68c3b61d54b6796ba01c9e2516ba959
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908389"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449758"
 ---
-# <a name="building-and-deploying-mrtk-to-oculus-quest-using-the-xr-sdk-pipeline"></a>Génération et déploiement de MRTK sur Oculus Quest à l’aide du pipeline du kit de développement logiciel (SDK) XR
+# <a name="building-and-deploying-to-oculus-quest-using-the-xr-sdk-pipeline"></a>Génération et déploiement sur Oculus Quest à l’aide du pipeline du kit de développement logiciel (SDK) XR
 
 Une [quête Oculus](https://www.oculus.com/quest/) est requise.
 
