@@ -1,16 +1,16 @@
 ---
 title: Notes de publication de MRTK 2,6
-description: Notes de publication de la version MRTK 2,6
+description: Notes de publication pour MRTK version 2,6
 author: polar-kev
 ms.author: kesemple
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 4ac82f7e07135e840886fef810844ff00ef1ac1e
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK,
+ms.openlocfilehash: c172e5d071bba22626e9c35b2b4318f1ff779335
+ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647190"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112562509"
 ---
 # <a name="microsoft-mixed-reality-toolkit-26-release-notes"></a>Notes de publication de Microsoft Mixed Reality Toolkit 2,6
 
@@ -40,6 +40,7 @@ Met à jour l’exemple de scène de compréhension de scène pour refléter cor
 Met à jour la scène de l’exemple de boîte de dialogue pour décrire correctement les scénarios de dialogue en cours.
 
 ## <a name="whats-new-in-260"></a>Nouveautés de 2.6.0
+
 <iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
@@ -66,7 +67,7 @@ L’élément interactif est un point d’entrée centralisé simplifié dans le
 
 ![InteractiveElementAddCoreState](../features/images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
 
-Le visualiseur d’État est un composant d’animation qui dépend d’un élément interactif.  Ce composant crée des clips d’animation, définit les images clés et génère une machine à États d’animation. Pour plus d’informations, consultez [la documentation relative au visualiseur d’État](../features/experimental/interactive-element.md#state-visualizer-experimental)
+Le visualiseur d’État est un composant d’animation qui dépend d’un élément interactif. Ce composant crée des clips d’animation, définit les images clés et génère une machine à États d’animation. Pour plus d’informations, consultez [la documentation relative au visualiseur d’État](../features/experimental/interactive-element.md#state-visualizer-experimental)
 
 ![StateVisualizerColorChangeOnFocus](../features/images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
@@ -74,7 +75,7 @@ Le visualiseur d’État est un composant d’animation qui dépend d’un élé
 
 Les utilisateurs peuvent désormais utiliser le geste de télédiffusion pour se déplacer dans leur espace de lecture sur toutes les plateformes. Pour vous téléporter avec un contrôleur sur des appareils MR avec des configurations par défaut, utilisez le stick analogique. Pour vous téléporter avec des mains articulées, rendez un geste avec votre paume face à l’index et faites-le pointer vers l’extérieur, en effectuant la télétentative en faisant évoluer le doigt de l’index. Pour vous téléporter avec la simulation d’entrée, consultez notre documentation sur le [service de simulation d’entrée](../features/input-simulation/input-simulation-service.md)mis à jour.
 
-  ![Geste de](../features/images/teleport/handteleport.gif)
+![Geste de](../features/images/teleport/handteleport.gif)
 
 ### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>Compréhension de scène désormais disponible dans MRTK comme observateur expérimental de sensibilisation spatiale
 
@@ -86,7 +87,7 @@ La prise en charge expérimentale de la [compréhension des scènes](/windows/mi
 > Cette fonctionnalité nécessite le package de compréhension de scène, qui est désormais disponible via l’outil de la [fonctionnalité de réalité mixte](https://aka.ms/MRFeatureTool).
 > Lors de l’utilisation de l’outil de fonctionnalité de réalité mixte ou de l’importation via UPM, importez l’exemple de démonstrations-SpatialAwareness avant d’importer l’exemple expérimental-SceneUnderstanding en raison d’un problème de dépendance. Pour plus d’informations, consultez [ce problème GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) .
 
-  ![Compréhension des scènes](images/SceneUnderstanding.gif)
+![Compréhension des scènes](images/SceneUnderstanding.gif)
 
 ### <a name="runtime-profile-switching-support"></a>Prise en charge du changement de profil d’exécution
 
@@ -96,18 +97,19 @@ MRTK permet maintenant le basculement de profil avant l’initialisation de l’
 
 Deux nouveaux solveurs sont prêts à être utilisés avec la MRTK principale.
 
-  ![Solveur d’indicateur directionnel](images/DirectionalIndicatorExampleScene.gif)
+![Solveur d’indicateur directionnel](images/DirectionalIndicatorExampleScene.gif)
 
 ### <a name="hand-coach-graduated-from-experimental"></a>Autocar en mains progressif d’expérimentation
 
 La fonctionnalité de autocar à main est maintenant prête à être utilisée avec la MRTK principale.
-  ![Exemple de autocar](/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+![Exemple de autocar](/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
 ### <a name="dialog-controls-graduated-from-experimental"></a>Contrôles de boîte de dialogue gradués de l’expérimentation
 
 Les contrôles de boîte de dialogue sont désormais prêts à être utilisés avec la MRTK principale.
 
-  ![Contrôles de boîte de dialogue](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
+![Contrôles de boîte de dialogue](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
 
 ### <a name="pulse-shader-graduated-from-experimental"></a>Nuanceur d’impulsions gradué de l’expérimentation
 
@@ -123,13 +125,13 @@ Les scripts du nuanceur d’impulsions ont été dégradés par expérimentation
 
 Ajout de la prise en charge du [mode lecture](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) sur HoloLens 2. Le mode de lecture réduit le champ de vue du système, mais élimine la mise à l’échelle de la sortie d’Unity. Un pixel rendu par Unity correspond à un pixel projeté sur HoloLens 2. Les auteurs d’applications doivent effectuer des tests avec plusieurs personnes pour s’assurer qu’il s’agit d’un compromis qu’ils souhaitent dans leur application.
 
-  ![Mode de lecture Windows Mixed Reality](images/WMRReadingMode.gif)
+![Mode de lecture Windows Mixed Reality](images/WMRReadingMode.gif)
 
 ### <a name="support-for-3d-app-launchers-on-uwp"></a>Prise en charge des lanceurs d’applications en 3D sur UWP
 
 Ajoute la possibilité de définir un [lanceur d’applications 3D](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) pour UWP. Ce paramètre est exposé à la fois dans la fenêtre de génération MRTK et dans les paramètres du projet MRTK, sous paramètres de Build. Il est automatiquement écrit dans le projet pendant la génération dans Unity.
 
-  ![Paramètres de build](images/ProjectBuildSettings.png)
+![Paramètres de build](images/ProjectBuildSettings.png)
 
 ## <a name="breaking-changes"></a>Changements cassants
 
@@ -150,7 +152,7 @@ La prise en charge de MSBuild pour Unity a été supprimée à partir de la vers
 ### <a name="openxr"></a>OpenXR
 
 Il existe actuellement un problème connu avec la communication à distance holographique et OpenXR, où les jointures manuelles ne sont pas constamment disponibles.
-En outre, les scènes des exemples de suivi oculaire ne sont pas compatibles actuellement, bien que le suivi *visuel fonctionne.*
+En outre, les scènes des exemples de suivi oculaire ne sont pas compatibles actuellement, bien que le suivi _visuel fonctionne._
 
 ### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>Certaines fonctionnalités de nuanceur standard de la boîte à outils de la réalité mixte nécessitent le package de base
 
@@ -189,7 +191,7 @@ Cette erreur est due au fait que le profil de configuration du service de transi
 
 ### <a name="oculus-quest"></a>Oculus Quest
 
-Il existe actuellement un problème connu lié à l’utilisation du [plug-in Oculus XR avec pour cibler des plateformes autonomes](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/).  Consultez le suivi des bogues/forums/notes de publication Oculus pour les mises à jour.
+Il existe actuellement un problème connu lié à l’utilisation du [plug-in Oculus XR avec pour cibler des plateformes autonomes](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/). Consultez le suivi des bogues/forums/notes de publication Oculus pour les mises à jour.
 
 Le bogue est signalé par cet ensemble de 3 erreurs :
 
