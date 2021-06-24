@@ -5,14 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 81e7dcab7e0f349d05521f93d75bba6927761fd1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 5420f3f2d20d07585007a58f5cf70d8e2027efc6
+ms.sourcegitcommit: c08997a75acfe4ac1d044c0fb9112e6817eb3d45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145089"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112588848"
 ---
 # <a name="input-simulation-service"></a>Service de simulation d’entrée
+
+![Simulation d’entrée MRTK](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
+
+Avec la simulation d’entrée de MRTK, vous pouvez tester divers types d’interactions dans l’éditeur Unity sans générer et déployer sur un appareil. Cela vous permet d’itérer rapidement vos idées dans le processus de conception et de développement. Utilisez les combinaisons clavier et souris pour contrôler les entrées simulées.
 
 Le service de simulation d’entrée émule le comportement des appareils et des plateformes qui peuvent ne pas être disponibles dans l’éditeur Unity. Voici quelques exemples :
 
@@ -22,14 +26,29 @@ Le service de simulation d’entrée émule le comportement des appareils et des
 * Suivi oculaire HoloLens 2
 * Contrôleurs de périphérique VR
 
-Les utilisateurs peuvent utiliser une combinaison de clavier et de souris conventionnels pour contrôler les appareils simulés au moment de l’exécution. Cette approche permet de tester les interactions dans l’éditeur Unity sans déployer au préalable sur un appareil.
-
 > [!WARNING]
 > Cela ne fonctionne pas lors de l’utilisation de l’émulation holographique XR de Unity > de l’émulation mode = « simuler dans l’éditeur ». La simulation in-Editor de Unity prend le contrôle à la suite de la simulation d’entrée de MRTK. Pour utiliser le service de simulation d’entrée MRTK, vous devez définir l’émulation holographique XR sur émulation mode = *"none"*
 
-## <a name="enabling-the-input-simulation-service"></a>Activation du service de simulation d’entrée
+## <a name="how-to-use-mrtk-input-simulation"></a>Utilisation de la simulation d’entrée MRTK 
 
-La simulation d’entrée est activée par défaut dans les profils fournis avec MRTK.
+La simulation d’entrée est activée par défaut dans les profils fournis avec MRTK. Vous pouvez simplement cliquer sur le bouton de **lecture** pour exécuter la scène avec la prise en charge de la simulation d’entrée.
+
+* Appuyez sur les touches **W, A, S, D, Q, E** pour déplacer l’appareil photo.
+* Maintenez le **bouton droit** de la souris et déplacez la souris pour regarder.
+* Pour afficher les mains simulées, appuyez sur la **barre d’espace (à droite)** ou sur la **touche Maj de gauche (gauche)**
+* Pour conserver les mains simulées dans la vue, appuyez sur la touche **T** ou **Y**
+* Pour faire pivoter des mains simulées, maintenez la **touche Ctrl** enfoncée et déplacez la souris
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OYrm]
+
+## <a name="in-editor-input-simulation-cheat-sheet"></a>Aide-mémoire de simulation d’entrée de l’éditeur
+
+Appuyez sur **Ctrl + H gauche** dans la scène HandInteractionExamples pour afficher une aide-mémoire avec les contrôles de simulation d’entrée.
+
+> ![Aide-mémoire pour la simulation d’entrée MRTK](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
+
+
+## <a name="enabling-the-input-simulation-service"></a>Activation du service de simulation d’entrée
 
 Dans le cadre de la configuration du fournisseur de données de système d’entrée, le service de simulation d’entrée peut être configuré comme suit.
 
@@ -38,31 +57,7 @@ Dans le cadre de la configuration du fournisseur de données de système d’ent
 
 > [!NOTE]
 > Le service de simulation d’entrée peut être utilisé sur d’autres points de terminaison de plateforme tels que standalone en modifiant la propriété **plateformes prises en charge** pour inclure les cibles souhaitées.
-> ![Plateformes d’entrée prises en charge](../images/input-simulation/InputSimulationSupportedPlatforms.gif)
-
-## <a name="input-simulation-tools-window"></a>Fenêtre outils de simulation d’entrée
-
-Activez la fenêtre outils de simulation d’entrée à partir du  >    >  menu **simulation d’entrée** des utilitaires de la boîte à outils de la réalité mixte. Cette fenêtre permet d’accéder à l’état de la simulation d’entrée en mode lecture.
-
-## <a name="viewport-buttons"></a>Boutons de la fenêtre d’affichage
-
-Un Prefab pour les boutons de l’éditeur pour contrôler le placement de base peut être spécifié dans le profil de simulation d’entrée sous **indicateurs Prefab**. Il s’agit d’un utilitaire facultatif qui permet d’accéder aux mêmes fonctionnalités dans la [fenêtre outils de simulation d’entrée](#input-simulation-tools-window).
-
-> [!NOTE]
-> Les indicateurs de la fenêtre d’affichage sont désactivés par défaut, car ils peuvent parfois interférer avec les interactions de l’interface utilisateur Unity. Consultez [#6106](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6106)de problèmes. Pour activer, ajoutez le Prefab InputSimulationIndicators à **indicateurs Prefab**.
-
-Les icônes de main affichent l’état des mains simulées :
-
-* ![Icône de main non suivie](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) La main n’effectue pas de suivi. Cliquez pour activer la main.
-* ![Icône de main](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "Icône de main") La main est suivie, mais n’est pas contrôlée par l’utilisateur. Cliquez pour masquer la main.
-* ![Icône de main contrôlée](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Icône de main contrôlée") La main est suivie et contrôlée par l’utilisateur. Cliquez pour masquer la main.
-* ![Icône réinitialiser la main](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "Icône réinitialiser la main") Cliquez pour rétablir la position par défaut de la main.
-
-## <a name="in-editor-input-simulation-cheat-sheet"></a>Aide-mémoire de simulation d’entrée de l’éditeur
-
-Appuyez sur Ctrl + H gauche dans la scène HandInteractionExamples pour afficher une aide-mémoire avec les contrôles de simulation d’entrée.
-
-![Aide-mémoire pour la simulation d’entrée](https://user-images.githubusercontent.com/39840334/86066480-13637f00-ba27-11ea-8814-d222d548f684.gif)
+> <br/><img src="../images/input-simulation/InputSimulationSupportedPlatforms.gif" alt="Input Simulation Supported Platforms" width="550px">
 
 ## <a name="camera-control"></a>Contrôle Camera
 
@@ -208,6 +203,25 @@ Les contrôleurs de mouvement simulés peuvent être manipulés de la même faç
 ### <a name="eye-tracking"></a>Eye-tracking
 
 Vous pouvez activer la [simulation du suivi des yeux](../input/eye-tracking/eye-tracking-basic-setup.md#simulating-eye-tracking-in-the-unity-editor) en activant l’option **simuler la position des yeux** dans le profil de [simulation d’entrée](#enabling-the-input-simulation-service). Cela ne doit pas être utilisé avec les interactions de style de contrôleur de mouvement ou GGV (Vérifiez que le **mode de simulation du contrôleur par défaut** est défini sur *main*).
+
+## <a name="input-simulation-tools-window"></a>Fenêtre outils de simulation d’entrée
+
+Activez la fenêtre outils de simulation d’entrée à partir du  >    >    >  menu **simulation d’entrée** des utilitaires de la boîte à outils de la réalité mixte. Cette fenêtre permet d’accéder à l’état de la simulation d’entrée en mode lecture.
+
+## <a name="viewport-buttons-optional"></a>Boutons de la fenêtre d’affichage (facultatif)
+
+Un Prefab pour les boutons de l’éditeur pour contrôler le placement de base peut être spécifié dans le profil de simulation d’entrée sous **indicateurs Prefab**. Il s’agit d’un utilitaire facultatif qui permet d’accéder aux mêmes fonctionnalités dans la [fenêtre outils de simulation d’entrée](#input-simulation-tools-window).
+
+> [!NOTE]
+> Les indicateurs de la fenêtre d’affichage sont désactivés par défaut, car ils peuvent parfois interférer avec les interactions de l’interface utilisateur Unity. Consultez [#6106](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6106)de problèmes. Pour activer, ajoutez le Prefab InputSimulationIndicators à **indicateurs Prefab**.
+
+Les icônes de main affichent l’état des mains simulées :
+
+* ![Icône de main non suivie](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) La main n’effectue pas de suivi. Cliquez pour activer la main.
+* ![Icône de main](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "Icône de main") La main est suivie, mais n’est pas contrôlée par l’utilisateur. Cliquez pour masquer la main.
+* ![Icône de main contrôlée](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Icône de main contrôlée") La main est suivie et contrôlée par l’utilisateur. Cliquez pour masquer la main.
+* ![Icône réinitialiser la main](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "Icône réinitialiser la main") Cliquez pour rétablir la position par défaut de la main.
+
 
 ## <a name="see-also"></a>Voir aussi
 

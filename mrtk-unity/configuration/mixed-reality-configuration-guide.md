@@ -5,16 +5,14 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK,
-ms.openlocfilehash: b714e01a0969b88a4ca7a3a5047bc5d61516e3f3
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: a8aca05b4a4bc154061d6f7594e5128ab91d5f0e
+ms.sourcegitcommit: c08997a75acfe4ac1d044c0fb9112e6817eb3d45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345142"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112588863"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>Guide de configuration du profil du Toolkit de réalité mixte
-
-![Logo MRTK](../features/images/MRTK_Logo_Rev.png)
 
 La boîte à outils de réalité mixte centralise la plus grande partie de la configuration requise pour gérer le kit de tâches (à l’exception des « choses » du véritable Runtime).
 
