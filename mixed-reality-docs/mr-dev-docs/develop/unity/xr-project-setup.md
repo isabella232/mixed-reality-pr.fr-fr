@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 04/22/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-Unity, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, Unity
-ms.openlocfilehash: df7c5039c6cdcfa1e39dc96f0829611dd5209772
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: d265725caf95379dfa01baa6dad1b7927fbeca5c
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394563"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906938"
 ---
 # <a name="setting-up-your-xr-configuration"></a>Configuration de votre configuration XR
 
@@ -27,7 +27,7 @@ Lorsque vous démarrez un nouveau projet Unity, vous disposez de trois options d
 MRTK pour Unity fournit un système d’entrée multiplateforme, des composants fondamentaux et des modules courants pour les interactions spatiales. MRTK version 2 vise à accélérer le développement des applications qui ciblent Microsoft HoloLens, les casques immersifs Windows Mixed Reality (VR) et la plateforme OpenVR. Le projet a pour but de réduire le nombre d’obstacles qui gênent la création d’applications de réalité mixte et d’apporter une contribution à la Communauté de la réalité mixte.
 
 > [!div class="nextstepaction"]
-> [Essayer nos tutoriels MRTK](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=winxr)
+> [Essayer nos tutoriels MRTK](./tutorials/mr-learning-base-02.md?tabs=winxr)
 
 Pour plus d’informations sur les fonctionnalités, consultez la [documentation de MRTK](/windows/mixed-reality/mrtk-unity).
 

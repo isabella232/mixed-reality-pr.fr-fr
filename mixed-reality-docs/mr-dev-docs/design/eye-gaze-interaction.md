@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de présence oculaire, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de la réalité mixte, conception, interactions
-ms.openlocfilehash: 207f8d0f179f722a2e4dd6d6e2bdd9cbf75b2250
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 3067f5533dbe70d4decb6b5cf94a3f1c5029115a
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196574"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906865"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interaction Eye-orientée vers le regard de HoloLens 2
 
@@ -123,13 +123,13 @@ Avec les curseurs, cela peut entraîner un effet « curseur Fleeing » en rais
   
 <br>
 
-Cette page vous a fourni une bonne présentation pour vous aider à comprendre les regards oculaires en tant qu’entrée dans la réalité mixte. Pour commencer à développer, consultez les informations sur les [yeux](https://aka.ms/mrtk-eyes) et les [yeux dans DirectX](../develop/native/gaze-in-directx.md).
+Cette page vous a fourni une bonne présentation pour vous aider à comprendre les regards oculaires en tant qu’entrée dans la réalité mixte. Pour commencer à développer, consultez les informations sur les [yeux](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) et les [yeux dans DirectX](../develop/native/gaze-in-directx.md).
 
 
 ## <a name="see-also"></a>Voir aussi
 * [Confort](comfort.md)
 * [Œil-point de regard sur DirectX](../develop/native/gaze-in-directx.md)
-* [Œil-point d’interfaut](https://aka.ms/mrtk-eyes)
+* [Œil-point d’interfaut](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [Suivi oculaire sur HoloLens 2](eye-tracking.md)
 * [Pointer et valider](gaze-and-commit.md)
 * [Pointer du regard et fixer](gaze-and-dwell.md)

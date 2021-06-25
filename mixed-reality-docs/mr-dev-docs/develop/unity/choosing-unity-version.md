@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/18/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-Unity, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, Unity
-ms.openlocfilehash: 452692b1be98459cc242833149b1cfd91f0f4d4a
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: f37dbdccf175a5cea9a647f0c14b90682b19dfb3
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394412"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906854"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>Choix d’une version Unity et d’un plug-in XR
 
@@ -41,7 +41,7 @@ La meilleure façon d’installer et de gérer Unity consiste à utiliser <a hre
 Pour vous familiariser avec les XR intégrées héritées dans Unity 2019,4 LTS, cliquez ici :
 
 > [!div class="nextstepaction"]
-> [Configurer des XR intégrées héritées](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=legacy)
+> [Configurer des XR intégrées héritées](./xr-project-setup.md?tabs=legacy)
 
 > [!NOTE]
 > Unity a déconseillé sa prise en charge XR intégrée existante à partir de Unity 2019.  Alors que Unity 2019 offre une nouvelle infrastructure de plug-in XR, Microsoft ne recommande pas actuellement ce chemin dans Unity 2019 en raison d’incompatibilités entre les ancres spatiales Azure et de la version 2 de la base de connaissances.  Dans Unity 2020, les ancres spatiales Azure sont prises en charge dans l’infrastructure de plug-in XR.
@@ -61,7 +61,7 @@ Toutefois, il existe des problèmes connus qui affectent les projets LTS Unity 2
 Si vous choisissez de démarrer un nouveau projet dans Unity 2020 aujourd’hui, veillez à suivre les semaines à venir pour les builds Unity et les packages URP mis à jour avant d’expédier votre application.  Cela permet de s’assurer que vos utilisateurs connaissent une stabilité d’hologramme appropriée.
 
 > [!div class="nextstepaction"]
-> [Utilisation du plug-in OpenXR](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr)
+> [Utilisation du plug-in OpenXR](./xr-project-setup.md?tabs=openxr)
 
 ## <a name="unity-20211"></a>Unity 2021,1
 

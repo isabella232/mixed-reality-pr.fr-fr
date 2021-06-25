@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, réalité mixte, développement, prise en main, nouveau projet, Windows Mixed Reality, UWP, XR, performances
-ms.openlocfilehash: c496dc415ff09eea3015b5195e131554c43a98f1
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 12c3272708c6375b550d87eac86fe13a60c1f36d
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110251"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906885"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Configuration de votre projet sans MRTK
 
@@ -58,10 +58,10 @@ Après avoir défini votre plateforme, vous devez permettre à Unity de créer u
 
 4. Développez la section **gestion du plug-in XR** et sélectionnez universels onglet Paramètres de la **plateforme Windows** .
 5. Si vous utilisez Unity 2020 ou une version ultérieure, vous verrez les options permettant de vérifier **OpenXR** ou **Windows Mixed Reality**. 
-    * Vous pouvez choisir l’un ou l’autre Runtime.  Si vous développez spécifiquement pour HoloLens 2 ou la réverbération HP G2 et que vous décidez d’essayer le **OpenXR**, sélectionnez la zone OpenXR et passez en revue notre guide pour [utiliser le plug-in OpenXR de réalité mixte pour Unity](openxr-getting-started.md) afin de vous préparer correctement pour ces appareils avant de revenir à ce didacticiel.
+    * Vous pouvez choisir l’un ou l’autre Runtime.  Si vous développez spécifiquement pour HoloLens 2 ou la réverbération HP G2 et que vous décidez d’essayer le **OpenXR**, sélectionnez la zone OpenXR et passez en revue notre guide pour [utiliser le plug-in OpenXR de réalité mixte pour Unity](./xr-project-setup.md) afin de vous préparer correctement pour ces appareils avant de revenir à ce didacticiel.
 
 > [!NOTE]
-> À partir de Unity 2020 LTS, Microsoft adopte le développement avec OpenXR.  À mesure que nous migrons vers ce chemin, dans Unity 2021,1, le plug-in Windows XR sera déconseillé et supprimé dans 2021,2, OpenXR le seul chemin pris en charge. Vous trouverez plus d’informations dans [utilisation du plug-in OpenXR de la réalité mixte](openxr-getting-started.md).
+> À partir de Unity 2020 LTS, Microsoft adopte le développement avec OpenXR.  À mesure que nous migrons vers ce chemin, dans Unity 2021,1, le plug-in Windows XR sera déconseillé et supprimé dans 2021,2, OpenXR le seul chemin pris en charge. Vous trouverez plus d’informations dans [utilisation du plug-in OpenXR de la réalité mixte](./xr-project-setup.md).
 
 6. Si vous décidez de choisir le plug-in **Windows Mixed Reality** , cochez toutes les cases et définissez le **mode d’envoi de profondeur** sur une profondeur de **16 bits**
 

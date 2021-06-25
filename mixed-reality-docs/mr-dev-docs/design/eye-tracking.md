@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Suivi oculaire, réalité mixte, entrée, point de regard, étalonnage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, intention, actions
-ms.openlocfilehash: 4dac059f72dd043802286081a54137c392c1e912
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 6bcd64a0ecc6e5c92966569d0675703afde5cbd5
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110113"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906846"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Eye-tracking sur HoloLens 2
 
@@ -74,7 +74,7 @@ Pour en savoir plus sur l’étalonnage et sur la façon de garantir une expéri
 ## <a name="available-eye-tracking-data"></a>Données de suivi oculaire disponibles
 
 Avant de passer en revue les cas d’utilisation spécifiques pour les entrées de regard oculaire, nous souhaitons rapidement souligner les fonctionnalités fournies par l' [API de suivi oculaire](/uwp/api/windows.perception.people.eyespose) HoloLens 2. Les développeurs accèdent à un seul point d’accès en regard (origine du regard et direction) à environ _30 i/s (30 Hz)_.
-Pour plus d’informations sur la façon d’accéder aux données de suivi oculaire, reportez-vous à nos guides pour les développeurs sur l’utilisation des [yeux dans DirectX](../develop/native/gaze-in-directx.md) et [Eye-pointer sur Unity](https://aka.ms/mrtk-eyes).
+Pour plus d’informations sur la façon d’accéder aux données de suivi oculaire, reportez-vous à nos guides pour les développeurs sur l’utilisation des [yeux dans DirectX](../develop/native/gaze-in-directx.md) et [Eye-pointer sur Unity](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main).
 
 Le point de regard prédit est approximativement de 1,5 degrés d’angle visuel autour de la cible réelle (Voir l’illustration ci-dessous). Les développeurs doivent prévoir une marge autour de cette valeur de limite inférieure (par exemple, 2.0-3 degrés peut se traduire par une expérience bien plus confortable). Nous verrons comment aborder la sélection de petites cibles plus en détail ci-dessous. Pour que l’eye-tracking fonctionne avec précision, chaque utilisateur doit effectuer un étalonnage. 
 
@@ -169,7 +169,7 @@ Là encore, nous vous recommandons de communiquer clairement à l’utilisateur 
 
 <br>
 
-Cette page vous a espérons vous fournir une bonne vue d’ensemble pour vous aider à comprendre le rôle du suivi oculaire et l’entrée de regard pour HoloLens 2. Pour commencer à développer, consultez nos informations sur le rôle de l' [oeil pour l’interaction avec les hologrammes](eye-gaze-interaction.md), le [point de regard sur Unity](https://aka.ms/mrtk-eyes) et les [yeux dans DirectX](../develop/native/gaze-in-directx.md).
+Cette page vous a espérons vous fournir une bonne vue d’ensemble pour vous aider à comprendre le rôle du suivi oculaire et l’entrée de regard pour HoloLens 2. Pour commencer à développer, consultez nos informations sur le rôle de l' [oeil pour l’interaction avec les hologrammes](eye-gaze-interaction.md), le [point de regard sur Unity](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) et les [yeux dans DirectX](../develop/native/gaze-in-directx.md).
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -177,6 +177,6 @@ Cette page vous a espérons vous fournir une bonne vue d’ensemble pour vous ai
 * [Confort](comfort.md)
 * [Interaction par pointage du regard](eye-gaze-interaction.md)
 * [Œil-point de regard sur DirectX](../develop/native/gaze-in-directx.md)
-* [Œil-point d’interfaut](https://aka.ms/mrtk-eyes)
+* [Œil-point d’interfaut](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [Pointer et valider](gaze-and-commit.md)
 * [Entrée vocale](../out-of-scope/voice-design.md)
