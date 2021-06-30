@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/24/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-Unity, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, Unity
-ms.openlocfilehash: 646a0ec3b3b332b038509cba39caa085c1590c1a
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: 11f930f014ff579db1f8845d52b7a2d65dd85d6b
+ms.sourcegitcommit: 4ea9ba1ca1cde426b016111c4176a4b0a9c17553
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112921422"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113080696"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>Choix d’une version Unity et d’un plug-in XR
 
@@ -25,12 +25,9 @@ La configuration d’Unity recommandée de Microsoft pour le développement Holo
 > Unity 2020 ne prend pas en charge le ciblage HoloLens (1re génération). Ces casques restent pris en charge dans **[unity 2019 LTS](#unity-20194-lts)** avec des XR intégrés hérités pour le cycle de vie complet de unity 2019 LTS à mi-2022.
 >
 > [!NOTE]
-> Certains packages ne sont pas encore compatibles avec les projets de réalité mixte dans Unity 2020 LTS :
-> 
-> * Le pipeline de rendu universel (URP) 10.5.0 ou antérieur présente un problème de performance connu sur les appareils HoloLens 2. _(résolu dans la prochaine version de URP)_
-> * Le rendu à distance Azure n’a pas encore fourni une version mise à jour prenant en charge Unity 2020.
+> Le rendu à distance Azure n’a pas encore fourni une version mise à jour prenant en charge Unity 2020.
 >
-> Si votre projet Unity utilise le pipeline de rendu universel ou le rendu distant Azure, nous vous recommandons de ne pas mettre à niveau votre projet vers Unity 2020 jusqu’à ce que les packages mis à jour soient disponibles.
+> Si votre projet Unity utilise le rendu distant Azure, nous vous recommandons de ne pas mettre à niveau votre projet vers Unity 2020 jusqu’à ce qu’un package mis à jour soit disponible.
 
 <a href="https://unity3d.com/get-unity/download" target="_blank">Unity Hub</a> est le meilleur moyen d’installer et de gérer Unity. Une fois l’installation terminée, ouvrez Unity Hub :
 
