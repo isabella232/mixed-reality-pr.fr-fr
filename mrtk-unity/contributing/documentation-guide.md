@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: cc5572e65540fa40cb1b8db56afbdd0986c467b9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 37233141bd43f27db47935574bac7630b8bea8d7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144796"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121387"
 ---
 # <a name="documentation-guidelines"></a>Instructions de documentation
 
@@ -275,7 +275,7 @@ Lors de la définition et de l’énumération, le code doit également document
 /// </remarks>
 ```
 
-## <a name="how-to-documentation"></a>Documentation de procédure
+## <a name="how-to-documentation"></a>Documentation de procédures
 
 De nombreux utilisateurs du kit d’outils de réalité mixte n’ont peut-être pas besoin d’utiliser la documentation de l’API. Ces utilisateurs tirent parti de nos prefabs et scripts prédéfinis et réutilisables pour créer leurs expériences.
 

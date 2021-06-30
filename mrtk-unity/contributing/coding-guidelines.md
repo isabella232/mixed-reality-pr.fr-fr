@@ -1,16 +1,16 @@
 ---
-title: Directives de codage
-description: principes et conventions de codage à suivre lors de la contribution à MRTK.
+title: Recommandations en matière de codage
+description: Principes et conventions de codage à suivre lors de la contribution à MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, C#,
-ms.openlocfilehash: 8887e248bd550bdd7a59f19c16df1ec3647ceff7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145245"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121437"
 ---
 # <a name="coding-guidelines"></a>Recommandations en matière de codage
 

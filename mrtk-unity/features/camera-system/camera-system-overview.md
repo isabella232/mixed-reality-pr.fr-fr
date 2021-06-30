@@ -1,16 +1,16 @@
 ---
-title: Vue d’ensemble du système de caméras
+title: Vue d’ensemble du système d’appareil photo
 description: Page d’accueil du système d’appareil photo dans MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, appareil photo,
-ms.openlocfilehash: 1dc5328f2a6390246918063b6564837f150d28d8
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: e3b7caacaa9baa67fd81f6d32f3fd8c9f123e66d
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144475"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121287"
 ---
 # <a name="camera-system"></a>Système de caméra
 

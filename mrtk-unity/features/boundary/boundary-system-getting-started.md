@@ -1,16 +1,16 @@
 ---
-title: Système de limites - Bien démarrer
+title: Vue d’ensemble du système de limites
 description: Page d’accueil du système de limites dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de limite,
-ms.openlocfilehash: 2858b770fb49a44d1e2d704e8d3a81affe74d272
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144735"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121357"
 ---
 # <a name="boundary-system"></a>Système de limites
 
