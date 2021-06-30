@@ -1,18 +1,18 @@
 ---
-title: Déploiement sur des casques Hololens et WMR
+title: Déploiement sur des casques HoloLens et WMR
 description: Documentation pour créer et déployer des applications sur différents appareils.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Visual Studio
-ms.openlocfilehash: 1547f0630d307e9e87505890adef4cad366d6c00
-ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
+ms.openlocfilehash: 12384c3d3c0c2208d86a9a946580d0311f8a8955
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110441151"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042300"
 ---
-# <a name="deploying-to-hololens-and-wmr-headsets"></a>Déploiement sur des casques Hololens et WMR
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>Déploiement sur des casques HoloLens et WMR
 
 Il existe deux façons de déployer des applications générées avec MRTK sur votre appareil Windows, la plateforme Windows universels (UWP) et la plateforme autonome. Les applications conçues pour HoloLens 1 ou HoloLens 2 doivent cibler UWP, tandis que les applications conçues pour les casques WMR peuvent cibler UWP ou autonome.
 
@@ -37,17 +37,17 @@ Les autres paramètres peuvent être différents (par exemple, configuration de 
 
 Vérifiez que la liste déroulante « Version cible du Kit de développement logiciel (SDK) » contient l’option « 10.0.18362.0 ». Si ce n’est pas le cas, [le SDK Windows le plus récent](https://developer.microsoft.com/windows/downloads/windows-10-sdk) doit être installé.
 
-### <a name="unity-20193-and-hololens"></a>Unity 2019.3 et HoloLens
+### <a name="unity-20192020-and-hololens"></a>Unity 2019/2020 et HoloLens
 
-Si une application HoloLens apparaît sous la forme d’un panneau 2D sur l’appareil, vérifiez que les paramètres suivants ont été configurés dans Unity 2019.3.x avant de déployer votre application UWP :
+Si une application HoloLens apparaît sous la forme d’un panneau 2D sur l’appareil, assurez-vous que les paramètres suivants ont été configurés dans Unity avant de déployer votre application UWP :
 
-Si vous utilisez le XR hérité :
+Si vous utilisez la prise en charge XR intégrée héritée (Unity 2019 uniquement) :
 
 1. Accédez à Edit (Modifier) > Project Settings (Paramètres du projet), Player (Lecteur)
 1. Sous **XR Settings (Paramètres XR)** sous l’onglet UWP, vérifiez que l’option **Virtual Reality Supported (Réalité virtuelle prise en charge)** est activée et que le SDK **Windows Mixed Reality** a été ajouté aux SDK.
 1. Générer et déployer dans Visual Studio
 
-Si vous utilisez le plug-in XR :
+Si vous utilisez les plug-ins OpenXR ou Windows XR :
 
 1. Suivez les étapes décrites dans [Prise en main de XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md)
 1. Vérifiez que le profil de configuration est **DefaultXRSDKConfigurationProfile**
@@ -55,9 +55,11 @@ Si vous utilisez le plug-in XR :
 1. Générer et déployer dans Visual Studio
 
 >[!IMPORTANT]
-> Si vous utilisez Unity 2019.3.x, sélectionnez **ARM64** et non **ARM** comme architecture de build dans Visual Studio. Avec les paramètres Unity par défaut dans Unity 2019.3.x, une application Unity n’est pas déployée sur un HoloLens si ARM est sélectionné en raison d’un bogue Unity. Ce suivi peut être effectué dans le [dispositif de suivi des problèmes d’Unity](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2).
+> Si vous utilisez Unity 2019.3.x, sélectionnez **ARM64** et non **ARM** comme architecture de build dans Visual Studio. Avec les paramètres Unity par défaut dans Unity 2019.3.x, une application Unity n’est pas déployée sur un HoloLens si ARM est sélectionné en raison d’un bogue Unity.
 >
 > Si l’architecture ARM est requise, accédez à **Edit (Modifier) > Project Settings (Paramètres du projet), Player (Lecteur)** , puis dans le menu **Other Settings (Autres paramètres)** , désactivez **Graphics Jobs (Travaux graphiques)** . Même si la désactivation de **Graphics Jobs (Travaux graphiques)** permettra à l’application de se déployer à l’aide de l’architecture de build ARM pour Unity 2019.3.x, ARM64 est recommandé.
+>
+> Ce problème a été résolu dans Unity 2019,4 et Unity 2020,3.
 
 ## <a name="building-and-deploying-mrtk-to-wmr-headsets-standalone"></a>Génération et déploiement de MRTK sur des casques WMR (autonomes)
 

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Déployez, Unity, Visual Studio, HoloLens, HoloLens 2, casque immersif, meilleures pratiques, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, UWP, Visual Studio Tools, SDK Windows
-ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: edd79b95d02cfeb1da4effc485fc57078e3d24a3
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583466"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042260"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Bonnes pratiques sur l’utilisation d’Unity et de Visual Studio
 
@@ -19,7 +19,7 @@ Lorsque vous créez une application de réalité mixte avec Unity, vous devez ba
 
 ## <a name="improving-iteration-time"></a>Amélioration de l’heure des itérations
 
-La prise en charge du serveur principal de script .NET dans Unity est dépréciée dans Unity 2018 et supprimée dans Unity 2019 +. Nous vous recommandons donc de basculer vers [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). Toutefois, il se peut que vous rencontriez des temps de génération plus longs entre Unity et Visual Studio. Pour améliorer l’itération plus rapidement, configurez votre environnement pour obtenir les meilleurs résultats de compilation :
+La prise en charge du serveur principal de script .NET dans Unity a été dépréciée dans Unity 2018 et supprimée à partir de Unity 2019 +. nous vous recommandons donc de basculer vers [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). Toutefois, il se peut que vous rencontriez des temps de génération plus longs entre Unity et Visual Studio. Pour améliorer l’itération plus rapidement, configurez votre environnement pour obtenir les meilleurs résultats de compilation :
 
 1) Utilisez la génération incrémentielle en générant votre projet dans le même répertoire à chaque fois, en réutilisant les fichiers prédéfinis
 2) Désactiver les analyses logicielles anti-programme malveillant pour votre projet & les dossiers de build

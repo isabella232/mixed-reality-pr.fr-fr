@@ -8,12 +8,12 @@ ms.topic: article
 keywords: hologrammes, stabilité, hololens, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, fréquence d’images, rendu, reprojection, séparation des couleurs
 appliesto:
 - HoloLens
-ms.openlocfilehash: 560b1551b153f1735b0106869c6a82c977693968
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: a4a22221d3238bb7dfed711e6ee1f11edc70238e
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110106"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042290"
 ---
 # <a name="hologram-stability"></a>Stabilité des hologrammes
 
@@ -97,8 +97,8 @@ Les applications doivent prendre des mesures spécifiques pour activer les diff�
 
 Type de stabilisation |    Casques immersifs |    Génération HoloLens 1 | HoloLens 2
 --- | --- | --- | ---
-Reprojection de profondeur |    Recommandé |   N/A |   Recommandé<br/><br/>Les applications Unity doivent utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure. Sinon, utilisez la reprojection automatique planaire.
-Reprojection plan automatique | N/A |   Valeur par défaut recommandée |   Recommandé si la reprojection de profondeur ne donne pas les meilleurs résultats<br/><br/>Les applications Unity sont recommandées pour utiliser Unity 2018.4.12 ou version ultérieure ou Unity 2019,3 ou une version ultérieure.  Les versions d’Unity précédentes fonctionnent avec des résultats de reprojection légèrement dégradés.
+Reprojection de profondeur |    Recommandé |   N/A |   Recommandé<br/><br/>Les applications Unity doivent utiliser Unity 2018.4.12 +, Unity 2019.3 + ou Unity 2020.3 +. Sinon, utilisez la reprojection automatique planaire.
+Reprojection plan automatique | N/A |   Valeur par défaut recommandée |   Recommandé si la reprojection de profondeur ne donne pas les meilleurs résultats<br/><br/>Les applications Unity sont recommandées pour utiliser Unity 2018.4.12 +, Unity 2019.3 + ou Unity 2020.3 +.  Les versions d’Unity précédentes fonctionnent avec des résultats de reprojection légèrement dégradés.
 Reprojection planaire |   Non recommandé |   Recommandé si le plan automatique ne donne pas les meilleurs résultats | Utilisez si aucune des options de profondeur ne donne les résultats souhaités    
 
 ### <a name="verifying-depth-is-set-correctly"></a>La précision de la vérification est définie correctement
