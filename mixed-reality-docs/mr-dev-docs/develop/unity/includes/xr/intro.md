@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d39f6032eaf9a59ca52a6e7ae9b8e4d227175738
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 550ad2b9fa92894cdf4dad86def4cd3a9b450fb1
+ms.sourcegitcommit: e9a1510984d00dc40ffd39239349e500f5737a0d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906939"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113103891"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
@@ -23,8 +23,8 @@ Les instructions de cette page vous configurent avec les exigences les plus réc
 
 * Dernier plug-in OpenXR Unity, (nous vous recommandons 1,2 ou version ultérieure)
 * Dernier plug-in OpenXR de réalité mixte, (nous vous recommandons la version 1.0.0 ou ultérieure)
-* **(Facultatif)** Dernière version de MRTK, (nous recommandons la version 2,7 ou ultérieure)
-* **(Facultatif)** Dernier package de pipeline de rendu universel, (nous recommandons la version 10.5.1 ou ultérieure)
+* Si votre projet utilise MRTK, nous vous recommandons la version 2.7.2 ou ultérieure
+* Si votre projet utilise le package de pipeline de rendu universel (URP), nous vous recommandons la version 10.5.1 ou ultérieure
 
 <!-- ![Screenshot of the open xr unity basic sample running on a HoloLens](../../images/openxr-example.png) -->
 
