@@ -1,22 +1,22 @@
 ---
-title: Guide de la documentation
+title: Instructions de documentation
 description: instructions et normes de la documentation pour MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 37233141bd43f27db47935574bac7630b8bea8d7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 95af19b71a9fe06dabad058e75f78d951262ba4a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121387"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175348"
 ---
 # <a name="documentation-guidelines"></a>Instructions de documentation
 
 <img src="../features/images/MRTK_Logo_Rev.png" alt="MRTK">
 
-Ce document présente les directives et les normes de la documentation en ligne mixte (MRTK). Cela fournit une introduction aux aspects techniques de l’écriture et de la génération de documentation, pour mettre en évidence des pièges courants et pour décrire le style d’écriture recommandé.
+ce document décrit les directives et les normes de la réalité mixte Shared Computer Toolkit (MRTK). Cela fournit une introduction aux aspects techniques de l’écriture et de la génération de documentation, pour mettre en évidence des pièges courants et pour décrire le style d’écriture recommandé.
 
 La page elle-même est supposée servir d’exemple. elle utilise donc le style prévu et les fonctionnalités de balisage les plus courantes de la documentation.
 
@@ -136,7 +136,7 @@ En général, essayez d' **éviter la mise en surbrillance du texte inutile**. L
 
 ### <a name="mentioning-menu-entries"></a>Mention des entrées de menu
 
-En cas de saisie d’une entrée de menu qu’un utilisateur doit cliquer, la Convention actuelle est la suivante : *fichiers projet > > créer > feuille*
+quand vous mentionnez une entrée de menu qu’un utilisateur doit cliquer, la convention actuelle est la suivante : *Project > des fichiers > créer une feuille de >*
 
 ### <a name="links"></a>Liens
 
@@ -277,7 +277,7 @@ Lors de la définition et de l’énumération, le code doit également document
 
 ## <a name="how-to-documentation"></a>Documentation de procédures
 
-De nombreux utilisateurs du kit d’outils de réalité mixte n’ont peut-être pas besoin d’utiliser la documentation de l’API. Ces utilisateurs tirent parti de nos prefabs et scripts prédéfinis et réutilisables pour créer leurs expériences.
+de nombreux utilisateurs du Shared Computer Toolkit de la réalité mixte n’ont peut-être pas besoin d’utiliser la documentation de l’API. Ces utilisateurs tirent parti de nos prefabs et scripts prédéfinis et réutilisables pour créer leurs expériences.
 
 Chaque domaine de fonctionnalité contient un ou plusieurs fichiers de démarque (. MD) qui décrivent un niveau relativement élevé, ce qui est fourni. En fonction de la taille et/ou de la complexité d’un domaine de fonctionnalité donné, il peut être nécessaire de disposer de fichiers supplémentaires, jusqu’à un par fonctionnalité fournie.
 
@@ -340,16 +340,16 @@ Toute modification avec rupture qui fait partie d’une modification **doit** ê
 
 ## <a name="tools-for-editing-markdown"></a>Outils pour la modification de la démarque
 
-[Visual Studio code](https://code.visualstudio.com/) est un outil formidable pour la modification des fichiers de démarque qui font partie de la documentation de MRTK.
+[Visual Studio Code](https://code.visualstudio.com/) est un outil formidable pour la modification des fichiers de démarque qui font partie de la documentation de MRTK.
 
 Lors de l’écriture de la documentation, l’installation des deux extensions suivantes est également fortement recommandée :
 
-- Extension docs de la démarque pour Visual Studio Code-utilisez ALT + M pour afficher un menu d’options de création de documents.
+- Extension docs de la démarque pour Visual Studio Code-utilisez Alt + M pour afficher un menu d’options de création de documents.
 
 - Vérificateur orthographique de code : les mots mal orthographiés sont soulignés. Cliquez avec le bouton droit sur un mot mal orthographié pour le modifier ou enregistrez-le dans le dictionnaire.
 
 Ces deux packages sont fournis dans le Pack de création docs publié de Microsoft.
 
-## <a name="see-also"></a>Voir aussi 
+## <a name="see-also"></a>Voir aussi
 
-* [Exemple de lien](https://www.google.com)
+- [Exemple de lien « Voir aussi » pour la documentation](https://www.microsoft.com)

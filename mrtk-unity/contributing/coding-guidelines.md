@@ -4,13 +4,13 @@ description: Principes et conventions de codage à suivre lors de la contributio
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, C#,
-ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, C#,
+ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121437"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175334"
 ---
 # <a name="coding-guidelines"></a>Recommandations en matière de codage
 
@@ -92,18 +92,18 @@ Tous les fichiers de script soumis sans balises de résumé appropriées seront 
 
 ### <a name="mrtk-namespace-rules"></a>Règles d’espace de noms MRTK
 
-La boîte à outils de réalité mixte utilise un modèle d’espace de noms basé sur les fonctionnalités, où tous les espaces de noms fondamentaux commencent par « Microsoft. MixedReality. Toolkit ». En général, vous n’avez pas besoin de spécifier la couche du kit de tâches (par exemple, Core, Providers, services) dans vos espaces de noms.
+la réalité mixte Shared Computer Toolkit utilise un modèle d’espace de noms basé sur des fonctionnalités, où tous les espaces de noms fondamentaux commencent par «Microsoft. MixedReality. Shared Computer Toolkit». En général, vous n’avez pas besoin de spécifier la couche du kit de tâches (par exemple, Core, Providers, services) dans vos espaces de noms.
 
 Les espaces de noms actuellement définis sont :
 
-- Microsoft. MixedReality. Toolkit
-- Microsoft. MixedReality. Toolkit. Boundary
-- Microsoft. MixedReality. Toolkit. Diagnostics
-- Microsoft. MixedReality. Toolkit. Editor
-- Microsoft. MixedReality. Toolkit. Input
-- Microsoft. MixedReality. Toolkit. SpatialAwareness
-- Microsoft. MixedReality. Toolkit.
-- Microsoft. MixedReality. Toolkit. Utilities
+- Microsoft. MixedReality. Shared Computer Toolkit
+- Microsoft. MixedReality. Shared Computer Toolkit. Bordure
+- Microsoft. MixedReality. Shared Computer Toolkit. Diagnostics
+- Microsoft. MixedReality. Shared Computer Toolkit. Éditeurs
+- Microsoft. MixedReality. Shared Computer Toolkit. Entrée
+- Microsoft. MixedReality. Shared Computer Toolkit. SpatialAwareness
+- Microsoft. MixedReality. Shared Computer Toolkit. Porte
+- Microsoft. MixedReality. Shared Computer Toolkit. Utilitaires
 
 Pour les espaces de noms avec une grande quantité de types, il est acceptable de créer un nombre limité de sous-espaces de noms pour faciliter l’utilisation de l’étendue.
 
@@ -507,7 +507,7 @@ Lors de la génération de chemins d’accès de fichier de chaîne, et en parti
 1. Utilisez des [ `Path` API](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) C# dans la mesure du possible, telles que `Path.Combine` ou `Path.GetFullPath` .
 1. Utilisez/ou à la [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) place de \ ou \\ \\ .
 
-Ces étapes permettent de s’assurer que MRTK fonctionne sur les systèmes Windows et UNIX.
+ces étapes permettent de s’assurer que MRTK fonctionne sur les systèmes Windows et Unix.
 
 ### <a name="dont"></a>À ne pas faire
 
@@ -596,7 +596,7 @@ public float AbsMyValue
 
 ### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>Mettre en cache les valeurs et les sérialiser dans Scene/Prefab chaque fois que cela est possible
 
-Avec le HoloLens à l’esprit, il est préférable d’optimiser les performances et les références de cache dans la scène ou Prefab pour limiter les allocations de mémoire du Runtime.
+avec la HoloLens à l’esprit, il est préférable d’optimiser les performances et les références de cache dans la scène ou prefab pour limiter les allocations de mémoire du runtime.
 
 #### <a name="dont"></a>À ne pas faire
 
@@ -673,7 +673,7 @@ public class MyClass
 > [!NOTE]
 > Vous pouvez également utiliser la propriété « SharedMaterial » d’Unity qui ne crée pas de nouveau matériau chaque fois qu’elle est référencée.
 
-### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Utilisez la [compilation dépendante](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) de la plateforme pour vous assurer que la boîte à outils n’interrompt pas la génération sur une autre plateforme
+### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>utilisez la [compilation dépendante](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) de la plateforme pour vous assurer que la Shared Computer Toolkit n’interrompt pas la génération sur une autre plateforme
 
 - Utilisez afin `WINDOWS_UWP` d’utiliser des API non Unity spécifiques à UWP. Cela les empêchera d’essayer de s’exécuter dans l’éditeur ou sur des plateformes non prises en charge. Cela équivaut à `UNITY_WSA && !UNITY_EDITOR` et doit être utilisé en faveur de.
 - Utilisez `UNITY_WSA` pour utiliser des API Unity spécifiques à UWP, telles que l' `UnityEngine.XR.WSA` espace de noms. Cette opération s’exécute dans l’éditeur lorsque la plateforme est définie sur UWP, ainsi que dans les applications UWP générées.

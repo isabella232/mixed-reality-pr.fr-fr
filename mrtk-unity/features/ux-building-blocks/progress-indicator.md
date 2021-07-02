@@ -1,18 +1,18 @@
 ---
-title: ProgressIndicator
+title: Indicateur de progression
 description: Vue d’ensemble de l’indicateur de progression dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 9170a376812901cb063038a5513d4fbf79ad0a28
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 268d13d00bc0bcf1d522eaa6809dab9892624e11
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110125"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176568"
 ---
-# <a name="progress-indicators"></a>Indicateurs de progression
+# <a name="progress-indicator"></a>Indicateur de progression
 
 ![Indicateurs de progression](../images/progress-indicator/MRTK_ProgressIndicator_Main.png)
 

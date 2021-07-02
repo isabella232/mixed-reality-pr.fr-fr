@@ -4,13 +4,13 @@ description: Performances des hologrammes dans des conditions d’environnement 
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, suivi de l’environnement, TMP,
-ms.openlocfilehash: 338ae2719764b84b7c58c1422e08fe02176eccf0
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, suivi de l’environnement, TMP,
+ms.openlocfilehash: 7aab167f2d850a4bca88a2cc40aae4f3cc50fb4b
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110333431"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176484"
 ---
 # <a name="hologram-stabilization"></a>Stabilisation d’hologramme
 
@@ -20,11 +20,11 @@ Pour que la plateforme et le périphérique de réalité mixte sous-jacents prod
 
 ## <a name="environment-tracking"></a>Suivi de l’environnement
 
-Le rendu holographique stable s’appuie fortement sur le suivi des poses par la plateforme & appareil. Unity restitue la scène chaque image de la caméra est estimée et fournie par la plateforme sous-jacente. Si ce suivi ne suit pas correctement le mouvement de la tête réelle, les hologrammes apparaîtront mal. Ceci est particulièrement évident et important pour les appareils AR comme HoloLens, où les utilisateurs peuvent associer des hologrammes virtuels au monde réel. Les performances sont significatives pour le suivi de la tête fiable, mais il peut également y avoir d' [autres fonctionnalités importantes](/windows/mixed-reality/environment-considerations-for-hololens). Les types d’éléments d’environnement qui ont un impact sur l’expérience utilisateur dépendent des spécificités de la plateforme ciblée.
+Le rendu holographique stable s’appuie fortement sur le suivi des poses par la plateforme & appareil. Unity restitue la scène chaque image de la caméra est estimée et fournie par la plateforme sous-jacente. Si ce suivi ne suit pas correctement le mouvement de la tête réelle, les hologrammes apparaîtront mal. ceci est particulièrement évident et important pour les appareils AR comme les HoloLens où les utilisateurs peuvent associer des hologrammes virtuels au monde réel. Les performances sont significatives pour le suivi de la tête fiable, mais il peut également y avoir d' [autres fonctionnalités importantes](/windows/mixed-reality/environment-considerations-for-hololens). Les types d’éléments d’environnement qui ont un impact sur l’expérience utilisateur dépendent des spécificités de la plateforme ciblée.
 
 ## <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-La plateforme Windows Mixed Reality fournit des [documents de référence](/windows/mixed-reality/hologram-stability) pour la stabilisation des hologrammes sur la plateforme. Toutefois, il existe un certain nombre d’outils clés que les développeurs peuvent utiliser pour améliorer l’expérience visuelle des hologrammes pour les utilisateurs.
+la plateforme Windows Mixed Reality fournit des [documents de référence](/windows/mixed-reality/hologram-stability) pour la stabilisation des hologrammes sur la plateforme. Toutefois, il existe un certain nombre d’outils clés que les développeurs peuvent utiliser pour améliorer l’expérience visuelle des hologrammes pour les utilisateurs.
 
 ### <a name="depth-buffer-sharing"></a>Partage de mémoire tampon de profondeur
 
@@ -32,11 +32,11 @@ Les développeurs Unity ont la possibilité de partager le tampon de profondeur 
 
 #### <a name="late-stage-reprojection"></a>Reprojection à l’étape tardive
 
-À la fin du rendu d’un frame, la plateforme Windows Mixed Reality prend les cibles de rendu de la profondeur de couleur & générées par l’application et transforme la sortie finale de l’écran en compte pour tout déplacement de tête depuis la dernière prédiction de pose. L’exécution de la boucle de jeu d’une application prend du temps. Par exemple, à 60 FPS, cela signifie que l’application prend ~ 16.667 ms pour afficher un frame. Même si cela peut sembler un rien de temps, la position et l’orientation de l’utilisateur changent en fonction de nouvelles matrices de projection pour l’appareil photo en cours de rendu. La reprojection en phase tardive transforme les pixels de l’image finale pour tenir compte de cette nouvelle perspective.
+à la fin du rendu d’un frame, la plateforme Windows Mixed Reality prend les cibles de rendu de profondeur & de couleur générées par l’application et transforme la sortie finale de l’écran en compte pour tout déplacement de tête depuis la dernière prédiction de pose. L’exécution de la boucle de jeu d’une application prend du temps. Par exemple, à 60 FPS, cela signifie que l’application prend ~ 16.667 ms pour afficher un frame. Même si cela peut sembler un rien de temps, la position et l’orientation de l’utilisateur changent en fonction de nouvelles matrices de projection pour l’appareil photo en cours de rendu. La reprojection en phase tardive transforme les pixels de l’image finale pour tenir compte de cette nouvelle perspective.
 
 #### <a name="per-pixel-vs-stabilization-plane-lsr"></a>Plan de stabilisation par pixel et LSR
 
-En fonction du point de terminaison de l’appareil et de la version du système d’exploitation exécuté sur un appareil Windows Mixed Reality, l’algorithme de reprojection Late-Stage sera effectué par pixel ou par le biais d’un [plan de stabilisation](/windows/mixed-reality/hologram-stability#stabilization-plane).
+en fonction du point de terminaison de l’appareil et de la version du système d’exploitation exécuté sur un appareil Windows Mixed Reality, l’algorithme de reprojection Late-Stage sera effectué par pixel ou par le biais d’un [plan de stabilisation](/windows/mixed-reality/hologram-stability#stabilization-plane).
 
 ##### <a name="per-pixel-depth-based"></a>Basé sur la profondeur par pixel
 
@@ -48,7 +48,7 @@ S’il n’est pas possible de créer une mémoire tampon de profondeur exacte �
 
 #### <a name="depth-buffer-format"></a>Format de mémoire tampon de profondeur
 
-Si vous ciblez HoloLens pour le développement, il est fortement recommandé d’utiliser le format de mémoire tampon de profondeur de 16 bits par rapport à 24 bits. Cela permet d’économiser énormément de performances, bien que les valeurs de profondeur présentent moins de précision. Pour compenser la précision inférieure et éviter la [lutte z](https://en.wikipedia.org/wiki/Z-fighting), il est recommandé de réduire le [plan de découpage éloigné](https://docs.unity3d.com/Manual/class-Camera.html) de la valeur par défaut de 1000MD définie par Unity.
+si le ciblage HoloLens pour le développement, il est fortement recommandé d’utiliser le format de mémoire tampon de profondeur de 16 bits par rapport à 24 bits. Cela permet d’économiser énormément de performances, bien que les valeurs de profondeur présentent moins de précision. Pour compenser la précision inférieure et éviter la [lutte z](https://en.wikipedia.org/wiki/Z-fighting), il est recommandé de réduire le [plan de découpage éloigné](https://docs.unity3d.com/Manual/class-Camera.html) de la valeur par défaut de 1000MD définie par Unity.
 
 > [!NOTE]
 > Si vous utilisez le *format de profondeur 16 bits, les* effets requis pour la mémoire tampon des stencils ne fonctionneront pas, car [Unity ne crée pas de tampon de stencil](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) dans ce paramètre. Si vous sélectionnez le *format de profondeur 24 bits* , vous créez généralement une [mémoire tampon de stencil de 8 bits](https://docs.unity3d.com/Manual/SL-Stencil.html), le cas échéant sur la plateforme graphique de point de terminaison.
@@ -57,14 +57,14 @@ Si vous ciblez HoloLens pour le développement, il est fortement recommandé d�
 
 Pour pouvoir utiliser des LSR à base de profondeur, les développeurs doivent effectuer deux étapes importantes.
 
-1. Sous **modifier** les  >  **paramètres du projet**, XR paramètres de l’application  >    >    >  **Virtual Real SDK** > activer le partage de **mémoire tampon de profondeur**
-    1. Si vous ciblez HoloLens, il est recommandé de sélectionner également le **format de profondeur 16 bits** .
+1. sous **modifier**  >  **Project Paramètres**  >  **Player**  >  **XR Paramètres** kits de développement logiciel (  >  **sdk) Virtual realisation** > activer le **partage de mémoire tampon de profondeur**
+    1. si vous ciblez HoloLens, il est recommandé de sélectionner également le **format de profondeur 16 bits** .
 1. Lors du rendu de couleur à l’écran, afficher la profondeur également
 
-Les [GameObjects opaques](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) dans Unity sont généralement écrits automatiquement en profondeur. Toutefois, les objets de texte transparent & n’écrivent généralement pas en profondeur par défaut. Si vous utilisiez le nuanceur standard MRTK ou le maillage de texte Pro, cela peut être facilement résolu.
+Les [GameObjects opaques](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) dans Unity sont généralement écrits automatiquement en profondeur. Toutefois, les objets de texte transparent & n’écrivent généralement pas en profondeur par défaut. en cas d’utilisation du nuanceur Standard MRTK ou de la Pro maille de texte, cela peut être facilement résolu.
 
 > [!NOTE]
-> Pour déterminer rapidement quels objets d’une scène n’écrivent pas dans le tampon de profondeur visuellement, vous pouvez utiliser l’utilitaire de [ *tampon de profondeur de rendu*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) sous les paramètres de l' *éditeur* dans le profil de configuration MRTK.
+> pour déterminer rapidement quels objets d’une scène n’écrivent pas dans le tampon de profondeur visuellement, vous pouvez utiliser l’utilitaire de [ *tampon de profondeur de rendu*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) sous l' *éditeur Paramètres* dans le profil de Configuration MRTK.
 
 ##### <a name="transparent-mrtk-standard-shader"></a>Nuanceur transparent MRTK standard
 
@@ -80,9 +80,9 @@ Après
 
 ##### <a name="text-mesh-pro"></a>Maille de texte Pro
 
-Pour objets de maillage Pro de texte, sélectionnez le GameObject TMP pour l’afficher dans l’inspecteur. Sous le composant matériau, faites basculer le nuanceur pour la documentation affectée afin d’utiliser le nuanceur MRTK TextMeshPro.
+pour Pro objets de maillage de texte, sélectionnez le GameObject TMP pour l’afficher dans l’inspecteur. Sous le composant matériau, faites basculer le nuanceur pour la documentation affectée afin d’utiliser le nuanceur MRTK TextMeshPro.
 
-![Correction du tampon de la profondeur du maillage Pro du texte](../features/images/performance/TextMeshPro-DepthBuffer-Fix.PNG)
+![correction du tampon de la profondeur du maillage de texte Pro](../features/images/performance/TextMeshPro-DepthBuffer-Fix.PNG)
 
 ##### <a name="custom-shader"></a>Nuanceur personnalisé
 
@@ -111,7 +111,7 @@ Si les méthodes ci-dessus ne fonctionnent pas pour un scénario donné (par exe
 
 En plus de vous assurer que les configurations correctes sont respectées pour garantir la stabilité visuelle, il est important de s’assurer que les hologrammes restent stables à leurs emplacements physiques corrects. Pour informer la plateforme des emplacements importants dans un espace physique, les développeurs peuvent tirer parti de [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) sur GameObjects qui doivent rester dans un même emplacement. Un [WorldAnchor](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) est un composant ajouté à un gameobject qui prend un contrôle absolu sur la transformation de cet objet.
 
-Les appareils tels que HoloLens analysent et apprennent constamment l’environnement. Ainsi, à mesure que le HoloLens suit le mouvement & position dans l’espace, ses estimations sont mises à jour et le [système de coordonnées Unity est ajusté](/windows/mixed-reality/coordinate-systems-in-unity). Par exemple, si un GameObject est placé 1m à partir de l’appareil photo au démarrage, à mesure que le HoloLens effectue le suivi de l’environnement, il peut se rendre compte du point physique où se trouve le GameObject. Cela entraînerait la dérive de l’hologramme. L’application d’un WorldAnchor à un GameObject permet à l’ancre de contrôler la transformation de l’objet afin que l’objet reste à l’emplacement physique correct (c.-à-d. Mettez à jour vers la version 1.1 m à la place de 1m au moment de l’exécution). Pour conserver les [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) entre les sessions d’application, les développeurs peuvent utiliser le [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) pour [enregistrer et charger WorldAnchors](/windows/mixed-reality/persistence-in-unity).
+les appareils tels que les HoloLensnt constamment analyser et apprendre à propos de l’environnement. ainsi, à mesure que le HoloLens effectue le suivi du mouvement & position dans l’espace, ses estimations sont mises à jour et le [système de coordonnées unity est ajusté](/windows/mixed-reality/coordinate-systems-in-unity). par exemple, si un GameObject est placé 1m à partir de l’appareil photo au démarrage, étant donné que le HoloLens effectue le suivi de l’environnement, il peut réaliser le point physique où se trouve le GameObject est en fait 1.1 m. Cela entraînerait la dérive de l’hologramme. L’application d’un WorldAnchor à un GameObject permet à l’ancre de contrôler la transformation de l’objet afin que l’objet reste à l’emplacement physique correct (c.-à-d. Mettez à jour vers la version 1.1 m à la place de 1m au moment de l’exécution). Pour conserver les [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) entre les sessions d’application, les développeurs peuvent utiliser le [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) pour [enregistrer et charger WorldAnchors](/windows/mixed-reality/persistence-in-unity).
 
 > [!NOTE]
 > Une fois qu’un composant WorldAnchor a été ajouté à un GameObject, il n’est pas possible de modifier la transformation de ce GameObject (c.-à-d. transformation. position = x). Un développeur doit supprimer le WorldAnchor pour modifier la transformation.
@@ -138,8 +138,8 @@ Si vous souhaitez une alternative à l’utilisation manuelle des ancres, consul
 ## <a name="see-also"></a>Voir aussi
 
 - [Performances](../performance/perf-getting-started.md)
-- [Considérations environnementales pour HoloLens](/windows/mixed-reality/environment-considerations-for-hololens)
-- [Stabilité des hologrammes Windows Mixed Reality](/windows/mixed-reality/hologram-stability)
+- [Considérations relatives à l’environnement pour HoloLens](/windows/mixed-reality/environment-considerations-for-hololens)
+- [Windows Mixed Reality de stabilité des hologrammes](/windows/mixed-reality/hologram-stability)
 - [Point de focus dans Unity](/windows/mixed-reality/focus-point-in-unity)
 - [Systèmes de coordonnées dans Unity](/windows/mixed-reality/coordinate-systems-in-unity)
 - [Persistance dans Unity](/windows/mixed-reality/persistence-in-unity)

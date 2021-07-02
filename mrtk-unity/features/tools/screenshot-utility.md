@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: a0c66969a9058adc790919f0054783b7368da8f6
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 936126214f9e6d93ccbb871b9c80a2c93acf5a86
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647068"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176419"
 ---
 # <a name="screenshot-utility"></a>Utilitaire de capture d’écran
 
@@ -20,7 +20,7 @@ La classe ScreenshotUtility vous permet de prendre des captures d’écran via d
 
 ## <a name="taking-screenshots"></a>Prise de captures d’écran
 
-Les captures d’écran peuvent être facilement capturées dans l’éditeur en sélectionnant la capture d’écran des utilitaires de **réalité mixte**, puis en  >    >    >   sélectionnant l’option souhaitée. Veillez à ce que l’onglet de la fenêtre de jeu soit visible si vous prenez la capture quand vous ne jouez pas, sinon la capture ne peut pas être enregistrée.
+les captures d’écran peuvent être facilement capturées dans l’éditeur en sélectionnant la **réalité mixte**  >  **Shared Computer Toolkit** les  >  **utilitaires**  >  **prennent la capture d’écran** , puis en sélectionnant l’option souhaitée. Veillez à ce que l’onglet de la fenêtre de jeu soit visible si vous prenez la capture quand vous ne jouez pas, sinon la capture ne peut pas être enregistrée.
 
 Par défaut, toutes les captures d’écran sont enregistrées dans le [chemin du cache temporaire](https://docs.unity3d.com/ScriptReference/Application-temporaryCachePath.html), le chemin de la capture s’affichera dans la console Unity.
 

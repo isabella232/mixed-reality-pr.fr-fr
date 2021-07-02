@@ -1,16 +1,16 @@
 ---
-title: Grands projets
-description: Conseils pour les consommateurs de MRTK avec des projets volumineux.
+title: Utilisation de MRTK dans des projets de grande taille
+description: Astuces pour les consommateurs de MRTK avec des projets volumineux.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 5db750048cf996b10062e638572b578ba383d5ee
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 28ba272a48b0a0c524185ac7114a09cf8e0e91f8
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144551"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177121"
 ---
 # <a name="using-mrtk-in-large-projects"></a>Utilisation de MRTK dans des projets de grande taille
 
@@ -101,7 +101,7 @@ crashlytics-build.properties
 
 ## <a name="projectpreferencesasset-file"></a>Fichier ProjectPreferences. Asset
 
-Les paramètres MRTK à l’ensemble du projet se trouvent sous les paramètres de projet Edit->-> l’emplacement du kit de conditions de la réalité mixte. Ces paramètres seront enregistrés dans un fichier à cet emplacement dans le dossier ressources :
+les paramètres MRTK à l’ensemble de la Project se trouvent sous l’emplacement > > de modification Project Paramètres Shared Computer Toolkit. Ces paramètres seront enregistrés dans un fichier à cet emplacement dans le dossier ressources :
 
 ```
 Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset

@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 96090b05c60cfaa6ff5d8c5e1dc7a58cc2658b71
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 70274639326563b1f3c3a2061dcdbf824fd43709
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144520"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176222"
 ---
-# <a name="lost-tracking-visualization"></a>Visualisation de suivi perdue
+# <a name="lost-tracking-service"></a>Service de suivi perdu
 
 ![Suivi perdu](../images/lost-tracking/LostTrackingVisualization.jpg)
 
-Le service d’extension de suivi perdu fournit un visuel animé de style de Shell HoloLens pour l’état de suivi perdu.
+le Service d’Extension de suivi perdu fournit HoloLens visuel de style de shell animé pour l’état de suivi perdu.
 
 ## <a name="how-to-use-lost-tracking-extensions"></a>Utilisation des extensions de suivi perdues
 

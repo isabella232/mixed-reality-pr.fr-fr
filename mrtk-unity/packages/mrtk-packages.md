@@ -4,19 +4,19 @@ description: Les packages dans MRTK prennent en charge le matériel et les plate
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, gestionnaire de package Unity,
-ms.openlocfilehash: 3c92448d99cd67efa0a06feff9b0c7561a6aea79
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, unity Gestionnaire de package,
+ms.openlocfilehash: 3c2a11dd4036a78ccb96aa2c640ef8324181c1e0
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143800"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176498"
 ---
-# <a name="mixed-reality-toolkit-packages"></a>Packages Toolkit de réalité mixte
+# <a name="mrtk-packages"></a>Packages MRTK
 
-La boîte à outils de réalité mixte (MRTK) est une collection de packages qui permettent le développement d’applications de réalité mixte multiplateforme en fournissant une prise en charge du matériel et des plateformes de réalité mixte.
+la Shared Computer Toolkit de la réalité mixte (MRTK) est une collection de packages qui permettent le développement d’applications de réalité mixte multiplateforme en fournissant une prise en charge du matériel et des plateformes de réalité mixte.
 
-MRTK est disponible en tant que packages [Asset](#asset-packages) (. pour Unity) et via le [Gestionnaire de package Unity](#unity-package-manager).
+MRTK est disponible en tant que packages [asset](#asset-packages) (. pour unity) et par le biais du [Gestionnaire de package unity](#unity-package-manager).
 
 ## <a name="asset-packages"></a>Packages de composants
 
@@ -53,7 +53,7 @@ Ces packages sont publiés et pris en charge par Microsoft à partir du code sou
 
 ### <a name="foundation-package"></a>Package de base
 
-La Fondation de la réalité est le jeu de code qui permet à votre application de tirer parti des fonctionnalités communes sur les plateformes de réalité mixte.
+la réalité mixte Shared Computer Toolkit Foundation est l’ensemble de code qui permet à votre application de tirer parti des fonctionnalités communes sur les plateformes de réalité mixte.
 
 <img src="../features/images/input/MRTK_Package_Foundation.png" width="350px" alt="Pakage foundation" style="display:block;">  
 <sup>Package MRTK Foundation</sup>
@@ -74,13 +74,13 @@ Le package MRTK Foundation contient les éléments suivants.
 | | OpenVR | Prise en charge des appareils OpenVR. |
 | | Oculus | Prise en charge des appareils Oculus, tels que Quest. |
 | | [Unity](../features/camera-system/unity-ar-camera-settings.md) | Pratiqué Fournisseur de paramètres d’appareil photo permettant l’utilisation de MRTK avec des appareils mobiles. |
-| | WindowsMixedReality | Prise en charge des appareils Windows Mixed Reality, notamment Microsoft HoloLens et les casques immersifs. |
-| | Windows | Prise en charge des API spécifiques à Microsoft Windows, par exemple la reconnaissance vocale et la dictée. |
+| | WindowsMixedReality | prise en charge des appareils Windows Mixed Reality, y compris les Microsoft HoloLens et les casques immersifs. |
+| | Windows | la prise en charge de Microsoft Windows des api spécifiques, par exemple la reconnaissance vocale et la dictée. |
 | | Kit de développement logiciel (SDK) XR | Pratiqué Prise en charge de [New XR Framework pour unity](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) 2019,3 et versions ultérieures. |
 | MRTK/SDK | | |
 | | Expérimental | Fonctionnalités expérimentales, notamment les nuanceurs, les contrôles d’interface utilisateur et les gestionnaires de système individuels. |
 | | Fonctionnalités | Fonctionnalité qui s’appuie sur le package de base. |
-| | Profils | Profils par défaut pour les systèmes et services Microsoft Mixed Reality Toolkit. |
+| | Profils | profils par défaut pour les systèmes et services Shared Computer Toolkit de la réalité mixte Microsoft. |
 | | StandardAssets | Ressources communes ; modèles, textures, matériaux, etc. |
 | MRTK/SceneSystemResources | | Ressources et ressources utilisées par le système de scène |
 | MRTK/services | | |
@@ -95,7 +95,7 @@ Le package MRTK Foundation contient les éléments suivants.
 
 ### <a name="extensions-package"></a>Package d’extensions
 
-Le package facultatif Microsoft. MixedRealityToolkit. Unity. extensions comprend des services supplémentaires qui étendent les fonctionnalités de Microsoft Mixed Reality Toolkit.
+le package facultatif microsoft. MixedRealityToolkit. unity. Extensions comprend des services supplémentaires qui étendent les fonctionnalités de la Shared Computer Toolkit de réalité mixte microsoft.
 
 > [!NOTE]
 > Le package d’extensions requiert Microsoft. MixedRealityToolkit. Unity. Foundation.
@@ -104,13 +104,13 @@ Le package facultatif Microsoft. MixedRealityToolkit. Unity. extensions comprend
 | --- | --- | --- |
 | MRTK/extensions | |
 | | [HandPhysicsService](../features/extensions/hand-physics-service.md) | Service qui ajoute la prise en charge physique aux mains articulées. |
-| | LostTrackingService | Service qui simplifie la gestion des pertes de suivi sur les appareils Microsoft HoloLens. |
+| | LostTrackingService | Service qui simplifie la gestion de la perte de suivi sur les appareils Microsoft HoloLens. |
 | | [SceneTransitionService](../features/extensions/scene-transition-service.md) | Service qui simplifie l’ajout de transitions de scène lisses. |
 
 ### <a name="tools-package"></a>Package d’outils
 
-Le package facultatif Microsoft. MixedRealityToolkit. Unity. Tools comprend des outils utiles qui améliorent l’expérience de développement de la réalité mixte à l’aide de Microsoft Mixed Reality Toolkit.
-Ces outils se trouvent dans le menu outils de la **réalité mixte > utilitaires** de l’éditeur Unity.
+le package facultatif microsoft. MixedRealityToolkit. unity. tools comprend des outils utiles qui améliorent l’expérience de développement de la réalité mixte à l’aide de la Shared Computer Toolkit de la réalité mixte Microsoft.
+ces outils se trouvent dans le menu **Shared Computer Toolkit > utilitaires de la réalité mixte** de l’éditeur unity.
 
 > [!NOTE]
 > Le package d’outils requiert Microsoft. MixedRealityToolkit. Unity. Foundation.
@@ -158,14 +158,14 @@ Plus généralement, toute nouvelle fonctionnalité de MRTK doit contenir un exe
 | | Expérimental | Démonstrations illustrant des fonctionnalités expérimentales. |
 | | StandardAssets | Ressources communes partagées par plusieurs scènes de démonstration. |
 
-## <a name="unity-package-manager"></a>Gestionnaire de package Unity
+## <a name="unity-package-manager"></a>Gestionnaire de package unity
 
-Pour les expériences créées à l’aide d’Unity 2019,4 et versions ultérieures, le MRTK est disponible via le [Gestionnaire de package Unity](https://docs.unity3d.com/Manual/Packages.html).
+pour les expériences créées à l’aide d’unity 2019,4 et versions ultérieures, MRTK est disponible via [unity Gestionnaire de package](https://docs.unity3d.com/Manual/Packages.html).
 
 Voici quelques-uns des avantages de l’utilisation des packages de ressources :
 
 - Projets plus petits
-  - Solutions Visual Studio plus claires
+  - solutions de Visual Studio de nettoyage
   - Moins de fichiers à archiver (MRTK est une référence simple dans le `Packages/manifest.json` fichier)
 - Compilation plus rapide
   - Unity n’a pas besoin de recompiler MRTK pendant la génération
@@ -182,7 +182,7 @@ Voici quelques-unes des difficultés :
 
 ### <a name="foundation-package"></a>Package de base
 
-Le package de base ( `com.microsoft.mixedreality.toolkit.foundation` ) constitue la base du kit de conditions de la réalité mixte.
+le package de base ( `com.microsoft.mixedreality.toolkit.foundation` ) constitue la base de la réalité mixte Shared Computer Toolkit.
 
 | Dossier | Composant | Description |
 | --- | --- | --- |
@@ -198,13 +198,13 @@ Le package de base ( `com.microsoft.mixedreality.toolkit.foundation` ) constitue
 | | OpenVR | Prise en charge des appareils OpenVR. |
 | | Oculus | Prise en charge des appareils Oculus, tels que Quest. |
 | | [Unity](../features/camera-system/unity-ar-camera-settings.md) | Pratiqué Fournisseur de paramètres d’appareil photo permettant l’utilisation de MRTK avec des appareils mobiles. |
-| | WindowsMixedReality | Prise en charge des appareils Windows Mixed Reality, notamment Microsoft HoloLens et les casques immersifs. |
-| | Windows | Prise en charge des API spécifiques à Microsoft Windows, par exemple la reconnaissance vocale et la dictée. |
+| | WindowsMixedReality | prise en charge des appareils Windows Mixed Reality, y compris les Microsoft HoloLens et les casques immersifs. |
+| | Windows | la prise en charge de Microsoft Windows des api spécifiques, par exemple la reconnaissance vocale et la dictée. |
 | | Kit de développement logiciel (SDK) XR | Pratiqué Prise en charge de [New XR Framework pour unity](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) 2019,3 et versions ultérieures. |
 | MRTK/SDK | | |
 | | Expérimental | Fonctionnalités expérimentales, notamment les nuanceurs, les contrôles d’interface utilisateur et les gestionnaires de système individuels. |
 | | Fonctionnalités | Fonctionnalité qui s’appuie sur le package de base. |
-| | Profils | Profils par défaut pour les systèmes et services Microsoft Mixed Reality Toolkit. |
+| | Profils | profils par défaut pour les systèmes et services Shared Computer Toolkit de la réalité mixte Microsoft. |
 | | StandardAssets | Ressources communes ; modèles, textures, matériaux, etc. |
 | MRTK/services | | |
 | | [BoundarySystem](../features/boundary/boundary-system-getting-started.md) | Système mettant en œuvre la prise en charge de la limite VR. |
@@ -247,7 +247,7 @@ Le package d’extensions facultatives ( `com.microsoft.mixedreality.toolkit.ext
 | | [SceneTransitionService](../features/extensions/scene-transition-service.md) | Service qui simplifie l’ajout de transitions de scène lisses. |
 | | Échantillons ~ | Dossier caché (dans l’éditeur Unity) qui contient les scènes et les éléments multimédias de l’exemple. |
 
-Pour plus d’informations sur le processus d’utilisation des packages contenant des exemples de projets, consultez l’article relatif à la [réalité mixte et au gestionnaire de package Unity](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) .
+pour plus d’informations sur le processus d’utilisation des packages contenant des exemples de projets, consultez l’article Shared Computer Toolkit de la [réalité mixte et Gestionnaire de package unity](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) .
 
 Dépendances :
 
@@ -292,7 +292,7 @@ Dépendances :
 
 Le package d’exemples ( `com.microsoft.mixedreality.toolkit.examples` ), est structuré pour permettre aux développeurs d’importer uniquement les exemples intéressants.
 
-Pour plus d’informations sur le processus d’utilisation des packages contenant des exemples de projets, consultez l’article relatif à la [réalité mixte et au gestionnaire de package Unity](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) .
+pour plus d’informations sur le processus d’utilisation des packages contenant des exemples de projets, consultez l’article Shared Computer Toolkit de la [réalité mixte et Gestionnaire de package unity](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) .
 
 | Dossier | Composant | Description |
 | --- | --- | --- |
@@ -309,4 +309,4 @@ Dépendances :
 
 - [Présentation de l'architecture](../architecture/overview.md)
 - [Systèmes, services d’extension et fournisseurs de données](../architecture/systems-extensions-providers.md)
-- [Trousse à outils de réalité mixte et gestionnaire de packages Unity](../configuration/usingupm.md)
+- [Shared Computer Toolkit de réalité mixte et Gestionnaire de package unity](../configuration/usingupm.md)

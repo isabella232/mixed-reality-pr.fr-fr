@@ -1,20 +1,20 @@
 ---
-title: Registre de service de réalité mixte et IMixedRealityServiceRegistrar
+title: Registre de service de réalité mixte
 description: Documentation sur MixedRealityServiceRegistry et IMixedRealityServiceRegistrar
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 09b20537824af42d241b6c33496cedcb4f530bc7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 061e4233d61de817b1aaed7faaa6d461427d6f07
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145234"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176698"
 ---
-# <a name="what-are-the-mixedrealityserviceregistry-and-imixedrealityserviceregistrar"></a>Qu’est-ce que MixedRealityServiceRegistry et IMixedRealityServiceRegistrar ?
+# <a name="mixed-reality-service-registry"></a>Registre de service de réalité mixte
 
-La boîte à outils de réalité mixte comporte deux composants portant le même nom qui effectuent des tâches connexes : MixedRealityServiceRegistry et IMixedRealityServiceRegistrar.
+la réalité mixte Shared Computer Toolkit a deux composants nommés de la même façon qui effectuent des tâches connexes : MixedRealityServiceRegistry et IMixedRealityServiceRegistrar.
 
 ## <a name="mixedrealityserviceregistry"></a>MixedRealityServiceRegistry
 

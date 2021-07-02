@@ -1,16 +1,16 @@
 ---
-title: Présentation du service de transition de scène
+title: Service de transition de scène
 description: documentation relative à la transition de scène dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, SceneTransition,
-ms.openlocfilehash: 5ea76b572b3cddc097e8266d3c31f152b63a13aa
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, SceneTransition,
+ms.openlocfilehash: b645012a055f693fdac794b79e24fd20154fdb65
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144283"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176215"
 ---
 # <a name="scene-transition-service"></a>Service de transition de scène
 
@@ -44,7 +44,7 @@ Paramètre | Caméras ciblées
 --- | --- | ---
 Principal | Applique un effet d’atténuation à l’appareil photo principal.
 Interface utilisateur du service | Applique un effet d’atténuation aux appareils photo sur la couche d’interface utilisateur. (N’affecte pas l’interface utilisateur de superposition)
-Tout | S’applique à la fois aux caméras principale et d’interface utilisateur.
+Tous | S’applique à la fois aux caméras principale et d’interface utilisateur.
 Custom | S’applique à un ensemble personnalisé de caméras fournies via `SetCustomFadeTargetCameras`
 
 ### <a name="fade-out-time--fade-in-time"></a>Délai d’attente/fondu dans le temps

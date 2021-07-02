@@ -1,18 +1,18 @@
 ---
-title: Suivi oculaire - Yeux et mains
+title: Yeux et mains
 description: Comment utiliser le ciblage oculaire comme pointeur principal en combinaison avec les mouvements de main dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking,
-ms.openlocfilehash: c9d5f23610d821aa1e50a3217a4be736601dc14d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking,
+ms.openlocfilehash: ff464c6f2381a9df020a9ccf807672d4463d662c
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143990"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175111"
 ---
-# <a name="eyes--hand-interaction"></a>Yeux + interaction main
+# <a name="eyes-and-hands"></a>Yeux et mains
 
 ## <a name="how-to-support-_look--hand-motions_-eye-gaze--hand-gestures"></a>Prise en charge des mouvements de la & _main_ et des mouvements
 

@@ -1,24 +1,24 @@
 ---
-title: Fournisseur d’extensions système
+title: Systèmes, services d’extension et fournisseurs de données
 description: Extensions MRTK et fournisseurs de données
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, extensions système,
-ms.openlocfilehash: 358294702971b7d9e8de1b842d3bc1844e5dc9bf
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Extensions système,
+ms.openlocfilehash: 668df40cec9b9443b37f63d80fcf8a1ca2e0bcbc
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121467"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177419"
 ---
 # <a name="systems-extension-services-and-data-providers"></a>Systèmes, services d’extension et fournisseurs de données
 
-Dans la boîte à outils de la réalité mixte, un grand nombre des fonctionnalités sont fournies sous la forme de services. Les services sont regroupés en trois catégories principales : les systèmes, les services d’extension et les fournisseurs de données.
+dans la Shared Computer Toolkit de la réalité mixte, un grand nombre des fonctionnalités sont fournies sous la forme de services. Les services sont regroupés en trois catégories principales : les systèmes, les services d’extension et les fournisseurs de données.
 
 ## <a name="systems"></a>Systèmes
 
-Les systèmes sont des services qui fournissent la fonctionnalité principale de la réalité mixte Toolkit. Tous les systèmes sont des implémentations de l' [`IMixedRealityService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) interface.
+les systèmes sont des services qui fournissent la fonctionnalité principale de la réalité mixte Shared Computer Toolkit. Tous les systèmes sont des implémentations de l' [`IMixedRealityService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) interface.
 
 - [BoundarySystem](../features/boundary/boundary-system-getting-started.md)
 - [CameraSystem](../features/camera-system/camera-system-overview.md)
@@ -32,7 +32,7 @@ Chacun des systèmes répertoriés est exposé dans le [Profil](../features/prof
 
 ## <a name="extensions"></a>Extensions
 
-Les services d’extension sont des composants qui étendent les fonctionnalités du kit de développement de la réalité mixte. Tous les services d’extension doivent spécifier qu’ils implémentent l' [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) interface.
+les services d’Extension sont des composants qui étendent les fonctionnalités de la réalité mixte Shared Computer Toolkit. Tous les services d’extension doivent spécifier qu’ils implémentent l' [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) interface.
 
 Pour plus d’informations sur la création de services d’extension, veuillez vous référer à l’article [services d’extension](../features/extensions/extension-services.md) .
 
@@ -42,10 +42,10 @@ Pour être accessible à MRTK, les services d’extension sont inscrits et confi
 
 ## <a name="data-providers"></a>Fournisseurs de données
 
-Les fournisseurs de données sont des composants qui, par leur nom, fournissent des données à un service de boîte à outils de réalité mixte. Tous les fournisseurs de données doivent spécifier qu’ils implémentent l' [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) interface.
+les fournisseurs de données sont des composants qui, par leur nom, fournissent des données à une réalité mixte Shared Computer Toolkit service. Tous les fournisseurs de données doivent spécifier qu’ils implémentent l' [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) interface.
 
 > [!NOTE]
-> Tous les services ne requièrent pas de fournisseurs de données. Des systèmes de la boîte à outils de la réalité mixte, les systèmes d’entrée et de sensibilisation spatiale sont les seuls services à utiliser les fournisseurs de données.
+> Tous les services ne requièrent pas de fournisseurs de données. parmi les systèmes de Shared Computer Toolkit de la réalité mixte, les systèmes d’entrée et de sensibilisation spatiale sont les seuls services à utiliser les fournisseurs de données.
 
 Pour être accessible au service MRTK spécifique, les fournisseurs de données sont inscrits dans le profil de configuration du service.
 

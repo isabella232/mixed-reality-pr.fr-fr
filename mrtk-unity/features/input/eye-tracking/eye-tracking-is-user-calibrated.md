@@ -4,13 +4,13 @@ description: Comment configurer l’étalonnage des yeux des utilisateurs dans M
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking, étalonnage,
-ms.openlocfilehash: d7ae9885b77798b44b3d63bb7f92283658e05411
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking, étalonnage,
+ms.openlocfilehash: a2023a2d7f6a0254e8fef32f4faf09def956e94f
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144001"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177203"
 ---
 # <a name="eye-calibration"></a>Étalonnage oculaire
 
@@ -92,4 +92,4 @@ Une fois la notification fermée, sa taille et son fondu diminuent lentement.
 - [Vue d’ensemble du suivi des yeux MRTK](eye-tracking-main.md)
 - [Configuration du suivi des yeux MRTK](eye-tracking-basic-setup.md)
 - [Suivi des yeux MRTK par code](eye-tracking-eye-gaze-provider.md)
-- [Documentation sur le suivi oculaire HoloLens 2](/windows/mixed-reality/eye-tracking)
+- [HoloLens 2 Documentation sur le suivi oculaire](/windows/mixed-reality/eye-tracking)

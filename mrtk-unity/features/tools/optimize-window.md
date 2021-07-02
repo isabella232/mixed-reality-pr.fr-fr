@@ -1,16 +1,16 @@
 ---
-title: Fenêtre d’optimisation
+title: Fenêtre optimiser
 description: Fenêtre d’optimisation de la documentation dans MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 7ffc2173cc55c83f126f66002d9240cb349d7f59
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: f9f8ad638b8f7cb1007c923f6b568dffc4340360
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144310"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177566"
 ---
 # <a name="optimize-window"></a>Fenêtre optimiser
 
@@ -20,7 +20,7 @@ La *cible de build active* est la [plateforme de génération actuellement cibl�
 
 La *cible de performance* indique à l’outil d’optimisation le type de points de terminaison d’appareil à cibler.
 
-- Les *casques AR* sont des appareils mobiles, tels que HoloLens
+- Les *casques AR* sont des appareils mobiles, tels que les HoloLens
 - *VR standalone* est un appareil mobile, tel que Oculus Go ou Quest
 - *VR* est un appareil alimenté par PC, tel que le format Samsung Odyssey, le rift Oculus ou le HTC, etc.
 
@@ -32,7 +32,7 @@ L’onglet optimisation des paramètres couvre certaines des configurations de r
 
 Une icône de coche verte signifie qu’une valeur optimale a été configurée dans le projet/la scène pour ce paramètre particulier. Une icône d’avertissement jaune indique que la configuration actuelle peut être améliorée. En cliquant sur le bouton associé dans une section donnée, vous configurez automatiquement ce paramètre dans le projet Unity/Scene sur une valeur plus optimale.
 
-![Paramètres de la fenêtre d’optimisation MRTK](../images/performance/OptimizeWindow_Settings.png)
+![MRTK optimiser la fenêtre Paramètres](../images/performance/OptimizeWindow_Settings.png)
 
 ### <a name="single-pass-instanced-rendering"></a>Rendu d’instance à passe unique
 
@@ -62,7 +62,7 @@ L' [éclairage global](https://docs.unity3d.com/Manual/GIIntro.html) en temps r�
 
 L’onglet *analyse des scènes* est conçu pour informer les développeurs sur les éléments actuellement dans la scène qui auront probablement le plus d’impact sur les performances.
 
-![MRTK optimiser les paramètres de la fenêtre analyse des scènes](../images/performance/OptimizeWindow_SceneAnalysis.png)
+![MRTK optimiser la fenêtre Paramètres analyse des scènes](../images/performance/OptimizeWindow_SceneAnalysis.png)
 
 ### <a name="lighting-analysis"></a>Analyse de l’éclairage
 
@@ -80,9 +80,9 @@ Les opérations raycast Graphics sont effectuées par pointeur dans MRTK pour d�
 
 Le [nuanceur standard Unity](https://docs.unity3d.com/Manual/shader-StandardShader.html) peut produire des résultats visuels de très grande qualité pour les jeux, mais il n’est généralement pas mieux adapté aux besoins de performances des applications de réalité mixte, en particulier puisque ces applications sont généralement limitées par le GPU. Par conséquent, il est recommandé aux développeurs d’utiliser le [nuanceur MRTK standard](../rendering/mrtk-standard-shader.md) pour équilibrer l’esthétique & les fonctionnalités graphiques avec les performances.
 
-L’onglet *analyse des nuanceurs* analyse le dossier de ressources du projet actif pour rechercher des matériaux à l’aide du nuanceur standard Unity ou si vous le souhaitez, tous les matériaux qui n’utilisent pas la réalité mixte Toolkit fournissaient des nuanceurs. Une fois découverts, les développeurs peuvent convertir tous les documents ou les convertir individuellement à l’aide des boutons appropriés.
+l’onglet *analyse des nuanceurs* analyse le dossier de ressources du projet actif pour rechercher les matériaux à l’aide du nuanceur Standard unity ou si vous le souhaitez, tous les matériaux qui n’utilisent pas de réalité mixte Shared Computer Toolkit les nuanceurs fournis. Une fois découverts, les développeurs peuvent convertir tous les documents ou les convertir individuellement à l’aide des boutons appropriés.
 
-![Analyse des nuanceurs MRTK optimiser les paramètres de fenêtre](../images/performance/OptimizeWindow_ShaderAnalysis.png)
+![MRTK optimiser la fenêtre Paramètres analyse du nuanceur](../images/performance/OptimizeWindow_ShaderAnalysis.png)
 
 ## <a name="see-also"></a>Voir aussi
 

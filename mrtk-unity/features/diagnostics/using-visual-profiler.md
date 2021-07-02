@@ -5,18 +5,18 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: c3238aed60f6bbf824c74c034ddf506f49f436c7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 018d6bf2087b73697a1e1f43e206c96ae25e1f21
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121647"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177227"
 ---
 # <a name="using-the-visual-profiler"></a>Utilisation du générateur de profils Visual
 
-Le VisualProfiler fournit une vue en toute simplicité et en application des performances d’une application de réalité mixte. Le profileur est pris en charge sur toutes les plateformes d’outils de réalité mixte, y compris :
+Le VisualProfiler fournit une vue en toute simplicité et en application des performances d’une application de réalité mixte. le profileur est pris en charge sur toutes les plateformes Shared Computer Toolkit de réalité mixte, y compris :
 
-- Microsoft HoloLens (1ère génération)
+- Microsoft HoloLens (1re génération)
 - Microsoft HoloLens 2
 - Casques immersifs Windows Mixed Reality
 - OpenVR
@@ -34,7 +34,7 @@ L’interface du profileur Visual comprend les composants suivants :
 
 - [Fréquence d’images](#frame-rate)
 - [Heure du frame](#frame-time)
-- [Graphique de frame](#frame-graph)
+- [Graph de frame](#frame-graph)
 - [Utilisation de la mémoire](#memory-utilization)
 
 ### <a name="frame-rate"></a>Fréquence d’images
@@ -44,10 +44,10 @@ Dans le coin supérieur gauche de l’interface se trouve la fréquence d’imag
 La configuration matérielle et la plateforme spécifique jouent un rôle significatif dans la fréquence d’images maximale réalisable. Les valeurs cibles courantes sont les suivantes :
 
 - Microsoft HoloLens : 60
-- Windows Mixed Reality ultra : 90
+- Windows Mixed Reality Ultra : 90
 
 > [!NOTE]
-> En raison de la [limitation de la fréquence d’images sur HoloLens lorsque la fonction MRC par défaut est active](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens), le profileur Visual est masqué lors de la capture des vidéos et des photos. Ce paramètre peut être remplacé dans le profil du système de diagnostic.
+> en raison de la [limitation de la fréquence d’images sur HoloLens lorsque la valeur de l’option MRC par défaut est active](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens), le profileur visual est masqué lors de la capture des vidéos et des photos. Ce paramètre peut être remplacé dans le profil du système de diagnostic.
 
 ### <a name="frame-time"></a>Durée de frame
 
@@ -62,7 +62,7 @@ L’heure du GPU est prévue pour être ajoutée dans une version ultérieure.
 
 Le graphique de Frame fournit un affichage graphique de l’historique de la fréquence d’images de l’application.
 
-![Graphique de frame manqué du profileur Visual](../images/diagnostics/VisualProfilerMissedFrames.png)
+![Graph de frame manqué du profileur Visual](../images/diagnostics/VisualProfilerMissedFrames.png)
 
 Lorsque vous utilisez l’application, recherchez les trames manquées qui indiquent que l’application n’atteint pas sa fréquence d’images cible et peut nécessiter un travail d’optimisation.
 
@@ -70,7 +70,7 @@ Lorsque vous utilisez l’application, recherchez les trames manquées qui indiq
 
 L’affichage de l’utilisation de la mémoire permet de comprendre facilement comment la vue actuelle influe sur la consommation de mémoire d’une application.
 
-![Graphique de mémoire du profileur Visual](../images/diagnostics/VisualProfilerMemory.png)
+![Graph de mémoire du profileur Visual](../images/diagnostics/VisualProfilerMemory.png)
 
 Lorsque vous utilisez l’application, recherchez l’utilisation totale de la mémoire. Les indicateurs clés incluent l’approche de la limite de la mémoire et des modifications rapides de l’utilisation.
 

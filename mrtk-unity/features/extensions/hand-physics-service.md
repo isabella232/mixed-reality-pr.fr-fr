@@ -1,18 +1,18 @@
 ---
-title: Présentation du service physique de la main
+title: Main physique service
 description: documentation relative à l’utilisation du service d’extension physique de main dans MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 751aec148d3a40da4728d2fdd60a60402b59a4de
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: af7ea753d52b5e478c54ca19d6d8e391401eea6d
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145085"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176251"
 ---
-# <a name="hand-physics-extension-service"></a>Main service extension physique
+# <a name="hand-physics-service"></a>Main physique service
 
 ![Main service extension physique](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 

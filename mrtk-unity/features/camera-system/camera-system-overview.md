@@ -4,17 +4,17 @@ description: Page d’accueil du système d’appareil photo dans MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, appareil photo,
-ms.openlocfilehash: e3b7caacaa9baa67fd81f6d32f3fd8c9f123e66d
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, appareil photo,
+ms.openlocfilehash: cfb40b00d81133ad40e0e4d7a7b2ad87ee645e36
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121287"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177045"
 ---
-# <a name="camera-system"></a>Système de caméra
+# <a name="camera-system-overview"></a>Vue d’ensemble du système d’appareil photo
 
-Le système de caméra permet à Microsoft Mixed Reality Toolkit de configurer et d’optimiser l’appareil photo de l’application afin de l’utiliser dans des applications de réalité mixte. À l’aide du système d’appareil photo, les applications peuvent être écrites pour prendre en charge à la fois les appareils opaques (par exemple, la réalité virtuelle) et les périphériques transparents (par ex. Microsoft HoloLens) sans avoir à écrire du code pour distinguer et s’adapter à chaque type d’affichage.
+le système de caméra permet à l’Shared Computer Toolkit Microsoft Mixed reality de configurer et d’optimiser l’appareil photo de l’application pour l’utiliser dans des applications de réalité mixte. à l’aide du système de caméra, les applications peuvent être écrites pour prendre en charge à la fois les appareils opaques (par exemple, la réalité virtuelle) et les appareils transparents (par ex. Microsoft HoloLens) sans avoir à écrire du code pour faire la distinction entre et s’adapter à chaque type d’affichage.
 
 ## <a name="enabling-the-camera-system"></a>Activation du système de caméra
 
@@ -40,22 +40,22 @@ Les étapes suivantes supposent l’utilisation de l’objet MixedRealityToolkit
 
 ## <a name="configuring-the-camera-system"></a>Configuration du système de caméra
 
-### <a name="settings-providers"></a>Fournisseurs de paramètres
+### <a name="settings-providers"></a>fournisseurs de Paramètres
 
-![Fournisseurs de paramètres d’appareil photo](../images/camera-system/CameraSettingsProviders.png)
+![fournisseurs de Paramètres d’appareil photo](../images/camera-system/CameraSettingsProviders.png)
 
 Les fournisseurs de paramètres d’appareil photo activent la configuration spécifique à la plateforme de l’appareil photo. Ces paramètres peuvent inclure des étapes de configuration personnalisées et/ou des composants.
 
-Vous pouvez ajouter des fournisseurs en cliquant sur le bouton **Ajouter un fournisseur de paramètres d’appareil photo** . Vous pouvez les supprimer en cliquant sur le **-** bouton situé à droite du nom du fournisseur.
+vous pouvez ajouter des fournisseurs en cliquant sur le bouton **ajouter une caméra Paramètres fournisseur** . Vous pouvez les supprimer en cliquant sur le **-** bouton situé à droite du nom du fournisseur.
 
 > [!Note]
-> Toutes les plateformes ne nécessitent pas de fournisseur de paramètres d’appareil photo. Si aucun fournisseur n’est compatible avec la plateforme sur laquelle l’application s’exécute, le kit de connaissances Microsoft Mixed Reality Toolkit applique les valeurs par défaut de base.
+> Toutes les plateformes ne nécessitent pas de fournisseur de paramètres d’appareil photo. si aucun fournisseur n’est compatible avec la plateforme sur laquelle l’application s’exécute, le Shared Computer Toolkit de la réalité mixte Microsoft applique les valeurs par défaut de base.
 
 ### <a name="display-settings"></a>Paramètres d'affichage
 
-![Paramètres d’affichage de l’appareil photo](../images/camera-system/CameraDisplaySettings.png)
+![affichage de l’appareil photo Paramètres](../images/camera-system/CameraDisplaySettings.png)
 
-Les paramètres d’affichage sont spécifiés pour les affichages opaques (par exemple : réalité virtuelle) et transparent (par ex. Microsoft HoloLens). L’appareil photo est configuré au moment de l’exécution à l’aide de ces paramètres.
+les paramètres d’affichage sont spécifiés pour les affichages opaques (par exemple : réalité virtuelle) et transparent (par ex. Microsoft HoloLens). L’appareil photo est configuré au moment de l’exécution à l’aide de ces paramètres.
 
 **Presque clip**
 
@@ -80,4 +80,4 @@ La valeur des paramètres de qualité indique la qualité graphique qu’Unity d
 ## <a name="see-also"></a>Voir aussi
 
 - [Documentation de l’API système de l’appareil photo](xref:Microsoft.MixedReality.Toolkit.CameraSystem)
-- [Création d’un fournisseur de paramètres d’appareil photo](create-settings-provider.md)
+- [création d’un fournisseur de Paramètres d’appareil photo](create-settings-provider.md)

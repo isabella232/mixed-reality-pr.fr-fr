@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: a6e268dd28be2a3d485f937ec5b5ce6b1f29851f
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 9d960d01e738736edd452a124db5c306b5d752ce
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647122"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176136"
 ---
 # <a name="migration-window"></a>Fenêtre de migration
 
@@ -19,9 +19,9 @@ La fenêtre de migration est un outil qui permet aux utilisateurs de migrer auto
 
 ![Fenêtre de migration](../images/migration-window/MRTK_Migration_Window.png)
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
-Pour ouvrir la fenêtre, sélectionnez la fenêtre de  >    >    >  **migration** utilitaires d’outils de réalité mixte. Une fois la fenêtre de migration ouverte, les onglets de navigation du mode de sélection peuvent être activés en choisissant l’implémentation spécifique au composant du gestionnaire de migration.  
+pour ouvrir la fenêtre, sélectionnez la  >  fenêtre de Migration **Shared Computer Toolkit** les  >  **utilitaires**  >  de la réalité mixte. Une fois la fenêtre de migration ouverte, les onglets de navigation du mode de sélection peuvent être activés en choisissant l’implémentation spécifique au composant du gestionnaire de migration.  
 
 ![Modes de sélection de la migration](../images/migration-window/MRTK_Migration_Modes.png)
 
@@ -40,7 +40,7 @@ Permet à l’utilisateur de faire glisser et déposer des ressources de scène 
 
 ![Sélection de scènes pour la migration](../images/migration-window/MRTK_Scene_Selection.png)
 
-### <a name="project-mode"></a>Mode projet
+### <a name="project-mode"></a>mode de Project
 
 Le fait d’appuyer sur le bouton *migrer* met à jour le composant ciblé par l’implémentation du gestionnaire de migration pour tous les prefabs et scènes du projet.
 
@@ -49,5 +49,5 @@ Le fait d’appuyer sur le bouton *migrer* met à jour le composant ciblé par l
 ## <a name="see-also"></a>Voir aussi
 
 - [Mise à jour à partir de versions antérieures](../../updates-deployment/updating.md)
-- [Versions de Microsoft Mixed Reality Toolkit](../../release-notes/mrtk-26-release-notes.md)
+- [versions de Shared Computer Toolkit de la réalité mixte Microsoft](../../release-notes/mrtk-26-release-notes.md)
 - [Feuille de route MRTK](../../roadmap.md)

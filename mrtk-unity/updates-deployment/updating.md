@@ -1,18 +1,18 @@
 ---
-title: Mise à jour
+title: Mise à jour à partir de versions antérieures
 description: Documentation à migrer à partir d’une version antérieure de MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 04/19/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 97f45328bc8f9b811e815da0240138790db699c6
-ms.sourcegitcommit: 0b09536c16f6802acc120a973d720aec7e30f617
+ms.openlocfilehash: 5a914d6408d346dac0bf6c683f401564e875f4d8
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107742235"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175107"
 ---
-# <a name="updating-the-microsoft-mixed-reality-toolkit"></a>Mise à jour de Microsoft Mixed Reality Toolkit
+# <a name="updating-from-earlier-versions"></a>Mise à jour à partir de versions antérieures
 
 - [Mise à niveau vers une nouvelle version de MRTK](#upgrading-to-a-new-version-of-mrtk)
 - [2.3.0 à 2.4.0](#updating-230-to-240)
@@ -26,12 +26,12 @@ ms.locfileid: "107742235"
 Suivez ces instructions pour déterminer quelle version du MRTK vous utilisez actuellement :
 
 1. Ouvrez votre projet MRTK dans Unity
-2. Accédez au dossier « MixedRealityToolkit » dans la fenêtre de votre projet
+2. accédez au dossier « MixedRealityToolkit » dans la fenêtre de Project
 3. Ouvrez le fichier appelé « version ».
 
 Si le fichier et le dossier ci-dessus n’existent pas, c’est que vous utilisez une version plus récente de MRTK. Dans ce cas, essayez ce qui suit :
 
-1. Accédez au dossier « Mixed Reality Toolkit Foundation »
+1. accédez au dossier « Mixed reality Shared Computer Toolkit Foundation ».
 2. Cliquez sur l' package.jspour afficher un aperçu dans Unity ou l’ouvrir avec un éditeur de texte.
 3. Recherchez la ligne avec le mot « version : » 
 
@@ -81,10 +81,10 @@ Un autre chemin de mise à niveau consiste à télécharger manuellement les pac
     - Supprime **MixedRealityToolkit** et **MixedRealityPlayspace**, le cas échéant, de la hiérarchie. Cette opération supprimera la caméra principale, mais elle sera recréée à l’étape suivante. Si des propriétés de la caméra principale ont été modifiées manuellement, elles devront être réappliquées manuellement une fois la nouvelle caméra créée.
     - Sélectionnez **MixedRealityToolkit-> ajouter à la scène et configurer**
     - Sélectionnez **MixedRealityToolkit-> Utilities-> mettre à jour-> les profils de mappage de contrôleur** (ne doit être effectué qu’une seule fois). cela permet de mettre à jour tous les profils de mappage de contrôleur personnalisés avec les données et les axes mis à jour, tout en laissant vos actions d’entrée personnalisées intactes.
-1. Exécutez l' [outil de migration](../features/tools/migration-window.md) et exécutez l’outil sur le *projet complet* pour vous assurer que l’ensemble de votre code est mis à jour vers la dernière version.
+1. exécutez l' [outil de migration](../features/tools/migration-window.md) et exécutez l’outil sur la *Project complète* pour vous assurer que l’ensemble de votre code est mis à jour vers la dernière version.
    La fenêtre de migration contient un certain nombre de gestionnaires de migration différents, qui doivent chacun être exécutés eux-mêmes. Cette étape implique les opérations suivantes :
    - Sélectionnez le premier gestionnaire de migration dans la liste déroulante **Gestionnaire de migration** .
-   - Cliquez sur le bouton « projet complet ».
+   - cliquez sur le bouton « Project complet ».
    - Cliquez sur le bouton « Ajouter le projet complet pour la migration » (cela permet d’analyser l’ensemble du projet pour rechercher les objets à migrer).
    - Cliquez sur le bouton « migrer » qui doit être activé si des objets pouvant être migrés ont été trouvés.
    - Répétez les trois étapes précédentes pour chacun des gestionnaires de migration dans la liste déroulante.
@@ -96,7 +96,7 @@ Passer des fichiers de ressources Unity aux packages d’outils de la fonctionna
 
 - Mise à jour plus facile
 - Temps de compilation plus rapides
-- Moins de projets dans la solution Visual Studio
+- moins de projets dans la solution Visual Studio
 
 La modification de l’outil de la fonctionnalité de réalité mixte nécessite un ensemble d’étapes manuelles à usage unique.
 
@@ -120,7 +120,7 @@ La modification de l’outil de la fonctionnalité de réalité mixte nécessite
     > Certains outils Unity, comme Unity collab, enregistrent les informations de configuration dans le dossier de bibliothèque. Si vous utilisez un outil qui effectue cette opération, commencez par copier le dossier de données de l’outil à partir de la bibliothèque avant de le supprimer, puis restaurez-le après la régénération de la bibliothèque.
 1. Rouvrir le projet dans Unity
 
-Une fois les étapes précédentes effectuées, exécutez l’outil de la [fonctionnalité de réalité mixte](#mixed-reality-feature-tool) et importez la version souhaitée du kit de tâches de la réalité mixte.
+une fois les étapes précédentes effectuées, exécutez l’outil de la [fonctionnalité de réalité mixte](#mixed-reality-feature-tool) et importez la version souhaitée de la réalité mixte Shared Computer Toolkit.
 
 ## <a name="updating-230-to-240"></a>Mise à jour de 2.3.0 vers 2.4.0
 
@@ -206,7 +206,7 @@ Les attributs primitifs de maillage gltf utilisés pour être définissables, il
 
 Les icônes de bouton personnalisées précédemment nécessitaient l’attribution d’un nouveau matériau au convertisseur Quad du bouton. Cela n’est plus nécessaire et nous vous recommandons de déplacer les textures d’icône personnalisées dans un IconSet. Les matériaux et les icônes personnalisés existants sont conservés. Toutefois, elles seront moins optimales jusqu’à leur mise à niveau.
 Pour mettre à niveau les ressources sur tous les boutons du projet au nouveau format recommandé, utilisez ButtonConfigHelperMigrationHandler.
-(Kit d’outils de réalité mixte-utilitaires de >-fenêtre de migration de >-> sélection du gestionnaire de migration-> Microsoft. MixedReality. Toolkit. Utilities. ButtonConfigHelperMigrationHandler)
+(Shared Computer Toolkit de la réalité mixte-> utilitaires-> la fenêtre de migration-> sélection du gestionnaire de migration-> Microsoft. MixedReality. Shared Computer Toolkit. Utilities. ButtonConfigHelperMigrationHandler)
 
 ![Boîte de dialogue mettre à niveau la fenêtre](https://user-images.githubusercontent.com/39840334/82096923-bd28bf80-96b6-11ea-93a9-ceafcb822242.png)
 
@@ -226,13 +226,13 @@ Le champ privé ControllerPoseSynchronizer. droitier a été marqué comme obsol
 
 La méthode setter de la propriété ControllerPoseSynchronizer. de la main publique a été supprimée ([#7012](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/7012)).
 
-**MSBuild pour Unity**
+**MSBuild pour unity**
 
-Cette version de MRTK utilise une version plus récente de MSBuild pour Unity que les versions précédentes. Pendant le chargement du projet, si la version antérieure est répertoriée dans le manifeste du gestionnaire de packages Unity, la boîte de dialogue de configuration s’affiche, avec l’option Activer MSBuild pour Unity activée. L’application effectue une mise à niveau.
+cette version de MRTK utilise une version plus récente de MSBuild pour unity que les versions précédentes. pendant le chargement du projet, si la version antérieure est répertoriée dans le manifeste du gestionnaire de packages unity, la boîte de dialogue de configuration s’affiche, avec l’option activer MSBuild pour unity activée. L’application effectue une mise à niveau.
 
 **ScriptingUtilities**
 
-La classe ScriptingUtilities a été marquée comme obsolète et a été remplacée par ScriptUtilities, dans l’assembly Microsoft. MixedReality. Toolkit. Editor. Utilities. La nouvelle classe affine le comportement précédent et ajoute la prise en charge de la suppression des définitions de script.
+La classe ScriptingUtilities a été marquée comme obsolète et a été remplacée par ScriptUtilities, dans Microsoft. MixedReality. Shared Computer Toolkit. Éditeur. Utilities assembly. La nouvelle classe affine le comportement précédent et ajoute la prise en charge de la suppression des définitions de script.
 
 Bien que le code existant continue à fonctionner dans la version 2.3.0, il est recommandé de mettre à jour vers la nouvelle classe.
 
@@ -269,7 +269,7 @@ Le code d’application peut nécessiter une mise à jour en raison de cette mod
 
 **Espace de noms WindowsMixedRealityUtilities**
 
-L’espace de noms de WindowsMixedRealityUtilities est passé de Microsoft. MixedReality. Toolkit. WindowsMixedReality. Input à Microsoft. MixedReality. Toolkit. WindowsMixedReality ([#6863](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6989)).
+L’espace de noms de WindowsMixedRealityUtilities a été modifié à partir de Microsoft. MixedReality. Shared Computer Toolkit. WindowsMixedReality. Input vers Microsoft. MixedReality. Shared Computer Toolkit. WindowsMixedReality ([#6863](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6989)).
 
 Mettez à jour les instructions #using pour résoudre les erreurs de compilation.
 
@@ -317,11 +317,11 @@ Il s’agit d’une modification avec rupture qui requiert la modification des i
 
 **_Déprécié_**
 
-La `MouseInputProfile` propriété a été marquée comme obsolète et sera supprimée d’une future version de Microsoft Mixed Reality Toolkit. Il est recommandé que le code d’application n’utilise plus cette propriété.
+la `MouseInputProfile` propriété a été marquée comme obsolète et sera supprimée d’une future version de la Shared Computer Toolkit de réalité mixte Microsoft. Il est recommandé que le code d’application n’utilise plus cette propriété.
 
 **Avec interaction**
 
-Les méthodes et propriétés suivantes sont dépréciées et seront supprimées d’une future version de Microsoft Mixed Reality Toolkit. Il est recommandé de mettre à jour le code d’application conformément aux instructions contenues dans l’attribut Obsolete et affiché dans la console.
+les méthodes et propriétés suivantes sont dépréciées et seront supprimées d’une version future de la Shared Computer Toolkit de réalité mixte Microsoft. Il est recommandé de mettre à jour le code d’application conformément aux instructions contenues dans l’attribut Obsolete et affiché dans la console.
 
 - `public bool Enabled`
 - `public bool FocusEnabled`
@@ -396,7 +396,7 @@ Certains axes et types d’entrée ont été mis à jour dans 2.1.0, en particul
 
 ## <a name="updating-rc2-to-200"></a>Mise à jour de RC2 vers 2.0.0
 
-Entre les versions RC2 et 2.0.0 de Microsoft Mixed Reality Toolkit, les modifications ont été apportées et peuvent avoir un impact sur les projets existants. Ce document décrit ces modifications et explique comment mettre à jour des projets vers la version 2.0.0.
+entre les versions RC2 et 2.0.0 de la Shared Computer Toolkit de réalité mixte Microsoft, des modifications peuvent avoir un impact sur les projets existants. Ce document décrit ces modifications et explique comment mettre à jour des projets vers la version 2.0.0.
 
 - [Modifications d'API](#api-changes-in-200)
 - [Modifications du nom de l’assembly](#assembly-name-changes-in-200)
@@ -621,13 +621,13 @@ L' `Microsoft.MixedReality.Toolkit` espace de noms a été ajouté à `ReadOnlyA
 
 La classe `PointerClickHandler` a été déconseillée. Le `PointerHandler` doit être utilisé à la place, il fournit les mêmes fonctionnalités.
 
-**Prise en charge des clickers HoloLens**
+**prise en charge des clickers HoloLens**
 
-Les mappages de contrôleur de l’un des contrôleurs HoloLens sont devenus indisponibles [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController) pour être non mis en mains [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand) . Pour tenir compte de cela, un programme de mise à jour automatique s’exécute la première fois que vous ouvrez votre profil ControllerMapping. Ouvrez un profil personnalisé au moins une fois après la mise à niveau vers 2.0.0 afin de déclencher cette étape de migration ponctuelle.
+les mappages de contrôleur de l’un des HoloLens de l’utilisateur n’ont pas été déplacés [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController) pour être non mis en mains [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand) . Pour tenir compte de cela, un programme de mise à jour automatique s’exécute la première fois que vous ouvrez votre profil ControllerMapping. Ouvrez un profil personnalisé au moins une fois après la mise à niveau vers 2.0.0 afin de déclencher cette étape de migration ponctuelle.
 
 **InteractableHighlight**
 
-La classe `InteractableHighlight` a été déconseillée. La `InteractableOnFocus` classe et l' `FocusInteractableStates` élément multimédia doivent être utilisés à la place. Pour créer un `Theme` élément multimédia pour l' `InteractableOnFocus` , cliquez avec le bouton droit dans la fenêtre projet et sélectionnez *créer* un thème interactif du kit de ressources de la  >  *réalité mixte*  >    >  .
+La classe `InteractableHighlight` a été déconseillée. La `InteractableOnFocus` classe et l' `FocusInteractableStates` élément multimédia doivent être utilisés à la place. pour créer un `Theme` élément multimédia pour le `InteractableOnFocus` , cliquez avec le bouton droit dans la fenêtre projet et sélectionnez *créer* une  >  *réalité mixte Shared Computer Toolkit*  >    >  *thème* exploitable.
 
 **HandInteractionPanZoom**
 
@@ -635,7 +635,7 @@ La classe `InteractableHighlight` a été déconseillée. La `InteractableOnFocu
 
 ### <a name="assembly-name-changes-in-200"></a>Modifications du nom de l’assembly dans 2.0.0
 
-Dans la version 2.0.0, tous les noms d’assembly du Toolkit de réalité mixte officielle et les fichiers de définition d’assembly (. asmdef) associés ont été mis à jour pour s’adapter au modèle suivant.
+dans la version 2.0.0, toute la réalité mixte Shared Computer Toolkit les noms d’assembly et les fichiers de définition d’assembly (. asmdef) associés ont été mis à jour pour s’adapter au modèle suivant.
 
 ```c#
 Microsoft.MixedReality.Toolkit[.<name>]
@@ -649,54 +649,54 @@ Les tableaux suivants décrivent comment les noms de fichiers RC2. asmdef sont m
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit.asmdef | Microsoft. MixedReality. Toolkit. asmdef |
-| MixedRealityToolkit. Core. BuildAndDeploy. asmdef | Microsoft. MixedReality. Toolkit. Editor. BuildAndDeploy. asmdef |
-| MixedRealityToolkit. Core. Definitions. Utilities. Editor. asmdef | Supprimé, utilisez Microsoft. MixedReality. Toolkit. Editor. Utilities. asmdef |
-| MixedRealityToolkit. Core. extensions. EditorClassExtensions. asmdef | Microsoft. MixedReality. Toolkit. Editor. ClassExtensions. asmdef
-| MixedRealityToolkit. Core. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. Editor. Inspectors. asmdef |
-| MixedRealityToolkit. Core. Inspectors. ServiceInspectors. asmdef | Microsoft. MixedReality. Toolkit. Editor. ServiceInspectors. asmdef |
-| MixedRealityToolkit. Core. UtilitiesAsync. asmdef | Microsoft. MixedReality. Toolkit. Async. asmdef |
-| MixedRealityToolkit. Core. Utilities. Editor. asmdef | Microsoft. MixedReality. Toolkit. Editor. Utilities. asmdef |
-| MixedRealityToolkit. Utilities. Gltf. asmdef | Microsoft. MixedReality. Toolkit. Gltf. asmdef |
-| MixedRealityToolkit. Utilities. Gltf. importateurs. asmdef | Microsoft. MixedReality. Toolkit. Gltf. importateurs. asmdef |
+| MixedRealityToolkit.asmdef | Microsoft. MixedReality. Shared Computer Toolkit. asmdef |
+| MixedRealityToolkit. Core. BuildAndDeploy. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Éditeur. BuildAndDeploy. asmdef |
+| MixedRealityToolkit. Core. Definitions. Utilities. Editor. asmdef | Supprimé, utilisez Microsoft. MixedReality. Shared Computer Toolkit. Éditeur. Utilities. asmdef |
+| MixedRealityToolkit. Core. extensions. EditorClassExtensions. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Éditeur. ClassExtensions. asmdef
+| MixedRealityToolkit. Core. Inspectors. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Editor. Inspectors. asmdef |
+| MixedRealityToolkit. Core. Inspectors. ServiceInspectors. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Éditeur. ServiceInspectors. asmdef |
+| MixedRealityToolkit. Core. UtilitiesAsync. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Async. asmdef |
+| MixedRealityToolkit. Core. Utilities. Editor. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Éditeur. Utilities. asmdef |
+| MixedRealityToolkit. Utilities. Gltf. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Gltf.asmdef |
+| MixedRealityToolkit. Utilities. Gltf. importateurs. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Gltf. importateurs. asmdef |
 
 **MixedRealityToolkit. Providers**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit. Providers. OpenVR. asmdef | Microsoft. MixedReality. Toolkit. Providers. OpenVR. asmdef |
-| MixedRealityToolkit. Providers. WindowsMixedReality. asmdef | Microsoft. MixedReality. Toolkit. Providers. WindowsMixedReality. asmdef |
-| MixedRealityToolkit. Providers. WindowsVoiceInput. asmdef | Microsoft. MixedReality. Toolkit. Providers. WindowsVoiceInput. asmdef |
+| MixedRealityToolkit. Providers. OpenVR. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Providers. OpenVR. asmdef |
+| MixedRealityToolkit. Providers. WindowsMixedReality. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Providers. WindowsMixedReality. asmdef |
+| MixedRealityToolkit. Providers. WindowsVoiceInput. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Providers. WindowsVoiceInput. asmdef |
 
 **MixedRealityToolkit. services**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit. services. BoundarySystem. asmdef | Microsoft. MixedReality. Toolkit. services. BoundarySystem. asmdef |
-| MixedRealityToolkit. services. CameraSystem. asmdef | Microsoft. MixedReality. Toolkit. services. CameraSystem. asmdef |
-| MixedRealityToolkit. services. DiagnosticsSystem. asmdef | Microsoft. MixedReality. Toolkit. services. DiagnosticsSystem. asmdef |
-| MixedRealityToolkit. services. InputSimulation. asmdef | Microsoft. MixedReality. Toolkit. services. InputSimulation. asmdef |
-| MixedRealityToolkit. services. InputSimulation. Editor. asmdef | Microsoft. MixedReality. Toolkit. services. InputSimulation. Editor. asmdef |
-| MixedRealityToolkit. services. InputSystem. asmdef | Microsoft. MixedReality. Toolkit. services. InputSystem. asmdef |
-| MixedRealityToolkit. services. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. services. InputSystem. Editor. asmdef |
-| MixedRealityToolkit. services. SceneSystem. asmdef | Microsoft. MixedReality. Toolkit. services. SceneSystem. asmdef |
-| MixedRealityToolkit. services. SpatialAwarenessSystem. asmdef | Microsoft. MixedReality. Toolkit. services. SpatialAwarenessSystem. asmdef |
-| MixedRealityToolkit. services. TeleportSystem. asmdef | Microsoft. MixedReality. Toolkit. services. TeleportSystem. asmdef |
+| MixedRealityToolkit. services. BoundarySystem. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. BoundarySystem. asmdef |
+| MixedRealityToolkit. services. CameraSystem. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. CameraSystem. asmdef |
+| MixedRealityToolkit. services. DiagnosticsSystem. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. DiagnosticsSystem. asmdef |
+| MixedRealityToolkit. services. InputSimulation. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. InputSimulation. asmdef |
+| MixedRealityToolkit. services. InputSimulation. Editor. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. InputSimulation. Editor. asmdef |
+| MixedRealityToolkit. services. InputSystem. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. InputSystem. asmdef |
+| MixedRealityToolkit. services. Inspectors. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. InputSystem. Editor. asmdef |
+| MixedRealityToolkit. services. SceneSystem. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. SceneSystem. asmdef |
+| MixedRealityToolkit. services. SpatialAwarenessSystem. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. SpatialAwarenessSystem. asmdef |
+| MixedRealityToolkit. services. TeleportSystem. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Services. TeleportSystem. asmdef |
 
 **MixedRealityToolkit. SDK**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit. SDK. asmdef | Microsoft. MixedReality. Toolkit. SDK. asmdef |
-| MixedRealityToolkit. SDK. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. SDK. Inspectors. asmdef |
+| MixedRealityToolkit. SDK. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. SDK. asmdef |
+| MixedRealityToolkit. SDK. Inspectors. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. SDK. Inspectors. asmdef |
 
 **MixedRealityToolkit. exemples**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit. examples. asmdef | Microsoft. MixedReality. Toolkit. examples. asmdef |
-| MixedRealityToolkit. examples. démonstrations. Gltf. asmdef | Microsoft. MixedReality. Toolkit. demos. Gltf. asmdef |
-| MixedRealityToolkit. examples. démonstrations. StandardShader. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. demos. StandardShader. Inspectors. asmdef |
-| MixedRealityToolkit. examples. issues. Utilities. InspectorFields. asmdef | Microsoft. MixedReality. Toolkit. demos. InspectorFields. asmdef |
-| MixedRealityToolkit. examples. issues. Utilities. InspectorFields. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. demos. InspectorFields. Inspectors. asmdef |
-| MixedRealityToolkit. examples. démos. UX. Interactables. asmdef | Microsoft. MixedReality. Toolkit. demos. UX. Interactables. asmdef |
+| MixedRealityToolkit. examples. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Exemples. asmdef |
+| MixedRealityToolkit. examples. démonstrations. Gltf. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Démonstrations. Gltf. asmdef |
+| MixedRealityToolkit. examples. démonstrations. StandardShader. Inspectors. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Démonstrations. StandardShader. Inspectors. asmdef |
+| MixedRealityToolkit. examples. issues. Utilities. InspectorFields. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Démonstrations. InspectorFields. asmdef |
+| MixedRealityToolkit. examples. issues. Utilities. InspectorFields. Inspectors. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Démonstrations. InspectorFields. Inspectors. asmdef |
+| MixedRealityToolkit. examples. démos. UX. Interactables. asmdef | Microsoft. MixedReality. Shared Computer Toolkit. Démonstrations. UX. Interactables. asmdef |

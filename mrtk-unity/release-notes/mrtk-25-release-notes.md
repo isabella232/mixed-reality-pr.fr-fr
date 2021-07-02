@@ -4,18 +4,18 @@ description: Notes de publication pour MRTK version 2,5
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK,
-ms.openlocfilehash: 536a37b56b4c7de9875ce1e1642922bd363fecb1
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK,
+ms.openlocfilehash: c9458e5236cc7de18eb27c3c3e13221a366c89a4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562489"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177515"
 ---
-# <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>Notes de publication de Microsoft Mixed Reality Toolkit 2,5
+# <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>notes de publication de Microsoft Mixed reality Shared Computer Toolkit 2,5
 
 > [!IMPORTANT]
-> Un problème connu du compilateur affecte les applications générées pour Microsoft HoloLens 2 à l’aide de ARM64. Ce problème est résolu par la mise à jour de Visual Studio 2019 vers la version 16,8 ou ultérieure. Si vous ne parvenez pas à mettre à jour Visual Studio, importez le `com.microsoft.mixedreality.toolkit.tools` package pour appliquer une solution de contournement.
+> un problème connu du compilateur affecte les applications générées pour Microsoft HoloLens 2 à l’aide de ARM64. ce problème est résolu par la mise à jour de Visual Studio 2019 vers la version 16,8 ou ultérieure. si vous ne parvenez pas à mettre à jour Visual Studio, importez le `com.microsoft.mixedreality.toolkit.tools` package pour appliquer une solution de contournement.
 
 ## <a name="whats-new-in-254"></a>Nouveautés de 2.5.4
 
@@ -25,7 +25,7 @@ Lors de l’utilisation de UPM, les prefabs de OculusXRSDKDeviceManagerProfile a
 
 ### <a name="fixes-an-issue-with-openxr-via-upm"></a>Résout un problème avec OpenXR via UPM
 
-Résout un problème où les fournisseurs OpenXR n’ont pas été ajoutés au link.xml par défaut, provoquant l’échec de l’exécution de nouveaux projets sur l’appareil lors de l’utilisation de OpenXR et de MRTK via le gestionnaire de package Unity. Les projets existants qui sont mis à niveau auront toujours besoin d’être ajoutés manuellement.
+résout un problème où les fournisseurs OpenXR n’ont pas été ajoutés au link.xml par défaut, provoquant l’échec de l’exécution de nouveaux projets sur l’appareil lors de l’utilisation de OpenXR et MRTK via la Gestionnaire de package unity. Les projets existants qui sont mis à niveau auront toujours besoin d’être ajoutés manuellement.
 
 ## <a name="whats-new-in-253"></a>Nouveautés de 2.5.3
 
@@ -47,15 +47,15 @@ La prise en charge initiale du package OpenXR d’Unity Preview et du package Op
 
 Les visualisations de limites, comme le plancher ou les murs, sont désormais correctement configurées et visibles au moment de l’exécution en fonction du profil de limite.
 
-### <a name="msbuild-for-unity-support"></a>Prise en charge de MSBuild pour Unity
+### <a name="msbuild-for-unity-support"></a>MSBuild pour la prise en charge d’unity
 
-La prise en charge de MSBuild pour Unity a été supprimée à partir de la version 2.5.2, afin de s’aligner avec les [nouvelles instructions du package Unity](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/).
+la prise en charge de MSBuild pour unity a été supprimée à partir de la version 2.5.2, afin de s’aligner avec les [nouvelles instructions du package unity](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/).
 
 ## <a name="whats-new-in-251"></a>Nouveautés de la 2.5.1
 
 ### <a name="package-dependency-errors-fixed"></a>Erreurs de dépendance de package corrigées
 
-Cette version corrige les dépendances de fichiers inter-packages incorrectes (par exemple, les fichiers des actifs standard ne référencent plus de manière incorrecte des fichiers en base). La version 2.5.1 ajoute également une dépendance explicite sur le texte de maille Pro.
+Cette version corrige les dépendances de fichiers inter-packages incorrectes (par exemple, les fichiers des actifs standard ne référencent plus de manière incorrecte des fichiers en base). La version 2.5.1 ajoute également une dépendance explicite sur le maillage de texte Pro.
 
 ### <a name="standard-assets-package-shaders-copied-to-assetsmrtkshaders"></a>Nuanciers de packages de ressources standard copiés dans ressources/MRTK/nuanceurs
 
@@ -67,14 +67,14 @@ Cette version corrige un [problème](https://github.com/microsoft/MixedRealityTo
 
 ## <a name="whats-new-in-250"></a>Nouveautés de 2.5.0
 
-### <a name="unity-package-manager-upm-support"></a>Prise en charge du gestionnaire de package Unity (UPM)
+### <a name="unity-package-manager-upm-support"></a>prise en charge des Gestionnaire de package unity (UPM)
 
-La boîte à outils de réalité mixte peut désormais être gérée à l’aide du gestionnaire de package Unity.
+la Shared Computer Toolkit de la réalité mixte peut désormais être gérée à l’aide de la Gestionnaire de package unity.
 
 ![Package UPM MRTK Foundation](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
-> Certaines étapes manuelles sont nécessaires pour importer les packages UPM MRTK. Pour plus d’informations, consultez la [boîte à outils de réalité mixte et le gestionnaire de package Unity](../configuration/usingupm.md) .
+> Certaines étapes manuelles sont nécessaires pour importer les packages UPM MRTK. pour plus d’informations, consultez [Shared Computer Toolkit de réalité mixte et Gestionnaire de package unity](../configuration/usingupm.md) .
 
 ### <a name="oculus-quest-xr-sdk-support"></a>Prise en charge du kit SDK Oculus Quest XR
 
@@ -112,13 +112,13 @@ Les utilisateurs peuvent désormais simuler le contrôleur de mouvement comme le
 
 ### <a name="conical-grab-pointer"></a>Pointeur de manipulation conique
 
-Les pointeurs de manipulation peuvent maintenant être configurés pour interroger des objets avoisinants à l’aide d’un cône à partir du point de manipulation plutôt que d’une sphère. Cela ressemble davantage au comportement de l’interface HoloLens 2 par défaut, qui interroge les objets les plus proches à l’aide d’un cône. Le DefaultHoloLens2InputSystemProfile a également été ajusté pour utiliser le nouveau `ConicalGrabPointer` .
+Les pointeurs de manipulation peuvent maintenant être configurés pour interroger des objets avoisinants à l’aide d’un cône à partir du point de manipulation plutôt que d’une sphère. cela ressemble davantage au comportement de l’interface de HoloLens 2 par défaut, qui interroge les objets les plus proches à l’aide d’un cône. Le DefaultHoloLens2InputSystemProfile a également été ajusté pour utiliser le nouveau `ConicalGrabPointer` .
 
 ![Pointeur de manipulation conique](https://user-images.githubusercontent.com/39840334/82500569-72d58300-9aa8-11ea-8102-ec9a62832d4e.png)
 
 ### <a name="testutilities-package"></a>Package TestUtilities
 
-Il existe maintenant un package (Microsoft. MixedReality. Toolkit. Unity. TestUtilities. 2.5.0. pour Unity) qui contient l’infrastructure de test PlayMode et TestMode que le MRTK utilise pour créer des tests de bout en bout. Cette infrastructure est extrêmement pratique pour l’équipe MRTK elle-même et nous sommes ravis de faire en sorte que les consommateurs l’utilisent pour ajouter la couverture des tests à leurs propres projets.
+il existe désormais un package (Microsoft. MixedReality. Shared Computer Toolkit. Unity. TestUtilities. 2.5.0. pour Unity) qui contient l’infrastructure de test PlayMode et TestMode que le MRTK utilise pour créer des tests de bout en bout. Cette infrastructure est extrêmement pratique pour l’équipe MRTK elle-même et nous sommes ravis de faire en sorte que les consommateurs l’utilisent pour ajouter la couverture des tests à leurs propres projets.
 
 Le code suivant montre comment créer une main test, l’afficher à un certain emplacement, la déplacer, puis la pincer et l’ouvrir.
 
@@ -154,8 +154,8 @@ Vous trouverez plus d’informations sur le fichier de link.xml MRTK dans l’ar
 
 ### <a name="unity-20193-mrtk-configuration-dialog-no-longer-attempts-to-enable-legacy-xr-support"></a>Unity 2019.3 + : la boîte de dialogue de configuration MRTK ne tente plus d’activer la prise en charge des XR héritées
 
-Pour éviter les conflits potentiels lors de l’utilisation de la plateforme XR d’Unity, l’option permettant d’activer la prise en charge des XR hérités a été supprimée de la boîte de dialogue de configuration MRTK. Si vous le souhaitez, la prise en charge de XR héritée peut être activée, dans Unity 2019, à l’aide de **modifier** les  >  **paramètres du projet**  >
- **lecteur**  >  **XR paramètres**  >  **réalité virtuelle prise en charge**.
+Pour éviter les conflits potentiels lors de l’utilisation de la plateforme XR d’Unity, l’option permettant d’activer la prise en charge des XR hérités a été supprimée de la boîte de dialogue de configuration MRTK. si vous le souhaitez, la prise en charge de XR héritée peut être activée, dans unity 2019, à l’aide de **Edit**  >  **Project Paramètres**  >
+ **Player**  >  **XR Paramètres**  >  **Virtual reality pris en charge**.
 
 ### <a name="reduction-in-initializeonload-overhead"></a>Réduction de la surcharge de InitializeOnLoad
 
@@ -166,7 +166,7 @@ Dans certains cas, il y a eu un compromis à effectuer :
 - Consultez [configuration du suivi de la main des mouvements LEAP](../supported-devices/leap-motion-mrtk.md) pour l’étape d’intégration supplémentaire.
 - Pour ceux qui utilisent ARFoundation, il y a maintenant une étape manuelle supplémentaire dans les étapes de prise en main.
   Consultez [ARFoundation](../supported-devices/using-ar-foundation.md#install-required-packages) pour connaître les nouvelles étapes.
-- Pour ceux qui utiliseront la [communication à distance holographique avec le pipeline XR hérité](../features/tools/holographic-remoting.md#legacy-xr-setup-instructions) sur HoloLens 2, il y a maintenant une [étape manuelle](../features/tools/holographic-remoting.md#dotnetwinrt_present-define-written-into-player-settings) à effectuer.
+- pour ceux qui utiliseront la [communication à distance holographique avec le pipeline XR hérité](../features/tools/holographic-remoting.md#legacy-xr-setup-instructions) sur HoloLens 2, il y a maintenant une [étape manuelle](../features/tools/holographic-remoting.md#dotnetwinrt_present-define-written-into-player-settings) à effectuer.
 
 ### <a name="bounds-control-graduated"></a>Contrôle des limites gradué
 
@@ -197,11 +197,11 @@ Pour cette raison, la façon dont nous affichons les contraintes dans l’inspec
 Les contraintes appliquées au composant apparaissent maintenant sous la forme d’une liste dans le composant Gestionnaire de contraintes, tandis que le composant qui utilise le gestionnaire de contraintes ( [contrôle de limites](../features/ux-building-blocks/bounds-control.md#constraint-system) ou [manipulateur d’objets](../features/ux-building-blocks/object-manipulator.md#constraint-manager)) affiche désormais le gestionnaire de contraintes et le mode sélectionnés (auto ou manuel).
 Pour plus d’informations, consultez la section [Gestionnaire de contraintes](../features/ux-building-blocks/constraint-manager.md) dans notre document.
 
-### <a name="hololens-2-button-material-update"></a>Mise à jour matérielle du bouton HoloLens 2
+### <a name="hololens-2-button-material-update"></a>mise à jour du matériel de bouton HoloLens 2
 
-Mise à jour du matériel de la cage avant du bouton HoloLens 2 pour supprimer la couleur noire dans MRC.
+mise à jour du matériel du boîtier avant du bouton HoloLens 2 pour supprimer la couleur noire dans MRC.
 
-![Mise à jour matérielle du bouton HoloLens 2](https://user-images.githubusercontent.com/13754172/94341269-dcf7c900-0042-11eb-9028-e55abd2ead67.png)
+![mise à jour du matériel de bouton HoloLens 2](https://user-images.githubusercontent.com/13754172/94341269-dcf7c900-0042-11eb-9028-e55abd2ead67.png)
 
 ### <a name="description-panel-update-movable-example-scene"></a>Écran de Description mise à jour, exemple de scène mobile
 
@@ -211,7 +211,7 @@ Panneau de description mis à jour. (SceneDescriptionPanelRev. Prefab) la nouvel
 
 ### <a name="spatial-mesh-visualization---pulse-on-air-tap"></a>Visualisation de maillage spatial-impulsions sur pression pneumatique
 
-Exemple de nuanceur d’impulsions mis à jour pour le maillage spatial pour correspondre au comportement de l’interpréteur de commandes HoloLens 2.
+exemple de nuanceur pulse mis à jour pour que le maillage spatial corresponde au comportement de l’interpréteur de commandes de HoloLens 2.
 
 ![Impulsion à l’air](https://user-images.githubusercontent.com/13754172/90310153-d0536180-df29-11ea-939a-e9572d4f5670.gif)
 
@@ -219,7 +219,7 @@ Exemple de nuanceur d’impulsions mis à jour pour le maillage spatial pour cor
 
 ![System2 élastique](../features/images/elastics/Elastics_Main.gif)
 
-MRTK est désormais fourni avec un [système de simulation élastique](../features/elastics/elastic-system.md) qui inclut une large gamme de sous-classes extensibles et flexibles, qui offre des liaisons pour les ressorts de Quaternion à quatre dimensions, les ressorts de volume 3D et les systèmes à ressort linéaires simples.
+MRTK est désormais fourni avec un [système de simulation élastique](../features/experimental/elastic-system.md) qui inclut une large gamme de sous-classes extensibles et flexibles, qui offre des liaisons pour les ressorts de Quaternion à quatre dimensions, les ressorts de volume 3D et les systèmes à ressort linéaires simples.
 
 Actuellement, les composants MRTK suivants prenant en charge le [Gestionnaire élastique](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) peuvent tirer parti des fonctionnalités élastiques :
 
@@ -277,7 +277,7 @@ DevicePortal.UseSSL = true
 
 ### <a name="linkxml"></a>Link.xml
 
-Si une application utilisait précédemment la distribution NuGet de MRTK, le `link.xml` fichier a été supprimé du package de base. Pour restaurer les règles de conservation du code, l’ouverture du projet dans Unity une fois crée un fichier par défaut `link.xml` dans `Assets/MixedRealityToolkit.Generated` . Il est recommandé d’ajouter ce fichier (et `link.xml.meta` ) au contrôle de code source.
+si une application utilisait précédemment la distribution NuGet du MRTK, le `link.xml` fichier a été supprimé du package de base. Pour restaurer les règles de conservation du code, l’ouverture du projet dans Unity une fois crée un fichier par défaut `link.xml` dans `Assets/MixedRealityToolkit.Generated` . Il est recommandé d’ajouter ce fichier (et `link.xml.meta` ) au contrôle de code source.
 
 ### <a name="transform-constraint-changes"></a>Transformer les modifications de contrainte
 
@@ -309,9 +309,9 @@ La simulation du contrôleur de mouvement est désormais proposée en mode de le
 
 Dans certains cas (par exemple, lorsque vous utilisez le fournisseur LeapMotion dans l’éditeur Unity), CameraCache peut recréer MainCamera lors de l’arrêt. Pour plus d’informations, consultez [ce problème](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8459) .
 
-### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException quand des exemples sont importés via le gestionnaire de package Unity
+### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException quand des exemples sont importés via unity Gestionnaire de package
 
-Selon la longueur du chemin d’accès au projet, l’importation d’exemples par le biais du gestionnaire de package Unity peut générer des messages FileNotFoundException dans la console Unity. La cause est le chemin d’accès au fichier « manquant » qui est plus long que MAX_PATH (256 caractères). Pour résoudre le, raccourcissez la longueur du chemin d’accès au projet.
+en fonction de la longueur du chemin d’accès au projet, l’importation d’exemples via unity Gestionnaire de package peut générer des messages FileNotFoundException dans la Console unity. La cause est le chemin d’accès au fichier « manquant » qui est plus long que MAX_PATH (256 caractères). Pour résoudre le, raccourcissez la longueur du chemin d’accès au projet.
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>Aucun Spatializer n’a été spécifié. L’application ne prend pas en charge le son spatial
 
@@ -319,8 +319,8 @@ Un avertissement « aucun Spatializer n’a été spécifié » s’affiche si
 
 Pour résoudre le, vérifiez les éléments suivants :
 
-- **Fenêtre**  >  Un ou plusieurs packages XR sont installés sur le **Gestionnaire de package**
-- **Boîte à outils**  >  de réalité mixte **Utilitaires**  >  **Configurer un projet Unity** et faire une sélection pour l' **audio Spatializer**
+- **Fenêtre**  >  **Gestionnaire de package** a un ou plusieurs packages XR installés
+- Shared Computer Toolkit de la **réalité mixte**  >  **Utilitaires**  >  **configurer unity Project** et faire une sélection pour l' **Audio Spatializer**
 
   ![Sélectionner les Spatializer audio](images/SpatializerSelection.png)
 

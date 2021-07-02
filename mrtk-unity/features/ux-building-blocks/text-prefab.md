@@ -1,20 +1,20 @@
 ---
-title: TextPrefab
+title: Prefab texte
 description: Vue d’ensemble de TextPrefab dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, TMP,
-ms.openlocfilehash: 7d50a35e3761cf2313a43fcc6ad43ed5bd3064a1
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, TMP,
+ms.openlocfilehash: 1839109043cfad9a20697c5d6526b349fd7ea2e4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489289"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175640"
 ---
 # <a name="text-prefab"></a>Prefab texte
 
-Ces prefabs sont optimisés pour la qualité de rendu dans Windows Mixed Reality. Pour plus d’informations, consultez le [texte de l’instruction Unity](/windows/mixed-reality/text-in-unity) sur le centre de développement Microsoft Windows.
+Ces prefabs sont optimisés pour la qualité de rendu dans Windows Mixed Reality. pour plus d’informations, consultez le [texte de l’instruction unity](/windows/mixed-reality/text-in-unity) sur Microsoft Windows Centre de développement.
 
 ## <a name="prefabs"></a>Prefabs
 
@@ -28,7 +28,7 @@ Prefab de texte de l’interface utilisateur (éléments multimédias/MRTK/Kit d
 
 ## <a name="fonts"></a>Polices
 
-Polices Open source (Assets/MRTK/Core/StandardAssets/Fonts) incluses dans le kit de ressources de la réalité mixte.
+polices Open source (assets/MRTK/Core/StandardAssets/fonts) incluses dans la réalité mixte Shared Computer Toolkit.
 
 > [!IMPORTANT]
 > Text Prefab utilise la police Open source’Selawik'. Pour utiliser le texte Prefab avec une autre police, importez le fichier de polices et suivez les instructions ci-dessous. L’exemple ci-dessous montre comment utiliser la police « Segoe UI » avec du texte Prefab.
@@ -51,7 +51,7 @@ Polices Open source (Assets/MRTK/Core/StandardAssets/Fonts) incluses dans le kit
 
 Lorsque vous ajoutez un nouveau TextMesh 3D à une scène dans Unity, deux problèmes sont visibles. Un, la police est très grande et deux, la police semble très floue. Il est également intéressant de noter que la valeur de la taille de police par défaut est définie sur zéro dans l’inspecteur. Le remplacement de cette valeur zéro par 13 n’affiche aucune différence de taille, car 13 est en fait la valeur par défaut.
 
-Unity suppose que tous les nouveaux éléments ajoutés à une scène ont une taille de 1 unité Unity, ou une échelle de transformation 100%, qui se traduit par environ 1 mètre sur le HoloLens. Dans le cas des polices, le cadre englobant d’un TextMesh 3D est fourni, par défaut à environ 1 mètre en hauteur.
+Unity suppose que tous les nouveaux éléments ajoutés à une scène ont une taille de 1 unité Unity, ou une échelle de transformation 100%, qui se traduit par environ 1 mètre sur la HoloLens. Dans le cas des polices, le cadre englobant d’un TextMesh 3D est fourni, par défaut à environ 1 mètre en hauteur.
 
 ### <a name="font-scale-and-font-sizes"></a>Échelle de police et tailles de police
 

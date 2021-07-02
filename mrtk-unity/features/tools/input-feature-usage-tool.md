@@ -5,14 +5,14 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 0f2d3d3eb07d8b631f3f11a8b497a22a028a2f24
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 413d2a3105294411f9c08f4a2add9365389ea783
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145016"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176126"
 ---
-# <a name="inputfeatureusage-tool"></a>Outil InputFeatureUsage
+# <a name="input-feature-usage-tool"></a>Outil d’utilisation des fonctionnalités d’entrée
 
 L’outil InputFeatureUsage est un outil d’exécution (sur un appareil ou dans l’éditeur) qui permet aux développeurs de déterminer rapidement le InputFeatureUsages Unity disponible pour une source d’entrée détectée (par exemple, un contrôleur de mouvement ou une main articulée).
 
@@ -35,7 +35,7 @@ Pour examiner les mappages d’Unity pour un contrôleur :
 - Mettre à jour les mappages de contrôle dans le fournisseur de données du système d’entrée pour le contrôleur
 
 > [!NOTE]
-> L’outil InputFeatureUsage n’utilise pas les composants de Microsoft Mixed Reality Toolkit. Il communique directement avec Unity pour déterminer et afficher les utilisations des fonctionnalités.
+> l’outil InputFeatureUsage ne fait pas appel aux composants Shared Computer Toolkit de la réalité mixte Microsoft. Il communique directement avec Unity pour déterminer et afficher les utilisations des fonctionnalités.
 
 ### <a name="panels"></a>Panneaux
 

@@ -1,20 +1,20 @@
 ---
-title: Modularisation de MRTK
+title: Modularisation MRTK
 description: Décrit la Componentisation dans MRTK.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 04b2e6155e591a918b95aed20961a0450afe5f43
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: eac96e309afc21f9a2b6efe9c3aef5975e4f0dff
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144426"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177009"
 ---
-# <a name="mixed-reality-toolkit-componentization"></a>Composants de la boîte à outils de la réalité mixte
+# <a name="mrtk-modularization"></a>Modularisation MRTK
 
-L’une des nombreuses nouvelles fonctionnalités de Mixed Reality Toolkit v2 est l’amélioration du composant. Chaque fois que cela est possible, les composants individuels sont isolés de la couche principale de la Fondation.
+l’une des nombreuses nouvelles fonctionnalités de la réalité mixte Shared Computer Toolkit v2 est l’amélioration de la création de composants. Chaque fois que cela est possible, les composants individuels sont isolés de la couche principale de la Fondation.
 
 ## <a name="minimized-dependencies"></a>Dépendances réduites
 
@@ -26,7 +26,7 @@ S’il est prévu que les services requièrent un ou plusieurs composants de fou
 
 ## <a name="component-communication"></a>Communication des composants
 
-Pour s’assurer qu’il n’existe aucun lien direct entre les composants, MRTK v2 utilise des interfaces pour la communication entre les services, les fournisseurs de données et le code d’application. Ces interfaces sont définies dans et toutes les communications sont routées via le composant noyau de la réalité mixte.
+Pour s’assurer qu’il n’existe aucun lien direct entre les composants, MRTK v2 utilise des interfaces pour la communication entre les services, les fournisseurs de données et le code d’application. ces interfaces sont définies dans et toutes les communications sont routées via la réalité mixte Shared Computer Toolkit composant principal.
 
 ![Utilisation du système de sensibilisation spatiale via des interfaces](../features/images/packaging/AccessingViaInterfaces.png)
 
@@ -45,7 +45,7 @@ Il est possible de désactiver les éléments arbitraires pendant l’importatio
 
 ## <a name="upcoming-features"></a>Fonctionnalités à venir
 
-### <a name="application-architecture"></a>Architecture de l'application
+### <a name="application-architecture"></a>Architecture de l’application
 
 Le MRTK prend en charge l’activation des applications à l’aide d’une variété d’architectures, notamment :
 

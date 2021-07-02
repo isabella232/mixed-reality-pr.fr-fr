@@ -1,18 +1,18 @@
 ---
-title: Comment ajouter une interactivité de proximité
+title: Ajout d’une interactivité proche
 description: Documentation sur l’interaction proche dans MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Near interaction,
-ms.openlocfilehash: fc0d6d4013392db74e5c8637574c258bee857865
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Near Interaction,
+ms.openlocfilehash: 241425f0c158d684cad6dad8c88c8d692cbec42f
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144184"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176874"
 ---
-# <a name="how-to-add-near-interaction-in-mrtk"></a>Ajout d’une interaction near dans MRTK
+# <a name="how-to-add-near-interactivity"></a>Ajout d’une interactivité proche
 
 Les interactions proches se présentent sous la forme de fonctions de contact et de touches. Les événements tactiles et de manipulation sont déclenchés en tant qu’événements de pointeur par [PokePointer](pointers.md#pokepointer) et [SpherePointer](pointers.md#spherepointer), respectivement.
 
@@ -26,7 +26,7 @@ Trois étapes clés sont requises pour écouter les événements d’entrée tac
 
 1. Assurez-vous qu’un [SpherePointer](pointers.md#spherepointer) est inscrit dans le *Profil du pointeur MRTK*.
 
-    Le profil MRTK par défaut et le profil HoloLens 2 par défaut contiennent déjà un *SpherePointer*. Vous pouvez confirmer qu’un SpherePointer sera créé en sélectionnant le profil de configuration MRTK et en accédant à pointeurs **d’entrée**  >    >  **Options du pointeur**. La valeur par défaut `GrabPointer` de Prefab (Assets/MRTK/SDK/features/Prefabs/Pointers) doit être indiquée avec un *type de contrôleur* de la *main*. Un Prefab personnalisé peut être utilisé tant qu’il implémente la [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer) classe.
+    le profil MRTK par défaut et le profil de HoloLens 2 par défaut contiennent déjà un *SpherePointer*. Vous pouvez confirmer qu’un SpherePointer sera créé en sélectionnant le profil de configuration MRTK et en accédant à pointeurs **d’entrée**  >    >  **Options du pointeur**. La valeur par défaut `GrabPointer` de Prefab (Assets/MRTK/SDK/features/Prefabs/Pointers) doit être indiquée avec un *type de contrôleur* de la *main*. Un Prefab personnalisé peut être utilisé tant qu’il implémente la [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer) classe.
 
     ![Exemple de profil de pointeur de manipulation](../images/input/Pointers/GrabPointer_MRTKProfile.png)
 
@@ -71,7 +71,7 @@ Le processus d’ajout d’interactions tactiles sur des éléments UnityUI est 
 
 Toutefois, pour **les deux** types d’éléments d’expérience utilisateur, assurez-vous qu’un [PokePointer](pointers.md#pokepointer) est inscrit dans le *profil de pointeur MRTK*.
 
-Le profil MRTK par défaut et le profil HoloLens 2 par défaut contiennent déjà un *PokePointer*. Vous pouvez confirmer qu’un PokePointer sera créé en sélectionnant le profil de configuration MRTK et en accèdent aux  >  Options du pointeur **pointeurs** d’entrée  >  . La valeur par défaut `PokePointer` (ressources/MRTK/Kit de développement logiciel/SDK/features/Prefabs/pointeurs) Prefab doit être indiquée avec un *type de contrôleur* *articulé*. Un Prefab personnalisé peut être utilisé tant qu’il implémente la [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) classe.
+le profil MRTK par défaut et le profil de HoloLens 2 par défaut contiennent déjà un *PokePointer*. Vous pouvez confirmer qu’un PokePointer sera créé en sélectionnant le profil de configuration MRTK et en accèdent aux  >  Options du pointeur **pointeurs** d’entrée  >  . La valeur par défaut `PokePointer` (ressources/MRTK/Kit de développement logiciel/SDK/features/Prefabs/pointeurs) Prefab doit être indiquée avec un *type de contrôleur* *articulé*. Un Prefab personnalisé peut être utilisé tant qu’il implémente la [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) classe.
 
 ![Exemple de profil de pointeur en avant](../images/input/Pointers/PokePointer_MRTKProfile.png)
 
@@ -84,16 +84,16 @@ La première consiste généralement à utiliser des objets avec BoxColliders, o
 
 Cela est utile pour activer les situations où une seule face doit être touchable. Cette option suppose que l’objet Game possède un BoxCollider. Il est possible de l’utiliser avec des objets non BoxColliders, auquel cas les propriétés « Bounds » et « local Center » doivent être définies manuellement pour configurer le plan touchable (par exemple, les limites doivent être définies sur une valeur différente de zéro).
 
-1. Sur le GameObject qui doit être touchable, ajoutez un BoxCollider et un `NearInteractionTouchable` composant [] (XREF : Microsoft. MixedReality. Toolkit. Input. NearInteractionTouchable).
+1. sur le GameObject qui doit être touchable, ajoutez un BoxCollider et un [ `NearInteractionTouchable` ] (xref : Microsoft. MixedReality. Shared Computer Toolkit. Input. NearInteractionTouchable).
 
-    1. Définissez **événements sur recevoir** pour *toucher* si vous utilisez l' `IMixedRealityTouchHandler` interface [] (XREF : Microsoft. MixedReality. Toolkit. Input. IMixedRealityTouchHandler) dans votre script de composant ci-dessous.
+    1. définissez les **événements à recevoir** pour *toucher* si vous utilisez [ `IMixedRealityTouchHandler` ] (xref : Microsoft. MixedReality. Shared Computer Toolkit. Input. IMixedRealityTouchHandler) dans votre script de composant ci-dessous.
 
     1. Cliquez sur **corriger les limites** et **Fix Center**
 
     ![Installation de NearInteractionTouchable](../images/input/Pointers/NearInteractionTouchableSetup.gif)
 
 1. Sur cet objet ou sur l’un de ses ancêtres, ajoutez un composant script qui implémente le [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler)
-   interface. Tout ancêtre de l’objet avec [ `NearInteractionTouchable` ] (XREF : Microsoft. MixedReality. Toolkit. Input. NearInteractionTouchable) pourra également recevoir des événements de pointeur.
+   interface. tout ancêtre de l’objet avec [ `NearInteractionTouchable` ] (xref : Microsoft. MixedReality. Shared Computer Toolkit. Input. NearInteractionTouchable) sera également en mesure de recevoir des événements de pointeur.
 
 > [!NOTE]
 > Dans l’affichage scène de l’éditeur avec le gameobject *NearInteractionTouchable* sélectionné, notez le carré et la flèche du contour blanc. La flèche pointe vers l’avant de la touchable. Le conflit est touchable uniquement à partir de cette direction. Pour rendre un touchable de collision dans toutes les directions, consultez la section relative à l' [interaction tactile](#arbitrary-collider-touch)de l’interrogation.
@@ -103,12 +103,12 @@ Cela est utile pour activer les situations où une seule face doit être touchab
 
 Cela est utile pour activer les situations où l’objet de jeu doit être touchable le long de la face entière de son conflit. Par exemple, il peut être utilisé pour activer les interactions tactiles pour un objet avec un SphereCollider, où l’ensemble du conflit doit être touchable.
 
-1. Sur le GameObject qui doit être touchable, ajoutez un conflit et un composant [ `NearInteractionTouchableVolume` ] (XREF : Microsoft. MixedReality. Toolkit. Input. NearInteractionTouchableVolume).
+1. sur le GameObject qui doit être touchable, ajoutez un conflit et un [ `NearInteractionTouchableVolume` ] (xref : Microsoft. MixedReality. Shared Computer Toolkit. Input. NearInteractionTouchableVolume).
 
-    1. Définissez **événements sur recevoir** pour *toucher* si vous utilisez l' `IMixedRealityTouchHandler` interface [] (XREF : Microsoft. MixedReality. Toolkit. Input. IMixedRealityTouchHandler) dans votre script de composant ci-dessous.
+    1. définissez les **événements à recevoir** pour *toucher* si vous utilisez [ `IMixedRealityTouchHandler` ] (xref : Microsoft. MixedReality. Shared Computer Toolkit. Input. IMixedRealityTouchHandler) dans votre script de composant ci-dessous.
 
 1. Sur cet objet ou sur l’un de ses ancêtres, ajoutez un composant script qui implémente le [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler)
-   interface. Tout ancêtre de l’objet avec [ `NearInteractionTouchable` ] (XREF : Microsoft. MixedReality. Toolkit. Input. NearInteractionTouchable) pourra également recevoir des événements de pointeur.
+   interface. tout ancêtre de l’objet avec [ `NearInteractionTouchable` ] (xref : Microsoft. MixedReality. Shared Computer Toolkit. Input. NearInteractionTouchable) sera également en mesure de recevoir des événements de pointeur.
 
 ### <a name="unity-ui"></a>Interface utilisateur Unity
 

@@ -4,23 +4,23 @@ description: Page d’accueil du système de limites dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de limite,
-ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de limite,
+ms.openlocfilehash: fd70479e5183e9a7557de5c5a532cc87161be017
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121357"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177078"
 ---
-# <a name="boundary-system"></a>Système de limites
+# <a name="boundary-system-overview"></a>Vue d’ensemble du système de limites
 
 Le système de limites prend en charge la visualisation des composants limite de réalité virtuelle dans les applications de réalité mixte. Les limites définissent la zone dans laquelle les utilisateurs peuvent se déplacer en toute sécurité tout en portant un casque VR. Les limites sont un composant important d’une expérience de réalité mixte qui permet aux utilisateurs d’éviter les obstacles non visibles tout en portant un casque VR.
 
-De nombreuses plates-formes de réalité virtuelle fournissent un affichage automatique, par exemple un contour blanc superposé sur le monde virtuel lorsque l’utilisateur ou le contrôleur approche de la limite. Le système de limite du Toolkit de réalité mixte étend cette fonctionnalité pour permettre l’affichage d’un plan de la zone suivie, d’un plan de plancher et d’autres fonctionnalités qui peuvent être utilisées pour fournir des informations supplémentaires aux utilisateurs.
+De nombreuses plates-formes de réalité virtuelle fournissent un affichage automatique, par exemple un contour blanc superposé sur le monde virtuel lorsque l’utilisateur ou le contrôleur approche de la limite. le système de limites de la réalité mixte Shared Computer Toolkit étend cette fonctionnalité pour permettre l’affichage d’un plan de la zone suivie, d’un plan de plancher et d’autres fonctionnalités qui peuvent être utilisées pour fournir des informations supplémentaires aux utilisateurs.
 
 ## <a name="getting-started"></a>Prise en main
 
-L’ajout de la prise en charge des limites requiert deux composants clés du kit de tâches de la réalité mixte : le système de limites et une plateforme de réalité virtuelle configurée avec une limite.
+l’ajout de la prise en charge des limites requiert deux composants clés de la réalité mixte Shared Computer Toolkit : le système de limites et une plateforme de réalité virtuelle configurée avec une limite.
 
 1. [Activer](#enable-boundary-system) le système de limites
 2. [Configurer](#configure-boundary-visualization) la visualisation des limites

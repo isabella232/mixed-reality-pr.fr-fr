@@ -5,16 +5,16 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 0de7b904a48453d6021cf7aed5835412c19b7884
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: a31b88f661c141941cae2d0b01668b26c0bed7d7
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121777"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177238"
 ---
-# <a name="diagnostic-system"></a>Système de diagnostic
+# <a name="diagnostics-system-overview"></a>Vue d’ensemble du système de diagnostic
 
-Le système de diagnostic de la réalité mixte Toolkit fournit des outils de diagnostic qui s’exécutent dans l’application pour permettre l’analyse des problèmes liés aux applications.
+la réalité mixte Shared Computer Toolkit système de diagnostic fournit des outils de diagnostic qui s’exécutent dans l’application pour permettre l’analyse des problèmes d’application.
 
 La première version du système de diagnostic contient le [Générateur de profils Visual](using-visual-profiler.md) pour permettre l’analyse des problèmes de performances lors de l’utilisation de l’application.
 

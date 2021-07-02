@@ -4,19 +4,19 @@ description: Documentation de MRTKStandardShader
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, nuanceur de matériau
-ms.openlocfilehash: 8b570ebb023305cecbeca16b32832417a3f57cce
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, nuanceur de matériau
+ms.openlocfilehash: 0a92388bc9be7c11967501709031f559f17f8966
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145110"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176442"
 ---
 # <a name="mrtk-standard-shader"></a>Nuanceur standard MRTK
 
 ![Exemples de nuanceur standard](../images/mrtk-standard-shader/MRTK_StandardShader.jpg)
 
-Le système MRTK standard Shading utilise un nuanceur unique et flexible qui permet d’obtenir des éléments visuels similaires au nuanceur standard de Unity, d’implémenter des principes de [système de conception Fluent](https://www.microsoft.com/design/fluent/) et de rester performant sur des appareils de réalité mixte.
+le système MRTK Standard shading utilise un nuanceur unique et flexible qui permet d’obtenir des éléments visuels similaires au nuanceur Standard de unity, d’implémenter des principes de [Système Fluent Design](https://www.microsoft.com/design/fluent/) et de rester performant sur des appareils de réalité mixte.
 
 ## <a name="example-scenes"></a>Exemples de scènes
 
@@ -100,7 +100,7 @@ Pour l’éclairage statique, le nuanceur respecte lightmaps généré par le [s
 
 Le MRTK contient un chemin de mise à niveau pour permettre aux développeurs d’utiliser le pipeline de rendu scriptable léger d’Unity (LWRP) avec des nuanceurs MRTK. Testé dans Unity 2019.1.1 F1 et le package léger RP 5.7.2. pour obtenir des instructions sur la prise en main de LWRP, consultez [cette page](https://docs.unity3d.com/Packages/com.unity.render-pipelines.lightweight@5.10/manual/getting-started-with-lwrp.html).
 
-Pour effectuer la mise à niveau de MRTK, sélectionnez : **Mixed Reality Toolkit-> Utilities-> mettre à niveau le nuanceur standard MRTK pour le pipeline de rendu léger**
+pour effectuer la mise à niveau de MRTK, sélectionnez : **Shared Computer Toolkit de la réalité mixte-> utilitaires-> mettre à niveau MRTK nuanceur Standard pour le pipeline de rendu léger**
 
 ![mise à niveau lwrp](../images/mrtk-standard-shader/MRTK_LWRPUpgrade.jpg)
 
@@ -124,14 +124,14 @@ Pour améliorer la parité avec le nuanceur standard par pixel, les valeurs de l
 
 Lorsque vous utilisez la compression de canal, il vous suffit d’échantillonner et de charger une seule texture en mémoire au lieu de quatre. Lorsque vous écrivez vos cartes de texture dans un programme comme une substance ou Photoshop, vous pouvez les emporter comme suit :
 
-| Channel | Propriété             |
+| Canal | Propriété             |
 |---------|----------------------|
 | Rouge     | Calculée             |
 | Vert   | Occlusion            |
 | Bleu    | Émission (nuances de gris) |
 | Alpha   | Fluidité           |
 
-Vous pouvez utiliser l’outil combinateur de texture MRTK. Pour ouvrir l’outil, sélectionnez : **Mixed Reality Toolkit-> Utilities-> combiner texture** , qui ouvre la fenêtre ci-dessous :
+Vous pouvez utiliser l’outil combinateur de texture MRTK. pour ouvrir l’outil, sélectionnez : **Shared Computer Toolkit de la réalité mixte-> utilitaires-> combinateur de Texture** qui ouvre la fenêtre suivante :
 
 ![exemple de combinateur de texture](../images/mrtk-standard-shader/MRTK_TextureCombiner.jpg)
 

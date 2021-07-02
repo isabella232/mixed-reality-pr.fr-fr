@@ -4,13 +4,13 @@ description: Types de menu vue d’ensemble MRTK
 author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, objet de défilement
-ms.openlocfilehash: 0ed1d61aed203a5daa45c5d89990e66115cc3abb
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, objet de défilement
+ms.openlocfilehash: a724b9fb4a0f72910e16353a6c76b9e31005a76e
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300114"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176606"
 ---
 # <a name="scrolling-object-collection"></a>Défilement de la collection d’objets
 
@@ -23,7 +23,7 @@ La collection d’objets de défilement MRTK est un composant d’expérience ut
 ### <a name="setting-up-the-scene"></a>Configuration de la scène
 
 1. Créer une nouvelle scène Unity.
-1. Ajoutez MRTK à la scène en accédant à la **boîte à outils de réalité mixte**  >  **Ajouter à Scene et configurer**.
+1. ajoutez MRTK à la scène en accédant à la **réalité mixte Shared Computer Toolkit**  >  **ajouter à la scène et configurer**.
 
 ### <a name="setting-up-the-scrolling-object"></a>Configuration de l’objet de défilement
 
@@ -91,54 +91,54 @@ public class ScrollablePagination : MonoBehaviour
     public void ScrollByTier(int amount)
     {
         scrollView.MoveByTiers(amount);
-    }       
+    }
 }
 ```
 
 ## <a name="scrolling-object-collection-properties"></a>Propriétés de la collection d’objets de défilement
 
-| Général                                                                                                                                                                                                     |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sens de défilement             | Sens dans lequel le contenu doit défiler.|
+| Général          | Description                                   |
+| :--------------- | :-------------------------------------------- |
+| Sens de défilement | Sens dans lequel le contenu doit défiler. |
 
-| Pagination                   |               Description                                                                                                                                                                                      |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cellules par niveau               | Nombre de cellules d’une ligne dans l’affichage de défilement vers le haut ou le nombre de cellules dans une colonne dans l’affichage de défilement de gauche à droite.                                                                                                         |
-| Niveaux par page               | Nombre de niveaux visibles dans la zone de défilement.                                                                                                                                                                         |
-| Cellule de page                    | Dimensions de la cellule de pagination.                  |
+| Pagination     | Description                                                                                               |
+| :------------- | :-------------------------------------------------------------------------------------------------------- |
+| Cellules par niveau | Nombre de cellules d’une ligne dans l’affichage de défilement vers le haut ou le nombre de cellules dans une colonne dans l’affichage de défilement de gauche à droite. |
+| Niveaux par page | Nombre de niveaux visibles dans la zone de défilement.                                                            |
+| Cellule de page      | Dimensions de la cellule de pagination.                                                                        |
 
-| Paramètres avancés            |                  Description                                                                                                                                                                                    |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mode d’édition de masque               | Modes de modification permettant de définir les limites de masquage de la zone de découpage. Choisissez « auto » pour utiliser automatiquement les valeurs de pagination. Choisissez « manuel » pour activer la manipulation directe de l’objet de la zone de découpage.|
-| Mode d’édition d’un conflit           | Modes de modification permettant de définir les limites de collision d’interaction de défilement. Choisissez « auto » pour utiliser automatiquement les valeurs de pagination. Choisissez « manuel » pour permettre la manipulation directe du conflit.|
-| Peut faire défiler                   | Active/désactive le défilement avec une interaction proche/éloignée.                  |
-| Utiliser lors du pré-rendu            | Indique si le scrollingObjectCollection utilise l’événement OnPreRender de l’appareil photo pour gérer la visibilité du contenu.                  |
-| Courbe de pagination             | Courbe d’animation pour la pagination.                  |
-| Longueur de l’animation             | Durée (en secondes) nécessaire à l’évaluation de PaginationCurve.                  |
-| Seuil de défilement Delta à la main  | Distance, en mètres, du pointeur actuel peut se déplacer le long de la direction de défilement avant de déclencher un glissement de défilement.                  |
-| Distance avant pression         | Distance, en mètres, pour positionner un plan XY local utilisé pour vérifier si une interaction tactile a démarré à l’avant de la vue de défilement.                  |
-| Seuil de mise en sortie            | Retirez le montant, en mètres, des limites de défilement nécessaires pour passer de la touche Touch engagée à la version finale.                  |
+| Paramètres avancés           | Description                                                                                                                                                                |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mode d’édition de masque              | Modes de modification permettant de définir les limites de masquage de la zone de découpage. 'Auto’utilise automatiquement les valeurs de pagination. 'Manual’permet la manipulation directe de l’objet de zone de découpage. |
+| Mode d’édition d’un conflit          | Modes de modification permettant de définir les limites de collision d’interaction de défilement. 'Auto’utilise automatiquement les valeurs de pagination. « Manual » permet une manipulation directe du conflit.     |
+| Peut faire défiler                  | Active/désactive le défilement avec une interaction proche/éloignée.                                                                                                                      |
+| Utiliser lors du pré-rendu           | Indique si le scrollingObjectCollection utilise l’événement OnPreRender de l’appareil photo pour gérer la visibilité du contenu.                                                          |
+| Courbe de pagination            | Courbe d’animation pour la pagination.                                                                                                                                            |
+| Longueur de l’animation            | Durée (en secondes) nécessaire à l’évaluation de PaginationCurve.                                                                                                 |
+| Seuil de défilement Delta à la main | Distance, en mètres, du pointeur actuel peut se déplacer le long de la direction de défilement avant de déclencher un glissement de défilement.                                                        |
+| Distance avant pression        | Distance, en mètres, pour positionner un plan XY local utilisé pour vérifier si une interaction tactile a démarré à l’avant de la vue de défilement.                                           |
+| Seuil de mise en sortie           | Retirez le montant, en mètres, des limites de défilement nécessaires pour passer de la touche Touch engagée à la version finale.                                                                |
 
-| Vélocité |               Description                                                                                                                                                                      |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Type de vélocité       | Type souhaité de retrait de vitesse pour le défilement.                                                                                        |
-| Multiplicateur de vélocité     | Quantité de vélocité (supplémentaire) à appliquer au défilement.                                                                                                                                                        |
-| Vélocité de vélocité     | Quantité de retrait appliqué à la vélocité. |
-| Multiplicateur de rebond     | Multiplicateur pour ajouter plus de rebond au défilant d’une liste lors de l’utilisation de l’atténuation par image ou de la dépassement par élément. |
+| Vélocité            | Description                                                                                                 |
+| ------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Type de vélocité    | Type souhaité de retrait de vitesse pour le défilement.                                                      |
+| Multiplicateur de vélocité | Quantité de vélocité (supplémentaire) à appliquer au défilement.                                                       |
+| Vélocité de vélocité     | Quantité de retrait appliqué à la vélocité.                                                                  |
+| Multiplicateur de rebond   | Multiplicateur pour ajouter plus de rebond au défilant d’une liste lors de l’utilisation de l’atténuation par image ou de la dépassement par élément. |
 
-| Options de débogage |            Description                                                                                                                                                                         |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Masque activé       | Mode de visibilité du contenu de défilement. La valeur par défaut masque tous les objets en dehors de la zone d’affichage de défilement.                                                                                        |
-| Afficher les plans de seuil     | Si la valeur est true, l’éditeur restitue les plans de seuil de libération tactile autour des limites de défilement.                                                                                                                                                        |
-| Pagination de débogage     | Utilisez cette section pour déboguer la pagination de défilement pendant l’exécution. |
+| Options de débogage         | Description                                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Masque activé          | Mode de visibilité du contenu de défilement. La valeur par défaut masque tous les objets en dehors de la zone d’affichage de défilement. |
+| Afficher les plans de seuil | Si la valeur est true, l’éditeur restitue les plans de seuil de libération tactile autour des limites de défilement.            |
+| Pagination de débogage      | Utilisez cette section pour déboguer la pagination de défilement pendant l’exécution.                                             |
 
-| Événements|    Description                                                                                                                                                                                 |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| En cas de clic       | Événement déclenché lorsque le conflit d’arrière-plan de défilement ou l’un de ses contenus interactifs reçoit un clic.                                                                                        |
-| Démarrage tactile     | Événement déclenché lorsque le conflit d’arrière-plan de défilement ou l’un de ses contenus interactifs reçoit une pression tactile proche de l’interaction.                                                                                                                                                        |
-| À la saisie tactile terminée     | Événement déclenché lorsqu’une interaction tactile active est terminée en faisant passer le pointeur d’interaction proche de l’un des plans de seuil de mise en sortie. |
-| Au démarrage du momentum     | Événement déclenché lorsque le déplacement du conteneur de défilement commence par interaction, vélocité fallofff ou pagination. |
-| À la fin de l’inertie     | Événement déclenché lorsque le conteneur Scroll cesse de se déplacer par interaction, vélocité fallofff ou pagination. |
+| Événements              | Description                                                                                                                   |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| En cas de clic            | Déclenché lorsque le conflit d’arrière-plan de défilement ou l’un de ses contenus interactifs reçoit un clic.                             |
+| Démarrage tactile    | Déclenché lorsque le conflit d’arrière-plan de défilement ou l’un de ses contenus interactifs reçoit une pression tactile proche de l’interaction.            |
+| À la saisie tactile terminée      | Déclenché lorsqu’une interaction tactile active est terminée lorsque le pointeur d’interaction proche traverse un plan de seuil de mise en sortie. |
+| Au démarrage du momentum | Déclenché lorsque le curseur de défilement commence à se déplacer par interaction, atténuation de vélocité ou pagination.                            |
+| À la fin de l’inertie   | Déclenché lorsque le conteneur de défilement cesse de se déplacer par interaction, atténuation de vélocité ou pagination.                             |
 
 ## <a name="scrolling-example-scene"></a>Exemple de scène de défilement
 

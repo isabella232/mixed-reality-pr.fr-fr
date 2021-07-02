@@ -1,22 +1,22 @@
 ---
-title: Génération et déploiement sur Oculus Quest
+title: Déploiement sur Oculus Quest
 description: Documentation à configurer pour Oculus Quest dans MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Oculus Quest
-ms.openlocfilehash: 96b4b5b8a68c3b61d54b6796ba01c9e2516ba959
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Oculus Quest
+ms.openlocfilehash: d910f26374b21be26377bd40b9be0d45872e007a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449758"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177453"
 ---
-# <a name="building-and-deploying-to-oculus-quest-using-the-xr-sdk-pipeline"></a>Génération et déploiement sur Oculus Quest à l’aide du pipeline du kit de développement logiciel (SDK) XR
+# <a name="deploying-to-oculus-quest"></a>Déploiement sur Oculus Quest
 
 Une [quête Oculus](https://www.oculus.com/quest/) est requise.
 
-La prise en charge de MRTK pour Oculus Quest est fournie par le biais de deux sources différentes : le pipeline SDK XR de Unity et le package Unity d’intégration Oculus. Le **fournisseur de données XRSDK Oculus** permet l’utilisation des deux sources et doit être utilisé pour déployer MRTK sur Oculus Quest.
+La prise en charge de MRTK pour Oculus Quest est fournie par le biais de deux sources différentes : le pipeline SDK XR de Unity et le package Unity d’intégration Oculus. le **Fournisseur de données XRSDK Oculus** permet l’utilisation des deux sources et doit être utilisé pour déployer MRTK sur Oculus Quest.
 
 Le [pipeline Unity XR SDK](https://docs.unity3d.com/Manual/XR.html) permet d’utiliser les contrôleurs tactiles Oculus et le suivi des têtes avec le Oculus Quest.
 Ce pipeline est la norme pour le développement d’applications XR dans Unity 2019,3 et les versions ultérieures. Pour utiliser ce pipeline, assurez-vous que vous utilisez **unity 2019,3 ou une version plus récente**. Cela est **nécessaire** pour déployer des applications MRTK sur Oculus Quest.
@@ -31,11 +31,11 @@ Le [package Unity d’intégration Oculus](https://assetstore.unity.com/packages
 
 ## <a name="setting-up-the-xr-sdk-pipeline-for-oculus-quest"></a>Configuration du pipeline du kit de développement logiciel (SDK) XR pour Oculus Quest
 
-1. Assurez-vous que le **plug-in Oculus XR** est installé sous **Window--> gestionnaire de package**
+1. assurez-vous que le **plug-in Oculus XR** est installé sous **Window--> Gestionnaire de package**
 
     ![Package de plug-in XR Oculus](../images/cross-platform/oculus-quest/OculusXRPluginPackage.png)
 
-1. Assurez-vous que le fournisseur de plug-ins Oculus est inclus dans votre projet en accédant à **modifier--> paramètres du projet--> gestion du plug-in XR--> fournisseurs de plug-** in
+1. assurez-vous que le fournisseur de plug-ins Oculus est inclus dans votre projet en accédant à **modifier--> Project Paramètres--> gestion du plug-in XR--> fournisseurs de plug** -in
 
     ![Fournisseur de plug-ins Oculus](../images/cross-platform/oculus-quest/OculusPluginProvider.png)
 
@@ -43,7 +43,7 @@ Le [package Unity d’intégration Oculus](https://assetstore.unity.com/packages
 
 1. Téléchargez et importez l' [intégration Oculus](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) à partir du magasin d’actifs Unity. La dernière version testée pour fonctionner est 20.0.0. Les versions antérieures sont disponibles dans cette [Archive](https://developer.oculus.com/downloads/package/unity-integration-archive/).
 
-1. Accédez à la boîte à outils de réalité mixte > utilitaires > Oculus > intégrer les modules Unity Oculus Integration. Cela a pour effet de mettre à jour le asmdefs avec les définitions et les références nécessaires au bon fonctionnement du code Oculus Quest approprié. Il met également à jour le fichier CSC pour filtrer les avertissements obsolètes produits par les ressources d’intégration Oculus. Le référentiel MRTK contient un fichier CSC qui convertit les avertissements en erreurs, cette conversion interrompt le processus de configuration MRTK-Quest.
+1. accédez à la réalité mixte Shared Computer Toolkit > utilitaires > Oculus > intégrer les Modules unity Oculus integration. Cela a pour effet de mettre à jour le asmdefs avec les définitions et les références nécessaires au bon fonctionnement du code Oculus Quest approprié. Il met également à jour le fichier CSC pour filtrer les avertissements obsolètes produits par les ressources d’intégration Oculus. Le référentiel MRTK contient un fichier CSC qui convertit les avertissements en erreurs, cette conversion interrompt le processus de configuration MRTK-Quest.
 
     ![Oculus Integration Asmdef](../images/cross-platform/oculus-quest/OculusIntegrationAsmdef.png)
 
@@ -54,13 +54,13 @@ Le [package Unity d’intégration Oculus](https://assetstore.unity.com/packages
 ## <a name="setting-up-the-scene"></a>Configuration de la scène
 
 1. Créez une nouvelle scène Unity ou ouvrez une scène préexistante telle que HandInteractionExamples.
-1. Ajoutez MRTK à la scène en accédant à **Mixed Reality Toolkit**  >  **Add to Scene et configure**.
+1. ajoutez MRTK à la scène en accédant à la **réalité mixte Shared Computer Toolkit**  >  **ajouter à la scène et configurer**.
 
-## <a name="using-the-oculus-xr-sdk-data-provider"></a>Utilisation du kit de développement logiciel (SDK) Oculus XR Fournisseur de données
+## <a name="using-the-oculus-xr-sdk-data-provider"></a>utilisation du kit de développement logiciel (SDK) Oculus XR Fournisseur de données
 
 ::: moniker range=">= mrtkunity-2021-05"
 
-1. Configurez votre profil pour utiliser le **Kit de développement logiciel (SDK) Oculus XR fournisseur de données**
+1. configurez votre profil pour utiliser le **kit de développement logiciel (SDK) Oculus XR Fournisseur de données**
     - Si vous n’avez pas l’intention de modifier les profils de configuration
         - Utilisez l’un des profils MRTK par défaut, qui sont tous configurés dans les pipelines XR d’Unity. Le DefaultXRSDKConfigurationProfile précédent est maintenant marqué comme obsolète.
         - Accédez à [Build et déployez votre projet sur Oculus Quest](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest).
@@ -77,13 +77,13 @@ Le [package Unity d’intégration Oculus](https://assetstore.unity.com/packages
 
         ![Cloner le profil du système d’entrée](../images/cross-platform/CloneInputSystemProfile.png)
 
-        - Ouvrez la section **fournisseurs de données d’entrée** , sélectionnez **Ajouter un fournisseur de données** en haut, et le nouveau fournisseur de données sera ajouté à la fin de la liste.  Ouvrez le nouveau fournisseur de données et définissez le **type** sur **Microsoft. MixedReality. Toolkit. XRSDK. Oculus > OculusXRSDKDeviceManager**.
+        - ouvrez la section **fournisseurs de données d’entrée** , sélectionnez **ajouter un Fournisseur de données** en haut, et le nouveau fournisseur de données sera ajouté à la fin de la liste.  ouvrez le nouveau fournisseur de données et définissez le **Type** sur **Microsoft. MixedReality. Shared Computer Toolkit. XRSDK. Oculus > OculusXRSDKDeviceManager**.
 
         ![Oculus ajouter XRSDK Fournisseur de données](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
 
-1. Configurez votre profil pour utiliser le **Kit de développement logiciel (SDK) Oculus XR fournisseur de données**
+1. configurez votre profil pour utiliser le **kit de développement logiciel (SDK) Oculus XR Fournisseur de données**
     - Si vous n’avez pas l’intention de modifier les profils de configuration
         - Remplacez votre profil par DefaultXRSDKConfigurationProfile.
         - Accédez à [Build et déployez votre projet sur Oculus Quest](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest).
@@ -100,17 +100,17 @@ Le [package Unity d’intégration Oculus](https://assetstore.unity.com/packages
 
         ![Cloner le profil du système d’entrée](../images/cross-platform/CloneInputSystemProfile.png)
 
-        - Ouvrez la section **fournisseurs de données d’entrée** , sélectionnez **Ajouter un fournisseur de données** en haut, et le nouveau fournisseur de données sera ajouté à la fin de la liste.  Ouvrez le nouveau fournisseur de données et définissez le **type** sur **Microsoft. MixedReality. Toolkit. XRSDK. Oculus > OculusXRSDKDeviceManager**.
+        - ouvrez la section **fournisseurs de données d’entrée** , sélectionnez **ajouter un Fournisseur de données** en haut, et le nouveau fournisseur de données sera ajouté à la fin de la liste.  ouvrez le nouveau fournisseur de données et définissez le **Type** sur **Microsoft. MixedReality. Shared Computer Toolkit. XRSDK. Oculus > OculusXRSDKDeviceManager**.
 
         ![Oculus ajouter XRSDK Fournisseur de données](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
 ::: moniker-end
 
-1. Le kit de développement logiciel (SDK) Oculus XR Fournisseur de données comprend une plate-forme de caméra RFP Prefab qui configure automatiquement le projet avec une plate-forme RFP et des mains RFP pour acheminer correctement les entrées. L’ajout manuel d’une plate-forme RFP à la scène nécessite une configuration manuelle des paramètres et de l’entrée.
+1. le kit de développement logiciel (SDK) Oculus XR Fournisseur de données comprend une plate-forme de caméra rfp Prefab qui configure automatiquement le projet avec une plate-forme rfp et des mains rfp pour acheminer correctement les entrées. L’ajout manuel d’une plate-forme RFP à la scène nécessite une configuration manuelle des paramètres et de l’entrée.
 
 ## <a name="build-and-deploy-your-project-to-oculus-quest"></a>Créez et déployez votre projet sur Oculus Quest
 
 1. Branchez votre Oculus Quest via un câble USB C 3,0->
-1. Accédez à **fichier > paramètres de build**
+1. accédez à **fichier > générer Paramètres**
 1. Changer le déploiement en **Android**
 1. Vérifiez que la Oculus Quest est sélectionnée en tant qu’unité d’exécution applicable.
 
@@ -124,12 +124,12 @@ Le [package Unity d’intégration Oculus](https://assetstore.unity.com/packages
 1. Accepter l’invite _autoriser le débogage USB_ de l’intérieur de la Quest
 1. Consultez votre scène à l’intérieur de Oculus Quest
 
-## <a name="removing-oculus-integration-from-the-project"></a>Suppression de l’intégration de Oculus du projet
+## <a name="removing-oculus-integration-from-the-project"></a>Suppression de l’intégration de Oculus de l’Project
 
-1. Accédez à la boîte à outils de réalité mixte > Oculus > modules Unity d’intégration Oculus distincts  ![ Oculus Separation Asmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
-1. Permettre à l’actualisation Unity en tant que références dans Microsoft. MixedReality. Toolkit. Providers. Oculus. asmdef et d’autres fichiers sont modifiés dans cette étape
+1. accédez à la réalité mixte Shared Computer Toolkit > Oculus > séparer les Modules unity Oculus ![ Oculus separation Asmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
+1. Autorisez l’actualisation Unity en tant que références dans le Microsoft. MixedReality. Shared Computer Toolkit. Providers. Oculus. asmdef et d’autres fichiers sont modifiés dans cette étape
 1. Fermer Unity
-1. Fermez Visual Studio, s’il est ouvert
+1. fermer Visual Studio, s’il est ouvert
 1. Ouvrez l’Explorateur de fichiers et accédez à la racine du projet MRTK Unity.
 1. Supprimer le répertoire UnityProjectName/Library
 1. Supprimer le répertoire UnityProjectName/Assets/Oculus

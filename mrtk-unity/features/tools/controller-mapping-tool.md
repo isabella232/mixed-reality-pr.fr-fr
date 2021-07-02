@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: f00dc01555ef158dab21334761bd23ef6a70dba4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 8c1da7ae6a46bd00599a77b1c4cbb0b2f7baa632
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144087"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176168"
 ---
 # <a name="controller-mapping-tool"></a>Outil de mappage de contrôleur
 
@@ -32,7 +32,7 @@ Pour examiner les mappages d’Unity pour un contrôleur :
 - Mettre à jour les mappages de contrôle dans le fournisseur de données du système d’entrée pour le contrôleur
 
 > [!NOTE]
-> L’outil de mappage de contrôleur n’utilise pas les composants de Microsoft Mixed Reality Toolkit. Il communique directement avec Unity pour déterminer et afficher les mappages de contrôle.
+> l’outil de mappage de contrôleur ne fait pas appel aux composants Shared Computer Toolkit de la réalité mixte Microsoft. Il communique directement avec Unity pour déterminer et afficher les mappages de contrôle.
 
 ### <a name="all-controls-display"></a>Tous les contrôles sont affichés
 

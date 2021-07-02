@@ -1,27 +1,27 @@
 ---
-title: Déploiement sur des casques HoloLens et WMR
+title: déploiement sur des HoloLens et des casques WMR
 description: Documentation pour créer et déployer des applications sur différents appareils.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Visual Studio
-ms.openlocfilehash: 12384c3d3c0c2208d86a9a946580d0311f8a8955
-ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Visual Studio
+ms.openlocfilehash: 137e1b699e9a0cda1e8a454a6c3219b581fa71b4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113042300"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176371"
 ---
-# <a name="deploying-to-hololens-and-wmr-headsets"></a>Déploiement sur des casques HoloLens et WMR
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>déploiement sur des HoloLens et des casques WMR
 
-Il existe deux façons de déployer des applications générées avec MRTK sur votre appareil Windows, la plateforme Windows universels (UWP) et la plateforme autonome. Les applications conçues pour HoloLens 1 ou HoloLens 2 doivent cibler UWP, tandis que les applications conçues pour les casques WMR peuvent cibler UWP ou autonome.
+il existe deux façons de déployer des applications générées avec MRTK sur votre appareil windows, la plateforme universels Windows (UWP) et la plateforme autonome. les applications générées pour HoloLens 1 ou HoloLens 2 doivent cibler uwp, tandis que les applications conçues pour les casques WMR peuvent cibler uwp ou autonome.
 
-## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>Génération et déploiement de MRTK sur HoloLens 1, HoloLens 2 et WMR casques (UWP)
+## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>génération et déploiement de MRTK sur HoloLens 1, HoloLens 2 et des casques WMR (UWP)
 
-Vous trouverez des instructions sur la génération et le déploiement de **hololens 1** et **hololens 2** (UWP) dans la rubrique [création de votre application sur un appareil](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device). Ces étapes vous permettent également de déployer sur des **casques WMR**.
+vous trouverez des Instructions sur la création et le déploiement de pour **HoloLens 1** et **HoloLens 2** (UWP) dans la rubrique [création de votre application sur un appareil](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device). Ces étapes vous permettent également de déployer sur des **casques WMR**.
 
 > [!NOTE]
-> Lors du déploiement de votre application sur votre appareil dans Visual Studio, vous devez configurer Visual Studio légèrement différemment en fonction de l’appareil. Les configurations sont les suivantes :
+> lors du déploiement de votre application sur votre appareil dans Visual Studio, vous devez configurer Visual Studio légèrement différemment en fonction de l’appareil. Les configurations sont les suivantes :
 >
 >| Plateforme | Configuration | Architecture | Cible |
 |---|---|---|---|
@@ -29,7 +29,7 @@ Vous trouverez des instructions sur la génération et le déploiement de **holo
 | HoloLens 1 | Release ou Master | x86 | Périphérique |
 | Casques WMR | Release ou Master | x64 | Ordinateur local |
 
-**Conseil :** Lors de la génération pour HoloLens 1, HoloLens 2 ou WMR, il est recommandé que les paramètres de build « version du kit de développement logiciel (SDK) cible » et « version de plateforme minimale » se présentent comme dans l’image ci-dessous :
+**Conseil :** lors de la génération pour HoloLens 1, HoloLens 2 ou WMR, il est recommandé que les paramètres de build « version du kit de développement logiciel (SDK) cible » et « version de plateforme minimale » se présentent comme dans l’image ci-dessous :
 
 ![Fenêtre Build](../features/images/getting-started/BuildWindow.png)
 
@@ -39,7 +39,7 @@ Vérifiez que la liste déroulante « Version cible du Kit de développement lo
 
 ### <a name="unity-20192020-and-hololens"></a>Unity 2019/2020 et HoloLens
 
-Si une application HoloLens apparaît sous la forme d’un panneau 2D sur l’appareil, assurez-vous que les paramètres suivants ont été configurés dans Unity avant de déployer votre application UWP :
+si une application HoloLens s’affiche sous la forme d’un panneau 2d sur l’appareil, assurez-vous que les paramètres suivants ont été configurés dans unity avant de déployer votre application UWP :
 
 Si vous utilisez la prise en charge XR intégrée héritée (Unity 2019 uniquement) :
 
@@ -47,7 +47,7 @@ Si vous utilisez la prise en charge XR intégrée héritée (Unity 2019 uniqueme
 1. Sous **XR Settings (Paramètres XR)** sous l’onglet UWP, vérifiez que l’option **Virtual Reality Supported (Réalité virtuelle prise en charge)** est activée et que le SDK **Windows Mixed Reality** a été ajouté aux SDK.
 1. Générer et déployer dans Visual Studio
 
-Si vous utilisez les plug-ins OpenXR ou Windows XR :
+si vous utilisez les plug-ins OpenXR ou Windows XR :
 
 1. Suivez les étapes décrites dans [Prise en main de XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md)
 1. Vérifiez que le profil de configuration est **DefaultXRSDKConfigurationProfile**

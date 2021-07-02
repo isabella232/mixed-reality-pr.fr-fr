@@ -4,13 +4,13 @@ description: Documentation sur les primitives de découpage avec des exemples da
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, primitive de découpage,
-ms.openlocfilehash: 35b7166045986df34eaf2c23161efc6379160ead
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, primitive de découpage,
+ms.openlocfilehash: c3331084f87ccc57208426910d84ed7bef457bc1
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145204"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176742"
 ---
 # <a name="clipping-primitive"></a>Primitive de découpage
 
@@ -23,9 +23,9 @@ Les [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.Clipping
 
 [`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) et [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) peuvent être utilisés pour contrôler facilement les propriétés de la primitive de découpage. Utilisez ces composants avec les nuanceurs suivants pour tirer parti des scénarios de découpage.
 
-- *Boîte à outils de réalité mixte/standard*
-- *Boîte à outils de réalité mixte/TextMeshPro*
-- *Boîte à outils de réalité mixte/Text3DShader*
+- *Shared Computer Toolkit de la réalité mixte/d'*
+- *Shared Computer Toolkit de la réalité mixte/TextMeshPro*
+- *Shared Computer Toolkit de la réalité mixte/Text3DShader*
 
 ## <a name="examples"></a>Exemples
 

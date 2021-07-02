@@ -1,16 +1,16 @@
 ---
-title: BoundsControl
+title: Contrôle de limites
 description: Vue d’ensemble du contrôle de limites dans MRTK
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, contrôle des limites,
-ms.openlocfilehash: 65558861955f782cf9d81a8bb4ec3a31dee03fde
-ms.sourcegitcommit: 95ea5f3cf873acc93c4614fbccaa093e0f5186f0
+keywords: unity, HoloLens, HoloLens 2, la réalité mixte, le développement, le MRTK, le contrôle des limites,
+ms.openlocfilehash: f5f5e1f463f741eb23f75c9826034b8974baf947
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "110487726"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176464"
 ---
 # <a name="bounds-control"></a>Contrôle de limites
 
@@ -18,7 +18,7 @@ ms.locfileid: "110487726"
 
 *BoundsControl* est le nouveau composant pour la manipulation du comportement, précédemment trouvé dans *BoundingBox*. Le contrôle des limites effectue un certain nombre d’améliorations et de simplifications dans le programme d’installation et ajoute de nouvelles fonctionnalités. Ce composant remplace le cadre englobant, qui est déconseillé.
 
-Le [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) script fournit des fonctionnalités de base pour transformer des objets en réalité mixte. Un contrôle de limites affiche une zone autour de l’hologramme pour indiquer qu’il est possible d’interagir avec. Les poignées sur les angles et les bords de la zone permettent la mise à l’échelle, la rotation ou la traduction de l’objet. Le contrôle de limites réagit également aux entrées d’utilisateur. Sur HoloLens 2, par exemple, le contrôle de limites répond à la proximité d’un doigt, en fournissant un retour visuel pour aider à percevoir la distance par rapport à l’objet. Toutes les interactions et tous les visuels peuvent être facilement personnalisés.
+Le [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) script fournit des fonctionnalités de base pour transformer des objets en réalité mixte. Un contrôle de limites affiche une zone autour de l’hologramme pour indiquer qu’il est possible d’interagir avec. Les poignées sur les angles et les bords de la zone permettent la mise à l’échelle, la rotation ou la traduction de l’objet. Le contrôle de limites réagit également aux entrées d’utilisateur. sur HoloLens 2, par exemple, le contrôle de limites répond à la proximité d’un doigt, en fournissant un retour visuel pour aider à percevoir la distance par rapport à l’objet. Toutes les interactions et tous les visuels peuvent être facilement personnalisés.
 
 ## <a name="example-scene"></a>Exemple de scène
 
@@ -59,7 +59,7 @@ Si l’option aplatir l’axe est définie sur *aplatir* automatiquement, le scr
 
 La section lissage permet de configurer le comportement de lissage pour la mise à l’échelle et la rotation du contrôle.
 
-### <a name="visuals"></a>Visuels
+### <a name="visuals"></a>Objets visuels
 
 L’apparence du contrôle des limites peut être configurée en modifiant l’une des configurations de visuels correspondantes.
 Les configurations visuelles sont des objets scriptables liés ou incorporés et sont décrites plus en détail dans la [section relative](#configuration-objects)à l’objet de configuration.
@@ -146,7 +146,7 @@ La configuration des liens active la fonctionnalité filaire du contrôle des li
 
 ### <a name="proximity-effect-configuration"></a>Configuration de l’effet de proximité
 
-Affichez et masquez les poignées avec l’animation en fonction de la distance des mains. Il a une animation de mise à l’échelle en deux étapes. Les valeurs par défaut sont définies sur le comportement de style HoloLens 2.
+Affichez et masquez les poignées avec l’animation en fonction de la distance des mains. Il a une animation de mise à l’échelle en deux étapes. les valeurs par défaut sont définies sur le comportement de style HoloLens 2.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Proximity.png" alt="Bounds control Proximity">
 
@@ -183,21 +183,21 @@ Le contrôle de limites fournit les événements suivants. Cet exemple utilise c
 
 ## <a name="elastics-experimental"></a>Élastiques (expérimental)
 
-Les élastiques peuvent être utilisés lors de la manipulation d’objets via le contrôle des limites. Notez que le [système élastiques](../elastics/elastic-system.md) est toujours dans un État expérimental. Pour activer les élastiques, liez un composant Gestionnaire élastique existant ou créez et liez un nouveau gestionnaire élastiques à l’aide du `Add Elastics Manager` bouton.
+Les élastiques peuvent être utilisés lors de la manipulation d’objets via le contrôle des limites. Notez que le [système élastiques](../experimental/elastic-system.md) est toujours dans un État expérimental. Pour activer les élastiques, liez un composant Gestionnaire élastique existant ou créez et liez un nouveau gestionnaire élastiques à l’aide du `Add Elastics Manager` bouton.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds control Elastics">
 
 ## <a name="handle-styles"></a>Gérer les styles
 
-Par défaut, lorsque vous affectez simplement le [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) script, il affiche le descripteur du style HoloLens 1re génération. Pour utiliser les descripteurs de style HoloLens 2, vous devez affecter les prefabs et les matériaux de handle appropriés.
+par défaut, lorsque vous affectez simplement le [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) script, il affiche le descripteur de la HoloLens premier style gen. pour utiliser HoloLens 2 poignées de style, vous devez assigner les prefabs et les matériaux de handle appropriés.
 
 ![Styles de handle de contrôle des limites 2](../images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
 
-Vous trouverez ci-dessous les prefabs, les matériaux et les valeurs de mise à l’échelle pour les poignées de contrôle des limites de style HoloLens 2. Cet exemple se trouve dans la `BoundsControlExamples` scène.
+vous trouverez ci-dessous les prefabs, les matériaux et les valeurs de mise à l’échelle pour les poignées de contrôle des limites de style HoloLens 2. Cet exemple se trouve dans la `BoundsControlExamples` scène.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_HandleStyles2.png" width="450" alt="Bounds control HandleStyles">
 
-### <a name="handles-setup-for-hololens-2-style"></a>Handles (programme d’installation du style HoloLens 2)
+### <a name="handles-setup-for-hololens-2-style"></a>handles (programme d’installation de HoloLens 2 style)
 
 * **Matériau de gestion**: BoundingBoxHandleWhite. mat
 * **Gérer un matériau retiré**: BoundingBoxHandleBlueGrabbed. mat
@@ -222,7 +222,7 @@ Pour que les bords du contrôle des limites se comportent de la même façon lor
 1. Ajouter un conflit de zone à un objet
 2. Affecter `BoundsControl` un script à un objet
 3. Configurer des options, telles que les méthodes « activation » (voir la section Propriétés de l' [inspecteur](#inspector-properties) ci-dessous)
-4. Facultatif Assigner des prefabs et des matériaux pour un contrôle de limites de style HoloLens 2 (consultez la section relative aux [styles de handle](#handle-styles) ci-dessous)
+4. Facultatif assigner des prefabs et des matériaux pour un contrôle de limites de style HoloLens 2 (consultez la section relative aux [styles de Handle](#handle-styles) ci-dessous)
 
 > [!NOTE]
 > Utilisez l' *objet cible* et le champ de *remplacement de limites* dans l’inspecteur pour assigner un objet et un conflit spécifiques dans l’objet avec plusieurs composants enfants.
@@ -255,7 +255,7 @@ Pour que les bords du contrôle des limites se comportent de la même façon lor
     boundsControl.RotationHandlesConfig.ShowRotationHandleForX = false;
     ```
 
-1. Facultatif Assignez des prefabs et des matériaux pour un contrôle de limites de style HoloLens 2. Cela nécessite toujours des affectations via l’inspecteur, car les matériaux et les prefabs doivent être chargés dynamiquement.
+1. Facultatif assignez des prefabs et des matériaux pour un contrôle de limites de style HoloLens 2. Cela nécessite toujours des affectations via l’inspecteur, car les matériaux et les prefabs doivent être chargés dynamiquement.
 
 > [!NOTE]
 > Utilisation du dossier « Resources » ou du [nuanceur Unity. Find]( https://docs.unity3d.com/ScriptReference/Shader.Find.html) pour le chargement dynamique des nuanceurs n’est pas recommandé, car les permutations de nuanceur peuvent être manquantes au moment de l’exécution.
@@ -319,4 +319,4 @@ Pour mettre à niveau des instances individuelles du cadre englobant, il existe 
 * [Manipulateur d’objets](object-manipulator.md)
 * [Gestionnaire de contraintes](constraint-manager.md)
 * [Fenêtre de migration](../tools/migration-window.md)
-* [Système élastique (expérimental)](../elastics/elastic-system.md)
+* [Système élastique (expérimental)](../experimental/elastic-system.md)

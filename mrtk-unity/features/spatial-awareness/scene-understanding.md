@@ -1,20 +1,20 @@
 ---
-title: Compréhension des scènes
+title: Observateur de compréhension des scènes
 description: décrit la compréhension des scènes dans MRTK
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, compréhension des scènes
-ms.openlocfilehash: 67a8b99a281b6deecd621edb5600578806812d8a
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, compréhension des scènes
+ms.openlocfilehash: d5430e7885055a550347c4ccebc1452f68125922
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449748"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176236"
 ---
-# <a name="scene-understanding"></a>Compréhension des scènes
+# <a name="scene-understanding-observer"></a>Observateur de compréhension des scènes
 
-La compréhension de la [scène](/windows/mixed-reality/scene-understanding) retourne une représentation sémantique des entités de scène ainsi que leurs formes géométriques sur __hololens 2__ (la 1re génération de hololens n’est pas prise en charge).
+la compréhension de la [scène](/windows/mixed-reality/scene-understanding) retourne une représentation sémantique des entités de scène ainsi que leurs formes géométriques sur __HoloLens 2__ (HoloLens 1re génération n’est pas prise en charge).
 
 Voici quelques cas d’utilisation attendus de cette technologie :
 * Placer des objets sur la surface la plus proche d’un certain type (par exemple, un mur et un plancher)
@@ -22,7 +22,7 @@ Voici quelques cas d’utilisation attendus de cette technologie :
 * Fournir une géométrie conviviale du moteur physique sous forme de quatre cœurs
 * Accélérez le développement en évitant d’avoir à écrire des algorithmes similaires
 
-La compréhension des scènes est introduite en tant que fonctionnalité __expérimentale__ dans MRTK 2,6. Il est intégré à MRTK en tant qu' [Observateur spatial](spatial-awareness-getting-started.md#register-observers) appelé [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . La compréhension des scènes fonctionne à la fois avec le pipeline XR hérité et le pipeline du kit de développement logiciel (SDK) XR (OpenXR (à partir de MRTK 2,7) et le plug-in XR Windows). Dans les deux cas, `WindowsSceneUnderstandingObserver` est utilisé.
+La compréhension des scènes est introduite en tant que fonctionnalité __expérimentale__ dans MRTK 2,6. Il est intégré à MRTK en tant qu' [Observateur spatial](spatial-awareness-getting-started.md#register-observers) appelé [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . la compréhension des scènes fonctionne à la fois avec le pipeline XR hérité et le pipeline du kit de développement logiciel (SDK) XR (OpenXR (à partir de MRTK 2,7) et Windows plug-in XR). Dans les deux cas, `WindowsSceneUnderstandingObserver` est utilisé.
 
 > [!NOTE] 
 > L’utilisation de la compréhension des scènes dans la communication à distance n’est pas prise en charge.
@@ -34,7 +34,7 @@ Lorsque vous y êtes invité, le [`WindowsSceneUnderstandingObserver`](xref:Micr
 ## <a name="setup"></a>Programme d’installation
 
 > [!IMPORTANT]
-> La compréhension de la scène est uniquement prise en charge sur HoloLens 2 et Unity 2019,4 et versions ultérieures.
+> la compréhension des scènes est uniquement prise en charge sur les HoloLens 2 et unity 2019,4 et versions ultérieures.
 
 1. Vérifiez que la plateforme est définie sur UWP dans les paramètres de génération.
 1. Procurez-vous le package de compréhension de scène via l’outil de la [fonctionnalité de réalité mixte](https://aka.ms/MRFeatureTool).
@@ -45,11 +45,11 @@ La façon la plus rapide de prendre en main la compréhension des scènes consis
 
 ### <a name="scene-understanding-sample-scene"></a>Exemple de scène de vision
 
-Dans Unity, utilisez l’Explorateur de projets pour ouvrir le fichier de scène dans `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` et appuyez sur Play !
+dans unity, utilisez l’explorateur de Project pour ouvrir le fichier de scène dans `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` et appuyez sur play !
 
 ::: moniker range="< mrtkunity-2021-05"
 > [!IMPORTANT]
-> S’applique uniquement à MRTK 2.6.0-lors de l’utilisation de l’outil de fonctionnalité de réalité mixte ou de l’importation via UPM, importez l’exemple de démonstrations-SpatialAwareness avant d’importer l’exemple expérimental-SceneUnderstanding en raison d’un problème de dépendance. Pour plus d’informations, consultez [ce problème GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) .
+> S’applique uniquement à MRTK 2.6.0-lors de l’utilisation de l’outil de fonctionnalité de réalité mixte ou de l’importation via UPM, importez l’exemple de démonstrations-SpatialAwareness avant d’importer l’exemple expérimental-SceneUnderstanding en raison d’un problème de dépendance. pour plus d’informations, consultez [ce GitHub problème](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) .
 
 ::: moniker-end
 La scène illustre les éléments suivants :
@@ -98,7 +98,7 @@ L’activation d' *instancier Prefabs*, démontrera la création d’objets qui 
 
 ### <a name="built-app-notes"></a>Notes d’application générées
 
-Générez et déployez sur HoloLens en mode standard. Une fois exécuté, un certain nombre de boutons doivent s’afficher pour jouer avec les fonctionnalités.
+créez et déployez des HoloLens de manière standard. Une fois exécuté, un certain nombre de boutons doivent s’afficher pour jouer avec les fonctionnalités.
 
 Notez qu’il existe un certain nombre de requêtes pour l’observateur. Une configuration incorrecte d’un résultat de requête d’extraction dans votre charge utile d’événement ne contient pas les données attendues. Par exemple, si l’un ne demande pas de quad, aucune texture de masque d’occlusion n’est alors présente. De la même manière, aucun maillage universel ne s’affiche si l’observateur n’est pas configuré pour demander des maillages. Le `DemoSceneUnderstandingController` script prend en charge certaines de ces dépendances, mais pas toutes.
 

@@ -5,21 +5,21 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: a39616a091a3f6800c429dc797ec2f3130e96f40
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: f8f7b8dbac0355c226e4bbfae39246e5c1c58f69
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144541"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176268"
 ---
 # <a name="extension-services"></a>Services d’extension
 
-Les services d’extension sont des composants qui étendent les fonctionnalités du kit de développement de la réalité mixte. Ces services peuvent être fournis par le MRTK ou par d’autres parties.
+les services d’Extension sont des composants qui étendent les fonctionnalités de la réalité mixte Shared Computer Toolkit. Ces services peuvent être fournis par le MRTK ou par d’autres parties.
 
 ## <a name="creating-an-extension-service"></a>Création d’un service d’extension
 
 La méthode la plus efficace pour créer un service d’extension consiste à utiliser l' [Assistant Création de service d’extension](../tools/extension-service-creation-wizard.md).
-Pour démarrer l’Assistant Création de service d’extension, sélectionnez **Mixed Reality Toolkit > Utilities > Create extension service**.
+pour démarrer l’assistant création de service d’extension, sélectionnez Shared Computer Toolkit de la **réalité mixte > utilitaires > créer un service d’extension**.
 
 ![Assistant Création de service d’extension](../images/extension-wizard/ExtensionServiceCreationWizard.png)
 
@@ -34,13 +34,13 @@ Une fois l’Assistant terminé, les fonctionnalités du service peuvent être i
 
 ## <a name="registering-an-extension-service"></a>Inscription d’un service d’extension
 
-Pour être accessible par une application, le nouveau service d’extension doit être inscrit auprès du kit de pratiques de la réalité mixte.
+pour être accessible par une application, le nouveau service d’extension doit être inscrit avec la réalité mixte Shared Computer Toolkit.
 
 L’Assistant Création d’un service d’extension peut être utilisé pour inscrire le service.
 
 ![Inscription de l’Assistant Création de service d’extension](../images/extension-wizard/ExtensionServiceWizardRegister.png)
 
-Le service peut également être inscrit manuellement à l’aide de l’inspecteur de configuration du kit d’outils de réalité mixte.
+le service peut également être enregistré manuellement à l’aide de la réalité mixte Shared Computer Toolkit l’inspecteur de configuration.
 
 ![Inscription manuelle du service d’extension](../images/profiles/RegisterExtensionService.png)
 

@@ -1,16 +1,16 @@
 ---
-title: README_HandCoach
+title: Coach de main
 description: Description et exemples pour la surveillance manuelle.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 8b4069f25692c4058c912ccd06ae678d67882fcd
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: f6042fce7c95c106de9c72adc854e2b7112da63c
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489269"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177149"
 ---
 # <a name="hand-coach"></a>Coach de main
 
@@ -40,8 +40,8 @@ Vous pouvez trouver les ressources sous : [MixedRealityToolkit. SDK/expériment
 ## <a name="quality"></a>Qualité
 
 Si vous remarquez des distorsions sur le maillage dépouillé, vous devez vous assurer que votre projet utilise la quantité appropriée de jointures.
-Accédez à modifier > paramètres du projet > qualité > autres > poids de la fusion. Assurez-vous que « 4 segments » sont sélectionnés pour afficher des articulations lisses.
-![Paramètre de projet](../images/hand-coach/MRTK_ProjectSettings.png)
+accédez à modifier > Project Paramètres > qualité > autres poids de fusion >. Assurez-vous que « 4 segments » sont sélectionnés pour afficher des articulations lisses.
+![Project Défini](../images/hand-coach/MRTK_ProjectSettings.png)
 
 ## <a name="scripts"></a>scripts ;
 

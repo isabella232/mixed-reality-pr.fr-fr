@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 713cb5a0965d713c7073004059218ab2ab37201d
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 4cd5e0b085a182377aacdf35e1298ad1180ee641
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121547"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177271"
 ---
 # <a name="breaking-changes"></a>Changements cassants
 
@@ -83,4 +83,4 @@ Une chose que nous avons déjà fait est de présenter le concept d’une foncti
 
 - Utilisation du [mot clé Internal](/dotnet/csharp/language-reference/keywords/internal).
   Cela nous permettrait d’avoir du code partagé dans nos propres assemblys (pour réduire la duplication du code) sans rendre les éléments publics aux consommateurs externes.
-- Création d’un espace de noms « interne » (par exemple, Microsoft. MixedReality. Toolkit. Internal. Utilities), où nous documentons publiquement que tout ce qui se trouve dans cet espace de noms interne est susceptible d’être modifié à tout moment et peut être supprimé, etc. Cela est similaire à la façon dont les bibliothèques d’en-têtes C++ utilisent les espaces de noms :: Internal pour masquer leurs détails d’implémentation.
+- création d’un espace de noms « interne » (par exemple, Microsoft. MixedReality. Shared Computer Toolkit. Internal. Utilities), où nous avons documenté publiquement que tout ce qui se trouve dans cet espace de noms interne est susceptible d’être modifié à tout moment et peut être supprimé, etc. Cela est similaire à la façon dont les bibliothèques d’en-têtes C++ utilisent les espaces de noms :: Internal pour masquer leurs détails d’implémentation.

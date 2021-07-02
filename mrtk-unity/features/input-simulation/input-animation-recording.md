@@ -1,16 +1,16 @@
 ---
-title: Enregistrement d’animation d’entrée
+title: Entrée d’un enregistrement d’animation
 description: Documentation sur le système d’enregistrement d’animation d’entrée dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 81e49178a9f218e5d3be796ec6253ccabe5d44fc
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6bdb764c5905352b9aec7c1512a73e727b60573a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143910"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176942"
 ---
 # <a name="input-animation-recording"></a>Entrée d’un enregistrement d’animation
 
@@ -64,7 +64,7 @@ L’heure actuelle de l’animation peut également être contrôlée directemen
 
 ### <a name="editor-tools-for-recording-and-playing-input-animation"></a>Outils de l’éditeur pour l’enregistrement et la diffusion d’une animation d’entrée
 
-Un certain nombre d’outils sont disponibles dans l’éditeur Unity pour l’enregistrement et l’examen de l’animation d’entrée. Ces outils sont accessibles dans la [fenêtre outils de simulation d’entrée](input-simulation-service.md#input-simulation-tools-window), qui peut être ouverte à partir de la boîte à outils de la _réalité mixte > utilitaires > menu simulation d’entrée_ .
+Un certain nombre d’outils sont disponibles dans l’éditeur Unity pour l’enregistrement et l’examen de l’animation d’entrée. ces outils sont accessibles dans la [fenêtre outils de simulation d’entrée](input-simulation-service.md#input-simulation-tools-window), qui peut être ouverte à partir de la _réalité mixte Shared Computer Toolkit > utilitaires > menu simulation d’entrée_ .
 
 > [!NOTE]
 > L’enregistrement et la lecture en entrée ne fonctionnent qu’en mode lecture.

@@ -4,21 +4,21 @@ description: Détails pour configurer le système de limites dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de limite,
-ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de limite,
+ms.openlocfilehash: 77bdaedb60700bac27643ae718c795c02e5ee7e7
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121247"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177088"
 ---
-# <a name="configuring-the-boundary-visualization"></a>Configuration de la visualisation des limites
+# <a name="configuring-boundary-visualization"></a>Configuration de la visualisation des limites
 
 Le *profil de visualisation des limites* fournit des options pour configurer l’esthétique visuelle et d’autres paramètres associés pour le système de limite. Les visualisations de limites sont attachées à l’objet PlaySpace de la réalité mixte dans la scène et téléportent avec l’utilisateur.
 
 ## <a name="general-settings"></a>Paramètres généraux :
 
-![Paramètres généraux de visualisation des limites](../images/boundary/BoundaryVisualizationGeneralSettings.png)
+![Paramètres générale de visualisation des limites](../images/boundary/BoundaryVisualizationGeneralSettings.png)
 
 ### <a name="boundary-height"></a>Hauteur limite
 
@@ -26,7 +26,7 @@ La hauteur limite indique la distance au-dessus du plan du plancher à laquelle 
 
 ## <a name="floor-settings"></a>Paramètres du plancher
 
-![Paramètres d’étage de visualisation de la limite](../images/boundary/BoundaryVisualizationFloorSettings.png)
+![Paramètres de la visualisation des limites](../images/boundary/BoundaryVisualizationFloorSettings.png)
 
 **Afficher**
 
@@ -46,7 +46,7 @@ Couche sur laquelle le plan d’étage doit être défini. La valeur par défaut
 
 ## <a name="play-area-settings"></a>Paramètres de la zone de lecture
 
-![Paramètres de la zone de lecture des limites](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
+![zone de lecture de la visualisation des limites Paramètres](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
 
 **Afficher**
 
@@ -62,7 +62,7 @@ Couche sur laquelle la zone de lecture doit être définie. La valeur par défau
 
 ## <a name="tracked-area-settings"></a>Paramètres de la zone suivie
 
-![Paramètres de zone suivie de visualisation de la limite](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
+![Paramètres de zone suivie de la visualisation limite](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
 
 **Afficher**
 
@@ -78,7 +78,7 @@ Couche sur laquelle la zone suivie doit être redéfinie. La valeur par défaut 
 
 ## <a name="boundary-wall-settings"></a>Paramètres du mur des limites
 
-![Paramètres du mur des limites de visualisation des limites](../images/boundary/BoundaryVisualizationWallSettings.png)
+![Paramètres du mur de la limite de visualisation des limites](../images/boundary/BoundaryVisualizationWallSettings.png)
 
 **Afficher**
 
@@ -97,7 +97,7 @@ Couche sur laquelle les parois limites doivent être définies. La valeur par d�
 
 ## <a name="boundary-ceiling-settings"></a>Paramètres de plafond de limite
 
-![Paramètres du plafond de visualisation des limites](../images/boundary/BoundaryVisualizationCeilingSettings.png)
+![limite de visualisation limite Paramètres](../images/boundary/BoundaryVisualizationCeilingSettings.png)
 
 **Afficher**
 

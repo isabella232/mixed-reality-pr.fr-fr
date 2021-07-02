@@ -4,17 +4,17 @@ description: Liste des auteurs MRTK
 author: cadia
 ms.author: cadia
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, C#, contributeurs, communauté
-ms.openlocfilehash: e952926f067cb6be10621b2914372aaa47af5b7d
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, C#, contributeurs, Community
+ms.openlocfilehash: ae8cc8b1ab26a12188622a2c846dddd381491dc2
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647820"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177294"
 ---
 # <a name="authors"></a>Auteurs
 
-Microsoft Mixed Reality Toolkit est un projet collaboratif contenant des contributions de personnes dans le monde entier. Notre sincère remercie de tous ceux qui ont et continuent à contribuer.
+la Shared Computer Toolkit Microsoft Mixed reality est un projet collaboratif contenant des contributions de personnes dans le monde entier. Notre sincère remercie de tous ceux qui ont et continuent à contribuer.
 
 - achaperon
 - Adam Mitchell (AdamMitchell-ms)

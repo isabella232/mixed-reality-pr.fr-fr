@@ -1,16 +1,16 @@
 ---
-title: Services de simulation d’entrée
+title: Service de simulation d’entrée
 description: Documentation sur le service de simulation d’entrée dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 5420f3f2d20d07585007a58f5cf70d8e2027efc6
-ms.sourcegitcommit: c08997a75acfe4ac1d044c0fb9112e6817eb3d45
+ms.openlocfilehash: 66b79c14bbd0ea8c188aba684b9bd1034de31bf9
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112588848"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176964"
 ---
 # <a name="input-simulation-service"></a>Service de simulation d’entrée
 
@@ -20,10 +20,10 @@ Avec la simulation d’entrée de MRTK, vous pouvez tester divers types d’inte
 
 Le service de simulation d’entrée émule le comportement des appareils et des plateformes qui peuvent ne pas être disponibles dans l’éditeur Unity. Voici quelques exemples :
 
-* Suivi de la tête de périphérique HoloLens ou VR
-* Gestes de main HoloLens
-* Suivi de la main articulé 2
-* Suivi oculaire HoloLens 2
+* suivi des en-têtes d’appareil HoloLens ou VR
+* mouvements de la main HoloLens
+* HoloLens 2 le suivi articulé
+* suivi des yeux HoloLens 2
 * Contrôleurs de périphérique VR
 
 > [!WARNING]
@@ -52,7 +52,7 @@ Appuyez sur **Ctrl + H gauche** dans la scène HandInteractionExamples pour affi
 
 Dans le cadre de la configuration du fournisseur de données de système d’entrée, le service de simulation d’entrée peut être configuré comme suit.
 
-* Le **type** doit être *Microsoft. MixedReality. Toolkit. Input > InputSimulationService*.
+* le **Type** doit être *Microsoft. MixedReality. Shared Computer Toolkit. > d’entrée InputSimulationService*.
 * Les **plateformes prises en charge** incluent par défaut toutes les plateformes d' *éditeur* , car le service utilise le clavier et l’entrée de souris.
 
 > [!NOTE]
@@ -93,13 +93,13 @@ Dans la [fenêtre outils de simulation d’entrée](#input-simulation-tools-wind
 
 * *Mains articulées*: simule un appareil manuel entièrement articulé avec des données de position conjointe.
 
-   Émule le modèle d’interaction HoloLens 2.
+   émule HoloLens 2 modèle d’interaction.
 
    Les interactions basées sur le positionnement précis de la main ou sur l’utilisation du toucher peuvent être simulées dans ce mode.
 
 * *Mouvements manuels*: simule un modèle de main simplifié avec robinet d’air et les gestes de base.
 
-   Émule le [modèle d’interaction HoloLens](/windows/mixed-reality/gestures).
+   émule [HoloLens modèle d’interaction](/windows/mixed-reality/gestures).
 
    Le focus est contrôlé à l’aide du pointeur en forme de pointage. Le mouvement d' *appui sur l’air* est utilisé pour interagir avec les boutons.
 
@@ -190,11 +190,11 @@ En outre, vous pouvez utiliser des mains simulées pour l’interaction GGV
 
 ### <a name="raising-teleport-events"></a>Déclenchement d’événements de télégénération
 
-Pour déclencher l’événement de télétransmission dans la simulation d’entrée, configurez les paramètres de mouvement de main dans le profil de simulation d’entrée de sorte que l’un effectue le mouvement de **démarrage** de la télétransmission pendant que l’autre effectue **le geste de** télétransmission. Le geste de **démarrage** de la téléscripteur affiche le pointeur de téléaction, tandis que **le gesure de** téléscription termine l’action de téléscription et déplace l’utilisateur.
+pour déclencher l’événement de télétransmission dans la simulation d’entrée, configurez le mouvement de la main Paramètres dans le profil de simulation d’entrée de sorte que l’un effectue le mouvement de **démarrage** de la télétransmission pendant que l’autre effectue **le geste de** télétransmission. Le geste de **démarrage** de la téléscripteur affiche le pointeur de téléaction, tandis que **le gesure de** téléscription termine l’action de téléscription et déplace l’utilisateur.
 
 La position y de la téléchargement résultante dépend du déplacement de la caméra le long de l’axe y. Dans l’éditeur, il s’agit de 0 par défaut. Utilisez donc les touches **Q** et **E** pour l’ajuster à la hauteur appropriée.
 
-![Paramètres de reversions de simulation d’entrée](../images/input-simulation/InputSimulationTeleport.gif)
+![téléParamètres de la Simulation d’entrée](../images/input-simulation/InputSimulationTeleport.gif)
 
 ### <a name="motion-controller-interaction"></a>Interaction du contrôleur de mouvement
 
@@ -206,7 +206,7 @@ Vous pouvez activer la [simulation du suivi des yeux](../input/eye-tracking/eye-
 
 ## <a name="input-simulation-tools-window"></a>Fenêtre outils de simulation d’entrée
 
-Activez la fenêtre outils de simulation d’entrée à partir du  >    >    >  menu **simulation d’entrée** des utilitaires de la boîte à outils de la réalité mixte. Cette fenêtre permet d’accéder à l’état de la simulation d’entrée en mode lecture.
+activez la fenêtre outils de simulation d’entrée à partir du  >    >    >  menu **simulation d’entrée** de la réalité mixte Shared Computer Toolkit utilitaires. Cette fenêtre permet d’accéder à l’état de la simulation d’entrée en mode lecture.
 
 ## <a name="viewport-buttons-optional"></a>Boutons de la fenêtre d’affichage (facultatif)
 

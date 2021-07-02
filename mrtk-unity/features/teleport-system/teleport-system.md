@@ -1,20 +1,20 @@
 ---
-title: Vue d’ensemble du système de téléporte
+title: Système de téléordinateur
 description: Vue d’ensemble de l’activation et de la désactivation du système de téléMRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de télé-,
-ms.openlocfilehash: a44ad1827597dd0b27bc88a9420a3b251f934afd
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de télé,
+ms.openlocfilehash: 7a49b1fea36eb1809c57abee4cede1216c07d5bf
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144140"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176184"
 ---
 # <a name="teleport-system"></a>Système de téléportation
 
-Le système de téléchargement est un sous-système du MRTK qui gère le téléporting de l’utilisateur lorsque l’application utilise un affichage opaque. Pour les expériences AR (comme HoloLens), le système de téléportage n’est pas actif. Pour les expériences HMD immersifs (OpenVR, WMR), le système de téléchargement peut être activé.
+Le système de téléchargement est un sous-système du MRTK qui gère le téléporting de l’utilisateur lorsque l’application utilise un affichage opaque. pour les expériences AR (comme HoloLens), le système de téléportage n’est pas actif. Pour les expériences HMD immersifs (OpenVR, WMR), le système de téléchargement peut être activé.
 
 ## <a name="enabling-and-disabling"></a>Activation et désactivation
 

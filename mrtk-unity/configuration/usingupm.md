@@ -1,20 +1,20 @@
 ---
 title: Utilisation du gestionnaire de package Unity
-description: Utilisation de MRTK dans le gestionnaire de package Unity
+description: utilisation de MRTK dans unity Gestionnaire de package
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, packages MRTK,
-ms.openlocfilehash: e3e7a2d06cd38d7a9e8daf579f1a312904a86280
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, Packages MRTK,
+ms.openlocfilehash: 524783c48b82722aec26648ea54477a6c7bcd4ae
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345072"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177324"
 ---
-# <a name="mixed-reality-toolkit-and-unity-package-manager"></a>Trousse à outils de réalité mixte et gestionnaire de packages Unity
+# <a name="using-the-unity-package-manager"></a>Utilisation du gestionnaire de package Unity
 
-À partir de la version 2.5.0, à l’aide de l’outil de la [fonctionnalité de réalité mixte](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), Microsoft Mixed Reality Toolkit est intégré au gestionnaire de package Unity (UPM) lors de l’utilisation d’unity 2019,4 et de versions ultérieures.
+à partir de la version 2.5.0, à l’aide de l’outil de la [fonctionnalité de réalité mixte](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), le Shared Computer Toolkit de la réalité mixte Microsoft s’intègre avec unity Gestionnaire de package (UPM) lors de l’utilisation d’unity 2019,4 et plus récent.
 
 ## <a name="using-the-mixed-reality-feature-tool"></a>Utilisation de Mixed Reality Feature Tool
 
@@ -35,16 +35,16 @@ Lorsque vous sélectionnez des fonctionnalités, vous n’avez pas besoin de vou
 
 ![Dépendances requises](../features/images/packaging/RequiredDependencies.png)
 
-## <a name="managing-mixed-reality-features-with-the-unity-package-manager"></a>Gestion des fonctionnalités de réalité mixte avec le gestionnaire de package Unity
+## <a name="managing-mixed-reality-features-with-the-unity-package-manager"></a>gestion des fonctionnalités de réalité mixte avec unity Gestionnaire de package
 
-Une fois qu’un package de boîte à outils de réalité mixte a été ajouté au manifeste du package, il peut être géré à l’aide de l’interface utilisateur du gestionnaire de package Unity.
+une fois qu’une réalité mixte Shared Computer Toolkit package a été ajouté au manifeste du package, elle peut être gérée à l’aide de l’interface utilisateur unity Gestionnaire de package.
 
 ![Package UPM MRTK Foundation](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
-> Si un package de boîte à outils de réalité mixte est supprimé à l’aide du gestionnaire de package Unity, il devra être rajouté à l’aide des [étapes décrites précédemment](#using-the-mixed-reality-feature-tool).
+> si une réalité mixte Shared Computer Toolkit package est supprimé à l’aide de unity Gestionnaire de package, il devra être rajouté à l’aide des [étapes décrites précédemment](#using-the-mixed-reality-feature-tool).
 
-### <a name="using-mixed-reality-toolkit-examples"></a>Utilisation d’exemples d’outils de réalité mixte
+### <a name="using-mixed-reality-toolkit-examples"></a>exemples d’utilisation de la réalité mixte Shared Computer Toolkit
 
 Contrairement à l’utilisation de fichiers de package de ressources (. pour Unity), `com.microsoft.mixedreality.toolkit.examples` et `com.microsoft.mixedreality.toolkit.handphysicsservice` n’importent pas automatiquement les exemples de scènes et les éléments multimédias.
 
@@ -64,4 +64,4 @@ Lorsqu’un exemple de package est mis à jour, Unity offre la possibilité de m
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Packages Toolkit de réalité mixte](../packages/mrtk-packages.md)
+- [packages de Shared Computer Toolkit de réalité mixte](../packages/mrtk-packages.md)

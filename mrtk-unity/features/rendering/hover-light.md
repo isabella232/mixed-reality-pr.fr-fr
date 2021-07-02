@@ -1,22 +1,22 @@
 ---
-title: Lumière lointaine
+title: Pointage
 description: Documentation sur HoverLight avec des exemples dans MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Light sensitive,
-ms.openlocfilehash: b98dff0dd3ff0312f6ce607a5fb8a26f94959ff2
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, lumière de survol,
+ms.openlocfilehash: ed45d3345931376283cfca2372ac57459c777f6e
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145169"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176731"
 ---
-# <a name="hover-light"></a>Lumière lointaine
+# <a name="hover-light"></a>Pointage
 
-Un [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) est un paradigme de [système de conception Fluent](https://www.microsoft.com/design/fluent/) qui imite une [lumière de pointage](https://docs.unity3d.com/Manual/Lighting.html) près de la surface d’un objet. Souvent utilisées pour les interactions éloignées, l’application peut contrôler les propriétés d’une lumière de survol via le [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) composant.
+un [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) est un paradigme de [Système Fluent Design](https://www.microsoft.com/design/fluent/) qui imite une [lumière de pointage](https://docs.unity3d.com/Manual/Lighting.html) près de la surface d’un objet. Souvent utilisées pour les interactions éloignées, l’application peut contrôler les propriétés d’une lumière de survol via le [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) composant.
 
-Pour qu’un matériau soit influencé par un [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) nuanceur de *réalité mixte* , le nuanceur standard doit être utilisé et la propriété de *lumière de survol* doit être activée.
+pour qu’une matière soit influencée par [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) une *réalité mixte Shared Computer Toolkit* nuanceur/d’doit être utilisé et la propriété *Light sensitive* doit être activée.
 
 > [!Note]
 > Le nuanceur MRTK/standard prend en charge un maximum de deux [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) par défaut, mais il est mis à l’échelle pour prendre en charge quatre, puis 10 à mesure que d’autres lumières sont ajoutées à la scène.

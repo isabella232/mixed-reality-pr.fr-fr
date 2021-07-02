@@ -4,13 +4,13 @@ description: Documentation pour créer des actions d’entrée dans MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, InputActions,
-ms.openlocfilehash: 071d4bc8bb4193a3d60cb53852c192ae975d79df
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, InputActions,
+ms.openlocfilehash: cf6ce2af304ee1cd706d0111d66a97018113fb09
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144153"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176814"
 ---
 # <a name="input-actions"></a>Actions d’entrée
 
@@ -18,7 +18,7 @@ Les [**actions d’entrée**](input-actions.md) sont des abstractions sur les en
 
 ## <a name="creating-an-input-action"></a>Création d’une action d’entrée
 
-Les actions d’entrée sont configurées dans le **Profil actions d’entrée**, à l’intérieur du *profil de système d’entrée* dans le composant d’outils de réalité mixte, en spécifiant un nom pour l’action et le type d’entrées (*contrainte d’axe*) qu’elle peut être mappée à :
+les actions d’entrée sont configurées dans le **profil actions d’entrée**, à l’intérieur du *profil de système d’entrée* dans le composant Shared Computer Toolkit de la réalité mixte, en spécifiant un nom pour l’action et le type d’entrées (*contrainte d’axe*) qu’elle peut être mappée à :
 
 <img src="../images/input/InputActions.png" alt="Input Action" style="max-width:100%;">
 

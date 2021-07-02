@@ -1,18 +1,18 @@
 ---
-title: Vue d’ensemble de l’exemple de suivi oculaire
+title: Vue d’ensemble des exemples de suivi oculaire
 description: Exemple pour générer eyetracking dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking,
-ms.openlocfilehash: b5fd3ee35e54c54f2f6b21dc1ce53625c68f65b4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking,
+ms.openlocfilehash: 4cdeaa10725e00ac1a041c3692d64c1bd6488854
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144681"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175540"
 ---
-# <a name="eye-tracking-examples"></a>Exemples de suivi oculaire
+# <a name="eye-tracking-examples-overview"></a>Vue d’ensemble des exemples de suivi oculaire
 
 Cette rubrique explique comment prendre rapidement en main le suivi oculaire dans MRTK en vous appuyant sur les exemples de suivi oculaire MRTK (ressources/MRTK/exemples/démonstrations/EyeTracking).
 Ces exemples vous permettent de découvrir l’une de nos nouvelles fonctionnalités de saisie magique : le **suivi oculaire**!
@@ -39,7 +39,7 @@ En outre, il existe un exemple simple de notifications intelligentes qui dispara
 
 ### <a name="eye-supported-navigation"></a>[**Navigation prise en charge par l’œil**](../input/eye-tracking/eye-tracking-navigation.md)
 
-Imaginez que vous lisez des informations sur un affichage distant ou sur un lecteur e-lecteur et que vous atteignez la fin du texte affiché, le texte défile automatiquement pour afficher davantage de contenu.
+Imagine que vous lisez des informations sur un affichage distant ou sur un lecteur e-lecteur et que vous atteignez la fin du texte affiché, le texte défile automatiquement pour afficher davantage de contenu.
 Ou comment faire un zoom direct direct vers l’emplacement de votre recherche ?
 Voici quelques-uns des exemples présentés dans ce didacticiel sur la navigation prise en charge par les yeux.
 En outre, il existe un exemple de rotation mains libres d’hologrammes 3D en les faisant pivoter automatiquement en fonction de votre focus actuel.
@@ -67,9 +67,9 @@ Nous fournissons des exemples de base pour la journalisation et le chargement de
 
 ### <a name="prerequisites"></a>Prérequis
 
-Notez que l’utilisation des exemples de suivi oculaire sur l’appareil nécessite un HoloLens 2 et un exemple de package d’application généré avec la fonctionnalité « en entrée de regard » sur le AppXManifest du package.
+notez que l’utilisation des exemples de suivi oculaire sur l’appareil requiert une HoloLens 2 et un exemple de package d’application généré avec la fonctionnalité « en entrée de regard » sur le AppXManifest du package.
 
-Pour pouvoir utiliser ces exemples de suivi oculaire sur un appareil, veillez à suivre [ces étapes](../input/eye-tracking/eye-tracking-basic-setup.md#testing-your-unity-app-on-a-hololens-2) avant de générer l’application dans Visual Studio.
+Pour pouvoir utiliser ces exemples de suivi oculaire sur un appareil, veillez à suivre [ces étapes](../input/eye-tracking/eye-tracking-basic-setup.md#testing-your-unity-app-on-a-hololens-2) avant de créer l’application dans Visual Studio.
 
 ### <a name="1-load-eyetrackingdemo-00-rootsceneunity"></a>1. Chargez EyeTrackingDemo-00-RootScene. Unity
 
@@ -87,14 +87,14 @@ Par défaut, il s’agit de _EyeTrackingDemo-02-TargetSelection_.
 
 ### <a name="2-adding-scenes-to-the-build-menu"></a>2. Ajout de scènes au menu Générer
 
-Pour charger des scènes additives pendant l’exécution, vous devez ajouter ces scènes à vos _paramètres de génération-> scènes dans_ le menu Générer.
+pour charger des scènes additives pendant l’exécution, vous devez d’abord ajouter ces scènes à votre _Paramètres de build-> scènes dans_ le menu générer.
 Il est important que la scène racine s’affiche comme la première scène de la liste :
 
-![Menu de scène des paramètres de build pour les exemples de suivi oculaire](../images/eye-tracking/mrtk_et_build_settings.jpg)
+![menu générer Paramètres scène pour les exemples de suivi oculaire](../images/eye-tracking/mrtk_et_build_settings.jpg)
 
 ### <a name="3-play-the-eye-tracking-samples-in-the-unity-editor"></a>3. lire les exemples de suivi oculaire dans l’éditeur Unity
 
-Après avoir ajouté les scènes de suivi oculaire aux paramètres de génération et à charger _EyeTrackingDemo-00-RootScene_, il y a une dernière chose à vérifier : le script _« OnLoadStartScene »_ attaché au _MixedRealityBasicSceneSetup_ gameobject est-il activé ? Cela permet d’informer la scène racine de la scène de démonstration à charger en premier.
+après avoir ajouté les scènes de suivi oculaire à la Paramètres de génération et à charger _EyeTrackingDemo-00-RootScene_, il y a une dernière chose à vérifier : le script _« OnLoadStartScene »_ attaché au _MixedRealityBasicSceneSetup_ GameObject est-il activé ? Cela permet d’informer la scène racine de la scène de démonstration à charger en premier.
 
 ![Exemple pour le script OnLoad_StartScene](../images/eye-tracking/mrtk_et_onloadstartscene.jpg)
 
@@ -108,7 +108,7 @@ Cela agit comme un indicateur (curseur) de la _simulation de regard_: appuyez si
 Quand le curseur pointe sur les gemmes, vous remarquerez qu’il sera aligné sur le centre de la gemme actuellement affichée.
 C’est un excellent moyen de tester si des événements sont déclenchés comme prévu lors de la _« recherche »_ sur une cible.
 Sachez _que le point de contrôle_ de la souris est un complément plutôt médiocre à nos mouvements d’oeil rapides et involontaires.
-Toutefois, il est parfait pour tester les fonctionnalités de base avant d’effectuer une itération sur la conception en la déployant sur l’appareil HoloLens 2.
+toutefois, il est parfait pour tester les fonctionnalités de base avant d’effectuer une itération sur la conception en la déployant sur l’appareil HoloLens 2.
 Retour à notre exemple de scène de suivi oculaire : la gemme pivote tant qu’elle est examinée et peut être détruite en « regardant » sur celle-ci et...
 
 - En appuyant sur _entrée_ (ce qui simule « Select »)
@@ -135,7 +135,7 @@ Aucun problème non plus ! Voici ce que vous pouvez faire :
 
 4. Appuyez sur _Play_
 
-Notez que le chargement de la sous-scène comme celle-ci n’est pas persistant : cela signifie que si vous déployez votre application sur l’appareil HoloLens 2, elle ne chargera que la scène racine (en supposant qu’elle apparaît en haut de vos paramètres de génération).
+notez que le chargement de la sous-scène comme celle-ci n’est pas persistant : cela signifie que si vous déployez votre application sur l’appareil HoloLens 2, elle ne chargera que la scène racine (en supposant qu’elle apparaît en haut de votre Paramètres de Build).
 En outre, lorsque vous partagez votre projet avec d’autres personnes, les sous-scènes ne sont pas chargées automatiquement.
 
 ---

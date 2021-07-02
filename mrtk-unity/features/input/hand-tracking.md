@@ -4,13 +4,13 @@ description: Documentation sur l’utilisation de HandTracking dans MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, suivi de la main,
-ms.openlocfilehash: 6cd55bc76d9fba42640954bcbf50e62f66454a94
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, suivi manuel,
+ms.openlocfilehash: 68e936cb4121027008f37aae72496fe59445b636
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143354"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176894"
 ---
 # <a name="hand-tracking"></a>Suivi de la main
 
@@ -187,9 +187,9 @@ public class MyHandMeshEventHandler : IMixedRealityHandMeshHandler
 
 ### <a name="net-native"></a>.NET Native
 
-Il existe actuellement un problème connu avec les builds principales à l’aide du backend .NET. Dans .NET Native, les `IInspectable` pointeurs ne peuvent pas être marshalés du code natif au code managé à l’aide de `Marshal.GetObjectForIUnknown` . Le MRTK utilise cette valeur pour obtenir le afin de `SpatialCoordinateSystem` recevoir les données de la plateforme et de la main.
+Il existe actuellement un problème connu avec les builds principales à l’aide du backend .NET. dans .NET Native, les `IInspectable` pointeurs ne peuvent pas être marshalés du code natif au code managé à l’aide de `Marshal.GetObjectForIUnknown` . Le MRTK utilise cette valeur pour obtenir le afin de `SpatialCoordinateSystem` recevoir les données de la plateforme et de la main.
 
-Nous avons fourni une source de solution de contournement pour résoudre ce problème, dans [le Toolkit de réalité mixte Native référentiel](https://github.com/microsoft/MixedRealityToolkit/tree/master/DotNetNativeWorkaround). Veuillez suivre les instructions du fichier Lisez-moi et copier les fichiers binaires résultants dans un dossier plugins de vos ressources Unity. Après cela, le script WindowsMixedRealityUtilities fourni dans le MRTK permet de résoudre la solution de contournement.
+nous avons fourni une source DLL comme solution de contournement pour ce problème, dans [la réalité mixte native Shared Computer Toolkit référentiel](https://github.com/microsoft/MixedRealityToolkit/tree/master/DotNetNativeWorkaround). Veuillez suivre les instructions du fichier Lisez-moi et copier les fichiers binaires résultants dans un dossier plugins de vos ressources Unity. Après cela, le script WindowsMixedRealityUtilities fourni dans le MRTK permet de résoudre la solution de contournement.
 
 Si vous souhaitez créer votre propre DLL ou inclure cette solution de contournement dans une solution existante, le cœur de la solution de contournement est le suivant :
 

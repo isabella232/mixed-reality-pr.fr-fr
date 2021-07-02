@@ -1,18 +1,18 @@
 ---
-title: Contrôleurs dans MRTK
+title: Détection des contrôleurs dans MRTK
 description: Documentation sur l’utilisation de différents contrôleurs avec MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 05/13/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, contrôleurs, réverbération HP, Oculus, HTC vive, mains
-ms.openlocfilehash: 111ebf2b1eb26bbef8cde16832f780acfa758595
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, contrôleurs HP, réverbération, Oculus, HTC Vive, mains
+ms.openlocfilehash: 2bb749f4e2f6294c4feb74f97af55ecb857d5f76
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743586"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175597"
 ---
-# <a name="controllers-in-mrtk"></a>Contrôleurs dans MRTK
+# <a name="detecting-controllers-in-mrtk"></a>Détection des contrôleurs dans MRTK
 
 MRTK prend en charge de nombreux contrôleurs différents. De nombreux contrôleurs, tels que les baguettes de type HTC vive Knuckles et HTC vive, fonctionnent en mode natif une fois qu’une application générée avec MRTK est lancée sur l’appareil compatible. D’autres contrôleurs, tels que les mains articulées sur la Oculus Quest et les contrôleurs de réverbération HP, requièrent des packages supplémentaires avant d’être reconnus par MRTK.
 

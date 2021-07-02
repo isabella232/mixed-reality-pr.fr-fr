@@ -1,18 +1,18 @@
 ---
-title: Tests unitaires
+title: Écriture et exécution de tests
 description: Tests unitaires pour vérifier la fiabilité de MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, UnitTest,
-ms.openlocfilehash: a915b005a69de1864a5674bbb0363f18d1c74b19
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, UnitTest,
+ms.openlocfilehash: c8efb192982a1cb9ca07e91d29a69b11aaffc290
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121347"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177113"
 ---
-# <a name="writing-and-running-tests-in-mrtk"></a>Écriture et exécution de tests dans MRTK
+# <a name="writing-and-running-tests"></a>Écriture et exécution de tests
 
 Pour garantir la fiabilité de MRTK, MRTK dispose d’un ensemble de tests pour s’assurer que les modifications apportées au code ne régressent pas les comportements existants. Avoir une bonne couverture de test dans un Big code base comme MRTK est essentiel pour la stabilité et la confiance lors de l’apport de modifications.
 
@@ -221,7 +221,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 
 ### <a name="edit-mode-tests"></a>Tests en mode édition
 
-Les tests en mode édition sont exécutés en mode édition Unity et peuvent être ajoutés dans le dossier **MRTK**  >  **tests**  >  **EditModeTests** de la boîte à outils de la réalité mixte référentiel.
+les tests en mode édition sont exécutés en mode édition unity et peuvent être ajoutés dans le dossier **MRTK**  >  **tests**  >  **EditModeTests** de la réalité mixte Shared Computer Toolkit référentiel.
 Pour créer un test, le modèle suivant peut être utilisé :
 
 ```c#
@@ -285,7 +285,7 @@ Le positionnement des tests basés sur un scénario est moins défini : si le t
 
 Lorsque vous ajoutez un nouveau test, modifiez le script pour qu’il dispose de l’icône MRTK correcte. Pour ce faire, il existe un outil MRTK simple :
 
-1. Aller à l’élément de menu du Toolkit de réalité mixte
+1. aller à l’élément de menu Shared Computer Toolkit de la réalité mixte
 1. Cliquez sur utilitaires, puis sur mettre à jour, puis sur icônes
 1. Cliquez sur tests pour que le programme de mise à jour s’exécute automatiquement, en mettant à jour tous les scripts de test dont les icônes sont manquantes
 
