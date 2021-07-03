@@ -8,29 +8,29 @@
   href: mr-learning-overview.md
 - name: Développer votre processus de conception
   href: case-study-expanding-the-design-process-for-mixed-reality.md
-- name: Exécution du hub d’exemples MRTK
-  href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/running-examples-hub'
 - name: Conception d’hologrammes
   href: designing-holograms.md
 - name: Vue d’ensemble des études de cas
   href: case-studies-overview.md
-- name: Matériel HoloLens
+- name: Matériel
   items:
-    - name: "Informations détaillées sur le casque HoloLens\_2"
-      href: /hololens/hololens2-hardware
-    - name: "Informations détaillées sur le matériel HoloLens (1ère\_génération)"
-      href: /hololens/hololens1-hardware
-- name: Casques immersifs
-  items:
-    - name: Informations détaillées sur les casques immersifs
-      href: immersive-headset-hardware-details.md
-    - name: Exploration de la page d’accueil Windows Mixed Reality
-      href: navigating-the-windows-mixed-reality-home.md
-    - name: Guide pour les passionnés de RV
-      href: /windows/mixed-reality/enthusiast-guide/
-    - name: Divertissement basé sur l’emplacement
-      href: location-based-experiences.md
+    - name: HoloLens
+      items:
+        - name: "Informations détaillées sur le casque HoloLens\_2"
+          href: /hololens/hololens2-hardware
+        - name: "Informations détaillées sur le matériel HoloLens (1ère\_génération)"
+          href: /hololens/hololens1-hardware
+    - name: Casques immersifs
+      items:
+        - name: Informations détaillées sur les casques immersifs
+          href: immersive-headset-hardware-details.md
+        - name: Exploration de la page d’accueil Windows Mixed Reality
+          href: navigating-the-windows-mixed-reality-home.md
+        - name: Guide pour les passionnés de RV
+          href: /windows/mixed-reality/enthusiast-guide/
+        - name: Divertissement basé sur l’emplacement
+          href: location-based-experiences.md
+    - name: Accessories
+      href: hardware-accessories.md
 - name: Ressources communautaires
   href: community.md
-- name: Accessoires matériels
-  href: hardware-accessories.md
