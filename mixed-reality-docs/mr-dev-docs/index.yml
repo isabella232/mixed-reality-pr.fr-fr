@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Documentation sur la réalité mixte
-summary: 'Explorez le monde toujours plus grand des applications de réalité mixte avec Windows Mixed Reality, Mixed Reality Toolkit (MRTK), Unity, Unreal et plus encore pour les casques immersifs Windows et HoloLens.'
+summary: 'Explorez le monde toujours plus grand des applications de réalité mixte avec Mixed Reality Toolkit (MRTK), Windows Mixed Reality, Unity, Unreal et plus encore pour les casques immersifs Windows et HoloLens.'
 brand: windows
 metadata:
   title: Documentation sur la réalité mixte
-  description: Plongez dans l’univers en pleine expansion des applications de réalité mixte avec les casques immersifs HoloLens et Windows.
+  description: 'Explorez le monde toujours plus grand des applications de réalité mixte avec Mixed Reality Toolkit (MRTK), Windows Mixed Reality, Unity, Unreal et plus encore pour les casques immersifs Windows et HoloLens.'
   services: service
   ms.service: service
   ms.subservice: subservice
@@ -38,10 +38,10 @@ highlightedContent:
       url: /mesh/overview
     - title: AltspaceVR
       itemType: whats-new
-      url: 'https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey'
+      url: /windows/mixed-reality/altspace-vr/journey
 productDirectory:
   title: Plonger dans Mixed Reality
-  summary: 'Que vous soyez concepteur, développeur ou professionnel de l’informatique, nous vous proposons un cheminement approprié pour vous donner les connaissances nécessaires avant de vous lancer.'
+  summary: 'Que vous conceviez, développiez ou déployiez une application de réalité mixte, nous avons le bon parcours balisé pour vous permettre de marcher avant de pouvoir courir.'
   items:
     - title: Conception
       imageSrc: images/icon-design.png
@@ -89,8 +89,8 @@ productDirectory:
         - url: /hololens/hololens-troubleshooting
           text: Dépannage et support
 conceptualContent:
-  title: Frameworks
-  summary: 'Que votre processus de développement dépende d’un moteur, du langage que vous préférez ou du matériel dont vous disposez, nous vous proposons une solution.'
+  title: Environnements de développement
+  summary: 'Découvrez comment créer des applications de réalité mixte dans un large éventail d’environnements de production, de moteurs et de langages.'
   items:
     - title: Unity
       summary: 'Créez, configurez et déployez des applications dans Unity avec le SDK Mixed Reality Toolkit.'
@@ -104,7 +104,7 @@ conceptualContent:
         - url: develop/unity/tutorials/mr-learning-base-01.md
           itemType: tutorial
           text: "Série de tutoriels HoloLens\_2"
-        - url: ./out-of-scope/mrtk-101.md
+        - url: /windows/mixed-reality/mrtk-unity/
           itemType: concept
           text: Fonctionnalités principales
         - url: develop/unity/shared-experiences-in-unity.md
@@ -163,7 +163,7 @@ conceptualContent:
         text: Voir plus
 tools:
   title: SDK et API
-  summary: Bien démarrer avec le SDK Mixed Reality Toolkit dans votre moteur de jeu préféré.
+  summary: "Commencez à utiliser Mixed Reality Toolkit pour Unity et Unreal, puis explorez ce que Windows\_XR et OpenXR ont à offrir."
   items:
     - title: MRTK pour Unity
       imageSrc: images/Final_mrtk-small_logo.png

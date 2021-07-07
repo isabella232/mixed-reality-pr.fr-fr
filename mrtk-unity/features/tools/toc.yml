@@ -1,4 +1,4 @@
-- name: Fenêtre de build
+- name: Fenêtre Build
   href: build-window.md
 - name: Utilitaire d’échange de ressources
   href: asset-swap-utility.md

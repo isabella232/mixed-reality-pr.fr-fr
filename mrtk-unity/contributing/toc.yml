@@ -1,6 +1,8 @@
+- name: Auteurs
+  href: authors.md
 - name: Vue d’ensemble de la contribution
   href: contributing.md
-- name: Directives de codage
+- name: Recommandations en matière de codage
   href: coding-guidelines.md
 - name: Écriture et exécution de tests
   href: unit-tests.md
@@ -10,5 +12,5 @@
   href: pull-requests.md
 - name: Fonctionnalités expérimentales
   href: experimental-features.md
-- name: Dernières modifications
+- name: Modifications avec rupture
   href: breaking-changes.md
