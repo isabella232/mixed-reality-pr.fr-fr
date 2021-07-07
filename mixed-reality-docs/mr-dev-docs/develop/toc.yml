@@ -1,11 +1,15 @@
 - name: Introduction au développement de réalité mixte
-  href: development.md
+  items:
+    - name: Prise en main
+      href: development.md
+    - name: Installer les outils
+      href: install-the-tools.md
+    - name: Choix d’un moteur
+      href: choosing-an-engine.md
 - name: Vue d’ensemble des services cloud de réalité mixte Azure
   href: mixed-reality-cloud-services.md
 - name: Exemples d’applications et de fonctionnalités
   href: features-and-samples.md
-- name: Installer les outils
-  href: install-the-tools.md
 - name: Applications de portage
   items:
     - name: Vue d’ensemble du portage
@@ -170,14 +174,8 @@
       items:
         - name: Choix d’une version Unity et d’un plug-in XR
           href: unity/choosing-unity-version.md
-        - name: Utilisation du support XR intégré hérité
-          href: unity/legacy-xr-support.md
-        - name: Utilisation du plug-in XR Windows
-          href: unity/windows-xr-plugin.md
-        - name: Utilisation du plug-in OpenXR
-          href: unity/openxr-getting-started.md
-        - name: Fonctionnalités prises en charge par le plug-in OpenXR
-          href: unity/openxr-supported-features.md
+        - name: Définition de votre configuration XR
+          href: unity/xr-project-setup.md
         - name: Mixed Reality Feature Tool
           items:
             - name: Bienvenue dans MR Feature Tool
@@ -234,7 +232,7 @@
           href: unity/udp-packets-in-unity.md
         - name: Utilisation de l’espace de noms Windows avec les applications Unity pour HoloLens
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-        - name: Objets natifs Mixed Reality
+        - name: Interopérabilité native Mixed Reality dans Unity
           href: unity/unity-xrdevice-advanced.md
         - name: Utilisation de Vuforia
           href: unity/vuforia-development-overview.md
@@ -262,7 +260,7 @@
               href: unity/lunar-module.md
     - name: Débogage et performances
       items:
-        - name: Débogage managé avec Unity IL2CPP
+        - name: Débogage managé avec Unity
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Paramètres recommandés pour Unity
           href: unity/recommended-settings-for-unity.md
@@ -274,12 +272,18 @@
           href: unity/exporting-and-building-a-unity-visual-studio-solution.md
         - name: Bonnes pratiques sur l’utilisation d’Unity et de Visual Studio
           href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+    - name: Notes de publication
+      items:
+        - name: Plug-in Mixed Reality OpenXR
+          href: unity/openxr-release-notes.md
 - name: Unreal
   items:
     - name: Vue d’ensemble du développement Unreal
       href: unreal/unreal-development-overview.md
     - name: Présentation de MRTK
       href: unreal/unreal-mrtk-introduction.md
+    - name: Configuration de votre projet
+      href: unreal/unreal-project-setup.md
     - name: Mise à niveau de projets dans Unreal
       href: unreal/unreal-porting.md
     - name: Démarrages rapides
@@ -361,12 +365,10 @@
 - name: JavaScript
   items:
     - name: Vue d’ensemble du développement JavaScript
-      href: javascript/javascript-development-overview.md
-    - name: WebXR
       href: javascript/webxr-overview.md
     - name: Tutoriels
       items:
-        - name: Hello World avec BabylonJS
+        - name: VR Hello World avec BabylonJS
           items:
             - name: 1. Introduction
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
@@ -374,9 +376,9 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
             - name: 3. Interagir avec un objet 3D
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
-- name: Natif
+- name: Moteur personnalisé
   items:
-    - name: Vue d’ensemble du développement natif
+    - name: Vue d’ensemble du développement de moteur personnalisé
       href: native/directx-development-overview.md
     - name: OpenXR
       items:
@@ -469,9 +471,9 @@
         - name: Termes du contrat de licence de la communication à distance holographique
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Communication à distance holographique pour HoloLens (1ère génération)
-          href: null
-        - name: Ajout de la communication à distance holographique
-          href: platform-capabilities-and-apis/add-holographic-remoting.md
+          items:
+            - name: Ajout de la communication à distance holographique
+              href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: Qualité et test des applications
       items:
         - name: Critères de qualité des applications

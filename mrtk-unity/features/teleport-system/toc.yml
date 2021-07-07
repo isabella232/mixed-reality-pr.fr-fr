@@ -1,2 +1,4 @@
 - name: Système de téléportation
   href: teleport-system.md
+- name: Point d’accès à la téléportation
+  href: teleport-hotspot.md

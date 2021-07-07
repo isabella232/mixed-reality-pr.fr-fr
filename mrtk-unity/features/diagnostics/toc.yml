@@ -1,6 +1,6 @@
 - name: Configuration des diagnostics
   href: configuring-diagnostics.md
-- name: Système de diagnostic - Bien démarrer
+- name: Vue d’ensemble du système de diagnostics
   href: diagnostics-system-getting-started.md
-- name: Utilisation de Visual Profiler
+- name: Utilisation du profileur visuel
   href: using-visual-profiler.md

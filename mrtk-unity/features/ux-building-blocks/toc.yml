@@ -1,6 +1,6 @@
-- name: Barre d’application
+- name: Barre de l’application
   href: app-bar.md
-- name: Cadre englobant
+- name: Rectangle englobant
   href: bounding-box.md
 - name: Contrôle des limites
   href: bounds-control.md
@@ -10,6 +10,8 @@
   href: constraint-manager.md
 - name: Boîte de dialogue
   href: dialog.md
+- name: Fixer du regard
+  href: dwell.md
 - name: Visualisation du bout des doigts
   href: fingertip-visualization.md
 - name: Coach de main
@@ -20,7 +22,7 @@
   href: interactable.md
 - name: Gestionnaire de manipulation
   href: manipulation-handler.md
-- name: Menu Proximité
+- name: Menu proche
   href: near-menu.md
 - name: Collection d’objets
   href: object-collection.md

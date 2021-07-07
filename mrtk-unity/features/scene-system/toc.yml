@@ -1,6 +1,6 @@
 - name: Système de scène - Chargement de contenu
   href: scene-system-content-loading.md
-- name: Système de scène - Bien démarrer
+- name: Système de scène - Démarrage
   href: scene-system-getting-started.md
 - name: Système de scène - Éclairage de scènes
   href: scene-system-lighting-scenes.md
