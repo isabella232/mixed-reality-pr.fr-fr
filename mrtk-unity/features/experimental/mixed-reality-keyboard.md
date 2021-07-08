@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 9fa81db9a71f1d0ce32bdd80a123eb072fc26fc5
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6a33ed5b021e90cba56344f32a9c9a33e8fcc476
+ms.sourcegitcommit: c260aed8a37855faf9575d968e615959a56a13fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143398"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113466229"
 ---
-# <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>Classes d’aide au clavier de la réalité mixte et du clavier HoloLens
+# <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>Classes d’assistance de la réalité mixte et HoloLens du clavier
 
 MRTK fournit plusieurs composants d’assistance expérimentales pour vous aider à lancer et à lire du texte à partir du [clavier système](../ux-building-blocks/system-keyboard.md).
 
-Notez que le clavier système se comportera conformément aux fonctionnalités de la plateforme cible, par exemple le clavier sur HoloLens 2 prend en charge les interactions directes, tandis que le clavier sur HoloLens (1re génération) prendra en charge GGV<sup>[1](/windows/mixed-reality/gaze)</sup>. En outre, le clavier système n’apparaît pas lors de l’exécution de la [communication à distance Unity](../tools/holographic-remoting.md) à partir de l’éditeur vers HoloLens.
+notez que le clavier système se comportera conformément aux fonctionnalités de la plateforme cible, par exemple le clavier sur HoloLens 2 prendre en charge les interactions directes, tandis que le clavier sur HoloLens (1er génération) prendra en charge GGV<sup>[1](/windows/mixed-reality/gaze)</sup>. En outre, le clavier système n’apparaît pas lors de l’exécution de la [communication à distance Unity](../tools/holographic-remoting.md) à partir de l’éditeur vers un HoloLens.
 
 ## <a name="mixedrealitykeyboard"></a>MixedRealityKeyboard
 
@@ -25,7 +25,7 @@ Notez que le clavier système se comportera conformément aux fonctionnalités d
 ### <a name="how-to-use"></a>Utilisation
 
 1. Attachez le [`MixedRealityKeyboard`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.MixedRealityKeyboard) composant à n’importe quel objet.
-2. Appelez `Show()` `Hide()` pour afficher et masquer le clavier, et pour gérer `OnShowKeyboard` les `OnHideKeyboard` événements, et `OnCommitText` à gérer lorsque le clavier est affiché, masqué et lorsque la touche entrée est enfoncée.
+2. Appelez `ShowKeyboard(string text = "", bool multiLine = false)` `HideKeyboard()` pour afficher et masquer le clavier, et pour gérer `OnShowKeyboard` les `OnHideKeyboard` événements, et `OnCommitText` à gérer lorsque le clavier est affiché, masqué et lorsque la touche entrée est enfoncée.
 
 ## <a name="input-fields-tmp_keyboardinputfield-and-ui_keyboardinputfield"></a>Champs d’entrée TMP_KeyboardInputField et UI_KeyboardInputField
 
