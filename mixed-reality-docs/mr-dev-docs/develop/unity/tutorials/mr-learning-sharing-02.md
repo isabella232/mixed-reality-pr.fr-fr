@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 4b81ed3a78cc47f4ad0463cab085621102060dc8
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 2b925457128989933615686ee45ffa6eaa7d20ef
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982762"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175424"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configuration de Photon Unity Networking
 
@@ -28,16 +28,15 @@ Dans ce tutoriel, vous allez préparer la création d’une expérience partagé
 
 Dans cette section, vous allez créer un projet Unity et le préparer au développement avec MRTK.
 
-Suivez d’abord [Initialisation de votre projet et déploiement de votre première application](mr-learning-base-02.md), en excluant les instructions données dans [Générer votre application sur votre appareil](mr-learning-base-02.md#building-your-application-to-your-hololens-2), qui inclut les étapes suivantes :
+Suivez d’abord [Initialisation de votre projet et déploiement de votre première application](mr-learning-base-02.md), en excluant les instructions données dans [Ajouter une interaction manuelle à un objet](mr-learning-base-02.md#adding-hand-interaction-to-an-object) et [Générer votre application sur votre appareil](mr-learning-base-02.md#building-your-application-to-your-hololens-2), qui inclut les étapes suivantes :
 
 1. [Création du projet Unity](mr-learning-base-02.md#creating-the-unity-project) et affectation d’un nom pertinent, par exemple *MRTK Tutorials*
 2. [Changement de plateforme de génération](mr-learning-base-02.md#switching-the-build-platform)
-3. [Importation des ressources TextMeshPro Essential](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importation du Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Création et configuration de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene), et affectation d’un nom pertinent à la scène, par exemple *MultiUserCapabilities*
+3. [Importation des ressources TextMeshPro Essential](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Importation de Mixed Reality Toolkit et configuration du projet Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Création de la scène et configuration MRTK](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk), et affectation d’un nom pertinent à la scène, par exemple *MultiUserCapabilities*
 
-Ensuite, suivez les instructions fournies dans [Modification de l’option d’affichage de la reconnaissance spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour :
+Ensuite, suivez les instructions fournies dans [Changement de l’option d’affichage de la reconnaissance spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour :
 
 1. Remplacer le **profil de configuration MRTK** par **DefaultHoloLens2ConfigurationProfile**
 1. Définir les **options d’affichage du maillage spatiale** sur **Occlusion**.
@@ -82,7 +81,7 @@ Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Proje
 ![Fenêtres Hierarchy, Scene et Project dans Unity, après l’importation des ressources du tutoriel](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-02.md#importing-the-tutorial-assets).
+> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 > [!NOTE]
 > Après l’importation du package de ressources du tutoriel MultiUserCapabilities, la fenêtre de console contient plusieurs erreurs [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) qui indiquent que le type ou l’espace de noms est manquant. Ces erreurs sont attendues et seront résolues dans la section suivante quand vous importerez les ressources PUN.

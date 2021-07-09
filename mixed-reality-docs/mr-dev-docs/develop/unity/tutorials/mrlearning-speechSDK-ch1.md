@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, reconnaissance vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 9a149e5b80c5989ab960db3e9522b67473b2095c
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: a728e3520539723c4b38849eeb60524995e572eb
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982772"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175455"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Intégration et utilisation de la reconnaissance vocale et de la transcription
 
@@ -34,10 +34,10 @@ Dans cette série de tutoriels, vous allez créer une application de réalité m
 * SDK Windows 10 (10.0.18362.0 ou version ultérieure)
 * Capacité de programmation C# de base
 * Appareil HoloLens 2 [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2019 LTS installé et le module de prise en charge de la build d’applications de plateforme Windows universelle ajouté
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2020/2019 LTS installé et le module de prise en charge de la build d’applications de plateforme Windows universelle ajouté
 
-> [!IMPORTANT]
-> La version d’Unity recommandée pour cette série de tutoriels est Unity 2019 LTS. Cela remplace toute exigence ou recommandation de version Unity énoncée dans les prérequis indiqués ci-dessus.
+> [!Important]
+> Cette série de tutoriels prend en charge Unity 2020 LTS (actuellement 2020.3.x) si vous utilisez Open XR ou le plug-in Windows XR, ainsi qu’Unity 2019 LTS (actuellement 2019.4.x) si vous utilisez WSA hérité ou le plug-in Windows XR. Elle remplace toutes les versions Unity requises qui sont indiquées dans les prérequis ci-dessus.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Création et préparation du projet Unity
 
@@ -47,10 +47,9 @@ Pour cela, suivez d’abord [Initialisation de votre projet et de votre premièr
 
 1. [Création du projet Unity](mr-learning-base-02.md#creating-the-unity-project) et affectation d’un nom pertinent, par exemple *MRTK Tutorials*
 2. [Changement de plateforme de génération](mr-learning-base-02.md#configuring-the-unity-project)
-3. [Importation des ressources TextMeshPro Essential](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importation du Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Création et configuration de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene), et affectation d’un nom pertinent à la scène, par exemple *AzureSpeechServices*
+3. [Importation des ressources TextMeshPro Essential](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Importation de Mixed Reality Toolkit et configuration du projet Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Création et configuration de la scène](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk), et affectation d’un nom pertinent à la scène, par exemple *AzureSpeechServices*
 
 Ensuite, suivez les instructions de [Changement de l’option d’affichage de la reconnaissance spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour vérifier que le profil de configuration MRTK de votre scène est **DefaultHoloLens2ConfigurationProfile** et pour changer les options d’affichage du maillage de la reconnaissance spatiale en **Occlusion**.
 
@@ -60,20 +59,17 @@ Ensuite, suivez les instructions de [Changement de l’option d’affichage de l
 
 Avec l’objet **MixedRealityToolkit** sélectionné dans la fenêtre Hierarchy, dans la fenêtre Inspector, sélectionnez l’onglet **Input**, clonez **DefaultHoloLens2InputSystemProfile** et **DefaultMixedRealitySpeechCommandsProfile**, puis remplacez le comportement de démarrage (**Start Behavior**) des commandes vocales en choisissant **Manual Start** :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
-
-> [!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-02.md#importing-the-tutorial-assets).
+![mrlearning-speech 1](images/mrlearning-speech/tutorial1-section2-step1-1.png)
 
 ## <a name="configuring-the-capabilities"></a>Configuration des fonctionnalités
 
 Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, puis recherchez la section **Player** >  **Publishing Settings** :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-1.png)
+![mrlearning-speech 2](images/mrlearning-speech/tutorial1-section3-step1-1.png)
 
-Dans la section **Publishing Settings**, accédez à la section **Capabilities** et vérifiez que les fonctionnalités **InternetClient**, **Microphone** et **SpatialPerception**, que vous avez activées lors de la création du projet au début de ce tutoriel, sont cochées. Activez ensuite les fonctionnalités **InternetClientServer** et **PrivateNetworkClientServer** :
+Dans **Publishing Settings**, accédez à la section **Capabilities** et vérifiez bien que les fonctionnalités **InternetClient**, **Microphone** et **SpatialPerception**, qui ont été activées lors de la création du projet au début de ce tutoriel, sont activées. Activez ensuite les fonctionnalités **InternetClientServer** et **PrivateNetworkClientServer** :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-2.png)
+![mrlearning-speech 3](images/mrlearning-speech/tutorial1-section3-step1-2.png)
 
 ## <a name="importing-the-tutorial-assets"></a>Importation des ressources du tutoriel
 
@@ -81,14 +77,29 @@ Téléchargez et **importez** les packages personnalisés Unity suivants **dans 
 
 * [Microsoft.CognitiveServices.Speech.N.N.N.unitypackage](https://aka.ms/csspeech/unitypackage) (dernière version)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/2.5.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.2.unitypackage](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-speech-services-v2.5.2/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.2.unitypackage)
 
 > [!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation du Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
+> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation du Mixed Reality Toolkit](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Project doit ressembler à ceci :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section4-step1-1.png)
+![mrlearning-speech 4](images/mrlearning-speech/tutorial1-section4-step1-1.png)
+
+vous devez configurer le projet Unity pour publier les plug-ins Azure Speech pour ARM64. Pour ce faire, dans la fenêtre Project, accédez à **Ressources** > **SpeechSDK** > **Plug-ins** > **WSA** > **ARM64** et sélectionnez le plug-in **Microsoft.CognitiveServices.Speech.core** .
+
+![mrlearning-speech 5](images/mrlearning-speech/tutorial1-section4-step1-2.PNG)
+
+si le plug-in **Microsoft.CognitiveServices.Speech.core** est toujours sélectionné, dans la fenêtre de l’inspecteur, activez le **lecteur WSA**, puis, sous **paramètres de la plateforme**, sélectionnez **UWP** pour le kit de développement logiciel (SDK), **ARM64** comme UC, puis cliquez sur Appliquer pour appliquer ces paramètres au plug-in.
+
+![mrlearning-speech 6](images/mrlearning-speech/tutorial1-section4-step1-3.PNG)
+
+Répétez cette procédure pour chaque plug-in restant :
+
+* **Microsoft.CognitiveServices.Speech.extension.audio.sys**
+* **Microsoft.CognitiveServices.Speech.extension.kws**
+* **Microsoft.CognitiveServices.Speech.extension.lu**
+* **Microsoft.CognitiveServices.Speech.extension.silk_codec**
 
 ## <a name="preparing-the-scene"></a>Préparation de la scène
 
@@ -96,26 +107,26 @@ Dans cette section, vous allez préparer la scène en ajoutant le préfabriqué 
 
 Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** et faites glisser le préfabriqué **Lunarcom** dans la fenêtre Hierarchy pour l’ajouter à votre scène :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-1.png)
+![mrlearning-speech 7](images/mrlearning-speech/tutorial1-section5-step1-1.png)
 
 Avec l’objet **Lunarcom** toujours sélectionné dans la fenêtre Hierachy, dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le composant **Lunarcom Controller (Script)** à l’objet Lunarcom :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-2.png)
+![mrlearning-speech 8](images/mrlearning-speech/tutorial1-section5-step1-2.png)
 
 > [!NOTE]
 > Le composant Lunarcom Controller (Script) ne fait pas partie de MRTK. Il a été fourni avec les ressources de ce tutoriel.
 
 L’objet **Lunarcom** étant toujours sélectionné, développez-le pour révéler ses objets enfants, puis faites glisser l’objet **Terminal** dans le champ **Terminal** du composant Lunarcom Controller (Script) :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-3.png)
+![mrlearning-speech 9](images/mrlearning-speech/tutorial1-section5-step1-3.png)
 
 Avec l’objet **Lunarcom** toujours sélectionné, développez l’objet Terminal pour révéler ses objets enfants, puis faites glisser l’objet **ConnectionLight** dans le champ **Connection Light** du composant Lunarcom Controller (Script) et l’objet **OutputText** dans le champ **Output Text** :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-4.png)
+![mrlearning-speech 10](images/mrlearning-speech/tutorial1-section5-step1-4.png)
 
 Avec l’objet **Lunarcom** toujours sélectionné, développez l’objet Buttons pour révéler ses objets enfants, puis, dans la fenêtre Inspector, développez la liste **Buttons**, définissez **Size** sur 3, puis faites glisser les objets **MicButton**, **SatelliteButton** et **RocketButton** dans les champs **Element** 0, 1 et 2 respectivement :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-5.png)
+![mrlearning-speech 11](images/mrlearning-speech/tutorial1-section5-step1-5.png)
 
 ## <a name="connecting-the-unity-project-to-the-azure-resource"></a>Connexion du projet Unity à la ressource Azure
 
@@ -126,24 +137,24 @@ Dans la fenêtre Hierarchy, sélectionnez l’objet **Lunarcom**, puis dans la f
 * Dans le champ **Speech Service API Key**, entrez votre clé API (Key1 or Key2).
 * Dans le champ **Speech Service Region**, entrez votre région de service (Emplacement) en utilisant des lettres minuscules et en supprimant les espaces.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section6-step1-1.png)
+![mrlearning-speech 12](images/mrlearning-speech/tutorial1-section6-step1-1.png)
 
 ## <a name="using-speech-recognition-to-transcribe-speech"></a>Utilisation de la reconnaissance vocale pour transcrire la parole
 
 Dans la fenêtre Hierachy, sélectionnez l’objet **Lunarcom** puis, dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le composant **Lunarcom Speech Recognizer (Script)** à l’objet Lunarcom :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-1.png)
+![mrlearning-speech 13](images/mrlearning-speech/tutorial1-section7-step1-1.png)
 
 > [!NOTE]
 > Le composant Lunarcom Speech Recognizer (Script) ne fait pas partie de MRTK. Il a été fourni avec les ressources de ce tutoriel.
 
 Si vous entrez maintenant en mode Game, vous pouvez tester la reconnaissance vocale en commençant par appuyer sur le bouton du microphone :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-2.png)
+![mrlearning-speech 14](images/mrlearning-speech/tutorial1-section7-step1-2.png)
 
 Ensuite, en supposant que votre ordinateur est doté d’un microphone, quand vous dites quelque chose, votre parole est transcrite sur le panneau du terminal :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-3.png)
+![mrlearning-speech 15](images/mrlearning-speech/tutorial1-section7-step1-3.png)
 
 > [!CAUTION]
 > L’application a besoin de se connecter à Azure, donc vérifiez que votre ordinateur/appareil est connecté à Internet.

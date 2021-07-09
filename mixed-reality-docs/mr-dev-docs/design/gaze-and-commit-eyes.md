@@ -7,12 +7,12 @@ ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Suivi du regard, réalité mixte, entrée, suivi du regard, ciblage du regard, HoloLens 2, sélection basée sur le regard, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens, MRTK, Mixed Reality Toolkit, regard
-ms.openlocfilehash: 1f337d3cbc1f82b4f69194d4b903687be067f9d6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dff0ded282678a695070feca2b578004610d2c7
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847872"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196464"
 ---
 # <a name="eye-gaze-and-commit"></a>Suivre du regard et valider
 
@@ -26,8 +26,18 @@ Dans HoloLens 2, nous pouvons utiliser le pointage du regard au lieu du suivi d
    - Commande vocale (par exemple, « Sélectionner »)
    - Stabilisation (en d’autres termes, l’utilisateur continue de regarder la cible pour la sélectionner)
 
-Cependant, le suivi du regard est différent du suivi de la tête à bien des égards et pose de nombreux défis uniques. Dans les [directives liées à la conception du suivi du regard](eye-tracking.md), nous résumons les avantages et défis généraux liés à l’utilisation du suivi du regard comme entrée dans une application holographique. Dans cette section, nous nous penchons sur les considérations de conception spécifiques au modèle _Pointer du regard et valider_.
+Cependant, le suivi du regard est différent du suivi de la tête à bien des égards et pose de nombreux défis uniques. 
+
+Dans les [directives liées à la conception du suivi du regard](eye-tracking.md), nous résumons les avantages et défis généraux liés à l’utilisation du suivi du regard comme entrée dans une application holographique. Dans cette section, nous nous penchons sur les considérations de conception spécifiques au modèle _Pointer du regard et valider_.
 Premièrement, nos yeux bougent incroyablement vite et sont très efficaces pour cibler rapidement un objet dans une scène. Le pointage du regard est idéal pour les actions rapides de suivi et de validation, en particulier quand il est combiné à des validations rapides comme un clic dans l’air ou une pression sur un bouton.
+
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Démonstration des concepts d’élaboration du suivi de la tête et du suivi oculaire
+
+Si vous souhaitez voir les concepts d’élaboration du suivi de la tête et du suivi oculaire en action, consultez notre démonstration vidéo **Conception d’hologrammes - Suivi de la tête et suivi oculaire** ci-dessous. Une fois que vous avez terminé, poursuivez pour obtenir une présentation plus détaillée relative à des rubriques spécifiques.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Cette vidéo a été extraite de l’application HoloLens 2 « Conception d’hologrammes ». Téléchargez-la et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
    
 ## <a name="design-guidelines-for-eye-gaze-and-commit"></a>Directives liées à la conception du suivi du regard et de la validation
 

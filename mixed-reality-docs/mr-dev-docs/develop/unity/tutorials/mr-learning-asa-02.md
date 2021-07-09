@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 5f16d3c12e6dbb977ecedc1598a28073cfb39222
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: eddde9b827dcf2a2f054f48a50f38946e5d98533
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983142"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175563"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Bien démarrer avec Azure Spatial Anchors
 
@@ -31,43 +31,15 @@ Suivez d’abord [Initialisation de votre projet et déploiement de votre premi�
 
 1. [Création du projet Unity](mr-learning-base-02.md#creating-the-unity-project) et affectation d’un nom pertinent, par exemple *MRTK Tutorials*
 2. [Changement de plateforme de génération](mr-learning-base-02.md#switching-the-build-platform)
-3. [Importation des ressources TextMeshPro Essential](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importation du Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configuration du projet Unity](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Création et configuration de la scène](mr-learning-base-02.md#creating-and-configuring-the-scene), et affectation d’un nom pertinent à la scène, par exemple *AzureSpatialAnchors*
+3. [Importation des ressources TextMeshPro Essential](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Importation de Mixed Reality Toolkit et configuration du projet Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Création et configuration de la scène](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk), et affectation d’un nom pertinent à la scène, par exemple *AzureSpatialAnchors*
 
-Ensuite, suivez les instructions fournies dans [Changement de l’option d’affichage de la reconnaissance spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour :
+Ensuite, suivez les instructions de [Changement de l’option d’affichage de la reconnaissance spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour vérifier que le profil de configuration MRTK de votre scène est **DefaultHoloLens2ConfigurationProfile** et pour changer les options d’affichage du maillage de la reconnaissance spatiale en **Occlusion**.
 
-1. Remplacer le **profil de configuration MRTK** par **DefaultHoloLens2ConfigurationProfile**
-1. Choisir **Occlusion** dans les **options d’affichage du maillage de la reconnaissance spatiale**.
+## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>Installation des packages Unity intégrés et importation des ressources du tutoriel
 
-## <a name="installing-inbuilt-unity-packages"></a>Installation de packages Unity intégrés
-
-Dans le menu Unity, sélectionnez **Window** > **Package Manager** pour ouvrir la fenêtre Package Manager, sélectionnez **AR Foundation**, puis cliquez sur le bouton **Install** pour installer le package :
-
-![Package Manager d’Unity avec AR Foundation sélectionné](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> Vous installez le package intégré AR Foundation, car il est nécessaire pour le SDK Azure Spatial Anchors que vous allez importer dans la section suivante.
-
-## <a name="importing-the-tutorial-assets"></a>Importation des ressources du tutoriel
-
-Ajoutez le SDK AzurespatialAnchors V2.7.1 à votre projet Unity. Pour ajouter les packages, suivez ce [tutoriel](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
-
-Téléchargez et **importez** les packages personnalisés Unity suivants **dans l’ordre où ils sont listés** :
-
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
-
-Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Project doit ressembler à ceci :
-
-![Fenêtres Hierarchy, Scene et Project dans Unity, après l’importation des ressources du tutoriel](images/mr-learning-asa/asa-02-section3-step1-1.png)
-
-> [!NOTE]
-> Si vous voyez des avertissements CS0618 signalant que « WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr) » est obsolète, vous pouvez les ignorer.
-
-> [!TIP]
-> Pour vous rappeler comment importer un package personnalisé Unity, reportez-vous aux instructions fournies dans [Importation des ressources du tutoriel](mr-learning-base-02.md#importing-the-tutorial-assets).
+[!INCLUDE[](includes/installing-packages-for-asa.md)]
 
 ## <a name="preparing-the-scene"></a>Préparation de la scène
 
@@ -84,6 +56,20 @@ Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.Azur
 
 > [!TIP]
 > Si vous trouvez gênantes les grandes icônes de votre scène, par exemple les grandes icônes « T », vous pouvez les masquer en <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">basculant les gizmos</a> en position Off, comme le montre l’image ci-dessus.
+
+Sélectionnez l’objet **MixedRealityToolkit** dans la fenêtre Hiérarchie, utilisez le bouton **Ajouter un composant** dans la fenêtre Inspecteur pour ajouter les composants suivants :
+
+* AR Anchor Manager (Script)
+* DisableDiagnosticsSystem (Script)
+
+![Objet MixedRealityToolkit d’Unity avec les composants AR Anchor Manager et DisableDiagnosticsSystem ajoutés ](images/mr-learning-asa/asa-02-section4-step1-2.PNG)
+
+> [!WARNING]
+> Il existe un problème connu avec ASA v2.9.0 et v2.10.0-preview.1 qui requiert que deux objets supplémentaires soient placés dans la scène. Utilisez le bouton **Ajouter un composant** dans la fenêtre Inspecteur pour ajouter un gestionnaire de caméra AR (script) et une session AR (script) à l’objet **MixedRealityToolkit**. Assurez-vous de désactiver la caméra qui est créée automatiquement lors de l’ajout du gestionnaire de caméra (script) en décocher la case en regard de l’objet Camera dans la fenêtre Inspecteur. Ce problème sera traité dans la version complète d’ASA v2.10.0.
+> 
+
+> [!NOTE]
+> Lorsque vous ajoutez le composant AR Anchor Manager (script), le composant AR Session Origin (script) est ajouté automatiquement, car il est requis par le composant AR Anchor Manager (script).
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>Configuration des boutons pour faire fonctionner la scène
 
@@ -153,15 +139,15 @@ Azure Spatial Anchors ne peut pas s’exécuter dans Unity : pour tester la fon
 Quand l’application s’exécute sur votre appareil, suivez les instructions à l’écran affichées dans le panneau des instructions du tutoriel Azure Spatial Anchors :
 
 1. Déplacer le cube vers un autre emplacement
-1. Démarrer la session Azure
-1. Créer une ancre Azure (crée une ancre à l’emplacement du cube)
-1. Arrêter la session Azure
-1. Supprimer l’ancre locale (permet à l’utilisateur de déplacer le cube)
-1. Déplacer le cube ailleurs
-1. Démarrer la session Azure
-1. Rechercher l’ancre Azure (positionne le cube à l’emplacement de l’étape 3)
-1. Supprimer l’ancre Azure
-1. Arrêter la session Azure
+2. Démarrer la session Azure
+3. Créer une ancre Azure (crée une ancre à l’emplacement du cube)
+4. Arrêter la session Azure
+5. Supprimer l’ancre locale (permet à l’utilisateur de déplacer le cube)
+6. Déplacer le cube ailleurs
+7. Démarrer la session Azure
+8. Rechercher l’ancre Azure (positionne le cube à l’emplacement de l’étape 3)
+9. Supprimer l’ancre Azure
+10. Arrêter la session Azure
 
 ![Unity avec l’objet Instructions sélectionné](images/mr-learning-asa/asa-02-section7-step1-1.png)
 

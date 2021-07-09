@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, tutoriel, bien démarrer, mrtk, uxt, UX Tools, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: 7b706cf2a8685954ed916c825c3617ade190f1e0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7dbf72a477f376e338d346965b5276eba00ab543
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583657"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110711558"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Empaquetage et déploiement sur un appareil ou un émulateur
 
@@ -34,7 +34,7 @@ Si vous suivez ce chemin avec l’application de jeu d’échecs, vous aurez bes
 
 ![RHI par défaut](../images/unreal/performance-recommendations-img-09.png)
 
-2.  De retour dans l’éditeur Unreal, accédez à **Edit > Project Settings** et cochez la case **Enable Remoting** dans la section **Holographic Remoting**.
+2.  De retour dans l’éditeur Unreal, accédez à **Modifier > Paramètres du projet** et cochez la case **Activer la communication à distance** dans la section **Communication à distance holographique Open XR**.
 
 3.  Redémarrez l’éditeur, entrez l’adresse IP de votre appareil (qui figure dans l’application Holographic Remoting Player), puis cliquez sur **Connect**.
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, reconnaissance spatiale
 ms.localizationpriority: high
-ms.openlocfilehash: f6c17dc361846808ec10f1d94932e3089072e642
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: dc30997bbb43b29bf2495aa98be392af6885f6b8
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300454"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112907005"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Configuration des profils MRTK
 
@@ -44,7 +44,67 @@ Les principales étapes à suivre pour masquer le maillage de la reconnaissance 
 > [!NOTE]
 > Par défaut, les profils MRTK ne sont pas modifiables. Il s’agit des modèles de profil par défaut que vous devez cloner avant de pouvoir les modifier. Il existe plusieurs couches de profils imbriquées. Par conséquent, il est courant de cloner et de modifier plusieurs profils lors de la configuration d’un ou plusieurs paramètres.
 
+### <a name="1-clone-the-default-configuration-profile"></a>1. Cloner le profil de configuration par défaut
+
+> [!NOTE]
+> Le profil de configuration est le profil de plus haut niveau. Par conséquent, pour pouvoir modifier d’autres profils, vous devez d’abord cloner le profil de configuration.
+
+Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**, puis, dans la fenêtre Inspector, remplacez le profil de configuration **MixedRealityToolkit** par **DefaultHoloLens2ConfigurationProfile** :
+
+![Composant MixedRealityToolkit d’Unity avec DefaultHoloLens2ConfigurationProfile sélectionné](images/mr-learning-base/base-03-section1-step1-1.png)
+
+Avec l’objet **MixedRealityToolkit** toujours sélectionné, dans la fenêtre Inspecteur, cliquez sur le bouton **Cloner** pour ouvrir la fenêtre Cloner le profile :
+
+![Composant MixedRealityToolkit d’Unity - Bouton Copy & Customize](images/mr-learning-base/base-03-section1-step1-2.png)
+
+Dans la fenêtre Clone Profile, en regard de **Profile Name**, entrez un nom de profil adapté comme _GettingStarted_HoloLens2ConfigurationProfile_, puis cliquez sur le bouton **Clone** pour créer une copie modifiable de **DefaultHololens2ConfigurationProfile** :
+
+![MixedRealityToolkit d’Unity - Fenêtre contextuelle de clonage du profil de configuration](images/mr-learning-base/base-03-section1-step1-3.png)
+
+Le profil de configuration que vous venez de créer est maintenant affecté comme profil de configuration pour votre scène :
+
+![Composant MixedRealityToolkit d’Unity avec le profil personnalisé nouvellement créé HoloLens2ConfigurationProfile appliqué](images/mr-learning-base/base-03-section1-step1-4.png)
+
+Dans le menu Unity, sélectionnez **File** > **Save** pour enregistrer votre scène.
+
+> [!TIP]
+> N’oubliez pas d’enregistrer votre travail tout au long des tutoriels.
+
+### <a name="2-enable-the-spatial-awareness-system"></a>2. Activer le système de reconnaissance spatiale
+
+Dans la fenêtre Hierarchy, sélectionnez l’objet **MixedRealityToolkit**. Ensuite, dans la fenêtre Inspector, sélectionnez l’onglet **Spatial Awareness**, puis cochez la case **Enable Spatial Awareness System** :
+
+![Composant MixedRealityToolkit d’Unity avec le système de reconnaissance spatiale activé](images/mr-learning-base/base-03-section1-step2-1.png)
+
+> [!NOTE]
+> Pour les projets à venir, si votre application n’a pas besoin de répondre à l’environnement ou d’interagir avec celui-ci, il est recommandé de désactiver la reconnaissance spatiale de façon à réduire le coût des performances.
+
+### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3. Cloner le profil système de reconnaissance spatiale par défaut
+
+Sous l’onglet **Spatial Awareness**, cliquez sur le bouton **Clone** pour ouvrir la fenêtre Clone Profile :
+
+![Composant Unity MixedRealityToolkit d’Unity avec l’onglet Spatial Awareness sélectionné](images/mr-learning-base/base-03-section1-step3-1.png)
+
+Dans la fenêtre Clone Profile, en regard de **Profile Name**, entrez un nom de profil adapté comme _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_, puis cliquez sur le bouton **Clone** pour créer une copie modifiable de **DefaultMixedRealitySpatialAwarenessSystemProfile** :
+
+![MixedRealityToolkit d’Unity - Fenêtre contextuelle de clonage du profil du système de reconnaissance spatiale](images/mr-learning-base/base-03-section1-step3-2.png)
+
+Le profil Spatial Awareness System nouvellement créé est maintenant automatiquement affecté à votre profil de configuration :
+
+![Composant MixedRealityToolkit d’Unity avec le profil personnalisé nouvellement créé MixedRealitySpatialAwarenessSystemProfile appliqué](images/mr-learning-base/base-03-section1-step3-3.png)
+
 [!INCLUDE[](includes/configuring-profile.md)]
+
+### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5. Changer la visibilité du maillage de reconnaissance spatiale
+
+Dans **Spatial Mesh Observer Settings**, configurez **Display Option** sur **Occlusion** pour rendre le maillage de mappage spatial invisible tout en le gardant fonctionnel :
+
+![Composant MixedRealityToolkit d’Unity avec l’option d’affichage de Spatial Mesh Observer définie sur Occlusion](images/mr-learning-base/base-03-section1-step5-1.png)
+
+> [!NOTE]
+> Bien que le maillage de mappage spatial ne soit pas visible, il est toujours présent et fonctionnel. Par exemple, les hologrammes qui sont derrière le maillage de mappage spatial, comme un hologramme derrière un mur physique, ne sont pas visibles.
+
+Vous venez de découvrir comment modifier un paramètre dans le profil MRTK. Comme vous pouvez le voir, pour personnaliser les paramètres du MRTK, vous devez d’abord créer une copie des profils par défaut. Étant donné que les profils par défaut ne sont pas modifiables, vous les aurez toujours comme référence si vous voulez rétablir les paramètres par défaut. Pour plus d’informations sur les profils MRTK et leur architecture, vous pouvez consulter le [Guide de configuration du profil MRTK](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide) dans le [portail de la documentation MRTK](/windows/mixed-reality/mrtk-unity).
 
 ## <a name="congratulations"></a>Félicitations
 

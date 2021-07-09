@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 976593fd2f107d456da4f04da19621dd253f2ae1
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590191"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772422"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Connexion de plusieurs utilisateurs
 
@@ -69,7 +69,7 @@ Dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le
 
 ### <a name="2-create-the-avatar"></a>2. Créer l’avatar
 
-Dans la fenêtre Project, accédez au dossier **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **StandardAssets** > **Materials** pour trouver les éléments MRTK.
+Dans la fenêtre Projet, accédez au dossier **Packages** > **Mixed Reality Toolkit Standard Assets** > **Documentation** pour repérer la documentation MRTK.
 
 Ensuite, dans la fenêtre Hierarchy, cliquez avec le bouton droit sur l’objet **PhotonUser**, puis sélectionnez **3D Object** > **Sphere** pour créer un objet Sphere en tant qu’enfant de l’objet PhotonUser et configurez-le comme suit :
 

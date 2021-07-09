@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Réalité mixte, regard, ciblage du regard, interaction, conception, hololens, MMR, multimodal, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 37ac7475172977c8741c17817568cc9b5ad2a4e5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 55e23ac2fb802af599fb9cc7d771d89d6ba36c47
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847294"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196414"
 ---
 # <a name="introducing-instinctual-interactions"></a>Présentation des interactions instinctuelles
 
@@ -28,6 +28,14 @@ Face aux milliers d’interactions efficaces, attrayantes et magiques possibles 
 * Des instructions spécifiques autour des trois modèles d’interaction principaux et des composants et schémas requis pour chacun.
 * Des conseils supplémentaires sur d’autres avantages qu’offre notre plateforme.
 * Des conseils d’ordre général pour vous aider à sélectionner le modèle d’interaction approprié pour votre scénario.
+
+## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>Démonstration du suivi de la main et des interactions instinctives de base
+
+Consultez notre démonstration vidéo **Conception d’hologrammes - Suivi de la tête et suivi oculaire** ci-dessous, puis passez à des rubriques plus spécifiques :
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+*Cette vidéo a été extraite de l’application HoloLens 2 « Conception d’hologrammes ». Téléchargez-la et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="multimodal-interaction-models"></a>Modèles d’interaction multimodale
 

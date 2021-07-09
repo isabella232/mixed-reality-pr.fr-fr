@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, android, ios, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 699c7689fcd23543f4d4b0e86f64cdbf98debc1f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 67bda33f8d2d0711c83791be2e76d91b53ff934f
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590711"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403415"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Azure Spatial Anchors pour Android et iOS
 
@@ -25,24 +25,7 @@ Dans ce tutoriel, vous allez découvrir comment créer votre projet pour des app
 
 ## <a name="installing-inbuilt-unity-packages"></a>Installation de packages Unity intégrés
 
-Dans cette section, vous allez mettre à niveau et installer les packages intégrés suivants :
-
-* AR Foundation 3.1.3
-* XR Legacy Input Helpers 2.1.6
-* ARCore XR Plugin 3.1.3 pour la prise en charge d’Android
-* ARKit XR plugin 3.1.3 pour la prise en charge d’iOS
-
-> [!CAUTION]
-> Toutes les versions ne sont pas compatibles avec MRTK et seules certaines versions fonctionnent ensemble ; veillez donc à installer précisément les versions listées ci-dessus.
-
-Dans le menu Unity, sélectionnez **Window** > **Package Manager** pour ouvrir la fenêtre Package Manager, sélectionnez **AR Foundation** > **3.1.3**, puis cliquez sur le bouton **Update to 3.1.3** pour mettre à jour le package :
-
-![Package Manager d’Unity avec AR Foundation sélectionné](images/mr-learning-asa/asa-05-section1-step1-1.png)
-
-Suivez le même processus pour importer les packages restants en fonction des besoins.
-
-> [!NOTE]
-> Si vous développez ce projet pour Android, il est inutile d’installer le package ARKit XR Plugin. De même, si vous développez ce projet pour iOS, il est inutile d’installer le package ARCore XR Plugin.
+[!INCLUDE[](includes/installing-inbuilt-unity-packages-for-asa-android-and-ios.md)]
 
 ## <a name="configure-mrtk-for-ar-foundation-camera"></a>Configurer MRTK pour l’appareil photo AR Foundation
 
@@ -55,27 +38,19 @@ Dans la fenêtre de hiérarchie, sélectionnez l’objet **MixedRealityToolkit**
 > [!TIP]
 > Pour vous rappeler comment cloner des profils MRTK, vous pouvez consulter les instructions fournies dans [Configuration des profils Mixed Reality Toolkit](mr-learning-base-03.md).
 
-Avec l’onglet **Camera** toujours sélectionné dans la fenêtre de l’inspecteur, développez **Camera Setting Providers** (Fournisseurs de paramètres d’appareil photo), cliquez sur le bouton **+ Add Camera Setting Provider** (Ajouter un fournisseur de paramètres d’appareil photo), puis développez le **New data provider 1** qui vient d’être ajouté :
+Avec l’onglet **Caméra** toujours sélectionné dans la fenêtre Inspecteur, développez les **Fournisseurs des paramètres de la caméra**, puis cliquez sur "-" pour supprimer le **Paramètre de la caméra Windows Mixed Reality** ou le **Paramètre de la caméra Windows Mixed Reality SDK XR** :
 
-![Profil ARCameraProfile d’Unity avec ajout d’un nouveau fournisseur de données](images/mr-learning-asa/asa-05-section2-step1-2.png)
+![Profil ARCameraProfile d’Unity avec ajout d’un nouveau fournisseur de données ](images/mr-learning-asa/asa-05-section2-step1-2.png)
+
+et cliquez sur le bouton **+ Ajouter un fournisseur de paramètres de caméra**, puis développez le **Nouveau fournisseur de données** que vous venez d’ajouter :
+
+![Caméra de réalité augmentée ajoutée pour Android](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
 À l’aide de la liste déroulante **Type**, sélectionnez le type **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings** :
 
-![Profil ARCameraProfile d’Unity avec le chemin vers la sélection du type de fournisseur de données](images/mr-learning-asa/asa-05-section2-step1-3.png)
+![Profil ARCameraProfile d’Unity avec le chemin vers la sélection du type de fournisseur de données](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
-Avec l’objet **MixedRealityToolkit** toujours sélectionné dans la fenêtre de hiérarchie, utilisez le bouton **Add Component** dans la fenêtre de l’inspecteur pour ajouter les composants suivants :
-
-* AR Anchor Manager (Script)
-* DisableDiagnosticsSystem (Script)
-
-![Objet MixedRealityToolkit d’Unity avec les composants AR Anchor Manager et DisableDiagnosticsSystem ajoutés ](images/mr-learning-asa/asa-05-section2-step1-4.png)
-
-> [!NOTE]
-> Lorsque vous ajoutez le composant AR Reference Point Manager (Script), le composant AR Session Origin (Script) est ajouté automatiquement, car il est demandé par le composant AR Reference Point Manager (Script).
-
-
-
-Mettez à jour les définitions du script MRTK UnityAR en appelant l’élément de menu : **Mixed Reality Toolkit** > **Utilities** > **UnityAR** > Update Scripting Defines
+Mettre à jour les définitions de script UnityAR MRTK en appelant l’élément de menu : **Mixed Reality** > **Toolkit** > **Utilitaires** > **UnityAR** > Mise à jour des définitions de script
 
 ## <a name="building-your-application-to-your-android-device"></a>Génération de votre application sur votre appareil Android
 
@@ -90,19 +65,15 @@ Dans le menu Unity, sélectionnez **File** > **Build Settings...** pour ouvrir l
 
 Fermez la fenêtre Build Settings.
 
-Dans le menu Unity, sélectionnez **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator**, vérifiez que toutes les options sont sélectionnées, puis cliquez sur le bouton **Apply** pour appliquer les paramètres :
+Dans le menu Unity, sélectionnez **Mixed Reality** > **Toolkit** > **Utilitaires** > **Configurer le projet pour MRTK** pour ouvrir la fenêtre **MRTK Project Configurator**, vérifiez que toutes les options sont sélectionnées, puis cliquez sur le bouton **Appliquer** pour appliquer les paramètres :
 
-![Fenêtre MRTK Project Configurator d’Unity - Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
+![MRTK Project Configurator Unity 1](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
 Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, recherchez la section **Player** >  **Other Settings**, sélectionnez **Vulkan** et supprimez-le en cliquant sur le symbole **« - »**  :
 
 ![Fenêtre Other Settings d’Unity avec Vulcan sélectionné](images/mr-learning-asa/asa-05-section3-step1-3.png)
 
-Dans le menu Unity, sélectionnez **Edit** > **Project Settings...**  >**Player**> **XR Setting**, vérifiez que vous êtes dans la plateforme **Android** et cochez la case **Virtual Reality Supported**, puis cliquez sur l’icône + et sélectionnez None :
-
-![Fenêtre MRTK Project Configurator d’Unity - Android](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
-
-Fermez la fenêtre Player Settings et rouvrez la fenêtre Build Settings.
+[!INCLUDE[](includes/project-setting-for-asa-android.md)]
 
 Dans la fenêtre Build Settings, cliquez sur le bouton **Add Open Scenes** (Ajouter des scènes ouvertes) pour ajouter votre scène actuelle à la liste des scènes de la build (**Scenes In Build**). Ensuite, utilisez un câble USB pour connecter votre appareil Android à votre ordinateur et sélectionnez-le dans la liste déroulante **Run Device** :
 
@@ -118,7 +89,7 @@ Choisissez un emplacement approprié où stocker votre build, par exemple _D:\Mi
 ![Fenêtre Build Settings d’Unity avec la fenêtre d’invite Save - Android](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
 > [!NOTE]
-Si vous recevez une erreur dans la fenêtre Unity Console relative aux modules Android SDK, NDK ou JDK, vous devez ouvrir Unity Hub et installer les modules Android Build Support associés.
+> Si vous recevez une erreur dans la fenêtre Unity Console relative aux modules Android SDK, NDK ou JDK, vous devez ouvrir Unity Hub et installer les modules Android Build Support associés.
 
 Une fois le processus de génération terminé, vos applications doivent se charger automatiquement sur votre appareil Android.
 
@@ -135,9 +106,11 @@ Dans le menu Unity, sélectionnez **File** > **Build Settings...** pour ouvrir l
 
 Fermez la fenêtre Build Settings.
 
-Dans le menu Unity, sélectionnez **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** pour ouvrir la fenêtre **MRTK Project Configurator**, vérifiez que toutes les options sont sélectionnées, puis cliquez sur le bouton **Apply** pour appliquer les paramètres :
+Dans le menu Unity, sélectionnez **Mixed Reality** > **Toolkit** > **Utilitaires** > **Configurer le projet pour MRTK** pour ouvrir la fenêtre **MRTK Project Configurator**, vérifiez que toutes les options sont sélectionnées, puis cliquez sur le bouton **Appliquer** pour appliquer les paramètres :
 
 ![Fenêtre MRTK Project Configurator d’Unity - iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
+
+[!INCLUDE[](includes/project-setting-for-asa-ios.md)]
 
 Dans le menu Unity, sélectionnez **Edit** > **Project Settings...** pour ouvrir la fenêtre Player Settings, recherchez la section **Player** >  **Other Settings**, et décochez la case **Strip Engine Code** (Supprimer le code du moteur) :
 

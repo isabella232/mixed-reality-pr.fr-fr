@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, tutoriel, bien démarrer, mrtk, uxt, UX Tools, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: 9e02ea6cb2710b4661e97dc8b0d5f4f48ab09fa7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: f7cf43e8f1c040660b6a2688e234a271bc071b00
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583905"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712644"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Initialisation de votre projet et de votre première application
 
@@ -52,22 +52,17 @@ Le projet doit s’ouvrir automatiquement dans l’éditeur Unreal, ce qui signi
 
 ## <a name="enabling-required-plugins"></a>Activation des plug-ins nécessaires
 
-Vous devez activer deux plug-ins pour pouvoir commencer à ajouter des objets à la scène.
+Pour utiliser les fonctionnalités disponibles via la plateforme de réalité mixte de Microsoft, vous devez d’abord installer et activer le plug-in Microsoft OpenXR. Pour en savoir plus sur le plug-in, consultez le projet sur [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal).
 
-1. Ouvrez **Edit > Plugins** et sélectionnez **Augmented Reality** dans la liste des options prédéfinies. 
-    * Faites défiler la liste jusqu’à **HoloLens** et cochez la case **Enabled**. 
+1. Ouvrez le lanceur Epic Games. Accédez à la marketplace Unreal Engine et recherchez « [Microsoft OpenXR](https://www.unrealengine.com/marketplace/product/ef8930ca860148c498b46887da196239) ». Installez le plug-in sur votre moteur.
 
-![Activation des plug-ins HoloLens](images/unreal-uxt/2-plugins.PNG)
+![Marketplace Unreal](images/unreal-uxt/2-openxr-plugin.PNG)
 
-2. Sélectionnez **Virtual Reality** dans la liste des options prédéfinies. 
-    * Faites défiler la liste jusqu’à **Microsoft Windows Mixed Reality**, cochez la case **Enabled**, puis redémarrez votre éditeur. 
+2. De retour dans l’éditeur Unreal, accédez à **Paramètres du projet** > **Plug-ins** et recherchez « Microsoft OpenXR ». Vérifiez que le plug-in est activé et redémarrez l’éditeur si vous y êtes invité.
 
-![Activation du plug-in Windows Mixed Reality](images/unreal-uxt/2-virtual-reality-plugin.PNG)
+![Activation du plug-in Microsoft OpenXR](images/unreal-uxt/2-enable-plugin.PNG)
 
-> [!NOTE]
-> Les deux plug-ins sont nécessaires pour le développement HoloLens 2.
-
-Une fois les plug-ins activés, votre niveau vide est prêt à avoir de la compagnie.
+L’activation du plug-in Microsoft OpenXR active automatiquement tous les autres plug-ins requis pour le développement de la réalité mixte. Notez que le plug-in « Microsoft Windows Mixed Reality » doit être désactivé pour pouvoir utiliser OpenXR. 
 
 ## <a name="creating-a-level"></a>Création d’un niveau
 La tâche suivante consiste à créer une configuration de joueur avec un point de départ, et un cube pour la référence et la mise à l’échelle.

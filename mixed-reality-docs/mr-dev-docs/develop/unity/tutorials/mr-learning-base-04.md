@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, solveurs, collection d’objets de grille
 ms.localizationpriority: high
-ms.openlocfilehash: 28cebe871e1046e8668a079affabf6167632cfa4
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: d5d10893ba8274139c6e09b8cd426d58a0b3a0cb
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983034"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175470"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Positionnement des objets dans la scène
 
@@ -24,6 +24,37 @@ Dans ce tutoriel, vous allez positionner les objets fournis comme ressources du 
 
 * Apprendre à positionner des objets dans la scène
 * Apprendre à utiliser la fonctionnalité Grid Object Collection du MRTK
+
+## <a name="importing-the-textmeshpro-essential-resources"></a>Importation des ressources TextMeshPro Essential
+Les ressources TextMeshPro Essential sont requises par les éléments de l’interface utilisateur de MRTK. Dans le menu Unity, sélectionnez **Window** > **TextMeshPro** > **Import TMP Essential Resources** pour ouvrir la fenêtre Import Unity Package :
+
+![Chemin du menu Import TMP Essential Resources d’Unity](images/mr-learning-base/base-02-section3-step1-1.png)
+
+Dans la fenêtre Import Unity Package (Importer un package Unity), cliquez sur le bouton **Tous** pour vous assurer que toutes les ressources sont sélectionnées, puis sur le bouton **Importer** pour importer les ressources :
+
+![Fenêtre d’importation des ressources essentielles TMP d’Unity](images/mr-learning-base/base-02-section3-step1-2.png)
+
+## <a name="importing-the-tutorial-assets"></a>Importation des ressources du tutoriel
+
+Téléchargez le package personnalisé Unity suivant. Ce package comprend des ressources 3D, telles que Mars Rover, que nous allons utiliser dans ce tutoriel.
+
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
+
+Pour importer un package personnalisé Unity, dans le menu Unity, sélectionnez **Assets** > **Import Package** > **Custom Package...** pour ouvrir la fenêtre Import package :
+
+![Importation d’un package personnalisé](images/mr-learning-base/base-02-section7-step1-1.png)
+
+Dans la fenêtre Import package, sélectionnez le package **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** que vous avez téléchargé, puis cliquez sur le bouton Open :
+
+![Sélection d’un package de ressources](images/mr-learning-base/base-02-section7-step1-2.png)
+
+Dans la fenêtre Import Unity Package (Importer un package Unity), cliquez sur le bouton Tous pour vous assurer que toutes les ressources sont sélectionnées, puis sur le bouton Importer pour importer les ressources :
+
+![Sélection de toutes les ressources à importer](images/mr-learning-base/base-02-section7-step1-3.png)
+
+Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Project doit ressembler à ceci :
+
+![Fenêtre de projet Unity après l’importation de ressources](images/mr-learning-base/base-02-section7-step1-4.png)
 
 ## <a name="creating-the-parent-object"></a>Création de l’objet parent
 

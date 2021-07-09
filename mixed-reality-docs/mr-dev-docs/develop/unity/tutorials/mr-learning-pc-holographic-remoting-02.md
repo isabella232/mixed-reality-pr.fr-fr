@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, communication à distance holographique sur PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: 916a9396c0b29637d5619bac203718e05112b598
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ca0efe13acac4408a05ab89eb98b508e9993c5a4
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590301"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392496"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Création d’une application PC de communication à distance holographique
 
@@ -24,61 +24,22 @@ Dans ce tutoriel, vous allez apprendre à créer une application PC de communica
 * Apprendre à créer et déployer l’application avec Visual Studio
 * Développer une application de communication à distance holographique et la connecter à HoloLens
 
-## <a name="configuring-your-scene-for-holographic-remoting"></a>Configuration de votre scène pour la communication à distance holographique
+## <a name="configuring-the-capabilities"></a>Configuration des fonctionnalités
 
-Dans cette section, vous allez configurer votre projet pour diffuser en streaming et en temps réel une expérience de réalité mixte de votre PC sur votre appareil HoloLens 2 au moyen d’une connexion Wi-Fi.
+Dans la fenêtre **Paramètres du projet**, développez les **Paramètres de publication**, faites défiler jusqu’à la section Fonctionnalités et cochez la case des fonctionnalités affichées ci-dessous en plus des fonctionnalités existantes.
 
-Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs**, puis cliquez sur le préfabriqué **HolographicRemoting** et faites-le glisser dans votre scène.
+* Serveur client Internet
+* Serveur client de réseau privé
 
-![Unity avec le préfabriqué HolographicRemoting nouvellement ajouté toujours sélectionné](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
+![activation des fonctionnalités](images/mrlearning-pc-holographic-remoting/tutorial2-section0-step1-1.png)
+
+[!INCLUDE[](includes/configuring-scene-for-holographic-remoting.md)]
 
 ## <a name="build-your-application-to-pc"></a>Générer votre application pour PC
 
 Vous pouvez à présent générer votre application de communication à distance holographique sur votre PC. Suivez les étapes ci-dessous et apportez ces modifications pour générer cette application sur votre PC.
 
-### <a name="1-set-the-player-settings"></a>1. Définir les paramètres du lecteur
-
-Dans le menu Unity, sélectionnez Edit > Project Settings pour ouvrir la fenêtre Player Settings.
-
-Dans la fenêtre Paramètres du projet, développez **Paramètres de publication**, faites défiler jusqu’à la section **Fonctionnalités** et cochez la case des fonctionnalités affichées ci-dessous en plus des fonctionnalités existantes.
-
-* Serveur client Internet
-* Serveur client de réseau privé
-
-Dans la section **XR Settings**, cochez la case **WSA Holographic Remoting Supported** et activez la communication à distance holographique.
-
-![Fenêtre XR Settings d’Unity avec WSA Holographic Remoting Supported activé](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-1.png)
-
-### <a name="2-build-the-unity-project"></a>2. Générer le projet Unity
-
-Dans le menu Unity, sélectionnez File > Build Settings pour ouvrir la fenêtre Build Settings.
-
-Dans la fenêtre Build Settings, cliquez sur le bouton ***Add Open Scenes** _ pour ajouter votre scène actuelle aux scènes. Dans la liste Build, cliquez sur le _ *_bouton Build_** pour ouvrir la fenêtre Build Universal Windows Platform :
-
-![Fenêtre Build Settings d’Unity avec une scène ajoutée](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
-
-Dans la fenêtre Build Universal Windows Platform, choisissez un emplacement pour stocker votre build, par exemple Documents\MixedRealityLearning. Créez un dossier et donnez-lui un nom approprié, par exemple PCHolographicRemoting. Cliquez ensuite sur le bouton ***Select Folder*** pour démarrer le processus de génération :
-
-![Fenêtre Build Settings d’Unity avec la fenêtre d’invite Select Folder](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
-
-Attendez qu’Unity termine le processus de génération.
-
-![Processus de génération Unity en cours](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-3.png)
-
-### <a name="3-build-and-deploy-the-application"></a>3. Générer et déployer l’application
-
-Une fois le processus de génération terminé, Unity invite l’Explorateur de fichiers Windows à ouvrir l’emplacement où vous avez stocké la build. Naviguez dans le dossier, puis double-cliquez sur le fichier .sln pour l’ouvrir dans Visual Studio :
-
-![Explorateur Windows avec la solution Visual Studio nouvellement créée sélectionnée](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-1.png)
-
-> [!NOTE]
-> Si Visual Studio vous invite à installer de nouveaux composants, prenez un moment pour vérifier que tous les composants prérequis sont installés comme spécifié dans la documentation Installer les outils.
-
-Configurez Visual Studio pour PC en sélectionnant la configuration Release, l’architecture x64 et Ordinateur local comme cible :
-
-![Visual Studio configuré pour la machine locale](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
-
-Cliquez sur le bouton qui indique ***Ordinateur local***. La procédure de génération et de déploiement de l’application sur votre PC démarre. L’application est installée sur votre PC par défaut.
+[!INCLUDE[](includes/build-your-application-to-pc.md)]
 
 ## <a name="testing-holographic-remoting-remote-application"></a>Test d’une application de communication à distance holographique
 

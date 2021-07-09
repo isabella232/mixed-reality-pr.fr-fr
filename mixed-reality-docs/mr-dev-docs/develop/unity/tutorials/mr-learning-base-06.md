@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, préfabriqués, hologrammes, info-bulles
 ms.localizationpriority: high
-ms.openlocfilehash: 4400ce669863b719b409e11076ceb5689e21893e
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 0abfb4ea2fac3a2e50837c219a465c4ab002e69d
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982972"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110278"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Création d’interfaces utilisateur
 
@@ -67,7 +67,7 @@ Dans la fenêtre Hierarchy, sélectionnez l’objet de bouton **Hints**, puis, d
 ![Unity avec l’événement OnClick de l’objet de bouton Hints configuré](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> Le composant Interactable est un conteneur tout-en-un qui permet à tout objet de pouvoir facilement interagir et répondre aux entrées. Le composant Interactable agit comme un fourre-tout pour tous les types d’entrée, notamment les entrées tactiles, les rayons manuels, la parole, entre autres, et achemine ces interactions dans des événements et des réponses de thème visuel. Pour savoir comment le configurer pour différents types d’entrée et pour personnaliser son thème visuel, vous pouvez consulter le guide [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) dans le [portail de la documentation MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+> Le composant Interactable est un conteneur tout-en-un qui permet à tout objet de pouvoir facilement interagir et répondre aux entrées. Le composant Interactable agit comme un fourre-tout pour tous les types d’entrée, notamment les entrées tactiles, les rayons manuels, la parole, entre autres, et achemine ces interactions dans des événements et des réponses de thème visuel. Pour savoir comment le configurer pour différents types d’entrée et pour personnaliser son thème visuel, vous pouvez consulter le guide [Interactable](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable) dans le [portail de la documentation MRTK](/windows/mixed-reality/mrtk-unity/).
 
 Dans la fenêtre Hierarchy, sélectionnez l’objet de bouton **Explode**, puis, dans la fenêtre Inspector, configurez l’événement **Interactable.OnClick ()** de la façon suivante :
 
@@ -116,6 +116,9 @@ Pour désactiver l’objet Indicator de chevron, dans la fenêtre Hierarchy, sé
 
 > [!NOTE]
 > Maintenant, quand l’application démarre, l’objet Indicator de chevron est désactivé par défaut ; vous pouvez l’activer en appuyant sur le bouton Indicator.
+
+> [!NOTE]
+> Directional Indicator Controller (Script) ne fait pas partie du MRTK, mais il a été inclus avec les ressources du tutoriel.
 
 Renommez le deuxième bouton **TapToPlace**, puis, dans la fenêtre Inspector, configurez le composant **Button Config Helper (Script)** de la façon suivante :
 
@@ -175,7 +178,7 @@ Dans la fenêtre Hierarchy, développez l’objet RoverExplorer > **RoverParts**
 
 ![Unity avec tous les objets de composant du Rover sélectionnés, et le composant ToolTipSpawner ajouté et configuré](images/mr-learning-base/base-06-section4-step1-2.png)
 
-Dans la fenêtre Hierarchy, sélectionnez le premier composant Rover, RoverParts > **Camera_Part**, puis configurez le composant **ToolTipSpawner** de la façon suivante :
+Dans la fenêtre Hiérarchie, sélectionnez le premier composant Camera_Part, RoverParts > **Camera_Part**, puis configurez le composant **ToolTipSpawner** de la façon suivante :
 
 * Remplacez la valeur de **Tool Tip Text** pour qu’elle reflète le nom du composant, en l’occurrence, **Camera**.
 
@@ -197,4 +200,4 @@ Appuyez sur le bouton Play pour passer en mode jeu. Ensuite, maintenez le bouton
 Dans ce tutoriel, vous avez vu comment créer une interface utilisateur simple avec les préfabriqués de boutons et de menus MRTK, ainsi qu’avec le composant TextMeshPro d’Unity. Vous avez également vu comment configurer les boutons pour déclencher des événements lorsque l’utilisateur appuie dessus. Enfin, vous avez vu comment ajouter des info-bulles dynamiques pour fournir à l’utilisateur des informations supplémentaires.
 
 > [!div class="nextstepaction"]
->[Tutoriel suivant : 7. Interaction avec les objets 3D](mr-learning-base-07.md)
+> [Tutoriel suivant : 7. Interaction avec les objets 3D](mr-learning-base-07.md)

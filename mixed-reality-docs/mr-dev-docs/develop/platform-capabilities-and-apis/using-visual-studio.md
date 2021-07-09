@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, déboguer, déployer
-ms.openlocfilehash: 2ab89311163a48ee3c14511446a1498ce883a232
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5510646c058f683babff5e9e34dd296f88cd06c3
+ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100496090"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110543225"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Utilisation de Visual Studio pour le déploiement et le débogage
 
@@ -37,7 +37,7 @@ Commencez par activer le **mode développeur** sur votre appareil afin que Visua
 3. Sélectionnez la vignette **Settings** pour lancer l’application dans votre environnement.
 4. Sélectionnez l’élément de menu **Mettre à jour**.
 5. Sélectionnez l’élément de menu **Pour les développeurs**.
-6. Activez le **Mode développeur** pour déployer des applications à partir de Visual Studio sur votre HoloLens.
+6. Activez **Utiliser les fonctionnalités de développement** pour déployer des applications à partir de Visual Studio sur votre HoloLens. Si votre appareil exécute Windows Holographique, version 21H1 ou une version plus récente, activez également **Découverte d’appareil**.
 7. Facultatif : Faites défiler et activez également **Portail d’appareil**, ce qui vous permet de vous connecter au [Portail d’appareil Windows](using-the-windows-device-portal.md) sur votre HoloLens à partir d’un navigateur web.
 
 ### <a name="windows-pc"></a>PC Windows

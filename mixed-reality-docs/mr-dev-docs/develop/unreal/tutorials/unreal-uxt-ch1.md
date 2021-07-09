@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte, tutoriel, bien démarrer, mrtk, uxt, UX Tools, documentation, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle
-ms.openlocfilehash: a46b9fef96f75f3d80b9ebbd5cbd724730374b41
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: efa0bc210fc20b9e639954a06e97eb78661d87e5
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98580565"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712578"
 ---
 # <a name="1-getting-started"></a>1. Mise en route
 
@@ -32,7 +32,7 @@ Que vous soyez débutant ou expérimenté dans la réalité mixte, ce tutoriel e
 Avant de commencer, vérifiez que vous avez installé les éléments suivants :
 * Windows 10 1809 ou version ultérieure
 * SDK Windows 10 (10.0.18362.0 ou version ultérieure)
-* [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.25 ou ultérieur
+* [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.26 ou ultérieur
 * Appareil Microsoft HoloLens 2 [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) ou [émulateur](../../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-2-emulator-overview)
 * Visual Studio 2019 avec les charges de travail ci-dessous
 

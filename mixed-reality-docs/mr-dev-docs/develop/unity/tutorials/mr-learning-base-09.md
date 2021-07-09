@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, commandes vocales, entrée vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 3aea23d5a259e555f47ca9ea41d77f345c977aeb
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 9422c16781af33fa3d68d7f6046e3a86c4b36b44
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982931"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403370"
 ---
 # <a name="9-using-speech-commands"></a>9. Utilisation des commandes vocales
 
@@ -23,7 +23,14 @@ Dans ce tutoriel, vous allez apprendre à créer des commandes vocales et à les
 * Apprendre à créer des commandes vocales
 * Apprendre à contrôler les commandes vocales globalement et localement
 
-[!INCLUDE[](includes/ensuring-microphone-capabality.md)]
+## <a name="ensuring-the-microphone-capability-is-enabled"></a>Vérification de l’activation de la fonctionnalité Microphone
+
+Dans le menu Unity, sélectionnez Mixed Reality > Kit de ressources > Utilitaires > **Configurer le projet pour MRTK** afin d’ouvrir la fenêtre **MRTK Project Configurator**. Ensuite, dans la section **Fonctionnalités UWP**, vérifiez que l’option **Activer la fonctionnalité du microphone** est grisée :
+
+![Activer la fonctionnalité du microphone](images/mr-learning-base/base-09-section1-step1-1.png)
+
+> [!NOTE]
+> La fonctionnalité Microphone doit avoir été activée lors des instructions [Appliquer les paramètres de MRTK Project Configurator](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) lorsque vous avez configuré le projet Unity au début de cette série de tutoriels. Toutefois, si elle n’est pas activée, veillez à l’activer maintenant.
 
 ## <a name="creating-speech-commands"></a>Création de commandes vocales
 
@@ -137,6 +144,6 @@ Dans les deux prochaines séries de tutoriels, [Tutoriels Azure Spatial Anchors]
 Si vous suivez le parcours de points de contrôle de développement Unity que nous avons élaboré, la tâche suivante consiste à vous familiariser avec les composants de base des applications de réalité mixte.
 
 > [!div class="nextstepaction"]
-> [Interactions de base](../../../out-of-scope/mrtk-101.md)
+> [Interactions de base](/windows/mixed-reality/mrtk-unity/)
 
 Vous pouvez revenir aux [points de contrôle de développement Unity](../unity-development-overview.md#1-getting-started) à tout moment.
