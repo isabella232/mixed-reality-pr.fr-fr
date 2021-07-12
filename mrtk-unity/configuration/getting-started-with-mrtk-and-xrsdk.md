@@ -1,55 +1,55 @@
 ---
-title: Prise en main de MRTK et du kit de développement logiciel (SDK) XR
+title: Bien démarrer avec le kit SDK MRTK et XR
 description: Page d’accueil de MRTK avec le kit de développement logiciel (SDK) XR
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, XRSDK, SDK XR
-ms.openlocfilehash: 01aca42ab4e883d26a814a1572d39eda7576ab57
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, XRSDK, kit de développement logiciel (SDK) XR
+ms.openlocfilehash: bc2924f8e080b0c202f7c3e394a5382cf306431c
+ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908386"
+ms.lasthandoff: 07/11/2021
+ms.locfileid: "113603690"
 ---
-# <a name="getting-started-with-mrtk-and-xr-sdk"></a>Prise en main de MRTK et du kit de développement logiciel (SDK) XR
+# <a name="getting-started-with-mrtk-and-xr-sdk"></a>Bien démarrer avec le kit SDK MRTK et XR
 
 Le kit de développement logiciel (SDK) XR est le [nouveau pipeline XR unity 2019,3 et ultérieur](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). Dans Unity 2019, il fournit une alternative au pipeline XR existant. Dans Unity 2020, il s’agit du seul pipeline XR dans Unity.
 
 ## <a name="prerequisites"></a>Prérequis
 
-Pour commencer à utiliser le Toolkit de réalité mixte, suivez [les étapes fournies](../install-the-tools.md#importing-the-mixed-reality-toolkit) pour ajouter MRTK à un projet.
+pour commencer à utiliser la Shared Computer Toolkit de la réalité mixte, suivez [les étapes fournies](../install-the-tools.md#importing-the-mixed-reality-toolkit) pour ajouter MRTK à un projet.
 
 ## <a name="configuring-unity-for-the-xr-sdk-pipeline"></a>Configuration d’Unity pour le pipeline du kit de développement logiciel (SDK) XR
 
-Le pipeline du kit de développement logiciel (SDK) XR prend actuellement en charge 3 plateformes : Windows Mixed Reality, Oculus et OpenXR. Les sections ci-dessous décrivent les étapes nécessaires à la configuration du kit de développement logiciel (SDK) XR pour chaque plateforme.
+le pipeline du kit de développement logiciel (SDK) XR prend actuellement en charge 3 plateformes : Windows Mixed Reality, Oculus et OpenXR. Les sections ci-dessous décrivent les étapes nécessaires à la configuration du kit de développement logiciel (SDK) XR pour chaque plateforme.
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-Accédez au **Gestionnaire de package de Unity** et installez le package de plug-in XR Windows, qui ajoute la prise en charge de Windows Mixed Reality dans le kit de développement logiciel (SDK) XR. Cela entraîne également l’extraction de quelques packages de dépendance.
+accédez à la **Gestionnaire de package d’unity** et installez le package de plug-in Windows XR, qui ajoute la prise en charge de Windows Mixed Reality sur XR SDK. Cela entraîne également l’extraction de quelques packages de dépendance.
 
 1. Vérifiez que les éléments suivants ont été correctement installés :
    * Gestion du plug-in XR
-   * Plug-in XR Windows
+   * Windows Plug-in XR
    * XR des assistances d’entrée héritées
 
 2. Accédez à **Edit > Project Settings**.
-3. Cliquez sur l’onglet gestion du plug-in XR dans la fenêtre Paramètres du projet.
-4. Accédez aux paramètres de plateforme Windows universelle et vérifiez que Windows Mixed Reality est vérifié sous les fournisseurs de plug-in.
+3. cliquez sur l’onglet gestion du Plug-in XR dans la fenêtre Paramètres Project.
+4. accédez aux paramètres de plateforme Windows universelle et vérifiez Windows Mixed Reality est cochée sous fournisseurs de Plug-ins.
 5. Vérifiez que l’option initialiser XR au démarrage est cochée.
-6. (**_Requis pour la communication à distance HoloLens dans l’éditeur, sinon facultatif_**) Accédez aux paramètres autonomes et assurez-vous que Windows Mixed Reality est coché sous fournisseurs de plug-ins. Vérifiez également que l’option initialiser XR au démarrage est cochée.
+6. (**_requis pour l’éditeur HoloLens communication à distance, sinon facultatif_**) accédez aux paramètres autonomes et assurez-vous que Windows Mixed Reality est coché sous fournisseurs de Plug-ins. Vérifiez également que l’option initialiser XR au démarrage est cochée.
 
     ![Onglet gestion du plug-in XR avec option autonome sélectionnée](images/xr-management-img-02.png)
 
-7. (**_Facultatif_**) Cliquez sur l’onglet Windows Mixed Reality sous gestion du plug-in XR, puis créez un profil de paramètres personnalisés pour modifier les valeurs par défaut. Si la liste des paramètres existe déjà, aucun profil ne doit être créé.
+7. (**_Facultatif_**) cliquez sur l’onglet Windows Mixed Reality sous gestion du Plug-in XR, puis créez un profil de paramètres personnalisés pour modifier les valeurs par défaut. Si la liste des paramètres existe déjà, aucun profil ne doit être créé.
 
-    ![Onglet gestion du plug-in XR avec Windows sélectionné](images/xr-management-img-01.png)
+    ![gestion du plug-in XR avec l’onglet Windows sélectionné](images/xr-management-img-01.png)
 
 ### <a name="oculus"></a>Oculus
 
 1. Pour terminer, suivez la [procédure de configuration de Oculus Quest dans MRTK à l’aide du Guide de pipeline du kit de développement logiciel (SDK) XR](../supported-devices/oculus-quest-mrtk.md) . Le guide décrit les étapes nécessaires à la configuration de Unity et de MRTK pour utiliser le pipeline du kit de développement logiciel (SDK) XR pour Oculus Quest.
 
-### <a name="openxr-preview"></a>OpenXR (préversion)
+### <a name="openxr"></a>OpenXR
 
 > [!IMPORTANT]
 > OpenXR dans Unity est pris en charge uniquement sur Unity 2020,2 et les versions ultérieures.
@@ -59,10 +59,10 @@ Accédez au **Gestionnaire de package de Unity** et installez le package de plug
    1. Gestion du plug-in XR
    1. Plug-in OpenXR
    1. Plug-in OpenXR de réalité mixte
-1. Accédez à modifier > paramètres du projet.
-1. Cliquez sur l’onglet gestion du plug-in XR dans la fenêtre Paramètres du projet.
+1. accédez à modifier > Project Paramètres.
+1. cliquez sur l’onglet gestion du Plug-in XR dans la fenêtre Paramètres Project.
 1. Vérifiez que l’option initialiser XR au démarrage est cochée.
-1. (**_Facultatif_**) Si vous ciblez HoloLens 2, assurez-vous que vous êtes sur la plateforme UWP et sélectionnez ensemble de fonctionnalités Microsoft HoloLens.
+1. (**_Facultatif_**) si vous ciblez HoloLens 2, assurez-vous que vous êtes sur la plateforme UWP et sélectionnez Microsoft HoloLens ensemble de fonctionnalités.
 
 ![OpenXR gestion des plug-ins](../features/images/xrsdk/PluginManagementOpenXR.png)
 
@@ -72,7 +72,7 @@ Accédez au **Gestionnaire de package de Unity** et installez le package de plug
 `<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>`
 
 > [!NOTE]
-> Pour la version initiale de MRTK et OpenXR, seuls les contrôleurs de mouvement HoloLens 2 et Windows Mixed Reality sont pris en charge en mode natif. La prise en charge d’un matériel supplémentaire sera ajoutée dans les versions à venir.
+> pour la version initiale de MRTK et OpenXR, seuls les contrôleurs de mouvement des mains et des Windows Mixed Realitys HoloLens 2 sont pris en charge en mode natif. La prise en charge d’un matériel supplémentaire sera ajoutée dans les versions à venir.
 
 ## <a name="configuring-mrtk-for-the-xr-sdk-pipeline"></a>Configuration de MRTK pour le pipeline du kit de développement logiciel (SDK) XR
 
@@ -82,7 +82,7 @@ Utilisez l’un des profils MRTK par défaut, qui sont tous configurés dans les
 ::: moniker range="< mrtkunity-2021-05"
 Si vous utilisez OpenXR, choisissez « DefaultOpenXRConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.
 
-Si vous utilisez d’autres runtimes XR dans la configuration de gestion du plug-in XR, comme Windows Mixed Reality ou Oculus, choisissez « DefaultXRSDKConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.
+si vous utilisez d’autres runtimes XR dans la configuration de gestion du Plug-in XR, comme Windows Mixed Reality ou Oculus, choisissez « DefaultXRSDKConfigurationProfile » comme profil actif ou clonez-le pour effectuer des personnalisations.
 
 Ces profils sont configurés avec les systèmes et fournisseurs appropriés, si nécessaire. Pour plus d’informations sur le profil et l’exemple de prise en charge avec XR SDK, consultez [la documentation](../features/profiles/profiles.md#xr-sdk) relative aux profils.
 ::: moniker-end
@@ -108,13 +108,13 @@ to
 ::: moniker-end
 
 ::: moniker range=">= mrtkunity-2021-05"
-| Plug-in OpenXR | Plug-in XR Windows |
+| Plug-in OpenXR | Windows Plug-in XR |
 |---------------|-------------------|
 | [`XRSDK.OpenXR.OpenXRCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRCameraSettings) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) |
 | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
-| Plug-in OpenXR | Plug-in XR Windows |
+| Plug-in OpenXR | Windows Plug-in XR |
 |---------------|-------------------|
 | | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) |
 | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
@@ -135,7 +135,7 @@ De [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft
 to
 ::: moniker-end
 
-| Plug-in OpenXR | Plug-in XR Windows |
+| Plug-in OpenXR | Windows Plug-in XR |
 |---------------|-------------------|
 | [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager) |
 
@@ -160,13 +160,13 @@ De [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.M
 to
 ::: moniker-end
 
-| Plug-in OpenXR | Plug-in XR Windows |
+| Plug-in OpenXR | Windows Plug-in XR |
 |---------------|-------------------|
 | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
 
 ![Paramètres des limites du SDK XR](../features/images/xrsdk/BoundarySystemXRSDK.png)
 
-### <a name="spatial-awareness"></a>Sensibilisation spatiale
+### <a name="spatial-awareness"></a>Reconnaissance spatiale
 
 ::: moniker range=">= mrtkunity-2021-05"
 Ajouter les fournisseurs de données suivants
@@ -180,13 +180,13 @@ to
 ::: moniker-end
 
 ::: moniker range=">= mrtkunity-2021-05"
-| Plug-in OpenXR | Plug-in XR Windows |
+| Plug-in OpenXR | Windows Plug-in XR |
 |---------------|-------------------|
 | [`XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver) (pour UWP) | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) (pour UWP) |
 | [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver) (pour les plateformes non UWP) | |
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
-| Plug-in OpenXR | Plug-in XR Windows |
+| Plug-in OpenXR | Windows Plug-in XR |
 |---------------|-------------------|
 | [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver) | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
 ::: moniker-end
@@ -195,7 +195,7 @@ to
 
 ### <a name="controller-mappings"></a>Mappages de contrôleur
 
-Si vous utilisez des profils de mappage de contrôleur personnalisés, ouvrez l’un d’eux et exécutez la boîte à outils de réalité mixte-> utilitaires-> mise à jour-> les profils de mappage de contrôleur pour vous assurer que les nouveaux types de contrôleur du kit de développement logiciel (SDK) XR sont définis.
+si vous utilisez des profils de mappage de contrôleur personnalisés, ouvrez l’un d’eux et exécutez l’élément de menu Shared Computer Toolkit de la réalité mixte-> utilitaires-> mise à jour > des profils de mappage du contrôleur pour vous assurer que les nouveaux types de contrôleur du kit de développement logiciel (SDK) XR sont définis.
 
 ## <a name="see-also"></a>Voir aussi
 

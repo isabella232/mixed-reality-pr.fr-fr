@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c965eb1b4edc91421e0b8b2e96893a04431aef6e
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+ms.openlocfilehash: 639a96785e666cc3f5da3577ec3166f364753ed5
+ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112536160"
+ms.lasthandoff: 07/11/2021
+ms.locfileid: "113603712"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
@@ -16,29 +16,28 @@ Installez le plug-in OpenXR avec la nouvelle application outil de la fonctionnal
 
 Si vous ciblez Desktop VR, nous vous suggérons d’utiliser la plateforme autonome PC sélectionnée par défaut sur un nouveau projet Unity :
 
-![Capture d’écran de la fenêtre des paramètres de build ouverte dans l’éditeur Unity avec PC, Mac & plateforme autonome en surbrillance](../../images/wmr-config-img-3.png)
+![capture d’écran de la fenêtre de Paramètres de Build ouverte dans l’éditeur unity avec PC, Mac & plateforme autonome en surbrillance](../../images/wmr-config-img-3.png)
 
-Si vous ciblez HoloLens 2, vous devez basculer vers l’plateforme Windows universelle :
+si vous ciblez HoloLens 2, vous devez basculer vers le plateforme Windows universelle :
 
-1. Sélectionner le **fichier > les paramètres de Build...**
-2. Sélectionnez **plateforme Windows universelle** dans la liste plateforme et sélectionnez **basculer la plateforme**
+1. sélectionner le **fichier > la Paramètres de Build...**
+2. sélectionnez **plateforme Windows universelle** dans la liste plateforme et sélectionnez **basculer la plateforme**
 3. Définissez **Architecture** sur **ARM64**.
 4. Définissez **Target device** sur **HoloLens**.
 5. Définissez **Build Type** sur **D3D Project**.
 6. Définir la **version du SDK cible** sur le **dernier installé**
 
-![Capture d’écran de la fenêtre des paramètres de build ouverte dans l’éditeur Unity avec plateforme Windows universelle mis en surbrillance](../../images/wmr-config-img-4.png)
+![capture d’écran de la fenêtre de Paramètres de Build ouverte dans l’éditeur unity avec plateforme Windows universelle mis en surbrillance](../../images/wmr-config-img-4.png)
 
 ### <a name="configuring-xr-plugin-management-for-openxr"></a>Configuration de la gestion des plug-ins XR pour OpenXR
 
 Pour définir OpenXR comme Runtime dans Unity :
 
-1. Dans l’éditeur Unity, accédez à **modifier > paramètres du projet**
-2. Dans la liste des paramètres, sélectionnez **gestion des plug-ins XR**
-3. Sélectionnez **installer la gestion des plug-ins XR** s’il s’agit ![ d’une capture d’écran de la fenêtre Paramètres du projet ouverte dans l’éditeur Unity avec la gestion du plug-in](../../images/wmr-config-img-5.png)
-4. Cochez la case **Initialize XR on Startup** .
-5. Si vous ciblez Desktop VR, restez sur l’onglet autonome du PC (le moniteur) et cochez les cases de l’ensemble de fonctionnalités **OpenXR** et **Windows Mixed Reality** .
-6. Si vous ciblez HoloLens 2, basculez vers l’onglet plateforme Windows universelle (le logo Windows), puis sélectionnez les zones ensemble de fonctionnalités **OpenXR** et **Microsoft HoloLens** .
+1. dans l’éditeur unity, accédez à **modifier > Project Paramètres**
+2. dans la liste des Paramètres, sélectionnez **gestion des plug-ins XR** (doit déjà être installé si vous avez installé le plug-in OpenXR de réalité mixte à l’aide de MRFT)
+3. Cochez la case **Initialize XR on Startup** .
+4. si vous ciblez Desktop VR, restez sur l’onglet autonome du PC (le moniteur) et cochez les cases **OpenXR** et **Windows Mixed Reality ensemble de fonctionnalités** .
+5. si vous ciblez HoloLens 2, basculez vers l’onglet plateforme Windows universelle (le logo Windows) et sélectionnez les zones de **jeu de fonctionnalités** **OpenXR** et Microsoft HoloLens
 
 ![Capture d’écran du panneau Paramètres du projet ouvert dans l’éditeur Unity avec la gestion du plug-in XR mise en surbrillance](../../images/openxr-img-05.png)
 
@@ -49,7 +48,7 @@ Pour définir OpenXR comme Runtime dans Unity :
 
 ### <a name="optimization"></a>Optimization
 
-Si vous développez pour HoloLens 2, sélectionnez le **projet > de la réalité mixte > appliquer les paramètres de projet recommandés pour** l’élément de menu HoloLens 2 afin d’obtenir de meilleures performances d’application.
+si vous développez pour HoloLens 2, sélectionnez l’élément de menu **> de réalité mixte Project > appliquer les paramètres de projet recommandés pour HoloLens 2** pour obtenir de meilleures performances d’application.
 
 ![Capture d’écran de l’élément de menu de réalité mixte ouvert avec OpenXR sélectionné](../../images/openxr-img-08.png)
 
@@ -57,46 +56,46 @@ Vous êtes maintenant prêt à commencer à développer avec OpenXR dans Unity 
 
 ### <a name="unity-sample-projects-for-openxr-and-hololens-2"></a>Exemples de projets Unity pour OpenXR et HoloLens 2
 
-Consultez les [exemples de référentiel OpenXR Mixed Reality](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) pour les exemples de projets Unity montrant comment créer des applications Unity pour des casques HoloLens 2 ou de réalité mixte à l’aide du plug-in OpenXR de la réalité mixte.
+consultez les [exemples de référentiel OpenXR Mixed reality](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) pour obtenir des exemples de projets unity montrant comment créer des applications unity pour HoloLens 2 ou des casques de réalité mixtes à l’aide du plug-in OpenXR de réalité mixte.
 
 Ou, si vous êtes prêt à commencer par vous-même à partir d’un projet vide, passez à l’article Configuration de l' [appareil photo](../../camera-in-unity.md) .
 
-# <a name="windows-xr"></a>[XR Windows](#tab/windowsxr)
+# <a name="windows-xr"></a>[Windows XR](#tab/windowsxr)
 
 > [!CAUTION]
-> Le plug-in XR Windows est déconseillé dans Unity 2021,1 et sera supprimé dans Unity 2021,2.  Pour le développement Unity 2020, Microsoft recommande le plug-in OpenXR à la place.
+> le plug-in Windows XR est déconseillé dans unity 2021,1 et sera supprimé dans unity 2021,2.  Pour le développement Unity 2020, Microsoft recommande le plug-in OpenXR à la place.
 
 Si vous ciblez Desktop VR, nous vous suggérons d’utiliser la plateforme autonome PC sélectionnée par défaut sur un nouveau projet Unity :
 
-![Capture d’écran de la fenêtre des paramètres de build ouverte dans l’éditeur Unity avec PC, Mac & plateforme autonome en surbrillance](../../images/wmr-config-img-3.png)
+![capture d’écran de la fenêtre de Paramètres de Build ouverte dans l’éditeur unity avec PC, Mac & plateforme autonome en surbrillance](../../images/wmr-config-img-3.png)
 
-Si vous ciblez HoloLens 2, vous devez basculer vers l’plateforme Windows universelle :
+si vous ciblez HoloLens 2, vous devez basculer vers le plateforme Windows universelle :
 
-1.  Sélectionner le **fichier > les paramètres de Build...**
-2.  Sélectionnez **plateforme Windows universelle** dans la liste plateforme et sélectionnez **basculer la plateforme**
+1.  sélectionner le **fichier > la Paramètres de Build...**
+2.  sélectionnez **plateforme Windows universelle** dans la liste plateforme et sélectionnez **basculer la plateforme**
 3.  Définissez **Architecture** sur **ARM64**.
 4.  Définissez **Target device** sur **HoloLens**.
 5.  Définissez **Build Type** sur **D3D Project**.
 6.  Définir la **version du SDK cible** sur le **dernier installé**
 7.  Définissez **Build configuration** sur **Release** en raison de problèmes de performances connus avec Debug.
 
-![Capture d’écran de la fenêtre des paramètres de build ouverte dans l’éditeur Unity avec plateforme Windows universelle mis en surbrillance](../../images/wmr-config-img-4.png)
+![capture d’écran de la fenêtre de Paramètres de Build ouverte dans l’éditeur unity avec plateforme Windows universelle mis en surbrillance](../../images/wmr-config-img-4.png)
 
 Après avoir défini votre plateforme, vous devez permettre à Unity de créer une [vue immersive](../../../../design/app-views.md) au lieu d’une vue en 2D quand elle est exportée :
 
-1. Dans l’éditeur Unity, accédez à **modifier > paramètres du projet** , puis sélectionnez **gestion du plug-in XR**
+1. dans l’éditeur unity, accédez à **modifier > paramètres Project** et sélectionnez **gestion du plug-in XR**
 
 2. Sélectionnez **installer la gestion des plug-ins XR** si elle apparaît
 
-![Capture d’écran de la fenêtre Paramètres du projet ouverte dans l’éditeur Unity avec la gestion du plug-in XR sélectionnée](../../images/wmr-config-img-5.png)
+![capture d’écran de la fenêtre de Paramètres Project ouverte dans l’éditeur unity avec la gestion du plug-in XR mise en évidence](../../images/wmr-config-img-5.png)
 
-3. Sélectionnez **initialiser XR au démarrage** et **Windows Mixed Reality**
+3. sélectionnez **initialize XR au démarrage** et **Windows Mixed Reality**
 
-![Capture d’écran de la fenêtre Paramètres du projet ouverte dans l’éditeur Unity avec la gestion du plug-in XR sélectionnée](../../images/wmr-config-img-7.png)
+![capture d’écran de la fenêtre paramètres Project ouverte dans l’éditeur unity avec la gestion du plug-in XR mise en évidence](../../images/wmr-config-img-7.png)
 
-4. Sélectionnez la section **gestion du plug-in XR**  >  **Windows Mixed Reality** , cochez toutes les cases et définissez le format de la **mémoire tampon** de profondeur sur le **tampon de profondeur 16 bits**
+4. sélectionnez la section Windows Mixed Reality **de la gestion du Plug-in XR**  >   , cochez toutes les cases et définissez le Format de la **mémoire tampon** de profondeur sur le **tampon de profondeur 16 bits**
 
-![Capture d’écran de la fenêtre Paramètres du projet ouverte dans l’éditeur Unity avec la section Windows Mixed Reality mise en surbrillance](../../images/wmr-config-img-8.png)
+![capture d’écran de la fenêtre paramètres Project ouverte dans l’éditeur unity avec la section Windows Mixed Reality mise en surbrillance](../../images/wmr-config-img-8.png)
 
 # <a name="legacy-xr"></a>[XR antérieur](#tab/legacy)
 
@@ -105,26 +104,26 @@ Après avoir défini votre plateforme, vous devez permettre à Unity de créer u
 
 Si vous ciblez Desktop VR, nous vous suggérons d’utiliser la plateforme autonome PC sélectionnée par défaut sur un nouveau projet Unity :
 
-![Capture d’écran de la fenêtre des paramètres de build ouverte dans l’éditeur Unity avec PC, Mac & plateforme autonome en surbrillance](../../images/wmr-config-img-3.png)
+![capture d’écran de la fenêtre de Paramètres de Build ouverte dans l’éditeur unity avec PC, Mac & plateforme autonome en surbrillance](../../images/wmr-config-img-3.png)
 
-Si vous ciblez HoloLens 2, vous devez basculer vers l’plateforme Windows universelle :
+si vous ciblez HoloLens 2, vous devez basculer vers le plateforme Windows universelle :
 
-1.  Sélectionner le **fichier > les paramètres de Build...**
-2.  Sélectionnez **plateforme Windows universelle** dans la liste plateforme et sélectionnez **basculer la plateforme**
+1.  sélectionner le **fichier > la Paramètres de Build...**
+2.  sélectionnez **plateforme Windows universelle** dans la liste plateforme et sélectionnez **basculer la plateforme**
 3.  Définissez **Architecture** sur **ARM64**.
 4.  Définissez **Target device** sur **HoloLens**.
 5.  Définissez **Build Type** sur **D3D Project**.
 6.  Définir la **version du SDK cible** sur le **dernier installé**
 7.  Définissez **Build configuration** sur **Release** en raison de problèmes de performances connus avec Debug.
 
-![Capture d’écran de la fenêtre des paramètres de build ouverte dans l’éditeur Unity avec plateforme Windows universelle mis en surbrillance](../../images/wmr-config-img-4.png)
+![capture d’écran de la fenêtre de Paramètres de Build ouverte dans l’éditeur unity avec plateforme Windows universelle mis en surbrillance](../../images/wmr-config-img-4.png)
 
 Après avoir défini votre plateforme, vous devez permettre à Unity de créer une [vue immersive](../../../../design/app-views.md) au lieu d’une vue en 2D lors de l’exportation.
 
-1. Ouvrir les **paramètres du lecteur...** à partir des paramètres de **Build... et** développez le groupe de **paramètres XR**
-2. Dans la section **paramètres XR** , sélectionnez la **réalité virtuelle prise en charge** pour ajouter la liste des appareils de réalité virtuelle
+1. ouvrir le **Paramètres du lecteur...** à partir de la **Paramètres de Build... et** développez le groupe de **Paramètres XR**
+2. dans la section **Paramètres XR** , sélectionnez **virtual reality pris en charge** pour ajouter la liste des appareils de réalité virtuelle
 3. Définissez le **format de profondeur** sur **16 bits** et cochez **activer le partage du tampon de profondeur**
 4. Définissez **Stereo Rendering Mode** (Mode de rendu stéréo) sur **Single Pass Instanced** (Instance à passe unique).
 5. Sélectionnez la **communication à distance holographique WSA prise en charge** si vous souhaitez utiliser l’accès distant en mode de lecture holographique
 
-![Capture d’écran de la fenêtre Paramètres du projet ouverte dans l’éditeur Unity avec la section paramètres du lecteur mise en surbrillance](../../images/wmr-config-img-9.png)
+![capture d’écran de la fenêtre paramètres Project ouverte dans l’éditeur unity avec la section paramètres du lecteur mise en surbrillance](../../images/wmr-config-img-9.png)
