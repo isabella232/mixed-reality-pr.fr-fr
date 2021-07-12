@@ -7,18 +7,16 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: b0b8d97471dfae9d6dc6bbee26079af04f97de62
-ms.sourcegitcommit: 94ae851f78e5b861af601b445f8f0a3405197c40
+ms.openlocfilehash: 7124650a59271b48b763719063411765b5457768
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "107716020"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176023"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Initialisation de votre projet et déploiement de votre première application
 
-Dans ce tutoriel, vous allez apprendre à créer un nouveau projet Unity, à le configurer pour le développement <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/" target="_blank">MRTK (Mixed Reality Toolkit)</a> et à importer MRTK. Vous allez également effectuer la configuration, la génération et le déploiement d’une scène Unity de base depuis Visual Studio sur votre HoloLens 2. Une fois que l’avez déployée sur votre HoloLens 2, vous devez voir un maillage de mappage spatial couvrant les surfaces qui sont perçues par HoloLens. En outre, vous devez voir des indicateurs sur vos mains et doigts pour le suivi de la main et un compteur de fréquence d’images pour vous tenir informé des performances de l’application.
-
-![MRTK](../../../develop/images/Unity_MRTK_MRFT_Flow.png)
+Dans ce tutoriel, vous allez apprendre à créer un nouveau projet Unity, à le configurer pour le développement MRTK (Mixed Reality Toolkit) et à importer MRTK. Vous allez également effectuer la configuration, la génération et le déploiement d’une scène Unity de base depuis Visual Studio sur votre HoloLens 2. Une fois que l’avez déployée sur votre HoloLens 2, vous devez voir un maillage de mappage spatial couvrant les surfaces qui sont perçues par HoloLens. En outre, vous devez voir des indicateurs sur vos mains et doigts pour le suivi de la main et un compteur de fréquence d’images pour vous tenir informé des performances de l’application.
 
 ## <a name="objectives"></a>Objectifs
 
@@ -26,15 +24,40 @@ Dans ce tutoriel, vous allez apprendre à créer un nouveau projet Unity, à le 
 * Apprendre à créer et déployer votre application sur HoloLens
 * Expérimenter le maillage du mappage spatial, les maillages de la main et le compteur de fréquence d’images sur un appareil HoloLens 2
 
+### <a name="steps-overview"></a>Vue d’ensemble des étapes
+:::row:::
+    :::column:::
+       ![Étape 1 de la vue d’ensemble](images/mr-learning-base/base-02-overview-step1.png) **1. Créer un nouveau projet Unity**
+    :::column-end:::
+    :::column:::
+       ![Étape 2 de la vue d’ensemble](images/mr-learning-base/base-02-overview-step2.png) **2. Importer MRTK dans le projet**
+    :::column-end:::
+    :::column:::
+       ![Étape 3 de la vue d’ensemble](images/mr-learning-base/base-02-overview-step3.png) **3. Configurer une nouvelle scène avec MRTK**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+       ![Étape 4 de la vue d’ensemble](images/mr-learning-base/base-02-overview-step4.png) **4. Créer un projet Unity**
+    :::column-end:::
+    :::column:::
+       ![Étape 5 de la vue d’ensemble](images/mr-learning-base/base-02-overview-step5.png) **5. Créer un projet UWP**
+    :::column-end:::
+    :::column:::
+       ![Étape 6 de la vue d’ensemble](images/mr-learning-base/base-02-overview-step6.png) **6. Exécuter un project sur l’appareil**
+    :::column-end:::
+:::row-end:::
+
 ## <a name="creating-the-unity-project"></a>Création du projet Unity
 
 Lancez **Unity Hub**, sélectionnez l’onglet **Projets**, puis cliquez sur la **flèche bas** en regard du bouton **Nouveau** :
 
-![Unity Hub avec le bouton New mis en évidence](images/mr-learning-base/base-02-section1-step1-1.png)
+<img src="images/mr-learning-base/base-02-section1-step1-1.png" width="650px" alt="Unity Hub with New button highlighted">
 
 Dans la liste déroulante, sélectionnez la **version** Unity spécifiée dans les [prérequis](mr-learning-base-01.md#prerequisites) :
 
-![Unity Hub avec la liste déroulante du sélecteur de version NEW](images/mr-learning-base/base-02-section1-step1-2.png)
+<img src="images/mr-learning-base/base-02-section1-step1-2.png" width="650px" alt="Unity Hub with NEW version selector dropdown">
+
 
 > [!TIP]
 > Si cette version spécifique d’Unity n’est pas disponible dans Unity Hub, vous pouvez lancer l’installation à partir de la page <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity download archive</a>.
@@ -46,149 +69,138 @@ Dans la fenêtre Créer un projet :
 * Choisissez un **Emplacement** approprié pour stocker votre projet, par exemple _D:\MixedRealityLearning_
 * Cliquez sur le bouton **Créer** pour créer et lancer votre nouveau projet Unity
 
-![Unity Hub avec la fenêtre Create a new project renseignée](images/mr-learning-base/base-02-section1-step1-3.png)
+<img src="images/mr-learning-base/base-02-section1-step1-3.png" width="650px" alt="Unity Hub with Create a new project window filled out">
 
 > [!CAUTION]
 > Quand vous utilisez Windows, il existe une limite de 255 caractères pour MAX_PATH. Par conséquent, vous devez enregistrer le projet Unity près de la racine du lecteur.
 
 Attendez qu’Unity crée le projet :
 
-![Création du nouveau projet Unity en cours](images/mr-learning-base/base-02-section1-step1-4.png)
+<img src="images/mr-learning-base/base-02-section1-step1-4.png" width="650px" alt="Unity create new project in progress">
 
 ## <a name="switching-the-build-platform"></a>Changement de plateforme de génération
 
-[!INCLUDE[](includes/switching-build-platform.md)]
+Dans le menu Unity, sélectionnez **Fichier** > **Paramètres de build...** pour ouvrir la fenêtre Paramètres de build :
 
-## <a name="importing-the-textmeshpro-essential-resources"></a>Importation des ressources TextMeshPro Essential
+![Unity - Build Settings... Chemin du menu](images/mr-learning-base/base-02-section2-step1-1.png)
 
-Dans le menu Unity, sélectionnez **Window** > **TextMeshPro** > **Import TMP Essential Resources** pour ouvrir la fenêtre Import Unity Package :
+Dans la fenêtre Build Settings, sélectionnez **Universal Windows Platform**, puis :
 
-![Chemin du menu Import TMP Essential Resources d’Unity](images/mr-learning-base/base-02-section3-step1-1.png)
+1. Définissez **Target device** sur **HoloLens**.
+2. Définissez **Architecture** sur **ARM 64**. 
+3. Définissez **Build Type** sur **D3D Project**.
+4. Définissez **Target SDK Version** sur **Latest Installed**
+5. Définissez **Minimum Platform Version** sur **10.0.1024.0**
+6. Définissez **Visual Studio Version** sur **Latest Installed**
+7. Définissez **Build and Run on** sur **USB Device**
+8. Définissez **Build configuration** sur **Release** en raison de problèmes de performances connus avec Debug.
+9. Appuyer sur le bouton Switch Platform
 
-Dans la fenêtre Import Unity Package (Importer un package Unity), cliquez sur le bouton **Tous** pour vous assurer que toutes les ressources sont sélectionnées, puis sur le bouton **Importer** pour importer les ressources :
+![Paramètres de build Unity avec les paramètres Universal Windows Platform définis](images/mr-learning-base/base-02-section2-step1-2-openxr.png)
 
-![Fenêtre d’importation des ressources essentielles TMP d’Unity](images/mr-learning-base/base-02-section3-step1-2.png)
+Attendez qu’Unity termine le changement de plateforme :
 
-> [!TIP]
-> Les ressources TextMeshPro Essential sont requises par les éléments de l’interface utilisateur de MRTK. Vous pouvez ignorer cette étape si vous ne prévoyez pas d’utiliser des éléments de l’interface utilisateur de MRTK dans votre projet.
+![Unity - Changement de plateforme en cours](images/mr-learning-base/base-02-section2-step1-3-openxr.png)
 
-## <a name="importing-the-mixed-reality-toolkit"></a>Importation du Mixed Reality Toolkit
+Une fois qu’Unity a terminé le changement de plateforme, cliquez sur l’icône **x** pour fermer la fenêtre Paramètres de génération.
+
+## <a name="importing-the-mixed-reality-toolkit-and-configuring-the-unity-project"></a>Importation de Mixed Reality Toolkit et configuration du projet Unity
 
 Pour importer le Mixed Reality Toolkit dans le projet Unity, vous devez utiliser [Mixed Reality Feature Tool](../welcome-to-mr-feature-tool.md) qui permet aux développeurs de découvrir, mettre à jour et ajouter des packages de fonctionnalités Mixed Reality dans des projets Unity. Vous pouvez rechercher des packages par nom ou par catégorie, voir leurs dépendances et même voir les changements proposés pour votre fichier manifeste de projets avant l’importation.
 
 Téléchargez la dernière version du Mixed Reality Feature Tool dans le [Centre de téléchargement Microsoft](https://aka.ms/MRFeatureTool). Une fois le téléchargement terminé, décompressez le fichier et enregistrez-le sur votre Bureau.
 
 > [!NOTE]
-> Avant de pouvoir exécuter le Mixed Reality Feature Tool, vous devez installer le [runtime .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0).
-
-> [!NOTE]
-> Actuellement, le Mixed Reality Feature Tool s’exécute uniquement sur Windows. Pour MacOS, suivez la [procédure](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html#1-get-the-latest-mrtk-unity-packages) pour télécharger et importer le Mixed Reality Toolkit dans le projet Unity.
+> Avant de pouvoir exécuter le Mixed Reality Feature Tool, vous devez installer le [runtime .NET 5.0](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-5.0.7-windows-x64-installer).
 
 Ouvrez le fichier exécutable **MixedRealityFeatureTool** dans le dossier téléchargé pour lancer le Mixed Reality Feature Tool.  
 
-![Ouverture de MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
+<img src="images/mr-learning-base/base-02-section4-step1-1.png" width="750px" alt="Opening MixedRealityFeatureTool">
 
 [!INCLUDE[](includes/importing-mrtk.md)]
 
-## <a name="configuring-the-unity-project"></a>Configuration du projet Unity
-
-### <a name="1-apply-the-mrtk-project-configurator-settings"></a>1. Appliquer les paramètres du configurateur de projet MRTK
-
-Une fois que Unity a fini d’importer le package de la section précédente, la fenêtre MRTK Project Configurator doit s’afficher. Si ce n’est pas le cas, vous pouvez ouvrir manuellement en accédant à **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** :
-
-![Chemin du menu Configure Unity Project d’Unity](images/mr-learning-base/base-02-section5-step1-1.png)
-
-Dans la fenêtre MRTK Project Configurator, développez la section **Modify Configurations**, vérifiez que toutes les options sont cochées, puis cliquez sur le bouton **Apply** pour appliquer les paramètres :
-
-![Fenêtre MRTK Project Configurator d’Unity](images/mr-learning-base/base-02-section5-step1-2.png)
-
-> [!TIP]
-> L’application des paramètres par défaut de MRTK est facultative mais fortement recommandée, car elle permet de configurer certains paramètres Unity recommandés :
-
-> * Set Single Pass Instanced rendering path : Améliore les performances graphiques en exécutant le pipeline de rendu pour les deux yeux dans le même appel de dessin. Pour plus d’informations à ce sujet, vous pouvez vous reporter à la section [Single-Pass Instanced rendering](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) de la documentation sur les [performances](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) de MRTK.
-> * Définissez la couche de reconnaissance spatiale par défaut : Crée une couche Unity nommée Spatial Awareness et configure MRTK afin qu’il utilise cette couche pour le maillage de reconnaissance spatiale. Pour plus d’informations sur les couches d’Unity, consultez la documentation <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Personnalisation de votre espace de travail</a>.
-
-### <a name="2-configure-additional-project-settings"></a>2. Configurer des paramètres de projet supplémentaires
-
-[!INCLUDE[](includes/configuring-additional-project-settings.md)]
-
 ## <a name="creating-the-scene-and-configuring-mrtk"></a>Création de la scène et configuration de MRTK
 
-Dans le menu Unity, sélectionnez **File** > **New Scene** pour créer une scène :
+Dans le menu Unity, sélectionnez **Fichier** > **Nouvelle scène** :
 
 ![Unity - New Scene - Chemin du menu](images/mr-learning-base/base-02-section6-step1-1.png)
 
-Dans le menu Unity, sélectionnez **Mixed Reality Toolkit** > **Add to Scene and Configure...** pour ajouter le MRTK à votre scène actuelle :
+Dans la fenêtre **Nouvelle scène**, sélectionnez **De base (intégré)** , puis cliquez sur **Créer** pour créer une scène :
+
+![Nouvelle fenêtre de scène Unity](images/mr-learning-base/base-02-section6-step1-1-newscene.png)
+
+> [!NOTE]
+> La capture d’écran ci-dessus provient de Unity version 2020, si vous utilisez Unity 2019, lorsque vous cliquez sur **Créer**, une nouvelle scène vide sera créée.
+
+Dans le menu Unity, sélectionnez **Mixed Reality** > **Kit de ressources** > **Ajouter à la scène et configurer...** pour ajouter le MRTK à votre scène actuelle :
 
 ![Unity - Add to Scene and Configure... Chemin du menu](images/mr-learning-base/base-02-section6-step1-2.png)
 
-[!INCLUDE[](includes/changing-profile.md)]
+Une fois l’objet **MixedRealityToolkit** sélectionné dans la fenêtre Hierarchy, dans la fenêtre Inspector, vérifiez que le profil de configuration **MixedRealityToolkit** est défini sur **DefaultMixedRealityToolkitConfigurationProfile** :
+
+![Composant MixedRealityToolkit d’Unity avec DefaultMixedRealityTookitConfigurationProfile sélectionné](images/mr-learning-base/base-02-section6-step1-3.png)
 
 Dans le menu Unity, sélectionnez **Fichier** > **Enregistrer sous...** pour ouvrir la fenêtre Save Scene (Enregistrer la scène) :
 
 ![Unity - Save As... Chemin du menu](images/mr-learning-base/base-02-section6-step1-4.png)
 
-> [!TIP]
-> La réduction du format de profondeur à 16 bits est facultative, mais peut contribuer à améliorer les performances graphiques dans votre projet. Pour plus d’informations à ce sujet, vous pouvez vous reporter à la section <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">Depth buffer sharing (HoloLens)</a> de la documentation sur les <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">performances</a> de MRTK.
+Enregistrez la scène dans votre projet sous **Ressource** > **Scènes**.
 
 ![Fenêtre d’invite Save d’Unity pour enregistrer la scène](images/mr-learning-base/base-02-section6-step1-5.png)
 
-## <a name="importing-the-tutorial-assets"></a>Importation des ressources du tutoriel
+## <a name="adding-hand-interaction-to-an-object"></a>Ajout d’une interaction manuelle à un objet
 
-Téléchargez le package personnalisé Unity suivant :
-
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
-
-Pour importer un package personnalisé Unity, dans le menu Unity, sélectionnez **Assets** > **Import Package** > **Custom Package...** pour ouvrir la fenêtre Import package :
-
-![Importation d’un package personnalisé](images/mr-learning-base/base-02-section7-step1-1.png)
-
-Dans la fenêtre Import package, sélectionnez le package **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** que vous avez téléchargé, puis cliquez sur le bouton Open :
-
-![Sélection d’un package de ressources](images/mr-learning-base/base-02-section7-step1-2.png)
-
-Dans la fenêtre Import Unity Package (Importer un package Unity), cliquez sur le bouton Tous pour vous assurer que toutes les ressources sont sélectionnées, puis sur le bouton Importer pour importer les ressources :
-
-![Sélection de toutes les ressources à importer](images/mr-learning-base/base-02-section7-step1-3.png)
-
-Une fois que vous avez importé les ressources du tutoriel, votre fenêtre Project doit ressembler à ceci :
-
-![Fenêtre de projet Unity après l’importation de ressources](images/mr-learning-base/base-02-section7-step1-4.png)
-
-## <a name="configuring-the-scene"></a>Configuration de la scène
-
-Dans la fenêtre Project, accédez au dossier Assets > MRTK.Tutorials.GettingStarted > Prefabs :
-
-Dans la fenêtre Project, cliquez sur le préfabriqué **Cube** et faites-le glisser sur la fenêtre Hierarchy puis, dans la fenêtre Inspector, configurez son composant **Transform** comme suit :
-
-* **Position** : X = 0, Y = 0, Z = 0.5
-* **Rotation** : X = 0, Y = 0, Z = 0
-* **Scale** : X = 1, Y = 1, Z = 1
+Dans le menu Unity, sélectionnez **GameObject** > **Objet 3D** > **Cube** pour ajouter un objet Cube à la scène.
 
 ![Ajout d’un cube à la scène](images/mr-learning-base/base-02-section8-step1-1.png)
 
-Pour vous concentrer sur les objets de la scène, vous pouvez double-cliquer sur l’objet **Cube**, puis faire un léger zoom avant :
+Cliquez sur l’objet **Cube** dans la fenêtre Hiérarchie, puis, dans la fenêtre de l’inspecteur, configurez son composant **Transform** comme suit
 
-Pour interagir et saisir un objet avec les mains, il faut que l’objet ait un composant Collider, par exemple un **Box Collider**, un composant **Object Manipulator (Script)** et un composant **NearInteractionGrabbable(Script)** .
+* **Position** : X = 0, Y = 0,1, Z = 0,5
+* **Rotation** : X = 0, Y = 0, Z = 0
+* **Échelle** : X = 0,1, Y = 0,1, Z = 0,1
+
+1 unité Unity équivaut à 1 mètre. Nous avons mis à jour la taille du cube pour qu’il fasse 10x10x10 cm, placé à 50 cm depuis la position du casque (0,0,0). 10cm sous le niveau de l’œil pour une interaction confortable. 
+
+Si vous utilisez l’échelle par défaut (1,1,1), le cube est trop volumineux. Si vous utilisez la position par défaut (0,0,0), le cube est placé à la même position que votre casque et vous ne pouvez pas le voir tant que vous n’avez pas effectué un déplacement vers l’arrière.
+
+![Ajustement des informations de transformation](images/mr-learning-base/base-02-section8-step1-1b.png)
+
+Pour vous concentrer sur les objets de la scène, vous pouvez double-cliquer sur l’objet **Cube**, puis faire un léger zoom avant. Vous pouvez utiliser la touche F pour effectuer un zoom et vous focaliser sur l’objet.
+
+Pour interagir avec un objet et le saisir avec des mouvements captés des mains, l’objet doit comporter :
+ * Composant Collider, tel que **Box Collider** (le cube de Unity a déjà un type de Collider par défaut)
+ * Le composant **Object Manipulator (Script)**
+ * Composant **NearInteractionGrabbable(Script)**
+
+Le script **ObjectManipulator** de MRTK permet de déplacer, de modifier et de faire pivoter un objet à l’aide d’une ou deux mains. Ce script prend en charge le modèle d’entrée de manipulation directe, car il permet à l’utilisateur de toucher des hologrammes directement avec ses mains.
 
 Toujours avec le **cube** sélectionné dans la fenêtre Hierarchy, dans la fenêtre Inspector, cliquez sur le bouton **Add Component**, puis recherchez et sélectionnez le script **Object Manipulator** pour ajouter le script Object Manipulator à l’objet Cube.
 
-![Ajout d’un manipulateur d’objet au cube](images/mr-learning-base/base-02-section8-step1-2.png)
+![Ajout d’un manipulateur d’objet au cube](images/mr-learning-base/base-02-section8-step1-2.PNG)
 
 Répétez la même procédure pour ajouter un **script Near Interaction Grabbable** au cube.
 
-![Ajout d’un script Near Interaction Grabbable au cube](images/mr-learning-base/base-02-section8-step1-3.png)
+![Ajout d’un script Near Interaction Grabbable au cube](images/mr-learning-base/base-02-section8-step1-3.PNG)
 
 > [!NOTE]
 > Quand vous ajoutez un Object Manipulator (Script), dans ce cas, le Constraint Manager (Script) est ajouté automatiquement, car Object Manipulator (Script) en dépend.
 
-> [!NOTE]
-> Dans le cadre de ce tutoriel, les colliders ont déjà été ajoutés à l’objet Cube. Pour plus d’informations sur les colliders, vous pouvez consulter la documentation <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collider</a> d’Unity.
+## <a name="testing-your-application-in-unity-editor-with-mrtk-input-simulation"></a>Test de votre application dans l’éditeur Unity avec la simulation d’entrée MRTK
 
-Pour tester cela dans l’éditeur Unity, vous pouvez entrer en mode lecture et maintenir la touche **Maj gauche** ou **Espace** enfoncée pour activer le contrôleur. Un déplacement de la souris permet de déplacer le contrôleur, et vous pouvez également le rapprocher ou l’éloigner de la caméra à l’aide de la roulette de la souris. Une fois que le pointeur se trouve sur le cube, appuyez sur le **bouton gauche de la souris** pour déplacer l’objet Cube.
+Avec la simulation d’entrée de MRTK, vous pouvez tester divers types d’interactions dans l’éditeur Unity sans développement ni déploiement sur un appareil. Cela vous permet d’itérer rapidement vos idées dans le processus de conception et de développement. Utilisez les raccourcis clavier et souris pour contrôler les entrées simulées.
 
-![Mode jeu](images/mr-learning-base/base-02-section8-step1-4.png)
+Cliquez sur le bouton de lecture pour accéder au mode de lecture. Maintenez la touche **Décalage vers la gauche** ou **Espace** pour faire apparaître le contrôleur (mains simulées), le déplacement de la souris déplace le contrôleur et peut également être déplacé plus ou moins près de la caméra à l’aide de la roulette de la souris. Une fois que le pointeur se trouve sur le cube, appuyez de façon prolongée sur le **bouton gauche de la souris** pour saisir l’objet Cube.
+
+* Appuyez sur les touches **W, A, S, D, Q, E** pour déplacer la caméra.
+* Maintenez le **bouton droit de la souris** enfoncé et déplacez la souris pour regarder autour de vous.
+* Pour faire apparaître les mains simulées, appuyez sur la **barre d’espace (droite)** ou sur la **touche Maj de gauche**
+* Appuyez sur les touches **T** ou **Y** pour que les mains simulées restent affichées
+* Pour faire pivoter des mains simulées, maintenez la touche **Ctrl** enfoncée et déplacez la souris
+
+![Mode jeu](images/mr-learning-base/base-02-section8-step1-4.gif)
+
 
 ## <a name="building-your-application-to-your-hololens-2"></a>Génération de votre application sur votre HoloLens 2
 
@@ -245,7 +257,7 @@ L’utilisation de Démarrer sans débogage démarre automatiquement l’applica
 Sélectionnez **Générer > Déployer la solution** pour déployer sur votre appareil sans que l’application ne démarre automatiquement.
 
 > [!NOTE]
->Vous remarquerez peut-être le profileur de diagnostics dans l’application, que vous pouvez activer ou désactiver avec la commande vocale **Toggle Diagnostics**. Il est recommandé de garder le profileur visible la plupart du temps pendant le développement, de façon à comprendre quand des modifications apportées à l’application peuvent avoir un impact sur les performances. Par exemple, les applications HoloLens doivent [s’exécuter en continu à 60 images/s](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md).
+>Vous remarquerez peut-être le profileur de diagnostics dans l’application, que vous pouvez activer ou désactiver avec la commande vocale **« Toggle Diagnostics »** . Il est recommandé de garder le profileur visible la plupart du temps pendant le développement, de façon à comprendre quand des modifications apportées à l’application peuvent avoir un impact sur les performances. Par exemple, les applications HoloLens doivent [s’exécuter en continu à 60 images/s](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md).
 
 ## <a name="congratulations"></a>Félicitations
 
