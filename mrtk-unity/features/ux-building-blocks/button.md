@@ -4,15 +4,15 @@ description: Vue d’ensemble des boutons dans MRTK
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, MRTK, boutons
-ms.openlocfilehash: 43570c225f25b9ea73c9d1fc4cc9b6c92b8c2dfc
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+keywords: unity, HoloLens, HoloLens 2, de réalité mixte, développement, MRTK, boutons MRTK
+ms.openlocfilehash: 16baeede2c63437e933eb1367f01af7f372cd62f
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003106"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281855"
 ---
-# <a name="button"></a>Bouton
+# <a name="buttons"></a>Boutons
 
 ![Bouton principal](../images/button/MRTK_Button_Main.png)
 
@@ -44,13 +44,13 @@ Exemples du bouton prefabs sous le ``MRTK/SDK/Features/UX/Interactable/Prefabs``
 :::row-end:::
 :::row:::
     :::column::: 
-    Bouton de style Shell de HoloLens 2 avec une plaque arrière qui prend en charge différents commentaires visuels tels qu’une bordure claire, une lumière de proximité et une plaque avant compressée
+    bouton de style shell de HoloLens 2 avec une plaque arrière qui prend en charge différents commentaires visuels tels qu’une bordure claire, une lumière de proximité et une plaque avant compressée
     :::column-end:::
     :::column:::
-    Bouton de style Shell de HoloLens 2 sans arrière-plaque
+    bouton de style shell de HoloLens 2 sans plaque arrière
     :::column-end:::
     :::column:::
-    Bouton de style Shell de HoloLens 2 avec forme circulaire
+    bouton de style shell de HoloLens 2 avec une forme circulaire
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -66,13 +66,13 @@ Exemples du bouton prefabs sous le ``MRTK/SDK/Features/UX/Interactable/Prefabs``
 :::row-end:::
 :::row:::
     :::column::: 
-    Bouton de style Shell de la largeur de l’interface HoloLens 2 32x96mm
+    32x96mm du bouton de style shell du grand HoloLens 2
     :::column-end:::
     :::column:::
-    Barre de boutons HoloLens 2 horizontale avec arrière partagé
+    barre de bouton HoloLens 2 horizontale avec arrière partagé
     :::column-end:::
     :::column:::
-    Barre de boutons HoloLens 2 verticale avec arrière partagé
+    barre de bouton HoloLens 2 verticale avec arrière partagé
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -88,13 +88,13 @@ Exemples du bouton prefabs sous le ``MRTK/SDK/Features/UX/Interactable/Prefabs``
 :::row-end:::
 :::row:::
     :::column:::     
-    Case à cocher de type Shell de HoloLens 2 32x32mm
+    32x32mm case à cocher de type shell de HoloLens 2
     :::column-end:::
     :::column:::
-    Commutateur de style Shell de HoloLens 2 32x32mm 
+    32x32mm commutateur de style shell de HoloLens 2 
     :::column-end:::
     :::column:::
-    32x32mm radio de style Shell de HoloLens 2
+    32x32mm radio de style shell de HoloLens 2
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -110,13 +110,13 @@ Exemples du bouton prefabs sous le ``MRTK/SDK/Features/UX/Interactable/Prefabs``
 :::row-end:::
 :::row:::
     :::column:::  
-    Case à cocher de type Shell de HoloLens 2 32x96mm
+    32x96mm case à cocher de type shell de HoloLens 2
     :::column-end:::
     :::column:::
-    Commutateur de style Shell de HoloLens 2 32x96mm
+    32x96mm commutateur de style shell de HoloLens 2
     :::column-end:::
     :::column:::
-    32x96mm radio de style Shell de HoloLens 2
+    32x96mm radio de style shell de HoloLens 2
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -124,7 +124,7 @@ Exemples du bouton prefabs sous le ``MRTK/SDK/Features/UX/Interactable/Prefabs``
     ![Radial ](../images/button/MRTK_Button_Radial.png)  radial
     :::column-end:::
     :::column:::
-    ![Case à cocher](../images/button/MRTK_Button_Checkbox.png) **Case à cocher**
+    ![Case ](../images/button/MRTK_Button_Checkbox.png)  à cocher
     :::column-end:::
     :::column:::
     ![ToggleSwitch ](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch**
@@ -154,7 +154,7 @@ Exemples du bouton prefabs sous le ``MRTK/SDK/Features/UX/Interactable/Prefabs``
 :::row-end:::
 :::row:::
     :::column:::  
-    Bouton de style d’interpréteur de commandes HoloLens 1re génération
+    HoloLens bouton de style de l’interpréteur de commandes 1re génération
     :::column-end:::
     :::column:::
     Bouton de commande de la forme ronde
@@ -166,13 +166,13 @@ Exemples du bouton prefabs sous le ``MRTK/SDK/Features/UX/Interactable/Prefabs``
 
 Le `Button` (ressources/MRTK/SDK/features/UX/interactive/Prefabs/Button. Prefab) est basé sur le [](interactable.md) concept interactif pour fournir des contrôles d’interface utilisateur faciles pour les boutons ou d’autres types de surfaces interactives. Le bouton de ligne de base prend en charge toutes les méthodes d’entrée disponibles, y compris l’entrée articulée pour les interactions proches et le point d’appui sur l’air pour les interactions lointaines. Vous pouvez également utiliser la commande vocale pour déclencher le bouton.
 
-`PressableButtonHoloLens2` (Ressources/MRTK/Kit de développement logiciel/fonctionnalités/UX/accessible en interaction/Prefabs/PressableButtonHoloLens2. Prefab) est un bouton de style d’interpréteur de commandes HoloLens 2 qui prend en charge le déplacement précis du bouton pour l’entrée de suivi direct. Il combine un `Interactable` script avec un `PressableButton` script.
+`PressableButtonHoloLens2`(ressources/MRTK/kit de développement logiciel/fonctionnalités/UX/accessible en interaction/Prefabs/PressableButtonHoloLens2. prefab) est HoloLens 2 bouton de style d’interpréteur de commandes qui prend en charge le déplacement précis du bouton pour l’entrée de suivi direct. Il combine un `Interactable` script avec un `PressableButton` script.
 
-Pour HoloLens 2, il est recommandé d’utiliser des boutons avec une plaque arrière opaque. Les boutons transparents ne sont pas recommandés en raison de ces problèmes d’utilisation et de stabilité :
+pour HoloLens 2, il est recommandé d’utiliser des boutons avec une plaque arrière opaque. Les boutons transparents ne sont pas recommandés en raison de ces problèmes d’utilisation et de stabilité :
 
 * L’icône et le texte sont difficiles à lire avec l’environnement physique
 * Il est difficile de comprendre quand les déclencheurs d’événements
-* Les hologrammes affichés via un plan transparent peuvent être instables avec la stabilisation LSR profondeur de HoloLens 2
+* les Hologrammes affichées par le biais d’un plan transparent peuvent être instables avec la stabilisation LSR de profondeur d’HoloLens 2
 
 ![Bouton plaqué](../images/button/MRTK_Button_UsePlated.png)
 
@@ -208,11 +208,11 @@ Pour tirer parti des informations d’état d’entrée articulées spécifiques
 
 Dans l’état inactif, la plaque avant du bouton n’est pas visible. Comme une approche par doigt ou un curseur de l’entrée de regard cible la surface, la bordure lumineuse de la plaque avant devient visible. La surface de la plaque avant présente une surbrillance supplémentaire. Quand vous appuyez sur un doigt, la plaque avant se déplace à la main. Lorsque le doigt touche la surface de la plaque avant, il affiche un effet d’impulsion subtil pour fournir un retour visuel du point tactile.
 
-Dans le bouton de style Shell HoloLens 2, il existe de nombreux signaux visuels et intuitivité pour augmenter la confiance de l’utilisateur sur l’interaction.
+en HoloLens 2 bouton de style shell, il existe de nombreux signaux visuels et intuitivité pour augmenter la confiance de l’utilisateur sur l’interaction.
 
-|  ![Lumière de proximité](../images/button/ux_button_affordance_proximitylight.jpg) | ![Sélection du focus](../images/button/ux_button_affordance_focushighlight.jpg)  | ![Compression du boîtier](../images/button/ux_button_affordance_compression.jpg) | ![Impulsion sur le déclencheur](../images/button/ux_button_affordance_pulse.jpg) |
+|  ![Lumière proche](../images/button/ux_button_affordance_proximitylight.jpg) | ![Sélection du focus](../images/button/ux_button_affordance_focushighlight.jpg)  | ![Compression du boîtier](../images/button/ux_button_affordance_compression.jpg) | ![Impulsion sur le déclencheur](../images/button/ux_button_affordance_pulse.jpg) |
 |:--- | :--- | :--- | :--- |
-| Lumière de proximité | Sélection du focus | Compression du boîtier | Impulsion sur le déclencheur |
+| Lumière proche | Sélection du focus | Compression du boîtier | Impulsion sur le déclencheur |
 
 L’effet d’impulsion subtil est déclenché par le bouton enfoncé, qui recherche des *ProximityLight* qui vivent sur le pointeur actuellement en interaction. Si des lumières de proximité sont détectées, la `ProximityLight.Pulse` méthode est appelée, ce qui anime automatiquement les paramètres du nuanceur pour afficher une impulsion.
 
@@ -228,7 +228,7 @@ L’effet d’impulsion subtil est déclenché par le bouton enfoncé, qui reche
 **Routeur d’événements de presse physique** Ce script envoie des événements à partir d’une interaction d’appui à la main pour [interagir](interactable.md).
 
 **En interaction** 
- L' [interaction gère divers](interactable.md) types d’États et d’événements d’interaction. Les entrées du point de contrôle de l’entrée et du mouvement du regard HoloLens, ainsi que l’entrée du contrôleur de mouvement du casque immersif sont directement gérées par ce script.
+ L' [interaction gère divers](interactable.md) types d’États et d’événements d’interaction. HoloLens l’entrée du point de contrôle du regard, du mouvement et de l’entrée vocale et du contrôleur de mouvement du casque immersif sont directement gérées par ce script.
 
 **Source audio** Source audio Unity pour les séquences de commentaires audio.
 
@@ -251,16 +251,16 @@ Les boutons MRTK utilisent un `ButtonConfigHelper` composant pour vous aider à 
 Un **jeu d’icônes** est un ensemble partagé de ressources d’icône utilisées par le `ButtonConfigHelper` composant. Trois *styles* d’icône sont pris en charge.
 
 * Les icônes **Quad** sont rendues sur un quadruple à l’aide d’un `MeshRenderer` . Il s’agit du style d’icône par défaut.
-* Les icônes de **Sprite** sont rendues à l’aide d’un `SpriteRenderer` . Cela est utile si vous préférez importer vos icônes sous la forme d’une feuille de Sprite, ou si vous souhaitez que vos ressources d’icône soient partagées avec des composants de l’interface utilisateur Unity. Pour utiliser ce style, vous devez installer le package de l’éditeur Sprite **(Windows-> Package Manager-> 2D sprite)**
-* Les icônes **char** sont rendues à l’aide d’un `TextMeshPro` composant. Cela est utile si vous préférez utiliser une police d’icône. Pour utiliser la police de l’icône HoloLens, vous devez créer une `TextMeshPro` ressource de police.
+* Les icônes de **Sprite** sont rendues à l’aide d’un `SpriteRenderer` . Cela est utile si vous préférez importer vos icônes sous la forme d’une feuille de Sprite, ou si vous souhaitez que vos ressources d’icône soient partagées avec des composants de l’interface utilisateur Unity. pour utiliser ce style, vous devez installer le package de l’éditeur sprite **(Windows-> Gestionnaire de package-> 2d sprite)**
+* Les icônes **char** sont rendues à l’aide d’un `TextMeshPro` composant. Cela est utile si vous préférez utiliser une police d’icône. pour utiliser la police d’icône HoloLens, vous devez créer une `TextMeshPro` ressource de police.
 
 Pour modifier le style utilisé par votre bouton, développez la liste déroulante *icônes* dans le ButtonConfigHelper et sélectionnez un style dans la liste déroulante *style d’icône* .
 
-Vous pouvez créer un jeu d’icônes de bouton à l’aide du menu Asset : **créer > ensemble d’icônes de réalité mixte > jeu d’icônes.** Pour ajouter des icônes Quad et Sprite, il suffit de les faire glisser dans leurs tableaux respectifs. Pour ajouter des icônes de type char, vous devez d’abord créer et assigner une ressource de police.
+vous pouvez créer un jeu d’icônes de bouton à l’aide du menu de ressources : **créer > Shared Computer Toolkit de réalité mixte > jeu d’icônes.** Pour ajouter des icônes Quad et Sprite, il suffit de les faire glisser dans leurs tableaux respectifs. Pour ajouter des icônes de type char, vous devez d’abord créer et assigner une ressource de police.
 
 Dans MRTK 2,4 et au-delà, nous vous recommandons de déplacer les textures d’icône personnalisées vers un IconSet.
 Pour mettre à niveau les ressources sur tous les boutons d’un projet au nouveau format recommandé, utilisez ButtonConfigHelperMigrationHandler.
-(Kit d’outils de réalité mixte-utilitaires de >-fenêtre de migration de >-> sélection du gestionnaire de migration-> Microsoft. MixedReality. Toolkit. Utilities. ButtonConfigHelperMigrationHandler)
+(Shared Computer Toolkit de la réalité mixte-> utilitaires-> la fenêtre de migration-> sélection du gestionnaire de migration-> Microsoft. MixedReality. Shared Computer Toolkit. Utilities. ButtonConfigHelperMigrationHandler)
 
 Importation du package Microsoft. MixedRealityToolkit. Unity. Tools requis pour mettre à niveau les boutons.
 
@@ -270,11 +270,11 @@ Si aucune icône n’est trouvée dans le jeu d’icônes par défaut lors de la
 
 ![Notification d’icône personnalisée](https://user-images.githubusercontent.com/9789716/82093856-c57dfc00-96b0-11ea-83ab-4df57446d661.PNG)
 
-### <a name="creating-a-hololens-icon-font-asset"></a>Création d’une ressource de police d’icône HoloLens
+### <a name="creating-a-hololens-icon-font-asset"></a>création d’une ressource de police d’icône HoloLens
 
-Tout d’abord, importez la police d’icône dans Unity. Sur les ordinateurs Windows, vous pouvez trouver la police HoloLens par défaut dans *Windows/Fonts/holomdl2. ttf.* Copiez et collez ce fichier dans votre dossier de ressources.
+Tout d’abord, importez la police d’icône dans Unity. sur Windows machines, vous pouvez trouver la police par défaut HoloLens dans *Windows/Fonts/holomdl2.ttf.* Copiez et collez ce fichier dans votre dossier de ressources.
 
-Ensuite, ouvrez le créateur de la ressource de police TextMeshPro à l’aide de **windows > TextMeshPro > police Creator.** Voici les paramètres recommandés pour la génération d’un Atlas de polices HoloLens. Pour inclure toutes les icônes, collez la plage Unicode suivante dans le champ *séquence de caractères* :
+Ensuite, ouvrez le créateur de la ressource de police TextMeshPro à l’aide de **windows > TextMeshPro > police Creator.** voici les paramètres recommandés pour générer une HoloLens atlas de polices. Pour inclure toutes les icônes, collez la plage Unicode suivante dans le champ *séquence de caractères* :
 
 ```c#
 E700-E702,E706,E70D-E70E,E710-E714,E718,E71A,E71D-E71E,E720,E722,E728,E72A-E72E,E736,E738,E73F,E74A-E74B,E74D,E74F-E752,E760-E761,E765,E767-E769,E76B-E76C,E770,E772,E774,E777,E779-E77B,E782-E783,E785-E786,E799,E7A9-E7AB,E7AF-E7B1,E7B4,E7C8,E7E8-E7E9,E7FC,E80F,E821,E83F,E850-E859,E872-E874,E894-E895,E8A7,E8B2,E8B7,E8B9,E8D5,E8EC,E8FB,E909,E91B,E92C,E942,E95B,E992-E995,E9E9-E9EA,EA37,EA40,EA4A,EA55,EA96,EB51-EB52,EB65,EB9D-EBB5,EBCB-EBCC,EBCF-EBD3,EC03,EC19,EC3F,EC7A,EC8E-EC98,ECA2,ECD8-ECDA,ECE0,ECE7-ECEB,ED17,EE93,EFA9,F114-F120,F132,F181,F183-F186
@@ -302,7 +302,7 @@ Pour utiliser le jeu d’icônes, sélectionnez un bouton, développez la liste 
 
 ## <a name="how-to-change-the-size-of-a-button"></a>Comment modifier la taille d’un bouton
 
-La taille du bouton de style Shell de HoloLens 2 est 32x32mm. Pour personnaliser la dimension, modifiez la taille de ces objets dans le bouton Prefab :
+la taille du bouton de style shell de HoloLens 2 est 32x32mm. Pour personnaliser la dimension, modifiez la taille de ces objets dans le bouton Prefab :
 
 1. **FrontPlate**
 2. **Quadruple** sous la plaque arrière
@@ -328,7 +328,7 @@ Cliquez sur la personnalisation de la taille du bouton « fixer les limites »
 
 <img src="../images/button/MRTK_Button_Speech2.png" width="450" alt="Button speech 2">
 
-**Voir-IT, étiquette** Le bouton Prefab a un espace réservé TextMesh Pro sous l’objet *SeeItSayItLabel* . Vous pouvez utiliser cette étiquette pour communiquer le mot clé de commande vocale du bouton à l’utilisateur.
+**Voir-IT, étiquette** le bouton enfoncé prefab a un espace réservé TextMesh Pro étiquette sous l’objet *SeeItSayItLabel* . Vous pouvez utiliser cette étiquette pour communiquer le mot clé de commande vocale du bouton à l’utilisateur.
 
 <img src="../images/button/MRTK_Button_Speech3.png" width="450" alt="Button Speech 3">
 
@@ -348,7 +348,7 @@ Dans le `PressableButton` panneau de l’inspecteur de, assignez l’objet de cu
 
 <img src="../images/button/MRTK_PressableButtonCube3.png" width="450" alt="pressable button cube 3">
 
-Lorsque vous sélectionnez le cube, vous verrez plusieurs couches de couleur sur l’objet. Cela visualise les valeurs de distance sous les **paramètres de presse**. À l’aide des descripteurs, vous pouvez configurer à quel moment démarrer la pression (déplacer l’objet) et le déclenchement de l’événement.
+Lorsque vous sélectionnez le cube, vous verrez plusieurs couches de couleur sur l’objet. cela visualise les valeurs de distance sous **Paramètres**. À l’aide des descripteurs, vous pouvez configurer à quel moment démarrer la pression (déplacer l’objet) et le déclenchement de l’événement.
 
 <img src="../images/button/MRTK_PressableButtonCube1.jpg" width="450" alt="Pressable Buton cube 1">
 
@@ -358,7 +358,7 @@ Lorsque vous appuyez sur le bouton, il déplace et génère les événements app
 
 <img src="../images/button/MRTK_PressableButtonCubeRun1.jpg" alt="Pressable button cube run 1">
 
-#### <a name="troubleshooting"></a>Résolution des problèmes
+#### <a name="troubleshooting"></a>Dépannage
 
 Si votre bouton exécute une double pression, assurez-vous que la propriété **appliquer le push frontal** est active et que le plan de la **distance de départ** est placé devant le plan **touchable near interaction** . Le plan **touchable near interaction** est indiqué par le plan bleu placé devant l’origine de la flèche blanche dans le GIF ci-dessous :
 
@@ -372,7 +372,7 @@ Le nuanceur standard MRTK fournit diverses fonctionnalités qui facilitent l’a
 
 <img src="../images/button/MRTK_PressableButtonCube4.png" width="450" alt="Pressable button cube 4">
 
-Activez la case à cocher `Hover Light` et `Proximity Light` sous **options Fluent**. Cela permet d’obtenir des commentaires visuels pour les interactions près de la main (lumière de proximité) et du pointeur Far (point d’éclairage).
+vérifiez `Hover Light` et `Proximity Light` sous **Options de Fluent**. Cela permet d’obtenir des commentaires visuels pour les interactions près de la main (lumière de proximité) et du pointeur Far (point d’éclairage).
 
 <img src="../images/button/MRTK_PressableButtonCube5.png" width="450" alt="pressable button cube 5">
 

@@ -1,35 +1,35 @@
 ---
-title: Prise en main des performances
+title: Performances
 description: Documentation pour comprendre et ajuster la conformité dans MRTK.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 1ddc057c7f3966375d512a5e4a714dce093412e6
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6c8e060af585d7994774ea0bb575b6e5172b9558
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144867"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281762"
 ---
 # <a name="performance"></a>Performances
 
 ## <a name="getting-started"></a>Prise en main
 
-Le moyen le plus simple de rationaliser les performances est d’utiliser la cadence ou le nombre de fois où votre application peut afficher une image par seconde. Il est important de se conformer à la fréquence d’images cible, comme indiqué par la plateforme ciblée (c.-à-d. [Windows Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/), etc.). Par exemple, sur HoloLens, la fréquence d’images cible est de 60 FPS. Les applications à fréquence faible peuvent entraîner des détériorations de l’expérience utilisateur, telles que la [stabilisation des hologrammes](../performance/hologram-stabilization.md), le suivi mondial, le suivi des mains et bien plus encore. Pour aider les développeurs à suivre et à obtenir une fréquence d’images de qualité, le kit de développement de la réalité mixte fournit un large éventail d’outils et de scripts.
+Le moyen le plus simple de rationaliser les performances est d’utiliser la cadence ou le nombre de fois où votre application peut afficher une image par seconde. Il est important de se conformer à la fréquence d’images cible, comme indiqué par la plateforme ciblée (c.-à-d. [Windows Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/), etc.). par exemple, sur HoloLens, la fréquence d’images cible est de 60 FPS. Les applications à fréquence faible peuvent entraîner des détériorations de l’expérience utilisateur, telles que la [stabilisation des hologrammes](../performance/hologram-stabilization.md), le suivi mondial, le suivi des mains et bien plus encore. pour aider les développeurs à suivre et à obtenir une fréquence d’images de qualité, la réalité mixte Shared Computer Toolkit fournit un large éventail d’outils et de scripts.
 
 ### <a name="visual-profiler"></a>Générateur de profils Visual
 
-Pour effectuer un suivi continu des performances pendant la durée de vie du développement, il est vivement recommandé de toujours afficher un visuel de fréquence lors de l’exécution & le débogage d’une application. La boîte à outils de réalité mixte fournit l’outil de diagnostic du [profileur Visual](../features/diagnostics/using-visual-profiler.md) , qui fournit des informations en temps réel sur l’utilisation actuelle de la mémoire et fps dans la vue application. Le profileur Visual peut être configuré via les [paramètres système de diagnostics](../features/diagnostics/diagnostics-system-getting-started.md) dans l' [inspecteur de profils MRTK](../configuration/mixed-reality-configuration-guide.md).
+Pour effectuer un suivi continu des performances pendant la durée de vie du développement, il est vivement recommandé de toujours afficher un visuel de fréquence lors de l’exécution & le débogage d’une application. la Shared Computer Toolkit de la réalité mixte fournit l’outil de diagnostic du [profileur Visual](../features/diagnostics/using-visual-profiler.md) , qui fournit des informations en temps réel sur l’utilisation actuelle des FPS et de la mémoire dans la vue application. le profileur Visual peut être configuré via le [système de diagnostic Paramètres](../features/diagnostics/diagnostics-system-getting-started.md) sous l' [inspecteur de profils MRTK](../configuration/mixed-reality-configuration-guide.md).
 
 En outre, il est particulièrement important d’utiliser le générateur de profils Visual pour suivre les cadences lorsqu’elles s’exécutent sur l’appareil, par opposition à l’exécution dans l’éditeur Unity ou un émulateur. Les résultats de performances les plus précis seront représentés lors de l’exécution sur l’appareil avec des [Builds de configuration de version](/visualstudio/debugger/how-to-set-debug-and-release-configurations?preserve-view=true&view=vs-2019).
 
 > [!NOTE]
-> En cas de création pour Windows Mixed Reality, déployer avec les [Builds de configuration de Master](/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)
+> si vous générez pour Windows Mixed Reality, déployez avec les [builds de configuration maître](/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)
 
 ![Interface du profileur Visual](../features/images/Diagnostics/VisualProfiler.png)
 
-### <a name="optimize-window"></a>Fenêtre optimiser
+### <a name="optimize-window"></a>Fenêtre d’optimisation
 
 La [fenêtre MRTK Optimize](../features/tools/optimize-window.md) offre des outils d’informations et d’automatisation pour aider les développeurs de la réalité mixte à configurer leur environnement pour les meilleurs résultats et à identifier les goulots d’étranglement potentiels dans leur scène & ressources. Certaines configurations clés dans Unity peuvent aider à fournir des résultats sensiblement plus optimisés pour les projets de réalité mixte.
 
@@ -37,7 +37,7 @@ En règle générale, ces paramètres impliquent des configurations de rendu id�
 
 Les paramètres recommandés référencés ci-dessous peuvent être configurés automatiquement dans un projet Unity en tirant parti de la fenêtre MRTK optimize.
 
-![Paramètres de la fenêtre d’optimisation MRTK](../features/images/performance/OptimizeWindow_Settings.png)
+![MRTK optimiser la fenêtre Paramètres](../features/images/performance/OptimizeWindow_Settings.png)
 
 ### <a name="unity-profiler"></a>Profileur Unity
 
@@ -45,9 +45,9 @@ Le [profileur Unity](https://docs.unity3d.com/Manual/ProfilerWindow.html) est un
 
 #### <a name="time-spent-on-the-cpu"></a>Temps passé sur le processeur
 
-![Exemple de graphique du profileur Unity](../features/images/performance/UnityProfilerGraph.png)
+![Exemple de profileur Unity Graph](../features/images/performance/UnityProfilerGraph.png)
 
-Pour conserver les fréquences d’images familières (généralement 60 images par seconde), les applications doivent atteindre une durée de trame maximale de 16,6 millisecondes du temps processeur. Pour vous aider à identifier le coût de la fonctionnalité MRTK, Microsoft Mixed Reality Toolkit contient des marqueurs pour les chemins de code de boucle interne (par trame). Ces marqueurs utilisent le format suivant pour aider à comprendre la fonctionnalité spécifique utilisée :
+Pour conserver les fréquences d’images familières (généralement 60 images par seconde), les applications doivent atteindre une durée de trame maximale de 16,6 millisecondes du temps processeur. pour aider à identifier le coût de la fonctionnalité de MRTK, le Shared Computer Toolkit de la réalité mixte Microsoft contient un marqueur pour les chemins de code de la boucle interne (par trame). Ces marqueurs utilisent le format suivant pour aider à comprendre la fonctionnalité spécifique utilisée :
 
 ```
 [MRTK] className.methodName
@@ -110,16 +110,16 @@ v2f vert (appdata v)
 Unity fournit des [présélections pour contrôler la qualité](https://docs.unity3d.com/Manual/class-QualitySettings.html) du rendu pour chaque point de terminaison de plateforme. Ces paramètres prédéfinis contrôlent les fonctionnalités graphiques qui peuvent être activées, telles que les ombres, l’anticrénelage, l’éclairage global et bien plus encore. Il est recommandé de réduire ces paramètres et d’optimiser le nombre de calculs effectués lors du rendu.
 
 *Étape 1 :* Mettre à jour les projets Unity de réalité mixte pour utiliser le paramètre de niveau de *qualité faible*  
-**Modifier**  >  **Paramètres du projet**, puis sélectionnez la catégorie **qualité** > sélectionnez *faible qualité* pour la plateforme UWP.
+**Modifier**  >  **Project Paramètres**, puis sélectionnez la catégorie de **qualité** > sélectionnez *faible qualité* pour la plateforme UWP.
 
 *Étape 2 :* Pour chaque fichier de scène Unity, désactiver l' [éclairage global en temps réel](https://docs.unity3d.com/Manual/LightMode-Realtime.html)  
 **Fenêtre**  >  **Rendu**  >  **Paramètres**  >  d’éclairage [Décocher l' *éclairage global en temps réel*](https://docs.unity3d.com/Manual/GlobalIllumination.html)
 
 ### <a name="depth-buffer-sharing-hololens"></a>Partage de mémoire tampon de profondeur (HoloLens)
 
-En cas de développement pour la plateforme Windows Mixed Reality et en particulier HoloLens, l’activation du *partage de mémoire tampon de profondeur* sous les *paramètres XR* peut aider à la [stabilisation des hologrammes](../performance/hologram-stabilization.md). Toutefois, le traitement du tampon de profondeur peut entraîner des coûts de performances, en particulier si vous utilisez un [format de profondeur 24 bits](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html). Par conséquent, il est *fortement recommandé* de configurer le tampon de profondeur sur une précision de 16 bits.
+si vous développez pour la plate-forme Windows Mixed Reality et en particulier HoloLens, l’activation du *partage de mémoire tampon de profondeur* sous *XR Paramètres* peut aider à la [stabilisation des hologrammes](../performance/hologram-stabilization.md). Toutefois, le traitement du tampon de profondeur peut entraîner des coûts de performances, en particulier si vous utilisez un [format de profondeur 24 bits](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html). Par conséquent, il est *fortement recommandé* de configurer le tampon de profondeur sur une précision de 16 bits.
 
-Si la [superposition](https://en.wikipedia.org/wiki/Z-fighting) se produit en raison du format binaire inférieur, vérifiez que le [plan de découpage](https://docs.unity3d.com/Manual/class-Camera.html) de l’ensemble des caméras est défini sur la valeur la plus basse possible pour l’application. Unity par défaut définit un plan de découpage Far de 1000MD. Sur HoloLens, un plan de découpage lointain de 50 millions est généralement plus que suffisant pour la plupart des scénarios d’application.
+Si la [superposition](https://en.wikipedia.org/wiki/Z-fighting) se produit en raison du format binaire inférieur, vérifiez que le [plan de découpage](https://docs.unity3d.com/Manual/class-Camera.html) de l’ensemble des caméras est défini sur la valeur la plus basse possible pour l’application. Unity par défaut définit un plan de découpage Far de 1000MD. sur HoloLens, un plan de découpage lointain de 50 millions est généralement plus que suffisant pour la plupart des scénarios d’application.
 
 > [!NOTE]
 > Si vous utilisez le *format de profondeur 16 bits, les* effets requis pour la mémoire tampon des stencils ne fonctionneront pas, car [Unity ne crée pas de tampon de stencil](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) dans ce paramètre. Si vous sélectionnez le *format de profondeur 24 bits* , vous créez généralement une mémoire tampon de stencil de 8 bits, le cas échéant sur la plateforme graphique de point de terminaison.
@@ -127,13 +127,13 @@ Si la [superposition](https://en.wikipedia.org/wiki/Z-fighting) se produit en ra
 > Si vous utilisez un [composant de masque](https://docs.unity3d.com/Manual/script-Mask.html) qui requiert la mémoire tampon de stencil, envisagez d’utiliser [RectMask2D](https://docs.unity3d.com/Manual/script-RectMask2D.html) à la place, ce qui ne nécessite pas la mémoire tampon de stencil et peut donc être utilisé avec un format de *profondeur de 16 bits*.
 
 > [!NOTE]
-> Pour déterminer rapidement quels objets d’une scène n’écrivent pas dans le tampon de profondeur visuellement, vous pouvez utiliser l’utilitaire de [ *tampon de profondeur de rendu*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) sous les paramètres de l' *éditeur* dans le profil de configuration MRTK.
+> pour déterminer rapidement quels objets d’une scène n’écrivent pas dans le tampon de profondeur visuellement, vous pouvez utiliser l’utilitaire de [ *tampon de profondeur de rendu*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) sous l' *éditeur Paramètres* dans le profil de Configuration MRTK.
 
 ### <a name="optimize-mesh-data"></a>Optimiser les données de maillage
 
 Les paramètres d' [optimisation des données de maillage](https://docs.unity3d.com/ScriptReference/PlayerSettings-stripUnusedMeshComponents.html) tentent de supprimer les attributs de vertex inutilisés dans votre application. Pour ce faire, le paramètre s’exécute sur chaque passage de nuanceur dans chaque matériau de chaque maillage de la Build. Cela convient à la taille des données de jeu et aux performances d’exécution, mais peut nuire considérablement aux temps de génération.
 
-Il est recommandé de désactiver ce paramètre pendant le développement et de le réactiver pendant la création de la build « Master ». Le paramètre se trouve sous **modifier** les  >  **paramètres du projet**  >  **lecteur**  >  **autres paramètres**  >  **optimiser le maillage des données**.
+Il est recommandé de désactiver ce paramètre pendant le développement et de le réactiver pendant la création de la build « Master ». le paramètre se trouve sous **modifier**  >  **Project Paramètres**  >  **Player**  >  **autre Paramètres**  >  **optimiser les données de maillage**.
 
 ## <a name="general-recommendations"></a>Recommandations générales
 
@@ -227,10 +227,10 @@ Exemple de statistiques de nuanceur standard MRTK
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-- [Paramètres recommandés pour Unity](/windows/mixed-reality/recommended-settings-for-unity)
+- [Paramètres recommandé pour unity](/windows/mixed-reality/recommended-settings-for-unity)
 - [Comprendre les performances de la réalité mixte](/windows/mixed-reality/understanding-performance-for-mixed-reality)
 - [Recommandations de performances pour Unity](/windows/mixed-reality/performance-recommendations-for-unity)
-- [Guide de Suivi d’v nements pour Windows Unity](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
+- [Guide de Suivi d’v nements pour Windows unity](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 
 ### <a name="oculus"></a>Oculus
 

@@ -1,18 +1,18 @@
 ---
-title: Nuanceur d’impulsions
+title: Nuanceur animé
 description: Description sur les nuanceurs d’impulsions dans MRTK.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 087806d48c7304d43f8383285cbaa2a12d8bf99a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 0b26242d71bbe080e440f9c52a009e29000ab00b
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176310"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224207"
 ---
-# <a name="pulse-shader"></a>Nuanceur d’impulsions
+# <a name="pulse-shader"></a>Nuanceur animé
 
 ![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
 
@@ -29,9 +29,9 @@ Les documents suivants utilisent **SR_Triangles** nuanceur. Vous pouvez configur
 
 ## <a name="prerequisites"></a>Prérequis
 
-pour l’exemple de maillage spatial, assurez-vous que MRTK_Pulse_ArticulatedHandMeshBlue. mat ou MRTK_Pulse_ArticulatedHandMeshPurple. mat est affecté sous MRTK Paramètres-> la sensibilisation spatiale-> afficher Paramètres >.
+pour l’exemple de maillage spatial, assurez-vous que MRTK_Pulse_SpatialMeshBlue. mat ou MRTK_Pulse_SpatialMeshPurple. mat est affecté sous l’objet MixedRealityToolkit-> profil de sensibilisation spatiale-> afficher la Paramètres >.
 
-pour l’exemple de maille, assurez-vous que MRTK_Pulse_SpatialMeshBlue. mat ou MRTK_Pulse_SpatialMeshPurple. mat est affecté dans ArticulatedHandMesh. prefab, qui doit lui-même être affecté dans MRTK Paramètres-> suivi de la main >-> de maille.
+pour l’exemple de maille, assurez-vous que MRTK_Pulse_ArticulatedHandMeshBlue. mat ou MRTK_Pulse_ArticulatedHandMeshPurple. mat est affecté dans ArticulatedHandMesh. prefab, qui doit lui-même être affecté dans MRTK Paramètres-> suivi de la main >-> de maille.
 
 ## <a name="how-it-works"></a>Fonctionnement
 

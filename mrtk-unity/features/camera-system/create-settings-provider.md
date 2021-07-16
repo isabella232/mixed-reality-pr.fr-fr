@@ -1,16 +1,16 @@
 ---
-title: Créer un fournisseur de paramètres
+title: Création d’un fournisseur de paramètres d’appareil photo
 description: Fournisseur de données pour les paramètres de l’appareil photo dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: d07b84c3cf550f9a235e58286b4cd239ac43b649
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 2151887a6162239e993634d5d346065362f1c428
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121187"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114282036"
 ---
 # <a name="creating-a-camera-settings-provider"></a>Création d’un fournisseur de paramètres d’appareil photo
 
@@ -24,7 +24,7 @@ Le système d’appareil photo est un système extensible qui fournit une prise 
 Les fournisseurs de données peuvent être distribués de l’une des deux manières suivantes :
 
 1. Composants additionnels tiers
-1. Partie intégrante de Microsoft Mixed Reality Toolkit
+1. une partie de la Shared Computer Toolkit de réalité mixte de Microsoft
 
 Le processus d’approbation pour les envois de nouveaux fournisseurs de données à l’MRTK varie au cas par cas et est communiqué au moment de la proposition initiale. Les propositions peuvent être soumises en créant un nouveau type de [ *demande de fonctionnalité*](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 
@@ -37,7 +37,7 @@ Les fournisseurs de données doivent disposer d’un espace de noms pour atténu
 - Nom de la société qui produit le module complémentaire
 - Domaine de fonctionnalité
 
-Par exemple, un fournisseur de paramètres d’appareil photo créé et fourni par la société contoso peut être *« contoso. MixedReality. Toolkit. Camera »*.
+par exemple, un fournisseur de paramètres d’appareil photo créé et fourni par la société Contoso peut être *«Contoso. MixedReality. Shared Computer Toolkit. Appareil photo»*.
 
 **Structure de dossiers**
 
@@ -51,7 +51,7 @@ Lorsque le dossier *ContosoCamera* contient l’implémentation du fournisseur d
 
 **Espace de noms**
 
-Si un fournisseur de paramètres d’appareil photo est soumis au référentiel du kit de tâches de la [réalité mixte](https://github.com/Microsoft/MixedRealityToolkit-Unity), l’espace de noms **doit** commencer par Microsoft. MixedReality. Toolkit (ex : *Microsoft. MixedReality. Toolkit. CameraSystem*).
+si un fournisseur de paramètres d’appareil photo est envoyé à la [réalité mixte Shared Computer Toolkit référentiel](https://github.com/Microsoft/MixedRealityToolkit-Unity), l’espace de noms **doit** commencer par Microsoft. MixedReality. Shared Computer Toolkit (par exemple : *Microsoft. MixedReality. Shared Computer Toolkit. CameraSystem*).
 
 **Structure de dossiers**
 
@@ -117,7 +117,7 @@ L’étape suivante consiste à ajouter la logique du fournisseur de paramètres
 
 ## <a name="create-the-profile-and-inspector"></a>Créer le profil et l’inspecteur
 
-Dans la boîte à outils de la réalité mixte, les fournisseurs de données sont configurés à l’aide de [profils](../profiles/profiles.md).
+dans la Shared Computer Toolkit de la réalité mixte, les fournisseurs de données sont configurés à l’aide de [profils](../profiles/profiles.md).
 
 ### <a name="define-the-profile"></a>Définir le profil
 
@@ -164,7 +164,7 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 }
 ```
 
-L' `CreateAssetMenu` attribut peut être appliqué à la classe de profil pour permettre aux clients de créer une instance de profil à l’aide du menu des profils du kit de ressources de **création** de composants de la  >    >  **réalité mixte**  >   .
+l' `CreateAssetMenu` attribut peut être appliqué à la classe de profil pour permettre aux clients de créer une instance de profil à l’aide du menu **créer** des profils de  >    >  **réalité mixte Shared Computer Toolkit**  >  **profils** .
 
 ### <a name="implement-the-inspector"></a>Implémenter l’inspecteur
 
@@ -183,19 +183,19 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 
 ## <a name="create-assembly-definitions"></a>Créer une ou plusieurs définitions d’assembly
 
-La boîte à outils de réalité mixte utilise des fichiers de définition d’assembly ([. asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) pour spécifier les dépendances entre les composants, ainsi que pour aider Unity à réduire le temps de compilation.
+la réalité mixte Shared Computer Toolkit utilise des fichiers de définition d’assembly ([. asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) pour spécifier les dépendances entre les composants, ainsi que pour aider unity à réduire le temps de compilation.
 
 Il est recommandé de créer des fichiers de définition d’assembly pour tous les fournisseurs de données et leurs composants d’éditeur.
 
 À l’aide de la [structure de dossiers](#namespace-and-folder-structure) dans l’exemple précédent, il existe deux fichiers. asmdef pour le fournisseur de données ContosoCamera.
 
-La première définition d’assembly est pour le fournisseur de données. Pour cet exemple, il est appelé ContosoCamera et se trouve dans le dossier *ContosoCamera* de l’exemple. Cette définition d’assembly doit spécifier une dépendance sur Microsoft. MixedReality. Toolkit et tout autre assembly dont elle dépend.
+La première définition d’assembly est pour le fournisseur de données. Pour cet exemple, il est appelé ContosoCamera et se trouve dans le dossier *ContosoCamera* de l’exemple. Cette définition d’assembly doit spécifier une dépendance sur Microsoft. MixedReality. Shared Computer Toolkit et tout autre assembly dont il dépend.
 
 La définition de l’assembly ContosoCameraEditor spécifie l’inspecteur de profil et tout code spécifique à l’éditeur. Ce fichier doit se trouver dans le dossier racine du code de l’éditeur. Dans cet exemple, le fichier se trouve dans le dossier *ContosoCamera\Editor* Cette définition d’assembly contient une référence à l’assembly ContosoCamera, ainsi que les éléments suivants :
 
-- Microsoft. MixedReality. Toolkit
-- Microsoft. MixedReality. Toolkit. Editor. Inspectors
-- Microsoft. MixedReality. Toolkit. Editor. Utilities
+- Microsoft. MixedReality. Shared Computer Toolkit
+- Microsoft. MixedReality. Shared Computer Toolkit. Editor. Inspectors
+- Microsoft. MixedReality. Shared Computer Toolkit. Éditeur. Utilities
 
 ## <a name="register-the-data-provider"></a>Inscrire le fournisseur de données
 
@@ -207,11 +207,11 @@ Une fois créé, le fournisseur de données peut être inscrit auprès du systè
 
 Les fournisseurs de données qui sont distribués en tant que composants tiers ont les détails spécifiques de l’empaquetage et de la distribution laissés à la préférence du développeur. Il est probable que la solution la plus courante consiste à générer un. pour Unity et à le distribuer via le magasin d’actifs Unity.
 
-Si un fournisseur de données est soumis et accepté dans le cadre du package Microsoft Mixed Reality Toolkit, l’équipe Microsoft MRTK l’empaqueter et la distribuer dans le cadre des offres MRTK.
+si un fournisseur de données est soumis et accepté dans le cadre du package Shared Computer Toolkit de la réalité mixte microsoft, l’équipe microsoft MRTK l’empaqueter et la distribuer dans le cadre des offres MRTK.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble du système de caméras](camera-system-overview.md)
+- [Vue d’ensemble du système d’appareil photo](camera-system-overview.md)
 - [Classe `BaseCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider)
 - [`IMixedRealityCameraSettingsProvider` interface](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider)
 - [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)

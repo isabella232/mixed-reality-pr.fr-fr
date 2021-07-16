@@ -1,21 +1,21 @@
 ---
-title: Commencez votre voyage VR
+title: Commencer votre parcours de réalité virtuelle
 description: Explorez nos points de contrôle organisés pour guider les nouveaux utilisateurs d’appareils grâce à la configuration et à l’utilisation de leurs appareils de VR immersifs.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR,
-ms.openlocfilehash: 88aab47a943fd004ef0a90a8c6749da1a403ff2f
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR,
+ms.openlocfilehash: 333da855b7fc995fa40ff66d9da59a38000bf133
+ms.sourcegitcommit: f98884074db7cf334efbaa396059566843c73d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600508"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114225126"
 ---
-# <a name="start-your-vr-journey"></a>Commencez votre voyage VR
+# <a name="start-your-vr-journey"></a>Commencer votre parcours de réalité virtuelle
 
-![Image stock de l’environnement de VR superposé](images/mr-win32-slates-pinspanel.png)
+![Image stock de l’environnement de VR superposé](images/vr-journey-hero.png)
 
 ## <a name="setup--usability-checkpoints"></a>Configurer les points de contrôle d’utilisation &
 
@@ -34,8 +34,8 @@ Votre ordinateur doit gérer le matériel VR que vous achetez pour bénéficier 
 |  Point de contrôle  |  Résultat  |
 | --- | --- |
 | [Avant de commencer](before-you-start.md) | Assurez-vous de disposer de tout ce dont vous avez besoin pour commencer votre voyage VR |
-| [Recommandations sur le matériel PC minimum à avoir](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Tout ce que vous devez savoir sur l’exécution de Windows Mixed Reality, de Windows Mixed Reality ultra et de l’application portail Windows Mixed Reality |
-| [Obtenir de l’aide sur la compatibilité des PC](get-help-with-pc-compatibility.md) | Présentation du rapport généré à partir de la vérification du PC Windows Mixed Reality |
+| [Recommandations sur le matériel PC minimum à avoir](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | tout ce que vous devez savoir sur l’exécution de Windows Mixed Reality, Windows Mixed Reality Ultra et l’application Windows Mixed Reality Portal |
+| [Obtenir de l’aide sur la compatibilité des PC](get-help-with-pc-compatibility.md) | comprendre le rapport généré à partir de la vérification du PC Windows Mixed Reality |
 | [FAQ sur l’achat](before-you-buy-faqs.md) | Obtenir des réponses à toutes vos questions d’achat sur les spécifications techniques, les appareils et les contrôleurs |
 
 ### <a name="2-getting-started"></a>2. prise en main
@@ -46,13 +46,13 @@ Une fois que vous avez votre appareil, vous devez l’installer et le configurer
 
 |  Point de contrôle  |  Résultat  |
 | --- | --- |
-| [Configurer Windows Mixed Reality](set-up-windows-mixed-reality.md) | Familiarisez-vous avec vos contrôleurs, vos limites de salle, vos entrées vocales et Microsoft Edge sur votre nouvel appareil VR |
-| [FAQ sur l’installation de Windows Mixed Reality](wmr-setup-faq.yml) | Obtenir des réponses et résoudre les problèmes liés aux problèmes connus lors de la configuration de Windows Mixed Reality |
-| [Instructions relatives à l’intégrité, à la sécurité et au confort](wmr-health-safety-comfort.md) | Recommandations pour rester sécurisé lors de l’utilisation de Windows Mixed Reality avant d’utiliser votre casque  |
+| [Configurer Windows Mixed Reality](set-up-windows-mixed-reality.md) | familiarisez-vous avec vos contrôleurs, vos limites de salle, vos entrées vocales et vos Microsoft Edge sur votre nouvel appareil VR |
+| [faq sur l’installation de Windows Mixed Reality](wmr-setup-faq.yml) | Obtenir des réponses et résoudre les problèmes liés aux problèmes connus lors de la configuration d’Windows Mixed Reality |
+| [Instructions relatives à l’intégrité, à la sécurité et au confort](wmr-health-safety-comfort.md) | Recommandations pour rester sûr quand vous utilisez Windows Mixed Reality avant d’utiliser votre casque  |
 
 ### <a name="3-using-windows-mixed-reality"></a>3. utilisation de Windows Mixed Reality
 
-Il existe différents services et fonctionnalités disponibles via Windows Mixed Reality et les casques immersifs. À la fin de cette section, vous serez à l’aise :
+il existe différents services et fonctionnalités disponibles par le biais de Windows Mixed Reality et des casques de VR immersifs. À la fin de cette section, vous serez à l’aise :
 
 * Navigation dans l’environnement d’hébergement virtuel
 * Utilisation de contrôleurs et vocaux comme entrées
@@ -63,12 +63,12 @@ Il existe différents services et fonctionnalités disponibles via Windows Mixed
 |  Point de contrôle  |  Fonctionnalité  |
 | --- | --- |
 | [Découvrir la réalité mixte](learn-mixed-reality.md) | En savoir plus sur l’utilisation de vos entrées en regard, en voix, en contrôleurs et au clavier et à la souris |
-| [Naviguer dans la page d’hébergement Windows Mixed Reality](your-mixed-reality-home.md) | Explorez l’environnement virtuel de Windows Mixed Reality  |
+| [accédez à la page d’hébergement Windows Mixed Reality](your-mixed-reality-home.md) | explorez l’environnement virtuel de la Windows Mixed Reality la page d’hébergement  |
 | [Utilisation de contrôleurs](controllers-in-wmr.md) | Configurer, comprendre et utiliser vos contrôleurs de mouvement |
-| [Utilisation d’entrées vocales](using-speech-in-wmr.md) | Familiarisez-vous avec différentes commandes vocales qui peuvent interagir avec les objets 3D, la barre d’application, le menu Démarrer et Cortana |
+| [Utilisation d’entrées vocales](using-speech-in-wmr.md) | familiarisez-vous avec les différentes commandes vocales qui peuvent interagir avec les objets 3d, la barre d’application, les menu Démarrer et les Cortana |
 
 > [!NOTE]
-> Si vous rencontrez des problèmes avec les fonctionnalités ci-dessus, consultez le **[Forum aux questions sur l’utilisation de Windows Mixed Reality](using-wmr-faq.yml)**.
+> si vous rencontrez des problèmes avec les fonctionnalités ci-dessus, consultez le **[forum aux questions sur l’utilisation de Windows Mixed Reality](using-wmr-faq.yml)**.
 
 ## <a name="4-discover-apps-and-content"></a>4. découvrir des applications et du contenu
 
@@ -79,8 +79,8 @@ Recherchez des jeux immersifs, des applications de bureau et du contenu VR dans 
 |  Point de contrôle  |  Fonctionnalité  |
 | --- | --- |
 | [Jeux, vidéo 360 et applications](using-games-and-apps-in-windows-mixed-reality.md) | Commencez avec votre premier jeu immersif, les ardoises du Store 2D, les applications de bureau et les expériences WebVR |
-| [Utilisation de SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connectez votre appareil et jouez à SteamVR Games pour en savoir plus sur le programme Windows Insider |
-| [Utilisation de Microsoft Edge](using-microsoft-edge.md) | Installer la dernière version de Microsoft Edge sur votre appareil immersif |
+| [Utilisation de SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connecter votre appareil et jouez à SteamVR games et découvrez le programme Windows insider |
+| [Utilisation de Microsoft Edge](using-microsoft-edge.md) | installer la dernière version de Microsoft Edge sur votre appareil immersif |
 | [Utilisation de WebVR](webvr.md) | Obtenir le programme d’installation pour découvrir VR dans votre environnement de navigateur |
 | [Explorer AltspaceVR](/windows/mixed-reality/altspace-vr/journey) | Explorez le monde grandissant des événements VR avec AltspaceVR |
 
@@ -95,7 +95,7 @@ Si vous ne trouvez pas ce que vous cherchez, nous disposons d’une liste exhaus
 Nous sommes toujours à l’affût des nouveaux problèmes et bogues. par conséquent, si vous rencontrez des problèmes qui ne sont pas documentés, envoyez-nous [vos commentaires](filing-feedback.md).
 
 > [!NOTE]
-> Un historique complet de la version Windows Mixed Reality est disponible [ici](mixed-reality-software.md).
+> un historique complet des versions de Windows Mixed Reality est disponible [ici](mixed-reality-software.md).
 
 > [!div class="nextstepaction"]
 > [Recommandations sur le matériel PC minimum à avoir](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

@@ -5,24 +5,24 @@ author: dongpark
 ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
-keywords: Figma, croquis, Adobe XD, design, designer, fichier de conception, conception d’expérience utilisateur, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: a24f06b29accaa64a9095054f1e6f8df13a9162e
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+keywords: Figma, croquis, Adobe XD, design, designer, fichier de conception, conception UX, HoloLens, MRTK, réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: ef36e68e7340bc0a1500a9468db35d1e0b417ed6
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644855"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224323"
 ---
 # <a name="figma-toolkit"></a>Toolkit Figma
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke]
 
-Figma Toolkit fournit les ressources qui peuvent être utilisées pour l’esquisse et la disposition de l’interface utilisateur. Tous les contrôles d’interface utilisateur sont basés sur les composants disponibles dans MRTK. 
+MRTK Figma Shared Computer Toolkit fournit des versions 2d des contrôles d’interface utilisateur de style HoloLens 2 que vous pouvez trouver dans le MRTK pour unity ou MRTK pour unreal. Vous pouvez l’utiliser dans le processus de conception pour créer des dispositions d’interface utilisateur et des storyboards.
 
 > [!div class="nextstepaction"]
-> [Afficher Figma Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
+> [afficher Figma Shared Computer Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Figma-Toolkit-for-MRTK-%2F-HoloLens%2C-Windows-Mixed-Reality?node-id=116%3A4)
 
-## <a name="how-to-use-figma-toolkit"></a>Comment utiliser Figma Toolkit
+## <a name="how-to-use-figma-toolkit"></a>utilisation de Figma Shared Computer Toolkit
 Utilisez **le double dans le menu brouillons** pour effectuer une copie.
 
 <img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
@@ -46,9 +46,12 @@ Ouvrez la page **Introduction** pour en savoir plus sur l’utilisation des comp
 ## <a name="ui-gallery--components"></a>Composants de & de la Galerie d’interface utilisateur
 La page Bibliothèque et composants de l’interface utilisateur affiche tous les composants disponibles pour votre conception.
 
-![Exemple Figma Toolkit-menu interface utilisateur 1](images/UX_FigmaToolkit_Components_Menu1.png)<br>
+![exemple de Shared Computer Toolkit Figma-Menu 1](images/UX_FigmaToolkit_Components_Menu1.png)<br>
 
-![Exemple d’interface utilisateur du menu Figma 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
+![exemple de Shared Computer Toolkit Figma-Menu 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
+
+
+![exemple de Shared Computer Toolkit Figma-Menu 4](images/UX_FigmaToolkit_Components_Menu3a.png)<br>
 
 À l’aide de l’onglet **ressources** , vous pouvez parcourir ces composants et les faire glisser dans votre page.
 
@@ -57,14 +60,14 @@ La page Bibliothèque et composants de l’interface utilisateur affiche tous le
 
 ## <a name="examples"></a>Exemples
 
-Figma Toolkit peut être utile pour esquisser l’interface utilisateur du menu. 
+Figma Shared Computer Toolkit peut être utile pour esquisser l’interface utilisateur du menu. 
 
-![Exemple Figma Toolkit-menu interface utilisateur 3](images/UX_FigmaToolkit_Examples_Menu.png)<br>
+![exemple de Menu Figma Shared Computer Toolkit-UI 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 
 
 Les ressources peuvent être utilisées pour la création de plan conceptuel.
 
-![Exemple de Figma Toolkit-création de plan conceptuel](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
+![exemple de Shared Computer Toolkit Figma-storyboarding](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
 
 
 ## <a name="see-also"></a>Voir aussi

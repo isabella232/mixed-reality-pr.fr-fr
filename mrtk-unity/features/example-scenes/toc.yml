@@ -1,4 +1,4 @@
-- name: Exemple de hub
+- name: Hub d’exemples MRTK
   href: example-hub.md
 - name: Exemples d’interaction des mains
   href: hand-interaction-examples.md

@@ -1,24 +1,24 @@
 ---
-title: Génération et déploiement sur Android et iOS via AR Foundation
+title: Déploiement sur Android et iOS (AR Foundation) [expérimental]
 description: Documentation pour configurer MRTK pour Android et iOS (ARFoundation) dans Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, de réalité mixte, développement, MRTK, AR Core, kit AR, iOS, IOS, Android, comptabilité basique
-ms.openlocfilehash: 352afbbc11c7cc6fcd2557395c5dd36d956f396d
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, ar Core, ar Kit, ios, ios, Android, ar Foundation
+ms.openlocfilehash: d127b9b39cbaa90f0c8c5a8a6ac7955f33404cbf
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449738"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281945"
 ---
-# <a name="building-and-deploying-to-android-and-ios-via-ar-foundation-experimental"></a>Génération et déploiement sur Android et iOS via AR Foundation [expérimental]
+# <a name="deploying-to-android-and-ios-ar-foundation-experimental"></a>Déploiement sur Android et iOS (AR Foundation) [expérimental]
 
 ## <a name="install-required-packages"></a>Installer les packages nécessaires
 
-1. Téléchargez et importez le package **Microsoft. MixedReality. Toolkit. Unity. Foundation** à partir de [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) ou du [Gestionnaire de package Unity](../configuration/usingupm.md)
+1. téléchargez et importez le fichier **Microsoft. MixedReality. Shared Computer Toolkit. package unity. Foundation** , [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) ou [unity Gestionnaire de package](../configuration/usingupm.md)
 
-1. Dans le gestionnaire de package Unity (UPM), installez les packages suivants :
+1. dans l’Gestionnaire de package unity (UPM), installez les packages suivants :
 
     **Unity 2018.4.x**
 
@@ -41,7 +41,7 @@ ms.locfileid: "112449738"
     | Fondement de base  <br/> Version : 3.1.3 |  Fondement de base  <br/> Version : 4.0.12 |
     | Plug-in ARCore XR <br/> Version : 3.1.4 | Plug-in ARKit XR <br/> Version : 4.1.7 |
 
-1. Mettez à jour les définitions de script MRTK Unity en appelant l’élément de menu : **Mixed reality > Toolkit > Utilities > unity > de mise à jour des scripts de mise à jour définit**
+1. mettez à jour les définitions de script MRTK unity en appelant l’élément de menu : **Mixed reality > Shared Computer Toolkit > Utilities > unity > script Update définit**
 
     ![Les scripts de mise à jour définissent](../features/images/UpdateScriptingDefineUnityAR.png)
 
@@ -62,15 +62,15 @@ Les étapes suivantes supposent l’utilisation de l’objet MixedRealityToolkit
 
     ![Cloner le profil de la caméra MRTK](../features/images/camera-system/CloneCameraProfileARFoundation.png)
 
-1. Dans le panneau de l’inspecteur, accédez à la section système de l’appareil photo et développez la section paramètres de l' **appareil photo** .
+1. dans le panneau inspecteur, accédez à la section système de l’appareil photo et développez la section **camera Paramètres providers** .
 
     ![Développez Paramètres fournisseurs](../features/images/camera-system/ExpandProviders.png)
 
-1. Cliquez sur **Ajouter un fournisseur de paramètres d’appareil photo** , puis développez l’entrée **nouveaux paramètres d’appareil photo** récemment ajoutés.
+1. cliquez sur **ajouter un appareil photo Paramètres fournisseur** et développez l’entrée **nouveaux paramètres d’appareil photo** récemment ajoutés.
 
     ![Développer le nouveau fournisseur de paramètres](../features/images/camera-system/ExpandNewProvider.png)
 
-1. Sélectionner le fournisseur de paramètres de l’appareil Unity AR
+1. sélectionner le fournisseur de Paramètres unity AR
 
     ![Sélectionner le fournisseur de paramètres Unity](../features/images/camera-system/SelectUnityArSettings.png)
 
@@ -83,9 +83,9 @@ Les étapes suivantes supposent l’utilisation de l’objet MixedRealityToolkit
 
 ## <a name="building-a-scene-for-android-and-ios-devices"></a>Création d’une scène pour les appareils Android et iOS
 
-1. Vérifiez que vous avez ajouté le fournisseur de paramètres d’appareil photo Unity à votre scène.
+1. assurez-vous que vous avez ajouté le fournisseur de Paramètres d’appareil photo unity à votre scène.
 
-1. Basculer la plateforme sur Android ou iOS dans les paramètres de build Unity
+1. basculez la plateforme sur Android ou iOS dans la Build unity Paramètres
 
 1. Vérifier que le fournisseur de gestion du plug-in XR associé est activé
 
@@ -95,4 +95,4 @@ Les étapes suivantes supposent l’utilisation de l’objet MixedRealityToolkit
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Paramètres de l’appareil Unity AR](../features/camera-system/unity-ar-camera-settings.md)
+- [Paramètres de caméra unity AR](../features/camera-system/unity-ar-camera-settings.md)

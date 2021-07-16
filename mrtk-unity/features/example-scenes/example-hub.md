@@ -1,16 +1,16 @@
 ---
-title: Exemple de hub
+title: Hub d’exemples MRTK
 description: Vue d’ensemble des exemples de scènes dans MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 212fc6e1489a22995241368a9bf4db96d206c44a
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: b7a55e46b2c283b5a75395b9e99874af6020a171
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144754"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114282005"
 ---
 # <a name="mrtk-examples-hub"></a>Hub d’exemples MRTK
 
@@ -20,9 +20,9 @@ MRTK exemple Hub est une scène Unity qui facilite l’expérience dans plusieur
 
 **MRTKExamplesHub. Unity** est la scène de conteneur qui a des composants partagés, y compris ``MixedRealityToolkit`` et ``MixedRealityPlayspace`` . La scène **MRTKExamplesHubMainMenu. Unity** contient les boutons de cube.
 
-## <a name="prerequisite"></a>Configuration requise
+## <a name="prerequisite"></a>Prérequis
 
-MRTK exemple Hub utilise le [service de transition de scène](../extensions/scene-transition-service.md) et les scripts associés. Si vous utilisez MRTK via des packages Unity, importez **Microsoft. MixedReality. Toolkit. Unity. extensions. x. x. x. pour Unity** , qui fait partie des [packages de version](https://github.com/microsoft/MixedRealityToolkit-Unity/releases). Si vous utilisez MRTK via le clone du référentiel, vous devez déjà disposer du dossier **MRTK/extensions** dans votre projet.
+MRTK exemple Hub utilise le [service de transition de scène](../extensions/scene-transition-service.md) et les scripts associés. si vous utilisez MRTK via des packages unity, importez **Microsoft. MixedReality. Shared Computer Toolkit. Unity. extensions. x.x.** . x. x. pour Unity qui fait partie des [packages de version](https://github.com/microsoft/MixedRealityToolkit-Unity/releases). Si vous utilisez MRTK via le clone du référentiel, vous devez déjà disposer du dossier **MRTK/extensions** dans votre projet.
 
 ## <a name="mrtkexampleshub-scene-and-the-scene-system"></a>MRTKExamplesHub Scene et le système de scène
 
@@ -41,7 +41,7 @@ Exemple de chargement de plusieurs scènes.
 
 ## <a name="running-the-scene"></a>Exécution de la scène
 
-La scène fonctionne dans le mode jeu de Unity et sur l’appareil. Exécutez la scène **MRTKExamplesHub** dans l’éditeur Unity et utilisez la simulation d’entrée de MRTK pour interagir avec le contenu de la scène. Pour générer et déployer, il vous suffit de créer une scène **MRTKExamplesHub** avec d’autres scènes incluses dans la liste du système de scène. L’inspecteur facilite également l’ajout de scènes aux paramètres de génération. Dans les paramètres de création, vérifiez que **MRTKExamplesHub** Scene est en haut de la liste à l’index 0.
+La scène fonctionne dans le mode jeu de Unity et sur l’appareil. Exécutez la scène **MRTKExamplesHub** dans l’éditeur Unity et utilisez la simulation d’entrée de MRTK pour interagir avec le contenu de la scène. Pour générer et déployer, il vous suffit de créer une scène **MRTKExamplesHub** avec d’autres scènes incluses dans la liste du système de scène. l’inspecteur facilite également l’ajout de scènes à la Paramètres de génération. dans le Paramètres de génération, assurez-vous que **MRTKExamplesHub** scene est en haut de la liste à l’index 0.
 
 <img src="../images/examples-hub/MRTK_ExamplesHub_BuildSettings.png" width="450" alt="Build settings">
 

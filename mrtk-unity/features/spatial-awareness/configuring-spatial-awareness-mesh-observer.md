@@ -1,20 +1,20 @@
 ---
-title: Configuration de l’observateur de maillage de reconnaissance spatiale
+title: Configuration des observateurs de maillage pour l’appareil
 description: Comment configurer l’observateur de maillage spatial prêt à l’emploi dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 0d71a32d76624698e78b8123f427ddefc08f3d0b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: aba49e88d4fc555a88fe42e4b09858f1d2453ddc
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144959"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281936"
 ---
 # <a name="configuring-mesh-observers-for-device"></a>Configuration des observateurs de maillage pour l’appareil
 
-Ce guide vous aidera à configurer l’observateur de maillage spatial prêt à l’emploi dans MRTK, qui prend en charge la plateforme Windows Mixed Reality (c.-à-d. HoloLens). L’implémentation par défaut fournie par le kit d’outils de réalité mixte est la classe [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) . La plupart des propriétés de cet article s’appliquent à d’autres [implémentations d’observateurs personnalisées](create-data-provider.md).
+ce guide vous aidera à configurer l’observateur de maillage Spatial prêt à l’emploi dans MRTK, qui prend en charge la plateforme Windows Mixed Reality (c.-à-d. HoloLens). l’implémentation par défaut fournie par la réalité mixte Shared Computer Toolkit est la classe [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) . La plupart des propriétés de cet article s’appliquent à d’autres [implémentations d’observateurs personnalisées](create-data-provider.md).
 
 ## <a name="profile-settings"></a>Paramètres du profil
 
@@ -26,11 +26,11 @@ Les deux éléments suivants doivent être définis en premier lors de la config
 > [!NOTE]
 > Tous les observateurs doivent étendre l’interface [IMixedRealitySpatialAwarenessObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) .
 
-![Types de plateforme des paramètres généraux de l’observateur de maillage](../images/spatial-awareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
+![types de plateformes d’observateur de maille Paramètres général](../images/spatial-awareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
 
 ### <a name="general-settings"></a>Paramètres généraux :
 
-![Paramètres généraux de l’observateur de maille-paramètres documents](../images/spatial-awareness/MeshObserverGeneralSettings.png)
+![paramètres généraux de l’observateur de maille Paramètres documents](../images/spatial-awareness/MeshObserverGeneralSettings.png)
 
 **Comportement de démarrage**
 
@@ -65,14 +65,14 @@ Les extensions d’observation définissent la distance à partir du point d’o
 
 ### <a name="physics-settings"></a>Paramètres physiques
 
-![Paramètres physiques de l’observateur de maillage](../images/spatial-awareness/MeshObserverPhysicsSettings.png)
+![Paramètres physique de l’observateur de maille](../images/spatial-awareness/MeshObserverPhysicsSettings.png)
 
 **Couche physique**
 
 Couche physique sur laquelle les objets de maillage spatial seront placés pour interagir avec les systèmes physique et RayCast Unity.
 
 > [!NOTE]
-> La boîte à outils de réalité mixte réserve la *couche 31* par défaut pour une utilisation par les observateurs de sensibilisation spatiale.
+> la réalité mixte Shared Computer Toolkit réserve la *couche 31* par défaut pour une utilisation par les observateurs de sensibilisation spatiale.
 
 **Recalculer les normales**
 
@@ -80,7 +80,7 @@ Spécifie si l’observateur de maillage recalcule les normales de la maille qui
 
 ### <a name="level-of-detail-settings"></a>Niveau de paramètres de détail
 
-![Niveau d’observateur de maillage des paramètres de détail](../images/spatial-awareness/MeshObserverLevelOfDetailSettings.png)
+![niveau de détail de l’observateur de maillage Paramètres](../images/spatial-awareness/MeshObserverLevelOfDetailSettings.png)
 
 **Niveau de détail**
 
@@ -103,7 +103,7 @@ Valide lors de l’utilisation du paramètre *personnalisé* pour la propriété
 
 ### <a name="display-settings"></a>Paramètres d'affichage
 
-![Paramètres d’affichage de l’observateur de maillage](../images/spatial-awareness/MeshObserverDisplaySettings.png)
+![affichage de l’observateur de maille Paramètres](../images/spatial-awareness/MeshObserverDisplaySettings.png)
 
 **Option d’affichage**
 
