@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, reconnaissance vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a728e3520539723c4b38849eeb60524995e572eb
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 39eaa8a17d4616dc9c044f9bff7522dde41cffb7
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175455"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656631"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Intégration et utilisation de la reconnaissance vocale et de la transcription
 
@@ -166,4 +166,4 @@ Vous avez implémenté la technologie Azure de reconnaissance vocale. Exécutez 
 Dans le tutoriel suivant, vous allez apprendre à exécuter des commandes à l’aide de la reconnaissance vocale Azure.
 
 > [!div class="nextstepaction"]
-> [Tutoriel suivant : 2. Utilisation de la reconnaissance vocale pour exécuter des commandes](mrlearning-speechSDK-ch2.md)
+> [Tutoriel suivant : 2. Exécuter des commandes à l’aide de la reconnaissance vocale Azure](mrlearning-speechSDK-ch2.md)
