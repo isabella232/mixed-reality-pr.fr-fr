@@ -1,6 +1,6 @@
 - name: Contrôleurs
   href: controllers.md
-- name: Créer un fournisseur de données
+- name: Création d’un fournisseur de données de système d’entrée
   href: create-data-provider.md
 - name: Dictation
   href: dictation.md

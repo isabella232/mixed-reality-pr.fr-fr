@@ -1,6 +1,6 @@
 - name: Bien démarrer avec la reconnaissance spatiale
   href: spatial-awareness-getting-started.md
-- name: Observateur de maillage de la reconnaissance spatiale
+- name: Configuration des observateurs de maillage pour l’appareil
   href: configuring-spatial-awareness-mesh-observer.md
 - name: Observateur de maillage des objets dans l’espace
   href: spatial-object-mesh-observer.md
@@ -8,5 +8,5 @@
   href: scene-understanding.md
 - name: Guide d’utilisation
   href: usage-guide.md
-- name: Créer un fournisseur de données
+- name: Création d’un fournisseur de données de reconnaissance spatiale
   href: create-data-provider.md
