@@ -1,20 +1,20 @@
 ---
-title: Ajout d’un mode hors connexion pour la traduction locale de la reconnaissance vocale
-description: Suivez ce cours pour découvrir comment ajouter le mode hors connexion pour la traduction par reconnaissance vocale locale dans les applications de réalité mixte.
+title: Exécuter des commandes à l’aide de la reconnaissance vocale Azure
+description: Suivez ce cours pour découvrir comment exécuter des commandes à l’aide de la reconnaissance vocale Azure dans les applications de réalité mixte.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure, reconnaissance vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8d031896a1725c0121272b68578016edf38a36cf
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590151"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656622"
 ---
-# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. Ajout d’un mode hors connexion pour la traduction de parole en texte locale
+# <a name="2-execute-commands-using-azure-speech-recognition"></a>2. Exécuter des commandes à l’aide de la reconnaissance vocale Azure
 
 Dans ce tutoriel, vous allez ajouter la capacité d’exécuter des commandes en utilisant la reconnaissance vocale Azure, ce qui va vous permettre de déclencher une action en fonction du mot ou de l’expression que vous définissez.
 

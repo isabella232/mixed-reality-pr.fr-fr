@@ -1,6 +1,6 @@
 - name: Auteurs
   href: authors.md
-- name: Vue d’ensemble de la contribution
+- name: Contribution à MRTK
   href: contributing.md
 - name: Recommandations en matière de codage
   href: coding-guidelines.md

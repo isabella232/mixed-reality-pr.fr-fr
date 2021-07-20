@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, azure custom vision, azure cognitive services, services cloud azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: cb391aa2cdb7944234cdeede7dd05825c008d0d8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7624ed28c337f3621a29f15f1ab3b0e98aeb89db
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590571"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224229"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Intégration d’Azure Custom Vision
 
@@ -87,10 +87,6 @@ Une fois que vous avez suffisamment d’images, cliquez sur le bouton **Train** 
 > Le composant **ObjectDetectionManager (script)** charge directement les images prises dans le service Custom Vision. En guise d’alternative, l’API Custom Vision accepte les URL vers les images. Comme exercice, vous pouvez modifier l’**ObjectDetectionManager (script)** afin qu’il charge plutôt les images dans un stockage Blob.
 
 ## <a name="detect-objects"></a>Détecter des objets
-
-Avant de détecter les objets, nous devons modifier la clé d’API présente dans **ObjectDetectionManager (script)** sous les paramètres de projet auxquels une clé Custom Vision est déjà affectée.
-
-Recherchez la ressource Custom Vision dans le portail Azure, puis cliquez sur *Clés et point de terminaison* pour récupérer la clé d’API et remplacer l’ancienne clé d’API sous Paramètres du projet.
 
 Vous pouvez maintenant tester le modèle entraîné. Exécutez l’application et, dans le *menu principal*, cliquez sur **Search Object** (Rechercher un objet) et tapez le nom de l’**objet suivi** en question. La **fiche d’objet** apparaît. Cliquez sur le bouton **Custom Vision**. À partir de là, le composant **ObjectDetectionManager** commence à effectuer des captures d’images en arrière-plan à partir de l’appareil photo, et la progression sera indiquée dans le menu. Pointez l’appareil photo sur l’objet que vous avez utilisé pour l’entraînement du modèle, et vous constaterez qu’après quelques instants il détectera l’objet.
 
