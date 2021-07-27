@@ -7,16 +7,16 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, hololens 2, azure bot service, luis, langage naturel, chatbot, services cloud azure, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 66737f798ef87e756cf1935b12a368bbd22a3423
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: bade124dff639e6f30fb67039debfddef54a22db
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590581"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224523"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Intégration d’Azure Bot Service
 
-Dans ce tutoriel, vous allez apprendre à utiliser **Azure Bot Service** dans l’application de démonstration **HoloLens 2** pour ajouter LUIS (Language Understanding) et laisser le bot assister l’utilisateur lors de la recherche d’**objets suivis**. Il s’agit d’un tutoriel en deux parties. Dans la première, vous allez créer le bot avec la solution sans code [Bot Composer](https://docs.microsoft.com/composer/introduction), et examiner la fonction Azure qui alimente le bot avec les données nécessaires. Dans la deuxième partie, vous utiliserez le **BotManager (script)** dans le projet Unity pour consommer le service bot hébergé.
+Dans ce tutoriel, vous allez apprendre à utiliser **Azure Bot Service** dans l’application de démonstration **HoloLens 2** pour ajouter LUIS (Language Understanding) et laisser le bot assister l’utilisateur lors de la recherche d’**objets suivis**. Il s’agit d’un tutoriel en deux parties. Dans la première, vous allez créer le bot avec la solution sans code [Bot Composer](/composer/introduction), et examiner la fonction Azure qui alimente le bot avec les données nécessaires. Dans la deuxième partie, vous utiliserez le **BotManager (script)** dans le projet Unity pour consommer le service bot hébergé.
 
 ## <a name="objectives"></a>Objectifs
 
@@ -33,9 +33,9 @@ Dans ce tutoriel, vous allez apprendre à utiliser **Azure Bot Service** dans l�
 
 ## <a name="understanding-azure-bot-service"></a>Présentation d’Azure Bot Service
 
-**Azure Bot Service** permet aux développeurs de créer des bots intelligents capables de maintenir une conversation naturelle avec les utilisateurs grâce à **LUIS**. Un chatbot est un excellent moyen d’étendre les façons dont un utilisateur peut interagir avec votre application. Un bot peut faire office de base de connaissances avec un [QnA Maker](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs&preserve-view=true) afin de maintenir une conversation sophistiquée grâce à la puissance de [LUIS (Language Understanding)](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true).
+**Azure Bot Service** permet aux développeurs de créer des bots intelligents capables de maintenir une conversation naturelle avec les utilisateurs grâce à **LUIS**. Un chatbot est un excellent moyen d’étendre les façons dont un utilisateur peut interagir avec votre application. Un bot peut faire office de base de connaissances avec un [QnA Maker](/azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=azure-bot-service-4.0) afin de maintenir une conversation sophistiquée grâce à la puissance de [LUIS (Language Understanding)](/azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=azure-bot-service-4.0).
 
-Apprenez-en davantage sur [Azure Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0&preserve-view=true).
+Apprenez-en davantage sur [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=azure-bot-service-4.0).
 
 ## <a name="part-1---creating-the-bot"></a>Partie 1 : Création du bot
 
@@ -50,50 +50,57 @@ Téléchargez le projet Tracked Objects Azure Function : [AzureFunction_Tracked
 
 Cette fonction Azure a deux actions, **Count** et **Find**, qui peuvent être appelées par le biais d’appels *GET* *HTTP* simples. Vous pouvez inspecter le code dans **Visual Studio**.
 
-Apprenez-en davantage sur [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+Apprenez-en davantage sur [Azure Functions](/azure/azure-functions/functions-overview).
 
 La fonction **Count** est très simple : elle interroge à partir du **stockage Table** tous les **TrackedObjects** de la table. La fonction **Find**, quant à elle, prend un paramètre de requête *name* à partir de la requête *GET*, interroge le **stockage Table** pour obtenir un **TrackedObject** correspondant et retourne un DTO au format JSON.
 
-Pour déployer cette **fonction Azure** directement à partir de **Visual Studio**, ouvrez le dossier AzureFunction_TrackedObjectsService téléchargé et ouvrez le fichier **.sln** présent avec ![Accueil Bot Framework Composer](images/mr-learning-azure/tutorial5-section3-step1-1.png) de Visual Studio.
+Pour déployer cette **fonction Azure** directement à partir de **Visual Studio**, ouvrez le dossier AzureFunction_TrackedObjectsService téléchargé et ouvrez le fichier **.sln** avec le ![dossier AzureFunction_TrackedObjectsService](images/mr-learning-azure/tutorial5-section3-step1-1.png) de Visual Studio.
 
-Une fois le fichier chargé dans Visual Studio, cliquez avec le bouton droit sur **Service d’objets suivis** dans l’Explorateur de solutions, puis sélectionnez publier dans ![Accueil Bot Framework Composer](images/mr-learning-azure/tutorial5-section3-step1-2.png).
+Une fois le fichier chargé dans Visual Studio, cliquez avec le bouton droit sur **Service d’objets suivis** dans l’Explorateur de solutions, puis sélectionnez ![Publier le service d’objets suivis](images/mr-learning-azure/tutorial5-section3-step1-2.png).
 
 La fenêtre contextuelle Publier apparaît et vous demande la plateforme cible ; sélectionnez Azure, puis cliquez sur le bouton **Suivant**.
 
-![Accueil Bot Framework Composer](images/mr-learning-azure/tutorial5-section3-step1-3.png)
+![Sélectionner la plateforme cible](images/mr-learning-azure/tutorial5-section3-step1-3.png)
 
 Dans Cible spécifique, sélectionnez **Application de fonction Azure (Windows)** , puis cliquez sur le bouton **Suivant**.
 
-![Accueil Bot Framework Composer](images/mr-learning-azure/tutorial5-section3-step1-4.png)
+![Sélectionner l’hôte cible](images/mr-learning-azure/tutorial5-section3-step1-4.png)
 
 Si vous n’êtes pas connecté à Azure, connectez-vous via Visual Studio ; la fenêtre doit se présenter comme ceci :
 
-![Accueil Bot Framework Composer](images/mr-learning-azure/tutorial5-section3-step1-5.png)
+![Sélectionner ou créer une fonction Azure](images/mr-learning-azure/tutorial5-section3-step1-5.png)
 
 Cliquez sur le bouton Pulsation pour créer une application de fonction dans le compte Azure.
 
-![Accueil Bot Framework Composer](images/mr-learning-azure/tutorial5-section3-step1-6.png)
+![Créer une application de fonction](images/mr-learning-azure/tutorial5-section3-step1-6.png)
 
 * Pour **Nom**, entrez un nom approprié pour le service, par exemple *TrackedObjectsService*.
 * Pour **Type de plan**, choisissez Consommation.
 * Pour **Emplacement**, choisissez un emplacement proche de l’emplacement physique des utilisateurs de votre application, par exemple *USA Ouest*.
 * Pour **Groupe de ressources** et **Stockage**, choisissez respectivement le groupe et le compte de stockage Azure qui ont été créés dans les chapitres précédents.
 
-Une fois l’application de fonction créée, cliquez sur le bouton **Terminer**. 
+Une fois l’application de fonction créée, cliquez sur le bouton **Terminer**.
 
-![Accueil Bot Framework Composer](images/mr-learning-azure/tutorial5-section3-step1-7.png)
+![Terminer la création de l’application de fonction](images/mr-learning-azure/tutorial5-section3-step1-7.png)
 
-Une fenêtre contextuelle Publier s’ouvre une fois le processus terminé. Cliquez sur le bouton **Publier** pour publier la fonction et attendez que la publication soit effective.
+Pour mettre à jour la chaîne de connexion, cliquez sur **3 points** sous l’onglet **hébergement**, puis sélectionnez **Gérer les paramètres Azure App Service**.
 
-![Accueil Bot Framework Composer](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+![Ouvrir Paramètres d’application](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+
+La fenêtre **Paramètres d’application** s’ouvre. Remplacez votre AzureStorageConnectionString pour les deux options **Local** et **Distant** par votre AzureStorageConnectionString. Une fois que vous avez effectué le remplacement, cliquez sur OK.
+
+![Mettre à jour une chaîne de connexion](images/mr-learning-azure/tutorial5-section3-step1-8a.png)
+
+À présent, cliquez sur le bouton **Publier** pour publier la fonction et attendez la publication.
 
 Une fois la publication terminée, cliquez sur **Gérer dans le portail Azure** sous la section Actions : vous êtes alors dirigé vers la fonction spécifique dans le portail Azure. Cliquez ensuite sur **Configuration**, qui se trouve sous la section *Paramètres*. Dans les **Paramètres d’application**, vous devez fournir la *Chaîne de connexion* au **Stockage Azure** où sont stockés les **objets suivis**. Cliquez sur **Nouveau paramètre d’application** et spécifiez **AzureStorageConnectionString** comme nom. En guise de valeur, spécifiez la *Chaîne de connexion* correcte. Après cela, cliquez sur **Enregistrer**. La **fonction Azure** est prête pour le *bot* que vous allez maintenant créer.
 
-Pour obtenir l’URL de Count et de Find, sélectionnez **Fonctions**, qui se trouve sous la section *Fonctions*. Vous pouvez voir ici les fonctions Count et Find. Sélectionnez la fonction Count, puis le bouton *Obtenir l’URL de la fonction* en haut de la page. Suivez la même procédure pour obtenir l’URL de la fonction Find.
+Pour obtenir l’URL de Count et de Find, sélectionnez **Fonctions**, qui se trouve sous la section *Fonctions*. Vous pouvez voir ici les fonctions Count et Find. Sélectionnez la fonction Count, puis le bouton *Obtenir l’URL de la fonction* en haut de la page.
+Suivez la même procédure pour obtenir l’URL de la fonction Find.
 
 ### <a name="creating-a-conversation-bot"></a>Création d’un chatbot
 
-Il existe plusieurs façons de développer un chatbot basé sur Bot Framework. Dans cette leçon, vous allez utiliser l’application de bureau [Bot Framework Composer](https://docs.microsoft.com/composer/), un concepteur visuel idéal pour le développement rapide.
+Il existe plusieurs façons de développer un chatbot basé sur Bot Framework. Dans cette leçon, vous allez utiliser l’application de bureau [Bot Framework Composer](/composer/), un concepteur visuel idéal pour le développement rapide.
 
 Vous pouvez télécharger les dernières versions à partir du [dépôt GitHub](https://github.com/microsoft/BotFramework-Composer/releases). Il est disponible pour Windows, Mac et Linux.
 
@@ -109,7 +116,7 @@ Dans la barre supérieure, cliquez sur **Open** et sélectionnez le projet Bot F
 
 Concentrons-nous sur le côté gauche, où vous pouvez voir le **volet des dialogues**. Vous avez un dialogue nommé **TrackedObjectsBot** sous lequel figurent plusieurs **déclencheurs**.
 
-Apprenez-en davantage sur les [concepts de Bot Framework](https://docs.microsoft.com/composer/concept-dialog).
+Apprenez-en davantage sur les [concepts de Bot Framework](/composer/concept-dialog).
 
 Ces déclencheurs effectuent les opérations suivantes :
 
@@ -129,7 +136,7 @@ Voici les expressions de déclenchement :
 
 ![Déclencheur de dialogue AskForCount du projet TrackedObjectsBot](images/mr-learning-azure/tutorial5-section4-step1-4.png)
 
-Grâce à [LUIS](https://docs.microsoft.com/composer/how-to-use-luis), l’*utilisateur* n’a pas besoin d’énoncer les expressions de cette manière exacte. La conversation est ainsi plus naturelle.
+Grâce à [LUIS](/composer/how-to-use-luis), l’*utilisateur* n’a pas besoin d’énoncer les expressions de cette manière exacte. La conversation est ainsi plus naturelle.
 
 Dans ce dialogue, le *bot* communiquera également avec la fonction Azure **Count** (nous y reviendrons).
 
@@ -162,7 +169,7 @@ Pour finir, recherchez le déclencheur **FindEntity** et l’action *Send an HTT
 
 Vous êtes maintenant prêt à déployer le bot. Bot Framework Composer étant installé, vous pouvez publier le bot directement à partir de là.
 
-Apprenez-en davantage sur la [publication d’un bot à partir de Bot Composer](https://docs.microsoft.com/composer/how-to-publish-bot).
+Apprenez-en davantage sur la [publication d’un bot à partir de Bot Composer](/composer/how-to-publish-bot).
 
 > [!TIP]
 > N’hésitez pas à vous amuser avec le bot en ajoutant des expressions de déclencheur ou de nouvelles réponses, ou en créant des branches de conversation.

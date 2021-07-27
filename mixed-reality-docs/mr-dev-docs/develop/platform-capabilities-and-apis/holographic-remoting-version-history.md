@@ -3,28 +3,33 @@ title: Historique des versions de la communication à distance holographique
 description: Restez à jour dans l’historique des versions de la fonctionnalité de communication à distance holographique pour HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 06/10/2021
+ms.date: 07/20/2021
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, historique des versions, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: dae7bc0dac792cbe1a8472415d5e9fa34532e918
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: ec810683a556bebfe92615e9085d26bf33cf7f2c
+ms.sourcegitcommit: ebc22c5adee0e785e45fb25fade83191e920f92b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908217"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114585722"
 ---
 # <a name="holographic-remoting-version-history"></a>Historique des versions de la communication à distance holographique
 
 > [!IMPORTANT]
 > Ce guide est spécifique à la communication à distance holographique sur HoloLens 2.
 
+## <a name="version-261-july-20-2021"></a>Version 2.6.1 (20 juillet 2021) <a name="v2.6.1"></a>
+* L’extension de XR_MSFT_holographic_remoting_speech permet désormais de réinitialiser le module de reconnaissance vocale avec de nouveaux paramètres au cours d’une session en cours d’exécution.
+* Résolution d’un problème où la fiabilité de la reconnaissance vocale a baissé sur plusieurs connexions.
+* Plusieurs correctifs de bogues et améliorations de stabilité.
+
 ## <a name="version-260-june-10-2021"></a>Version 2.6.0 (10 juin 2021) <a name="v2.6.0"></a>
 * La communication à distance holographique à l’aide de l’API OpenXR prend désormais en charge :
   * Nouvelle extension de XR_MSFT_holographic_remoting_speech, qui permet aux applications d’écouter des commandes vocales personnalisées dans différentes langues.
   * L’extension XR_MSFT_scene_understanding, qui fournit aux applications une représentation structurée et de haut niveau des plans, des mailles et des objets dans l’environnement de l’utilisateur, ce qui permet le développement d’applications spatialement compatibles. Toutefois, avec l’inconvénient que XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT est la seule cohérence prise en charge par xrComputeNewSceneMSFT.
-  * L’extension XR_MSFT_spatial_graph_bridge, qui permet aux applications de créer des handles XrSpace pour effectuer le suivi des nœuds de graphique spatial d’autres API ou bibliothèques de plateformes d’appareils Windows Mixed Reality. Toutefois, avec l’inconvénient que XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT est le seul type de nœud pris en charge par xrCreateSpatialGraphNodeSpaceMSFT. 
+  * l’extension XR_MSFT_spatial_graph_bridge, qui permet aux applications de créer des handles XrSpace pour effectuer le suivi des nœuds de Graph spatiales d’autres api ou bibliothèques de plateformes d’appareils Windows Mixed Reality. Toutefois, avec l’inconvénient que XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT est le seul type de nœud pris en charge par xrCreateSpatialGraphNodeSpaceMSFT. 
 * La communication à distance holographique à l’aide de l’API de réalité mixte prend désormais en charge :
-  * Les surcharges SpatialGraphInteropPreview. CreateCoordinateSystemForNode, qui permettent aux applications d’effectuer le suivi des nœuds de graphique spatial statique afin que les utilisateurs puissent connaître les emplacements et les éléments de leur environnement.
+  * les surcharges SpatialGraphInteropPreview. CreateCoordinateSystemForNode, qui permettent aux applications d’effectuer le suivi des nœuds de Graph spatiales statiques afin que les utilisateurs puissent connaître les emplacements et les éléments dans leur environnement.
 * La communication à distance holographique utilisant à la fois les API OpenXR et de réalité mixte prend désormais en charge :
   * Le kit de développement logiciel (SDK) Microsoft. MixedReality. SceneUnderstanding, qui permet aux applications de calculer une description de la scène entourant l’utilisateur (par exemple, murs, planchers et surfaces) fournissant des Quad, des maillages et des signaux de placement du contenu.
   * Le kit de développement logiciel (SDK) Microsoft. MixedReality. QR, qui permet aux applications de suivre l’emplacement, la taille et le contenu des codes QR détectés.
@@ -43,11 +48,11 @@ ms.locfileid: "111908217"
   * Extension de XR_MSFT_controller_model. Cette extension fournit un mécanisme permettant de charger des modèles GLTF pour les contrôleurs.
   * Canaux de données personnalisés dans le cadre de l’extension de XR_MSFT_holographic_remoting. Un exemple pour cela est illustré dans l' [exemple distant OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 * Synchronisation améliorée entre le joueur et le côté distant. Cela permet de modifier dynamiquement la mise en mémoire tampon de pose et de trame, ce qui garantit que le contenu rendu distant atteint correctement les affichages à la fréquence d’images cible attendue.
-* Amélioration des performances du lecteur de communication à distance holographique disponible via le Microsoft Store. Sur HoloLens 2, le lecteur s’exécute à présent sur 60 images par seconde.
+* Amélioration des performances du lecteur de communication à distance holographique disponible via le Microsoft Store. sur HoloLens 2, le lecteur s’exécute à présent sur 60 images par seconde.
 * Transmission optimisée des maillages de surface spatiale qui peuvent être interrogés via [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) par une application distante.
 * Correction d’un problème dans lequel l’appel de méthodes SpatialAnchorManager ou la libération d’ancres entraînait des exceptions lors de la déconnexion.
 * Résolution des problèmes liés aux threads entraînant des blocages lors de la fermeture des instances PlayerContext ou RemoteContext.
-* Lecteur de communication à distance holographique sur le Bureau : affiche un message d’erreur lorsque Windows Mixed Reality n’est pas installé au lieu de se fermer en mode silencieux.
+* lecteur de communication à distance holographique sur le bureau : affiche un message d’erreur quand Windows Mixed Reality n’est pas installé au lieu de se fermer en mode silencieux.
 * De nombreux autres correctifs de bogues et améliorations de la stabilité.
 
 ## <a name="version-241-january-22-2021"></a>Version 2.4.1 (22 janvier 2021) <a name="v2.4.1"></a>
@@ -76,18 +81,18 @@ ms.locfileid: "111908217"
 
 ## <a name="version-222-july-10-2020"></a>Version 2.2.2 (10 juillet 2020) <a name="v2.2.2"></a>
 
-* Résolution du problème lié à [HolographicCamera. LeftViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) et [HolographicCamera. RightViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) ne renvoyant aucun vertex de maillage de zone masqué lors de la diffusion en continu à partir d’un casque Windows Mixed Reality.
+* résolution du problème lié à [HolographicCamera. LeftViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) et [HolographicCamera. RightViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) ne renvoyant aucun vertex de maillage de zone masqué lors de la diffusion en continu à partir d’un Windows Mixed Reality casque.
 * Correction d’un incident, ce qui peut se produire avec une mauvaise connexion réseau.
 
 ## <a name="version-221-july-6-2020"></a>Version 2.2.1 (6 juillet 2020) <a name="v2.2.1"></a>
 
 > [!IMPORTANT]
-> La validation du [Kit de certification des applications Windows](https://developer.microsoft.com/windows/downloads/app-certification-kit/) avec la version [2.2.0](holographic-remoting-version-history.md#v2.2.0) échouera. Si vous êtes sur la version [2.2.0](holographic-remoting-version-history.md#v2.2.0) et que vous souhaitez soumettre votre application au bail Microsoft Store p mis à jour vers la version 2.2.1.
-* Correction des problèmes de conformité du [Kit de certification des applications Windows](https://developer.microsoft.com/windows/downloads/app-certification-kit/) .
+> [Windows](https://developer.microsoft.com/windows/downloads/app-certification-kit/) la validation du Kit de Certification des applications avec la version [2.2.0](holographic-remoting-version-history.md#v2.2.0) échouera. Si vous êtes sur la version [2.2.0](holographic-remoting-version-history.md#v2.2.0) et que vous souhaitez soumettre votre application au bail Microsoft Store p mis à jour vers la version 2.2.1.
+* correction des problèmes de conformité du [Kit de Certification des applications Windows](https://developer.microsoft.com/windows/downloads/app-certification-kit/) .
 
 ## <a name="version-220-july-1-2020"></a>Version 2.2.0 (1er juillet 2020) <a name="v2.2.0"></a>
 
-* Le lecteur de communication à distance holographique peut désormais être installé sur des PC exécutant [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md), ce qui rend possible la diffusion en continu vers des casques immersifs.
+* le lecteur de communication à distance holographique peut désormais être installé sur des pc exécutant [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md), ce qui rend possible la diffusion en continu vers des casques immersifs.
 * Les [contrôleurs de mouvement](../../design/motion-controllers.md) sont désormais pris en charge par la communication à distance holographique et les données spécifiques au contrôleur peuvent être récupérées via [SpatialInteractionSource. Controller](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller).
 * [SpatialStageFrameOfReference](/uwp/api/windows.perception.spatial.spatialstageframeofreference) est maintenant pris en charge et l’étape actuelle peut être récupérée via [SpatialStageFrameOfReference. Current](/uwp/api/windows.perception.spatial.spatialstageframeofreference.current). En outre, une nouvelle étape peut être demandée via [SpatialStageFrameOfReference. RequestNewStageAsync](/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync).
 * Dans les versions précédentes, la prédiction de pose a été gérée côté joueur par le lecteur de communication à distance holographique. À partir de la version 2.2.0, la communication à distance holographique a une synchronisation temporelle et la prédiction est entièrement effectuée par l’application distante. Les utilisateurs doivent également s’attendre à une stabilité améliorée des hologrammes dans des situations difficiles sur le réseau.
@@ -131,7 +136,7 @@ ms.locfileid: "111908217"
 
 ## <a name="version-2014-october-26-2019"></a>Version 2.0.14 (26 octobre 2019) <a name="v2.0.14"></a>
 
-* Prise en charge des nouvelles API PerceptionDevice (mise à jour de novembre 2019 de Windows 10).
+* prise en charge des nouvelles api PerceptionDevice (Windows 10 la mise à jour de novembre 2019).
 * Résolution d’un problème qui empêche les événements de mouvement de conservation d’être déclenchés par SpatialGestureRecognizer.
 * Problème de thread fixe lors de l’utilisation de SpatialSurfaceObserver. SetBoundingVolume.
 
@@ -141,7 +146,7 @@ ms.locfileid: "111908217"
 
 ## <a name="version-2010-october-10-2019"></a>Version 2.0.10 (10 octobre 2019) <a name="v2.0.10"></a>
 
-* Résolution d’un incident lors de l’utilisation du bouton déclencheur des contrôleurs VR. La communication à distance holographique ne prend pas entièrement en charge les contrôleurs, mais uniquement le bouton déclencheur et le bouton Windows fonctionnent s’ils sont associés à HoloLens 2.
+* Résolution d’un incident lors de l’utilisation du bouton déclencheur des contrôleurs VR. la communication à distance holographique ne prend pas entièrement en charge les contrôleurs, mais uniquement le bouton déclencheur et le bouton Windows fonctionnent s’ils sont associés à HoloLens 2.
 
 ## <a name="version-209-september-19-2019"></a>Version 2.0.9 (19 septembre 2019) <a name="v2.0.9"></a>
 
@@ -162,7 +167,7 @@ ms.locfileid: "111908217"
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Écriture d’une application distante holographique à distance à l’aide des API Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
+* [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)

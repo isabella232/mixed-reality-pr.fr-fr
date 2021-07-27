@@ -1,20 +1,23 @@
 ---
-title: Fenêtre optimiser
+title: Fenêtre d’optimisation
 description: Fenêtre d’optimisation de la documentation dans MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: f9f8ad638b8f7cb1007c923f6b568dffc4340360
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 8b8928e9c723ffa9fd08d22866b8ee5748e38ace
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177566"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713580"
 ---
-# <a name="optimize-window"></a>Fenêtre optimiser
+# <a name="optimize-window"></a>Fenêtre d’optimisation
 
 La fenêtre MRTK Optimize est un utilitaire qui permet d’automatiser et d’informer le processus de configuration d’un projet de réalité mixte pour des [performances](../../performance/perf-getting-started.md) optimales dans Unity. Cet outil se concentre généralement sur les configurations de rendu qui, lorsqu’elles sont définies sur la présélection appropriée, peuvent réduire les millisecondes de traitement.
+
+> [!NOTE]
+> Pour ouvrir la **fenêtre optimiser** , accédez à la   >    >  **fenêtre optimisation** des utilitaires de réalité mixte à partir du menu de la barre supérieure de l’éditeur Unity.
 
 La *cible de build active* est la [plateforme de génération actuellement ciblée](https://docs.unity3d.com/Manual/BuildSettings.html) par le projet pour la compilation.
 
