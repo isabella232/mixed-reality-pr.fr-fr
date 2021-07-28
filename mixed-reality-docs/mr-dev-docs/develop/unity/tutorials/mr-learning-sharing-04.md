@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, fonctionnalités multi-utilisateurs, Photon, MRTK, mixed reality toolkit, UWP, ancres spatiales Azure
 ms.localizationpriority: high
-ms.openlocfilehash: d4dc943c8ca57331b4916e40db67df3cd3d6d2e6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4be0fc30b6d1b401bf137be4060704f54515ceb1
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590061"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702500"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Partage de mouvements d’objet avec plusieurs utilisateurs
 
@@ -27,9 +27,17 @@ Dans ce tutoriel, vous allez apprendre à partager les mouvements d’objets pou
 
 Dans cette section, vous allez préparer la scène en ajoutant le préfabriqué du tutoriel.
 
+Dans la fenêtre Hierarchy, développez l’objet **MixedRealityPlayspace** et sélectionnez l’objet enfant **Main Camera**, puis dans la fenêtre Inspector, utilisez le bouton **Add Component** pour ajouter le composant **AR Camera Manager (Script)** à l’objet **Main Camera** :
+
+![Unity avec le composant AR Camera Manager partiellement configuré](images/mr-learning-sharing/sharing-04-section1-step1-0.png)
+
 Dans la fenêtre Project, accédez au dossier **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs**, puis faites glisser le préfabriqué **TableAnchor** sur l’objet **SharedPlayground** dans la fenêtre Hierarchy afin de l’ajouter à votre scène en tant qu’enfant de l’objet SharedPlayground :
 
 ![Unity avec le préfabriqué nouvellement ajouté TableAnchor sélectionné](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+
+Dans la fenêtre Hierarchy, assurez-vous que l’objet **MixedRealityPlayspace** est développé et que l’objet **TableAnchor** est sélectionné. Faites glisser le composant **Main Camera** dans le champ **Camera** du composant **AR Session Origin** de **TableAnchor**:
+
+![Unity avec l’affectation de Main Camera d’AR Session Origin configurée](images/mr-learning-sharing/sharing-04-section1-step1-2.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>Configuration de PUN pour instancier les objets
 
