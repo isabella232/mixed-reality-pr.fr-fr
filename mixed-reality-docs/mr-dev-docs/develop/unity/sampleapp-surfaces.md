@@ -5,32 +5,37 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Windows Mixed Reality, conception, exemple d’application, contrôles, MRTK, kit de préversion de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 28f8bc1e1f30573936067a83b1ad26133c23c5b8
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+keywords: Windows Mixed Reality, conception, exemple d’application, contrôles, MRTK, Shared Computer Toolkit de réalité mixte, unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: a4259148926ec20bca53a23074a6d1ea285f0aa2
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743388"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757000"
 ---
 # <a name="surfaces"></a>Surfaces
+
+![Surfaces](images/MRDL_Surfaces_1.jpg)
 
 >[!NOTE]
 >Cet article présente un exemple exploratoire que nous avons créé dans les [laboratoires de conception de réalité mixte](https://github.com/Microsoft/MRDesignLabs_Unity), un endroit où nous partageons nos connaissances et des suggestions concernant le développement d’applications de réalité mixte. Nos articles et code liés à la conception évoluent à mesure que nous effectuons de nouvelles découvertes.
 
 [Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)  est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft. Il explore comment nous pouvons créer une sensation tactile avec un suivi visuel, audio et entièrement articulé.
 
-![Surfaces](images/MRDL_Surfaces_1.jpg)
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>téléchargez l’application à partir de Microsoft Store dans HoloLens 2
+si vous avez HoloLens 2 appareil, vous pouvez télécharger et installer directement l’application sur votre appareil.
+
+<a href='//www.microsoft.com/store/apps/9nvkpv3sk3x0?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
 
 ## <a name="demo-video"></a>Vidéo de démonstration 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
 
-Enregistré avec HoloLens 2 à l’aide de la capture de réalité mixte
+enregistré avec HoloLens 2 à l’aide de la Capture de réalité mixte
 
 ## <a name="about-the-app"></a>À propos de l’application
 
-Surfaces montre comment utiliser le système d’entrée et les blocs de construction de MRTK (Mixed Reality Toolkit) pour créer une expérience d’application pour HoloLens 2. Dans ce projet, vous trouverez les exemples suivants :
+Surfaces montre comment utiliser le système d’entrée et les blocs de construction de la réalité mixte Shared Computer Toolkit (MRTK) pour créer une expérience d’application pour les HoloLens 2. Dans ce projet, vous trouverez les exemples suivants :
 
 - Utilisez le [système d’entrée](/windows/mixed-reality/mrtk-unity/features/input/overview)de MRTK, en particulier le suivi de la main/du joint.
 - Utilisez le [nuanceur standard](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) de MRTK pour obtenir des graphiques performants.
@@ -43,22 +48,17 @@ Vous pouvez utiliser les composants de ce projet pour créer vos propres expéri
 
 Lars Simkins, concepteur Senior derrière l’application MRDL surfaces, discute de la conception de l’application et des points essentiels.
 
-## <a name="project-repository-on-github"></a>Dépôt de projet sur GitHub
+## <a name="project-repository-on-github"></a>Project référentiel sur GitHub
 
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
 
-## <a name="download-app-from-microsoft-store-in-hololens-2"></a>Télécharger l’application à partir de Microsoft Store dans HoloLens 2
-
-https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
-
-(L’application est uniquement disponible sur HoloLens 2)
 
 ## <a name="about-the-author"></a>À propos de l’auteur
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>Dong Yoon Park</b><br>Concepteur d’expérience utilisateur @Microsoft</td>
+<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Parc Yoon</b></a><br>Concepteur d’expérience utilisateur @Microsoft</td>
 </tr>
 </table>
 

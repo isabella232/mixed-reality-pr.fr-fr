@@ -8,14 +8,16 @@ ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, Ultra, compatible, compatibilité, configuration système requise, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: 754110c3fa0b5e98508f843d251c24c04b8c0a89
-ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
+ms.openlocfilehash: b7c2b4b84440e7cdd22c2c0cd7d5f9830d55625f
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114713566"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757030"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>instructions relatives à la compatibilité minimale du matériel PC Windows Mixed Reality
+
+![Image du héros de compatibilité PC](images/pc-comp-hero.png)
 
 ## <a name="features-and-experiences"></a>Fonctionnalités et expériences
 
@@ -141,7 +143,7 @@ Pour tous les autres HMDs, reportez-vous aux spécifications suivantes :
     <td style="vertical-align: middle; text-align: center;">60 Hz</td>
 </tr>
 <tr>
-    <td style="vertical-align: middle">Avancé</td>
+    <td style="vertical-align: middle">Power</td>
     <td style="vertical-align: middle; text-align: center;">Ports USB 3.0</td>
     <td style="vertical-align: middle; text-align: center;">Ports USB 3.0</td>
 </tr>

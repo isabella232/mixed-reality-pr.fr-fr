@@ -5,24 +5,25 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Explorateur Galaxy, étude de cas, projet, exemple, MRTK, boîte à outils de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 7ab439a1248895975c5ebff676862515ee79ecf0
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+keywords: explorateur galaxy, étude de cas, projet, exemple, MRTK, Shared Computer Toolkit de réalité mixte, unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: c1294a197878ecf0c6672b028284ad51eaef6955
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010300"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757334"
 ---
 # <a name="galaxy-explorer"></a>Galaxy Explorer
+![Explorateur Galaxy](../images/HTK_GalaxyExplorer.jpg)
 
 **Vous avez partagé vos idées. Nous partageons le code.**
 
-Le projet Galaxy Explorer est prêt. Vous avez partagé vos idées avec la Communauté, choisi une application, regardé une équipe la créer et vous pouvez désormais obtenir le code source. Si vous disposez d’un appareil, le projet de l’Explorateur Galaxy est disponible en téléchargement à partir du Windows Store pour Microsoft HoloLens.
+Le projet Galaxy Explorer est prêt. Vous avez partagé vos idées avec la Communauté, choisi une application, regardé une équipe la créer et vous pouvez désormais obtenir le code source. si vous avez un appareil, le Project de l’explorateur Galaxy est disponible en téléchargement à partir du Windows Store pour Microsoft HoloLens.
 
->[!TIP]
->[Obtient le code](https://github.com/Microsoft/GalaxyExplorer) sur GitHub
+>[!NOTE]
+>cet exemple d’application a été conçu pour HoloLens 1ère génération. consultez l' [explorateur Galaxy 2,0](galaxy-explorer-update.md) pour HoloLens 2 version.
 
-Notre [équipe de développement](galaxy-explorer.md#meet-the-team) HoloLens des concepteurs, des artistes et des développeurs a créé l’Explorateur Galaxy et vous a invité à participer à ce voyage. Après six semaines de développement de base et deux semaines de perfectionnement, cette application est maintenant prête pour vous ! Vous pouvez également suivre tout le long de la série de vidéos ci-dessous.
+notre [équipe de développement](galaxy-explorer.md#meet-the-team) HoloLens de concepteurs, d’artistes et de développeurs a créé l’explorateur Galaxy et vous a invité à participer à ce voyage. Après six semaines de développement de base et deux semaines de perfectionnement, cette application est maintenant prête pour vous ! Vous pouvez également suivre tout le long de la série de vidéos ci-dessous.
 
 <br>
 
@@ -36,11 +37,11 @@ Le parcours de l’Explorateur Galaxy commence par la campagne « partager votr
 
 >[!VIDEO https://www.youtube.com/embed/ZxGdW_ASrRc]
 
-La communauté Microsoft HoloLens a des idées spectaculaires sur la façon dont l’informatique holographique va transformer notre monde. Nous pensons que les applications HoloLens les plus incroyables seront en dehors des idées que vous imaginez.
+la communauté Microsoft HoloLens s’est éclatée avec des idées spectaculaires sur la façon dont l’informatique holographique va transformer notre monde. nous pensons que les applications de HoloLens les plus incroyables seront issues des idées que vous imaginez.
 
 Vous avez partagé plus de 5000 idées étonnantes pendant ces quelques semaines ! Notre équipe de développement a examiné les idées les plus fructueuses et viables et a proposé de créer l’une des trois idées les plus importantes.
 
-Après une interrogation Twitter de 24 heures, l’Explorateur Galaxy était la meilleure idée ! Notre équipe de développement HoloLens des concepteurs, des artistes et des développeurs a créé l’Explorateur Galaxy et vous a invité à participer à ce voyage. Vous pouvez suivre le processus de développement dans les vidéos ci-dessous.
+Après une interrogation Twitter de 24 heures, l’Explorateur Galaxy était la meilleure idée ! notre équipe de développement HoloLens de concepteurs, d’artistes et de développeurs a créé l’explorateur Galaxy et vous a invité à participer à ce voyage. Vous pouvez suivre le processus de développement dans les vidéos ci-dessous.
 
 ## <a name="ep-1-trust-the-process"></a>EP 1 : faire confiance au processus
 
@@ -107,4 +108,5 @@ Nous faisons tous partie d’un studio plus important ici chez Microsoft (imagin
 
 ## <a name="see-also"></a>Voir aussi
 * [Étude de cas : création d’un Galaxy en réalité mixte](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
-* [Explorateur Galaxy GitHub référentiel](https://github.com/Microsoft/GalaxyExplorer)
+* [explorateur Galaxy GitHub référentiel](https://github.com/Microsoft/GalaxyExplorer)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

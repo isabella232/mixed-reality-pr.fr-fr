@@ -1,45 +1,45 @@
 ---
 title: Création de l’Explorateur Galaxy pour HoloLens 2
-description: Découvrez comment notre équipe met à jour le projet open source de l’Explorateur Galaxy pour HoloLens 2 sur GitHub.
+description: découvrez comment notre équipe met à jour le projet open source de l’explorateur Galaxy pour HoloLens 2 sur GitHub.
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
-keywords: Explorateur Galaxy, étude de cas, projet, exemple, MRTK, boîte à outils de réalité mixte, Unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 2d72e005bd955bbf2611f0724ba63b80c70f7dc1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+keywords: explorateur galaxy, étude de cas, projet, exemple, MRTK, Shared Computer Toolkit de réalité mixte, unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 1e19f63f493eba2559cf60ef7c1224b7323ec825
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759815"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757070"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Création de l’Explorateur Galaxy pour HoloLens 2
 
-Bienvenue dans l’Explorateur Galaxy mis à jour pour l’application HoloLens 2 ! L' [Explorateur Galaxy](/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") a été développé à l’origine en tant qu’application open source pour HoloLens (première génération) par le biais du programme de partage de votre idée, et est l’une des premières réalité mixtes que rencontrent de nombreuses personnes. À présent, nous mettons à jour ce dernier pour les [nouvelles fonctionnalités passionnantes de HoloLens 2](https://www.microsoft.com/hololens/hardware).
+![Nouveau logo de l’Explorateur Galaxy](../images/GalaxyExplorer2.jpg)
+
+
+bienvenue dans l’explorateur Galaxy mis à jour pour HoloLens 2 application ! l' [explorateur Galaxy](/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") a été développé à l’origine en tant qu’application open source pour HoloLens (première génération) par le biais du programme partager votre idée, et est l’une des premières réalité mixtes que rencontrent de nombreuses personnes. À présent, nous mettons à jour ce dernier pour les [nouvelles fonctionnalités passionnantes de HoloLens 2](https://www.microsoft.com/hololens/hardware).
 
 En tant qu’un des [Studios Microsoft Mixed Reality](galaxy-explorer-update.md#mixed-reality-studios), nous développons généralement des solutions de qualité commerciale et développons des tests & sur des plateformes cibles tout au long du processus de développement et créatif. Nous envoyons ce projet à l’aide des frameworks et des outils (tels que [MRTK](mrtk-getting-started.md)) dès qu’ils sont disponibles pour nous et la Communauté, et nous souhaitons vous apporter le plus de temps.
 
-À l’instar de l’Explorateur Galaxy d’origine, [notre équipe](galaxy-explorer-update.md#meet-the-team) sera à l’origine [du projet sur GitHub](https://github.com/Microsoft/GalaxyExplorer) pour s’assurer que la Communauté dispose d’un accès complet. Nous allons également documenter notre voyage ici dans une transparence complète sur la façon dont nous sommes portées de MRTK v1 vers MRTK v2, amélioré l’expérience avec les nouvelles fonctionnalités disponibles dans HoloLens 2 et garanti que l’Explorateur Galaxy restait une expérience multi-plateforme. Que vous visualisiez l’Explorateur Galaxy sur HoloLens (First Gen), HoloLens 2, un casque Windows Mixed Reality ou sur votre poste de travail Windows 10, nous voulons nous assurer que vous appréciez le voyage.
+à l’instar de l’explorateur Galaxy d’origine, [notre équipe](galaxy-explorer-update.md#meet-the-team) sera à [l’origine du projet sur GitHub](https://github.com/Microsoft/GalaxyExplorer) pour s’assurer que la communauté dispose d’un accès complet. nous allons également documenter notre voyage ici dans une transparence complète sur la façon dont nous sommes portées de MRTK v1 vers MRTK v2, amélioré l’expérience avec les nouvelles fonctionnalités disponibles dans HoloLens 2, et garanti que l’explorateur Galaxy restait une expérience multi-plateforme. que vous visualisiez l’explorateur Galaxy sur HoloLens (première génération), HoloLens 2, un casque Windows Mixed Reality ou sur votre Windows 10 desktop, nous voulons nous assurer que vous êtes bien le voyage
 
 Cette page s’étend au fur et à mesure que nous progressons dans le projet avec des liens vers des articles plus détaillés, du code, des artefacts de conception et une documentation supplémentaire sur MRTK pour vous fournir un aperçu du projet.
 
-## <a name="unveiling-the-new-logo"></a>Présentation du nouveau logo
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>téléchargez l’application à partir de Microsoft Store dans HoloLens 2
+si vous avez HoloLens 2 appareil, vous pouvez télécharger et installer directement l’application sur votre appareil.
 
-Nous sommes ravis de lancer une version préliminaire du nouveau logo de l’Explorateur Galaxy ! En payant hommage dans le logo original en présentant la méthode lactée, nous avons conçu une visualisation réaliste et mis à jour la typographie pour fournir une apparence plus moderne. L’une des nouvelles icônes est incluse dans le logo.
-
-![Nouveau logo de l’Explorateur Galaxy](images/ge-update-app-icon.png)
-
-La conception et la typographie du logo définissent la tonalité pour l’apparence globale des éléments d’interface utilisateur tout au long de l’expérience. 
+<a href='//www.microsoft.com/store/apps/9nblggh4q4jg?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
 
 ## <a name="thinking-about-interactions"></a>Réflexion sur les interactions
 
-En tant que Creative Studio, nous étions ecstatics sur le privilège de portage de l’Explorateur Galaxy vers HoloLens 2. Nous savions que nous souhaitions que l’expérience soit une fête du nouvel appareil et pour démontrer que l’autonomisation de la réalité mixte est limité uniquement par l’imagination.
+En tant que Creative Studio, nous étions ecstatics sur le privilège de portage de l’Explorateur Galaxy pour HoloLens 2. Nous savions que nous souhaitions que l’expérience soit une fête du nouvel appareil et pour démontrer que l’autonomisation de la réalité mixte est limité uniquement par l’imagination.
 
-HoloLens 2 permet aux utilisateurs de toucher, de saisir et de déplacer des hologrammes de manière naturelle : ils répondent beaucoup à des objets réels. Les modèles de handles entièrement articulés sont incroyables, car ils permettent aux utilisateurs de faire ce qu’ils estiment naturels. Par exemple, tout le monde sélectionne une tasse légèrement différente, et au lieu de mettre en œuvre une manière particulière de le faire, HoloLens 2 vous permet de le faire à votre façon.
+HoloLens 2 permet aux utilisateurs de toucher, de saisir et de déplacer des hologrammes de la même façon que les objets réels. Les modèles de handles entièrement articulés sont incroyables, car ils permettent aux utilisateurs de faire ce qu’ils estiment naturels. par exemple, tout le monde sélectionne une tasse légèrement différente, et au lieu de mettre en œuvre une manière particulière de le faire, HoloLens 2 vous permet de le faire à votre façon.
 
 >[!VIDEO https://www.youtube.com/embed/wogJv5v9x-s]
 
-Il s’agit d’une modification importante par rapport aux interfaces basées sur le robinet sur les appareils HoloLens de première génération. Au lieu d’interagir avec des hologrammes à distance, les utilisateurs peuvent désormais se trouver « haut et proche ». Lors du Portage d’expériences existantes vers HoloLens 2 ou en planifiant de nouvelles, il est important de vous familiariser avec la manipulation directe des hologrammes.
+il s’agit d’une modification importante par rapport aux interfaces basées sur le robinet sur les appareils HoloLens de première génération. Au lieu d’interagir avec des hologrammes à distance, les utilisateurs peuvent désormais se trouver « haut et proche ». lorsque vous redirigez des expériences existantes vers HoloLens 2 ou en planifiez de nouvelles, il est important de vous familiariser avec la manipulation directe des hologrammes.
 
 ### <a name="direct-manipulation-vs-the-vast-distances-in-space"></a>Manipulation directe et les grandes distances dans l’espace
 
@@ -49,11 +49,11 @@ Pour permettre aux utilisateurs d’interagir avec des objets plus éloignés, M
 
 >[!VIDEO https://www.youtube.com/embed/Qol5OFNfN14]
 
-Dans la version d’origine de l’Explorateur Galaxy, l’utilisateur ciblerait une planète avec le curseur en regard, puis appuyez sur air pour l’appeler plus près. Le moyen le plus simple de porter l’expérience dans HoloLens 2 est d’adopter ce comportement et d’utiliser des rayons de main pour sélectionner des planètes. Bien que cela soit fonctionnel, nous les avons laissés plus en plus.
+Dans la version d’origine de l’Explorateur Galaxy, l’utilisateur ciblerait une planète avec le curseur en regard, puis appuyez sur air pour l’appeler plus près. le moyen le plus simple de porter l’expérience vers HoloLens 2 consiste à prendre ce comportement et à utiliser des rayons à la main pour sélectionner des planètes. Bien que cela soit fonctionnel, nous les avons laissés plus en plus.
 
 ### <a name="back-to-the-drawing-board"></a>Retour à la carte de dessin
 
-Nous sommes parvenus à ideate ce qui pouvait être construit en plus des interactions existantes. Le raisonnement était le suivant : bien que HoloLens 2 permette aux utilisateurs d’interagir avec des hologrammes de manière naturelle et réaliste, les hologrammes ne sont pas réels. Ainsi, tant qu’une interaction est plausible pour l’utilisateur, peu importe si cette interaction serait possible avec un vrai objet ou non, nous pouvons la rendre possible.
+Nous sommes parvenus à ideate ce qui pouvait être construit en plus des interactions existantes. le raisonnement était le suivant : bien que HoloLens 2 permette aux utilisateurs d’interagir avec des hologrammes de manière naturelle et réaliste, les hologrammes ne sont pas réels. Ainsi, tant qu’une interaction est plausible pour l’utilisateur, peu importe si cette interaction serait possible avec un vrai objet ou non, nous pouvons la rendre possible.
 
 Un concept que nous avons exploré était basé sur Telekinesis, la puissance permettant de manipuler des objets à l’esprit. Souvent vu dans les films de super héros, une personne peut se joindre et appeler un objet dans sa main ouverte. Nous nous sommes mis en œuvre avec l’idée et nous sommes parvenus avec une ébauche rapide du fonctionnement du concept.
 
@@ -89,9 +89,9 @@ Dans Picture : isabelb Kam, responsable de la conception senior, test d’un tr
 
 ### <a name="adding-affordances-for-targeting"></a>Ajout de intuitivité pour le ciblage
 
-À mesure que nous avons expérimentés sur HoloLens 2, nous avons constaté que bien que les nouvelles interactions soient naturelles et intuitives, les hologrammes restent les mêmes : sans aucune sensation de poids ou tactile. Étant donné que les hologrammes ne fournissent pas de commentaires naturels que les humains reçoivent lorsqu’ils interagissent avec les objets, nous avions besoin de les créer.
+au fur et à mesure que nous avons expérimentés sur HoloLens 2, nous avons constaté que bien que les nouvelles interactions soient naturelles et intuitives, les hologrammes restent les mêmes : sans aucune sensation de poids ou tactile. Étant donné que les hologrammes ne fournissent pas de commentaires naturels que les humains reçoivent lorsqu’ils interagissent avec les objets, nous avions besoin de les créer.
 
-Nous avons pensé aux commentaires visuels et audio que les utilisateurs seraient fournis pour les différentes étapes de leurs interactions, et puisque le mécanisme de manipulation forcée est essentiel à l’interaction avec l’Explorateur Galaxy, nous avons effectué de nombreuses itérations. L’objectif était de trouver le juste équilibre entre les retours audio et visuels pour chaque étape de l’interaction : en se concentrant sur l’objet prévu, en l’appelant à l’utilisateur, puis en le publiant. Nous avons appris qu’un plus grand nombre de retours audio et visuels était nécessaire pour renforcer l’interaction que celle utilisée pour HoloLens (First Gen).
+Nous avons pensé aux commentaires visuels et audio que les utilisateurs seraient fournis pour les différentes étapes de leurs interactions, et puisque le mécanisme de manipulation forcée est essentiel à l’interaction avec l’Explorateur Galaxy, nous avons effectué de nombreuses itérations. L’objectif était de trouver le juste équilibre entre les retours audio et visuels pour chaque étape de l’interaction : en se concentrant sur l’objet prévu, en l’appelant à l’utilisateur, puis en le publiant. nous avons appris qu’un plus grand nombre de retours audio et visuels était nécessaire pour renforcer l’interaction que nous avons utilisée pour HoloLens (première génération).
 
 ![Visual intuitivité sur les planètes](images/ge-update-planet-affordances.png)
 
@@ -190,7 +190,7 @@ Vous pouvez voir le rendu final de Jupiter dans l’Explorateur Galaxy.
 
 Notre équipe de réalité mixte Studio est composée de concepteurs, d’artistes 3D, d’experts de l’expérience utilisateur, de développeurs, d’un responsable de programme et d’une tête de Studio. Nous nous du monde entier : Belgique, Canada, Allemagne, Israël, Japon, Royaume-Uni et le États-Unis. Nous sommes une équipe pluridisciplinaire qui vient d’un arrière-plan diversifié : les jeux, à la fois traditionnels et indie, le marketing numérique, les soins de santé et la science.
 
-Nous sommes ravis de créer l’Explorateur Galaxy pour HoloLens 2 et de mettre à jour les versions HoloLens (First Gen), VR et Desktop. 
+nous sommes ravis de créer l’explorateur Galaxy pour HoloLens 2 et de mettre à jour les versions HoloLens (first gen), VR et desktop. 
 
 ![L’équipe de l’Explorateur Galaxy](images/ge-update-team-image.png)
 
