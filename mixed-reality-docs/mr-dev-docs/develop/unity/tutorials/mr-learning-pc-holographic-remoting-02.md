@@ -2,27 +2,29 @@
 title: Créer une application PC de communication à distance holographique
 description: Suivez ce cours pour découvrir comment créer une application pour PC afin d’effectuer à distance une expérience de réalité mixte depuis votre PC vers HoloLens 2.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, communication à distance holographique sur PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: ca0efe13acac4408a05ab89eb98b508e9993c5a4
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: 19c10ad0cdad70b38663f9da0f7d2a1f1702d94d
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392496"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757231"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Création d’une application PC de communication à distance holographique
 
-Dans ce tutoriel, vous allez apprendre à créer une application PC de communication à distance holographique et à la connecter à HoloLens 2 à tout moment pour visualiser du contenu 3D en réalité mixte.
+Dans ce tutoriel, vous allez apprendre à créer une application PC qui utilise la communication à distance holographique pour streamer votre travail en cours vers le HoloLens et le voir sans avoir à le créer en premier.
+
+[Apprenez les bases de la communication à distance holographique.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 ## <a name="objectives"></a>Objectifs
 
 * Configurer Unity pour la communication à distance holographique
 * Apprendre à créer et déployer l’application avec Visual Studio
-* Développer une application de communication à distance holographique et la connecter à HoloLens
+* Développement d’une application de communication à distance holographique et la connecter à HoloLens
 
 ## <a name="configuring-the-capabilities"></a>Configuration des fonctionnalités
 

@@ -2,25 +2,27 @@
 title: Bien démarrer avec la communication à distance holographique de PC
 description: Suivez ce cours pour découvrir comment diffuser en continu à distance des applications de réalité mixte de votre PC vers HoloLens 2.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutoriel, hololens, communication à distance holographique sur PC, info-bulles, suivi oculaire
 ms.localizationpriority: high
-ms.openlocfilehash: 05831ff19a998bd5e99ab5d20c3fb045a09c55e9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 53ede3db405e6f6f4ccaa20ff35847ecc9081dca
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175436"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757351"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Bien démarrer avec la communication à distance holographique de PC
 
-Bienvenue dans les tutoriels HoloLens 2. Dans cette série comprenant deux tutoriels, vous allez apprendre à créer une démonstration d’expérience de réalité mixte et à créer une application PC de communication à distance holographique.
+Bienvenue dans les tutoriels HoloLens 2. Dans cette série de deux tutoriels, vous allez apprendre à créer une démonstration d’expérience de réalité mixte et une application PC de communication à distance holographique.
+
+[Apprenez les bases de la communication à distance holographique.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 Dans ce tutoriel, vous allez découvrir comment créer une expérience de réalité mixte. Il présente les éléments d’interface utilisateur, la manipulation de modèle 3D, le découpage de modèle et les fonctionnalités de suivi oculaire.
 
-Le deuxième tutoriel, [Créer une application de communication à distance holographique](mr-learning-pc-holographic-remoting-02.md), montre comment créer une application PC de communication à distance holographique. Il présente également comment connecter l’application à HoloLens 2 à tout moment pour visualiser du contenu 3D en réalité mixte.
+Dans le second tutoriel, [Créer une application de communication à distance holographique](mr-learning-pc-holographic-remoting-02.md), vous allez apprendre à créer une application PC qui utilise la communication à distance holographique afin de streamer votre travail en cours vers le HoloLens et de le voir sans avoir à le créer en premier.
 
 ## <a name="objectives"></a>Objectifs
 
