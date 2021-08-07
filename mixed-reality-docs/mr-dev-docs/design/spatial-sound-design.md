@@ -5,13 +5,13 @@ author: kegodin
 ms.author: v-hferrone
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality, son spatial, conception, style, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, kit de configuration de la réalité mixte, gestes, interactions, atténuation
-ms.openlocfilehash: d51fbdf16d7186c386f124c773f75dacc8c157fd
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+keywords: Windows Mixed Reality, son, conception, style, casque de réalité mixte, casque Windows Mixed reality, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, mouvements, interactions, atténuation
+ms.openlocfilehash: 687811f23e11cadf6e75129098c9feb0393009f819eb961cf2f55a3208cc5f96
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489209"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208959"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>Comment utiliser le son dans des applications en réalité mixte
 
@@ -58,7 +58,7 @@ En réalité mixte, les utilisateurs peuvent interagir avec des boutons à l’a
 
 ### <a name="direct-manipulation"></a>Manipulation directe
 
-Sur HoloLens 2, le suivi articulé prend en charge la manipulation directe des éléments de l’interface utilisateur. Les sons sont importants lorsqu’il n’y a pas d’autres commentaires physiques.
+sur HoloLens 2, le suivi articulé prend en charge la manipulation directe des éléments de l’interface utilisateur. Les sons sont importants lorsqu’il n’y a pas d’autres commentaires physiques.
 
 Une *pression sur un bouton* est importante, car l’utilisateur n’obtient aucune autre indication lorsqu’il atteint le bas du trait de touche. Les indicateurs sonores de la course de la clé peuvent être de petite taille, subtile et bloqués. Comme avec les interactions de mouvement, les enfoncements de bouton doivent obtenir un son bref et tactile comme un clic. Les dépressions doivent avoir un son de clic similaire, mais avec un pas de tonalité élevé.
 * Exemple : [MRTK_ButtonPress. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
@@ -119,7 +119,7 @@ Les sons qui renforcent les *étapes progressives des actions de bouton et d'* a
 
 ### <a name="which-spatialization-technology-to-use"></a>La technologie Spatialization à utiliser
 
-Avec les haut-parleurs casque ou HoloLens, utilisez les technologies Spatialization basées sur la fonction de transfert HRTF. Ces technologies modélisent la propagation du son autour de la tête dans le monde physique. Même lorsqu’une source audio se trouve à l’extrémité de l’une des têtes, le son se propage à l’oreille lointaine avec une atténuation et un retard. Le panoramique des orateurs s’appuie uniquement sur l’atténuation et applique une atténuation totale dans l’oreille gauche lorsque les sons se trouvent sur le côté droit, et inversement. Cette technique peut ne pas être confortable pour les écouteurs « audition normale » et inaccessible pour les écouteurs qui ont un handicap auditif dans une oreille.
+avec les haut-parleurs casque ou HoloLens, utilisez les technologies spatialization basées sur la fonction de transfert HRTF. Ces technologies modélisent la propagation du son autour de la tête dans le monde physique. Même lorsqu’une source audio se trouve à l’extrémité de l’une des têtes, le son se propage à l’oreille lointaine avec une atténuation et un retard. Le panoramique des orateurs s’appuie uniquement sur l’atténuation et applique une atténuation totale dans l’oreille gauche lorsque les sons se trouvent sur le côté droit, et inversement. Cette technique peut ne pas être confortable pour les écouteurs « audition normale » et inaccessible pour les écouteurs qui ont un handicap auditif dans une oreille.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 04/20/2019
 ms.topic: article
-keywords: En réalité mixte, mains libres, point de présence, regards, interaction, conception, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de fonctionnalités de réalité mixte, entrée vocale, convivialité
-ms.openlocfilehash: 2864e58fdd8a29ae8f981b42f50735eb13a50869
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: en réalité mixte, mains libres, point de présence, regards, interaction, conception, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, entrée vocale, convivialité
+ms.openlocfilehash: 725d8886d21b42ee4643680c0dc91c1d29c25f8409b0ed0828256564dde7545c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847682"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213533"
 ---
 # <a name="hands-free"></a>Mains libres
 
@@ -47,7 +47,7 @@ Si l’application exige qu’elle soit toujours utilisée sans intervention, qu
 Si votre utilisateur cible doit passer des mains à la mains libres à sa discrétion, il est important de prendre en compte les principes suivants.
 
 ### <a name="assume-the-user-is-already-in-the-mode-that-they-want-to-switch-to"></a>Supposons que l’utilisateur est déjà dans le mode vers lequel il souhaite passer
-Par exemple, si l’utilisateur se trouve en usine, regarde une référence vidéo sur son HoloLens et décide de sélectionner une clé pour commencer à travailler, elle commence probablement à travailler sans avoir à appuyer sur un bouton pour commencer à travailler. Elle peut appeler une session vocale à l’aide d’une commande vocale, son logement sur une interface utilisateur déjà visible pour commencer son logement, ou prononcer le mot « Select » (sélectionner).
+par exemple, si l’utilisateur se trouve à l’usine, regarde une référence vidéo sur son HoloLens et décide de choisir une clé pour commencer à travailler, elle commence probablement à travailler sans qu’il soit nécessaire de cliquer sur un bouton. Elle peut appeler une session vocale à l’aide d’une commande vocale, son logement sur une interface utilisateur déjà visible pour commencer son logement, ou prononcer le mot « Select » (sélectionner).
 
 L’utilisateur peut : 
 * Passez à l’option mains libres pendant les mains libres

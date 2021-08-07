@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Windows Mixed Reality, maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
-ms.openlocfilehash: ba0064326e83f04b056c0baa2f86f718e41bedfe
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, commentaires, Hub de commentaires, bogues
+ms.openlocfilehash: c31f461adbe553a5c10e7acfff3037ea0c2b65caf2bbe63bfc234e067a6369e8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214762"
 ---
 # <a name="installing-maquette"></a>Installation de maquette
 
@@ -25,7 +25,7 @@ Le développement MaquetteScript s’effectue principalement dans VSCode. Maquet
 
 * Téléchargez et installez [VSCode](https://code.visualstudio.com). 
 
-L’extension JavaScript maquette se trouve dans [le Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-maquette.vscode-maquette-javascript).
+l’extension javascript Maquette se trouve dans la place de [marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=ms-maquette.vscode-maquette-javascript).
 
 * Exécutez la [procédure d’installation de l’extension](vscode:extension/ms-maquette.vscode-maquette-javascript).
 

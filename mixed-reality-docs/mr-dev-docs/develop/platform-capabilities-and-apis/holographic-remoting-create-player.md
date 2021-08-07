@@ -1,50 +1,50 @@
 ---
 title: Écriture d’un lecteur de communication à distance holographique
-description: Créer une application de communication à distance hologaphic personnalisée pour afficher le contenu rendu sur une machine distante à votre HoloLens 2.
+description: Créez une application de communication à distance hologaphic personnalisée pour afficher le contenu rendu sur une machine distante à votre HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, communication à distance, accès distant holographique, NuGet, manifeste de l’application, contexte du joueur, application distante, casque de la réalité mixte, casque Windows Mixed realisation, casque de la réalité virtuelle
-ms.openlocfilehash: 391650025398b4bdd89e30db1df7df5e3d6ab5f2
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: HoloLens, communication à distance, accès distant holographique, NuGet, manifeste de l’application, contexte du lecteur, application distante, casque de la réalité mixte, casque windows mixed realisation, casque de la réalité virtuelle
+ms.openlocfilehash: b395f94f6c98b20f7c0c188f11a718e6da9394de5df3404e7c703558daf526f2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810129"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190164"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Écriture d’une application de lecteur de communication à distance holographique personnalisée
 
 >[!IMPORTANT]
->Ce document décrit la création d’une application de lecteur personnalisée pour HoloLens 2. Les lecteurs personnalisés écrits pour HoloLens 2 ne sont pas compatibles avec les applications distantes écrites pour HoloLens 1. Cela implique que les deux applications doivent utiliser le package NuGet version **2. x. x**.
+>Ce document décrit la création d’une application de lecteur personnalisée pour HoloLens 2. les lecteurs personnalisés écrits pour HoloLens 2 ne sont pas compatibles avec les applications distantes écrites pour HoloLens 1. cela implique que les deux applications doivent utiliser NuGet package version **2. x. x**.
 
 En créant une application de lecteur de communication à distance holographique personnalisée, vous pouvez créer une application personnalisée capable d’afficher des [vues immersives](../../design/app-views.md) à partir d’un ordinateur distant sur votre HoloLens 2. Tout le code de cette page et des projets de travail se trouve dans le [référentiel GitHub d’exemples de communication à distance holographique](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-Un lecteur de communication à distance holographique permet à votre application d’afficher le contenu holographique [rendu](rendering.md) sur un PC de bureau ou un appareil UWP comme le Xbox avec un accès à davantage de ressources système. Une application de lecteur de communication à distance holographique diffuse des données d’entrée vers une application distante de communication à distance holographique et reçoit un affichage immersif en tant que flux vidéo et audio. La connexion est établie à l’aide du Wi-Fi standard. Pour créer une application de lecteur, utilisez un package NuGet pour ajouter la communication à distance holographique à votre application UWP. Écrivez ensuite le code pour gérer la connexion et afficher une vue immersive. 
+un lecteur de communication à distance holographique permet à votre application d’afficher le contenu holographique [rendu](rendering.md) sur un PC de bureau ou un appareil UWP, comme le Xbox One avec un accès à plus de ressources système. Une application de lecteur de communication à distance holographique diffuse des données d’entrée vers une application distante de communication à distance holographique et reçoit un affichage immersif en tant que flux vidéo et audio. La connexion est établie à l’aide du Wi-Fi standard. pour créer une application de lecteur, utilisez un package NuGet pour ajouter la communication à distance holographique à votre application UWP. Écrivez ensuite le code pour gérer la connexion et afficher une vue immersive. 
 
 ## <a name="prerequisites"></a>Prérequis
 
-Un bon point de départ est une application UWP DirectX fonctionnelle qui cible déjà l’API Windows Mixed Reality. Pour plus d’informations, consultez [vue d’ensemble du développement DirectX](../native/directx-development-overview.md). Si vous ne disposez pas d’une application existante et que vous souhaitez commencer à partir de zéro, le [modèle de projet holographique C++](../native/creating-a-holographic-directx-project.md) est un bon point de départ.
+un bon point de départ est une application UWP DirectX fonctionnelle qui cible déjà l’API Windows Mixed Reality. Pour plus d’informations, consultez [vue d’ensemble du développement DirectX](../native/directx-development-overview.md). Si vous ne disposez pas d’une application existante et que vous souhaitez commencer à partir de zéro, le [modèle de projet holographique C++](../native/creating-a-holographic-directx-project.md) est un bon point de départ.
 
 >[!IMPORTANT]
 >Toute application utilisant la communication à distance holographique doit être créée pour utiliser un [cloisonnement](/windows/win32/com/multithreaded-apartments)multithread. L’utilisation d’un [cloisonnement à thread unique](/windows/win32/com/single-threaded-apartments) est prise en charge, mais entraîne des performances non optimales et éventuellement des interruptions pendant la lecture. Lors de l’utilisation de C++/WinRT [WinRT :: init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) un cloisonnement multithread est la valeur par défaut.
 
-## <a name="get-the-holographic-remoting-nuget-package"></a>Procurez-vous le package NuGet de communication à distance holographique
+## <a name="get-the-holographic-remoting-nuget-package"></a>procurez-vous le package NuGet de communication à distance holographique
 
-Les étapes suivantes sont requises pour ajouter le package NuGet à un projet dans Visual Studio.
+les étapes suivantes sont requises pour ajouter le package NuGet à un projet dans Visual Studio.
 1. Ouvrez le projet dans Visual Studio.
-2. Cliquez avec le bouton droit sur le nœud du projet et sélectionnez **gérer les packages NuGet...**
+2. cliquez avec le bouton droit sur le nœud du projet et sélectionnez **gérer les Packages NuGet...**
 3. Dans le volet qui s’affiche, sélectionnez **Parcourir** , puis recherchez « accès à distance holographique ».
 4. Sélectionnez **Microsoft. holographique. Remoting**, assurez-vous de choisir la version la plus récente de **2. x. x** , puis sélectionnez **installer**.
 5. Si la boîte de dialogue **Aperçu** s’affiche, sélectionnez **OK**.
 6. Sélectionnez **J’accepte** lorsque la boîte de dialogue contrat de licence s’affiche.
 
 >[!IMPORTANT]
-><a name="idl"></a>L' ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` intérieur du package NuGet contient une documentation détaillée sur l’API exposée par la communication à distance holographique.
+><a name="idl"></a>l' ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` intérieur du package NuGet contient une documentation détaillée sur l’API exposée par la communication à distance holographique.
 
 ## <a name="modify-the-packageappxmanifest-of-the-application"></a>Modifier le package. appxmanifest de l’application
 
-Pour que l’application prenne en charge les Microsoft.Holographic.AppRemoting.dll ajoutées par le package NuGet, les étapes suivantes doivent être effectuées sur le projet :
+pour que l’application prenne en charge l' Microsoft.Holographic.AppRemoting.dll ajoutée par le package NuGet, les étapes suivantes doivent être effectuées sur le projet :
 
 1. Dans le Explorateur de solutions cliquez avec le bouton droit sur le fichier **Package. appxmanifest** , puis sélectionnez **Ouvrir avec...**
 2. Sélectionnez **éditeur XML (texte)** , puis cliquez sur **OK**
@@ -92,7 +92,7 @@ m_playerContext = winrt::Microsoft::Holographic::AppRemoting::PlayerContext::Cre
 ```
 
 >[!WARNING]
->La communication à distance holographique fonctionne en remplaçant le runtime Windows Mixed Reality qui fait partie de Windows par un Runtime spécifique à distance. Cette opération est effectuée lors de la création du contexte du joueur. Pour cette raison, tout appel sur une API de réalité mixte Windows avant de créer le contexte du joueur peut entraîner un comportement inattendu. L’approche recommandée consiste à créer le contexte du joueur le plus tôt possible avant d’interagir avec une API de réalité mixte. Ne combinez jamais des objets créés ou récupérés par le biais d’une API Windows Mixed Reality avant l’appel à ```PlayerContext::Create``` avec des objets créés ou récupérés par la suite.
+>la communication à distance holographique fonctionne en remplaçant le runtime Windows Mixed Reality qui fait partie de Windows avec un runtime spécifique à distance. Cette opération est effectuée lors de la création du contexte du joueur. pour cette raison, tout appel sur une API de Windows Mixed Reality avant de créer le contexte du joueur peut entraîner un comportement inattendu. L’approche recommandée consiste à créer le contexte du joueur le plus tôt possible avant d’interagir avec une API de réalité mixte. ne combinez jamais des objets créés ou récupérés par le biais d’une API Windows Mixed Reality avant l’appel à ```PlayerContext::Create``` avec des objets créés ou récupérés par la suite.
 
 Ensuite, vous pouvez créer le HolographicSpace en appelant [HolographicSpace. CreateForCoreWindow](/uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow).
 
@@ -100,13 +100,13 @@ Ensuite, vous pouvez créer le HolographicSpace en appelant [HolographicSpace. C
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(window);
 ```
 
-## <a name="connect-to-the-remote-app"></a>Se connecter à l’application distante
+## <a name="connect-to-the-remote-app"></a>Connecter à l’application distante
 
 Une fois que l’application de lecteur est prête pour le rendu du contenu, une connexion à l’application distante peut être établie.
 
 La connexion peut être établie de l’une des manières suivantes :
-1) L’application de lecteur s’exécutant sur HoloLens 2 se connecte à l’application distante.
-2) L’application distante se connecte à l’application de lecteur s’exécutant sur HoloLens 2.
+1) l’application de lecteur s’exécutant sur HoloLens 2 se connecte à l’application distante.
+2) L’application distante se connecte à l’application du lecteur s’exécutant sur HoloLens 2.
 
 Pour vous connecter à partir de l’application du lecteur à l’application distante, appelez la ```Connect``` méthode sur le contexte du lecteur en spécifiant le nom d’hôte et le port. Le port par défaut est **8265**.
 
@@ -251,7 +251,7 @@ Pour plus d’informations, consultez la ```PlayerFrameStatistics``` documentati
 Les canaux de données personnalisés peuvent être utilisés pour envoyer des données utilisateur sur la connexion de communication à distance déjà établie. Pour plus d’informations, consultez [canaux de données personnalisés](holographic-remoting-custom-data-channels.md) .
 
 ## <a name="see-also"></a>Voir aussi
-* [Écriture d’une application distante holographique à distance à l’aide des API Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
+* [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Canaux de données de communication à distance holographique personnalisés](holographic-remoting-custom-data-channels.md)
 * [Établissement d’une connexion sécurisée avec la communication à distance holographique](holographic-remoting-secure-connection.md)

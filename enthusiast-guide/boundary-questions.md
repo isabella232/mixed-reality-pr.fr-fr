@@ -1,25 +1,25 @@
 ---
 title: FAQ sur les limites
-description: Résolution des problèmes avancés de Windows Mixed Reality pour les questions de limite qui vont au-delà de notre documentation de support technique standard.
+description: Advanced Windows Mixed Reality la résolution des problèmes liés aux questions de limite qui vont au-delà de notre documentation de support technique standard.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, limite
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, dépannage, erreurs, aide, Support, limite
 appliesto:
 - Windows 10
-ms.openlocfilehash: 8dba6ebb5f74b229cea4ea2d5e1ac0a5e70a3f57
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: c1d6a10ae6ed50f7b9088b26c78cde4ccf8386ea0603c39e107ed23910db9308
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725280"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187969"
 ---
 # <a name="boundary-faqs"></a>FAQ sur les limites
 
 ## <a name="whats-a-boundary-and-why-should-i-create-one"></a>Qu’est-ce qu’une limite et pourquoi dois-je en créer une ?
 
-Une limite définit la zone que vous pouvez déplacer dans tout en portant votre casque Windows Mixed Reality. Il est important de créer une limite pour vous aider à éviter les obstacles que vous ne pouvez pas voir dans le casque. La limite ressemble à un contour blanc à l’intérieur de la réalité mixte et s’affiche lorsque vous y arrivez. Quand vous le voyez, ralentissez vos mouvements et évitez de franchir la limite ou d’étendre vos membres au-delà.
+une limite définit la zone que vous pouvez déplacer dans tout en portant votre casque Windows Mixed Reality. Il est important de créer une limite pour vous aider à éviter les obstacles que vous ne pouvez pas voir dans le casque. La limite ressemble à un contour blanc à l’intérieur de la réalité mixte et s’affiche lorsque vous y arrivez. Quand vous le voyez, ralentissez vos mouvements et évitez de franchir la limite ou d’étendre vos membres au-delà.
 
 La zone à l’intérieur de la limite doit être exempte de meubles, de luminaires faiblement suspendus, de ventilateurs de plafond, et ainsi de suite. vous ne pourrez donc pas vous heurter à quoi que ce soit. En [savoir plus sur l’intégrité et la sécurité dans Windows Mixed Reality](wmr-health-safety-comfort.md).
 
@@ -50,14 +50,14 @@ Si vous avez déjà utilisé l’appareil dans cet environnement et configuré u
 
 * Assurez-vous que la salle a suffisamment de lumière.
 * Assurez-vous d’avoir porté l’appareil et recherché dans la salle. L’appareil doit observer votre environnement pour savoir où il se trouve. Il ne trouve pas vos limites s’il est assis sur un bureau ou une table.
-* Débranchez l’appareil, fermez Windows Mixed Reality et rebranchez-le.
+* débranchez l’appareil, fermez Windows Mixed Reality, puis rebranchez-le.
 * Si un événement de l’environnement a changé, l’appareil peut ne plus le reconnaître. Configurez une nouvelle limite.
 
 Si ces étapes ne résolvent pas le problème, supprimez les données de votre environnement et réinstallez la limite.
 
 ## <a name="the-system-is-presenting-me-with-ui-that-asks-me-to-choose-setup-for-all-experiences-or-seatedstanding-and-i-see-my-bounds"></a>Le système me présente avec l’interface utilisateur qui me demande de choisir la configuration pour toutes les expériences ou assis/debout, et je vois mes limites
 
-La recherche des limites de l’appareil prend trop de temps. Vous pouvez contourner ce message en choisissant l’option permettant d’utiliser une limite et vous serez dirigé vers la page d’hébergement de la réalité Windows Mixed avec vos limites présentes.
+La recherche des limites de l’appareil prend trop de temps. vous pouvez contourner ce message en choisissant l’option permettant d’utiliser une limite et vous serez dirigé vers votre Windows Mixed Reality d’hébergement avec vos limites présentes.
 
 ## <a name="i-often-see-a-message-saying-ive-lost-my-bounds"></a>Je vois souvent un message indiquant « j’ai perdu mes limites »
 
@@ -65,7 +65,7 @@ Le système de suivi fait un suivi du temps et de l’identification de votre en
 
 1. Assurez-vous que la salle a suffisamment de lumière.
 2. Réexécutez le programme d’installation si vous avez récemment redécoré ou remodelé la salle.
-3. Débranchez l’appareil, fermez Windows Mixed Reality et rebranchez-le.
+3. débranchez l’appareil, fermez Windows Mixed Reality, puis rebranchez-le.
 4. Effacez les données de votre environnement et réinstallez l’appareil.
 5. Si le message persiste, contactez le support technique.
 

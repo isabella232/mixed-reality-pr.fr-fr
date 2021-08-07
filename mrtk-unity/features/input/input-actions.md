@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, InputActions,
-ms.openlocfilehash: cf6ce2af304ee1cd706d0111d66a97018113fb09
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: ffa8f201097c8d85b1ea19613b608487529412f3686ddf077f1acc1c34e93c1f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211251"
 ---
 # <a name="input-actions"></a>Actions d’entrée
 

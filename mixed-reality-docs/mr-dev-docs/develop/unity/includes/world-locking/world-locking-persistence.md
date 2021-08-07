@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f937b705f10cc4a287600349283ecaed4ae44666
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112908062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208853"
 ---
 # <a name="world-locking-tools-recommended"></a>[Outils de verrouillage universel (recommandé)](#tab/wlt)
 
@@ -29,7 +29,7 @@ Pour **unity 2020 et OpenXR**:
 using Microsoft.MixedReality.ARSubsystems.XRAnchorStore
 ```
 
-ou **unity 2019/2020 + plug-in XR Windows**: 
+ou **unity 2019/2020 + Windows plug-in XR**: 
 
 ```cs 
 using UnityEngine.XR.WindowsMR.XRAnchorStore
@@ -68,7 +68,7 @@ Pour charger le XRAnchorStore avec **unity 2020 et OpenXR**, utilisez la méthod
 public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
 ```
 
-Pour charger le XRAnchorStore avec **unity 2019/2020 et le plug-in Windows XR**, utilisez la méthode d’extension sur XRReferencePointSubsystem (unity 2019) ou XRAnchorSubsystem (unity 2020), le sous-système d’un ARReferencePointManager/ARAnchorManager :
+pour charger le XRAnchorStore avec **unity 2019/2020 et le plug-in Windows XR**, utilisez la méthode d’extension sur XRReferencePointSubsystem (unity 2019) ou XRAnchorSubsystem (unity 2020), le sous-système d’un ARReferencePointManager/ARAnchorManager :
 
 ```cs
 // Unity 2019 + Windows XR Plugin
@@ -87,7 +87,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
 ```
 
-ou avec **unity 2019/2020 et le plug-in XR de Windows**:
+ou avec **unity 2019/2020 et le plug-in XR Windows**:
 
 ``` cs
 // Unity 2019
@@ -193,7 +193,7 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="persisting-holograms-for-multiple-devices"></a>Persistance des hologrammes pour plusieurs appareils
 
-Vous pouvez utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre Cloud durable à partir d’un WorldAnchor local, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android, même si ces appareils ne sont pas présents simultanément.  Étant donné que les ancres Cloud sont persistantes, plusieurs périphériques peuvent voir le contenu affiché par rapport à cette ancre dans le même emplacement physique.
+vous pouvez utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre cloud durable à partir d’un WorldAnchor local, que votre application peut ensuite localiser sur plusieurs HoloLens, iOS et Android, même si ces appareils ne sont pas présents simultanément.  Étant donné que les ancres Cloud sont persistantes, plusieurs périphériques peuvent voir le contenu affiché par rapport à cette ancre dans le même emplacement physique.
 
 Pour commencer à créer des expériences partagées dans Unity, essayez les Démarrages rapides de 5 minutes d' <a href="/azure/spatial-anchors/unity-overview" target="_blank">Unity spatiales Azure Unity</a>.
 

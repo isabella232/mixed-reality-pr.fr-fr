@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, suivi de l’environnement, TMP,
-ms.openlocfilehash: 7aab167f2d850a4bca88a2cc40aae4f3cc50fb4b
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 48841ee02e5208dcf8363b62c03415797017215c3a52231b3417103978ffc66e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213422"
 ---
 # <a name="hologram-stabilization"></a>Stabilisation d’hologramme
 

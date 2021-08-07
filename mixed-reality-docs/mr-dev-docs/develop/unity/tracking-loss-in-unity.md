@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, perte de suivi, image de perte de suivi, interrogation, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: fe11c88bec60042901bd7ebb5c55116da97b6e28f0e44e889ef517a03d67245a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009849"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211351"
 ---
 # <a name="tracking-loss-in-unity"></a>Suivi des pertes dans Unity
 
@@ -21,11 +21,11 @@ En guise d’alternative, l’utilisateur peut gérer manuellement cette transit
 
 ## <a name="default-handling"></a>Gestion par défaut
 
-La boucle de mise à jour et tous les messages et événements s’arrêtent pendant la durée du suivi de la perte par défaut. En même temps, une image sera affichée à l’utilisateur. Vous pouvez personnaliser cette image en accédant à modifier >paramètres->Player, en cliquant sur image de l’écran de démarrage et en définissant l’image de perte de suivi holographique.
+La boucle de mise à jour et tous les messages et événements s’arrêtent pendant la durée du suivi de la perte par défaut. En même temps, une image sera affichée à l’utilisateur. vous pouvez personnaliser cette image en accédant à Edit->Paramètres->Player, en cliquant sur image de l’écran de démarrage et en définissant l’image de perte de suivi holographique.
 
 ## <a name="manual-handling"></a>Gestion manuelle
 
-Pour gérer manuellement le suivi des pertes, vous devez accéder à **modifier** les  >  **paramètres**  >    >  du projet plateforme Windows universelle de l'**onglet Paramètres**  >  de l'**image de démarrage**  >  **Windows holographique** et décocher « en cas de perte de suivi et d’affichage de l’image ». Après quoi, vous devez gérer les modifications de suivi avec les API spécifiées ci-dessous.
+pour gérer manuellement le suivi des pertes, vous devez accéder à **modifier**  >  **Project Paramètres**  >  **lecteur**  >  **plateforme Windows universelle paramètres onglet**  >  de **démarrage Image** de l’écran d’accueil  >  **Windows holographique** et décocher « en cas de suspension de perte de suivi et d’affichage de l’image ». Après quoi, vous devez gérer les modifications de suivi avec les API spécifiées ci-dessous.
 
 **Espace de noms :** *UnityEngine. XR. WSA*<br>
 **Type :** *WorldManager*

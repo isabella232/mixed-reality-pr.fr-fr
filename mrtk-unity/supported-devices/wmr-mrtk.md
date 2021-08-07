@@ -1,18 +1,18 @@
 ---
-title: déploiement sur des HoloLens et des casques WMR
+title: Déploiement sur des casques Hololens et WMR
 description: Documentation pour créer et déployer des applications sur différents appareils.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Visual Studio
-ms.openlocfilehash: 137e1b699e9a0cda1e8a454a6c3219b581fa71b4
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 622c7ca4b9c527630b5677fe377d1d3108bdfe08c9dc616bfd4d3256b83b9ab0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209476"
 ---
-# <a name="deploying-to-hololens-and-wmr-headsets"></a>déploiement sur des HoloLens et des casques WMR
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>Déploiement sur des casques Hololens et WMR
 
 il existe deux façons de déployer des applications générées avec MRTK sur votre appareil windows, la plateforme universels Windows (UWP) et la plateforme autonome. les applications générées pour HoloLens 1 ou HoloLens 2 doivent cibler uwp, tandis que les applications conçues pour les casques WMR peuvent cibler uwp ou autonome.
 
@@ -25,8 +25,8 @@ vous trouverez des Instructions sur la création et le déploiement de pour **Ho
 >
 >| Plateforme | Configuration | Architecture | Cible |
 |---|---|---|---|
-| HoloLens 2 | Release ou Master | ARM64 | Périphérique |
-| HoloLens 1 | Release ou Master | x86 | Périphérique |
+| HoloLens 2 | Release ou Master | ARM64 | Appareil |
+| HoloLens 1 | Release ou Master | x86 | Appareil |
 | Casques WMR | Release ou Master | x64 | Ordinateur local |
 
 **Conseil :** lors de la génération pour HoloLens 1, HoloLens 2 ou WMR, il est recommandé que les paramètres de build « version du kit de développement logiciel (SDK) cible » et « version de plateforme minimale » se présentent comme dans l’image ci-dessous :

@@ -1,19 +1,19 @@
 ---
 title: Envoyer des bogues et des commentaires
-description: Aidez-nous à améliorer Windows Mixed Reality en remplissant les commentaires à l’aide des catégories appropriées dans l’application Hub de commentaires.
+description: aidez-nous à améliorer Windows Mixed Reality en remplissant vos commentaires à l’aide des catégories appropriées dans l’application Hub de commentaires.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 9237a9e4d537a15ffe4369d589e1fd80e3881891
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b4ba5cf16aec84fa6c34ae2454ebfefa56512a04e4845dee0c3c894c4976cc53
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188946"
 ---
 # <a name="filing-bugs-and-feedback"></a>Envoyer des bogues et des commentaires
 
@@ -25,13 +25,13 @@ L’équipe d’ingénierie utilise le même mécanisme pour le suivi et la rés
 
 Assurez-vous que votre ordinateur est configuré pour fournir des données complètes pour les commentaires et les Diagnostics. Voici comment vérifier le paramètre sur votre ordinateur avant de vous envoyer des commentaires :
 
-1. Ouvrez l’application **paramètres** Windows.
+1. ouvrez l’application **Paramètres** Windows.
 2. Sélectionnez on **Privacy**.
-3. Accédez à **commentaires & Diagnostics** dans le volet gauche, qui a été renommé pour **Diagnostics & commentaires** dans les versions récentes de Windows Insider.
+3. accédez à **commentaires & diagnostics** dans le volet gauche, qui a été renommé pour **diagnostics & commentaires** dans les builds récentes Windows insider de Windows.
 4. Sous **Sélectionnez la quantité de données que vous envoyez à Microsoft**, sélectionnez **complète** si elle n’est pas déjà sélectionnée.
 5. Veillez à redémarrer votre ordinateur et répétez les étapes pour reproduire votre problème avant de remplir les commentaires.
 
-## <a name="how-to-file-feedback-for-windows-mixed-reality-immersive-headsets-on-pc"></a>Comment envoyer des commentaires sur des casques immersifs Windows Mixed Reality sur PC
+## <a name="how-to-file-feedback-for-windows-mixed-reality-immersive-headsets-on-pc"></a>comment envoyer des commentaires pour Windows Mixed Reality des casques immersifs sur PC
 
 1. Assurez-vous que le casque immersif est connecté à votre PC.
 2. Lancez **Feedback Hub** sur le bureau avec le HMD connecté.
@@ -47,7 +47,7 @@ Assurez-vous que votre ordinateur est configuré pour fournir des données compl
    | Applications             | Problèmes avec une application spécifique.                                                   |
    | Développeur        | Problèmes lors de la création ou de l’exécution d’une application pour la réalité mixte.                               |
    | Appareil           | Problèmes avec le HMD lui-même.                                                           |
-   | Expérience personnelle  | Problèmes avec votre environnement VR : interactions avec la page d’hébergement de Windows Mixed Reality.    |
+   | Expérience personnelle  | problèmes avec votre environnement VR : interactions avec le Windows Mixed Reality la page d’hébergement.    |
    | Entrée            | Problèmes liés aux méthodes d’entrée : contrôleurs de mouvement, reconnaissance vocale, manette de la souris et du clavier.|
    | Configurer           | Tout ce qui vous empêche de configurer l’appareil.                           |
    | Tous les autres problèmes | Autre chose.                                                                        |

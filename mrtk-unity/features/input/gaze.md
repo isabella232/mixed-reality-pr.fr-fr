@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, point de regard
-ms.openlocfilehash: 95dad85ca8154d35f73906b53019d3a52ced546f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a9d97ef73a7014a46001cbd42281c5ab28f6cf425dfd7605ce5b3c8c7fc45198
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208430"
 ---
 # <a name="gaze"></a>Pointage du regard
 
@@ -42,7 +42,7 @@ Il est généralement recommandé d’utiliser le stock GazeProvider (et les pro
 
 Par défaut, le GazeProvider MRTK utilise le centre du cadre de l’appareil photo comme origine du regard. certaines plateformes, comme Windows Mixed Reality sur HoloLens 2, fournissent une variante de regard définie. Cela est géré par le biais du `Use Head Gaze Override` paramètre dans les paramètres du point de regard. Lorsque cette option est activée, l’autre remplacement de point d’arrêt est utilisé. Lorsque cette option est désactivée, l’origine du centre de frames par défaut est utilisée. en particulier, pour HoloLens 2, l’angle de regard sera augmenté de plusieurs degrés pour prendre en compte le confort de l’utilisateur lors de l’utilisation de son chef pour le ciblage.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 ### <a name="how-get-the-current-gaze-target"></a>Obtention de la cible du regard en cours
 

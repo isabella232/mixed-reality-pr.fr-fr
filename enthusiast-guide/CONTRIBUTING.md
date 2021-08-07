@@ -1,19 +1,19 @@
 ---
 title: Instructions de contribution
-description: Découvrez les étapes et les instructions de base pour contribuer au Guide du passionné de Windows Mixed Reality. Nous apprécions vos commentaires, modifications, ajouts et aide.
+description: découvrez les étapes et les instructions de base pour contribuer au Guide du passionné de Windows Mixed Reality. Nous apprécions vos commentaires, modifications, ajouts et aide.
 author: mattwojo
 ms.author: mattwoj
 ms.date: 09/16/2020
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 28ca1653019252c749fe5977a06bff4503800c10
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fd47e806a1ac14d85f503d7d4f799b232cbd3e102c3d4494d5704082bf0e08ea
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188101"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Contribution au Guide du passionné de réalité mixte
 
@@ -26,12 +26,12 @@ Nous vous remercions de votre intérêt dans le Guide du passionné. Nous appré
 
 ## <a name="before-you-start"></a>Avant de commencer
 
-Si vous n’en avez pas déjà un, vous devez [créer un compte GitHub](https://github.com/join).
+si vous n’en avez pas déjà un, vous devez [créer un compte GitHub](https://github.com/join).
 
 >[!NOTE]
->Si vous êtes un employé de Microsoft, liez votre compte GitHub à votre alias Microsoft sur le [portail Open source de Microsoft](https://repos.opensource.microsoft.com/). Rejoignez les organisations **« Microsoft »** et **« MicrosoftDocs »** .
+>si vous êtes un employé de microsoft, liez votre compte GitHub à votre alias microsoft sur le [portail Open Source de microsoft](https://repos.opensource.microsoft.com/). Rejoignez les organisations **« Microsoft »** et **« MicrosoftDocs »** .
 
-Lors de la configuration de votre compte GitHub, nous vous recommandons également les précautions de sécurité suivantes :
+quand vous configurez votre compte GitHub, nous vous recommandons également les précautions de sécurité suivantes :
 - Créez un [mot de passe fort pour votre compte GitHub](https://github.com/settings/admin).
 - Activez [l’authentification à deux facteurs](https://github.com/settings/two_factor_authentication/configure).
 - Enregistrez vos [codes de récupération](https://github.com/settings/auth/recovery-codes) dans un endroit sûr.
@@ -40,14 +40,14 @@ Lors de la configuration de votre compte GitHub, nous vous recommandons égaleme
    - Nous vous recommandons de télécharger une image de profil, car une miniature est affichée sur les pages docs auxquelles vous contribuez.
 - Si vous envisagez d’utiliser la ligne de commande, vous pouvez configurer [git Credential Manager pour Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest). De cette façon, vous n’aurez pas à entrer votre mot de passe chaque fois que vous effectuerez une contribution.
 
-Le système de publication est lié à GitHub. ces étapes sont donc importantes. Vous êtes alors inscrit comme auteur ou collaborateur pour chaque article à l’aide de votre alias GitHub.
+le système de publication étant lié à GitHub, ces étapes sont importantes. vous êtes alors inscrit comme auteur ou contributeur à chaque article à l’aide de votre alias de GitHub.
 
 ## <a name="how-to-make-a-change"></a>Comment apporter une modification
 
-| Pour suggérer une modification de la documentation, procédez comme suit : | Captures d’écran |
+| Pour suggérer une modification de la documentation, procédez comme suit : | Captures d’écran. |
 | :------------------- | :--------: |
 | 1. Si vous affichez une page Docs.microsoft.com, cliquez sur le bouton **modifier** en haut à droite de la page.  Vous êtes redirigé vers le fichier source Markdown correspondant dans le [dépôt GitHub](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide). | ![Bouton modifier](images/edit_button.jpg) |
-| 2. Si vous n’avez pas encore de compte GitHub, cliquez sur s' **inscrire** dans le coin supérieur droit et créez un nouveau compte. | ![Bouton d’inscription](images/signup-for-github-button.png)|
+| 2. si vous n’avez pas encore de compte GitHub, cliquez sur s' **inscrire** dans le coin supérieur droit et créez un nouveau compte. | ![Bouton d’inscription](images/signup-for-github-button.png)|
 | 3. dans la page GitHub correspondante qui s’ouvre, cliquez sur modifier (l’icône représentant un crayon). | ![Bouton crayon](images/pencil_button.jpg)|
 | 4. dans le volet modifier le fichier, [Mettez à jour les métadonnées des fichiers](#updating-metadata) et utilisez la langue démarque pour modifier le contenu. ([Procédure d’écriture de la démarque.](https://help.github.com/articles/basic-writing-and-formatting-syntax/))| ![Modifier le fichier](images/edit-in-github.png)|
 | 5. cliquez sur Aperçu des modifications pour vérifier que la mise en forme se présente comme prévu. | ![Prévisualiser les modifications](images/edit-in-github.png)|
@@ -62,7 +62,7 @@ Une fois que vous avez envoyé des modifications (via une requête de tirage), e
 Mettez à jour les métadonnées en haut de chaque article :
    * **titre**: titre de la page qui s’affiche sous l’onglet navigateur lorsque l’article est affiché. Les titres de page sont utilisés pour le SEO et l’indexation. par conséquent, ne modifiez pas le titre, sauf si cela est nécessaire (bien que cela soit moins critique avant que la documentation ne soit publique).
    * **Description**: rédigez une brève description du contenu de l’article, qui améliore le SEO et la découverte.
-   * **auteur**: Si vous êtes le propriétaire principal de la page, ajoutez votre alias GitHub ici.
+   * **auteur**: si vous êtes le propriétaire principal de la page, ajoutez votre alias de GitHub ici.
    * **ms. Author**: Si vous êtes le propriétaire principal de la page, ajoutez votre alias Microsoft ici (vous n’en avez pas besoin @microsoft.com , juste l’alias).
    * **ms. date**: mettez à jour la date si vous ajoutez du contenu majeur à la page, mais pas pour des correctifs tels que la clarification, la mise en forme, la grammaire ou l’orthographe.
    * **Mots clés**: aide sur les mots clés dans SEO (optimisation du moteur de recherche). Ajoutez des mots clés, séparés par une virgule et un espace, qui sont spécifiques à votre article, mais pas de ponctuation après le dernier mot clé de votre liste. Vous n’avez pas besoin d’ajouter des mots clés globaux qui s’appliquent à tous les articles, car ceux-ci sont gérés ailleurs. 
@@ -85,13 +85,13 @@ Pour ajouter une redirection à .openpublishing.redirection.jssur, ajoutez une e
 
 - `source_path`Est le chemin d’accès relatif au référentiel relatif à l’ancien article que vous supprimez. Assurez-vous que le chemin commence par `mixed-reality-docs/enthusiast-guide` et se termine par `.md` .
 - `redirect_url`Est l’URL publique relative de l’ancien article vers le nouvel article. Assurez-vous que cette URL **ne** contient `mixed-reality-docs/enthusiast-guide` `.md` pas ou, car elle fait référence à l’URL publique et non au chemin d’accès au référentiel. La liaison à une section dans le nouvel article à l’aide de `#section` est autorisée. Vous pouvez également utiliser un chemin d’accès absolu à un autre site, si nécessaire.
-- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. La valeur par défaut est `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
+- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. Par défaut, il s’agit de `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui ne couvre qu’une partie du même contenu.
 
 Si vous ajoutez une redirection, veillez à supprimer également l’ancien fichier.
 
 ### <a name="creating-a-new-article"></a>Création d’un article
 
-Utilisez le flux de travail suivant pour *créer de nouveaux articles* dans la documentation référentiel via github dans un navigateur Web :
+utilisez le flux de travail suivant pour *créer de nouveaux articles* dans la documentation référentiel via GitHub dans un navigateur web :
 
 1. Créez une fourche à partir de la branche « master » MicrosoftDocs/Mixed-Real/Tree/docs/passionné-Guide (à l’aide du bouton de **branchement** dans le coin supérieur droit).
 
@@ -128,7 +128,7 @@ Utilisez le flux de travail suivant pour *créer de nouveaux articles* dans la d
 
 ## <a name="working-with-branches"></a>Utilisation des branches
 
-Le [référentiel github du Guide du adepte de la réalité mixte](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) utilise deux branches parentes principales : [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), ce contenu peut être consulté sur le [site intermédiaire](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)et en [direct](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), pour le contenu qui s’affiche sur le [site en ligne](/windows/mixed-reality/enthusiast-guide).
+le [Guide du passionné de la réalité mixte GitHub référentiel](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) utilise deux branches parentes principales [: Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), ce contenu peut être consulté sur le [site intermédiaire](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)et en [direct](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), pour le contenu qui s’affiche sur le [site en ligne](/windows/mixed-reality/enthusiast-guide).
 
 Lorsque vous faites des contributions, soumettez votre demande de tirage (PR) à la branche **principale** . Cette branche qui peut être visualisée sur le site intermédiaire ne doit contenir que des contributions prêtes pour publication sur le site actif. Vous pouvez également créer et soumettre une branche avec votre propre nom de branche unique, qui peut être sélectionné et affiché dans le site intermédiaire. (La branche **active** est uniquement autorisée à être utilisée par les administrateurs de contenu.)
 
@@ -144,14 +144,14 @@ Les ressources suivantes vous permettront d’apprendre à modifier la documenta
 
 En raison de la façon dont les tableaux de styles docs.microsoft.com, ils n’ont pas de bordures ou de styles personnalisés, même si vous essayez le style CSS en ligne. Il semblera fonctionner pendant une période de temps limitée, mais la plateforme finira par supprimer le style de la table. Vous devez donc anticiper et garder vos tables simples. [Voici un site qui simplifie les tableaux de démarques](https://www.tablesgenerator.com/markdown_tables).
 
-L' [extension docs de démarque pour Visual Studio code](/teamblog/docs-extension) facilite également la génération de table si vous utilisez [Visual Studio code (voir ci-dessous)](#using-visual-studio-code) pour modifier la documentation.
+l' [Extension Docs de démarque pour Visual Studio Code](/teamblog/docs-extension) facilite également la génération de table si vous utilisez [Visual Studio Code (voir ci-dessous)](#using-visual-studio-code) pour modifier la documentation.
 
-### <a name="adding-images"></a>Ajouter des images
+### <a name="adding-images"></a>Ajout d’images
 
 Vous devez charger vos images dans le dossier « Mixed-Real-docs/images » dans référentiel, puis les référencer de manière appropriée dans l’article. Les images s’affichent automatiquement à la taille maximale, ce qui signifie que les images volumineuses remplissent toute la largeur de l’article. Nous vous recommandons de prédimensionner vos images avant de les charger. La largeur recommandée est comprise entre 600 et 700 pixels, même si vous devez monter ou diminuer la taille s’il s’agit d’une capture d’écran dense ou d’une fraction d’une capture d’écran, respectivement.
 
 >[!IMPORTANT]
->Vous pouvez uniquement charger des images sur vos référentiel dupliqués avant la fusion. Par conséquent, si vous envisagez d’ajouter des images à un article, vous devez [utiliser Visual Studio code](#using-visual-studio-code) pour ajouter d’abord les images au dossier « images » de votre branche, ou vous assurer que vous avez effectué les opérations suivantes dans un navigateur Web :
+>Vous pouvez uniquement charger des images sur vos référentiel dupliqués avant la fusion. par conséquent, si vous envisagez d’ajouter des images à un article, vous devez [utiliser Visual Studio Code](#using-visual-studio-code) pour ajouter d’abord les images au dossier « images » de votre branche, ou vous assurer que vous avez effectué les opérations suivantes dans un navigateur web :
 >
 >1. A fait la duplication du référentiel MicrosoftDocs/Mixed-Reality.
 >2. Modification de l’article dans votre fourche.
@@ -162,7 +162,7 @@ Vous devez charger vos images dans le dossier « Mixed-Real-docs/images » dan
 
 ## <a name="previewing-your-work"></a>Aperçu de votre travail
 
-Pendant la modification dans GitHub via un navigateur Web, vous pouvez sélectionner l’onglet d' **Aperçu** près du haut de la page pour afficher un aperçu de votre travail avant de le valider. 
+pendant la modification de GitHub via un navigateur web, vous pouvez sélectionner l’onglet d' **aperçu** près du haut de la page pour afficher un aperçu de votre travail avant de le valider. 
 
 >[!NOTE]
 >L’aperçu de vos modifications sur review.docs.microsoft.com est uniquement disponible pour les employés de Microsoft
@@ -177,15 +177,15 @@ La modification dans le navigateur est le moyen le plus simple pour apporter des
 - Vous n’avez pas de lien intelligent vers d’autres articles (vous devez taper manuellement le nom de fichier de l’article).
 - Il peut être laborieux de charger et de référencer des images.
 
-Si vous préférez ne pas traiter ces problèmes, utilisez un client de bureau comme [Visual Studio code](https://code.visualstudio.com/) avec quelques [Extensions utiles](#useful-extensions) pour contribuer.
+si vous préférez ne pas traiter ces problèmes, utilisez un client de bureau comme [Visual Studio Code](https://code.visualstudio.com/) avec quelques [extensions utiles](#useful-extensions) pour contribuer.
 
 ## <a name="using-visual-studio-code"></a>Utilisation de Visual Studio Code
 
-Pour les raisons mentionnées [ci-dessus](#editing-in-the-browser-vs-editing-with-a-desktop-client), vous préférerez peut-être utiliser un client de bureau pour modifier la documentation au lieu d’un navigateur Web. Nous vous recommandons d’utiliser [Visual Studio code](https://code.visualstudio.com/).
+Pour les raisons mentionnées [ci-dessus](#editing-in-the-browser-vs-editing-with-a-desktop-client), vous préférerez peut-être utiliser un client de bureau pour modifier la documentation au lieu d’un navigateur Web. Nous vous recommandons d’utiliser [Visual Studio Code](https://code.visualstudio.com/).
 
-### <a name="setup"></a>Programme d’installation
+### <a name="setup"></a>Installation
 
-Procédez comme suit pour configurer Visual Studio Code pour qu’il fonctionne avec ce référentiel :
+procédez comme suit pour configurer Visual Studio Code pour qu’il fonctionne avec ce référentiel :
 
 1. Dans un navigateur Web :
     1. Installez [git pour votre PC](https://git-scm.com/downloads).
@@ -204,13 +204,13 @@ Procédez comme suit pour configurer Visual Studio Code pour qu’il fonctionne 
 Utilisez le flux de travail suivant pour apporter des modifications à la documentation avec Visual Studio Code :
 
 >[!NOTE]
->Toutes les instructions relatives à la [modification](#how-to-make-a-change) et à la [création](#creating-a-new-article) d’articles, ainsi que les [principes fondamentaux de la modification de la démarque](#markdown-basics), ci-dessus s’appliquent également à l’utilisation de Visual Studio code.
+>toutes les instructions relatives à la [modification](#how-to-make-a-change) et à la [création](#creating-a-new-article) d’articles, ainsi que les [principes fondamentaux de la modification de la démarque](#markdown-basics), ci-dessus s’appliquent également à l’utilisation de Visual Studio Code.
 
 1. Assurez-vous que votre fourche cloné est à jour avec la référentiel officielle.
    1. Dans un navigateur Web, créez une requête de tirage pour synchroniser les modifications récentes des autres contributeurs de MicrosoftDocs/Mixed-Reality’Master’sur votre fourche (Assurez-vous que la flèche pointe vers la bonne voie).
       
       ![Synchroniser les modifications de MicrosoftDocs/Mixed-Reality avec votre fourche](images/sync_repos.PNG)
-   2. Dans Visual Studio Code, sélectionnez le bouton synchroniser pour synchroniser votre branche fraîchement mise à jour sur le clone local.
+   2. dans Visual Studio Code, sélectionnez le bouton synchroniser pour synchroniser votre branche fraîchement mise à jour sur le clone local.
       
       ![Cliquer sur l’image du bouton de synchronisation](images/sync_clone.png)
 2. Créez ou modifiez des articles dans votre référentiel cloné à l’aide de Visual Studio Code.
@@ -230,16 +230,16 @@ Utilisez le flux de travail suivant pour apporter des modifications à la docume
 
 ### <a name="useful-extensions"></a>Extensions utiles
 
-Les extensions de Visual Studio Code suivantes sont utiles lors de la modification de la documentation :
+les extensions de Visual Studio Code suivantes sont utiles lors de la modification de la documentation :
 
-- [Extension docs de la marque pour Visual Studio code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) -utilisez **ALT + M** pour afficher un menu d’options de création de documents, comme :
+- [Extension docs de la marque pour Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) -utilisez **Alt + M** pour afficher un menu d’options de création de documents, comme :
    - Recherchez et référencez des images que vous avez téléchargées.
    - Ajoutez une mise en forme comme des listes, des tables et des appels spécifiques aux documents, comme `>[!NOTE]` .
    - Recherchez et référencez des liens et des signets internes (liens vers des sections spécifiques dans une page).
    - Les erreurs de mise en forme sont mises en surbrillance (pointez votre souris sur l’erreur pour en savoir plus).
 - [Vérificateur orthographique de code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) : les mots mal orthographiés sont soulignés. Cliquez avec le bouton droit sur un mot mal orthographié pour le modifier ou enregistrez-le dans le dictionnaire.
 
-## <a name="using-issues-to-provide-feedback-on-windows-mixed-reality-enthusiast-guide"></a>Utilisation de problèmes pour fournir des commentaires sur le guide des passionnés de Windows Mixed Reality
+## <a name="using-issues-to-provide-feedback-on-windows-mixed-reality-enthusiast-guide"></a>utilisation de problèmes pour fournir des commentaires sur Windows Mixed Reality Guide du passionné
 
 Pour fournir des commentaires, ou pour indiquer un problème, plutôt que de modifier directement les pages de documentation, [créez un problème](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/issues) et les propriétaires de contenu feront de leur mieux pour résoudre le problème en temps opportun.
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 08/03/2020
 ms.topic: article
 keywords: LBE, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
-ms.openlocfilehash: 93d598a6add8350850faadab241b254e9cb341aa
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 914e22c4e80385c93696ebd978000978e1e03f57706d466bdbb3cfcd5843f69e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213163"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>Documentation du package de données spatiales de la réalité mixte
 
@@ -20,7 +20,7 @@ ms.locfileid: "98583640"
 > 
 > À partir de 8/1/2020 cet outil est désormais déconseillé et ne fonctionne plus sur les plateformes. Nous vous recommandons plutôt d’utiliser l’outil [Gestionnaire de cartes](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) dans le portail de l’appareil. 
 > 
-> Cet outil et son fonctionnement sont proposés tels quels. Elle est sujette à modification sans aucun préavis et peut ne pas être compatible avec les futures versions de Windows ou de Windows Mixed Reality HMD. 
+> Cet outil et son fonctionnement sont proposés tels quels. elle est sujette à modification sans préavis et peut ne pas être compatible avec les versions ultérieures de Windows ou de HMD Windows Mixed Reality. 
 
 
 ## <a name="download"></a>Télécharger
@@ -65,13 +65,14 @@ Principales exigences et limitations :
 
 ## <a name="mapping-best-practices"></a>Meilleures pratiques de mappage
 
-1. Effacer les mappages existants dans le panneau de configuration (paramètres-> réalité mixte-> environnement-> effacer les données d’environnement)
+1. désactivez les mappages existants dans le panneau de configuration (Paramètres > de réalité mixte-environnement de >-> données claires sur l’environnement)
 2. Garantir un éclairage suffisant pour un bon suivi et si l’exécution du mode de mappage verrouillé tente de maintenir le même éclairage
 3. Lorsque cela est possible, conservez la plage dynamique d’éclairage en évitant les zones d’éclairage élevé en regard des zones masquées et sombres
 4. Réduire les surfaces vides et sans texture, par exemple placer une plage de différentes affiches sur des murs blancs
 5. Mapper l’espace sans objets dynamiques dans la scène, tels que le déplacement de personnes
 6. Verrouiller la carte lors de l’importation (disponible par le biais de la version préliminaire d’Insider)
-7. Déverrouillez la carte et relancez l’analyse de l’environnement en cas de dégradation de la qualité et/ou d’évolution de l’environnement (éclairage ou modifications dans la disposition des objets) * * _
+7. Déverrouillez la carte et relancez l’analyse de l’environnement en cas de dégradation de la qualité et/ou d’évolution de l’environnement (éclairage ou modifications dans la disposition des objets).
+***
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>Exécution d’un package de données spatiales de réalité mixte avec un script compagnon
 
@@ -153,7 +154,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 L’importation supprime les données spatiales existantes et les remplace par les données du répertoire spécifié. L’entrée nom de l’application spécifie le nom du package de l’application cible qui doit être importé pour les ancres spatiales et le SID de l’utilisateur cible spécifie l’utilisateur qui doit avoir accès aux ancres spatiales importées. Le nom de la famille de packages cible et les SID d’utilisateur doivent correspondre aux valeurs existantes sur le PC. sinon, le fichier exe échoue.
 
 
-_**
+***
 ## <a name="error-messages"></a>Messages d'erreur
 En outre, les messages d’erreur ci-dessous sont également accompagnés d’un HRESULT
 

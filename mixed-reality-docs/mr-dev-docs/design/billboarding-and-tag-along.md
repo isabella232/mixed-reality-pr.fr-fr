@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, l’intégration, le balisage, le casque de réalité mixte, le casque de réalité mixte, le casque de réalité virtuelle, HoloLens, MRTK, le kit de temps de réalité mixte
-ms.openlocfilehash: 0bd1ac2168284d714240c6775468a61ed3e665b8
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, le billboarding, la balise, le casque de la réalité mixte, le casque Windows mixed reality, le casque de réalité virtuelle, HoloLens, MRTK, la réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: 7ffcbe1d3401601e92eb1ac81dfd84f2af9e8e79eeea809b01a1e943a85f0db9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214159"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding et tag-along
 
@@ -24,7 +24,7 @@ ms.locfileid: "110600338"
 
 Le billboarding est un concept comportemental qui peut être appliqué aux objets en réalité mixte. Les objets avec des panneaux s’orientent toujours pour être confrontés à l’utilisateur. Les systèmes de texte et de menu sont des cas d’utilisation courants, où les objets statiques placés dans l’environnement de l’utilisateur (verrouillé) seraient autrement masqués ou illisibles quand les utilisateurs se déplacent.
 
-Les objets avec le billboarding activé peuvent pivoter librement dans l’environnement de l’utilisateur. Ils peuvent également être limités à un seul axe en fonction des considérations de conception. Gardez à l’esprit que les objets superposés peuvent découper ou occultait eux-mêmes lorsqu’ils sont placés trop près d’autres objets ou dans HoloLens, trop près de surfaces numérisées. Pour éviter cela, réfléchissez à l’encombrement total qu’un objet peut produire en cas de rotation sur l’axe activé pour le billboarding.
+Les objets avec le billboarding activé peuvent pivoter librement dans l’environnement de l’utilisateur. Ils peuvent également être limités à un seul axe en fonction des considérations de conception. gardez à l’esprit que les objets superposés peuvent découper ou occultait eux-mêmes lorsqu’ils sont placés trop près d’autres objets, ou dans HoloLens, trop fermer les surfaces numérisées. Pour éviter cela, réfléchissez à l’encombrement total qu’un objet peut produire en cas de rotation sur l’axe activé pour le billboarding.
 
 <br>
 
@@ -33,8 +33,8 @@ Les objets avec le billboarding activé peuvent pivoter librement dans l’envir
 
 La balise est un concept comportemental qui peut être ajouté à des hologrammes. Une balise associée à un objet tente de rester dans une plage qui permet à l’utilisateur d’interagir confortablement.
 
-![Le panneau broches HoloLens est un bon exemple de la façon dont les balises se comportent](images/tagalong-1000px.jpg)<br>
-*Le menu Démarrer HoloLens est un excellent exemple de comportement avec balises*
+![le panneau HoloLens broches est un bon exemple de la façon dont les balises se comportent](images/tagalong-1000px.jpg)<br>
+*le menu Démarrer HoloLens est un excellent exemple de comportement avec balise*
 
 Les objets avec balise ont des paramètres, ce qui peut affiner la façon dont ils se comportent. Le contenu peut être dans ou hors de la ligne de vue de l’utilisateur pendant que l’utilisateur se déplace dans son environnement. Au fur et à mesure que vous déplacez, le contenu tente de rester au sein de la périphérie de l’utilisateur en faisant glisser vers le bord de la vue. Le contenu peut être temporairement hors de l’affichage en fonction de la vitesse de déplacement de l’utilisateur. Lorsque l’utilisateur fait un regard sur l’objet tag, il est plus complet à afficher. Imaginez que le contenu est toujours « un coup d’œil », de sorte que les utilisateurs n’oublient jamais de la direction dans laquelle ils se trouvent.
 
@@ -46,7 +46,7 @@ Des paramètres supplémentaires peuvent faire en sorte que l’objet de la bali
 
 ---
 
-## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Superpointage et balise dans MRTK (kit de temps de réalité mixte) pour Unity
+## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>billboarding et Tag-en MRTK (Shared Computer Toolkit de la réalité mixte) pour unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit des scripts pour le comportement de l’analyseur et de la balise. Assignez le script Billboard. cs à n’importe quel objet pour ajouter un comportement d’emboutment et faire en sorte que l’objet soit toujours à votre Confront. Pour ajouter un comportement avec balise, utilisez le script RadialView. cs. Vous pouvez ajuster diverses options, telles que le temps de lerping, la distance et le degré.
 
 * [MRTK : solveur de vue radiale](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)

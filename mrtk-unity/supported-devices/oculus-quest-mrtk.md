@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Oculus Quest
-ms.openlocfilehash: d910f26374b21be26377bd40b9be0d45872e007a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: c5633af09cca5e8b20eb81e897ca8129fed86174e30a97f7242efde231fb7aa1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186658"
 ---
 # <a name="deploying-to-oculus-quest"></a>Déploiement sur Oculus Quest
 

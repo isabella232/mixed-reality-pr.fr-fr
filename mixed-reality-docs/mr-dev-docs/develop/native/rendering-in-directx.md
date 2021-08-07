@@ -5,22 +5,22 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, hologrammes, rendu, 3D Graphics, HolographicFrame, boucle de rendu, boucle de mise à jour, procédure pas à pas, exemple de code, Direct3D
-ms.openlocfilehash: f62df75f8febc3f3ee6e7c98f2c8fd91082a4466
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, hologrammes, rendu, 3d graphics, HolographicFrame, boucle de rendu, boucle de mise à jour, procédure pas à pas, exemple de code, Direct3D
+ms.openlocfilehash: 2c3dd32f5782d6096c6560ec6db55ef1cc7bb533dddb0a4b5fe87cd91bb2f81b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583787"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209447"
 ---
 # <a name="rendering-in-directx"></a>Rendu dans DirectX
 
 > [!NOTE]
 > Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
-Windows Mixed Reality est basé sur DirectX pour produire des expériences graphiques riches et 3D pour les utilisateurs. L’abstraction de rendu se trouve juste au-dessus de DirectX, ce qui permet aux applications de déterminer la position et l’orientation des observateurs de scène holographique prédits par le système. Le développeur peut ensuite localiser ses hologrammes en fonction de chaque caméra, ce qui permet à l’application de rendre ces hologrammes dans différents systèmes de coordonnées spatiales à mesure que l’utilisateur se déplace.
+Windows Mixed Reality repose sur DirectX pour produire des expériences graphiques riches et 3d pour les utilisateurs. L’abstraction de rendu se trouve juste au-dessus de DirectX, ce qui permet aux applications de déterminer la position et l’orientation des observateurs de scène holographique prédits par le système. Le développeur peut ensuite localiser ses hologrammes en fonction de chaque caméra, ce qui permet à l’application de rendre ces hologrammes dans différents systèmes de coordonnées spatiales à mesure que l’utilisateur se déplace.
 
-Remarque : cette procédure pas à pas décrit le rendu holographique dans Direct3D 11. Un modèle d’application Direct3D 12 Windows Mixed Reality est également fourni avec l’extension de modèles d’application de réalité mixte.
+Remarque : cette procédure pas à pas décrit le rendu holographique dans Direct3D 11. un modèle d’application de Windows Mixed Reality Direct3D 12 est également fourni avec l’extension de modèles d’application de réalité mixte.
 
 ## <a name="update-for-the-current-frame"></a>Mettre à jour pour le frame actuel
 
@@ -73,7 +73,7 @@ for (HolographicCameraPose const& cameraPose : prediction.CameraPoses())
 
 ### <a name="get-the-coordinate-system-to-use-as-a-basis-for-rendering"></a>Obtenir le système de coordonnées à utiliser comme base pour le rendu
 
-Windows Mixed Reality permet à votre application de créer différents [systèmes de coordonnées](coordinate-systems-in-directx.md), comme des frames de référence attachés et stationnaires pour le suivi des emplacements dans le monde physique. Votre application peut ensuite utiliser ces systèmes de coordonnées pour savoir où afficher les hologrammes de chaque image. Lors de la demande de coordonnées à partir d’une API, vous transmettez toujours le <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> dans lequel vous souhaitez que ces coordonnées soient exprimées.
+Windows Mixed Reality permet à votre application de créer différents [systèmes de coordonnées](coordinate-systems-in-directx.md), comme des frames de référence attachés et fixes pour le suivi des emplacements dans le monde physique. Votre application peut ensuite utiliser ces systèmes de coordonnées pour savoir où afficher les hologrammes de chaque image. Lors de la demande de coordonnées à partir d’une API, vous transmettez toujours le <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> dans lequel vous souhaitez que ces coordonnées soient exprimées.
 
 À partir de **AppMain :: Update**:
 
@@ -98,7 +98,7 @@ Les entrées en point de [regard](gaze-in-directx.md) et en [main](hands-and-mot
 
 ### <a name="process-time-based-updates"></a>Mettre à jour le processus basé sur le temps
 
-Toute application de rendu en temps réel a besoin d’un moyen de traiter des mises à jour basées sur le temps : le modèle d’application holographique Windows utilise une implémentation de **StepTimer** , similaire à la StepTimer fournie dans le modèle d’application UWP DirectX 11. Cet exemple de classe d’assistance StepTimer peut fournir des mises à jour à l’étape fixe, des mises à jour à l’étape variable et le mode par défaut est des étapes à durée variable.
+toute application de rendu en temps réel a besoin d’un moyen de traiter des mises à jour basées sur le temps : le modèle d’application holographique Windows utilise une implémentation de **StepTimer** , similaire à la StepTimer fournie dans le modèle d’application UWP DirectX 11. Cet exemple de classe d’assistance StepTimer peut fournir des mises à jour à l’étape fixe, des mises à jour à l’étape variable et le mode par défaut est des étapes à durée variable.
 
 Pour le rendu holographique, nous avons choisi de ne pas placer trop de temps dans la fonction de minuteur, car vous pouvez le configurer pour qu’il soit une étape fixe. Elle peut être appelée plusieurs fois par trame, ou pas du tout, pour certains frames, et nos mises à jour de données holographiques doivent se produire une fois par frame.
 
@@ -165,9 +165,9 @@ Qu’en est-il des transformations de vue et de projection ? Pour des résultat
 
 ## <a name="render-the-current-frame"></a>Restituer le frame actuel
 
-Le rendu sur Windows Mixed Reality n’est pas très différent du rendu sur un affichage mono 2D, mais il existe quelques différences :
+le rendu sur Windows Mixed Reality n’est pas très différent du rendu sur un affichage mono 2d, mais il existe quelques différences :
 * Les prédictions de frame holographique sont importantes. Plus la prédiction est proche de la présentation de votre cadre, plus vos hologrammes seront performants.
-* Windows Mixed realisation contrôle les vues de la caméra. Affichez-les à chaque fois que le frame holographique vous les présentera ultérieurement.
+* Windows Mixed Reality contrôle les vues de l’appareil photo. Affichez-les à chaque fois que le frame holographique vous les présentera ultérieurement.
 * Nous vous recommandons d’effectuer un rendu stéréo à l’aide d’un dessin instancié sur un tableau cible de rendu. Le modèle d’application holographique utilise l’approche recommandée de dessin instancié dans un tableau cible de rendu, qui utilise une vue de la cible du rendu sur un **Texture2DArray**.
 * Si vous souhaitez effectuer un rendu sans utiliser l’instanciation stéréo, vous devez créer deux RenderTargetViews non-tableau, un pour chaque œil. Chaque RenderTargetViews fait référence à l’un des deux secteurs du **Texture2DArray** fourni à l’application à partir du système. Cela n’est pas recommandé, car il est généralement plus lent que d’utiliser l’instanciation.
 
@@ -186,9 +186,9 @@ Effectue une boucle sur l’ensemble de la caméra dans la prédiction et effect
 
 **Configurer votre passe de rendu**
 
-Windows Mixed Reality utilise le rendu stéréoscopique pour améliorer l’illusion de la profondeur et pour afficher stereoscopically, de sorte que les affichages gauche et droit sont actifs. Avec le rendu stéréoscopique, il existe un décalage entre les deux affichages, que le cerveau peut rapprocher comme profondeur réelle. Cette section traite du rendu stéréoscopique à l’aide de l’instanciation, à l’aide du code du modèle d’application holographique Windows.
+Windows Mixed Reality utilise le rendu stéréoscopique pour améliorer l’illusion de la profondeur et pour afficher stereoscopically, de sorte que les affichages gauche et droit sont actifs. Avec le rendu stéréoscopique, il existe un décalage entre les deux affichages, que le cerveau peut rapprocher comme profondeur réelle. cette section traite du rendu stéréoscopique à l’aide de l’instanciation, à l’aide du code du modèle d’application holographique Windows.
 
-Chaque caméra possède sa propre cible de rendu (mémoire tampon d’arrière-plan), ainsi que les matrices de vue et de projection, dans l’espace holographique. Votre application doit créer d’autres ressources basées sur la caméra, telles que le tampon de profondeur, en fonction de la caméra. Dans le modèle d’application holographique Windows, nous fournissons une classe d’assistance pour regrouper ces ressources dans DX :: CameraResources. Commencez par configurer les vues de la cible de rendu :
+Chaque caméra possède sa propre cible de rendu (mémoire tampon d’arrière-plan), ainsi que les matrices de vue et de projection, dans l’espace holographique. Votre application doit créer d’autres ressources basées sur la caméra, telles que le tampon de profondeur, en fonction de la caméra. dans le modèle d’application holographique Windows, nous fournissons une classe d’assistance pour regrouper ces ressources dans DX :: CameraResources. Commencez par configurer les vues de la cible de rendu :
 
 À partir de **AppMain :: Render**:
 
@@ -311,9 +311,9 @@ context->VSSetConstantBuffers(
 
 Il est judicieux de vérifier que **TryGetViewTransform** a réussi avant d’essayer d’utiliser les données de la vue ou de la projection, car si le système de coordonnées n’est pas localisable (par exemple, si le suivi a été interrompu), votre application ne peut pas s’afficher avec elle pour ce frame. Le modèle appelle uniquement **Render** sur le cube tournant si la classe **CameraResources** indique une mise à jour réussie.
 
-Windows Mixed Reality intègre des fonctionnalités pour la [stabilisation d’image](../platform-capabilities-and-apis/hologram-stability.md) afin de garder les hologrammes positionnés là où un développeur ou un utilisateur les place dans le monde. La stabilisation d’image permet de masquer la latence inhérente à un pipeline de rendu pour garantir la meilleure expérience holographique pour les utilisateurs. Un point de concentration peut être spécifié pour améliorer encore davantage la stabilisation de l’image, ou une mémoire tampon de profondeur peut être fournie pour calculer la stabilisation des images optimisées en temps réel.
+Windows Mixed Reality comprend des fonctionnalités de [stabilisation d’image](../platform-capabilities-and-apis/hologram-stability.md) pour maintenir les hologrammes positionnés là où un développeur ou un utilisateur les place dans le monde. La stabilisation d’image permet de masquer la latence inhérente à un pipeline de rendu pour garantir la meilleure expérience holographique pour les utilisateurs. Un point de concentration peut être spécifié pour améliorer encore davantage la stabilisation de l’image, ou une mémoire tampon de profondeur peut être fournie pour calculer la stabilisation des images optimisées en temps réel.
 
-Pour de meilleurs résultats, votre application doit fournir un tampon de profondeur à l’aide de l’API <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> . La réalité mixte Windows peut ensuite utiliser les informations géométriques de la mémoire tampon de profondeur pour optimiser la stabilisation de l’image en temps réel. Le modèle d’application holographique Windows valide la mémoire tampon de profondeur de l’application par défaut, ce qui contribue à optimiser la stabilité des hologrammes.
+Pour de meilleurs résultats, votre application doit fournir un tampon de profondeur à l’aide de l’API <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> . Windows Mixed Reality pouvez ensuite utiliser les informations géométriques de la mémoire tampon de profondeur pour optimiser la stabilisation de l’image en temps réel. le modèle d’application holographique Windows valide la mémoire tampon de profondeur de l’application par défaut, ce qui contribue à optimiser la stabilité des hologrammes.
 
 À partir de **AppMain :: Render**:
 
@@ -343,7 +343,7 @@ if (cameraActive)
 ```
 
 >[!NOTE]
->Windows traitera votre texture de profondeur sur le GPU. il doit donc être possible d’utiliser votre mémoire tampon de profondeur comme ressource de nuanceur. Le ID3D11Texture2D que vous créez doit être dans un format non typé et doit être lié en tant que vue de ressource de nuanceur. Voici un exemple de création d’une texture de profondeur qui peut être validée pour la stabilisation d’image.
+>Windows traitera votre texture de profondeur sur le GPU, il doit être possible d’utiliser votre mémoire tampon de profondeur comme ressource de nuanceur. Le ID3D11Texture2D que vous créez doit être dans un format non typé et doit être lié en tant que vue de ressource de nuanceur. Voici un exemple de création d’une texture de profondeur qui peut être validée pour la stabilisation d’image.
 
 Code pour la **création de ressources de mémoire tampon de profondeur pour CommitDirect3D11DepthBuffer**:
 
@@ -379,7 +379,7 @@ winrt::check_hresult(
 
 **Dessiner du contenu holographique**
 
-Le modèle d’application holographique Windows restitue le contenu en stéréo à l’aide de la technique recommandée de dessin de la géométrie d’instance vers un Texture2DArray de taille 2. Examinons la partie instanciation de ce et son fonctionnement sur Windows Mixed Reality.
+le modèle d’application holographique Windows restitue le contenu en stéréo à l’aide de la technique recommandée de dessin de la géométrie d’instance vers un Texture2DArray de taille 2. Examinons la partie instanciation de ce et son fonctionnement sur Windows Mixed Reality.
 
 À partir de **SpinningCubeRenderer :: Render**:
 
@@ -521,11 +521,11 @@ context->DrawIndexedInstanced(
 );
 ```
 
-### <a name="important-note-about-rendering-on-non-hololens-devices"></a>Remarque importante à propos du rendu sur des appareils non-HoloLens
+### <a name="important-note-about-rendering-on-non-hololens-devices"></a>remarque importante à propos du rendu sur des appareils non HoloLens
 
-La définition de l’index du tableau cible du rendu dans le nuanceur vertex nécessite que le pilote Graphics prenne en charge une fonctionnalité Direct3D 11,3 facultative, que HoloLens prend en charge. Votre application peut implémenter simplement cette technique pour le rendu, et toutes les spécifications seront respectées pour s’exécuter sur Microsoft HoloLens.
+la définition de l’index du tableau cible du rendu dans le nuanceur vertex nécessite que le pilote graphics prenne en charge une fonctionnalité Direct3D 11,3 facultative, que HoloLens prend en charge. Votre application peut implémenter simplement cette technique pour le rendu, et toutes les spécifications seront respectées pour s’exécuter sur le Microsoft HoloLens.
 
-Il se peut que vous souhaitiez utiliser également l’émulateur HoloLens, qui peut être un puissant outil de développement pour votre application holographique et prendre en charge les appareils de casque immersif Windows Mixed Real qui sont attachés à des PC Windows 10. La prise en charge du chemin de rendu non-HoloLens-pour l’ensemble de la réalité mixte Windows est également intégrée au modèle d’application Windows holographique. Dans le code du modèle, vous trouverez du code pour permettre à votre application holographique de s’exécuter sur le GPU sur votre PC de développement. Voici comment la classe **DeviceResources** vérifie cette prise en charge facultative des fonctionnalités.
+il se peut que vous souhaitiez utiliser également l’émulateur HoloLens, qui peut être un puissant outil de développement pour votre application holographique et la prise en charge Windows Mixed Reality les appareils de casque immersif connectés aux pc Windows 10. la prise en charge du chemin de rendu non HoloLens-pour tous les Windows Mixed Reality-est également intégrée dans le modèle d’application holographique Windows. Dans le code du modèle, vous trouverez du code pour permettre à votre application holographique de s’exécuter sur le GPU sur votre PC de développement. Voici comment la classe **DeviceResources** vérifie cette prise en charge facultative des fonctionnalités.
 
 À partir de **DeviceResources :: CreateDeviceResources**:
 
@@ -600,7 +600,7 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 
 ### <a name="enable-the-holographic-frame-to-present-the-swap-chain"></a>Activer le frame holographique pour présenter la chaîne de permutation
 
-Avec Windows Mixed Reality, le système contrôle la chaîne de permutation. Le système gère ensuite la présentation des trames sur chaque caméra holographique pour garantir une expérience utilisateur de haute qualité. Il fournit également une fenêtre d’affichage qui met à jour chaque image, pour chaque caméra, afin d’optimiser les aspects du système, tels que la stabilisation d’image ou la capture de réalité mixte. Ainsi, une application holographique utilisant DirectX **n’appelle pas** la chaîne de permutation DXGI. Au lieu de cela, vous utilisez la classe <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> pour présenter toutes les chaînes d’échange d’un frame une fois que vous avez terminé de le dessiner.
+avec Windows Mixed Reality, le système contrôle la chaîne de permutation. Le système gère ensuite la présentation des trames sur chaque caméra holographique pour garantir une expérience utilisateur de haute qualité. Il fournit également une fenêtre d’affichage qui met à jour chaque image, pour chaque caméra, afin d’optimiser les aspects du système, tels que la stabilisation d’image ou la capture de réalité mixte. Ainsi, une application holographique utilisant DirectX **n’appelle pas** la chaîne de permutation DXGI. Au lieu de cela, vous utilisez la classe <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> pour présenter toutes les chaînes d’échange d’un frame une fois que vous avez terminé de le dessiner.
 
 À partir de **DeviceResources ::P renvoyé**:
 
@@ -608,7 +608,7 @@ Avec Windows Mixed Reality, le système contrôle la chaîne de permutation. Le 
 HolographicFramePresentResult presentResult = frame.PresentUsingCurrentPrediction();
 ```
 
-Par défaut, cette API attend que le frame se termine avant de retourner. Les applications holographiques doivent attendre la fin de la trame précédente avant de commencer à travailler sur un nouveau Frame, car cela réduit la latence et permet d’obtenir de meilleurs résultats des prédictions de frame holographique. Il ne s’agit pas d’une règle difficile, et si vous avez des frames qui prennent plus d’une actualisation de l’écran pour le rendu, vous pouvez désactiver cette attente en passant le paramètre HolographicFramePresentWaitBehavior à <a href="/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">PresentUsingCurrentPrediction</a>. Dans ce cas, vous utiliserez probablement un thread de rendu asynchrone pour maintenir une charge continue sur le GPU. La fréquence d’actualisation de l’appareil HoloLens est de 60 Hz, où une image a une durée d’environ 16 ms. Les appareils de casque immersif peuvent aller de 60 Hz à 90 Hz. lors de l’actualisation de l’affichage à 90 Hz, chaque trame aura une durée d’environ 11 ms.
+Par défaut, cette API attend que le frame se termine avant de retourner. Les applications holographiques doivent attendre la fin de la trame précédente avant de commencer à travailler sur un nouveau Frame, car cela réduit la latence et permet d’obtenir de meilleurs résultats des prédictions de frame holographique. Il ne s’agit pas d’une règle difficile, et si vous avez des frames qui prennent plus d’une actualisation de l’écran pour le rendu, vous pouvez désactiver cette attente en passant le paramètre HolographicFramePresentWaitBehavior à <a href="/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">PresentUsingCurrentPrediction</a>. Dans ce cas, vous utiliserez probablement un thread de rendu asynchrone pour maintenir une charge continue sur le GPU. la fréquence d’actualisation de l’appareil HoloLens est de 60 hz, où une image a une durée d’environ 16 ms. Les appareils de casque immersif peuvent aller de 60 Hz à 90 Hz. lors de l’actualisation de l’affichage à 90 Hz, chaque trame aura une durée d’environ 11 ms.
 
 ### <a name="handle-devicelost-scenarios-in-cooperation-with-the-holographicframe"></a>Gérer les scénarios DeviceLost en collaboration avec HolographicFrame
 
@@ -637,7 +637,7 @@ Une fois votre Frame présenté, vous pouvez revenir à la boucle principale du 
 
 ## <a name="hybrid-graphics-pcs-and-mixed-reality-applications"></a>PC graphiques hybrides et applications de réalité mixte
 
-**Les** PC Windows 10 Creators Update peuvent être configurés avec des GPU discrets et intégrés. Avec ces types d’ordinateurs, Windows choisit la carte à laquelle le casque est connecté. Les applications doivent s’assurer que le périphérique DirectX qu’il crée utilise le même adaptateur.
+Windows 10 Creators Update **Les** PC peuvent être configurés avec des GPU discrets et intégrés. avec ces types d’ordinateurs, Windows choisira la carte à laquelle le casque est connecté. Les applications doivent s’assurer que le périphérique DirectX qu’il crée utilise le même adaptateur.
 
 La plupart des exemples de code Direct3D généraux illustrent la création d’un périphérique DirectX à l’aide de la carte matérielle par défaut, qui, sur un système hybride, peut être différent de celui utilisé pour le casque.
 

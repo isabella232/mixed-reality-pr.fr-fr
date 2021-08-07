@@ -5,13 +5,13 @@ author: hferrone
 ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
-keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi des yeux, entrée de regard, affichage monté en tête, moteur non réel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, widgets, UI, UMG, graphiques de mouvement inréel, moteur inréel, UE, UE4
-ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi des yeux, entrée de regard, affichage monté en tête, moteur inréel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, widgets, UI, UMG, graphiques de mouvement inréel, moteur inréel, UE, UE4
+ms.openlocfilehash: 8cb1c804757332ce7b78f0cb92cf895b873c1835208962b20d5bbbfae4684785
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609760"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212803"
 ---
 # <a name="umg-and-keyboard-in-unreal"></a>UMG et clavier dans Unreal
 
@@ -27,7 +27,7 @@ Les graphiques de mouvement inréel (UMG) sont des systèmes d’interface utili
 
 ![Capture d’écran de la fenêtre de hiérarchie avec le composant widget de texte mis en surbrillance et développé](images/unreal-umg-img-02.png)
 
-- Sélectionnez un widget dans la fenêtre hiérarchie ou concepteur et modifiez les paramètres dans le panneau détails.  Dans ce cas, nous avons ajouté un « texte d’indication » par défaut et une couleur de teinte qui s’affiche lorsque vous pointez sur la zone de texte.  Une zone de texte affiche un clavier virtuel sur HoloLens lorsqu’il est interagi avec :
+- Sélectionnez un widget dans la fenêtre hiérarchie ou concepteur et modifiez les paramètres dans le panneau détails.  Dans ce cas, nous avons ajouté un « texte d’indication » par défaut et une couleur de teinte qui s’affiche lorsque vous pointez sur la zone de texte.  une zone de texte affiche un clavier virtuel sur HoloLens quand il est en interaction avec :
 
 ![Capture d’écran des paramètres modifiés dans la fenêtre hiérarchie](images/unreal-umg-img-03.png)
 
@@ -51,7 +51,7 @@ Les graphiques de mouvement inréel (UMG) sont des systèmes d’interface utili
 
 ## <a name="widget-interaction"></a>Interaction du widget
 
-Les widgets UMG reçoivent généralement une entrée à partir d’une souris.  Sur HoloLens ou VR, nous devons simuler une souris avec un composant d’interaction de widget pour obtenir les mêmes événements.
+Les widgets UMG reçoivent généralement une entrée à partir d’une souris.  sur HoloLens ou VR, nous devons simuler une souris avec un composant d’Interaction de Widget pour obtenir les mêmes événements.
 
 - Créez un acteur, ajoutez un composant d' **interaction du widget** et ajoutez l’acteur à votre scène :
 
@@ -70,14 +70,14 @@ Ici, nous appelons ce code à partir de l’événement :
 
 ![Plan du cycle des événements](images/unreal-umg-img-10.png)
 
-Ajoutez ensuite des événements de pointeur de souris virtuelle au composant d’interaction du widget en réagissant à l’entrée HoloLens.  Dans ce cas, envoyez un événement d’enfoncement de la souris lorsque la main est prélevée et un événement de libération de la souris gauche lorsqu’il n’est pas saisi :
+ajoutez ensuite des événements de pointeur de souris virtuelle au composant d’interaction du widget en réagissant à HoloLens entrée.  Dans ce cas, envoyez un événement d’enfoncement de la souris lorsque la main est prélevée et un événement de libération de la souris gauche lorsqu’il n’est pas saisi :
 
 ![Plan avec ajout d’événements de pointeur de souris virtuelle](images/unreal-umg-img-13.png)
 
-Désormais, lorsque vous déployez l’application sur HoloLens 2, vous verrez un rayon de main qui s’étend de votre main droite. Si vous le dirigez vers l’une des zones de texte modifiables et appuyez sur air, le clavier système s’affiche devant vous et vous permet d’entrer du texte. 
+désormais, lorsque vous déployez l’application sur le HoloLens 2, vous verrez un rayon de main qui s’étend de votre main droite. Si vous le dirigez vers l’une des zones de texte modifiables et appuyez sur air, le clavier système s’affiche devant vous et vous permet d’entrer du texte. 
  
 > [!NOTE]
-> Le clavier du système HoloLens requiert un moteur inréel 4,26 ou ultérieur. En outre, le clavier n’apparaît pas quand votre application est en train d’être diffusée à partir de l’éditeur non réel sur le casque, uniquement lorsque l’application s’exécute sur l’appareil.
+> le clavier du système HoloLens nécessite un moteur 4,26 ou ultérieur. En outre, le clavier n’apparaît pas quand votre application est en train d’être diffusée à partir de l’éditeur non réel sur le casque, uniquement lorsque l’application s’exécute sur l’appareil.
 
 ## <a name="see-also"></a>Voir aussi :
 * [Documentation UMG de la non-réalisation](https://docs.unrealengine.com/Engine/UMG/index.html)

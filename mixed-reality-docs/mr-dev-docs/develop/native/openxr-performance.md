@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, application native, moteur personnalisé, intergiciel, performances, optimisation, débogage GPU, RenderDoc, PIX
-ms.openlocfilehash: 158bd2eef8f38f16a1fb5299d64335aca33a3b7f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f4462da954a3b6093e47f03e75b460671e7638f406b761ad6e05689ab97b3ddc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213173"
 ---
 # <a name="openxr-performance"></a>Performances OpenXR
 
-Sur HoloLens 2, il existe plusieurs façons d’envoyer des données de composition par `xrEndFrame` le biais de, ce qui peut entraîner des pénalités en matière de performances et de traitement.
+sur HoloLens 2, il existe plusieurs façons d’envoyer des données de composition par `xrEndFrame` le biais de, ce qui peut entraîner des pénalités en matière de performances et de traitement.
 
 Pour éviter de mauvaises performances, [soumettez `XrCompositionProjectionLayer` un seul](openxr-best-practices.md#use-a-single-projection-layer) avec les caractéristiques suivantes :
 

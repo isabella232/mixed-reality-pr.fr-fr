@@ -5,13 +5,13 @@ author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
-keywords: JavaScript, WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, Windows Mixed Reality, Web VR, Web XR, Web Mr, Web AR, 360, 360 Video, 360 vidéos, 360 photo, 360 photos, 360 content, Web immersif, immersif-Web, IW, immersiveweb
-ms.openlocfilehash: 311241d9dec6f5d086a45766c040b1b2b9eb4128
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+keywords: JavaScript, WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 video, 360 vidéos, 360 photo, 360 photos, 360 content, web immersif, immersif-web, IW, immersiveweb
+ms.openlocfilehash: de6314b5651740eca23a9078d4b05e1d92344d1742ea433d7b924cbde4457b8c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210501"
 ---
 # <a name="javascript-development-overview"></a>Vue d’ensemble du développement JavaScript
 
@@ -19,7 +19,7 @@ JavaScript est l’un des langages de programmation les plus populaires au monde
 
 ## <a name="mixed-reality-applications-on-the-web"></a>Applications de réalité mixte sur le Web
 
-Les fonctionnalités de réalité mixte sont disponibles sur le Web à l’aide de [WebXR](webxr-overview.md). Vous pouvez voir le contenu de la réalité virtuelle et de la réalité augmentée (AR) dans un navigateur compatible WebXR sans installer de logiciel ou de plug-ins supplémentaires. Vous pouvez utiliser ce même navigateur avec un appareil physique comme HoloLens 2. Pour plus d’informations, consultez notre documentation [WebXR](webxr-overview.md) .
+Les fonctionnalités de réalité mixte sont disponibles sur le Web à l’aide de [WebXR](webxr-overview.md). Vous pouvez voir le contenu de la réalité virtuelle et de la réalité augmentée (AR) dans un navigateur compatible WebXR sans installer de logiciel ou de plug-ins supplémentaires. Vous pouvez utiliser ce même navigateur avec un appareil physique tel que le HoloLens 2. Pour plus d’informations, consultez notre documentation [WebXR](webxr-overview.md) .
 
 > [!NOTE]
 > **WebVR** est déconseillé et n’est pas disponible dans les navigateurs actuels. par conséquent, il ne doit pas être utilisé pour un nouveau développement. Vous devrez migrer toutes les implémentations de **WebVR** existantes vers **WebXR**.

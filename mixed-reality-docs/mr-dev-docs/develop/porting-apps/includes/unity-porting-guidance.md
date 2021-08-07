@@ -1,18 +1,18 @@
 ---
-ms.openlocfilehash: 6c33618e6d09da156bc4a4480fbecf3c0da94378
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e7f298b9d587df2243601670e187c109bb674a278deb67862b517568ca5198d7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213510"
 ---
 # <a name="project-settings"></a>[Paramètres du projet](#tab/project)
 
 ### <a name="1-review-the-common-porting-steps-listed-above"></a>1. passez en revue les étapes de Portage courantes indiquées ci-dessus.
 
-Passez en revue les étapes courantes indiquées ci-dessus pour vous assurer que votre environnement de développement est correctement configuré. À l’étape #3, si vous utilisez Visual Studio, vous devez sélectionner la charge **de travail développement de jeux avec Unity** . Vous pouvez désélectionner le composant « éditeur Unity facultatif », car vous installerez une version plus récente d’Unity à l’étape suivante.
+Passez en revue les étapes courantes indiquées ci-dessus pour vous assurer que votre environnement de développement est correctement configuré. à l’étape #3, si vous utilisez Visual Studio vous devez sélectionner la charge **de travail développement de jeux avec unity** . Vous pouvez désélectionner le composant « éditeur Unity facultatif », car vous installerez une version plus récente d’Unity à l’étape suivante.
 
-### <a name="2-upgrade-to-the-latest-public-build-of-unity-with-windows-mr-support"></a>2. effectuez une mise à niveau vers la dernière version publique d’Unity avec la prise en charge de Windows MR
+### <a name="2-upgrade-to-the-latest-public-build-of-unity-with-windows-mr-support"></a>2. mettez à niveau vers la dernière version publique d’unity avec la prise en charge de Windows MR
 1. Téléchargez la dernière [version publique recommandée d’Unity](../../install-the-tools.md) avec prise en charge de la réalité mixte.
 2. Enregistrez une copie de votre projet avant de commencer
 3. Consultez la [documentation](https://docs.unity3d.com/Manual/UpgradeGuides.html) disponible à partir de Unity sur la mise à niveau si votre projet a été généré sur une version antérieure d’Unity.
@@ -30,24 +30,24 @@ Avec toute mise à jour Unity, il y a de bonnes chances que vous deviez mettre �
 
 À l’intérieur de votre application Unity :
 
-* Accéder aux paramètres de génération de > de fichiers
+* accédez à fichier-> de Build Paramètres
 * Sélectionnez « PC, Mac, Linux standalone »
 * Définir la plateforme cible sur « Windows »
 * Définissez architecture sur « x86 », puis sélectionnez « changer la plateforme »
 
 > [!NOTE] 
-> Si votre application a des dépendances sur des services spécifiques à l’appareil, tels que la mise en correspondance à partir de la vapeur, vous devez les désactiver à cette étape. Vous pouvez vous connecter aux services équivalents fournis par Windows plus tard.
+> Si votre application a des dépendances sur des services spécifiques à l’appareil, tels que la mise en correspondance à partir de la vapeur, vous devez les désactiver à cette étape. vous pouvez vous connecter aux services équivalents que Windows fournit par la suite.
 
 ### <a name="5-setup-your-windows-mixed-reality-hardware"></a>5. configurer votre matériel Windows Mixed Reality
 1. Passer en revue les étapes de [configuration du casque immersif](/windows/mixed-reality/enthusiast-guide/before-you-start
 )
-2. En savoir plus sur l' [utilisation du simulateur Windows Mixed Reality](../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) et [la navigation dans la page d’informations Windows Mixed Reality](../../../discover/navigating-the-windows-mixed-reality-home.md)
+2. en savoir plus sur l' [utilisation du simulateur Windows Mixed Reality](../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) et [la navigation dans la Windows Mixed Reality](../../../discover/navigating-the-windows-mixed-reality-home.md)
 
-### <a name="6-target-your-application-to-run-on-windows-mixed-reality"></a>6. cibler votre application pour qu’elle s’exécute sur Windows Mixed Reality
-1. Tout d’abord, vous devez supprimer ou compiler de façon conditionnelle toute autre prise en charge de bibliothèque spécifique à un kit de développement logiciel (SDK) VR particulier. Ces ressources changent fréquemment les paramètres et les propriétés de votre projet de manière incompatible avec d’autres kits de développement logiciel (SDK) VR, tels que Windows Mixed Reality.
-    * Par exemple, si votre projet fait référence au kit de développement logiciel (SDK) SteamVR, vous devez mettre à jour votre projet pour utiliser à la place les API de VR courantes d’Unity qui prennent en charge Windows Mixed Reality et SteamVR.
+### <a name="6-target-your-application-to-run-on-windows-mixed-reality"></a>6. Ciblez l’exécution de votre application sur Windows Mixed Reality
+1. Tout d’abord, vous devez supprimer ou compiler de façon conditionnelle toute autre prise en charge de bibliothèque spécifique à un kit de développement logiciel (SDK) VR particulier. Ces ressources changent fréquemment les paramètres et les propriétés de votre projet de manière incompatible avec les autres kits de développement logiciel (SDK) VR, tels que les Windows Mixed Reality.
+    * par exemple, si votre projet fait référence au kit de développement logiciel (SDK) SteamVR, vous devez mettre à jour votre projet pour utiliser à la place les api VR courantes d’unity qui prennent en charge à la fois Windows Mixed Reality et SteamVR.
     * Les étapes spécifiques pour l’exclusion conditionnelle d’autres kits de développement logiciel VR sont bientôt disponibles.
-2. Dans votre projet Unity, [Ciblez le kit de développement logiciel (SDK) Windows 10](../../unity/tutorials/holograms-100.md#target-windows-10-sdk)
+2. dans votre projet unity, [ciblez le kit de développement logiciel (SDK) Windows 10](../../unity/tutorials/holograms-100.md#target-windows-10-sdk)
 3. Pour chaque scène, [configurer l’appareil photo](../../unity/tutorials/holograms-100.md#chapter-2---setup-the-camera)
 
 ### <a name="7-use-the-stage-to-place-content-on-the-floor"></a>7. utiliser la phase pour placer le contenu à l’étage
@@ -95,17 +95,17 @@ L’algorithme est basé sur un blog de Daniel Smilkov : le [plus grand rectang
 
 Chaque jeu ou application ciblant un HMD existant aura un ensemble d’entrées qu’il gère, les types d’entrées dont il a besoin pour l’expérience et les API spécifiques qu’il appelle pour obtenir ces entrées. Nous avons investi pour essayer de le rendre aussi simple et simple que possible pour tirer parti des entrées disponibles dans Windows Mixed Reality.
 
-Lisez le [Guide de Portage d’entrée pour Unity](../porting-guides.md?tabs=input) dans l’onglet adjacent pour plus d’informations sur la façon dont Windows Mixed Reality expose les entrées et sur la façon dont elles sont mappées à ce que votre application peut faire aujourd’hui.
+lisez le [guide d’entrée pour unity](../porting-guides.md?tabs=input) dans l’onglet adjacent pour plus d’informations sur la façon dont Windows Mixed Reality expose les entrées et sur la façon dont elles sont mappées à ce que votre application peut faire aujourd’hui.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. test et réglage des performances
 
-Windows Mixed Reality sera disponible sur une vaste gamme d’appareils, allant des PC de jeux haut de gamme aux PC grand public. Selon le marché que vous ciblez, il existe une différence significative dans les budgets de calcul et graphiques disponibles pour votre application. Au cours de cet exercice de Portage, vous utilisez probablement un PC Premium et avez des budgets de calcul et graphiques importants disponibles pour votre application. Si vous souhaitez que votre application soit disponible pour un public plus large, vous devez tester et profiler votre application sur [le matériel représentatif que vous souhaitez cibler](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+les Windows Mixed Reality seront disponibles sur une vaste gamme d’appareils, allant des pc de jeux haut de gamme, aux pc grand public. Selon le marché que vous ciblez, il existe une différence significative dans les budgets de calcul et graphiques disponibles pour votre application. Au cours de cet exercice de Portage, vous utilisez probablement un PC Premium et avez des budgets de calcul et graphiques importants disponibles pour votre application. Si vous souhaitez que votre application soit disponible pour un public plus large, vous devez tester et profiler votre application sur [le matériel représentatif que vous souhaitez cibler](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-[Unity](https://docs.unity3d.com/Manual/Profiler.html) et [Visual Studio](/visualstudio/profiling/index) incluent des profileurs de performances, et [Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) et [Intel](https://software.intel.com/articles/vr-content-developer-guide) publient des instructions sur le profilage et l’optimisation des performances. Une discussion complète sur les performances est disponible [pour comprendre les performances de la réalité mixte](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). En outre, il existe des détails spécifiques pour Unity sous [recommandations de performances pour Unity](../../unity/performance-recommendations-for-unity.md).
+[unity](https://docs.unity3d.com/Manual/Profiler.html) et [Visual Studio](/visualstudio/profiling/index) incluent des profileurs de performances, et [Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) et [Intel](https://software.intel.com/articles/vr-content-developer-guide) publient des instructions sur le profilage et l’optimisation des performances. Une discussion complète sur les performances est disponible [pour comprendre les performances de la réalité mixte](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). en outre, il existe des détails spécifiques pour unity sous [des Recommandations de performances pour unity](../../unity/performance-recommendations-for-unity.md).
 
 # <a name="input-mapping"></a>[Mappage d’entrées](#tab/input)
 
-Vous pouvez porter votre logique d’entrée vers Windows Mixed Reality à l’aide de l’une des deux approches, les API d’entrée générales d’Unity. GetButton/GetAxis qui s’étendent sur plusieurs plateformes ou sur le XR spécifique à Windows. WSA. API d’entrée qui offrent des données plus riches pour les contrôleurs de mouvement et les mains de HoloLens.
+vous pouvez déplacer votre logique d’entrée vers Windows Mixed Reality à l’aide de l’une des deux approches, les api d’entrée générales d’unity. GetButton/GetAxis qui s’étendent sur plusieurs plateformes ou sur le XR spécifique à l’Windows. WSA. api d’entrée qui offrent des données plus riches pour les contrôleurs de mouvement et les mains HoloLens.
 
 > [!IMPORTANT]
 > Si vous utilisez des contrôleurs de reréverbérations HP G2, reportez-vous à [cet article](../../unity/unity-reverb-g2-controllers.md) pour obtenir des instructions supplémentaires sur le mappage d’entrée.
@@ -118,16 +118,16 @@ Vous trouverez plus d’informations sur les [API XR ici](https://docs.unity3d.c
 
 ## <a name="inputgetbuttongetaxis-apis"></a>API Input. GetButton/GetAxis
 
-Unity utilise actuellement ses API d’entrée. GetButton/Input. GetAxis pour exposer l’entrée pour [le kit de développement logiciel (SDK) Oculus](https://docs.unity3d.com/Manual/OculusControllers.html) et [le kit de développement logiciel (SDK) OpenVR](https://docs.unity3d.com/Manual/OpenVRControllers.html). Si vos applications utilisent déjà ces API pour l’entrée, il s’agit du chemin le plus simple pour la prise en charge des contrôleurs de mouvement dans Windows Mixed Reality : vous devez simplement remapper les boutons et les axes dans le gestionnaire d’entrée.
+Unity utilise actuellement ses API d’entrée. GetButton/Input. GetAxis pour exposer l’entrée pour [le kit de développement logiciel (SDK) Oculus](https://docs.unity3d.com/Manual/OculusControllers.html) et [le kit de développement logiciel (SDK) OpenVR](https://docs.unity3d.com/Manual/OpenVRControllers.html). si vos applications utilisent déjà ces api pour l’entrée, il s’agit du chemin le plus simple pour la prise en charge des contrôleurs de mouvement dans Windows Mixed Reality : vous devez simplement remapper les boutons et les axes dans le gestionnaire d’entrée.
 
 Pour plus d’informations, consultez le [tableau des mappages bouton Unity/AXIS](../../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) et [vue d’ensemble des API Unity courantes](../../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
-## <a name="windows-specific-xrwsainput-apis"></a>XR spécifique à Windows. WSA. API d’entrée
+## <a name="windows-specific-xrwsainput-apis"></a>XR spécifique à l’Windows. WSA. API d’entrée
 
 > [!CAUTION]
 > Si votre projet utilise l’un des XR. Les API WSA, elles sont en passe en faveur du kit de développement logiciel (SDK) XR dans les futures versions Unity. Pour les nouveaux projets, nous vous recommandons d’utiliser le kit de développement logiciel (SDK) XR dès le début. Vous trouverez plus d’informations sur le [système d’entrée XR et les API ici](https://docs.unity3d.com/Manual/xr_input.html).
 
-Si votre application crée déjà une logique d’entrée personnalisée pour chaque plateforme, vous pouvez choisir d’utiliser les API d’entrée spatiale spécifiques à Windows sous l’espace de noms **UnityEngine. XR. WSA. Input** . Cela vous permet d’accéder à des informations supplémentaires, telles que la précision de la position ou le genre de source, vous permettant de distinguer les mains et les contrôleurs de HoloLens.
+si votre application crée déjà une logique d’entrée personnalisée pour chaque plateforme, vous pouvez choisir d’utiliser les api d’entrée spatiale spécifiques à Windows sous l’espace de noms **UnityEngine. XR. WSA. input** . Cela vous permet d’accéder à des informations supplémentaires, telles que la précision de la position ou le genre de source, vous permettant de distinguer les mains et les contrôleurs de HoloLens.
 
 > [!NOTE]
 > Si vous utilisez des contrôleurs de réverbération HP G2, toutes les API d’entrée continuent de fonctionner, à l’exception de **InteractionSource. supportsTouchpad**, qui retourne false sans les données du pavé tactile.
@@ -136,19 +136,19 @@ Pour plus d’informations, consultez la [vue d’ensemble des API UnityEngine. 
 
 ## <a name="grip-pose-vs-pointing-pose"></a>Poignée de pose et pose de pointage
 
-Windows Mixed Reality prend en charge les contrôleurs de mouvement dans un large éventail de facteurs de forme, la conception de chaque contrôleur étant différente dans sa relation entre la position de l’utilisateur et la direction « avant » naturelle que les applications doivent utiliser pour pointer lors du rendu du contrôleur.
+Windows Mixed Reality prend en charge les contrôleurs de mouvement dans un large éventail de facteurs de forme, la conception de chaque contrôleur diffère dans sa relation entre la position de l’utilisateur et la direction « avant » naturelle que les applications doivent utiliser pour pointer lors du rendu du contrôleur.
 
 Pour mieux représenter ces contrôleurs, il existe deux types de poses que vous pouvez examiner pour chaque source d’interaction :
 
-* La **poignée pose**, représentant l’emplacement de la paume d’une main détectée par un HoloLens, ou la paume contenant un contrôleur de mouvement.
+* la **poignée pose**, représentant l’emplacement de la paume d’une main détectée par un HoloLens ou la poche qui détient un contrôleur de mouvement.
     * Sur les casques immersifs, cette pose est idéale pour afficher **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**, tel qu’un arme ou un pistolet.
     * Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée.
     * **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
     * **Axe avant de l’orientation de la poignée**: quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
     * **Axe vers le haut de l’orientation**: l’axe vers le haut, impliqué dans les définitions Right et Forward.
-    * Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity (**[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation**) ou par le biais de l’API spécifique à Windows (**SourceState. SourcePose. TryGetPosition/rotation**, demandant la poignée pose).
+    * Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity (**[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation**) ou par le biais de l’API spécifique à Windows (**sourceState. sourcePose. TryGetPosition/rotation**, demandant la poignée pose).
 * Le **pointeur se pose**, représentant l’extrémité du contrôleur pointant vers l’avant.
     * Ce modèle est mieux utilisé pour raycast quand vous **pointez sur l’interface utilisateur** lorsque vous rendez le modèle de contrôleur lui-même.
-    * Actuellement, le pointeur pose est disponible uniquement par le biais de l’API spécifique à Windows (**sourceState. sourcePose. TryGetPosition/rotation**, demandant le pointeur pose).
+    * actuellement, le pointeur est disponible uniquement par le biais de l’API spécifique à Windows (**sourceState. sourcePose. TryGetPosition/Rotation**, en demandant la pose du pointeur).
 
 Ces coordonnées de pose sont toutes exprimées en coordonnées universelles Unity.

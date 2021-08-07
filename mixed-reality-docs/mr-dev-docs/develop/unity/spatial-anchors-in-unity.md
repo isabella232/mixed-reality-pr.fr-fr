@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 04/7/2021
 ms.topic: article
-keywords: Unity, ancres spatiales, magasin d’ancrage, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, outils de verrouillage universel, hologrammes
-ms.openlocfilehash: 4fc982244a766bb34f15b356d608f2aad18f7a88
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+keywords: unity, ancres spatiales, magasin d’ancrages, HoloLens, casque de réalité mixte, casque de réalité windows mixte, casque de réalité virtuelle, outils de verrouillage universel, hologrammes
+ms.openlocfilehash: 34ef74ab968bff04188b1010eb4c863fd73d76ee6b1dd8a0bd89c7d4232a2be9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528804"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208846"
 ---
 # <a name="world-locking-and-spatial-anchors-in-unity"></a>Verrouillage universel et ancrages spatiaux dans Unity
 
@@ -23,7 +23,7 @@ La mise en place de vos hologrammes, le déplacement avec vous ou, dans certains
 
 Aujourd’hui, lors de l’écriture de jeux, d’applications de visualisation de données ou d’applications de réalité virtuelle, l’approche classique consiste à établir un **système de coordonnées universel** unique sur lequel toutes les autres coordonnées peuvent être mappées de manière fiable. Dans cet environnement, vous pouvez toujours trouver une transformation stable qui définit une relation entre deux objets dans ce monde. Si vous n’avez pas déplacé ces objets, leurs transformations relatives restent toujours les mêmes. Ce type de système de coordonnées global est facile à trouver lors du rendu d’un monde purement virtuel où vous connaissez toute la géométrie à l’avance. Aujourd’hui, les applications de la mise à l’échelle de la salle établissent généralement ce type de système de coordonnées à l’échelle de la pièce, avec son origine sur le plancher.
 
-En revanche, un appareil de réalité mixte non attaché, tel que HoloLens, a une compréhension dynamique pilotée par les capteurs du monde, en ajustant en permanence ses connaissances dans le temps de l’environnement de l’utilisateur lorsqu’il parcourt de nombreux compteurs à travers l’ensemble d’un étage d’un bâtiment. Dans le cas d’une expérience à l’échelle mondiale, si vous avez placé tous vos hologrammes dans un système de coordonnées rigides naïve, ces hologrammes finissent par être décomposés au fil du temps, soit en se basant sur le monde, soit de l’un par rapport à l’autre.
+en revanche, un appareil de réalité mixte non attaché, tel que HoloLens, a une compréhension dynamique pilotée par les capteurs du monde, en ajustant continuellement ses connaissances au fil du temps de l’utilisateur lorsqu’il parcourt de nombreux compteurs à travers l’ensemble d’un étage d’un bâtiment. Dans le cas d’une expérience à l’échelle mondiale, si vous avez placé tous vos hologrammes dans un système de coordonnées rigides naïve, ces hologrammes finissent par être décomposés au fil du temps, soit en se basant sur le monde, soit de l’un par rapport à l’autre.
 
 Par exemple, le casque peut considérer deux endroits du monde comme étant séparés de 4 mètres, puis affiner cette compréhension, en sachant que les emplacements sont en fait de 3,9 mètres de distance. Si ces hologrammes avaient initialement été placés à 4 mètres en un seul système de coordonnées rigides, l’un d’eux présenterait toujours 0,1 mètres du monde réel.
 
@@ -35,7 +35,7 @@ Les **outils de verrouillage universel** vous offrent le meilleur des deux monde
 
 * **Nous vous recommandons** d’utiliser les **outils de verrouillage universel** pour tous vos besoins en matière de positionnement d’hologramme. 
     * Les outils de verrouillage universel offrent un système de coordonnées stable qui réduit les incohérences visibles entre les marqueurs virtuels et réels. En d’autres termes, il verrouille l’ensemble de la scène avec un pool partagé d’ancres, au lieu de verrouiller chaque groupe d’objets avec la propre ancre individuelle du groupe.
-* **Pour unity 2019/2020 utilisant OpenXR ou le plug-in Windows XR**, vous devez utiliser **ARAnchorManager**
+* **pour unity 2019/2020 utilisant OpenXR ou le plug-in Windows XR**, vous devez utiliser **ARAnchorManager**
 * **Pour les versions Unity plus anciennes ou les projets WSA** , vous devez utiliser **WorldAnchor**
 
 ## <a name="setting-up-world-locking"></a>Configuration du verrouillage universel 
@@ -44,7 +44,7 @@ Les **outils de verrouillage universel** vous offrent le meilleur des deux monde
 
 ## <a name="persistent-world-locking"></a>Verrouillage de monde persistant
 
-Les ancres spatiales enregistrent les hologrammes dans un espace réel entre les sessions d’application. Une fois enregistrées dans le magasin d’ancres HoloLens, elles peuvent être recherchées et chargées dans différentes sessions et constituent une solution de secours idéale en l’absence de connectivité Internet.
+Les ancres spatiales enregistrent les hologrammes dans un espace réel entre les sessions d’application. une fois enregistrées dans le magasin d’ancrage HoloLens, elles peuvent être recherchées et chargées dans différentes sessions et constituent une solution de secours idéale en l’absence de connectivité internet.
 
 > [!IMPORTANT]
 > Les ancres locales sont stockées sur l’appareil, alors que les ancres spatiales Azure sont stockées dans le cloud. Si vous envisagez d’utiliser les services cloud Azure pour stocker vos ancres, nous avons créé un guide qui vous aidera à intégrer [Azure Spatial Anchors](../mixed-reality-cloud-services.md#azure-spatial-anchors). Notez que vous pouvez avoir des ancres locales et Azure dans le même projet sans conflit.

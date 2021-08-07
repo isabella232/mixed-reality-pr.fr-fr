@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: critères de qualité des applications, réalité mixte, application de réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 3f6752c0a15ae7db21be1f4a6d2843339ab28a5c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 858b0782c4e6754ee6753d463d5fe498e3a893f6c21b3f1c86ac14f8c0e6c8cf
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581266"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189379"
 ---
 # <a name="app-quality-criteria"></a>Critères de qualité des applications
 
@@ -20,12 +20,12 @@ Ce document décrit les principaux facteurs qui ont un impact sur la qualité de
 * Impact sur l’appareil : le type de périphérique de la réalité mixte de fenêtre est affecté.
 * Critères de qualité : comment évaluer le facteur de qualité.
 * Comment mesurer : méthodes pour mesurer (ou expérimenter) le problème.
-* Recommandations : Résumé des approches pour offrir une meilleure expérience utilisateur.
+* Recommandations : résumé des approches pour offrir une meilleure expérience utilisateur.
 * Ressources : ressources de conception et de développement pertinentes qui sont utiles pour créer de meilleures expériences d’application.
 
 ## <a name="frame-rate"></a>Fréquence d’images
 
-La fréquence d’images est le premier pilier de la stabilité de l’hologramme et du confort de l’utilisateur. La fréquence d’images en dessous des cibles recommandées peut provoquer l’apparition d’hologrammes, ce qui a un impact négatif sur la qualité de l’expérience et éventuellement une fatigue oculaire. La fréquence d’images cible pour votre expérience sur les casques immersifs Windows Mixed Reality est soit 60 Hz, soit 90 Hz selon les PC compatibles Windows Mixed Reality que vous prenez en charge. Pour HoloLens, la fréquence d’images cible est de 60 Hz.
+La fréquence d’images est le premier pilier de la stabilité de l’hologramme et du confort de l’utilisateur. La fréquence d’images en dessous des cibles recommandées peut provoquer l’apparition d’hologrammes, ce qui a un impact négatif sur la qualité de l’expérience et éventuellement une fatigue oculaire. la fréquence d’images cible pour votre expérience sur Windows Mixed Reality les casques immersifs est soit 60 hz, soit 90 hz selon les pc compatibles Windows Mixed Reality que vous prenez en charge. par HoloLens, la fréquence d’images cible est de 60 Hz.
 
 ### <a name="device-impact"></a>Impact de l’appareil
 
@@ -55,7 +55,7 @@ La fréquence d’images est le premier pilier de la stabilité de l’hologramm
 
 ### <a name="how-to-measure"></a>Comment mesurer
 
-* Un graphique de fréquence d’images en temps réel est fourni par le biais du [portail d’appareils Windows](using-the-windows-device-portal.md#system-performance) sous « performances système ».
+* un graphique de fréquence d’images en temps réel est fourni par le [portail des appareils Windows](using-the-windows-device-portal.md#system-performance) sous « performances système ».
 * Pour le débogage de développement, ajoutez un compteur de diagnostic de fréquence d’images dans l’application. Consultez ressources pour obtenir un exemple de compteur.
 * Les chutes de fréquence d’images peuvent être rencontrées dans l’appareil pendant que l’application est en cours d’exécution en déplaçant votre tête d’un côté à l’autre. Si l’hologramme présente un mouvement instable inattendue, la fréquence d’images faible ou le plan de stabilité est probablement la cause.
 
@@ -75,8 +75,8 @@ La fréquence d’images est le premier pilier de la stabilité de l’hologramm
 
 #### <a name="tools-and-tutorials"></a>Outils et didacticiels
 
-* [Boîte à outils de réalité mixte, affichage du compteur FPS](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
-* [Boîte à outils de réalité mixte, nuanceurs](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
+* [Shared Computer Toolkit de la réalité mixte, affichage du compteur FPS](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
+* [Shared Computer Toolkit de la réalité mixte, nuanceurs](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
 
 #### <a name="external-references"></a>Références externes
 
@@ -114,7 +114,7 @@ Les hologrammes stables augmenteront la convivialité et l’incroyableté de vo
 
 |  La meilleure  |  Présente |  Échec |
 --- | --- | ---
-|  Les hologrammes semblent constamment stables. | Le contenu secondaire montre un mouvement inattendu. ou un mouvement inattendu ne fait pas obstacle à l’expérience globale de l’application. | Le contenu principal du frame montre un mouvement inattendu. |
+|  les Hologrammes sont toujours stables. | Le contenu secondaire montre un mouvement inattendu. ou un mouvement inattendu ne fait pas obstacle à l’expérience globale de l’application. | Le contenu principal du frame montre un mouvement inattendu. |
 
 ### <a name="how-to-measure"></a>Comment mesurer
 
@@ -146,9 +146,9 @@ Lors de l’usure de l’appareil et de l’affichage de l’expérience :
 
 #### <a name="tools-and-tutorials"></a>Outils et didacticiels
 
-* [Kit de complément MR, IPD Kinect](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
+* [Kit de complément MR, Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
 
-## <a name="holograms-position-on-real-surfaces"></a>Position des hologrammes sur les surfaces réelles
+## <a name="holograms-position-on-real-surfaces"></a>Hologrammes position sur des surfaces réelles
 
 Les mauvais alignements d’hologrammes avec des objets physiques (s’ils sont destinés à être placés les uns par rapport aux autres) sont une indication claire de l’absence d’Union des hologrammes et du monde réel. La précision de la position doit être relative aux besoins du scénario ; par exemple, le positionnement de surface général peut utiliser la carte spatiale, mais un positionnement plus précis nécessitera l’utilisation de marqueurs et d’étalonnage.
 
@@ -176,19 +176,19 @@ Les mauvais alignements d’hologrammes avec des objets physiques (s’ils sont 
 
 |  La meilleure  |  Présente |  Échec |
 --- | --- | ---
-| Les hologrammes s’alignent sur la surface généralement dans la plage de centimètres en pouces. Si vous avez besoin de plus de précision, l’application doit fournir un moyen efficace de collaboration dans les spécifications de l’application. | NA | Les hologrammes apparaissent non alignés avec l’objet cible physique en rompant le plan de surface ou en s’éloignant de l’aire. Si la précision est requise, les hologrammes doivent répondre aux spécifications de proximité du scénario. | 
+| Hologrammes aligner en général la surface dans la plage de centimètres en pouces. Si vous avez besoin de plus de précision, l’application doit fournir un moyen efficace de collaboration dans les spécifications de l’application. | N/D | Les hologrammes apparaissent non alignés avec l’objet cible physique en rompant le plan de surface ou en s’éloignant de l’aire. si la précision est requise, Hologrammes doit respecter les spécifications de proximité du scénario. | 
 
 ### <a name="how-to-measure"></a>Comment mesurer
 
-* Les hologrammes placés sur la carte spatiale ne doivent pas sembler très flotter au-dessus ou en dessous de la surface.
-* Les hologrammes qui nécessitent un placement précis doivent avoir une forme de système de marqueur et de système d’étalonnage qui est précis à l’exigence du scénario.
+* les Hologrammes placées sur la carte spatiale ne doivent pas sembler fortement flottantes au-dessus ou en dessous de la surface.
+* les Hologrammes qui nécessitent un placement précis doivent avoir une forme de système de marqueur et de système d’étalonnage qui est précise à l’exigence du scénario.
 
 ### <a name="recommendations"></a>Recommandations
 
 * La carte spatiale est utile pour placer des objets sur des surfaces lorsque la précision n’est pas requise.
 * Pour une meilleure précision, utilisez des marqueurs ou des affiches pour définir les hologrammes et un contrôleur Xbox (ou un mécanisme d’alignement manuel) pour l’étalonnage final.
 * Envisagez de casser des hologrammes très grands en parties logiques et en alignant chaque partie sur l’aire de conception.
-* La définition incorrecte de la distance interpupillary (IPD) peut également affecter l’alignement de l’hologramme. Configurez toujours HoloLens sur l’IPD de l’utilisateur.
+* La définition incorrecte de la distance interpupillary (IPD) peut également affecter l’alignement de l’hologramme. configurez toujours HoloLens sur l’IPD de l’utilisateur.
 
 ### <a name="resources"></a>Ressources
 
@@ -203,9 +203,9 @@ Les mauvais alignements d’hologrammes avec des objets physiques (s’ils sont 
 
 #### <a name="tools-and-tutorials"></a>Outils et didacticiels
 
-* [Boîte à outils MR, bibliothèques de mappage spatiale](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialMapping/README.md)
+* [rm Shared Computer Toolkit, bibliothèques de mappage spatiale](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialMapping/README.md)
 * [Kit de complément MR, exemple d’étalonnage d’affiches](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample)
-* [Kit de complément MR, IPD Kinect](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
+* [Kit de complément MR, Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
 
 #### <a name="external-references"></a>Références externes
 
@@ -213,7 +213,7 @@ Les mauvais alignements d’hologrammes avec des objets physiques (s’ils sont 
 
 ## <a name="viewing-zone-of-comfort"></a>Affichage de la zone de confort
 
-Les développeurs d’applications contrôlent l’emplacement des yeux des utilisateurs en plaçant le contenu et les hologrammes à différents niveaux. Les utilisateurs qui ont le port HoloLens s’adapteront toujours à 2,0 m pour maintenir une image claire, car les affichages HoloLens sont fixés à une distance optique d’environ 2,0 mètres de l’utilisateur. Une profondeur de contenu incorrecte peut entraîner une gêne visuelle ou une fatigue.
+Les développeurs d’applications contrôlent l’emplacement des yeux des utilisateurs en plaçant le contenu et les hologrammes à différents niveaux. les utilisateurs qui portent HoloLens prennent toujours en charge 2,0 m pour maintenir une image claire, car HoloLens affichages sont fixés à une distance optique d’environ 2,0 mètres de l’utilisateur. Une profondeur de contenu incorrecte peut entraîner une gêne visuelle ou une fatigue.
 
 ### <a name="device-impact"></a>Impact de l’appareil
 
@@ -252,7 +252,7 @@ Les développeurs d’applications contrôlent l’emplacement des yeux des util
 ### <a name="how-to-measure"></a>Comment mesurer
 
 * Le contenu doit généralement être à 2 mètres de distance, mais pas plus proche de 1,25 ou plus de 5 mètres.
-* À quelques exceptions près, la distance de rendu du découpage HoloLens doit être définie sur 85CM avec disparition en fondu du contenu à partir de 1 m. Approchez le contenu et notez l’effet plan de découpage.
+* à quelques exceptions près, la distance de rendu du découpage de HoloLens doit être définie sur 85CM avec disparition en fondu du contenu à partir de 1 m. Approchez le contenu et notez l’effet plan de découpage.
 * Le contenu fixe ne doit pas être plus proche de 50 cm.
 
 ### <a name="recommendations"></a>Recommandations
@@ -313,7 +313,7 @@ Indépendamment de l’affichage des problèmes liés à la zone de confort, les
 
 ## <a name="use-of-spatial-sound"></a>Utilisation du son spatial
 
-Dans Windows Mixed Reality, le moteur audio fournit le composant d’acoustique de l’expérience de la réalité mixte en simulant le son en 3D à l’aide de la direction, de la distance et des simulations environnementales. L’utilisation d’un son spatial dans une application permet aux développeurs de placer des sons dans un espace à 3 Dimensions (sphère) autour de l’utilisateur. Ces sons semblent apparaître comme s’ils étaient issus d’objets physiques réels ou d’hologrammes de réalité mixte dans l’environnement de l’utilisateur. Le son spatial est un outil puissant pour la conception de l’immersion, de l’accessibilité et de l’expérience utilisateur dans les applications de réalité mixte.
+dans Windows Mixed Reality, le moteur audio fournit le composant d’acoustique de l’expérience de réalité mixte en simulant le son en 3d à l’aide de la direction, de la distance et des simulations environnementales. L’utilisation d’un son spatial dans une application permet aux développeurs de placer des sons dans un espace à 3 Dimensions (sphère) autour de l’utilisateur. Ces sons semblent apparaître comme s’ils étaient issus d’objets physiques réels ou d’hologrammes de réalité mixte dans l’environnement de l’utilisateur. Le son spatial est un outil puissant pour la conception de l’immersion, de l’accessibilité et de l’expérience utilisateur dans les applications de réalité mixte.
 
 ### <a name="device-impact"></a>Impact de l’appareil
 
@@ -367,7 +367,7 @@ Dans Windows Mixed Reality, le moteur audio fournit le composant d’acoustique 
 
 #### <a name="tools-and-tutorials"></a>Outils et didacticiels
 
-* [Boîte à outils de réalité mixte-audio spatial](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
+* [Shared Computer Toolkit de la réalité mixte-Audio Spatial](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
 
 ## <a name="focus-on-holographic-frame-fov-boundaries"></a>Focalisation sur les limites du cadre holographique
 
@@ -417,7 +417,7 @@ Les expériences utilisateur bien conçues peuvent créer et gérer le contexte 
 #### <a name="documentation"></a>Documentation
 
 * [Image holographique](../../design/holographic-frame.md)
-* [Étude de cas, interface utilisateur HoloStudio et apprentissages de conception d’interaction](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
+* [étude de cas, HoloStudio l’interface utilisateur et les apprentissages de conception d’interaction](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
 * [Échelle des objets et des environnements](../../design/scale.md)
 * [Curseurs, signaux visuels](../../design/cursors.md#visual-cues)
 
@@ -427,7 +427,7 @@ Les expériences utilisateur bien conçues peuvent créer et gérer le contexte 
 
 ## <a name="content-reacts-to-user-position"></a>Le contenu réagit à la position de l’utilisateur
 
-Les hologrammes doivent réagir à la position de l’utilisateur à peu près de la même façon que les objets « réels ». L’un des éléments d’interface utilisateur qui ne peuvent pas nécessairement supposer que la position d’un utilisateur est stationnaire et s’adapte au mouvement de l’utilisateur est une considération notable. La conception d’une application qui s’adapte correctement à la position de l’utilisateur crée une expérience plus crédible et la rend plus facile à utiliser.
+Hologrammes doit réagir à la position de l’utilisateur à peu près de la même façon que les objets « réels ». L’un des éléments d’interface utilisateur qui ne peuvent pas nécessairement supposer que la position d’un utilisateur est stationnaire et s’adapte au mouvement de l’utilisateur est une considération notable. La conception d’une application qui s’adapte correctement à la position de l’utilisateur crée une expérience plus crédible et la rend plus facile à utiliser.
 
 ### <a name="device-impact"></a>Impact de l’appareil
 
@@ -512,7 +512,7 @@ La clarté de l’interaction d’entrée est essentielle à l’utilisation d�
 
 |  La meilleure  |  Présente |  Échec |
 --- | --- | ---
-|  Les méthodes d’interaction d’entrée sont cohérentes avec les [recommandations](../../design/interaction-fundamentals.md)fournies par Windows Mixed Reality. Toute entrée personnalisée ne doit pas être redondante avec une entrée standard (plutôt que d’utiliser l’interaction standard) et doit être clairement communiquée et présentée à l’utilisateur. | Semblable au meilleur, mais les entrées personnalisées sont redondantes avec des méthodes d’entrée standard. L’utilisateur peut toujours atteindre l’objectif et progresser dans l’expérience de l’application. | Il est difficile de comprendre la méthode d’entrée ou le mappage de bouton. L’entrée est fortement personnalisée, ne prend pas en charge les entrées standard, aucune instruction, ou risque de causer des problèmes de fatigue et de confort. | 
+|  les méthodes d’interaction d’entrée sont cohérentes avec Windows Mixed Reality [guide](../../design/interaction-fundamentals.md)fourni. Toute entrée personnalisée ne doit pas être redondante avec une entrée standard (plutôt que d’utiliser l’interaction standard) et doit être clairement communiquée et présentée à l’utilisateur. | Semblable au meilleur, mais les entrées personnalisées sont redondantes avec des méthodes d’entrée standard. L’utilisateur peut toujours atteindre l’objectif et progresser dans l’expérience de l’application. | Il est difficile de comprendre la méthode d’entrée ou le mappage de bouton. L’entrée est fortement personnalisée, ne prend pas en charge les entrées standard, aucune instruction, ou risque de causer des problèmes de fatigue et de confort. | 
 
 ### <a name="how-to-measure"></a>Comment mesurer
 
@@ -556,7 +556,7 @@ La clarté de l’interaction d’entrée est essentielle à l’utilisation d�
 #### <a name="tools-and-tutorials"></a>Outils et didacticiels
 
 * [Étude de cas : la poursuite de l’informatique plus personnelle](../../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md#less-interface-in-your-face)
-* [Étude de Cast : interface utilisateur HoloStudio et apprentissages de conception d’interaction](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
+* [étude de Cast : HoloStudio de l’interface utilisateur et des apprentissages de conception d’interaction](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
 * [Exemple d’application : table périodique des éléments](../unity/periodic-table-of-the-elements.md)
 * [Exemple d’application : module lunaire](../unity/lunar-module.md)
 
@@ -613,7 +613,7 @@ Un bouton a longtemps été une métaphore utilisée pour déclencher un événe
 
 #### <a name="tools-and-tutorials"></a>Outils et didacticiels
 
-* [Kit de pratiques de réalité mixte-UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
+* [Shared Computer Toolkit de la réalité mixte-UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
 
 ## <a name="room-scanning"></a>Analyse de la salle
 
@@ -668,7 +668,7 @@ Les applications qui requièrent des données de mappage spatiale s’appuient s
 
 #### <a name="tools-and-tutorials"></a>Outils et didacticiels
 
-* [Kit de pratiques de réalité mixte-UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
+* [Shared Computer Toolkit de la réalité mixte-UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
 
 ## <a name="directional-indicators"></a>Indicateurs directionnels
 

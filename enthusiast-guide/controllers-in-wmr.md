@@ -5,27 +5,27 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 66b352696016577ab121520102dd766b030ccf0e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: bc5983706d75d6c66bb8de375b38f2ebe0d3f0aba0d90be5ef1e39d5a6949743
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944630"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187985"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Contrôleurs de mouvement dans Windows Mixed Reality
 
-Les contrôleurs de mouvement sont des accessoires matériels qui permettent aux utilisateurs d’interagir en réalité mixte. L’un des avantages des contrôleurs de mouvement par rapport aux gestes est que les contrôleurs ont une position précise dans l’espace, ce qui permet une interaction fine avec les objets numériques. Pour les casques immersifs Windows Mixed Reality, les contrôleurs de mouvement constituent la principale façon dont les utilisateurs effectuent des actions dans leur environnement.
+Les contrôleurs de mouvement sont des accessoires matériels qui permettent aux utilisateurs d’interagir en réalité mixte. L’un des avantages des contrôleurs de mouvement par rapport aux gestes est que les contrôleurs ont une position précise dans l’espace, ce qui permet une interaction fine avec les objets numériques. pour les Windows Mixed Reality les casques immersifs, les contrôleurs de mouvement constituent la principale façon dont les utilisateurs effectuent des actions dans leur monde.
 
-Les contrôleurs de mouvement Windows Mixed Reality effectuent un suivi des mouvements précis et réactifs dans votre champ de vue via les capteurs du casque immersif. Il n’est pas nécessaire d’installer le matériel sur les murs de votre espace. Ces contrôleurs de mouvement offriront la même facilité de configuration et de portabilité que les casques immersifs immersifs de Windows Mixed Reality.
+les contrôleurs de mouvement Windows Mixed Reality offrent un suivi des mouvements précis et réactif dans votre champ de vue via les capteurs du casque immersif. Il n’est pas nécessaire d’installer le matériel sur les murs de votre espace. ces contrôleurs de mouvement offriront la même facilité de configuration et de portabilité que Windows Mixed Reality des casques immersifs.
 
 Vous pouvez également utiliser un contrôleur Xbox, une souris, un clavier ou une solution en [utilisant uniquement votre voix](using-speech-in-wmr.md).
 
 ## <a name="motion-controller-setup"></a>Configuration du contrôleur de mouvement
 
-La plupart des casques sont précouplés directement sur le casque, mais certains casques précoces nécessitent que les contrôleurs de mouvement soient couplés à votre PC avec Bluetooth 4,0. Lorsque vous connectez votre casque immersif pour la première fois, vous allez passer à l’activation de vos contrôleurs de mouvement au cours de l’installation. Mais si vous devez les recoupler ultérieurement, voici comment procéder :
+la plupart des casques sont directement couplés au casque, mais certains casques précoces requièrent que les contrôleurs de mouvement soient couplés à votre PC avec Bluetooth 4,0. Lorsque vous connectez votre casque immersif pour la première fois, vous allez passer à l’activation de vos contrôleurs de mouvement au cours de l’installation. Mais si vous devez les recoupler ultérieurement, voici comment procéder :
 
 1. Lancez le **portail de réalité mixte** avec votre casque connecté.  
 2. Dans le coin inférieur gauche, sélectionnez **... > configurer les contrôleurs**.
@@ -34,14 +34,14 @@ La plupart des casques sont précouplés directement sur le casque, mais certain
 
 > [!NOTE]
 > * Pour les contrôleurs qui se couplent directement à votre PC, vous devez les mettre en mode de jumelage en les mettant sous tension, puis en appuyant sur le bouton d’appariement dans le compartiment de la batterie jusqu’à ce que les lumières commencent à clignoter.
-> * Les contrôleurs de mouvement ne prennent en charge que l’appariement à un seul PC à la fois. Si vous devez les utiliser avec un autre casque, vous devez passer par le processus d’appariement. Consultez [configurer la réalité mixte Windows](set-up-windows-mixed-reality.md)
+> * Les contrôleurs de mouvement ne prennent en charge que l’appariement à un seul PC à la fois. Si vous devez les utiliser avec un autre casque, vous devez passer par le processus d’appariement. Consultez [configurer Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
 [Obtenir de l’aide pour la connexion](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 
 > [!IMPORTANT]
 > **Vous avez un contrôleur Xbox ?**
 > 
-> Si vous avez un contrôleur Xbox Bluetooth, associez-le à votre PC pour l’utiliser avec votre casque.
+> si vous avez un contrôleur Xbox Bluetooth, associez-le à votre PC pour l’utiliser avec votre casque.
 > 
 > Si vous avez un contrôleur Xbox câblé, connectez-le à votre PC.
 > 
@@ -49,11 +49,11 @@ La plupart des casques sont précouplés directement sur le casque, mais certain
 
 ## <a name="pair-motion-controllers"></a>Contrôleurs de mouvement de paire
 
-Si vous utilisez un casque qui comprend un contrôleur Bluetooth intégré, tel que le reverbe Samsung Odyssey + ou HP, vos contrôleurs doivent déjà être couplés. Toutefois, vous pouvez toujours coupler vos contrôleurs à l’aide de l’application d’installation (il doit être déjà installé au cours de la configuration de HMD. Vous pouvez également l’extraire à partir du Microsoft Store).
+si vous utilisez un casque qui comprend un contrôleur de Bluetooth intégré, tel que le reverbe Samsung Odyssey + ou HP, vos contrôleurs doivent déjà être couplés. Toutefois, vous pouvez toujours coupler vos contrôleurs à l’aide de l’application d’installation (il doit être déjà installé au cours de la configuration de HMD. Vous pouvez également l’extraire à partir du Microsoft Store).
 
 ### <a name="pair-motion-controllers-to-hmd"></a>Associer les contrôleurs de mouvement à HMD
 
-Mettez les contrôleurs sous tension en appuyant sur le bouton Windows pendant 2 secondes jusqu’à ce que les voyants soient allumés.
+mettez les contrôleurs sous tension en appuyant sur le bouton Windows pendant 2 secondes jusqu’à ce que les voyants soient allumés.
 
 Retirez la couverture de la batterie de vos contrôleurs et recherchez le petit bouton d’appariement à la périphérie du contrôleur. Maintenez ce bouton enfoncé pour le coupler à votre PC.
     ![Appariement du contrôleur de mouvement](images/connect_controller.png)
@@ -69,16 +69,16 @@ Vous pouvez associer votre contrôleur à un PC en ajoutant un autre appareil Bl
 Alimentez les contrôleurs et placez-les en mode de jumelage comme décrit ci-dessus.
 
 * Accéder aux paramètres de l’ordinateur
-* Appareil/ajouter Bluetooth ou un autre périphérique.
+* appareil/ajouter Bluetooth ou un autre appareil.
 
 Une fois le couplage terminé, les LED sont solides et brillants.
 
 ### <a name="common-issues"></a>Problèmes courants
 
-* Vérifiez que vous n’avez qu’une seule radio Bluetooth active sur votre PC. Si vous disposez de plusieurs radios Bluetooth, vous devez désactiver les autres radios dans Gestionnaire de périphériques.
-* Placez votre dongle Bluetooth dans un port disposant d’un éclairage clair sur vos contrôleurs, et loin de brancher des appareils USB 3,0. USB 3,0 est connu pour avoir des interférences RF avec Bluetooth (lisez [ce document](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) d’Intel pour plus d’informations). Les ports USB 2,0 peuvent fonctionner mieux pour votre dongle Bluetooth.
-* Assurez-vous que votre dongle Bluetooth n’est pas branché sur un port USB à côté du câble USB de votre HMD. Le câble du casque a été connu pour causer des interférences avec les dongles Bluetooth également. Branchez le dongle sur le port USB avant de votre ordinateur pour obtenir des résultats optimaux.
-* Pour les Notebooks, assurez-vous que le Wi-Fi est connecté à une bande de 5 GHz pour une expérience optimale. Sélectionnez l’icône de réseau sans fil en bas à droite de la barre d’État et sélectionnez les propriétés du réseau que vous utilisez. Les blocs-notes conçus pour partager une antenne 2,4 GHz pour la connectivité Bluetooth et WiFi voient la congestion des données en cas de lenteur des vitesses de réseau ou de performances de suivi du contrôleur de mouvement médiocre.
+* vérifiez que vous n’avez qu’une seule Bluetooth radio active sur votre PC. si vous avez plus d’un Bluetooth radio, vous devez désactiver les autres radios dans Gestionnaire de périphériques.
+* placez votre clé de Bluetooth dans un port disposant d’une vision claire de vos contrôleurs, et loin de brancher des appareils USB 3,0. USB 3,0 est connu pour avoir des interférences RF avec Bluetooth (lisez [ce document](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) d’Intel pour plus d’informations). les ports USB 2,0 peuvent fonctionner mieux pour votre clé de Bluetooth.
+* assurez-vous que votre clé de Bluetooth n’est pas branchée sur un port usb à côté du câble usb de votre HMD. le câble du casque a été connu pour provoquer des interférences avec les dongles de Bluetooth. Branchez le dongle sur le port USB avant de votre ordinateur pour obtenir des résultats optimaux.
+* Pour les Notebooks, assurez-vous que le Wi-Fi est connecté à une bande de 5 GHz pour une expérience optimale. Sélectionnez l’icône de réseau sans fil en bas à droite de la barre d’État et sélectionnez les propriétés du réseau que vous utilisez. les blocs-notes conçus pour partager une antenne 2,4 GHz pour Bluetooth et la connectivité WiFi voient la congestion des données en cas de lenteur des vitesses de réseau ou de performances de suivi du contrôleur de mouvement médiocre.
 * Vos contrôleurs Motion recevront régulièrement de nouvelles mises à jour logicielles de Microsoft. Les contrôleurs présentent un modèle alternatif de voyants clignotants lorsqu’ils reçoivent ces nouvelles mises à jour logicielles. C’est normal. Attendez la fin de la mise à niveau du logiciel avant d’utiliser les contrôleurs. Les contrôleurs vibreront et une lumière constante remplacera le modèle de mémoire flash alternatif lorsqu’il sera terminé.
 * Vous pouvez être invité à « placer sur le casque et à utiliser le stick analogique pour vous téléporter » avant que les contrôleurs terminent le processus de mise à jour. Les contrôleurs ne seront pas visibles ou utilisables tant que la mise à jour n’est pas terminée. La plupart des mises à jour se produisent dans un délai de deux minutes, mais les mises à jour peuvent prendre jusqu’à 10 minutes. Attendez la fin de la mise à jour avant de passer à l’étape suivante.
 
@@ -87,7 +87,7 @@ Une fois le couplage terminé, les LED sont solides et brillants.
 Voici comment contourner la réalité mixte avec les contrôleurs de mouvement, un manette de main Xbox ou une souris et un clavier.
 
 > [!TIP]
-> Pour basculer entre la réalité mixte et votre bureau, appuyez sur la **touche Windows + Y** sur le clavier de votre PC.
+> pour basculer entre la réalité mixte et votre bureau, appuyez sur **Windows touche + Y** sur le clavier de votre PC.
 
 ![Mappage du bouton de contrôleur de mouvement](images/get_to_know_controllers.png)
 
@@ -95,8 +95,8 @@ Voici comment contourner la réalité mixte avec les contrôleurs de mouvement, 
 | --- | --- | --- | --- |
 | Porte | Appuyez sur le stick analogique, puis pointez le contrôleur à l’endroit où vous souhaitez aller. Relâchez le stick analogique. | Appuyez sur le stick analogique gauche vers l’avant, puis recherchez l’emplacement où vous souhaitez aller. Relâchez le stick analogique. | Sélectionnez et maintenez le bouton droit, puis pointez la souris à l’endroit où vous souhaitez aller. Relâchez le bouton. |
 | Sélectionnez | Pointez sur le contrôleur, puis tirez le déclencheur ou utilisez le pavé tactile. | Pointez avec le regard sur la cible, puis appuyez sur A. | Pointez la souris, puis cliquez sur le bouton gauche. |
-| Ouverture du menu Démarrer | Appuyez sur le bouton **Windows** . | Appuyez sur le bouton **Xbox** . | Appuyez sur la **touche du logo Windows**. |
-| Conserver une application immersif | Appuyez sur le bouton **Windows** . Ensuite, dans le menu actions rapides, sélectionnez page d’hébergement de la **réalité mixte** . | Appuyez sur le bouton **Xbox** . Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides. | Appuyez sur la touche * * du logo Windows. Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides qui s’affiche. |
+| Ouverture du menu Démarrer | appuyez sur le bouton **Windows** . | Appuyez sur le bouton **Xbox** . | appuyez sur la **touche Windows logo**. |
+| Conserver une application immersif | appuyez sur le bouton **Windows** . Ensuite, dans le menu actions rapides, sélectionnez page d’hébergement de la **réalité mixte** . | Appuyez sur le bouton **Xbox** . Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides. | appuyez sur la touche * * Windows du logo. Sélectionnez ensuite le bouton de démarrage de la **réalité mixte** dans le menu actions rapides qui s’affiche. |
 | Faire pivoter | Déplacer le stick analogique vers la gauche ou vers la droite. | Déplacez le levier droit vers la gauche ou la droite. | Non disponible. |
 | Sauvegarder | Déplacez le stick analogique vers l’arrière. | Déplacez le levier gauche vers l’arrière. | Non disponible. |
 | Marcher | Poussez le stick analogique vers le bas, puis appuyez dessus dans la direction que vous souhaitez parcourir. | Poussez le levier gauche vers le bas, puis appuyez dessus dans la direction que vous souhaitez parcourir. | Non disponible. |
@@ -112,7 +112,7 @@ Voici comment contourner la réalité mixte avec les contrôleurs de mouvement, 
 
 Votre contrôleur vous communique ce qu’il fait en vibrant et en faisant clignoter ses lumières LED.
 
-|  En cas de fonctionnement de votre contrôleur  |  Cela signifie que cela |
+|  En cas de fonctionnement de votre contrôleur  |  Signification |
 | --- | --- |
 | Les LED allument et le contrôleur vibre une fois | **Activation** |  
 | Les LED éteignent et le contrôleur vibre deux fois | **Désactivation** |
@@ -127,7 +127,7 @@ Votre contrôleur vous communique ce qu’il fait en vibrant et en faisant clign
 ## <a name="updating-motion-controllers-firmware"></a>Mise à jour du microprogramme des contrôleurs de mouvement
 
 * Si un casque immersif est connecté à votre PC et que le nouveau microprogramme du contrôleur est disponible, le microprogramme est automatiquement envoyé à vos contrôleurs de mouvement la prochaine fois qu’ils sont allumés.
-* Les mises à jour du microprogramme du contrôleur sont affichées avec un modèle de quadrants lumineux lumineux dans un mouvement circulaire et prennent 1-2 minutes. Les mises à jour de microprogramme peuvent parfois prendre plus de temps, jusqu’à 10 minutes, ce qui peut indiquer une mauvaise connectivité Bluetooth ou des interférences radio.
+* Les mises à jour du microprogramme du contrôleur sont affichées avec un modèle de quadrants lumineux lumineux dans un mouvement circulaire et prennent 1-2 minutes. les mises à jour de microprogramme peuvent parfois prendre plus de temps, jusqu’à 10 minutes, ce qui peut indiquer une mauvaise connectivité de Bluetooth ou des interférences radio.
 * En cas d’interruption de la mise à jour du microprogramme (contrôle hors tension ou batterie), une nouvelle tentative est effectuée lors de la prochaine mise sous tension.
 * Une fois la mise à jour du microprogramme terminée, les contrôleurs redémarrent et se reconnectent.
 * Les deux contrôleurs doivent être connectés maintenant. Accédez au portail de réalité mixte pour vérifier l’état de vos contrôleurs.
@@ -135,7 +135,7 @@ Votre contrôleur vous communique ce qu’il fait en vibrant et en faisant clign
   * Lancez le **portail de réalité mixte** et entrez votre page d’hébergement de la réalité mixte.
   * Déplacez vos contrôleurs et vérifiez le suivi, les boutons de test et vérifiez que la téléportage fonctionne. Si ce n’est pas le cas, consultez [la section résolution des problèmes du contrôleur de mouvement](motion-controller-problems.md)
 
-## <a name="faq"></a>FORUM AUX QUESTIONS
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 ### <a name="how-can-i-check-battery-level"></a>Comment puis-je vérifier le niveau de la batterie ?
 
@@ -143,7 +143,7 @@ Votre contrôleur vous communique ce qu’il fait en vibrant et en faisant clign
 
 ### <a name="can-you-use-these-controllers-without-a-headset-just-for-the-joysticktriggeretc-input"></a>Pouvez-vous utiliser ces contrôleurs sans casque ? Uniquement pour la manette de jeu/déclencheur/etc.
 
-*R : pas pour les applications Windows universelles*
+*r : pas pour les Applications de Windows universelles*
 
 ## <a name="filing-motion-controller-feedbackbugs"></a>Profilage de commentaires/bogues du contrôleur de mouvement
 
@@ -155,6 +155,6 @@ Faites-nous part de vos commentaires dans le hub de commentaires à l’aide de 
 - [Contrôleurs HP inréel](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 - [Demander à la communauté](https://answers.microsoft.com)
 - [Contactez-nous pour obtenir de l’aide](https://support.microsoft.com/contactus/)
-- [Dépannage](troubleshooting-windows-mixed-reality.md)
+- [Résolution des problèmes](troubleshooting-windows-mixed-reality.md)
 
 Vous rencontrez des problèmes avec vos contrôleurs de mouvement ? [Obtenir de l’aide](motion-controller-problems.md)

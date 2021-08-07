@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Windows Mixed Reality, maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
-ms.openlocfilehash: 9927f683038af72f2649421a5ea162e140e95656
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, commentaires, Hub de commentaires, bogues
+ms.openlocfilehash: 54277472fd2550c87f15f647a7019775c063db53f5d9df1a7251f5a800453714
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935403"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212367"
 ---
 # <a name="creating-a-dialog-box"></a>Création d’une boîte de dialogue 
 

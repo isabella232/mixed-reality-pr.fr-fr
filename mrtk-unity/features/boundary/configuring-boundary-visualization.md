@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de limite,
-ms.openlocfilehash: 77bdaedb60700bac27643ae718c795c02e5ee7e7
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 29ffe7826d797fd32387fab42f24232f98ab283740848b7fce928718f95f0fc9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211561"
 ---
 # <a name="configuring-boundary-visualization"></a>Configuration de la visualisation des limites
 
@@ -36,7 +36,7 @@ Indique si un plan d’étage doit être créé et ajouté à la scène. La vale
 
 Indique la matière qui doit être utilisée lors de la création du plan de plancher.
 
-**Mise à l’échelle**
+**Mettre à l'échelle**
 
 Indique la taille, en mètres, du plan d’étage à créer. L’échelle par défaut est un carré 3 mètres x 3 mètres.
 

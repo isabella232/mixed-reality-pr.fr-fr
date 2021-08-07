@@ -1,17 +1,17 @@
 ---
 title: Curseurs
-description: Un curseur, ou un indicateur de votre vecteur de ciblage, fournit des commentaires continus permettant à l’utilisateur de comprendre ce que HoloLens comprend pour ses intentions.
+description: un curseur, ou un indicateur de votre vecteur de ciblage, fournit des commentaires continus permettant à l’utilisateur de comprendre ce que HoloLens comprend à propos de ses intentions.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens (1re génération), HoloLens 2, réalité mixte, curseurs, ciblage, point de regard, mouvements, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, rayons, entrée
-ms.openlocfilehash: 829d7b3f766f848228946ee0a623f9f3013adca3
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: HoloLens (1re génération), HoloLens 2, réalité mixte, curseurs, ciblage, point de regard, mouvements, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de la réalité mixte, rayons, entrée
+ms.openlocfilehash: 46e570328451078586109448bce28a7074bc9c2f791c15a284c85b845441fabe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187056"
 ---
 # <a name="cursors"></a>Curseurs
 
@@ -19,7 +19,7 @@ ms.locfileid: "110600378"
 
 Un curseur fournit des commentaires continus en fonction de l’endroit où le casque estime qu’un utilisateur a actuellement le focus à un moment donné. Le retour de curseur comprend la zone, l’hologramme ou le point de l’environnement virtuel qui répond à l’entrée. Même si le curseur est une représentation numérique de l’endroit où l’appareil comprend l’attention de l’utilisateur, ce n’est pas le même que de déterminer les intentions de l’utilisateur. Les commentaires des curseurs permettent également aux utilisateurs de connaître les réponses système à attendre. Vous pouvez utiliser les commentaires pour communiquer leur intention à l’appareil, ce qui augmente la confiance de l’utilisateur.
 
-Il existe 3 types de curseurs : **Finger, Ray** et **point-regard**. Ces curseurs de pointage fonctionnent avec différentes modalités d’entrée sur HoloLens, HoloLens 2 et les casques immersifs. Vous trouverez ci-dessous des conseils sur le type de curseur à utiliser pour chaque type de casque et de modèle d’interaction. Dans la boîte à outils de la réalité mixte (MRTK), nous avons créé des modules de curseurs de glisser-déplacer pour vous aider à créer l’expérience de pointage appropriée.
+Il existe 3 types de curseurs : **Finger, Ray** et **point-regard**. ces curseurs de pointage fonctionnent avec différentes modalités d’entrée sur HoloLens, HoloLens 2 et des casques immersifs. Vous trouverez ci-dessous des conseils sur le type de curseur à utiliser pour chaque type de casque et de modèle d’interaction. dans la Shared Computer Toolkit de la réalité mixte (MRTK), nous avons créé des modules de curseurs de glisser-déplacer pour vous aider à créer l’expérience de pointage appropriée.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -58,14 +58,14 @@ Il existe 3 types de curseurs : **Finger, Ray** et **point-regard**. Ces curseu
 
 ## <a name="finger-cursor"></a>Curseur Finger
 
-Le curseur Finger est uniquement disponible sur le HoloLens 2 pour améliorer le mode d’interaction «[manipulation directe avec mains](direct-manipulation.md)». Nous avons attaché des anneaux aux conseils des deux index pour mieux comprendre où le doigt pointe. La taille de la sonnerie est basée sur la proximité du doigt par rapport à la surface de l’interface utilisateur, qui se réduit à un petit point lorsque le doigt touche l’interface utilisateur. Plus le doigt est proche, plus l’anneau est petit. <br>
+le curseur finger est uniquement disponible sur le HoloLens 2 pour améliorer le mode d’interaction «[manipulation directe avec mains](direct-manipulation.md)». Nous avons attaché des anneaux aux conseils des deux index pour mieux comprendre où le doigt pointe. La taille de la sonnerie est basée sur la proximité du doigt par rapport à la surface de l’interface utilisateur, qui se réduit à un petit point lorsque le doigt touche l’interface utilisateur. Plus le doigt est proche, plus l’anneau est petit. <br>
 
 ![curseur Finger](images/finger-cursor.png)<br>
 **Commentaires visuels États de Finger Cursor** 1 : l’anneau se réduit à un point. 2 : l’anneau s’aligne sur la surface. 3 : l’anneau est perpendiculaire au vecteur Finger. 4 : aucune sonnerie.
 
 ## <a name="ray-cursor"></a>Curseur Ray
 
-Les curseurs de rayon sont attachés à la fin des rayons de pointage éloignés pour permettre la manipulation des objets qui ne sont pas en contact avec la main. Dans les casques immersifs, les rayons se déplacent des contrôleurs de mouvement et se terminent par des points-curseurs. Dans HoloLens 2, nous appliquons le modèle mental de ces rayons de contrôleur de mouvement et des rayons de main qui proviennent des palmiers et se terminent par les curseurs en forme d’anneau qui sont cohérents avec les curseurs Finger utilisés dans la manipulation directe. <br>
+Les curseurs de rayon sont attachés à la fin des rayons de pointage éloignés pour permettre la manipulation des objets qui ne sont pas en contact avec la main. Dans les casques immersifs, les rayons se déplacent des contrôleurs de mouvement et se terminent par des points-curseurs. dans HoloLens 2, nous appliquons le modèle mental de ces rayons de contrôleur de mouvement et des rayons de main qui proviennent des palmiers et se terminent par les curseurs en forme d’anneau qui sont cohérents avec les curseurs finger utilisés dans la manipulation directe. <br>
 :::row:::
     :::column:::
         ![Contrôleur de curseurs Ray](images/ray-cursor-controller.png)<br>
@@ -83,7 +83,7 @@ Les curseurs de rayon sont attachés à la fin des rayons de pointage éloignés
 
 ## <a name="head-gaze-cursor"></a>Curseur en tête
 
-Le curseur en tête est un point qui s’attache à la fin d’un vecteur de pointage de tête invisible qui utilise la position et la rotation de l’en-tête. Pour exécuter des actions, ce curseur de pointage est associé à diverses entrées de validation telles que le TAP-Air, les commandes vocales, le son et l’enfoncement de bouton. Dans HoloLens 2, le point de regard est le mieux associé à toute entrée de validation qui n’est pas de pression pneumatique, car il y aura un conflit d’interaction entre les rayons de toucher et les mains de l’air. <br>
+Le curseur en tête est un point qui s’attache à la fin d’un vecteur de pointage de tête invisible qui utilise la position et la rotation de l’en-tête. Pour exécuter des actions, ce curseur de pointage est associé à diverses entrées de validation telles que le TAP-Air, les commandes vocales, le son et l’enfoncement de bouton. dans HoloLens 2, le point de regard est le plus adapté à toute entrée de validation qui n’est pas de pression pneumatique, car il y aura un conflit d’interaction entre les rayons de toucher et les mains de l’air. <br>
 :::row:::
     :::column:::
         ![Pointeur vers la droite de la tête](images/head-gaze-cursor-hand.png)<br>
@@ -108,7 +108,7 @@ Si vous souhaitez personnaliser les comportements et les apparences de commentai
 * Le curseur ne doit pas être plus grand que les cibles disponibles, ce qui permet aux utilisateurs d’interagir facilement avec et d’afficher le contenu.
 * En fonction de l’expérience que vous créez, il est également important de mettre à l’échelle le curseur à mesure que l’utilisateur regarde. Par exemple, à mesure que l’utilisateur regarde plus loin dans votre expérience, le curseur ne doit pas être trop petit pour être perdu.
 * Lors de la mise à l’échelle du curseur, envisagez d’appliquer une animation douce à celle-ci lorsqu’il est mis à l’échelle pour lui attribuer une sensation organique.
-* Évitez d’obstruer le contenu. Les hologrammes sont ce qui rend l’expérience mémorable et le curseur ne doit pas être pris en charge.
+* Évitez d’obstruer le contenu. Hologrammes est ce qui rend l’expérience mémorable et le curseur ne doit pas en sortir.
 
 ### <a name="directionless-cursor-shape"></a>Forme de curseur dédirectionnelle
 
@@ -128,7 +128,7 @@ Si vous souhaitez personnaliser les comportements et les apparences de commentai
 ### <a name="visual-cues"></a>Signaux visuels
 
 * Si votre expérience est axée sur un seul hologramme, votre curseur doit s’aligner sur cet hologramme et changer de forme lorsque vous examinez l’hologramme. Cela peut indiquer à l’utilisateur que l’hologramme est actionnable et qu’il peut interagir avec lui.
-* Si votre application utilise le mappage spatial, votre curseur peut s’aligner sur chaque surface visible. Ainsi, les utilisateurs peuvent voir que HoloLens et votre application peuvent voir leur espace. Cela renforce le fait que les hologrammes sont réels et dans notre monde et permet de combler le fossé entre les véritables et les virtuels.
+* Si votre application utilise le mappage spatial, votre curseur peut s’aligner sur chaque surface visible. cela donne aux utilisateurs des commentaires qui HoloLens et votre application peut voir leur espace. Cela renforce le fait que les hologrammes sont réels et dans notre monde et permet de combler le fossé entre les véritables et les virtuels.
 * Avoir une idée de ce que le curseur doit faire lorsqu’il n’y a pas d’hologrammes ou de surfaces en vue. La placer à une distance prédéterminée devant l’utilisateur est une option.
 
 ### <a name="possible-actions"></a>Actions possibles
@@ -161,7 +161,7 @@ La conception sans curseur est recommandée lorsque le sens de l’immersion est
 
 ---
 
-## <a name="cursor-in-mrtk-mixed-reality-toolkit-for-unity"></a>Curseur dans MRTK (ensemble d’outils de réalité mixte) pour Unity
+## <a name="cursor-in-mrtk-mixed-reality-toolkit-for-unity"></a>curseur dans MRTK (Shared Computer Toolkit de la réalité mixte) pour unity
 
 Par défaut, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fournit un Prefab de curseur ([DefaultCursor. Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) qui a le même état visuel que le curseur système de l’interpréteur de commandes. Il est attribué dans le profil d’entrée de MRTK, sous Pointeurs. Vous pouvez remplacer/personnaliser ce curseur pour votre expérience. Pour l’expérience avec l’entrée de suivi oculaire, MRTK fournit également EyeGazeCursor, qui a un visuel subtil pour réduire la distraction.
 

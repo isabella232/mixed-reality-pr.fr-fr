@@ -5,17 +5,17 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: actif, création, processus, budget, polygones, textures, nuanceurs, performances, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de ressources de réalité mixte, ressources
-ms.openlocfilehash: a5f4271de522111b0ef994869b9ecf4910582562
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: actif, création, processus, budget, polygones, textures, nuanceurs, performances, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, ressources
+ms.openlocfilehash: 5c5dcdbe24a8028bb8a3c57e57b9d95079f9e832954d12aa31421dd75f1b6982
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214106"
 ---
 # <a name="asset-creation-process"></a>Processus de création des ressources
 
-Windows Mixed Reality s’appuie sur les dizaines d’investissements réalisés par Microsoft dans DirectX. Toutes les expériences et compétences des développeurs avec la création de graphiques 3D continuent à être utiles avec HoloLens.
+Windows Mixed Reality s’appuie sur les dizaines d’investissements réalisés par Microsoft dans DirectX. L’expérience et les compétences des développeurs en matière de création de graphiques 3D continuent d’être utiles avec HoloLens.
 
 Les ressources que vous créez pour un projet sont disponibles dans de nombreux formulaires et formes. Elles peuvent être composées d’une série de textures/images, de sons, de vidéos, de modèles 3D et d’animations. Nous ne pouvons pas commencer à couvrir tous les outils qui sont disponibles pour créer les différents types de ressources utilisés dans un projet. Pour cet article, nous allons nous concentrer sur les méthodes de création de ressources en 3D.
 
@@ -51,7 +51,7 @@ Vous trouverez ci-dessous un exemple de budget pour votre expérience. Les perfo
 </tr><tr>
 <td> Surcharge générale</td><td> 5 %</td><td> 5 %</td><td> 5 %</td>
 </tr><tr>
-<td> <b>Total</b></td><td> <b>65 %</b></td><td> <b>90 %</b></td><td> <b>70%</b></td>
+<td> <b>Total</b></td><td> <b>65%</b></td><td> <b>90%</b></td><td> <b>70%</b></td>
 </tr>
 </table>
 
@@ -60,7 +60,7 @@ Vous trouverez ci-dessous un exemple de budget pour votre expérience. Les perfo
 
 **Complexité des ressources**
 * Combien de triangles/polygones ?
-* Quel est le degré de complexité du nuanceur ? Quand vous utilisez la boîte à outils de la réalité mixte, il est recommandé d’utiliser le [nuanceur standard Mixed Reality Toolkit standard](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) pour réduire la complexité des nuanceurs.
+* Quel est le degré de complexité du nuanceur ? lors de l’utilisation de la Shared Computer Toolkit de la réalité mixte, il est recommandé d’utiliser la [réalité mixte Shared Computer Toolkit nuanceur Standard](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) pour réduire la complexité des nuanceurs.
 
 Les développeurs et les artistes doivent prendre en compte les fonctionnalités de l’appareil et du moteur graphique. Microsoft HoloLens dispose de toutes les fonctionnalités de calcul et de graphique intégrées à l’appareil. Il partage les fonctionnalités que les développeurs trouveraient sur une plate-forme mobile.
 
@@ -77,10 +77,10 @@ Nous allons commencer par les moyens d’obtenir des ressources pour votre proje
 ### <a name="creating-assets"></a>Création de ressources
 
 **Outils de création**<br>
-Tout d’abord, vous pouvez créer vos propres ressources de différentes façons. les artistes 3D utilisent divers outils et applications pour créer des modèles, qui se composent de **maillages**, de **textures** et de **matériaux**. Il est ensuite enregistré dans un format de fichier qui peut être importé ou utilisé par le moteur graphique utilisé par l’application, par exemple **. FBX** ou **. OBJ**. Tout outil qui génère un modèle pris en charge par le moteur graphique que vous avez choisi fonctionnera sur **HoloLens**. Parmi les artistes en 3D, beaucoup choisissent d’utiliser les [Maya de Autodesk, car ils peuvent utiliser HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) pour transformer la façon dont les ressources sont créées. Si vous souhaitez obtenir un résultat rapide, vous pouvez également utiliser le [Générateur 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) fourni avec Windows pour l’exportation. OBJ à utiliser dans votre application.
+Tout d’abord, vous pouvez créer vos propres ressources de différentes façons. les artistes 3D utilisent divers outils et applications pour créer des modèles, qui se composent de **maillages**, de **textures** et de **matériaux**. Il est ensuite enregistré dans un format de fichier qui peut être importé ou utilisé par le moteur graphique utilisé par l’application, par exemple **. FBX** ou **. OBJ**. Tout outil qui génère un modèle pris en charge par le moteur graphique que vous avez choisi fonctionnera sur **HoloLens**. parmi les artistes en 3d, beaucoup choisissent d’utiliser les [Maya de Autodesk, car il peut utiliser HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) pour transformer la façon dont les ressources sont créées. si vous souhaitez obtenir un résultat rapide, vous pouvez également utiliser le [générateur 3d](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) fourni avec Windows pour l’exportation. OBJ à utiliser dans votre application.
 
 **Capture d’objets**<br>
-Il y a également la possibilité de capturer des objets en 3D. La capture d’objets inanimés en 3D et leur modification avec le logiciel de création de contenu numérique sont de plus en plus populaires avec la hausse de l’impression en 3D. À l’aide du capteur **Kinect 2** et du [Générateur 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) , vous pouvez utiliser la fonctionnalité de capture pour créer des ressources à partir d’objets réels. Il s’agit également d’une [suite d’outils](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) permettant de faire de même avec **Photogrammetry** en traitant plusieurs images pour combiner et fusionner les textures.
+Il y a également la possibilité de capturer des objets en 3D. La capture d’objets inanimés en 3D et leur modification avec le logiciel de création de contenu numérique sont de plus en plus populaires avec la hausse de l’impression en 3D. à l’aide du capteur **Kinect 2** et d’un [générateur 3d](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) , vous pouvez utiliser la fonctionnalité de capture pour créer des ressources à partir d’objets réels. Il s’agit également d’une [suite d’outils](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) permettant de faire de même avec **Photogrammetry** en traitant plusieurs images pour combiner et fusionner les textures.
 
 ### <a name="purchasing-assets"></a>Achats d’actifs
 
@@ -103,7 +103,7 @@ Lorsque vous achetez des ressources auprès d’un tiers, vous devez toujours v�
 
 Dans certains cas, vous allez créer des ressources existantes qui ont été créées à l’origine pour d’autres appareils et différentes applications. Dans la plupart des cas, ces ressources peuvent être converties en formats compatibles avec le moteur graphique utilisé par leur application.
 
-Lorsque vous portez des ressources à utiliser dans votre application HoloLens, vous pouvez poser les questions suivantes :
+lorsque vous portez des ressources à utiliser dans votre application HoloLens, vous pouvez poser les questions suivantes :
 * **Pouvez-vous importer directement ou doit être converti vers un autre format ?** Vérifiez le format que vous importez avec le moteur graphique que vous utilisez.
 * **Si la conversion vers un format compatible est-elle perdue ?** Parfois, les détails peuvent être perdus ou les importations peuvent entraîner des artefacts qui doivent être nettoyés dans un outil de création 3D.
 * **Quel est le nombre de polygones/polygones de l’élément multimédia ?** En fonction du budget de votre application, vous pouvez utiliser des [Simplygon](https://www.simplygon.com/) ou des outils similaires pour décimer (réduire de manière manuelle ou manuelle le chiffrement poly) la ressource d’origine pour l’adapter au budget de vos applications.
@@ -119,7 +119,7 @@ Une autre option pour les projets plus volumineux qui requièrent plus de ressou
 * **Fournir un budget**
   * Plage de nombres poly
   * Nombre de textures
-  * Type de nuanceur (pour Unity et HoloLens, vous devez toujours d’abord par défaut les nuanceurs mobiles)
+  * Type de nuanceur (pour unity et HoloLens vous devez toujours par défaut les nuanceurs mobiles en premier)
 * **Comprendre les coûts**
   * Quelle est la stratégie d’externalisation pour les demandes de modification ?
 

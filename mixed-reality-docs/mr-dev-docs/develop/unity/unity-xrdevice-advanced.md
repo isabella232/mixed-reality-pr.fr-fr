@@ -6,14 +6,14 @@ ms.author: vladkol
 ms.date: 02/25/2021
 ms.topic: article
 keywords: Unity, la réalité mixte, native, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: c202c698fe55bcd3215850579166ebcb8d4b8910
-ms.sourcegitcommit: 441ef99e6090081c6cd3aa88ed21e13e941f0cc6
+ms.openlocfilehash: 63ee9c33a972cb918f141df3b4c1608a561b96dc5c37910deb77b089f7be69b8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102475071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208399"
 ---
-# <a name="mixed-reality-native-interop-in-unity"></a>Interopérabilité native de la réalité mixte dans Unity
+# <a name="mixed-reality-native-interop-in-unity"></a>Interopérabilité native Mixed Reality dans Unity
 
 Chaque application de réalité mixte [obtient un HolographicSpace avant de](../native/getting-a-holographicspace.md) commencer à recevoir des données de caméra et des frames de rendu. Dans Unity, le moteur prend en charge ces étapes pour vous, en gérant des objets holographiques et en effectuant une mise à jour en interne dans le cadre de sa boucle de rendu.
 
@@ -41,7 +41,7 @@ var worldOrigin = Marshal.GetObjectForIUnknown(spatialCoordinateSystemPtr) as Wi
 
 ### <a name="converting-between-coordinate-systems"></a>Conversion entre des systèmes de coordonnées
 
-Unity utilise un système de coordonnées gauche, tandis que les API de perception de Windows utilisent des systèmes de coordonnées droitiers. Pour effectuer une conversion entre ces deux conventions, vous pouvez utiliser les applications d’assistance suivantes :
+unity utilise un système de coordonnées de gauche, tandis que les Windows des api de Perception utilisent des systèmes de coordonnées droitiers. Pour effectuer une conversion entre ces deux conventions, vous pouvez utiliser les applications d’assistance suivantes :
 
 ```cs
 namespace NumericsConversion
@@ -70,7 +70,7 @@ namespace NumericsConversion
 ### <a name="using-holographicframe-native-data"></a>Utilisation de données natives HolographicFrame
 
 > [!NOTE]
-> La modification de l’état des objets natifs reçus via HolographicFrameNativeData peut entraîner un comportement imprévisible et des artefacts de rendu, en particulier si Unity a également des raisons à ce même État.  Par exemple, vous ne devez pas appeler HolographicFrame. UpdateCurrentPrediction, ou la prédiction de pose que les rendus Unity avec cette image ne seront pas synchronisées avec la pose attendue par Windows, ce qui réduira la stabilité de l' [hologramme](../platform-capabilities-and-apis/hologram-stability.md).
+> La modification de l’état des objets natifs reçus via HolographicFrameNativeData peut entraîner un comportement imprévisible et des artefacts de rendu, en particulier si Unity a également des raisons à ce même État.  par exemple, vous ne devez pas appeler HolographicFrame. UpdateCurrentPrediction, ou la prédiction de pose qu’unity rendra non synchronisée avec cette image, et la pose que Windows attend, ce qui réduira la stabilité de l' [hologramme](../platform-capabilities-and-apis/hologram-stability.md).
 
 Si vous avez besoin d’accéder à des interfaces natives à des fins de rendu ou de débogage, utilisez les données de HolographicFrameNativeData dans vos plug-ins natifs ou votre code C#.
 

@@ -5,13 +5,13 @@ author: kegodin
 ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
-keywords: son spatial, son surround, audio 3D, son 3D, audio spatial, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, kit de fonctions de réalité mixte, études de cas, acoustiques
-ms.openlocfilehash: 335ff8acf036591bbbf9868f591ca2c3cef1386c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: son spatial, son surround, audio 3d, son 3d, audio spatial, casque de réalité mixte, casque windows mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, études de cas, acoustiques
+ms.openlocfilehash: 75b87098f90611140d2c43bb596e7c5d50dab9c47fc49426d5bcbbe0095c3847
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188819"
 ---
 # <a name="audio-in-mixed-reality"></a>Audio en réalité mixte
 
@@ -20,7 +20,7 @@ L’audio est un élément essentiel de la conception et de la productivité dan
 * Guidez les utilisateurs vers les étapes suivantes.
 * Associez efficacement des objets virtuels au monde réel.
 
-Le suivi de la tête à faible latence des casques de réalité mixte, y compris HoloLens, prend en charge les Spatialization de haute qualité HRTF. Vous pouvez spatialiser l’audio dans votre application pour :
+le suivi de la tête à faible latence des casques de réalité mixte, y compris HoloLens, prend en charge les spatialization HRTF de haute qualité. Vous pouvez spatialiser l’audio dans votre application pour :
 * Attirez l’attention sur les éléments visuels.
 * Aidez les utilisateurs à prendre conscience de leur environnement réel.
 
@@ -73,7 +73,7 @@ RoboRaid est un tir à haute énergie pour HoloLens. L’étude [de cas de conce
 
 ## <a name="spatialization"></a>Spatialisation
 
-Spatialization est le composant directionnel du son spatial. Pour une configuration 7,1 Home cinéma, Spatialization est aussi simple que le panoramique entre les haut-parleurs. Mais pour le casque en réalité mixte, il est essentiel d’utiliser une technologie HRTF pour la précision et le confort. Windows propose des Spatialization basés sur HRTF, et cette prise en charge est accélérée par le matériel sur HoloLens 2.
+Spatialization est le composant directionnel du son spatial. Pour une configuration 7,1 Home cinéma, Spatialization est aussi simple que le panoramique entre les haut-parleurs. Mais pour le casque en réalité mixte, il est essentiel d’utiliser une technologie HRTF pour la précision et le confort. Windows offre des spatialization basés sur HRTF, et cette prise en charge est l’accélération matérielle sur HoloLens 2.
 
 <br>
 
@@ -87,15 +87,15 @@ Spatialization peut améliorer de nombreux sons dans des applications en réalit
 
 Les HRTFs manipulent les différences de niveau et de phase entre les oreilles à travers le spectre de fréquences. Ils sont basés sur des modèles physiques et des mesures de la tête humaine, du tors et des formes d’oreille (pinnae). Notre cerveau répond à ces différences pour fournir un sens sonore.
 
-Chaque individu a une forme auriculaire, une taille de tête et une position Ear uniques. Le meilleur HRTFs est donc conforme à vos exigences. Pour augmenter la précision de la Spatialization, HoloLens utilise votre distance inter-pupille (IPD) à partir du casque pour ajuster la HRTFs de la taille de la tête.
+Chaque individu a une forme auriculaire, une taille de tête et une position Ear uniques. Le meilleur HRTFs est donc conforme à vos exigences. pour augmenter la précision de la spatialization, HoloLens utilise votre distance inter-pupille (IPD) à partir du casque pour ajuster la HRTFs de la taille de la tête.
 
 ### <a name="spatializer-platform-support"></a>Prise en charge de la plateforme Spatializer
 
-Windows offre Spatialization, y compris HRTFs, via l' [API ISpatialAudioClient](/windows/win32/coreaudio/spatial-sound). Cette API expose l’accélération matérielle HoloLens 2 HRTF aux applications.
+Windows offre spatialization, y compris HRTFs, via l' [API ISpatialAudioClient](/windows/win32/coreaudio/spatial-sound). cette API expose le HoloLens 2 l’accélération matérielle HRTF aux applications.
 
 ### <a name="spatializer-middleware-support"></a>Prise en charge de l’intergiciel Spatializer
 
-La prise en charge de Windows HRTFs est disponible pour les moteurs audio tiers suivants.
+la prise en charge de Windows’HRTFs’est disponible pour les moteurs audio tiers suivants.
 * Un [plug-in de moteur audio Unity](../develop/unity/spatial-sound-in-unity.md)
 * Un [plug-in de moteur audio Wwise](https://www.audiokinetic.com/products/plug-ins/msspatial/)
 
@@ -103,7 +103,7 @@ La prise en charge de Windows HRTFs est disponible pour les moteurs audio tiers 
 
 Le son spatial est plus que la direction. Les autres dimensions incluent l’occlusion, l’obstruction, la réverbération, le portail et la modélisation source. Ces dimensions sont collectivement appelées « *acoustiques*». Sans acoustiques, les sons spatiaux n’ont pas de distance perçue.
 
-Les traitements acoustiques vont de simples à complexes. Vous pouvez utiliser un verbe pris en charge par n’importe quel moteur audio pour envoyer des sons spatiales dans l’environnement de l’écouteur. Les systèmes acoustiques, tels que les [acoustiques de projet](/gaming/acoustics/what-is-acoustics)  , offrent un traitement des acoustiques plus riche et plus attrayant. Les acoustiques de projet peuvent modéliser l’effet des murs, des portes et d’autres géométries de scène sur un son. C’est une option efficace pour les cas où la géométrie de scène appropriée est connue au moment du développement.
+Les traitements acoustiques vont de simples à complexes. Vous pouvez utiliser un verbe pris en charge par n’importe quel moteur audio pour envoyer des sons spatiales dans l’environnement de l’écouteur. les systèmes acoustiques, tels que les [Project acoustiques](/gaming/acoustics/what-is-acoustics) , permettent un traitement des acoustiques plus riche et plus attrayant. Project Les acoustiques peuvent modéliser l’effet des murs, des portes et d’autres géométries de scène sur un son. C’est une option efficace pour les cas où la géométrie de scène appropriée est connue au moment du développement.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

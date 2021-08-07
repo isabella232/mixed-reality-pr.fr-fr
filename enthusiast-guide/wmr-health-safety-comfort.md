@@ -1,21 +1,21 @@
 ---
-title: Intégrité et sécurité du casque Windows Mixed Reality
-description: Découvrez comment vous assurer que vous et vos utilisateurs soyez sains, sûrs et familiers quand vous utilisez des applications Windows Mixed Reality.
+title: intégrité et sécurité du casque Windows Mixed Reality
+description: découvrez comment vous assurer que vous et vos utilisateurs soyez sains, sûrs et familiers quand vous utilisez des applications Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1c28a049c966cf50fd711da3e71cceff65cbbe8558769fc643f3e2065539caf4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187809"
 ---
-# <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Intégrité, sécurité et confort des écouteurs immersifs Windows Mixed Reality
+# <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Windows Mixed Reality de l’intégrité, de la sécurité et du confort des écouteurs immersifs
 
 ## <a name="to-view-3d-content-more-comfortably"></a>Pour afficher le contenu 3D plus confortablement
 
@@ -23,7 +23,7 @@ Une bonne vision binoculaire est nécessaire pour afficher le contenu 3D stéré
 
 ## <a name="warning"></a>WARNING
 
-Suivez les instructions d’installation, les instructions de l’utilisateur et les instructions fournies par les fabricants d’écouteurs et de contrôleurs de mouvement Windows Mixed Reality (chaque **périphérique**), ainsi que l’éditeur d’une application logicielle, d’un contenu ou d’une expérience 2D ou 3D (**contenu**).
+suivez toutes les instructions d’installation, les instructions de l’utilisateur et les instructions fournies par le Windows Mixed Reality les fabricants de casques et de contrôleurs motion (chaque **périphérique**), ainsi que l’éditeur d’une application logicielle ou d’un contenu ou d’une expérience 2d ou 3d (**contenu**).
 
 L’échec de la configuration, de l’utilisation et du soin de votre appareil peut augmenter le risque de blessures graves, de décès, de dommages de propriété ou d’endommagement du produit ou des accessoires associés.
 
@@ -31,19 +31,19 @@ L’échec de la configuration, de l’utilisation et du soin de votre appareil 
 
 ## <a name="use-in-safe-surroundings"></a>Utilisez dans un environnement sécurisé
 
-L’utilisation de votre appareil peut vous distraire et vous empêcher de voir votre environnement. Les casques immersifs Windows Mixed realisation peuvent obstruer totalement votre affichage, et le contenu peut apparaître à une distance, tout en bloquant la vue des objets physiques avoisinants.
+L’utilisation de votre appareil peut vous distraire et vous empêcher de voir votre environnement. Windows Mixed Reality les casques immersifs peuvent totalement obstruer votre affichage, et le contenu peut apparaître à une distance, tout en bloquant la vue des objets physiques avoisinants.
 
 Utilisez uniquement dans un endroit sûr adapté à vos activités. Évitez les risques de course, les escaliers, les plafonds, les fragiles, les éléments de valeur qui pourraient être endommagés, etc., ainsi que les situations dans lesquelles des personnes ou des choses pourraient s’approcher de manière inattendue. N’utilisez pas votre appareil quand une vue de votre environnement et votre attention sont nécessaires pour la sécurité.
 
-Suivez toutes les recommandations de configuration pour Windows Mixed Reality, y compris l’utilisation de votre casque pour créer une limite. La configuration de votre PC et certaines applications ou expériences peuvent entraîner des retards ou des erreurs dans l’affichage des limites. Soyez toujours vigilant et tenez compte de votre environnement, même si vous avez créé une limite.
+suivez toutes les recommandations de configuration pour Windows Mixed Reality, y compris l’utilisation de votre casque pour créer une limite. La configuration de votre PC et certaines applications ou expériences peuvent entraîner des retards ou des erreurs dans l’affichage des limites. Soyez toujours vigilant et tenez compte de votre environnement, même si vous avez créé une limite.
 
-## <a name="using-windows-mixed-reality-comfortably"></a>Utilisation confortable de Windows Mixed Reality
+## <a name="using-windows-mixed-reality-comfortably"></a>utilisation Windows Mixed Reality confortable
 
-**Certaines personnes peuvent rencontrer des** risques de incrédulité, de maladie, de dizziness, de désorientation, de casse, de fatigue ou de fatigue oculaire lors de l’utilisation de Windows Mixed Reality, en particulier lorsqu’elles s’ajustent à leur utilisation. Le mouvement de maladie et les symptômes connexes peuvent se produire en cas d’incompatibilité entre ce que vous voyez et ce que votre corps perçoit. Si vous êtes susceptible de faire des mouvements de maladie, d’obtenir des migraines de migraine, d’avoir un trouble de l’oreille interne ou d’autres conditions d’intégrité, vous pouvez être à l’augmentation du risque de gêne.
+**certaines personnes peuvent rencontrer des** risques de incrédulité, de maladie, de dizziness, de désorientation, de casse, de fatigue ou de fatigue oculaire lors de l’utilisation de Windows Mixed Reality, en particulier lorsqu’elles s’adaptent à leur utilisation. Le mouvement de maladie et les symptômes connexes peuvent se produire en cas d’incompatibilité entre ce que vous voyez et ce que votre corps perçoit. Si vous êtes susceptible de faire des mouvements de maladie, d’obtenir des migraines de migraine, d’avoir un trouble de l’oreille interne ou d’autres conditions d’intégrité, vous pouvez être à l’augmentation du risque de gêne.
 
 **Certaines situations peuvent accroître votre risque de gêne.** Par exemple :
 
-* L’utilisation de nouveaux symptômes utilisateur a tendance à diminuer à mesure que vous vous familiarisez avec Windows Mixed Reality.
+* La création de nouveaux symptômes utilisateur a tendance à diminuer à mesure que vous vous familiarisez avec les Windows Mixed Reality.
 * Les appareils peuvent fonctionner de manière optimale pour les utilisateurs dont la distance interpupillary (IPD) est comprise dans une certaine plage. L’IPD est la distance entre le Centre des pupilles des deux yeux. Les utilisateurs disposant d’une IPD en dehors de la plage optimale pour l’appareil peuvent rencontrer une gêne.
 * Certains types de contenu, en particulier les jeux ou les films qui vous semblent si vous vous déplacez dans l’espace ou en observant les éléments ci-dessus, ou les interactions qui impliquent le suivi des objets en déplacement.
 * Utilisation de l’appareil pendant des périodes prolongées sans interruption.

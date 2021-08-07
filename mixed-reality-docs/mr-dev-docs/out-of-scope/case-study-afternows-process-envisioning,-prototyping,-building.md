@@ -5,13 +5,13 @@ author: rwinj
 ms.author: randyw
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, AfterNow, Visioning, prototypage, génération
-ms.openlocfilehash: d8779f78f78963bd769b0f1f4ca2e3ec34099be6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, AfterNow, mise en service, prototypage, génération
+ms.openlocfilehash: 95dd30347a0e621f3ad322db7f6cebf5bb82fa786da18904ef595e0477aedcc2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682906"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190402"
 ---
 # <a name="case-study---afternows-process"></a>Étude de cas-processus de AfterNow
 
@@ -35,17 +35,17 @@ Voici une lecture quotidienne du processus, le temps nécessaire à chaque étap
 
 Il est important de sélectionner les participants appropriés à ce processus. Le nombre peut varier, mais nous vous recommandons de le garder sous sept personnes pour des raisons d’efficacité.
 
-**Décideur (critique)** : le décideur est une personne importante à avoir dans le groupe. Il s’agit de celui qui fera la décision finale ou qui passera à l’échelle en cas de décision pendant le processus (généralement le PDG, le fondateur, le responsable de produit ou le chef de conception). S’ils ne sont pas en mesure de participer à l’ensemble du processus, vous pouvez désigner une personne qui s’adapte à son rôle.
+**Décideur (critique)**: le décideur est une personne importante à avoir dans le groupe. Il s’agit de celui qui fera la décision finale ou qui passera à l’échelle en cas de décision pendant le processus (généralement le PDG, le fondateur, le responsable de produit ou le chef de conception). S’ils ne sont pas en mesure de participer à l’ensemble du processus, vous pouvez désigner une personne qui s’adapte à son rôle.
 
-**Finance (facultatif)** -personne qui peut expliquer comment le projet est financé.
+**Finance (facultatif)**-personne qui peut expliquer comment le projet est financé.
 
-**Marketing (facultatif)** : une personne qui fait l’artisanat des messages de l’entreprise.
+**Marketing (facultatif)**: une personne qui fait l’artisanat des messages de l’entreprise.
 
-**Client (important)** : quelqu’un qui communique avec les clients fréquemment et peut être son avocat.
+**Client (important)**: quelqu’un qui communique avec les clients fréquemment et peut être son avocat.
 
-**Tech/logistique (important)** : personne qui comprend ce que l’entreprise peut créer et livrer.
+**Tech/logistique (important)**: personne qui comprend ce que l’entreprise peut créer et livrer.
 
-**Conception (important)** : personne qui conçoit le produit que votre entreprise fait.
+**Conception (important)**: personne qui conçoit le produit que votre entreprise fait.
 
 ## <a name="day-1---map"></a>JOUR 1-mapper
 

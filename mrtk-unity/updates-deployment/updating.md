@@ -1,18 +1,18 @@
 ---
-title: Mise à jour à partir de versions antérieures
+title: Mise à jour depuis des versions antérieures
 description: Documentation à migrer à partir d’une version antérieure de MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 04/19/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 5a914d6408d346dac0bf6c683f401564e875f4d8
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a5d1e914fcbc44572e06c1fc3cbaba7ea0363287b9e670a423a4e63b17cb20a6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175107"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210618"
 ---
-# <a name="updating-from-earlier-versions"></a>Mise à jour à partir de versions antérieures
+# <a name="updating-from-earlier-versions"></a>Mise à jour depuis des versions antérieures
 
 - [Mise à niveau vers une nouvelle version de MRTK](#upgrading-to-a-new-version-of-mrtk)
 - [2.3.0 à 2.4.0](#updating-230-to-240)
@@ -315,7 +315,7 @@ Il s’agit d’une modification avec rupture qui requiert la modification des i
 >[!NOTE]
 >Cette modification n’est pas à compatibilité descendante avec la version 2.0.0.
 
-**_Déprécié_**
+**_Déconseillé_**
 
 la `MouseInputProfile` propriété a été marquée comme obsolète et sera supprimée d’une future version de la Shared Computer Toolkit de réalité mixte Microsoft. Il est recommandé que le code d’application n’utilise plus cette propriété.
 
@@ -555,7 +555,7 @@ class SampleHandler2 : MonoBehaviour, IMixedRealitySpeechHandler
 }
 ```
 
-**Sensibilisation spatiale**
+**Reconnaissance spatiale**
 
 Les interfaces IMixedRealitySpatialAwarenessSystem et IMixedRealitySpatialAwarenessObserver ont pris en considération plusieurs modifications avec rupture, comme décrit ci-dessous.
 
@@ -583,7 +583,7 @@ Certains composants du solveur et la classe SolverHandler Manager ont été modi
 - `TrackedObjectToReference` propriété publique dépréciée et renommée en `TrackedTargetType`
 - `TrackedObjectType` déprécie les valeurs de contrôleur gauche & droit. Utilisez plutôt `MotionController` `HandJoint` les valeurs ou et mettez à jour la nouvelle `TrackedHandedness` propriété pour limiter le suivi à gauche ou à droite du contrôleur
 
-**_Entre_**
+**_InBetween_**
 
 - `TrackedObjectForSecondTransform` propriété publique dépréciée et renommée en `SecondTrackedObjectType`
 - `AttachSecondTransformToNewTrackedObject()` a été supprimé. Pour mettre à jour le solveur, modifiez les propriétés publiques (par exemple, `SecondTrackedObjectType`)

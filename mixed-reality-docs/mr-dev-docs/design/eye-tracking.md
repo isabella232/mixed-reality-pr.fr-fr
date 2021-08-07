@@ -1,17 +1,17 @@
 ---
 title: Eye-tracking
-description: En savoir plus sur le suivi oculaire pour HoloLens 2 et les nouveaux niveaux de compréhension humaine s’ils vous permettent de bénéficier d’expériences holographiques.
+description: en savoir plus sur le suivi oculaire pour les HoloLens 2 et les nouveaux niveaux de compréhension humaine, s’ils vous permettent d’obtenir des expériences holographiques.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Suivi oculaire, réalité mixte, entrée, point de regard, étalonnage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, intention, actions
-ms.openlocfilehash: 6bcd64a0ecc6e5c92966569d0675703afde5cbd5
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+keywords: suivi oculaire, réalité mixte, entrée, point de regard, étalonnage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, intention, actions
+ms.openlocfilehash: ce8ffcb6b8b59b6b0484ba4b3db256a8df5810ea2719416bea9e3f4366ad6afe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214140"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Eye-tracking sur HoloLens 2
 
@@ -46,24 +46,24 @@ L’API de suivi oculaire a été conçue en tenant compte de la confidentialit�
 
 <br>
 
-## <a name="head-and-eye-tracking-design-concepts-demo"></a>Démonstration des concepts de conception du suivi des têtes et des yeux
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Démonstration des concepts d’élaboration du suivi de la tête et du suivi oculaire
 
-Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration **conception d’hologrammes-TETE Tracking and Eye Tracking (** en anglais) ci-dessous. Une fois que vous avez terminé, poursuivez sur pour obtenir une présentation plus détaillée des rubriques spécifiques.
+Si vous souhaitez voir les concepts d’élaboration du suivi de la tête et du suivi oculaire en action, consultez notre démonstration vidéo **Conception d’hologrammes - Suivi de la tête et suivi oculaire** ci-dessous. Une fois que vous avez terminé, poursuivez pour obtenir une présentation plus détaillée relative à des rubriques spécifiques.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
+*Cette vidéo a été extraite de l’application HoloLens 2 « Conception d’hologrammes ». Téléchargez-la et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="calibration"></a>Étalonnage 
 
 Pour que le suivi des yeux fonctionne correctement, chaque utilisateur doit passer par un [étalonnage d’utilisateur de suivi oculaire](/hololens/hololens-calibration) pour lequel l’utilisateur doit examiner un ensemble de cibles holographiques. Cela permet à l’appareil d’ajuster le système pour une expérience d’affichage plus confortable et de meilleure qualité pour l’utilisateur et pour garantir un suivi visuel précis en même temps. 
 
 Le suivi oculaire doit fonctionner pour la plupart des utilisateurs, mais il existe de rares cas où un utilisateur ne peut pas l’étalonner correctement. L’étalonnage peut échouer pour diverses raisons, y compris mais sans s’y limiter : 
-* L’utilisateur a précédemment choisi le processus d’étalonnage
+* L'utilisateur a précédemment refusé le processus d'étalonnage.
 * L’utilisateur a été distrait et n’a pas suivi les objectifs d’étalonnage
 * L’utilisateur dispose de certains types de lentilles et de lunettes de contact que le système ne prend pas encore en charge. 
 * L’utilisateur a une certaine physiologie oculaire, des conditions oculaires ou avait une chirurgie oculaire, que le système ne prend pas encore en charge  
-* Facteurs externes inhibant le suivi des yeux fiables, tels que les taches sur le visière ou les lunettes, le soleil direct et les occlusions dus aux cheveux en face des yeux
+* facteurs externes inhibant le suivi des yeux fiables, tels que les taches sur le visière de HoloLens ou les lunettes, le soleil direct et les occlusions dus aux cheveux en face des yeux
 
 Les développeurs doivent veiller à fournir une prise en charge adéquate pour les utilisateurs pour lesquels les données de suivi oculaire peuvent ne pas être disponibles (qui ne peuvent pas être correctement étalonnes). Nous avons fourni des recommandations pour les solutions de secours dans la section en bas de cette page. 
 
@@ -73,7 +73,7 @@ Pour en savoir plus sur l’étalonnage et sur la façon de garantir une expéri
 
 ## <a name="available-eye-tracking-data"></a>Données de suivi oculaire disponibles
 
-Avant de passer en revue les cas d’utilisation spécifiques pour les entrées de regard oculaire, nous souhaitons rapidement souligner les fonctionnalités fournies par l' [API de suivi oculaire](/uwp/api/windows.perception.people.eyespose) HoloLens 2. Les développeurs accèdent à un seul point d’accès en regard (origine du regard et direction) à environ _30 i/s (30 Hz)_.
+avant de passer en revue les cas d’utilisation spécifiques pour les entrées de regard oculaire, nous souhaitons rapidement souligner les fonctionnalités fournies par l' [API de suivi des HoloLens 2 oculaire](/uwp/api/windows.perception.people.eyespose) . Les développeurs accèdent à un seul point d’accès en regard (origine du regard et direction) à environ _30 i/s (30 Hz)_.
 Pour plus d’informations sur la façon d’accéder aux données de suivi oculaire, reportez-vous à nos guides pour les développeurs sur l’utilisation des [yeux dans DirectX](../develop/native/gaze-in-directx.md) et [Eye-pointer sur Unity](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main).
 
 Le point de regard prédit est approximativement de 1,5 degrés d’angle visuel autour de la cible réelle (Voir l’illustration ci-dessous). Les développeurs doivent prévoir une marge autour de cette valeur de limite inférieure (par exemple, 2.0-3 degrés peut se traduire par une expérience bien plus confortable). Nous verrons comment aborder la sélection de petites cibles plus en détail ci-dessous. Pour que l’eye-tracking fonctionne avec précision, chaque utilisateur doit effectuer un étalonnage. 
@@ -85,9 +85,9 @@ Le point de regard prédit est approximativement de 1,5 degrés d’angle visuel
 
 ## <a name="use-cases"></a>Cas d'utilisation
 
-L’eye-tracking permet aux applications de savoir où l’utilisateur regarde en temps réel. Les cas d’usage suivants décrivent certaines interactions possibles avec le suivi oculaire sur HoloLens 2 en réalité mixte.
-Ces cas d’usage ne font pas encore partie de l’expérience d’interpréteur de commandes holographique (autrement dit, l’interface que vous voyez quand vous démarrez votre HoloLens 2).
-Vous pouvez essayer certaines d’entre elles dans le kit de fonctionnalités de la [réalité mixte](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main), qui fournit plusieurs exemples intéressants et puissants pour l’utilisation du suivi oculaire, tels que les sélections de cibles rapides et faciles à utiliser par l’œil, et le défilement automatique dans le texte en fonction de ce que l’utilisateur examine. 
+L’eye-tracking permet aux applications de savoir où l’utilisateur regarde en temps réel. les cas d’usage suivants décrivent certaines interactions possibles avec le suivi oculaire sur HoloLens 2 dans la réalité mixte.
+Ces cas d’usage ne font pas encore partie de l’expérience d’interpréteur de commandes holographique (c’est-à-dire, l’interface que vous voyez quand vous démarrez votre HoloLens 2).
+vous pouvez essayer certaines d’entre elles dans le Shared Computer Toolkit de la [réalité mixte](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main), qui fournit plusieurs exemples intéressants et puissants pour l’utilisation du suivi oculaire, tels que les sélections de cibles rapides et faciles à utiliser par l’œil, et le défilement automatique du texte en fonction de ce que l’utilisateur examine. 
 
 ### <a name="user-intent"></a>Intention de l'utilisateur
 
@@ -107,12 +107,12 @@ Vous trouverez des démonstrations de ces types d’interaction dans l’exemple
 
 D’autres cas d’usage pour les _actions implicites_ peuvent inclure :
 - **Notifications intelligentes :** Vous vous êtes sans doute en désdans les notifications qui s’affichent directement là où vous êtes en train de regarder ? En tenant compte de ce à quoi un utilisateur fait attention, vous pouvez améliorer cette expérience en décalant les notifications à partir de l’endroit où l’utilisateur est actuellement Gazing. Cela limite les distractions et les ignore automatiquement une fois que l’utilisateur a terminé la lecture. 
-- **Hologrammes précis :** Des hologrammes qui réagissent à la légère sur le regard. Cela peut aller d’un léger éclat aux éléments de l’interface utilisateur, une fleur très lente à un chien virtuel qui commence à regarder l’utilisateur et wagging sa queue. Cette interaction peut fournir un sens intéressant de la connectivité et de la satisfaction dans votre application.
+- **hologrammes précis :** Hologrammes qui réagissent légèrement en cas de regard. Cela peut aller d’un léger éclat aux éléments de l’interface utilisateur, une fleur très lente à un chien virtuel qui commence à regarder l’utilisateur et wagging sa queue. Cette interaction peut fournir un sens intéressant de la connectivité et de la satisfaction dans votre application.
 
 ### <a name="attention-tracking"></a>Suivi de l’attention
 
 Les informations sur l’emplacement ou le contenu des utilisateurs peuvent être un outil très puissant. Il peut aider à évaluer la convivialité des conceptions et à identifier les problèmes dans les workflows afin de les rendre plus efficaces.
-La visualisation et l’analyse du suivi oculaire sont une pratique courante dans différents domaines d’application. Avec HoloLens 2, nous fournissons une nouvelle dimension à cette compréhension, car les hologrammes 3D peuvent être placés dans des contextes réels et évalués en conséquence. La [boîte à outils de la réalité mixte](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) fournit des exemples de base pour la journalisation et le chargement des données de suivi visuel et comment les visualiser.
+La visualisation et l’analyse du suivi oculaire sont une pratique courante dans différents domaines d’application. avec HoloLens 2, nous fournissons une nouvelle dimension à cette compréhension, car les hologrammes 3d peuvent être placés dans des contextes réels et évalués en conséquence. la [Shared Computer Toolkit de réalité mixte](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) fournit des exemples de base pour la journalisation et le chargement des données de suivi visuel et comment les visualiser.
 Microsoft s’attache à faciliter l’innovation tout en veillant à ce que les utilisateurs bénéficient d’une expérience éclairée et transparente quant à l’utilisation de leurs informations de suivi visuel.  Nous travaillons avec nos développeurs et nos équipes d’expérience utilisateur pour fournir des conseils à des tiers afin de s’assurer que les expériences sont centrées autour de l’utilisateur.  
 
 Autres applications possibles dans ce domaine : 
@@ -123,7 +123,7 @@ Autres applications possibles dans ce domaine :
 
 ### <a name="other-use-cases"></a>Autres cas d’usage
 
-- **Jeux :** Avez-vous déjà souhaité des superalimentations ? Voilà votre chance ! Vous pouvez faire en lévitation les hologrammes. Prenez des faisceaux laser de vos yeux, essayez-le dans [RoboRaid pour HoloLens 2](https://www.microsoft.com/p/roboraid/9nblggh5fv3j).
+- **Jeux :** Avez-vous déjà souhaité des superalimentations ? Voilà votre chance ! Vous pouvez faire en lévitation les hologrammes. Prenez des poutres laser de vos yeux, essayez-les dans [RoboRaid pour HoloLens 2](https://www.microsoft.com/p/roboraid/9nblggh5fv3j).
 Transformez des ennemis en pierres ou figez-les. Utilisez votre vision à rayons X pour explorer des bâtiments. La seule limite, c’est votre imagination !
 ATTENTION : pour en savoir plus, consultez nos [instructions relatives à la conception d’entrées](eye-gaze-interaction.md)orientées regard.
 
@@ -146,7 +146,7 @@ Cela peut être dû à différentes raisons, parmi lesquelles les plus courantes
 * L’utilisateur a ignoré l' [étalonnage](/hololens/hololens-calibration).   
 * L’utilisateur est étalonné, mais il a décidé de ne pas accorder à votre application l’autorisation d’utiliser ses données de suivi visuel.    
 * L’utilisateur dispose de lunettes uniques ou d’une condition oculaire que le système ne prend pas encore en charge. 
-* Facteurs externes qui empêchent le suivi des yeux fiables, tels que les taches sur le visière ou les lunettes, le soleil intense et les occlusions en raison des cheveux devant les yeux.
+* facteurs externes qui empêchent le suivi des yeux fiables, tels que les taches sur le visière de HoloLens ou les lunettes, le soleil direct et les occlusions en raison des cheveux devant les yeux.
 
 Les développeurs doivent s’assurer qu’il existe une prise en charge de secours appropriée pour ces utilisateurs. Sur la page [suivi des yeux dans DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) , nous expliquons les API requises pour détecter si les données de suivi visuel sont disponibles. 
 
@@ -160,7 +160,7 @@ Il existe des cas rares d’utilisateurs pour lesquels le suivi oculaire peut ne
 
 ### <a name="fall-back-for-apps-using-eye-gaze-as-a-primary-input-pointer"></a>Revenir en arrière pour les applications en utilisant les yeux en forme de point d’entrée principal
 
-Si votre application utilise le point d’entrée de l’œil pour sélectionner rapidement des hologrammes dans la scène, mais que les données de suivi oculaire ne sont pas disponibles, nous vous recommandons de revenir à la tête de regard et de commencer à montrer le curseur en tête. Nous vous recommandons d’utiliser un délai d’expiration (par exemple, 500 – 1500 ms) pour déterminer s’il faut basculer ou non. Cette action empêche l’affichage des curseurs à chaque fois que le système risque de perdre brièvement le suivi en raison de mouvements rapides ou de clins d’œil et de clignotements. Si vous êtes un développeur Unity, la solution de secours automatique à la tête de regard est déjà gérée dans le kit de développement de la réalité mixte. Si vous êtes un développeur DirectX, vous devez gérer ce commutateur vous-même.
+Si votre application utilise le point d’entrée de l’œil pour sélectionner rapidement des hologrammes dans la scène, mais que les données de suivi oculaire ne sont pas disponibles, nous vous recommandons de revenir à la tête de regard et de commencer à montrer le curseur en tête. Nous vous recommandons d’utiliser un délai d’expiration (par exemple, 500 – 1500 ms) pour déterminer s’il faut basculer ou non. Cette action empêche l’affichage des curseurs à chaque fois que le système risque de perdre brièvement le suivi en raison de mouvements rapides ou de clins d’œil et de clignotements. si vous êtes un développeur unity, le secours automatique à la tête de regard est déjà géré dans la réalité mixte Shared Computer Toolkit. Si vous êtes un développeur DirectX, vous devez gérer ce commutateur vous-même.
 
 ### <a name="fall-back-for-other-eye-tracking-specific-applications"></a>Revenir à d’autres applications spécifiques au suivi des yeux
 
@@ -169,7 +169,7 @@ Là encore, nous vous recommandons de communiquer clairement à l’utilisateur 
 
 <br>
 
-Cette page vous a espérons vous fournir une bonne vue d’ensemble pour vous aider à comprendre le rôle du suivi oculaire et l’entrée de regard pour HoloLens 2. Pour commencer à développer, consultez nos informations sur le rôle de l' [oeil pour l’interaction avec les hologrammes](eye-gaze-interaction.md), le [point de regard sur Unity](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) et les [yeux dans DirectX](../develop/native/gaze-in-directx.md).
+Cette page vous a espérons vous fournir une bonne vue d’ensemble pour vous aider à comprendre le rôle du suivi visuel et des entrées de regard pour HoloLens 2. Pour commencer à développer, consultez nos informations sur le rôle de l' [oeil pour l’interaction avec les hologrammes](eye-gaze-interaction.md), le [point de regard sur Unity](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) et les [yeux dans DirectX](../develop/native/gaze-in-directx.md).
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -177,6 +177,6 @@ Cette page vous a espérons vous fournir une bonne vue d’ensemble pour vous ai
 * [Confort](comfort.md)
 * [Interaction par pointage du regard](eye-gaze-interaction.md)
 * [Œil-point de regard sur DirectX](../develop/native/gaze-in-directx.md)
-* [Œil-point d’interfaut](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
+* [oeil-point d’interfaut (Shared Computer Toolkit de la réalité mixte)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [Pointer et valider](gaze-and-commit.md)
 * [Entrée vocale](../out-of-scope/voice-design.md)

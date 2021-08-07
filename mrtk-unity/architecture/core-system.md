@@ -1,18 +1,18 @@
 ---
-title: Système de base
+title: Système principal
 description: Système d’entrée, gestionnaires d’appareils et fournisseurs de données dans MRTK
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, événements
-ms.openlocfilehash: 79ebd3855cd991db168233f00058ab5d42f87d83
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, événements
+ms.openlocfilehash: ff4c23b796374940de1a1de6b72e08702d6fd24f79234e8ef80dc1210d13d103
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190179"
 ---
-# <a name="core-system"></a>Système de base
+# <a name="core-system"></a>Système principal
 
 Au cœur du système d’entrée se trouve le [InputSystem](../features/input/overview.md), qui est un service responsable de l’initialisation et de l’utilisation de toutes les fonctionnalités d’entrée associées à MRTK.
 
@@ -23,7 +23,7 @@ Ce service est responsable des tâches suivantes :
 
 - Lecture du [profil de système d’entrée](../configuration/mixed-reality-configuration-guide.md#input-system-settings)
 - Démarrage des [fournisseurs de données](../features/input/input-providers.md) configurés (par exemple, `Windows Mixed Reality Device Manager` et `OpenVR Device Manager` ).
-- Instanciation de [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider), qui est un composant qui est chargé de fournir les informations de pointage de la tête de style hololens (1re génération) en plus des informations sur le regard de style hololens 2.
+- instanciation de [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider), qui est un composant qui est chargé de fournir des informations de point de vue de l’en-tête de style HoloLens (1re génération) en plus des informations sur le regard de style HoloLens 2.
 - Instanciation de [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusProvider), qui est un composant responsable de la détermination des objets qui ont le focus. Cela est décrit plus en détail dans la section [pointeurs et Focus](controllers-pointers-and-focus.md#pointers-and-focus) de la documentation.
 - Fourniture de points d’enregistrement pour tous les événements d’entrée (en tant qu' [écouteurs globaux](#global-listeners)).
 - Fournir des fonctionnalités de répartition des événements pour ces événements d’entrée.
@@ -56,11 +56,11 @@ En règle générale, les événements sont envoyés aux écouteurs de la maniè
 
 ## <a name="device-managers-and-data-providers"></a>Gestionnaires d’appareils et fournisseurs de données
 
-Ces entités sont chargées d’interfaçage avec les API de niveau inférieur (telles que les API Windows Mixed Reality ou les API OpenVR) et de traduire les données de ces systèmes dans celles qui correspondent aux abstractions d’entrée de niveau supérieur du MRTK. Ils sont chargés de la détection, de la création et de la gestion de la durée de vie des [contrôleurs](controllers-pointers-and-focus.md#controllers).
+ces entités sont chargées d’interfaçage avec les api de niveau inférieur (par exemple, les api Windows Mixed Reality ou les api OpenVR) et de traduire les données de ces systèmes dans celles qui correspondent aux abstractions d’entrée de niveau supérieur de MRTK. Ils sont chargés de la détection, de la création et de la gestion de la durée de vie des [contrôleurs](controllers-pointers-and-focus.md#controllers).
 
 Le workflow de base d’un gestionnaire de périphériques implique les opérations suivantes :
 
 1. Le gestionnaire de périphériques est instancié par le service du système d’entrée.
-2. Le gestionnaire de périphériques s’inscrit auprès de son système sous-jacent (par exemple, le gestionnaire d’appareils Windows Mixed Reality Manager s’inscrit pour les événements [d’entrée](../features/input/input-events.md) et de [mouvement](../features/input/gestures.md#gesture-events) .
+2. le gestionnaire de périphériques s’inscrit auprès de son système sous-jacent (par exemple, le gestionnaire de périphériques Windows Mixed Reality s’inscrit pour les événements [d’entrée](../features/input/input-events.md) et de [mouvement](../features/input/gestures.md#gesture-events) .
 3. Elle crée des contrôleurs qu’elle découvre à partir du système sous-jacent (par exemple, le fournisseur peut détecter la présence de mains articulées).
 4. Dans sa boucle Update (), appelez UpdateController () pour interroger le nouvel État du système sous-jacent et mettre à jour sa représentation de contrôleur.

@@ -1,64 +1,64 @@
 ---
 title: Avant de commencer
-description: Découvrez comment vous assurer que votre ordinateur est compatible et prêt pour une grande variété d’expériences d’application Windows Mixed Reality.
+description: découvrez comment vous assurer que votre ordinateur est compatible et prêt pour un large éventail d’expériences d’application Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, compatible, compatibilité, prise en main, configuration, PC, configuration système requise
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, compatible, compatibilité, prise en main, configuration, PC, configuration système requise
 appliesto:
 - Windows 10
-ms.openlocfilehash: b7e90477ed16170a5661f34798a5af822ad8e945
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 026f36caf3eebaee8f883235284a1beaf870bb89c5bb27eb565abbd89fcf4f21
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187959"
 ---
 # <a name="before-you-start"></a>Avant de commencer
 
-## <a name="what-youll-need-to-run-windows-mixed-reality"></a>Ce dont vous avez besoin pour exécuter Windows Mixed Reality
+## <a name="what-youll-need-to-run-windows-mixed-reality"></a>Ce que vous devez exécuter Windows Mixed Reality
 
-* [Affichage monté en tête Windows Mixed Reality (HMD)](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices).
-* Un nouveau [PC Windows Mixed Reality Ready](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) ou un PC compatible Windows Mixed Reality exécutant Windows 10 version 1709 ou ultérieure.
+* [affichage monté en tête de réalité mixte Windows (HMD)](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices).
+* un nouveau [pc Windows Mixed Reality ready](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) ou un pc compatible Windows Mixed Reality exécutant Windows 10 Version 1709 ou ultérieure.
 * Une connexion Internet
-* Adaptateurs d’affichage, USB et Bluetooth (s’ils ne sont pas intégrés au casque ou à l’ordinateur)
+* adaptateurs d’affichage, USB et Bluetooth (s’ils ne sont pas intégrés au casque ou à l’ordinateur)
 * Des contrôleurs de mouvement, un contrôleur Xbox ou une souris et un clavier
 * Casque avec un microphone (si vos HMD ne les intègrent pas)
 * Un grand espace ouvert
 
 ## <a name="make-sure-your-pc-is-compatible-with-windows-mixed-reality"></a>Assurez-vous que votre ordinateur est compatible avec Windows Mixed Reality
 
-Vérifiez la [Configuration matérielle requise pour le PC Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) ou exécutez le [portail Windows Mixed Reality](install-windows-mixed-reality.md#launch-mixed-reality-portal) sur votre PC pour vérifier la compatibilité avec Windows Mixed Reality.
+vérifiez les [Windows Mixed Reality configuration matérielle minimale requise pour pc](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) ou exécutez le [portail Windows Mixed Reality](install-windows-mixed-reality.md#launch-mixed-reality-portal) sur votre ordinateur pour vérifier Windows Mixed Reality compatibilité.
 
 Pour plus d’informations, consultez [problèmes de compatibilité](https://support.microsoft.com/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality) avec les PC.
 
-## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>Vérifiez que la version 1709 ou une version ultérieure de Windows 10 est installée
+## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>assurez-vous que le Windows 10 Version 1709 ou ultérieure est installé
 
-Vous devez exécuter Windows 10 version 1903 ou ultérieure pour utiliser Windows Mixed Reality. Les versions compatibles de Windows 10 sont les suivantes :
+vous devez exécuter le Windows 10 Version 1903 ou ultérieure pour utiliser Windows Mixed Reality. les versions compatibles de Windows 10 sont les suivantes :
 
-* Windows 10 version 1903
-* Windows 10 version 1909
-* Windows 10 version 2004
-* Windows 10 version 20H2
+* Windows 10 Version 1903
+* Windows 10 Version 1909
+* Windows 10 Version 2004
+* Windows 10 Version 20H2
 
-Pour voir la version de Windows 10 que votre appareil est en cours d’exécution, sélectionnez le bouton **Démarrer** , puis sélectionnez **paramètres > système > à propos de**.
+pour voir quelle version de Windows 10 votre appareil est en cours d’exécution, cliquez sur le bouton **démarrer** , puis sélectionnez **Paramètres > système > à propos de**.
 
-Pour vous assurer que Windows 10 est à jour sur votre ordinateur, sélectionnez le bouton **Démarrer** , puis sélectionnez **paramètres > mettre à jour & sécurité > Windows Update**.  Sélectionnez **Rechercher des mises à jour**. Si des mises à jour sont disponibles, installez-les.
+pour vous assurer que Windows 10 est à jour sur votre ordinateur, sélectionnez le bouton **démarrer** , puis sélectionnez **Paramètres > mettre à jour & sécurité >** Windows Update.  Sélectionnez **Rechercher les mises à jour**. Si des mises à jour sont disponibles, installez-les.
 
 Pour plus d’informations, consultez [garder votre PC à jour](https://support.microsoft.com/help/12373/windows-update-faq) .
 
 ## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>Vérifier que votre ordinateur est connecté à Internet
 
-Vérifiez que votre ordinateur est connecté à Internet et téléchargez les pilotes et les logiciels supplémentaires pour que Windows Mixed realisation fonctionne.
+vérifiez que votre ordinateur est connecté à Internet et téléchargez les pilotes et les logiciels supplémentaires pour obtenir Windows Mixed Reality opérationnel.
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Vérifiez que vous disposez d’un pilote graphique compatible.
 
-Votre ordinateur a besoin d’un pilote graphique WDDM 2,2 ou version ultérieure pour terminer l’installation de Windows Mixed Reality. Si le pilote graphique n’est pas encore compatible, essayez les sources suivantes :
+votre ordinateur a besoin d’un pilote graphique WDDM 2,2 ou version ultérieure pour terminer l’installation de Windows Mixed Reality. Si le pilote graphique n’est pas encore compatible, essayez les sources suivantes :
 
-* Recherchez les dernières mises à jour de pilotes critiques à l’aide de Windows Update (**> paramètres Windows > mise à jour et sécurité > vérification des mises à jour**)
+* recherchez les dernières mises à jour de pilotes critiques à l’aide de Windows Update (**> de démarrage Windows Paramètres > mise à jour et de sécurité > rechercher les mises à jour**)
 * Recherchez les dernières mises à jour de pilote facultatives :
-    1. Cliquez avec le bouton droit sur **démarrer > Device Manager**.
+    1. Cliquez avec le bouton droit sur **démarrer > gestionnaire de périphériques**.
     2. Développez les **adaptateurs d’affichage**.
     3. Cliquez avec le bouton droit sur la carte graphique et sélectionnez **mettre à jour le pilote > Rechercher automatiquement le logiciel de pilote mis à jour**.
 * Consultez le site Web du fabricant (OEM) de votre PC.
@@ -66,7 +66,7 @@ Votre ordinateur a besoin d’un pilote graphique WDDM 2,2 ou version ultérieur
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>Assurez-vous que vous disposez des adaptateurs requis
 
-Il se peut que votre PC compatible Windows Mixed Reality ne dispose pas des ports HDMI et USB 3,0 de taille intégrale nécessaires pour connecter votre casque immersif. Vous pouvez également avoir besoin d’un adaptateur Bluetooth pour répondre aux exigences du portail Windows Mixed Reality.  Si c’est le cas, vous aurez besoin d’adaptateurs pour connecter votre casque et vos contrôleurs de mouvement. Veillez à consulter la liste des [types d’adaptateurs et des recommandations sur des modèles d’adaptateur spécifiques](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+votre PC compatible Windows Mixed Reality peut ne pas disposer des ports HDMI et USB 3,0 de taille intégrale nécessaires pour connecter votre casque immersif. vous pouvez également avoir besoin d’un adaptateur Bluetooth pour répondre aux exigences du portail Windows Mixed Reality.  Si c’est le cas, vous aurez besoin d’adaptateurs pour connecter votre casque et vos contrôleurs de mouvement. Veillez à consulter la liste des [types d’adaptateurs et des recommandations sur des modèles d’adaptateur spécifiques](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Vérifiez que vous avez des périphériques d’entrée.
 
@@ -74,7 +74,7 @@ Windows Mixed Reality est conçu pour fonctionner de façon optimale avec les co
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>Vérifiez que vous disposez d’un grand espace ouvert
 
-Si vous souhaitez vous déplacer tout en utilisant Windows Mixed Reality, vous devez disposer d’un grand espace ouvert.  Pendant l’installation, vous êtes invité à choisir entre « assiste » ou « toutes les expériences ». Choisissez « toutes les expériences » et configurez une limite si vous souhaitez vous déplacer. Passez en revue les [instructions relatives à l’intégrité, à la sécurité et au confort des écouteurs immersifs](wmr-health-safety-comfort.md) pour comprendre les besoins en espace.
+si vous souhaitez vous déplacer tout en utilisant Windows Mixed Reality vous devez disposer d’un grand espace ouvert.  Pendant l’installation, vous êtes invité à choisir entre « assiste » ou « toutes les expériences ». Choisissez « toutes les expériences » et configurez une limite si vous souhaitez vous déplacer. Passez en revue les [instructions relatives à l’intégrité, à la sécurité et au confort des écouteurs immersifs](wmr-health-safety-comfort.md) pour comprendre les besoins en espace.
 
 ### <a name="seated-and-standing-no-boundary"></a>Assis et debout (aucune limite)
 

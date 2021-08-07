@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, Ultra, compatible, compatibilité, configuration système requise, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: b7c2b4b84440e7cdd22c2c0cd7d5f9830d55625f
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: ed9113c5aa54d74678fcd6f888fa96007533d0d27e921f91aa6feeda459d11b7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757030"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187854"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>instructions relatives à la compatibilité minimale du matériel PC Windows Mixed Reality
 
@@ -91,7 +91,7 @@ Pour tous les autres HMDs, reportez-vous aux spécifications suivantes :
     <th style="width:10%"></th><th style="vertical-align: middle; text-align: center; width:30%">pc Windows Mixed Reality 90Hz</th>
     <th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 60 hz pc</th>
 </tr><tr>
-    <td style="vertical-align: middle">Système d’exploitation</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) ou version ultérieure : famille, Pro, professionnel, éducation.<br/>    (<b>remarque</b>: non pris en charge sur N versions ou Windows 10 Professionnel en Mode S)</td>
+    <td style="vertical-align: middle">Système d'exploitation</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) ou version ultérieure : famille, Pro, professionnel, éducation.<br/>    (<b>remarque</b>: non pris en charge sur N versions ou Windows 10 Professionnel en Mode S)</td>
 </tr><tr>
     <td style="vertical-align: middle">Processeur</td>
     <td style="vertical-align: middle; text-align: center;">Intel Core i5 4590 (4e génération), quadruple cœur (ou supérieur) <br>AMD Ryzen 5 1400 3.4 GHz (Desktop), Quad-Core (ou supérieur)</td>
@@ -143,7 +143,7 @@ Pour tous les autres HMDs, reportez-vous aux spécifications suivantes :
     <td style="vertical-align: middle; text-align: center;">60 Hz</td>
 </tr>
 <tr>
-    <td style="vertical-align: middle">Power</td>
+    <td style="vertical-align: middle">Avancé</td>
     <td style="vertical-align: middle; text-align: center;">Ports USB 3.0</td>
     <td style="vertical-align: middle; text-align: center;">Ports USB 3.0</td>
 </tr>

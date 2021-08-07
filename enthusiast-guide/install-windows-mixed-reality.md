@@ -1,19 +1,19 @@
 ---
 title: Installer le logiciel Windows Mixed Reality
-description: Après avoir branché votre casque Windows Mixed Reality, utilisez l’application de portail de réalité mixte pour commencer et télécharger les fonctionnalités Windows Mixed Reality.
+description: après avoir branché votre Windows Mixed Reality casque, utilisez l’application de portail de réalité mixte pour commencer et télécharger des fonctionnalités Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, prise en main, configuration, portail de réalité mixte
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, prise en main, configuration, portail de réalité mixte
 appliesto:
 - Windows 10
-ms.openlocfilehash: a0ce559372d854e5f0bd51d25d112ba285e4d81e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 1ac7ab79b6d28a44636fc16859456eb7af329a215e2d6718d0190b86281d0b67
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186941"
 ---
 # <a name="install-windows-mixed-reality-software"></a>Installer le logiciel Windows Mixed Reality
 
@@ -22,13 +22,13 @@ ms.locfileid: "107944740"
 
 ## <a name="launch-mixed-reality-portal"></a>Lancer le portail de réalité mixte
 
-Une fois que vous avez branché votre casque Windows Mixed Reality et que le pilote s’installe correctement, le portail de réalité mixte (MRP) est automatiquement lancé sur votre bureau. Si le portail ne démarre pas, vous pouvez toujours ouvrir le portail de réalité mixte à partir de **démarrer > portail de réalité mixte**. Une fois que le portail a démarré, sélectionnez **prise en main**
+une fois que vous avez branché votre casque Windows Mixed Reality et que le pilote s’installe correctement, le portail de réalité mixte (MRP) est automatiquement lancé sur votre bureau. Si le portail ne démarre pas, vous pouvez toujours ouvrir le portail de réalité mixte à partir de **démarrer > portail de réalité mixte**. une fois que le portail a démarré, sélectionnez **Prise en main**
 
 ![Bienvenue dans la réalité mixte](images/1050px-mixedrealityportal.png)
 
 Dans le portail de réalité mixte, vous pouvez :
 
-* Affichez un diffusion en continu de la vue dans votre casque (Windows Mixed Reality ultra uniquement) en sélectionnant « arrêter l’aperçu » ou « démarrer l’aperçu ». Vous pouvez également activer ou désactiver l’aperçu dans le menu Démarrer de la réalité mixte.
+* affichez un diffusion en continu de la vue dans votre casque (Windows Mixed Reality Ultra uniquement) en sélectionnant « arrêter l’aperçu » ou « démarrer l’aperçu ». vous pouvez également activer ou désactiver l’aperçu sur à partir de la réalité mixte menu Démarrer.
 * Consultez l’état de votre casque et de vos contrôleurs. Sélectionnez « Menu » pour afficher toutes les informations.
 * Configurez de nouveaux contrôleurs. Sélectionnez le **Menu > configurer les contrôleurs**.
 * Activez ou désactivez la limite. Sélectionnez **le Menu > limite activée/désactivée**. (Si vous la désactivez, vous devrez rester en un seul endroit pour garantir la sécurité.)
@@ -38,7 +38,7 @@ Dans le portail de réalité mixte, vous pouvez :
 
 ## <a name="download-windows-mixed-reality"></a>Télécharger Windows Mixed Reality
 
-Windows Mixed Reality a une taille de 1 Go, et les temps de téléchargement varient en fonction de votre connexion Internet. Si vous avez cliqué sur un message indiquant « nous n’avons pas pu télécharger le logiciel de réalité mixte », jetez un coup d’œil à ces [étapes de dépannage](installation_errors.md#we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading).
+Windows Mixed Reality a une taille de 1 go et les temps de téléchargement varient en fonction de votre connexion internet. Si vous avez cliqué sur un message indiquant « nous n’avons pas pu télécharger le logiciel de réalité mixte », jetez un coup d’œil à ces [étapes de dépannage](installation_errors.md#we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading).
 
 ## <a name="general-troubleshooting"></a>Résolution générale des problèmes
 
@@ -56,21 +56,21 @@ Si le redémarrage ne fonctionne pas, assurez-vous que votre casque est reconnu 
 S’il n’est pas listé, essayez ce qui suit :
 
 * Branchez le casque sur les différents ports du PC, le cas échéant.
-* Recherchez les dernières mises à jour logicielles à partir de [Windows Update](https://support.microsoft.com/help/12373).
+* recherchez les dernières mises à jour logicielles à partir de [Windows Update](https://support.microsoft.com/help/12373).
 * Désinstallez et réinstallez Windows Mixed Reality :
     1. Déconnectez votre casque de votre ordinateur (les deux câbles).
-    2. Sélectionnez **paramètres > réalité mixte > désinstaller**.
-    3. Découplez vos contrôleurs de mouvement : sélectionnez **paramètres > appareils > Bluetooth & autres périphériques**. Sélectionnez chaque contrôleur, puis sélectionnez **Supprimer l’appareil**.
-    4. Pour réinstaller Windows Mixed Reality, rebranchez votre casque sur votre PC.
+    2. sélectionnez **Paramètres > la réalité mixte > désinstaller**.
+    3. découplez vos contrôleurs de mouvement : sélectionnez **Paramètres appareils > > Bluetooth & d’autres appareils**. Sélectionnez chaque contrôleur, puis sélectionnez **Supprimer l’appareil**.
+    4. pour réinstaller Windows Mixed Reality, rebranchez votre casque sur votre PC.
 
 ## <a name="common-error-messages"></a>Messages d’erreur courants
 
 Voici quelques éléments à essayer pour les [messages d’erreur](error-codes.md) que vous pouvez voir.
 
-| Si vous voyez ce message | Procédure |
+| Si vous voyez ce message | Essayez ceci |
 | --- | --- |
-| Vérifiez le câble USB. | Connectez votre casque à un autre port USB (et assurez-vous qu’il s’agit d’une vitesse USB 3,0). Essayez également de supprimer les extendeurs ou les hubs entre le casque et l’ordinateur. |
-| Vérifiez votre câble d’affichage | Essayez les étapes suivantes : <ul><li>Connectez votre casque à un DisplayPort 1,2 ou une version ultérieure, ou HDMI 1,4 ou version ultérieure. Assurez-vous que le port correspond à la carte graphique la plus avancée sur votre PC.</li><li>Si vous utilisez un adaptateur, assurez-vous que sa compatibilité 4K</li><li>Essayez d’utiliser un autre port HDMI</li><li>Si vous avez un moniteur externe branché dans un port HDMI, essayez de le brancher dans un DisplayPort et utilisez le port HDMI pour votre casque.</li></ul> |
+| Vérifiez le câble USB. | Connecter votre casque sur un autre port usb (et assurez-vous qu’il s’agit d’une vitesse usb 3,0). Essayez également de supprimer les extendeurs ou les hubs entre le casque et l’ordinateur. |
+| Vérifiez votre câble d’affichage | Essayez les étapes suivantes : <ul><li>Connecter votre casque à un DisplayPort 1,2 ou ultérieur, ou HDMI 1,4 ou version ultérieure. Assurez-vous que le port correspond à la carte graphique la plus avancée sur votre PC.</li><li>Si vous utilisez un adaptateur, assurez-vous que sa compatibilité 4K</li><li>Essayez d’utiliser un autre port HDMI</li><li>Si vous avez un moniteur externe branché dans un port HDMI, essayez de le brancher dans un DisplayPort et utilisez le port HDMI pour votre casque.</li></ul> |
 | Survenue d’un problème | Suivez les étapes de dépannage générales ci-dessus. |
 
 ## <a name="review-and-accept-terms-and-conditions"></a>Consulter et accepter les conditions générales

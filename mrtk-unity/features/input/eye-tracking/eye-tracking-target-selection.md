@@ -4,13 +4,13 @@ description: Comment accéder aux données de regard visuel et aux événements 
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking,
-ms.openlocfilehash: 229903e01c597aefbb3fc29de8a49d79cbbd42d0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking,
+ms.openlocfilehash: aab2f35259db183f4f3edb4fffc2b3e7a066bccf9c69e492c90ee193388b8b7a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189595"
 ---
 # <a name="eye-supported-target-selection"></a>Sélection de la cible prise en charge par l’œil
 
@@ -20,7 +20,7 @@ Cette page présente les différentes options permettant d’accéder aux donné
 
 - Regardez & dites _« Sélectionner »_ (commande vocale par défaut)
 - Regardez & dites _« Eclater »_ ou _« pop »_ (commandes vocales personnalisées)
-- Bouton regarder & Bluetooth
+- bouton de Bluetooth &
 - Regardez & pincez-vous (par exemple, maintenez votre main à l’avant et apportez votre doigt et votre index ensemble)
   - Notez que pour que cela fonctionne, les [rayons manuels doivent être désactivés](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray)
 
@@ -323,8 +323,8 @@ public class HitBehaviorDestroyOnSelect : MonoBehaviour
 Les rayons de main sont prioritaires par rapport au point de contrôle du regard. Cela signifie que si les rayons de main sont activés, le moment où les mains entrent en vue, le rayon de la main agit comme pointeur principal.
 Toutefois, il peut arriver que vous souhaitiez utiliser des rayons de main tout en détectant si un utilisateur Regarde un certain hologramme. Facile ! Pour l’essentiel, vous avez besoin de deux étapes :
 
-**1. activer le rayon de la main :** pour activer le rayon de la main, accédez à la boîte à outils de la _réalité mixte-> pointeurs d’entrée->_.
-Dans le _EyeTrackingDemo-00-RootScene_ où la boîte à outils de réalité mixte est configurée une seule fois pour toutes les scènes de démonstration du suivi oculaire, vous devez voir le _EyeTrackingDemoPointerProfile_.
+**1. activer le rayon de la main :** pour activer le rayon de la main, accédez à la _réalité mixte Shared Computer Toolkit-> pointeurs de > d’entrée_.
+dans le _EyeTrackingDemo-00-RootScene_ où la réalité mixte Shared Computer Toolkit est configurée une seule fois pour toutes les scènes de démonstration du suivi oculaire, vous devez voir le _EyeTrackingDemoPointerProfile_.
 Vous pouvez créer un nouveau _profil d’entrée_ à partir de zéro ou adapter le suivi visuel actuel :
 
 - **À partir de zéro :** Dans l’onglet _pointeurs_ , sélectionnez _DefaultMixedRealityInputPointerProfile_ dans le menu contextuel.
@@ -332,7 +332,7 @@ Il s’agit du profil de pointeur par défaut pour lequel le rayon de la main es
 Pour modifier le curseur par défaut (un point blanc opaque), clonez simplement le profil et créez votre propre profil de pointeur personnalisé.
 Ensuite, remplacez _DefaultCursor_ par _EyeGazeCursor_ sous le _curseur en regard Prefab_.  
 - **Selon le _EyeTrackingDemoPointerProfile_ existant :** double-cliquez sur _EyeTrackingDemoPointerProfile_ et ajoutez l’entrée suivante sous _Options du pointeur_:
-  - **Type de contrôleur :** « Articulée », « Windows Mixed Reality »
+  - **Type de contrôleur :** 'ArticuLED Hand', 'Windows Mixed Reality'
   - La **main :** Aux
   - **Pointeur Prefab :** DefaultControllerPointer
 

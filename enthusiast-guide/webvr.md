@@ -1,19 +1,19 @@
 ---
 title: Utilisation de WebVR avec Windows Mixed Reality
-description: Découvrez les principes de base de WebVR, comment l’utiliser avec Microsoft Edge sur des casques Windows de réalité mixte et les problèmes courants de dépannage.
+description: découvrez les principes fondamentaux de WebVR, comment l’utiliser avec des Microsoft Edge sur des casques Windows Mixed Reality et des problèmes de dépannage courants.
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, WebVR, Edge, Microsoft Edge, navigation Web
-ms.openlocfilehash: 89d9e51bf4adb63e7836968a0112849f7ac403d0
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, WebVR, Edge, Microsoft Edge, navigation web
+ms.openlocfilehash: f61fff3c8d5083236c10d79d3824c489111f8d2be2138984f5613f295849bdf2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581751"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214123"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Utilisation de WebVR avec Windows Mixed Reality
 
 >[!IMPORTANT]
->La plupart des navigateurs Web modernes ont déconseillé la prise en charge de WebVR en faveur de WebXR, la nouvelle norme pour la création d’expériences Web immersifs pour les casques VR. Installez la nouvelle prise en charge de [Microsoft Edge](using-microsoft-edge.md) pour WebXR.
+>La plupart des navigateurs Web modernes ont déconseillé la prise en charge de WebVR en faveur de WebXR, la nouvelle norme pour la création d’expériences Web immersifs pour les casques VR. installez [le nouveau Microsoft Edge pour la](using-microsoft-edge.md) prise en charge de WebXR.
 
 ## <a name="what-is-webvr"></a>Qu’est-ce que WebVR
 
@@ -31,7 +31,7 @@ Non. Les auteurs de sites Web doivent s’abonner à l’utilisation de WebVR et
 
 ## <a name="can-i-use-my-viveoculus-etc-to-view-webvr-content-in-microsoft-edge"></a>Puis-je utiliser mon vive/Oculus, etc. pour afficher le contenu de WebVR dans Microsoft Edge
 
-Non. Un casque Windows Mixed Reality est requis pour utiliser WebVR dans Edge. Toutefois, vous pouvez accéder au contenu de WebVR dans un autre navigateur. consultez la liste complète des appareils et navigateurs compatibles à l’adresse suivante : [WebVR. Rocks](http://webvr.rocks/).
+Non. un casque Windows Mixed Reality est requis pour utiliser WebVR dans Edge. Toutefois, vous pouvez accéder au contenu de WebVR dans un autre navigateur. consultez la liste complète des appareils et navigateurs compatibles à l’adresse suivante : [WebVR. Rocks](http://webvr.rocks/).
 
 ## <a name="where-can-i-find-the-webvr-developer-documentation"></a>Où puis-je trouver la documentation du développeur WebVR
 
@@ -39,11 +39,11 @@ La documentation du développeur se trouve ici : [WebVR Developer documentation
 
 ## <a name="ive-found-a-website-with-webvr-that-doesnt-work-in-windows-mixed-reality-what-do-i-do"></a>J’ai trouvé un site Web avec WebVR qui ne fonctionne pas dans Windows Mixed Reality. Que dois-je faire
 
-Vous pouvez signaler des sites rompus directement à l’équipe du navigateur Microsoft Edge dans le [suivi des problèmes](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/)ou via Twitter à l’aide de [#EdgeBug mot-dièse](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/).
+vous pouvez signaler des sites rompus directement à l’équipe Microsoft Edge browser dans le [suivi des problèmes](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/)ou via twitter à l’aide de [#EdgeBug mot-dièse](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/).
 
-Vous pouvez également consigner les bogues à l’aide de l’application Hub de commentaires Windows sous catégorie :
+vous pouvez également consigner les bogues à l’aide de l’application Hub de commentaires Windows sous la catégorie :
 
-Problèmes liés au site Web de > Microsoft Edge
+Microsoft Edge-> des problèmes de site web
 
 ## <a name="what-is-a-good-page-to-test-if-webvr-is-working"></a>Qu’est-ce qu’une bonne page pour tester si WebVR fonctionne
 
@@ -51,10 +51,10 @@ Consultez les [exemples webvr.info](http://webvr.info/samples/XX-vr-controllers.
 
 ## <a name="how-do-i-set-up-webvr"></a>Comment faire configurer WebVR
 
-Pour expérimenter du contenu WebVR sur un casque Windows Mixed Reality (à l’aide d’un matériel ou d’une simulation), vous devez :
+pour expérimenter du contenu WebVR sur un casque Windows Mixed Reality (à l’aide de matériel ou de simulation), vous devez :
 
 1. Vérifiez que votre casque est connecté.
-2. Lancez Microsoft Edge sur le bureau ou dans une réalité mixte.
+2. lancez Microsoft Edge, sur le bureau ou dans la réalité mixte.
 3. Accédez à une page WebVR activée.
 4. Sélectionnez le bouton ENTER VR dans la page (l’emplacement et la représentation visuelle de ce bouton peuvent varier selon le site Web). Il peut ressembler à ceci : \
    ![Image de lunettes](images/75px-enter-vr.png)

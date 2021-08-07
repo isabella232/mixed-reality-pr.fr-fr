@@ -1,18 +1,18 @@
 ---
-title: Guide de configuration du profil MRTK
+title: Guide de configuration de profil MRTK
 description: Documentation pour configurer MRTK dans Unity.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK,
-ms.openlocfilehash: b7ec8d9ca2213ff998f94a6a2d029900ff886a2f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e18695610b5e07c4f811e7c43bc13607857a9459407f9b16f39d4f7350f354e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176415"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214922"
 ---
-# <a name="mrtk-profile-configuration-guide"></a>Guide de configuration du profil MRTK
+# <a name="mrtk-profile-configuration-guide"></a>Guide de configuration de profil MRTK
 
 la réalité mixte Shared Computer Toolkit centralise la plus grande partie de la configuration requise pour gérer la boîte à outils le plus possible (à l’exception des « choses » du runtime réel).
 
@@ -191,8 +191,8 @@ Pour créer une nouvelle action d’entrée, cliquez simplement sur le bouton «
 
 | Contrainte d’axe | Type de données | Description | Exemple d’utilisation |
 | :--- | :--- | :--- | :--- |
-| Aucun | Pas de données | Utilisé pour une action ou un événement vide | Déclencheur d’événement |
-| Brut (réservé) | objet | Paramètres réservés pour un usage ultérieur | N/A |
+| Aucune | Pas de données | Utilisé pour une action ou un événement vide | Déclencheur d’événement |
+| Brut (réservé) | object | Paramètres réservés pour un usage ultérieur | N/A |
 | Digital | bool | Données de type Boolean on ou OFF | Bouton de contrôleur |
 | Axe unique | float | Une valeur de données de précision unique | Une entrée étendue, par exemple un déclencheur |
 | Axe double | Vector2 | Une date de type float double pour plusieurs axes | Un dpad ou un stick analogique |

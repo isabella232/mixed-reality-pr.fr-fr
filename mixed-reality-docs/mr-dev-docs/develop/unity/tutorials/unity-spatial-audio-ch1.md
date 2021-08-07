@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: réalité mixte, unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
-ms.openlocfilehash: a61e709f24c2162bc6e6e1248de658128674d49e
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 7f40e99e72a90de777e672f131afff5d05fe6416bd225c5b656678e340cc813d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211709"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Ajout de l’audio spatial à votre projet Unity
 
@@ -37,12 +37,12 @@ Le traitement de l’audio à l’aide d’algorithmes basés sur HRTF nécessit
 * PC Windows 10 configuré avec les [outils appropriés installés](../../install-the-tools.md)
 * Connaissances de base de la programmation en C++
 * Appareil HoloLens 2 [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub unity</a> avec unity 2020/2019 LTS monté et le module de prise en charge de la génération plateforme Windows universelle ajoutée
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> avec Unity 2020/2019 LTS monté et le module Universal Windows Platform Build Support ajouté
 
 Nous **vous recommandons vivement** de suivre la série des didacticiels de [prise](mr-learning-base-01.md) en main ou de bénéficier d’une expérience de base avec Unity et MRTK avant de continuer.
 
 > [!Important]
-> cette série de didacticiels prend en charge unity 2020 LTS (actuellement 2020.3. x) si vous utilisez Open XR ou Windows plug-in XR et unity 2019 LTS (actuellement 2019.4. x) si vous utilisez le plug-in WSA hérité ou Windows XR. Elle remplace toutes les versions Unity requises qui sont indiquées dans les prérequis ci-dessus.
+> Cette série de tutoriels prend en charge Unity 2020 LTS (actuellement 2020.3.x) si vous utilisez Open XR ou le plug-in Windows XR, ainsi qu’Unity 2019 LTS (actuellement 2019.4.x) si vous utilisez WSA hérité ou le plug-in Windows XR. Elle remplace toutes les versions Unity requises qui sont indiquées dans les prérequis ci-dessus.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Création et préparation du projet Unity
 
@@ -53,7 +53,7 @@ Pour cela, suivez d’abord [Initialisation de votre projet et de votre premièr
 1. [Création du projet Unity](mr-learning-base-02.md#creating-the-unity-project) et affectation d’un nom pertinent, par exemple *MRTK Tutorials*
 2. [Changement de plateforme de génération](mr-learning-base-02.md#configuring-the-unity-project)
 3. [Importation des ressources TextMeshPro Essential](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
-4. [importation de la réalité mixte Shared Computer Toolkit et configuration du projet unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+4. [Importation de Mixed Reality Toolkit et configuration du projet Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [Création et configuration de la scène](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) et donnez un nom approprié à la scène, par exemple *SpatialAudio*
 
 Suivez ensuite les instructions relatives à la modification des options d’affichage de la [sensibilisation spatiale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) pour vous assurer que le profil de configuration MRTK pour votre scène est **DefaultHoloLens2ConfigurationProfile** et modifiez les options d’affichage du maillage de la sensibilisation spatiale à **occlusion**.

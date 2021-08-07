@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 6e751f5376110ddc6ae92c75b4182fba8240a356
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 78596197af6c2e7c329e7a7c99281f8debee13b973a212709f5be1ec34e04eea
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212231"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Suivez ce [didacticiel pas à pas](../../tutorials/mr-learning-base-01.md) pour ajouter et configurer automatiquement la boîte à outils de réalité mixte dans votre projet Unity. Il est également possible de travailler directement avec la classe [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) à partir de MRTK pour Unity et de définir la mise à l' **échelle cible** sur le **monde**:
+suivez ce [didacticiel pas à pas](../../tutorials/mr-learning-base-01.md) pour ajouter et configurer automatiquement la réalité mixte Shared Computer Toolkit dans votre projet unity. Il est également possible de travailler directement avec la classe [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) à partir de MRTK pour Unity et de définir la mise à l' **échelle cible** sur le **monde**:
 
 ![Fenêtre Paramètres MRTK](../../images/mrtk-target-scale.png)
 
@@ -30,7 +30,7 @@ xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Device);
 xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Unbounded); // Recommendation for OpenXR
 ```
 
-Vous pouvez utiliser [ARSession](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.1/manual/index.html#installing-ar-foundation) pour les applications HoloLens, ce qui fonctionne mieux avec les ancres et ARKit/ARCore.
+vous pouvez utiliser [ARSession](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.1/manual/index.html#installing-ar-foundation) pour les applications HoloLens, ce qui fonctionne mieux avec les ancres et ARKit/ARCore.
 
 ![Session AR dans la hiérarchie](../../images/xrsdk-arsession.png)
 
@@ -56,8 +56,8 @@ Il est également possible d’appliquer les modifications de la caméra manuell
    ![Caméra dans le volet de l’inspecteur dans Unity](../../images/maincamera-350px.png)  
    *Caméra dans le volet de l’inspecteur dans Unity*
 
-1. Accéder à d' **autres paramètres** de la section paramètres du **lecteur Windows Store**
-1. Choisissez **Windows Mixed realisation** comme périphérique, qui peut être listé comme **Windows holographique** dans les versions antérieures d’Unity
+1. accédez à la section **autres Paramètres** du **lecteur Windows Store Paramètres**
+1. choisissez **Windows Mixed Reality** comme appareil, qui peut être listé comme **Windows holographique** dans les versions antérieures d’unity
 1. Sélectionner une **réalité virtuelle prise en charge**
 
 Étant donné que l’objet Camera principal est automatiquement marqué comme caméra, Unity alimente tous les mouvements et les translations.

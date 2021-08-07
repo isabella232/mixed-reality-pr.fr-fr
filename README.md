@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3f65fa90279e9a10c1aad9bd46f02233808936b8
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 97ef4f466355f39e01ce0b916b4d0f45fb4c40f3fd6f0cb001b1bcccb35740eb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188019"
 ---
 ![Colibri virtuel avec une main humaine](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
@@ -19,7 +19,7 @@ Si vous participez ou mettez à jour du contenu de docs, vérifiez que vos deman
 
 Pour les problèmes liés à docs, utilisez les pieds de page en bas de chaque document ou envoyez-les directement à [MicrosoftDocs/Mixed-Reality/Problems](https://github.com/MicrosoftDocs/mixed-reality/issues).
 
-N’hésitez pas à envoyer des questions sur les stratégies de contribution ou les processus à Harrison Ferrone ou Sean Kerawala via teams ou e-mail. 
+n’hésitez pas à envoyer des questions sur les stratégies de contribution ou les processus à Harrison Ferrone ou Sean Kerawala via Teams ou e-mail. 
 
 ## <a name="getting-started"></a>Prise en main 
 

@@ -5,19 +5,19 @@ author: kegodin
 ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
-keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
-ms.openlocfilehash: 9d0fa432f2e653cdd6820cb6c779cc1acc5c4b15
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+keywords: réalité mixte, unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer
+ms.openlocfilehash: 2599e2f360afa4518102ab9535608e9d378264ae87f84a36823d460f934d6a05
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213219"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. activation et désactivation de Spatialization au moment de l’exécution
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Dans ce didacticiel, vous allez apprendre à activer et à désactiver les Spatialization au moment de l’exécution et à les tester dans l’éditeur Unity et dans HoloLens 2.
+Dans ce didacticiel, vous allez apprendre à activer et désactiver des Spatialization au moment de l’exécution et à les tester dans l’éditeur Unity et HoloLens 2.
 
 ## <a name="objectives"></a>Objectifs
 
@@ -26,11 +26,11 @@ Dans ce didacticiel, vous allez apprendre à activer et à désactiver les Spati
 
 ## <a name="add-spatialization-control-script"></a>Ajouter un script de contrôle Spatialization
 
- Cliquez avec le bouton droit dans la fenêtre du projet et choisissez **créer**  >  un **script c#** pour créer un script c#, entrez un nom approprié pour le script, par exemple, _SpatializeOnOff_:
+ cliquez avec le bouton droit dans la fenêtre Project et choisissez **créer**  >  un **script c#** pour créer un script c#, entrez un nom approprié pour le script, par exemple, _SpatializeOnOff_:
 
 ![Création du script](images/spatial-audio/spatial-audio-04-section1-step1-1.PNG)
 
-Double-cliquez sur le script dans la fenêtre projet pour l’ouvrir dans Visual Studio. Remplacez le contenu du script par défaut par ce qui suit :
+Double-cliquez sur le script dans la fenêtre Project pour l’ouvrir dans Visual Studio. Remplacez le contenu du script par défaut par ce qui suit :
 
 > [!NOTE]
 > Plusieurs lignes du script sont commentées. Ces lignes ne seront pas commentées dans le [chapitre suivant : utilisation de la réverbération pour ajouter une distance à un son spatial](unity-spatial-audio-ch5.md).
@@ -118,7 +118,7 @@ Dans la fenêtre hiérarchie, sélectionnez **PressableButtonHoloLens2**. Dans l
 
 ## <a name="congratulations"></a>Félicitations
 
-Dans ce didacticiel, vous avez appris à activer et désactiver des Spatialization au moment de l’exécution, à tester l’application sur un HoloLens 2 ou dans l’éditeur Unity. Dans l’application, vous pouvez maintenant cliquer sur le bouton pour activer et désactiver Spatialization de l’audio.
+dans ce didacticiel, vous avez appris à activer et désactiver des spatialization au moment de l’exécution, à tester l’application sur un HoloLens 2 ou dans l’éditeur unity. Dans l’application, vous pouvez maintenant cliquer sur le bouton pour activer et désactiver Spatialization de l’audio.
 
 Dans le didacticiel suivant, vous allez ajouter un effet de réverbération pour fournir aux sons un sens de la distance.
 

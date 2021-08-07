@@ -1,18 +1,18 @@
 ---
-title: Prefab texte
+title: Préfabriqué de texte
 description: Vue d’ensemble de TextPrefab dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, TMP,
-ms.openlocfilehash: 1839109043cfad9a20697c5d6526b349fd7ea2e4
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1969bc9e3054fec509e9f7d536cbfe4b97e43563e26ba5476601e78e65ad24f9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209056"
 ---
-# <a name="text-prefab"></a>Prefab texte
+# <a name="text-prefab"></a>Préfabriqué de texte
 
 Ces prefabs sont optimisés pour la qualité de rendu dans Windows Mixed Reality. pour plus d’informations, consultez le [texte de l’instruction unity](/windows/mixed-reality/text-in-unity) sur Microsoft Windows Centre de développement.
 

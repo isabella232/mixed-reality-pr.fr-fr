@@ -1,5 +1,5 @@
 ---
-title: Point d’accès de télérelais
+title: Point d’accès à la téléportation
 description: Documentation sur le composant HotSpot de télérelais dans MRTK
 author: RogPodge
 ms.author: roliu
@@ -7,18 +7,18 @@ ms.date: 03/25/2021
 ms.localizationpriority: medium
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de téléchaud, point d’accès
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 01ae900800c4a13ca7bafc3391ff51b752a95ae0
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 755b0e8f53be2f393b52395309ed9ab0fad96cadc2e4289400cfff45a99aa6a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176198"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189455"
 ---
-# <a name="teleport-hotspot"></a>Point d’accès de télérelais
+# <a name="teleport-hotspot"></a>Point d’accès à la téléportation
 
 La zone réactive de télétentative est un composant que vous pouvez ajouter à votre gameobject pour vous assurer que l’utilisateur est dans une certaine position et orientation lorsqu’il se téléporte à cet emplacement.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 ### <a name="how-to-create-a-teleport-hotspot"></a>Comment créer une zone réactive de télétentative
 

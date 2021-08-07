@@ -1,18 +1,18 @@
 ---
-title: Création d’un fournisseur de paramètres d’appareil photo
+title: Création d’un fournisseur de paramètres de caméra
 description: Fournisseur de données pour les paramètres de l’appareil photo dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 2151887a6162239e993634d5d346065362f1c428
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 5efab728905cd9885bf49f54b1939f3957cc5815af00dc816a4044a3f659b3bb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114282036"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210698"
 ---
-# <a name="creating-a-camera-settings-provider"></a>Création d’un fournisseur de paramètres d’appareil photo
+# <a name="creating-a-camera-settings-provider"></a>Création d’un fournisseur de paramètres de caméra
 
 Le système d’appareil photo est un système extensible qui fournit une prise en charge des configurations d’appareil photo spécifiques à la plateforme. Pour ajouter la prise en charge d’une nouvelle configuration d’appareil photo, vous pouvez avoir besoin d’un fournisseur de paramètres personnalisé.
 

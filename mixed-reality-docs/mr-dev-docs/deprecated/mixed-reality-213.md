@@ -1,17 +1,17 @@
 ---
 title: Réalité mixte - Entrées - Cours 213
-description: Suivez ce didacticiel de codage avec Unity, Visual Studio et les casques immersifs pour apprendre les détails des contrôleurs de mouvement.
+description: suivez ce didacticiel de codage avec unity, Visual Studio et des casques immersifs pour apprendre les détails des contrôleurs de mouvement.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, immersion, contrôleur de mouvement, Academy, didacticiel
-ms.openlocfilehash: 1f747c73846f59fdc62a0559068123a50f8a1b07
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 1cb53ed619a978e2aef17b5006b6254e5c7d3b9f53a39fbcb5932ebcc44ca98b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210146"
 ---
 # <a name="mr-input-213-motion-controllers"></a>Réalité mixte - Entrées - Cours 213 : Contrôleurs de mouvement
 
@@ -60,7 +60,7 @@ Consultez la liste de vérification de l’installation des casques immersifs su
 
 ### <a name="objectives"></a>Objectifs
 
-* Optimiser Unity pour le développement Windows Mixed Reality
+* optimiser unity pour le développement de Windows Mixed Reality
 * Configurer une caméra de réalité mixte
 * Configurez l’environnement.
 
@@ -71,28 +71,28 @@ Consultez la liste de vérification de l’installation des casques immersifs su
 * Accédez à votre bureau et recherchez le dossier **MixedReality213-Master** que vous avez précédemment non archivé.
 * Cliquez sur **Sélectionner un dossier**.
 * Une fois que Unity a fini de charger les fichiers projet, vous pouvez voir l’éditeur Unity.
-* Dans Unity, sélectionnez **fichier > paramètres de build**.
+* dans unity, sélectionnez **fichier > Build Paramètres**.
 
     ![MR213_BuildSettings](images/mr213-buildsettings-450px.png)
 
-* Sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur le bouton **changer de plateforme** .
+* sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur le bouton **changer de plateforme** .
 * Définir un appareil cible sur **un appareil**
-* Définir le type de build sur **D3D**
+* Définissez Build Type sur **D3D**.
 * Installer le SDK sur le **dernier installé**
 * Vérifier les **projets Unity C#**
-    * Cela vous permet de modifier les fichiers de script dans le projet Visual Studio sans reconstruire le projet Unity.
-* Cliquez sur **paramètres du lecteur**.
+    * cela vous permet de modifier les fichiers de script dans le projet Visual Studio sans reconstruire le projet unity.
+* cliquez sur **Paramètres du lecteur**.
 * Dans le volet de l' **inspecteur** , faites défiler l’écran vers le bas
-* Dans les paramètres XR, vérifiez **la réalité virtuelle prise en charge**
-* Sous kits de développement logiciel (SDK) Virtual Reality, sélectionnez **Windows Mixed Reality** .
+* dans XR Paramètres, vérifiez que **la réalité virtuelle est prise en charge**
+* sous kits de développement logiciel (sdk) Virtual reality, sélectionnez **Windows Mixed Reality**
 
     ![MR213_XRSettings](images/mr213-xrsettings-500px.png)
 
-* Fermez la fenêtre **paramètres de build** .
+* fermez la fenêtre de **Paramètres de Build** .
 
 ### <a name="project-structure"></a>Structure du projet
 
-Ce didacticiel utilise la **[réalité mixte Toolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)**. Vous pouvez trouver les versions dans [cette page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases).
+ce didacticiel utilise la **[réalité mixte Shared Computer Toolkit-unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)**. Vous pouvez trouver les versions dans [cette page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases).
 
 ![ProjectStructure](images/mr213-projectstructure-650px.png)
 
@@ -106,13 +106,13 @@ Ce didacticiel utilise la **[réalité mixte Toolkit-Unity](https://github.com/M
 
 * Dans Unity, cliquez sur **fichier > nouvelle scène**
 * Supprimer la **caméra principale** et la **lumière directionnelle**
-* Dans le **volet de projet**, recherchez et faites glisser le prefabs suivant dans le volet de **hiérarchie** :
+* dans le **volet Project**, recherchez et faites glisser le prefabs suivant dans le volet de **hiérarchie** :
     * Ressources/HoloToolkit/entrée/Prefabs/**MixedRealityCamera**
     * Ressources/AppPrefabs/**environnement**
 
     ![Appareil photo et environnement](images/mr213-cameraenvironment-300px.jpg)
 
-* Il existe deux prefabs d’appareil photo dans Mixed Reality Toolkit :
+* il existe deux prefabs d’appareil photo en réalité mixte Shared Computer Toolkit :
     * **MixedRealityCamera. Prefab**: appareil photo uniquement
     * **MixedRealityCameraParent. Prefab**: appareil photo + téléportage + limite
     * Dans ce didacticiel, nous allons utiliser **MixedRealityCamera** sans la fonctionnalité de téléportage. Pour cette raison, nous avons ajouté un Prefab d' **environnement** simple qui contient un étage de base pour que l’utilisateur ait le sentiment de la terre.
@@ -120,7 +120,7 @@ Ce didacticiel utilise la **[réalité mixte Toolkit-Unity](https://github.com/M
 
 **Installation de skybox**
 
-* Cliquez sur **fenêtre > éclairage > paramètres**
+* cliquez sur **fenêtre > éclairage > Paramètres**
 * Cliquez sur le cercle sur le côté droit du **champ de matériau skybox** .
 * Tapez « Gray » et sélectionnez **SkyboxGray** (Assets/AppPrefabs/support/Materials/SkyboxGray. mat)
 
@@ -155,7 +155,7 @@ Dans ce chapitre, nous allons découvrir les exemples de ces personnalisations d
 
 ### <a name="instructions"></a>Instructions
 
-* Dans le panneau **projet** , tapez **MotionControllers** dans la zone de recherche. Vous pouvez également le trouver sous ressources/HoloToolkit/entrée/Prefabs/.
+* dans le volet **Project** , tapez **MotionControllers** dans la zone de recherche. Vous pouvez également le trouver sous ressources/HoloToolkit/entrée/Prefabs/.
 * Faites glisser le Prefab **MotionControllers** dans le panneau de la **hiérarchie** .
 * Cliquez sur le Prefab **MotionControllers** dans le panneau **hiérarchie** .
 
@@ -167,7 +167,7 @@ Dans ce chapitre, nous allons découvrir les exemples de ces personnalisations d
 
 **Instructions**
 
-* Dans le panneau **inspecteur** , double-cliquez sur **MotionControllerVisualizer** script pour afficher le code dans Visual Studio.
+* Dans le panneau **inspecteur** , double-cliquez sur **MotionControllerVisualizer** script pour afficher le code dans le Visual Studio
 
 **Script MotionControllerVisualizer**
 
@@ -183,7 +183,7 @@ protected override void Awake()
 }
 ```
 
-Les modèles de contrôleur sont fournis conformément à [la spécification glTF](https://github.com/KhronosGroup/glTF). Ce format a été créé pour fournir un format commun, tout en améliorant le processus de transmission et de décompression des ressources 3D. Dans ce cas, nous devons récupérer et charger les modèles de contrôleur lors de l’exécution, car nous souhaitons que l’expérience de l’utilisateur soit aussi transparente que possible, et il n’est pas garanti que la version des contrôleurs de mouvement que l’utilisateur utilise. Ce cours, via le kit d’outils de réalité mixte, utilise une version du [projet UnityGLTF](https://github.com/KhronosGroup/UnityGLTF)du groupe Khronos.
+Les modèles de contrôleur sont fournis conformément à [la spécification glTF](https://github.com/KhronosGroup/glTF). Ce format a été créé pour fournir un format commun, tout en améliorant le processus de transmission et de décompression des ressources 3D. Dans ce cas, nous devons récupérer et charger les modèles de contrôleur lors de l’exécution, car nous souhaitons que l’expérience de l’utilisateur soit aussi transparente que possible, et il n’est pas garanti que la version des contrôleurs de mouvement que l’utilisateur utilise. ce cours, par le biais de la Shared Computer Toolkit de la réalité mixte, utilise une version du [projet UnityGLTF](https://github.com/KhronosGroup/UnityGLTF)du groupe Khronos.
 
 Une fois le contrôleur remis, les scripts peuvent utiliser **MotionControllerInfo** pour rechercher les transformations pour des éléments de contrôleur spécifiques afin qu’ils puissent se positionner correctement.
 
@@ -210,12 +210,12 @@ Dans ce chapitre, vous allez apprendre à ajouter des éléments d’interface u
 
 ### <a name="instructions"></a>Instructions
 
-* Dans le panneau **projet** , recherchez script **MotionControllerInfo** .
+* dans le volet **Project** , recherchez script **MotionControllerInfo** .
 * Dans le résultat de la recherche, double-cliquez sur le script **MotionControllerInfo** pour afficher le code dans Visual Studio.
 
 **Script MotionControllerInfo**
 
-La première étape consiste à choisir l’élément du contrôleur auquel vous souhaitez attacher l’interface utilisateur. Ces éléments sont définis dans **ControllerElementEnum** dans **MotionControllerInfo.cs**.
+La première étape consiste à choisir l’élément du contrôleur auquel vous souhaitez attacher l’interface utilisateur. Ces éléments sont définis dans **ControllerElementEnum** dans **MotionControllerInfo. cs**.
 
 ![MR213 MotionControllerElements](images/mr213-motioncontrollerelements-1000px.jpg)
 
@@ -229,7 +229,7 @@ La première étape consiste à choisir l’élément du contrôleur auquel vous
 
 **Instructions**
 
-* Dans le panneau **projet** , recherchez script **AttachToController** .
+* dans le volet **Project** , recherchez script **AttachToController** .
 * Dans le résultat de la recherche, double-cliquez sur le script **AttachToController** pour afficher le code dans Visual Studio.
 
 **Script AttachToController**
@@ -251,7 +251,7 @@ private void AttachElementToController(MotionControllerInfo newController)
      {
           if (!newController.TryGetElement(element, out elementTransform))
           {
-               Debug.LogError("Unable to find element of type " + element + " under controller " + newController.ControllerParent.name + "; not attaching.");
+               Debug.LogError("Unable to find element of type &quot; + element + &quot; under controller &quot; + newController.ControllerParent.name + &quot;; not attaching.");
                return;
           }
 
@@ -279,7 +279,7 @@ La façon la plus simple d’utiliser le script **AttachToController** est d’e
 
 **Instructions**
 
-* Dans le panneau **projet** , tapez dans la zone de recherche **ColorPickerWheel**. Vous pouvez également le trouver sous ressources/AppPrefabs/.
+* dans le volet **Project** , tapez dans la zone de recherche **ColorPickerWheel**. Vous pouvez également le trouver sous ressources/AppPrefabs/.
 * Faites glisser **ColorPickerWheel** Prefab dans le panneau de **hiérarchie** .
 * Cliquez sur le Prefab **ColorPickerWheel** dans le panneau **hiérarchie** .
 * Dans le panneau **inspecteur** , double-cliquez sur **ColorPickerWheel** script pour afficher le code dans Visual Studio.
@@ -356,7 +356,7 @@ Pour afficher et masquer l’interface utilisateur **ColorPickerWheel** avec l�
 **Instructions**
 
 * Dans le volet **hiérarchie** , sélectionnez **ColorPickerWheel** Prefab
-* Dans le panneau **inspecteur** , double-cliquez sur **ColorPickerWheel** script pour afficher le code dans Visual Studio.
+* Dans le panneau **inspecteur** , double-cliquez sur **ColorPickerWheel** script pour afficher le code dans le Visual Studio
 
 **Script ColorPickerWheel**
 
@@ -450,7 +450,7 @@ Dans **Update ()**, **selectorPosition** est utilisé pour effectuer un cast d�
 
 Le Prefab **BrushController** ne doit pas être inclus dans le panneau de **hiérarchie** . Toutefois, pour extraire ses composants enfants :
 
-* Dans le panneau **projet** , tapez **BrushController** et faites glisser **BrushController** Prefab dans le volet **hiérarchie** .
+* dans le volet **Project** , tapez **BrushController** et faites glisser **BrushController** prefab dans le volet de la **hiérarchie** .
 
 ![MR213_BrushTool_Prefab2](images/mr213-brushtool-prefab-1000px.jpg)
 
@@ -469,7 +469,7 @@ Vous trouverez le composant **Tip** dans **BrushController**. Nous allons utilis
 
 ### <a name="instructions"></a>Instructions
 
-* Recherchez **BrushController** Prefab dans le panneau **projet** .
+* recherchez **BrushController** prefab dans le panneau **Project** .
 * Dans le panneau **inspecteur** , double-cliquez sur **BrushController** script pour afficher le code dans Visual Studio
 
 **Script BrushController**
@@ -562,7 +562,7 @@ private void OnEnable()
 
 ### <a name="instructions"></a>Instructions
 
-* Dans le panneau **projet** , tapez **ObjectSpawner** dans la zone de recherche. Vous pouvez également le trouver sous ressources/AppPrefabs/
+* dans le volet **Project** , tapez **ObjectSpawner** dans la zone de recherche. Vous pouvez également le trouver sous ressources/AppPrefabs/
 * Faites glisser le Prefab **ObjectSpawner** dans le panneau de la **hiérarchie** .
 * Dans le volet **hiérarchie** , cliquez sur **ObjectSpawner** .
 * **ObjectSpawner** a un champ nommé **Color source**.
@@ -639,7 +639,7 @@ Vous pouvez modifier les objets avec le bouton de sélection et générer des ob
 
 ## <a name="build-and-deploy-app-to-mixed-reality-portal"></a>Créer et déployer une application sur un portail de réalité mixte
 
-* Dans Unity, sélectionnez **fichier > paramètres de build**.
+* dans unity, sélectionnez **fichier > Build Paramètres**.
 * Cliquez sur **Ajouter des scènes ouvertes** pour ajouter la scène actuelle aux **scènes dans la build**.
 * Cliquez sur **Générer**.
 * Créez un **dossier** nommé « App ».
@@ -647,12 +647,12 @@ Vous pouvez modifier les objets avec le bouton de sélection et générer des ob
 * Cliquez sur **Sélectionner un dossier**.
 * Lorsque Unity est terminé, une fenêtre de l’Explorateur de fichiers s’affiche.
 * Ouvrez le dossier de l' **application** .
-* Double-cliquez sur le fichier solution Visual Studio **YourSceneName. sln** .
-* À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x64**.
+* Double-cliquez sur **YourSceneName. sln** Visual Studio fichier Solution.
+* à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **X64**.
 * Cliquez sur la flèche déroulante en regard du bouton périphérique, puis sélectionnez **ordinateur local**.
 * Cliquez sur **Déboguer-> exécuter sans débogage** dans le menu ou appuyez sur **CTRL + F5**.
 
-L’application est désormais générée et installée dans le portail de réalité mixte. Vous pouvez le relancer par le biais du menu Démarrer dans le portail de réalité mixte.
+L’application est désormais générée et installée dans le portail de réalité mixte. vous pouvez le lancer à nouveau par le biais de menu Démarrer dans le portail de réalité mixte.
 
 ## <a name="advanced-design---brush-tools-with-radial-layout"></a>Outils de conception avancée avec disposition radiale
 
@@ -662,10 +662,10 @@ Dans ce chapitre, vous allez apprendre à remplacer le modèle de contrôleur de
 
 ### <a name="instructions"></a>Instructions
 
-* Dans le panneau **projet** , tapez **BrushSelector** dans la zone de recherche. Vous pouvez également le trouver sous ressources/AppPrefabs/
+* dans le volet **Project** , tapez **BrushSelector** dans la zone de recherche. Vous pouvez également le trouver sous ressources/AppPrefabs/
 * Faites glisser le Prefab **BrushSelector** dans le panneau de la **hiérarchie** .
 * Pour l’organisation, créez un GameObject vide appelé **pinceaux**
-* Faites glisser les prefabs suivants du panneau **projet** vers les **pinceaux**
+* faites glisser les prefabs suivants du panneau **Project** dans les **pinceaux**
     * Ressources/AppPrefabs/**BrushFat**
     * Ressources/AppPrefabs/**BrushThin**
     * Ressources/AppPrefabs/**gomme**
@@ -804,7 +804,7 @@ Si vous souhaitez autoriser l’utilisateur à se déplacer dans la scène avec 
 ### <a name="instructions"></a>Instructions
 
 * Dans le volet **hiérarchie** , supprimez **MixedRealityCamera**, **Environment** et **MotionControllers**
-* Dans le **volet de projet**, recherchez et faites glisser le prefabs suivant dans le volet de **hiérarchie** :
+* dans le **volet Project**, recherchez et faites glisser le prefabs suivant dans le volet de **hiérarchie** :
     * Ressources/AppPrefabs/entrée/Prefabs/**MixedRealityCameraParent**
     * Ressources/AppPrefabs/entrée/Prefabs/**InputManager**
     * Ressources/AppPrefabs/entrée/Prefabs/Cursor/**DefaultCursor**
@@ -831,7 +831,7 @@ Vous êtes maintenant prêt à commencer à créer votre propre expérience imme
 
 ## <a name="completed-scenes"></a>Scènes terminées
 
-* Dans le panneau **projet** d’Unity, cliquez sur le dossier **scenes** .
+* dans le volet **Project** d’unity, cliquez sur le dossier **scenes** .
 * Vous trouverez deux scènes d’Unity **MixedReality213** et **MixedReality213Advanced**.
     * **MixedReality213**: scène terminée avec un seul pinceau
     * **MixedReality213Advanced**: scène terminée avec un pinceau multiple avec l’exemple de montant de pression du bouton Sélectionner
@@ -839,6 +839,6 @@ Vous êtes maintenant prêt à commencer à créer votre propre expérience imme
 ## <a name="see-also"></a>Voir aussi
 
 * [Fichiers projet d’entrée 213](https://github.com/Microsoft/MixedReality213)
-* [Boîte à outils de réalité mixte-scène de test du contrôleur de mouvement](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/Input/Scenes)
-* [Kit de pratiques de réalité mixte-mécanisme de manipulation](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/MotionControllers-GrabMechanics)
+* [séquence de Test Shared Computer Toolkit de la réalité mixte du contrôleur de mouvement](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/Input/Scenes)
+* [Shared Computer Toolkit de la réalité mixte](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/MotionControllers-GrabMechanics)
 * [Instructions de développement du contrôleur motion](../design/motion-controllers.md)

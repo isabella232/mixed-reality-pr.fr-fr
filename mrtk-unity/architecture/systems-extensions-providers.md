@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Extensions système,
-ms.openlocfilehash: 668df40cec9b9443b37f63d80fcf8a1ca2e0bcbc
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 347c4b7603c58a09c98bce738beff02a751a3e47549154109bd2b661ba13e9a6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177419"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211523"
 ---
 # <a name="systems-extension-services-and-data-providers"></a>Systèmes, services d’extension et fournisseurs de données
 
@@ -96,7 +96,7 @@ if (inputSimulationService != null)
 
 Pour plus d’informations sur l’écriture d’un fournisseur de données pour le système d’entrée MRTK, consultez [création d’un fournisseur de données de système d’entrée](../features/input/create-data-provider.md).
 
-### <a name="spatial-awareness"></a>Sensibilisation spatiale
+### <a name="spatial-awareness"></a>Reconnaissance spatiale
 
 Le système de sensibilisation spatiale MRTK utilise uniquement des fournisseurs de données qui implémentent l' [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) interface.
 

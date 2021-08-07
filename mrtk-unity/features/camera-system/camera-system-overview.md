@@ -1,18 +1,18 @@
 ---
-title: Vue d’ensemble du système d’appareil photo
+title: Vue d’ensemble du système de caméras
 description: Page d’accueil du système d’appareil photo dans MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, appareil photo,
-ms.openlocfilehash: cfb40b00d81133ad40e0e4d7a7b2ad87ee645e36
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3c9bdbc96688c4df6ee2f39be2c8bb2023817f9081b5366308ba8b4c2590568d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177045"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211457"
 ---
-# <a name="camera-system-overview"></a>Vue d’ensemble du système d’appareil photo
+# <a name="camera-system-overview"></a>Vue d’ensemble du système de caméras
 
 le système de caméra permet à l’Shared Computer Toolkit Microsoft Mixed reality de configurer et d’optimiser l’appareil photo de l’application pour l’utiliser dans des applications de réalité mixte. à l’aide du système de caméra, les applications peuvent être écrites pour prendre en charge à la fois les appareils opaques (par exemple, la réalité virtuelle) et les appareils transparents (par ex. Microsoft HoloLens) sans avoir à écrire du code pour faire la distinction entre et s’adapter à chaque type d’affichage.
 

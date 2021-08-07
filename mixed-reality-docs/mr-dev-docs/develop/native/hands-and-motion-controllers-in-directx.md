@@ -6,23 +6,23 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: mains, contrôleurs de mouvement, DirectX, entrée, hologrammes, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 2f14cb06e440787bbd6541a05a983e0614293727
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 13988df80052ef85662dcf9834406baa91d48f7c0b70242d1c904548c2707105
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210954"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>Mains et contrôleurs de mouvement dans DirectX
 
 > [!NOTE]
 > Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
-Dans Windows Mixed Reality, les entrées de la main et du [contrôleur de mouvement](../../design/motion-controllers.md) sont gérées via les API d’entrée spatiale, qui se trouvent dans l’espace de noms [Windows. UI. Input. spatial](/uwp/api/windows.ui.input.spatial) . Cela vous permet de gérer facilement des actions courantes telles que la **sélection** de la même façon sur les deux mains et les contrôleurs de mouvement.
+dans Windows Mixed Reality, les entrées de la main et du [contrôleur de mouvement](../../design/motion-controllers.md) sont gérées via les api d’entrée spatiale, qui se trouvent dans le [Windows. L'. Espace de noms Input. spatial](/uwp/api/windows.ui.input.spatial) . Cela vous permet de gérer facilement des actions courantes telles que la **sélection** de la même façon sur les deux mains et les contrôleurs de mouvement.
 
 ## <a name="getting-started"></a>Prise en main
 
-Pour accéder aux entrées spatiales dans Windows Mixed Reality, commencez par l’interface SpatialInteractionManager.  Vous pouvez accéder à cette interface en appelant  [SpatialInteractionManager :: GetForCurrentView](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getforcurrentview), généralement au cours du démarrage de l’application.
+pour accéder à l’entrée spatiale dans Windows Mixed Reality, commencez par l’interface SpatialInteractionManager.  Vous pouvez accéder à cette interface en appelant  [SpatialInteractionManager :: GetForCurrentView](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getforcurrentview), généralement au cours du démarrage de l’application.
 
 ```cpp
 using namespace winrt::Windows::UI::Input::Spatial;
@@ -31,7 +31,7 @@ SpatialInteractionManager interactionManager = SpatialInteractionManager::GetFor
 ```
 
 Le travail du SpatialInteractionManager consiste à fournir l’accès à [SpatialInteractionSources](/uwp/api/windows.ui.input.spatial.spatialinteractionsource), qui représente une source d’entrée.  Il existe trois types de SpatialInteractionSources disponibles dans le système.
-* La **main** représente la main détectée d’un utilisateur. Les sources de main offrent différentes fonctionnalités basées sur l’appareil, allant des gestes de base sur HoloLens au suivi complet sur HoloLens 2. 
+* La **main** représente la main détectée d’un utilisateur. les sources de main offrent différentes fonctionnalités basées sur l’appareil, allant des gestes de base sur les HoloLens au suivi complet sur HoloLens 2. 
 * Le **contrôleur** représente un contrôleur de mouvement jumelé. Les contrôleurs de mouvement peuvent offrir des fonctionnalités différentes, par exemple, sélectionner des déclencheurs, des boutons de menu, des boutons, des pavés tactiles et des Thumbsticks.
 * La **voix** représente les mots-clés détectés par le système vocal de l’utilisateur. Par exemple, cette source injecte une pression SELECT et une mise en sortie chaque fois que l’utilisateur dit « Select ».
 
@@ -64,7 +64,7 @@ void MyApp::OnSourcePressed(SpatialInteractionManager const& sender, SpatialInte
 }
 ```
 
-Le code ci-dessus vérifie uniquement l’appui sur « Select », qui correspond à l’action principale sur l’appareil. Les exemples incluent la réalisation d’un AirTap sur HoloLens ou l’extraction du déclencheur sur un contrôleur de mouvement.  Les presses « Select » représentent l’intention de l’utilisateur d’activer l’hologramme qu’il cible.  L’événement SourcePressed se déclenche pour un certain nombre de boutons et de mouvements différents. vous pouvez inspecter les autres propriétés sur le SpatialInteractionSource pour tester ces cas-là.
+Le code ci-dessus vérifie uniquement l’appui sur « Select », qui correspond à l’action principale sur l’appareil. par exemple, la réalisation d’un AirTap sur HoloLens ou l’extraction du déclencheur sur un contrôleur de mouvement.  Les presses « Select » représentent l’intention de l’utilisateur d’activer l’hologramme qu’il cible.  L’événement SourcePressed se déclenche pour un certain nombre de boutons et de mouvements différents. vous pouvez inspecter les autres propriétés sur le SpatialInteractionSource pour tester ces cas-là.
 
 ### <a name="polling-based-input"></a>Entrée basée sur l’interrogation
 Vous pouvez également utiliser SpatialInteractionManager pour interroger l’état actuel de l’entrée dans chaque cadre.  Pour ce faire, appelez [GetDetectedSourcesAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getdetectedsourcesattimestamp) chaque frame.  Cette fonction retourne un tableau contenant un [SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) pour chaque [SpatialInteractionSource](/uwp/api/windows.ui.input.spatial.spatialinteractionsource)actif. Cela signifie un pour chaque contrôleur de mouvement actif, un pour chaque main suivie et un pour la parole si une commande « Select » a été récemment mise en circulation. Vous pouvez ensuite inspecter les propriétés sur chaque SpatialInteractionSourceState pour piloter l’entrée dans votre application. 
@@ -91,7 +91,7 @@ Chaque SpatialInteractionSource a un ID, que vous pouvez utiliser pour identifie
 ### <a name="predicted-vs-historical-poses"></a>Différences entre les poses prédites et l’historique
 GetDetectedSourcesAtTimestamp a un paramètre timestamp. Cela vous permet de demander l’État et de créer des données qui sont prédites ou historiques, ce qui vous permet de mettre en corrélation les interactions spatiales avec d’autres sources d’entrée. Par exemple, lors du rendu de la position de la main dans le frame actuel, vous pouvez transmettre l’horodatage prédit fourni par [HolographicFrame](/uwp/api/windows.graphics.holographic.holographicframe). Cela permet au système de prédire la position de la main pour s’aligner étroitement avec la sortie du frame rendu, réduisant ainsi la latence perçue.
 
-Toutefois, une telle pose prédite ne produit pas un rayon de pointage idéal pour le ciblage avec une source d’interaction. Par exemple, quand vous appuyez sur un bouton de contrôleur de mouvement, il peut falloir jusqu’à 20 ms pour que cet événement se propage via Bluetooth au système d’exploitation. De même, une fois qu’un utilisateur a fait un mouvement manuel, un certain laps de temps peut s’écouler avant que le système ne détecte le geste et que votre application l’interroge. Au moment où votre application interroge une modification d’État, les points de vue et de main sont utilisés pour cibler cette interaction qui s’est effectivement produite dans le passé. Si vous ciblez en passant l’horodatage de votre HolographicFrame actuel à GetDetectedSourcesAtTimestamp, le pose sera au contraire prévisible dans le rayon cible au moment de l’affichage de l’image, ce qui peut être supérieur à 20 ms à l’avenir. Ce nouveau point est idéal pour le *rendu* de la source d’interaction, mais il compose notre problème de temps pour *cibler* l’interaction, car le ciblage de l’utilisateur s’est produit dans le passé.
+Toutefois, une telle pose prédite ne produit pas un rayon de pointage idéal pour le ciblage avec une source d’interaction. Par exemple, quand vous appuyez sur un bouton de contrôleur de mouvement, il peut falloir jusqu’à 20 ms pour que cet événement se propage jusqu’à Bluetooth au système d’exploitation. De même, une fois qu’un utilisateur a fait un mouvement manuel, un certain laps de temps peut s’écouler avant que le système ne détecte le geste et que votre application l’interroge. Au moment où votre application interroge une modification d’État, les points de vue et de main sont utilisés pour cibler cette interaction qui s’est effectivement produite dans le passé. Si vous ciblez en passant l’horodatage de votre HolographicFrame actuel à GetDetectedSourcesAtTimestamp, le pose sera au contraire prévisible dans le rayon cible au moment de l’affichage de l’image, ce qui peut être supérieur à 20 ms à l’avenir. Ce nouveau point est idéal pour le *rendu* de la source d’interaction, mais il compose notre problème de temps pour *cibler* l’interaction, car le ciblage de l’utilisateur s’est produit dans le passé.
 
 Heureusement, les événements [SourcePressed](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed), [SourceReleased et [SourceUpdated](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourceupdated) fournissent l' [État](/uwp/api/windows.ui.input.spatial.spatialinteractionsourceeventargs.state) historique associé à chaque événement d’entrée.  Cela comprend directement les mises à disposition de l’historique et des handles disponibles via [TryGetPointerPose](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose), ainsi qu’un [horodateur](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.timestamp) historique que vous pouvez transmettre à d’autres API pour établir une corrélation avec cet événement.
 
@@ -102,16 +102,16 @@ Cela entraîne les meilleures pratiques suivantes lors du rendu et du ciblage av
 ## <a name="cross-device-input-properties"></a>Propriétés d’entrée entre appareils
 L’API SpatialInteractionSource prend en charge les contrôleurs et les systèmes de suivi de main avec un large éventail de fonctionnalités. Un certain nombre de ces fonctionnalités sont communes entre les types d’appareils. Par exemple, le suivi des mains et les contrôleurs de mouvement fournissent tous deux une action « sélectionner » et une position 3D. Dans la mesure du possible, l’API mappe ces fonctionnalités communes aux mêmes propriétés sur le SpatialInteractionSource.  Cela permet aux applications de prendre en charge plus facilement un large éventail de types d’entrée. Le tableau suivant décrit les propriétés prises en charge et leur comparaison entre les types d’entrée.
 
-| Propriété | Description | Gestes HoloLens (1ère génération) | Contrôleurs de mouvement | Mains articulées|
+| Propriété | Description | mouvements de HoloLens (1er génération) | Contrôleurs de mouvement | Mains articulées|
 |--- |--- |--- |--- |--- |
-| [SpatialInteractionSource ::**main**](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | La main droite ou gauche/le contrôleur. | Non pris en charge | Prise en charge | Prise en charge |
+| [SpatialInteractionSource ::**main**](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | La main droite ou gauche/le contrôleur. | Non pris en charge | Prise en charge | Pris en charge |
 | [SpatialInteractionSourceState ::**IsSelectPressed**](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | État actuel du bouton principal. | Robinet d’air | Déclencheur | Robinet à air lâche (pincement vertical) |
 | [SpatialInteractionSourceState ::**IsGrasped**](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | État actuel du bouton de manipulation. | Non pris en charge | Bouton de manipulation | Pincer ou fermer la main |
 | [SpatialInteractionSourceState ::**IsMenuPressed**](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | État actuel du bouton de menu.    | Non pris en charge | Bouton de menu | Non pris en charge |
 | [SpatialInteractionSourceLocation ::**position**](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | Emplacement XYZ de la main ou de la position de la poignée sur le contrôleur. | Emplacement Palm | Poignée de pose position | Emplacement Palm |
 | [SpatialInteractionSourceLocation ::**orientation**](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | Quaternion représentant l’orientation de la main ou de la poignée sur le contrôleur. | Non pris en charge | Poignée d’orientation de pose | Orientation Palm |
-| [SpatialPointerInteractionSourcePose ::**position**](/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Origine du rayon de pointage. | Non pris en charge | Prise en charge | Prise en charge |
-| [SpatialPointerInteractionSourcePose ::**ForwardDirection**](/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Direction du rayon de pointage. | Non pris en charge | Prise en charge | Prise en charge |
+| [SpatialPointerInteractionSourcePose ::**position**](/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Origine du rayon de pointage. | Non pris en charge | Prise en charge | Pris en charge |
+| [SpatialPointerInteractionSourcePose ::**ForwardDirection**](/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Direction du rayon de pointage. | Non pris en charge | Prise en charge | Pris en charge |
 
 Certaines des propriétés ci-dessus ne sont pas disponibles sur tous les appareils, et l’API fournit un moyen de les tester. Par exemple, vous pouvez inspecter la propriété [SpatialInteractionSource :: IsGraspSupported](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) pour déterminer si la source fournit une action saisissante.
 
@@ -136,7 +136,7 @@ Pour les contrôleurs, SpatialInteractionSource a une propriété de contrôleur
 La plage du pavé tactile et du stick analogique est comprise entre-1 et 1 pour les deux axes (de bas en haut et de gauche à droite). La plage du déclencheur analogique, accessible à l’aide de la propriété SpatialInteractionSourceState :: SelectPressedValue, a une plage comprise entre 0 et 1. La valeur 1 est corrélée avec IsSelectPressed égal à true ; toute autre valeur est corrélée avec IsSelectPressed égal à false.
 
 ## <a name="articulated-hand-tracking"></a>Suivi articulé
-L’API Windows Mixed Reality assure une prise en charge complète du suivi articulé, par exemple sur HoloLens 2. Le suivi articulé peut être utilisé pour implémenter la manipulation directe et les modèles d’entrée de point et de validation dans vos applications. Il peut également être utilisé pour créer des interactions entièrement personnalisées.
+l’API Windows Mixed Reality fournit une prise en charge complète du suivi articulé, par exemple sur HoloLens 2. Le suivi articulé peut être utilisé pour implémenter la manipulation directe et les modèles d’entrée de point et de validation dans vos applications. Il peut également être utilisé pour créer des interactions entièrement personnalisées.
 
 ### <a name="hand-skeleton"></a>Squelette de main
 Le suivi articulé fournit un squelette de 25 jointures qui permet de nombreux types différents d’interactions.  La structure fournit cinq jointures pour l’index/le milieu/l’anneau/les petits doigts, quatre articulations pour le pouce et une articulation du poignet.  L’articulation du poignet sert de base de la hiérarchie. L’image suivante illustre la disposition du squelette.
@@ -149,7 +149,7 @@ Outre les 25 articulations hiérarchiques, le système fournit un joint Palm.  L
 
 Les informations suivantes sont fournies pour chaque jointure :
 
-| Nom | Description |
+| Name | Description |
 |--- |--- |
 |Position | position 3D de la jointure, disponible dans n’importe quel système de coordonnées demandé. |
 |Orientation | orientation 3D du segment, disponible dans n’importe quel système de coordonnées demandé. |
@@ -223,13 +223,13 @@ if (handPose)
 Contrairement aux jointures squelettes, l’API de maillage de la main ne vous permet pas de spécifier un système de coordonnées pour les vertex.  Au lieu de cela, le [HandMeshVertexState](/uwp/api/windows.perception.people.handmeshvertexstate) spécifie le système de coordonnées dans lequel les vertex sont fournis.  Vous pouvez ensuite obtenir une transformation de maillage en appelant [TryGetTransformTo](/uwp/api/windows.perception.spatial.spatialcoordinatesystem.trygettransformto#Windows_Perception_Spatial_SpatialCoordinateSystem_TryGetTransformTo_Windows_Perception_Spatial_SpatialCoordinateSystem_) et en spécifiant le système de coordonnées souhaité.  Vous devez utiliser cette transformation de maille chaque fois que vous travaillez avec les vertex.  Cette approche réduit la surcharge du processeur, en particulier si vous utilisez uniquement la maille à des fins de rendu.
 
 ## <a name="gaze-and-commit-composite-gestures"></a>Mouvements composites de point de regard et de validation
-Pour les applications qui utilisent le modèle d’entrée de point de vue et de validation, en particulier sur HoloLens (First Gen), l’API d’entrée spatiale fournit un [SpatialGestureRecognizer](/uwp/api/Windows.UI.Input.Spatial.SpatialGestureRecognizer) facultatif qui peut être utilisé pour activer les gestes composites reposant sur l’événement « Select ».  En acheminant les interactions entre le SpatialInteractionManager et le SpatialGestureRecognizer d’un hologramme, les applications peuvent détecter les événements de TAP, de maintien, de manipulation et de navigation uniformément entre les mains, les voix et les périphériques d’entrée spatiales, sans avoir à gérer manuellement les presses et les mises en production.
+pour les applications qui utilisent le modèle d’entrée de point de vue et de validation, en particulier sur HoloLens (première génération), l’API d’entrée spatiale fournit un [SpatialGestureRecognizer](/uwp/api/Windows.UI.Input.Spatial.SpatialGestureRecognizer) facultatif qui peut être utilisé pour activer les gestes composites reposant sur l’événement « select ».  En acheminant les interactions entre le SpatialInteractionManager et le SpatialGestureRecognizer d’un hologramme, les applications peuvent détecter les événements de TAP, de maintien, de manipulation et de navigation uniformément entre les mains, les voix et les périphériques d’entrée spatiales, sans avoir à gérer manuellement les presses et les mises en production.
 
 SpatialGestureRecognizer effectue uniquement une ambiguïté minimale entre l’ensemble de mouvements que vous demandez. Par exemple, si vous demandez simplement TAP, l’utilisateur peut conserver son doigt tant qu’il le souhaite et un TAP continue à se produire. Si vous demandez un tap-and-hold, une fois que vous avez appuyé sur une seconde du doigt, le geste passe à un blocage et un TAP ne se produit plus.
 
 Pour utiliser SpatialGestureRecognizer, gérez l’événement [InteractionDetected](/uwp/api/Windows.UI.Input.Spatial.SpatialInteractionManager) de SpatialInteractionManager et récupérez le SpatialPointerPose qui y est exposé. Utilisez le point de vue de la tête du point de vue de l’utilisateur pour croiser les hologrammes et les maillages des surfaces dans l’environnement de l’utilisateur afin de déterminer ce à quoi l’utilisateur a l’intention d’interagir. Ensuite, acheminez le SpatialInteraction dans les arguments d’événement vers le SpatialGestureRecognizer de l’hologramme cible, à l’aide de sa méthode [CaptureInteraction](/uwp/api/Windows.UI.Input.Spatial.SpatialGestureRecognizer) . Cela commence à interpréter cette interaction en fonction du [SpatialGestureSettings](/uwp/api/Windows.UI.Input.Spatial.SpatialGestureSettings) défini sur ce module de reconnaissance au moment de la création, ou par [TrySetGestureSettings](/uwp/api/Windows.UI.Input.Spatial.SpatialGestureRecognizer).
 
-Sur HoloLens (First Gen), les interactions et les gestes doivent dériver leur ciblage du point de regard de l’utilisateur, plutôt que de rendre ou d’interagir à l’emplacement de la main. Une fois qu’une interaction a démarré, les mouvements relatifs de la main peuvent être utilisés pour contrôler le mouvement, comme avec la manipulation ou le mouvement de navigation.
+sur HoloLens (première génération), les interactions et les gestes doivent dériver leur ciblage du point de regard de l’utilisateur, plutôt que de rendre ou d’interagir à l’emplacement de la main. Une fois qu’une interaction a démarré, les mouvements relatifs de la main peuvent être utilisés pour contrôler le mouvement, comme avec la manipulation ou le mouvement de navigation.
 
 ## <a name="see-also"></a>Voir aussi
 * [Suivre de la tête et du regard dans DirectX](gaze-in-directx.md)

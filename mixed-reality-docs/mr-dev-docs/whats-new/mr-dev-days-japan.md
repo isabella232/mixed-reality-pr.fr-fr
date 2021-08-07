@@ -5,13 +5,13 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
-keywords: Réalité mixte, Conférence, sommet, développeur, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 93bafae605640a0576fd273f761eaec0a8994d86
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+keywords: réalité mixte, conférence, sommet, développeur, HoloLens, HoloLens 2 Kinect
+ms.openlocfilehash: 9ad907cef86a1fbdb1a9ff01cd01d88f88fadaa640f34d8f270073ce5446646a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190371"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days - Japon
 
@@ -23,7 +23,7 @@ Nous sommes impatients de vous joindre au jour de développement de la réalité
 
 **Date-16 décembre 2020**
 
-**Emplacement-événements en direct de Microsoft teams**
+**événements en direct de Microsoft Teams d’emplacement**
 
 **Inscription-gratuit**
 
@@ -51,34 +51,34 @@ Nous vous remercions d’avoir rejoint la réalité mixte dev Days au Japon. Tou
 |12:30-12:55pm|*Session 2* à la une [réalité mixte](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
 |1:14:00-1:50pm|*Session déjeuner* Panel : discussion gratuite interactive, Q et A, MRTK + Oculus Quest 2 * Update later|Madoka Chiyoda + MVP Microsoft|JA|200|
 |1:50pm-2:14:00|**Arrêt (10 minutes)**||||
-|2:14:00-2:25pm|Vue d’ensemble de la *session 3* [du développement HoloLens 2](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
+|2:14:00-2:25pm|vue d’ensemble de la *Session 3* [du développement HoloLens 2](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
 |2:30-2:55pm|*Sessions 4* [MRTK UX Components v 2.5.0](https://youtu.be/If5R9diyF50)|Parc Yoon|JA|300|
-|3:14:00-3:25pm|*Session 5* [prise en main de l’analyseur HoloLens 2 et du moteur inréel (MRTK-inreal)](https://youtu.be/AsAuPx0iz3o)|Cameron micka|FR|300|
+|3:14:00-3:25pm|*Session 5* [prise en main du HoloLens 2 et du moteur inréel (MRTK-inreal)](https://youtu.be/AsAuPx0iz3o)|Cameron micka|FR|300|
 |3:30-3:55pm|*Session 6* création d' [hologrammes](https://youtu.be/jHn9yydiRTw)|Daniel Escudero|FR|300|
 |3:55pm-4:15|**Pause (20 minutes)**||||
 |4:15-4:40pm|[Ancres d’objets Azure](https://youtu.be/dZCb6VJlaaU) de *session 7*|Jesse McCulloch|FR|300|
 |4:17h45-5:22h00|[Rendu distant](https://youtu.be/MEhL12WGOW0) de la *session 8* Azure|Atsushi Suzuki|JA|300|
 |5:15-5:40pm|*Session 9* [alignement de l’hologramme et du monde réel via les ancres spatiales Azure](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|FR|300|
 |5:17h45-6:22h00|*Session 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unitx technologies Japan)|JA|200|
-|6:15-6:40pm|*Session 11* [Azure Kinect DK-approfondi, étude de cas](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
+|6:15-6:40pm|*Session 11* [Azure Kinect-plongée en profondeur, étude de cas](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
 |6:17h45-7:14:00|Fermeture|Madoka Chiyoda|JA|N/A|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Contributeurs (réviseurs techniques pour les sous-titres)
 
 Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura ( [@takabrz1](https://twitter.com/takabrz1) ), Akihiro Ueyama ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shinya Tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions (FAQ)
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 Cette section sera fréquemment mise à jour à mesure que nous recevrons d’autres questions.
 
-**Q** -qui devrait assister au jour du développement de la réalité mixte
+**Q** -Qui doit assister au jour de développement de la réalité mixte
 
 **R** : cet événement s’applique à tous ceux qui travaillent ou jouent dans l’espace de la réalité mixte. Bien que la majeure partie du contenu présenté soit axée sur les développeurs, nous savons également qu’il existe un contenu intéressant pour un large éventail de rôles. N’oubliez pas de vérifier la planification des mises à jour pour voir le type de contenu que nous fournissons.  
 
-**Q** : je ne trouve pas l’événement dans les événements en direct des équipes
+**Q** : je ne trouve pas l’événement dans Teams événements en direct
 
-**R** pour participer, sélectionnez le lien dans le message électronique que vous recevrez après vous être inscrit pour l’événement. Nous vous recommandons de regarder sur l’application PC Teams, et vous pouvez également participer à l’application mobile teams ou au navigateur de votre bureau.
+**R** pour participer, sélectionnez le lien dans le message électronique que vous recevrez après vous être inscrit pour l’événement. nous vous recommandons d’observer l’application Teams PC, et vous pouvez également participer à l’application mobile Teams ou au navigateur de votre bureau.
 
-Si, pour une raison quelconque, vous ne parvenez pas à vous connecter aux équipes, vérifiez le canal YouTube dans lequel l’événement sera diffusé simultanément. Toutefois, vous ne pouvez pas participer aux questions et réponses avec les intervenants.
+si, pour une raison quelconque, vous ne parvenez pas à vous connecter à Teams, vérifiez le canal YouTube dans lequel l’événement sera diffusé simultanément. Toutefois, vous ne pouvez pas participer aux questions et réponses avec les intervenants.
 
 **Q** : les vidéos de présentation et de session seront-elles disponibles après l’événement ?
 

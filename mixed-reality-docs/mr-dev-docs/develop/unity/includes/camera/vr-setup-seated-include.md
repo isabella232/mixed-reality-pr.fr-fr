@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3bffb5db8f4a36d04c2b408c939cbd2010a7def7
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: f55de39af8c9bc59bb23136203bfc093a4e29f1ea9ddc5ccd147f8c81d6f0020
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212318"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
@@ -36,8 +36,8 @@ Et fonctionnent avec [XRRig](https://docs.unity3d.com/Manual/configuring-project
 # <a name="legacy-wsa"></a>[WSA hérité](#tab/wsa)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-1. Accéder à d' **autres paramètres** de la section paramètres du **lecteur Windows Store**
-2. Choisissez **Windows Mixed realisation** comme périphérique, qui peut être listé comme **Windows holographique** dans les versions antérieures d’Unity
+1. accédez à la section **autres Paramètres** du **lecteur Windows Store Paramètres**
+2. choisissez **Windows Mixed Reality** comme appareil, qui peut être listé comme **Windows holographique** dans les versions antérieures d’unity
 3. Sélectionner une **réalité virtuelle prise en charge**
 
 Étant donné que l’objet Camera principal est automatiquement marqué comme caméra, Unity alimente tous les mouvements et les translations.

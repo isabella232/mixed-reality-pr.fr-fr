@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, C#,
-ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: fe54a9fe1f906a31ac7ed0417dd3a57fee167314b4b2db29eadcd1eaa22f97b7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210735"
 ---
 # <a name="coding-guidelines"></a>Recommandations en matière de codage
 
@@ -682,12 +682,12 @@ Ce graphique peut vous aider à décider de ce qui `#if` doit être utilisé, en
 
 |Plateforme | IL2CPP UWP | .NET UWP | Éditeur |
 | --- | --- | --- | --- |
-| `UNITY_EDITOR` | Faux | False | True |
+| `UNITY_EDITOR` | False | False | True |
 | `UNITY_WSA` | True | True | True |
 | `WINDOWS_UWP` | True | True | False |
 | `UNITY_WSA && !UNITY_EDITOR` | True | True | False |
-| `ENABLE_WINMD_SUPPORT` | True | True | Faux |
-| `NETFX_CORE` | False | True | Faux |
+| `ENABLE_WINMD_SUPPORT` | True | True | False |
+| `NETFX_CORE` | False | True | False |
 
 ### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Préférez DateTime. UtcNow à DateTime. Now
 

@@ -1,18 +1,18 @@
 ---
-title: Observateur de maillage d’objets spatiaux
+title: Observateur de maillage des objets dans l’espace
 description: Documentation sur l’observateur de maillage spatial dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: db0b2f14d0a5d65140223d3fa3f4f5324ef2ba76
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f28f8dcb320332b8ff8942ae0b442c0817d6d0b790347daa419cfc24dc0d60fc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209115"
 ---
-# <a name="spatial-object-mesh-observer"></a>Observateur de maillage d’objets spatiaux
+# <a name="spatial-object-mesh-observer"></a>Observateur de maillage des objets dans l’espace
 
 Un moyen pratique de fournir des données de maillage d’environnement dans l’éditeur Unity consiste à utiliser la [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) classe. L' *Observateur d’objets spatiaux* est un fournisseur de données d’éditeur uniquement pour le [système de sensibilisation spatiale](spatial-awareness-getting-started.md) qui permet d’importer des données de modèle 3D pour représenter un maillage spatial. une utilisation courante de l' *observateur de maillage d’objets spatiaux* consiste à importer des données analysées via une Microsoft HoloLens pour tester la façon dont une expérience s’adapte aux différents environnements à partir d’unity.
 

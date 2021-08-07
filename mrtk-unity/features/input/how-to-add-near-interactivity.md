@@ -1,18 +1,18 @@
 ---
-title: Ajout d’une interactivité proche
+title: Guide pratique pour ajouter une interactivité de proximité
 description: Documentation sur l’interaction proche dans MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Near Interaction,
-ms.openlocfilehash: 241425f0c158d684cad6dad8c88c8d692cbec42f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 174623ebf340e800848c15e22dc2299aaf997b484a1329d67c28540acd79515a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212591"
 ---
-# <a name="how-to-add-near-interactivity"></a>Ajout d’une interactivité proche
+# <a name="how-to-add-near-interactivity"></a>Guide pratique pour ajouter une interactivité de proximité
 
 Les interactions proches se présentent sous la forme de fonctions de contact et de touches. Les événements tactiles et de manipulation sont déclenchés en tant qu’événements de pointeur par [PokePointer](pointers.md#pokepointer) et [SpherePointer](pointers.md#spherepointer), respectivement.
 

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, événements,
-ms.openlocfilehash: c8871aa575e2aa4507e9dbbdcc8bdf0fc0604633
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 25ac5bd4a4f5d5678a80ec362512ce7daac791a17e93944aa4832d9d09c02ee2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176784"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208331"
 ---
 # <a name="input-events"></a>Événements d’entrée
 
@@ -26,7 +26,7 @@ La liste ci-dessous présente toutes les interfaces d’événement d’entrée 
 | [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) | Entrée vers le haut/haut | Déclenché sur les modifications apportées aux entrées binaires telles que les boutons. |
 | [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Entrée modifiée | Déclenché lors des modifications apportées aux entrées du type donné. **T** peut prendre les valeurs suivantes : <br/> - *float* (retourne le déclencheur analogique)<br/> - *Vector2* (par exemple, retourne la direction du joystick) <br/> - *Vector3* (par exemple, retour de la position de l’appareil suivi) <br/> - *Quaternion* (par exemple, retourne l’orientation de l’appareil suivi)<br/> - [MixedRealityPose](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) (par exemple, retourne un appareil entièrement suivi) |
 | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) | Mot clé Speech reconnu | Déclenché lors de la reconnaissance de l’un des mots clés configurés dans le *profil de commandes vocales*. |
-| [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | Dictation<br/> Hypothèse <br/> Result <br/> Terminé <br/> Erreur | Déclenché par les systèmes de dictée pour signaler les résultats d’une session de dictée. |
+| [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | Dictation<br/> Hypothèse <br/> Résultats <br/> Terminé <br/> Erreur | Déclenché par les systèmes de dictée pour signaler les résultats d’une session de dictée. |
 | [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) | Événements de mouvement sur : <br/> Démarré <br/> Mis à jour <br/> Effectué <br/> Opération annulée | Déclenché lors de la détection de mouvement. |
 | [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) | Mouvement mis à jour/terminé | Déclenché sur la détection des mouvements contenant des données supplémentaires du type donné. Pour plus d’informations sur les valeurs possibles pour **T**, consultez [**événements de mouvement**](gestures.md#gesture-events) . |
 | [`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler) | Jointures manuelles mises à jour | Levées par les contrôleurs de main articulés lorsque les joints à la main sont mis à jour. |

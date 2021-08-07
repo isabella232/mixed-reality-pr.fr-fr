@@ -1,44 +1,44 @@
 ---
-title: Utilisation de la reconnaissance vocale dans Windows Mixed Reality
-description: Découvrez comment utiliser l’entrée vocale pour contrôler les commandes, les objets 3D et la dictée dans vos applications Windows Mixed Reality.
+title: Utilisation de la reconnaissance vocale en Windows Mixed Reality
+description: découvrez comment utiliser l’entrée vocale pour contrôler les commandes, les objets 3d et la dictée dans vos applications Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
 - Windows 10
-ms.openlocfilehash: 23e3ea9014612d5df8935552d7b767454b9eefa7
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: bda846e1e54d34824c0461b92506408264d5cf06b0101cf7bbbcce9e4fa7fa61
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647021"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190151"
 ---
-# <a name="using-speech-in-windows-mixed-reality"></a>Utilisation de la reconnaissance vocale dans Windows Mixed Reality
+# <a name="using-speech-in-windows-mixed-reality"></a>Utilisation de la reconnaissance vocale en Windows Mixed Reality
 
-Vous pouvez utiliser votre voix pour vous familiariser plus rapidement avec Windows Mixed Reality. Une photo rapide, l’ouverture d’une application, même le téléportage sans contrôleur, sont tous un mot. Pour un moyen simple de taper, essayez le mode dictée sur le clavier de la réalité mixte. 
+vous pouvez utiliser votre voix pour contourner Windows Mixed Reality plus rapidement. Une photo rapide, l’ouverture d’une application, même le téléportage sans contrôleur, sont tous un mot. Pour un moyen simple de taper, essayez le mode dictée sur le clavier de la réalité mixte. 
 
 Vous rencontrez des problèmes avec la reconnaissance vocale ? [Obtenir de l’aide](using-wmr-faq.yml#speech-commands-aren-t-working)
 
 <!-- NEED VIDEO: https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality -->
 
 > [!NOTE]
-> * Quand la reconnaissance vocale est activée, Windows Mixed Reality est toujours à l’écoute. Lorsque vous êtes connecté à Internet, nous envoyons tout ce que vous dites au Cloud afin que les services Microsoft Speech puissent reconnaître encore plus de vos commandes.
+> * quand la reconnaissance vocale est activée, Windows Mixed Reality est toujours à l’écoute. Lorsque vous êtes connecté à Internet, nous envoyons tout ce que vous dites au Cloud afin que les services Microsoft Speech puissent reconnaître encore plus de vos commandes.
 > * Les commandes vocales ne sont pas prises en charge dans toutes les langues. En savoir plus
-> * Les casques et les haut-parleurs Bluetooth ne sont pas pris en charge dans Windows Mixed Reality.
+> * Bluetooth les casques et les haut-parleurs ne sont pas pris en charge dans Windows Mixed Reality.
 
 ## <a name="see-it-say-it"></a>Voir, prononcer
 
-Dans la page d’hébergement de la réalité Windows Mixed, si vous voyez un mot, vous pouvez souvent l’utiliser comme commande vocale. Par exemple, il vous suffit d’indiquer le nom d’un bouton pour le sélectionner. Si vous ne voyez pas de nom, pointez votre contrôleur de mouvement sur le bouton pour savoir quoi faire. Pour les boîtiers de manette Xbox, posez votre regard sur le bouton.
+dans la Windows Mixed Reality page d’hébergement, si vous voyez un mot, vous pouvez souvent l’utiliser comme commande vocale. Par exemple, il vous suffit d’indiquer le nom d’un bouton pour le sélectionner. Si vous ne voyez pas de nom, pointez votre contrôleur de mouvement sur le bouton pour savoir quoi faire. Pour les boîtiers de manette Xbox, posez votre regard sur le bouton.
 
 ## <a name="general-speech-commands"></a>Commandes vocales générales
 
-Utilisez les commandes vocales suivantes dans Windows Mixed Reality pour une plus grande rapidité. Certaines commandes utilisent le curseur en regard, que vous allez afficher en disant « sélectionner ».
+utilisez les commandes vocales suivantes tout au long de Windows Mixed Reality pour accélérer la prise en main. Certaines commandes utilisent le curseur en regard, que vous allez afficher en disant « sélectionner ».
 
-| Pour | Disons cela |
+| Pour | Dites |
 | --- | --- |
-| Sélectionnez | Dites « sélectionner » pour afficher le curseur en regard. Ensuite, tournez votre tête pour positionner le curseur sur l’élément que vous souhaitez sélectionner et dites « sélectionner » à nouveau. |
+| Sélectionnez | Dites « sélectionner » pour afficher le curseur en regard. Tournez ensuite la tête pour placer le curseur sur l’élément que vous souhaitez sélectionner, puis dites « Sélectionner » une nouvelle fois. |
 | Ouverture du menu Démarrer | Aller à démarrer |
 | Conserver une application immersif | Dites « aller à démarrer » pour afficher le menu actions rapides, puis « Accueil de la réalité mixte ». |
 | Allumer/éteindre l’torche | Lampe ou lampe torche |
@@ -54,7 +54,7 @@ Utilisez les commandes vocales suivantes dans Windows Mixed Reality pour une plu
 
 Pointez sur un objet 3D, une fenêtre d’hologramme ou une fenêtre d’application pour utiliser les commandes suivantes :
 
-| Pour | Disons cela |
+| Pour | Dites |
 | --- | --- |
 | Augmentez la taille des | Plus |
 | Réduire la taille | Plus petite |
@@ -66,7 +66,7 @@ Pointez sur un objet 3D, une fenêtre d’hologramme ou une fenêtre d’applica
 
 Pointez sur une fenêtre d’application ou un objet 3D pour utiliser ces commandes :
 
-| Pour | Disons cela |
+| Pour | Dites |
 | --- | --- |
 | Fermer une application ou un objet 3D | Fermer |
 | Ajuster un point (redimensionner ou déplacer) | Réglage |
@@ -77,30 +77,30 @@ Pointez sur une fenêtre d’application ou un objet 3D pour utiliser ces comman
 | Utilisez votre contrôleur Xbox comme boîtier de commande, plutôt qu’en tant que contrôleur de réalité mixte, dans l’application que vous examinez. | Utiliser en tant que boîtier |
 | Utiliser votre contrôleur Xbox comme contrôleur de réalité mixte (quand vous l’utilisez en tant que boîtier de commande) | Utilisation avec le point de regard |
 
-## <a name="start-menu-commands"></a>Commandes du menu Démarrer
+## <a name="start-menu-commands"></a>commandes menu Démarrer
 
-Pointez le regard du menu Démarrer pour utiliser ces commandes :
+pointez avec le regard du menu Démarrer pour utiliser ces commandes :
 
-| Pour | Disons cela |
+| Pour | Dites |
 | --- | --- |
 | Accéder à la liste de toutes les applications | Toutes les applications |
 | Monter ou descendre sur le début ou sur l’ensemble des applications | Page vers le haut/bas |
-| Revenir au menu Démarrer à partir de toutes les applications | Revenir |
+| revenir à menu Démarrer à partir de toutes les applications | Revenir |
 | Prendre une photo | Appareil photo |
 | Prendre une vidéo | Vidéo |
 | Afficher la vue du casque dans le portail de réalité mixte sur votre bureau | Préversion |
 | Ouvrir le contrôle du volume au démarrage | Modifier le volume |
 | Désactiver le son | Désactiver le son |
 | Réactiver le son | Réactiver le son |
-| Fermer le menu Démarrer | Fermer ou annuler |
+| fermer le menu Démarrer | Fermer ou annuler |
 
-## <a name="hey-cortana-commands"></a>Commandes Hey Cortana
+## <a name="hey-cortana-commands"></a>commandes de Cortana
 
-Dites « Hey Cortana », puis utilisez l’une des commandes suivantes :
+dites « bonjour Cortana », puis utilisez l’une des commandes suivantes :
 
-| Pour | Disons cela |
+| Pour | Dites |
 | --- | --- |
-| Découvrez ce que vous pouvez prononcer avec Cortana | Que puis-je dire ? |
+| Découvrez ce que vous pouvez indiquer Cortana | Que puis-je dire ? |
 | Augmenter/diminuer le volume | Activer/désactiver le volume |
 | Muet/muet | Muet/muet |
 | Démarrer une application | Launch [nom de l’application] |
@@ -109,31 +109,31 @@ Dites « Hey Cortana », puis utilisez l’une des commandes suivantes :
 | Démarrer l’enregistrement d’une vidéo | Démarrer l’enregistrement |
 | Arrêter l’enregistrement d’une vidéo | Arrêter l’enregistrement |
 | Afficher l’heure | Quelle heure est-il? |
-| Ouverture du menu Démarrer | Ouvrir le menu Démarrer |
+| Ouverture du menu Démarrer | ouvrir menu Démarrer |
 | Définir un minuteur | Définir un minuteur |
 | Définir un rappel | Définir un rappel |
 
 > [!NOTE]
 > * Cortana n’est pas disponible dans toutes les régions et tous les langages. [Plus d’informations](https://support.microsoft.com/help/4026948)
-> * Si Cortana ne répond pas à « Hey Cortana », sélectionnez **paramètres > confidentialité > vocale** et faites en sorte que la reconnaissance vocale en ligne soit activée.
-> * Si vous désactivez Cortana, les commandes vocales « Hey Cortana » ne sont pas disponibles, mais vous pouvez toujours utiliser d’autres commandes (telles que « SELECT » et « de téléchargement »).
+> * si Cortana ne répond pas à « bonjour Cortana », sélectionnez **Paramètres > confidentialité >** la reconnaissance vocale et faites en sorte que la reconnaissance vocale en ligne soit activée.
+> * si vous désactivez Cortana, les commandes vocales « Hey Cortana » ne sont pas disponibles, mais vous pouvez toujours utiliser d’autres commandes (telles que « select » et « teleconnexion »)
 
 ## <a name="keyboard-dictation"></a>Dictée du clavier
 
 Basculez en mode dictée chaque fois que le clavier est actif pour une méthode simple de saisie. Sélectionnez microphone sur le clavier, ou simplement « démarrer la dictée », pour commencer.
 
 > [!NOTE]
-> Le clavier de la réalité mixte n’est disponible qu’en anglais, mais vous pouvez utiliser la dictée dans l’une des [langues Windows Mixed Reality](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)prises en charge.
+> le clavier de la réalité mixte n’est disponible qu’en anglais, mais vous pouvez utiliser la dictée dans l’un des [langages de Windows Mixed Reality](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)pris en charge.
 
 ### <a name="keyboard-dictation-commands"></a>Commandes de dictée du clavier
 
-| Pour | Disons cela |
+| Pour | Dites |
 | --- | --- |
 | Fermer le clavier | Fermer |
 | Démarrer la dictée | Démarrer la dictée |
 | Arrêter la dictée | Arrêter la dictée |
 | Supprimer ce que vous avez dicté | Supprimer ce |
-| Sélectionnez tout dans la zone dictée. | Sélectionner tout |
+| Sélectionnez tout dans la zone dictée. | Tout sélectionner |
 
 ### <a name="punctuation"></a>Ponctuation
 

@@ -5,17 +5,17 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: mappage spatial, HoloLens, réalité mixte, reconstruction de surface, maille, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, présentation de la scène, maillage universel, occlusion, physique, navigation, observateur de surface, rendu, traitement de maillage
-ms.openlocfilehash: 3268f25f86cdfea3aa1ae0b77c4fbeb9aa0ce1b9
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+keywords: mappage spatial, HoloLens, réalité mixte, reconstruction de surface, maille, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, réalité mixte Shared Computer Toolkit, présentation de scènes, maillage universel, occlusion, physique, navigation, observateur de surface, rendu, traitement de maillage
+ms.openlocfilehash: 342ba116a5e33073acf2d4dbe563e74bccbf7053ec96d9b3f2f7ba88bd13da90
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212416"
 ---
 # <a name="spatial-mapping"></a>Mappage spatial
 
-Le mappage spatial fournit une représentation détaillée des surfaces réelles dans l’environnement autour du HoloLens, ce qui permet aux développeurs de créer une expérience de réalité mixte convaincante. En fusionnant le monde réel avec le monde virtuel, une application peut faire paraître des hologrammes réels. Les applications peuvent également être plus naturellement alignées sur les attentes des utilisateurs en fournissant des comportements et des interactions réels et familiers.
+le mappage Spatial fournit une représentation détaillée des surfaces réelles dans l’environnement autour du HoloLens, ce qui permet aux développeurs de créer une expérience de réalité mixte convaincante. En fusionnant le monde réel avec le monde virtuel, une application peut faire paraître des hologrammes réels. Les applications peuvent également être plus naturellement alignées sur les attentes des utilisateurs en fournissant des comportements et des interactions réels et familiers.
 
 <br>
 
@@ -47,7 +47,7 @@ Le mappage spatial fournit une représentation détaillée des surfaces réelles
 
 ## <a name="why-is-spatial-mapping-important"></a>Pourquoi le mappage spatial est-il important ?
 
-Le mappage spatial permet de placer des objets sur des surfaces réelles. Cela permet d’ancrer les objets dans le monde de l’utilisateur et de tirer parti des indications de profondeur dans le monde réel. Boucher vos hologrammes en fonction d’autres hologrammes et des objets réels vous aide à convaincre l’utilisateur que ces hologrammes sont en fait dans leur espace. Les hologrammes flottants en espace ou en déplacement avec l’utilisateur ne semblent pas aussi réels. Lorsque cela est possible, placez les éléments pour plus de confort.
+Le mappage spatial permet de placer des objets sur des surfaces réelles. Cela permet d’ancrer les objets dans le monde de l’utilisateur et de tirer parti des indications de profondeur dans le monde réel. Boucher vos hologrammes en fonction d’autres hologrammes et des objets réels vous aide à convaincre l’utilisateur que ces hologrammes sont en fait dans leur espace. Hologrammes flottante dans l’espace ou en déplacement avec l’utilisateur n’a pas le même aspect réel. Lorsque cela est possible, placez les éléments pour plus de confort.
 
 Visualisez les surfaces lors du placement ou du déplacement d’hologrammes (utilisez une grille projetée). Cela permet aux utilisateurs de savoir où ils peuvent placer leurs hologrammes, et indique si l’endroit où ils essaient de placer l’hologramme n’est pas mappé. Vous pouvez « encadrer des éléments » pour l’utilisateur s’ils finissent à un trop grand angle.
 
@@ -60,21 +60,21 @@ Les deux principaux types d’objets utilisés pour le mappage spatial sont l' �
 
 L’application fournit l’observateur de surface spatiale avec un ou plusieurs volumes englobants, pour définir les régions d’espace dans lesquelles l’application souhaite recevoir des données de mappage spatiale. Pour chacun de ces volumes, le mappage spatial fournira à l’application un ensemble de surfaces spatiales.
 
-Ces volumes peuvent être fixes (dans un emplacement fixe basé sur le monde réel) ou ils peuvent être attachés au HoloLens (ils se déplacent, mais ne pivotent pas avec le HoloLens à mesure qu’il progresse dans l’environnement). Chaque surface spatiale décrit des surfaces réelles dans un petit volume d’espace, représentée sous la forme d’un maillage de triangles attaché à un [système de coordonnées spatiales](coordinate-systems.md)verrouillé.
+ces volumes peuvent être fixes (à un emplacement fixe basé sur le monde réel) ou ils peuvent être attachés à la HoloLens (ils se déplacent, mais ne pivotent pas, avec le HoloLens lors de leur déplacement dans l’environnement). Chaque surface spatiale décrit des surfaces réelles dans un petit volume d’espace, représentée sous la forme d’un maillage de triangles attaché à un [système de coordonnées spatiales](coordinate-systems.md)verrouillé.
 
-À mesure que le HoloLens recueille de nouvelles données sur l’environnement et que les modifications apportées à l’environnement se produisent, les surfaces spatiales s’affichent, disparaissent et changent.
+à mesure que le HoloLens recueille de nouvelles données sur l’environnement, et à mesure que des modifications sont apportées à l’environnement, les surfaces spatiales s’affichent, disparaissent et changent.
 
 ## <a name="spatial-awareness-design-concepts-demo"></a>Démonstration des concepts de conception de la sensibilisation spatiale
 
-Si vous souhaitez voir les concepts de conception de la sensibilisation spatiale en action, consultez notre démonstration de la vidéo **conception d’hologrammes-spatiales de sensibilisation** ci-dessous. Une fois que vous avez terminé, poursuivez sur pour obtenir une présentation plus détaillée des rubriques spécifiques.
+si vous souhaitez voir les concepts de conception de la sensibilisation spatiale, consultez notre démo de Hologrammes conception de la vidéo de **sensibilisation spatiale** ci-dessous. Une fois que vous avez terminé, poursuivez pour obtenir une présentation plus détaillée relative à des rubriques spécifiques.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
+*Cette vidéo a été extraite de l’application HoloLens 2 « Conception d’hologrammes ». Téléchargez-la et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="spatial-mapping-vs-scene-understanding-worldmesh"></a>Mappage spatial et compréhension de scène WorldMesh
 
-Pour HoloLens 2, il est possible d’interroger une version statique des données de mappage spatiale à l’aide de [Scene Understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) (paramètre EnableWorldMesh). Voici les différences entre deux méthodes d’accès aux données de mappage spatiale :
+par HoloLens 2, il est possible d’interroger une version statique des données de mappage spatiale à l’aide de [Scene understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) (paramètre EnableWorldMesh). Voici les différences entre deux méthodes d’accès aux données de mappage spatiale :
 * API de mappage spatial :
    * Plage limitée : les données de mappage spatiale disponibles pour les applications dans une taille limitée mise en cache pour l’utilisateur.
    * Fournit des mises à jour à faible latence des régions de maillage modifiées par le biais d’événements SurfacesChanged.
@@ -151,7 +151,7 @@ La visualisation des surfaces peut être un moyen utile pour montrer à l’util
 Les maillages de surface fournis par le mappage spatial peuvent ne pas être particulièrement « nettoyés ». Il est important de les visualiser de manière appropriée. Les calculs d’éclairage traditionnels peuvent mettre en évidence les erreurs dans les normales de surface de manière visuellement gênante, tandis que les textures « propres » projetées sur l’aire peuvent aider à lui attribuer une apparence de plus propre. Il est également possible d’effectuer un [traitement de maillage](spatial-mapping.md#mesh-processing) pour améliorer les propriétés de maillage, avant le rendu des surfaces.
 
 > [!NOTE]
-> HoloLens 2 implémente un nouveau [Runtime de présentation de scène](scene-understanding.md), qui fournit aux développeurs de réalité mixte une représentation environnementale structurée, conçue pour simplifier l’implémentation du placement, de l’occlusion, de la physique et de la navigation.
+> HoloLens 2 implémente un nouveau [Runtime de présentation](scene-understanding.md)de la scène, qui fournit aux développeurs de réalité mixte une représentation environnementale structurée, conçue pour simplifier l’implémentation du placement, de l’occlusion, de la physique et de la navigation.
 
 ## <a name="using-the-surface-observer"></a>Utilisation de l’observateur de surface
 
@@ -274,7 +274,7 @@ Pour faciliter la conception de l’expérience d’analyse, prenez en compte le
 * **Aucune expérience d’analyse**
    * Une application peut fonctionner parfaitement sans aucune expérience d’analyse guidée. elle présente des informations sur les surfaces observées au cours du déplacement des utilisateurs naturels.
    * Par exemple, une application qui permet à l’utilisateur de dessiner sur des surfaces avec la peinture de pulvérisation holographique ne requiert que les surfaces actuellement visibles pour l’utilisateur.
-   * L’environnement peut être analysé déjà s’il s’agit d’un environnement dans lequel l’utilisateur a déjà passé beaucoup de temps à l’aide de HoloLens.
+   * L’environnement peut être analysé déjà s’il s’agit d’un environnement dans lequel l’utilisateur a déjà passé beaucoup de temps à l’aide de la HoloLens.
    * Gardez à l’esprit que l’appareil photo utilisé par le mappage spatial ne peut voir que 3,1 m devant l’utilisateur ; par conséquent, le mappage spatial ne connaîtra pas d’autres surfaces distantes, sauf si l’utilisateur les a observées à partir d’une distance plus proche dans le passé.
    * L’utilisateur comprend donc les surfaces qui ont été analysées, l’application doit fournir un retour visuel à cet effet. par exemple, le cast d’ombres virtuelles sur des surfaces numérisées peut aider l’utilisateur à placer des hologrammes sur ces surfaces.
    * Dans ce cas, les volumes limites de l’observateur de surface spatiale doivent être mis à jour sur chaque cadre pour obtenir un [système de coordonnées spatiales](coordinate-systems.md)verrouillé, afin qu’ils suivent l’utilisateur.
@@ -365,16 +365,16 @@ Voici quelques exemples de différents types de traitement de maillage qui peuve
 
 ### <a name="useful-tools"></a>Outils utiles
 
-* L' [émulateur hololens](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md) peut être utilisé pour développer des applications à l’aide du mappage spatial sans accès à un HoloLens physique. Elle vous permet de simuler une session active sur un HoloLens dans un environnement réaliste, avec toutes les données que votre application consomme normalement, y compris le mouvement HoloLens, les systèmes de coordonnées spatiales et les maillages de mappage spatial. Cela peut être utilisé pour fournir des entrées fiables et reproductibles, ce qui peut être utile pour déboguer des problèmes et évaluer des modifications apportées à votre code.
-* Pour reproduire un scénario, capturez les données de mappage spatiale sur le réseau à partir d’un HoloLens actif, puis enregistrez-les sur le disque et réutilisez-les dans les sessions de débogage ultérieures.
-* La [vue 3D du portail d’appareils Windows](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#3d-view) fournit un moyen de voir toutes les surfaces spatiales actuellement disponibles via le système de mappage spatial. Cela fournit une base de comparaison pour les surfaces spatiales à l’intérieur de votre application. par exemple, vous pouvez facilement savoir si des surfaces spatiales sont manquantes ou affichées au mauvais endroit.
+* l' [émulateur HoloLens](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md) peut être utilisé pour développer des applications à l’aide du mappage spatial sans accès à une HoloLens physique. elle vous permet de simuler une session active sur un HoloLens dans un environnement réaliste, avec toutes les données que votre application consomme normalement, y compris les HoloLens motion, les systèmes de coordonnées spatiales et les maillages de mappage spatial. Cela peut être utilisé pour fournir des entrées fiables et reproductibles, ce qui peut être utile pour déboguer des problèmes et évaluer des modifications apportées à votre code.
+* pour reproduire un scénario, capturez les données de mappage spatiale sur le réseau à partir d’un HoloLens actif, puis enregistrez-les sur le disque et réutilisez-les dans les sessions de débogage ultérieures.
+* la [vue 3d du portail des appareils Windows](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#3d-view) permet de voir toutes les surfaces spatiales actuellement disponibles via le système de mappage spatial. Cela fournit une base de comparaison pour les surfaces spatiales à l’intérieur de votre application. par exemple, vous pouvez facilement savoir si des surfaces spatiales sont manquantes ou affichées au mauvais endroit.
 
 ### <a name="general-prototyping-guidance"></a>Conseils généraux sur le prototypage
 
 * Étant donné que les [Erreurs](spatial-mapping.md#what-influences-spatial-mapping-quality) dans les données de mappage spatiale peuvent affecter fortement l’expérience de votre utilisateur, nous vous recommandons de tester votre application dans un large éventail d’environnements.
 * Ne vous retrouvez pas à l’habitude de toujours tester dans le même emplacement, par exemple au niveau de votre bureau. Veillez à effectuer des tests sur différentes surfaces de différentes positions, formes, tailles et matériaux.
 * De même, si les données synthétiques ou enregistrées peuvent être utiles pour le débogage, ne vous inquiétez pas trop sur les mêmes cas de test. Cela peut retarder la recherche de problèmes importants que des tests plus variés auraient été détectés précédemment.
-* Il est judicieux d’effectuer des tests avec des utilisateurs réels (et idéalement non surveillés), car ils ne peuvent pas utiliser le HoloLens ou votre application exactement de la même façon que vous le faites. En fait, il peut être surpris de savoir comment le comportement, les connaissances et les hypothèses de personnes divergentes peuvent être !
+* il est judicieux d’effectuer des tests avec des utilisateurs réels (et idéalement non surveillés), car ils ne peuvent pas utiliser le HoloLens ou votre application exactement de la même façon que vous le faites. En fait, il peut être surpris de savoir comment le comportement, les connaissances et les hypothèses de personnes divergentes peuvent être !
 
 ## <a name="troubleshooting"></a>Dépannage
 

@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/17/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, rapport de bogue,
-ms.openlocfilehash: b79f69cbb6dea1201c88d9fd1a354967ce40735e
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: e24ef1c568f9d6fa84fdd49dac17581f71dfc466018929e045de43d58549c09b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114282046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210748"
 ---
 # <a name="contributing-to-mrtk"></a>Contribution à MRTK
 

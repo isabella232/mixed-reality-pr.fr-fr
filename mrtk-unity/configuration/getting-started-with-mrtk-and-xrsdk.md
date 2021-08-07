@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, XRSDK, kit de développement logiciel (SDK) XR
-ms.openlocfilehash: bc2924f8e080b0c202f7c3e394a5382cf306431c
-ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
+ms.openlocfilehash: 1560188d1a69f0083940a37da8c378691ee75a9d569c2c5088e0e3f614a44858
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2021
-ms.locfileid: "113603690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188233"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Bien démarrer avec le kit SDK MRTK et XR
 

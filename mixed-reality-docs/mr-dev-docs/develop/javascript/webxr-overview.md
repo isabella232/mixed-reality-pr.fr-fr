@@ -1,17 +1,17 @@
 ---
 title: Utilisation de WebXR avec Windows Mixed Reality
-description: Découvrez les principes de base de l’utilisation et du développement d’applications WebXR s’exécutant sur des casques immersifs Windows Mixed Reality.
+description: découvrez les principes de base de l’utilisation et du développement d’applications WebXR s’exécutant sur Windows Mixed Reality des casques immersifs.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
-keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, Windows Mixed Reality, Web VR, Web XR, Web Mr, Web AR, 360, 360 Video, 360 vidéos, 360 photo, 360 photos, 360 content, Internet immersif, immersiveweb, IW
-ms.openlocfilehash: f29be9af3a2dd1d13b301988845d0cc322e9d4de
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 video, 360 vidéos, 360 photo, 360 photos, 360 content, internet immersif, immersiveweb, IW
+ms.openlocfilehash: e670135cb00db26082b73f8465390a686de6a3e946bbffa561f9df90085970f8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394373"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216265"
 ---
 # <a name="webxr-overview"></a>Présentation de WebXR
 
@@ -21,16 +21,16 @@ JavaScript est l’un des langages de programmation les plus populaires au monde
 
 ## <a name="mixed-reality-applications-on-the-web"></a>Applications de réalité mixte sur le Web
 
-Les fonctionnalités de réalité mixte sont disponibles sur le Web à l’aide de [WebXR](webxr-overview.md). Vous pouvez voir le contenu de la réalité virtuelle et de la réalité augmentée (AR) dans un navigateur compatible WebXR sans installer de logiciel ou de plug-ins supplémentaires. Vous pouvez utiliser ce même navigateur avec un appareil physique comme HoloLens 2.
+Les fonctionnalités de réalité mixte sont disponibles sur le Web à l’aide de [WebXR](webxr-overview.md). Vous pouvez voir le contenu de la réalité virtuelle et de la réalité augmentée (AR) dans un navigateur compatible WebXR sans installer de logiciel ou de plug-ins supplémentaires. Vous pouvez utiliser ce même navigateur avec un appareil physique tel que le HoloLens 2.
 
-L' [**API d’appareil WebXR**](https://www.w3.org/TR/webxr/) permet d’accéder à des appareils de réalité **virtuelle (VR)** et de **réalité augmentée (AR)** , notamment des **capteurs** et des **affichages montés en tête** sur le **Web**. L’API d’appareil WebXR est actuellement disponible sur Microsoft Edge et Chrome version 79 et les versions ultérieures prennent en charge WebXR comme valeur par défaut. Vous pouvez vérifier l’état de prise en charge du navigateur le plus récent pour WebXR sur [caniuse.com](https://caniuse.com/#search=webxr).
+L' [**API d’appareil WebXR**](https://www.w3.org/TR/webxr/) permet d’accéder à des appareils de réalité **virtuelle (VR)** et de **réalité augmentée (AR)** , notamment des **capteurs** et des **affichages montés en tête** sur le **Web**. l’API d’appareil WebXR est actuellement disponible sur Microsoft Edge et Chrome version 79 et les versions ultérieures prennent en charge WebXR comme valeur par défaut. Vous pouvez vérifier l’état de prise en charge du navigateur le plus récent pour WebXR sur [caniuse.com](https://caniuse.com/#search=webxr).
 
 > [!NOTE]
 > **WebVR** est déconseillé et n’est pas disponible dans les navigateurs actuels. par conséquent, il ne doit pas être utilisé pour un nouveau développement. Vous devrez migrer toutes les implémentations de **WebVR** existantes vers **WebXR**.
 
 ### <a name="viewing-webxr"></a>Affichage de WebXR
 
-Vous pouvez afficher WebXR experinces sur [Windows Mixed Reality et la nouvelle réalité Microsoft Edge](../../whats-new/new-microsoft-edge.md) et [Firefox](https://mixedreality.mozilla.org/firefox-reality/).
+vous pouvez afficher WebXR experinces sur [Windows Mixed Reality et la nouvelle Microsoft Edge et la](../../whats-new/new-microsoft-edge.md) [réalité de Firefox](https://mixedreality.mozilla.org/firefox-reality/).
 Pour tester si votre navigateur prend en charge WebXR, vous pouvez accéder aux [exemples WebXR](https://immersive-web.github.io/webxr-samples/) dans votre navigateur.
 
 ## <a name="what-can-i-use-to-develop-immersive-web-experiences"></a>Que puis-je utiliser pour développer des expériences Web immersifs ?

@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Windows Mixed Reality, conception, coach, casque immersif, MRTK, mains, assistance mains, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 0fe0d87e26d06838c0d1b7935573d9bd8ce258ee
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, conception, autocar, casque immersif, MRTK, mains, assistance à la main, casque de réalité mixte, casque Windows mixed reality, casque de réalité virtuelle, HoloLens, MRTK, réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: baf1dab7d73f4e5fca9078717b43dab7b71632f4aa7c36dcac280c029b05d58b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208524"
 ---
 # <a name="hand-coach"></a>Coach de main
 
@@ -85,7 +85,7 @@ Ne vous attendez pas à ce que les utilisateurs puissent écouter un ensemble d�
 
 ## <a name="can-i-create-my-own"></a>Puis-je créer mon propre ?
 
-Oui. Nous vous encourageons à créer votre propre geste unique pour votre jeu et à contribuer à la communauté !
+Oui ! Nous vous encourageons à créer votre propre geste unique pour votre jeu et à contribuer à la communauté !
 Nous avons fourni un fichier maya d’une main qui peut être utilisée pour votre application, qui peut être téléchargée ici : <a href="files/HandCoach_MRTK.zip"> télécharger HandCoach_MRTK.zip </a>
 
 ![Exemple de mains animées dans des Maya](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -94,7 +94,7 @@ Nous avons fourni un fichier maya d’une main qui peut être utilisée pour vot
 
 **Outil de création recommandé**
 
-Parmi les artistes en 3D, beaucoup choisissent d’utiliser les [Maya de Autodesk, qui peuvent utiliser HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) pour transformer la façon dont les ressources sont créées. Le fichier mains fourni est un fichier binaire Maya. il est donc recommandé d’utiliser Maya pour animer et exporter les mains. Si vous préférez utiliser un autre programme 3D, voici un <b>. FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> Téléchargez HandCoachMRTK_FBX.zip </a> pour créer votre propre configuration de contrôleur. 
+parmi les artistes en 3d, beaucoup choisissent d’utiliser les [Maya de Autodesk, qui peuvent utiliser HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) pour transformer la façon dont les ressources sont créées. Le fichier mains fourni est un fichier binaire Maya. il est donc recommandé d’utiliser Maya pour animer et exporter les mains. Si vous préférez utiliser un autre programme 3D, voici un <b>. FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> Téléchargez HandCoachMRTK_FBX.zip </a> pour créer votre propre configuration de contrôleur. 
 
 Si vous utilisez le fichier. Maya téléchargeable fourni, nous vous suggérons de réduire les mains dans Unity à 0,6.
 
@@ -140,13 +140,13 @@ Une fois que vous êtes satisfait de votre animation
 
  Lorsque vous exportez en tant que FBX et que vous mettez sous Unity, mettez à l’échelle les mains jusqu’à 0,6. Nous avons découvert que ce fut parfait pour l’affichage des mains. 
 
-![Exemple : paramètres Unity](images/HandCoach/HandHintScale.png)<br>
-*Paramètres Unity pour HandCoach_R Prefab trouvés dans MRTK*
+![exemple : unity Paramètres](images/HandCoach/HandHintScale.png)<br>
+*Paramètres unity pour HandCoach_R prefab trouvé dans MRTK*
 
 
 ## <a name="implementing-hands-into-your-unity-project"></a>Implémentation des mains dans votre projet Unity
 
-### <a name="best-practices"></a>Meilleures pratiques
+### <a name="best-practices"></a>Bonnes pratiques
 
 * Il est suggéré de réduire les mains d’Unity à 0,6
 * Les mains doivent être jouées deux fois et si elles ne sont pas terminées, puis en boucle jusqu’à ce que le geste soit terminé. Les mains doivent être bouclées deux fois pour garantir que l’utilisateur avait le temps de s’inscrire et de voir le mouvement. Les mains doivent apparaître et disparaître entre les boucles. 
@@ -157,9 +157,9 @@ Une fois que vous êtes satisfait de votre animation
 *   Si vous avez enseigné les mains au moins une fois, répétez uniquement le mouvement s’il est détecté que l’utilisateur est bloqué.
 *   Si les positions de doigt/main spécifiques sont critiques, assurez-vous que les utilisateurs peuvent voir clairement ces nuances dans l’animation. Essayez droite les mains pour que les parties les plus importantes soient clairement visibles. 
 * Si vous constatez une distorsion des mains, vous devez accéder aux paramètres de qualité de Unity pour augmenter le nombre d’os. 
- Accédez à modifier > paramètres du projet > qualité > autres > poids de la fusion. Assurez-vous que « 4 segments » sont sélectionnés pour afficher des articulations lisses.
+ accédez à modifier > Project Paramètres > qualité > autres poids de fusion >. Assurez-vous que « 4 segments » sont sélectionnés pour afficher des articulations lisses.
 
-   ![Exemple : fenêtre Paramètres du projet](images/HandCoach/ProjectSettings.png)<br>
+   ![exemple : Project fenêtre Paramètres](images/HandCoach/ProjectSettings.png)<br>
 
 
 ### <a name="what-to-avoid"></a>À éviter
@@ -171,7 +171,7 @@ Une fois que vous êtes satisfait de votre animation
   * Matériel : Teaching_Hand2
   * Scripts : consultez MRTK Guidelines for <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> MRTK main coach </a>
   * Paramètre par projet
-    * Scène définie sur UWP : l’instruction se trouve dans le [projet configurer Unity](../develop/unity/Configure-Unity-Project.md) pour Windows Mixed Reality
+    * scène définie sur UWP : l’Instruction se trouve dans le [Project configurer unity](../develop/unity/Configure-Unity-Project.md) pour Windows Mixed Reality
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -179,6 +179,6 @@ Une fois que vous êtes satisfait de votre animation
 * [Processus de création de ressources](asset-creation-process.md)
 * [Mouvements](./interaction-fundamentals.md)
 * [Installer les outils](../develop/install-the-tools.md)
-* [Configurer le projet Unity](../develop/unity/Configure-Unity-Project.md)
+* [Configurer Unity Project](../develop/unity/Configure-Unity-Project.md)
 * [Vue d’ensemble du développement Unity](../develop/unity/unity-development-overview.md)
 * [MRTK 101](/windows/mixed-reality/mrtk-unity/)

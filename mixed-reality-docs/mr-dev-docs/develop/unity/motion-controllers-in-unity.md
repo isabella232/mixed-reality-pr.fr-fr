@@ -5,19 +5,19 @@ author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
-keywords: contrôleurs de mouvement, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: d8f9ce292c0ab1cfa89faf58f0e5b90322192b35
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+keywords: contrôleurs de mouvement, unity, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, MRTK, Shared Computer Toolkit de réalité mixte
+ms.openlocfilehash: ccda5b11190e829ccc655989a6f679ef6ef647a920c01a3182548b23a3d85084
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216238"
 ---
 # <a name="motion-controllers-in-unity"></a>Contrôleurs de mouvement dans Unity
 
-Il existe deux façons principales d’agir sur votre point [de regard](gaze-in-unity.md), les [gestes manuels](../../design/gaze-and-commit.md#composite-gestures) et les [contrôleurs de mouvement](../../design/motion-controllers.md) dans HoloLens et les HMD immersifs. Vous accédez aux données des deux sources d’entrée spatiale via les mêmes API dans Unity.
+il existe deux façons principales d’agir sur votre point [d'](gaze-in-unity.md)intergression, les [gestes manuels](../../design/gaze-and-commit.md#composite-gestures) et les [contrôleurs de mouvement](../../design/motion-controllers.md) dans HoloLens et les HMDs immersifs. Vous accédez aux données des deux sources d’entrée spatiale via les mêmes API dans Unity.
 
-Unity fournit deux méthodes principales pour accéder aux données d’entrée spatiale pour Windows Mixed Reality. Les API *d’entrée. GetButton/Input. GetAxis* courantes fonctionnent sur plusieurs kits de développement logiciel (SDK) XR, tandis que l’API *InteractionManager/GestureRecognizer* propre à Windows Mixed Reality expose l’ensemble complet des données d’entrée spatiale.
+Unity fournit deux méthodes principales pour accéder aux données d’entrée spatiales pour Windows Mixed Reality. les api *d’entrée. GetButton/input. GetAxis* courantes fonctionnent sur plusieurs kits de développement logiciel (sdk) XR unity, tandis que l’api *InteractionManager/GestureRecognizer* propre à Windows Mixed Reality expose l’ensemble complet des données d’entrée spatiale.
 
 ## <a name="unity-xr-input-apis"></a>API d’entrée Unity XR
 
@@ -27,17 +27,17 @@ Vous trouverez plus d’informations sur les [API XR ici](https://docs.unity3d.c
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Bouton Unity/table de mappage des axes
 
-Le gestionnaire d’entrée Unity pour les contrôleurs de mouvement Windows Mixed Reality prend en charge les ID de bouton et d’axe listés ci-dessous via les API *Input. GetButton/GetAxis* . La colonne « propre à Windows MR » fait référence aux propriétés disponibles à partir du type *InteractionSourceState* . Chacune de ces API est décrite en détail dans les sections ci-dessous.
+le gestionnaire d’entrée d’unity pour Windows Mixed Reality contrôleurs motion prend en charge les id de bouton et d’axe listés ci-dessous via les api *Input. GetButton/GetAxis* . la colonne « Windows propre à MR » fait référence aux propriétés disponibles à partir du type *InteractionSourceState* . Chacune de ces API est décrite en détail dans les sections ci-dessous.
 
-Les mappages de bouton/ID d’axe pour Windows Mixed Reality correspondent généralement aux ID d’axe/bouton Oculus.
+les mappages de bouton/id d’axe pour Windows Mixed Reality correspondent généralement aux id d’axe/bouton Oculus.
 
-Les mappages de bouton/ID d’axe pour Windows Mixed Reality diffèrent des mappages de OpenVR de deux façons :
+les mappages de bouton/ID d’axe pour Windows Mixed Reality diffèrent des mappages de OpenVR de deux façons :
 1. Le mappage utilise des ID de pavé tactile distincts du stick analogique, pour prendre en charge des contrôleurs avec Thumbsticks et des pavés tactiles.
 2. Le mappage évite de surcharger les ID de bouton A et X pour les boutons de menu afin de les rendre disponibles pour les boutons ABXY physiques.
 
 <table>
 <tr>
-<th rowspan="2">Entrée </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">API Unity courantes</a><br />(Input. GetButton/GetAxis) </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">API d’entrée spécifique à Windows MR</a><br />XR. WSA. Entrée</th>
+<th rowspan="2">Entrée </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">API Unity courantes</a><br />(Input. GetButton/GetAxis) </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">Windows API d’entrée spécifique à MR</a><br />XR. WSA. Entrée</th>
 </tr><tr>
 <th> Main gauche </th><th> À droite</th>
 </tr><tr>
@@ -107,7 +107,7 @@ Pour connaître les principes de base des interactions de réalité mixte dans U
 
 Le plug-in OpenXR de réalité mixte fournit des profils d’interaction d’entrée supplémentaires, mappés à des **InputFeatureUsage** standard, comme indiqué ci-dessous :
 
-| InputFeatureUsage | Contrôleur de réverbération HP G2 (OpenXR) | Manuel HoloLens (OpenXR) |
+| InputFeatureUsage | Contrôleur de réverbération HP G2 (OpenXR) | HoloLens Main (OpenXR) |
 | ---- | ---- | ---- |
 | primary2DAxis | Croix | |
 | primary2DAxisClick | Manette de jeu-clic | |
@@ -127,17 +127,17 @@ Pour mieux représenter ces contrôleurs, il existe deux genres de poses que vou
 
 ### <a name="grip-pose"></a>Poignée de pose
 
-La **poignée** représente l’emplacement de la paume des utilisateurs, qu’elle soit détectée par une carte HoloLens ou qu’elle détient un contrôleur de mouvement.
+la **poignée** représente l’emplacement de la paume des utilisateurs, qu’elle soit détectée par un HoloLens ou qu’elle détient un contrôleur de mouvement.
 
-Sur les casques immersifs, le pose de la poignée est utilisé pour restituer **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**. La poignée est également utilisée lors de la visualisation d’un contrôleur de mouvement. Le **modèle de rendu** fourni par Windows pour un contrôleur de mouvement utilise la poignée comme son origine et le centre de la rotation.
+Sur les casques immersifs, le pose de la poignée est utilisé pour restituer **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**. La poignée est également utilisée lors de la visualisation d’un contrôleur de mouvement. le **modèle de rendu** fourni par Windows pour un contrôleur de mouvement utilise la poignée comme son origine et le centre de rotation.
 
 La poignée est définie spécifiquement comme suit :
-* Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée. Sur le contrôleur de mouvement Windows Mixed Reality, cette position s’aligne généralement avec le bouton de saisie.
+* Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée. sur le contrôleur de mouvement Windows Mixed Reality, cette position s’aligne généralement avec le bouton de saisie.
 * **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à 5 doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
 * **Axe avant de l’orientation de la poignée**: quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
 * **Axe vers le haut de l’orientation**: l’axe vers le haut, impliqué dans les définitions Right et Forward.
 
-Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity (*[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation*) ou via l’API propre à Windows Mr (*SourceState. SourcePose. TryGetPosition/rotation*, en demandant des données de pose pour le nœud de **poignée** ).
+Vous pouvez accéder à la poignée à l’aide de l’API d’entrée entre fournisseurs de l’unité Unity (*[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/rotation*) ou à l’aide de la Windows API propre à MR (*sourceState. sourcePose. TryGetPosition/rotation*, demandant des données de pose pour le nœud de **poignée** ).
 
 ### <a name="pointer-pose"></a>Pose du pointeur
 
@@ -145,7 +145,7 @@ Le **pointeur de pose** représente l’extrémité du contrôleur pointant vers
 
 Le pointeur fourni par le système est le mieux utilisé pour raycast lorsque vous effectuez **le rendu du modèle de contrôleur lui-même**. Si vous effectuez le rendu d’un autre objet virtuel à la place du contrôleur, tel qu’un pistolet virtuel, vous devez faire pointer un rayon qui est le plus naturel pour cet objet virtuel, tel qu’un rayon qui traverse le canon du modèle de pistolet défini par l’application. Étant donné que les utilisateurs peuvent voir l’objet virtuel et non le contrôleur physique, le fait de pointer avec l’objet virtuel sera probablement plus naturel pour ceux qui utilisent votre application.
 
-Actuellement, le pointeur de pose est disponible dans Unity uniquement par le biais de l’API propre à Windows MR, *sourceState. sourcePose. TryGetPosition/rotation*, en passant *InteractionSourceNode. pointeur* comme argument.
+actuellement, le pointeur de pose est disponible dans unity uniquement par le biais de la Windows API spécifique à MR, *sourceState. sourcePose. TryGetPosition/Rotation*, en passant *InteractionSourceNode. pointeur* comme argument.
 
 ### <a name="openxr"></a>OpenXR 
 
@@ -170,9 +170,9 @@ Pour plus d’informations sur l’utilisation des haptique dans le système d�
 
 ## <a name="controller-tracking-state"></a>État du suivi du contrôleur
 
-À l’instar des casques, le contrôleur de mouvement Windows Mixed Reality ne nécessite pas de configuration de capteurs de suivi externe. Au lieu de cela, les contrôleurs sont suivis par des capteurs dans le casque lui-même.
+à l’instar des casques, le contrôleur de mouvement Windows Mixed Reality ne nécessite aucune configuration de capteurs de suivi externe. Au lieu de cela, les contrôleurs sont suivis par des capteurs dans le casque lui-même.
 
-Si l’utilisateur déplace les contrôleurs en dehors du champ de vue du casque, Windows continue à déduire les positions des contrôleurs dans la plupart des cas. Lorsque le contrôleur a perdu le suivi visuel suffisamment longtemps, les positions du contrôleur sont découpées à des positions de précision approximatives.
+si l’utilisateur déplace les contrôleurs en dehors du champ de vue du casque, Windows continue à déduire les positions des contrôleurs dans la plupart des cas. Lorsque le contrôleur a perdu le suivi visuel suffisamment longtemps, les positions du contrôleur sont découpées à des positions de précision approximatives.
 
 À ce stade, le système va verrouiller le contrôleur à l’utilisateur, en effectuant le suivi de la position de l’utilisateur lors de son déplacement, tout en exposant l’orientation réelle du contrôleur à l’aide de ses capteurs d’orientation internes. De nombreuses applications qui utilisent des contrôleurs pour pointer et activer des éléments d’interface utilisateur peuvent fonctionner normalement avec une précision approximative sans que l’utilisateur ne remarque.
 
@@ -190,9 +190,9 @@ Les applications qui souhaitent traiter différemment les positions en fonction 
 <tr>
 <th> État du suivi </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Importante </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Haute précision (risque de perte)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Élevé </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Précision approximative</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Approximatif </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -211,13 +211,13 @@ Ces États de suivi du contrôleur de mouvement sont définis comme suit :
 **Espace de noms :** *UnityEngine*, *UnityEngine. XR*<br>
 **Types**: *Input*, *XR. InputTracking*
 
-Unity utilise actuellement ses API *d’entrée. GetButton/Input. GetAxis* pour exposer l’entrée pour [le kit de développement logiciel (SDK) Oculus](https://docs.unity3d.com/Manual/OculusControllers.html), [le kit de développement logiciel (SDK) OpenVR et la](https://docs.unity3d.com/Manual/OpenVRControllers.html) réalité mixte Windows, y compris les contrôleurs mains et motion. Si votre application utilise ces API pour l’entrée, elle peut facilement prendre en charge des contrôleurs de mouvement sur plusieurs kits de développement logiciel (SDK) XR, y compris Windows Mixed Reality.
+unity utilise actuellement ses api *d’entrée. GetButton/input. GetAxis* pour exposer l’entrée pour [le kit de développement logiciel (sdk) Oculus](https://docs.unity3d.com/Manual/OculusControllers.html), [le kit de développement logiciel (sdk) OpenVR et le](https://docs.unity3d.com/Manual/OpenVRControllers.html) Windows Mixed Reality, y compris les contrôleurs mains et motion. Si votre application utilise ces API pour l’entrée, elle peut facilement prendre en charge des contrôleurs de mouvement sur plusieurs kits de développement logiciel (SDK) XR, y compris Windows Mixed Reality.
 
 ### <a name="getting-a-logical-buttons-pressed-state"></a>Obtention de l’état enfoncé d’un bouton logique
 
 Pour utiliser les API d’entrée Unity générales, vous commencez généralement par associer des boutons et des axes aux noms logiques dans le [Gestionnaire d’entrée Unity](https://docs.unity3d.com/Manual/ConventionalGameInput.html), en liant un bouton ou des ID d’axe à chaque nom. Vous pouvez ensuite écrire du code qui fait référence à ce nom d’axe/bouton logique.
 
-Par exemple, pour mapper le bouton de déclenchement du contrôleur de mouvement gauche à l’action envoyer, accédez à **modifier > paramètres du projet > entrée** dans Unity, puis développez les propriétés de la section envoyer sous axes. Modifiez le bouton **positif** ou la propriété **ALT positive du bouton** pour lire le bouton de la manette de jeu **14**, comme suit :
+par exemple, pour mapper le bouton de déclenchement du contrôleur de mouvement gauche à l’action envoyer, accédez à **modifier > Project Paramètres > entrée** dans unity, puis développez les propriétés de la section Submit sous Axes. Modifiez le bouton **positif** ou la propriété **ALT positive du bouton** pour lire le bouton de la manette de jeu **14**, comme suit :
 
 ![InputManager d’Unity](images/unity-input-manager.png)<br>
 *InputManager Unity*
@@ -257,7 +257,7 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 > 
 > La relation entre cette poignée se pose et le pointeur pose (où l’extrémité du contrôleur pointe) peut varier d’un contrôle à l’autre. À ce stade, l’accès au pointeur du contrôleur est possible uniquement via l’API d’entrée spécifique à MR, décrite dans les sections ci-dessous.
 
-## <a name="windows-specific-apis-xrwsainput"></a>API spécifiques à Windows (XR. WSA. Entrée
+## <a name="windows-specific-apis-xrwsainput"></a>api spécifiques à Windows (XR. WSA. Entrée
 
 > [!CAUTION]
 > Si votre projet utilise l’un des XR. Les API WSA, elles sont en passe en faveur du kit de développement logiciel (SDK) XR dans les futures versions Unity. Pour les nouveaux projets, nous vous recommandons d’utiliser le kit de développement logiciel (SDK) XR dès le début. Vous trouverez plus d’informations sur le [système d’entrée XR et les API ici](https://docs.unity3d.com/Manual/xr_input.html).
@@ -265,7 +265,7 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 **Espace de noms :** *UnityEngine. XR. WSA. Input*<br>
 **Types**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*
 
-Pour obtenir des informations plus détaillées sur l’entrée manuelle de Windows Mixed Reality (pour HoloLens) et les contrôleurs de mouvement, vous pouvez choisir d’utiliser les API d’entrée spatiale spécifiques à Windows sous l’espace de noms *UnityEngine. XR. WSA. Input* . Cela vous permet d’accéder à des informations supplémentaires, telles que la précision de la position ou le genre de source, vous permettant de distinguer les mains et les contrôleurs.
+pour obtenir des informations plus détaillées sur les Windows Mixed Reality d’entrée (pour HoloLens) et les contrôleurs de mouvement, vous pouvez choisir d’utiliser les api d’entrée spatiale propres à l’Windows sous l’espace de noms *UnityEngine. XR. WSA. input* . Cela vous permet d’accéder à des informations supplémentaires, telles que la précision de la position ou le genre de source, vous permettant de distinguer les mains et les contrôleurs.
 
 ### <a name="polling-for-the-state-of-hands-and-motion-controllers"></a>Interrogation de l’état des contrôleurs mains et motion
 
@@ -373,10 +373,10 @@ Les événements de la source d’interaction disponibles sont les suivants :
 ### <a name="events-for-historical-targeting-poses-that-most-accurately-match-a-press-or-release"></a>Les événements pour le ciblage historique posent qui correspondent le plus précisément à une pression ou à une mise en sortie
 
 Les API d’interrogation décrites précédemment fournissent à votre application des poses préprédits.  Bien que ces éléments prédits soient les plus adaptés pour le rendu du contrôleur ou d’un objet de poche virtuel, les nouvelles poses ne sont pas optimales pour le ciblage, pour deux raisons principales :
-* Quand l’utilisateur appuie sur un bouton sur un contrôleur, il peut y avoir environ 20 ms de latence sans fil sur Bluetooth avant que le système ne reçoive la presse.
+* quand l’utilisateur appuie sur un bouton sur un contrôleur, il peut y avoir environ 20 ms de latence sans fil sur Bluetooth avant que le système ne reçoive la presse.
 * Ensuite, si vous utilisez une pose préprédite, il y aura une autre 10-20 ms de prédiction de transfert appliquée pour cibler le moment où les photons du frame actuel atteindront les yeux de l’utilisateur.
 
-Cela signifie que l’interrogation vous donne une source de pose ou de tête qui est de 30-40 ms à partir de là où la tête et la mains de l’utilisateur ont été retirées lorsque l’appui ou la mise en place a eu lieu.  Pour l’entrée de la main HoloLens, bien qu’il n’y ait pas de délai de transmission sans fil, il existe un délai de traitement similaire pour détecter la presse.
+Cela signifie que l’interrogation vous donne une source de pose ou de tête qui est de 30-40 ms à partir de là où la tête et la mains de l’utilisateur ont été retirées lorsque l’appui ou la mise en place a eu lieu.  pour une entrée de HoloLens, bien qu’il n’y ait pas de délai de transmission sans fil, il existe un délai de traitement similaire pour détecter la presse.
 
 Pour cibler avec précision en fonction de l’intention initiale de l’utilisateur pour une presse ou un contrôleur, vous devez utiliser la base de l’historique de la source ou de l’en-tête à partir de cet événement d’entrée *InteractionSourcePressed* ou *InteractionSourceReleased* .
 
@@ -488,7 +488,7 @@ Des didacticiels pas à pas, avec des exemples de personnalisation plus détaill
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au module suivant :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir d’ici, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Suivi du regard et des mains](./hand-eye-in-unity.md)

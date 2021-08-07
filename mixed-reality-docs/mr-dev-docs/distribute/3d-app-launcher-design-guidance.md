@@ -5,17 +5,17 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, conception, mode de lancement d’application 3D, casque immersif, cube en direct, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, UWP, Win32, éclairage, couleur
-ms.openlocfilehash: 2edb09e47da5bcbae34a37f004853002f3f65cf3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+keywords: Windows Mixed Reality, conception, lanceur d’applications en 3d, casque immersif, cube en direct, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, UWP, Win32, éclairage, couleur
+ms.openlocfilehash: 2d93930d63b251aa91d77c96b4d5250baba54c51de50388f690b3588b1580761
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188487"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>Guide de conception de lanceur d’applications 3D
 
-Lorsque vous placez un casque Windows Mixed Reality (VR), vous accédez à la page d’hébergement Windows Mixed Reality. La maison est visualisée sous la forme d’une maison sur une falaise placée par des montagnes et de l’eau, mais vous pouvez [choisir d’autres environnements et même créer les vôtres](../design/add-custom-home-environments.md). Au sein de l’espace de la famille, un utilisateur est libre de réorganiser et d’organiser les objets et applications 3D dont il se soucie. Un **lanceur d’applications 3D** est un objet « physique » dans la maison de réalité mixte de l’utilisateur qu’il peut sélectionner pour lancer une application.
+lorsque vous placez sur un casque Windows Mixed Reality immersif, vous entrez la Windows Mixed Reality page d’hébergement. La maison est visualisée sous la forme d’une maison sur une falaise placée par des montagnes et de l’eau, mais vous pouvez [choisir d’autres environnements et même créer les vôtres](../design/add-custom-home-environments.md). Au sein de l’espace de la famille, un utilisateur est libre de réorganiser et d’organiser les objets et applications 3D dont il se soucie. Un **lanceur d’applications 3D** est un objet « physique » dans la maison de réalité mixte de l’utilisateur qu’il peut sélectionner pour lancer une application.
 
 ![Exemple : lanceur d’applications 3D avec un oiseau flottant](images/20171016-151526-mixedreality1-1200px-1000px.jpg)<br>
 *Exemple de lanceur d’application 3D d’oiseau flottant (application fictive)*
@@ -34,7 +34,7 @@ La création d’un lanceur d’applications 3D comporte trois étapes :
 
 ### <a name="fantastic-yet-familiar"></a>Fantastique, encore familier
 
-L’environnement Windows Mixed Reality dans lequel se trouve votre lanceur d’applications est une partie familière, une partie fantastique/science-fi. Les meilleurs lanceurs suivent les règles de ce monde. Pensez à la façon dont vous pouvez prendre un objet représentatif familier de votre application, mais pliez certaines règles de réalité réelle. La magie se produira.
+l’environnement de Windows Mixed Reality dans lequel votre lanceur d’applications se trouve est une partie familière, une partie fantastique/science-fi. Les meilleurs lanceurs suivent les règles de ce monde. Pensez à la façon dont vous pouvez prendre un objet représentatif familier de votre application, mais pliez certaines règles de réalité réelle. La magie se produira.
 
 ### <a name="intuitive"></a>Peu
 
@@ -80,14 +80,14 @@ Votre application mérite plus que simplement placer votre logo sur un plan plat
     :::column-end:::
 :::row-end:::
 
-## <a name="tips-for-good-3d-models"></a>Conseils pour les bons modèles 3D
+## <a name="tips-for-good-3d-models"></a>Astuces pour les bons modèles 3d
 
 * Lors de la planification de dimensions pour votre lanceur d’applications, prenez un cube de 30 cm environ. Par conséquent, un ratio de taille de 1:1:1.
 * Les modèles doivent être sous les polygones 10 000. [En savoir plus sur le nombre de triangles et les niveaux de détail (LODs)](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
 * Testez sur un casque immersif.
 * Créez des détails dans la géométrie de votre modèle, dans la mesure du possible, ne vous fiez pas aux textures pour des détails.
 * Créez une géométrie fermée « eau serrée ». Aucun trou n’est modélisé dans.
-* Utilisez des matériaux naturels dans votre objet. Imaginez que vous le concevez dans le monde réel.
+* Utilisez des matériaux naturels dans votre objet. Imagine l’informatique dans le monde réel.
 * Assurez-vous que votre modèle lit bien des distances et des tailles différentes.
 * Lorsque votre modèle est prêt à l’emploi, lisez les [instructions relatives](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#asset-requirements-overview)à l’exportation de ressources.
 
@@ -166,7 +166,7 @@ Nous vous recommandons d’utiliser l’outil de création de [substance](https:
 
 (Vous pouvez également utiliser la [couche 3D](https://3dcoat.com/home/), [Quixel suite 2](https://quixel.se/suite2/)ou [marmoset Toolbag](https://www.marmoset.co/toolbag/) si vous êtes plus familiarisé avec l’un d’eux).
 
-### <a name="best-practices"></a>Meilleures pratiques
+### <a name="best-practices"></a>Bonnes pratiques
 
 * Si votre objet de lanceur d’application a été créé pour le PBR, il doit être facile de le convertir pour l’environnement de la maison de la falaise.
 * Notre nuanceur attend un flot de travail Metal/grossiste : le nuanceur PBR non réel est une fac-similé de fermeture.

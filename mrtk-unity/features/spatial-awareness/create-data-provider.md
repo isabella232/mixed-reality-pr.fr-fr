@@ -1,16 +1,16 @@
 ---
-title: Créer une Fournisseur de données de sensibilisation spatiale
+title: créer une Fournisseur de données de sensibilisation spatiale
 description: décrit comment créer des fournisseurs de données personnalisés dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 04a0cdbd18f666b6a99c120eb28966234cc8c92d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 05186c418a7b0b7b143abc58be6a6afb64cb69f5a1c90c73ed516d51c2a5d8ea
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188849"
 ---
 # <a name="creating-a-spatial-awareness-system-data-provider"></a>Création d’un fournisseur de données système de sensibilisation spatiale
 
@@ -26,7 +26,7 @@ Cet article explique comment créer des [fournisseurs de données personnalisés
 Les fournisseurs de données peuvent être distribués de l’une des deux manières suivantes :
 
 1. Composants additionnels tiers
-1. Partie intégrante de Microsoft Mixed Reality Toolkit
+1. une partie de la Shared Computer Toolkit de réalité mixte de Microsoft
 
 Le processus d’approbation pour les envois de nouveaux fournisseurs de données à l’MRTK varie au cas par cas et est communiqué au moment de la proposition initiale. Les propositions peuvent être soumises en créant un nouveau type de [ *demande de fonctionnalité*](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 
@@ -39,7 +39,7 @@ Les fournisseurs de données doivent disposer d’un espace de noms pour atténu
 - Nom de la société qui produit le module complémentaire
 - Domaine de fonctionnalité
 
-Par exemple, un fournisseur de données de sensibilisation spatiale créé et fourni par la société contoso peut être *« contoso. MixedReality. Toolkit. SpatialAwareness »*.
+par exemple, un fournisseur de données de sensibilisation spatiale créé et fourni par la société Contoso peut être *«Contoso. MixedReality. Shared Computer Toolkit. SpatialAwareness»*.
 
 **Structure de dossiers**
 
@@ -53,7 +53,7 @@ Lorsque le dossier *ContosoSpatialAwareness* contient l’implémentation du fou
 
 **Espace de noms**
 
-Si un fournisseur de données système de sensibilisation spatiale est soumis au référentiel de la boîte à outils de la [réalité mixte](https://github.com/Microsoft/MixedRealityToolkit-Unity), l’espace de noms **doit** commencer par Microsoft. MixedReality. Toolkit (ex : *Microsoft. MixedReality. Toolkit. SpatialObjectMeshObserver*)
+si un fournisseur de données système de sensibilisation spatiale est soumis à la [réalité mixte Shared Computer Toolkit référentiel](https://github.com/Microsoft/MixedRealityToolkit-Unity), l’espace de noms **doit** commencer par Microsoft. MixedReality. Shared Computer Toolkit (par exemple : *Microsoft. MixedReality. Shared Computer Toolkit. SpatialObjectMeshObserver*)
 
  et le code doit se trouver dans un dossier sous MRTK/Providers (ex : *MRTK/Providers/ObjectMeshObserver*).
 
@@ -67,7 +67,7 @@ La première étape de la création d’un fournisseur de données de sensibilis
 
 Tous les objets de données spatiales doivent implémenter l' [`IMixedRealitySpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject) interface.
 
-La Fondation de la réalité de la réalité fournit les objets spatiaux suivants qui peuvent être utilisés ou étendus dans de nouveaux fournisseurs de données.
+la réalité mixte Shared Computer Toolkit foundation fournit les objets spatiaux suivants qui peuvent être utilisés ou étendus dans de nouveaux fournisseurs de données.
 
 - [`BaseSpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
 - [`SpatialAwarenessMeshObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)
@@ -215,7 +215,7 @@ Il est recommandé d’implémenter le modèle utilisé par MRTK lors de l’ins
 
 ## <a name="create-the-profile-and-inspector"></a>Créer le profil et l’inspecteur
 
-Dans la boîte à outils de la réalité mixte, les fournisseurs de données sont configurés à l’aide de [profils](../profiles/profiles.md).
+dans la Shared Computer Toolkit de la réalité mixte, les fournisseurs de données sont configurés à l’aide de [profils](../profiles/profiles.md).
 
 ### <a name="define-the-profile"></a>Définir le profil
 
@@ -241,7 +241,7 @@ public class SpatialObjectMeshObserverProfile : MixedRealitySpatialAwarenessMesh
 }
 ```
 
-L' `CreateAssetMenu` attribut peut être appliqué à la classe de profil pour permettre aux clients de créer une instance de profil à l’aide du menu des profils du kit de ressources de **création** de composants de la  >    >  **réalité mixte**  >   .
+l' `CreateAssetMenu` attribut peut être appliqué à la classe de profil pour permettre aux clients de créer une instance de profil à l’aide du menu **créer** des profils de  >    >  **réalité mixte Shared Computer Toolkit**  >  **profils** .
 
 ### <a name="implement-the-inspector"></a>Implémenter l’inspecteur
 
@@ -257,19 +257,19 @@ public class SpatialObjectMeshObserverProfileInspector : BaseMixedRealityToolkit
 
 ## <a name="create-assembly-definitions"></a>Créer une ou plusieurs définitions d’assembly
 
-La boîte à outils de réalité mixte utilise des fichiers de définition d’assembly ([. asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) pour spécifier les dépendances entre les composants, ainsi que pour aider Unity à réduire le temps de compilation.
+la réalité mixte Shared Computer Toolkit utilise des fichiers de définition d’assembly ([. asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) pour spécifier les dépendances entre les composants, ainsi que pour aider unity à réduire le temps de compilation.
 
 Il est recommandé de créer des fichiers de définition d’assembly pour tous les fournisseurs de données et leurs composants d’éditeur.
 
 À l’aide de la [structure de dossiers](#namespace-and-folder-structure) dans l’exemple précédent, il existe deux fichiers. asmdef pour le fournisseur de données ContosoSpatialAwareness.
 
-La première définition d’assembly est pour le fournisseur de données. Pour cet exemple, il est appelé ContosoSpatialAwareness et se trouve dans le dossier *ContosoSpatialAwareness* de l’exemple. Cette définition d’assembly doit spécifier une dépendance sur Microsoft. MixedReality. Toolkit et tout autre assembly dont elle dépend.
+La première définition d’assembly est pour le fournisseur de données. Pour cet exemple, il est appelé ContosoSpatialAwareness et se trouve dans le dossier *ContosoSpatialAwareness* de l’exemple. Cette définition d’assembly doit spécifier une dépendance sur Microsoft. MixedReality. Shared Computer Toolkit et tout autre assembly dont il dépend.
 
 La définition de l’assembly ContosoInputEditor spécifie l’inspecteur de profil et tout code spécifique à l’éditeur. Ce fichier doit se trouver dans le dossier racine du code de l’éditeur. Dans cet exemple, le fichier se trouve dans le dossier *ContosoSpatialAwareness\Editor* Cette définition d’assembly contient une référence à l’assembly ContosoSpatialAwareness, ainsi que les éléments suivants :
 
-- Microsoft. MixedReality. Toolkit
-- Microsoft. MixedReality. Toolkit. Editor. Inspectors
-- Microsoft. MixedReality. Toolkit. Editor. Utilities
+- Microsoft. MixedReality. Shared Computer Toolkit
+- Microsoft. MixedReality. Shared Computer Toolkit. Editor. Inspectors
+- Microsoft. MixedReality. Shared Computer Toolkit. Éditeur. Utilities
 
 ## <a name="register-the-data-provider"></a>Inscrire le fournisseur de données
 
@@ -281,7 +281,7 @@ Une fois créé, le fournisseur de données peut être inscrit avec le système 
 
 Les fournisseurs de données qui sont distribués en tant que composants tiers ont les détails spécifiques de l’empaquetage et de la distribution laissés à la préférence du développeur. Il est probable que la solution la plus courante consiste à générer un. pour Unity et à le distribuer via le magasin d’actifs Unity.
 
-Si un fournisseur de données est soumis et accepté dans le cadre du package Microsoft Mixed Reality Toolkit, l’équipe Microsoft MRTK l’empaqueter et la distribuer dans le cadre des offres MRTK.
+si un fournisseur de données est soumis et accepté dans le cadre du package Shared Computer Toolkit de la réalité mixte microsoft, l’équipe microsoft MRTK l’empaqueter et la distribuer dans le cadre des offres MRTK.
 
 ## <a name="see-also"></a>Voir aussi
 

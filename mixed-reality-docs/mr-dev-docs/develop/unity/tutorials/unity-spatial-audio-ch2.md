@@ -5,13 +5,13 @@ author: kegodin
 ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
-keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, prefabs, courbe de volume
-ms.openlocfilehash: f3f2faf8220eaebcc674bcf02a45d99d58169076
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+keywords: réalité mixte, unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, prefabs, courbe de volume
+ms.openlocfilehash: e0f916ecf8cd8da81e0738b082021c76c55a7f2031517a37b959575e1b21ce16
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209836"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2. Spatialisation des sons d’interaction avec les boutons
 
@@ -25,7 +25,7 @@ Dans ce didacticiel, vous allez apprendre à spatialiser les sons d’interactio
 
 ## <a name="add-a-button"></a>Ajouter un bouton
 
-Pour ajouter le bouton Prefab, dans la fenêtre **projet** , sélectionnez **packages** , puis tapez « PressableButtonHoloLens2 » dans la barre de recherche.
+pour ajouter le bouton prefab, dans la fenêtre **Project** , sélectionnez **Packages** , puis tapez « PressableButtonHoloLens2 » dans la barre de recherche.
 
 ![Bouton Prefab dans les ressources](images/spatial-audio/spatial-audio-02-section1-step1-1.PNG)
 
@@ -43,20 +43,20 @@ Pour vous concentrer sur les objets de la scène, vous pouvez double-cliquer sur
 
 Dans cette étape, vous allez spatialiser les commentaires audio pour le bouton. Pour obtenir des suggestions de conception associées, consultez [conception de son spatial](../../../design/spatial-sound-design.md).
 
-Dans la fenêtre **mixage audio** , vous allez définir des destinations appelées **groupes de mixage**, pour la lecture audio à partir de composants **sources audio** .
+dans la fenêtre **Mixer audio** , vous allez définir des destinations appelées **Mixer des groupes**, pour la lecture audio à partir de composants **sources audio** .
 
-Pour ouvrir la fenêtre **mixage audio** , dans le menu Unity, **Sélectionnez** mixer audio audio fenêtre  >    >  **mixer**: ouvrir la fenêtre de ![ mixage audio](images/spatial-audio/spatial-audio-02-section2-step1-1.PNG)
+pour ouvrir la fenêtre de **Mixer audio** , dans le menu unity, sélectionnez audio audio **windows**  >    >  **Mixer**: ![ ouvrir la fenêtre de Mixer audio](images/spatial-audio/spatial-audio-02-section2-step1-1.PNG)
 
- Créez un **mélangeur** en cliquant sur le signe « + » en regard de **mixages** , puis entrez un nom approprié pour le mélangeur, par exemple, le _mixer audio spatial_. Le nouveau mélangeur inclura un **groupe** par défaut nommé **maître**.
+ créez un **Mixer** en cliquant sur le signe « + » en regard de **mixages** , puis entrez un nom approprié pour le Mixer par exemple, _Mixer Audio Spatial_. Le nouveau mélangeur inclura un **groupe** par défaut nommé **maître**.
 
-![Panneau de mixage avec le premier mélangeur](images/spatial-audio/spatial-audio-02-section2-step1-2.PNG)
+![panneau Mixer avec le premier mélangeur](images/spatial-audio/spatial-audio-02-section2-step1-2.PNG)
 
 > [!NOTE]
 > Tant que la réverbération n’est pas activée dans le [cinquième chapitre : l’utilisation de la réverbération pour ajouter de la distance à l’audio spatial](unity-spatial-audio-ch5.md), le compteur de volume du mélangeur n’affiche pas l’activité des sons joués par Microsoft Spatializer
 
 Dans la fenêtre hiérarchie, sélectionnez le **PressableButtonHoloLens2** puis, dans la fenêtre de l’inspecteur, recherchez le composant **source audio** et configurez le composant audio source comme suit :
 
-1. Pour la propriété **sortie** , cliquez sur le sélecteur, puis choisissez le **mélangeur** que vous avez créé.
+1. pour la propriété **sortie** , cliquez sur le sélecteur et choisissez le **Mixer** que vous avez créé.
 2. Cochez la case **spatialiser** .
 3. Déplacez le curseur de **lissage spatial** vers 3D (1).
 
@@ -71,7 +71,7 @@ Par défaut, Unity atténue les sons spatiaux au fur et à mesure qu’ils s’�
 
 Pour désactiver cette atténuation, vous devez ajuster la courbe de **volume** dans le composant **source audio** .
 
-Dans la fenêtre hiérarchie, sélectionnez le **PressableButtonHoloLens2** puis, dans la fenêtre de l’inspecteur, accédez à **source audio**  >  **paramètres audio 3D** et configurez comme suit :
+dans la fenêtre hiérarchie, sélectionnez le **PressableButtonHoloLens2** puis, dans la fenêtre de l’inspecteur, accédez à **Source audio**  >  **3d audio Paramètres** et configurez comme suit :
 
 1. Définissez la propriété **volume Rolloff** sur Linear Rolloff
 2. Faites glisser le point de terminaison sur la courbe de **volume** (la courbe rouge) de « 0 » sur l’axe y jusqu’à « 1 »

@@ -1,18 +1,18 @@
 ---
-title: Instructions de documentation
+title: Conseils sur la documentation
 description: instructions et normes de la documentation pour MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 95af19b71a9fe06dabad058e75f78d951262ba4a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: aa583876d4ca9e115d4ea4507638eebab838207230693cb7c24b781d8f0b020b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210718"
 ---
-# <a name="documentation-guidelines"></a>Instructions de documentation
+# <a name="documentation-guidelines"></a>Conseils sur la documentation
 
 <img src="../features/images/MRTK_Logo_Rev.png" alt="MRTK">
 

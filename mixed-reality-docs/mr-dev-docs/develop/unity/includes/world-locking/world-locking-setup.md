@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6229b258233f7a80ef6530edd6eb94774a0e54cf
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: e4ada87db2d9e483758030bf1bbe56dbacd7664ae7e1921540c0c7abfe14a7c7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528760"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208854"
 ---
 # <a name="world-locking-tools-recommended"></a>[Outils de verrouillage universel (recommandé)](#tab/wlt)
 
@@ -17,9 +17,9 @@ Nous vous recommandons d’installer les outils de verrouillage du monde à l’
 
 ### <a name="automated-setup"></a>Installation automatisée
 
-Quand votre projet est prêt à l’emploi, exécutez l’utilitaire configurer la scène à partir du kit de tâches de la **réalité mixte > utilitaires > outils de verrouillage du monde**:
+lorsque votre projet est prêt à l’emploi, exécutez l’utilitaire configurer la scène à partir de la **réalité mixte Shared Computer Toolkit > utilitaires > outils de verrouillage du monde**:
 
-![Éditeur Unity avec le menu du kit d’outils de réalité mixte sélectionné](../../images/world-locking-configuration-img-01.jpeg)
+![éditeur unity avec la réalité mixte Shared Computer Toolkit menu sélectionné](../../images/world-locking-configuration-img-01.jpeg)
 
 > [!IMPORTANT]
 > L’utilitaire de configuration de scène peut être réexécuté à tout moment. Par exemple, elle doit être réexécutée si la cible AR a été remplacée par le kit de développement logiciel (SDK) XR. Si la scène est déjà configurée correctement, l’exécution de l’utilitaire n’a aucun effet.
@@ -39,7 +39,7 @@ Le plug-in OpenXR de réalité mixte fournit des fonctionnalités d’ancre de b
 **Espace de noms :** *UnityEngine. XR. WSA*<br>
 **Type :** *WorldAnchor*
 
-Pour les expériences réelles à l' **échelle mondiale** sur HoloLens qui permettent aux utilisateurs d’aller au-delà de 5 mètres, vous aurez besoin de nouvelles techniques au-delà de celles utilisées pour les expériences à l’échelle de la place. Une technique clé que vous allez utiliser consiste à créer une [ancre spatiale](../../../../design/coordinate-systems.md#spatial-anchors) pour verrouiller un cluster d’hologrammes précisément en place dans le monde physique, quel que soit le degré d’itinérance de l’utilisateur, puis [retrouvez ces hologrammes dans les sessions ultérieures](../../../../design/coordinate-systems.md#spatial-anchor-persistence).
+pour les **expériences réelles à l’échelle mondiale** sur les HoloLens qui permettent aux utilisateurs d’aller au-delà de 5 mètres, vous aurez besoin de nouvelles techniques au-delà de celles utilisées pour les expériences à l’échelle de la place. Une technique clé que vous allez utiliser consiste à créer une [ancre spatiale](../../../../design/coordinate-systems.md#spatial-anchors) pour verrouiller un cluster d’hologrammes précisément en place dans le monde physique, quel que soit le degré d’itinérance de l’utilisateur, puis [retrouvez ces hologrammes dans les sessions ultérieures](../../../../design/coordinate-systems.md#spatial-anchor-persistence).
 
 Dans Unity, vous créez une ancre spatiale en ajoutant le composant **WorldAnchor** Unity à un GameObject.
 
@@ -51,7 +51,7 @@ Pour ajouter une ancre universelle, appelez `AddComponent<WorldAnchor>()` sur l�
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-Et c’est tout ! Cet objet de jeu sera désormais ancré à son emplacement actuel dans le monde physique : vous pouvez constater que ses coordonnées universelles s’ajustent légèrement au fil du temps pour garantir l’alignement physique. Reportez-vous à [chargement d’une ancre mondiale](#loading-a-worldanchor) pour rechercher cet emplacement d’ancrage dans une session d’application future.
+Et voilà ! Cet objet de jeu sera désormais ancré à son emplacement actuel dans le monde physique : vous pouvez constater que ses coordonnées universelles s’ajustent légèrement au fil du temps pour garantir l’alignement physique. Reportez-vous à [chargement d’une ancre mondiale](#loading-a-worldanchor) pour rechercher cet emplacement d’ancrage dans une session d’application future.
 
 ### <a name="removing-a-world-anchor"></a>Suppression d’une ancre mondiale
 

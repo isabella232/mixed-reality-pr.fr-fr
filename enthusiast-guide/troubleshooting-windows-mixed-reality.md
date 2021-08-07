@@ -1,15 +1,15 @@
 ---
-title: Résolution des problèmes de Windows Mixed Reality
-description: Restez à jour avec le dépannage de Windows Mixed realisation qui va au-delà de notre documentation de support technique standard.
+title: Résolution des problèmes Windows Mixed Reality
+description: restez à jour avec les Windows Mixed Reality résolution des problèmes qui vont au-delà de notre documentation de support technique standard.
 ms.topic: article
 ms.author: rajhawar
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, dépannage, erreurs, aide, support
-ms.openlocfilehash: 24120e9c1bb34b8b32c00e2b677f530c4ba563ab
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, dépannage, erreurs, aide, Support
+ms.openlocfilehash: 2610ab12e19bd7011cba171b5acdaeed6a7834c358e9c4bae3ded301aa452353
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212457"
 ---
 # <a name="troubleshooting-in-windows-mixed-reality"></a>Résolution des problèmes dans Windows Mixed Reality
 
@@ -25,7 +25,7 @@ Vous trouverez ici les options de support pour les options suivantes, qui vous p
 - [Obtenir les options d’aide de votre communauté](#community-help-options)
 - [Obtenir les options de votre propre aide](#troubleshooting-topics)
 
-## <a name="community-help-options"></a>Options de l’aide de la communauté
+## <a name="community-help-options"></a>options d’aide Community
 
 Pour obtenir des réponses à vos questions de développeur à partir de l’écosystème de développement de la Communauté, posez votre question sur Stack Overflow ou Reddit.
 
@@ -49,7 +49,7 @@ Lorsque vous rencontrez des problèmes avec votre matériel immersif, il est imp
 
 ### <a name="installation-and-setup-issues"></a>Problèmes d’installation et de configuration
 
-Pour les problèmes liés à l’installation, à l’exécution de Windows Mixed Reality, aux erreurs d’installation, aux exigences minimales du PC ou aux autorisations d’administrateur, consultez ces deux FAQ :
+pour les problèmes liés à l’installation, à l’exécution de Windows Mixed Reality, aux erreurs d’installation, aux exigences minimales du PC ou aux autorisations d’administrateur, consultez ces deux faq :
 
 - [Erreurs d'installation](installation_errors.md)
 - [Problèmes liés à l’installation](wmr-setup-faq.yml)
@@ -64,7 +64,7 @@ Pour les problèmes liés à votre périphérique de casque physique, aux connex
 
 ### <a name="core-experience-issues"></a>Problèmes d’expérience de base
 
-Si vous rencontrez des problèmes lors de la création de limites, de l’audition ou de la non-audition du son, de l’audio Bluetooth ou du suivi des casques, consultez les FAQ suivantes :
+si vous rencontrez des problèmes lors de la création de limites, de l’audition ou de la non-audition du son, de la Bluetooth audio ou du suivi des casques, consultez les faq suivantes :
 
 - [Aide sur les limites](boundary-questions.md)
 - [Suppprt pour les problèmes vocaux et audio les plus courants](speech-and-audio.md)
@@ -72,7 +72,7 @@ Si vous rencontrez des problèmes lors de la création de limites, de l’auditi
 
 ### <a name="vr-experience-issues"></a>Problèmes d’expérience VR
 
-Si vous rencontrez des problèmes avec les jeux SteamVR, l’installation du mode développeur Windows ou l’affichage du contenu WebVR dans un navigateur, les articles ci-dessous sont les suivants :
+si vous rencontrez des problèmes avec les jeux SteamVR, si vous installez Windows Mode développeur ou si vous affichez du contenu WebVR dans un navigateur, les articles ci-dessous sont les suivants :
 
 - [Prise en charge avec SteamVR](steamvr-questions.md)
 - [Prise en charge avec WebVR](webvr-questions.md)

@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrée spatiale, rendu, chaîne de permutation, Frame holographique, boucle de mise à jour, boucle de jeu, cadre de référence, localisation, exemple de code, procédure pas à pas, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 215c3cbacd4c7975d05b3a1b3f3992c9198642f7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrée spatiale, rendu, chaîne de permutation, frame holographique, boucle de mise à jour, boucle de jeu, frame de référence, localisabilité, exemple de code, procédure pas à pas, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
+ms.openlocfilehash: 986ccdc6e81d1ac7c7b401a427da548218a68eb0352a0057bf7d7aba3c1d6d6a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212167"
 ---
 # <a name="getting-a-holographicspace"></a>Obtention d’un HolographicSpace
 
@@ -22,9 +22,9 @@ La classe <a href="/uwp/api/windows.graphics.holographic.holographicspace" targe
 
 ## <a name="set-up-the-holographic-space"></a>Configurer l’espace holographique
 
-La création de l’objet espace holographique est la première étape de la création de votre application Windows Mixed Reality. Les applications Windows traditionnelles sont rendues dans une chaîne de permutation Direct3D créée pour la fenêtre principale de leur vue d’application. Cette chaîne de permutation s’affiche dans une ardoise dans l’interface utilisateur holographique. Pour que votre application affiche holographique plutôt qu’une ardoise 2D, créez un espace holographique pour sa fenêtre principale au lieu d’une chaîne de permutation. La présentation des frames holographiques créés par cet espace holographique place votre application en mode de rendu plein écran.
+la création de l’objet espace holographique est la première étape de la création de votre application Windows Mixed Reality. les applications Windows traditionnelles sont rendues dans une chaîne de permutation Direct3D créée pour la fenêtre principale de leur vue d’application. Cette chaîne de permutation s’affiche dans une ardoise dans l’interface utilisateur holographique. Pour que votre application affiche holographique plutôt qu’une ardoise 2D, créez un espace holographique pour sa fenêtre principale au lieu d’une chaîne de permutation. La présentation des frames holographiques créés par cet espace holographique place votre application en mode de rendu plein écran.
 
-Pour une **application UWP** à [partir du *modèle d’application holographique DirectX 11 (Windows universel)*](creating-a-holographic-directx-project.md), recherchez ce code dans la méthode **SetWindow** dans AppView. cpp :
+pour une **application UWP** à [partir du *modèle d’application holographique DirectX 11 (Universal Windows)*](creating-a-holographic-directx-project.md), recherchez ce code dans la méthode **SetWindow** dans AppView. cpp :
 
 ```cpp
 m_holographicSpace = HolographicSpace::CreateForCoreWindow(window);
@@ -137,11 +137,11 @@ Pour le moment, nous nous concentrons sur AppMain et la configuration qu’il fa
 
 Le contenu de votre application doit être positionné dans un [système de coordonnées spatiales](coordinate-systems-in-directx.md) pour être rendu dans le HolographicSpace. Le système fournit deux principales trames de référence, que vous pouvez utiliser pour établir un système de coordonnées pour vos hologrammes.
 
-Il existe deux types de frames de référence dans Windows holographique : les frames de référence attachés à l’appareil et les trames de référence qui restent stationnaires lorsque l’appareil passe dans l’environnement de l’utilisateur. Le modèle d’application holographique utilise un frame de référence fixe par défaut ; Il s’agit de l’une des méthodes les plus simples pour restituer des hologrammes universels.
+il existe deux types de frames de référence dans Windows holographique : les frames de référence attachés à l’appareil et les trames de référence qui restent stationnaires lorsque l’appareil passe dans l’environnement de l’utilisateur. Le modèle d’application holographique utilise un frame de référence fixe par défaut ; Il s’agit de l’une des méthodes les plus simples pour restituer des hologrammes universels.
 
-Les images de référence fixes sont conçues pour stabiliser les positions près de l’emplacement actuel de l’appareil. Cela signifie que les coordonnées du périphérique peuvent dépasser légèrement par rapport à l’environnement de l’utilisateur lorsque ce dernier en apprend davantage sur l’espace qui l’entoure. Il existe deux façons de créer une image de référence stationnaire : acquérir le système de coordonnées à partir de la [Phase spatiale](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)ou utilisez le <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>par défaut. Si vous créez une application Windows Mixed Reality pour des casques immersifs, le point de départ recommandé est la [Phase spatiale](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage). La phase spatiale fournit également des informations sur les fonctionnalités du casque immersif porté par le joueur. Ici, nous montrons comment utiliser le <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>par défaut.
+Les images de référence fixes sont conçues pour stabiliser les positions près de l’emplacement actuel de l’appareil. Cela signifie que les coordonnées du périphérique peuvent dépasser légèrement par rapport à l’environnement de l’utilisateur lorsque ce dernier en apprend davantage sur l’espace qui l’entoure. Il existe deux façons de créer une image de référence stationnaire : acquérir le système de coordonnées à partir de la [Phase spatiale](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)ou utilisez le <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>par défaut. si vous créez une application Windows Mixed Reality pour des casques immersifs, le point de départ recommandé est la [phase spatiale](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage). La phase spatiale fournit également des informations sur les fonctionnalités du casque immersif porté par le joueur. Ici, nous montrons comment utiliser le <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>par défaut.
 
-Le localisateur spatial représente le périphérique Windows Mixed Reality et suit le mouvement de l’appareil et fournit des systèmes de coordonnées qui peuvent être compris par rapport à son emplacement.
+le localisateur spatial représente le périphérique Windows Mixed Reality et suit le mouvement de l’appareil et fournit des systèmes de coordonnées qui peuvent être compris par rapport à son emplacement.
 
 À partir de **AppMain :: OnHolographicDisplayIsAvailableChanged**:
 
@@ -158,7 +158,7 @@ m_stationaryReferenceFrame =
     m_spatialLocator.CreateStationaryFrameOfReferenceAtCurrentLocation();
 ```
 
-Tous les frames de référence sont alignés par gravité, ce qui signifie que l’axe des y pointe vers le haut par rapport à l’environnement de l’utilisateur. Étant donné que Windows utilise des systèmes de coordonnées « droitiers », la direction de l’axe-z coïncide avec la direction « avant » à laquelle l’appareil est dirigé lorsque le frame de référence est créé.
+Tous les frames de référence sont alignés par gravité, ce qui signifie que l’axe des y pointe vers le haut par rapport à l’environnement de l’utilisateur. étant donné que Windows utilise des systèmes de coordonnées « droitiers », la direction de l’axe – z coïncide avec la direction « avant » à laquelle l’appareil est dirigé lorsque le frame de référence est créé.
 
 >[!NOTE]
 >Lorsque votre application nécessite un positionnement précis des hologrammes individuels, utilisez un <a href="/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a> pour ancrer l’hologramme individuel à une position dans le monde réel. Par exemple, utilisez une ancre spatiale lorsque l’utilisateur indique un point qui présente un intérêt particulier. Les positions d’ancrage ne dérivent pas, mais elles peuvent être ajustées. Par défaut, lorsqu’un point d’ancrage est ajusté, il facilite sa position sur les différentes images après la correction. Selon votre application, lorsque cela se produit, vous souhaiterez peut-être gérer la modification d’une manière différente (par exemple, en la différant jusqu’à ce que l’hologramme soit hors de l’affichage). La propriété <a href="/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystem" target="_blank">RawCoordinateSystem</a> et les événements <a href="/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted" target="_blank">RawCoordinateSystemAdjusted</a> activent ces personnalisations.

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: safarooq
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Non réel, moteur 4, UE4, HoloLens, HoloLens 2, développement, matériaux, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: bfe70e730c5fbd6e5d103737b03e76bfd0ab65f6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: moteur, UE4, HoloLens, HoloLens 2, développement, matériaux, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque de réalité windows mixte, casque de réalité virtuelle
+ms.openlocfilehash: d5ce702495c95e8ca6d07a0209a4bc7d02f5d4d682415b028d63995e8910a7e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580793"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187697"
 ---
 # <a name="material-recommendations-in-unreal"></a>Recommandations matérielles dans Unreal
 
@@ -63,7 +63,7 @@ Les paramètres suivants peuvent améliorer les performances, mais notez qu’il
 
 Si votre matériel ne nécessite pas de réflexions ou d’éclats, la définition de cette option peut améliorer considérablement les performances. Dans les tests internes, il est aussi rapide que « non éclairé » tout en fournissant des informations d’éclairage.
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Bonnes pratiques
 
 Les éléments suivants ne sont pas des « paramètres » dans la mesure où ils sont les meilleures pratiques liées aux documents.
 

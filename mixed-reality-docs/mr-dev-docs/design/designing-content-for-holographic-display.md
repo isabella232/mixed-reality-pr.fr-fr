@@ -1,17 +1,17 @@
 ---
 title: Conception de contenu pour un affichage holographique
-description: En savoir plus sur les instructions de conception et les meilleures pratiques pour l’affichage holographique sur les appareils HoloLens.
+description: en savoir plus sur les instructions de conception et les meilleures pratiques pour l’affichage holographique sur des appareils HoloLens.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Conception d’interface utilisateur, affichage holographique, conception de contenu, thème sombre, thème clair, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de la réalité mixte, conception, pixels
-ms.openlocfilehash: 2c68acb5478bfbd438c8bbb9dd2f8d9686bcefc5
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: conception d’interface utilisateur, affichage holographique, conception de contenu, thème sombre, thème clair, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de la réalité mixte, conception, pixels
+ms.openlocfilehash: 1fab172f6d737b25e95b10a6dded2a5ab805e0086de8d0fae40c5a6a4ef7d805
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600318"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212946"
 ---
 # <a name="designing-content-for-holographic-display"></a>Conception de contenu pour un affichage holographique
 
@@ -23,7 +23,7 @@ Lorsque vous concevez du contenu pour des affichages holographiques, vous devez 
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>Défis avec une couleur brillante sur une grande surface 
 
-Sur la base de nos recherches et tests, nous avons constaté que l’utilisation de couleurs brillantes dans une grande zone de l’affichage peut entraîner plusieurs problèmes : 
+en nous basant sur HoloLens notre expérience de recherche et de test, nous avons constaté que l’utilisation de couleurs brillantes dans une grande zone de l’affichage peut entraîner plusieurs problèmes : 
 
 **Fatigue oculaire** 
 
@@ -51,14 +51,14 @@ En utilisant le jeu de couleurs sombres, vous pouvez réduire la fatigue oculair
 
 **Utiliser l’épaisseur de police SemiBold ou gras**
 
-HoloLens vous permet d’afficher un texte très haute résolution. Toutefois, il est recommandé d’éviter des poids de police minces, tels que la lumière ou le semi-éclairage, car les traits verticaux peuvent être instables dans une petite taille de police. 
+HoloLens permet à votre expérience d’afficher du texte très haute résolution. Toutefois, il est recommandé d’éviter des poids de police minces, tels que la lumière ou le semi-éclairage, car les traits verticaux peuvent être instables dans une petite taille de police. 
 
 ![L’épaisseur de police en gras ou semi-gras (panneau supérieur) améliore la lisibilité de la police de caractères ](images/color_font_examples.jpg)
  *gras ou semi-gras (panneau supérieur) améliore la lisibilité*
 
 **Utiliser le matériel HolographicBackplate de MRTK**
 
-Le matériel HolographicBackplate est appliqué à plusieurs panneaux d’interface utilisateur dans l’interpréteur de commandes HoloLens. L’une de ses fonctionnalités est un effet iridescence qui est visible pour les utilisateurs lorsqu’ils décalent leur position en fonction du panneau. Les couleurs de la plaque arrière décalent légèrement sur un spectre prédéfini, créant ainsi un effet visuel attrayant et dynamique sans interférer avec la lisibilité du contenu. Ce petit décalage de couleur sert également à compenser les irrégularités de couleur mineure. 
+le matériel HolographicBackplate est appliqué à plusieurs panneaux d’interface utilisateur dans le shell HoloLens. L’une de ses fonctionnalités est un effet iridescence qui est visible pour les utilisateurs lorsqu’ils décalent leur position en fonction du panneau. Les couleurs de la plaque arrière décalent légèrement sur un spectre prédéfini, créant ainsi un effet visuel attrayant et dynamique sans interférer avec la lisibilité du contenu. Ce petit décalage de couleur sert également à compenser les irrégularités de couleur mineure. 
 
 
 ## <a name="challenges-with-transparent-or-translucent-ui-backplate"></a>Défis avec la plaque d’interface utilisateur transparente ou translucide 
@@ -99,7 +99,7 @@ Si votre projet doit utiliser des objets transparents, essayez de réduire le no
 
 <br/>
 
-## <a name="dark-ui-examples-in-mrtk-mixed-reality-toolkit-for-unity"></a>Exemples d’interfaces utilisateur sombres dans MRTK (kit de préversion de réalité mixte) pour Unity
+## <a name="dark-ui-examples-in-mrtk-mixed-reality-toolkit-for-unity"></a>exemples d’interfaces utilisateur sombres dans MRTK (Shared Computer Toolkit de réalité mixte) pour unity
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit de nombreux exemples de blocs de construction d’interface utilisateur basés sur les modèles de couleurs sombres.
 

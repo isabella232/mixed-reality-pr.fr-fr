@@ -1,26 +1,26 @@
 ---
-title: Notions de base sur la qualité
+title: Bases de la qualité
 description: Découvrez les principes de base de la conception d’applications de réalité mixte.
 author: qianw211
 ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
 keywords: notions de base sur la qualité, étude de cas, projet, exemple, MRTK, réalité mixte Shared Computer Toolkit, unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: e91ea1c69aeafaafa9c9bae30af6e5a288754764
-ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
+ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114702918"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211954"
 ---
-# <a name="quality-fundamentals"></a>Notions de base sur la qualité
+# <a name="quality-fundamentals"></a>Bases de la qualité
 
 les notions de base de la qualité sont une application HoloLens 2 qui illustre les principes fondamentaux de la création d’une expérience de réalité mixte.  Au lieu d’apprendre à se familiariser avec les problèmes de qualité dans la réalité mixte, nous pouvons maintenant rencontrer des problèmes et des solutions d’environnement, de conception et de performances communs, en sélectionnant les options fournies dans l’application.
 
 Pour télécharger et installer l’application, accédez à la page de téléchargement de l’application :
 
 > [!div class="nextstepaction"]
-> [Notions de base sur la qualité](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw?activetab=pivot:overviewtab)
+> [Bases de la qualité](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw?activetab=pivot:overviewtab)
 
 ![Page d’accueil des notions de base de la qualité](images\qf-homepage.jpg)
 

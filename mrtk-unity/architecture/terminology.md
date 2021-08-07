@@ -4,13 +4,13 @@ description: Termes du système d’entrée différents dans MRTK.
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, entrée,
-ms.openlocfilehash: 33f423fba286e9e85e6d0bedac82bff0b7aae81f
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, entrée,
+ms.openlocfilehash: 8046501fdab0a7594800a75ad0306a131adaaa6924ffa870c299571cbd4d8e13
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211154"
 ---
 # <a name="input-system"></a>Système d’entrée
 
@@ -21,11 +21,11 @@ Le système d’entrée présente une partie de sa terminologie qui mérite de d
 
 - **Fournisseurs de données**
 
-    Les paramètres d’entrée du profil d’entrée comportent des références à des entités appelées fournisseurs de données. un autre mot qui décrit ce sont les gestionnaires d’appareils. Il s’agit de composants dont la tâche consiste à étendre le système d’entrée MRTK en utilisant un système sous-jacent spécifique. Un exemple de fournisseur est le fournisseur Windows Mixed Reality, dont le travail est de communiquer avec les API Windows Mixed Reality sous-jacentes, puis de traduire les données de ces API en concepts d’entrée spécifiques à MRTK ci-dessous. Un autre exemple est le fournisseur OpenVR (dont le travail est de communiquer avec Unity, version abstraite des API OpenVR, puis de traduire ces données en concepts d’entrée MRTK).
+    Les paramètres d’entrée du profil d’entrée comportent des références à des entités appelées fournisseurs de données. un autre mot qui décrit ce sont les gestionnaires d’appareils. Il s’agit de composants dont la tâche consiste à étendre le système d’entrée MRTK en utilisant un système sous-jacent spécifique. un exemple de fournisseur est le fournisseur Windows Mixed Reality, dont le travail est de communiquer avec les api Windows Mixed Reality sous-jacentes, puis de traduire les données de ces api en concepts d’entrée spécifiques à MRTK ci-dessous. Un autre exemple est le fournisseur OpenVR (dont le travail est de communiquer avec Unity, version abstraite des API OpenVR, puis de traduire ces données en concepts d’entrée MRTK).
 
 - **Contrôleur**
 
-    Représentation d’un contrôleur physique (qu’il s’agisse d’un contrôleur à 6 degrés de liberté, d’une main de style HoloLens 1 avec prise en charge des mouvements, d’une main entièrement articulée, d’un contrôleur de mouvement LEAP, etc.). Les contrôleurs sont générés par les gestionnaires d’appareils (par exemple, le gestionnaire d’appareils WMR génère un contrôleur et gère sa durée de vie lorsqu’il voit une main articulée en cours d’existence).
+    représentation d’un contrôleur physique (qu’il s’agisse d’un contrôleur à 6 degrés de liberté, d’une main HoloLens de style 1 avec prise en charge des mouvements, d’une main entièrement articulée, d’un contrôleur de mouvement leap, etc.). Les contrôleurs sont générés par les gestionnaires d’appareils (par exemple, le gestionnaire d’appareils WMR génère un contrôleur et gère sa durée de vie lorsqu’il voit une main articulée en cours d’existence).
 
 - **Pointeur**
 

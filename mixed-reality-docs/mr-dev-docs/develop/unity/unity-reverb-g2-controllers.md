@@ -1,29 +1,29 @@
 ---
-title: Contrôleurs de réverbération HP G2 dans Unity
-description: Découvrez comment configurer et utiliser les nouveaux contrôleurs G2 de réverbération HP dans SteamVR et les applications Windows Mixed Reality Unity.
+title: Contrôleurs HP Reverb G2 dans Unity
+description: découvrez comment configurer et utiliser les nouveaux contrôleurs G2 de réverbération HP dans les applications SteamVR et Windows Mixed Reality unity.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, réverbération, réverbération G2, réverbération HP G2, réalité mixte, développement, contrôleurs de mouvement, entrée d’utilisateur, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux
-ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
-ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
+ms.openlocfilehash: 4e561cb1e46fe487f1b25ed526f0adeafc2de6c525835ffe3b1871d7516b233e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99421391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215618"
 ---
-# <a name="hp-reverb-g2-controllers-in-unity"></a>Contrôleurs de réverbération HP G2 dans Unity
+# <a name="hp-reverb-g2-controllers-in-unity"></a>Contrôleurs HP Reverb G2 dans Unity
 
-Les contrôleurs de mouvement HP sont un tout nouveau type de contrôleurs de réalité mixte Windows : la même technologie de suivi avec un ensemble légèrement différent d’entrées disponibles : 
+les contrôleurs de mouvement HP sont un tout nouveau type de contrôleurs de Windows Mixed Reality : les mêmes technologies de suivi avec un ensemble légèrement différent d’entrées disponibles : 
 
 * Le pavé tactile a été remplacé par deux boutons : A et B pour le contrôleur de droite, et X et Y pour le contrôleur de gauche. 
 * Comprendre est maintenant un déclencheur qui publie un flux de valeurs entre 0,0 et 1,0 au lieu d’un bouton avec des États enfoncé et non enfoncé. 
 
-Étant donné que les nouvelles entrées ne sont pas accessibles via les API Windows et Unity existantes, vous devez disposer du package UPM **Microsoft. MixedReality. Input** dédié. 
+étant donné que les nouvelles entrées ne sont pas accessibles par le biais des api Windows et unity existantes, vous devez disposer du Package UPM **Microsoft. MixedReality. Input** dédié. 
 
 > [!IMPORTANT]
-> **Les classes de ce package ne remplacent pas les API Windows et Unity existantes, mais les complètent.** Les fonctionnalités couramment disponibles pour les contrôleurs de réalité mixte Windows classiques et les contrôleurs de mouvement HP sont accessibles via le même chemin de code à l’aide des API existantes. Seules les nouvelles entrées nécessitent l’utilisation du package Microsoft. MixedReality. Input supplémentaire. 
+> **les Classes de ce package ne remplacent pas les api Windows et unity existantes, mais les complètent.** les fonctionnalités couramment disponibles pour les contrôleurs de Windows Mixed Reality classiques et les contrôleurs de mouvement HP sont accessibles via le même chemin de code à l’aide des api existantes. Seules les nouvelles entrées nécessitent l’utilisation du package Microsoft. MixedReality. Input supplémentaire. 
 
 ## <a name="hp-motion-controller-overview"></a>Présentation du contrôleur HP motion
 
@@ -33,7 +33,7 @@ Vous pouvez récupérer des instances MotionController en créant un *MotionCont
 
 ## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a>Installation de Microsoft. MixedReality. Input avec l’outil de la fonctionnalité de réalité mixte
 
-Installez le plug-in Microsoft. MixedReality. Input avec la nouvelle application outil de la fonctionnalité de réalité mixte. Suivez les [instructions d’installation et d’utilisation](welcome-to-mr-feature-tool.md) , puis sélectionnez le package **d’entrée de la réalité mixte** dans la catégorie de la réalité mixte Toolkit :
+Installez le plug-in Microsoft. MixedReality. Input avec la nouvelle application outil de la fonctionnalité de réalité mixte. suivez les [instructions d’installation et d’utilisation](welcome-to-mr-feature-tool.md) , puis sélectionnez le package **d’entrée de réalité mixte** dans la catégorie réalité mixte Shared Computer Toolkit :
 
 ![Outil de fonctionnalité de réalité mixte, fenêtre packages avec entrée de réalité mixte mise en surbrillance](images/feature-tool-mrinput.png)
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: fb8b5b509ef83e2a4f9d978dbf0faebbf3e0be1d10d6697f16cfb9366d7a2edb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97718104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187423"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -16,13 +16,13 @@ Voici un exemple qui montre comment déterminer si un rayon de main atteint un w
 
 # <a name="425"></a>[4.25](#tab/425)
 
-Pour utiliser des rayons de main dans des plans, recherchez l’une des actions sous **Windows Mixed Reality HMD**:
+pour utiliser des rayons de main dans des plans, recherchez l’une des actions sous **Windows Mixed Reality HMD**:
 
 ![Rayons main BP](../images/unreal/hand-rays-bp.png)
 
 Pour y accéder en C++, incluez- `WindowsMixedRealityFunctionLibrary.h` le au début de votre fichier de code appelant.
 
-### <a name="enum"></a>Énumération
+### <a name="enum"></a>Enum
 
 Vous avez également accès aux cas d’entrée sous **EHMDInputControllerButtons**, qui peuvent être utilisés dans les projets :
 
@@ -41,9 +41,9 @@ enum class EHMDInputControllerButtons : uint8
 Voici une répartition des deux cas d’énumération applicables :
 
 * **Select** -User a déclenché l’événement Select.
-    * Déclenché dans HoloLens 2 par l’air-TAP, le point de regard et la validation, ou en disant « SELECT » avec l' [entrée vocale](../unreal-voice-input.md) activée.
+    * déclenché dans HoloLens 2 par pression aérienne, pointage en regard et validation, ou en disant « sélectionner » avec [entrée vocale](../unreal-voice-input.md) activée.
 * Événement **de préhension déclenché** par l’utilisateur.
-    * Déclenché dans HoloLens 2 en fermant les doigts de l’utilisateur sur un hologramme.
+    * déclenché dans HoloLens 2 en fermant les doigts de l’utilisateur sur un hologramme.
 
 Vous pouvez accéder à l’état de suivi de votre maille de main en C++ via l' `EHMDTrackingStatus` énumération illustrée ci-dessous :
 

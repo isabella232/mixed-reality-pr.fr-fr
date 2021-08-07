@@ -1,24 +1,24 @@
 ---
 title: Écriture d’une application distante holographique de communication à distance (OpenXR)
-description: Découvrez comment diffuser du contenu distant rendu sur une machine distante à HoloLens 2 avec des applications de communication à distance holographique avec OpenXR.
+description: découvrez comment diffuser du contenu distant rendu sur une machine distante pour HoloLens 2 avec des applications de communication à distance holographique avec OpenXR.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, NuGet
-ms.openlocfilehash: c5ba1b5c309b5d0ddd3bd46f0730f28c946d3c3f
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: HoloLens, remoting, accès distant holographique, casque de réalité mixte, casque windows mixed realisation, casque de réalité virtuelle, NuGet
+ms.openlocfilehash: 6cf44bd031aec4b475d7496a999a3c7d4d40cae7cc921ff39cfe61698f3dd532
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212067"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>Écriture d’une application distante holographique à distance à l’aide de l’API OpenXR
 
 >[!IMPORTANT]
->Ce document décrit la création d’une application distante pour les casques HoloLens 2 et Windows Mixed Reality à l’aide de l' [API OpenXR](../native/openxr.md). Les applications distantes pour **HoloLens (1re génération)** doivent utiliser le package NuGet version **1. x. x**. Cela implique que les applications distantes écrites pour HoloLens 2 ne sont pas compatibles avec HoloLens 1 et vice versa. La documentation de HoloLens 1 est disponible [ici](add-holographic-remoting.md).
+>ce document décrit la création d’une application distante pour HoloLens 2 et Windows Mixed Reality des casques à l’aide de l' [API OpenXR](../native/openxr.md). les applications distantes pour **HoloLens (1re génération)** doivent utiliser NuGet package version **1. x. x**. cela implique que les applications distantes écrites pour HoloLens 2 ne sont pas compatibles avec HoloLens 1 et vice versa. vous trouverez la documentation relative à HoloLens 1 [ici](add-holographic-remoting.md).
 
-Les applications de communication à distance holographique peuvent diffuser du contenu diffusé à distance sur des casques immersifs HoloLens 2 et Windows Mixed Reality. Vous pouvez également accéder à davantage de ressources système et intégrer des [vues immersives](../../design/app-views.md) distantes dans des logiciels de poste de travail existants. Une application distante reçoit un flux de données d’entrée de HoloLens 2, restitue le contenu dans une vue immersive virtuelle et diffuse en continu des frames de contenu vers HoloLens 2. La connexion est établie à l’aide du Wi-Fi standard. La communication à distance holographique est ajoutée à une application de bureau ou UWP via un paquet NuGet. Du code supplémentaire est nécessaire pour gérer la connexion et le rendu dans une vue immersive. Une connexion à distance classique aura une latence aussi faible que 50 ms de latence. L’application de lecteur peut signaler la latence en temps réel.
+les applications de communication à distance holographique peuvent diffuser du contenu à distance à HoloLens 2 et Windows Mixed Reality des casques immersifs. Vous pouvez également accéder à davantage de ressources système et intégrer des [vues immersives](../../design/app-views.md) distantes dans des logiciels de poste de travail existants. une application distante reçoit un flux de données d’entrée de HoloLens 2, restitue le contenu dans une vue immersive virtuelle et diffuse les trames de contenu à HoloLens 2. La connexion est établie à l’aide du Wi-Fi standard. la communication à distance holographique est ajoutée à une application de bureau ou UWP via un paquet NuGet. Du code supplémentaire est nécessaire pour gérer la connexion et le rendu dans une vue immersive. Une connexion à distance classique aura une latence aussi faible que 50 ms de latence. L’application de lecteur peut signaler la latence en temps réel.
 
 Tout le code de cette page et des projets de travail se trouve dans le [référentiel GitHub d’exemples de communication à distance holographique](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
@@ -29,23 +29,23 @@ Un bon point de départ est une application de bureau ou UWP basée sur un OpenX
 >[!IMPORTANT]
 >Toute application utilisant la communication à distance holographique doit être créée pour utiliser un [cloisonnement](/windows/win32/com/multithreaded-apartments)multithread. L’utilisation d’un [cloisonnement à thread unique](/windows/win32/com/single-threaded-apartments) est prise en charge, mais entraîne des performances non optimales et éventuellement des interruptions pendant la lecture. Lors de l’utilisation de C++/WinRT [WinRT :: init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) un cloisonnement multithread est la valeur par défaut.
 
-## <a name="get-the-holographic-remoting-nuget-package"></a>Procurez-vous le package NuGet de communication à distance holographique
+## <a name="get-the-holographic-remoting-nuget-package"></a>procurez-vous le package NuGet de communication à distance holographique
 
-Les étapes suivantes sont requises pour ajouter le package NuGet à un projet dans Visual Studio.
+les étapes suivantes sont requises pour ajouter le package NuGet à un projet dans Visual Studio.
 1. Ouvrez le projet dans Visual Studio.
-2. Cliquez avec le bouton droit sur le nœud du projet et sélectionnez **gérer les packages NuGet...**
+2. cliquez avec le bouton droit sur le nœud du projet et sélectionnez **gérer les Packages NuGet...**
 3. Dans le volet qui s’affiche, sélectionnez **Parcourir** , puis recherchez « accès à distance holographique ».
 4. Sélectionnez **Microsoft. holographique. Remoting. OpenXr**, assurez-vous de choisir la version la plus récente de **2. x. x** , puis sélectionnez **installer**.
 5. Si la boîte de dialogue **Aperçu** s’affiche, sélectionnez **OK**.
 6. Sélectionnez **J’accepte** quand la boîte de dialogue du contrat de licence s’affiche.
-7. Répétez les étapes 3 à 6 pour les packages NuGet suivants : OpenXR. Headers, OpenXR. Loader
+7. répétez les étapes 3 à 6 pour les Packages NuGet suivants : OpenXR. headers, OpenXR. loader
 
 >[!NOTE]
->La version **1. x. x** du package NuGet est toujours disponible pour les développeurs qui souhaitent cibler HoloLens 1. Pour plus d’informations [, consultez Ajouter une communication à distance holographique (HoloLens (1re génération))](add-holographic-remoting.md).
+>la Version **1. x. x** du package NuGet est toujours disponible pour les développeurs qui souhaitent cibler HoloLens 1. pour plus d’informations [, consultez ajouter une communication à distance holographique (HoloLens (1er génération))](add-holographic-remoting.md).
 
 ## <a name="select-the-holographic-remoting-openxr-runtime"></a>Sélectionner le runtime OpenXR Remoting holographique
 
-La première étape que vous devez effectuer dans votre application distante consiste à sélectionner le runtime OpenXR de communication à distance holographique, qui fait partie du package NuGet Microsoft. holographique. Remoting. OpenXr. Pour ce faire, vous pouvez définir la ```XR_RUNTIME_JSON``` variable d’environnement sur le chemin d’accès de l' RemotingXR.jssur le fichier dans votre application. Cette variable d’environnement est utilisée par le chargeur OpenXR pour ne pas utiliser le runtime OpenXR par défaut du système, mais plutôt rediriger vers le runtime OpenXR de communication à distance holographique. Lorsque vous utilisez le package NuGet Microsoft. holographique. Remoting. OpenXr, le fichier RemotingXR.jsest automatiquement copié pendant la compilation dans le dossier de sortie. la sélection du runtime OpenXR se présente généralement comme suit.
+la première étape que vous devez effectuer dans votre application distante consiste à sélectionner le runtime OpenXR de communication à distance holographique, qui fait partie du package Microsoft. holographique. remoting. OpenXR NuGet. Pour ce faire, vous pouvez définir la ```XR_RUNTIME_JSON``` variable d’environnement sur le chemin d’accès de l' RemotingXR.jssur le fichier dans votre application. Cette variable d’environnement est utilisée par le chargeur OpenXR pour ne pas utiliser le runtime OpenXR par défaut du système, mais plutôt rediriger vers le runtime OpenXR de communication à distance holographique. lors de l’utilisation du package de NuGet Microsoft. holographique. remoting. OpenXr, le RemotingXR.jsfichier est automatiquement copié pendant la compilation dans le dossier de sortie. la sélection du runtime OpenXr se présente généralement comme suit.
 
 ```cpp
 bool EnableRemotingXR() {
@@ -71,12 +71,12 @@ bool EnableRemotingXR() {
 La première étape d’une application OpenXR classique est de sélectionner les extensions OpenXR et de créer un XrInstance. La spécification OpenXR Core ne fournit pas d’API spécifique à distance. Pour cette raison, la communication à distance holographique introduit sa propre extension OpenXR nommée ```XR_MSFT_holographic_remoting``` . Assurez-vous que lorsque vous appelez xrCreateInstance ```XR_MSFT_HOLOGRAPHIC_REMOTING_EXTENSION_NAME``` , est inclus dans le XrInstanceCreateInfo.
 
 >[!TIP]
->Par défaut, le contenu rendu de votre application est diffusé uniquement sur le lecteur de communication à distance holographique s’exécutant sur un HoloLens 2 ou sur un casque Windows Mixed Reality. Pour afficher également le contenu rendu sur l’ordinateur distant, par le biais d’une chaîne d’échange d’une fenêtre, par exemple, la communication à distance holographique fournit une deuxième extension OpenXR nommée ```XR_MSFT_holographic_remoting_frame_mirroring``` . Veillez également à activer cette extension ```XR_MSFT_HOLOGRAPHIC_REMOTING_FRAME_MIRRORING_EXTENSION_NAME``` au cas où vous souhaiteriez utiliser cette fonctionnalité.
+>par défaut, le contenu rendu de votre application est diffusé uniquement sur le lecteur de communication à distance holographique s’exécutant sur un HoloLens 2 ou sur un Windows Mixed Reality casques. Pour afficher également le contenu rendu sur l’ordinateur distant, par le biais d’une chaîne d’échange d’une fenêtre, par exemple, la communication à distance holographique fournit une deuxième extension OpenXR nommée ```XR_MSFT_holographic_remoting_frame_mirroring``` . Veillez également à activer cette extension ```XR_MSFT_HOLOGRAPHIC_REMOTING_FRAME_MIRRORING_EXTENSION_NAME``` au cas où vous souhaiteriez utiliser cette fonctionnalité.
 
 >[!IMPORTANT]
 >Pour en savoir plus sur l’API d’extension OpenXR de communication à distance holographique, consultez la [spécification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) qui se trouve dans le [référentiel GitHub des exemples de communication à distance holographique](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-## <a name="connect-to-the-device"></a>Se connecter à l’appareil
+## <a name="connect-to-the-device"></a>Connecter à l’appareil
 
 Une fois que votre application distante a créé les XrInstance et interrogé les XrSystemId via xrGetSystem, une connexion à l’appareil Player peut être établie.
 

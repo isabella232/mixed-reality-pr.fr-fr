@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, MaterialInstance,
-ms.openlocfilehash: ecd8f9e14564cbd03cb6faa848b06ca55a024207
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 6d9a2a35a009bfce1fcfae15000ea02c47be637a8c5a483254ea30d9948922e5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176724"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210049"
 ---
 # <a name="material-instance"></a>Instance de matériau
 
@@ -54,7 +54,7 @@ public class NoLeak : MonoBehaviour
 }
 ```
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Lorsque vous appelez le [convertisseur](https://docs.unity3d.com/ScriptReference/Renderer-material.html)de l’unité, Unit (s), Unity instancie automatiquement les nouveaux matériaux. Il incombe à l’appelant de détruire les documents lorsqu’un matériau n’est plus nécessaire ou que l’objet de jeu est détruit. Le [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) comportement permet d’éviter les fuites matérielles et de préserver la cohérence des chemins d’accès au cours de la modification et de l’exécution.
 

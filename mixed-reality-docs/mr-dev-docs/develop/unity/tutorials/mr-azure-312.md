@@ -1,30 +1,30 @@
 ---
-title: HoloLens (1ère génération) et Azure 312-intégration de bot
-description: Suivez ce cours pour apprendre à créer et à déployer un robot à l’aide de Microsoft bot Framework v4 et à communiquer avec lui dans une application de réalité mixte.
+title: HoloLens (1ère génération) et Azure 312 - Intégration de bot
+description: suivez ce cours pour apprendre à créer et à déployer un bot, à l’aide de Microsoft Bot Framework v4 et à communiquer avec lui dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, vision par ordinateur, hololens, immersif, VR, Microsoft bot Framework v4, application Web bot, robot Framework, Microsoft bot, Windows 10, Visual Studio
-ms.openlocfilehash: 5bef129b9ccbbba6bf2bce835bd1567d4f596932
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: azure, réalité mixte, académie, unity, didacticiel, api, vision par ordinateur, hololens, immersif, vr, microsoft bot framework v4, application web bot, robot framework, microsoft bot, Windows 10, Visual Studio
+ms.openlocfilehash: 61a39806c2b434cb85d39a9b208ea8659ec8cbc301d8955ee1330bda4149f0db
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189731"
 ---
-# <a name="hololens-1st-gen-and-azure-312-bot-integration"></a>HoloLens (1ère génération) et Azure 312 : intégration de bot
+# <a name="hololens-1st-gen-and-azure-312-bot-integration"></a>HoloLens (1er génération) et Azure 312 : intégration de Bot
 
 >[!NOTE]
 >Les tutoriels Mixed Reality Academy ont été conçus pour les appareils HoloLens (1re génération) et les casques immersifs de réalité mixte.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils.  Notez que ces tutoriels **_ne sont pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une nouvelle série de didacticiels sera publiée à l’avenir qui vous montrera comment développer pour HoloLens 2.  Cet avis sera mis à jour avec un lien vers ces didacticiels lors de leur publication.
 
-Dans ce cours, vous allez apprendre à créer et à déployer un robot à l’aide de Microsoft bot Framework v4 et à communiquer avec lui via une application Windows Mixed Reality. 
+dans ce cours, vous allez apprendre à créer et à déployer un bot à l’aide de l’Microsoft Bot Framework V4 et à communiquer avec lui via une application Windows Mixed Reality. 
 
 ![](images/AzureLabs-Lab312-00.png)
 
-**Microsoft bot Framework v4** est un ensemble d’API conçu pour fournir aux développeurs les outils nécessaires à la création d’une application bot extensible et évolutive. Pour plus d’informations, consultez la [page Microsoft bot Framework](https://dev.botframework.com/) ou le [référentiel git de v4](https://github.com/Microsoft/botbuilder-dotnet/wiki).
+le **Microsoft Bot Framework V4** est un ensemble d’api conçues pour fournir aux développeurs les outils nécessaires à la création d’une application Bot extensible et évolutive. pour plus d’informations, consultez la [page Microsoft Bot Framework](https://dev.botframework.com/) ou le [référentiel Git de V4](https://github.com/Microsoft/botbuilder-dotnet/wiki).
 
-À l’issue de ce cours, vous aurez créé une application Windows Mixed Reality, qui sera en mesure d’effectuer les opérations suivantes :
+à l’issue de ce cours, vous aurez créé une application Windows Mixed Reality, ce qui vous permettra d’effectuer les opérations suivantes :
 
 1. Utilisez un **geste TAP** pour démarrer le robot à l’écoute de la voix des utilisateurs.
 2. Lorsque l’utilisateur a déclaré un événement, le bot tente de fournir une réponse.
@@ -43,7 +43,7 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 </table>
 
 > [!NOTE]
-> Bien que ce cours se concentre principalement sur HoloLens, vous pouvez également appliquer ce que vous allez apprendre dans ce cours à des casques pour Windows Mixed Reality (VR). Étant donné que les casques immersifs ne disposent pas de caméras accessibles, vous aurez besoin d’une caméra externe connectée à votre PC. À mesure que vous suivez le cours, vous verrez des remarques sur les modifications que vous devrez peut-être utiliser pour prendre en charge les écouteurs immersifs (VR).
+> bien que ce cours se concentre principalement sur HoloLens, vous pouvez également appliquer ce que vous apprenez dans ce cours pour Windows Mixed Reality des casques immersifs (VR). Étant donné que les casques immersifs ne disposent pas de caméras accessibles, vous aurez besoin d’une caméra externe connectée à votre PC. À mesure que vous suivez le cours, vous verrez des remarques sur les modifications que vous devrez peut-être utiliser pour prendre en charge les écouteurs immersifs (VR).
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -52,23 +52,23 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 
 Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour ce cours :
 
-- Un PC de développement, [compatible avec Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) pour le développement d’écouteurs immersif (VR)
-- [Windows 10 automne Creators Update (ou version ultérieure) avec le mode développeur activé](../../install-the-tools.md#installation-checklist)
-- [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
+- un PC de développement, [compatible avec Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) pour le développement d’écouteurs immersifs (VR)
+- [Windows 10 Fall Creators Update (ou version ultérieure) avec le mode développeur activé](../../install-the-tools.md#installation-checklist)
+- [le dernier kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
+- un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Accès Internet pour Azure et récupération Azure bot. Pour plus d’informations, [veuillez suivre ce lien](https://dev.botframework.com/).
 
 ### <a name="before-you-start"></a>Avant de commencer
 
 1.  Pour éviter de rencontrer des problèmes lors de la création de ce projet, il est fortement recommandé de créer le projet mentionné dans ce didacticiel dans un dossier racine ou dans un dossier racine (les chemins de dossiers longs peuvent entraîner des problèmes au moment de la génération).
-2.  Configurez et testez votre HoloLens. Si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article Configuration de hololens](/hololens/hololens-setup). 
-3.  Il est judicieux d’effectuer un réglage de l’étalonnage et du capteur au début du développement d’une nouvelle application HoloLens (parfois, il peut être utile d’effectuer ces tâches pour chaque utilisateur). 
+2.  Configurez et testez votre HoloLens. si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article installation de HoloLens](/hololens/hololens-setup). 
+3.  il est judicieux d’effectuer un réglage de l’étalonnage et du capteur lorsque vous commencez à développer une nouvelle HoloLens application (parfois, elle peut aider à effectuer ces tâches pour chaque utilisateur). 
 
-Pour obtenir de l’aide sur l’étalonnage, veuillez suivre ce [lien vers l’article d’étalonnage HoloLens](/hololens/hololens-calibration#hololens-2).
+pour obtenir de l’aide sur l’étalonnage, suivez ce [lien vers l’article d’étalonnage de HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Pour obtenir de l’aide sur le réglage du capteur, veuillez suivre ce [lien vers l’article sur le paramétrage du capteur HoloLens](/hololens/hololens-updates).
+pour obtenir de l’aide sur le réglage du capteur, suivez ce [lien pour accéder à l’article sur le paramétrage du capteur HoloLens](/hololens/hololens-updates).
 
 ## <a name="chapter-1--create-the-bot-application"></a>Chapitre 1 : créer l’application bot
 
@@ -80,15 +80,15 @@ La première étape consiste à créer votre robot en tant qu’application Web 
 
     ![Créer l’application bot](images/AzureLabs-Lab312-01.png)
 
-3.  La solution s’ouvre maintenant. Cliquez avec le bouton droit sur la solution **Mybot** dans le **Explorateur de solutions** , puis cliquez sur **gérer les packages NuGet pour la solution**. 
+3.  La solution s’ouvre maintenant. cliquez avec le bouton droit sur la solution **Mybot** dans le **Explorateur de solutions** , puis cliquez sur **gérer les Packages NuGet pour la solution**. 
 
     ![Créer l’application bot](images/AzureLabs-Lab312-02.png)
 
-4.  Sous l’onglet **Parcourir** , recherchez **Microsoft. Bot. Builder. Integration. Aspnet. Core** (Assurez-vous que l’option inclure la **version préliminaire** est activée). Sélectionnez la version **de package 4.0.1-preview**, puis cochez les cases du projet. Cliquez ensuite sur **installer**. Vous avez maintenant installé les bibliothèques nécessaires pour **bot Framework v4**. Fermez la page NuGet.
+4.  Sous l’onglet **Parcourir** , recherchez **Microsoft. Bot. Builder. Integration. Aspnet. Core** (Assurez-vous que l’option inclure la **version préliminaire** est activée). Sélectionnez la version **de package 4.0.1-preview**, puis cochez les cases du projet. Cliquez ensuite sur **installer**. Vous avez maintenant installé les bibliothèques nécessaires pour **bot Framework v4**. fermez la page NuGet.
 
     ![Créer l’application bot](images/AzureLabs-Lab312-03.png)
 
-5.  Cliquez avec le bouton droit sur votre *projet*, **MyBot**, dans le **Explorateur de solutions** , puis cliquez sur **Ajouter** une **|** **classe**.
+5.  cliquez avec le bouton droit sur votre *Project*, **MyBot**, dans le **Explorateur de solutions** , puis cliquez sur **ajouter** une **|** **classe**.
 
     ![Créer l’application bot](images/AzureLabs-Lab312-04.png)
 
@@ -249,7 +249,7 @@ La première étape consiste à créer votre robot en tant qu’application Web 
     }
     ```
 
-14. N’oubliez pas d’enregistrer vos modifications. pour ce faire, accédez à **fichier**  >  **enregistrer tout**, à partir de la barre d’outils en haut de Visual Studio.
+14. n’oubliez pas d’enregistrer vos modifications. pour ce faire, accédez à **fichier**  >  **enregistrer tout**, à partir de la barre d’outils en haut de Visual Studio.
 
 ## <a name="chapter-2---create-the-azure-bot-service"></a>Chapitre 2-créer le Azure Bot Service
 
@@ -280,7 +280,7 @@ Maintenant que vous avez généré le code de votre bot, vous devez le publier d
     6. Le nom de l' **application** peut simplement rester identique au *nom du robot*. 
     7. Laissez le *modèle bot* de **base (C#)**.
     8. Le *plan/emplacement App service* doit avoir été rempli automatiquement pour votre compte.
-    9. Définissez le **stockage Azure** que vous souhaitez utiliser pour héberger votre robot. Si vous n’en avez pas déjà un, vous pouvez le créer ici.
+    9. définissez le **stockage Azure** que vous souhaitez utiliser pour héberger votre Bot. Si vous n’en avez pas déjà un, vous pouvez le créer ici.
     10. Vous devrez également confirmer que vous avez compris les conditions générales appliquées à ce service.
     11. Cliquez sur Créer.
  
@@ -315,7 +315,7 @@ Maintenant que votre service est prêt, vous devez publier votre code de robot, 
 > [!NOTE] 
 > Vous devez publier votre robot sur le service Azure chaque fois que vous apportez des modifications à la solution ou au code du bot.
 
-1.  Revenez à votre solution Visual Studio que vous avez créée précédemment. 
+1.  revenez à votre Solution de Visual Studio que vous avez créée précédemment. 
 2.  Cliquez avec le bouton droit sur votre projet **MyBot** , dans le **Explorateur de solutions**, puis cliquez sur **publier**.
 
     ![Publier le robot sur le service bot de l’application Web Azure](images/AzureLabs-Lab312-16.png)
@@ -342,19 +342,19 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 
     ![Configurer le projet Unity](images/AzureLabs-Lab312-20.png)
 
-2.  Vous devez maintenant fournir un nom de projet Unity. Insérez le **bot HoloLens**. Assurez-vous que le modèle de projet est défini sur **3D**. Définissez l' **emplacement** approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
+2.  Vous devez maintenant fournir un nom de projet Unity. insérez **HoloLens Bot**. Assurez-vous que le modèle de projet est défini sur **3D**. Définissez l' **emplacement** approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
 
     ![Configurer le projet Unity](images/AzureLabs-Lab312-21.png)
 
-3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à **modifier > préférences** puis, dans la nouvelle fenêtre, accédez à **outils externes**. Remplacez l' **éditeur de script externe** par **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
+3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à **modifier > préférences** puis, dans la nouvelle fenêtre, accédez à **outils externes**. modifiez l' **éditeur de Script externe** pour **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
 
     ![Configurer le projet Unity](images/AzureLabs-Lab312-22.png)
 
-4.  Accédez ensuite à **fichier > paramètres de build** et sélectionnez **plateforme Windows universelle**, puis cliquez sur le bouton **changer de plateforme** pour appliquer votre sélection.
+4.  accédez ensuite à **fichier > générer Paramètres** et sélectionnez **plateforme Windows universelle**, puis cliquez sur le bouton **changer de plateforme** pour appliquer votre sélection.
 
     ![Configurer le projet Unity](images/AzureLabs-Lab312-23.png)
 
-5.  Tout en conservant les **paramètres de génération de > de fichiers** et assurez-vous que :
+5.  tout en restant dans le **> de fichiers de Build Paramètres** et assurez-vous que :
 
     1.  L' **appareil cible** est défini sur **HoloLens**
 
@@ -364,7 +364,7 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 
     3.  Le **SDK** est configuré sur le **dernier installé**
 
-    4.  **Version de Visual Studio** définie sur le **dernier installé**
+    4.  **Visual Studio Version** est définie sur le **plus récent**
 
     5.  La **génération et l’exécution** sont définies sur l' **ordinateur local**
 
@@ -382,15 +382,15 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 
             ![Configurer le projet Unity](images/AzureLabs-Lab312-26.png)
 
-    7. Les paramètres restants, dans **paramètres de build**, doivent être laissés par défaut pour le moment.
+    7. dans les **Paramètres de Build**, les paramètres restants doivent être conservés comme valeurs par défaut pour le moment.
 
-6. Dans la fenêtre *paramètres de build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* . 
+6. dans la fenêtre *Paramètres de Build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* . 
 
     ![Configurer le projet Unity](images/AzureLabs-Lab312-27.png)
 
 7. Dans ce volet, quelques paramètres doivent être vérifiés :
 
-    1. Sous l’onglet **autres paramètres** :
+    1. dans l' **autre onglet Paramètres** :
 
         1. La **version du runtime de script** doit être **expérimentale (net 4,6 équivalent)**; la modification de cette opération nécessite un redémarrage de l’éditeur.
         2. Le **backend de script** doit être **.net**
@@ -398,18 +398,18 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 
             ![Configurer le projet Unity](images/AzureLabs-Lab312-28.png)
       
-    2. Dans l’onglet **paramètres de publication** , sous **fonctionnalités**, activez la case à cocher :
+    2. dans l’onglet **Paramètres de publication** , sous **fonctionnalités**, vérifiez :
 
         - **InternetClient**
         - **Microphone**
 
             ![Configurer le projet Unity](images/AzureLabs-Lab312-29.png)
 
-    3. Plus bas dans le volet, dans les **paramètres XR** (situés sous **paramètres de publication**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
+    3. plus bas dans le volet, dans **XR Paramètres** (situé sous **publier Paramètres**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
 
         ![Configurer le projet Unity](images/AzureLabs-Lab312-30.png)
 
-8.  De retour dans les *paramètres de build* . les projets _C#_ ne sont plus grisés. Cochez la case en regard de cette option. 
+8.  de retour dans la *Build Paramètres* les projets _C# unity_ ne sont plus grisés. Cochez la case en regard de cette option. 
 9.  Fermez la fenêtre Build Settings.
 10. Enregistrez votre scène et votre projet (**fichier > enregistrer la scène/le fichier > enregistrer le projet**).
 
@@ -486,7 +486,7 @@ La création de cette classe est purement un choix architectural, ces objets peu
 
 Pour créer cette classe : 
 
-1.  Cliquez avec le bouton droit dans le *panneau Projet*, puis **créez > dossier**. Nommez le dossier **scripts**. 
+1.  cliquez avec le bouton droit dans le *panneau Project*, puis **créez > dossier**. Nommez le dossier **scripts**. 
 
     ![Créer un dossier de scripts.](images/AzureLabs-Lab312-36.png)
 
@@ -552,7 +552,7 @@ Pour créer cette classe :
     }
     ```
 
-6.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
+6.  veillez à enregistrer les modifications apportées à *Visual Studio* avant de revenir à *unity*.
 
 ## <a name="chapter-9--create-the-gazeinput-class"></a>Chapitre 9 : créer la classe GazeInput
 
@@ -745,7 +745,7 @@ Pour créer cette classe :
         }
     ```
  
-9.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
+9.  veillez à enregistrer les modifications apportées à *Visual Studio* avant de revenir à *unity*.
 
 ## <a name="chapter-10--create-the-bot-class"></a>Chapitre 10 : créer la classe bot
 
@@ -1033,11 +1033,11 @@ Pour créer cette classe :
     > [!NOTE] 
     > Une erreur peut s’afficher dans la console de l’éditeur Unity, à propos de la classe **SceneOrganiser** manquante. Ignorez ce message, car vous allez créer cette classe ultérieurement dans le didacticiel.
 
-14.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
+14.  veillez à enregistrer les modifications apportées à *Visual Studio* avant de revenir à *unity*.
 
 ## <a name="chapter-11--create-the-interactions-class"></a>Chapitre 11 : créer la classe interactions
 
-La classe que vous allez créer maintenant est appelée **interactions**. Cette classe est utilisée pour détecter l’entrée de pression HoloLens de l’utilisateur. 
+La classe que vous allez créer maintenant est appelée **interactions**. cette classe est utilisée pour détecter le HoloLens appuyez sur l’entrée de l’utilisateur. 
 
 Si l’utilisateur appuie tout en regardant l’objet *bot* dans la scène, et que le bot est prêt à écouter les entrées vocales, l’objet bot change la couleur en **rouge** et commence à écouter les entrées vocales. 
 
@@ -1083,7 +1083,7 @@ Pour créer cette classe :
         }
     ```
 
-7.  Ajoutez le gestionnaire qui sera déclenché lorsque l’utilisateur effectue le mouvement TAP devant l’appareil de caméra HoloLens.
+7.  ajoutez le gestionnaire qui sera déclenché lorsque l’utilisateur effectue le mouvement tap devant l’appareil photo HoloLens
 
     ```csharp
         /// <summary>
@@ -1113,7 +1113,7 @@ Pour créer cette classe :
         }
     ```
 
-8. Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
+8. veillez à enregistrer les modifications apportées à *Visual Studio* avant de revenir à *unity*.
 
 ## <a name="chapter-12--create-the-sceneorganiser-class"></a>Chapitre 12 : créer la classe SceneOrganiser
 
@@ -1219,7 +1219,7 @@ Pour créer cette classe :
         }
     ```
 
-8.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
+8.  veillez à enregistrer les modifications apportées à *Visual Studio* avant de revenir à *unity*.
 9.  Dans l’éditeur Unity, faites glisser le script **SceneOrganiser** du dossier scripts vers l’appareil photo principal. Le composant organisateur de scène doit maintenant apparaître sur l’objet caméra principal, comme illustré dans l’image ci-dessous.
 
     ![Créer le Azure Bot Service](images/AzureLabs-Lab312-37.png)
@@ -1233,12 +1233,12 @@ Avant cela, assurez-vous que :
 -   Le script **SceneOrganiser** est attaché à l’objet **Camera principal** . 
 -   Dans la classe **bot** , vérifiez que vous avez inséré la **clé secrète** de votre robot dans la variable **botSecret** .
 
-## <a name="chapter-14--build-and-sideload-to-the-hololens"></a>Chapitre 14 – générer et chargement dans HoloLens
+## <a name="chapter-14--build-and-sideload-to-the-hololens"></a>Chapitre 14 : créer et chargement au HoloLens
 
 Tout ce qui est nécessaire pour la section Unity de ce projet est maintenant terminé. il est donc temps de la générer à partir d’Unity.
 
-1.  Accédez à **paramètres de build**, **fichier > paramètres de Build.**...
-2.  Dans la fenêtre **paramètres de build** , cliquez sur **générer**.
+1.  accédez à **build Paramètres**, **File > build Paramètres...**.
+2.  dans la fenêtre **Paramètres de build** , cliquez sur **générer**.
 
     ![Génération de l’application à partir d’Unity](images/AzureLabs-Lab312-38.png)
 
@@ -1247,16 +1247,16 @@ Tout ce qui est nécessaire pour la section Unity de ce projet est maintenant te
 5.  Unity commence à générer votre projet dans le dossier de l' **application** . 
 6.  Une fois la génération de Unity terminée (cela peut prendre un certain temps), une fenêtre de l' **Explorateur de fichiers** s’ouvre à l’emplacement de votre Build (Vérifiez la barre des tâches, car elle ne s’affiche pas toujours au-dessus de votre Windows, mais vous informera de l’ajout d’une nouvelle fenêtre).
 
-## <a name="chapter-15--deploy-to-hololens"></a>Chapitre 15 – déployer dans HoloLens
+## <a name="chapter-15--deploy-to-hololens"></a>Chapitre 15 – déployer sur HoloLens
 
 Pour effectuer un déploiement sur HoloLens :
 
-1.  Vous aurez besoin de l’adresse IP de votre HoloLens (pour le déploiement à distance) et vérifiez que votre HoloLens est en **mode développeur**. Pour ce faire :
+1.  vous aurez besoin de l’adresse IP de votre HoloLens (pour le déploiement à distance) et pour vous assurer que votre HoloLens est en **Mode développeur**. Pour ce faire :
 
-    1. Tout en portant votre HoloLens, ouvrez les **paramètres**.
+    1. tout en portant votre HoloLens, ouvrez le **Paramètres**.
     2. Accéder au **réseau & Internet > Wi-Fi options avancées >**
     3. Notez l’adresse **IPv4** .
-    4. Ensuite, revenez aux **paramètres**, puis à **mettre à jour & > de sécurité pour les développeurs** 
+    4. ensuite, revenez à **Paramètres**, puis pour **mettre à jour les > de sécurité & pour les développeurs** . 
     5. Définissez le mode développeur sur.
 
 2.  Accédez à votre nouvelle build Unity (le dossier de l' **application** ) et ouvrez le fichier solution avec **Visual Studio**.
@@ -1266,12 +1266,12 @@ Pour effectuer un déploiement sur HoloLens :
     ![Déployez la solution à partir de Visual Studio.](images/AzureLabs-Lab312-39.png)
  
 5.  Accédez au **menu Générer** , puis cliquez sur **déployer la solution** pour chargement l’application à votre HoloLens.
-6.  Votre application doit maintenant apparaître dans la liste des applications installées sur votre HoloLens, prête à être lancée.
+6.  votre application doit maintenant apparaître dans la liste des applications installées sur votre HoloLens, prête à être lancée.
 
     > [!NOTE]
     > Pour effectuer un déploiement sur un casque immersif, définissez la plateforme de la **solution** sur *ordinateur local* et définissez la **configuration** sur *Déboguer*, avec *x86* comme **plateforme**. Déployez ensuite sur l’ordinateur local, à l’aide du **menu Générer**, en sélectionnant *déployer la solution*. 
 
-## <a name="chapter-16--using-the-application-on-the-hololens"></a>Chapitre 16 – utilisation de l’application sur HoloLens
+## <a name="chapter-16--using-the-application-on-the-hololens"></a>Chapitre 16 : utilisation de l’application sur le HoloLens
 
 - Une fois que vous avez lancé l’application, vous verrez le robot comme une sphère bleue devant vous.
 
@@ -1297,7 +1297,7 @@ how much are raincoats?
 
 ## <a name="your-finished-web-app-bot-v4-application"></a>Votre application Web App bot (v4) terminée
 
-Félicitations, vous avez créé une application de réalité mixte qui s’appuie sur Azure Web App bot, Microsoft bot Framework v4.
+félicitations, vous avez créé une application de réalité mixte qui s’appuie sur Azure Web app Bot, Microsoft Bot Framework v4.
 
 ![Produit final](images/AzureLabs-Lab312-00.png)
 

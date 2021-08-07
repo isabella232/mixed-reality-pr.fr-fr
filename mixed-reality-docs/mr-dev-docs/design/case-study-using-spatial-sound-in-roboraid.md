@@ -1,31 +1,31 @@
 ---
 title: Étude de cas-utilisation du son spatial dans RoboRaid
-description: Le son spatial est l’une des fonctionnalités les plus intéressantes de Microsoft HoloLens, qui permet aux utilisateurs de découvrir ce qui se passe autour d’eux quand les objets sont hors de vue.
+description: le son Spatial est l’une des fonctionnalités les plus intéressantes de Microsoft HoloLens, ce qui permet aux utilisateurs de découvrir ce qui se passe autour d’eux quand les objets sont hors de vue.
 author: mattzmsft
 ms.author: hakons
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, RoboRaid, son spatial, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, UC
-ms.openlocfilehash: 95650ea7097f16d257c80c11443b84936bece435
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, HoloLens, RoboRaid, son spatial, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de la réalité mixte, uc
+ms.openlocfilehash: f4a47fe119dffbd32d264cc8e21ae2b3ade7cfcccef8e7e18fbb4491783d0542
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847538"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208995"
 ---
 # <a name="case-study---using-spatial-sound-in-roboraid"></a>Étude de cas-utilisation du son spatial dans RoboRaid
 
-Cet article décrit les défis que l’équipe de l’expérience Microsoft HoloLens a rencontrés lors de la création de l’audio pour la [RoboRaid](https://www.microsoft.com/p/roboraid/9nblggh5fv3j) mixte de la réalité mixte.
+cet article décrit les défis que l’équipe d’expérience Microsoft HoloLens a rencontrés lors de la création de l’audio pour la [RoboRaid](https://www.microsoft.com/p/roboraid/9nblggh5fv3j) mixte de la réalité mixte.
 
 ## <a name="the-tech"></a>Le Tech
 
-Le [son spatial](spatial-sound.md) est l’une des fonctionnalités les plus intéressantes de Microsoft HoloLens, qui permet aux utilisateurs de découvrir ce qui se passe autour d’eux quand les objets ne sont pas en ligne de vue.
+le [son Spatial](spatial-sound.md) est l’une des fonctionnalités les plus intéressantes de Microsoft HoloLens, ce qui permet aux utilisateurs de découvrir ce qui se passe autour d’eux quand les objets ne sont pas en ligne de vue.
 
 Dans RoboRaid, l’utilisation la plus évidente et la plus claire du son spatial alerte le joueur à un problème qui se produit en dehors de la vision du périphérique. Par exemple, l’infraction peut entrer à partir de l’un des murs analysés de la pièce. Si vous n’êtes pas face à l’emplacement où il est entré, vous pouvez le manquer. Pour vous avertir de cette invasion, vous allez entendre un peu de données audio provenant de l’endroit où l’effraction est entrée, ce qui vous permet de savoir que vous devez agir rapidement pour l’arrêter.
 
 ## <a name="behind-the-scenes"></a>Dans les coulisses
 
-Créer un son spatial pour les applications HoloLens est tellement nouveau et unique que les problèmes peuvent être difficiles à résoudre, car il n’y a pas de projets passés à référencer. Nous espérons que ces exemples de défis audio que nous avons rencontrés lors de la création de RoboRaid vous aideront à créer de l’audio pour vos propres applications.
+créer un son spatial pour les applications de HoloLens est tellement nouveau et unique que les problèmes peuvent être difficiles à résoudre, car il n’y a pas de projets passés à référencer. Nous espérons que ces exemples de défis audio que nous avons rencontrés lors de la création de RoboRaid vous aideront à créer de l’audio pour vos propres applications.
 
 ### <a name="be-mindful-of-taxing-the-cpu"></a>Soyez attentif à l’imposition de l’UC
 
@@ -33,7 +33,7 @@ Le son spatial peut être exigeant sur le processeur. Pour une expérience occup
 
 ### <a name="rewarding-a-successful-dodge"></a>Récompenser une densité de réussite
 
-Le mécanicien Dodging est l’un des mécanismes de jeu les plus importants dans RoboRaid, et tout ce que nous avons trouvé est véritablement propre à l’expérience HoloLens. Par conséquent, nous voulions que les densités soient très satisfaisantes pour le joueur. Nous avons obtenu le « Whizz-by » Doppler pour paraître assez tôt dans le développement. Initialement, mon plan consistait à utiliser une boucle et à la manipuler en temps réel en utilisant le volume, le tangage et le filtre. L’implémentation de ce fut très élaborée. Avant de valider des ressources pour générer cela, nous avons créé un prototype peu coûteux à l’aide d’une ressource avec l’effet Doppler intégré à juste pour déterminer son degré d’utilisation. Notre développement talentueux l’a fait pour que la WHIZZ de cette ressource soit lue exactement 0,7 seconde avant que le projectile n’ait été passé par l’oreille du joueur et que les résultats sont impressionnants ! Inutile de préciser que nous avons fossé la solution la plus complexe et implémenté le prototype.
+le mécanicien dodging est l’un des mécanismes de jeu les plus importants dans RoboRaid, et tout ce que nous avons trouvé est véritablement propre à l’expérience HoloLens. Par conséquent, nous voulions que les densités soient très satisfaisantes pour le joueur. Nous avons obtenu le « Whizz-by » Doppler pour paraître assez tôt dans le développement. Initialement, mon plan consistait à utiliser une boucle et à la manipuler en temps réel en utilisant le volume, le tangage et le filtre. L’implémentation de ce fut très élaborée. Avant de valider des ressources pour générer cela, nous avons créé un prototype peu coûteux à l’aide d’une ressource avec l’effet Doppler intégré à juste pour déterminer son degré d’utilisation. Notre développement talentueux l’a fait pour que la WHIZZ de cette ressource soit lue exactement 0,7 seconde avant que le projectile n’ait été passé par l’oreille du joueur et que les résultats sont impressionnants ! Inutile de préciser que nous avons fossé la solution la plus complexe et implémenté le prototype.
 
 *(Pour plus d’informations sur la création d’un élément multimédia audio avec l’effet Doppler intégré, consultez [100 Whooshes dans 2 minutes](http://designingsound.org/2010/02/26/charles-deenen-special-100-whooshes-in-2-minutes/).)* 
 <br>
@@ -45,7 +45,7 @@ Le mécanicien Dodging est l’un des mécanismes de jeu les plus importants dan
 
 ### <a name="communicating-a-hit"></a>Communication d’un accès
 
-Un problème intéressant que nous ayons rencontré sur le HoloLens était de savoir combien il était difficile de communiquer efficacement avec un joueur. La réussite de l’expérience de la réalité mixte est le sentiment que le récit se passe. Cela signifie que vous devez vous croire à la lutte contre l’invasion d’un robot étranger dans votre propre salon.
+un problème intéressant que nous avons rencontré sur le HoloLens était la difficulté de communiquer efficacement avec un joueur. La réussite de l’expérience de la réalité mixte est le sentiment que le récit se passe. Cela signifie que vous devez vous croire à la lutte contre l’invasion d’un robot étranger dans votre propre salon.
 
 Les joueurs ne pensent évidemment rien quand ils sont atteints. nous avons donc dû trouver un moyen de convaincre le joueur qu’une erreur incorrecte s’est produite. Dans les jeux conventionnels, vous pouvez voir une animation qui vous permet de savoir que votre caractère a pris un point, ou l’écran peut clignoter en rouge et votre personnage peut grunt un peu. Étant donné que ces types de signaux ne fonctionnent pas dans une expérience de réalité mixte, nous avons décidé de combiner le signal visuel avec un son exagéré qui indique que vous avez pris des dégâts. J’ai créé un grand son, et j’ai fait en sorte qu’il soit bien visible dans la combinaison. Ensuite, pour faire ressortir encore davantage, nous avons ajouté un bref signal sonore comme si un sub nucléaire était récepteur. 
 <br>
@@ -53,7 +53,7 @@ Les joueurs ne pensent évidemment rien quand ils sont atteints. nous avons donc
 
 ### <a name="getting-big-sound-from-small-speakers"></a>Obtenir du gros son de petits intervenants
 
-Les haut-parleurs HoloLens sont petits et clairs pour répondre aux besoins de l’appareil. vous ne pouvez donc pas vous attendre à un trop bas de la gamme. À l’instar du développement pour les smartphones ou les périphériques de jeu de poche, les concepteurs de sons et les compositeurs doivent être attentifs au contenu de la fréquence audio. Je conçoive toujours des sons ou écrit de la musique avec une plage de fréquences complète, car le casque est une option pour les utilisateurs. Toutefois, pour garantir la compatibilité avec les orateurs HoloLens, j’exécute un test occasionnellement en plaçant une égalisation dans le maître de tout Dupont dans lequel je travaille. Le paramètre EQ est constitué d’un filtre passe-haut autour de 600 Hz à 700 Hz (pas trop abrupt) et d’un filtre passe-bas à environ 10 000 (abrupt). Cela devrait vous faire une idée approximative de la façon dont vos sons seront lus sur l’appareil.
+HoloLens les haut-parleurs sont petits et clairs pour répondre aux besoins de l’appareil. vous ne pouvez donc pas vous attendre à un trop bas de la gamme. À l’instar du développement pour les smartphones ou les périphériques de jeu de poche, les concepteurs de sons et les compositeurs doivent être attentifs au contenu de la fréquence audio. Je conçoive toujours des sons ou écrit de la musique avec une plage de fréquences complète, car le casque est une option pour les utilisateurs. toutefois, pour garantir la compatibilité avec les orateurs HoloLens, j’exécute un test occasionnellement en plaçant une égalisation dans le maître de tout dupont dans lequel je travaille. Le paramètre EQ est constitué d’un filtre passe-haut autour de 600 Hz à 700 Hz (pas trop abrupt) et d’un filtre passe-bas à environ 10 000 (abrupt). Cela devrait vous faire une idée approximative de la façon dont vos sons seront lus sur l’appareil.
 
 Si vous utilisez des basses pour obtenir le sens de la modification de la corde dans votre musique, vous constaterez peut-être que votre musique perd complètement le sens de la racine lorsque vous appliquez ce paramètre d’égalisation. Pour remédier à cela, j’ai ajouté une autre couche aux basses qui est une octave supérieure (avec quelques harmoniques riches) et à la mélanger pour avoir une idée de la racine. Parfois, l’utilisation de la distorsion pour regrouper les harmoniques donnera suffisamment de contenu de fréquence dans la plage supérieure pour que notre cerveau pense qu’il y a quelque chose sous-jacent. Cela est vrai pour les SFX comme les impacts, les explosions ou les sons pour des moments spéciaux, tels que les super attaques d’un patron. Vous ne pouvez vraiment pas vous reposer sur le bas pour que le joueur ait un sens d’impact ou de poids. Comme pour la musique, l’utilisation de la distorsion pour vous aider à bénéficier d’une certaine facilité.
 
