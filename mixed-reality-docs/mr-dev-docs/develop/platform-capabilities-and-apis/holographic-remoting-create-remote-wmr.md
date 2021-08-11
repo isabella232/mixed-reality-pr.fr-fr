@@ -1,24 +1,24 @@
 ---
 title: Écriture d’une application distante holographique de communication à distance (WMR)
-description: Découvrez comment diffuser du contenu distant rendu sur une machine distante à HoloLens 2 avec des applications de communication à distance holographique avec HolographicSpace.
+description: découvrez comment diffuser du contenu distant rendu sur une machine distante pour HoloLens 2 avec des applications de communication à distance holographique avec HolographicSpace.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, NuGet
-ms.openlocfilehash: 6884c2679b155c36a21bcf89352524e4957a9f20
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: HoloLens, remoting, accès distant holographique, casque de réalité mixte, casque windows mixed realisation, casque de réalité virtuelle, NuGet
+ms.openlocfilehash: 0d8f7149533de7f3f095761b13feeb91c319cda711c99b9101a13300a591fc2c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219213"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>Écriture d’une application distante holographique à distance à l’aide de l’API HolographicSpace
 
 >[!IMPORTANT]
->Ce document décrit la création d’une application distante pour HoloLens 2 à l’aide de l' [API HolographicSpace](../native/getting-a-holographicspace.md). Les applications distantes pour **HoloLens (1re génération)** doivent utiliser le package NuGet version **1. x. x**. Cela implique que les applications distantes écrites pour HoloLens 2 ne sont pas compatibles avec HoloLens 1 et vice versa. La documentation de HoloLens 1 est disponible [ici](add-holographic-remoting.md).
+>ce document décrit la création d’une application distante pour HoloLens 2 à l’aide de l' [API HolographicSpace](../native/getting-a-holographicspace.md). les applications distantes pour **HoloLens (1re génération)** doivent utiliser NuGet package version **1. x. x**. cela implique que les applications distantes écrites pour HoloLens 2 ne sont pas compatibles avec HoloLens 1 et vice versa. vous trouverez la documentation relative à HoloLens 1 [ici](add-holographic-remoting.md).
 
-Les applications de communication à distance holographique peuvent diffuser du contenu diffusé à distance sur des casques immersifs HoloLens 2 et Windows Mixed Reality. Vous pouvez également accéder à davantage de ressources système et intégrer des [vues immersives](../../design/app-views.md) distantes dans des logiciels de poste de travail existants. Une application distante reçoit un flux de données d’entrée de HoloLens 2, restitue le contenu dans une vue immersive virtuelle et diffuse en continu des frames de contenu vers HoloLens 2. La connexion est établie à l’aide du Wi-Fi standard. La communication à distance holographique est ajoutée à une application de bureau ou UWP via un paquet NuGet. Du code supplémentaire est nécessaire pour gérer la connexion et le rendu dans une vue immersive. Une connexion à distance classique aura une latence aussi faible que 50 ms de latence. L’application de lecteur peut signaler la latence en temps réel.
+les applications de communication à distance holographique peuvent diffuser du contenu à distance à HoloLens 2 et Windows Mixed Reality des casques immersifs. Vous pouvez également accéder à davantage de ressources système et intégrer des [vues immersives](../../design/app-views.md) distantes dans des logiciels de poste de travail existants. une application distante reçoit un flux de données d’entrée de HoloLens 2, restitue le contenu dans une vue immersive virtuelle et diffuse les trames de contenu à HoloLens 2. La connexion est établie à l’aide du Wi-Fi standard. la communication à distance holographique est ajoutée à une application de bureau ou UWP via un paquet NuGet. Du code supplémentaire est nécessaire pour gérer la connexion et le rendu dans une vue immersive. Une connexion à distance classique aura une latence aussi faible que 50 ms de latence. L’application de lecteur peut signaler la latence en temps réel.
 
 Tout le code de cette page et des projets de travail se trouve dans le [référentiel GitHub d’exemples de communication à distance holographique](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
@@ -31,18 +31,18 @@ Un bon point de départ est un bureau DirectX opérationnel ou une application U
 
 
 
-## <a name="get-the-holographic-remoting-nuget-package"></a>Procurez-vous le package NuGet de communication à distance holographique
+## <a name="get-the-holographic-remoting-nuget-package"></a>procurez-vous le package NuGet de communication à distance holographique
 
-Les étapes suivantes sont requises pour ajouter le package NuGet à un projet dans Visual Studio.
+les étapes suivantes sont requises pour ajouter le package NuGet à un projet dans Visual Studio.
 1. Ouvrez le projet dans Visual Studio.
-2. Cliquez avec le bouton droit sur le nœud du projet et sélectionnez **gérer les packages NuGet...**
+2. cliquez avec le bouton droit sur le nœud du projet et sélectionnez **gérer les Packages NuGet...**
 3. Dans le volet qui s’affiche, sélectionnez **Parcourir** , puis recherchez « accès à distance holographique ».
 4. Sélectionnez **Microsoft. holographique. Remoting**, assurez-vous de choisir la version la plus récente de **2. x. x** , puis sélectionnez **installer**.
 5. Si la boîte de dialogue **Aperçu** s’affiche, sélectionnez **OK**.
 6. Sélectionnez **J’accepte** quand la boîte de dialogue du contrat de licence s’affiche.
 
 >[!NOTE]
->La version **1. x. x** du package NuGet est toujours disponible pour les développeurs qui souhaitent cibler HoloLens 1. Pour plus d’informations [, consultez Ajouter une communication à distance holographique (HoloLens (1re génération))](add-holographic-remoting.md).
+>la Version **1. x. x** du package NuGet est toujours disponible pour les développeurs qui souhaitent cibler HoloLens 1. pour plus d’informations [, consultez ajouter une communication à distance holographique (HoloLens (1er génération))](add-holographic-remoting.md).
 
 ## <a name="create-the-remote-context"></a>Créer le contexte distant
 
@@ -71,7 +71,7 @@ CreateRemoteContext(m_remoteContext, 20000, false, PreferredVideoCodec::Default)
 ```
 
 >[!WARNING]
->La communication à distance holographique fonctionne en remplaçant le runtime Windows Mixed Reality qui fait partie de Windows par un Runtime spécifique à distance. Cette opération est effectuée lors de la création du contexte distant. Pour cette raison, tout appel sur une API de réalité mixte Windows avant de créer le contexte distant peut entraîner un comportement inattendu. L’approche recommandée consiste à créer le contexte distant le plus tôt possible avant d’interagir avec une API de réalité mixte. Ne combinez jamais des objets créés ou récupérés par le biais d’une API Windows Mixed Reality avant l’appel à CreateRemoteContext avec des objets créés ou récupérés par la suite.
+>la communication à distance holographique fonctionne en remplaçant le runtime Windows Mixed Reality qui fait partie de Windows avec un runtime spécifique à distance. Cette opération est effectuée lors de la création du contexte distant. pour cette raison, tout appel sur une API de Windows Mixed Reality avant de créer le contexte distant peut entraîner un comportement inattendu. L’approche recommandée consiste à créer le contexte distant le plus tôt possible avant d’interagir avec une API de réalité mixte. ne combinez jamais des objets créés ou récupérés par le biais d’une API Windows Mixed Reality avant l’appel à CreateRemoteContext avec des objets créés ou récupérés par la suite.
 
 L’espace holographique doit ensuite être créé. La spécification d’un CoreWindow n’est pas obligatoire. Les applications de bureau qui n’ont pas de CoreWindow peuvent simplement passer un ```nullptr``` .
 
@@ -79,7 +79,7 @@ L’espace holographique doit ensuite être créé. La spécification d’un Cor
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(nullptr);
 ```
 
-## <a name="connect-to-the-device"></a>Se connecter à l’appareil
+## <a name="connect-to-the-device"></a>Connecter à l’appareil
 
 Lorsque l’application distante est prête pour le rendu du contenu, une connexion à l’appareil Player peut être établie.
 
@@ -104,7 +104,7 @@ catch(winrt::hresult_error& e)
 >Comme pour toute API/WinRT C++ ```Connect``` peut lever une exception WinRT :: hresult_error qui doit être gérée.
 
 >[!TIP]
->Pour éviter d’utiliser la projection du langage [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/) ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` , vous pouvez inclure le fichier situé dans le package NuGet de communication à distance holographique. Il contient les déclarations des interfaces COM sous-jacentes. L’utilisation de C++/WinRT est toutefois recommandée.
+>pour éviter d’utiliser la projection du langage [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/) ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` , vous pouvez inclure le fichier situé dans le package NuGet de communication à distance holographique. Il contient les déclarations des interfaces COM sous-jacentes. L’utilisation de C++/WinRT est toutefois recommandée.
 
 L’écoute des connexions entrantes sur l’application distante peut être effectuée en appelant la ```Listen``` méthode. Le port de liaison et le port de transport peuvent être spécifiés au cours de cet appel. Le port de négociation est utilisé pour le protocole de transfert initial. Les données sont ensuite envoyées sur le port de transport. Par défaut, **8265** et **8266** sont utilisés.
 
@@ -120,7 +120,7 @@ catch(winrt::hresult_error& e)
 ```
 
 >[!IMPORTANT]
->L' ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` intérieur du package NuGet contient une documentation détaillée sur l’API exposée par la communication à distance holographique.
+>l' ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` intérieur du package NuGet contient une documentation détaillée sur l’API exposée par la communication à distance holographique.
 
 ## <a name="handling-remoting-specific-events"></a>Gestion des événements de communication à distance spécifiques
 
@@ -179,7 +179,7 @@ auto connectionState = m_remoteContext.ConnectionState();
 
 ## <a name="handling-speech-events"></a>Gestion des événements vocaux
 
-À l’aide de l’interface de reconnaissance vocale à distance, il est possible d’inscrire les déclencheurs vocaux avec HoloLens 2 et de les faire distants à l’application distante.
+à l’aide de l’interface de reconnaissance vocale à distance, il est possible d’inscrire les déclencheurs vocaux avec HoloLens 2 et de les faire distants à l’application distante.
 
 Ce membre supplémentaire est requis pour effectuer le suivi de l’état de la voix à distance.
 
@@ -291,7 +291,7 @@ m_onSendFrameEventRevoker = m_remoteContext.OnSendFrame(
 
 ## <a name="depth-reprojection"></a>Reprojection de profondeur
 
-À partir de la version [2.1.0](holographic-remoting-version-history.md#v2.1.0), la communication à distance holographique prend en charge la [reprojection de profondeur](hologram-stability.md#reprojection). Cela requiert que la mémoire tampon de couleur et la mémoire tampon de profondeur soient diffusées de l’application distante vers HoloLens 2. Par défaut, la diffusion en continu de la mémoire tampon est activée et configurée pour utiliser la moitié de la résolution de la mémoire tampon de couleur. Vous pouvez modifier cette valeur comme suit :
+À partir de la version [2.1.0](holographic-remoting-version-history.md#v2.1.0), la communication à distance holographique prend en charge la [reprojection de profondeur](hologram-stability.md#reprojection). Cela nécessite que la mémoire tampon de couleur et la mémoire tampon de profondeur soient diffusées de l’application distante vers le HoloLens 2. Par défaut, la diffusion en continu de la mémoire tampon est activée et configurée pour utiliser la moitié de la résolution de la mémoire tampon de couleur. Vous pouvez modifier cette valeur comme suit :
 
 ```cpp
 // class implementation
@@ -306,7 +306,7 @@ m_remoteContext.ConfigureDepthVideoStream(DepthBufferStreamResolution::Half_Reso
 
 ```
 
-Notez que, si les valeurs par défaut ne doivent pas être utilisées, ```ConfigureDepthVideoStream``` doivent être appelées avant d’établir une connexion à HoloLens 2. Le meilleur emplacement est juste après avoir créé le contexte distant. Les valeurs possibles pour DepthBufferStreamResolution sont les suivantes :
+Notez que, si les valeurs par défaut ne doivent pas être utilisées, ```ConfigureDepthVideoStream``` doivent être appelées avant d’établir une connexion au HoloLens 2. Le meilleur emplacement est juste après avoir créé le contexte distant. Les valeurs possibles pour DepthBufferStreamResolution sont les suivantes :
 
 * Full_Resolution
 * Half_Resolution
@@ -351,7 +351,7 @@ void SampleRemoteMain::Render(HolographicFrame holographicFrame)
 
 ```
 
-Pour vérifier si la reprojection de profondeur fonctionne correctement sur HoloLens 2, vous pouvez activer un visualiseur de profondeur via le portail de l’appareil. Pour plus d’informations, voir vérification de la [profondeur définie correctement](hologram-stability.md#verifying-depth-is-set-correctly) .
+pour vérifier si la reprojection de profondeur fonctionne correctement sur HoloLens 2, vous pouvez activer un visualiseur de profondeur via le portail de l’appareil. Pour plus d’informations, voir vérification de la [profondeur définie correctement](hologram-stability.md#verifying-depth-is-set-correctly) .
 
 ## <a name="optional-custom-data-channels"></a>Facultatif : canaux de données personnalisés
 

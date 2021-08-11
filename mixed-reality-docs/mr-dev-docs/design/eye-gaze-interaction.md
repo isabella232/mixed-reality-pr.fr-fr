@@ -1,25 +1,25 @@
 ---
 title: Interaction par pointage du regard
-description: En savoir plus sur les interactions avec les yeux et les regards sur HoloLens 2, ainsi que les nouveaux niveaux de contexte et de compréhension humaine s’ils vous permettent de bénéficier d’expériences holographiques.
+description: en savoir plus sur les interactions avec les yeux et les regards sur HoloLens 2, ainsi que les nouveaux niveaux de contexte et de compréhension de l’homme si cela vous offre des expériences holographiques.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Suivi oculaire, réalité mixte, entrée, point de présence oculaire, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de la réalité mixte, conception, interactions
-ms.openlocfilehash: 3067f5533dbe70d4decb6b5cf94a3f1c5029115a
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+keywords: suivi oculaire, réalité mixte, entrée, point de présence oculaire, casque de réalité mixte, casque windows mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de la réalité mixte, conception, interactions
+ms.openlocfilehash: aec41c6654ce10254648e90e08a09ff9adade75a3dc63af81a0953b67b95729f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220955"
 ---
-# <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interaction Eye-orientée vers le regard de HoloLens 2
+# <a name="eye-gaze-based-interaction-on-hololens-2"></a>L’interaction avec les yeux sur HoloLens 2
 
 ![Démonstration du suivi oculaire dans MRTK](images/mrtk_et_scenemenu.jpg)
 
-L’une de nos nouvelles fonctionnalités passionnantes sur HoloLens 2 est le suivi oculaire. Sur notre [suivi oculaire sur la page HoloLens 2](eye-tracking.md) , nous avons mentionné la nécessité pour chaque utilisateur de passer par un [étalonnage](/hololens/hololens-calibration), de fournir des conseils pour les développeurs et de mettre en surbrillance les cas d’utilisation pour le suivi oculaire. L’entrée Eye-pointage est toujours un nouveau type d’entrée utilisateur et il y a beaucoup à apprendre. 
+l’une de nos nouvelles fonctionnalités passionnantes sur HoloLens 2 est le suivi visuel. dans notre [suivi oculaire sur HoloLens 2](eye-tracking.md) page, nous avons mentionné la nécessité pour chaque utilisateur de passer par un [étalonnage](/hololens/hololens-calibration), de fournir des conseils pour les développeurs et de mettre en surbrillance les cas d’utilisation pour le suivi oculaire. L’entrée Eye-pointage est toujours un nouveau type d’entrée utilisateur et il y a beaucoup à apprendre. 
 
-Bien que l’entrée Eye-pointage soit uniquement utilisée au sein de notre expérience d’interpréteur de commandes holographique (l’interface utilisateur que vous voyez quand vous démarrez votre HoloLens 2), plusieurs applications, telles que la « structure de travail [hololens »](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), illustrent de superbes exemples sur la façon dont les entrées de regard oculaire peuvent être ajoutées à la magie de votre expérience holographique.
+tandis que l’entrée eye-pointage n’est utilisée que dans notre expérience d’interpréteur de commandes holographique (l’interface utilisateur qui s’affiche lorsque vous démarrez votre HoloLens 2), plusieurs applications, telles que le [« terrain HoloLens »](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), présentent de superbes exemples sur la façon dont les entrées de regard oculaire peuvent être ajoutées à la magie de votre expérience holographique.
 Sur cette page, nous aborderons les considérations relatives à la conception pour l’intégration de l’entrée de regard pour interagir avec vos applications holographiques.
 
 Vous en apprendrez davantage sur les principaux avantages et les défis uniques qui accompagnent les entrées de regard. Sur la base de ces informations, nous fournissons plusieurs recommandations de conception pour vous aider à créer des interfaces utilisateur compatibles avec le regard. 
@@ -47,13 +47,13 @@ Vous en apprendrez davantage sur les principaux avantages et les défis uniques 
 </tr>
 </table>
 
-## <a name="head-and-eye-tracking-design-concepts-demo"></a>Démonstration des concepts de conception du suivi des têtes et des yeux
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Démonstration des concepts d’élaboration du suivi de la tête et du suivi oculaire
 
-Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration **conception d’hologrammes-TETE Tracking and Eye Tracking (** en anglais) ci-dessous. Une fois que vous avez terminé, poursuivez sur pour obtenir une présentation plus détaillée des rubriques spécifiques.
+Si vous souhaitez voir les concepts d’élaboration du suivi de la tête et du suivi oculaire en action, consultez notre démonstration vidéo **Conception d’hologrammes - Suivi de la tête et suivi oculaire** ci-dessous. Une fois que vous avez terminé, poursuivez pour obtenir une présentation plus détaillée relative à des rubriques spécifiques.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
+*Cette vidéo a été extraite de l’application HoloLens 2 « Conception d’hologrammes ». Téléchargez-la et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="eye-gaze-input-design-guidelines"></a>Conseils pour la conception d’entrées de regard
 
@@ -83,7 +83,7 @@ Nous vous recommandons de combiner le regard des yeux avec une *commande vocale*
 Cette solution permet également à un mode dans lequel l’utilisateur peut effectuer des recherches librement sans être submergé par le déclenchement involontaire d’un événement. Ce problème doit également être pris en compte lors de la conception de commentaires visuels et auditifs lors de la recherche d’une cible.
 Essayez de ne pas saturer l’utilisateur avec des effets de fenêtres instantanées ou des sons de survol. La subtilité est essentielle. Nous aborderons quelques-unes des meilleures pratiques ci-dessous pour aborder les [recommandations de conception](eye-gaze-interaction.md#design-recommendations).
 
-- **Observation et contrôle** Imaginez que vous souhaitez redresser précisément une photographie sur votre mur. Vous regardez les bords de la photo et ce qui se trouve à proximité pour voir si elle est bien alignée. Imaginez maintenant comment procéder lorsque vous souhaitez utiliser le point de vue de l’œil pour déplacer l’image. Difficile, n’est-ce pas ? Cela décrit le double rôle de regard pour les entrées et les contrôles. 
+- **Observation et contrôle** Imagine que vous souhaitez redresser précisément une photographie sur votre mur. Vous regardez les bords de la photo et ce qui se trouve à proximité pour voir si elle est bien alignée. Imaginez maintenant comment procéder lorsque vous souhaitez utiliser le point de vue de l’œil pour déplacer l’image. Difficile, n’est-ce pas ? Cela décrit le double rôle de regard pour les entrées et les contrôles. 
 
 - **Conserver avant de cliquer :** Pour les sélections de cibles rapides, la recherche a montré que le point de regard de l’utilisateur peut se déplacer avant de conclure un clic manuel (par exemple, un robinet air). Portez une attention particulière à la synchronisation du signal rapide oeil-point-Orient avec une entrée de contrôle plus lente (par exemple, voix, mains, contrôleur).
 
@@ -129,7 +129,7 @@ Cette page vous a fourni une bonne présentation pour vous aider à comprendre l
 ## <a name="see-also"></a>Voir aussi
 * [Confort](comfort.md)
 * [Œil-point de regard sur DirectX](../develop/native/gaze-in-directx.md)
-* [Œil-point d’interfaut](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
+* [oeil-point d’interfaut (Shared Computer Toolkit de la réalité mixte)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [Suivi oculaire sur HoloLens 2](eye-tracking.md)
 * [Pointer et valider](gaze-and-commit.md)
 * [Pointer du regard et fixer](gaze-and-dwell.md)

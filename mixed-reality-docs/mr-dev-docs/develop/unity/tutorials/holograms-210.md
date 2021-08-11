@@ -1,24 +1,24 @@
 ---
 title: HoloLens (1ère génération) - Entrées 210 - Pointage du regard
-description: Suivez cette procédure pas à pas de codage avec Unity, Visual Studio et HoloLens pour apprendre les détails des concepts de regard.
+description: suivez cette procédure pas à pas de codage à l’aide d’unity, Visual Studio et HoloLens pour en savoir plus sur les concepts de regard.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, point de présence, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 7598e6f6822c86fa34ac526fbe7468d535f7fba7
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, didacticiel, point de présence, HoloLens,, académie de la réalité mixte, unity, casque de réalité mixte, casque windows Mixed realisation, casque de réalité virtuelle, Windows 10
+ms.openlocfilehash: e0d761c6292502f381618f8efa1bed9d26f0e6fbac8dbdafa8085e0bb41676ce
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269965"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220971"
 ---
 # <a name="hololens-1st-gen-input-210-gaze"></a>HoloLens (1re génération) entrée 210 : point de regard
 
 >[!IMPORTANT]
->Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
+>les didacticiels d’académie de la réalité mixte ont été conçus avec des HoloLens (1er génération), unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
-Le point de [regard](../../../design/gaze-and-commit.md) est la première forme d’entrée et révèle l’intention et la sensibilisation de l’utilisateur. Monsieur l’entrée 210 (également appelée l’Explorateur de projets) est une présentation approfondie des concepts liés au regard de Windows Mixed Reality. Nous ajouterons une sensibilisation contextuelle à notre curseur et à vos hologrammes, en tirant pleinement parti de ce que votre application connaît sur le regard de l’utilisateur.
+Le point de [regard](../../../design/gaze-and-commit.md) est la première forme d’entrée et révèle l’intention et la sensibilisation de l’utilisateur. monsieur l’entrée 210 (également appelé Project Explorer) est une présentation approfondie des concepts liés au point d’interdépendance pour les Windows Mixed Reality. Nous ajouterons une sensibilisation contextuelle à notre curseur et à vos hologrammes, en tirant pleinement parti de ce que votre application connaît sur le regard de l’utilisateur.
 
 >[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]
 
@@ -31,7 +31,7 @@ Nous disposons d’un astronautes convivial pour vous aider à apprendre les con
 * Nous vous enseignerons les techniques permettant de faire passer vos hologrammes à l’utilisateur lorsqu’il se déplace dans votre monde.
 
 >[!IMPORTANT]
->Les vidéos incorporées dans chacun des chapitres ci-dessous ont été enregistrées à l’aide d’une version antérieure d’Unity et de la réalité mixte Toolkit. Alors que les instructions pas à pas sont précises et actuelles, vous pouvez voir des scripts et des visuels dans les vidéos correspondantes qui sont obsolètes. Les vidéos restent incluses pour l’affiche et les concepts abordés s’appliquent toujours.
+>les vidéos incorporées dans chacun des chapitres ci-dessous ont été enregistrées à l’aide d’une version antérieure d’unity et de la réalité mixte Shared Computer Toolkit. Alors que les instructions pas à pas sont précises et actuelles, vous pouvez voir des scripts et des visuels dans les vidéos correspondantes qui sont obsolètes. Les vidéos restent incluses pour l’affiche et les concepts abordés s’appliquent toujours.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -47,10 +47,10 @@ Nous disposons d’un astronautes convivial pour vous aider à apprendre les con
 
 ### <a name="prerequisites"></a>Prérequis
 
-* Un PC Windows 10 configuré avec les [outils appropriés installés](../../../develop/install-the-tools.md).
+* un PC Windows 10 configuré avec les [outils appropriés installés](../../../develop/install-the-tools.md).
 * Certaines fonctionnalités de base de la programmation C#.
 * Vous devez avoir terminé les [notions de base de m. 101](../../../develop/unity/tutorials/holograms-101.md).
-* Un appareil HoloLens [configuré pour le développement](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* un appareil HoloLens [configuré pour le développement](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### <a name="project-files"></a>Fichiers projet
 
@@ -62,7 +62,7 @@ Nous disposons d’un astronautes convivial pour vous aider à apprendre les con
 
 ### <a name="errata-and-notes"></a>Errata et notes
 
-* Dans Visual Studio, l’option « Uniquement mon code » doit être désactivée (décochée) sous outils->options->le débogage pour atteindre les points d’arrêt dans votre code.
+* dans Visual Studio, « Uniquement mon code » doit être désactivé (désactivé) sous outils->Options->débogage pour atteindre les points d’arrêt dans votre Code.
 
 ## <a name="chapter-1---unity-setup"></a>Chapitre 1-Configuration Unity
 
@@ -72,7 +72,7 @@ Nous disposons d’un astronautes convivial pour vous aider à apprendre les con
 
 * Optimiser Unity pour le développement HoloLens.
 * Importer les ressources et configurer la scène.
-* Affichez le astronautes dans HoloLens.
+* Affichez le astronautes dans le HoloLens.
 
 ### <a name="instructions"></a>Instructions
 
@@ -81,33 +81,33 @@ Nous disposons d’un astronautes convivial pour vous aider à apprendre les con
 3. Nommez le projet **ModelExplorer**.
 4. Entrez l’emplacement du **dossier de** pointage que vous avez précédemment désinstallé.
 5. Vérifiez que le projet est défini sur **3D**.
-6. Cliquez sur **créer un projet**.
+6. Cliquez sur **créer un Project**.
 
 ### <a name="unity-settings-for-hololens"></a>Paramètres Unity pour HoloLens
 
-Nous devons permettre à Unity de savoir que l’application que nous essayons d’exporter doit créer une [vue immersive](../../../design/app-views.md) au lieu d’une vue 2D. Pour cela, nous ajoutons HoloLens en tant qu’appareil de réalité virtuelle.
+Nous devons permettre à Unity de savoir que l’application que nous essayons d’exporter doit créer une [vue immersive](../../../design/app-views.md) au lieu d’une vue 2D. pour cela, nous ajoutons HoloLens en tant qu’appareil de réalité virtuelle.
 
-1. Accédez à **modifier > paramètres du projet > Player**.
-2. Dans le **panneau Inspecteur** pour les paramètres du lecteur, sélectionnez l’icône du **Windows Store** .
+1. accédez à **modifier > Project Paramètres > Player**.
+2. dans le **panneau** de l’inspecteur pour Paramètres de lecteur, sélectionnez l’icône **Windows Store** .
 3. Développez le groupe **XR Settings**.
 4. Dans la section **Rendering** (Rendu), cochez la case **Virtual Reality Supported** (Réalité virtuelle prise en charge) pour ajouter une nouvelle liste **Virtual Reality SDKs** (SDK de réalité virtuelle).
-5. Vérifiez que **Windows Mixed Reality** apparaît dans la liste. Si ce n’est pas le cas, sélectionnez le **+** bouton en bas de la liste et choisissez **Windows holographique**.
+5. Vérifiez que **Windows Mixed Reality** apparaît dans la liste. si ce n’est pas le cas, sélectionnez le **+** bouton en bas de la liste et choisissez **Windows holographique**.
 
 Ensuite, nous devons définir notre backend de script sur .NET.
 
-1. Accédez à **modifier > paramètres du projet > Player** (vous pouvez toujours le faire à l’étape précédente).
-2. Dans le **panneau Inspecteur** pour les paramètres du lecteur, sélectionnez l’icône du **Windows Store** .
-3. Dans la section configuration **des autres paramètres** , assurez-vous que le **serveur principal de script** est défini sur **.net**
+1. accédez à **modifier > Project Paramètres > Player** (vous pouvez toujours le faire à l’étape précédente).
+2. dans le **panneau** de l’inspecteur pour Paramètres de lecteur, sélectionnez l’icône **Windows Store** .
+3. dans la section Configuration de l' **autre Paramètres** , assurez-vous que le **serveur principal de script** est défini sur **.net**
 
 Enfin, nous mettrons à jour nos paramètres de qualité pour obtenir des performances rapides sur HoloLens.
 
-1. Accédez à **modifier > paramètres du projet > qualité**.
-2. Cliquez sur la flèche pointant vers le bas dans la ligne **par défaut** sous l’icône Windows Store.
-3. Sélectionnez **très faible** pour les **applications du Windows Store**.
+1. accédez à **modifier > Project Paramètres > qualité**.
+2. cliquez sur la flèche pointant vers le bas dans la ligne **par défaut** sous l’icône Windows Store.
+3. sélectionnez **très bas** pour **Windows applications** du windows Store.
 
 ### <a name="import-project-assets"></a>Importer des ressources de projet
 
-1. Cliquez avec le bouton droit sur le dossier **ressources** dans le panneau **projet** .
+1. cliquez avec le bouton droit sur le dossier **composants** dans le panneau **Project** .
 2. Cliquez sur **Importer un package > package personnalisé**.
 3. Accédez aux fichiers de projet que vous avez téléchargés, puis cliquez sur **ModelExplorer. pour Unity**.
 4. Cliquez sur **Ouvrir**.
@@ -119,14 +119,14 @@ Enfin, nous mettrons à jour nos paramètres de qualité pour obtenir des perfor
 2. Dans le dossier **HoloToolkit** , ouvrez le dossier **d’entrée** , puis ouvrez le dossier **Prefabs** .
 3. Faites glisser et déposez le Prefab **MixedRealityCameraParent** à partir du dossier **Prefabs** dans la **hiérarchie**.
 4. Cliquez avec le bouton droit sur la **lumière directionnelle** dans la hiérarchie et sélectionnez **supprimer**.
-5. Dans le dossier **hologrammes** , glissez-déposez les éléments suivants à la racine de la **hiérarchie**:
+5. dans le dossier **Hologrammes** , glissez-déposez les éléments suivants dans la racine de la **hiérarchie**:
     * **AstroMan**
     * **Lumières**
     * **SpaceAudioSource**
     * **SpaceBackground**
 6. Démarrez le **mode lecture** ▶ pour afficher le astronautes.
 7. Cliquez à nouveau sur **mode lecture** ▶ pour **arrêter**.
-8. Dans le dossier **hologrammes** , recherchez la ressource **Fitbox** et faites-la glisser jusqu’à la racine de la **hiérarchie**.
+8. dans le dossier **Hologrammes** , recherchez la ressource **Fitbox** et faites-la glisser vers la racine de la **hiérarchie**.
 9. Sélectionnez le **Fitbox** dans le volet de la **hiérarchie** .
 10. Faites glisser la collection **AstroMan** de la **hiérarchie** vers la propriété de **collection hologramme** du Fitbox dans le panneau **inspecteur** .
 
@@ -138,10 +138,10 @@ Enfin, nous mettrons à jour nos paramètres de qualité pour obtenir des perfor
 
 ### <a name="build-the-project"></a>Créer le projet
 
-1. Dans Unity, sélectionnez **fichier > paramètres de build**.
+1. dans unity, sélectionnez **fichier > Build Paramètres**.
 2. Cliquez sur **Ajouter des scènes ouvertes** pour ajouter la scène.
-3. Sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme**.
-4. Si vous développez spécifiquement pour HoloLens, définissez **appareil cible** sur **hololens**. Dans le cas contraire, laissez-le sur **un appareil**.
+3. sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme**.
+4. si vous développez spécifiquement pour HoloLens, définissez l' **appareil cible** sur **HoloLens**. Dans le cas contraire, laissez-le sur **un appareil**.
 5. Vérifiez que le **type de build** est défini sur **D3D** et que le **Kit de développement logiciel (SDK** ) est défini sur le **dernier installé** (qui doit être le SDK 16299 ou une version ultérieure).
 6. Cliquez sur **Générer**.
 7. Créez un **dossier** nommé « App ».
@@ -151,19 +151,19 @@ Enfin, nous mettrons à jour nos paramètres de qualité pour obtenir des perfor
 Lorsque Unity est terminé, une fenêtre de l’Explorateur de fichiers s’affiche.
 
 1. Ouvrez le dossier de l' **application** .
-2. Ouvrez la **solution Visual Studio ModelExplorer**.
+2. ouvrez la **Solution Visual Studio ModelExplorer**.
 
-En cas de déploiement dans HoloLens :
+Si vous déployez sur HoloLens :
 
-1. À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
+1. à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
 2. Cliquez sur la flèche déroulante en regard du bouton ordinateur local, puis sélectionnez **ordinateur distant**.
-3. Entrez **l’adresse IP de votre appareil HoloLens** et définissez le mode d’authentification sur **universel (protocole non chiffré)**. Cliquez sur **Sélectionner**. Si vous ne connaissez pas l’adresse IP de votre appareil, accédez à **paramètres > réseau & Internet > options avancées**.
-4. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler à Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+3. entrez **l’adresse IP de votre appareil HoloLens** et définissez le Mode d’authentification sur **universel (protocole non chiffré)**. Cliquez sur **Sélectionner**. si vous ne connaissez pas l’adresse IP de votre appareil, consultez **Paramètres > réseau & Options avancées Internet >**.
+4. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler avec Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 5. Une fois l’application déployée, ignorez le **Fitbox** avec un **mouvement Select**.
 
 En cas de déploiement sur un casque immersif :
 
-1. À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x64**.
+1. à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x64**.
 2. Assurez-vous que la cible de déploiement est définie sur **ordinateur local**.
 3. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
 4. Une fois l’application déployée, Faites disparaître le **Fitbox** en tirant le déclencheur sur un contrôleur de mouvement.
@@ -197,9 +197,9 @@ Nous allons baser notre travail sur certains principes de conception de curseur,
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-1. Régénérez l’application à partir du **fichier > paramètres de build**.
+1. régénérez l’application à partir du **fichier > Paramètres de Build**.
 2. Ouvrez le **dossier** de l’application.
-3. Ouvrez la **solution Visual Studio ModelExplorer**.
+3. ouvrez la **Solution Visual Studio ModelExplorer**.
 4. Cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
 5. Observez comment le curseur est dessiné et comment il change d’apparence s’il touche un hologramme.
 
@@ -207,7 +207,7 @@ Nous allons baser notre travail sur certains principes de conception de curseur,
 
 1. Dans le volet **hiérarchie** , développez l’objet **AstroMan** -> **GEO_G** -> **Back_Center** .
 2. Double-cliquez sur **Interactible. cs** pour l’ouvrir dans Visual Studio.
-3. Supprimez les marques de commentaire des lignes dans les rappels **IFocusable. OnFocusEnter ()** et **IFocusable. OnFocusExit ()** dans **Interactible. cs**. Celles-ci sont appelées par le InputManager du Toolkit de la réalité mixte lorsque le focus (soit par le point de présence ou par le contrôleur pointant) entre et quitte le conflit du GameObject spécifique.
+3. Supprimez les marques de commentaire des lignes dans les rappels **IFocusable. OnFocusEnter ()** et **IFocusable. OnFocusExit ()** dans **Interactible. cs**. celles-ci sont appelées par la réalité mixte Shared Computer Toolkit InputManager quand le focus (soit par le point de présence ou par le contrôleur pointant) entre et quitte le conflit du GameObject spécifique.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -232,11 +232,11 @@ void IFocusable.OnFocusExit()
 ```
 
 >[!NOTE]
->Nous utilisons `EnableKeyword` et `DisableKeyword` versions ultérieures. Pour pouvoir les utiliser dans votre propre application avec le nuanceur standard du kit de ressources, vous devez suivre les [instructions Unity pour accéder aux documents par le biais](https://docs.unity3d.com/Manual/MaterialsAccessingViaScript.html)d’un script. Dans ce cas, nous avons déjà inclus les [trois variantes de matériel mis en surbrillance](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze/Completed/ModelExplorer/Assets/Resources/Models/AstroMan/Materials) nécessaires dans le dossier ressources (recherchez les trois éléments avec la mise en surbrillance dans le nom).
+>Nous utilisons `EnableKeyword` et `DisableKeyword` versions ultérieures. pour pouvoir les utiliser dans votre propre application avec le nuanceur Standard de Shared Computer Toolkit, vous devez suivre les [instructions unity pour accéder aux documents par le biais](https://docs.unity3d.com/Manual/MaterialsAccessingViaScript.html)d’un script. Dans ce cas, nous avons déjà inclus les [trois variantes de matériel mis en surbrillance](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze/Completed/ModelExplorer/Assets/Resources/Models/AstroMan/Materials) nécessaires dans le dossier ressources (recherchez les trois éléments avec la mise en surbrillance dans le nom).
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-1. Comme précédemment, générez le projet et déployez sur HoloLens.
+1. Comme précédemment, générez le projet et déployez-le sur le HoloLens.
 2. Observez ce qui se passe quand le point de regard est destiné à un objet et lorsqu’il ne l’est pas.
 
 ## <a name="chapter-3---targeting-techniques"></a>Chapitre 3-techniques de ciblage
@@ -251,7 +251,7 @@ void IFocusable.OnFocusExit()
 ### <a name="instructions"></a>Instructions
 
 1. Dans le volet **hiérarchie** , sélectionnez l’objet **InputManager** .
-2. Dans le volet de l' **inspecteur** , recherchez le script de **stabilisation du regard** . Cliquez dessus pour l’ouvrir dans Visual Studio, si vous souhaitez jeter un coup d’œil.
+2. Dans le volet de l' **inspecteur** , recherchez le script de **stabilisation du regard** . cliquez dessus pour l’ouvrir dans Visual Studio, si vous souhaitez jeter un coup d’œil.
     * Ce script itère sur des exemples de données Raycast et permet de stabiliser le regard de la précision de l’utilisateur.
 3. Dans l' **inspecteur**, vous pouvez modifier la valeur des **exemples de stabilité stockés** . Cette valeur représente le nombre d’échantillons sur lesquels le stabilisateur effectue une itération pour calculer la valeur stabilisée.
 
@@ -278,7 +278,7 @@ Commençons.
 3. Dans le volet de l' **inspecteur** , cliquez sur le bouton **Ajouter un composant** .
 4. Dans le menu, tapez dans l’indicateur de **direction** de la zone de recherche. Sélectionnez le résultat de la recherche.
 5. Dans le volet **hiérarchie** , faites glisser et déposez l’objet **Cursor** sur la propriété **Cursor** de l' **inspecteur**.
-6. Dans le **panneau Projet** , dans le **dossier hologrammes** , faites glisser et déposez l’élément **DirectionalIndicator** sur la propriété **indicateur directionnel** de l' **inspecteur**.
+6. dans le **volet Project** , dans le dossier **Hologrammes** , glissez-déplacez la ressource **DirectionalIndicator** sur la propriété **indicateur directionnel** de l' **inspecteur**.
 7. Générez et déployez l’application.
 8. Regardez comment l’objet indicateur directionnel vous aide à trouver le astronautes.
 
@@ -344,8 +344,8 @@ Le script **InteractibleAction. cs** , couplé à **Interactible. cs** , exécut
   * En haut de la **hiérarchie**, dans la barre de recherche, tapez **ChestButton_Center** et sélectionnez le résultat.
   * Dans le volet de l' **inspecteur** , cliquez sur le bouton **Ajouter un composant** .
   * Dans le menu, tapez dans la zone de recherche **accompagnent action**. Sélectionnez le résultat de la recherche.
-  * Dans le dossier **hologrammes** , recherchez la ressource **accompagnent** .
-  * Sélectionnez l’objet **ChestButton_Center** dans la **hiérarchie**. Glissez-déplacez l’objet **accompagnent** à partir du panneau **projet** vers l' **inspecteur** dans la propriété **Object to accompagnent** .
+  * dans **Hologrammes** dossier, recherchez la ressource **accompagnent** .
+  * Sélectionnez l’objet **ChestButton_Center** dans la **hiérarchie**. glissez-déplacez l’objet **accompagnent** à partir du panneau **Project** vers l' **inspecteur** dans la propriété **object To accompagnent** .
   * Faites glisser l’objet d' **action accompagnent** à partir de l' **inspecteur** dans le champ d' **action Interactible** sur le script **Interactible** .
 * Double-cliquez sur le script **TagalongAction** pour l’ouvrir dans Visual Studio.
 

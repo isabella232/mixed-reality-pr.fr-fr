@@ -5,12 +5,12 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, de réalité mixte, développement, MRTK, boutons MRTK
-ms.openlocfilehash: 16baeede2c63437e933eb1367f01af7f372cd62f
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 7d1c141981ec402d85e1e2004739e9ab9f0ebe9da5361e4e3100b43a2b5b4129
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281855"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115229000"
 ---
 # <a name="buttons"></a>Boutons
 

@@ -1,18 +1,18 @@
 ---
-title: Chargement du contenu du système de scène
+title: Système de scène - Chargement de contenu
 description: Documentation chargement du système de scène avec MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: c6bc6474afd50fe265853e53c0f29009d816cf51
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: df4437a0640637328c3f8f0d78be63a492d4bba15acb8a37bdf2dd3c32d89a59
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223033"
 ---
-# <a name="scene-system-content-loading"></a>Chargement du contenu du système de scène
+# <a name="scene-system-content-loading"></a>Système de scène - Chargement de contenu
 
 Toutes les opérations de chargement de contenu sont asynchrones et, par défaut, tout le chargement du contenu est additif. Les scènes de gestion et d’éclairage ne sont jamais affectées par les opérations de chargement de contenu. Pour plus d’informations sur la surveillance de la progression de la charge et l’activation des scènes, consultez [surveillance du chargement du contenu](scene-system-load-progress.md).
 

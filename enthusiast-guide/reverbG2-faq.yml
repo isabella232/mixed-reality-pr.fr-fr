@@ -1,19 +1,19 @@
 ### YamlMime:FAQ
 metadata:
   title: FAQ sur les réverbérations HP G2
-  description: Restez à jour avec les questions fréquemment posées sur l’utilisation du casque de réverbération de HP G2 avec les casques immersif Windows Mixed Reality.
+  description: restez à jour avec les questions fréquemment posées sur l’utilisation du casque de réverbération HP G2 avec Windows Mixed Reality des casques immersifs.
   ms.author: v-hferrone
   ms.date: 09/15/2020
   ms.topic: article
   keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
   appliesto:
   - Windows 10
-  ms.openlocfilehash: a15a29f36d4ad053f9f76016239c94365695d7c3
-  ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+  ms.openlocfilehash: 73c4761a35e679bccc8430ae7860aef71f015f25946ee709393980cf5f064148
+  ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "110143259"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115219934"
 title: Forum aux questions sur les réverbérations HP G2
 summary: ''
 sections:
@@ -25,7 +25,7 @@ sections:
       HP recommande :
 
 
-      - Connectez d’abord le câble à 6 mètres au casque avant de vous connecter au PC ou à l’alimentation.
+      - Connecter tout d’abord le câble à 6 mètres sur le casque avant de vous connecter au PC ou à l’alimentation.
 
       - Laissez le câble à 6 mètres connecté au casque après l’installation initiale.
 
@@ -79,7 +79,7 @@ sections:
   - question: >
       Les autres États sont bruyants ou que mon audio est tronqué pendant que j’utilise le microphone avec certaines applications
     answer: >
-      Les niveaux de volume en entrée sont automatiquement définis sur 100% lorsque le microphone de réverbes HP G2 est reconnu pour la première fois par un PC Windows. En raison des microtéléphones de reréverbération G2's de haute qualité, la sensibilité d’entrée est beaucoup plus élevée que les paramètres Windows 10 par défaut. Nous vous recommandons de définir le niveau d’entrée du microphone G2 de réverbération à partir de 50% et de monter en puissance. Un paramètre optimal est spécifique à l’utilisateur, en particulier lors de l’utilisation d’applications qui n’ont pas de paramètre de microphone « gain automatique ». Des exemples d’applications qui ont un « gain automatique » sont Skype, zoom, équipes et Cisco WebEx, mais pas toutes les applications de réseaux sociaux ou de radiodiffusion ne disposent pas de cette fonctionnalité.
+      les niveaux de volume en entrée sont automatiquement définis sur 100% lorsque le microphone de réverbération de HP G2 est reconnu pour la première fois par un PC Windows. en raison des microtéléphones de reréverbération G2's de haute qualité, la sensibilité d’entrée est bien supérieure à la valeur par défaut Windows 10 les paramètres attendus. Nous vous recommandons de définir le niveau d’entrée du microphone G2 de réverbération à partir de 50% et de monter en puissance. Un paramètre optimal est spécifique à l’utilisateur, en particulier lors de l’utilisation d’applications qui n’ont pas de paramètre de microphone « gain automatique ». des exemples d’applications qui ont un « gain automatique » sont Skype, Zoom, Teams et Cisco WebEx, mais pas toutes les applications de réseaux sociaux ou de radiodiffusion ne disposent pas de cette fonctionnalité.
   - question: >
       Le portail de réalité mixte indique « Impossible d’exécuter une réalité mixte sur ce casque », mais cela fonctionnait correctement avec mon casque WMR précédent
     answer: >
@@ -87,7 +87,7 @@ sections:
   - question: >
       Il semble que mon affichage à gauche soit étiré, et l’affichage à droite est décentré et demi-noir
     answer: >
-      Cela peut se produire lorsque votre casque n’est pas en cours d’exécution à la résolution native. En raison de la nature des affichages haute résolution dans le HMD de réverbération HP G2, tous les systèmes ne peuvent pas restituer la résolution native. Un correctif est disponible dans un futur Windows Update qui traitera le problème de rendu lorsque le casque n’est pas à la résolution native.
+      Cela peut se produire lorsque votre casque n’est pas en cours d’exécution à la résolution native. En raison de la nature des affichages haute résolution dans le HMD de réverbération HP G2, tous les systèmes ne peuvent pas restituer la résolution native. un correctif est disponible dans un futur Windows Update qui traitera le problème de rendu lorsque le casque n’est pas à la résolution native.
 
 
       Il existe plusieurs raisons pour lesquelles votre système ne peut pas être rendu à la résolution native :
@@ -105,14 +105,14 @@ sections:
   - question: >
       Mes jeux SteamVR ne semblent pas fonctionner correctement avec les contrôleurs de mouvement HP
     answer: >
-      Alors que les développeurs travaillent à mettre à jour leurs jeux pour la compatibilité avec HP Motion Controller, nous avons fourni des liaisons de contrôleur personnalisées pour la plupart des jeux les plus populaires sur la vapeur. Avec « Windows Mixed Reality for SteamVR » entièrement mis à jour vers la version 1.2.444, ces liaisons doivent être récupérées automatiquement lorsque votre jeu est en cours d’exécution. Toutefois, si votre jeu ne semble pas inscrire vos actions pour l’instant, vous pouvez rechercher manuellement des profils de liaison personnalisés à l’aide du menu des paramètres SteamVR.
+      Alors que les développeurs travaillent à mettre à jour leurs jeux pour la compatibilité avec HP Motion Controller, nous avons fourni des liaisons de contrôleur personnalisées pour la plupart des jeux les plus populaires sur la vapeur. avec « Windows Mixed Reality pour SteamVR » entièrement mis à jour vers la version 1.2.444, ces liaisons doivent être récupérées automatiquement lorsque votre jeu est en cours d’exécution. toutefois, si votre jeu ne semble pas inscrire vos actions pour l’instant, vous pouvez rechercher manuellement des profils de liaison personnalisés à l’aide du menu SteamVR Paramètres.
 
       Pour
 
 
       - Ouvrez le menu SteamVR en appuyant sur le bouton de menu du contrôleur de mouvement approprié
 
-      - Sélectionnez l’icône « Paramètres » dans le coin inférieur droit du menu SteamVR
+      - sélectionnez l’icône « Paramètres » dans le coin inférieur droit du menu SteamVR
 
       - Sélectionnez l’onglet « contrôleurs ».
 
@@ -136,6 +136,6 @@ sections:
   - question: >
       L’image des affichages de la réverbération G2 est plus petite et uniquement en haut à gauche
     answer: >
-      Si vous avez un processeur graphique AMD Power, vous devez désactiver la mise à l’échelle automatique. Pendant que votre casque est connecté, accédez à paramètres-> la réalité mixte-> casque-> résolution.
+      Si vous avez un processeur graphique AMD Power, vous devez désactiver la mise à l’échelle automatique. pendant que votre casque est connecté, accédez à Paramètres > la réalité mixte-> la résolution de >.
 
       Dans le menu déroulant, sélectionnez l’option « 4320 x 2160 (qualité optimale) ». Lorsque l’option « mise à l’échelle automatique (meilleures performances) » est sélectionnée, le problème peut survenir avec l’affichage.

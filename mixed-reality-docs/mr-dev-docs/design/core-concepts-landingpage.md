@@ -1,17 +1,17 @@
 ---
-title: Concepts de base de la réalité mixte
+title: Concepts principaux de la réalité mixte
 description: Découvrez les concepts fondamentaux et comment ils contribuent à la qualité des expériences de réalité mixte que vous créez pour vos utilisateurs.
 author: grbury
 ms.author: grbury
 ms.date: 10/02/2019
 ms.topic: overview
-keywords: Windows Mixed Reality, conception, modèles d’application, contrôles, style, HoloLens, interaction, éléments UX, comportements, blocs de construction, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, kit de développement de la réalité mixte, confort, modèle d’application, coordination, Frame holographique
-ms.openlocfilehash: 60fa024769ee0f81e4c2cc1c16550d296b4f646f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, conception, modèles d’application, contrôles, style, HoloLens, interaction, éléments UX, comportements, blocs de construction, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, confort, modèle d’application, coordination, frame holographique
+ms.openlocfilehash: 2cac725c62cb435b458deb2716edb7a07aa450ae9e0295a6bfe0cb7c1fabceb8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847568"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219362"
 ---
 # <a name="core-concepts-overview"></a>Vue d’ensemble des concepts de base
 

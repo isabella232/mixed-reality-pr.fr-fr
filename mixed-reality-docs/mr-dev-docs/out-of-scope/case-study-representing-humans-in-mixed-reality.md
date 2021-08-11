@@ -6,16 +6,16 @@ ms.author: jemccull
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, humains, avatar, capture de réalité mixte, vidéo volumétrique
-ms.openlocfilehash: 1a14759a6292a0fcc1e6fd36f518fff537c67dca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: db21b6b02ce76403c2c59e37384c1c1602d8a63e003a8b5b6601c5daf7b9c2a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681119"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228526"
 ---
 # <a name="case-study---representing-humans-in-mixed-reality"></a>Étude de cas, qui représente des êtres humains en réalité mixte
 
-James Turrell conçoit avec la lumière. L’exécution pas à pas de son travail rend floue un sens de la profondeur et du focus. Les murs semblent à la fois proches et infinis, la luminosité donne des ombres. Perceptions non familières conçues par l’équilibrage minutieux de la couleur et de la diffusion de la lumière. [Turrell décrit ces](https://www.sculpture.org/documents/scmag02/nov02/turrell/turrell.shtml) sens comme *« sentiment avec vos yeux »* , un moyen d’étendre une compréhension de la réalité. Des mondes fantastiques, comme ceux Turrell imagine, sont des outils puissants pour exploiter nos sens, et non pas à la différence des environnements immersifs de la réalité mixte aujourd’hui.
+James Turrell conçoit avec la lumière. L’exécution pas à pas de son travail rend floue un sens de la profondeur et du focus. Les murs semblent à la fois proches et infinis, la luminosité donne des ombres. Perceptions non familières conçues par l’équilibrage minutieux de la couleur et de la diffusion de la lumière. [Turrell décrit ces](https://www.sculpture.org/documents/scmag02/nov02/turrell/turrell.shtml) sens comme *« sentiment avec vos yeux »*, un moyen d’étendre une compréhension de la réalité. Des mondes fantastiques, comme ceux Turrell imagine, sont des outils puissants pour exploiter nos sens, et non pas à la différence des environnements immersifs de la réalité mixte aujourd’hui.
 
 ![Grand sorti-James Turrell (1998)](../develop/platform-capabilities-and-apis/images/wide-out-james-turrell.jpg)
 
@@ -51,7 +51,7 @@ Les êtres humains sont essentiels à la narration, dans le sens le plus littér
 
 ![Mindshow en VR](../develop/platform-capabilities-and-apis/images/mindshow-in-vr-640px.jpg)
 
-Les avatars dans des expériences immersifs permettent un nouveau type de incarnation dans le récits. Les applications les plus récentes repensent le concept de propriété de corps virtuel et de configuration d’un bond générationnel dans l’élimination de la distance entre les personnes. Des entreprises telles que [Mindshow](https://mindshow.com/) développent des outils créatifs qui tirent parti des avatars, ce qui permet aux utilisateurs de prendre des personnages et des personnages entièrement nouveaux. D’autres explorent les [méthodes d’expression artistique](https://en.wikipedia.org/wiki/Uncanny_valley), une opportunité créative potentiellement illimitée pour explorer la nature (et la nécessité) des attributs de type humain. Aujourd’hui, cette absence de réalisme permet d’éviter la [vallée des ignorent humains](https://en.wikipedia.org/wiki/Uncanny_valley) , ainsi qu’un hôte de problèmes techniques pour les développeurs quotidiens. Pour ces raisons (et bien plus encore), il est très probable que les avatars non réalistes deviendront la valeur par défaut pour un avenir prévisible. Pourtant, bien que le réalisme pose un énorme défi pour la réalité mixte, *il existe des scénarios clés qui requièrent une représentation authentique des êtres humains dans l’espace 3D* .
+Les avatars dans des expériences immersifs permettent un nouveau type de incarnation dans le récits. Les applications les plus récentes repensent le concept de propriété de corps virtuel et de configuration d’un bond générationnel dans l’élimination de la distance entre les personnes. Des entreprises telles que [Mindshow](https://mindshow.com/) développent des outils créatifs qui tirent parti des avatars, ce qui permet aux utilisateurs de prendre des personnages et des personnages entièrement nouveaux. D’autres explorent les [méthodes d’expression artistique](https://en.wikipedia.org/wiki/Uncanny_valley), une opportunité créative potentiellement illimitée pour explorer la nature (et la nécessité) des attributs de type humain. Aujourd’hui, cette absence de réalisme permet d’éviter la [vallée des ignorent humains](https://en.wikipedia.org/wiki/Uncanny_valley) , ainsi qu’un hôte de problèmes techniques pour les développeurs quotidiens. Pour ces raisons (et bien plus encore), il est très probable que les avatars non réalistes deviendront la valeur par défaut pour un avenir prévisible. Pourtant, bien que le réalisme pose un énorme défi pour la réalité mixte, *il existe des scénarios clés qui requièrent une représentation authentique des êtres humains dans l’espace 3D*.
 
 Chez Microsoft, une petite équipe à la recherche de Microsoft Research a passé les dernières années à développer une méthode pour capturer les êtres humains via une forme de vidéo volumétrique. Aujourd’hui, le processus est similaire à la production vidéo : au lieu d’appliquer un mouvement à une ressource sculptée, il s’agit d’un enregistrement 3D complet. Les performances et l’image sont capturées en temps réel. il ne s’agit pas du travail d’un artiste, il s’agit d’une représentation authentique. Et bien que la technologie commence simplement à se développer dans des applications commerciales, les implications de la vidéo volumétrique sont essentielles à la [vision de Microsoft en matière d’informatique personnelle](https://www.youtube.com/watch?v=tcyj-_IEWt8).
 
@@ -69,7 +69,7 @@ Concevoir des moyens de faire de ces vidéos un défi naturel pose un défi, mai
 
 ![Avenir de la conversation](../develop/platform-capabilities-and-apis/images/girl-with-dress.jpg)
 
-De la superposition d’un nouveau niveau d’immersion aux applications quotidiennes telles que Skype, pour remodeler radicalement le concept de réunions numériques et de voyages d’affaires, la vidéo volumétrique ouvre des scénarios uniques : un spécialiste qui se connecte pratiquement à des médecins sur un continent éloigné ou des amis numériques assiste sur les canapés et les chaises de votre salon. L’ajout de représentations humaines authentiques à des expériences de réalité mixte reformera radicalement le concept de réunions numériques et de voyages d’affaires.
+de la superposition d’un nouveau niveau d’immersion aux applications quotidiennes comme Skype, afin de reformer radicalement le concept de réunions numériques et de voyages d’affaires, la vidéo volumétrique ouvre des scénarios uniques : un spécialiste qui se connecte pratiquement à des médecins sur un continent éloigné ou des amis numériques assiste sur les canapés et les chaises de votre salon. L’ajout de représentations humaines authentiques à des expériences de réalité mixte reformera radicalement le concept de réunions numériques et de voyages d’affaires.
 
 Tout comme l’art abstrait de James Turrell et le réalisme critique de l’IA Weiwei offrent leurs propres défis techniques uniques, les méthodes pour représenter les êtres humains comme des avatars créatifs et des captures réalistes. Vous ne pouvez pas l’ignorer à la lumière de l’autre et l’exploration du potentiel de chacun nous aidera à comprendre l’interaction humaine dans ce nouvel espace.
 
@@ -78,6 +78,6 @@ Tout comme l’art abstrait de James Turrell et le réalisme critique de l’IA 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
-<td style="border-style: none"><b>Marquer Vitazko</b><br>Concepteur UX @Microsoft</td>
+<td style="border-style: none"><b>Marquer Vitazko</b><br>Concepteur d’expérience utilisateur @Microsoft</td>
 </tr>
 </table>

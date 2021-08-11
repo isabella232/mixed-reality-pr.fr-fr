@@ -4,13 +4,13 @@ description: Documentation de InteractiveElement MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 02/22/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, élément interactif, interactif
-ms.openlocfilehash: 65f518c53414d68d3a9d2093cb427140cc65560b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, élément interactif, interactif
+ms.openlocfilehash: 6d8f36c4780844e991eb32943645402503fab8340c6843dbb607f1c11033d912
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220442"
 ---
 # <a name="interactive-element-experimental"></a>Élément interactif [expérimental]
 
@@ -33,7 +33,7 @@ L’élément interactif contient les États principaux et prend en charge l’a
 - [Par défaut](#default-state) 
 
 États de base de l’interaction near et Far :
-- [Priorité](#focus-state) 
+- [Spécialisés](#focus-state) 
 
 États de base near interaction :
 
@@ -580,7 +580,7 @@ Le visualiseur d’État doit être ajouté à un objet via l’inspecteur et ne
 
 ## <a name="animatable-properties"></a>Propriétés pouvant être animées
 
-L’objectif principal des propriétés pouvant être animées est de simplifier le paramètre d’image clé du clip d’animation.  Si un utilisateur est familiarisé avec le système d’animation Unity et préfère définir directement les images clés sur les clips d’animation générés, il peut simplement ne pas ajouter de propriétés animables à un objet cible et ouvrir le clip dans la fenêtre d’animation d’Unity (Windows > animation > Animation). 
+L’objectif principal des propriétés pouvant être animées est de simplifier le paramètre d’image clé du clip d’animation.  si un utilisateur est familiarisé avec le système d’animation unity et préfère définir directement les images clés sur les clips d’animation générés, il peut simplement ne pas ajouter de propriétés animables à un objet cible et ouvrir le clip dans la fenêtre d’animation d’unity (Windows > animation > animation). 
 
 Si vous utilisez les propriétés animables pour l’animation, le type de courbe est défini sur EaseInOut.
 
@@ -645,6 +645,6 @@ La propriété animable Vector Shader fait référence à une propriété de nua
 ## <a name="see-also"></a>Voir aussi
 
 - [**Boutons**](../ux-building-blocks/button.md)
-- [**Contrôle des limites**](../ux-building-blocks/bounds-control.md)
+- [**Contrôle de limites**](../ux-building-blocks/bounds-control.md)
 - [**Collection d’objets Grid**](../ux-building-blocks/object-collection.md)
 - [**Solveur RadialView**](../ux-building-blocks/solvers/solver.md)

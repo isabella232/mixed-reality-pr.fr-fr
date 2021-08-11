@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: procédure pas à pas, commande vocale, expression, reconnaissance, reconnaissance vocale, DirectX, plateforme, Cortana, Windows Mixed Reality
-ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e30d5c2101bed4b613111b6131a3e94d654c3ff5b1e913f4d8e275ffc1a2776a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221839"
 ---
 # <a name="voice-input-in-directx"></a>Entrée vocale dans DirectX
 
@@ -27,7 +27,7 @@ Cet article explique comment implémenter des [commandes vocales](../../design/v
 
 Cette section décrit comment utiliser la reconnaissance vocale continue pour activer les commandes vocales dans votre application. Cette procédure pas à pas utilise le code de l’exemple [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) . Lorsque l’exemple est en cours d’exécution, parlez le nom de l’une des commandes de couleur inscrite pour modifier la couleur du cube en rotation.
 
-Tout d’abord, créez une instance *Windows :: Media :: SpeechRecognition :: SpeechRecognizer* .
+tout d’abord, créez une instance *Windows :: Media :: SpeechRecognition :: SpeechRecognizer* .
 
 À partir de *HolographicVoiceInputSampleMain :: CreateSpeechConstraintsForCurrentState*:
 
@@ -284,7 +284,7 @@ catch (Exception^ exception)
 
 ## <a name="use-continuous-recognition"></a>Utiliser la reconnaissance continue
 
-Pour le scénario de dictée continue, consultez l' [exemple de code vocal Windows 10 UWP](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).
+pour le scénario de dictée continue, consultez l' [exemple de code vocal Windows 10 UWP](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).
 
 ## <a name="handle-quality-degradation"></a>Gérer la dégradation de la qualité
 

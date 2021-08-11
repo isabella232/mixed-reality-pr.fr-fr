@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 05/11/2021
 ms.topic: article
 keywords: HoloLens, Emulator, builds, Versions, casque de réalité mixte, casque windows mixed realisation, casque de réalité virtuelle, archive
-ms.openlocfilehash: c6c5f011297809d51a3b5d830f19b5d80a582d2b
-ms.sourcegitcommit: eb39526f9620f0459bd30e4484307892f4609334
+ms.openlocfilehash: ca5338a0104c5551d96cb7ea4d7dfef3e38432c14dc75ee41a32874e71f1fb01
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114201610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223553"
 ---
 # <a name="hololens-2-emulator-archive"></a>archive HoloLens 2 Emulator
 
@@ -21,8 +21,8 @@ HoloLens Emulator (first gen) et HoloLens 2 Emulator builds s’installent côte
 |----------|----------|----------|
 | [HoloLens 2 Emulator build 10.0.20348.1010](https://go.microsoft.com/fwlink/?linkid=2167725) | Le 13 juillet 2021 | Windows Holographique, version 21H1 mise à jour de juillet 2021. <br> lors de l’utilisation de la HoloLens 2 Emulator sur un PC avec des cartes graphiques intégrées et discrètes, l’émulateur peut, dans la plupart des cas, être en mesure d’activer l’accélération graphique matérielle, bien qu’il puisse utiliser l’adaptateur intégré moins puissant. Auparavant, l’accélération matérielle n’a pas pu être activée, ce qui signalait souvent une défaillance graphique avec le code 43. Dans certains cas, l’émulateur ne démarre pas correctement, mais ce n’est pas le cas. <br> pour obtenir des notes de publication générales HoloLens 2, consultez.https://docs.microsoft.com/hololens/hololens-release-notes |
 | [HoloLens 2 Emulator build 10.0.19041.1157](https://go.microsoft.com/fwlink/?linkid=2167735) | Le 13 juillet 2021 | Windows Holographique, version 20H2 mise à jour de juillet 2021.  <br> lors de l’utilisation de la HoloLens 2 Emulator sur un PC avec des cartes graphiques intégrées et discrètes, l’émulateur peut, dans la plupart des cas, être en mesure d’activer l’accélération graphique matérielle, bien qu’il puisse utiliser l’adaptateur intégré moins puissant. Auparavant, l’accélération matérielle n’a pas pu être activée, ce qui signalait souvent une défaillance graphique avec le code 43. Dans certains cas, l’émulateur ne démarre pas correctement, mais ce n’est pas le cas. <br> pour obtenir des notes de publication générales HoloLens 2, consultez.https://docs.microsoft.com/hololens/hololens-release-notes |
-|  [HoloLens 2 Emulator build 10.0.20348.1007](https://go.microsoft.com/fwlink/?linkid=2165258) | 8 juin 2021 | Windows Holographique, version 21H1 mise à jour 2021 de juin.  pour obtenir des notes de publication générales HoloLens 2, consultez.https://docs.microsoft.com/hololens/hololens-release-notes |
-|  [HoloLens 2 Emulator build 10.0.19041.1154](https://go.microsoft.com/fwlink/?linkid=2165269) | 8 juin 2021 | Windows Holographique, version 20H2 mise à jour 2021 de juin.  pour obtenir des notes de publication générales HoloLens 2, consultez.https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator build 10.0.20348.1007](https://go.microsoft.com/fwlink/?linkid=2165258) | 8 juin 2021 | Windows Holographique, version 21H1 mise à jour 2021 de juin.  pour obtenir des notes de publication générales HoloLens 2, consultez.https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator build 10.0.19041.1154](https://go.microsoft.com/fwlink/?linkid=2165269) | 8 juin 2021 | Windows Holographique, version 20H2 mise à jour 2021 de juin.  pour obtenir des notes de publication générales HoloLens 2, consultez.https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.20346.1002](https://go.microsoft.com/fwlink/?linkid=2162581) | 11 mai 2021 | Windows Holographique, version 21H1 mai 2021 Update.  pour obtenir des notes de publication générales HoloLens 2, consultez.https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1146](https://go.microsoft.com/fwlink/?linkid=2162751) | 11 mai 2021 | Windows Holographique, version 20H2 mai 2021 Update.  pour obtenir des notes de publication générales HoloLens 2, consultez.https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1144](https://go.microsoft.com/fwlink/?linkid=2160829) | 13 avril 2021 | Windows Holographique, version 20H2 mise à jour 2021 d’avril.  pour obtenir des notes de publication générales HoloLens 2, consultez.https://docs.microsoft.com/hololens/hololens-release-notes |

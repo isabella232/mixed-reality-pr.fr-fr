@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 520a667cc4b41f5e8f4373a7c901eb2458cd2d17
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 14061197031282dcc9dd20a141101b65ee92ca2376bdc009fa8790076681a970
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220000"
 ---
 # <a name="dictation"></a>Dictation
 
 La dictée permet aux utilisateurs d’enregistrer des clips audio et d’obtenir une transcription. Pour l’utiliser, assurez-vous qu’un système de dictée est inscrit dans le *profil de système d’entrée*. **Windows fournisseur d’entrée de dictée** est le système de dictée prêt à l’emploi, mais d’autres systèmes de dictée peuvent être mis en œuvre [`IMixedRealityDictationSystem`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationSystem) .
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 le système de dictée utilise [DictationRecognizer](https://docs.unity3d.com/ScriptReference/Windows.Speech.DictationRecognizer.html) d’unity, qui utilise lui-même les api de reconnaissance vocale Windows sous-jacentes pour la gestion de la dictée. notez que cela implique que cette fonctionnalité est uniquement présente sur les plateformes basées sur Windows.
 

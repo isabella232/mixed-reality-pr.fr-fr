@@ -5,13 +5,13 @@ author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, Color, Light, Materials, mixed realing casque, Windows Mixed Reality casque, Virtual realer casque, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2e1626e72d49107c2a83bf1123b306d3ee5c8640
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, conception, color, light, materials, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de la réalité mixte
+ms.openlocfilehash: 50789faa44e6786c0d9fd0b146daa84f459df451bedc52f06073e742ea8064a0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219857"
 ---
 # <a name="color-light-and-materials"></a>Couleurs, éclairage et matériaux
 
@@ -23,17 +23,17 @@ Vous trouverez ci-dessous des instructions spécifiques au rendu des ressources 
 
 ## <a name="rendering-on-immersive-vs-holographic-devices"></a>Rendu sur des appareils immersifs et holographiques
 
-Le contenu rendu dans les casques immersifs s’affiche visuellement différent par rapport au contenu rendu dans les casques holographiques. Bien que les casques immersifs affichent généralement le contenu comme vous le feriez sur un écran 2D, les casques holographiques tels que les HoloLens utilisent des couleurs séquentielles, voir les affichages RGB pour afficher les hologrammes.
+Le contenu rendu dans les casques immersifs s’affiche visuellement différent par rapport au contenu rendu dans les casques holographiques. bien que les casques immersifs affichent généralement le contenu comme vous le feriez sur un écran 2d, les casques holographiques comme les HoloLens utilisent des couleurs séquentielles, voir les affichages RGB pour afficher les hologrammes.
 
 Prenez toujours le temps de tester vos expériences holographiques dans un casque holographique. L’apparence du contenu, même s’il est conçu spécifiquement pour les appareils holographiques, variera en fonction des analyses secondaires, des instantanés et de la vue spectateur. N’oubliez pas de vous familiariser avec les expériences d’un appareil, de tester l’éclairage des hologrammes et d’observer tous les côtés (ainsi que d’un niveau supérieur ou inférieur) de votre contenu. Veillez à tester avec une plage de paramètres de luminosité sur l’appareil. Il est peu probable que tous les utilisateurs partagent une valeur par défaut supposée et un ensemble diversifié de conditions d’éclairage.
 
 ## <a name="fundamentals-of-rendering-on-holographic-devices"></a>Notions de base du rendu sur les appareils holographiques
 
-* Les **appareils holographiques ont des affichages** supplémentaires : les hologrammes sont créés en ajoutant de la lumière à la lumière à partir du monde réel : le blanc s’affiche vivement, tandis que le noir apparaît en transparence.
+* les **appareils holographiques ont des affichages** supplémentaires : Hologrammes sont créés en ajoutant de la lumière à la lumière dans le monde réel, le blanc s’affiche en clair, tandis que le noir apparaîtra transparent.
 
 * **L’impact des couleurs varie en fonction de l’environnement de l’utilisateur** : il existe de nombreuses conditions d’éclairage différentes dans la salle d’un utilisateur. Créez du contenu avec des niveaux de contraste appropriés pour faciliter la clarté.
 
-* **Évitez l’éclairage dynamique** : les hologrammes qui sont allumés uniformément dans les expériences holographiques sont les plus efficaces. L’éclairage dynamique est susceptible de dépasser les capacités des appareils mobiles. Lorsque l’éclairage dynamique est requis, il est recommandé d’utiliser le [nuanceur standard Mixed Reality Toolkit standard](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md). 
+* **évitez l’éclairage dynamique** : les Hologrammes qui sont allumés uniformément dans les expériences holographiques sont les plus efficaces. L’éclairage dynamique est susceptible de dépasser les capacités des appareils mobiles. lorsque l’éclairage dynamique est requis, il est recommandé d’utiliser la [réalité mixte Shared Computer Toolkit nuanceur Standard](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md). 
 
 ## <a name="designing-with-color"></a>Conception avec couleur
 
@@ -45,7 +45,7 @@ En raison de la nature des affichages additifs, certaines couleurs peuvent appar
 
 * **Uniformité des couleurs** -en général, les hologrammes sont rendues suffisamment brillants pour maintenir l’uniformité des couleurs, quel que soit l’arrière-plan. Les grandes zones peuvent devenir nettes. Évitez les grandes zones de couleur lumineuse et unie.
 
-* La **gamme** -HoloLens bénéficie d’une « gamme étendue » de couleurs, conceptuellement similaire à Adobe RGB. Par conséquent, certaines couleurs peuvent afficher différentes qualités et représentations dans l’appareil.
+* **gamme** -HoloLens avantages d’une « large gamme » de couleurs, conceptuellement similaire à Adobe RGB. Par conséquent, certaines couleurs peuvent afficher différentes qualités et représentations dans l’appareil.
 
 * **Gamma** : la luminosité et le contraste de l’image rendue varient en fonction des appareils immersifs et holographiques. Ces différences d’appareils semblent souvent faire apparaître des zones sombres de couleur et des ombres, plus ou moins lumineuses.
 

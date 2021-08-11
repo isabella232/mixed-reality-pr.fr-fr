@@ -5,13 +5,13 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, mappage spatial, convertisseur, conflit, maillage, numérisation, composant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: fa571a13ce192b29b2a35033b55061f3ffb707da
-ms.sourcegitcommit: ec80ef1e496bf0b17a161735535517e87ffdd364
+keywords: unity, mappage spatial, convertisseur, conflit, maillage, numérisation, composant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, Shared Computer Toolkit de la réalité mixte
+ms.openlocfilehash: 4c8d0598898b4717a624562340918f968bd26f1fcde72258907e4fce73bd8489
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110351777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223104"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mappage spatial dans Unity
 
@@ -36,16 +36,16 @@ Pour qu’une application consomme des données de mappage spatiales, la capacit
 
 Comment activer la fonctionnalité SpatialPerception :
 
-1. Dans l’éditeur Unity, ouvrez le volet **« paramètres du lecteur »** (modifier > paramètres du projet > Player)
-2. Sélectionnez sous l’onglet **Windows Store**
-3. Développez **« paramètres de publication »** et cochez la fonctionnalité **« SpatialPerception »** dans la liste **« fonctionnalités »** .
+1. dans l’éditeur unity, ouvrez le volet **« Paramètres player »** (modifier > Project Paramètres player >)
+2. sélectionnez sous l’onglet **« Store de Windows »**
+3. développez **« publication Paramètres »** , puis vérifiez la fonctionnalité **« SpatialPerception »** dans la liste **« fonctionnalités »** .
 
 > [!NOTE]
-> Si vous avez déjà exporté votre projet Unity vers une solution Visual Studio, vous devez l’exporter vers un nouveau dossier ou définir manuellement [cette fonctionnalité dans AppxManifest dans Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
+> si vous avez déjà exporté votre projet unity vers une solution Visual Studio, vous devez l’exporter vers un nouveau dossier ou définir manuellement [cette fonctionnalité dans le AppxManifest de Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 Le mappage spatial nécessite également un MaxVersionTested d’au moins 10.0.10586.0 :
 
-1. Dans Visual Studio, cliquez avec le bouton droit sur **Package. appxmanifest** dans le Explorateur de solutions puis sélectionnez **afficher le code** .
+1. dans Visual Studio, cliquez avec le bouton droit sur **Package. appxmanifest** dans le Explorateur de solutions puis sélectionnez **afficher le Code** .
 2. Recherchez la ligne qui spécifie **TargetDeviceFamily** et remplacez **MaxVersionTested = "10.0.10240.0"** par **MaxVersionTested = "10.0.10586.0"**
 3. **Enregistrez** le package. appxmanifest.
 
@@ -423,7 +423,7 @@ Lors de la résolution de l’emplacement de positionnement de plusieurs objets 
 
 ### <a name="room-scanning-process"></a>Processus d’analyse de la salle
 
-Bien que la solution de mappage spatial fournie par le HoloLens soit conçue pour être suffisamment générique pour répondre aux besoins de la gamme complète des espaces à problème, le module de compréhension spatiale a été conçu pour prendre en charge les besoins de deux jeux spécifiques. Sa solution est structurée autour d’un processus et d’un ensemble d’hypothèses spécifiques, résumés ci-dessous.
+bien que la solution de mappage spatial fournie par le HoloLens soit conçue pour être suffisamment générique pour répondre aux besoins de la gamme complète des espaces à problème, le module de compréhension spatiale a été conçu pour prendre en charge les besoins de deux jeux spécifiques. Sa solution est structurée autour d’un processus et d’un ensemble d’hypothèses spécifiques, résumés ci-dessous.
 
 ```txt
 Fixed size playspace – The user specifies the maximum playspace size in the init call.
@@ -473,13 +473,13 @@ La dll de compréhension stocke en interne le PlaySpace sous la forme d’une gr
 * Vérifiez que vous avez défini la fonctionnalité [SpatialPerception](#setting-the-spatialperception-capability)
 * Lorsque le suivi est perdu, l’événement OnSurfaceChanged suivant supprime tous les maillages.
 
-## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mappage spatial dans le Toolkit de réalité mixte
+## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>mappage Spatial en réalité mixte Shared Computer Toolkit
 
-Pour plus d’informations sur l’utilisation du mappage spatial avec la boîte à outils de réalité mixte, consultez la [section relative à la sensibilisation spatiale](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) des documents MRTK.
+pour plus d’informations sur l’utilisation du mappage spatial avec la réalité mixte Shared Computer Toolkit, consultez la [section relative à la sensibilisation spatiale](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) des documents MRTK.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au module suivant :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir d’ici, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)

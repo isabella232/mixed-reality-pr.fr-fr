@@ -1,18 +1,18 @@
 ---
 title: FAQ sur le matériel liés
-description: Autres conseils de dépannage Windows Mixed realisation qui vont au-delà de notre documentation de support technique standard.
+description: autres Windows Mixed Reality conseils de dépannage qui vont au-delà de notre documentation de support technique standard.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, dépannage, erreurs, aide, support, désinstallation de Windows Mixed Reality, langues prises en charge
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, dépannage, erreurs, aide, Support, désinstallation de Windows Mixed Reality, langues prises en charge
 appliesto:
 - Windows 10
-ms.openlocfilehash: ede2620ca6a47b085a3d7b54fd6df073bfaa528e
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 9de3ecfe2f2fc58a0afee0d7702b15131b15b12086d9f4f9851b3a9d4920afe3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196594"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219715"
 ---
 # <a name="other-questions"></a>Autres questions
 
@@ -22,15 +22,15 @@ Recherchez et exécutez « dxdiag » :
 
 1.  Si le résultat est « Rendering de base », le pilote Graphics n’est pas installé. Pour résoudre ce problème :
     * Accédez à **Gestionnaire de périphériques > Action > Rechercher les modifications matérielles**.
-    * Utilisez Windows Update pour mettre à jour le pilote.
+    * utilisez Windows Update pour mettre à jour le pilote.
     * Si cela ne résout pas le problème, accédez au site Web du fabricant et installez la dernière mise à jour du pilote. 
     * Si une mise à jour n’est pas disponible pour votre GPU, WMR peut ne pas être pris en charge sur votre appareil. Si vous pensez que c’est le cas, contactez le [support technique](https://support.microsoft.com).
 2.  Si vous recevez un « WDDM 2,1 » ou une version antérieure, le pilote Graphics est installé, mais il peut ne pas être la version la plus récente. Pour récupérer la version la plus récente :
-    * Utilisez Windows Update pour mettre à jour le pilote.
+    * utilisez Windows Update pour mettre à jour le pilote.
     * Si cette mise à jour ne résout pas le problème, accédez au site Web du fabricant et installez la dernière mise à jour du pilote. 
     * Si une mise à jour n’est pas disponible pour votre GPU, WMR peut ne pas être pris en charge sur votre appareil. Si vous pensez que c’est le cas, contactez le [support technique](https://support.microsoft.com).
 
-Si le programme d’installation de Windows Mixed Reality indique que votre carte graphique ne répond pas aux exigences et que vous pensez qu’elle le fait, vérifiez que votre casque est branché à la bonne carte.
+si Windows Mixed Reality configuration indique que votre carte graphique ne répond pas aux exigences et que vous pensez qu’elle le fait, assurez-vous que votre casque est branché à la bonne carte.
 
 ## <a name="my-samsung-odyssey-or-odyssey-headset-firmware-update-is-stuck"></a>Ma mise à jour du microprogramme Samsung Odyssey ou Odyssey + du casque est bloquée.
 
@@ -39,12 +39,12 @@ Samsung possède et publie les mises à jour du microprogramme du casque fournie
 Si le processus de mise à jour du microprogramme est bloqué et qu’il n’y a pas eu de progression depuis plus de cinq minutes :
 
 * Débranchez temporairement tous vos autres périphériques USB et recommencez la mise à jour du microprogramme.
-* Connectez votre casque Samsung à un port USB 3,0 différent sur votre PC.
+* Connecter votre casque Samsung sur un port USB 3,0 différent sur votre PC.
 * Désactivez ou désinstallez les logiciels installés qui peuvent interférer avec les mises à jour du microprogramme, comme les App Center de AORUS de gigaoctets.
 * Utilisez un autre PC pour mettre à jour le microprogramme du casque Samsung.
 
 ## <a name="how-do-i-access-my-pc-desktop-in-mixed-reality"></a>Comment faire accéder au poste de travail de mon PC en réalité mixte ?
-Lancez l’application de bureau dans le bouton casque à partir de **Windows > toutes les applications > Bureau** pour accéder à votre ordinateur de bureau en réalité mixte.
+lancez l’application de bureau dans le casque à partir de **Windows bouton > toutes les applications > bureau** pour accéder à votre ordinateur de bureau en réalité mixte.
 
 ## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>Comment puis-je voir plusieurs analyses en réalité mixte ?
 
@@ -67,16 +67,16 @@ Si votre ordinateur possède un GPU hybride NVIDIA, le périphérique NVIDIA qui
 Si vous utilisez une connexion Wi-Fi de 2,4 GHz, vos contrôleurs de mouvement peuvent ralentir votre Wi-Fi :
 
 * Basculez vers une connexion de Wi-Fi de 5 GHz, si celle-ci est disponible. [Plus d’informations](https://support.microsoft.com/help/4000461)
-* Utilisez un adaptateur Bluetooth distinct pour connecter vos contrôleurs de mouvement à votre PC. Voir les [adaptateurs recommandés](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
+* utilisez une carte Bluetooth distincte pour connecter vos contrôleurs de mouvement à votre PC. Voir les [adaptateurs recommandés](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>J’ai reçu un message indiquant qu’il faut brancher et charger mon PC. Pourquoi ?
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>J’ai reçu un message indiquant qu’il faut brancher et charger mon PC. Pourquoi ?
 
-Si vous utilisez un ordinateur portable, Windows Mixed Reality fonctionne mieux lorsque l’ordinateur est entièrement chargé et branché.
+si vous utilisez un ordinateur portable, Windows Mixed Reality fonctionne mieux lorsque l’ordinateur est entièrement chargé et branché.
 
 ## <a name="what-is-the-experience-options-setting"></a>Qu’est-ce que le paramètre options d’expérience ?
 
-**Paramètres > la réalité mixte > l’affichage du casque > options de l’expérience utilisateur** vous permet de modifier les paramètres de performances de Windows Mixed Reality. Cela vous permet de choisir la meilleure expérience pour votre configuration matérielle dans une plage de contenu. Vous avez le choix entre trois options d’expérience :
-* Automatique : Windows Mixed Reality déterminera la meilleure expérience de votre configuration matérielle. Pour la plupart des gens, c’est le meilleur choix pour commencer.
+**Paramètres > la réalité mixte > les options de l’expérience > de l’expérience utilisateur** vous permet de modifier les paramètres de performances de Windows Mixed Reality. Cela vous permet de choisir la meilleure expérience pour votre configuration matérielle dans une plage de contenu. Vous avez le choix entre trois options d’expérience :
+* automatique : Windows Mixed Reality déterminera la meilleure expérience de votre configuration matérielle. Pour la plupart des gens, c’est le meilleur choix pour commencer.
 * 60 Hz : définit la fréquence d’actualisation à 60 Hz et désactive certaines fonctionnalités, telles que la capture vidéo et la version préliminaire dans le portail de réalité mixte.
 * 90 Hz : définit la fréquence d’actualisation à 90 Hz.
 
@@ -97,7 +97,7 @@ Windows Mixed Reality est disponible dans les langues suivantes :
 * Espagnol (Mexique)
 * Espagnol (Espagne)
 
-Vous pouvez utiliser Windows Mixed Reality si votre ordinateur est défini sur une langue différente. Toutefois, l’interface s’affichera en anglais (États-Unis), et les commandes vocales et la dictée ne seront pas disponibles. Le clavier à l’écran Windows Mixed Reality est en anglais (États-Unis) uniquement. Pour entrer du texte dans une autre langue, utilisez un clavier physique connecté à votre PC. Vous pouvez également utiliser la dictée dans l’un des langages Windows Mixed Reality pris en charge listés ci-dessus ; sélectionnez simplement microphone sur le clavier à l’écran.
+vous pouvez utiliser Windows Mixed Reality si votre ordinateur est défini sur une autre langue. Toutefois, l’interface s’affichera en anglais (États-Unis), et les commandes vocales et la dictée ne seront pas disponibles. le Windows Mixed Reality clavier à l’écran est l’anglais (États-Unis) uniquement. Pour entrer du texte dans une autre langue, utilisez un clavier physique connecté à votre PC. vous pouvez également utiliser la dictée dans l’un des langages de Windows Mixed Reality pris en charge listés ci-dessus. il vous suffit de sélectionner microphone sur le clavier à l’écran.
 
 Windows Mixed Reality est également disponible dans les langues suivantes sans commandes vocales ni fonctionnalités de dictée :
 * Chinois traditionnel (Taïwan et Hong Kong)
@@ -112,23 +112,23 @@ Pour plus d’informations sur votre casque, contactez le fabricant. Il peut y a
 ## <a name="how-do-i-uninstall-windows-mixed-reality"></a>Comment faire désinstaller Windows Mixed Reality ?
 
 1. Déconnectez votre casque de votre PC.
-2. Fermez le portail Windows Mixed Reality.
-2. Accédez à  **démarrer > paramètres > réalité mixte** et sélectionnez Désinstaller.
+2. fermez le portail Windows Mixed Reality.
+2. accédez à **démarrer > Paramètres > la réalité mixte** et sélectionnez « désinstaller ».
 
-Quand vous êtes prêt à recommencer à utiliser votre casque, connectez-le et le portail Windows Mixed realer vous guidera tout au long de la configuration.
+quand vous êtes prêt à recommencer à utiliser votre casque, connectez-le et Windows Mixed Reality portail vous guidera tout au long de la configuration.
 
-## <a name="i-got-a-we-couldnt-finish-uninstalling-windows-mixed-reality-message"></a>J’ai reçu un message « Impossible de terminer la désinstallation de Windows Mixed Reality ».
+## <a name="i-got-a-we-couldnt-finish-uninstalling-windows-mixed-reality-message"></a>j’ai reçu un message « nous n’avons pas pu terminer la désinstallation de Windows Mixed Reality ».
 
-Certains fichiers, y compris des informations sur votre environnement, peuvent toujours se trouver sur votre ordinateur. Cela peut poser des problèmes si vous décidez de réinstaller Windows Mixed Reality ultérieurement. Vous pouvez supprimer manuellement toutes les informations Windows Mixed Reality restantes de votre PC en modifiant le registre et en utilisant Windows PowerShell pour exécuter des commandes. _Si vous modifiez le registre de manière incorrecte, des problèmes sérieux peuvent survenir. Veillez à suivre ces étapes avec prudence. Pour une protection supplémentaire, sauvegardez votre registre avant de le modifier afin de pouvoir le restaurer en cas de problème._ Pour plus d’informations, consultez [Comment sauvegarder et placer le registre dans Windows](https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows). 
+Certains fichiers, y compris des informations sur votre environnement, peuvent toujours se trouver sur votre ordinateur. cela peut poser des problèmes si vous décidez de réinstaller Windows Mixed Reality ultérieurement. vous pouvez supprimer manuellement toutes les informations de Windows Mixed Reality restantes de votre PC en modifiant le registre et en utilisant Windows PowerShell pour exécuter des commandes. _Si vous modifiez le registre de manière incorrecte, des problèmes sérieux peuvent survenir. Veillez à suivre ces étapes avec prudence. Pour une protection supplémentaire, sauvegardez votre registre avant de le modifier afin de pouvoir le restaurer en cas de problème._ Pour plus d’informations, consultez [Comment sauvegarder et placer le registre dans Windows](https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows). 
 
-Pour désinstaller Windows Mixed realing à l’aide de ces commandes :
+pour désinstaller Windows réalité mixte à l’aide des commandes suivantes :
 1. Redémarrez votre PC.
 2. Dans la zone de **recherche** , tapez « regedit », puis sélectionnez « Oui ».
 3. Supprimez les valeurs de Registre suivantes :
    <ul>
     <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>, puis supprimez « FirstRunSucceeded ».</li> 
     <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic\SpeechAndAudio</b>, puis supprimez « PreferDesktopSpeaker » et « PreferDesktopMic ».</li> 
-    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore&gt; Settings\Holographic</b>, puis supprimez « DisableSpeechInput ». Remarque : les éléments de registre de HHKEY_CURRENT_USER doivent être supprimés pour chaque compte d’utilisateur sur le PC qui a utilisé Windows Mixed Reality.</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore&gt; Paramètres \Holographic</b>, puis supprimez « DisableSpeechInput ». Remarque : les éléments de registre de HHKEY_CURRENT_USER doivent être supprimés pour chaque compte d’utilisateur sur le PC qui a utilisé Windows Mixed Reality.</li> 
     <li><b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\PerceptionSimulationExtensions</b>, puis supprimez « DeviceID » et « mode ».</li> 
     <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>, puis supprimez « OnDeviceLearningCompleted ».</li> 
    </ul>
@@ -137,10 +137,10 @@ Pour désinstaller Windows Mixed realing à l’aide de ces commandes :
    <li> <b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
    <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\HolographicPreferences</b></li><br/></ul>
 5. Fermez l’éditeur du Registre.
-6. Accédez à **C:\Users\user name\appdata\local\packages\ Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy \localstate** et supprimez « RoomBounds.jssur ». Répétez cette procédure pour chaque utilisateur qui a utilisé Windows Mixed Reality.
+6.Accédez à **C:\Users\user name\AppData\Local\Packages\Microsoft. Windows. HolographicFirstRun_cw5n1h2txyewy \LocalState** et supprimez « RoomBounds.jssur ». Répétez cette opération pour chaque utilisateur qui a utilisé Windows Mixed Reality.
 7. Ouvrez l’invite de commandes admin et accédez à **C:\ProgramData\WindowsHolographicDevices\SpatialStore\HoloLensSensors**. Supprimez le contenu du dossier « HeadTracking Data » (mais pas le dossier lui-même).
-8. Tapez « PowerShell » dans la « zone de recherche », cliquez avec le bouton droit sur « Windows PowerShell », puis sélectionnez « Exécuter en tant qu’administrateur ».
-9. Dans Windows PowerShell : <ul>
+8.tapez « powershell » dans la « zone de recherche », cliquez avec le bouton droit sur « Windows PowerShell », puis sélectionnez « exécuter en tant qu’administrateur ».
+9.Dans Windows PowerShell : <ul>
    <li>À l’invite de commandes, copiez et collez <b>DISM/Online/Get-Capabilities</b>, puis appuyez sur entrée.</b></li> 
    <li>Copiez l’identité de capacité qui commence par Analog. holographique. Desktop. Si ce n’est pas le cas, l’élément n’est pas installé et vous pouvez passer à l’étape 10.</li> 
    <li>Copiez et collez l’invite de commandes suivante, puis appuyez sur entrée : <b>DISM/Online/Remove-Capability/CapabilityName : l’identité de capacité copiée lors de la dernière étape</b></li>

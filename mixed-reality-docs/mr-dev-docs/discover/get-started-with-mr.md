@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, découvrir, distribuer, index, page d’accueil, conception, développement, tutoriels, exemples d’applications, principes fondamentaux, études de cas, ressources, procédures HoloLens, projets open source, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: e3c30429109de367993357701092154741ca571b
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 7d875b1e4aa31c7131f8154b1d4a0d2027dbd022791d8daa06169aa0fcb51b55
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228773"
 ---
 # <a name="get-started-with-mixed-reality"></a>Bien démarrer avec la réalité mixte
 

@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Réalité mixte, regard, ciblage du regard, interaction, conception, hololens, MMR, multimodal, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 55e23ac2fb802af599fb9cc7d771d89d6ba36c47
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 6fddec8b0ed9b8f2230b963d1a795b7309473d7f91e32dd8382b747b6f3655da
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196414"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222780"
 ---
 # <a name="introducing-instinctual-interactions"></a>Présentation des interactions instinctuelles
 

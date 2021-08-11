@@ -1,18 +1,18 @@
 ---
-title: Format du fichier d’animation d’entrée
+title: Format de fichier d’animation d’entrée
 description: Documentation sur la spécification de format de fichier binaire d’animation d’entrée dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 400212d80833f5d8dfbb3c5265c755ed2e127131
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bf77d976c9c894e6cf455a3a6b0e0c538912af2a9e8f8e2c7e847ba6e4657140
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222761"
 ---
-# <a name="input-animation-file-format"></a>Format du fichier d’animation d’entrée
+# <a name="input-animation-file-format"></a>Format de fichier d’animation d’entrée
 
 ## <a name="overall-structure"></a>Structure globale
 
@@ -67,7 +67,7 @@ Pour chaque main, une séquence de courbes d’animation communes est stockée. 
 
 | Section | Type |
 |---------|------|
-| Aucun | [Créer des courbes](#pose-curves) |
+| Aucune | [Créer des courbes](#pose-curves) |
 | Du poignet | [Créer des courbes](#pose-curves) |
 | Palm | [Créer des courbes](#pose-curves) |
 | ThumbMetacarpalJoint | [Créer des courbes](#pose-curves) |
@@ -139,7 +139,7 @@ Une image clé en virgule flottante stocke les valeurs de tangente et de poids e
 
 | Section | Type |
 |---------|------|
-| Temps | Float32 |
+| Heure | Float32 |
 | Valeur | Float32 |
 | Intangente | Float32 |
 | En tangente | Float32 |
@@ -164,7 +164,7 @@ Une image clé booléenne stocke uniquement une heure et une valeur.
 
 | Section | Type |
 |---------|------|
-| Temps | Float32 |
+| Heure | Float32 |
 | Valeur | Float32 |
 
 ### <a name="wrap-mode"></a>Mode habillage

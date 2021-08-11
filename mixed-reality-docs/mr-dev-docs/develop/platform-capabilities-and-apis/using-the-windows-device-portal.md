@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portail d’appareil Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: d772175683208ac0e3ed4b3163ca561da416c1cf
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: edcd1796598b558f42232bf54ae3d40d3c509bb9515d8dcbe7f3cf9f2b7dfd62
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112919810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221512"
 ---
 # <a name="using-the-windows-device-portal"></a>Utilisation du portail d’appareil Windows
 
@@ -27,6 +27,8 @@ ms.locfileid: "112919810"
 Le portail d’appareil Windows pour HoloLens vous permet de configurer et de gérer à distance votre appareil par le biais d’une connexion Wi-Fi ou USB. Le Device Portal est un serveur Web situé sur l'appareil auquel vous pouvez vous connecter depuis un navigateur Web sur votre PC. Le portail d’appareil comprend de nombreux outils qui vous aideront à gérer votre appareil HoloLens, ainsi qu’à déboguer et à optimiser vos applications.
 
 Cette documentation concerne spécifiquement le portail d’appareil Windows pour HoloLens. Si vous souhaitez utiliser le portail d’appareil Windows pour les ordinateurs de bureau (y compris pour Windows Mixed Reality), consultez [Vue d’ensemble du portail d’appareil Windows](/windows/uwp/debug-test-perf/device-portal).
+
+> [NOTE!] Il n’est pas recommandé d’utiliser le portail d’appareil pour les appareils HoloLens que vous déployez dans votre organisation.
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Configuration de HoloLens pour l’utilisation du portail d’appareil Windows
 
@@ -175,6 +177,8 @@ Une fois l’installation terminée, revenez à la page **All apps** dans HoloLe
 ![Page d’accueil du portail d’appareil Windows sur Microsoft HoloLens](images/using-windows-portal-img-04.png)<br>
 *Page d’accueil du portail d’appareil Windows sur Microsoft HoloLens*
 
+> [NOTE] Les paramètres configurés dans le portail d’appareil s’appliquent à tout l’appareil et persistent à la suite de redémarrages. Il est recommandé d’utiliser le portail d’appareil uniquement lors du développement, et non sur des appareils déployés.
+
 Votre session Device Portal démarre sur la page d’accueil. Accédez à d’autres pages à partir de la barre de navigation située sur le côté gauche de la page d’accueil.
 
 La barre d’outils se trouvant en haut de la page permet d’accéder aux fonctionnalités et aux états couramment utilisés.
@@ -241,6 +245,8 @@ Pour importer des cartes et des ancres, sélectionnez respectivement **Charger u
 
 ![Page Capture de Réalité Mixte dans le portail d’appareil Windows sur Microsoft HoloLens](images/using-windows-portal-img-07.png)<br>
 *Page Capture de Réalité Mixte dans le portail d’appareil Windows sur Microsoft HoloLens*
+
+> [IMPORTANT] Les paramètres configurés dans le portail d’appareil s’appliquent à tout l’appareil et persistent à la suite de redémarrages. Tous les paramètres modifiés dans le portail d’appareil s’appliquent aux captures et aux applications de réalité mixte. Ces paramètres étant persistants, il est recommandé d’utiliser le portail d’appareil uniquement lors du développement, et non sur des appareils déployés.
 
 Utilisez la page MRC pour enregistrer les flux multimédias issus du casque HoloLens.
 * **Paramètres de capture** : contrôle les flux multimédias capturés en vérifiant les paramètres suivants :

@@ -1,17 +1,17 @@
 ---
 title: Résolution des problèmes et limitations de la communication à distance holographique
-description: Recherchez des ressources de dépannage et des instructions pour la fonctionnalité de communication à distance holographique sur les appareils HoloLens 2.
+description: recherchez des ressources de dépannage et des instructions pour la fonctionnalité de communication à distance holographique sur des appareils HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: Windows Mixed Reality, hologrammes, accès distant holographique, rendu à distance, rendu réseau, HoloLens, hologrammes distants, dépannage, aide, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 429ca7364d82e1713af059aa3c6da01852283120
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, hologrammes, accès distant holographique, rendu à distance, rendu réseau, HoloLens, hologrammes distants, dépannage, aide, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: fa984e89fb6eb770917d9a1d62ce7c1007d45fab7fbcb2723f9642ac81814054
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583837"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223569"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Résolution des problèmes de communication à distance holographique
 
@@ -22,7 +22,7 @@ ms.locfileid: "98583837"
 
 Les exemples d’applications de communication à distance holographique ont une atténuation de spectre (/Qspectre) activée dans la configuration Release.
 
-Si vous recevez l’erreur irrécupérable *vccorlib. lib ne peut pas être ouverte* , vérifiez que votre charge de travail Visual Studio comprend les [bibliothèques atténuées spectre](/cpp/build/reference/qspectre)
+si vous recevez l’erreur irrécupérable *vccorlib. lib ne peut pas être ouverte* , assurez-vous que votre charge de travail Visual Studio comprend les [bibliothèques atténuées Spectre](/cpp/build/reference/qspectre)
 
 ## <a name="speech"></a>Voix
 
@@ -30,11 +30,11 @@ Le lecteur de communication à distance holographique prend en charge une superp
 
 ## <a name="h265-video-codec-not-available"></a>Codec vidéo H265 non disponible
 
-Installez les [extensions vidéo HEVC](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) lors de l’utilisation du codec vidéo H265 dans votre application distante. Si vous rencontrez des problèmes d’installation du codec mais que vous ne pouvez pas les utiliser, consultez le Guide de [Dépannage](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) .
+installez le [Extensions vidéo HEVC](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) lors de l’utilisation du codec vidéo H265 dans votre application distante. Si vous rencontrez des problèmes d’installation du codec mais que vous ne pouvez pas les utiliser, consultez le Guide de [Dépannage](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) .
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
-Les API suivantes ne sont actuellement **pas** prises en charge lors de l’utilisation de la communication à distance holographique pour HoloLens 2 et génèrent une ```ERROR_NOT_SUPPORTED``` erreur sauf indication contraire :
+les api suivantes ne sont actuellement **pas** prises en charge lors de l’utilisation de la communication à distance holographique pour HoloLens 2 et génèrent une ```ERROR_NOT_SUPPORTED``` erreur sauf indication contraire :
 
 [Windows.Graphics.Holographic](/uwp/api/windows.graphics.holographic)
 
@@ -105,7 +105,7 @@ Les API suivantes ne sont actuellement **pas** prises en charge lors de l’util
 
 ## <a name="see-also"></a>Voir aussi
 * [Historique des versions de la communication à distance holographique](holographic-remoting-version-history.md)
-* [Écriture d’une application distante holographique à distance à l’aide des API Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
+* [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Termes du contrat de licence de la communication à distance holographique](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

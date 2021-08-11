@@ -5,12 +5,12 @@ author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, mouvement Leap,
-ms.openlocfilehash: 3ddf039f8409022d8aa2e425c46cd4d47ede16a0
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e675521a3a688bc0f9f8afdf1bdc01e583d0b47808d0aaff8b2eff263fce35bb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222904"
 ---
 # <a name="using-leap-motion"></a>Utilisation de Leap Motion
 

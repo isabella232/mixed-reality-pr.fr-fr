@@ -1,19 +1,19 @@
 ---
-title: HoloLens (1re génération) et Azure 304-reconnaissance faciale
+title: HoloLens (1ère génération) et Azure 304 - Reconnaissance faciale
 description: Suivez ce cours pour découvrir comment implémenter la reconnaissance faciale Azure au sein d’une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, reconnaissance faciale, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 6266cb206a0686745bcd7a92f64d78436c71a228
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: azure, la réalité mixte, academy, unity, didacticiel, api, reconnaissance faciale, hololens, immersif, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 2547b61669884c524fdd605240322dc9d568039b5a202d0a411317b0e83bd547
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219482"
 ---
-# <a name="hololens-1st-gen-and-azure-304-face-recognition"></a>HoloLens (1ère génération) et Azure 304 : reconnaissance faciale
+# <a name="hololens-1st-gen-and-azure-304-face-recognition"></a>HoloLens (1er génération) et Azure 304 : reconnaissance faciale
 
 <br>
 
@@ -28,16 +28,16 @@ Dans ce cours, vous allez apprendre à ajouter des fonctionnalités de reconnais
 
 *Azure API visage* est un service Microsoft qui fournit aux développeurs les algorithmes les plus avancés, le tout dans le Cloud. La *API visage* a deux fonctions principales : la détection des visages avec les attributs et la reconnaissance faciale. Cela permet aux développeurs de définir simplement un ensemble de groupes pour les visages, puis d’envoyer des images de requête au service ultérieurement, pour déterminer à qui appartient une face. Pour plus d’informations, consultez la [page reconnaissance des visages Azure](https://azure.microsoft.com/services/cognitive-services/face/).
 
-Une fois ce cours terminé, vous disposerez d’une application HoloLens de réalité mixte, qui sera en mesure d’effectuer les opérations suivantes :
+une fois ce cours terminé, vous disposerez d’une réalité mixte HoloLens application, ce qui vous permettra d’effectuer les opérations suivantes :
 
-1. Utilisez un **mouvement TAP** pour initier la capture d’une image à l’aide de l’appareil photo HoloLens intégré. 
+1. utilisez un **mouvement Tap** pour initier la capture d’une image à l’aide de l’appareil photo HoloLens de bord. 
 2. Envoyez l’image capturée au service *Azure API visage* .
 3. Recevoir les résultats de l’algorithme *API visage* .
 4. Utilisez une interface utilisateur simple pour afficher le nom des personnes mises en correspondance.
 
 Cela vous apprend à obtenir les résultats du service API Visage dans votre application de réalité mixte basée sur Unity.
 
-Dans votre application, c’est à vous de savoir comment vous allez intégrer les résultats à votre conception. Ce cours est conçu pour vous apprendre à intégrer un service Azure à votre projet Unity. C’est votre travail d’utiliser les connaissances que vous avez acquises dans ce cours pour améliorer votre application de réalité mixte.
+Dans votre application, c’est à vous de savoir comment vous allez intégrer les résultats à votre conception. Ce cours est conçu pour vous apprendre à intégrer un service Azure à votre Project Unity. C’est votre travail d’utiliser les connaissances que vous avez acquises dans ce cours pour améliorer votre application de réalité mixte.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -50,7 +50,7 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 </table>
 
 > [!NOTE]
-> Bien que ce cours se concentre principalement sur HoloLens, vous pouvez également appliquer ce que vous allez apprendre dans ce cours à des casques pour Windows Mixed Reality (VR). Étant donné que les casques immersifs ne disposent pas de caméras accessibles, vous aurez besoin d’une caméra externe connectée à votre PC. À mesure que vous suivez le cours, vous verrez des remarques sur les modifications que vous devrez peut-être utiliser pour prendre en charge les écouteurs immersifs (VR).
+> bien que ce cours se concentre principalement sur HoloLens, vous pouvez également appliquer ce que vous apprenez dans ce cours pour Windows Mixed Reality des casques immersifs (VR). Étant donné que les casques immersifs ne disposent pas de caméras accessibles, vous aurez besoin d’une caméra externe connectée à votre PC. À mesure que vous suivez le cours, vous verrez des remarques sur les modifications que vous devrez peut-être utiliser pour prendre en charge les écouteurs immersifs (VR).
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -59,24 +59,24 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 
 Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour ce cours :
 
-- Un PC de développement, [compatible avec Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) pour le développement d’écouteurs immersif (VR)
-- [Windows 10 automne Creators Update (ou version ultérieure) avec le mode développeur activé](../../install-the-tools.md)
-- [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md)
+- un PC de développement, [compatible avec Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) pour le développement d’écouteurs immersifs (VR)
+- [Windows 10 Fall Creators Update (ou version ultérieure) avec le mode développeur activé](../../install-the-tools.md)
+- [le dernier kit de développement logiciel Windows 10](../../install-the-tools.md)
 - [Unity 2017,4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
+- un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Appareil photo connecté à votre PC (pour le développement d’un casque immersif)
 - Accès à Internet pour l’installation d’Azure et la récupération de API Visage
 
 ## <a name="before-you-start"></a>Avant de commencer
 
 1.  Pour éviter de rencontrer des problèmes lors de la création de ce projet, il est fortement recommandé de créer le projet mentionné dans ce didacticiel dans un dossier racine ou dans un dossier racine (les chemins de dossiers longs peuvent entraîner des problèmes au moment de la génération).
-2.  Configurez et testez votre HoloLens. Si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article Configuration de hololens](/hololens/hololens-setup). 
-3.  Il est judicieux d’effectuer un réglage de l’étalonnage et du capteur au début du développement d’une nouvelle application HoloLens (parfois, il peut être utile d’effectuer ces tâches pour chaque utilisateur). 
+2.  Configurez et testez votre HoloLens. si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article installation de HoloLens](/hololens/hololens-setup). 
+3.  il est judicieux d’effectuer un réglage de l’étalonnage et du capteur lorsque vous commencez à développer une nouvelle HoloLens application (parfois, elle peut aider à effectuer ces tâches pour chaque utilisateur). 
 
-Pour obtenir de l’aide sur l’étalonnage, veuillez suivre ce [lien vers l’article d’étalonnage HoloLens](/hololens/hololens-calibration#hololens-2).
+pour obtenir de l’aide sur l’étalonnage, suivez ce [lien vers l’article d’étalonnage de HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Pour obtenir de l’aide sur le réglage du capteur, veuillez suivre ce [lien vers l’article sur le paramétrage du capteur HoloLens](/hololens/hololens-updates).
+pour obtenir de l’aide sur le réglage du capteur, suivez ce [lien pour accéder à l’article sur le paramétrage du capteur HoloLens](/hololens/hololens-updates).
 
 ## <a name="chapter-1---the-azure-portal"></a>Chapitre 1-portail Azure
 
@@ -147,7 +147,7 @@ Veillez à télécharger l’application UWP prédéfinie appelée [Person Maker
 
 > PRÉCIEUSE **Person Maker** utilise une limitation de base pour s’assurer que vous ne dépassez pas le nombre d’appels de service par minute pour le **niveau d’abonnement gratuit**. Le texte vert en haut devient rouge et met à jour comme « actif » lorsque la limitation se produit ; Si c’est le cas, il vous suffit d’attendre l’application (elle attendra jusqu’à ce qu’elle puisse continuer à accéder au service face, en la mettant à jour comme « en cours » lorsque vous pourrez l’utiliser à nouveau).
 
-Cette application utilise les bibliothèques *Microsoft. ProjectOxford. face* , ce qui vous permet de tirer pleinement parti de la API visage. Cette bibliothèque est disponible gratuitement en tant que package NuGet. Pour plus d’informations à ce sujet, et les API similaires, veillez [à consulter l’article de référence sur les API](/azure/cognitive-services/face/apireference).
+Cette application utilise les bibliothèques *Microsoft. ProjectOxford. face* , ce qui vous permet de tirer pleinement parti de la API visage. cette bibliothèque est disponible gratuitement en tant que Package NuGet. Pour plus d’informations à ce sujet, et les API similaires, veillez [à consulter l’article de référence sur les API](/azure/cognitive-services/face/apireference).
 
 > [!NOTE] 
 > Il s’agit uniquement des étapes requises. pour plus d’informations sur la façon de procéder, retrouvez le document. L’application **Person Maker** vous permettra d’effectuer les opérations suivantes :
@@ -160,10 +160,10 @@ Cette application utilise les bibliothèques *Microsoft. ProjectOxford. face* , 
 >
 > -  *Formez votre* *service Azure API visage*.
 
-N’oubliez pas que pour former cette application et reconnaître des personnes, vous aurez besoin de dix (10) photos proches de chaque personne que vous souhaitez ajouter à votre groupe de personnes. L’application Cam Windows 10 peut vous aider à prendre ces derniers. Vous devez vous assurer que chaque photo est claire (éviter le flou, le masquage ou être trop éloigné, du sujet), que la photo est au format jpg ou png, avec une taille de fichier image supérieure à **4 Mo** et inférieure ou égale à **1 Ko**.
+N’oubliez pas que pour former cette application et reconnaître des personnes, vous aurez besoin de dix (10) photos proches de chaque personne que vous souhaitez ajouter à votre groupe de personnes. l’application Windows 10 Cam peut vous aider à prendre ces derniers. Vous devez vous assurer que chaque photo est claire (éviter le flou, le masquage ou être trop éloigné, du sujet), que la photo est au format jpg ou png, avec une taille de fichier image supérieure à **4 Mo** et inférieure ou égale à **1 Ko**.
 
 > [!NOTE]
-> Si vous suivez ce didacticiel, n’utilisez pas votre propre visage pour la formation, comme lorsque vous placez le HoloLens sur, vous ne pouvez pas vous lancer. Utilisez le visage d’un collègue ou d’un étudiant.
+> si vous suivez ce didacticiel, n’utilisez pas votre propre visage pour la formation, comme quand vous mettez le HoloLens sur, vous ne pouvez pas vous lancer. Utilisez le visage d’un collègue ou d’un étudiant.
 
 **Créateur de personne** en cours d’exécution :
 
@@ -177,7 +177,7 @@ N’oubliez pas que pour former cette application et reconnaître des personnes,
 
     3. La *plateforme cible* est l' **ordinateur local**.
 
-    4.  Vous devrez peut-être également *restaurer les packages NuGet* (cliquez avec le bouton droit sur la *solution* et sélectionnez **restaurer les packages NuGet**).
+    4.  vous devrez peut-être également *restaurer NuGet packages* (cliquez avec le bouton droit sur la *Solution* et sélectionnez **restaurer NuGet packages**).
 
 3.  Cliquez sur *ordinateur local* pour démarrer l’application. Sachez que, sur des écrans plus petits, tout le contenu peut ne pas être visible, bien que vous puissiez le faire défiler plus loin pour l’afficher.
 
@@ -209,7 +209,7 @@ N’oubliez pas que pour former cette application et reconnaître des personnes,
 
 8.  Assurez-vous de connaître l’emplacement des dix (10) photos de la personne que vous souhaitez ajouter à votre groupe.
 
-9.  Appuyez sur **créer et ouvrir le dossier** pour ouvrir l’Explorateur Windows dans le dossier associé à la personne. Ajoutez les dix (10) images dans le dossier. Ils doivent être au format de fichier *jpg* ou *png* .
+9.  appuyez sur **créer et ouvrir le dossier** pour ouvrir Windows Explorer dans le dossier associé à la personne. Ajoutez les dix (10) images dans le dossier. Ils doivent être au format de fichier *jpg* ou *png* .
 
 10. Cliquez sur **Envoyer à Azure**. Un compteur vous indique l’état de l’envoi, suivi d’un message lorsqu’il est terminé.
 
@@ -225,19 +225,19 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 
     ![Démarrez le nouveau projet Unity.](images/AzureLabs-Lab4-08.png)
 
-2.  Vous devez maintenant fournir un nom de projet Unity. Insérez **MR_FaceRecognition**. Assurez-vous que le type de projet est défini sur **3D**. Définissez l' **emplacement** approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
+2.  vous devez maintenant fournir un nom de Project unity. Insérez **MR_FaceRecognition**. Assurez-vous que le type de projet est défini sur **3D**. Définissez l' **emplacement** approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
 
     ![Fournissez des détails pour le nouveau projet Unity.](images/AzureLabs-Lab4-09.png)
 
-3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à **modifier > préférences** puis, dans la nouvelle fenêtre, accédez à **outils externes**. Remplacez l' **éditeur de script externe** par **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
+3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à **modifier > préférences** puis, dans la nouvelle fenêtre, accédez à **outils externes**. modifiez l' **éditeur de Script externe** pour **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
 
     ![Mettre à jour la préférence éditeur de script.](images/AzureLabs-Lab4-10.png)
 
-4.  Accédez ensuite à **fichier > paramètres de build** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
+4.  accédez ensuite à **fichier > générer Paramètres** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
 
-    ![Fenêtre Paramètres de build, basculez plateforme vers UWP.](images/AzureLabs-Lab4-11.png)
+    ![générez Paramètres fenêtre, basculez la plateforme sur UWP.](images/AzureLabs-Lab4-11.png)
 
-5.  Accédez à **fichier > paramètres de build** et assurez-vous que :
+5.  accédez à **fichier > générer Paramètres** et assurez-vous que :
 
     1. L' **appareil cible** est défini sur **HoloLens**
 
@@ -245,7 +245,7 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 
     2. Le **type de build** est **D3D**
     3. Le **SDK** est configuré sur le **dernier installé**
-    4. **Version de Visual Studio** définie sur le **dernier installé**
+    4. **Visual Studio Version** est définie sur le **plus récent**
     5. La **génération et l’exécution** sont définies sur l' **ordinateur local**
     6. Enregistrez la scène et ajoutez-la à la Build. 
 
@@ -261,15 +261,15 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 
             ![Donnez un nom à la nouvelle scène.](images/AzureLabs-Lab4-14.png)
 
-    7. Les paramètres restants, dans *paramètres de build*, doivent être laissés par défaut pour le moment.
+    7. dans les *Paramètres de Build*, les paramètres restants doivent être conservés comme valeurs par défaut pour le moment.
 
-6. Dans la fenêtre *paramètres de build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* . 
+6. dans la fenêtre *Paramètres de Build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* . 
 
     ![Ouvrez les paramètres du lecteur.](images/AzureLabs-Lab4-15.png)
 
 7. Dans ce volet, quelques paramètres doivent être vérifiés :
 
-    1. Sous l’onglet **autres paramètres** :
+    1. dans l' **autre onglet Paramètres** :
 
         1. La **version du runtime** de **script** doit être **expérimentale** (équivalent .net 4,6). La modification de cette opération déclenche un besoin de redémarrage de l’éditeur.
         2. Le **backend de script** doit être **.net**
@@ -277,20 +277,20 @@ Ce qui suit est une configuration classique pour le développement avec une réa
 
             ![Mettez à jour d’autres paramètres.](images/AzureLabs-Lab4-16.png)
       
-    2. Dans l’onglet **paramètres de publication** , sous **fonctionnalités**, activez la case à cocher :
+    2. dans l’onglet **Paramètres de publication** , sous **fonctionnalités**, vérifiez :
 
         - **InternetClient**
         - **Webcam**
 
             ![Mise à jour des paramètres de publication.](images/AzureLabs-Lab4-17.png)
 
-    3. Plus bas dans le volet, dans les **paramètres XR** (situés sous **paramètres de publication**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
+    3. plus bas dans le volet, dans **XR Paramètres** (situé sous **publier Paramètres**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
 
-        ![Mettez à jour les paramètres X R.](images/AzureLabs-Lab4-18.png)
+        ![mettez à jour le Paramètres X R.](images/AzureLabs-Lab4-18.png)
 
-8.  De retour dans les *paramètres de build*, les **projets Unity C#** ne sont plus grisés. Cochez la case en regard de cette option. 
+8.  de retour dans le *Paramètres de Build*, les **projets C# unity** ne sont plus grisés. Cochez la case en regard de cette option. 
 9.  Fermez la fenêtre Build Settings.
-10. Enregistrez votre scène et votre projet (**fichier > enregistrer la scène/le fichier > enregistrer le projet**).
+10. enregistrez votre scène et Project (**fichier > enregistrer la scène/le fichier > enregistrer le projet**).
 
 ## <a name="chapter-4---main-camera-setup"></a>Chapitre 4-Configuration de l’appareil photo principal
 
@@ -341,7 +341,7 @@ L’objectif de la classe FaceAnalysis est d’héberger les méthodes nécessai
 
 Pour créer la classe *FaceAnalysis* :
 
- 1. Cliquez avec le bouton droit dans le *dossier ressources* situé dans le panneau projet, puis cliquez sur **créer** un  >  **dossier**. Appelez le dossier **scripts**. 
+ 1. cliquez avec le bouton droit dans le *dossier ressources* situé dans le panneau Project, puis cliquez sur **créer** un  >  **dossier**. Appelez le dossier **scripts**. 
 
     ![Créez la classe FaceAnalysis.](images/AzureLabs-Lab4-22.png)
 
@@ -638,7 +638,7 @@ Pour créer la classe *FaceAnalysis* :
     ```
 
 14.  N’oubliez pas d' **Enregistrer** les modifications avant de revenir à l’éditeur Unity.
-15.  Dans l’éditeur Unity, faites glisser le script FaceAnalysis du dossier scripts du panneau projet vers l’objet caméra principal dans le *panneau hiérarchie*. Le nouveau composant script sera ajouté à la caméra principale. 
+15.  dans l’éditeur unity, faites glisser le script FaceAnalysis du dossier Scripts dans Project panneau vers l’objet caméra principale dans le *panneau hiérarchie*. Le nouveau composant script sera ajouté à la caméra principale. 
 
 ![Placer FaceAnalysis sur l’appareil photo principal](images/AzureLabs-Lab4-23.png)
 
@@ -685,7 +685,7 @@ Pour créer la classe *ImageCapture* :
         private GestureRecognizer recognizer;
     ```
 
-5.  Ajoutez les méthodes *éveillé ()* et *Start ()* nécessaires à l’initialisation de la classe et autorisez le HoloLens à capturer les mouvements de l’utilisateur :
+5.  ajoutez les méthodes *éveillé ()* et *Start ()* nécessaires pour initialiser la classe et autoriser le HoloLens à capturer les mouvements de l’utilisateur :
 
     ```csharp
         /// <summary>
@@ -800,10 +800,10 @@ R ce point vous êtes prêt à générer la solution. Une fois la solution gén�
 Pour commencer le processus de génération :
 
 1.  Enregistrez la scène en cours en cliquant sur fichier, puis sur Enregistrer.
-2.  Accédez à fichier, paramètres de build, puis cliquez sur Ajouter des scènes ouvertes.
+2.  accédez à fichier, générer Paramètres, cliquez sur ajouter des scènes ouvertes.
 3.  Veillez à cocher les projets Unity C#.
 
-    ![Déployer la solution Visual Studio](images/AzureLabs-Lab4-24.png)
+    ![déployer la solution Visual Studio](images/AzureLabs-Lab4-24.png)
 
 4.  Appuyez sur générer. Dans ce cas, Unity lance une fenêtre de l’Explorateur de fichiers, où vous devez créer, puis sélectionner un dossier dans lequel créer l’application. Créez ce dossier maintenant, dans le projet Unity, et appelez-le. Ensuite, avec le dossier d’application sélectionné, appuyez sur Sélectionner un dossier. 
 5.  Unity commence à générer votre projet, en dehors du dossier de l’application. 
@@ -811,19 +811,19 @@ Pour commencer le processus de génération :
 
     ![Déployer la solution à partir de Visual Studio](images/AzureLabs-Lab4-25.png)
 
-7.  Ouvrez le dossier de votre application, puis ouvrez la solution nouveau projet (comme indiqué ci-dessus, MR_FaceRecognition. sln).
+7.  ouvrez le dossier de votre application, puis ouvrez la nouvelle Solution Project (comme indiqué ci-dessus, MR_FaceRecognition. sln).
 
 
 ## <a name="chapter-9---deploying-your-application"></a>Chapitre 9-déploiement de votre application
 
 Pour effectuer un déploiement sur HoloLens :
 
-1.  Vous aurez besoin de l’adresse IP de votre HoloLens (pour le déploiement à distance) et vérifiez que votre HoloLens est en **mode développeur**. Pour ce faire :
+1.  vous aurez besoin de l’adresse IP de votre HoloLens (pour le déploiement à distance) et pour vous assurer que votre HoloLens est en **Mode développeur**. Pour ce faire :
 
-    1. Tout en portant votre HoloLens, ouvrez les **paramètres**.
+    1. tout en portant votre HoloLens, ouvrez le **Paramètres**.
     2. Accéder au **réseau & Internet > Wi-Fi options avancées >**
     3. Notez l’adresse **IPv4** .
-    4. Ensuite, revenez aux **paramètres**, puis à **mettre à jour & > de sécurité pour les développeurs** 
+    4. ensuite, revenez à **Paramètres**, puis pour **mettre à jour les > de sécurité & pour les développeurs** . 
     5. Définissez le mode développeur sur.
 
 2.  Accédez à votre nouvelle build Unity (le dossier de l' *application* ) et ouvrez le fichier solution avec *Visual Studio*.
@@ -833,7 +833,7 @@ Pour effectuer un déploiement sur HoloLens :
     ![Modifier la configuration de la solution](images/AzureLabs-Lab4-26.png)
  
 5.  Accédez au **menu Générer** , puis cliquez sur **déployer la solution** pour chargement l’application à votre HoloLens.
-6.  Votre application doit maintenant apparaître dans la liste des applications installées sur votre HoloLens, prête à être lancée.
+6.  votre application doit maintenant apparaître dans la liste des applications installées sur votre HoloLens, prête à être lancée.
 
 > [!NOTE]
 > Pour effectuer un déploiement sur un casque immersif, définissez la plateforme de la **solution** sur *ordinateur local* et définissez la **configuration** sur *Déboguer*, avec *x86* comme **plateforme**. Déployez ensuite sur l’ordinateur local, à l’aide du **menu Générer**, en sélectionnant *déployer la solution*. 
@@ -841,7 +841,7 @@ Pour effectuer un déploiement sur HoloLens :
 
 ## <a name="chapter-10---using-the-application"></a>Chapitre 10-utilisation de l’application
 
-1.  Porter le HoloLens, lancer l’application.
+1.  le HoloLens, lancez l’application.
 2.  Examinez la personne que vous avez inscrite auprès du *API visage*. Assurez-vous que :
 
     -  Le visage de la personne n’est pas trop éloigné et clairement visible

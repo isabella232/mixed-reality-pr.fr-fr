@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, style, conception, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, échelle, hologrammes
-ms.openlocfilehash: 12b1c96146f76274831c9bc3427cef93bb326f70
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, Style, conception, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, échelle, hologrammes
+ms.openlocfilehash: 0b643b7f4b53795afa6bac9b54e55565233ac1d96a6a58d5389a8a4b7db8d7cc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223003"
 ---
 # <a name="scale"></a>Scale
 
@@ -23,7 +23,7 @@ La clé de l’affichage de contenu holographique réaliste est le plus proche p
 
 ## <a name="how-to-suggest-the-scale-of-objects-and-environments"></a>Comment suggérer l’échelle des objets et des environnements
 
-Il existe de nombreuses façons de suggérer l’échelle d’un objet, certaines d’entre elles ayant des effets possibles sur d’autres facteurs de perception. La première consiste à afficher les objets à une taille réelle et à conserver une taille réaliste au fur et à mesure que les utilisateurs se déplacent. Les hologrammes occupent une quantité différente de l’angle visuel d’un utilisateur lorsqu’ils sont plus proches ou plus éloignés, de la même façon que les objets réels.
+Il existe de nombreuses façons de suggérer l’échelle d’un objet, certaines d’entre elles ayant des effets possibles sur d’autres facteurs de perception. La première consiste à afficher les objets à une taille réelle et à conserver une taille réaliste au fur et à mesure que les utilisateurs se déplacent. Hologrammes occupent une quantité différente de l’angle visuel d’un utilisateur lorsqu’il se rapproche ou s’éloigne, de la même façon que les objets réels.
 
 ### <a name="use-the-distance-of-objects-as-theyre-presented-to-the-user"></a>Utiliser la distance des objets à mesure qu’ils sont présentés à l’utilisateur
 
@@ -53,10 +53,10 @@ Une autre méthode consiste à utiliser des hologrammes pour modifier l’espace
     :::column:::
         **[Minecraft a développé un concept d’expériences](https://minecraft.net/)** à l’aide d’une technique similaire. En ajoutant une fenêtre virtuelle à une surface physique, les objets existants dans la salle sont placés dans le contexte d’un environnement largement plus grand, au-delà des limitations de l’échelle physique de la pièce.<br>
         <br>
-        *Image : expérience du concept Minecraft pour HoloLens*
+        *Image : expérience du concept de Minecraft pour HoloLens*
     :::column-end:::
         :::column:::
-       ![Expérience Minecraft concept pour HoloLens](images/800px-minecraftwindow-640px.jpg)<br><br>
+       ![expérience du concept de Minecraft pour HoloLens](images/800px-minecraftwindow-640px.jpg)<br><br>
     :::column-end:::
 :::row-end:::
 

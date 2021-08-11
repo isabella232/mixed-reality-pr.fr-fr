@@ -5,24 +5,24 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, bouton
-ms.openlocfilehash: ddad8b23950bddd03dd4024497c212d1cc950fb0
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité windows mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de la réalité mixte, bouton
+ms.openlocfilehash: 602d5b8784c97676e29574e4a5b0ffb7b240f07c2c43bbe68e0f8bc49db9dd1f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219314"
 ---
 # <a name="button"></a>Button
 
 ![Button](images/UX_Hero_Button.jpg)
 
-Un bouton permet à vos utilisateurs de déclencher des actions immédiates dans une expérience de réalité mixte. Dans HoloLens 2, les boutons ont des signaux visuels et des intuitivité qui permettent d’accroître la confiance de l’interaction avec les utilisateurs. 
+Un bouton permet à vos utilisateurs de déclencher des actions immédiates dans une expérience de réalité mixte. dans HoloLens 2, les boutons ont des signaux visuels et des intuitivité qui permettent d’accroître la confiance de l’interaction avec les utilisateurs. 
 
 :::row:::
     :::column:::
        ![Bouton avec effet d’éclairage de proximité indiqué](images/UX_Button_Affordance_ProximityLight.jpg)<br>
-       **Lumière de proximité**<br>
+       **Lumière proche**<br>
     :::column-end:::
     :::column:::
        ![Bouton sélectionné avec l’effet de surbrillance Focus affiché](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
@@ -45,8 +45,8 @@ Un bouton permet à vos utilisateurs de déclencher des actions immédiates dans
 
 ---
 
-## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Bouton dans MRTK (ensemble d’outils de réalité mixte) pour Unity
-**[MRTK pour Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit différents types de prefabs Button, y compris les boutons de style Shell pour hololens 2 et hololens (1re génération). Le bouton HoloLens 2 Prefab contient plusieurs intuitivité détaillés qui permettent d’améliorer la confiance de l’utilisateur :
+## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>bouton dans MRTK (Shared Computer Toolkit de la réalité mixte) pour unity
+**[MRTK pour unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit différents types de prefabs button, y compris les boutons de style shell pour HoloLens 2 et HoloLens (1re génération). le bouton HoloLens 2 prefab contient plusieurs intuitivité détaillés qui permettent d’améliorer la confiance de l’utilisateur :
 
 * Surbrillance basée sur la proximité
 * Compression de la cage avant

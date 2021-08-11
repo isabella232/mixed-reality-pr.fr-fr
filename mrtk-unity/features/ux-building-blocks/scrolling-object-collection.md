@@ -5,12 +5,12 @@ author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, objet de défilement
-ms.openlocfilehash: a724b9fb4a0f72910e16353a6c76b9e31005a76e
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a97ea9919cf484cf5240dde027f38baca37ba9570588bca032bee9c116aed873
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221750"
 ---
 # <a name="scrolling-object-collection"></a>Défilement de la collection d’objets
 
@@ -73,7 +73,7 @@ Notez que les objets de contenu situés en dehors de la zone affichable par déf
 
 ### <a name="testing-the-scrolling-object-collection-in-the-editor"></a>Test de la collection d’objets de défilement dans l’éditeur
 
-1. Appuyez sur la touche lecture et maintenez la barre d’espace pour afficher une main de simulation d’entrée.
+1. Appuyez sur Lire et maintenez la barre Espace enfoncée pour afficher une main de simulation d’entrée.
 1. Déplacez la main jusqu’à ce que le conflit de détourage ou le contenu interactif de défilement soit activé et déclenchez le mouvement de défilement en cliquant et en faisant glisser le curseur vers le haut et vers le haut avec la souris gauche.
 
 ## <a name="controlling-the-scrolling-object-from-code"></a>Contrôle de l’objet de défilement à partir du code
@@ -142,7 +142,7 @@ public class ScrollablePagination : MonoBehaviour
 
 ## <a name="scrolling-example-scene"></a>Exemple de scène de défilement
 
-La scène de l’exemple **ScrollingObjectCollection. Unity** est composée de 3 exemples de défilement, chacun avec une configuration d’atténuation de vélocité différente. L’exemple de scène contient des murs pour montrer le comportement de positionnement de la surface qui est désactivé par défaut dans la hiérarchie. L’exemple de scène se trouve sous le ``MRTK/Examples/Demos/ScrollingObjectCollection/Scenes`` dossier.
+La scène de l’exemple **ScrollingObjectCollection. Unity** est composée de 3 exemples de défilement, chacun avec une configuration d’atténuation de vélocité différente. L’exemple de scène contient des murs pour montrer le comportement de placement de la surface qui est désactivé par défaut dans la hiérarchie. L’exemple de scène se trouve sous le ``MRTK/Examples/Demos/ScrollingObjectCollection/Scenes`` dossier.
 
 ![Exemple de scène de collection d’objets de défilement](../images/scrolling-collection/ScrollingObjectCollection_ExampleScene.png)
 
