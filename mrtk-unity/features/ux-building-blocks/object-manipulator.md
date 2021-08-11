@@ -5,12 +5,12 @@ author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, Manipulation d’objets,
-ms.openlocfilehash: f9b644c1447d6776389e227bfe49c27f82a3cf31
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 4c43a35e164d3e66e662afc927d28f84463e1586250e9847a2d88c219ba27f23
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191610"
 ---
 # <a name="object-manipulator"></a>Manipulateur d’objets
 
@@ -181,7 +181,7 @@ Les élastiques peuvent être utilisés lors de la manipulation d’objets via l
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Contrôle de limites](bounds-control.md)
+- [Contrôle des limites](bounds-control.md)
 - [Gestionnaire de contraintes](constraint-manager.md)
 - [Fenêtre de migration](../tools/migration-window.md)
 - [Système élastique (expérimental)](../experimental/elastic-system.md)

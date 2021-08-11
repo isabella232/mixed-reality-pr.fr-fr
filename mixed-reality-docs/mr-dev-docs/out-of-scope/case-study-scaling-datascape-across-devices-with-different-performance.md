@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: casque immersif, optimisation des performances, VR, étude de cas
-ms.openlocfilehash: 37a40a67dbe41ba9a53fccaff1dee76d56f7b178
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d1c54f5fbe6843f9bf61af20b611c6aeb22b0704c209bfdb555fe57b95805cf9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195758"
 ---
 # <a name="case-study---scaling-datascape-across-devices-with-different-performance"></a>Étude de cas : mise à l’échelle des datascape sur les appareils avec des performances différentes
 
 Datascape est une application Windows Mixed Reality développée en interne chez Microsoft, où nous nous sommes concentrés sur l’affichage des données météorologiques sur des données de terrain. L’application explore les Insights uniques que les utilisateurs obtiennent de la découverte de données en réalité mixte en entourant l’utilisateur de la visualisation de données holographiques.
 
-Pour datascape, nous souhaitons cibler une variété de plateformes avec des fonctionnalités matérielles différentes, allant de Microsoft HoloLens aux casques immersifs immersifs de Windows Mixed Real, et des PC moins alimentés aux PC les plus récents avec GPU haut de gamme. Le principal défi était de rendre notre scène dans un souci visuel des appareils avec des fonctionnalités graphiques bien différentes en cours d’exécution à une fréquence élevée.
+pour Datascape, nous voulions cibler une variété de plateformes avec des fonctionnalités matérielles allant de Microsoft HoloLens à Windows Mixed Reality des casques immersifs, et des pc de plus faible envergure aux pc les plus récents avec GPU haut de gamme. Le principal défi était de rendre notre scène dans un souci visuel des appareils avec des fonctionnalités graphiques bien différentes en cours d’exécution à une fréquence élevée.
 
 Cette étude de cas vous guidera dans le processus et les techniques utilisés pour créer certains de nos systèmes gourmands en GPU, en décrivant les problèmes que nous avons rencontrés et la façon dont nous les ont surmonté.
 
@@ -29,11 +29,11 @@ Une géométrie solide peut être rendue de l’avant vers l’arrière lors de 
 
 La géométrie transparente doit être triée de nouveau vers l’avant et s’appuie sur la fusion de la sortie du nuanceur de pixels sur le pixel actuel de l’écran. Cela peut entraîner le dessin de chaque pixel sur l’écran à plusieurs reprises par cadre, désigné sous le terme de « surdessin ».
 
-Pour les PC HoloLens et standard, l’écran ne peut être rempli qu’à quelques instants, ce qui rend le rendu transparent problématique.
+pour les pc HoloLens et grand public, l’écran ne peut être rempli qu’à quelques instants, ce qui rend le rendu transparent problématique.
 
 ## <a name="introduction-to-datascape-scene-components"></a>Présentation des composants de scène datascape
 
-Nous avions trois composants principaux pour notre scène. **l’interface utilisateur, la carte** et **la météo** . Nous savions très tôt que nos effets météorologiques nécessiteraient tout le temps processeur qu’il pouvait obtenir. nous avons donc conçu l’interface utilisateur et le terrain de manière à réduire tout surplus.
+Nous avions trois composants principaux pour notre scène. **l’interface utilisateur, la carte** et **la météo**. Nous savions très tôt que nos effets météorologiques nécessiteraient tout le temps processeur qu’il pouvait obtenir. nous avons donc conçu l’interface utilisateur et le terrain de manière à réduire tout surplus.
 
 Nous avons retravaillé l’interface utilisateur plusieurs fois afin de réduire le nombre de redessins qu’elle produirait. Nous sommes cotés du côté d’une géométrie plus complexe au lieu de superposer des illustrations transparentes les unes par rapport aux autres pour des composants tels que des boutons lumineux et des vues d’ensemble cartographiques.
 
@@ -102,7 +102,7 @@ Nous avons introduit un petit modèle de bruit pour obtenir plus de détails sur
 
 ![Clouds Geometry](images/datascape-geometry-clouds-700px.jpg)
 
-Dans la mesure où les clouds sont de géométrie solide, ils peuvent être rendus avant le terrain pour masquer les pixels de la carte onéreux en dessous pour améliorer davantage la fréquence d’images. Cette solution s’est correctement exécutée sur toutes les cartes graphiques de min-spec aux cartes graphiques haut de gamme, ainsi que sur HoloLens, en raison de l’approche de rendu géométrique solide.
+Dans la mesure où les clouds sont de géométrie solide, ils peuvent être rendus avant le terrain pour masquer les pixels de la carte onéreux en dessous pour améliorer davantage la fréquence d’images. cette solution s’est correctement exécutée sur toutes les cartes graphiques de min-spec aux cartes graphiques haut de gamme, ainsi que sur HoloLens, en raison de l’approche de rendu géométrique solide.
 
 ## <a name="solid-particle-clouds"></a>Clouds particulaires solides
 
@@ -317,6 +317,6 @@ Conception pour les pires scénarios et peut-être envisager l’utilisation d�
 
 ## <a name="see-also"></a>Voir aussi
 * [Comprendre les performances de la réalité mixte](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
-* [Recommandations en matière de performances pour Unity](../develop/unity/performance-recommendations-for-unity.md)
+* [Recommandations de performances pour unity](../develop/unity/performance-recommendations-for-unity.md)
 
  

@@ -6,40 +6,40 @@ ms.author: pbarnett
 ms.date: 05/12/2020
 ms.topic: article
 keywords: HoloLens, simulation, test
-ms.openlocfilehash: 64028c3a1ad58cecfebc93aee325b73c3a6a649a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 8d2999868bfdcf67c1174209566e67fe937005946ef82dd50337d9098c1e1971
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193771"
 ---
 # <a name="perception-simulation"></a>Simulation des perceptions
 
 Voulez-vous créer un test automatisé pour votre application ? Voulez-vous que vos tests vont au-delà des tests unitaires au niveau du composant et pour vraiment exercer votre application de bout en bout ? La simulation de perception correspond à ce que vous recherchez. La bibliothèque de simulation de perception envoie des données d’entrée humaines et mondiales à votre application afin que vous puissiez automatiser vos tests. Par exemple, vous pouvez simuler l’entrée d’un utilisateur cherchant à une position renouvelée et spécifique, puis à utiliser un geste ou un contrôleur de mouvement.
 
-La simulation de perception peut envoyer une entrée simulée comme celle-ci à une HoloLens physique, à l’émulateur HoloLens (première génération), à l’émulateur HoloLens 2 ou à un PC avec portail de réalité mixte installé. La simulation de perception contourne les capteurs actifs sur un appareil de réalité mixte et envoie une entrée simulée aux applications qui s’exécutent sur l’appareil. Les applications reçoivent ces événements d’entrée via les mêmes API qu’ils utilisent toujours et ne peuvent pas indiquer la différence entre l’exécution avec des capteurs réels et la simulation de perception. La simulation de perception est la même technologie que celle utilisée par les émulateurs HoloLens pour envoyer une entrée simulée à la machine virtuelle HoloLens.
+la Simulation de Perception peut envoyer une entrée simulée comme celle-ci à une HoloLens physique, à l’émulateur HoloLens (première génération), à la Emulator de HoloLens 2 ou à un PC sur lequel le portail de réalité mixte est installé. La simulation de perception contourne les capteurs actifs sur un appareil de réalité mixte et envoie une entrée simulée aux applications qui s’exécutent sur l’appareil. Les applications reçoivent ces événements d’entrée via les mêmes API qu’ils utilisent toujours et ne peuvent pas indiquer la différence entre l’exécution avec des capteurs réels et la simulation de perception. la Simulation de Perception est la même technologie que celle utilisée par les émulateurs HoloLens pour envoyer des données simulées à la Machine virtuelle HoloLens.
 
 Pour commencer à utiliser la simulation dans votre code, commencez par créer un objet IPerceptionSimulationManager. À partir de cet objet, vous pouvez émettre des commandes pour contrôler les propriétés d’un « humain » simulé, y compris la position de la tête, la position de la main et les gestes. Vous pouvez également activer et manipuler les contrôleurs de mouvement.
 
-## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>Configuration d’un projet Visual Studio pour la simulation de perception
-1. [Installez l’émulateur HoloLens](../install-the-tools.md) sur votre PC de développement. L’émulateur comprend les bibliothèques que vous utilisez pour la simulation de perception.
-2. Créez un projet de bureau Visual Studio C# (un projet de console fonctionne bien pour commencer).
-3. Ajoutez les fichiers binaires suivants à votre projet en tant que références (Project->Add->Reference...). Vous pouvez les Rechercher dans% ProgramFiles (x86)% \ Microsoft XDE \\ (version), par exemple **% ProgramFiles (x86)% \ Microsoft XDE \\ 10.0.18362.0** pour l’émulateur HoloLens 2.  (Remarque : bien que les fichiers binaires fassent partie de l’émulateur HoloLens 2, ils fonctionnent également pour Windows Mixed Reality sur le bureau.) un. Wrapper C# géré par PerceptionSimulationManager.Interop.dll pour la simulation de perception.
-    b. PerceptionSimulationRest.dll-Library pour la configuration d’un canal de communication de sockets Web vers le HoloLens ou l’émulateur.
+## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>configuration d’un Project Visual Studio pour la Simulation de Perception
+1. [installez l’émulateur de HoloLens](../install-the-tools.md) sur votre PC de développement. L’émulateur comprend les bibliothèques que vous utilisez pour la simulation de perception.
+2. créez un projet de bureau Visual Studio C# (une Console Project fonctionne bien pour commencer).
+3. ajoutez les fichiers binaires suivants à votre projet en tant que références (Project->référence Add->...). vous pouvez les trouver dans% programfiles (x86)% \ microsoft XDE \\ (version), comme **% programfiles (x86)% \ microsoft XDE \\ 10.0.18362.0** pour le Emulator de HoloLens 2.  (remarque : bien que les fichiers binaires fassent partie du Emulator HoloLens 2, ils fonctionnent également pour Windows Mixed Reality sur le bureau.) un. Wrapper C# géré par PerceptionSimulationManager.Interop.dll pour la simulation de perception.
+    b. PerceptionSimulationRest.dll-Library pour la configuration d’un canal de communication de sockets web vers l’HoloLens ou l’émulateur.
     c. SimulationStream.Interop.dll-types partagés pour la simulation.
-4. Ajoutez le PerceptionSimulationManager.dll binaire d’implémentation à votre projet a. Tout d’abord, ajoutez-le en tant que fichier binaire au projet (Project->ajouter >élément existant...). Enregistrez-le en tant que lien afin qu’il ne soit pas copié dans le dossier source de votre projet. ![Ajoutez PerceptionSimulationManager.dll au projet en tant que lien ](images/saveaslink.png) b. Ensuite, assurez-vous qu’il est copié dans votre dossier de sortie lors de la génération. Il s’agit de la feuille de propriétés pour le binaire. ![Marquer PerceptionSimulationManager.dll pour copier dans le répertoire de sortie](images/copyalways.png)
+4. Ajoutez le PerceptionSimulationManager.dll binaire d’implémentation à votre projet a. tout d’abord, ajoutez-le en tant que fichier binaire au projet (Project >ajouter un élément existant >...). Enregistrez-le en tant que lien afin qu’il ne soit pas copié dans le dossier source de votre projet. ![Ajoutez PerceptionSimulationManager.dll au projet en tant que lien ](images/saveaslink.png) b. Ensuite, assurez-vous qu’il est copié dans votre dossier de sortie lors de la génération. Il s’agit de la feuille de propriétés pour le binaire. ![Marquer PerceptionSimulationManager.dll pour copier dans le répertoire de sortie](images/copyalways.png)
 5. Définissez la plateforme de votre solution active sur x64.  (Utilisez la Configuration Manager pour créer une entrée de plateforme pour x64, si celle-ci n’existe pas déjà.)
 
 ## <a name="creating-an-iperceptionsimulation-manager-object"></a>Création d’un objet IPerceptionSimulation Manager
 
 Pour contrôler la simulation, vous allez émettre des mises à jour des objets récupérés à partir d’un objet IPerceptionSimulationManager. La première étape consiste à obtenir cet objet et à le connecter à votre appareil ou émulateur cible. Vous pouvez récupérer l’adresse IP de votre émulateur en cliquant sur le bouton du portail de l’appareil dans la [barre d’outils](using-the-hololens-emulator.md) .
 
-![Icône Ouvrir le portail de l’appareil ](images/emulator-deviceportal.png) **ouvrir le portail** de l’appareil : Ouvrez le portail de périphériques Windows pour le système d’exploitation HoloLens dans l’émulateur.  Pour Windows Mixed Reality, vous pouvez le récupérer dans l’application paramètres sous « mettre à jour & sécurité », puis « pour les développeurs » dans la section « se connecter à l’aide de » sous « activer le portail d’appareils ».  Veillez à noter l’adresse IP et le port.
+![icône ouvrir le portail ](images/emulator-deviceportal.png) de l’appareil **ouvrir le portail** de l’appareil : ouvrez le portail de l’appareil Windows pour le système d’exploitation HoloLens dans l’émulateur.  pour Windows Mixed Reality, vous pouvez les récupérer dans l’application Paramètres sous « mettre à jour & sécurité », puis « pour les développeurs » dans la section « Connecter à l’aide de : » sous « activer le portail d’appareils ».  Veillez à noter l’adresse IP et le port.
 
-Tout d’abord, vous devez appeler RestSimulationStreamSink. Create pour obtenir un objet RestSimulationStreamSink. Il s’agit de l’appareil ou de l’émulateur cible que vous contrôlez sur une connexion http. Vos commandes sont transmises à et gérées par le [portail de périphériques Windows](using-the-windows-device-portal.md) exécuté sur l’appareil ou l’émulateur. Les quatre paramètres dont vous avez besoin pour créer un objet sont les suivants :
+Tout d’abord, vous devez appeler RestSimulationStreamSink. Create pour obtenir un objet RestSimulationStreamSink. Il s’agit de l’appareil ou de l’émulateur cible que vous contrôlez sur une connexion http. vos commandes sont transmises à et gérées par le [portail de l’appareil Windows](using-the-windows-device-portal.md) s’exécutant sur l’appareil ou l’émulateur. Les quatre paramètres dont vous avez besoin pour créer un objet sont les suivants :
 * URI Uri : adresse IP de l’appareil cible (par exemple, « https://123.123.123.123 » ou «» https://123.123.123.123:50080 )
-* Informations d’identification System .net. NetworkCredential-nom d’utilisateur/mot de passe pour la connexion au [portail d’appareils Windows](using-the-windows-device-portal.md) sur l’appareil ou l’émulateur cible. Si vous vous connectez à l’émulateur via son adresse locale (par exemple,*168...* *) sur le même PC, toutes les informations d’identification seront acceptées.
-* bool normal-true pour la priorité normale, false pour basse priorité. Vous souhaitez généralement définir cette propriété sur *true* pour les scénarios de test, ce qui permet à votre test de prendre le contrôle.  La simulation de l’émulateur et de la réalité mixte Windows utilise des connexions de faible priorité.  Si votre test utilise également une connexion de priorité basse, la connexion établie le plus récemment sera contrôle.
+* informations d’identification System .net. NetworkCredential-nom d’utilisateur/mot de passe pour la connexion au [portail d’appareils Windows](using-the-windows-device-portal.md) sur l’appareil ou l’émulateur cible. Si vous vous connectez à l’émulateur via son adresse locale (par exemple,*168...* *) sur le même PC, toutes les informations d’identification seront acceptées.
+* bool normal-true pour la priorité normale, false pour basse priorité. Vous souhaitez généralement définir cette propriété sur *true* pour les scénarios de test, ce qui permet à votre test de prendre le contrôle.  l’émulateur et la simulation de Windows Mixed Reality utilisent des connexions de faible priorité.  Si votre test utilise également une connexion de priorité basse, la connexion établie le plus récemment sera contrôle.
 * Jeton-jeton System. Threading. CancellationToken pour annuler l’opération asynchrone.
 
 Ensuite, vous allez créer le IPerceptionSimulationManager. Il s’agit de l’objet que vous utilisez pour contrôler la simulation. Cela doit également être fait dans une méthode Async.
@@ -218,8 +218,8 @@ namespace ConsoleApplication1
 
 ## <a name="note-on-6-dof-controllers"></a>Remarque sur les contrôleurs 6-DDL
 
-Avant d’appeler des propriétés sur des méthodes sur un contrôleur 6-DDL simulé, vous devez activer le contrôleur.  Si ce n’est pas le cas, une exception est générée.  À compter de la mise à jour de Windows 10 2019 mai, les contrôleurs 6-DDL simulés peuvent être installés et activés en définissant la propriété Status sur l’objet ISimulatedSixDofController sur SimulatedSixDofControllerStatus. active.
-Dans la mise à jour 2018 de Windows 10 octobre et les versions antérieures, vous devez d’abord installer séparément un contrôleur 6-DDL simulé en appelant l’outil PerceptionSimulationDevice situé dans le dossier \Windows\System32.  L’utilisation de cet outil est la suivante :
+Avant d’appeler des propriétés sur des méthodes sur un contrôleur 6-DDL simulé, vous devez activer le contrôleur.  Si ce n’est pas le cas, une exception est générée.  à partir de la Mise à jour de mai 2019 de Windows 10, les contrôleurs 6-ddl simulés peuvent être installés et activés en définissant la propriété status sur l’objet ISimulatedSixDofController sur SimulatedSixDofControllerStatus. Active.
+dans la Mise à jour d’octobre 2018 de Windows 10 et les versions antérieures, vous devez d’abord installer séparément un contrôleur 6-ddl simulé en appelant l’outil PerceptionSimulationDevice situé dans le dossier \ Windows \System32.  L’utilisation de cet outil est la suivante :
 
 
 ```
@@ -243,7 +243,7 @@ Les instances prises en charge sont les suivantes :
 
 Le code de sortie du processus indique la réussite (valeur de retour zéro) ou l’échec (valeur de retour différente de zéro).  Lorsque vous utilisez l’action « q » pour demander si un contrôleur est installé, la valeur de retour est zéro (0) si le contrôleur n’est pas déjà installé ou un (1) si le contrôleur est installé.
 
-Lorsque vous supprimez un contrôleur sur la mise à jour 2018 de Windows 10 octobre ou une version antérieure, définissez son état sur OFF via l’API en premier, puis appelez l’outil PerceptionSimulationDevice.
+lors de la suppression d’un contrôleur du Mise à jour d’octobre 2018 de Windows 10 ou d’une version antérieure, définissez son état sur Off via l’API en premier, puis appelez l’outil PerceptionSimulationDevice.
 
 Cet outil doit être exécuté en tant qu’administrateur.
 
@@ -428,7 +428,7 @@ L’étalonnage des yeux n’est pas disponible.
 
 **Microsoft. PerceptionSimulation. SimulatedEyesCalibrationState. Ready**
 
-Les yeux ont été étalonnés.  Il s’agit de la valeur par défaut.
+Les yeux ont été étalonnés.  Il s'agit de la valeur par défaut.
 
 **Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configutilisons**
 
@@ -1266,7 +1266,7 @@ Créez sur un objet pour générer des paquets simulés et les fournir au récep
 Paramètres
 * Sink : récepteur qui recevra tous les paquets générés.
 
-Valeur retournée
+Valeur renvoyée
 
 Gestionnaire créé.
 
@@ -1277,7 +1277,7 @@ Créez un récepteur, qui stocke tous les paquets reçus dans un fichier au chem
 Paramètres
 * chemin d’accès : chemin d’accès du fichier à créer.
 
-Valeur retournée
+Valeur renvoyée
 
 Récepteur créé.
 
@@ -1289,7 +1289,7 @@ Paramètres
 * chemin d’accès : chemin d’accès du fichier à charger.
 * Factory : fabrique utilisée par l’enregistrement pour créer un ISimulationStreamSink quand cela est nécessaire.
 
-Valeur retournée
+Valeur renvoyée
 
 Enregistrement chargé.
 
@@ -1302,7 +1302,7 @@ Paramètres
 * Factory : fabrique utilisée par l’enregistrement pour créer un ISimulationStreamSink quand cela est nécessaire.
 * callback : rappel, qui reçoit les mises à jour qui regradent l’état de l’enregistrement.
 
-Valeur retournée
+Valeur renvoyée
 
 Enregistrement chargé.
 
@@ -1400,6 +1400,6 @@ public interface ISimulationStreamSinkFactory
 
 Crée une seule instance de ISimulationStreamSink.
 
-Valeur retournée
+Valeur renvoyée
 
 Récepteur créé.

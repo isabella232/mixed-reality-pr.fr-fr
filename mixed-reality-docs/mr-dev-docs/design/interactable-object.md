@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Réalité mixte, contrôles, interaction, signaux, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, audio
-ms.openlocfilehash: b25c25a6dd48bcc85a556787099734d147d18df2
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: réalité mixte, contrôles, interaction, signaux, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, audio
+ms.openlocfilehash: 9ce682de7e400eba6ffbaccbca34065a1f09966f842cffd6853f3a064f146904
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110212"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190750"
 ---
 # <a name="interactable-object"></a>Objet avec interaction possible
 
@@ -64,7 +64,7 @@ Pour tous les objets que l’utilisateur peut interagir avec le point de vue du 
 
 ---
 
-Vous pouvez utiliser des techniques telles que la mise en surbrillance ou la mise à l’échelle pour fournir des signaux visuels pour l’état d’entrée de l’utilisateur. En réalité mixte, vous trouverez des exemples de visualisation de différents États d’entrée dans le menu Démarrer et avec les boutons de la barre d’application. 
+Vous pouvez utiliser des techniques telles que la mise en surbrillance ou la mise à l’échelle pour fournir des signaux visuels pour l’état d’entrée de l’utilisateur. en réalité mixte, vous trouverez des exemples de visualisation de différents états d’entrée sur la menu Démarrer et avec des boutons de la barre d’application. 
 
 Voici à quoi ressemblent ces États sur un **bouton holographique**:
 
@@ -135,7 +135,7 @@ Utilisez les commentaires visuels pour communiquer les États suivants :
 
 ---
 
-Un [bouton sur HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) est un exemple de la façon dont les différents États d’interaction d’entrée sont visualisés :
+un [bouton sur HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) est un exemple de la façon dont les différents états d’interaction d’entrée sont visualisés :
 
 :::row:::
     :::column:::
@@ -169,7 +169,7 @@ Un [bouton sur HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-buildin
 :::row:::
     :::column:::
         ### <a name="the-ring-visual-cue-on-hololens-2br"></a>Le signal visuel « Ring » sur HoloLens 2<br>
-        Sur HoloLens 2, il existe un indice visuel supplémentaire qui peut aider la perception de l’utilisateur en profondeur. Un anneau proche de son doigt s’affiche et s’adapte à mesure que l’approche est plus proche de l’objet. L’anneau se convergera en un point lorsque l’état appuyé est atteint. Cet accord visuel aide l’utilisateur à comprendre à quel moment il s’agit de l’objet.<br>
+        sur HoloLens 2, il existe un indice visuel supplémentaire qui peut aider la perception de l’utilisateur en profondeur. Un anneau proche de son doigt s’affiche et s’adapte à mesure que l’approche est plus proche de l’objet. L’anneau se convergera en un point lorsque l’état appuyé est atteint. Cet accord visuel aide l’utilisateur à comprendre à quel moment il s’agit de l’objet.<br>
         <br>
         *Boucle vidéo : exemple de retour visuel basé sur la proximité d’un cadre englobant*
     :::column-end:::
@@ -256,7 +256,7 @@ Lorsque vous créez des boutons pour une interaction directe, nous vous recomman
 
 ---
 
-## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Objet interactif dans MRTK (ensemble d’outils de réalité mixte) pour Unity
+## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>objet interactif dans MRTK (Shared Computer Toolkit de la réalité mixte) pour unity
 
 Dans **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, vous pouvez utiliser le script en [**interaction**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) pour faire en sorte que les objets répondent à différents types d’États d’interaction d’entrée. Il prend en charge différents types de thèmes qui vous permettent de définir des États visuels en contrôlant des propriétés d’objet telles que la couleur, la taille, le matériau et le nuanceur.
 

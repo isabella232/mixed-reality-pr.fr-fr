@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, nuanceur de matériau
-ms.openlocfilehash: 0a92388bc9be7c11967501709031f559f17f8966
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e740c1cb662f88f7ce925482de9ed758d5f18ee152363a663aa678056ba2825f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191156"
 ---
 # <a name="mrtk-standard-shader"></a>Nuanceur standard MRTK
 
@@ -88,11 +88,11 @@ Le nuanceur utilise des sondes légères pour rapprocher les lumières de la sc�
 
 Pour l’éclairage statique, le nuanceur respecte lightmaps généré par le [système Lightmapping](https://docs.unity3d.com/Manual/Lightmapping.html)Unity. Marquez simplement le convertisseur comme static (ou lightmap static) pour utiliser lightmaps.
 
-### <a name="hover-light"></a>Pointage
+### <a name="hover-light"></a>Lumière lointaine
 
 * Voir [point pointé](hover-light.md)
 
-### <a name="proximity-light"></a>Lumière de proximité
+### <a name="proximity-light"></a>Lumière proche
 
 * Voir la [lumière de proximité](proximity-light.md)
 
@@ -209,6 +209,6 @@ Les textures de découpage par pixel, l’anticrénelage basé sur les périphé
 ## <a name="see-also"></a>Voir aussi
 
 * [Avec interaction](../ux-building-blocks/interactable.md)
-* [Lumière lointaine](hover-light.md)
-* [Lumière proche](proximity-light.md)
+* [Pointage](hover-light.md)
+* [Lumière de proximité](proximity-light.md)
 * [Primitive de découpage](clipping-primitive.md)

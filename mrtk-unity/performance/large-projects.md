@@ -1,18 +1,18 @@
 ---
-title: Utilisation de MRTK dans des projets de grande taille
+title: Utilisation de MRTK dans les grands projets
 description: Astuces pour les consommateurs de MRTK avec des projets volumineux.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 28ba272a48b0a0c524185ac7114a09cf8e0e91f8
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9547b6bdcf4c0f4bc179dd266b14c853c1bf81a7e6531d2e68ca2e26188424c8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196093"
 ---
-# <a name="using-mrtk-in-large-projects"></a>Utilisation de MRTK dans des projets de grande taille
+# <a name="using-mrtk-in-large-projects"></a>Utilisation de MRTK dans les grands projets
 
 Cette page contient des conseils utiles pour les utilisateurs de MRTK qui les exposent dans des projets volumineux existants ou qui configurent un nouveau qui sera contrôlé par le code source et qui auront plusieurs développeurs.
 

@@ -1,19 +1,19 @@
 ---
-title: HoloLens (1er génération) et Azure 305-fonctions et stockage
-description: Suivez ce cours pour apprendre à implémenter le stockage Azure et les fonctions dans une application de réalité mixte.
+title: HoloLens (1ère génération) et Azure 305 - Fonctions et stockage
+description: suivez ce cours pour apprendre à implémenter des stockage Azure et des fonctions dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, fonctions, stockage, hololens, immersif, VR, Windows 10, Visual Studio
-ms.openlocfilehash: b55acaf003a1cdf50a5a78e48fdf05a9ab07d0d6
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: azure, réalité mixte, academy, unity, didacticiel, api, fonctions, stockage, hololens, immersif, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 337b1d3fb23450325805237a6ba975861260760b7d37028b8d717bad99b9d233
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193944"
 ---
-# <a name="hololens-1st-gen-and-azure-305-functions-and-storage"></a>HoloLens (1re génération) et Azure 305 : fonctions et stockage
+# <a name="hololens-1st-gen-and-azure-305-functions-and-storage"></a>HoloLens (1er génération) et Azure 305 : fonctions et stockage
 
 <br>
 
@@ -24,21 +24,21 @@ ms.locfileid: "104730546"
 
 ![produit final-début](images/AzureLabs-Lab5-00.png)
 
-Dans ce cours, vous allez apprendre à créer et à utiliser des Azure Functions et à stocker des données avec une ressource de stockage Azure, au sein d’une application de réalité mixte.
+dans ce cours, vous allez apprendre à créer et à utiliser des Azure Functions et à stocker des données avec une ressource de stockage Azure, au sein d’une application de réalité mixte.
 
 *Azure Functions* est un service Microsoft, qui permet aux développeurs d’exécuter de petits morceaux de code, « functions », dans Azure. Cela permet de déléguer le travail au Cloud, plutôt qu’à votre application locale, ce qui peut avoir de nombreux avantages. *Azure Functions* prend en charge plusieurs langages de développement, notamment C \# , F \# , Node.js, Java et php. Pour plus d’informations, consultez l' [article Azure Functions](/azure/azure-functions/functions-overview).
 
-Le *stockage Azure* est un service Cloud Microsoft qui permet aux développeurs de stocker des données, avec l’assurance qu’elles seront hautement disponibles, sécurisées, durables, évolutives et redondantes. Cela signifie que Microsoft traitera toutes les tâches de maintenance et les problèmes critiques pour vous. Pour plus d’informations, consultez l' [article stockage Azure](/azure/storage/common/storage-introduction).
+*stockage Azure* est un service cloud de Microsoft, qui permet aux développeurs de stocker des données, avec l’assurance qu’elles seront hautement disponibles, sécurisées, durables, évolutives et redondantes. Cela signifie que Microsoft traitera toutes les tâches de maintenance et les problèmes critiques pour vous. pour plus d’informations, consultez l' [article stockage Azure](/azure/storage/common/storage-introduction).
 
 Une fois ce cours terminé, vous disposerez d’une application de casque immersif en réalité mixte, qui sera en mesure d’effectuer les opérations suivantes :
 
 1.  Permet à l’utilisateur de faire un regard sur une scène.
 2.  Déclencher la génération d’objets quand l’utilisateur passe d’un « bouton » en 3D.
 3.  Les objets générés sont choisis par une fonction Azure.
-4.  À mesure que chaque objet est généré, l’application stocke le type d’objet dans un *fichier Azure*, situé dans le *stockage Azure*.
+4.  à mesure que chaque objet est généré, l’application stocke le type d’objet dans un *fichier Azure*, situé dans *stockage Azure*.
 5.  Lors du chargement d’une deuxième fois, les données du *fichier Azure* sont récupérées et utilisées pour relire les actions de génération à partir de l’instance précédente de l’application.
 
-Dans votre application, c’est à vous de savoir comment vous allez intégrer les résultats à votre conception. Ce cours est conçu pour vous apprendre à intégrer un service Azure à votre projet Unity. C’est votre travail d’utiliser les connaissances que vous avez acquises dans ce cours pour améliorer votre application de réalité mixte.
+Dans votre application, c’est à vous de savoir comment vous allez intégrer les résultats à votre conception. Ce cours est conçu pour vous apprendre à intégrer un service Azure à votre Project Unity. C’est votre travail d’utiliser les connaissances que vous avez acquises dans ce cours pour améliorer votre application de réalité mixte.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -51,7 +51,7 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 </table>
 
 > [!NOTE]
-> Bien que ce cours se concentre principalement sur les casques de Windows Mixed Reality (VR), vous pouvez également appliquer ce que vous allez apprendre dans ce cours à Microsoft HoloLens. À mesure que vous suivez le cours, vous verrez des remarques sur les modifications que vous devrez peut-être utiliser pour prendre en charge HoloLens.
+> bien que ce cours se concentre principalement sur les casques Windows Mixed Reality immersifs, vous pouvez également appliquer ce que vous avez appris dans ce cours à Microsoft HoloLens. À mesure que vous suivez le cours, vous verrez des remarques sur les modifications que vous devrez peut-être utiliser pour prendre en charge HoloLens.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -60,12 +60,12 @@ Dans votre application, c’est à vous de savoir comment vous allez intégrer l
 
 Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour ce cours :
 
-- Un PC de développement, [compatible avec Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) pour le développement d’écouteurs immersif (VR)
-- [Windows 10 automne Creators Update (ou version ultérieure) avec le mode développeur activé](../../install-the-tools.md#installation-checklist)
-- [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
+- un PC de développement, [compatible avec Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) pour le développement d’écouteurs immersifs (VR)
+- [Windows 10 Fall Creators Update (ou version ultérieure) avec le mode développeur activé](../../install-the-tools.md#installation-checklist)
+- [le dernier kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
+- un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Abonnement à un compte Azure pour la création de ressources Azure
 - Accès Internet pour l’installation d’Azure et la récupération de données
 
@@ -75,21 +75,21 @@ Pour éviter de rencontrer des problèmes lors de la création de ce projet, il 
 
 ## <a name="chapter-1---the-azure-portal"></a>Chapitre 1-portail Azure
 
-Pour utiliser le **service de stockage Azure**, vous devez créer et configurer un **compte de stockage** dans le portail Azure.
+pour utiliser le **Service stockage Azure**, vous devez créer et configurer un **compte Stockage** dans le Portail Azure.
 
 1.  Connectez-vous au  [portail Azure](https://portal.azure.com).
 
     > [!NOTE]
     > Si vous n’avez pas encore de compte Azure, vous devez en créer un. Si vous suivez ce didacticiel dans une situation de classe ou de laboratoire, demandez à votre formateur ou à l’un des prostructors de vous aider à configurer votre nouveau compte.
 
-2.  Une fois que vous êtes connecté, cliquez sur **nouveau** dans l’angle supérieur gauche et recherchez *compte de stockage*, puis cliquez sur **entrée**.
+2.  une fois que vous êtes connecté, cliquez sur **nouveau** dans l’angle supérieur gauche et recherchez *Stockage compte*, puis cliquez sur **entrée**.
 
     ![recherche Azure Storage](images/AzureLabs-Lab5-01.png)
 
     > [!NOTE]
     > Le mot **nouveau** peut avoir été remplacé par **créer une ressource**, dans les portails plus récents.
 
-3.  La nouvelle page fournit une description du service de *compte de stockage Azure* . En bas à gauche de cette invite, sélectionnez le bouton **créer** pour créer une association avec ce service.
+3.  la nouvelle page fournit une description du service de *compte stockage Azure* . En bas à gauche de cette invite, sélectionnez le bouton **créer** pour créer une association avec ce service.
 
     ![créer un service](images/AzureLabs-Lab5-02.png)
 
@@ -99,7 +99,7 @@ Pour utiliser le **service de stockage Azure**, vous devez créer et configurer 
 
     2.  Pour *modèle de déploiement*, sélectionnez **Resource Manager**.
 
-    3.  Pour *type de compte*, sélectionnez **stockage (à usage général v1)**.
+    3.  pour *type de compte*, sélectionnez **Stockage (à usage général v1)**.
 
     4.  Déterminez l' *emplacement* de votre groupe de ressources (si vous créez un groupe de ressources). L’emplacement devrait idéalement se trouver dans la région où l’application s’exécutait. Certaines ressources Azure sont uniquement disponibles dans certaines régions.
 
@@ -117,7 +117,7 @@ Pour utiliser le **service de stockage Azure**, vous devez créer et configurer 
 
     10. Vous devrez également confirmer que vous avez compris les conditions générales appliquées à ce service.
 
-    11. Sélectionnez **Create** (Créer).
+    11. Sélectionnez **Créer**.
 
         ![informations sur le service d’entrée](images/AzureLabs-Lab5-03.png)
 
@@ -131,11 +131,11 @@ Pour utiliser le **service de stockage Azure**, vous devez créer et configurer 
 
     ![accéder à la ressource](images/AzureLabs-Lab5-05.png)
 
-8.  Cliquez sur le bouton **atteindre la ressource** dans la notification pour explorer votre nouvelle instance de service. Vous êtes dirigé vers votre nouvelle instance de service de *compte de stockage* .
+8.  Cliquez sur le bouton **atteindre la ressource** dans la notification pour explorer votre nouvelle instance de service. vous êtes dirigé vers votre nouvelle instance de service de *compte Stockage* .
 
     ![clés d'accès](images/AzureLabs-Lab5-06.png)
 
-9.  Cliquez sur *clés d’accès* pour afficher les points de terminaison de ce service Cloud. Utilisez *le bloc-notes* ou une version similaire pour copier l’une de vos clés pour une utilisation ultérieure. Notez également la valeur de la *chaîne de connexion* , car elle sera utilisée dans la classe *AzureServices* , que vous allez créer ultérieurement.
+9.  Cliquez sur *clés d’accès* pour afficher les points de terminaison de ce service Cloud. utilisez *Bloc-notes* ou similaire pour copier l’une de vos clés pour une utilisation ultérieure. Notez également la valeur de la *chaîne de connexion* , car elle sera utilisée dans la classe *AzureServices* , que vous allez créer ultérieurement.
 
     ![copier la chaîne de connexion](images/AzureLabs-Lab5-07.png)
 
@@ -168,15 +168,15 @@ Pour créer une fonction Azure :
 
         > Si vous souhaitez en savoir plus sur les groupes de ressources Azure, consultez [l’article du groupe de ressources](/azure/azure-resource-manager/resource-group-portal).
 
-    4.  Pour cet exercice, sélectionnez *Windows* comme **système d’exploitation** choisi.
+    4.  pour cet exercice, sélectionnez *Windows* comme **système d’exploitation** choisi.
 
     5.  Sélectionnez le *plan de consommation* pour le plan d' **hébergement**.
 
     6.  Déterminez l' *emplacement* de votre groupe de ressources (si vous créez un groupe de ressources). L’emplacement devrait idéalement se trouver dans la région où l’application s’exécutait. Certaines ressources Azure sont uniquement disponibles dans certaines régions. Pour des performances optimales, sélectionnez la même région que le compte de stockage.
 
-    7.  Pour *stockage*, sélectionnez **utiliser l’existant**, puis dans le menu déroulant, recherchez votre stockage créé précédemment.
+    7.  pour *Stockage*, sélectionnez **utiliser l’existant**, puis dans le menu déroulant, recherchez votre stockage créé précédemment.
 
-    8.  Laissez *application Insights* désactivés pour cet exercice.
+    8.  laissez *Application Insights* désactivés pour cet exercice.
 
         ![Détails de l’application de fonction d’entrée](images/AzureLabs-Lab5-10.png)
 
@@ -248,29 +248,29 @@ Configurez et testez votre casque immersif en réalité mixte.
 
     ![Créer un projet Unity](images/AzureLabs-Lab5-17.png)
 
-2.  Vous devez maintenant fournir un nom de projet Unity. Insérez **MR_Azure_Functions**. Assurez-vous que le type de projet est défini sur **3D**. Définissez l' *emplacement* approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
+2.  vous devez maintenant fournir un nom de Project unity. Insérez **MR_Azure_Functions**. Assurez-vous que le type de projet est défini sur **3D**. Définissez l' *emplacement* approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
 
     ![Donnez un nom au nouveau projet Unity](images/AzureLabs-Lab5-18.png)
 
-3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à **modifier**  >  les **Préférences** , puis à partir de la nouvelle fenêtre, accédez à **outils externes**. Remplacez l' **éditeur de script externe** par **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
+3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à **modifier**  >  les **Préférences** , puis à partir de la nouvelle fenêtre, accédez à **outils externes**. modifiez l' **éditeur de Script externe** pour **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
 
     ![définir Visual Studio comme éditeur de script](images/AzureLabs-Lab5-19.png)
 
-4.  Ensuite, accédez à **fichier**  >  **paramètres de build** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
+4.  ensuite, accédez à **fichier**  >  **Build Paramètres** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
 
     ![basculer la plateforme sur UWP](images/AzureLabs-Lab5-20.png)
 
-5.  Accédez à **fichier**  >  **paramètres de build** et assurez-vous que :
+5.  accédez à Paramètres de Build de **fichier** et assurez-vous  >   que :
 
     1. L' **appareil cible** est défini sur **n’importe quel appareil**.
 
-        > Pour Microsoft HoloLens, définissez **appareil cible** sur *HoloLens*.
+        > pour Microsoft HoloLens, définissez **appareil cible** sur *HoloLens*.
 
     2. Le **type de build** est **D3D**
 
     3. Le **SDK** est configuré sur le **dernier installé**
 
-    4. **Version de Visual Studio** définie sur le **dernier installé**
+    4. **Visual Studio Version** est définie sur le **plus récent**
 
     5. La **génération et l’exécution** sont définies sur l' **ordinateur local**
 
@@ -288,39 +288,39 @@ Configurez et testez votre casque immersif en réalité mixte.
 
             ![Enregistrer les fonctions, scène](images/AzureLabs-Lab5-23.png)
 
-6.  Les paramètres restants, dans **paramètres de build**, doivent être laissés par défaut pour le moment.
+6.  dans les **Paramètres de Build**, les paramètres restants doivent être conservés comme valeurs par défaut pour le moment.
 
     ![Conserver les paramètres de build par défaut](images/AzureLabs-Lab5-24.png)
 
-7.  Dans la fenêtre *paramètres de build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* .
+7.  dans la fenêtre *Paramètres de Build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* .
 
     ![paramètres du lecteur dans Inspector](images/AzureLabs-Lab5-25.png)
 
 8.  Dans ce volet, quelques paramètres doivent être vérifiés :
 
-    1.  Sous l’onglet **autres paramètres** :
+    1.  dans l' **autre onglet Paramètres** :
 
         1.  La **version du runtime de script** doit être **expérimentale** (.net 4,6 équivalent), ce qui déclenche la nécessité de redémarrer l’éditeur.
         2.  Le **backend de script** doit être **.net**
         3.  Le **niveau de compatibilité** de l’API doit être **.net 4,6**
 
-    2.  Dans l’onglet **paramètres de publication** , sous **fonctionnalités**, activez la case à cocher :
+    2.  dans l’onglet **Paramètres de publication** , sous **fonctionnalités**, vérifiez :
         
         -  **InternetClient**
 
             ![définir les fonctionnalités](images/AzureLabs-Lab5-26.png)
 
-    3.  Plus bas dans le panneau, dans les **paramètres XR** (situés sous **paramètres de publication**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
+    3.  plus bas dans le volet, dans **XR Paramètres** (situé sous **publication Paramètres**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
 
         ![définir les paramètres XR](images/AzureLabs-Lab5-27.png)
 
-9.  De retour dans les *paramètres de build* . les *projets C#* ne sont plus grisés. Cochez la case en regard de cette option.
+9.  de retour dans la *Build Paramètres* les *projets C# unity* ne sont plus grisés. Cochez la case en regard de cette option.
 
     ![Tick (projets c#)](images/AzureLabs-Lab5-28.png)
 
 10.  Fermez la fenêtre Build Settings.
 
-11. Enregistrez votre scène et votre projet (**fichier**  >  **Save Scene/file**  >  **Save Project**).
+11. enregistrez votre scène et Project (**fichier**  >  **save scene/file**  >  **save Project**).
 
 ## <a name="chapter-4---setup-main-camera"></a>Chapitre 4-configurer l’appareil photo principal
 
@@ -461,9 +461,9 @@ Configurez et testez votre casque immersif en réalité mixte.
     ![Maillage de texte en mode scène](images/AzureLabs-Lab5-44.png)
 
 
-## <a name="chapter-6---import-azure-storage-for-unity"></a>Chapitre 6-importer un stockage Azure pour Unity
+## <a name="chapter-6---import-azure-storage-for-unity"></a>chapitre 6-importer des stockage Azure pour unity
 
-Vous allez utiliser le stockage Azure pour Unity (qui utilise lui-même le kit de développement logiciel (SDK) .net pour Azure). Pour plus d’informations à ce sujet, consultez l' [article stockage Azure pour Unity](/sandbox/gamedev/unity/azure-storage-unity).
+vous utiliserez stockage Azure pour unity (qui utilise lui-même le kit de développement logiciel (SDK) .net pour Azure). pour plus d’informations à ce sujet, consultez l' [article stockage Azure pour unity](/sandbox/gamedev/unity/azure-storage-unity).
 
 Il existe actuellement un problème connu dans Unity qui nécessite que les plug-ins soient reconfigurés après l’importation. Ces étapes (4-7 dans cette section) ne sont plus nécessaires une fois que le bogue a été résolu.
 
@@ -471,13 +471,13 @@ Pour importer le kit de développement logiciel (SDK) dans votre propre projet, 
 
 1.  Ajoutez le fichier **. pour Unity** à Unity à l' aide de l’option de  >    >  menu **package personnalisé** du package d’importation de ressources.
 
-2.  Dans la zone **importer le package Unity** qui s’affiche, vous pouvez tout sélectionner sous stockage du **plug-in**  >  . Décochez tout le reste, car il n’est pas nécessaire pour ce cours.
+2.  dans la zone **importer le Package unity** qui s’affiche, vous pouvez sélectionner tout dans le **plug-in**  >  **Stockage**. Décochez tout le reste, car il n’est pas nécessaire pour ce cours.
 
     ![importer dans le package](images/AzureLabs-Lab5-45.png)
 
 3.  Cliquez sur le bouton **Importer** pour ajouter les éléments à votre projet.
 
-4.  Accédez au dossier *stockage* sous *plug-ins*, dans la vue projet, puis sélectionnez les plug-ins suivants *uniquement*:
+4.  accédez au dossier *Stockage* sous *plug-ins*, dans la vue Project, puis sélectionnez les plug-ins suivants *uniquement*:
 
     -   Microsoft.Data.Edm
     -   Microsoft.Data.OData
@@ -494,13 +494,13 @@ Pour importer le kit de développement logiciel (SDK) dans votre propre projet, 
     > [!NOTE]
     > Nous marqueons ces plug-ins particuliers à utiliser uniquement dans l’éditeur Unity. Cela est dû au fait qu’il existe différentes versions des mêmes plug-ins dans le dossier WSA qui seront utilisées après l’exportation du projet à partir d’Unity.
 
-6.  Dans le dossier de plug-in de *stockage* , sélectionnez uniquement :
+6.  dans le dossier du plug-in *Stockage* , sélectionnez uniquement :
 
     -   Microsoft.Data.Services.Client
 
         ![définir ne pas traiter pour les dll](images/AzureLabs-Lab5-48.png)
 
-7.  Cochez la case **ne pas traiter** sous *paramètres de plateforme* , puis cliquez sur **appliquer**.
+7.  cochez la case **ne pas traiter** sous Paramètres de la *plateforme* , puis cliquez sur **appliquer**.
 
     ![ne pas appliquer de traitement](images/AzureLabs-Lab5-49.png)
 
@@ -517,11 +517,11 @@ La classe *AzureServices* est chargée des opérations suivantes :
 
 -   Appel de votre fonction Azure App.
 
--   Le chargement et le téléchargement du fichier de données dans votre stockage cloud Azure.
+-   le chargement et le téléchargement du fichier de données dans votre Stockage Cloud Azure.
 
 Pour créer cette classe :
 
-1.  Cliquez avec le bouton droit dans le dossier *Asset* , situé dans le panneau projet, **créez** le  >  **dossier**. Nommez le dossier **scripts**.
+1.  cliquez avec le bouton droit dans le dossier *Asset* , situé dans le volet Project, **créez** le  >  **dossier**. Nommez le dossier **scripts**.
 
     ![créer un dossier](images/AzureLabs-Lab5-50.png)
 
@@ -643,7 +643,7 @@ Pour créer cette classe :
 
 9.  Supprimez la méthode *Update ()* puisque cette classe ne l’utilisera pas.
 
-10. Enregistrez vos modifications dans Visual Studio, puis revenez à Unity.
+10. enregistrez les modifications apportées à Visual Studio, puis revenez à unity.
 
 11. Cliquez et faites glisser la classe *AzureServices* du dossier scripts vers l’objet Camera principal dans le *panneau hiérarchie*.
 
@@ -653,7 +653,7 @@ Pour créer cette classe :
 
 ## <a name="chapter-8---create-the-shapefactory-class"></a>Chapitre 8-créer la classe ShapeFactory
 
-Le prochain script à créer est la classe *ShapeFactory* . Le rôle de cette classe est de créer une nouvelle forme, lorsqu’elle est demandée, et de conserver un historique des formes créées dans une *liste d’historique des formes*. Chaque fois qu’une forme est créée, la liste de l' *historique des formes* est mise à jour dans la classe *AzureService* , puis stockée dans votre *stockage Azure*. Lorsque l’application démarre, si un fichier stocké est trouvé dans votre *stockage Azure*, la liste de l' *historique des formes* est récupérée et relue, avec l’objet **texte 3D** qui indique si la forme générée provient du stockage ou de la nouvelle.
+Le prochain script à créer est la classe *ShapeFactory* . Le rôle de cette classe est de créer une nouvelle forme, lorsqu’elle est demandée, et de conserver un historique des formes créées dans une *liste d’historique des formes*. chaque fois qu’une forme est créée, la liste de l' *historique des formes* est mise à jour dans la classe *AzureService* , puis stockée dans votre *stockage Azure*. lorsque l’application démarre, si un fichier stocké est trouvé dans votre *stockage Azure*, la liste de l' *historique des formes* est récupérée et relue, avec l’objet **texte 3d** qui indique si la forme générée provient du stockage ou de la nouvelle.
 
 Pour créer cette classe :
 
@@ -751,7 +751,7 @@ Pour créer cette classe :
         }
     ```
 
-7.  Veillez à enregistrer vos modifications dans Visual Studio avant de revenir à Unity.
+7.  veillez à enregistrer les modifications apportées à Visual Studio avant de revenir à unity.
 
 8.  De retour dans l’éditeur Unity, cliquez et faites glisser la classe *ShapeFactory* du dossier **scripts** vers l’objet **Camera principal** dans le *panneau hiérarchie*.
 
@@ -769,7 +769,7 @@ Pour créer cette classe :
 
 1.  Accédez au dossier **scripts** que vous avez créé précédemment.
 
-2.  Cliquez avec le bouton droit dans le panneau projet, puis **créez**  >  **script C#**. Appelez le point de *regard* du script.
+2.  cliquez avec le bouton droit dans le panneau Project, **créez** un  >  **Script C#**. Appelez le point de *regard* du script.
 
 3.  Double-cliquez sur le nouveau script de *regard* pour l’ouvrir avec *Visual Studio.*
 
@@ -1027,7 +1027,7 @@ Pour créer cette classe :
         }
     ```
 
-10.  Enregistrez vos modifications dans Visual Studio avant de revenir à Unity.
+10.  enregistrez les modifications apportées à Visual Studio avant de revenir à unity.
 
 11.  Cliquez et faites glisser *la classe pointage du dossier* scripts vers l’objet **caméra principal** dans le *panneau hiérarchie*.
 
@@ -1039,7 +1039,7 @@ Avec les autres scripts en place, il est désormais possible d' *effectuer* la c
 
     > Cette méthode vérifie également l’existence d’un fichier précédemment stocké contenant la liste de formes.
     >
-    > **Si le fichier est trouvé**, il désactive le point d’interdépendance de *l’utilisateur et* déclenche la création de la forme, en fonction du modèle de formes, tel qu’il est stocké dans le **fichier de stockage Azure**. L’utilisateur peut voir cela, car la **maille de texte** fournira « stockage » ou « nouveau », en fonction de l’origine des formes.
+    > **si le fichier est trouvé**, il désactive le point d’interdépendance de *l’utilisateur et* déclenche la création de la forme, en fonction du modèle de formes, tel qu’il est stocké dans le **fichier stockage Azure**. l’utilisateur peut voir cela, car la **maille de texte** fournira l’affichage « Stockage » ou « nouveau », en fonction de l’origine des formes.
     >
     > **Si aucun fichier n’est trouvé**, il active le point de *regard*, ce qui permet à l’utilisateur de créer des formes lors de la recherche de l’objet **GazeButton** dans la scène.
 
@@ -1144,7 +1144,7 @@ Avec les autres scripts en place, il est désormais possible d' *effectuer* la c
         }
     ```
 
-4.  Ajoutez une méthode pour créer une chaîne en concaténant les entiers stockés dans la liste de l’historique des formes et en l’enregistrant dans votre *fichier de stockage Azure*.
+4.  ajoutez une méthode pour créer une chaîne en concaténant les entiers stockés dans la liste de l’historique des formes et en l’enregistrant dans votre *fichier stockage Azure*.
 
     ```csharp
         /// <summary>
@@ -1159,7 +1159,7 @@ Avec les autres scripts en place, il est désormais possible d' *effectuer* la c
         }
     ```
 
-5.  Ajoutez une méthode pour récupérer le texte stocké dans le fichier situé dans votre *fichier de stockage Azure* et le *désérialiser* dans une liste.
+5.  ajoutez une méthode pour récupérer le texte stocké dans le fichier situé dans votre *fichier stockage Azure* et le *désérialiser* dans une liste.
 
 6.  Une fois ce processus terminé, la méthode réactive le point de regard pour permettre à l’utilisateur d’ajouter des formes à la scène.
 
@@ -1193,13 +1193,13 @@ Avec les autres scripts en place, il est désormais possible d' *effectuer* la c
         }
     ```
 
-7.  Enregistrez vos modifications dans Visual Studio avant de revenir à Unity.
+7.  enregistrez les modifications apportées à Visual Studio avant de revenir à unity.
 
 ## <a name="chapter-11---build-the-uwp-solution"></a>Chapitre 11-créer la solution UWP
 
 Pour commencer le processus de génération :
 
-1.  Accédez à **fichier**  >  **paramètres de build**.
+1.  accédez à   >  **Paramètres de Build** de fichier.
 
     ![générer l’application](images/AzureLabs-Lab5-54.png)
 
@@ -1219,9 +1219,9 @@ Pour déployer votre application :
 
 3.  Dans la **configuration** de la solution, sélectionnez **Déboguer**.
 
-    > Pour Microsoft HoloLens, il peut s’avérer plus facile de définir cette valeur sur *machine distante*, afin de ne pas être attaché à votre ordinateur. Toutefois, vous devez également effectuer les opérations suivantes :
-    > - Vous devez connaître l' **adresse IP** de votre HoloLens, qui se trouve dans les **paramètres**  >  **réseau &**  >  Options avancées de **Wi-Fi** Internet.  >  IPv4 correspond à l’adresse que vous devez utiliser. 
-    > - Assurez-vous que le **mode développeur** est **activé**; trouvé dans **paramètres**  >  **mise à jour & sécurité**  >  **pour les développeurs**.
+    > pour le Microsoft HoloLens, il peut s’avérer plus facile de définir cette valeur sur *Machine distante*, de sorte que vous n’êtes pas attaché à votre ordinateur. Toutefois, vous devez également effectuer les opérations suivantes :
+    > - identifiez l' **adresse IP** de votre HoloLens, qui se trouve dans le   >  **réseau Paramètres &**  >  Options avancées de **Wi-Fi** Internet.  >  l’adresse IPv4 est celle que vous devez utiliser. 
+    > - Assurez-vous que le **mode développeur** est **activé**; trouvé dans **Paramètres**  >  **mise à jour & sécurité**  >  **pour les développeurs**.
 
     ![déployer la solution](images/AzureLabs-Lab5-55.png)
 
@@ -1229,9 +1229,9 @@ Pour déployer votre application :
 
 5.  Votre application doit maintenant apparaître dans la liste des applications installées, prêtes à être lancées et testées.
 
-## <a name="your-finished-azure-functions-and-storage-application"></a>Votre application de Azure Functions et de stockage terminée
+## <a name="your-finished-azure-functions-and-storage-application"></a>votre Azure Functions et votre Application Stockage terminée
 
-Félicitations, vous avez créé une application de réalité mixte qui tire parti des services de stockage Azure Functions et Azure. Votre application sera en mesure de dessiner sur des données stockées et de fournir une action basée sur ces données.
+félicitations, vous avez créé une application de réalité mixte qui tire parti des services Azure Functions et stockage Azure. Votre application sera en mesure de dessiner sur des données stockées et de fournir une action basée sur ces données.
 
 ![fin du produit final](images/AzureLabs-Lab5-00.png)
 
@@ -1243,4 +1243,4 @@ Créez un deuxième point de lancement et un autre enregistrement à partir duqu
 
 ### <a name="exercise-2"></a>Exercice 2
 
-Créez un moyen de redémarrer l’application, au lieu de la rouvrir à chaque fois. Le **chargement des scènes** est un bon point de départ. Après cela, créez un moyen d’effacer la liste stockée dans le *stockage Azure*, afin qu’elle puisse être facilement réinitialisée à partir de votre application.
+Créez un moyen de redémarrer l’application, au lieu de la rouvrir à chaque fois. Le **chargement des scènes** est un bon point de départ. après cela, créez un moyen d’effacer la liste stockée dans *stockage Azure*, afin qu’elle puisse être facilement réinitialisée à partir de votre application.

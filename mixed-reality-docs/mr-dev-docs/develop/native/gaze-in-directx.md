@@ -6,19 +6,19 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: œil-point d’interposition, point de présence, suivi de la tête, suivi des yeux, DirectX, entrée, hologrammes, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 8b3c63ac7a7edba0ce3173e024139e29d49757ab
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 0e32c9f24b56d938b5c6f9cbdf28e9959b190abc22591a26d1dfcfa0af2f5f4d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810177"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193204"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Entrée en regard des points de regard et de pointage dans DirectX
 
 > [!NOTE]
 > Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
-Dans Windows Mixed Reality, l’entrée en regard de l’œil et de la tête est utilisée pour déterminer ce que l’utilisateur examine. Vous pouvez utiliser les données pour piloter des modèles d’entrée principaux tels que le [point d’interposition et la validation](../../design/gaze-and-commit.md), et fournir un contexte pour différents types d’interaction. Deux types de vecteurs de pointage sont disponibles par le biais de l’API : le point de regard et l’œil.  Les deux sont fournis sous la forme d’un rayon tridimensionnel avec une origine et une direction. Les applications peuvent ensuite raycast dans leurs scènes ou dans le monde réel, et déterminer ce que l’utilisateur cible.
+dans Windows Mixed Reality, l’entrée en regard de l’œil et de la tête est utilisée pour déterminer ce que l’utilisateur examine. Vous pouvez utiliser les données pour piloter des modèles d’entrée principaux tels que le [point d’interposition et la validation](../../design/gaze-and-commit.md), et fournir un contexte pour différents types d’interaction. Deux types de vecteurs de pointage sont disponibles par le biais de l’API : le point de regard et l’œil.  Les deux sont fournis sous la forme d’un rayon tridimensionnel avec une origine et une direction. Les applications peuvent ensuite raycast dans leurs scènes ou dans le monde réel, et déterminer ce que l’utilisateur cible.
 
 **Tête-** point de regard représente la direction dans laquelle la tête de l’utilisateur est pointée. Pensez à la position et à la direction vers l’avant de l’appareil lui-même, la position étant le point central entre les deux affichages. La tête de regard est disponible sur tous les appareils de réalité mixte.
 
@@ -183,13 +183,13 @@ Comme mentionné dans nos [documents sur la conception des suivis oculaires](../
 Il existe plusieurs raisons pour lesquelles les données ne sont pas disponibles :
 * Un utilisateur n’est pas étalonné
 * Un utilisateur a refusé l’accès de l’application à ses données de suivi oculaire
-* Les interférences temporaires, telles que les traînées sur le Visor HoloLens ou les cheveux, boucher les yeux de l’utilisateur. 
+* les interférences temporaires, telles que les traînées sur le visière de HoloLens ou les cheveux, en obturant les yeux de l’utilisateur. 
 
 Alors que certaines API ont déjà été mentionnées dans ce document, nous fournissons un résumé de la façon de détecter que le suivi oculaire est disponible en tant que référence rapide : 
 
-* Vérifiez que le système prend en charge le suivi visuel. Appelez la *méthode* suivante : [Windows. perception. People. EyesPose. IsSupported ()](/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
+* Vérifiez que le système prend en charge le suivi visuel. appelez la *méthode* suivante : [Windows. Perception. People. EyesPose. IsSupported ()](/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
 
-* Vérifiez que l’utilisateur est étalonné. Appelez la *propriété* suivante : [Windows. perception. People. EyesPose. IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)   
+* Vérifiez que l’utilisateur est étalonné. appelez la *propriété* suivante : [Windows. Perception. People. EyesPose. IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)   
 
 * Vérifiez que l’utilisateur a donné à votre application l’autorisation d’utiliser ses données de suivi oculaire : récupérez le _« GazeInputAccessStatus »_ actuel. Vous trouverez un exemple de la procédure à suivre pour [demander l’accès aux entrées de regard](/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input). 
 
@@ -209,9 +209,9 @@ Toutefois, pour les entrées qui acheminent le SpatialInteractionManager, il exi
 ## <a name="calibration"></a>Étalonnage
 
 Pour que le suivi des yeux fonctionne correctement, chaque utilisateur doit passer par un étalonnage de l' [utilisateur de suivi oculaire](/hololens/hololens-calibration). Cela permet à l’appareil d’ajuster le système pour une expérience d’affichage plus confortable et de meilleure qualité pour l’utilisateur et pour garantir un suivi visuel précis en même temps. Les développeurs n’ont rien à faire à leur bout pour gérer l’étalonnage de l’utilisateur. Le système s’assure que l’utilisateur est invité à étalonner l’appareil dans les circonstances suivantes :
-* L’utilisateur utilise l’appareil pour la première fois
-* L’utilisateur a précédemment choisi le processus d’étalonnage
-* Le processus d’étalonnage n’a pas réussi la dernière fois que l’utilisateur a utilisé l’appareil
+* L'utilisateur se sert de l'appareil pour la première fois.
+* L'utilisateur a précédemment refusé le processus d'étalonnage.
+* Le processus d'étalonnage n'a pas abouti la dernière fois que l'utilisateur s'est servi de l'appareil.
 
 Les développeurs doivent veiller à fournir une prise en charge adéquate pour les utilisateurs où les données de suivi oculaire peuvent ne pas être disponibles. En savoir plus sur les considérations relatives aux solutions de secours au [suivi oculaire sur HoloLens 2](../../design/eye-tracking.md).
 
@@ -221,7 +221,7 @@ Les développeurs doivent veiller à fournir une prise en charge adéquate pour 
 
 * [Étalonnage](/hololens/hololens-calibration)
 * [Systèmes de coordonnées dans DirectX](coordinate-systems-in-directx.md)
-* [Eye-point de regard sur HoloLens 2](../../design/eye-tracking.md)
+* [Œil-regard HoloLens 2](../../design/eye-tracking.md)
 * [Modèle d’entrée de regard et de validation](../../design/gaze-and-commit.md)
 * [Mains et contrôleurs de mouvement dans DirectX](hands-and-motion-controllers-in-directx.md)
 * [Entrée vocale dans DirectX](voice-input-in-directx.md)

@@ -1,17 +1,17 @@
 ---
 title: Tablette
-description: Au-dessus des ardoises, un contrôle de style de fenêtre fine permettant d’afficher le contenu 2D à l’aide de la boîte à outils de la réalité mixte.
+description: au-dessus des ardoises, un contrôle de style de fenêtre fine permettant d’afficher le contenu 2d à l’aide de la réalité mixte Shared Computer Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, ardoise, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 2988419e44b21f6655a71d726dabd5091569f7ac
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, ardoise, MRTK, réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: 57a1e39528bb758b948f44ebea114798458591713b90e7b3db4bf0188969961f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193526"
 ---
 # <a name="slate"></a>Tablette
 
@@ -23,7 +23,7 @@ Un ardoise est un contrôle de style de fenêtre fine permettant d’afficher du
 
 ---
 
-## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>Ardoise dans MRTK (ensemble d’outils de réalité mixte) pour Unity
+## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>ardoise dans MRTK (Shared Computer Toolkit de la réalité mixte) pour unity
 
 * [MRTK-ardoise](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate)
 

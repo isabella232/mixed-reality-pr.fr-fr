@@ -1,23 +1,23 @@
 ---
-title: Étude de cas-3 interface utilisateur HoloStudio et apprentissage de la conception d’interaction
+title: étude de cas-3 HoloStudio l’interface utilisateur et les apprentissages de conception d’interaction
 description: Conception de l’interface utilisateur et des interactions HoloStudio
 author: rwinj
 ms.author: marcghal
 ms.date: 03/21/2018
 ms.topic: article
-keywords: HoloLens, HoloStudio, Windows Mixed Reality
-ms.openlocfilehash: 55fc9cea93582612abb5e0f8955deb5629da3093
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, HoloStudio Windows Mixed Reality
+ms.openlocfilehash: 1b384a10d3fe53cf7e69c2e8437904040322dc213d9473d9ae9abf272c08ec5e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195868"
 ---
-# <a name="case-study---3-holostudio-ui-and-interaction-design-learnings"></a>Étude de cas-3 interface utilisateur HoloStudio et apprentissage de la conception d’interaction
+# <a name="case-study---3-holostudio-ui-and-interaction-design-learnings"></a>étude de cas-3 HoloStudio l’interface utilisateur et les apprentissages de conception d’interaction
 
 [HoloStudio](https://www.youtube.com/watch?v=BRIJG0x_We8) était l’une des premières applications Microsoft pour HoloLens. Pour cette raison, nous avons dû créer de nouvelles pratiques pour l’interface utilisateur 3D et la conception d’interaction. Nous l’avons fait à travers un grand nombre de tests utilisateur, de prototypages, d’essais et d’erreurs.
 
-Nous savons que tous les utilisateurs n’ont pas les ressources nécessaires pour effectuer ce type de recherche. nous avions donc notre concepteur SR. holographique, Marcus Ghaly, à partager trois choses que nous avons appris pendant le développement de HoloStudio sur l’interface utilisateur et la conception d’interaction pour les applications HoloLens.
+nous savons que tous les utilisateurs n’ont pas les ressources nécessaires pour effectuer ce type de recherche. nous avions donc notre concepteur Sr. holographique, Marcus Ghaly, à partager trois choses que nous avons appris pendant le développement de HoloStudio sur la conception d’interface utilisateur et d’interaction pour les applications HoloLens.
 
 ## <a name="watch-the-video"></a>Regarder la vidéo
 
@@ -25,9 +25,9 @@ Nous savons que tous les utilisateurs n’ont pas les ressources nécessaires po
 
 ## <a name="problem-1-people-didnt-want-to-move-around-their-creations"></a>Problème #1 : les gens ne veulent pas se déplacer dans leurs créations
 
-Nous avons initialement conçu le Workbench dans HoloStudio comme un rectangle, comme vous le feriez dans le monde réel. Le problème est que les gens ont une durée de vie qui leur demande de rester quand ils sont assis sur un bureau ou qu’ils travaillent devant un ordinateur, de sorte qu’ils ne se déplacent pas dans l’atelier et explorent leur création en 3D de tous les côtés.
+nous avons initialement conçu le workbench dans HoloStudio comme un rectangle, comme vous le feriez dans le monde réel. Le problème est que les gens ont une durée de vie qui leur demande de rester quand ils sont assis sur un bureau ou qu’ils travaillent devant un ordinateur, de sorte qu’ils ne se déplacent pas dans l’atelier et explorent leur création en 3D de tous les côtés.
 
-![La conception rectangulaire du Workbench dans HoloStudio dissuaded les utilisateurs de se déplacer et de voir leurs créations de tous les côtés.](images/rectangular-workbench-500px.jpg)
+![la conception rectangulaire du workbench dans HoloStudio les utilisateurs dissuaded de se déplacer et de voir leurs créations de tous les côtés.](images/rectangular-workbench-500px.jpg)
 
 Nous avons eu l’idée de faire en sorte que le banc d’essai fasse l’aller de l’avant, ce qui signifie qu’il n’y avait pas de « front » ou d’endroit évident que vous étiez supposé reposer. Lorsque nous avons testé cette solution, soudain, les utilisateurs ont commencé à se déplacer et à explorer leurs créations eux-mêmes.
 
@@ -35,7 +35,7 @@ Nous avons eu l’idée de faire en sorte que le banc d’essai fasse l’aller 
 
 **Nos enseignements**
 
-Réfléchissez toujours à ce qui est confortable pour l’utilisateur. Tirer parti de leur espace physique est une fonctionnalité utile de HoloLens et un élément que vous ne pouvez pas faire avec d’autres appareils.
+Réfléchissez toujours à ce qui est confortable pour l’utilisateur. tirer parti de leur espace physique est une fonctionnalité utile de HoloLens et un élément que vous ne pouvez pas faire avec d’autres appareils.
 
 ## <a name="problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame"></a>Problème #2 : les boîtes de dialogue modales sont parfois hors du frame holographique
 
@@ -51,9 +51,9 @@ En 3D, il est beaucoup plus difficile d’alerter les utilisateurs en fonction d
 
 ## <a name="problem-3-sometimes-ui-can-get-blocked-by-other-holograms"></a>#3 du problème : parfois, l’interface utilisateur peut être bloquée par d’autres hologrammes
 
-Il peut arriver qu’un utilisateur souhaite interagir avec un hologramme et ses contrôles d’interface utilisateur associés, mais qu’il ne peut pas être affiché parce qu’un autre hologramme est devant eux. Pendant que nous développons HoloStudio, nous avons utilisé une version d’évaluation et une erreur pour résoudre ce problème.
+Il peut arriver qu’un utilisateur souhaite interagir avec un hologramme et ses contrôles d’interface utilisateur associés, mais qu’il ne peut pas être affiché parce qu’un autre hologramme est devant eux. pendant que nous développions HoloStudio, nous avons utilisé la version d’évaluation et l’erreur pour nous trouver dans une solution.
 
-![Un contrôle d’interface utilisateur associé à un hologramme peut être bloqué s’il y a un autre hologramme entre celui-ci et l’utilisateur qui a le port HoloLens.](images/ui-blocked-500px.jpg)
+![Un contrôle d’interface utilisateur associé à un hologramme peut être bloqué s’il existe un autre hologramme entre celui-ci et l’utilisateur qui porte HoloLens.](images/ui-blocked-500px.jpg)
 
 Nous avons essayé de rapprocher le contrôle d’interface utilisateur de l’utilisateur afin qu’il n’ait pas pu être bloqué, mais il a été découvert qu’il n’était pas facile pour l’utilisateur d’examiner un contrôle qui était proche de vous en regardant simultanément un hologramme éloigné. Toutefois, si nous avons déplacé le contrôle devant l’hologramme le plus proche de l’utilisateur, il a pensé qu’il a été détaché de l’hologramme qu’il devrait affecter.
 

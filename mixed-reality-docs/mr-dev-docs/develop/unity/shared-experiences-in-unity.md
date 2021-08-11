@@ -6,22 +6,22 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Partage, ancrer, WorldAnchor, MR partageant 250, WorldAnchorTransferBatch, SpatialPerception, Azure, ancres spatiales Azure, ASA, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 7762a76e1eaa944f69153b13fb0f380c7dce643e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b9fdd09740dc6197c46a2d017f61e97898f213cd44bb504cbbf306f6a7ae21ec
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583363"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195921"
 ---
 # <a name="shared-experiences-in-unity"></a>Expériences partagées dans Unity
 
-Une expérience partagée permet à plusieurs utilisateurs, chacun avec leur propre appareil HoloLens, iOS ou Android, d’afficher et d’interagir de manière collective avec le même hologramme. Les hologrammes sont positionnés à un point fixe dans l’espace via le partage d’ancrage spatial.
+une expérience partagée permet à plusieurs utilisateurs, chacun disposant de leurs propres HoloLens, iOS ou Android device, d’afficher et d’interagir de manière collective avec le même hologramme. les Hologrammes sont positionnés à un point fixe dans l’espace via le partage d’ancrage spatial.
 
 ## <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-Les <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> créent des ancres spatiales durables sur le Cloud, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu affiché par rapport à cette ancre dans le même emplacement physique. 
+les <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> créent des ancres spatiales durables sur le cloud, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu affiché par rapport à cette ancre dans le même emplacement physique. 
 
-Vous pouvez également utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance des hologrammes asynchrones sur les appareils HoloLens, iOS et Android.  En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
+vous pouvez également utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance d’hologrammes asynchrones sur des appareils HoloLens, iOS et Android.  En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
 
 Pour commencer à créer des expériences partagées dans Unity, essayez les Démarrages rapides de 5 minutes d' <a href="/azure/spatial-anchors/unity-overview" target="_blank">Unity spatiales Azure Unity</a>.
 
@@ -29,7 +29,7 @@ Une fois les ancres spatiales Azure configurées, vous pouvez <a href="/azure/sp
 
 ## <a name="local-anchor-transfers"></a>Transferts d’ancrage locaux
 
-Dans les situations où vous ne pouvez pas utiliser d’ancres spatiales Azure, les [transferts d’ancrage locaux](../../out-of-scope/local-anchor-transfers-in-unity.md) permettent à un appareil HoloLens d’exporter une ancre afin qu’un second HoloLens puisse l’importer.  Cette approche n’est pas prise en charge sur les appareils iOS et Android, et fournit un rappel d’ancrage moins fiable que les ancres spatiales Azure.
+dans les situations où vous ne pouvez pas utiliser d’ancres spatiales Azure, les [transferts d’ancrage locaux](../../out-of-scope/local-anchor-transfers-in-unity.md) permettent à un appareil HoloLens d’exporter une ancre afin qu’une deuxième HoloLens puisse l’importer.  Cette approche n’est pas prise en charge sur les appareils iOS et Android, et fournit un rappel d’ancrage moins fiable que les ancres spatiales Azure.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
@@ -41,7 +41,7 @@ Si vous suivez le parcours de développement Unity que nous avons disposé, vous
 Ou accéder directement au déploiement de votre application sur un appareil ou un émulateur :
 
 > [!div class="nextstepaction"]
-> [Déployer sur HoloLens ou sur des casques immersifs Windows Mixed Reality](../platform-capabilities-and-apis/using-visual-studio.md)
+> [déployez sur HoloLens ou Windows Mixed Reality des casques immersifs](../platform-capabilities-and-apis/using-visual-studio.md)
 
 Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-advanced-features) à tout moment.
 

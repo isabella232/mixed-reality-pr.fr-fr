@@ -1,26 +1,26 @@
 ---
-title: Toolkit Figma
+title: Toolkit Figma MRTK
 description: Téléchargez le fichier Figma qui contient les ressources des blocs de construction d’interface utilisateur courants.
 author: dongpark
 ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, croquis, Adobe XD, design, designer, fichier de conception, conception UX, HoloLens, MRTK, réalité mixte Shared Computer Toolkit
-ms.openlocfilehash: ef36e68e7340bc0a1500a9468db35d1e0b417ed6
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: e72dfece3252a35a8da2b1dc72a1476bbf174b36bf01b731b4f0be5af21f2a33
+ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224323"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "116862624"
 ---
-# <a name="figma-toolkit"></a>Toolkit Figma
+# <a name="mrtk-figma-toolkit"></a>Toolkit Figma MRTK
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke]
 
 MRTK Figma Shared Computer Toolkit fournit des versions 2d des contrôles d’interface utilisateur de style HoloLens 2 que vous pouvez trouver dans le MRTK pour unity ou MRTK pour unreal. Vous pouvez l’utiliser dans le processus de conception pour créer des dispositions d’interface utilisateur et des storyboards.
 
 > [!div class="nextstepaction"]
-> [afficher Figma Shared Computer Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Figma-Toolkit-for-MRTK-%2F-HoloLens%2C-Windows-Mixed-Reality?node-id=116%3A4)
+> [afficher MRTK Figma Shared Computer Toolkit](https://www.figma.com/file/zeGez3Phuzel9JrU1o20nn/Figma-Toolkit-for-MRTK-HoloLens-Windows-Mixed-Reality?node-id=116%3A4)
 
 ## <a name="how-to-use-figma-toolkit"></a>utilisation de Figma Shared Computer Toolkit
 Utilisez **le double dans le menu brouillons** pour effectuer une copie.

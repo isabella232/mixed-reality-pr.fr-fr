@@ -4,13 +4,13 @@ description: Documentation sur le fournisseur de regard oculaire dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking, EyeGaze,
-ms.openlocfilehash: ef50a55d52a5dad9f424c8af8139565e02542b6c
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking, EyeGaze,
+ms.openlocfilehash: 9a62bdba0bc4bb2985e6c2ffc4e8e66a8f867681a5e51c9e5f235b29f3baaf50
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193191"
 ---
 # <a name="accessing-eye-tracking-data-in-your-unity-script"></a>Accès aux données de suivi oculaire dans votre script Unity
 
@@ -68,4 +68,4 @@ CoreServices.InputSystem.EyeGazeProvider.GazeDirection.normalized * defaultDista
 - [Vue d’ensemble du suivi des yeux MRTK](eye-tracking-main.md)
 - [Configuration du suivi des yeux MRTK](eye-tracking-basic-setup.md)
 - [Étalonnage du suivi des yeux MRTK](eye-tracking-is-user-calibrated.md)
-- [Documentation sur le suivi oculaire HoloLens 2](/windows/mixed-reality/eye-tracking)
+- [HoloLens 2 Documentation sur le suivi oculaire](/windows/mixed-reality/eye-tracking)

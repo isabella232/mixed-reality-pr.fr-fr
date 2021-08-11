@@ -6,27 +6,27 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: système de coordonnées, système de coordonnées spatiales, échelle universelle, monde, échelle, position, orientation, Ancre, ancrage spatial, verrouillage universel, verrouillage universel, persistance, partage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: b11dc8cada8b67a21795dd9838579fc5dd735e6d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: dc9b57d51f4202499d82abb8d210261d2ee36dc60bb90ed039a7554f82af79a0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193513"
 ---
 # <a name="spatial-anchors"></a>Ancres spatiales
 
 Une ancre spatiale représente un point important dans le monde où le système effectue le suivi au fil du temps. Chaque ancre a un [système de coordonnées](coordinate-systems.md)réglable, basé sur d’autres ancres ou images de référence, pour garantir que les hologrammes ancrés restent précisément en place.  Le rendu d’un hologramme dans le système de coordonnées d’un ancrage vous donne le positionnement le plus précis de cet hologramme à un moment donné. Il s’agit du coût des petits ajustements au fil du temps jusqu’à la position de l’hologramme, car le système le replace continuellement en place en fonction du monde réel.
 
 Vous pouvez également conserver et partager des ancres spatiales entre les sessions d’application et entre les appareils :
-* En enregistrant les ancres spatiales locales sur le disque et en les chargeant ultérieurement, votre application peut calculer le même emplacement dans le monde réel sur plusieurs sessions d’application sur une même HoloLens.
-* En utilisant des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre Cloud, votre application peut partager une ancre spatiale sur plusieurs appareils HoloLens, iOS et Android. Si chaque appareil effectue le rendu d’un hologramme à l’aide de la même ancre spatiale, les utilisateurs voient l’hologramme apparaître au même endroit dans le monde réel. Cette technique autorise les expériences partagées en temps réel.
-* Vous pouvez également utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance des hologrammes asynchrones sur les appareils HoloLens, iOS et Android. En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
+* En enregistrant les ancres spatiales locales sur le disque et en les chargeant ultérieurement, votre application peut calculer le même emplacement dans le monde réel sur plusieurs sessions d’application sur une seule HoloLens.
+* en utilisant des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour créer une ancre cloud, votre application peut partager une ancre spatiale sur plusieurs appareils HoloLens, iOS et Android. Si chaque appareil effectue le rendu d’un hologramme à l’aide de la même ancre spatiale, les utilisateurs voient l’hologramme apparaître au même endroit dans le monde réel. Cette technique autorise les expériences partagées en temps réel.
+* vous pouvez également utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance d’hologrammes asynchrones sur des appareils HoloLens, iOS et Android. En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
 
-Pour les expériences à échelle permanente ou à l’échelle de l’espace pour les casques de bureau attachés qui restent dans un diamètre de 5 mètres, vous pouvez généralement utiliser le [cadre de la phase de référence](coordinate-systems.md#stage-frame-of-reference) au lieu des ancres spatiales, ce qui vous permet de restituer tout le contenu. Toutefois, si votre application permet aux utilisateurs d’aller au-delà de 5 mètres dans HoloLens, peut-être en fonctionnement tout au long d’un étage d’un bâtiment, vous aurez besoin d’ancres spatiales pour garantir la stabilité du contenu.
+Pour les expériences à échelle permanente ou à l’échelle de l’espace pour les casques de bureau attachés qui restent dans un diamètre de 5 mètres, vous pouvez généralement utiliser le [cadre de la phase de référence](coordinate-systems.md#stage-frame-of-reference) au lieu des ancres spatiales, ce qui vous permet de restituer tout le contenu. toutefois, si votre application permet aux utilisateurs d’aller au-delà de 5 mètres dans HoloLens, peut-être en fonctionnement tout au long d’un étage d’un bâtiment, vous aurez besoin d’ancres spatiales pour garantir la stabilité du contenu.
 
 Bien que les ancres spatiales soient idéales pour les hologrammes qui doivent rester fixes dans le monde, une fois placée, une ancre ne peut pas être déplacée. Il existe des alternatives aux ancres qui sont plus appropriées pour les hologrammes dynamiques qui balisent avec l’utilisateur. Il est préférable de positionner des hologrammes dynamiques à l’aide d’un cadre stationnaire de référence (la Fondation pour les coordonnées universelles de Unity) ou d’un cadre de référence attaché.
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Bonnes pratiques
 
 Les recommandations ci-après sur les ancres spatiales vous aident à afficher des hologrammes stables qui suivent avec précision le monde réel.
 
@@ -34,7 +34,7 @@ Les recommandations ci-après sur les ancres spatiales vous aident à afficher d
 
 En règle générale, les utilisateurs sont ceux qui placent explicitement des ancres spatiales.
 
-Par exemple, sur HoloLens, une application peut croiser le point de [regard](gaze-and-commit.md) de l’utilisateur avec le maillage de [mappage spatial](spatial-mapping.md) pour permettre à l’utilisateur de décider où placer un hologramme. Quand l’utilisateur appuie sur pour placer cet hologramme, créez une ancre spatiale au point d’intersection, puis placez l’hologramme à l’origine du système de coordonnées de cette ancre.
+par exemple, sur HoloLens, une application peut croiser le point de [regard](gaze-and-commit.md) de l’utilisateur avec le maillage de [mappage spatial](spatial-mapping.md) pour permettre à l’utilisateur de décider où placer un hologramme. Quand l’utilisateur appuie sur pour placer cet hologramme, créez une ancre spatiale au point d’intersection, puis placez l’hologramme à l’origine du système de coordonnées de cette ancre.
 
 Les ancres spatiales locales sont faciles à créer. Le système combine les données internes si plusieurs ancres peuvent partager leurs données de capteur sous-jacentes. Nous vous recommandons de créer une ancre spatiale locale pour chaque hologramme qu’un utilisateur place explicitement, sauf dans les cas présentés ci-dessous, tels que des groupes rigides d’hologrammes.
 
@@ -52,7 +52,7 @@ La principale restriction pour maintenir la stabilité des hologrammes consiste 
 
 ### <a name="render-highly-dynamic-holograms-using-the-stationary-frame-of-reference-instead-of-a-local-spatial-anchor"></a>Afficher les hologrammes hautement dynamiques à l’aide du cadre de référence stationnaire au lieu d’une ancre spatiale locale
 
-Si vous avez un hologramme très dynamique, tel qu’un personnage qui se trouve autour d’une pièce ou d’une interface utilisateur flottante qui suit le long du mur près de l’utilisateur, il est préférable d’ignorer les ancres spatiales locales et de rendre ces hologrammes directement dans le système de coordonnées fourni par le [cadre de référence stationnaire](coordinate-systems.md#stationary-frame-of-reference). Dans Unity, vous obtenez cela en plaçant des hologrammes directement en coordonnées universelles sans WorldAnchor. Les hologrammes dans un cadre stationnaire peuvent être dérives lorsque l’utilisateur est éloigné de l’hologramme. Toutefois, cela est moins susceptible d’être perceptible pour les hologrammes dynamiques : l’hologramme se déplace constamment tout de même ou son mouvement le maintient constamment à proximité de l’utilisateur, où la dérive est réduite.
+Si vous avez un hologramme très dynamique, tel qu’un personnage qui se trouve autour d’une pièce ou d’une interface utilisateur flottante qui suit le long du mur près de l’utilisateur, il est préférable d’ignorer les ancres spatiales locales et de rendre ces hologrammes directement dans le système de coordonnées fourni par le [cadre de référence stationnaire](coordinate-systems.md#stationary-frame-of-reference). Dans Unity, vous obtenez cela en plaçant des hologrammes directement en coordonnées universelles sans WorldAnchor. Hologrammes dans un cadre stationnaire de référence peut être dérive lorsque l’utilisateur est éloigné de l’hologramme. Toutefois, cela est moins susceptible d’être perceptible pour les hologrammes dynamiques : l’hologramme se déplace constamment tout de même ou son mouvement le maintient constamment à proximité de l’utilisateur, où la dérive est réduite.
 
 Un cas intéressant d’hologrammes dynamiques est un objet qui s’anime d’un système de coordonnées ancré à un autre. Par exemple, vous pouvez avoir deux mètres de 10 Castles séparés, chacun sur leur propre ancrage spatial avec un Castle déclenchant un Cannonball à l’autre Castle. Lorsque le Cannonball est activé, vous pouvez le rendre à l’emplacement approprié dans le cadre stationnaire de référence pour coïncider avec le Canon dans le système de coordonnées d’ancrage du premier Castle. Il peut ensuite suivre sa trajectoire dans le cadre stationnaire de référence quand il parcourt 10 mètres dans l’air. À mesure que le Cannonball atteint l’autre Castle, vous pouvez le déplacer dans le second système de coordonnées d’ancrage Castle pour permettre les calculs physiques avec les corps rigides de ce Castle.
 

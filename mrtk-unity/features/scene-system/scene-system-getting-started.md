@@ -1,18 +1,18 @@
 ---
-title: Prise en main du système de scène
+title: Système de scène - Démarrage
 description: Page d’accueil du système de scène avec MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 16adf431498f8146ca2cc60565e59dc8ae03fd92
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 5b4f1c3b0f069d320feca8ccecacc6c66576b50339ea7b7733f34525005dd842
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191555"
 ---
-# <a name="scene-system-getting-started"></a>Prise en main du système de scène
+# <a name="scene-system-getting-started"></a>Système de scène - Démarrage
 
 ## <a name="when-to-use-the-scene-system"></a>Quand utiliser le système de scène
 

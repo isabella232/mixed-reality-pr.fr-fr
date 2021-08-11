@@ -1,34 +1,34 @@
 ---
-title: Caméra vidéo photo dans Unity
+title: Appareil photo et caméra vidéo dans Unity
 description: Découvrez comment capturer une photo dans un fichier ou un Texture2D, comment capturer une photo et interagir avec les octets bruts, et comment capturer une vidéo.
 author: keveleigh
 ms.author: v-hferrone
 ms.date: 03/21/2021
 ms.topic: article
 keywords: photo, vidéo, hololens, appareil photo, Unity, localisable, PVC, caméra vidéo photo, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, webcam, capture de photos, capture vidéo
-ms.openlocfilehash: 1cae796a793036ed59c1d0805df76cb8ac143027
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 4fdf895e6b2b7ed1fc051b45b07ce49052f8a95587178caddfc71a0cfd364eee
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193503"
 ---
-# <a name="photo-video-camera-in-unity"></a>Caméra vidéo photo dans Unity
+# <a name="photo-video-camera-in-unity"></a>Appareil photo et caméra vidéo dans Unity
 
 ## <a name="enabling-the-capability-for-camera-access"></a>Activation de la fonctionnalité d’accès à l’appareil photo
 
 La fonctionnalité « WebCam » doit être déclarée pour qu’une application utilise l' [appareil photo](../platform-capabilities-and-apis/locatable-camera.md).
 
-1. Dans l’éditeur Unity, accédez aux paramètres du lecteur en accédant à la page « modifier les paramètres du projet > > Player ».
-2. Sélectionner l’onglet « Windows Store »
-3. Dans la section « fonctionnalités de > des paramètres de publication », vérifiez les fonctionnalités de la **webcam** et du **microphone**
+1. dans l’éditeur unity, accédez aux paramètres du lecteur en accédant à la page modifier > Project Paramètres > player.
+2. sélectionnez l’onglet « Store de Windows »
+3. dans la section « Paramètres des fonctionnalités de > de publication », vérifiez les fonctionnalités de la **WebCam** et du **Microphone**
 
 Une seule opération peut être effectuée avec la caméra à la fois. Vous pouvez vérifier le mode avec lequel l’appareil photo est actuellement dans `UnityEngine.XR.WSA.WebCam.Mode` unity 2018 et les versions antérieures ou `UnityEngine.Windows.WebCam.Mode` dans unity 2019 et versions ultérieures. Les modes disponibles sont photo, Video ou None.
 
 ## <a name="photo-capture"></a>Capture de photos
 
 **Espace de noms (avant unity 2019) :** *UnityEngine. XR. WSA. Webcam*<br>
-**Espace de noms (unity 2019 et versions ultérieures) :** *UnityEngine. Windows. Webcam*<br>
+**Espace de noms (unity 2019 et versions ultérieures) :** *UnityEngine. Windows. WebCam*<br>
 **Type :** *PhotoCapture*
 
 Le type *PhotoCapture* vous permet de prendre des photographies avec la caméra photo. Le modèle général d’utilisation de *PhotoCapture* pour prendre une photo est le suivant :
@@ -225,10 +225,10 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 ## <a name="video-capture"></a>Capture vidéo
 
 **Espace de noms (avant unity 2019) :** *UnityEngine. XR. WSA. Webcam*<br>
-**Espace de noms (unity 2019 et versions ultérieures) :** *UnityEngine. Windows. Webcam*<br>
+**Espace de noms (unity 2019 et versions ultérieures) :** *UnityEngine. Windows. WebCam*<br>
 **Type :** *VideoCapture*
 
-*VideoCapture* fonctionne de la même façon que *PhotoCapture*. Les deux seules différences sont que vous devez spécifier une valeur d’images par seconde (FPS) et vous ne pouvez enregistrer directement sur le disque qu’en tant que fichier. MP4. Les étapes d’utilisation de *VideoCapture* sont les suivantes :
+*VideoCapture* fonctionne de la même façon que *PhotoCapture*. Les deux seules différences sont que vous devez spécifier une valeur d’images par seconde (FPS) et vous ne pouvez enregistrer directement sur le disque qu’en tant que fichier .mp4. Les étapes d’utilisation de *VideoCapture* sont les suivantes :
 
 1. Créer un objet *VideoCapture*
 2. Créer un objet *CameraParameters* avec les paramètres souhaités
@@ -342,7 +342,7 @@ Si vous suivez le parcours du point de contrôle de développement Unity que nou
 Ou accéder directement au déploiement de votre application sur un appareil ou un émulateur :
 
 > [!div class="nextstepaction"]
-> [Déployer sur HoloLens ou sur des casques immersifs Windows Mixed Reality](../platform-capabilities-and-apis/using-visual-studio.md)
+> [déployez sur HoloLens ou Windows Mixed Reality des casques immersifs](../platform-capabilities-and-apis/using-visual-studio.md)
 
 Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-advanced-features) à tout moment.
 

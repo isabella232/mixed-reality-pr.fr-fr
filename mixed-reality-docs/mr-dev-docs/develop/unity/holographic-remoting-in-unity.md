@@ -6,12 +6,12 @@ ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, réalité mixte, MRTK, réalité mixte Shared Computer Toolkit, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, mise en route, communication à distance holographique, bureau
-ms.openlocfilehash: 51244a94fb7e54f2eee41d9d1b7f65b0ba373138
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 0b18bf4a187190da3ef9d17fd87f2c42feaa271210345330887ce618b49a0442
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192191"
 ---
 # <a name="holographic-remoting-in-unity"></a>Communication à distance holographique dans Unity
 
@@ -19,7 +19,7 @@ ms.locfileid: "114757400"
 > Windows La prise en charge de l’accès distant des applications autonomes a été ajoutée à la version du package 0.1.3.
 > À partir de la version 0.1.3, cette fonctionnalité ne prend pas en charge les builds UWP.
 
-[Découvrez les principes de base de la communication à distance holographique.](../platform-capabilities-and-apis/holographic-remoting-overview.md)
+[Apprenez les bases de la communication à distance holographique.](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 vous pouvez utiliser la communication à distance holographique pour diffuser du contenu holographique vers votre HoloLens 2 en temps réel. C’est un excellent moyen de déboguer rapidement votre application sans générer et déployer un projet complet. 
 

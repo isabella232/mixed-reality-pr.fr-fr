@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: VR, LBE, divertissement basé sur l’emplacement, VR arcade, arcade, immersif, QR, code QR, hololens2
-ms.openlocfilehash: 9d3a5d9696fbf875b2e6a890ed837efc055a9e6e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: f6d2f224b9f477cf78ba4f0a5b6ce362f629d06988e966d71ed03bc48eda41d9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394333"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193708"
 ---
 # <a name="qr-code-tracking"></a>Suivi des codes QR
 
@@ -28,17 +28,17 @@ HoloLens 2 peut détecter les codes QR dans l’environnement situé autour du 
 </table>
 
 >[!NOTE]
->Le suivi du code QR avec des casques Windows Mixed Reality sur PC de bureau est pris en charge sur Windows 10 version 2004 et versions ultérieures. Utilisez l’API Microsoft. MixedReality. QRCodeWatcher. IsSupported () pour déterminer si la fonctionnalité est prise en charge sur l’appareil actuel.
+>le suivi du code QR avec des casques Windows Mixed Reality immersifs sur les ordinateurs de bureau est pris en charge sur Windows 10 Version 2004 et versions ultérieures. Utilisez l’API Microsoft. MixedReality. QRCodeWatcher. IsSupported () pour déterminer si la fonctionnalité est prise en charge sur l’appareil actuel.
 
 ## <a name="getting-the-qr-package"></a>Obtention du package QR
 
-Vous pouvez télécharger le package NuGet pour la détection du code QR [ici](https://nuget.org/Packages/Microsoft.MixedReality.QR).
+vous pouvez télécharger le package NuGet pour la détection du code QR [ici](https://nuget.org/Packages/Microsoft.MixedReality.QR).
 
 ## <a name="using-openxr"></a>Utilisation de OpenXR
 
 Lorsque vous utilisez le plug-in OpenXR, récupérez le [ `SpatialGraphNodeId` à partir de l’API QR](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference) et utilisez l' `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API pour localiser le code QR.
 
-Pour référence, nous disposons d’un [exemple de projet de suivi QR sur GitHub](https://github.com/yl-msft/QRTracking) avec davantage d’explications sur l’utilisation de l' [ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
+pour référence, nous disposons d’un [exemple de projet de suivi QR sur GitHub](https://github.com/yl-msft/QRTracking) avec une explication plus détaillée de l' [ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
 
 ## <a name="detecting-qr-codes"></a>Détection des codes QR
 
@@ -64,7 +64,7 @@ Si la détection du code QR requiert la `webcam` fonctionnalité, la détection 
 
 ### <a name="detecting-qr-codes-in-unity"></a>Détection des codes QR dans Unity
 
-Vous pouvez utiliser l’API de détection du code QR dans Unity sans importer MRTK en installant le package NuGet à l’aide [de NuGet pour Unity](https://github.com/GlitchEnzo/NuGetForUnity). Si vous souhaitez avoir une idée de son fonctionnement, téléchargez l’exemple d' [application Unity](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes). L’exemple d’application contient des exemples d’affichage d’un carré holographique sur des codes QR et des données associées telles que le GUID, la taille physique, l’horodatage et les données décodées.
+vous pouvez utiliser l’API de détection du code QR dans unity sans importer MRTK en installant le package NuGet à l’aide [de NuGet pour unity](https://github.com/GlitchEnzo/NuGetForUnity). Si vous souhaitez avoir une idée de son fonctionnement, téléchargez l’exemple d' [application Unity](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes). L’exemple d’application contient des exemples d’affichage d’un carré holographique sur des codes QR et des données associées telles que le GUID, la taille physique, l’horodatage et les données décodées.
 
 ### <a name="detecting-qr-codes-in-c"></a>Détection des codes QR en C++
 
@@ -206,7 +206,7 @@ Dans une scène avec un éclairage brillant, imprimez un code noir sur un arriè
 Si le fond du code est sombre, essayez un code noir en gris si votre taux de détection est faible. Si le fond est relativement clair, un code normal devrait fonctionner correctement.
 
 ### <a name="size-of-qr-codes"></a>Taille des codes QR
-Les appareils Windows Mixed Reality ne fonctionnent pas avec des codes QR avec des côtés inférieurs à 5 cm chacun.
+les appareils Windows Mixed Reality ne fonctionnent pas avec les codes QR avec des côtés inférieurs à 5 cm chacun.
 
 Pour les codes QR entre les côtés de 5 cm et de 10 cm, vous devez être assez proche pour détecter le code. La détection des codes à cette taille prendra également plus de temps. 
 
@@ -224,7 +224,7 @@ La distance de détection pour la taille augmente de façon linéaire, mais dép
 Les codes QR avec des logos n’ont pas été testés et ne sont actuellement pas pris en charge.
 
 ### <a name="managing-qr-code-data"></a>Gestion des données de code QR
-Les appareils Windows Mixed Reality détectent les codes QR au niveau du système dans le pilote. Lorsque l’appareil est redémarré, les codes QR détectés ont disparu et sont redétectés en tant que nouveaux objets la prochaine fois.
+Windows Mixed Reality appareils détectent les codes QR au niveau du système dans le pilote. Lorsque l’appareil est redémarré, les codes QR détectés ont disparu et sont redétectés en tant que nouveaux objets la prochaine fois.
 
 Nous vous recommandons de configurer votre application pour qu’elle ignore les codes QR antérieurs à un horodateur spécifique. Actuellement, l’API ne prend pas en charge l’effacement de l’historique du code QR.
 

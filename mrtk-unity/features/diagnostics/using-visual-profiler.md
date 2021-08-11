@@ -1,18 +1,18 @@
 ---
-title: Utilisation du générateur de profils Visual
+title: Utilisation du profileur visuel
 description: documentation relative à l’utilisation de Visual Profiler dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 018d6bf2087b73697a1e1f43e206c96ae25e1f21
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 5db2094b5d7354e02a9e2f06c50e4d564ea7d8d259ce31ad5a11f49a71e27839
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190929"
 ---
-# <a name="using-the-visual-profiler"></a>Utilisation du générateur de profils Visual
+# <a name="using-the-visual-profiler"></a>Utilisation du profileur visuel
 
 Le VisualProfiler fournit une vue en toute simplicité et en application des performances d’une application de réalité mixte. le profileur est pris en charge sur toutes les plateformes Shared Computer Toolkit de réalité mixte, y compris :
 

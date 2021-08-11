@@ -5,13 +5,13 @@ author: szymons
 ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
-keywords: Compréhension des scènes, mappage spatial, Windows Mixed Reality, Unity
-ms.openlocfilehash: dee561e49a9457aa35c44037f4573caaefd00f2a
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+keywords: compréhension des scènes, mappage Spatial, Windows Mixed Reality, unity
+ms.openlocfilehash: 1b93f3137e1ac1309ee56e974a0fa33608114f16dfb65a13e369490f45d6beb3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449728"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193636"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Présentation du SDK présentation de Scene
 
@@ -115,7 +115,7 @@ SceneObjects peut avoir l’un des éléments suivants :
 <tr>
 <th>SceneObjectKind</th> <th>Description</th>
 </tr>
-<tr><td>Arrière-plan</td><td>Le SceneObject est connu pour <b>ne pas</b> être l’un des autres types d’objets de scène reconnus. Cette classe ne doit pas être confondue avec Unknown, où l’arrière-plan est connu comme étant un mur/plancher/plafond, etc... alors que inconnu n’est pas encore catégorisé.</b></td></tr>
+<tr><td>Contexte</td><td>Le SceneObject est connu pour <b>ne pas</b> être l’un des autres types d’objets de scène reconnus. Cette classe ne doit pas être confondue avec Unknown, où l’arrière-plan est connu comme étant un mur/plancher/plafond, etc... alors que inconnu n’est pas encore catégorisé.</b></td></tr>
 <tr><td>Mur</td><td>Un mur physique. Les murs sont supposés être des structures environnementales immobilières.</td></tr>
 <tr><td>Floor</td><td>Les étages sont des surfaces sur lesquelles il est possible de parcourir. Remarque : les escaliers ne sont pas des étages. Notez également que les étages supposent une surface pouvant être guidée et qu’il n’y a donc pas d’hypothèse explicite d’un étage singulier. Structures à plusieurs niveaux, rampes, etc... doit tous être classifiés en tant que plancher.</td></tr>
 <tr><td>Ceiling</td><td>Surface supérieure d’une salle.</td></tr>
@@ -264,7 +264,7 @@ Notez qu’il s’agit de la SceneObject qui a la transformation par rapport à 
 
 La compréhension des scènes a fait une tentative délibérée d’alignement avec les représentations de scène 3D traditionnelles lors du traitement des transformations. Chaque scène est donc confinée à un système de coordonnées unique, à l’instar des représentations environnementales 3D les plus courantes. Les SceneObjects fournissent chacun leur emplacement par rapport à ce système de coordonnées. Si votre application traite des scènes qui étendent la limite de ce qu’une origine unique fournit peut ancrer SceneObjects à SpatialAnchors, ou générer plusieurs scènes et les fusionner, mais pour des raisons de simplicité, nous supposons que des scènes étanches existent dans leur propre origine et sont localisées par un NodeId défini par Scene. OriginSpatialGraphNodeId.
 
-Le code Unity suivant, par exemple, montre comment utiliser la perception de Windows et les API Unity pour aligner les systèmes de coordonnées ensemble. Pour plus d’informations sur les API de perception Windows et sur les [objets natifs de réalité mixte en Unity](/windows/mixed-reality/unity-xrdevice-advanced) , consultez [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) et [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) pour plus d’informations sur l’obtention d’un SpatialCoordinateSystem qui correspond à l’origine universelle d’Unity.
+le code unity suivant, par exemple, montre comment utiliser les api Windows Perception et unity pour aligner les systèmes de coordonnées ensemble. pour plus d’informations sur l’obtention d’un SpatialCoordinateSystem qui correspond à l’origine universelle d’unity, consultez [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) et [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) . pour plus d’informations sur les api de Perception de la Windows et les [objets natifs de réalité mixte dans unity](/windows/mixed-reality/unity-xrdevice-advanced) .
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

@@ -1,35 +1,35 @@
 ---
 title: Saisie à l’aide de la commande de jeu, du clavier et de la souris dans DirectX
-description: Explique comment créer une application pour Windows Mixed Reality qui utilise le clavier, la souris et les contrôleurs de jeu.
+description: explique comment créer une application pour Windows Mixed Reality qui utilise des contrôleurs de clavier, de souris et de jeu.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, clavier, souris, contrôleur de jeu, contrôleur Xbox, HoloLens, Desktop, procédure pas à pas, exemple de code
-ms.openlocfilehash: 3cf35ba195e839332cbedb8b2c3945334a158cbc
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, clavier, souris, contrôleur de jeu, contrôleur xbox, HoloLens, bureau, procédure pas à pas, exemple de code
+ms.openlocfilehash: 2e83fa0a14a24eb98001c7dc88af062202a2ef9a5eee7cd53e9702dbe4eedc8e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583629"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192023"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Saisie à l’aide de la commande de jeu, du clavier et de la souris dans DirectX
 
 > [!NOTE]
 > Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](../native/openxr-getting-started.md)**.
 
-Les claviers, les souris et les contrôleurs de jeu peuvent être des formes d’entrée utiles pour les appareils Windows Mixed Reality. Les claviers et souris Bluetooth sont pris en charge sur HoloLens, pour être utilisés avec le débogage de votre application ou comme une autre forme d’entrée. Windows Mixed Reality prend également en charge les casques immersifs attachés à des PC, où les souris, les claviers et les contrôleurs de jeu étaient traditionnellement la norme.
+les claviers, les souris et les contrôleurs de jeu peuvent être des formes d’entrée utiles pour les appareils Windows Mixed Reality. Bluetooth claviers et souris sont tous deux pris en charge sur HoloLens, pour une utilisation avec le débogage de votre application ou comme une autre forme d’entrée. Windows Mixed Reality prend également en charge les casques immersifs reliés à des pc, où les souris, les claviers et les contrôleurs de jeu étaient traditionnellement la norme.
 
-Pour utiliser l’entrée au clavier sur HoloLens, couplez un clavier Bluetooth à votre appareil ou utilisez une entrée virtuelle via le portail de périphériques Windows. Pour utiliser l’entrée au clavier tout en portant un casque immersif Windows Mixed Reality, affectez le focus d’entrée à la réalité mixte en plaçant sur l’appareil ou en utilisant la combinaison de touches Windows + Y. Gardez à l’esprit que les applications destinées à HoloLens doivent fournir des fonctionnalités sans que ces appareils soient attachés.
+pour utiliser l’entrée au clavier sur HoloLens, couplez un clavier Bluetooth à votre appareil ou utilisez une entrée virtuelle via le portail de l’appareil Windows. pour utiliser l’entrée au clavier tout en portant un Windows Mixed Reality casque immersif, affectez le focus d’entrée à la réalité mixte en plaçant sur l’appareil ou en utilisant la combinaison de touches Windows touche + Y. gardez à l’esprit que les applications destinées à HoloLens doivent fournir des fonctionnalités sans que ces appareils soient attachés.
 
 >[!NOTE]
 >Les extraits de code de cet article illustrent actuellement l’utilisation de C++/CX au lieu des/WinRT C++ conformes à C + +17, tels qu’ils sont utilisés dans le [modèle de projet holographique c++](../native/creating-a-holographic-directx-project.md).  Les concepts sont équivalents pour un projet C++/WinRT, bien que vous deviez traduire le code.
 
 ## <a name="subscribe-for-corewindow-input-events"></a>S’abonner aux événements d’entrée CoreWindow
 
-### <a name="keyboard-input"></a>Entrée de clavier
+### <a name="keyboard-input"></a>Saisie au clavier
 
-Dans le modèle d’application holographique Windows, nous incluons un gestionnaire d’événements pour l’entrée au clavier comme n’importe quelle autre application UWP. Votre application utilise les données d’entrée au clavier de la même façon dans Windows Mixed Reality.
+dans le modèle d’application holographique Windows, nous incluons un gestionnaire d’événements pour l’entrée au clavier comme n’importe quelle autre application UWP. Votre application utilise les données d’entrée au clavier de la même façon dans Windows Mixed Reality.
 
 À partir de AppView. cpp :
 
@@ -51,13 +51,13 @@ Dans le modèle d’application holographique Windows, nous incluons un gestionn
 ```
 
 ### <a name="virtual-keyboard-input"></a>Entrée au clavier virtuel
-Pour les casques de bureau immersifs, vous pouvez prendre en charge des claviers virtuels rendus par Windows sur votre vue immersif en implémentant **CoreTextEditContext**. Cela permet à Windows de comprendre l’état de vos propres zones de texte de rendu d’application, de sorte que le clavier virtuel puisse contribuer correctement au texte.
+pour les casques de bureau immersifs, vous pouvez prendre en charge des claviers virtuels affichés en Windows sur votre vue immersif en implémentant **CoreTextEditContext**. cela permet Windows comprendre l’état de vos propres zones de texte de rendu d’application, de sorte que le clavier virtuel puisse contribuer correctement au texte à cet endroit.
 
 Pour plus d’informations sur l’implémentation de la prise en charge de CoreTextEditContext, consultez l' [exemple CoreTextEditContext](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomEditControl).
 
 ### <a name="mouse-input"></a>Entrée de la souris
 
-Vous pouvez également utiliser l’entrée de la souris, à nouveau via les gestionnaires d’événements d’entrée UWP CoreWindow. Voici comment modifier le modèle d’application holographique Windows pour prendre en charge les clics de souris de la même façon que les gestes appuyés. Une fois cette modification effectuée, un clic de souris tout en faisant passer un périphérique de casque immersif repositionne le cube.
+Vous pouvez également utiliser l’entrée de la souris, à nouveau via les gestionnaires d’événements d’entrée UWP CoreWindow. voici comment modifier le modèle d’application holographique Windows pour prendre en charge les clics de souris de la même façon que les gestes appuyés. Une fois cette modification effectuée, un clic de souris tout en faisant passer un périphérique de casque immersif repositionne le cube.
 
 > [!NOTE]
 > Les applications UWP peuvent également obtenir des données brutes XY pour la souris à l’aide de l’API [MouseDevice](/uwp/api/Windows.Devices.Input.MouseDevice) .
@@ -129,11 +129,11 @@ SpatialInteractionSourceState^ pointerState = m_spatialInputHandler->CheckForInp
    m_pointerPressed = false;
 ```
 
-Recompilez et redéployez. Notez que le clic de souris va à présent repositionner le cube dans votre casque immersif ou HoloLens avec la souris Bluetooth associée.
+Recompilez et redéployez. notez que le clic de souris va à présent repositionner le cube dans votre casque immersif ou HoloLens avec la souris bluetooth associée.
 
 ### <a name="game-controller-support"></a>Prise en charge des contrôleurs de jeu
 
-Les contrôleurs de jeu peuvent être un moyen amusant et pratique de permettre à l’utilisateur de contrôler une expérience Windows Mixed Reality.
+les contrôleurs de jeu peuvent être un moyen amusant et pratique de permettre à l’utilisateur de contrôler une expérience de Windows Mixed Reality immersif.
 
  Ajoutez les déclarations de membre privées suivantes à la classe d’en-tête de votre fichier principal :
 
@@ -262,12 +262,12 @@ Recompilez et redéployez. Vous pouvez maintenant attacher un contrôleur de jeu
 
 ## <a name="important-guidelines-for-keyboard-and-mouse-input"></a>Indications importantes pour l’entrée au clavier et à la souris
 
-Il existe quelques différences clés dans la façon dont ce code peut être utilisé sur Microsoft HoloLens, qui est un appareil qui s’appuie principalement sur l’entrée d’utilisateur naturelle, par rapport à ce qui est disponible sur un PC Windows Mixed Reality.
+il existe quelques différences clés dans la façon dont ce code peut être utilisé sur Microsoft HoloLens, qui est un appareil qui s’appuie principalement sur l’entrée d’utilisateur naturelle, par rapport à ce qui est disponible sur un PC avec Windows Mixed Reality.
 * Vous ne pouvez pas vous appuyer sur l’entrée du clavier ou de la souris. Toutes les fonctionnalités de votre application doivent fonctionner avec le regard, le geste et l’entrée vocale.
-* Lorsqu’un clavier Bluetooth est attaché, il peut être utile d’activer l’entrée au clavier pour tout texte que votre application peut demander. Il peut s’agir d’un excellent complément pour la dictée, par exemple.
+* quand un clavier Bluetooth est attaché, il peut être utile d’activer l’entrée au clavier pour tout texte que votre application peut demander. Il peut s’agir d’un excellent complément pour la dictée, par exemple.
 * Lorsqu’il s’agit de concevoir votre application, ne vous fiez pas (par exemple) aux contrôles WASD et Mouse pour votre jeu. HoloLens est conçu pour permettre à l’utilisateur de parcourir la salle. Dans ce cas, l’utilisateur contrôle directement l’appareil photo. Une interface pour la conduite de l’appareil photo autour de la salle avec des contrôles de déplacement/d’apparence n’offre pas la même expérience.
 * L’entrée au clavier est un excellent moyen de contrôler le débogage de votre application ou du moteur de jeu, en particulier dans la mesure où l’utilisateur n’est pas obligé d’utiliser le clavier. Son câblage est identique à celui que vous utilisez avec les API d’événement CoreWindow. Dans ce scénario, vous pouvez choisir d’implémenter un moyen de configurer votre application pour acheminer les événements de clavier vers un mode « en entrée de débogage uniquement » pendant vos sessions de débogage.
-* Les contrôleurs Bluetooth fonctionnent également.
+* les contrôleurs de Bluetooth fonctionnent également.
 
 ## <a name="see-also"></a>Voir aussi
 * [Accessoires matériels](../../discover/hardware-accessories.md)

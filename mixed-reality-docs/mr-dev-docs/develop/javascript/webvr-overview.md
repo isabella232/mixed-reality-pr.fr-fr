@@ -1,18 +1,18 @@
 ---
 title: Présentation de WebVR
-description: Découvrez les principes de base de l’utilisation et du développement d’applications WebVR s’exécutant sur des casques immersifs Windows Mixed Reality.
+description: découvrez les principes de base de l’utilisation et du développement d’applications WebVR s’exécutant sur Windows Mixed Reality des casques immersifs.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebVR, WebXR, WinMR, WebAR, Web VR, Web XR, Web Mr, Web AR, 360, 360 Video, 360 vidéos, 360 photo, 360 photos, 360 content, Internet immersif, immersiveweb, IW
 ROBOTS: NOINDEX
-ms.openlocfilehash: dba3ca6b0cb9404f488db0b69a5bd89d6093a3ef
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: 546108f1093f1437daca37d6be35cccb6dcd62820984b0e52fd45979d4af6e55
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104909029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192013"
 ---
 # <a name="webvr-overview"></a>Présentation de WebVR
 
@@ -21,9 +21,9 @@ ms.locfileid: "104909029"
 
 Les API WebVR 1,1 sont déconseillées et supprimées du chrome et du nouveau Microsoft Edge. Les API WebVR sont remplacées par les API d’appareil WebXR. Vous pouvez consulter la liste des navigateurs qui prennent actuellement en charge les API WebVR sur [caniuse.com](https://caniuse.com/#search=webvr).
 
-## <a name="viewing-webvr-content-in-windows-mixed-reality-immersive-headsets"></a>Affichage du contenu WebVR dans les casques immersifs Windows Mixed Reality
+## <a name="viewing-webvr-content-in-windows-mixed-reality-immersive-headsets"></a>affichage du contenu WebVR dans Windows Mixed Reality des casques immersifs
 
-Vous trouverez des instructions sur l’accès au contenu WebVR dans vos casques immersifs avec les **versions antérieures de Microsoft Edge (15-18)** dans le [Guide du passionné](/windows/mixed-reality/enthusiast-guide/webvr). Vous pouvez vérifier votre version Edge en tapant « edge://version/ » dans la barre de recherche des navigateurs de périphérie.
+vous trouverez des Instructions pour accéder au contenu WebVR dans vos casques immersifs avec des **versions antérieures de Microsoft Edge (15-18)** dans le [Guide du passionné](/windows/mixed-reality/enthusiast-guide/webvr). Vous pouvez vérifier votre version Edge en tapant « edge://version/ » dans la barre de recherche des navigateurs de périphérie.
 
 ## <a name="see-also"></a>Voir aussi
 

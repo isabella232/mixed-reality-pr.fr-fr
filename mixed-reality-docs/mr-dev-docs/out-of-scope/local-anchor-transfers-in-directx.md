@@ -1,21 +1,21 @@
 ---
 title: Transferts d’ancrage locaux dans DirectX
-description: Découvrez comment synchroniser deux appareils HoloLens en transférant, en exportant et en sérialisant des ancres spatiales.
+description: découvrez comment synchroniser deux HoloLens appareils en transférant, en exportant et en sérialisant des ancres spatiales.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, synchroniser, ancrage spatial, transfert, multijoueur, vue, scénario, procédure pas à pas, exemple de code, transfert, transfert d’ancrage local, exportation d’ancrage, importation d’ancrage
-ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: df00e323267aa398ba45cfd7a7234c04ce8eca85f2ff3be9b6c9ddee67264085
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195660"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>Transferts d’ancrage locaux dans DirectX
 
-Dans les situations où vous ne pouvez pas utiliser les <a href="/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, les transferts d’ancrage locaux permettent à un appareil hololens d’exporter une ancre à importer par un deuxième appareil hololens.
+dans les situations où vous ne pouvez pas utiliser les <a href="/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, les transferts d’ancrage locaux permettent à un appareil HoloLens d’exporter une ancre pour qu’elle soit importée par un deuxième HoloLens appareil.
 
 >[!NOTE]
 >Les transferts d’ancrage locaux fournissent un rappel d’ancrage moins fiable que les <a href="/azure/spatial-anchors" target="_blank">ancres spatiales Azure</a>, et les appareils iOS et Android ne sont pas pris en charge par cette approche.
@@ -25,9 +25,9 @@ Dans les situations où vous ne pouvez pas utiliser les <a href="/azure/spatial-
 
 ## <a name="transferring-spatial-anchors"></a>Transfert des ancres spatiales
 
-Vous pouvez transférer des ancres spatiales entre des appareils Windows Mixed Reality à l’aide de [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager). Cette API vous permet de regrouper une ancre avec toutes les données de capteur de prise en charge nécessaires pour trouver cet emplacement exact dans le monde, puis d’importer cette offre groupée sur un autre appareil. Une fois que l’application sur le deuxième appareil a importé cette ancre, chaque application peut restituer des hologrammes à l’aide du système de coordonnées de cette ancre spatiale partagée, qui apparaît alors au même endroit dans le monde réel.
+vous pouvez transférer des ancres spatiales entre Windows Mixed Reality appareils à l’aide de [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager). Cette API vous permet de regrouper une ancre avec toutes les données de capteur de prise en charge nécessaires pour trouver cet emplacement exact dans le monde, puis d’importer cette offre groupée sur un autre appareil. Une fois que l’application sur le deuxième appareil a importé cette ancre, chaque application peut restituer des hologrammes à l’aide du système de coordonnées de cette ancre spatiale partagée, qui apparaît alors au même endroit dans le monde réel.
 
-Notez que les ancres spatiales ne peuvent pas être transférées entre différents types d’appareils, par exemple une ancre spatiale HoloLens peut ne pas être localisable à l’aide d’un casque immersif.  Les ancres transférées ne sont pas non plus compatibles avec les appareils iOS ou Android.
+notez que les ancres spatiales ne peuvent pas être transférées entre différents types d’appareils, par exemple une ancre spatiale HoloLens peut ne pas être localisable à l’aide d’un casque immersif.  Les ancres transférées ne sont pas non plus compatibles avec les appareils iOS ou Android.
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurer votre application pour utiliser la fonctionnalité spatialPerception
 
@@ -288,13 +288,13 @@ L’objet BLOB contient une représentation de l’environnement à proximité d
 
 ![Plusieurs ancres exportées à l’aide d’un seul appel TryExportAnchorsAsync](images/multipleanchors.png) ![Plusieurs ancres exportées à l’aide d’un appel TryExportAnchorsAsync distinct pour chaque ancre](images/separateanchors.png)
 
-## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>Exemple : envoyer des données d’ancrage à l’aide d’un Windows :: Networking :: StreamSocket
+## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>exemple : envoyer des données d’ancrage à l’aide d’un Windows :: networking :: StreamSocket
 
 Ici, nous fournissons un exemple d’utilisation des données d’ancrage exportées en les envoyant à travers un réseau TCP. C’est à partir du HolographicSpatialAnchorTransferSample.
 
 La classe StreamSocket WinRT utilise la bibliothèque de tâches PPL. Dans le cas d’erreurs réseau, l’erreur est retournée à la tâche suivante dans la chaîne à l’aide d’une exception qui est levée à nouveau. L’exception contient un HRESULT indiquant l’état de l’erreur.
 
-### <a name="use-a-windowsnetworkingstreamsocketlistener-with-tcp-to-send-exported-anchor-data"></a>Utiliser un Windows :: Networking :: StreamSocketListener avec TCP pour envoyer des données d’ancrage exportées
+### <a name="use-a-windowsnetworkingstreamsocketlistener-with-tcp-to-send-exported-anchor-data"></a>utiliser un Windows :: networking :: StreamSocketListener avec TCP pour envoyer des données d’ancrage exportées
 
 Créez une instance de serveur qui écoute une connexion.
 
@@ -460,7 +460,7 @@ void SampleAnchorTcpServer::HandleException(Exception^ exception)
 }
 ```
 
-### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>Utiliser un Windows :: Networking :: StreamSocket avec TCP pour recevoir les données d’ancrage exportées
+### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>utiliser un Windows :: networking :: StreamSocket avec TCP pour recevoir les données d’ancrage exportées
 
 Tout d’abord, nous devons nous connecter au serveur. Cet exemple de code montre comment créer et configurer un StreamSocket et créer un DataReader que vous pouvez utiliser pour acquérir des données réseau à l’aide de la connexion de Socket.
 
@@ -672,9 +672,9 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-C’est tout ! Maintenant, vous devez disposer de suffisamment d’informations pour essayer de localiser les ancres reçues sur le réseau. Là encore, Notez que le client doit disposer d’un nombre suffisant de données de suivi visuel pour l’espace pour la localisation de l’ancre. Si cela ne fonctionne pas immédiatement, essayez de vous lancer pendant un certain temps. Si cela ne fonctionne toujours pas, faites en sorte que le serveur envoie davantage d’ancres et qu’il utilise des communications réseau pour s’en contenter. Vous pouvez essayer cela en téléchargeant le HolographicSpatialAnchorTransferSample, en configurant les adresses IP du client et du serveur, et en le déployant sur des appareils HoloLens client et serveur.
+Et voilà ! Maintenant, vous devez disposer de suffisamment d’informations pour essayer de localiser les ancres reçues sur le réseau. Là encore, Notez que le client doit disposer d’un nombre suffisant de données de suivi visuel pour l’espace pour la localisation de l’ancre. Si cela ne fonctionne pas immédiatement, essayez de vous lancer pendant un certain temps. Si cela ne fonctionne toujours pas, faites en sorte que le serveur envoie davantage d’ancres et qu’il utilise des communications réseau pour s’en contenter. vous pouvez essayer cela en téléchargeant le HolographicSpatialAnchorTransferSample, en configurant les adresses ip du client et du serveur, et en le déployant sur les appareils client et serveur HoloLens.
 
 ## <a name="see-also"></a>Voir aussi
 * [Bibliothèque de modèles parallèles](/cpp/parallel/concrt/parallel-patterns-library-ppl)
-* [Windows. Networking. StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
-* [Windows. Networking. StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)
+* [Windows. Mise en réseau. StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [Windows. Mise en réseau. StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

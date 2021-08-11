@@ -5,13 +5,13 @@ author: kegodin
 ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
-keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, mélangeur audio, réverbération SFX
-ms.openlocfilehash: 6f41fe904c21591915e0ef13b61dc6bff04527fe
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+keywords: réalité mixte, unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, mélangeur audio, réverbération SFX
+ms.openlocfilehash: 8adc92eb96cb8ebd2cc5fff14d522bcfe72733cc5748183dd6db59d753e12a3e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192972"
 ---
 # <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5. Utilisation de la réverbération pour ajouter une distance à du contenu audio spatial
 
@@ -26,7 +26,7 @@ Dans le didacticiel précédent, vous avez ajouté Spatialization pour les sons 
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Ajouter un groupe de mixage et un effet de réverbération
 
-Dans le didacticiel sur l' [aménagement des sons d’interaction du bouton](unity-spatial-audio-ch2.md), nous avons ajouté un mélangeur. Le mélangeur comprend un **groupe** par défaut nommé **maître**. Étant donné que nous voulons uniquement appliquer un effet de réverbération à certains sons, nous allons ajouter un deuxième groupe pour ces sons. Pour ajouter un groupe, cliquez avec le bouton droit sur le groupe principal dans le **panneau Mixage audio** , choisissez **Ajouter un groupe enfant** et donnez un nom approprié pour exemple d' _espace_:
+Dans le didacticiel sur l' [aménagement des sons d’interaction du bouton](unity-spatial-audio-ch2.md), nous avons ajouté un mélangeur. Le mélangeur comprend un **groupe** par défaut nommé **maître**. Étant donné que nous voulons uniquement appliquer un effet de réverbération à certains sons, nous allons ajouter un deuxième groupe pour ces sons. pour ajouter un groupe, cliquez avec le bouton droit sur le groupe principal dans l' **Audio Mixer** choisissez **ajouter un groupe enfant** et donnez un nom approprié pour exemple d' _espace_:
 
 ![Ajouter un groupe enfant](images/spatial-audio/spatial-audio-05-section1-step1-1.PNG)
 
@@ -133,7 +133,7 @@ Lorsque l’objet Quad est toujours sélectionné dans la hiérarchie, dans la f
 
 ## <a name="congratulations"></a>Félicitations
 
-Vous avez terminé les didacticiels audio spatiaux HoloLens 2 pour Unity. Essayez l’application sur un HoloLens 2 ou Unity. Lorsque vous cliquez sur le bouton dans l’application pour activer Spatialization, le script achemine l’audio de la vidéo vers le groupe d’effets de la pièce pour ajouter une réverbération. Lorsque vous basculez en stéréo, il achemine l’audio vers le groupe maître et évite l’ajout d’une réverbération.
+vous avez terminé les didacticiels audio spatial HoloLens 2 pour unity. essayez l’application sur un HoloLens 2 ou unity. Lorsque vous cliquez sur le bouton dans l’application pour activer Spatialization, le script achemine l’audio de la vidéo vers le groupe d’effets de la pièce pour ajouter une réverbération. Lorsque vous basculez en stéréo, il achemine l’audio vers le groupe maître et évite l’ajout d’une réverbération.
 
 > [!TIP]
 > Pour vous rappeler comment générer et déployer votre projet Unity sur HoloLens 2, vous pouvez vous référer aux instructions de [Génération de votre application sur votre HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).

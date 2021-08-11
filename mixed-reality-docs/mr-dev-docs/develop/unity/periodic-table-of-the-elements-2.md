@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 07/27/2021
 ms.topic: article
 keywords: Windows Mixed Reality, conception, exemple d’application, contrôles, MRTK, Shared Computer Toolkit de réalité mixte, unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, OpenXR, XR open, unity
-ms.openlocfilehash: 78961c73ee01efcd097d2dcc4456bce156287691fa6dc8e2121c817e4812bfac
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: ccfd443bb103f6ac051de84d3a321f3ffd5be2f5bafdc6479e9f67a03771d386
+ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115211850"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "116862594"
 ---
 # <a name="periodic-table-of-the-elements-20"></a>Tableau périodique des éléments 2.0
 ![Table period de l’application Elements](../images/MRDL_PeriodicTable.jpg)
@@ -26,6 +26,8 @@ ms.locfileid: "115211850"
 
 enregistré avec HoloLens 2 à l’aide de la Capture de réalité mixte
 
+## <a name="download-the-app-package-from-github"></a>Télécharger le package d’application à partir de GitHub
+Extrayez la page de <a href="https://github.com/microsoft/MRDL_Unity_PeriodicTable/releases" target="_blank">**publication**</a>sur GitHub.
 
 ## <a name="upgrading-the-project-for-hololens-2-with-mrtk"></a>mise à niveau du projet pour HoloLens 2 avec MRTK
 vous trouverez HoloLens 2 article sur le portage à partir de l’article : <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank"> **la Table périodique de l’application des éléments doit HoloLens 2 avec MRTK v2 (2019)**</a>

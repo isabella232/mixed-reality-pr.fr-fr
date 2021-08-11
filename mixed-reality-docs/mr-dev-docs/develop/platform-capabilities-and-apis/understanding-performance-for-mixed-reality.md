@@ -1,23 +1,23 @@
 ---
 title: Comprendre les performances de la réalité mixte
-description: Découvrez des informations et des détails avancés sur l’analyse et l’optimisation des performances des applications Windows Mixed Reality.
+description: découvrez des informations et des détails avancés sur l’analyse et l’optimisation des performances des applications Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, performances, optimisation, UC, GPU
-ms.openlocfilehash: d0218902864586e678f6d51dfade58bd567bcc02
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, performances, optimisation, uc, GPU
+ms.openlocfilehash: 394198011c40f0b90e2c5579f7e0ad8c4019b2a8cefcb1859c544afcbce47df6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269955"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193556"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Comprendre les performances de la réalité mixte
 
-Cet article est une introduction à la compréhension de l’importance des performances de votre application de réalité mixte.  L’expérience utilisateur peut être très détériorée si votre application n’est pas exécutée à la fréquence d’images optimale. Les hologrammes apparaissent instables et le suivi des têtes de l’environnement n’est pas exact, ce qui entraîne une mauvaise expérience de l’utilisateur. Les performances doivent être considérées comme une fonctionnalité de première classe pour le développement de la réalité mixte et non pour une tâche polonaise.
+Cet article est une introduction à la compréhension de l’importance des performances de votre application de réalité mixte.  L’expérience utilisateur peut être très détériorée si votre application n’est pas exécutée à la fréquence d’images optimale. les Hologrammes apparaissent instables et le suivi des têtes de l’environnement est inexact, ce qui se traduit par une mauvaise expérience de l’utilisateur. Les performances doivent être considérées comme une fonctionnalité de première classe pour le développement de la réalité mixte et non pour une tâche polonaise.
 
-Nous avons récemment publié une application appelée notions de base de la qualité qui couvre les problèmes courants liés aux performances, à la conception et à l’environnement, ainsi que les solutions pour les applications HoloLens 2. Cette application est une excellente démonstration visuelle du contenu qui suit.
+nous avons récemment publié une application appelée notions de base de la qualité qui couvre les problèmes courants de performances, de conception et d’environnement, ainsi que les solutions pour les applications HoloLens 2. Cette application est une excellente démonstration visuelle du contenu qui suit.
 
 > [!div class="nextstepaction"]
 > [Télécharger l’application de notions de base sur la qualité](https://www.microsoft.com/en-us/p/quality-fundamentals/9mwz852q88fw)
@@ -27,8 +27,8 @@ Les valeurs de fréquence d’images performante pour chaque plateforme cible so
 | Plateforme | Fréquence d’images cible |
 |----------|-------------------|
 | [HoloLens](/hololens/hololens1-hardware) | 60 i/s |
-| [Windows Mixed Reality ultra PC](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
-| [PC Windows Mixed Reality](../../discover/immersive-headset-hardware-details.md) | 60 i/s |
+| [Windows Mixed Reality Ultra Machines](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
+| [Windows Mixed Reality Machines](../../discover/immersive-headset-hardware-details.md) | 60 i/s |
 
 Le cadre ci-dessous décrit les meilleures pratiques pour atteindre les fréquences d’images cibles. Nous vous recommandons de lire les [recommandations relatives aux performances de l’article Unity](../unity/performance-recommendations-for-unity.md) pour obtenir des conseils sur la mesure et l’amélioration de la fréquence d’images dans l’environnement Unity.
 
@@ -43,7 +43,7 @@ Si votre application comporte une cadence de trames, la première étape consist
 
 ![Durée de vie d’un frame](images/lifetime-of-a-frame.png)
 
-En règle générale, les applications HoloLens sont liées au GPU, mais pas toujours. Utilisez les outils et les techniques ci-dessous pour comprendre où votre application particulière est engorgée.
+en règle générale, les applications HoloLens sont liées au GPU, mais pas toujours. Utilisez les outils et les techniques ci-dessous pour comprendre où votre application particulière est engorgée.
 
 ## <a name="how-to-analyze-your-application"></a>Comment analyser votre application
 
@@ -51,10 +51,10 @@ De nombreux outils vous permettent de comprendre le profil de performances et le
 
 Voici quelques outils courants pour vous aider à recueillir des informations de profilage détaillés pour votre application :
 - [Analyseurs de performances graphiques Intel](https://software.intel.com/gpa)
-- [Débogueurs graphiques Visual Studio](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
+- [Visual Studio Débogueurs graphiques](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Profileur Unity](https://docs.unity3d.com/Manual/Profiler.html)
 - [Débogueur de frames Unity](https://docs.unity3d.com/Manual/FrameDebugger.html)
-- [Insights inréel](../unreal/unreal-insights.md)
+- [Informations inréel](../unreal/unreal-insights.md)
 - [PHOTO](https://devblogs.microsoft.com/pix/)
 - [Pofiling GPU en non réel](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/GPU/index.html)
 
@@ -91,7 +91,7 @@ Lors du rendu d’une trame sur le GPU, une application est liée par une bande 
 
 - La **bande passante** de la mémoire est le taux de lectures et d’écritures que le GPU peut effectuer à partir de la mémoire
     - Pour identifier les limitations de bande passante, réduisez la qualité de la texture et vérifiez si la fréquence d’images a été améliorée.
-    - Dans Unity, modifiez la **qualité** de la texture dans **modifier** les paramètres du  >  **projet**  >  **[paramètres de qualité](https://docs.unity3d.com/Manual/class-QualitySettings.html)**.
+    - dans unity, modifiez la **qualité** de la Texture dans **modifier**  >  **Project Paramètres**  >  **[Paramètres de qualité](https://docs.unity3d.com/Manual/class-QualitySettings.html)**.
 - Le **taux de remplissage** fait référence aux pixels qui peuvent être dessinés par seconde par le GPU.
     - Pour identifier les limitations du taux de remplissage, réduisez la résolution de l’affichage et vérifiez si les images sont améliorées. 
     - Dans Unity, utilisez la propriété *[XRSettings. renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)*
@@ -112,7 +112,7 @@ Plus le nombre de polygones est élevé, plus il est important d’opérations p
 
 #### <a name="limit-overdraw"></a>Limiter le surdessin
 
-Un surdessin élevé se produit lorsque plusieurs objets sont rendus mais non affichés à l’écran, car ils sont masqués par un objet Boucher. Imaginez que vous examinez un mur qui contient des objets en arrière-plan. Toute la géométrie est traitée pour le rendu, mais seul le mur opaque doit être rendu, ce qui entraîne des opérations inutiles.
+Un surdessin élevé se produit lorsque plusieurs objets sont rendus mais non affichés à l’écran, car ils sont masqués par un objet Boucher. Imagine regardant un mur qui contient des objets en arrière-plan. Toute la géométrie est traitée pour le rendu, mais seul le mur opaque doit être rendu, ce qui entraîne des opérations inutiles.
 
 #### <a name="shaders"></a>Nuanceurs
 
@@ -134,7 +134,7 @@ En règle générale, les nuanceurs effectuent de nombreuses transformations et 
 
 #### <a name="remove-gpu-stages"></a>Supprimer les étapes du GPU
 
-Les effets postérieurs au traitement peuvent être coûteux et augmenter le taux de remplissage de votre application, y compris les techniques d’anticrénelage telles que MSAA. Sur HoloLens, nous vous recommandons d’éviter ces techniques et d’autres étapes de nuanceur, telles que Geometry, la coque et les nuanceurs de calcul.
+Les effets postérieurs au traitement peuvent être coûteux et augmenter le taux de remplissage de votre application, y compris les techniques d’anticrénelage telles que MSAA. sur HoloLens, nous vous recommandons d’éviter ces techniques et d’autres étapes de nuanceur, telles que geometry, la coque et les nuanceurs de calcul.
 
 ## <a name="memory-recommendations"></a>Recommandations sur la mémoire
 

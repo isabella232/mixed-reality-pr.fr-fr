@@ -6,17 +6,21 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, exemples d’applications, conception, MRTK, Shared Computer Toolkit de réalité mixte, unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 2afa40a31a5105bfe0ae674942e2bf88fd16f232b40827efb2446c2b4ad849ba
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 50ca50acd2960ac7bfbd3a3595d7a3dfa4e69f06848919afe7c8f430c41aeaaf
+ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115196592"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "116862608"
 ---
 # <a name="lunar-module"></a>Module lunaire
+![Module lunaire](../images/MRDL_LunarModule.jpg)
 
 >[!NOTE]
 >Cet article présente un exemple exploratoire que nous avons créé dans les [laboratoires de conception de réalité mixte](https://github.com/Microsoft/MRDesignLabs_Unity), un endroit où nous partageons nos connaissances et des suggestions concernant le développement d’applications de réalité mixte. Nos articles et code liés à la conception évoluent à mesure que nous effectuons de nouvelles découvertes.
+
+>[!NOTE]
+>cet exemple d’application a été conçu pour HoloLens 1ère génération.
 
 Le [module lunaire](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) est un exemple d’application open source des laboratoires de conception de la réalité mixte de Microsoft. découvrez comment étendre les gestes de base d’HoloLens avec le suivi à deux mains et l’entrée du contrôleur Xbox, créer des objets qui sont réactifs pour le mappage de surface et la recherche de plan, et implémenter des systèmes de menus simples. Tous les composants du projet peuvent être utilisés dans vos expériences d’application de réalité mixte.
 
@@ -57,9 +61,6 @@ Comment pouvons-nous appliquer l’immersion tactile à un faites jaugé mis à 
 *Visualisation du mappage spatial dans HoloLens*
 
 En tirant parti de l’environnement d’un utilisateur, nous avons des options de terrain infinies pour palier notre module lunaire. Pour que le jeu ressemble au titre d’origine, un utilisateur peut potentiellement manipuler et placer des blocages de différentes difficultés dans son environnement.
-
-![Volant le module lunaire](images/640px-lm-hero.jpg)<br>
-*Volant le module lunaire*
 
 Le fait de demander à l’utilisateur d’apprendre le schéma d’entrée, de contrôler le navire et de faire de la petite taille sur le terrain est beaucoup à demander. La réussite d’une expérience de jeu est la bonne combinaison de défis et de récompenses. L’utilisateur peut choisir un niveau de difficulté, le mode le plus simple nécessitant simplement que l’utilisateur se trouve dans une zone définie par l’utilisateur sur une surface analysée par le HoloLens. Une fois qu’un utilisateur obtient le blocage du jeu, il peut s’adapter à la difficulté qu’il voit.
 

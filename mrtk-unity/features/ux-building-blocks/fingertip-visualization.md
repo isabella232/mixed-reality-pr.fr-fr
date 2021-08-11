@@ -1,18 +1,18 @@
 ---
-title: Visualisation de portée
+title: Visualisation du bout des doigts
 description: Vue d’ensemble de la visualisation sur le doigt dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, doigt
-ms.openlocfilehash: af23fdb9b618e276b7442405e54b7dccd141e4ee
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1df1740692a2c24213f34ffa6e52c135c7e7d14f96e7d99668feab82f879f756
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177528"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193294"
 ---
-# <a name="fingertip-visualization"></a>Visualisation de portée
+# <a name="fingertip-visualization"></a>Visualisation du bout des doigts
 
 ![Main visualisation main](../images/fingertip/MRTK_FingertipVisualization_Main.png)
 
