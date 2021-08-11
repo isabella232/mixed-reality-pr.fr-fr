@@ -5,13 +5,13 @@ author: grbury
 ms.author: grbury
 ms.date: 10/21/2019
 ms.topic: article
-keywords: Réalité mixte, développement, développement, conception, HoloLens, services Azure, Actualités, HoloLens 2
-ms.openlocfilehash: 8fc2f7c54cdc941150558aac59dd240ee293d1f8
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: la réalité mixte, le développement, le développement, la conception, la HoloLens, les services Azure, les actualités, les HoloLens 2
+ms.openlocfilehash: 0144a4ed804dacf2f6120b1e93ee054a71dbadf3efe6689d19ded3f14233c31f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226214"
 ---
 # <a name="mixed-reality-news-and-notes"></a>Nouveautés et notes relatives à la réalité mixte
 
@@ -41,7 +41,7 @@ Comme promis, nous allons vous faire découvrir d’incroyables outils de réali
 <td>MRTK pour HoloLens 2</td><td>2 octobre 2019</td><td> <ul><li><a href=/windows/mixed-reality/mrtk-unity>MRTK docs</a><li><a href=https://github.com/Microsoft/MixedRealityToolkit-Unity/releases>MRTK version 2.1.0</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-getting-started>Bien démarrer avec le MRTK v2</a></td>
 </tr>
 <tr>
-<td>Utilitaires d’application multi-utilisateur</td><td>2 octobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>SpectatorView pour les démonstrations</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>WebRTC optimisé pour HoloLens</a>></td>
+<td>Utilitaires d’application multi-utilisateur</td><td>2 octobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>SpectatorView pour les démonstrations</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>WebRTC optimisé pour la HoloLens</a>></td>
 </tr>
 <tr>
 <td>Conseils sur la conception et le développement pour HoloLens 2</td><td>2 octobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/>Vue d’ensemble de la réalité mixte</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/design>Conception et prototypage</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/development>Architecture et outils de développement</a></td>
@@ -50,6 +50,6 @@ Comme promis, nous allons vous faire découvrir d’incroyables outils de réali
   <td>Nouvelles informations sur les</td><td>2 octobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview>Vue d’ensemble du développement Unreal</a></td>
 </tr>
 <tr>
-  <td>Conception Microsoft Fluent</td><td>2 octobre 2019</td><td> <ul><li><a href=https://www.microsoft.com/design/fluent/>Page de conception de la réalité mixte</a></td>
+  <td>conception de Microsoft Fluent</td><td>2 octobre 2019</td><td> <ul><li><a href=https://www.microsoft.com/design/fluent/>Page de conception de la réalité mixte</a></td>
 </tr>
 </table>

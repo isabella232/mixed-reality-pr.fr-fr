@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 51c62468f0f13b390bf003e05d44cbe2e2f3be05
-ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
+ms.openlocfilehash: a359bf0101c579bbad8a2671b84d019a6ac53a36a53679bcaff5774694901850
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200160"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
@@ -12,8 +12,8 @@ ms.locfileid: "92903118"
 | --- | --- |
 | [Qu’est-ce que OpenXR ?](../native/openxr.md) | Commencez votre parcours de développement natif en vous familiarisant avec OpenXR et ce qu’il a à offrir |
 | [Installer les outils les plus récents](../install-the-tools.md) | Téléchargez et installez les derniers outils de développement natifs |
-| [Configurer pour HoloLens 2](../native/openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | Configurer votre appareil et votre environnement pour le développement HoloLens 2 |
-| [Configurer des casques immersifs](../native/openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Configurer votre appareil et votre environnement pour le développement Windows Mixed Reality |
+| [Configurer pour HoloLens 2](../native/openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | configurer votre appareil et votre environnement pour le développement de HoloLens 2 |
+| [Configurer des casques immersifs](../native/openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | configurer votre appareil et votre environnement pour le développement de Windows Mixed Reality |
 | [Essayer un exemple d’application](../native/openxr-getting-started.md#building-a-sample-openxr-app) | Explorez une version UWP et Win32 de la même application OpenXR de base sur votre appareil |
 | [En savoir plus sur l’API OpenXR](../native/openxr-getting-started.md#learning-the-openxr-api) | Visionnez une vidéo de procédure pas à pas de 60 minutes qui présente tous les composants clés de l’API OpenXR dans Visual Studio |
 | [Ajouter le chargeur OpenXR](../native/openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Ajoutez le chargeur OpenXR à un projet natif existant pour commencer à développer |

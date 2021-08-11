@@ -1,18 +1,18 @@
 ---
-title: Pointage
+title: Lumière lointaine
 description: Documentation sur HoverLight avec des exemples dans MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, lumière de survol,
-ms.openlocfilehash: ed45d3345931376283cfca2372ac57459c777f6e
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 948a0772cd2fad667984d8d5507664e4346a507e84b03c873eccf8d3f1e66532
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198581"
 ---
-# <a name="hover-light"></a>Pointage
+# <a name="hover-light"></a>Lumière lointaine
 
 un [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) est un paradigme de [Système Fluent Design](https://www.microsoft.com/design/fluent/) qui imite une [lumière de pointage](https://docs.unity3d.com/Manual/Lighting.html) près de la surface d’un objet. Souvent utilisées pour les interactions éloignées, l’application peut contrôler les propriétés d’une lumière de survol via le [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) composant.
 

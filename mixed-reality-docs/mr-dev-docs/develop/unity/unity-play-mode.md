@@ -1,19 +1,19 @@
 ---
-title: Affichez un aperçu de votre travail avec la communication à distance holographique
+title: Prévisualiser votre travail avec la communication à distance holographique
 description: Utilisez la communication à distance holographique en mode lecture pour afficher un aperçu des modifications apportées à votre application sur un appareil sans déployer une application.
 author: keveleigh
 ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: unity, communication à distance, communication à distance holographique, lecteur de communication à distance holographique, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, mode de lecture unity
-ms.openlocfilehash: 0c71791c80a5e84ee48241baa756064a800e5a41
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: cd9dca9d1ddf17b78e8c317fa3a58093c9b5837de379510148c6e645b31120ca
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226231"
 ---
-# <a name="preview-your-work-with-holographic-remoting"></a>Affichez un aperçu de votre travail avec la communication à distance holographique
+# <a name="preview-your-work-with-holographic-remoting"></a>Prévisualiser votre travail avec la communication à distance holographique
 
 vous pouvez utiliser la communication à distance holographique pour diffuser du contenu holographique vers votre HoloLens 2 en temps réel. C’est un excellent moyen de déboguer rapidement votre application sans générer et déployer un projet complet. 
 

@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: aucun
-ms.openlocfilehash: 246e87ace1c0b3edf5e9f4829a5a0879cddf7279
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4e08f015000fe214438879cd6433248d444f3d659b6338505495bebb76309a67
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199559"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>Titre (Soyez le plus spécifique possible, utilisez les conditions humaines) 
 
@@ -54,7 +54,7 @@ Une section peut contenir tout ou partie des éléments suivants :
 
 *   Explications
 *   Considérations
-*   Règles de curseur 
+*   Règles d’or 
 *   Méthodes d’utilisation 
 *   Avantages
 *   Do et don’t’s
@@ -64,7 +64,7 @@ Conventions éditoriales :
 *   Utilisez le bon sens.
 *   N’essayez pas d’être drôle.
 *   Écrivez à l’aide des conventions et de l’orthographe en-US (États-Unis l’anglais).
-*   **Utilisez la casse des phrases pour les titres, les en-têtes de section et... tout est tout.** Dans les phrases, les seuls mots qui doivent être capitalisés sont des noms corrects (comme vous l’avez appris dans la grammaire). Les noms de logos (par exemple, Microsoft HoloLens) sont des noms appropriés. Les noms de fonctionnalités (par exemple, le mappage spatial) ne sont pas des noms corrects, sauf s’ils sont cités.
+*   **Utilisez la casse des phrases pour les titres, les en-têtes de section et... tout est tout.** Dans les phrases, les seuls mots qui doivent être capitalisés sont des noms corrects (comme vous l’avez appris dans la grammaire). les noms de logos (par exemple, Microsoft HoloLens) sont des noms appropriés. Les noms de fonctionnalités (par exemple, le mappage spatial) ne sont pas des noms corrects, sauf s’ils sont cités.
 *   N’écrivez pas de liens au format « pour plus d’informations, cliquez [ici](../contributing.md)». Au lieu de cela, placez les liens de façon [contextuelle](../contributing.md) sans demander au lecteur d’aller ailleurs.
 *   Cette documentation est la source de vérité. Les informations doivent être précises et actuelles.
 

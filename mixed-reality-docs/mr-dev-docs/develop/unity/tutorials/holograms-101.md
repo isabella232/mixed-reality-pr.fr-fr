@@ -1,30 +1,30 @@
 ---
 title: HoloLens (1ère génération) - Bases 101 - Projet complet avec un appareil
-description: Suivez cette procédure pas à pas de codage à l’aide d’Unity, Visual Studio et HoloLens pour apprendre les principes fondamentaux de Windows Mixed Reality.
+description: suivez cette procédure pas à pas de codage à l’aide d’unity, Visual Studio et HoloLens pour apprendre les principes de base de Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: réalité mixte, Windows Mixed Reality, HoloLens, hologramme, Academy, didacticiel, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 0ebfeb017271b7f98093a8ba6cac59dccae2a440
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: réalité mixte, Windows Mixed Reality, HoloLens, hologramme, académie, didacticiel, HoloLens, académie de la réalité mixte, unity, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, Windows 10
+ms.openlocfilehash: 63219edebeb63dbf4589e8162f8dc1bab83275c38f29b106db9bae234cdabde0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200959"
 ---
 # <a name="hololens-1st-gen-basics-101-complete-project-with-device"></a>HoloLens (1re génération) notions de base 101 : terminer le projet avec l’appareil
 
 <br>
 
 >[!IMPORTANT]
->Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
+>les didacticiels d’académie de la réalité mixte ont été conçus avec des HoloLens (1er génération), unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/XKIIEC5BMWg]
 
-Ce didacticiel vous guide tout au long d’un projet complet, Unity, qui illustre les fonctionnalités de base de la réalité mixte Windows sur HoloLens [, y compris](../../../design/gaze-and-commit.md)le point de présence, les [gestes](../../../design/gaze-and-commit.md#composite-gestures), l' [entrée vocale](../../../design/voice-input.md), le [son spatial](../../../design/spatial-sound.md) et le [mappage spatial](../../../design/spatial-mapping.md).
+ce didacticiel vous guide tout au long d’un projet complet, unity, qui illustre les principales fonctionnalités de Windows Mixed Reality [sur HoloLens y compris](../../../design/gaze-and-commit.md)le point de vue du point de vue, les [gestes](../../../design/gaze-and-commit.md#composite-gestures), l' [entrée vocale](../../../design/voice-input.md), le [son spatial](../../../design/spatial-sound.md) et le [mappage spatial](../../../design/spatial-mapping.md).
 
 Le didacticiel prendra environ 1 heure.
 
@@ -42,8 +42,8 @@ Le didacticiel prendra environ 1 heure.
 
 ### <a name="prerequisites"></a>Prérequis
 
-* Un PC Windows 10 configuré avec les [outils appropriés installés](../../install-the-tools.md).
-* Un appareil HoloLens [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* un PC Windows 10 configuré avec les [outils appropriés installés](../../install-the-tools.md).
+* un appareil HoloLens [configuré pour le développement](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### <a name="project-files"></a>Fichiers projet
 
@@ -89,22 +89,22 @@ Dans ce chapitre, nous allons configurer notre premier projet Unity et effectuer
 
 * Dans le **volet hiérarchie**, cliquez sur **créer** et **créez un vide**.
 * Cliquez avec le bouton droit sur le nouveau **gameobject** , puis sélectionnez Renommer. Renommez GameObject en **OrigamiCollection**.
-* Dans le dossier **hologrammes** du panneau projet (développez actifs et sélectionnez hologrammes ou double-cliquez sur le dossier hologrammes dans le panneau projet) :
+* dans le dossier **Hologrammes** du volet Project (développez actifs et sélectionnez Hologrammes ou double-cliquez sur le dossier Hologrammes dans le panneau Project) :
   * Faites glisser **étape** dans la hiérarchie pour être un enfant de **OrigamiCollection**.
   * Faites glisser **Sphere1** dans la hiérarchie pour être un enfant de **OrigamiCollection**.
   * Faites glisser **Sphere2** dans la hiérarchie pour être un enfant de **OrigamiCollection**.
 * Cliquez avec le bouton droit sur l’objet **Light directionnel** dans le **panneau hiérarchie** , puis sélectionnez **supprimer**.
-* À partir du dossier **hologrammes** , faites glisser **Lights** à la racine du **panneau de hiérarchie**.
+* dans le dossier **Hologrammes** , faites glisser **lights** à la racine du **panneau de hiérarchie**.
 * Dans la **hiérarchie**, sélectionnez **OrigamiCollection**.
 * Dans l' **inspecteur**, définissez la position de la transformation sur **0,-0,5, 2,0**.
 * Appuyez sur le bouton de **lecture** dans Unity pour afficher un aperçu de vos hologrammes.
 * Les objets origami doivent apparaître dans la fenêtre d’aperçu.
 * Appuyez sur **lecture** une deuxième fois pour arrêter le mode aperçu.
 
-#### <a name="export-the-project-from-unity-to-visual-studio"></a>Exporter le projet d’Unity vers Visual Studio
+#### <a name="export-the-project-from-unity-to-visual-studio"></a>Exportez le projet d’Unity vers Visual Studio
 
-* Dans Unity, sélectionnez **fichier > paramètres de build**.
-* Sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme**.
+* dans unity, sélectionnez **fichier > Paramètres de Build**.
+* sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme**.
 * Affectez à **SDK** la valeur **Universal 10** et **type de build** la valeur **D3D**.
 * Vérifiez les **projets Unity C#**.
 * Cliquez sur **Ajouter des scènes ouvertes** pour ajouter la scène.
@@ -115,17 +115,17 @@ Dans ce chapitre, nous allons configurer notre premier projet Unity et effectuer
 * Lorsque Unity est terminé, une fenêtre de l’Explorateur de fichiers s’affiche.
 * Ouvrez le dossier de l' **application** .
 * Ouvrez (double-clic) **origami. sln**.
-* À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
+* à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **X86**.
 * Cliquez sur la flèche en regard du bouton périphérique, puis sélectionnez **machine distante** à déployer sur Wi-Fi.
-  * Définissez l' **adresse** sur le nom ou l’adresse IP de votre HoloLens. Si vous ne connaissez pas l’adresse IP de votre appareil, accédez à **paramètres > réseau & Internet > options avancées** ou demandez à Cortana **« Hey Cortana, qu’est-ce que mon adresse IP ? »**
-  * Si HoloLens est attaché sur USB, vous pouvez sélectionner l' **appareil** à déployer sur USB.
+  * Définissez l' **adresse** sur le nom ou l’adresse IP de votre HoloLens. si vous ne connaissez pas l’adresse IP de votre appareil, consultez **Paramètres > réseau & Options avancées Internet >** ou demandez Cortana **« bonjour Cortana, qu’est-ce que mon adresse IP ? »** .
+  * si le HoloLens est attaché sur usb, vous pouvez sélectionner l' **appareil** à déployer sur usb.
   * Laissez le **mode d’authentification** défini sur **universel**.
   * Cliquez sur **Sélectionner**
 
-* Cliquez sur **Déboguer > exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler à Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+* Cliquez sur **Déboguer > exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler avec Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 
-* Le projet Origami va maintenant générer, déployer sur votre HoloLens, puis exécuter.
-* Placez-vous sur HoloLens et recherchez vos nouveaux hologrammes.
+* le projet Origami sera maintenant généré, déployé sur votre HoloLens, puis exécuté.
+* placez-vous sur votre HoloLens et recherchez vos nouveaux hologrammes.
 
 ## <a name="chapter-2---gaze"></a>Chapitre 2-point de regard
 
@@ -139,11 +139,11 @@ Dans ce chapitre, nous allons présenter la première des trois façons d’inte
 
 ### <a name="instructions"></a>Instructions
 
-* Revenez à votre projet Unity et fermez la fenêtre Paramètres de build si elle est toujours ouverte.
-* Sélectionnez le dossier **hologrammes** dans le **panneau Projet**.
+* revenez à votre projet unity et fermez la fenêtre Build Paramètres si elle est toujours ouverte.
+* sélectionnez le dossier **Hologrammes** dans le **panneau Project**.
 * Faites glisser l’objet **curseur** dans le volet de la **hiérarchie** au niveau de la racine.
 * Double-cliquez sur l’objet **curseur** pour l’examiner en détail.
-* Cliquez avec le bouton droit sur le dossier **scripts** dans le panneau projet.
+* cliquez avec le bouton droit sur le dossier **Scripts** dans le panneau Project.
 * Cliquez sur le sous-menu **créer** .
 * Sélectionnez **script C#**.
 * Nommez le script **WorldCursor**. Remarque : le nom respecte la casse. Vous n’avez pas besoin d’ajouter l’extension. cs.
@@ -197,8 +197,8 @@ public class WorldCursor : MonoBehaviour
 }
 ```
 
-* Régénérez l’application à partir du **fichier > paramètres de build**.
-* Revenez à la solution Visual Studio utilisée précédemment pour le déploiement dans votre HoloLens.
+* régénérez l’application à partir du **fichier > Paramètres de Build**.
+* revenez à la solution Visual Studio précédemment utilisée pour effectuer le déploiement sur votre HoloLens.
 * Lorsque vous y êtes invité, sélectionnez « recharger tout ».
 * Cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
 * Examinez maintenant la scène et observez comment le curseur interagit avec la forme d’objets.
@@ -219,7 +219,7 @@ Nous allons commencer par créer un script, puis détecter le mouvement Select.
 
 * Dans le dossier **scripts** , créez un script nommé **GazeGestureManager**.
 * Faites glisser le script **GazeGestureManager** sur l’objet **OrigamiCollection** dans la hiérarchie.
-* Ouvrez le script **GazeGestureManager** dans Visual Studio et ajoutez le code suivant :
+* ouvrez le script **GazeGestureManager** dans Visual Studio et ajoutez le code suivant :
 
 ```cs
 using UnityEngine;
@@ -290,7 +290,7 @@ public class GazeGestureManager : MonoBehaviour
 * Développez l’objet **OrigamiCollection** dans l’affichage des hiérarchies.
 * Faites glisser le script **SphereCommands** sur l’objet **Sphere1** dans le panneau hiérarchie.
 * Faites glisser le script **SphereCommands** sur l’objet **Sphere2** dans le panneau hiérarchie.
-* Ouvrez le script dans Visual Studio pour le modifier, puis remplacez le code par défaut par ce qui suit :
+* ouvrez le script dans Visual Studio pour le modifier, puis remplacez le code par défaut par ce qui suit :
 
 ```cs
 using UnityEngine;
@@ -310,7 +310,7 @@ public class SphereCommands : MonoBehaviour
 }
 ```
 
-* Exportez, générez et déployez l’application dans votre HoloLens.
+* Exportez, créez et déployez l’application sur votre HoloLens.
 * Examinez l’une des sphères.
 * Effectuez le mouvement SELECT et regardez la sphère de la sphère sur l’aire ci-dessous.
 
@@ -433,7 +433,7 @@ public class SphereCommands : MonoBehaviour
 }
 ```
 
-* Exportez, générez et déployez l’application dans votre HoloLens.
+* Exportez, créez et déployez l’application sur votre HoloLens.
 * Examinez l’une des sphères et dites «**Drop Sphere**».
 * Dites «**Réinitialiser le monde**» pour ramener les positions initiales.
 
@@ -449,20 +449,20 @@ Dans ce chapitre, nous allons ajouter de la musique à l’application, puis dé
 
 ### <a name="instructions"></a>Instructions
 
-* Dans Unity, sélectionnez dans le menu supérieur **modifier > paramètres du projet > audio**
+* dans unity, sélectionnez dans le menu supérieur **modifier > Project Paramètres > Audio**
 * Dans le volet de l’inspecteur situé sur le côté droit, recherchez le paramètre de **plug-in Spatializer** , puis sélectionnez **MS HRTF Spatializer**.
-* À partir du dossier **hologrammes** du panneau projet, faites glisser l’objet **ambiance** sur l’objet **OrigamiCollection** dans le panneau hiérarchie.
+* à partir du dossier **Hologrammes** dans le panneau Project, faites glisser l’objet **ambiance** sur l’objet **OrigamiCollection** dans le panneau hiérarchie.
 * Sélectionnez **OrigamiCollection** et recherchez le composant **audio source** dans le panneau Inspecteur. Modifiez les propriétés suivantes :
   * Vérifiez la propriété **spatial** .
   * Vérifiez la **lecture sur éveillé**.
   * Remplacez **spatial Blend** par **3D** en faisant glisser le curseur vers la droite. La valeur doit passer de 0 à 1 lorsque vous déplacez le curseur.
   * Vérifiez la propriété **Loop** .
-  * Développez **paramètres audio 3D**, puis entrez **0,1** pour le **niveau Doppler**.
+  * développez **Paramètres audio 3d**, puis entrez **0,1** pour le **niveau Doppler**.
   * Définissez **volume Rolloff** sur **Rolloff logarithmique**.
   * Définissez **distance maximale** sur **20**.
 * Dans le dossier **scripts** , créez un script nommé **SphereSounds**.
 * Glissez-déplacez **SphereSounds** vers les objets **Sphere1** et **Sphere2** dans la hiérarchie.
-* Ouvrez **SphereSounds** dans Visual Studio, mettez à jour le code suivant et **Enregistrez All**.
+* ouvrez **SphereSounds** dans Visual Studio, mettez à jour le code suivant et **enregistrez All**.
 
 ```cs
 using UnityEngine;
@@ -543,7 +543,7 @@ public class SphereSounds : MonoBehaviour
 ```
 
 * Enregistrez le script et revenez à Unity.
-* Exportez, générez et déployez l’application dans votre HoloLens.
+* Exportez, créez et déployez l’application sur votre HoloLens.
 * Rapprochez-vous de l’étape et transformez-la en côte à côte pour entendre la modification des sons.
 
 ## <a name="chapter-6---spatial-mapping"></a>Chapitre 6-mappage spatial
@@ -559,13 +559,13 @@ Nous allons maintenant utiliser le [mappage spatial](../../../design/spatial-map
 
 ### <a name="instructions"></a>Instructions
 
-* Dans Unity, cliquez sur le dossier **hologrammes** dans le panneau projet.
+* dans unity, cliquez sur le dossier **Hologrammes** dans le panneau Project.
 * Faites glisser la ressource de **mappage spatial** à la racine de la **hiérarchie**.
 * Cliquez sur l’objet **mappage spatial** dans la hiérarchie.
 * Dans le **panneau Inspecteur**, modifiez les propriétés suivantes :
   * Cochez la case **dessiner des panneaux visuels** .
   * Recherchez **matériel de dessin** , puis cliquez sur le cercle à droite. Tapez «**Wireframe**» dans le champ de recherche en haut. Cliquez sur le résultat, puis fermez la fenêtre. Lorsque vous effectuez cette opération, la valeur de Draw Material doit être définie sur Wireframe.
-* Exportez, générez et déployez l’application dans votre HoloLens.
+* Exportez, créez et déployez l’application sur votre HoloLens.
 * Lorsque l’application s’exécute, un maillage filaire se superpose à votre monde réel.
 * Regardez comment une sphère enchaînée va tomber à l’étage, et à l’étage !
 
@@ -574,7 +574,7 @@ Nous allons maintenant vous montrer comment déplacer le OrigamiCollection vers 
 * Dans le dossier **scripts** , créez un script nommé **TapToPlaceParent**.
 * Dans la **hiérarchie**, développez le **OrigamiCollection** et sélectionnez l’objet **stage** .
 * Faites glisser le script **TapToPlaceParent** sur l’objet stage.
-* Ouvrez le script **TapToPlaceParent** dans Visual Studio et mettez-le à jour comme suit :
+* ouvrez le script **TapToPlaceParent** dans Visual Studio et mettez-le à jour comme suit :
 
 ```cs
 using UnityEngine;
@@ -645,13 +645,13 @@ public class TapToPlaceParent : MonoBehaviour
 
 Nous allons maintenant vous montrer comment dévoiler le sous-monde holographique :
 
-* Dans le dossier **hologrammes** du panneau projet :
+* dans le dossier **Hologrammes** du panneau Project :
   * Faites glisser le sous- **monde** dans la hiérarchie pour être un enfant de **OrigamiCollection**.
 * Dans le dossier **scripts** , créez un script nommé **HitTarget**.
 * Dans la **hiérarchie**, développez **OrigamiCollection**.
 * Développez l’objet **stage** et sélectionnez l’objet **cible** (ventilateur bleu).
 * Faites glisser le script **HitTarget** sur l’objet **cible** .
-* Ouvrez le script **HitTarget** dans Visual Studio et mettez-le à jour comme suit :
+* ouvrez le script **HitTarget** dans Visual Studio et mettez-le à jour comme suit :
 
 ```cs
 using UnityEngine;

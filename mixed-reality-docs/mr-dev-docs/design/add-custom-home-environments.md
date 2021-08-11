@@ -1,24 +1,24 @@
 ---
 title: Concevoir vos propres environnements immersifs
-description: Découvrez comment créer vos propres environnements d’hébergement Windows Mixed Reality.
+description: découvrez comment créer des Windows Mixed Reality des environnements d’hébergement de votre choix.
 author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Windows Mixed Reality, la réalité mixte, la réalité virtuelle, VR, MR, famille, environnements personnalisés, lieux, salle de falaise, Skyloft, utilisateur, créer, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 2a626b91b79eadb49c9da95c9d61f92a375015a0
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
+keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, domicile, environnements personnalisés, lieux, salle de falaise, skyloft, utilisateur, créer, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: c0f006d3e05cb0892a0a9b2014a4d46a0668f628cf369e38c63c83756148d778
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881216"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198598"
 ---
 # <a name="design-your-own-immersive-environments"></a>Concevoir vos propres environnements immersifs
 
 >[!NOTE]
 >Il s’agit d’une fonctionnalité expérimentale. Faites un essai et amusez-vous, mais ne soyez pas surpris si tout ne fonctionne pas comme prévu. Nous évaluons la viabilité de cette fonctionnalité et nous encourageons à l’utiliser. Veuillez donc nous faire part de votre expérience (et de tous les bogues que vous avez trouvés) dans les [Forums des développeurs](https://forums.hololens.com/categories/custom-home-environments).
 
-À compter de la [mise à jour 2018 de Windows 10 avril](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), nous avons activé une fonctionnalité expérimentale qui vous permet d’ajouter des environnements personnalisés au sélecteur emplacements (dans le menu Démarrer) afin de l’utiliser comme page d’accueil de la [réalité mixte Windows](../discover/navigating-the-windows-mixed-reality-home.md). Windows Mixed Reality a deux environnements par défaut : la maison de falaise et Skyloft, vous pouvez choisir votre maison. La création d’environnements personnalisés vous permet de développer la liste avec vos propres créations. Nous rendons cette fonctionnalité disponible dans un état précoce pour évaluer l’intérêt des créateurs et des développeurs. Découvrez les genres de mondes que vous créez et comprenez comment vous travaillez avec différents outils de création.
+à partir de la [Windows 10 mise à jour 2018 d’avril](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), nous avons activé une fonctionnalité expérimentale qui vous permet d’ajouter des environnements personnalisés au sélecteur d’emplacements (sur le menu Démarrer) à utiliser comme [Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md). Windows Mixed Reality a deux environnements par défaut : la maison de falaise et Skyloft, vous pouvez choisir comme maison. La création d’environnements personnalisés vous permet de développer la liste avec vos propres créations. Nous rendons cette fonctionnalité disponible dans un état précoce pour évaluer l’intérêt des créateurs et des développeurs. Découvrez les genres de mondes que vous créez et comprenez comment vous travaillez avec différents outils de création.
 
 Lorsque vous utilisez un environnement personnalisé, vous remarquerez que le téléportage, l’interaction avec les applications et le placement des hologrammes fonctionnent exactement comme dans la maison de la falaise et Skyloft. Vous pouvez naviguer sur le Web dans un paysage imaginaire ou remplir une ville d’anticipation avec des hologrammes. les possibilités sont infinies !
 
@@ -53,12 +53,12 @@ Nous avons créé un exemple d’environnement qui illustre certaines des possib
 2. Exécutez le fichier **Fantasy_Island.exe** que vous avez téléchargé.
 
     > [!NOTE]
-    > Lorsque vous tentez d’exécuter un fichier. exe téléchargé à partir du Web (comme celui-ci), vous pouvez rencontrer une fenêtre contextuelle « Windows a protégé votre PC ». Pour exécuter Fantasy_Island.exe à partir de cette fenêtre contextuelle, sélectionnez **plus d’informations** , puis **Exécutez quand même**. Ce paramètre de sécurité est destiné à vous protéger contre le téléchargement de fichiers que vous ne souhaitez peut-être pas approuver. par conséquent, choisissez cette option uniquement lorsque vous faites confiance à la source du fichier.
+    > lorsque vous tentez d’exécuter un fichier .exe téléchargé à partir du web (comme celui-ci), vous pouvez rencontrer une fenêtre contextuelle « Windows protégé votre PC ». Pour exécuter Fantasy_Island.exe à partir de cette fenêtre contextuelle, sélectionnez **plus d’informations** , puis **Exécutez quand même**. Ce paramètre de sécurité est destiné à vous protéger contre le téléchargement de fichiers que vous ne souhaitez peut-être pas approuver. par conséquent, choisissez cette option uniquement lorsque vous faites confiance à la source du fichier.
 
 3. Ouvrez l' **Explorateur de fichiers** et accédez au dossier environnements en collant l’emplacement du fichier suivant dans la barre d’adresses : `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState` .
 4. Copiez l’exemple d’environnement que vous avez téléchargé dans ce dossier.
 5. Redémarrez le **portail de réalité mixte** pour actualiser la liste des environnements dans le sélecteur emplacements.
-6. Placez sur votre casque. Une fois que vous êtes dans la page d’accueil, ouvrez le **menu Démarrer** à l’aide du bouton Windows de votre contrôleur.
+6. Placez sur votre casque. une fois que vous êtes dans le bureau, ouvrez le **menu Démarrer** à l’aide du bouton de Windows de votre contrôleur.
 7. Sélectionnez l’icône **emplacements** au-dessus de la liste des applications épinglées pour choisir un environnement d’hébergement.
 8. Vous trouverez l’environnement des îlots fantastiques que vous avez téléchargé dans la liste des emplacements. Sélectionnez **îlot imaginaire** pour accéder à votre nouvel environnement d’hébergement personnalisé.
 
@@ -78,7 +78,7 @@ Lors de la modélisation de votre environnement, gardez à l’esprit les recomm
 
 ### <a name="exporting-your-environment"></a>Exportation de votre environnement
 
-Windows Mixed Reality s’appuie sur un glTF binaire (. GLB) comme format de remise des ressources pour les environnements. glTF est une norme ouverte payante gratuite pour la remise de ressources en 3D gérée par le groupe Khronos. La prise en charge par Microsoft du format entre les applications Windows et les expériences évoluera à mesure que glTF évolue comme une norme industrielle pour le contenu 3D interopérable.
+Windows Mixed Reality s’appuie sur glTF binaire (. glb) comme format de remise des éléments multimédias pour les environnements. glTF est une norme ouverte payante gratuite pour la remise de ressources en 3D gérée par le groupe Khronos. la prise en charge de Microsoft en matière de format pour les applications et les expériences Windows évoluera à mesure que glTF évolue comme une norme industrielle pour le contenu 3d interopérable.
 
 La première étape de l’exportation des ressources à utiliser comme des environnements d’origine personnalisés consiste à générer un modèle glTF 2,0. Le groupe de travail glTF gère une [liste d’exportateurs et de convertisseurs pris en charge](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) pour créer un modèle glTF 2,0. Pour commencer, utilisez l’un des programmes figurant sur cette page pour créer et exporter un modèle glTF 2,0, ou pour convertir un modèle existant à l’aide de l’un des convertisseurs pris en charge.
 
@@ -92,7 +92,7 @@ Tous les environnements doivent être < 256 Mo. Les environnements dont la taill
 
 Windows Mixed Reality prend en charge de nombreuses optimisations facultatives qui peuvent réduire considérablement les temps de chargement de votre environnement. Portez une attention particulière aux environnements qui comportent beaucoup de textures, car ils expireront parfois pendant le chargement. En général, nous vous recommandons d’effectuer cette étape pour toutes les ressources. Toutefois, les environnements plus petits avec des textures à faible ou faible résolution ne le nécessitent pas toujours. 
 
-Pour faciliter ce processus, nous avons créé le [convertisseur Windows Mixed Reality (disponible sur GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases) pour effectuer vos optimisations. Cet outil utilise un ensemble d’utilitaires disponibles dans Microsoft glTF Toolkit pour optimiser les 2,0 glTF ou. GLB standard en effectuant une mise à l’échelle des textures, une compression et une réduction de la résolution. 
+pour faciliter ce processus, nous avons créé le [convertisseur Windows Mixed Reality Asset (disponible sur GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases) pour effectuer vos optimisations. Cet outil utilise un ensemble d’utilitaires disponibles dans Microsoft glTF Toolkit pour optimiser les 2,0 glTF ou. GLB standard en effectuant une mise à l’échelle des textures, une compression et une réduction de la résolution. 
 
 Actuellement, le convertisseur prend en charge plusieurs indicateurs pour affiner le comportement exact des optimisations. Pour de meilleurs résultats, nous vous recommandons d’exécuter avec les indicateurs suivants :
 
@@ -131,7 +131,7 @@ Vous ne pouvez pas modifier actuellement l’environnement par défaut. Chaque f
 
 ### <a name="i-spawn-into-a-blank-space"></a>Je génère un espace vide
 
-Windows Mixed Reality [ne prend pas en charge les environnements qui dépassent 256 Mo](#environment-limits). Quand un environnement dépasse cette limite, vous accédez à la zone ciel vide sans modèle.
+Windows Mixed Reality [ne prend pas en charge les environnements qui dépassent 256 mo](#environment-limits). Quand un environnement dépasse cette limite, vous accédez à la zone ciel vide sans modèle.
 
 ### <a name="it-takes-a-long-time-to-load-my-environment"></a>Le chargement de mon environnement prend beaucoup de temps
 
@@ -150,4 +150,4 @@ L’emplacement de génération par défaut se trouve à 0, 0, 0 dans l’enviro
 Lorsque vous créez votre environnement personnalisé, il utilise une simulation de rendu acoustique qui ne correspond pas à l’espace physique que vous avez créé. Les sons peuvent provenir de mauvaises directions et le bruit peut être atténué. 
 
 ## <a name="see-also"></a>Voir aussi
-* [Convertisseur de ressources Windows Mixed Reality (sur GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
+* [Windows Mixed Reality Convertisseur de biens (sur GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)

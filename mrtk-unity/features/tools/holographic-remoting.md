@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 0fbde863185a9f51b53192a338e9403dc79248db
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a0d8e695e23ed2b58a62511e8b061bede2c68d92fb0089c8dada1d336c2a09e5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224812"
 ---
 # <a name="holographic-remoting"></a>Communication à distance holographique
 
@@ -100,7 +100,7 @@ Une fois que le projet a été configuré, une connexion peut être établie ave
 
     ![Entrer l’adresse IP](../images/tools/remoting/EnterIPAddress.png)
 
-1. Cliquez sur **Se connecter**.
+1. Cliquez sur **Connexion**.
 
 > [!NOTE]
 > si vous ne pouvez pas vous connecter, assurez-vous que votre HoloLens 2 n’est pas branché sur votre ordinateur et redémarrez unity.

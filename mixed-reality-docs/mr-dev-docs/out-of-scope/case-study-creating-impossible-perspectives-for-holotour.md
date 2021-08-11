@@ -1,21 +1,21 @@
 ---
 title: Étude de cas-création de perspectives impossibles pour HoloTour
-description: Nous souhaitons que vos expériences dans HoloTour pour Microsoft HoloLens soient Unforgettable. En plus des arrêts traditionnels du tourisme, nous avons prévu des « perspectives impossibles ».
+description: nous souhaitons que vos expériences dans Microsoft HoloLens HoloTour soient unforgettable. En plus des arrêts traditionnels du tourisme, nous avons prévu des « perspectives impossibles ».
 author: dannyaskew
 ms.author: daaske
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloTour, HoloLens, Windows Mixed Reality
-ms.openlocfilehash: f3ca07dfab1e4477039481c268e418aac9034bc5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: bf1f2b3c9c82e4b649a75efc0275a063ea5a2363dfa15b818c0159b947f6b515
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682890"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199912"
 ---
 # <a name="case-study---creating-impossible-perspectives-for-holotour"></a>Étude de cas-création de perspectives impossibles pour HoloTour
 
-Nous souhaitons que vos expériences dans HoloTour pour Microsoft HoloLens soient Unforgettable. En plus des arrêts traditionnels du tourisme, nous avons prévu des « perspectives impossibles », qui seraient impossibles à expérimenter sur une visite guidée, mais qui, grâce à la technologie de HoloLens, nous pourrions apporter directement votre salon. La création du contenu pour ces expériences nécessitait des techniques différentes par rapport à notre processus de capture standard.
+nous souhaitons que vos expériences dans Microsoft HoloLens HoloTour soient unforgettable. en plus des arrêts traditionnels du tourisme, nous avons prévu des « perspectives impossibles », qui seraient impossibles à expérimenter sur une visite guidée, mais qui, via la technologie HoloLens, nous pourrions apporter directement votre salon. La création du contenu pour ces expériences nécessitait des techniques différentes par rapport à notre processus de capture standard.
 
 ## <a name="the-content-challenge"></a>Défi du contenu
 
@@ -98,4 +98,4 @@ Dans la suite de la production, les Gladiators ont été composites dans le plan
 
 
 ## <a name="see-also"></a>Voir aussi
-* [Vidéo : Microsoft HoloLens : HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)
+* [vidéo : Microsoft HoloLens : HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)

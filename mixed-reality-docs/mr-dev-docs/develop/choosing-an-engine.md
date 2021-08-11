@@ -1,17 +1,17 @@
 ---
 title: Choix de votre moteur
-description: Découvrez les choix de moteurs disponibles pour le développement de la réalité mixte pour HoloLens et VR.
+description: découvrez les choix de moteurs disponibles pour le développement de la réalité mixte pour HoloLens et VR.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 04/22/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-Unity, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, Unity
-ms.openlocfilehash: c91a4df9db8ef71778421750bca48d81d4b4a02e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 14235852f8c90e7ccc4f105f2938ce514ae2933973469db9a0e01bd03d2c1b6d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227549"
 ---
 # <a name="choosing-your-engine"></a>Choix de votre moteur
 
@@ -31,7 +31,7 @@ Notre documentation vous propose plusieurs chemins de développement. La premiè
 * Les développeurs **Web** qui créent des expériences Web remarquables d’e/VR croisées peuvent utiliser **WebXR**.
 
     > [!NOTE]
-    > **Babylon.js** pour le développement HoloLens est actuellement en cours. Découvrez les [dernières nouvelles et participez à la communauté](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)!
+    > **Babylon.js** pour le développement de HoloLens est actuellement en cours. Découvrez les [dernières nouvelles et participez à la communauté](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)!
 
 <!-- Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
 
@@ -41,7 +41,7 @@ Notre documentation vous propose plusieurs chemins de développement. La premiè
 
 | Logistics | Unity | Unreal | JavaScript | Moteur personnalisé <br>(à l’aide de OpenXR) |
 |---|---|---|---|---|
-| Langue | C# | C++ | JavaScript | C/C++ |
+| Langage | C# | C++ | JavaScript | C/C++ |
 | Tarifs | [Tarification Unity](https://store.unity.com/#plans-individual) | [Tarification inréel](https://www.unrealengine.com/download) | Gratuit | Gratuit |
 
 <br>
@@ -86,7 +86,7 @@ Notre documentation vous propose plusieurs chemins de développement. La premiè
 | Azure Remote Rendering | ✔️ * | ❌ | ❌ | ✔️ * |
 
 > [!NOTE]
-> * Le rendu distant Azure est actuellement pris en charge dans les applications utilisant les API WinRT héritées (plug-in Windows XR dans Unity). La prise en charge d’ARR pour les applications OpenXR sera bientôt disponible.
+> * le rendu distant Azure est actuellement pris en charge dans les applications utilisant les api WinRT héritées (Windows plug-in XR dans unity). La prise en charge d’ARR pour les applications OpenXR sera bientôt disponible.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

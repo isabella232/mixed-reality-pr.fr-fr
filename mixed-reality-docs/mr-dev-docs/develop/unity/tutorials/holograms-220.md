@@ -1,24 +1,24 @@
 ---
 title: HoloLens (1ère génération) - Spatial 220 - Son spatial
-description: Suivez cette procédure pas à pas de codage à l’aide de Unity, Visual Studio et HoloLens pour apprendre les concepts de son spatial.
+description: suivez cette procédure pas à pas de codage à l’aide d’unity, Visual Studio et HoloLens pour en savoir plus sur les concepts de son spatial.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, didacticiel, son spatial, HoloLens, Académie de la réalité mixte, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 789f4da924c00554042ad991cc5610d3e816f12d
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, didacticiel, son spatial, HoloLens,, académie de la réalité mixte, unity, casque de réalité mixte, casque windows Mixed realisation, casque de réalité virtuelle, Windows 10
+ms.openlocfilehash: d53b449916405d8bf42bb8dd63cc1d3cb5d6127bbf9b2989ce7cb09c3762a6e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200374"
 ---
-# <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>HoloLens (1re génération) spatial 220 : son spatial
+# <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>HoloLens (1re génération) Spatial 220 : son spatial
 
 >[!IMPORTANT]
->Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
+>les didacticiels d’académie de la réalité mixte ont été conçus avec des HoloLens (1er génération), unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
-Le [son spatial](../../../design/spatial-sound.md) passe par des hologrammes et leur donne la présence dans notre monde. Les hologrammes sont composés de la lumière et du son, et si vous perdez la vision de vos hologrammes, le son spatial peut vous aider à les trouver. Le son spatial n’est pas comme le son classique que vous entendez sur la radio, il s’agit d’un son positionné dans l’espace 3D. Avec un son spatial, vous pouvez faire en sorte que les hologrammes s’affichent derrière vous, en regard de vous ou même en tête. Dans ce cours, vous allez :
+Le [son spatial](../../../design/spatial-sound.md) passe par des hologrammes et leur donne la présence dans notre monde. Hologrammes sont composés de la lumière et du son, et si vous perdez la vision de vos hologrammes, le son spatial peut vous aider à les trouver. Le son spatial n’est pas comme le son classique que vous entendez sur la radio, il s’agit d’un son positionné dans l’espace 3D. Avec un son spatial, vous pouvez faire en sorte que les hologrammes s’affichent derrière vous, en regard de vous ou même en tête. Dans ce cours, vous allez :
 
 * Configurez votre environnement de développement pour utiliser le son spatial Microsoft.
 * Utilisez le son spatial pour améliorer les interactions.
@@ -40,10 +40,10 @@ Le [son spatial](../../../design/spatial-sound.md) passe par des hologrammes et 
 
 ### <a name="prerequisites"></a>Prérequis
 
-* Un PC Windows 10 configuré avec les [outils appropriés installés](../../../develop/install-the-tools.md).
+* un PC Windows 10 configuré avec les [outils appropriés installés](../../../develop/install-the-tools.md).
 * Certaines fonctionnalités de base de la programmation C#.
 * Vous devez avoir terminé les [notions de base de m. 101](../../../develop/unity/tutorials/holograms-101.md).
-* Un appareil HoloLens [configuré pour le développement](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* un appareil HoloLens [configuré pour le développement](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### <a name="project-files"></a>Fichiers projet
 
@@ -58,7 +58,7 @@ Le [son spatial](../../../design/spatial-sound.md) passe par des hologrammes et 
 
 ### <a name="errata-and-notes"></a>Errata et notes
 
-* L’option « Activer Uniquement mon code » doit être désactivée (*décochée*) dans Visual Studio sous outils->Options->le débogage pour atteindre les points d’arrêt dans votre code.
+* la case à cocher « activer Uniquement mon code » doit être désactivée (*décochée*) dans Visual Studio sous outils->Options->débogage pour atteindre les points d’arrêt dans votre Code.
 
 ## <a name="chapter-1---unity-setup"></a>Chapitre 1-Configuration Unity
 
@@ -74,13 +74,13 @@ Le [son spatial](../../../design/spatial-sound.md) passe par des hologrammes et 
 * Accédez à votre bureau et recherchez le dossier que vous avez précédemment désinstallé.
 * Cliquez sur le dossier **Starting\Decibel** , puis appuyez sur le bouton **Sélectionner un dossier** .
 * Attendez que le projet se charge dans Unity.
-* Dans le panneau **projet** , ouvrez **Scenes\Decibel.Unity**.
+* dans le panneau **Project** , ouvrez **Scenes\Decibel.unity**.
 * Dans le volet **hiérarchie** , développez **HologramCollection** , puis sélectionnez **P0LY**.
 * Dans l’inspecteur, développez **audiosource** et Notez qu’il n’y a pas de case à cocher **spatialiser** .
 
 Par défaut, Unity ne charge pas de plug-in Spatializer. Les étapes suivantes permettent d’activer le son spatial dans le projet.
 
-* Dans le menu supérieur de Unity, accédez à **modifier > paramètres du projet > audio**.
+* dans le menu supérieur de unity, accédez à **modifier > Project Paramètres > Audio**.
 * Recherchez la liste déroulante du **plug-in Spatializer** , puis sélectionnez **MS HRTF Spatializer**.
 * Dans le volet **hiérarchie** , sélectionnez **HologramCollection > P0LY**.
 * Dans le panneau **inspecteur** , recherchez le composant **audio source** .
@@ -89,10 +89,10 @@ Par défaut, Unity ne charge pas de plug-in Spatializer. Les étapes suivantes p
 
 Nous allons maintenant générer le projet dans Unity et configurer la solution dans Visual Studio.
 
-1. Dans Unity, sélectionnez **fichier > paramètres de build**.
+1. dans unity, sélectionnez **fichier > Build Paramètres**.
 2. Cliquez sur **Ajouter des scènes ouvertes** pour ajouter la scène.
-3. Sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme**.
-4. Si vous développez spécifiquement pour HoloLens, définissez **appareil cible** sur **hololens**. Dans le cas contraire, laissez-le sur **un appareil**.
+3. sélectionnez **plateforme Windows universelle** dans la liste **plateforme** , puis cliquez sur **basculer la plateforme**.
+4. si vous développez spécifiquement pour HoloLens, définissez l' **appareil cible** sur **HoloLens**. Dans le cas contraire, laissez-le sur **un appareil**.
 5. Vérifiez que le **type de build** est défini sur **D3D** et que le **Kit de développement logiciel (SDK** ) est défini sur le **dernier installé** (qui doit être le SDK 16299 ou une version ultérieure).
 6. Cliquez sur **Générer**.
 7. Créez un **dossier** nommé « App ».
@@ -102,18 +102,18 @@ Nous allons maintenant générer le projet dans Unity et configurer la solution 
 Lorsque Unity est terminé, une fenêtre de l’Explorateur de fichiers s’affiche.
 
 1. Ouvrez le dossier de l' **application** .
-2. Ouvrez la **solution Visual Studio décibels**.
+2. ouvrez la **Solution de Visual Studio décibels**.
 
-En cas de déploiement dans HoloLens :
+Si vous déployez sur HoloLens :
 
-1. À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
+1. à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
 2. Cliquez sur la flèche déroulante en regard du bouton ordinateur local, puis sélectionnez **ordinateur distant**.
-3. Entrez **l’adresse IP de votre appareil HoloLens** et définissez le mode d’authentification sur **universel (protocole non chiffré)**. Cliquez sur **Sélectionner**. Si vous ne connaissez pas l’adresse IP de votre appareil, accédez à **paramètres > réseau & Internet > options avancées**.
-4. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler à Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+3. entrez **l’adresse IP de votre appareil HoloLens** et définissez le Mode d’authentification sur **universel (protocole non chiffré)**. Cliquez sur **Sélectionner**. si vous ne connaissez pas l’adresse IP de votre appareil, consultez **Paramètres > réseau & Options avancées Internet >**.
+4. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler avec Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 
 En cas de déploiement sur un casque immersif :
 
-1. À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x64**.
+1. à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x64**.
 2. Assurez-vous que la cible de déploiement est définie sur **ordinateur local**.
 3. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
 
@@ -142,9 +142,9 @@ Les instructions suivantes attachent un son spatial à un hologramme.
 * Dans le volet de l' **inspecteur** , dans le **audiosource**, cliquez sur le cercle en regard de **Audioclip** et sélectionnez **polypointer** dans la fenêtre contextuelle.
 * Cliquez sur le cercle en regard de **sortie** et sélectionnez **SoundEffects** dans la fenêtre contextuelle.
 
-Project décibel utilise un composant Unity **audiomixer** pour permettre l’ajustement des niveaux sonores pour les groupes de sons. En regroupant les sons de cette manière, le volume global peut être ajusté tout en conservant le volume relatif de chaque son.
+Project Décibel utilise un composant Unity **audiomixer** pour permettre l’ajustement des niveaux sonores pour les groupes de sons. En regroupant les sons de cette manière, le volume global peut être ajusté tout en conservant le volume relatif de chaque son.
 
-* Dans le **audiosource**, développez **paramètres audio 3D**.
+* dans le **AudioSource**, développez **Paramètres audio 3d**.
 * Affectez au **niveau Doppler** la valeur **0**.
 
 Le fait de définir le niveau Doppler sur zéro désactive les modifications du pas en raison du mouvement (de l’hologramme ou de l’utilisateur). Un exemple classique de Doppler est un véhicule à déplacement rapide. À mesure que la voiture approche un écouteur stationnaire, la hauteur du moteur augmente. Lorsqu’il passe l’écouteur, le pas à pas est inférieur à la distance.
@@ -194,7 +194,7 @@ Le gestionnaire de son geste effectue les tâches suivantes :
 
 #### <a name="build-and-deploy"></a>Génération et déploiement
 
-1. Dans Unity, sélectionnez **fichier > paramètres de build**.
+1. dans unity, sélectionnez **fichier > Build Paramètres**.
 2. Cliquez sur **Générer**.
 3. Cliquez sur le dossier de l' **application** .
 4. Appuyez sur **Sélectionner un dossier**.
@@ -266,7 +266,7 @@ La méthode RaycastNonAlloc est utilisée comme optimisation des performances po
 * Pour chaque **IAudioInfluencer** rencontré, appelle la méthode **ApplyEffect** .
 * Pour chaque **IAudioInfluencer** précédent qui n’est plus rencontré, appelez la méthode **RemoveEffect** .
 
-Notez que AudioEmitter met à jour les échelles de temps humaines, par opposition à des mises à jour par image. Cela est dû au fait que les êtres humains ne se déplacent pas suffisamment rapidement pour que l’effet doive être mis à jour plus fréquemment que chaque trimestre ou moitié de seconde. Les hologrammes qui se téléportent rapidement d’un emplacement à un autre peuvent briser l’illusion.
+Notez que AudioEmitter met à jour les échelles de temps humaines, par opposition à des mises à jour par image. Cela est dû au fait que les êtres humains ne se déplacent pas suffisamment rapidement pour que l’effet doive être mis à jour plus fréquemment que chaque trimestre ou moitié de seconde. Hologrammes que la réversion rapide d’un emplacement à un autre peut briser l’illusion.
 
 * Dans le volet **hiérarchie** , développez **HologramCollection**.
 * Développez **EnergyHub** , puis sélectionnez **BlobOutside**.
@@ -425,10 +425,10 @@ Dans Unity, vous pouvez marquer un fichier audio pour la diffusion en continu da
 
 ### <a name="objectives"></a>Objectifs
 
-* Ajoutez une profondeur à « Magic Windows ».
+* Ajoutez Depth à « Magic Windows ».
 * Mettez l’utilisateur dans le monde virtuel.
 
-### <a name="magic-windows"></a>Magic Windows
+### <a name="magic-windows"></a>Windows magique
 
 #### <a name="key-concepts"></a>Concepts clés
 
@@ -443,10 +443,10 @@ Dans Unity, vous pouvez marquer un fichier audio pour la diffusion en continu da
 
 Un composant **audiosource** sera ajouté à **VoiceSource**.
 
-* Dans **audiosource**, définissez **sortie** sur **UserVoice (Mixer)**.
+* Dans **audiosource**, définissez la **sortie** sur **UserVoice (Mixer)**.
 * Cochez la case **spatialiser** .
 * Faites glisser le curseur de **lissage spatial** jusqu’à la forme **3D**, ou entrez **1** dans la zone d’édition.
-* Développez **paramètres audio 3D**.
+* développez **Paramètres audio 3d**.
 * Affectez au **niveau Doppler** la valeur **0**.
 * Dans l' **effet utilisateur vocal**, définissez l' **objet parent** sur le sous- **monde** à partir de la scène.
 * Définissez **distance maximale** sur **1**.

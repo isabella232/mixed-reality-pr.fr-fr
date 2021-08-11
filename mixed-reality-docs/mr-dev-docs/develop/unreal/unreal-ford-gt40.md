@@ -8,12 +8,12 @@ ms.topic: article
 keywords: le moteur UE4, le HoloLens, le HoloLens 2, la réalité mixte, le déploiement sur l’appareil, le PC, la documentation, le casque de la réalité mixte, le casque de réalité windows, le casque de la réalité virtuelle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e634d75af92509372209d8e7c0cde2833127c128
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 17314cca69148e73ee11fcd4cdc5359a5dbae4cf84b609bafb6cc75d477ec26f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200614"
 ---
 # <a name="the-making-of-the-ford-gt40-experience"></a>La création de l’expérience GT40 Ford
 ![Image du héros GT40 Ford](images/ford-gt40-hero_1920.jpg)

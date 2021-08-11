@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: œil-point de présence, point de présence, unité, hologramme, réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: f10079d36f737e5d8a2ee74a88ca0f8b2b3d791c
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: œil-point de présence, point de regard, unité d’hologramme, réalité mixte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, Shared Computer Toolkit de la réalité mixte
+ms.openlocfilehash: c6a435e958a92adeed6cd965bebd0b8829e00da735bd193ca72a68acb9e0d6aa
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200110"
 ---
 # <a name="head-gaze-in-unity"></a>Tête-pointage dans Unity
 
@@ -43,7 +43,7 @@ void Update()
 }
 ```
 
-### <a name="best-practices"></a>Meilleures pratiques
+### <a name="best-practices"></a>Bonnes pratiques
 
 Bien que l’exemple ci-dessus déclenche un raycast unique à partir de la boucle de mise à jour pour trouver la cible sur laquelle pointe l’utilisateur, nous vous recommandons d’utiliser un seul objet pour gérer tous les processus de pointage en tête. La combinaison de la logique du point de vue vous permet d’économiser la puissance de traitement de votre application et de limiter vos Raycasting à un par image.
 
@@ -51,13 +51,13 @@ Bien que l’exemple ci-dessus déclenche un raycast unique à partir de la bouc
 
 Comme avec un pointeur de souris sur un ordinateur, vous devez implémenter un [curseur](../../design/cursors.md) qui représente le point de regard de l’utilisateur. Le fait de connaître le contenu ciblé par un utilisateur augmente la confiance en ce qui concerne l’interaction avec.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Tête-regard du kit de réalité mixte
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>tête-regard de la réalité mixte Shared Computer Toolkit
 
 Vous pouvez accéder au point de regard du [Gestionnaire d’entrée](/windows/mixed-reality/mrtk-unity/features/input/overview) dans MRTK.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir de là, vous pouvez passer au module suivant :
+Si vous suivez le parcours de développement Unity que nous avons disposé, vous êtes au cœur de l’exploration des blocs de construction MRTK Core. À partir d’ici, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Contrôleurs de mouvement](motion-controllers-in-unity.md)

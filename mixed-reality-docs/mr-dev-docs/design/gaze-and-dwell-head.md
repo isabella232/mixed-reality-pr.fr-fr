@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
-keywords: La réalité mixte, le point de vue, l’interaction, la conception, le casque de la réalité mixte, le casque Windows Mixed Reality, le casque de la réalité virtuelle, HoloLens, MRTK, le kit de conditions de la réalité mixte, l’expérience utilisateur, les instructions, le mode liste
-ms.openlocfilehash: e70536b7247153979b8650ba1f5bcbe1a7cd08af
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: mi-vie mixte, point de vue, interaction, conception, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, expérience utilisateur, indications, mode liste
+ms.openlocfilehash: e069b0815f69848b7632cb7b1b85d85f328441b7156ae22ffe097fedc3ed6fc1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223618"
 ---
 # <a name="head-gaze-and-dwell"></a>Suivre de la tête et stabiliser
 
@@ -19,7 +19,7 @@ Quand les mains sont occupées avec des outils et des pièces, les mouvements pe
 
 ## <a name="scenarios"></a>Scénarios
 
-Le point de regard et le front-tête est parfait dans les scénarios où les mains d’une personne sont occupées par d’autres tâches. Cette fonctionnalité est également utile lorsque la voix n’est pas 100% fiable ou disponible en raison de contraintes environnementales ou sociales. Un bon exemple est une personne portant un appareil HoloLens pour superposer des informations de référence tout en réparant un moteur de voiture. Ses mains sont occupées par des outils ou supportent son corps quand elle se penche dans le compartiment du moteur. L’espace du garage est bruyant, les coups et bourdonnement constants des outils rendant difficile l’utilisation de commandes vocales. Le point de regard et l’arrière-plan permet à la personne utilisant HoloLens de parcourir en toute confiance son document de référence sans interrompre son flux de travail. 
+Le point de regard et le front-tête est parfait dans les scénarios où les mains d’une personne sont occupées par d’autres tâches. Cette fonctionnalité est également utile lorsque la voix n’est pas 100% fiable ou disponible en raison de contraintes environnementales ou sociales. Un bon exemple est une personne portant un appareil HoloLens pour superposer des informations de référence tout en réparant un moteur de voiture. Ses mains sont occupées par des outils ou supportent son corps quand elle se penche dans le compartiment du moteur. L’espace du garage est bruyant, les coups et bourdonnement constants des outils rendant difficile l’utilisation de commandes vocales. le point de regard et le point de vue permet à la personne qui utilise le HoloLens de parcourir en toute confiance son document de référence sans interrompre son flux de travail. 
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -106,10 +106,10 @@ Utilisez un court délai avant de démarrer le retour visuel afin d’éviter le
   * Les boutons à fréquence élevée doivent être volumineux, plus faciles à toucher avec le regard
   * Restez près de la hauteur pour éviter les tensions ergonomiques.<br>
         <br>
-*Image : Microsoft Dynamics 365 guides Next Button*
+*Image : Microsoft Dynamics 365 Guides bouton suivant*
     :::column-end:::
         :::column:::
-       ![Bouton suivant de Microsoft Dynamics 365 guides](images/GuideNextButton.png)<br>
+       ![bouton suivant de Microsoft Dynamics 365 Guides](images/GuideNextButton.png)<br>
     :::column-end:::
 :::row-end:::
 
@@ -139,10 +139,10 @@ Les boutons à basse fréquence sont des boutons qui ne sont pas interactifs ave
   * Révéler la cible de stabilisation en même temps que la surbrillance de la sélection
   * Pour le bouton secondaire, révéler la cible de stabilisation en fonction du suivi de la tête<br>
         <br>
-*Image : boîte de dialogue de confirmation des guides Microsoft Dynamics 365*
+*Image : boîte de dialogue de confirmation de Microsoft Dynamics 365 Guides*
     :::column-end:::
         :::column:::
-       ![Boîte de dialogue de confirmation des guides Microsoft Dynamics 365](images/GuidesConfirmation.png)<br>
+       ![boîte de dialogue de Confirmation de Microsoft Dynamics 365 Guides](images/GuidesConfirmation.png)<br>
     :::column-end:::
 :::row-end:::
         
@@ -171,10 +171,10 @@ Les boutons bascule nécessitent une logique nuancée pour fonctionner correctem
   * N’affichez pas toutes les cibles de logement à la fois pour éviter l’interface utilisateur répétitive.
   * Réutilisez le même modèle aussi souvent que possible pour établir une familiarité avec l’expérience utilisateur.<br>
         <br>
-*Image : liste des guides Microsoft Dynamics 365*
+*Image : liste de Dynamics 365 Guides Microsoft*
     :::column-end:::
         :::column:::
-       ![Liste des guides Microsoft Dynamics 365](images/GuidesListView.png)<br>
+       ![liste des Dynamics 365 Guides Microsoft](images/GuidesListView.png)<br>
     :::column-end:::
 :::row-end:::
 

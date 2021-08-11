@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, conception, interaction, voix
-ms.openlocfilehash: d027dd32e1d7ea0391d2d9262e164a671a57bd29
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2a988ad50a8b20a256b0d7208187785778447cc08109fbf55d4ae83e820a76ba
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582829"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225366"
 ---
 # <a name="voice-commanding"></a>Commander avec la voix
 
@@ -47,7 +47,7 @@ Lorsque vous utilisez des commandes vocales, le point de regard est généraleme
 
 Il est recommandé d’ajouter des commandes vocales à toutes les expériences que vous créez. La voix est un moyen puissant et pratique de contrôler le système et les applications. Étant donné le nombre de dialectes et d’accents qui peuvent être utilisés, il est important de bien choisir les mots clés de reconnaissance vocale, afin de garantir que les commandes de vos utilisateurs seront correctement interprétées.
 
-### <a name="best-practices"></a>Meilleures pratiques
+### <a name="best-practices"></a>Bonnes pratiques
 
 Voici quelques bonnes pratiques qui faciliteront la reconnaissance vocale.
 * **Utilisez des commandes concises** : dans la mesure du possible, choisissez des mots clés de deux syllabes minimum. Les mots d’une syllabe comprennent souvent des voyelles qui peuvent être prononcées différemment selon l’accent de la personne. Exemple : « lire la vidéo » est préférable à « lire la vidéo actuellement sélectionnée »
@@ -65,7 +65,7 @@ Voici quelques bonnes pratiques qui faciliteront la reconnaissance vocale.
 
 La prononciation de la commande « Sélectionner » activera systématiquement l’élément qui est pointé par le curseur de pointage. 
 
->Remarque : dans HoloLens 2, le curseur en regard doit d’abord être appelé en disant le mot « Select ». Dites « sélectionner » à nouveau pour activer. Pour masquer le curseur en regard, il vous suffit d’utiliser vos mains pour airtap ou toucher un objet. 
+>remarque : dans HoloLens 2, le curseur en regard doit d’abord être appelé en disant le mot « select ». Dites « sélectionner » à nouveau pour activer. Pour masquer le curseur en regard, il vous suffit d’utiliser vos mains pour airtap ou toucher un objet. 
 
 ### <a name="see-it-say-it"></a>Voir, prononcer
 
@@ -102,7 +102,7 @@ Lorsque la voix est utilisée correctement, l’utilisateur **comprend ce qu’i
 ## <a name="top-things-users-should-know-about-speech-in-mixed-reality"></a>Points importants concernant la reconnaissance vocale dans la réalité mixte
 * Vous devez dire **« Sélectionner »** lorsque vous ciblez un bouton (vous pouvez l’utiliser n’importe où pour cliquer sur un bouton).
 * Dans certaines applications, vous pouvez prononcer le **nom de l’étiquette d’un bouton de la barre d’application** pour exécuter une action. Par exemple, lorsqu’il regarde une application, l’utilisateur peut prononcer la commande « Supprimer » pour supprimer cette application (cela vous évite d’avoir à la supprimer manuellement).
-* Vous pouvez activer Cortana à l’aide de la commande **« Hey Cortana »**. Vous pouvez poser des questions (« Hey Cortana, quelle est la taille de la Tour Eiffel ? »), lui demander d’ouvrir une application (« Hey Cortana, Open Netflix »), ou lui indiquer d’afficher le menu Démarrer (« Hey Cortana, Take me main ») et bien plus encore.
+* Vous pouvez activer Cortana à l’aide de la commande **« Hey Cortana »**. vous pouvez poser des questions (« bonjour Cortana, quelle est la taille de la tour Eiffel ? »), lui demander d’ouvrir une application (« hey Cortana, open Netflix »), ou l’inviter à faire apparaître le Menu démarrer (« bonjour Cortana, m’emmener à la page d’accueil ») et bien plus encore.
 
 ## <a name="common-questions-and-concerns-users-have-about-voice"></a>Questions et inquiétudes fréquentes concernant la reconnaissance vocale
 * Que puis-je dire ?

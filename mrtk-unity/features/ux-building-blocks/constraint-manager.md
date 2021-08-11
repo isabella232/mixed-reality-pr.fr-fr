@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 7036bb552952a0e45a8ba465d769a8952e48bc36
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f32f7321ec30f337e03d006f47fa92639796a74156483917331304811ea86a45
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198479"
 ---
 # <a name="constraint-manager"></a>Gestionnaire de contraintes
 
@@ -20,7 +20,7 @@ Toutefois, les utilisateurs peuvent opter pour la configuration manuelle de la l
 
 Actuellement, les éléments MRTK UX suivants prennent en charge le gestionnaire de contraintes :
 
-- [Contrôle de limites](bounds-control.md)
+- [Contrôle des limites](bounds-control.md)
 - [Manipulateur d’objets](object-manipulator.md)
 
 ## <a name="inspector-properties-and-fields"></a>Propriétés et champs de l’inspecteur

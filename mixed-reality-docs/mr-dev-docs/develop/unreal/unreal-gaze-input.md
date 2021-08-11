@@ -1,17 +1,17 @@
 ---
 title: Entrée en pointage en regard
-description: Découvrez comment configurer et utiliser l’entrée en regard avec le suivi des yeux et l’orientation des têtes pour les applications HoloLens dans un environnement inréel.
+description: découvrez comment configurer et utiliser l’entrée en regard avec le suivi des yeux et l’orientation des têtes pour HoloLens applications dans un environnement inréel.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
-keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi des yeux, entrée de regard, affichage monté en tête, moteur non réel, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 0c5191534313b94a5382d1065f5a5dd1a208bb49
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, hologrammes, HoloLens 2, suivi des yeux, entrée de regard, affichage monté en tête, moteur non réel, casque de réalité mixte, casque Windows mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: e423086e293629e3dfadb49b52a376c0b93f5e465328b93f47c2f1e3e0790b63
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98579985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200674"
 ---
 # <a name="gaze-input"></a>Entrée en regard
 
@@ -19,14 +19,14 @@ Les entrées de regard dans les applications de réalité mixte concernent la re
 
 ## <a name="enabling-eye-tracking"></a>Activation du suivi oculaire
 
-- Dans **paramètres du projet > HoloLens**, activez la fonctionnalité **d’entrée en regard** :
+- dans **Project Paramètres > HoloLens**, activez la fonctionnalité de **saisie en regard** :
 
-![Capture d’écran des fonctionnalités des paramètres du projet HoloLens avec l’entrée en regard en surbrillance](images/unreal-gaze-img-01.png)
+![capture d’écran des fonctionnalités du paramètre de projet HoloLens avec l’entrée en regard en surbrillance](images/unreal-gaze-img-01.png)
 
 - Créer un acteur et l’ajouter à votre scène
 
 > [!NOTE]
-> Le suivi oculaire HoloLens en non réel a un seul rayon de regard pour les deux yeux. Le suivi STEREOSCOPIQUE, qui nécessite deux rayons, n’est pas pris en charge.
+> HoloLens le suivi oculaire en cas d’inréel uniquement a un seul rayon de regard pour les deux yeux. Le suivi STEREOSCOPIQUE, qui nécessite deux rayons, n’est pas pris en charge.
 
 ## <a name="using-eye-tracking"></a>Utilisation du suivi oculaire
 
@@ -52,7 +52,7 @@ Vous pouvez également utiliser la rotation de l’affichage monté en tête (HM
 
 ## <a name="using-c"></a>Utilisation de C++
 
-- Dans le fichier **Build.cs** de votre jeu, ajoutez **EyeTracker** à la liste **PublicDependencyModuleNames** :
+- Dans le fichier **Build. cs** de votre jeu, ajoutez **EyeTracker** à la liste **PublicDependencyModuleNames** :
 
 ```cpp
 PublicDependencyModuleNames.AddRange(
@@ -66,7 +66,7 @@ PublicDependencyModuleNames.AddRange(
 ```
 
 - Dans **fichier/nouvelle classe c++**, créez un acteur C++ appelé **EyeTracker**
-    - Une solution Visual Studio ouvre la nouvelle classe EyeTracker. Générez et exécutez pour ouvrir le jeu inréel avec le nouvel acteur EyeTracker.  Recherchez « EyeTracker » dans la fenêtre **Placer les acteurs** , puis faites glisser et déposez la classe dans la fenêtre de jeu pour l’ajouter au projet :
+    - une solution de Visual Studio ouvre la nouvelle classe EyeTracker. Générez et exécutez pour ouvrir le jeu inréel avec le nouvel acteur EyeTracker.  Recherchez « EyeTracker » dans la fenêtre **Placer les acteurs** , puis faites glisser et déposez la classe dans la fenêtre de jeu pour l’ajouter au projet :
 
 ![Capture d’écran d’un acteur avec la fenêtre placer l’acteur ouverte](images/unreal-gaze-img-06.png)
 
@@ -104,7 +104,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 
-Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous êtes en train d’explorer les modules de base du MRTK. À partir de là, vous pouvez passer au module suivant :
+Si vous suivez le parcours de développement Unreal que nous avons mis en place, vous êtes en train d’explorer les modules de base du MRTK. À partir d’ici, vous pouvez passer au composant suivant :
 
 > [!div class="nextstepaction"]
 > [Suivi de la main](unreal-hand-tracking.md)

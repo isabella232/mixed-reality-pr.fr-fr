@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK,
-ms.openlocfilehash: c9458e5236cc7de18eb27c3c3e13221a366c89a4
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 7d3e158bc7e4b0125f264aa9abc8f369a6e825562266891b0528066d8b8b9b71
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198121"
 ---
 # <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>notes de publication de Microsoft Mixed reality Shared Computer Toolkit 2,5
 
@@ -170,7 +170,7 @@ Dans certains cas, il y a eu un compromis à effectuer :
 
 ### <a name="bounds-control-graduated"></a>Contrôle des limites gradué
 
-![Contrôle de limites](../features/images/bounds-control/MRTK_BoundsControl_Main.png)
+![Contrôle des limites](../features/images/bounds-control/MRTK_BoundsControl_Main.png)
 
 [Le contrôle des limites](../features/ux-building-blocks/bounds-control.md) est sorti de l’expérimental et est fourni avec un ensemble de nouvelles fonctionnalités et de nombreux correctifs de bogues.
 Voici une liste des principales caractéristiques de cette mise à jour :
@@ -223,7 +223,7 @@ MRTK est désormais fourni avec un [système de simulation élastique](../featur
 
 Actuellement, les composants MRTK suivants prenant en charge le [Gestionnaire élastique](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) peuvent tirer parti des fonctionnalités élastiques :
 
-- [Contrôle de limites](../features/ux-building-blocks/bounds-control.md#elastics-experimental)
+- [Contrôle des limites](../features/ux-building-blocks/bounds-control.md#elastics-experimental)
 - [Manipulateur d’objets](../features/ux-building-blocks/object-manipulator.md#elastics-experimental)
 
 <img src="https://user-images.githubusercontent.com/5544935/88151572-568cba00-cbaf-11ea-91c2-d6b51829b638.gif" width="38%" alt="Expanding an elastic menu">

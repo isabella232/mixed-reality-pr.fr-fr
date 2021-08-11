@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 341ba0ee3e5900cc52f1ef715232f49064102309
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 9b7ef7564e0e4f84ba70c034b1bcc33a29498432620a002c8509de518dde479c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228383"
 ---
 # <a name="experimental-features"></a>Fonctionnalités expérimentales
 
@@ -98,7 +98,7 @@ La plupart des gens utilisent des composants d’expérience utilisateur de base
 
 L’utilisation de votre composant ne doit pas rompre les boutons, ManipulationHandler, BoundingBox ou interactive.
 
-Par exemple, dans [ce PR ScrollableObjectCollection](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001), l’ajout d’un ScrollableObjectCollection a entraîné l’incapacité des utilisateurs à utiliser le bouton HoloLens prefabs. Même si cela n’a pas été provoqué par un bogue dans la demande de tirage (mais a plutôt exposé un bogue existant), la demande de tirage n’a pas pu être archivée.
+par exemple, dans [ce PR ScrollableObjectCollection](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001), l’ajout d’un ScrollableObjectCollection a entraîné l’incapacité des utilisateurs à utiliser le bouton HoloLens prefabs. Même si cela n’a pas été provoqué par un bogue dans la demande de tirage (mais a plutôt exposé un bogue existant), la demande de tirage n’a pas pu être archivée.
 
 ### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>Fournir un exemple de scène illustrant l’utilisation de la fonctionnalité
 

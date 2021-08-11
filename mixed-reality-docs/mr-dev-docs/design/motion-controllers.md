@@ -5,24 +5,24 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: contrôleurs 6DOF, contrôleurs de mouvement, appariement, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, défilement, préhension, état
-ms.openlocfilehash: 367c9d9e0179c82af05af3fded9341ff7960d19e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: contrôleurs de 6dof, contrôleurs de mouvement, appariement, casque de réalité mixte, casque windows mixed realisation, casque de réalité virtuelle, HoloLens, défilement, poignée, état
+ms.openlocfilehash: bced0115eee5e753ef01d129ae10910acdca2b7b91020117f53b2ebf8833a130
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224882"
 ---
 # <a name="motion-controllers"></a>Contrôleurs de mouvement
 
 :::row:::
     :::column:::
-        Les contrôleurs de mouvement sont des [accessoires matériels](../discover/hardware-accessories.md) qui permettent aux utilisateurs de prendre des mesures en réalité mixte. L’un des avantages des contrôleurs de mouvement par rapport aux [gestes](gaze-and-commit.md#composite-gestures) est que les contrôleurs ont une position précise dans l’espace, ce qui permet une interaction fine en grain avec les objets numériques. Pour les casques immersifs Windows Mixed Reality, les contrôleurs de mouvement constituent la principale façon dont les utilisateurs effectuent des actions dans leur environnement.<br>
+        Les contrôleurs de mouvement sont des [accessoires matériels](../discover/hardware-accessories.md) qui permettent aux utilisateurs de prendre des mesures en réalité mixte. L’un des avantages des contrôleurs de mouvement par rapport aux [gestes](gaze-and-commit.md#composite-gestures) est que les contrôleurs ont une position précise dans l’espace, ce qui permet une interaction fine en grain avec les objets numériques. pour les Windows Mixed Reality les casques immersifs, les contrôleurs de mouvement constituent la principale façon dont les utilisateurs effectuent des actions dans leur monde.<br>
         <br>
         *Image : contrôleur de mouvement Windows Mixed Reality*
     :::column-end:::
         :::column:::
-       ![Contrôleurs de mouvement Windows Mixed Reality](images/winmr-ck-1080x1080-350px.jpg)<br> 
+       ![contrôleurs de mouvement Windows Mixed Reality](images/winmr-ck-1080x1080-350px.jpg)<br> 
     :::column-end:::
 :::row-end:::
 
@@ -57,7 +57,7 @@ ms.locfileid: "98583668"
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/1nlcdDNOdm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Les contrôleurs de mouvement Windows Mixed Reality effectuent un suivi des mouvements précis et réactifs dans votre champ de vue à l’aide des capteurs du casque immersif. Il n’est pas nécessaire d’installer le matériel sur les murs de votre espace. Ces contrôleurs de mouvement offriront la même facilité de configuration et de portabilité que les casques immersifs immersifs de Windows Mixed Reality. Nos partenaires d’appareils envisagent de commercialiser et de vendre ces contrôleurs sur les étagères de la vente au détail.
+Windows Mixed Reality contrôleurs de mouvement offrent un suivi des mouvements précis et réactif dans votre champ de vue à l’aide des capteurs du casque immersif. Il n’est pas nécessaire d’installer le matériel sur les murs de votre espace. ces contrôleurs de mouvement offriront la même facilité de configuration et de portabilité que Windows Mixed Reality des casques immersifs. Nos partenaires d’appareils envisagent de commercialiser et de vendre ces contrôleurs sur les étagères de la vente au détail.
 
 ![Découverte de votre contrôleur](images/controllerimage-750px.png)<br>
 *Découverte de votre contrôleur*
@@ -69,28 +69,28 @@ Les contrôleurs de mouvement Windows Mixed Reality effectuent un suivi des mouv
 * Stick
 * Pavé tactile
 
-## <a name="setup"></a>Programme d’installation
+## <a name="setup"></a>Installation
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
 **Vous devez disposer des éléments suivants :**
 * Ensemble de deux contrôleurs de mouvement.
 * Quatre piles AA.
-* Un PC avec prise en charge de Bluetooth 4,0.
+* un PC avec prise en charge de Bluetooth 4,0.
 
-**Rechercher les mises à jour de Windows, Unity et Driver**
-* Consultez [installer les outils](../develop/install-the-tools.md) pour les versions préférées de Windows, Unity, et ainsi de suite, pour le développement de la réalité mixte.
+**rechercher les mises à jour de Windows, unity et driver**
+* consultez [installer les outils](../develop/install-the-tools.md) pour les versions préférées de Windows, unity, et ainsi de suite, pour le développement de la réalité mixte.
 * Veillez à disposer des [pilotes de contrôleur de mouvement et de casque](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)les plus récents.
 
 ### <a name="pairing-controllers"></a>Contrôleurs associés
 
-Les contrôleurs de mouvement peuvent être liés à un PC hôte à l’aide de paramètres Windows, comme tout autre appareil Bluetooth.
+les contrôleurs de mouvement peuvent être liés à un PC hôte à l’aide de paramètres de Windows comme n’importe quel autre appareil Bluetooth.
 
 1. Insérez deux piles AA à l’arrière du contrôleur. Laissez la couverture de la batterie désactivée pour le moment.
-2. Si vous utilisez une carte Bluetooth USB externe au lieu d’une radio Bluetooth intégrée, passez en revue les [meilleures pratiques relatives à Bluetooth](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) avant de continuer. Pour la configuration du bureau avec la radio intégrée, assurez-vous que l’antenne est connectée.
-3. Ouvrir les **Paramètres Windows**  ->  **appareils**  ->  **Ajouter Bluetooth ou autre périphérique**  ->  **Bluetooth** et supprimer toutes les instances antérieures de « pilote de mouvement – droite » et « contrôleur de mouvement – gauche ». Consultez également la catégorie autres périphériques au bas de la liste.
-4. Sélectionnez **Ajouter un périphérique Bluetooth ou un autre appareil** pour voir comment détecter des appareils Bluetooth.
-5. Appuyez sur le bouton Windows du contrôleur et maintenez-le enfoncé pour le mettre sous tension.
+2. si vous utilisez une carte Bluetooth USB externe au lieu d’une radio Bluetooth intégrée, passez en revue les [meilleures pratiques de Bluetooth](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) avant de continuer. Pour la configuration du bureau avec la radio intégrée, assurez-vous que l’antenne est connectée.
+3. ouvrez **Windows**  ->  **appareils** Paramètres  ->  **ajoutez des Bluetooth ou d’autres**  ->  **Bluetooth** d’appareil et supprimez toutes les instances antérieures de « motion controller – Right » et « device controller-Left ». Consultez également la catégorie autres périphériques au bas de la liste.
+4. sélectionnez **ajouter Bluetooth ou un autre appareil** pour voir comment découvrir Bluetooth appareils.
+5. appuyez sur le bouton Windows du contrôleur pour le mettre sous tension, puis relâchez-le.
 6. Appuyez sur le bouton d’appariement (onglet dans le compartiment batterie) et maintenez-le enfoncé jusqu’à ce que les LED commencent à clignoter.
 
 :::row:::
@@ -104,7 +104,7 @@ Les contrôleurs de mouvement peuvent être liés à un PC hôte à l’aide de 
     :::column-end:::
 :::row-end:::
    
-8. Vous verrez que le contrôleur apparaît dans les paramètres Bluetooth sous la **catégorie « souris, clavier & stylet »** comme **connecté**. À ce stade, vous pouvez obtenir une mise à jour du microprogramme, voir la [section suivante](motion-controllers.md#updating-controller-firmware).
+8. vous verrez que le contrôleur apparaît dans les paramètres de Bluetooth sous la **catégorie « souris, clavier, & stylet »** comme **connecté**. À ce stade, vous pouvez obtenir une mise à jour du microprogramme, voir la [section suivante](motion-controllers.md#updating-controller-firmware).
 9. Reconnectez la couverture de la batterie.
 10. Répétez les étapes 1-9 pour le deuxième contrôleur.
 
@@ -132,7 +132,7 @@ Si les contrôleurs sont désactivés après l’appariement, leur état s’aff
     :::column:::
 * Une fois la mise à jour du microprogramme terminée, les contrôleurs redémarrent et se reconnectent. Les deux contrôleurs doivent être connectés maintenant. <br>
         <br>
-        *Image : contrôleurs connectés dans les paramètres Bluetooth*
+        *Image : contrôleurs connectés dans les paramètres de Bluetooth*
     :::column-end:::
         :::column:::
        ![Contrôleurs connectés](images/cyk-connected-300px.jpg)<br>
@@ -156,22 +156,22 @@ Les applications qui prennent en charge le pointage avec les contrôleurs de mou
 
 Lorsque vous utilisez des contrôleurs de mouvement pour pointer et valider, vos utilisateurs utilisent le contrôleur pour cibler et interagir en tirant son déclencheur. Les utilisateurs qui extraient le déclencheur peuvent finir par faire en sorte que le contrôleur soit plus élevé à la fin de l’extraction du déclencheur que prévu.
 
-Pour gérer ce type de réenroulement qui peut se produire lorsque les utilisateurs extraient le déclencheur, votre application peut aligner son cible sur Ray lorsque la valeur de l’axe analogique du déclencheur dépasse 0,0. Vous pouvez ensuite prendre une mesure à l’aide du ciblage de rayon de quelques frames plus tard, une fois que la valeur du déclencheur atteint 1,0, tant que la dernière pression se produit dans une fenêtre de temps abrégée. Lors de l’utilisation du [mouvement composite composite](gaze-and-commit.md#composite-gestures)de niveau supérieur, Windows gère cette capture et ce délai d’expiration pour le ciblage.
+Pour gérer ce type de réenroulement qui peut se produire lorsque les utilisateurs extraient le déclencheur, votre application peut aligner son cible sur Ray lorsque la valeur de l’axe analogique du déclencheur dépasse 0,0. Vous pouvez ensuite prendre une mesure à l’aide du ciblage de rayon de quelques frames plus tard, une fois que la valeur du déclencheur atteint 1,0, tant que la dernière pression se produit dans une fenêtre de temps abrégée. lors de l’utilisation du [mouvement composite](gaze-and-commit.md#composite-gestures)de niveau supérieur, Windows gérera la capture de rayon et le délai d’attente de votre ciblage.
 
 ## <a name="grip-pose-vs-pointing-pose"></a>Poignée de pose et pose de pointage
 
-Windows Mixed Reality prend en charge les contrôleurs de mouvement dans différents facteurs de forme, la conception de chaque contrôleur se distinguant dans sa relation entre la position de l’utilisateur et la direction « avant » naturelle que les applications doivent utiliser pour pointer lors du rendu du contrôleur.
+Windows Mixed Reality prend en charge les contrôleurs de mouvement dans différents facteurs de forme, la conception de chaque contrôleur diffère dans sa relation entre la position de l’utilisateur et la direction « avant » naturelle que les applications doivent utiliser pour pointer lors du rendu du contrôleur.
 
 Pour mieux représenter ces contrôleurs, il existe deux types de poses que vous pouvez examiner pour chaque source d’interaction. la **poignée pose** et le **pointeur se posent**.
 
 ### <a name="grip-pose"></a>Poignée de pose
 
-La **poignée** représente l’emplacement de la paume d’une main détectée par un HoloLens ou la poche qui détient un contrôleur de mouvement.
+la **poignée** représente l’emplacement de la paume d’une main détectée par un HoloLens ou la paume contenant un contrôleur de mouvement.
 
-Sur les casques immersifs, le pose de la poignée est utilisé pour restituer **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**, tel qu’un épée ou un pistolet. La poignée est également utilisée lors de la visualisation d’un contrôleur de mouvement, car le **modèle de rendu** fourni par Windows pour un contrôleur de mouvement utilise la poignée comme son origine et le centre de rotation.
+Sur les casques immersifs, le pose de la poignée est utilisé pour restituer **la main de l’utilisateur** ou **un objet détenu par l’utilisateur**, tel qu’un épée ou un pistolet. la poignée est également utilisée lors de la visualisation d’un contrôleur de mouvement, car le **modèle de rendu** fourni par Windows pour un contrôleur de mouvement utilise la poignée comme son origine et le centre de rotation.
 
 La poignée est définie spécifiquement comme suit :
-* Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée. Sur le contrôleur de mouvement Windows Mixed Reality, cette position s’aligne généralement avec le bouton de saisie.
+* Position de la **poignée**: le centre de la poche quand il maintient le contrôleur naturellement, ajusté à gauche ou à droite pour centrer la position au sein de la poignée. sur le contrôleur de mouvement Windows Mixed Reality, cette position s’aligne généralement avec le bouton de saisie.
 * **Axe droit de l’orientation de la poignée**: lorsque vous ouvrez complètement votre main pour former une pose plate à cinq doigts, le rayon normal à votre paume (en avant à partir de la poche de gauche, en arrière depuis la paume de droite)
 * **Axe avant de l’orientation de la poignée**: quand vous fermez partiellement votre main (comme si vous détenir le contrôleur), le rayon qui pointe vers l’avant dans le tube formé par vos doigts non thumbs.
 * **Axe vers le haut de l’orientation**: l’axe vers le haut, impliqué dans les définitions Right et Forward.
@@ -184,9 +184,9 @@ Le pointeur fourni par le système est le mieux utilisé pour raycast lorsque vo
 
 ## <a name="controller-tracking-state"></a>État du suivi du contrôleur
 
-À l’instar des casques, le contrôleur de mouvement Windows Mixed Reality ne nécessite pas de configuration de capteurs de suivi externe. Au lieu de cela, les contrôleurs sont suivis par des capteurs dans le casque lui-même.
+à l’instar des casques, le contrôleur de mouvement Windows Mixed Reality ne nécessite aucune configuration de capteurs de suivi externe. Au lieu de cela, les contrôleurs sont suivis par des capteurs dans le casque lui-même.
 
-Si l’utilisateur déplace les contrôleurs du champ de vue du casque, dans la plupart des cas, Windows continue à déduire les positions des contrôleurs et à les fournir à l’application. Lorsque le contrôleur a perdu le suivi visuel suffisamment longtemps, les positions du contrôleur sont découpées à des positions de précision approximatives.
+si l’utilisateur déplace les contrôleurs en dehors du champ de vue du casque, dans la plupart des cas Windows continue à déduire les positions des contrôleurs et à les fournir à l’application. Lorsque le contrôleur a perdu le suivi visuel suffisamment longtemps, les positions du contrôleur sont découpées à des positions de précision approximatives.
 
 À ce stade, le système va verrouiller le contrôleur à l’utilisateur, en effectuant le suivi de la position de l’utilisateur lors de son déplacement, tout en exposant l’orientation réelle du contrôleur à l’aide de ses capteurs d’orientation internes. De nombreuses applications qui utilisent des contrôleurs pour pointer et activer des éléments d’interface utilisateur peuvent fonctionner normalement avec une précision approximative sans que l’utilisateur ne remarque.
 
@@ -227,7 +227,7 @@ Les interactions de base entre les contrôleurs mains et Motion sont **Select**,
 * **Saisissez** comment les utilisateurs peuvent directement agir sur les objets à leur disposition pour les manipuler. Avec les contrôleurs de mouvement, vous pouvez faire une action en appuyant sur votre avant-première. Un contrôleur de mouvement peut détecter une compréhension à l’aide d’un bouton de manipulation, d’un déclencheur Palm ou d’un autre capteur.
 * Le **pavé tactile** permet à l’utilisateur d’ajuster une action en deux dimensions le long de la surface du pavé tactile d’un contrôleur de mouvement, en validant l’action en cliquant sur le bouton du pavé tactile. Les pavés tactiles fournissent un état appuyé, un État touché et des coordonnées XY normalisées. Plage X et Y comprise entre-1 et 1 dans la plage du pavé tactile circulaire, avec un centre à (0,0). Pour X,-1 est sur la gauche et 1 est sur la droite. Pour Y,-1 est en bas et 1 est en haut.
 * Le **stick analogique** permet à l’utilisateur d’ajuster une action en deux dimensions en déplaçant le stick analogique d’un contrôleur de mouvement dans sa plage circulaire, en validant l’action en cliquant sur le stick analogique. Thumbsticks fournissent également un état appuyé et des coordonnées XY normalisées. Plage X et Y comprise entre-1 et 1 dans la plage du pavé tactile circulaire, avec un centre à (0,0). Pour X,-1 est sur la gauche et 1 est sur la droite. Pour Y,-1 est en bas et 1 est en haut.
-* La **page d’accueil** est une action système spéciale qui est utilisée pour revenir au menu Démarrer. Cela revient à appuyer sur la touche Windows d’un clavier ou le bouton Xbox sur un contrôleur Xbox. Vous pouvez utiliser le bouton Windows d’un contrôleur de mouvement pour accéder à la page d’hébergement. Notez que vous pouvez toujours revenir au début en disant « Hey Cortana, Go Accueil ». Les applications ne peuvent pas réagir spécifiquement aux actions d’hébergement, car elles sont gérées par le système.
+* La **page d’accueil** est une action système spéciale qui est utilisée pour revenir au menu Démarrer. cela revient à appuyer sur la touche Windows sur un clavier ou sur le bouton xbox sur un contrôleur xbox. vous pouvez accéder à la page d’hébergement en appuyant sur le bouton Windows sur un contrôleur de mouvement. notez que vous pouvez toujours revenir au début en disant « bonjour Cortana, accéder à la page d’accueil ». Les applications ne peuvent pas réagir spécifiquement aux actions d’hébergement, car elles sont gérées par le système.
 
 ## <a name="composite-gestures-high-level-spatial-input"></a>Gestes composites : entrée spatiale de haut niveau
 
@@ -235,13 +235,13 @@ Les [gestes](gaze-and-commit.md#composite-gestures) à la main et les contrôleu
 
 ## <a name="rendering-the-motion-controller-model"></a>Rendu du modèle de contrôleur de mouvement
 
-**modèles de contrôleur 3D** Windows met à la disposition des applications un modèle pouvant être rendu de chaque contrôleur de mouvement actuellement actif dans le système. En faisant en sorte que votre application charge et articule dynamiquement ces modèles de contrôleur fournis par le système lors de l’exécution, vous pouvez vous assurer que votre application est compatible avec les futures conceptions de contrôleur.
+les **modèles de contrôleur 3d** Windows met à la disposition des applications un modèle pouvant être rendu de chaque contrôleur de mouvement actuellement actif dans le système. En faisant en sorte que votre application charge et articule dynamiquement ces modèles de contrôleur fournis par le système lors de l’exécution, vous pouvez vous assurer que votre application est compatible avec les futures conceptions de contrôleur.
 
 Nous vous recommandons d’effectuer le rendu de tous les modèles renderables au niveau de la **poignée** du contrôleur, car l’origine du modèle est alignée sur ce point dans le monde physique. Si vous affichez des modèles de contrôleur, vous souhaiterez peut-être raycast dans votre scène à partir du point de vue du **pointeur**, qui représente le rayon le long duquel les utilisateurs s’attendent naturellement à POINTER, étant donné la conception physique du contrôleur.
 
 Pour plus d’informations sur la façon de charger dynamiquement des modèles de contrôleur dans Unity, consultez la section [rendu du modèle de contrôleur de mouvement dans Unity](../develop/unity/gestures-in-unity.md#rendering-the-motion-controller-model-in-unity) .
 
-**art de ligne de contrôleur 2D** Bien que nous vous recommandons de joindre des commandes et des conseils de contrôleur dans l’application aux modèles de contrôleur dans l’application eux-mêmes, certains développeurs peuvent souhaiter utiliser des représentations d’art de ligne 2D des contrôleurs de mouvement dans un « didacticiel » plat ou une interface utilisateur « How-to ». Pour ces développeurs, nous avons créé des fichiers d’art de ligne de contrôleur de mouvement. png disponibles dans le noir et le blanc ci-dessous (cliquez avec le bouton droit pour enregistrer).
+**art de ligne de contrôleur 2D** Bien que nous vous recommandons de joindre des commandes et des conseils de contrôleur dans l’application aux modèles de contrôleur dans l’application eux-mêmes, certains développeurs peuvent souhaiter utiliser des représentations d’art de ligne 2D des contrôleurs de mouvement dans un « didacticiel » plat ou une interface utilisateur « How-to ». Pour ces développeurs, nous avons rendu .png fichiers d’art de ligne du contrôleur de mouvement disponibles dans le noir et le blanc ci-dessous (cliquez avec le bouton droit pour enregistrer).
 
 ![Aperçu des images de ligne des contrôleurs de mouvement](images/motioncontrollers-black-preview-300px.png)
 
@@ -249,7 +249,7 @@ Pour plus d’informations sur la façon de charger dynamiquement des modèles d
  
 [Image de ligne des contrôleurs de mouvement pleine résolution dans' ' 'noir' ' '](images/motioncontrollers-black.png)
 
-## <a name="faq"></a>Questions fréquentes (FAQ)
+## <a name="faq"></a>Forum aux questions
 
 ### <a name="can-i-pair-motion-controllers-to-multiple-pcs"></a>Puis-je coupler des contrôleurs de mouvement à plusieurs PC ?
 
@@ -257,15 +257,15 @@ Les contrôleurs de mouvement prennent en charge le jumelage avec un seul PC. Su
 
 ### <a name="how-do-i-update-motion-controller-firmware"></a>Comment faire mettre à jour le microprogramme du contrôleur de mouvement ?
 
-Le microprogramme du contrôleur de mouvement fait partie du pilote du casque et sera mis à jour automatiquement à la connexion, si nécessaire. Les mises à jour de microprogramme prennent généralement 1-2 minutes en fonction de la radio Bluetooth et de la qualité de liaison. Dans de rares cas, les mises à jour du microprogramme du contrôleur peuvent prendre jusqu’à 10 minutes, ce qui peut indiquer une connectivité Bluetooth médiocre ou des interférences radio. Pour résoudre les problèmes de connectivité, consultez [meilleures pratiques pour Bluetooth dans le Guide du passionné](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) . Après une mise à jour du microprogramme, les contrôleurs redémarrent et se reconnectent au PC hôte (vous remarquerez peut-être que les LED sont brillantes pour le suivi). Si une mise à jour du microprogramme est interrompue (par exemple, si les contrôleurs perdent de l’énergie), elle sera tentée à nouveau lors de la prochaine mise sous tension des contrôleurs.
+Le microprogramme du contrôleur de mouvement fait partie du pilote du casque et sera mis à jour automatiquement à la connexion, si nécessaire. les mises à jour de microprogramme prennent généralement 1-2 minutes en fonction de la qualité de la radio et de la liaison de Bluetooth. dans de rares cas, les mises à jour du microprogramme du contrôleur peuvent prendre jusqu’à 10 minutes, ce qui peut indiquer une mauvaise connectivité Bluetooth ou des interférences radio. pour résoudre les problèmes de connectivité [, consultez Bluetooth meilleures pratiques dans le Guide du passionné](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) . Après une mise à jour du microprogramme, les contrôleurs redémarrent et se reconnectent au PC hôte (vous remarquerez peut-être que les LED sont brillantes pour le suivi). Si une mise à jour du microprogramme est interrompue (par exemple, si les contrôleurs perdent de l’énergie), elle sera tentée à nouveau lors de la prochaine mise sous tension des contrôleurs.
 
 ### <a name="how-i-can-check-battery-level"></a>Comment vérifier le niveau de la batterie ?
 
-Dans la [page d’hébergement de la réalité mixte Windows](../discover/navigating-the-windows-mixed-reality-home.md), vous pouvez transformer votre contrôleur pour voir son niveau de batterie du côté opposé du modèle virtuel. Il n’y a pas d’indicateur de niveau de batterie physique.
+dans la [Windows Mixed Reality page d’hébergement](../discover/navigating-the-windows-mixed-reality-home.md), vous pouvez transformer votre contrôleur pour voir son niveau de batterie du côté inverse du modèle virtuel. Il n’y a pas d’indicateur de niveau de batterie physique.
 
 ### <a name="can-you-use-these-controllers-without-a-headset-just-for-the-joysticktriggeretc-input"></a>Pouvez-vous utiliser ces contrôleurs sans casque ? Uniquement pour la manette de jeu/déclencheur/etc.
 
-Pas pour les applications Windows universelles.
+pas pour les Applications de Windows universelles.
 
 ## <a name="troubleshooting"></a>Dépannage
 
@@ -280,6 +280,6 @@ Consultez [résolution des problèmes du contrôleur de mouvement](/windows/mixe
 * [Contrôleurs de mouvement dans Unity](../develop/unity/motion-controllers-in-unity.md)
 * [Mains et contrôleurs de mouvement dans DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Mouvements](gaze-and-commit.md#composite-gestures)
-* [Guide de passionnés : votre page d’hébergement Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
-* [Guide de passionnés : utilisation de jeux & des applications dans Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
+* [Guide de passionnés : votre Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
+* [Guide de passionnés : utilisation de jeux & applications dans Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
 * [Fonctionnement du suivi intérieur-extérieur](/windows/mixed-reality/enthusiast-guide/tracking-system)

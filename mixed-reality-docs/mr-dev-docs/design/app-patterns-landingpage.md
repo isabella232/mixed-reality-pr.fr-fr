@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
-keywords: Conception d’expérience utilisateur, expérience utilisateur mixte de réalité, expérience utilisateur, modèles d’application, contrôles, style, HoloLens, interaction, interaction spatiale, interface utilisateur spatiale, éléments UX, comportements, blocs de construction, typographie, couleur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: conception d’expérience utilisateur, expérience utilisateur mixte de réalité, expérience utilisateur, modèles d’application, contrôles, style, HoloLens, interaction, interaction spatiale, interface utilisateur spatiale, éléments UX, comportements, blocs de construction, typographie, couleur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: d6f5193c7863f44f6f8b55f874f5f4339396b6c7d1dcef8ae9f8839cb2b8c26e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225850"
 ---
 # <a name="ux-elements-overview"></a>Vue d’ensemble des éléments UX
 
@@ -51,7 +51,7 @@ Découvrez les modules d’interface utilisateur et les interactions spatiales c
        [ ![ Main](images/UX_Hero_HandRay.jpg)](point-and-commit.md) **[](point-and-commit.md) Ray**
     :::column-end:::
     :::column:::
-       Bouton de [ ![ bouton](images/UX_Hero_Button.jpg)](button.md) **[](button.md)**
+       [![Bouton](images/UX_Hero_Button.jpg)](button.md) **[Bouton](button.md)**
     :::column-end:::
 :::row-end:::
 
@@ -87,16 +87,16 @@ Découvrez les modules d’interface utilisateur et les interactions spatiales c
        [ ![](images/UX_Hero_Keyboard.jpg)](keyboard.md) **[Clavier](keyboard.md) clavier**
     :::column-end:::
     :::column:::
-       Info-bulle info [ ![ -bulle](images/UX_Hero_Tooltip.jpg)](tooltip.md) **[](tooltip.md)**
+       [![Info-bulle](images/UX_Hero_Tooltip.jpg)](tooltip.md) **[Info-bulle](tooltip.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Ardoise](images/UX_Hero_Slate.jpg)](slate.md) **[](slate.md)**
+       [![Tablette](images/UX_Hero_Slate.jpg)](slate.md) **[Tablette](slate.md)**
     :::column-end:::
     :::column:::
-       [ ![](images/UX_Hero_Slider.jpg)](slider.md) **[Curseur](slider.md) Slider**
+       [![Curseur](images/UX_Hero_Slider.jpg)](slider.md) **[Curseur](slider.md)**
     :::column-end:::
     :::column:::
         Nuanceur de [ ![ nuanceur](images/UX_Hero_StandardShader.jpg)](shader.md) **[](shader.md)**
@@ -105,7 +105,7 @@ Découvrez les modules d’interface utilisateur et les interactions spatiales c
 
 :::row:::
     :::column:::
-       [ ![ Boîte de](images/MRTK_UX_Dialog.jpg)](dialog-ui.md) dialogue **[](dialog-ui.md)**
+       [![Boîte de dialogue](images/MRTK_UX_Dialog.jpg)](dialog-ui.md) **[Boîte de dialogue](dialog-ui.md)**
     :::column-end:::
     :::column:::
        [ ![ Autocar mains](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md) **[](hand-coach.md)**

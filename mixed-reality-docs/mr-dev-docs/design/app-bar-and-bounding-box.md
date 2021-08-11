@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
-keywords: Windows Mixed Reality, barre d’application, cadre englobant, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: 5c437b303ec5462179a1ddf43687aa1653419b08
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: Windows Mixed Reality, barre de l’application, cadre englobant, casque de réalité mixte, casque Windows Mixed reality, casque de réalité virtuelle, HoloLens, MRTK, réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: d7cacdcffeb552595e4ffd5ea5d1a734efb0451e03c5b6d5d39e5ea8caf3bd94
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110093"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198707"
 ---
 # <a name="bounding-box-and-app-bar"></a>Rectangle englobant et barre de l’application
 ![La délimitation est l’interface standard pour la manipulation d’objets en réalité mixte.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -19,7 +19,7 @@ ms.locfileid: "112110093"
 
 ## <a name="what-is-the-bounding-box"></a>Qu’est-ce que le cadre englobant ?
 
-La délimitation est l’interface standard pour la manipulation d’objets en réalité mixte. Cette fonctionnalité fournit à l’utilisateur un signal visuel indiquant que l’objet est actuellement réglable. Sur HoloLens 2, le cadre englobant fonctionne avec la manipulation directe de la main et répond à la proximité de l’utilisateur finger’s. Il affiche des commentaires visuels pour aider l’utilisateur à percevoir la distance par rapport à l’objet.
+La délimitation est l’interface standard pour la manipulation d’objets en réalité mixte. Cette fonctionnalité fournit à l’utilisateur un signal visuel indiquant que l’objet est actuellement réglable. sur HoloLens 2, le cadre englobant fonctionne avec la manipulation directe de la main et répond à la proximité de l’utilisateur finger’s. Il affiche des commentaires visuels pour aider l’utilisateur à percevoir la distance par rapport à l’objet.
 
 :::row:::
     :::column:::
@@ -45,7 +45,7 @@ La délimitation est l’interface standard pour la manipulation d’objets en r
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens point de vue de la rotation d’un objet par le biais du cadre englobant](images/HoloLens2_BoundingBox_Rotate.gif)<br>
+       ![HoloLens point de vue de la rotation d’un objet à l’aide du cadre englobant](images/HoloLens2_BoundingBox_Rotate.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -53,8 +53,8 @@ La délimitation est l’interface standard pour la manipulation d’objets en r
 
 :::row:::
     :::column:::
-        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>Commentaires visuels sur la proximité de HoloLens 2<br>
-        Sur HoloLens 2, il existe un indice visuel supplémentaire qui peut aider la perception de l’utilisateur en profondeur. Un anneau proche de son doigt s’affiche et s’adapte à mesure que l’approche est plus proche de l’objet. L’anneau se convergera en un point lorsque l’état appuyé est atteint. Cet accord visuel aide l’utilisateur à comprendre à quel moment il s’agit de l’objet.<br>
+        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>Commentaires visuels à proximité sur HoloLens 2<br>
+        sur HoloLens 2, il existe un indice visuel supplémentaire qui peut aider la perception de l’utilisateur en profondeur. Un anneau proche de son doigt s’affiche et s’adapte à mesure que l’approche est plus proche de l’objet. L’anneau se convergera en un point lorsque l’état appuyé est atteint. Cet accord visuel aide l’utilisateur à comprendre à quel moment il s’agit de l’objet.<br>
         <br>
         *Boucle vidéo : exemple de retour visuel basé sur la proximité d’un cadre englobant*
     :::column-end:::
@@ -66,7 +66,7 @@ La délimitation est l’interface standard pour la manipulation d’objets en r
 
 <br>
 
-**Pour le développement d’applications Unity, consultez [cadre englobant dans le Toolkit de réalité mixte-Unity.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)**
+**pour le développement d’applications unity, consultez cadre [englobant dans la réalité mixte Shared Computer Toolkit-unity.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)**
 
 <br>
 
@@ -92,7 +92,7 @@ La barre de l’application est un menu de niveau objet, qui contient une série
 <br>
 
 
-## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Cadre englobant dans MRTK (ensemble d’outils de réalité mixte) pour Unity
+## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>cadre englobant dans MRTK (Shared Computer Toolkit de la réalité mixte) pour unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit des scripts et des prefabs pour le cadre englobant et la barre de l’application. Vous pouvez ajouter un cadre englobant en affectant le script BoundingBox. cs à n’importe quel objet.
 
 * [MRTK-zone englobante](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)

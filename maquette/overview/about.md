@@ -1,19 +1,19 @@
 ---
-title: À propos de maquette
+title: À propos de Maquette
 description: Présentation de maquette et de ses fonctionnalités.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Windows Mixed Reality, maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
-ms.openlocfilehash: fbc2aee7472a26e508937fa1dedfdac08fadfa10
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, commentaires, Hub de commentaires, bogues
+ms.openlocfilehash: 81c09bf22ea531a76156c9264e127593b6302ad5d0bcb248de9518bfb647717b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935532"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197886"
 ---
-# <a name="about-maquette"></a>À propos de maquette
+# <a name="about-maquette"></a>À propos de Maquette
 
 <!-- TODO(Harrison): Need consolidated logo with text -->
 ![Présentation du logo ](../images/MaquetteIcon.png) MaquetteScript
@@ -55,7 +55,7 @@ vidéo 60 second’ish
 <!-- TODO(Harrison): Consider breaking this out into a Maquette journey doc or section as applicable. -->
 * [Prise en main](installation.md)
 * [Exemples et exemples d’applications](../samples/overview.md)
-* [Support](../resources/support.md)
+* [Support technique](../resources/support.md)
 
 <!-- TODO(Harrison): Need to find out why docs feedback footer isn't appearing. -->
 ## <a name="send-us-feedback"></a>Envoyez-nous des commentaires

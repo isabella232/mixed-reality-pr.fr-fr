@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, sécurité, authentification, serveur à client
-ms.openlocfilehash: ea00565580fdbc850a11d103520351be53cb37b5
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, sécurité, authentification, serveur à client
+ms.openlocfilehash: fa23994ff4ab49d313fe24a67974bf4d90454e511658e0663c61d7b129b10f9e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810119"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223579"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Activation de la sécurité de connexion pour la communication à distance holographique
 
@@ -28,7 +28,7 @@ Cette page vous donne une vue d’ensemble de la sécurité réseau pour la comm
 
 La communication à distance holographique échange des informations sur un réseau. Si aucune mesure de sécurité n’est en place, les adversaires sur le même réseau peuvent compromettre l’intégrité de la communication ou accéder aux informations confidentielles.
 
-La sécurité est désactivée pour les exemples d’applications et le lecteur de communication à distance holographique dans le Windows Store. Cela rend les exemples plus faciles à comprendre. Il vous aide également à commencer plus rapidement avec le développement.
+la sécurité est désactivée pour les exemples d’applications et le lecteur de communication à distance holographique dans le magasin de Windows. Cela rend les exemples plus faciles à comprendre. Il vous aide également à commencer plus rapidement avec le développement.
 
 Pour les tests de champ ou la production, nous vous recommandons vivement d’activer la sécurité dans votre solution de communication à distance holographique.
 
@@ -39,7 +39,7 @@ La sécurité dans la communication à distance holographique, lorsqu’elle est
 * **Intégrité :** Player et Remote peuvent détecter toute modification en transit de leur communication
 
 >[!IMPORTANT]
->Pour pouvoir utiliser les fonctionnalités de sécurité, vous devez implémenter à la fois un [lecteur personnalisé](holographic-remoting-create-player.md) et une application distante personnalisée à l’aide des API [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) ou [OpenXR](holographic-remoting-create-remote-openxr.md) .
+>pour pouvoir utiliser les fonctionnalités de sécurité, vous devez implémenter à la fois un [lecteur personnalisé](holographic-remoting-create-player.md) et une application distante personnalisée à l’aide des api [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) ou [OpenXR](holographic-remoting-create-remote-openxr.md) .
 
 >[!NOTE]
 > À partir de la version [2.4.0](holographic-remoting-version-history.md#v2.4.0) , vous pouvez créer des applications distantes à l’aide de l' [API OpenXR](../native/openxr.md) . Vous trouverez [ci-dessous](#secure-connection-using-the-openxr-api)une vue d’ensemble de l’établissement d’une connexion sécurisée dans un environnement OpenXR.
@@ -97,7 +97,7 @@ Un secret partagé ne sera pas suffisant pour couvrir ce cas d’utilisation. Au
 * Le client envoie ce jeton au serveur via la communication à distance holographique
 * Le serveur valide le jeton du client par rapport au fournisseur d’identité
 
-La [plateforme Microsoft Identity](/azure/active-directory/develop/)est un exemple de fournisseur d’identité.
+le [Plateforme d’identités Microsoft](/azure/active-directory/develop/)est un exemple de fournisseur d’identité.
 
 Comme dans le cas d’usage précédent, assurez-vous que ces jetons ne sont pas envoyés via des canaux non sécurisés ou qu’ils sont exposés autrement.
 
@@ -118,7 +118,7 @@ Toutes les interfaces ont une fonction qui vous demande d’agir, qui reçoit un
 >L’implémentation d’interfaces WinRT peut facilement être effectuée à l’aide de C++/WinRT. Le chapitre [créer des API avec C++/WinRT](/windows/uwp/cpp-and-winrt-apis/author-apis) décrit cela en détail.
 
 >[!IMPORTANT]
->L' `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` intérieur du package NuGet contient une documentation détaillée sur l’API liée aux connexions sécurisées.
+>l' `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` intérieur du package NuGet contient une documentation détaillée sur l’API liée aux connexions sécurisées.
 
 ### <a name="implementing-a-certificate-provider"></a>Implémentation d’un fournisseur de certificats
 
@@ -156,7 +156,7 @@ Les validateurs de certificats reçoivent la chaîne de certificats envoyée par
 
 Pour valider des certificats, vous pouvez utiliser la logique de validation du système sous-jacent. Cette validation du système peut soit prendre en charge votre propre logique de validation, soit la remplacer entièrement. Si vous ne transmettez pas votre propre validateur de certificat lors de la demande d’une connexion sécurisée, la validation du système sera automatiquement utilisée.
 
-Sur Windows, la validation système recherche les éléments suivants :
+sur Windows, la validation du système recherche les éléments suivants :
 
 * Intégrité de la chaîne de certificats : les certificats forment une chaîne cohérente qui se termine au niveau d’un certificat racine approuvé
 * Validité du certificat : le certificat du serveur est dans son intervalle de validité et est émis pour l’authentification du serveur
@@ -189,7 +189,7 @@ Ces rappels peuvent être fournis au runtime OpenXR de communication à distance
 Cette API est similaire à l’API basée sur IDL décrite dans implémentation de la sécurité de l' [accès à distance holographique](#implementing-holographic-remoting-security). Toutefois, au lieu d’implémenter des interfaces, vous êtes censé fournir des implémentations de rappel. Vous trouverez un exemple détaillé dans l’exemple d' [application OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 ## <a name="see-also"></a>Voir aussi
-* [Écriture d’une application distante holographique à distance à l’aide des API Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
+* [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)

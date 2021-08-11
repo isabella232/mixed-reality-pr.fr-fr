@@ -5,16 +5,16 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, HandMenu,
-ms.openlocfilehash: 9bb0276c048912b4f463dd93d3303c9a3af8fe29
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: ecf05b687c52dab68302b9b66b3890aca31b5635b803084abd6845f31de974e0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226468"
 ---
 # <a name="hand-menu"></a>Menu de la main
 
-![Exemple d’expérience utilisateur du menu manuel](../images/solver/MRTK_UX_HandMenu.png)
+![Exemple d’expérience utilisateur du menu Main](../images/solver/MRTK_UX_HandMenu.png)
 
 Les menus manuels permettent aux utilisateurs d’afficher rapidement une interface utilisateur attachée à la main pour les fonctions fréquemment utilisées. Pour empêcher toute fausse activation lors de l’interaction avec d’autres objets, le menu manuel fournit des options telles que « exiger une main » et « utiliser l’activation en regard ». Il est recommandé d’utiliser ces options pour empêcher l’activation indésirable.
 
@@ -48,7 +48,7 @@ Cet exemple est similaire à HandMenu_Large_WorldLock_On_GrabAndPull. La seule d
 
 ## <a name="scripts"></a>scripts ;
 
-Le [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) comportement fournit un solveur qui limite l’objet suivi à une région sécurisée pour le contenu à la main (par exemple, l’interface utilisateur de la main, les menus, etc.). Coffre régions sont considérées comme des zones qui ne se croisent pas avec la main. Une classe dérivée de [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) appelée [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) est également incluse pour illustrer un comportement courant de l’activation de l’objet suivi du solveur lorsque le Palm est orienté vers l’utilisateur.
+Le comportement [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) fournit un résolveur qui limite l’objet suivi à une région sécurisée pour le contenu contraint à la main (par exemple, l’interface utilisateur manuelle, les menus, etc.). Les régions sécurisées sont considérées comme des zones qui ne se croisent pas avec la main. Une classe dérivée de [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) appelée [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) est également incluse pour illustrer un comportement courant de l’activation de l’objet suivi du résolveur lorsque la paume est orientée vers l’utilisateur.
 
 Pour obtenir une documentation supplémentaire, consultez les conseils d’outils disponibles pour chaque [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) propriété. Certaines propriétés sont définies plus en détail ci-dessous.
 

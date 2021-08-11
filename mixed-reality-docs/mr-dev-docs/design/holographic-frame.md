@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
-keywords: HoloLens, Windows Mixed Reality, cadre holographique, champ de vision, angle de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, interactions, navigation, menu
-ms.openlocfilehash: 5edab22751b9f2196f02a500279c4de385b57b5d
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+keywords: HoloLens, Windows Mixed Reality, cadre holographique, champ de vision, angle de la réalité mixte, casque de la réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de la réalité mixte, interactions, navigation, menu
+ms.openlocfilehash: be24f2b583541e6ed0adff25b3d8edd6c3fe5285aea93d0a4d6df8ee61e5c070
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226377"
 ---
 # <a name="holographic-frame"></a>Image holographique
 
@@ -61,15 +61,15 @@ Vous pouvez également placer des éléments d’interface directement sur le co
 
 ### <a name="gaze-and-gaze-targeting"></a>Cible du regard et du regard
 
-Le cadre holographique présente un outil permettant au développeur de déclencher des interactions et de déterminer où se trouve l’attention d’un utilisateur. Le point de [regard](gaze-and-commit.md) est l’une des [interactions clés sur HoloLens](interaction-fundamentals.md), où le point de regard peut être couplé à des [gestes](gaze-and-commit.md#composite-gestures) (par exemple, une pression aérienne) ou une [voix](voice-input.md) (permettant des interactions plus courtes et plus naturelles). Ainsi, le frame holographique fait à la fois un espace pour observer le contenu numérique et interagir avec lui. Si l’expérience nécessite l’interaction avec plusieurs objets autour de l’espace de l’utilisateur (par exemple, la sélection de plusieurs objets autour de l’espace de l’utilisateur avec le point de vue + geste), envisagez de placer ces objets dans l’affichage de l’utilisateur ou de limiter le nombre de mouvements de tête nécessaires pour promouvoir le confort de l' [utilisateur](comfort.md).
+Le cadre holographique présente un outil permettant au développeur de déclencher des interactions et de déterminer où se trouve l’attention d’un utilisateur. le point de [regard](gaze-and-commit.md) est l’une des [interactions clés sur HoloLens](interaction-fundamentals.md), où le point de regard peut être couplé à des [gestes](gaze-and-commit.md#composite-gestures) (par exemple, une pression aérienne) ou une [voix](voice-input.md) (permettant des interactions plus courtes et plus naturelles). Ainsi, le frame holographique fait à la fois un espace pour observer le contenu numérique et interagir avec lui. Si l’expérience nécessite l’interaction avec plusieurs objets autour de l’espace de l’utilisateur (par exemple, la sélection de plusieurs objets autour de l’espace de l’utilisateur avec le point de vue + geste), envisagez de placer ces objets dans l’affichage de l’utilisateur ou de limiter le nombre de mouvements de tête nécessaires pour promouvoir le confort de l' [utilisateur](comfort.md).
 
 Vous pouvez également utiliser le point de regard pour suivre l’attention des utilisateurs via une expérience et voir quels objets ou parties de la scène l’utilisateur a payé le plus d’attention. Cela peut être particulièrement utile pour déboguer une expérience, permettant à des outils analytiques comme cartes thermiques de voir où les utilisateurs passent le plus de temps ou qui manquent certains objets ou interactions. Le suivi du regard peut également fournir un outil puissant pour les animateurs dans les expériences (Voir l’exemple [de cuisine de Lowe](holographic-frame.md#lowes-kitchen) ).
 
-Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration **conception d’hologrammes-TETE Tracking and Eye Tracking (** en anglais) ci-dessous :
+si vous souhaitez voir les concepts de conception des suivis des yeux et des yeux en action, consultez notre démonstration sur la Hologrammes conception de la vidéo de suivi de l’en- **tête et de suivi oculaire** ci-dessous :
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
+*Cette vidéo a été extraite de l’application HoloLens 2 « Conception d’hologrammes ». Téléchargez-la et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 <br>
 
@@ -79,7 +79,7 @@ Si vous souhaitez voir les concepts de conception des suivis des yeux et des yeu
 
 L’utilisation correcte du cadre holographique est fondamentale pour les expériences de [qualité des performances](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) . L’un des défis techniques (et pratiques) courants consiste à surcharger le frame de l’utilisateur avec du contenu numérique, ce qui entraîne une dégradation des performances de rendu. Envisagez plutôt d’utiliser l’espace complet de l’utilisateur pour organiser le contenu numérique, à l’aide des techniques décrites ci-dessus, afin de réduire la charge de rendu et de garantir une qualité d’affichage optimale.
 
-Le contenu numérique dans le cadre holographique du HoloLens peut également être associé au plan de [stabilisation](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) pour optimiser les performances et la stabilité de l' [hologramme](../develop/platform-capabilities-and-apis/hologram-stability.md).
+le contenu numérique dans le cadre holographique du HoloLens peut également être associé au plan de [stabilisation](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) pour des performances optimales et une stabilité de l' [hologramme](../develop/platform-capabilities-and-apis/hologram-stability.md).
 
 <br>
 
@@ -91,7 +91,7 @@ Le contenu numérique dans le cadre holographique du HoloLens peut également ê
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/DilzwF90vec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Dans l’expérience de salle de présentation de Volvo Cars, les clients sont invités à se familiariser avec les nouvelles fonctionnalités d’une voiture dans une expérience HoloLens guidée par Volvo Associate. Volvo a fait face à un défi avec le cadre holographique : une voiture pleine taille est trop grande pour être placée juste à côté d’un utilisateur. La solution consistait à commencer l’expérience avec un repère physique, une table centrale dans la salle de exposition, avec un modèle numérique plus petit de la voiture placé en haut de la table. Cela permet de s’assurer que l’utilisateur voit la totalité de la voiture lorsqu’elle est introduite, ce qui permet d’obtenir une compréhension spatiale une fois que la voiture atteint sa mise à l’échelle réelle plus tard dans l’expérience.
+dans l’expérience de salle de présentation de Volvo Cars, les clients sont invités à se familiariser avec les nouvelles fonctionnalités d’une voiture dans une expérience de HoloLens guidée par volvo associate. Volvo a fait face à un défi avec le cadre holographique : une voiture pleine taille est trop grande pour être placée juste à côté d’un utilisateur. La solution consistait à commencer l’expérience avec un repère physique, une table centrale dans la salle de exposition, avec un modèle numérique plus petit de la voiture placé en haut de la table. Cela permet de s’assurer que l’utilisateur voit la totalité de la voiture lorsqu’elle est introduite, ce qui permet d’obtenir une compréhension spatiale une fois que la voiture atteint sa mise à l’échelle réelle plus tard dans l’expérience.
 
 L’expérience de Volvo utilise également des directeurs visuels, créant ainsi un effet visuel long du modèle de voiture à petite échelle sur la table à un mur dans la salle de salon. Cela donne un effet « fenêtre magique », montrant la vue complète de la voiture à distance, illustrant des fonctionnalités supplémentaires de la voiture à l’échelle du monde réel. Le mouvement de la tête est horizontal, sans interaction directe de l’utilisateur (en recueillant les signaux visuellement et à partir de la narration de l’expérience de Volvo Associate).
 
@@ -101,12 +101,12 @@ L’expérience de Volvo utilise également des directeurs visuels, créant ains
 
 ### <a name="lowes-kitchen"></a>Cuisine de Lowe
 
-Une expérience de magasin de Lowe invite les clients à effectuer une maquette à l’échelle complète d’une cuisine pour présenter diverses opportunités de remodelage comme indiqué par le HoloLens. La cuisine dans le magasin fournit un fond physique pour les objets numériques, un canevas vide d’appliances, des plans de travail et des armoires pour l’expérience de réalité mixte à dérouler.
+Une expérience de magasin de Lowe invite les clients à effectuer une maquette à l’échelle complète d’une cuisine pour présenter diverses opportunités de remodelage, comme vu par l’HoloLens. La cuisine dans le magasin fournit un fond physique pour les objets numériques, un canevas vide d’appliances, des plans de travail et des armoires pour l’expérience de réalité mixte à dérouler.
 
 Les surfaces physiques jouent le rôle d’éléments de repère statiques pour que l’utilisateur soit à l’origine de l’expérience, car l’Association d’un Lowe guide l’utilisateur à travers différentes options de produit et se termine. De cette façon, l’Association peut diriger oralement l’attention de l’utilisateur vers le « réfrigérateur » ou le centre de la cuisine pour présenter le contenu numérique.
 
-![L’Association d’un Lowe utilise une tablette pour guider les clients dans le processus HoloLens.](images/loweskitchen-750px.jpg)<br>
-*L’Association d’un Lowe utilise une tablette pour guider les clients dans le processus HoloLens.*
+![l’association d’un Lowe utilise une tablette pour guider les clients dans l’expérience HoloLens.](images/loweskitchen-750px.jpg)<br>
+*l’association d’un Lowe utilise une tablette pour guider les clients dans l’expérience HoloLens.*
 
 L’expérience de l’utilisateur est gérée, en partie, par une expérience de tablette contrôlée par l’Association de Lowe. Dans ce cas, une partie du rôle de l’Association serait également de limiter les déplacements excessifs, en dirigeant leur attention en douceur sur les points d’intérêt de la cuisine. L’expérience de tablette fournit également l’Association de Lowe à des données en regard sous la forme d’une vue carte thermique de la cuisine, en aidant à comprendre où l’utilisateur s’occupait (par exemple, dans une zone spécifique de cabinet) pour lui fournir plus précisément des instructions de remodelage.
 
@@ -118,7 +118,7 @@ Pour un examen approfondi de l’expérience de cuisine de Lowe, consultez le [d
 
 ### <a name="fragments"></a>Fragments
 
-Dans les fragments de jeu HoloLens, vous vivez de l’espace est transformé en scène de criminalité virtuelle montrant des indices et des preuves, ainsi qu’une salle de réunion virtuelle, où vous communiquez avec des caractères qui se trouvent sur vos chaises et qui se penchent sur vos murs.
+dans les fragments de jeu HoloLens, vous vivez de l’espace est transformé en scène de criminalité virtuelle montrant des indices et des preuves, ainsi qu’une salle de réunion virtuelle, où vous communiquez avec des caractères qui se trouvent sur vos chaises et qui s’appuient sur vos murs.
 
 ![Les fragments ont été conçus pour s’exécuter dans le Bureau d’un utilisateur, avec des caractères qui interagissent avec des objets et des surfaces réels.](images/fragments-750px.jpg)<br>
 *Les fragments ont été conçus pour être ajoutés au bureau d’un utilisateur, avec des caractères qui interagissent avec des objets et des surfaces réels.*
@@ -148,6 +148,6 @@ La représentation réaliste de l’oreille a fourni un point focal puissant, co
 ## <a name="see-also"></a>Voir aussi
 * [Interactions instinctuelles](interaction-fundamentals.md)
 * [Confort](comfort.md)
-* [Mise à l’échelle](scale.md)
+* [Mettre à l'échelle](scale.md)
 * [Suivre de la tête et stabiliser](gaze-and-dwell.md)
 * [Stabilité des hologrammes](../develop/platform-capabilities-and-apis/hologram-stability.md)

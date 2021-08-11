@@ -1,24 +1,24 @@
 ---
 title: Mappage spatial dans DirectX
-description: Découvrez comment implémenter le mappage spatial dans votre application DirectX et comment utiliser l’exemple d’application de mappage spatial dans le kit de développement logiciel (SDK) plateforme Windows universelle.
+description: découvrez comment implémenter le mappage spatial dans votre application DirectX et comment utiliser l’exemple d’application de mappage spatial dans le kit de développement logiciel (SDK) plateforme Windows universelle.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, mappage spatial, environnement, interaction, DirectX, WinRT, API, exemple de code, UWP, SDK, procédure pas à pas
-ms.openlocfilehash: 19479a4efb577bad629e46b59334f0d23b0b2db4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows la réalité mixte, le mappage spatial, l’environnement, l’interaction, directx, winrt, l’api, l’exemple de code, UWP, SDK, procédure pas à pas
+ms.openlocfilehash: e7f0735ea28703d3a9f18198901ffa5f06676f78b7b8962bf20824e05f793061
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198845"
 ---
 # <a name="spatial-mapping-in-directx"></a>Mappage spatial dans DirectX
 
 > [!NOTE]
 > Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
-Cette rubrique explique comment implémenter le [mappage spatial](../../design/spatial-mapping.md) dans votre application DirectX, y compris une explication détaillée de l’exemple d’application de mappage spatial empaqueté avec le kit de développement logiciel (SDK) plateforme Windows universelle.
+cette rubrique explique comment implémenter le [mappage spatial](../../design/spatial-mapping.md) dans votre application DirectX, y compris une explication détaillée de l’exemple d’application de mappage spatial empaqueté avec le kit de développement logiciel (SDK) plateforme Windows universelle.
 
 Cette rubrique utilise le code de l’exemple de code UWP [HolographicSpatialMapping](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) .
 
@@ -50,7 +50,7 @@ Cette rubrique utilise le code de l’exemple de code UWP [HolographicSpatialMap
 
 ## <a name="directx-development-overview"></a>Vue d’ensemble du développement DirectX
 
-Le développement d’applications natives pour le mappage spatial utilise les API de l’espace de noms [Windows. perception. spatial](/uwp/api/Windows.Perception.Spatial) . Ces API vous offrent un contrôle total de la fonctionnalité de mappage spatial, de la même façon que les API de mappage spatiale sont exposées par [Unity](../unity/spatial-mapping-in-unity.md).
+Le développement d’applications natives pour le mappage spatial utilise les API du [Windows. Apparence.](/uwp/api/Windows.Perception.Spatial) espace de noms spatial. Ces API vous offrent un contrôle total de la fonctionnalité de mappage spatial, de la même façon que les API de mappage spatiale sont exposées par [Unity](../unity/spatial-mapping-in-unity.md).
 
 ### <a name="perception-apis"></a>API perception
 
@@ -84,7 +84,7 @@ Lors du développement d’une application à l’aide de ces API, le dérouleme
 
 L’exemple de code de [mappage spatial holographique](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) inclut du code que vous pouvez utiliser pour commencer à charger des maillages superficiels dans votre application, y compris l’infrastructure de gestion et de rendu des maillages d’aire.
 
-À présent, nous allons vous montrer comment ajouter la fonctionnalité de mappage des surfaces à votre application DirectX. Vous pouvez ajouter ce code à votre projet de [modèle d’application holographique Windows](creating-a-holographic-directx-project.md) , ou vous pouvez suivre la procédure en parcourant l’exemple de code mentionné ci-dessus. Cet exemple de code est basé sur le modèle d’application holographique Windows.
+À présent, nous allons vous montrer comment ajouter la fonctionnalité de mappage des surfaces à votre application DirectX. vous pouvez ajouter ce code à votre projet de [modèle d’application holographique Windows](creating-a-holographic-directx-project.md) , ou vous pouvez suivre la procédure en parcourant l’exemple de code mentionné ci-dessus. cet exemple de code est basé sur le modèle d’application holographique Windows.
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurer votre application pour utiliser la fonctionnalité spatialPerception
 
@@ -159,7 +159,7 @@ initSurfaceObserverTask.then([this, coordinateSystem](Windows::Perception::Spati
 
 ### <a name="create-a-surface-observer"></a>Créer un observateur de surface
 
-L’espace de noms **Windows ::P erception :: spatial :: surfaces** comprend la classe [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) , qui observe un ou plusieurs volumes que vous spécifiez dans un [SpatialCoordinateSystem](/uwp/api/Windows.Perception.Spatial.SpatialCoordinateSystem). Utilisez une instance [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) pour accéder aux données de maillage des surfaces en temps réel.
+l’espace de noms **Windows ::P erception :: Spatial :: Surfaces** contient la classe [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) , qui observe un ou plusieurs volumes que vous spécifiez dans un [SpatialCoordinateSystem](/uwp/api/Windows.Perception.Spatial.SpatialCoordinateSystem). Utilisez une instance [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) pour accéder aux données de maillage des surfaces en temps réel.
 
 À partir de **AppMain. h**:
 
@@ -169,7 +169,7 @@ Windows::Perception::Spatial::Surfaces::SpatialSurfaceObserver^     m_surfaceObs
 Windows::Perception::Spatial::Surfaces::SpatialSurfaceMeshOptions^  m_surfaceMeshOptions;
 ```
 
-Comme indiqué dans la section précédente, vous devez demander l’accès aux données de mappage spatiale pour que votre application puisse l’utiliser. Cet accès est accordé automatiquement sur HoloLens.
+Comme indiqué dans la section précédente, vous devez demander l’accès aux données de mappage spatiale pour que votre application puisse l’utiliser. Cet accès est accordé automatiquement sur la HoloLens.
 
 ```cpp
 // The surface mapping API reads information about the user's environment. The user must
@@ -372,7 +372,7 @@ Windows::Storage::Streams::IBuffer^ positions = m_surfaceMesh->VertexPositions->
     Windows::Storage::Streams::IBuffer^ indices   = m_surfaceMesh->TriangleIndices->Data;
 ```
 
-Ensuite, nous créons des tampons de périphérique Direct3D avec les données de maillage fournies par le HoloLens :
+Ensuite, nous créons des tampons de périphérique Direct3D avec les données de maillage fournies par l’HoloLens :
 
 ```cpp
 CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, positions, m_vertexPositions.GetAddressOf());
@@ -517,7 +517,7 @@ for (auto& pair : m_meshCollection)
 }
 ```
 
-Les maillages individuels sont responsables de la configuration des tampons de mémoire tampon de vertex et d’index, de Stride et de la transformation de modèle. Comme pour le cube en rotation dans le modèle d’application holographique Windows, nous rendons les tampons stéréoscopiques à l’aide de l’instanciation.
+Les maillages individuels sont responsables de la configuration des tampons de mémoire tampon de vertex et d’index, de Stride et de la transformation de modèle. comme pour le cube en rotation dans le modèle d’application holographique Windows, nous rendons les tampons stéréoscopiques à l’aide de l’instanciation.
 
 À partir de **SurfaceMesh ::D RAW**:
 
@@ -678,4 +678,4 @@ m_meshCollection->Render(pCameraResources->IsRenderingStereoscopic(), false);
 
 ## <a name="see-also"></a>Voir aussi
 * [Création d’un projet DirectX holographique](creating-a-holographic-directx-project.md)
-* [API Windows. perception. spatial](/uwp/api/Windows.Perception.Spatial)
+* [Windows. Perception. API spatiale](/uwp/api/Windows.Perception.Spatial)

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality, conception, style, police, typographie, UI, UX, texte, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 015273c84462e48e145af77421da4131bb650d9e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, conception, style, police, typographie, ui, expérience utilisateur, texte, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens
+ms.openlocfilehash: 7df2386f3478c0b0b79d198a3342bc9a9a061f6e5a305baedcd91be9c2f09f04
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580274"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200284"
 ---
 # <a name="typography"></a>Typographie
 
@@ -22,7 +22,7 @@ Le texte est un élément important pour la diffusion d’informations dans votr
 
 Lorsque nous parlerons du type en 3D, nous avons tendance à penser que le texte 3D est extrudé et jaugé. À l’exception de certaines conceptions logotype et de quelques autres applications limitées, le texte extrudé a tendance à dégrader la lisibilité du texte. Même si nous concevons des expériences en 3D, nous utilisons un 2D pour le type, car il est plus lisible et plus facile à lire.
 
-Dans HoloLens, le type est construit avec des hologrammes à l’aide de la lumière basée sur le système de couleurs additif. Tout comme les autres hologrammes, le type peut être placé dans l’environnement réel où il peut être verrouillé et observé à partir de n’importe quel angle. L’effet de [parallaxe](https://en.wikipedia.org/wiki/Parallax) entre le type et l’environnement ajoute également une profondeur à l’expérience.
+dans HoloLens, le type est construit avec des hologrammes à l’aide de la lumière basée sur le système de couleurs additif. Tout comme les autres hologrammes, le type peut être placé dans l’environnement réel où il peut être verrouillé et observé à partir de n’importe quel angle. L’effet de [parallaxe](https://en.wikipedia.org/wiki/Parallax) entre le type et l’environnement ajoute également une profondeur à l’expérience.
 
 ## <a name="typography-in-mixed-reality"></a>Typographie dans une réalité mixte
 
@@ -37,17 +37,17 @@ Générez le contraste et la hiérarchie en utilisant des tailles et des poids d
 
 ### <a name="limit-your-fonts"></a>Limiter vos polices
 
-Évitez d’utiliser plus de deux familles de polices différentes dans un seul contexte. Un trop grand nombre de polices rompt l’harmonie et la cohérence de votre expérience et complique la consommation d’informations. Dans HoloLens, étant donné que les informations sont superposées en plus de l’environnement physique, l’utilisation d’un trop grand nombre de styles de police dégradera l’expérience. Segoe UI est la police de toutes les conceptions numériques Microsoft. Il est utilisé de manière cohérente dans le shell Windows Mixed Reality. Vous pouvez télécharger le fichier de police Segoe UI à partir de la page de la [boîte à outils de conception Windows](/windows/uwp/design-downloads/).
+Évitez d’utiliser plus de deux familles de polices différentes dans un seul contexte. Un trop grand nombre de polices rompt l’harmonie et la cohérence de votre expérience et complique la consommation d’informations. dans HoloLens, étant donné que les informations sont superposées en plus de l’environnement physique, l’utilisation d’un trop grand nombre de styles de police dégradera l’expérience. Segoe UI est la police de toutes les conceptions numériques Microsoft. elle est utilisée de manière cohérente dans le shell Windows Mixed Reality. vous pouvez télécharger le fichier de police Segoe UI à partir de la [page Windows design toolkit](/windows/uwp/design-downloads/).
 
 [Plus d’informations sur la police Segoe UI](/windows/uwp/design/style/typography)
 
 ### <a name="avoid-thin-font-weights"></a>Évitez les poids des polices fines
 
-Évitez d’utiliser des pondérations de police légère ou semilight pour les tailles de type inférieures à 42 PT, car les traits verticaux fins vibreront et dégradent la lisibilité. Les polices modernes avec suffisamment d’épaisseur de trait fonctionnent bien. Par exemple, Helvetica et Arial sont lisibles dans HoloLens en utilisant des pondérations standard ou en gras.
+Évitez d’utiliser des pondérations de police légère ou semilight pour les tailles de type inférieures à 42 PT, car les traits verticaux fins vibreront et dégradent la lisibilité. Les polices modernes avec suffisamment d’épaisseur de trait fonctionnent bien. par exemple, Helvetica et Arial sont lisibles dans HoloLens à l’aide de poids standard ou gras.
 
 ### <a name="color"></a>Couleur
 
-Dans HoloLens, étant donné que les hologrammes sont construits avec un système d’éclairage additif, le texte blanc est très lisible. Vous trouverez des exemples de texte blanc dans le menu Démarrer et la barre des applications. Même si le texte blanc fonctionne bien sans une plaque arrière sur HoloLens, un arrière-plan physique complexe peut rendre le type difficile à lire. Nous vous recommandons d’utiliser du texte blanc sur une plaque de fond sombre ou coloré pour améliorer le focus de l’utilisateur et réduire la distraction d’un arrière-plan physique.
+dans HoloLens, étant donné que les hologrammes sont construits avec un système d’éclairage additif, le texte blanc est très lisible. vous trouverez des exemples de texte blanc sur le menu Démarrer et la barre de l’application. même si le texte blanc fonctionne bien sans une plaque arrière sur HoloLens, un arrière-plan physique complexe peut rendre le type difficile à lire. Nous vous recommandons d’utiliser du texte blanc sur une plaque de fond sombre ou coloré pour améliorer le focus de l’utilisateur et réduire la distraction d’un arrière-plan physique.
 
 <br>
 
@@ -64,8 +64,8 @@ Pour utiliser du texte foncé, vous devez utiliser une plaque de retour brillant
         *Exemples de blanc sur noir et noir sur du texte blanc*<br>
     :::column-end:::
     :::column:::
-        ![Exemples de texte noir dans les applications système-magasin et paramètres](images/640px-typography-blackonwhite.jpg)<br>
-        *Exemples de texte noir dans les applications système-magasin et paramètres*<br>
+        ![exemples de texte noir dans les applications système-store et Paramètres](images/640px-typography-blackonwhite.jpg)<br>
+        *exemples de texte noir dans les applications système-store et Paramètres*<br>
     :::column-end:::
 :::row-end:::
 
@@ -97,7 +97,7 @@ Pour l’interaction proche à 0,45 m (45 cm), l’angle d’affichage de la pol
 | 2 m | 0,6 °-0,75 ° | 20.9-26.2 mm | 59.4-74.2 PT |
 
 
-Segoe UI (police par défaut pour Windows) fonctionne bien dans la plupart des cas. Évitez d’utiliser des familles de polices légères ou semi-claires dans une petite taille, car les traits verticaux fins vibreront et la lisibilité sera dégradée. Les polices modernes avec suffisamment d’épaisseur de trait fonctionnent bien. Par exemple, Helvetica et Arial semblent exceptionnels et sont lisibles dans HoloLens avec des pondérations standard ou en gras.
+Segoe UI (la police par défaut pour Windows) fonctionne bien dans la plupart des cas. Évitez d’utiliser des familles de polices légères ou semi-claires dans une petite taille, car les traits verticaux fins vibreront et la lisibilité sera dégradée. Les polices modernes avec suffisamment d’épaisseur de trait fonctionnent bien. par exemple, Helvetica et Arial semblent exceptionnels et sont lisibles en HoloLens avec des pondérations standard ou en gras.
 
 **Pour plus d’informations sur le calcul de la taille du texte dans Unity, reportez-vous à [texte dans Unity](../develop/unity/text-in-unity.md)**
 
@@ -114,13 +114,13 @@ Segoe UI (police par défaut pour Windows) fonctionne bien dans la plupart des c
     :::column:::
     ### <a name="segoe-fontsbr"></a>[Polices Segoe](https://download.microsoft.com/download/1/B/C/1BCF071A-78EE-4968-ACBE-15461C274B61/Segoe%20fonts%20v1705.zip)<br>
     (Fichier zip)<br>
-    ### <a name="hololens-fontbr"></a>[Police HoloLens](https://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)<br>
+    ### <a name="hololens-fontbr"></a>[police de HoloLens](https://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)<br>
     (Fichier zip)<br>
     <br>
     *Image : la police HoloLens vous donne les glyphes de symboles utilisés dans Windows Mixed Reality.*
     :::column-end:::
         :::column:::
-        ![La police HoloLens vous donne les glyphes de symboles utilisés dans Windows Mixed Reality](images/hololensmdl2symbols.jpg)<br>
+        ![la police HoloLens vous donne les glyphes de symboles utilisés dans Windows Mixed Reality](images/hololensmdl2symbols.jpg)<br>
     :::column-end:::
 :::row-end:::
 

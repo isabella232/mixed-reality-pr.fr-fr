@@ -5,19 +5,19 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, contrôles, conception, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens, collection d’objets, 2D, 3D, MRTK, kit de pratiques de réalité mixte
-ms.openlocfilehash: fd5629f58e092b33410c833885037582ba5ca4a1
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: Windows Mixed Reality, contrôles, conception, casque de réalité mixte, casque Windows mixed realisation, casque de réalité virtuelle, HoloLens, collection d’objets, 2d, 3d, MRTK, réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: be8f175ac58163eedfbf5fdee88c489f81abb90acbf4a9e04710be8443f070f0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225726"
 ---
 # <a name="object-collection"></a>Collection d’objets
 
 ![Collection d’objets utilisée dans la table périodique de l’application d’éléments](images/UX_Hero_ObjectCollection.jpg)<br>
 
-La collection d’objets est un contrôle de disposition qui vous permet de disposer un tableau d’objets dans une forme à trois dimensions prédéfinie. Il prend en charge différents styles de surface-* * plan, cylindre, sphère et **radial**. Vous pouvez ajuster le rayon et la taille des objets, ainsi que l’espace entre eux. La collection d’objets prend en charge n’importe quel objet d’Unity, à la fois 2D et 3D. Dans la **[boîte à outils de la réalité mixte](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)**, nous avons créé un script Unity et des exemples qui vous aideront à créer une collection d’objets.
+La collection d’objets est un contrôle de disposition qui vous permet de disposer un tableau d’objets dans une forme à trois dimensions prédéfinie. Il prend en charge différents styles de surface-* * plan, cylindre, sphère et **radial**. Vous pouvez ajuster le rayon et la taille des objets, ainsi que l’espace entre eux. La collection d’objets prend en charge n’importe quel objet d’Unity, à la fois 2D et 3D. dans la **[Shared Computer Toolkit de la réalité mixte](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)**, nous avons créé un script unity et des exemples qui vous aideront à créer une collection d’objets.
 
 ## <a name="object-collection-examples"></a>Exemples de collection d’objets
 
@@ -46,7 +46,7 @@ Vous pouvez également utiliser des images 2D avec la collection d’objets. Les
 
 ---
 
-## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Collection d’objets dans MRTK (Mixed Reality Toolkit) pour Unity
+## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>collection d’objets dans MRTK (Shared Computer Toolkit de la réalité mixte) pour unity
 
 * [MRTK-collection d’objets](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
 

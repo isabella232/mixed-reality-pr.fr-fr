@@ -1,21 +1,21 @@
 ---
-title: Situés
+title: Fixer du regard
 description: Interaction du logement
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 05/20/2021
-keywords: Logement, Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK
+keywords: logement, unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 18e69f001c8989234d1b75fb713796f079cacbdf
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 8ac63ee723cdd524ee7abbad7fd2658b446156adbd5ddee06ae1795edb3b68d1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647768"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226902"
 ---
-# <a name="dwell"></a>Situés
+# <a name="dwell"></a>Fixer du regard
 
-![Héros du logement](../images/dwell/MRTK_UX_Dwell.png)
+![Bannière de fixation du regard](../images/dwell/MRTK_UX_Dwell.png)
 
 Le point de regard et le front-tête sont très utiles dans les scénarios où les mains d’une personne sont occupées par d’autres tâches. Cette fonctionnalité est également utile lorsque la voix n’est pas 100% fiable ou disponible en raison de contraintes environnementales ou sociales.
 Les exemples de logements de MRTK illustrent différents types de composants de l’interface utilisateur avec un temps de réponse configurable et des commentaires visuels.
@@ -38,7 +38,7 @@ Les profils de logement sont utilisés par le **Gestionnaire de logements** pour
 
 ## <a name="prefabs"></a>Prefabs
 
-Ces prefabs sont des variantes du bouton prefabs du style HoloLens 2 qui ont des composants supplémentaires pour prendre en charge les interactions du logement.
+ces prefabs sont des variantes du bouton HoloLens 2 de style prefabs qui ont des composants supplémentaires pour prendre en charge les interactions de logements.
 
 - **PressableButtonHoloLens2_Dwell. Prefab**
 - **PressableButtonHoloLens2_32x96_Dwell. Prefab**

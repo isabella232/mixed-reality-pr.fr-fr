@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: vidéo volumétrique, vidéo holographique, vidéo de réalité mixte, hologramme, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 83eba6e0dc3099c85a2db40512c9cae8f5e679c2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f8e6c158f3ae5f774e31574bed0c3b50e0e1a7084427a69373c14845d18e72e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223592"
 ---
 # <a name="how-it-works---mixed-reality-capture-studios"></a>Fonctionnement des studios de capture de Réalité Mixte
 

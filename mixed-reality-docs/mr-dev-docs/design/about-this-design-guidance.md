@@ -5,13 +5,13 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, conception, introduction, conseils, casque de la réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, expérience utilisateur, ressources
-ms.openlocfilehash: f731ad91d48cdb50ad12b6a9cc250b6561eebaff
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, conception, introduction, conseils, casque de réalité mixte, casque Windows Mixed reality, casque de réalité virtuelle, expérience utilisateur, ressources
+ms.openlocfilehash: 0bd70e08d55f8d556ff3a612dbbc979dc895cebbfc9950f18d8d474ff347407b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198642"
 ---
 # <a name="about-this-design-guidance"></a>À propos de ce guide de conception
 
@@ -19,7 +19,7 @@ ms.locfileid: "97847689"
 
 **Bonjour et Bienvenue dans vos conseils de conception pour la réalité mixte.**
 
-Ce guide est rédigé par les concepteurs, les développeurs, les responsables de programme et les chercheurs de Microsoft. Les travaux de nos rédacteurs s’étendent sur des appareils holographiques, y compris des casques HoloLens, des appareils immersifs, des andAcer et des casques HP Windows Mixed Reality. Nous vous recommandons de considérer cet article comme un ensemble de rubriques relatives à la conception de Windows.
+Ce guide est rédigé par les concepteurs, les développeurs, les responsables de programme et les chercheurs de Microsoft. les travaux de nos rédacteurs s’étendent sur des appareils holographiques, notamment des HoloLens, des appareils immersifs, des andAcer et des casques HP Windows Mixed Reality. nous vous recommandons de considérer cet article comme un ensemble de rubriques relatives à la conception de Windows.
 
 Nous avons introduit une nouvelle ère incroyablement passionnante de l’informatique avec vous. Des innovations dans les affichages montés en tête, les sons spatiaux, les capteurs, la sensibilisation de l’environnement, les entrées et les graphiques 3D, et nous permettent de définir de nouveaux types d’expériences. La nouvelle frontière est considérablement plus personnelle, intuitive, immersive et contextuelle.
 
@@ -59,7 +59,7 @@ Bien qu’il soit important de se concentrer sur des problèmes spécifiques aux
 
 ![Rencontrez les créateurs où ils sont](images/500px-creators.jpg) <br>
 
-Nous espérons que de nombreux publics trouvent ces conseils pour être utiles. Vous avez différents compétences (début, intermédiaire, avancé), utilisez différents outils (Unity, DirectX, C++, C#, etc.), vous êtes familiarisé avec les différentes plateformes (Windows, iOS, Android), qui proviennent de différents horizons (mobiles, entreprise, jeux) et qui travaillent sur différentes équipes de taille (solo, petite, moyenne, grande). Ce guide peut donc être consulté avec différentes perspectives et besoins. Dans la mesure du possible, nous essaierons de garder cette diversité à l’esprit et de faire en sorte que nos conseils soient les plus pertinents possible pour autant de personnes que possible. Nous savons que beaucoup d’entre vous sont déjà sur GitHub. Nous allons donc nous lier directement à des GitHub et des dépôts pour vous répondre là où vous êtes déjà. 
+Nous espérons que de nombreux publics trouvent ces conseils pour être utiles. vous avez différents compétences (début, intermédiaire, avancé), utilisez différents outils (unity, DirectX, C++, C#, etc.), vous connaissez les différentes plateformes (Windows, iOS, Android), qui proviennent de différents arrière-plans (mobile, entreprise, jeux) et qui travaillent sur différentes équipes de taille (solo, petite, moyenne, grande). Ce guide peut donc être consulté avec différentes perspectives et besoins. Dans la mesure du possible, nous essaierons de garder cette diversité à l’esprit et de faire en sorte que nos conseils soient les plus pertinents possible pour autant de personnes que possible. Nous savons que beaucoup d’entre vous sont déjà sur GitHub. nous allons donc vous connecter directement à GitHub les et aux forums pour vous répondre là où vous êtes déjà. 
 
 ### <a name="share-as-much-as-possible-from-experimental-to-explicit"></a>Partager le plus possible, de l’expérimentation à la valeur explicite
 
@@ -71,7 +71,7 @@ L’un des défis liés à l’offre de conseils en matière de conception dans 
 
 ![Le juste équilibre entre la conception globale et la conception locale](images/500px-fluentdesign.jpg) <br>
 
-Nous proposons deux niveaux de conseils de conception : global et local. Notre guide de conception « global » est inclus dans le [système de conception Fluent](https://fluent.microsoft.com). Fluent explique en détail comment nous pensons aux notions de base, telles que la lumière, la profondeur, le mouvement, le matériau et la mise à l’échelle dans l’ensemble de la conception Microsoft, nos appareils, produits, outils et services. Cela dit, des différences significatives spécifiques aux appareils existent sur ce système plus volumineux. Ainsi, notre guide de conception « local » pour les affichages montés en tête décrit la conception d’appareils holographiques et immersifs qui ont souvent des méthodes d’entrée et de sortie différentes, ainsi que des besoins et des scénarios d’utilisateur différents. Le Guide de conception local couvre les rubriques propres à HMDs. Par exemple : environnements 3D et objets ; environnements partagés ; l’utilisation de capteurs, le suivi des yeux et le mappage spatial ; et les opportunités de l’audio spatial. Dans le cadre de nos recommandations, vous verrez probablement que ces deux aspects sont des aspects globaux et locaux. Nous espérons que cela vous aidera à mettre votre travail en œuvre dans un grand nombre de conceptions tout en tirant parti des différences de conception entre les appareils spécifiques.
+Nous proposons deux niveaux de conseils de conception : global et local. notre guide de conception « global » est inclus dans le [Système Fluent Design](https://fluent.microsoft.com). Fluent explique en détail comment nous pensons aux notions de base, telles que la lumière, la profondeur, le mouvement, le matériau et la mise à l’échelle dans l’ensemble de la conception Microsoft, nos appareils, produits, outils et services. Cela dit, des différences significatives spécifiques aux appareils existent sur ce système plus volumineux. Ainsi, notre guide de conception « local » pour les affichages montés en tête décrit la conception d’appareils holographiques et immersifs qui ont souvent des méthodes d’entrée et de sortie différentes, ainsi que des besoins et des scénarios d’utilisateur différents. Le Guide de conception local couvre les rubriques propres à HMDs. Par exemple : environnements 3D et objets ; environnements partagés ; l’utilisation de capteurs, le suivi des yeux et le mappage spatial ; et les opportunités de l’audio spatial. Dans le cadre de nos recommandations, vous verrez probablement que ces deux aspects sont des aspects globaux et locaux. Nous espérons que cela vous aidera à mettre votre travail en œuvre dans un grand nombre de conceptions tout en tirant parti des différences de conception entre les appareils spécifiques.
 
 ### <a name="have-a-discussion"></a>Avoir une discussion
 
@@ -81,4 +81,4 @@ Plus important encore, nous souhaitons faire appel à vous, à la communauté de
 
 ## <a name="dive-in"></a>Plongez dans
 
-Nous espérons que cet article de présentation fournit un contexte explicite lorsque vous explorez nos conseils de conception. Plongez-vous et faites-nous part de vos commentaires sur les forums GitHub que vous trouverez dans nos articles, ou sur la conception Microsoft sur [Twitter](https://twitter.com/MicrosoftDesign) et [Facebook](https://www.facebook.com/microsoftdesign/). Nous allons concevoir l’avenir en collaboration.
+Nous espérons que cet article de présentation fournit un contexte explicite lorsque vous explorez nos conseils de conception. plongez-vous et faites-nous part de vos commentaires sur les forums de GitHub que vous trouverez liés dans nos articles ou sur la conception Microsoft sur [Twitter](https://twitter.com/MicrosoftDesign) et [Facebook](https://www.facebook.com/microsoftdesign/). Nous allons concevoir l’avenir en collaboration.

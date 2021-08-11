@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 66b79c14bbd0ea8c188aba684b9bd1034de31bf9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f329cceded5e510d3d4fc1a1c13b5a504f1f3669ad408b733267595e77dd15a6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227582"
 ---
 # <a name="input-simulation-service"></a>Service de simulation d’entrée
 
 ![Simulation d’entrée MRTK](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
 
-Avec la simulation d’entrée de MRTK, vous pouvez tester divers types d’interactions dans l’éditeur Unity sans générer et déployer sur un appareil. Cela vous permet d’itérer rapidement vos idées dans le processus de conception et de développement. Utilisez les combinaisons clavier et souris pour contrôler les entrées simulées.
+Avec la simulation d’entrée de MRTK, vous pouvez tester divers types d’interactions dans l’éditeur Unity sans développement ni déploiement sur un appareil. Cela vous permet d’itérer rapidement vos idées dans le processus de conception et de développement. Utilisez les raccourcis clavier et souris pour contrôler les entrées simulées.
 
 Le service de simulation d’entrée émule le comportement des appareils et des plateformes qui peuvent ne pas être disponibles dans l’éditeur Unity. Voici quelques exemples :
 
@@ -33,10 +33,10 @@ Le service de simulation d’entrée émule le comportement des appareils et des
 
 La simulation d’entrée est activée par défaut dans les profils fournis avec MRTK. Vous pouvez simplement cliquer sur le bouton de **lecture** pour exécuter la scène avec la prise en charge de la simulation d’entrée.
 
-* Appuyez sur les touches **W, A, S, D, Q, E** pour déplacer l’appareil photo.
-* Maintenez le **bouton droit** de la souris et déplacez la souris pour regarder.
-* Pour afficher les mains simulées, appuyez sur la **barre d’espace (à droite)** ou sur la **touche Maj de gauche (gauche)**
-* Pour conserver les mains simulées dans la vue, appuyez sur la touche **T** ou **Y**
+* Appuyez sur les touches **W, A, S, D, Q, E** pour déplacer la caméra.
+* Maintenez le **bouton droit de la souris** enfoncé et déplacez la souris pour regarder autour de vous.
+* Pour faire apparaître les mains simulées, appuyez sur la **barre d’espace (droite)** ou sur la **touche Maj de gauche**
+* Appuyez sur les touches **T** ou **Y** pour que les mains simulées restent affichées
 * Pour faire pivoter des mains simulées, maintenez la **touche Ctrl** enfoncée et déplacez la souris
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OYrm]
