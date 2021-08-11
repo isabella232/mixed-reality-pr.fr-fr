@@ -1,23 +1,23 @@
 ---
 title: Divertissement basé sur l’emplacement avec Windows Mixed Reality
-description: En savoir plus sur Windows Mixed Reality for Location Based Entertainment (matériel, PC de poche, suivi, configuration et support).
+description: en savoir plus sur les Windows Mixed Reality pour les divertissements basés sur l’emplacement (matériel, pc de sac à dos, suivi, configuration et support).
 author: jessemcculloch
 ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
-keywords: en réalité mixte, VR, LBE, emplacement, casque de réalité mixte, casque Windows Mixed Reality, casque de réalité virtuelle, matériel, HoloLens, Multi-Player, services Cloud, Azure
-ms.openlocfilehash: 49e96b99d3f74bd24a4a0e71f212018108148ad2
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+keywords: en réalité mixte, vr, lbe, emplacement, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, matériel, HoloLens, multi-player, services cloud, azure
+ms.openlocfilehash: e9cff1184ca60f4b64be5346a187666e7b401aab06fee87c179917e300aa07f3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102236910"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196783"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Divertissement basé sur l’emplacement avec Windows Mixed Reality
 
 Au cours des dernières années, nous avons vu une croissance incroyable de la croissance et de l’innovation dans la catégorie des loisirs basés sur l’emplacement. Les systèmes traditionnels tels que les parcs de thèmes et les théâtres ont commencé à offrir des expériences immersifs à plusieurs joueurs comme des expériences complémentaires pour les emplacements et les installations existantes. Les nouveaux opérateurs et emplacements permettent de créer des expériences multilecteurs et multi-joueurs uniques à un prix intéressant aux masses. Toutes ces expériences poussent l’enveloppe pour ce qui est possible avec la réalité mixte.
 
-Ce document est un guide de prise en main de Windows Mixed Reality dans la catégorie divertissements basée sur l’emplacement. Les instructions ci-dessous peuvent également s’appliquer à des expériences basées sur l’emplacement au-delà du divertissement, telles que la formation, la conception des produits et d’autres cas d’usage.
+ce document est un guide de prise en main de Windows Mixed Reality dans la catégorie divertissements basée sur l’emplacement. Les instructions ci-dessous peuvent également s’appliquer à des expériences basées sur l’emplacement au-delà du divertissement, telles que la formation, la conception des produits et d’autres cas d’usage.
 
 ## <a name="engineering-faq"></a>FAQ sur l’ingénierie
 
@@ -35,13 +35,13 @@ Samsung Odyssey + : [Détails](https://www.samsung.com/us/computing/hmd/windows
 
 Acer : [Détails](https://www.acer.com/ac/en/US/content/model/VD.R05AP.002)
 
-Si votre emplacement est spécialisé dans des expériences de réalité mixtes ou augmentées avec des casques, consultez Microsoft HoloLens 2.  
+si votre emplacement est spécialisé dans des expériences de réalité mixtes ou augmentées avec des casques, consultez le Microsoft HoloLens 2.  
 
 HoloLens 2 : préversion [de l’intérêt](https://www.microsoft.com//hololens/buy)
 
-Si vous expérimentez avec des expériences qui utilisent la vision avancée de l’ordinateur, la reconnaissance vocale et le suivi du corps, Azure Kinect DK est un bon choix.  
+si vous expérimentez avec des expériences qui utilisent la vision avancée de l’ordinateur, la reconnaissance vocale et le suivi du corps, Azure Kinect DK est un bon choix.  
 
-Azure Kinect : [Détails](https://azure.microsoft.com//services/kinect-dk/)
+Kinect Azure : [détails](https://azure.microsoft.com//services/kinect-dk/)
 
 **Q : qu’est-ce que le portefeuille de PC de poche que je peux utiliser pour exécuter mes expériences de VR de PC.**
 
@@ -49,7 +49,7 @@ Pour les expériences de VR du PC, nos fabricants d’ordinateurs OEM offrent un
 
 HP vient de lancer son sac à dos HP VR G2, le PC portable le plus puissant au monde : optimisé pour les expériences gratuites-itinérantes, avec une puissance de 30% avec un GPU RTX 2080 à l’intérieur. [Détails](https://www8.hp.com/us/en/vr/vr-backpack.html)
 
-### <a name="setup"></a>Programme d’installation
+### <a name="setup"></a>Installation
 
 **Q : Comment puis-je configurer plus facilement le programme d’installation et personnaliser le portail de réalité mixte pour LBE ?**
 
@@ -58,7 +58,7 @@ HP vient de lancer son sac à dos HP VR G2, le PC portable le plus puissant au m
 
 Il se peut que vous ayez besoin de plus de personnalisation du portail de réalité mixte que ce qui est normalement disponible via l’application pour déployer des applications sur des bornes ou des expériences personnalisées. La dernière mise à jour de juillet du portail de réalité mixte prend en charge plusieurs paramètres avancés, que vous pouvez définir via un fichier de configuration :  
 
-Autoriser les vérifications système en échec : normalement, le processus d’installation vérifie la compatibilité du PC avec Windows Mixed Reality avant de terminer l’installation. Le contournement des vérifications de compatibilité peut entraîner des problèmes lors de la tentative d’exécution de Windows Mixed Reality en cas de problème de compatibilité.  
+autoriser les vérifications système en échec : normalement, le processus d’installation vérifie la compatibilité du PC avec Windows Mixed Reality avant d’effectuer l’installation. le contournement des vérifications de compatibilité peut provoquer des problèmes lors de la tentative d’exécution de Windows Mixed Reality s’il existe des problèmes de compatibilité.  
 
 Ignorer l’application compagnon de l’appareil : le DCA fournit des étapes de configuration spécifiques au casque fournies par le fabricant et permet de mettre à jour le microprogramme du casque.  
 
@@ -100,7 +100,7 @@ Le fichier JSON doit avoir le contenu ci-dessous avec « true » défini pour 
 
 R : la configuration d’un Playspace doit être effectuée comme vous le feriez avec une expérience d’installation du consommateur. Le processus de configuration de la salle vous permet également de définir les limites de votre salle. Vous trouverez plus d’informations sur la configuration des limites de la salle [ici](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
-Comme indiqué dans le document ci-dessus, la coordonnée unique raisonnable PlaySpace est autour de 5mx5m. Si vous souhaitez disposer d’une plus grande surface, vous pouvez utiliser la fonctionnalité d’ancrages spatiaux dans la pile d’API holographique Windows. L’utilisation de cette API nécessite une ingénierie personnalisée dans les expériences que vous êtes en train de produire.  
+Comme indiqué dans le document ci-dessus, la coordonnée unique raisonnable PlaySpace est autour de 5mx5m. si vous souhaitez disposer d’une plus grande surface, vous pouvez utiliser la fonctionnalité d’ancrages spatiaux dans la pile d’API holographique Windows. L’utilisation de cette API nécessite une ingénierie personnalisée dans les expériences que vous êtes en train de produire.  
 
 Pour plus d’informations sur l’optimisation de votre contenu en fonction de la taille de l’espace, consultez [cette page](/windows/mixed-reality/coordinate-systems).
  
@@ -121,16 +121,16 @@ R : l’origine du PlaySpace est déterminée par l’expérience d’installat
 
 ### <a name="multi-player-setup"></a>CONFIGURATION MULTI-JOUEURS
 
-**Q : je déploie une expérience multi-joueurs dans à mon lieu. La prise en charge de Windows Mixed Reality est-elle prise en charge ?**
+**Q : je déploie une expérience multi-joueurs dans à mon lieu. Est-ce pris en charge sur Windows Mixed Reality ?**
 
-R : Si vous vous abonnez à la version Windows 20H1 ou version ultérieure par le biais de notre programme Insider, vous pouvez accéder à une nouvelle interface pour le partage de cartes. Cette nouvelle fonctionnalité est disponible via l’interface du [Gestionnaire de cartes](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) du portail des appareils Windows. Pour utiliser cet outil, suivez les étapes ci-dessous :
+r : si vous vous abonnez au Windows 20H1 ou version ultérieure par le biais de notre programme insider, vous pouvez accéder à une nouvelle interface pour le partage de cartes. cette nouvelle fonctionnalité est disponible via l’interface du [gestionnaire de cartes](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) du Windows portail des appareils. Pour utiliser cet outil, suivez les étapes ci-dessous :
 * Assurez-vous que vous avez opté pour 20H1 ou version ultérieure-après le 2019 septembre, cela signifie que nous avons utilisé notre programme Insider
-* Activer le portail d’appareils Windows (WDP) à l’aide de ces [instructions](/windows/uwp/debug-test-perf/device-portal-desktop)
-* Branchez un HMD Windows Mixed realisation dans lequel vous souhaitez télécharger un mappage existant à partir de ou importer un nouveau mappage
+* activer le portail d’appareils Windows (WDP) à l’aide de ces [instructions](/windows/uwp/debug-test-perf/device-portal-desktop)
+* branchez un Windows Mixed Reality HMD sur lequel vous souhaitez télécharger un mappage existant à partir de ou importer un nouveau mappage
 * Accédez au WDP dans le navigateur de votre choix à l’aide de l’URL fournie dans l’écran des paramètres.
     * Une fois que vous accédez à la section « réalité mixte » et sélectionnez « Gestionnaire de cartes ».
     * Vous pouvez maintenant utiliser le bouton « Télécharger » pour exporter un mappage existant à partir de l’ordinateur.
-    * Vous pouvez utiliser le bouton « Télécharger un fichier de mappage » pour importer un mappage à partir d’une exportation précédente (peut-être sur une autre machine).
+    * vous pouvez utiliser le bouton « Télécharger un fichier de mappage » pour importer un mappage à partir d’une exportation précédente (peut-être sur une autre machine).
     * Vous pouvez utiliser « importer » pour permettre au système d’utiliser ce mappage pour ce HMD sur cet ordinateur.
 
 > [!NOTE] 
@@ -138,7 +138,7 @@ R : Si vous vous abonnez à la version Windows 20H1 ou version ultérieure par 
 
 ### <a name="tracking"></a>SUIVRE
 
-Q : Comment fonctionne la technologie de suivi des casques de la réalité mixte Windows ?  
+Q : comment fonctionne la technologie de suivi des casques Windows Mixed Reality ?  
 
 La réalité mixte partage la même technologie de suivi que le HoloLens. Pour en savoir plus sur le système de suivi interne, consultez la documentation [ici](/windows/mixed-reality/enthusiast-guide/tracking-system).
 
@@ -162,7 +162,7 @@ Des lumières dans une pièce (même des surcharges) qui sont en vue si le suivi
 
 **Q : comment Microsoft Azure aider à mon entreprise ?**
 
-R : la gestion sur site et à distance basée sur Azure peut aider votre entreprise à être pilotée par les données, à réduire les coûts d’exploitation et à mettre à l’échelle le déploiement sur les sites existants et nouveaux. Les services de Cloud Computing Azure, tels que le stockage Azure, Azure Functions, les App Service, la mise en réseau Azure et IOT Hub peuvent vous aider dans les cas d’utilisation suivants :  
+R : la gestion sur site et à distance basée sur Azure peut aider votre entreprise à être pilotée par les données, à réduire les coûts d’exploitation et à mettre à l’échelle le déploiement sur les sites existants et nouveaux. les services de cloud computing azure, tels que stockage Azure, les Azure Functions, les App Service, la mise en réseau Azure et IOT Hub peuvent vous aider dans les cas d’utilisation suivants :  
 
 Gestion des & de déploiement des appareils à distance 
 
@@ -178,7 +178,7 @@ Système de réservation et de réservation LBE
 
 **Q : je développe un MMOG spatial à déployer sur un encombrement énorme. Tous les services qui m’aident à gérer mon contenu et la persistance des objets ?**
 
-R : les ancres spatiales Azure sont un nouveau service de réalité mixte qui permet l’utilisation de la réalité mixte multi-utilisateur, avec prise en charge spatiale, sur les appareils HoloLens, iOS et Android. Vous pouvez en savoir plus sur les ancres spatiales Azure [ici](https://azure.microsoft.com//services/spatial-anchors/).
+r : les ancres spatiales Azure sont un nouveau service de réalité mixte qui permet l’utilisation de la réalité mixte multi-utilisateur, avec prise en charge spatiale, sur les appareils HoloLens, iOS et Android. Vous pouvez en savoir plus sur les ancres spatiales Azure [ici](https://azure.microsoft.com//services/spatial-anchors/).
 
 **Question. Notre lieu est spécialisé dans les expériences multi-joueurs et je souhaite concentrer notre temps de développement sur le contenu et le développement frontal. Existe-t-il des offres qui peuvent m’aider à démarrer ou à décharger le développement principal ?**
 
@@ -186,9 +186,9 @@ R : Azure PlayFab est une plateforme backend complète pour les jeux en direct.
 
 ### <a name="misc"></a>Divers
 
-**Q : J’utilise SteamVR pour déployer mes expériences. Windows Mixed Reality fonctionne-t-il avec SteamVR ?**
+**Q : J’utilise SteamVR pour déployer mes expériences. ne fonctionne-t-il Windows Mixed Reality avec SteamVR ?**
 
-R : Windows Mixed Reality for SteamVR permet aux utilisateurs d’exécuter des expériences SteamVR sur des casques immersifs immersifs de Windows Mixed Reality. En savoir plus sur SteamVR avec WMR [ici](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+r : Windows Mixed Reality pour SteamVR permet aux utilisateurs d’exécuter des expériences SteamVR sur Windows Mixed Reality des casques immersifs. En savoir plus sur SteamVR avec WMR [ici](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
 
 ### <a name="support-and-community"></a>Support et communauté  
 

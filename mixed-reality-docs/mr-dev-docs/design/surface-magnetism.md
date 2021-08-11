@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de la réalité mixte, casque de la réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, magnétisme de surface
-ms.openlocfilehash: 4afed1ff9a1e8a7cb46f4810ac388739bca1b19e
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: réalité mixte, contrôles, interaction, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité windows mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, magnétisme de surface
+ms.openlocfilehash: c3f1a390d6abe259c9cb825a41f757809c85c9565a1280cf82d8badc262cbf30
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196230"
 ---
 # <a name="surface-magnetism"></a>Aimantation de surface
 
@@ -23,7 +23,7 @@ Le magnétisme des surfaces vous permet de placer des objets holographiques sur 
 
 ---
 
-## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>Magnétisme de surface dans MRTK (kit de préensemble de réalité mixte) pour Unity
+## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>magnétisme de Surface dans MRTK (Shared Computer Toolkit de réalité mixte) pour unity
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit des scripts et des exemples de scènes pour la technique du magnétisme de la surface. Vous pouvez utiliser le magnétisme des surfaces avec différents types d’entrées, telles que des contrôleurs à main, des regards oculaires et des contrôleurs de mouvement.
 

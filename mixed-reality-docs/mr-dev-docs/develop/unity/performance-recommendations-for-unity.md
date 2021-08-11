@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: graphiques, UC, GPU, rendu, garbage collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 7d672af0c9309e4dd2965cc3cb315671a720a58a
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 4fa8c781f335974655ac18e8d7ee60b5ab2bd05e785ef7af5c3a261ff0986e2d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212129"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recommandations sur les performances pour Unity
 

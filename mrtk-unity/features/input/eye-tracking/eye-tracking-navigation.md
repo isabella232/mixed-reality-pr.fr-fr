@@ -4,19 +4,19 @@ description: Comment utiliser le ciblage oculaire pour la navigation dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking,
-ms.openlocfilehash: d966bbe1d3a256e55c62532e8101c1f2846e1136
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, EyeTracking,
+ms.openlocfilehash: e1ca34054a019e26bebf14282cd351467e5c65e2c2c3fa4f35647dd5aba680ee
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197114"
 ---
 # <a name="eye-supported-navigation-in-mrtk"></a>Navigation prise en charge par l’œil dans MRTK
 
 ![MRTK](../../images/eye-tracking/mrtk_et_navigation.png)
 
-Imaginez que vous lisez des informations sur un ardoise et que vous atteignez la fin du texte affiché, le texte défile automatiquement pour afficher davantage de contenu. Ou vous pouvez effectuer un zoom sur l’emplacement de votre recherche. La carte ajuste également automatiquement le contenu pour conserver les objets intéressants dans le champ de vision. Une autre application intéressante est l’observation sans mains des hologrammes 3D en apportant automatiquement les parties de l’hologramme que vous examinez au premier plan. Voici quelques exemples qui sont décrits sur cette page dans le contexte de la navigation prise en charge par l’oeil.
+Imagine vous lisez des informations sur un ardoise et que vous atteignez la fin du texte affiché, le texte défile automatiquement pour afficher davantage de contenu. Ou vous pouvez effectuer un zoom sur l’emplacement de votre recherche. La carte ajuste également automatiquement le contenu pour conserver les objets intéressants dans le champ de vision. Une autre application intéressante est l’observation sans mains des hologrammes 3D en apportant automatiquement les parties de l’hologramme que vous examinez au premier plan. Voici quelques exemples qui sont décrits sur cette page dans le contexte de la navigation prise en charge par l’oeil.
 
 Les descriptions suivantes supposent que vous êtes déjà familiarisé avec la [configuration du suivi oculaire dans votre scène MRTK](eye-tracking-basic-setup.md) et avec les principes de base de l' [accès aux données de suivi oculaire](eye-tracking-target-selection.md) dans MRTK Unity.
 Les exemples présentés dans les éléments suivants font tous partie de la `EyeTrackingDemo-03-Navigation` scène (ressources/MRTK/examples/démos/EyeTracking/scènes/EyeTrackingDemo-03-navigation).
@@ -59,7 +59,7 @@ L’exemple de défilement montre un texte de défilement qui démarre lorsque l
 
 ## <a name="gaze-supported-pan-and-zoom"></a>Panoramique et zoom pris en charge dans le regard
 
-Qui n’a pas utilisé de carte virtuelle avant de rechercher sa résidence ou d’explorer les nouveaux emplacements ? Le suivi oculaire vous permet d’approfondir directement les parties qui vous intéressent et de faire un zoom avant, vous pouvez suivre facilement le cours d’une rue pour explorer votre voisinage.
+Qui n’avez pas utilisé de carte virtuelle avant de rechercher sa résidence ou d’explorer les nouveaux emplacements ? Le suivi oculaire vous permet d’approfondir directement les parties qui vous intéressent et de faire un zoom avant, vous pouvez suivre facilement le cours d’une rue pour explorer votre voisinage.
 Cela n’est pas seulement utile pour l’exploration des cartes géographiques, mais également pour l’extraction des détails dans des photographies, des visualisations de données ou même une image médicale en flux continu. L’utilisation de cette fonctionnalité dans votre application est simple ! Pour obtenir le contenu rendu sur une [texture]( https://docs.unity3d.com/ScriptReference/Texture.html) (par exemple, une photo, des données diffusées en continu), ajoutez simplement le script [PanZoomTexture](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.PanZoomTexture) .
 Pour un [RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html) , utilisez [PanZoomRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.PanZoomRectTransf). En étendant la fonctionnalité de [défilement automatique](#auto-scroll) , nous activons essentiellement pour faire défiler à la fois verticalement et horizontalement en même temps et agrandir le contenu autour du point de focalisation actuel de l’utilisateur.
 
@@ -86,7 +86,7 @@ SkimProofUpdateSpeed | Plus la valeur est faible, plus le défilement est lent a
 
 ## <a name="attention-based-3d-rotation"></a>Rotation 3D en fonction de l’attention
 
-Imaginez qu’il s’agit d’un objet en 3D et des parties que vous souhaitez voir de façon plus précise que si le système vous rappelle et qu’il vous informe de la rotation de l’élément.
+Imagine regardant un objet 3d et les parties que vous souhaitez voir s’afficher plus près de chez vous, comme si le système recherchait votre avis et que vous sachiez l’utiliser pour vous.
 C’est l’idée des rotations 3D basées sur l’attention qui vous permettent d’examiner tout le côté d’un hologramme sans soulever de doigt.
 Pour activer ce comportement, ajoutez simplement le script [OnLookAtRotateByEyeGaze](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.OnLookAtRotateByEyeGaze) à la partie de votre gameobject avec un composant de [collision](https://docs.unity3d.com/ScriptReference/Collider.html) .
 Vous pouvez modifier plusieurs paramètres listés ci-dessous pour limiter la vitesse et l’orientation de l’hologramme.

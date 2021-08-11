@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, modèles d’application, conception, HoloLens, Scan Room, mappage spatial, maille, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, HoloLens
-ms.openlocfilehash: 87312a5d5361ac0e8c24a622cf69fe3e9b147ff5
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+keywords: Windows Mixed Reality, modèles d’application, conception, HoloLens, analyse de salle, mappage spatial, maillage, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens
+ms.openlocfilehash: 0ebfbd9a1f07ffd0671d36dcc63dbd5303a2cdbceb906839be9736f43de76937
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207827"
 ---
 # <a name="room-scan-visualization"></a>Visualisation du balayage d’une pièce
 
@@ -19,14 +19,14 @@ Les applications qui requièrent un mappage spatial s’appuient sur l’apparei
 
 Pour garantir l’utilité des données de mappage spatiale, les développeurs d’applications disposent de plusieurs options :
 * S’appuyer sur ce qui a déjà été collecté. Ces données peuvent être incomplètes au départ.
-* Demandez à l’utilisateur d’utiliser le geste fleuri pour accéder à la page d’hébergement Windows Mixed Reality, puis explorez la zone qu’il souhaite utiliser pour l’expérience. Ils peuvent utiliser l’utilisation de l’air pour confirmer que toutes les zones nécessaires sont connues de l’appareil.
+* demandez à l’utilisateur d’utiliser le geste fleuri pour accéder au Windows Mixed Reality, puis explorez la zone qu’il souhaite utiliser pour l’expérience. Ils peuvent utiliser l’utilisation de l’air pour confirmer que toutes les zones nécessaires sont connues de l’appareil.
 * Créez une expérience d’exploration personnalisée dans leur propre application.
 
-Dans tous ces cas, les données réelles recueillies lors de l’exploration sont stockées par le système et l’application n’a pas besoin de le faire. Si vous souhaitez voir la visualisation de l’analyse de la salle en action, consultez notre démonstration **conception d’hologrammes-spatiales de sensibilisation** ci-dessous :
+Dans tous ces cas, les données réelles recueillies lors de l’exploration sont stockées par le système et l’application n’a pas besoin de le faire. si vous souhaitez voir la visualisation de l’analyse de la salle en action, consultez notre démonstration sur la **Hologrammes conception d’une vidéo de sensibilisation spatiale** ci-dessous :
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-*Cette vidéo a été extraite de l’application HoloLens 2 « Designing hologrammes ». Téléchargez et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
+*Cette vidéo a été extraite de l’application HoloLens 2 « Conception d’hologrammes ». Téléchargez-la et profitez de l’expérience complète [ici](https://aka.ms/dhapp).*
 
 ## <a name="device-support"></a>Prise en charge des appareils
 

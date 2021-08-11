@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, application native, moteur personnalisé, intergiciel, meilleures pratiques, performances, qualité, stabilité
-ms.openlocfilehash: ee600cfc22ab1fb7ee43c5727d8e19cf3a1b1463
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2cbd05417f62f7380b048f692295bbbe98ceba5bce69c4f1dae21aec812ec450
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207847"
 ---
 # <a name="openxr-app-best-practices"></a>Meilleures pratiques pour les applications OpenXR
 
@@ -21,7 +21,7 @@ Vous pouvez voir un exemple des meilleures pratiques ci-dessous dans le fichier 
 
 Les meilleures pratiques décrites dans cette section expliquent comment obtenir la meilleure qualité visuelle et la meilleure stabilité dans n’importe quelle application OpenXR.
 
-Pour obtenir d’autres recommandations relatives aux performances propres à HoloLens 2, consultez la section [meilleures pratiques en matière de performances sur hololens 2](#best-practices-for-performance-on-hololens-2) ci-dessous.
+pour obtenir d’autres recommandations relatives aux performances spécifiques à HoloLens 2, consultez la section [meilleures pratiques en matière de performances sur HoloLens 2](#best-practices-for-performance-on-hololens-2) ci-dessous.
 
 ### <a name="gamma-correct-rendering"></a>Gamma-rendu correct
 
@@ -31,20 +31,20 @@ Il existe une exception si le pipeline de rendu de l’application effectue une 
 ### <a name="submit-depth-buffer-for-projection-layers"></a>Envoyer le tampon de profondeur pour les couches de projection
 
 Utilisez toujours `XR_KHR_composition_layer_depth` l’extension et soumettez la mémoire tampon de profondeur avec la couche de projection lors de l’envoi d’un frame à `xrEndFrame` .
-L’activation de la reprojection de profondeur matérielle sur HoloLens 2 améliore la stabilité des hologrammes.
+l’activation de la reprojection de profondeur matérielle sur HoloLens 2 améliore la stabilité des hologrammes.
 
 ### <a name="choose-a-reasonable-depth-range"></a>Choisir une plage de profondeur raisonnable
 
 Privilégiez une plage de profondeur plus étroite pour étendre le contenu virtuel afin d’aider à la stabilité de l’hologramme sur HoloLens.
 Par exemple, l’exemple OpenXrProgram. cpp utilise 0,1 mètres à 20 mètres.
 Utilisez [inversé-Z](https://developer.nvidia.com/content/depth-precision-visualized) pour une résolution de profondeur plus uniforme.
-Sur HoloLens 2, l’utilisation du `DXGI_FORMAT_D16_UNORM` format de profondeur préféré permet d’obtenir un meilleur taux de trames et de meilleures performances, bien que les mémoires tampons de profondeur de 16 bits fournissent une résolution moins importante que les mémoires tampons de profondeur 24 bits.
+sur HoloLens 2, l’utilisation du format de profondeur par défaut permet `DXGI_FORMAT_D16_UNORM` d’obtenir un meilleur taux de trames et de meilleures performances, bien que les mémoires tampons de profondeur de 16 bits fournissent une résolution moins profonde que les mémoires tampons de profondeur 24 bits.
 Suivre ces meilleures pratiques pour tirer le meilleur parti de la résolution de profondeur devient plus important.
 
 ### <a name="prepare-for-different-environment-blend-modes"></a>Préparer les différents modes de fusion de l’environnement
 
 Si votre application s’exécute également sur des casques immersifs qui bloquent complètement le monde, veillez à énumérer les modes de mélange d’environnement pris en charge à l’aide de l' `xrEnumerateEnvironmentBlendModes` API et à préparer correctement le rendu du contenu.
-Par exemple, pour un système avec `XR_ENVIRONMENT_BLEND_MODE_ADDITIVE` tel que HoloLens, l’application doit utiliser transparent comme couleur claire, tandis que pour un système avec `XR_ENVIRONMENT_BLEND_MODE_OPAQUE` , l’application doit restituer une couleur opaque ou une salle virtuelle en arrière-plan.
+par exemple, pour un système avec `XR_ENVIRONMENT_BLEND_MODE_ADDITIVE` tel que le HoloLens, l’application doit utiliser transparent comme couleur claire, tandis que pour un système avec `XR_ENVIRONMENT_BLEND_MODE_OPAQUE` , l’application doit afficher une couleur opaque ou une salle virtuelle en arrière-plan.
 
 ### <a name="choose-unbounded-reference-space-as-applications-root-space"></a>Choisir l’espace de référence illimité comme espace racine de l’application
 
@@ -59,16 +59,16 @@ Pour les utilisateurs d’hologrammes placés à un emplacement discret dans le 
 
 ### <a name="support-mixed-reality-capture"></a>Prendre en charge la capture de réalité mixte
 
-Bien que l’affichage principal de HoloLens 2 utilise la fusion d’environnement additive, lorsque l’utilisateur démarre la capture de la [réalité mixte](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md), le contenu de rendu de l’application est mélangé à l’alpha avec le flux vidéo de l’environnement.
+bien que l’affichage principal de HoloLens 2 utilise la fusion d’environnement additive, lorsque l’utilisateur démarre la capture de la [réalité mixte](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md), le contenu de rendu de l’application est mélangé à l’alpha avec le flux vidéo de l’environnement.
 Pour obtenir la meilleure qualité visuelle dans les vidéos de capture de réalité mixte, il est préférable de définir le `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` dans le de la couche de projection `layerFlags` .
 
 ## <a name="best-practices-for-performance-on-hololens-2"></a>Meilleures pratiques en matière de performances sur HoloLens 2
 
-En tant qu’appareil mobile avec prise en charge de la reprojection matérielle, HoloLens 2 a des exigences plus strictes pour des performances optimales.  Il existe plusieurs façons d’envoyer des données de composition par le biais de, ce qui entraîne un traitement après traitement avec une pénalité notable des performances.
+en tant qu’appareil mobile avec prise en charge de la reprojection matérielle, HoloLens 2 a des exigences plus strictes pour des performances optimales.  Il existe plusieurs façons d’envoyer des données de composition par le biais de, ce qui entraîne un traitement après traitement avec une pénalité notable des performances.
 
 ### <a name="select-a-swapchain-format"></a>Sélectionner un format de utilise permutation
 
-Énumérez toujours les formats de pixel pris en charge à l’aide de `xrEnumerateSwapchainFormats` , puis choisissez le premier format de pixel de couleur et de profondeur du runtime pris en charge par l’application, car c’est ce que le runtime préfère pour des performances optimales. Notez, sur HoloLens 2, `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` et `DXGI_FORMAT_D16_UNORM` est généralement le premier choix pour obtenir de meilleures performances de rendu. Cette préférence peut être différente sur les casques de VR qui s’exécutent sur un PC de bureau, où les mémoires tampons de profondeur de 24 bits ont moins d’impact sur les performances.
+Énumérez toujours les formats de pixel pris en charge à l’aide de `xrEnumerateSwapchainFormats` , puis choisissez le premier format de pixel de couleur et de profondeur du runtime pris en charge par l’application, car c’est ce que le runtime préfère pour des performances optimales. notez que, sur HoloLens 2 `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` , `DXGI_FORMAT_D16_UNORM` est généralement le premier choix pour obtenir de meilleures performances de rendu. Cette préférence peut être différente sur les casques de VR qui s’exécutent sur un PC de bureau, où les mémoires tampons de profondeur de 24 bits ont moins d’impact sur les performances.
   
 **Avertissement de performance :** L’utilisation d’un format autre que le format de couleur utilise permutation principal entraîne un traitement postérieur au moment de l’exécution, ce qui se traduit par une baisse significative des performances.
 
@@ -76,11 +76,11 @@ En tant qu’appareil mobile avec prise en charge de la reprojection matérielle
 
 Rendez toujours le rendu avec la largeur/hauteur de la configuration d’affichage recommandé ( `recommendedImageRectWidth` et `recommendedImageRectHeight` de `XrViewConfigurationView` ), et utilisez toujours l' `xrLocateViews` API pour interroger la vue recommandée pose, le point de vue et autres paramètres de rendu avant le rendu.
 Utilisez toujours le `XrFrameEndInfo.predictedDisplayTime` de l’appel le plus récent `xrWaitFrame` lors de l’interrogation des poses et des vues.
-Cela permet à HoloLens d’ajuster le rendu et d’optimiser la qualité visuelle pour la personne qui porte le HoloLens.
+cela permet à HoloLens d’ajuster le rendu et d’optimiser la qualité visuelle pour la personne qui porte le HoloLens.
 
 ### <a name="use-a-single-projection-layer"></a>Utiliser une seule couche de projection
 
-HoloLens 2 offre une puissance GPU limitée pour le rendu du contenu et un compositeur matériel optimisé pour une couche de projection unique.
+HoloLens 2 dispose d’une puissance de GPU limitée pour le rendu du contenu et d’un compositeur matériel optimisé pour une couche de projection unique.
 En utilisant toujours une seule couche de projection, vous pouvez améliorer la fréquence de l’application, la stabilité de l’hologramme et la qualité visuelle.  
   
 **Avertissement de performance :** L’envoi de tout sauf une seule couche de protection entraînera un traitement postérieur au moment de l’exécution, ce qui se traduit par une baisse significative des performances.

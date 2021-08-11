@@ -1,21 +1,21 @@
 ---
 title: Informations de référence sur les API du portail d’appareil
-description: Restez à jour sur l’API du portail d’appareils Windows pour le développement HoloLens.
+description: restez à jour sur l’API du portail d’appareils Windows pour le développement HoloLens.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens, portail des appareils Windows, API, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: cdbe9635fc51a0d19c978b72fdc8d5db6b8e8e01
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, Windows portail des appareils, API, casque de la réalité mixte, casque Windows mixed reality, casque de réalité virtuelle
+ms.openlocfilehash: 6b41c569917150c303da933a75d354f574fb579ba676dac281e9cde2bfc59818
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581257"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207837"
 ---
 # <a name="device-portal-api-reference"></a>Informations de référence sur les API du portail d’appareil
 
-Tout ce qui se trouve dans le [portail de périphériques Windows](using-the-windows-device-portal.md) repose sur des API REST que vous pouvez utiliser pour accéder aux données et contrôler votre appareil par programme.
+tout ce qui se trouve dans le [Windows portail des appareils](using-the-windows-device-portal.md) repose sur des API REST que vous pouvez utiliser pour accéder aux données et contrôler votre appareil par programme.
 
 ## <a name="app-deloyment"></a>Déploiement de l’application
 
@@ -116,7 +116,7 @@ Retourner les données
 
 **/API/Holographic/OS/ETW/customproviders (récupération)**
 
-Retourne une liste de fournisseurs ETW spécifiques à HoloLens qui ne sont pas inscrits auprès du système.
+retourne une liste de HoloLens fournisseurs ETW spécifiques qui ne sont pas inscrits auprès du système.
 
 **/API/Holographic/OS/services (récupération)**
 
@@ -177,7 +177,7 @@ Obtient la liste des fichiers de base de données de reconstruction spatiale dis
 
 Obtient la liste des ancres persistantes pour l’utilisateur actuel. 
 
-### <a name="downloaduploaddelete-files"></a>Télécharger/Télécharger/supprimer des fichiers
+### <a name="downloaduploaddelete-files"></a>fichiers de téléchargement/Télécharger/delete
 **/API/Holographic/mapmanager/Download (récupération)**
 
 Télécharge un fichier de base de données de carte, d’ancrage ou de reconstruction spatiale. Le fichier doit avoir été préalablement téléchargé ou exporté.
@@ -353,17 +353,17 @@ Définit les paramètres de capture de la réalité mixte par défaut.  Certains
 
 **/API/Holographic/MRC/Status (récupération)**
 
-Obtient l’état de capture de la réalité mixte dans le portail de périphériques Windows.
+obtient l’état de capture de la réalité mixte dans le portail de l’appareil Windows.
 
-**_Réponse_* _
+***Réponse***
 
-La réponse contient une propriété JSON indiquant si le portail de périphériques Windows enregistre ou non une vidéo.
+la réponse contient une propriété JSON indiquant si Windows portail d’appareil enregistre ou non une vidéo.
 
 ``` javascript
 {"IsRecording" : boolean}
 ```
 
-_ */API/Holographic/MRC/thumbnail (récupération)**
+**/API/Holographic/MRC/thumbnail (récupération)**
 
 Obtient l’image miniature pour le fichier spécifié.
 
@@ -380,7 +380,7 @@ Paramètres
 * MIC : capturer le microphone : true ou false (false par défaut)
 * loopback : capturer l’audio de l’application : true ou false (false par défaut)
 * RenderFromCamera : (HoloLens 2 uniquement) rendu du point de vue de la caméra photo/vidéo : true ou false (true par défaut)
-* Vstab : (HoloLens 2 uniquement) activer la stabilisation vidéo : true ou false (true par défaut)
+* vstab : (HoloLens 2 uniquement) activer la stabilisation de vidéo : true ou false (true par défaut)
 * vstabbuffer : (HoloLens 2 uniquement) latence de la mémoire tampon de stabilisation vidéo : de 0 à 30 frames (15 images par défaut)
 
 **/API/Holographic/MRC/Video/Control/Stop (publication)**
@@ -392,7 +392,7 @@ Arrête l’enregistrement de la réalité mixte actuelle
 > [!CAUTION]
 > En raison de l’isolement de bouclage, vous ne pouvez pas vous connecter à la réalité mixte en continu à partir d’une application sur un appareil.
 
-HoloLens prend en charge l’aperçu instantané de la réalité mixte via le téléchargement segmenté d’un MP4 fragmenté.
+HoloLens prend en charge l’aperçu instantané de la réalité mixte via le téléchargement segmenté d’un mp4 fragmenté.
 
 Les flux de réalité mixte partagent le même ensemble de paramètres pour contrôler ce qui est capturé :
 * Holo : capturer les hologrammes : true ou false
@@ -403,7 +403,7 @@ Les flux de réalité mixte partagent le même ensemble de paramètres pour cont
 Si aucun de ces éléments n’est spécifié : les hologrammes, la caméra photo/vidéo et l’audio de l’application sont capturés<br>
 Si des paramètres sont spécifiés : les paramètres non spécifiés ont par défaut la valeur false
 
-Paramètres facultatifs (HoloLens 2 uniquement)
+paramètres facultatifs (HoloLens 2 uniquement)
 * RenderFromCamera : rendu du point de vue de la caméra photo/vidéo : true ou false (true par défaut)
 * Vstab : activer la stabilisation vidéo : true ou false (false par défaut)
 * vstabbuffer : latence de la mémoire tampon de stabilisation vidéo : de 0 à 30 frames (15 images par défaut)
@@ -568,7 +568,7 @@ Obtient l’état de l’enregistrement.
 
 Arrêter l’enregistrement en cours. L’enregistrement est retourné sous la forme d’un fichier.
 
-## <a name="performance-data"></a>Données relatives aux performances
+## <a name="performance-data"></a>Données de performances
 
 **/API/ResourceManager/Processes (récupération)**
 
@@ -660,7 +660,7 @@ Paramètres
 * CreateProfile : oui ou non
 * clé : clé partagée, encodée en hex64
 
-## <a name="windows-performance-recorder"></a>Enregistreur de performances Windows
+## <a name="windows-performance-recorder"></a>Windows Enregistreur de performances
 
 **/API/WPR/customtrace (publication)**
 

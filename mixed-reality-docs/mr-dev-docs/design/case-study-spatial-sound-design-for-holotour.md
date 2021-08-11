@@ -1,29 +1,29 @@
 ---
 title: Étude de cas - Conception du son spatial pour HoloTour
-description: Pour créer une visite virtuelle 3D véritablement immersif pour Microsoft HoloLens, les vidéos panoramiques et les scènes holographiques ne font qu’une partie de la formule.
+description: pour créer une visite virtuelle 3d véritablement immersif pour Microsoft HoloLens, les vidéos panoramiques et les scènes holographiques ne font qu’une partie de la formule.
 author: jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, HoloTour, son spatial, étude de cas, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte, audio
-ms.openlocfilehash: 7f2474ba6edbdd54c31b24d38bb60e170b65b25a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, HoloLens, HoloTour, son spatial, étude de cas, casque de la réalité mixte, casque Windows mixed realisation, casque de réalité virtuelle, HoloLens, MRTK, réalité mixte Shared Computer Toolkit, audio
+ms.openlocfilehash: b398ea7b3ddd85db85018da1852ed0c5ae410f625ff88bdda286e750a517d260
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848008"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196445"
 ---
 # <a name="case-study-spatial-sound-design-for-holotour"></a>Étude de cas : conception de son spatial pour HoloTour
 
-Les vidéos panoramiques et les paysages holographiques ne font qu’une partie de la formule d’une tournée Microsoft HoloLens immersif. Cet article décrit comment le son a été utilisé pour vous faire croire que vous êtes en fait à chaque emplacement HoloTour.
+les vidéos panoramiques et les paysages holographiques ne font qu’une partie de la formule pour une visite de Microsoft HoloLens immersif. Cet article décrit comment le son a été utilisé pour vous faire croire que vous êtes en fait à chaque emplacement HoloTour.
 
 ## <a name="the-tech"></a>Le Tech
 
-La belle image et les scènes holographiques que vous voyez dans HoloTour ne sont qu’une partie d’une expérience de réalité mixte incroyable. Alors que les hologrammes s’affichent uniquement devant un utilisateur, HoloLens peut fournir un [son spatial](spatial-sound.md) dans toutes les directions, ce qui fournit une expérience sensorielle plus complète.
+La belle image et les scènes holographiques que vous voyez dans HoloTour ne sont qu’une partie d’une expérience de réalité mixte incroyable. alors que les hologrammes s’affichent uniquement devant un utilisateur, HoloLens peut fournir un [son spatial](spatial-sound.md) à partir de toutes les directions, ce qui fournit une expérience sensorielle plus complète.
 
 Le son spatial fournit des signaux pour indiquer une direction que l’utilisateur doit activer ou pour informer l’utilisateur qu’il y a plus d’hologrammes à afficher dans son espace. Nous pouvons également joindre un son directement à un hologramme et mettre à jour continuellement la direction et la distance de l’hologramme de l’utilisateur. Cette technique semble si le son provient directement de cet objet.
 
-Pour HoloTour, nous voulions tirer parti des capacités de son spatiale de HoloLens. nous avons donc créé un environnement ambiant à 360 degrés qui est synchronisé avec la vidéo pour révéler les points forts de certains emplacements.
+pour HoloTour, nous voulions tirer parti des capacités de son spatial de HoloLens. nous avons donc créé un environnement ambiant à 360 degrés qui est synchronisé avec la vidéo pour révéler les points forts de certains emplacements.
 
 ## <a name="behind-the-scenes"></a>Dans les coulisses
 
@@ -58,7 +58,7 @@ Dans une approche différente, nous affichons parfois l’ambiance stéréo en b
 
 ## <a name="tips-and-tricks"></a>Conseils et astuces
 
-Il existe d’autres façons de mettre en évidence la direction et d’améliorer l’immersion pour tirer pleinement parti des fonctionnalités de son spatial de HoloLens. Nous avons fourni une liste ici. Écoutez ces effets la prochaine fois que vous essaierez HoloTour.
+Il existe d’autres façons de mettre en évidence la direction et d’améliorer l’immersion pour tirer pleinement parti des capacités de son spatial de HoloLens. Nous avons fourni une liste ici. Écoutez ces effets la prochaine fois que vous essaierez HoloTour.
 * **Rechercher les cibles :** Ces sons sont déclenchés lorsque vous examinez un objet ou une zone spécifique du cadre holographique. Par exemple, regardez sur le café de Rome dans Piazza Navona pour déclencher discrètement des sons occupés-restaurants.
 * **Vision locale :** Bien que HoloTour contienne certains « temps » dans lesquels votre guide de visite guidée, assisté par des hologrammes, explore un sujet en profondeur. Par exemple, à mesure que la façade du Pantheon se résout pour révéler le Oculus, le son reverberating qui a été placé en tant qu’émetteur en 3D à partir de l’Pantheon encourage l’utilisateur à explorer l’intérieur.
 * **Orientation améliorée :** Dans de nombreuses scènes, nous avons placé des sons de différentes façons pour les ajouter à la direction. Dans la scène Pantheon, par exemple, le son de la Fontaine a été placé comme un émetteur distinct suffisamment proche de l’utilisateur pour qu’il puisse obtenir un sens « Sonic parallaxe » lorsqu’ils parcourent l’espace de lecture. Dans la scène Salinas de Maras du Pérou, les sons des petits flux individuels ont été placés en tant qu’émetteurs distincts pour créer un environnement ambiant plus immersif, mettant l’utilisateur avec les sons authentiques de cet emplacement.
@@ -70,4 +70,4 @@ Il existe d’autres façons de mettre en évidence la direction et d’amélior
 * [Son spatial](spatial-sound.md)
 * [Conception du son spatial](spatial-sound-design.md)
 * [Son spatial dans Unity](../develop/unity/spatial-sound-in-unity.md)
-* [Vidéo : Microsoft HoloLens : HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)
+* [vidéo : Microsoft HoloLens : HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)

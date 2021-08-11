@@ -1,24 +1,24 @@
 ---
 title: Implémenter des lanceurs d’applications 3D (applications UWP)
-description: Découvrez comment créer des programmes de lancement et des logos d’applications en 3D pour des applications et des jeux UWP Windows Mixed Reality sur des casques HoloLens et VR.
+description: découvrez comment créer des lanceurs et des logos d’applications en 3d pour Windows Mixed Reality des applications et des jeux UWP sur des casques HoloLens et VR.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icône, modélisation, lanceur, lanceur 3D, vignette, cube en direct, lien profond, secondarytile, vignette secondaire, UWP, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, XML, cadre englobant, Unity
-ms.openlocfilehash: 7a0b73a0b3638c1aa2c9cbffacd548fb461589ea
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b0ccff2aaba9c4693f58b134cdb3af9190b59befec0b31851273ed6a3bc1fc04
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196418"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implémenter des lanceurs d’applications 3D (applications UWP)
 
 > [!NOTE]
-> Cette fonctionnalité a été ajoutée dans le cadre de la mise à jour 2017 automne Creators (RS3) pour les casques immersifs et est prise en charge par HoloLens avec la mise à jour 2018 d’avril de Windows 10. Assurez-vous que votre application cible une version du SDK Windows supérieure ou égale à 10.0.16299 sur les casques immersifs et 10.0.17125 sur HoloLens. Vous trouverez les SDK Windows les plus récentes [ici](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+> cette fonctionnalité a été ajoutée dans le cadre de la mise à jour 2017 automne Creators (RS3) pour les casques immersifs et est prise en charge par HoloLens avec la mise à jour Windows 10 avril 2018. assurez-vous que votre application cible une version de la SDK Windows supérieure ou égale à 10.0.16299 sur les casques immersifs et 10.0.17125 sur HoloLens. vous trouverez les SDK Windows les plus récentes [ici](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-La [base de la réalité Windows Mixed](../discover/navigating-the-windows-mixed-reality-home.md) est le point de départ où les utilisateurs se trouvent avant de lancer des applications. Lors de la création d’une application UWP pour Windows Mixed Reality, par défaut, les applications sont lancées en tant qu’ardoise 2D avec le logo de leur application. Lors du développement d’expériences pour Windows Mixed Reality, un lanceur 3D peut éventuellement être défini pour remplacer le lanceur 2D par défaut de votre application. En règle générale, les lanceurs 3D sont recommandés pour lancer des applications immersifs qui déchargent les utilisateurs de Windows Mixed Reality. Le lanceur 2D par défaut est préféré lorsque l’application est activée sur place. Vous pouvez également créer un [lien profond en 3D (secondaryTile)](#3d-deep-links-secondarytiles) en tant que lanceur en 3D pour le contenu d’une application UWP 2D.
+la [Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md) à la base est le point de départ où les utilisateurs se trouvent avant de lancer des applications. lors de la création d’une application UWP pour Windows Mixed Reality, par défaut, les applications sont lancées en tant qu’ardoise 2d avec le logo de leur application. lors du développement d’expériences pour Windows Mixed Reality, un lanceur 3d peut éventuellement être défini pour remplacer le lanceur 2d par défaut de votre application. en règle générale, les lanceurs 3d sont recommandés pour lancer des applications immersives qui tirent les utilisateurs de la Windows Mixed Reality. Le lanceur 2D par défaut est préféré lorsque l’application est activée sur place. Vous pouvez également créer un [lien profond en 3D (secondaryTile)](#3d-deep-links-secondarytiles) en tant que lanceur en 3D pour le contenu d’une application UWP 2D.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
@@ -29,7 +29,7 @@ La création d’un lanceur d’applications 3D comporte trois étapes :
 2. [Modélisation et exportation](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. Intégration dans votre application (cet article)
 
-les ressources 3D à utiliser comme lanceurs pour votre application doivent être créées à l’aide des [instructions de création Windows Mixed realisation](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) pour garantir la compatibilité. Les ressources qui ne satisfont pas à cette spécification de création ne seront pas affichées dans la page d’hébergement de Windows Mixed Reality.
+les ressources 3d à utiliser comme lanceurs pour votre application doivent être créées à l’aide des [instructions de création de Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) pour garantir la compatibilité. les ressources qui ne satisfont pas à cette spécification de création ne seront pas affichées dans la Windows Mixed Reality page d’hébergement.
 
 ## <a name="configuring-the-3d-launcher"></a>Configuration du lanceur 3D
 
@@ -37,7 +37,7 @@ Lorsque vous créez un projet dans Visual Studio, cela a pour effet de créer un
 
 ### <a name="xml"></a>XML
 
-Tout d’abord, recherchez le manifeste du package d’application dans votre projet actuel. Par défaut, le manifeste sera nommé Package. appxmanifest. Si vous utilisez Visual Studio, cliquez avec le bouton droit sur le manifeste dans votre afficheur de solution, puis sélectionnez **afficher la source** pour ouvrir le fichier XML à modifier. 
+Tout d’abord, recherchez le manifeste du package d’application dans votre projet actuel. Par défaut, le manifeste sera nommé Package. appxmanifest. si vous utilisez Visual Studio, cliquez avec le bouton droit sur le manifeste dans votre afficheur de solution, puis sélectionnez **afficher la source** pour ouvrir le fichier xml à modifier. 
 
 En haut du manifeste, ajoutez le schéma uap5 et incluez-le en tant qu’espace de noms pouvant être ignoré :
 
@@ -72,7 +72,7 @@ Spécifiez ensuite la valeur « MixedRealityModel » dans la vignette par déf
 </Applications>
 ```
 
-L’élément MixedRealityModel accepte un chemin de fichier pointant vers une ressource 3D stockée dans votre package d’application. Actuellement, seuls les modèles 3D fournis à l’aide du format de fichier. GLB et créés par rapport aux [instructions de création de ressources 3D Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) sont pris en charge. Les ressources doivent être stockées dans le package d’application et l’animation n’est pas prise en charge actuellement. Si le paramètre « Path » est laissé vide, Windows affiche la ardoise 2D au lieu du lanceur 3D. **Remarque :** la ressource. GLB doit être marquée comme « contenu » dans vos paramètres de génération avant de générer et d’exécuter votre application.
+L’élément MixedRealityModel accepte un chemin de fichier pointant vers une ressource 3D stockée dans votre package d’application. actuellement, seuls les modèles 3d fournis à l’aide du format de fichier. glb et créés sur les [instructions de création de ressources 3d Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) sont pris en charge. Les ressources doivent être stockées dans le package d’application et l’animation n’est pas prise en charge actuellement. si le paramètre « Path » est laissé vide Windows affiche la ardoise 2d au lieu du lanceur 3d. **Remarque :** la ressource. GLB doit être marquée comme « contenu » dans vos paramètres de génération avant de générer et d’exécuter votre application.
 
 
 ![Sélectionnez le. GLB dans votre Explorateur de solutions et utilisez la section Propriétés pour le marquer comme « contenu » dans les paramètres de génération.](images/buildsetting-content-300px.png)<br>
@@ -82,7 +82,7 @@ L’élément MixedRealityModel accepte un chemin de fichier pointant vers une r
 
 Un cadre englobant peut être utilisé pour ajouter éventuellement une zone de mémoire tampon supplémentaire autour de l’objet. Le cadre englobant est spécifié à l’aide d’un point central et d’étendues, qui indiquent la distance entre le centre du rectangle englobant et ses bords le long de chaque axe. Les unités du cadre englobant peuvent être mappées à 1 unité = 1 mètre. Si un cadre englobant n’est pas fourni, l’un d’eux est automatiquement ajusté à la maille de l’objet. Si le cadre englobant fourni est plus petit que le modèle, il sera redimensionné pour s’ajuster à la maille.
 
-La prise en charge de l’attribut cadre englobant sera fournie avec la mise à jour Windows RS4 en tant que propriété sur l’élément MixedRealityModel. Pour définir un cadre englobant tout d’abord en haut du manifeste de l’application, ajoutez le schéma uap6 et incluez-le en tant qu’espaces de noms pouvant être ignorés :
+la prise en charge de l’attribut cadre englobant est fournie avec la Windows mise à jour RS4 en tant que propriété sur l’élément MixedRealityModel. Pour définir un cadre englobant tout d’abord en haut du manifeste de l’application, ajoutez le schéma uap6 et incluez-le en tant qu’espaces de noms pouvant être ignorés :
 
 ```xml
 <Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
@@ -105,20 +105,20 @@ Ensuite, sur le MixedRealityModel, définissez la propriété SpatialBoundingBox
 
 ### <a name="using-unity"></a>Utilisation de Unity
 
-Lorsque vous utilisez Unity, le projet doit être généré et ouvert dans Visual Studio pour que le manifeste d’application puisse être modifié. 
+lorsque vous utilisez unity, le projet doit être généré et ouvert dans Visual Studio pour que le manifeste de l’application puisse être modifié. 
 
 >[!NOTE]
->Le lanceur 3D doit être redéfini dans le manifeste lors de la génération et du déploiement d’une nouvelle solution Visual Studio à partir d’Unity.
+>le lanceur 3d doit être redéfini dans le manifeste lors de la génération et du déploiement d’une nouvelle solution Visual Studio à partir d’unity.
 
 ## <a name="3d-deep-links-secondarytiles"></a>Liens Deep 3D (secondaryTiles)
 
 > [!NOTE]
-> Cette fonctionnalité a été ajoutée dans le cadre de la mise à jour de 2017 automne Creators Update (RS3) pour les casques immersifs (VR) et dans le cadre de la mise à jour du 2018 d’avril (RS4) pour HoloLens. Assurez-vous que votre application cible une version du SDK Windows supérieure ou égale à 10.0.16299 sur les casques immersifs (VR) et 10.0.17125 sur HoloLens. Vous trouverez les SDK Windows les plus récentes [ici](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+> Cette fonctionnalité a été ajoutée dans le cadre de la mise à jour 2017 automne Creators Update (RS3) pour les casques immersifs (VR) et dans le cadre de la mise à jour du 2018 d’avril (RS4) pour HoloLens. assurez-vous que votre application cible une version de la SDK Windows supérieure ou égale à 10.0.16299 sur les casques immersifs (VR) et 10.0.17125 sur HoloLens. vous trouverez les SDK Windows les plus récentes [ici](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 >[!IMPORTANT]
->les liens secondaryTiles (3D Deep Links) fonctionnent uniquement avec les applications UWP 2D. Toutefois, vous pouvez créer un [lanceur d’applications en 3D](implementing-3d-app-launchers.md) pour lancer une application exclusive à partir de la page d’hébergement de Windows Mixed Reality.
+>les liens secondaryTiles (3D Deep Links) fonctionnent uniquement avec les applications UWP 2D. toutefois, vous pouvez créer un [lanceur d’applications en 3d](implementing-3d-app-launchers.md) pour lancer une application exclusive à partir de la Windows Mixed Reality page d’hébergement.
 
-Vos applications 2D peuvent être améliorées pour Windows Mixed Reality en ajoutant la possibilité de placer des modèles 3D à partir de votre application dans la [page d’accueil Windows Mixed Real](../discover/navigating-the-windows-mixed-reality-home.md) comme des liens détaillés vers le contenu au sein de votre application 2D, comme des [vignettes secondaires 2D](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) dans le menu Démarrer de Windows. Par exemple, vous pouvez créer des photosphères de 360 ° qui se lient directement à une application de visionneuse de photos 360 °, ou permettre aux utilisateurs de placer du contenu 3D à partir d’une collection de ressources qui ouvre une page de détails à propos de l’auteur. Il s’agit simplement de quelques façons d’étendre les fonctionnalités de votre application 2D avec du contenu 3D.
+vos applications 2d peuvent être améliorées pour Windows Mixed Reality en ajoutant la possibilité de placer des modèles 3d à partir de votre application dans la [Windows Mixed Reality famille](../discover/navigating-the-windows-mixed-reality-home.md) en tant que liens détaillés vers le contenu au sein de votre application 2d, comme les [vignettes secondaires 2d](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) sur le menu Démarrer de Windows. Par exemple, vous pouvez créer des photosphères de 360 ° qui se lient directement à une application de visionneuse de photos 360 °, ou permettre aux utilisateurs de placer du contenu 3D à partir d’une collection de ressources qui ouvre une page de détails à propos de l’auteur. Il s’agit simplement de quelques façons d’étendre les fonctionnalités de votre application 2D avec du contenu 3D.
 
 ### <a name="creating-a-3d-secondarytile"></a>Création d’un « secondaryTile » 3D
 
@@ -162,7 +162,7 @@ Un cadre englobant peut être utilisé pour ajouter une zone de mémoire tampon 
 ### <a name="activation-behavior"></a>Comportement d’activation
 
 > [!NOTE]
-> Ce composant sera pris en charge à partir de la mise à jour de Windows RS4. Assurez-vous que votre application cible une version du SDK Windows supérieure ou égale à 10.0.17125 si vous envisagez d’utiliser cette fonctionnalité
+> ce composant sera pris en charge à partir de la Windows mise à jour RS4. assurez-vous que votre application cible une version du SDK Windows supérieure ou égale à 10.0.17125 si vous envisagez d’utiliser cette fonctionnalité
 
 Vous pouvez définir le comportement d’activation d’un secondaryTile 3D afin de contrôler la manière dont il réagit lorsqu’un utilisateur le sélectionne. Cela peut être utilisé pour placer des objets 3D dans la zone de vie de la réalité mixte, qui sont purement informatifs ou décoratifs. Les types de comportement d’activation suivants sont pris en charge :
 1. Par défaut : lorsqu’un utilisateur sélectionne l’secondaryTile 3D, l’application est activée
@@ -189,9 +189,9 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 }
 ```
 
-### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>Vérification de la présence de l’utilisateur dans Windows Mixed Reality
+### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>Vérification de l’existence de l’utilisateur dans Windows Mixed Reality
 
-les liens en profondeur 3D (secondaryTiles) peuvent être créés uniquement lorsque la vue est affichée dans un casque Windows Mixed Reality. Lorsque votre vue n’est pas présentée dans un casque Windows Mixed Reality, nous vous recommandons de la traiter correctement en masquant le point d’entrée ou en indiquant un message d’erreur. Vous pouvez vérifier cela en interrogeant [IsCurrentViewPresentedOnHolographic ()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
+les liens en profondeur 3d (secondaryTiles) peuvent être créés uniquement lorsque la vue est affichée dans un Windows Mixed Reality casque. lorsque votre vue n’est pas présentée dans un Windows Mixed Reality casque, nous vous recommandons de la traiter correctement en masquant le point d’entrée ou en indiquant un message d’erreur. Vous pouvez vérifier cela en interrogeant [IsCurrentViewPresentedOnHolographic ()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
 
 ## <a name="tile-notifications"></a>Notifications de vignette
 
@@ -207,6 +207,6 @@ Pour plus d’informations sur les autres fonctionnalités et attributs de vigne
 
 * [Exemple de modèle de réalité mixte](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) contenant un lanceur d’application 3D.
 * [Guide de conception du lanceur d’applications 3D](3d-app-launcher-design-guidance.md)
-* [Création de modèles 3D à utiliser dans la page d’hébergement Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [création de modèles 3d à utiliser dans la Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Implémentation de lanceurs d’applications en 3D (applications Win32)](implementing-3d-app-launchers-win32.md)
 * [Exploration de la page d’accueil Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

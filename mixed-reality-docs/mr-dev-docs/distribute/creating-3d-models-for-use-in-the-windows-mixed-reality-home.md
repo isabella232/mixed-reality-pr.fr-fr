@@ -1,42 +1,42 @@
 ---
 title: Créer des modèles 3D à utiliser dans la page d’accueil
-description: Exigences relatives aux ressources et aide à la création de modèles 3D à utiliser dans la famille Windows Mixed Reality sur les casques HoloLens et immersif (VR).
+description: exigences relatives aux ressources et aide à la création de modèles 3d à utiliser dans le Windows Mixed Reality à la page d’habitation sur les casques HoloLens et immersifs (VR).
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, modélisation, Guide de modélisation, besoins en ressources, instructions de création, lanceur, lanceur 3D, texture, matériaux, complexité, triangles, maillage, polygones, polynombre, limites, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: c5447661bdbe6aeb59a3e7a524863d68b717ee0e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 9fdd485c67a757d40b049c08f114ce9982aafc27e9103c4b31c21fd8af08d186
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207679"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Créer des modèles 3D à utiliser dans la page d’accueil
 
-La [base de la réalité Windows Mixed](../discover/navigating-the-windows-mixed-reality-home.md) est le point de départ où les utilisateurs se trouvent avant de lancer des applications. Lorsque vous concevez votre application pour des casques Windows mixtes, utilisez un [modèle 3D en tant que lanceur d’applications](implementing-3d-app-launchers.md) et placez [des liens profond en 3D dans la page d’hébergement de Windows Mixed Reality](implementing-3d-app-launchers.md#3d-deep-links-secondarytiles). Cet article décrit les instructions de création de modèles 3D compatibles avec la page d’hébergement de la réalité mixte Windows.
+la [Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md) à la base est le point de départ où les utilisateurs se trouvent avant de lancer des applications. lorsque vous concevez votre application pour Windows Mixed Reality casques, utilisez un [modèle 3d en tant que lanceur d’applications](implementing-3d-app-launchers.md) et placez [des liens profond en 3d dans la Windows Mixed Reality page d’origine](implementing-3d-app-launchers.md#3d-deep-links-secondarytiles). cet article décrit les instructions pour la création de modèles 3d compatibles avec la Windows Mixed Reality page d’hébergement.
 
 ## <a name="asset-requirements-overview"></a>Présentation des exigences relatives aux ressources
 
-Lors de la création de modèles 3D pour Windows Mixed Reality, toutes les ressources doivent remplir les conditions suivantes : 
+lors de la création de modèles 3d pour Windows Mixed Reality, toutes les ressources doivent remplir les conditions suivantes : 
 1. L' [exportation](#exporting-models) des ressources doit être fournie au format de fichier. GLB (binaire glTF)
 2. La [modélisation](#modeling-guidelines) des ressources doit être inférieure à 10 Ko, ne pas comporter plus de 64 nœuds et des sous-maillages 32 par LOD
 3. [Matériaux](#material-guidelines) -les textures ne peuvent pas être supérieures à 4096 x 4096 et la plus petite carte MIP ne doit pas être supérieure à 4 sur l’une ou l’autre des dimensions
 4. [Animation](#animation-guidelines) : les animations ne peuvent pas dépasser 20 minutes à 30 i/s (images clés 36 000) et doivent contenir <= 8192 sommets cibles Morph
-5. [Optimisation](#optimizations) -les ressources doivent être optimisées à l’aide de [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases). *Requis sur les versions de système d’exploitation windows <= 1709** et recommandé sur les versions de système d’exploitation Windows >= 1803
+5. [Optimisation](#optimizations) -les ressources doivent être optimisées à l’aide de [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases). *requis sur les versions de système d’exploitation Windows <= 1709** et recommandé sur les versions de système d’exploitation Windows >= 1803
 
-Le reste de cet article comprend une présentation détaillée de ces exigences et des recommandations supplémentaires pour garantir que vos modèles fonctionnent bien avec la page d’hébergement Windows Mixed Reality. 
+le reste de cet article fournit une vue d’ensemble détaillée de ces exigences et des recommandations supplémentaires pour garantir que vos modèles fonctionnent bien avec la Windows Mixed Reality page d’hébergement. 
 
 ## <a name="detailed-guidance"></a>Conseils détaillés
 
 ### <a name="exporting-models"></a>Exportation de modèles
 
-Windows Mixed Reality s’attend à ce que les ressources 3D soient remises à l’aide du format de fichier. GLB avec des images incorporées et des données binaires. GLB est la version binaire du format glTF, qui est une norme ouverte libre Royalty pour la remise de ressources en 3D gérée par le groupe Khronos. Comme glTF évolue comme une norme industrielle pour le contenu 3D interopérable, Microsoft prend en charge le format sur les applications et les expériences Windows. Si vous n’avez pas créé de ressource glTF avant de pouvoir trouver la [liste des exportateurs et convertisseurs pris en charge](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) sur la page GitHub glTF Working Group.  
+la Windows Mixed Reality la page d’hébergement s’attend à ce que les ressources 3d soient remises à l’aide du format de fichier. glb avec les images incorporées et les données binaires. GLB est la version binaire du format glTF, qui est une norme ouverte libre Royalty pour la remise de ressources en 3D gérée par le groupe Khronos. comme glTF évolue comme une norme industrielle pour le contenu 3d interopérable, Microsoft prend en charge le format entre les applications Windows et les expériences. Si vous n’avez pas créé de ressource glTF avant de pouvoir trouver la [liste des exportateurs et convertisseurs pris en charge](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) sur la page GitHub glTF Working Group.  
 
 ### <a name="modeling-guidelines"></a>Instructions de modélisation
 
-Windows s’attend à ce que les ressources soient générées à l’aide des recommandations de modélisation suivantes pour garantir la compatibilité avec l’expérience d’origine de la réalité mixte. Quand vous modélisez dans votre programme de votre choix, gardez à l’esprit les recommandations et limitations suivantes :
+Windows s’attend à ce que les ressources soient générées à l’aide des instructions de modélisation suivantes pour garantir la compatibilité avec l’expérience d’hébergement de la réalité mixte. Quand vous modélisez dans votre programme de votre choix, gardez à l’esprit les recommandations et limitations suivantes :
 1. L’axe vers le haut doit être défini sur « Y ».
 2. L’élément multimédia doit être orienté vers l’avant vers l’axe Z positif.
 3. Toutes les ressources doivent être construites sur le plan de sol à l’origine de la scène (0, 0, 0)
@@ -49,7 +49,7 @@ Windows s’attend à ce que les ressources soient générées à l’aide des r
 
 ### <a name="triangle-counts-and-levels-of-detail-lods"></a>Nombres et niveaux de détails des triangles (LODs)
 
-La page d’hébergement Windows Mixed Reality ne prend pas en charge les modèles avec plus de 10 000 triangles. Il est recommandé de facettiser vos mailles avant de les exporter pour vous assurer qu’elles ne dépassent pas ce nombre. Windows MR prend également en charge les niveaux de détail Geometry facultatifs (LODs) pour garantir une expérience performante et de haute qualité. [Le WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases) vous permet de combiner 3 versions de votre modèle en un seul modèle. glb. Windows détermine le LOD à afficher en fonction de la quantité d’écran occupée par le modèle. Seuls 3 niveaux de LOD sont pris en charge avec les nombres de triangles recommandés suivants :
+la Windows Mixed Reality la page d’hébergement ne prend pas en charge les modèles avec plus de 10 000 triangles. Il est recommandé de facettiser vos mailles avant de les exporter pour vous assurer qu’elles ne dépassent pas ce nombre. Windows RM prend également en charge les niveaux de détail Geometry facultatifs (LODs) pour garantir une expérience performante et de haute qualité. [Le WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases) vous permet de combiner 3 versions de votre modèle en un seul modèle. glb. Windows détermine le LOD à afficher en fonction de la quantité d’écran occupée par le modèle. Seuls 3 niveaux de LOD sont pris en charge avec les nombres de triangles recommandés suivants :
 <br>
 
 |  Niveau LOD  |  Nombre de triangles recommandé  |  Nombre maximal de triangles | 
@@ -60,7 +60,7 @@ La page d’hébergement Windows Mixed Reality ne prend pas en charge les modèl
 
 ### <a name="node-counts-and-submesh-limits"></a>Nombres de nœuds et limites de sous-maillage
 
-La page d’hébergement Windows Mixed Reality ne prend pas en charge les modèles avec plus de 64 nœuds ou des sous-maillages 32 par LOD. Les nœuds sont un concept de la [spécification glTF](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) qui définit les objets de la scène. Les sous-maillages sont définis dans le tableau de [primitives](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) sur le maillage de l’objet. 
+la Windows Mixed Reality la page d’hébergement ne prend pas en charge les modèles avec plus de 64 nœuds ou des sous-maillages 32 par LOD. Les nœuds sont un concept de la [spécification glTF](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) qui définit les objets de la scène. Les sous-maillages sont définis dans le tableau de [primitives](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) sur le maillage de l’objet. 
 
 |  Fonctionnalité |  Description  |  Max pris en charge | Documentation |
 |------|------|------|------|
@@ -98,18 +98,18 @@ Indique au nuanceur s’il s’agit d’un métal ou non. RAW Metal = 1,0 blanc 
 
 ## <a name="optimizations"></a>Optimisations
 
-La page d’hébergement Windows Mixed Reality offre une série d’optimisations par-dessus les spécifications glTF principales définies à l’aide d’extensions personnalisées. Ces optimisations sont requises sur les versions de Windows <= 1709 et recommandées sur les versions plus récentes de Windows. Vous pouvez facilement optimiser n’importe quel modèle glTF 2,0 à l’aide de [Windows Mixed Reality Converter disponible sur GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). Cet outil effectuera les optimisations de l’empaquetage et des optimisations de texture, comme indiqué ci-dessous. Pour une utilisation générale, nous vous recommandons d’utiliser WindowsMRAssetConverter, mais si vous avez besoin de davantage de contrôle sur l’expérience et que vous souhaitez créer votre propre pipeline d’optimisation, vous pouvez vous référer à la spécification détaillée ci-dessous.  
+Windows Mixed Reality la page d’hébergement offre une série d’optimisations par-dessus les spécifications de base glTF définies à l’aide d’extensions personnalisées. ces optimisations sont requises sur les versions Windows <= 1709 et recommandées sur les versions plus récentes de Windows. vous pouvez facilement optimiser n’importe quel modèle glTF 2,0 à l’aide de l' [Windows Mixed Reality le convertisseur de ressources disponible sur GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). Cet outil effectuera les optimisations de l’empaquetage et des optimisations de texture, comme indiqué ci-dessous. Pour une utilisation générale, nous vous recommandons d’utiliser WindowsMRAssetConverter, mais si vous avez besoin de davantage de contrôle sur l’expérience et que vous souhaitez créer votre propre pipeline d’optimisation, vous pouvez vous référer à la spécification détaillée ci-dessous.  
 
 > [!NOTE]
 > Pour obtenir une liste définitive des possibilités offertes par les limites du modèle, reportez-vous à l’article sur l' [optimisation du modèle 3D](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) à utiliser dans les applications Dynamics 365.
 
 ### <a name="materials"></a>Matériaux
 
-Pour améliorer le temps de chargement des ressources dans les environnements de réalité mixte, Windows MR prend en charge le rendu des textures DDS compressées compressées en fonction du schéma de distribution de texture défini dans cette section. Les textures DDS sont référencées à l’aide de l' [extension MSFT_texture_dds](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds). La compression des textures est fortement recommandée. 
+pour améliorer le temps de chargement des ressources dans les environnements de réalité mixte Windows MR prend en charge le rendu des textures DDS compressées compressées en fonction du schéma de distribution des textures défini dans cette section. Les textures DDS sont référencées à l’aide de l' [extension MSFT_texture_dds](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds). La compression des textures est fortement recommandée. 
 
 #### <a name="hololens"></a>HoloLens
 
-Les expériences de réalité mixte basées sur HoloLens s’attendent à ce que les textures soient emballées à l’aide d’une configuration à 2 textures à l’aide des spécifications suivantes :
+les expériences de réalité mixte basées sur HoloLens attendent que les textures soient emballées à l’aide d’une configuration à 2 textures à l’aide de la spécification de compression suivante :
 <br>
 
 |  Propriété glTF  |  Texture  |  Schéma d’emballage | 
@@ -127,9 +127,9 @@ Lorsque vous compressez les textures DDS, la compression suivante est attendue s
 
 #### <a name="immersive-vr-headsets"></a>Casques immersifs (VR)
 
-Les expériences Windows Mixed Reality basées sur PC pour les casques immersifs s’attendent à ce que les textures soient emballées à l’aide d’une configuration à 3 textures à l’aide de la spécification de compression suivante :
+les expériences de Windows Mixed Reality basées sur PC pour les casques immersifs s’attendent à ce que les textures soient emballées à l’aide d’une configuration à 3 textures à l’aide des spécifications de compression suivantes :
 
-##### <a name="windows-os--1803"></a>>du système d’exploitation Windows = 1803
+##### <a name="windows-os--1803"></a>Windows >DU SYSTÈME D’EXPLOITATION = 1803
 
 <br>
 
@@ -147,7 +147,7 @@ Lorsque vous compressez les textures DDS, la compression suivante est attendue s
 |  normalTexture  |  BC5 | 
 |  baseColorTexture, occlusionRoughnessMetallicTexture  |  BC7 | 
 
-##### <a name="windows-os--1709"></a><du système d’exploitation Windows = 1709
+##### <a name="windows-os--1709"></a>Windows <DU SYSTÈME D’EXPLOITATION = 1709
 <br>
 
 |  Propriété glTF  |  Texture  |  Schéma d’emballage | 
@@ -166,7 +166,7 @@ Lorsque vous compressez les textures DDS, la compression suivante est attendue s
 
 ### <a name="adding-mesh-lods"></a>Ajout de Mesh LODs
 
-Windows MR utilise un nœud Geometry LODs pour restituer des modèles 3D à différents niveaux de détail en fonction de la couverture à l’écran. Bien que cette fonctionnalité ne soit techniquement pas nécessaire, elle est recommandée pour toutes les ressources. Actuellement, Windows prend en charge 3 niveaux de détail. Le LOD par défaut est 0, ce qui représente la meilleure qualité. Les autres LODs sont numérotés séquentiellement, par exemple 1, 2 et sont progressivement plus bas en qualité. Le [convertisseur Windows Mixed Reality Asset](https://github.com/Microsoft/glTF-Toolkit/releases) prend en charge la génération de ressources qui répondent à cette spécification LOD en acceptant plusieurs modèles glTF et en les fusionnant dans une seule ressource avec des niveaux de LOD valides. Le tableau suivant présente le classement LOD attendu et les cibles de triangle :
+Windows MR utilise un nœud Geometry LODs pour restituer des modèles 3D à différents niveaux de détail en fonction de la couverture à l’écran. Bien que cette fonctionnalité ne soit techniquement pas nécessaire, elle est recommandée pour toutes les ressources. actuellement Windows prend en charge 3 niveaux de détail. Le LOD par défaut est 0, ce qui représente la meilleure qualité. Les autres LODs sont numérotés séquentiellement, par exemple 1, 2 et sont progressivement plus bas en qualité. le [convertisseur d’éléments de Windows Mixed Reality](https://github.com/Microsoft/glTF-Toolkit/releases) prend en charge la génération de ressources qui répondent à cette spécification lod en acceptant plusieurs modèles glTF et en les fusionnant dans une seule ressource avec des niveaux lod valides. Le tableau suivant présente le classement LOD attendu et les cibles de triangle :
 <br>
 
 |  Niveau LOD  |  Nombre de triangles recommandé  |  Nombre maximal de triangles | 
@@ -179,22 +179,22 @@ Lorsque vous utilisez LODs, spécifiez toujours 3 niveaux de LOD. Un LODs manqua
 
 ### <a name="screen-coverage"></a>Couverture de l’écran
 
-Les LODs sont affichés dans Windows Mixed Reality en fonction d’un système piloté par la valeur de la couverture d’écran définie sur chaque LOD. Les objets qui consomment actuellement une plus grande partie de l’espace d’écran sont affichés à un niveau plus élevé de LOD. La couverture d’écran ne fait pas partie de la spécification Core glTF 2,0 et doit être spécifiée à l’aide de MSFT_ScreenCoverage dans la section « Extras » de l' [extension MSFT_lod](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod).
+les LODs sont affichés dans Windows Mixed Reality en fonction d’un système piloté par la valeur de la couverture d’écran définie sur chaque LOD. Les objets qui consomment actuellement une plus grande partie de l’espace d’écran sont affichés à un niveau plus élevé de LOD. La couverture d’écran ne fait pas partie de la spécification Core glTF 2,0 et doit être spécifiée à l’aide de MSFT_ScreenCoverage dans la section « Extras » de l' [extension MSFT_lod](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod).
 <br>
 
 |  Niveau LOD  |  Plage recommandée  |  Plage par défaut | 
 |-------|-------|-------|
 |  LOD 0  |  100%-50% |  0,5 | 
-|  LOD 1 |  Moins de 50%-20%  |  0.2 | 
-|  LOD 2 |  Moins de 20%-1%  |  0.01 | 
+|  LOD 1 |  Moins de 50%-20%  |  0,2 | 
+|  LOD 2 |  Moins de 20%-1%  |  0,01 | 
 |  LOD 4  |  Moins de 1%  |  - | 
 
 ## <a name="animation-guidelines"></a>Instructions d’animation
 
 > [!NOTE]
-> Cette fonctionnalité a été ajoutée dans le cadre de la [mise à jour 2018 d’avril de Windows 10](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Dans les versions antérieures de Windows, ces animations ne sont pas lues, mais elles sont toujours chargées si elles sont créées conformément aux instructions de cet article.  
+> cette fonctionnalité a été ajoutée dans le cadre de [Windows 10 mise à jour 2018 d’avril](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). dans les versions antérieures de Windows ces animations ne sont pas lues, elles continueront à se charger si elles sont créées conformément aux instructions de cet article.  
 
-La page d’hébergement de la réalité mixte prend en charge les objets glTF animés sur les casques HoloLens et immersif (VR). Si vous souhaitez déclencher des animations sur votre modèle, vous devez utiliser l’extension de la carte d’animation au format glTF. Cette extension vous permet de déclencher des animations dans le modèle glTF en fonction de la présence de l’utilisateur dans le monde, par exemple déclencher une animation lorsque l’utilisateur est proche de l’objet ou qu’il l’examine. Si vous glTF objet contient des animations, mais ne définit pas les déclencheurs, les animations ne sont pas lues. La section ci-dessous décrit un flux de travail pour l’ajout de ces déclencheurs à n’importe quel objet glTF animé.
+la page d’hébergement de la réalité mixte prend en charge les objets glTF animés sur des casques HoloLens et immersifs (VR). Si vous souhaitez déclencher des animations sur votre modèle, vous devez utiliser l’extension de la carte d’animation au format glTF. Cette extension vous permet de déclencher des animations dans le modèle glTF en fonction de la présence de l’utilisateur dans le monde, par exemple déclencher une animation lorsque l’utilisateur est proche de l’objet ou qu’il l’examine. Si vous glTF objet contient des animations, mais ne définit pas les déclencheurs, les animations ne sont pas lues. La section ci-dessous décrit un flux de travail pour l’ajout de ces déclencheurs à n’importe quel objet glTF animé.
 
 ### <a name="tools"></a>Outils
 
@@ -211,7 +211,7 @@ Une fois que vous avez ouvert votre modèle glTF, vous devez voir le JSON dans l
 
 ### <a name="adding-the-triggers"></a>Ajout des déclencheurs
 
-Les déclencheurs d’animation sont ajoutés au modèle JSON glTF à l’aide de l’extension de mappage d’animation. L’extension de mappage d’animation est documentée publiquement [ici sur GitHub](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) (Remarque : il s’agit d’une extension de brouillon). Pour ajouter l’extension à votre modèle, faites défiler jusqu’à la fin du fichier glTF dans l’éditeur et ajoutez le bloc « extensionsUsed » et « extensions » à votre fichier s’ils n’existent pas déjà. Dans la section « extensionsUsed », vous allez ajouter une référence à l’extension « EXT_animation_map » et dans le bloc « extensions », vous ajouterez vos mappages aux animations dans le modèle.
+Les déclencheurs d’animation sont ajoutés au modèle JSON glTF à l’aide de l’extension de mappage d’animation. l’extension de mappage d’animation est documentée publiquement [ici sur GitHub](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) (remarque : il s’agit d’une extension de brouillon). Pour ajouter l’extension à votre modèle, faites défiler jusqu’à la fin du fichier glTF dans l’éditeur et ajoutez le bloc « extensionsUsed » et « extensions » à votre fichier s’ils n’existent pas déjà. Dans la section « extensionsUsed », vous allez ajouter une référence à l’extension « EXT_animation_map » et dans le bloc « extensions », vous ajouterez vos mappages aux animations dans le modèle.
 
 Comme indiqué [dans la spécification](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) , vous définissez ce qui déclenche l’animation à l’aide de la chaîne « sémantique » sur une liste d' « animations », qui est un tableau d’index d’animation. Dans l’exemple ci-dessous, nous avons spécifié l’animation à lire lorsque l’utilisateur est Gazing au niveau de l’objet :
 
@@ -230,7 +230,7 @@ Comme indiqué [dans la spécification](https://github.com/msfeldstein/glTF/blob
       }
   }
 ```
-L’animation suivante déclenche la sémantique est prise en charge par la page d’hébergement Windows Mixed Reality.  
+la sémantique de déclenchement de l’animation suivante est prise en charge par la Windows Mixed Reality page d’hébergement.  
 * « ALWAYs » : boucler constamment une animation
 * « DÉTENU » : en boucle pendant toute la durée d’un objet.
 * « Point de regard » : en boucle pendant qu’un objet est consulté
@@ -243,7 +243,7 @@ Une fois que vous avez apporté les modifications à votre modèle glTF, vous po
 
 ### <a name="restrictions"></a>Restrictions
 
-Les animations ne peuvent pas dépasser 20 minutes et ne peuvent pas contenir plus de 36 000 images clés (20 minutes à 30 i/s). En outre, lorsque vous utilisez des animations basées sur une cible morphe, vous ne dépassez pas 8192 sommets de cible morphe ou moins. Si vous dépassez ces nombres, la ressource animée sera non prise en charge dans la page d’hébergement de la réalité mixte Windows. 
+Les animations ne peuvent pas dépasser 20 minutes et ne peuvent pas contenir plus de 36 000 images clés (20 minutes à 30 i/s). En outre, lorsque vous utilisez des animations basées sur une cible morphe, vous ne dépassez pas 8192 sommets de cible morphe ou moins. si vous dépassez ces nombres, la ressource animée sera non prise en charge dans la Windows Mixed Reality page d’origine. 
 
 |Fonctionnalité|Maximale|
 |-----|-----|
@@ -253,9 +253,9 @@ Les animations ne peuvent pas dépasser 20 minutes et ne peuvent pas contenir pl
 
 ## <a name="gltf-implementation-notes"></a>Remarques sur l’implémentation de glTF
 
-Windows MR ne prend pas en charge le retournement de géométrie à l’aide d’échelles négatives. La géométrie avec des échelles négatives entraîne probablement des artefacts visuels.
+Windows RM ne prend pas en charge le retournement de géométrie à l’aide d’échelles négatives. La géométrie avec des échelles négatives entraîne probablement des artefacts visuels.
 
-La ressource glTF doit pointer vers la scène par défaut à l’aide de l’attribut Scene qui doit être rendu par Windows MR. En outre, le chargeur Windows MR glTF avant la [mise à jour 2018 de Windows 10 avril](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **requiert** des accesseurs :
+la ressource glTF doit pointer vers la scène par défaut à l’aide de l’attribut scene à afficher par Windows MR. en outre, le Windows le chargeur glTF MR avant le [Windows 10 mise à jour 2018 d’avril](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **nécessite** des accesseurs :
 * Doit avoir des valeurs min et max.
 * Le type scalaire doit être componentType UNSIGNED_SHORT (5123) ou UNSIGNED_INT (5125).
 * Le type VEC2 et VEC3 doit être componentType FLOAT (5126).
@@ -275,18 +275,18 @@ Les propriétés de matériau suivantes sont ignorées à partir des spécificat
 * occlusionTexture : doit utiliser à la place la compression de texture optimisée Microsoft définie ci-dessous
 * occlusionStrength
 
-Windows MR ne prend pas en charge les lignes et les points en mode primitif. 
+Windows RM ne prend pas en charge les lignes et les points en mode primitifs. 
 
 Un seul attribut de vertex UV est pris en charge.
 
 ## <a name="more-resources"></a>Plus de ressources
 
 * [exportateurs et convertisseurs glTF](https://github.com/KhronosGroup/glTF#converters-and-exporters)
-* [Boîte à outils glTF](https://github.com/Microsoft/glTF-Toolkit)
+* [glTF Shared Computer Toolkit](https://github.com/Microsoft/glTF-Toolkit)
 * [Spécification glTF 2,0](https://github.com/KhronosGroup/glTF/blob/master/README.md)
 * [Spécification de l’extension Microsoft glTF LOD](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_lod/README.md)
 * [Spécification des extensions de la compression de texture PC Mixed Real](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_occlusionRoughnessMetallic/README.md)
-* [Spécification des extensions de compression de texture de réalité mixte HoloLens](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
+* [HoloLens Spécification des extensions de compression de texture de réalité mixte](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Spécification des extensions glTF textures Microsoft DDS](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
 ## <a name="see-also"></a>Voir aussi

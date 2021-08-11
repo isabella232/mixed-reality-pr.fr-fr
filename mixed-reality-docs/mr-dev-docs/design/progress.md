@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, conception, contrôles, UI, UX, indicateur de progression, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, kit de temps de réalité mixte
-ms.openlocfilehash: 01f032efb887ecfc6f8d66683fb954cd0574a4f3
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, conception, contrôles, interface utilisateur, expérience utilisateur, indicateur de progression, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: 8d397f627b55409d640ac6925a72d6bf169e207c27cb2a90bcee990c7a8d7683
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207879"
 ---
 # <a name="progress-indicator"></a>Indicateur de progression
 
@@ -55,7 +55,7 @@ Il est important de fournir les informations de l’utilisateur sur ce qui se pa
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Exemple de sonnerie de progression sur un appareil HoloLens](images/640px-progressring.jpg)<br>
+       ![exemple de sonnerie de progression sur HoloLens appareil](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -68,7 +68,7 @@ Il est important de fournir les informations de l’utilisateur sur ce qui se pa
         ### <a name="progress-with-a-custom-objectbr"></a>Progression avec un objet personnalisé<br>
         Vous pouvez ajouter à la personnalité et à l’identité de votre application en personnalisant le contrôle de progression avec vos propres objets 2D/3D personnalisés.<br>
         <br>
-        *Image : progression avec un exemple de maillage personnalisé dans HoloLens*
+        *Image : progression avec l’exemple de maille personnalisé dans HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -80,16 +80,16 @@ Il est important de fournir les informations de l’utilisateur sur ce qui se pa
 
 ---
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Bonnes pratiques
 
 * Couplez étroitement le [billboarding ou la balise](billboarding-and-tag-along.md) à l’affichage de la progression puisque l’utilisateur peut facilement déplacer son tête dans un espace vide et perdre le contexte. Votre application peut sembler se bloquer si l’utilisateur ne parvient pas à voir quoi que ce soit. Le billboarding et la balise sont intégrés au Prefab Progress.
-* Il est toujours judicieux de fournir des informations d’État sur ce qui se passe à l’utilisateur. Le Prefab de progression fournit différents styles visuels, y compris la progression de type Ring Windows standard pour la fourniture de l’État. Vous pouvez également utiliser une maille personnalisée avec une animation si vous souhaitez que le style de la progression s’aligne sur la personnalisation de votre application.
+* Il est toujours judicieux de fournir des informations d’État sur ce qui se passe à l’utilisateur. le prefab de progression fournit différents styles visuels, y compris le Windows la progression standard du type ring pour fournir l’état. Vous pouvez également utiliser une maille personnalisée avec une animation si vous souhaitez que le style de la progression s’aligne sur la personnalisation de votre application.
 
 <br>
 
 ---
 
-## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Indicateur de progression dans MRTK (ensemble d’outils de réalité mixte) pour Unity
+## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>indicateur de progression dans MRTK (Shared Computer Toolkit de la réalité mixte) pour unity
 
 * [MRTK-indicateur de progression prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
 * [MRTK-service de transition de scène](/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)

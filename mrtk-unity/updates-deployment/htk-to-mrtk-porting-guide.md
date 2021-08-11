@@ -1,18 +1,18 @@
 ---
-title: Mise à niveau à partir de HoloToolkit
+title: Mise à niveau depuis HoloToolkit
 description: Migration de HoloLens Shared Computer Toolkit (HTK) vers la réalité mixte Shared Computer Toolkit (MRTK).
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, HTK,
-ms.openlocfilehash: b54445dc5ca7a6c01c968929e243a1fc4ca2d107
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: d6a8170ff9b0a9c1c3ba1461a3e297ffd2f89979864de2fbac056f22dcbb8e2f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281752"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197409"
 ---
-# <a name="upgrading-from-holotoolkit"></a>Mise à niveau à partir de HoloToolkit
+# <a name="upgrading-from-holotoolkit"></a>Mise à niveau depuis HoloToolkit
 
 guide pour vous aider à migrer à partir de HoloLens Shared Computer Toolkit (HTK) vers la réalité mixte Shared Computer Toolkit (MRTK).
 

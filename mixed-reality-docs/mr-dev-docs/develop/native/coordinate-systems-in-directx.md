@@ -6,28 +6,28 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Réalité mixte, localisateur spatial, frame de référence spatiale, système de coordonnées spatiales, étape spatiale, exemple de code, stabilisation d’image, ancrage spatial, magasin d’ancrage spatial, perte de suivi, procédure pas à pas, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 7cf463e4c3bb9b2fe06c834376eb46e3ee20c1ee
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5da521568ef15f0c512984c96846939bd30063d3485709d4b6568dc9b155052a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196444"
 ---
 # <a name="coordinate-systems-in-directx"></a>Systèmes de coordonnées dans DirectX
 
 > [!NOTE]
 > Cet article s’applique aux API natives WinRT héritées.  Pour les nouveaux projets d’application native, nous vous recommandons d’utiliser l' **[API OpenXR](openxr-getting-started.md)**.
 
-Les [systèmes de coordonnées](../../design/coordinate-systems.md) constituent la base de la compréhension spatiale offerte par les API Windows Mixed Reality.
+les [systèmes de coordonnées](../../design/coordinate-systems.md) constituent la base de la compréhension spatiale offerte par les api Windows Mixed Reality.
 
-Les appareils en VR ou monolocal d’aujourd’hui établissent un système de coordonnées principal pour leur espace suivi. Les appareils de réalité mixte, tels que HoloLens, sont conçus pour les environnements non définis volumineux, avec la découverte des appareils et l’apprentissage de son environnement à mesure que l’utilisateur parcourt. L’appareil s’adapte à l’amélioration continue des connaissances sur les salles de l’utilisateur, mais génère des systèmes de coordonnées qui modifient leur relation les uns par rapport aux autres pendant la durée de vie des applications. Windows Mixed Reality prend en charge un large éventail d’appareils, allant des casques immersifs intégrés à des châssis de référence universels.
+Les appareils en VR ou monolocal d’aujourd’hui établissent un système de coordonnées principal pour leur espace suivi. les appareils de réalité mixte comme les HoloLens sont conçus pour les environnements non définis volumineux, la découverte des appareils et l’apprentissage de son environnement à mesure que l’utilisateur se contourne. L’appareil s’adapte à l’amélioration continue des connaissances sur les salles de l’utilisateur, mais génère des systèmes de coordonnées qui modifient leur relation les uns par rapport aux autres pendant la durée de vie des applications. Windows Mixed Reality prend en charge un large éventail d’appareils, allant des casques immersifs intégrés à des châssis de référence à l’extérieur.
 
 >[!NOTE]
 >Les extraits de code de cet article illustrent actuellement l’utilisation de C++/CX au lieu des/WinRT C++ conformes à C + +17, tels qu’ils sont utilisés dans le [modèle de projet holographique c++](creating-a-holographic-directx-project.md).  Les concepts sont équivalents pour un projet C++/WinRT, bien que vous deviez traduire le code.
 
 ## <a name="spatial-coordinate-systems-in-windows"></a>Systèmes de coordonnées spatiales dans Windows
 
-Le type de cœur utilisé pour la raison des systèmes de coordonnées réels dans Windows est le <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>. Une instance de ce type représente un système de coordonnées arbitraire, fournissant une méthode permettant d’obtenir des données de matrice de transformation que vous pouvez utiliser pour transformer deux systèmes de coordonnées sans comprendre les détails de chacun d’entre eux.
+le type de cœur utilisé pour la raison des systèmes de coordonnées réels dans Windows est <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>. Une instance de ce type représente un système de coordonnées arbitraire, fournissant une méthode permettant d’obtenir des données de matrice de transformation que vous pouvez utiliser pour transformer deux systèmes de coordonnées sans comprendre les détails de chacun d’entre eux.
 
 Les méthodes qui retournent des informations spatiales acceptent un paramètre SpatialCoordinateSystem pour vous permettre de choisir le système de coordonnées dans lequel elles sont les plus utiles pour que ces coordonnées soient retournées. Les informations spatiales sont représentées par des points, des rayons ou des volumes dans l’environnement de l’utilisateur, et les unités de ces coordonnées sont toujours exprimées en mètres.
 
@@ -43,11 +43,11 @@ Tous les systèmes de coordonnées retournés par ces objets sont droitiers, ave
 ![Systèmes de coordonnées à gauche et à droite](images/left-hand-right-hand.gif)<br>
 *Systèmes de coordonnées à gauche et à droite*
 
-Utilisez la classe <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> pour créer une image jointe ou stationnaire de référence au démarrage dans un SpatialCoordinateSystem en fonction de la position HoloLens. Passez à la section suivante pour en savoir plus sur ce processus.
+utilisez la classe <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> pour créer une image jointe ou stationnaire de référence au démarrage dans un SpatialCoordinateSystem en fonction de la position de HoloLens. Passez à la section suivante pour en savoir plus sur ce processus.
 
 ## <a name="place-holograms-in-the-world-using-a-spatial-stage"></a>Placer des hologrammes dans le monde à l’aide d’une étape spatiale
 
-Le système de coordonnées pour les casques immersifs immersifs de la réalité Windows mixed est accessible à l’aide de la propriété statique <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference :: Current</a> . Cette API fournit les éléments suivants :
+le système de coordonnées pour les casques immersifs Windows Mixed Reality opaque est accessible à l’aide de la propriété statique <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference :: Current</a> . Cette API fournit les éléments suivants :
 
 * Système de coordonnées
 * Informations indiquant si le joueur est assis ou mobile
@@ -181,7 +181,7 @@ void SpatialStageManager::OnCurrentChanged(Object^ /*o*/)
 }
 ```
 
-L’ensemble des vertex qui définissent les limites de l’étape sont fournis dans l’ordre des aiguilles d’une montre. Le shell Windows Mixed Reality dessine une clôture à la limite lorsque l’utilisateur l’approche, mais vous pouvez souhaiter triangulairer la zone à votre propre usage. L’algorithme suivant peut être utilisé pour triangulairer la phase.
+L’ensemble des vertex qui définissent les limites de l’étape sont fournis dans l’ordre des aiguilles d’une montre. l’interpréteur de Windows Mixed Reality dessine une clôture à la limite lorsque l’utilisateur l’approche, mais vous pouvez souhaiter triangulairer la zone qui vous intéresse à vos propres besoins. L’algorithme suivant peut être utilisé pour triangulairer la phase.
 
 
 Code pour **triangulaire de la phase spatiale**
@@ -293,7 +293,7 @@ La classe [SpatialStationaryFrameOfReference](/uwp/api/Windows.Perception.Spatia
 
 Pour obtenir un SpatialStationaryFrameOfReference, utilisez la classe [SpatialLocator](/uwp/api/Windows.Perception.Spatial.SpatialLocator) et appelez [CreateStationaryFrameOfReferenceAtCurrentLocation](/uwp/api/Windows.Perception.Spatial.SpatialLocator).
 
-À partir du code du modèle d’application holographique Windows :
+à partir du Windows code du modèle d’application holographique :
 
 ```
            // The simplest way to render world-locked holograms is to create a stationary reference frame
@@ -320,19 +320,19 @@ Utilisez la propriété [RawCoordinateSystem](/uwp/api/Windows.Perception.Spatia
 
 ### <a name="persist-and-share-spatial-anchors"></a>Conserver et partager des ancres spatiales
 
-Vous pouvez conserver un SpatialAnchor localement à l’aide de la classe [SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore) , puis le récupérer dans une session d’application future sur le même appareil HoloLens.
+vous pouvez conserver un SpatialAnchor localement à l’aide de la classe [SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore) , puis le récupérer dans une session d’application future sur le même appareil HoloLens.
 
-En utilisant des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a>, vous pouvez créer une ancre Cloud durable à partir d’un SpatialAnchor local, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu rendu relatif à cette ancre dans le même emplacement physique en temps réel. 
+à l’aide des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a>, vous pouvez créer une ancre cloud durable à partir d’un SpatialAnchor local, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu rendu relatif à cette ancre dans le même emplacement physique en temps réel. 
 
-Vous pouvez également utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance des hologrammes asynchrones sur les appareils HoloLens, iOS et Android.  En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
+vous pouvez également utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance d’hologrammes asynchrones sur des appareils HoloLens, iOS et Android.  En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
 
-Pour commencer à créer des expériences partagées dans votre application HoloLens, essayez le démarrage rapide de 5 minutes d' <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">ancrage spatial Azure HoloLens</a>.
+pour commencer à créer des expériences partagées dans votre application HoloLens, essayez le guide de démarrage rapide de 5 minutes sur les <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">ancres spatiales Azure HoloLens</a>.
 
 Une fois que vous êtes opérationnel avec les ancres spatiales Azure, vous pouvez <a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">créer et localiser des ancres sur HoloLens</a>.  Les procédures pas à pas sont également disponibles pour <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android et iOS</a> , ce qui vous permet de partager les mêmes ancres sur tous les appareils.
 
 ### <a name="create-spatialanchors-for-holographic-content"></a>Créer des SpatialAnchors pour le contenu holographique
 
-Pour cet exemple de code, nous avons modifié le modèle d’application holographique Windows pour créer des ancres lorsque le geste **appuyé** est détecté. Le cube est ensuite placé au point d’ancrage pendant la passe de rendu.
+pour cet exemple de code, nous avons modifié le modèle d’application holographique Windows pour créer des ancres lorsque le geste **enfoncé** est détecté. Le cube est ensuite placé au point d’ancrage pendant la passe de rendu.
 
 Étant donné que plusieurs ancres sont prises en charge par la classe d’assistance, nous pouvons placer autant de cubes que nous voulons utiliser cet exemple de code !
 
@@ -497,7 +497,7 @@ Vous pouvez restaurer les ancres enregistrées dans le AnchorStore en les transf
 
 Pour restaurer les ancres à partir du SpatialAnchorStore, restaurez chacune d’elles qui vous intéresse à votre propre collection en mémoire.
 
-Vous avez besoin de votre propre base de données en mémoire de SpatialAnchors pour associer des chaînes au SpatialAnchors que vous créez. Dans notre exemple de code, nous choisissons d’utiliser un Windows :: Foundation :: Collections :: IMap pour stocker les ancres, ce qui facilite l’utilisation de la même clé et de la même valeur de données pour SpatialAnchorStore.
+Vous avez besoin de votre propre base de données en mémoire de SpatialAnchors pour associer des chaînes au SpatialAnchors que vous créez. dans notre exemple de code, nous choisissons d’utiliser un Windows :: Foundation :: Collections :: IMap pour stocker les ancres, ce qui facilite l’utilisation de la même clé et de la même valeur de données pour SpatialAnchorStore.
 
 ```
    // This is an in-memory anchor list that is separate from the anchor store.
@@ -588,15 +588,15 @@ Il peut arriver que vous souhaitiez afficher un hologramme qui [reste attaché](
 
 La classe SpatialLocatorAttachedFrameOfReference définit des systèmes de coordonnées, qui sont relatifs à l’appareil plutôt qu’au monde réel. Ce cadre a un titre fixe par rapport à l’environnement de l’utilisateur qui pointe dans la direction vers laquelle l’utilisateur était confronté lorsque le frame de référence a été créé. À partir de là, toutes les orientations dans ce frame de référence sont relatives à cet en-tête fixe, même lorsque l’utilisateur fait pivoter l’appareil.
 
-Pour HoloLens, l’origine du système de coordonnées de ce frame se trouve au centre de rotation de la tête de l’utilisateur, de sorte que sa position n’est pas affectée par la rotation de la tête. Votre application peut spécifier un décalage par rapport à ce point pour positionner les hologrammes devant l’utilisateur.
+par HoloLens, l’origine du système de coordonnées de ce frame se trouve au centre de rotation de la tête de l’utilisateur, de sorte que sa position n’est pas affectée par la rotation de la tête. Votre application peut spécifier un décalage par rapport à ce point pour positionner les hologrammes devant l’utilisateur.
 
 Pour obtenir un SpatialLocatorAttachedFrameOfReference, utilisez la classe SpatialLocator et appelez CreateAttachedFrameOfReferenceAtCurrentHeading.
 
-Cela s’applique à toute la plage d’appareils Windows Mixed Reality.
+cela s’applique à l’ensemble des appareils Windows Mixed Reality.
 
 ### <a name="use-a-reference-frame-attached-to-the-device"></a>Utiliser un cadre de référence attaché à l’appareil
 
-Ces sections décrivent ce que nous avons modifié dans le modèle d’application holographique Windows pour activer un cadre de référence associé à un appareil à l’aide de cette API. Cet hologramme « attaché » fonctionne avec les hologrammes fixes ou ancrés, et peut également être utilisé lorsque l’appareil est momentanément incapable de trouver sa position dans le monde.
+ces sections décrivent ce que nous avons modifié dans le modèle d’application holographique Windows pour activer un cadre de référence associé à un appareil à l’aide de cette API. Cet hologramme « attaché » fonctionne avec les hologrammes fixes ou ancrés, et peut également être utilisé lorsque l’appareil est momentanément incapable de trouver sa position dans le monde.
 
 Tout d’abord, nous avons modifié le modèle pour stocker un SpatialLocatorAttachedFrameOfReference au lieu d’un SpatialStationaryFrameOfReference :
 
@@ -740,14 +740,14 @@ Pour cet exemple, nous choisissons également d’afficher l’hologramme dans l
        );
 ```
 
-C’est tout ! L’hologramme va à présent « débusquer » une position qui est de 2 mètres devant la direction du regard de l’utilisateur.
+Et voilà ! L’hologramme va à présent « débusquer » une position qui est de 2 mètres devant la direction du regard de l’utilisateur.
 
 >[!NOTE]
 >Cet exemple charge également du contenu supplémentaire. consultez StationaryQuadRenderer. cpp.
 
 ## <a name="handling-tracking-loss"></a>Gestion des pertes de suivi
 
-Lorsque l’appareil ne peut pas se trouver dans le monde entier, l’application rencontre une « perte de suivi ». Les applications Windows Mixed Reality doivent être en mesure de gérer ces interruptions du système de suivi positionnel. Ces interruptions peuvent être observées et les réponses créées à l’aide de l’événement LocatabilityChanged sur le SpatialLocator par défaut.
+Lorsque l’appareil ne peut pas se trouver dans le monde entier, l’application rencontre une « perte de suivi ». Windows Mixed Reality applications doivent être en mesure de gérer ces interruptions du système de suivi positionnel. Ces interruptions peuvent être observées et les réponses créées à l’aide de l’événement LocatabilityChanged sur le SpatialLocator par défaut.
 
 À partir de **AppMain :: SetHolographicSpace :**
 
@@ -762,7 +762,7 @@ Lorsque l’appareil ne peut pas se trouver dans le monde entier, l’applicatio
 
 Lorsque votre application reçoit un événement LocatabilityChanged, elle peut modifier le comportement en fonction des besoins. Par exemple, dans l’État PositionalTrackingInhibited, votre application peut suspendre une opération normale et afficher un message d’avertissement [sur l’hologramme](coordinate-systems-in-directx.md#create-holograms-using-a-device-attached-frame-of-reference) qui affiche un message d’avertissement.
 
-Le modèle d’application holographique Windows est fourni avec un gestionnaire LocatabilityChanged déjà créé pour vous. Par défaut, il affiche un avertissement dans la console de débogage lorsque le suivi positionnel n’est pas disponible. Vous pouvez ajouter du code à ce gestionnaire pour fournir une réponse en fonction des besoins de votre application.
+le modèle d’application holographique Windows est fourni avec un gestionnaire LocatabilityChanged déjà créé pour vous. Par défaut, il affiche un avertissement dans la console de débogage lorsque le suivi positionnel n’est pas disponible. Vous pouvez ajouter du code à ce gestionnaire pour fournir une réponse en fonction des besoins de votre application.
 
 À partir de **AppMain. cpp :**
 

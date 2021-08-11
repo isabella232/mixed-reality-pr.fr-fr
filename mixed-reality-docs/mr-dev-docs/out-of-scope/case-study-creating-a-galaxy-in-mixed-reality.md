@@ -1,21 +1,21 @@
 ---
 title: 'Étude de cas : création d’un Galaxy en réalité mixte'
-description: En savoir plus sur l’application « Explorateur Galaxy » et sur la manière dont elle a été créée pour le service de test de présentation et d’interrogation Twitter de 24 heures par les développeurs de la communauté.
+description: en savoir plus sur l’application « explorateur Galaxy » et sur la manière dont elle a été conçue pour le HoloLens et après une interrogation Twitter de 24 heures par les développeurs de la communauté.
 author: karimluccin
 ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Explorateur Galaxy, HoloLens, Windows Mixed Reality, partager votre idée, étude de cas
-ms.openlocfilehash: ef97920d22df65a9d4fa5e630840759e58c80b53
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: explorateur Galaxy, HoloLens, Windows Mixed Reality, partager votre idée, étude de cas
+ms.openlocfilehash: 5891fbc052c52cd90176214d1eff8ef019a2bcfc80dbd5264489deced0fb1664
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208045"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>Étude de cas : création d’un Galaxy en réalité mixte
 
-Avant la sortie de Microsoft HoloLens, nous avons demandé à notre communauté de développeurs quel type d’application il souhaite voir une build d’équipe interne expérimentée pour le nouvel appareil. Plus de 5000 idées ont été partagées et, après une interrogation Twitter de 24 heures, le gagnant était une idée appelée l' [Explorateur Galaxy](../develop/unity/galaxy-explorer.md).
+avant de Microsoft HoloLens expédiés, nous avons demandé à notre communauté de développeurs le genre d’application pour laquelle il a été créé par une équipe interne expérimentée pour le nouvel appareil. Plus de 5000 idées ont été partagées et, après une interrogation Twitter de 24 heures, le gagnant était une idée appelée l' [Explorateur Galaxy](../develop/unity/galaxy-explorer.md).
 
 Andy Zibits, responsable artistique sur le projet et karim Luccin, l’ingénieur graphique de l’équipe, évoque les efforts de collaboration entre l’art et l’ingénierie qui ont conduit à la création d’une représentation interactive et précise de la manière lactée de Galaxy dans l’Explorateur Galaxy.
 
@@ -23,11 +23,11 @@ Andy Zibits, responsable artistique sur le projet et karim Luccin, l’ingénieu
 
 [Notre équipe](../develop/unity/galaxy-explorer.md#meet-the-team) , composée de deux concepteurs, de trois développeurs, de quatre artistes, d’un producteur et d’un testeur, avait six semaines pour créer une application entièrement fonctionnelle qui permettrait aux utilisateurs d’en savoir plus sur l’immense et la beauté de notre méthode lactée Galaxy.
 
-Nous souhaitons tirer pleinement parti de la capacité de HoloLens à restituer les objets 3D directement dans votre espace de vie. nous avons donc décidé de créer un Galaxy réaliste où les gens seraient en mesure d’effectuer un zoom avant et de voir les étoiles individuelles, chacune sur leurs propres trajectoires.
+nous souhaitons tirer pleinement parti de la capacité des HoloLens de restituer des objets 3d directement dans votre espace de vie. nous avons donc décidé de créer un galaxy réaliste où les gens seraient en mesure d’effectuer un zoom avant et de voir les étoiles individuelles, chacune sur leurs propres trajectoires.
 
 Au cours de la première semaine de développement, nous avons vu quelques objectifs pour notre représentation de la méthode lactée Galaxy : elle devait avoir une profondeur, un mouvement et une sensation volumétrique, ce qui permet de créer la forme du Galaxy.
 
-Le problème lié à la création d’un Galaxy animé qui avait des milliards d’étoiles était que le nombre important d’éléments uniques nécessitant une mise à jour serait trop grand par frame pour que HoloLens s’anime à l’aide de l’UC. Notre solution impliquait une combinaison complexe d’art et de science.
+le problème lié à la création d’un galaxy animé qui avait des milliards d’étoiles était que le nombre important d’éléments uniques nécessitant une mise à jour serait trop grand par cadre pour que les HoloLens soient animés à l’aide du processeur. Notre solution impliquait une combinaison complexe d’art et de science.
 
 ## <a name="behind-the-scenes"></a>Dans les coulisses
 
@@ -37,7 +37,7 @@ Pour permettre aux utilisateurs d’explorer des étoiles individuelles, notre p
 
 Les processeurs actuels sont idéaux pour traiter des tâches en série et jusqu’à quelques tâches parallèles à la fois (selon le nombre de cœurs), mais les GPU sont beaucoup plus efficaces pour traiter des milliers d’opérations en parallèle. Toutefois, étant donné qu’ils ne partagent généralement pas la même mémoire que le processeur, l’échange de données entre l’UC<>GPU peut rapidement devenir un goulot d’étranglement. Notre solution consistait à créer un Galaxy sur le GPU et il devait être entièrement actif sur le GPU.
 
-Nous avons commencé des tests de stress avec des milliers de particules de points dans différents modèles. Cela nous a permis d’obtenir le Galaxy sur HoloLens pour voir ce qui a fonctionné et ce qui ne l’a pas fait.
+Nous avons commencé des tests de stress avec des milliers de particules de points dans différents modèles. cela nous a permis d’obtenir le galaxy sur HoloLens pour voir ce qui a fonctionné et ce qui ne l’a pas fait.
 
 ### <a name="creating-the-position-of-the-stars"></a>Création de la position des étoiles
 
@@ -185,9 +185,9 @@ Notre dernière méthode de Galaxy en 3D.
 
 ### <a name="more-to-explore"></a>Plus d’informations à explorer
 
-Nous avons ouvert le code de l’application Galaxy Explorer et nous l’avons rendu disponible sur [GitHub](https://github.com/Microsoft/GalaxyExplorer) pour que les développeurs s’appuient sur.
+nous avons ouvert le code de l’application Galaxy Explorer et nous l’avons rendue disponible sur [GitHub](https://github.com/Microsoft/GalaxyExplorer) pour la création de développeurs.
 
-Vous souhaitez en savoir plus sur le processus de développement de l’Explorateur Galaxy ? Consultez toutes les mises à jour précédentes du projet sur le [canal Microsoft HoloLens YouTube](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL).
+Vous souhaitez en savoir plus sur le processus de développement de l’Explorateur Galaxy ? consultez toutes les mises à jour précédentes du projet sur le [canal Microsoft HoloLens YouTube](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL).
 
 ## <a name="about-the-authors"></a>À propos des auteurs
 

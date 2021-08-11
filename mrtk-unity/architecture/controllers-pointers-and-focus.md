@@ -1,18 +1,18 @@
 ---
-title: Contrôleurs, pointeurs et Focus
+title: Contrôleurs, pointeurs et focus
 description: Interaction avec les contrôleurs, les pointeurs et le focus.
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, pointeurs, contrôleurs
-ms.openlocfilehash: b3e4438c1318abbc60606bcbca42854edae28167
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, pointeurs, contrôleurs
+ms.openlocfilehash: 00bc0641182c566b045f959dfa361e1311b3cd224fc998f154010ad2996679ae
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121617"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196289"
 ---
-# <a name="controllers-pointers-and-focus"></a>Contrôleurs, pointeurs et Focus
+# <a name="controllers-pointers-and-focus"></a>Contrôleurs, pointeurs et focus
 
 Les contrôleurs, les pointeurs et le focus sont des concepts de niveau supérieur qui s’appuient sur la fondation établie par le système d’entrée principal. Ensemble, ils fournissent une grande partie du mécanisme pour l’interaction avec les objets dans la scène.
 
@@ -20,7 +20,7 @@ Les contrôleurs, les pointeurs et le focus sont des concepts de niveau supérie
 
 Les contrôleurs sont des représentations d’un contrôleur physique (6 degrés de liberté, articulés, etc.). Ils sont créés par les gestionnaires d’appareils et sont responsables de la communication avec le système sous-jacent correspondant et de la traduction de ces données en données et événements en forme de MRTK. a
 
-Par exemple, sur la plateforme Windows Mixed Reality, [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) est un contrôleur responsable de l’interfaçage avec les API de suivi des [Handles](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) Windows sous-jacentes pour obtenir des informations sur les jointures, les poses et d’autres propriétés de la main. Il est chargé de convertir ces données en événements MRTK pertinents (par exemple, en appelant RaisePoseInputChanged ou RaiseHandJointsUpdated) et en mettant à jour son propre état interne afin que les requêtes pour [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A) renvoient des données correctes.
+par exemple, sur la plateforme Windows Mixed Reality, [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) est un contrôleur qui est chargé de l’interfaçage avec les [api de suivi de main](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) Windows sous-jacentes pour obtenir des informations sur les jointures, les poses et d’autres propriétés de la main. Il est chargé de convertir ces données en événements MRTK pertinents (par exemple, en appelant RaisePoseInputChanged ou RaiseHandJointsUpdated) et en mettant à jour son propre état interne afin que les requêtes pour [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A) renvoient des données correctes.
 
 En règle générale, le cycle de vie d’un contrôleur implique ce qui suit :
 

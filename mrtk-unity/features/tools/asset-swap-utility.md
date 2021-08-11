@@ -5,12 +5,12 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/9/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK
-ms.openlocfilehash: 50ef252913575988b5f377dd9ff92f9e9ade3a72
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3322087f9027f46b39be07f5368cd8ae4ca875f206984fb823f9b1c8590f86f6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196265"
 ---
 # <a name="asset-swap-utility"></a>Utilitaire d’échange de ressources
 

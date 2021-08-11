@@ -1,16 +1,16 @@
 ---
-title: Système de téléordinateur
+title: Système de téléportation
 description: Vue d’ensemble de l’activation et de la désactivation du système de téléMRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, système de télé,
-ms.openlocfilehash: 7a49b1fea36eb1809c57abee4cede1216c07d5bf
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: c46438ed30880029760b5155efb3e3cd1d571c81a03bfbf764b2010e2e232c53
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197042"
 ---
 # <a name="teleport-system"></a>Système de téléportation
 
@@ -40,7 +40,7 @@ void EnableTeleportSystem()
 Le système de télétentative expose des événements par le biais [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler) de l’interface pour fournir des signaux sur la date de début, la fin ou l’annulation des actions de télétentative.
 Pour plus d’informations sur le mécanisme des événements et sur la charge utile associée, consultez la documentation de l’API liée.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 ### <a name="how-to-register-for-teleportation-events"></a>Comment s’inscrire aux événements de téléportage
 

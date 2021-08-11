@@ -5,17 +5,17 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality, conception, contrôles, police, typographie, UI, UX, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: dde8989998cf422c40ada927c0d8462cb4cd97b9
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+keywords: Windows Mixed Reality, conception, contrôles, police, typographie, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, MRTK, réalité mixte Shared Computer Toolkit
+ms.openlocfilehash: 3e5f296e9526e62bde7d03a0fee7847f4664e4a67187fcda1e66e22aa03053b4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489279"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207935"
 ---
 # <a name="text-in-unity"></a>Texte dans Unity
 
-Le texte est l’un des composants les plus importants des applications holographiques. Pour afficher du texte dans Unity, il existe trois types de composants de texte que vous pouvez utiliser : texte de l’interface utilisateur, maillage de texte 3D et maillage Pro. Par défaut, le texte de l’interface utilisateur et le maillage de texte 3D apparaissent flous et sont trop grands. La modification de quelques variables donne un texte plus clair et de qualité supérieure avec une taille gérable dans HoloLens. Vous pouvez obtenir une meilleure qualité de rendu en appliquant un facteur d’échelle pour obtenir des dimensions appropriées lorsque vous utilisez les composants texte de l’interface utilisateur et maillage de texte 3D.
+Le texte est l’un des composants les plus importants des applications holographiques. Pour afficher du texte dans Unity, il existe trois types de composants de texte que vous pouvez utiliser : texte de l’interface utilisateur, maillage de texte 3D et maillage de texte Pro. Par défaut, le texte de l’interface utilisateur et le maillage de texte 3D apparaissent flous et sont trop grands. La modification de quelques variables donne un texte plus clair et de qualité supérieure avec une taille gérable en HoloLens. Vous pouvez obtenir une meilleure qualité de rendu en appliquant un facteur d’échelle pour obtenir des dimensions appropriées lorsque vous utilisez les composants texte de l’interface utilisateur et maillage de texte 3D.
 
 ![Comment faire du texte clair et merveilleux](images/hug-text-02-640px.png)<br>
 *Texte par défaut flou dans Unity*
@@ -51,9 +51,9 @@ Quand vous ajoutez un élément de texte basé sur une interface utilisateur ou 
 >[!NOTE]
 >La valeur par défaut de toute police peut être affectée par la taille de la texture de cette police ou la manière dont la police a été importée dans Unity. Ces tests ont été exécutés en fonction de la police Arial par défaut dans Unity, ainsi que d’une autre police importée.
 
-## <a name="working-with-text-mesh-pro"></a>Utilisation de Text Mesh Pro
+## <a name="working-with-text-mesh-pro"></a>Utilisation du maillage de texte Pro
 
-Avec le texte de la maille Pro de Unity, vous pouvez sécuriser la qualité de rendu du texte. Elle prend en charge les contours de texte nets, quelle que soit la distance à l’aide de la technique du [champ à distance signée (SDF)](https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) . À l’aide de la méthode de calcul que nous avons utilisée ci-dessus pour le texte 3D et le texte de l’interface utilisateur, nous pouvons trouver les valeurs de mise à l’échelle appropriées à utiliser avec les points typographiques conventionnels. Étant donné que la police par défaut de maillage de texte 3D avec la taille 36 a une taille limite de 2,5 unités Unity (2,5 m), nous pouvons utiliser une valeur de mise à l’échelle de 0,005 pour obtenir la taille en points. Dans le menu de l’interface utilisateur, le texte de maillage Pro a une taille de limite par défaut de 25 unités Unity (25 millions). Cela nous donne 0,0005 pour la valeur de mise à l’échelle.
+avec la Pro de maillage de texte de unity, vous pouvez sécuriser la qualité de rendu du texte. Elle prend en charge les contours de texte nets, quelle que soit la distance à l’aide de la technique du [champ à distance signée (SDF)](https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) . À l’aide de la méthode de calcul que nous avons utilisée ci-dessus pour le texte 3D et le texte de l’interface utilisateur, nous pouvons trouver les valeurs de mise à l’échelle appropriées à utiliser avec les points typographiques conventionnels. étant donné que le maillage de texte 3d par défaut Pro police dont la taille est 36 a une taille limite de 2,5 unités unity (2,5 m), nous pouvons utiliser une valeur de mise à l’échelle de 0,005 pour obtenir la taille du point. le maillage de texte Pro dans le menu de l’interface utilisateur a une taille de limite par défaut de 25 unités unity (25 millions). Cela nous donne 0,0005 pour la valeur de mise à l’échelle.
 
 ![Mise à l’échelle des valeurs pour le texte 3D Unity et l’interface utilisateur](images/Text_In_Unity_Measurements2.png)<br>
 *Mise à l’échelle des valeurs pour le texte 3D Unity et l’interface utilisateur*
@@ -82,12 +82,12 @@ Pour l’interaction proche à 0,45 m (45 cm), l’angle d’affichage de la pol
 | 45 cm (distance de manipulation directe) | 0,65 °-0,8 ° | 5.1-6.3 mm | 14.47-17.8 PT |
 | 2 m | 0,6 °-0,75 ° | 20.9-26.2 mm | 59.4-74.2 PT |
 
-Segoe UI (police par défaut pour Windows) fonctionne bien dans la plupart des cas. Toutefois, évitez d’utiliser des familles de polices légères ou semi-claires en petite taille, car les traits verticaux fins vibreront et la lisibilité sera dégradée. Les polices modernes avec suffisamment d’épaisseur de trait fonctionnent bien. Par exemple, Helvetica et Arial semblent exceptionnels et sont lisibles dans HoloLens avec des pondérations standard ou en gras.
+Segoe UI (la police par défaut pour Windows) fonctionne bien dans la plupart des cas. Toutefois, évitez d’utiliser des familles de polices légères ou semi-claires en petite taille, car les traits verticaux fins vibreront et la lisibilité sera dégradée. Les polices modernes avec suffisamment d’épaisseur de trait fonctionnent bien. par exemple, Helvetica et Arial semblent exceptionnels et sont lisibles en HoloLens avec des pondérations standard ou en gras.
 
 ![Affichage de la ](images/Text_In_Unity_ViewingAngle.jpg)
  *distance d’affichage de l’angle, angle et hauteur du texte*
 
-## <a name="text-with-mixed-reality-toolkit-v2"></a>Texte avec Mixed Reality Toolkit v2
+## <a name="text-with-mixed-reality-toolkit-v2"></a>texte avec une réalité mixte Shared Computer Toolkit v2
 
 ### <a name="sharp-text-rendering-quality-with-proper-dimension"></a>Qualité de rendu de texte précise avec une dimension appropriée
 

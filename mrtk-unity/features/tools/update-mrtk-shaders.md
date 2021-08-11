@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 1f943d8ac7050b8607ae3a85af0a377a7460eb3b
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 9ed8a1e439b2bf911d8144a90259d99bf38b12e0404d9ad3365152bed633042c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197065"
 ---
 # <a name="updating-shaders"></a>Mise à jour des nuanceurs
 
@@ -23,10 +23,10 @@ La sélection de l’option **Oui** indique à MRTK de remplacer le contenu des 
 > [!IMPORTANT]
 > Lors du remplacement des fichiers du nuanceur, toute modification personnalisée est perdue. Veillez à sauvegarder tous les fichiers de nuanceur modifiés avant de procéder à la mise à niveau.
 >
-> Si le projet a été configuré pour utiliser le pipeline de rendu universel (URP)-anciennement le pipeline de rendu léger (LWRP), relancez la mise à niveau des utilitaires de la boîte à outils de la **réalité mixte** >  >  >
->  **MRTK nuanceur standard pour le pipeline de rendu léger**.
+> si le projet a été configuré pour utiliser le pipeline de rendu universel (URP)-anciennement le pipeline de rendu léger (LWRP), relancez la **réalité mixte** > **Shared Computer Toolkit** > **utilitaires** >
+>  **mettre à niveau le nuanceur Standard MRTK pour le pipeline de rendu léger**.
 
-Il est également possible de rechercher des mises à jour de nuanceur à tout moment à l’aide des utilitaires de la boîte à outils de **réalité mixte**  >    >    >  **pour vérifier les mises à jour de nuanceur** dans la barre de menus de l’éditeur Unity.
+il est également possible de rechercher des mises à jour de nuanceur à tout moment à l’aide de la **réalité mixte**  >  **Shared Computer Toolkit**  >  **utilitaires**  >  **recherchent les mises à jour de nuanceur** dans la barre de menus de l’éditeur unity.
 
 ![Rechercher les mises à jour de nuanceur](../images/tools/ShaderUpdateMenu.png)
 
