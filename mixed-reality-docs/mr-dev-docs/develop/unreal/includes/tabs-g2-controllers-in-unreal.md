@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: dcbeceb4cbe6b87cd6458afa789f9e09abaf7f3d
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: ce1f02bd2846cadc4e970fef738fb4b46bc3a09f10742b820a0998491c590c80
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204207"
 ---
 # <a name="all-platforms"></a>[Toutes les plateformes](#tab/all)
 
@@ -18,7 +18,7 @@ Le profil d’interaction et les mappages de contrôleur se trouvent dans le plu
 
 ### <a name="configuring-startup-and-hmdpluginpriority"></a>Configuration de Startup et HMDPluginPriority
 
-L’entrée de SteamVR à l’aide de présente quelques différences.  Lors de la configuration du projet, assurez-vous d’abord qu’il utilise le nouveau système d’entrée de SteamVR en ajoutant **VR. SteamVR. EnableVRInput = 1** à la section **Startup** dans le **moteur/config/ConsoleVariables.ini** .  Ce fichier ini se trouve dans le répertoire d’installation du moteur, et non dans le répertoire du projet.
+L’entrée de SteamVR à l’aide de présente quelques différences.  Lors de la configuration du projet, assurez-vous d’abord qu’il utilise le nouveau système d’entrée de SteamVR en ajoutant **VR. SteamVR. EnableVRInput = 1** à la section **Startup** dans le **moteur/config/ConsoleVariables.ini**.  Ce fichier ini se trouve dans le répertoire d’installation du moteur, et non dans le répertoire du projet.
 
 ![Mise à jour de la configuration de démarrage](../images/reverb-g2-img-07.png)
 

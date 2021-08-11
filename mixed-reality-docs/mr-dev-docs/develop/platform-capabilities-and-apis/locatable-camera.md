@@ -1,21 +1,21 @@
 ---
 title: Appareil photo localisable
-description: Informations générales sur la caméra HoloLens frontale, son fonctionnement et les profils et résolutions disponibles pour les développeurs.
+description: informations générales sur le HoloLens appareil photo avant, son fonctionnement et les profils et résolutions disponibles pour les développeurs.
 author: cdedmonds
 ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: appareil photo, hololens, caméra couleur, frontal, hololens 2, CV, vision par ordinateur, fiduciaire, marqueurs, code QR, QR, photo, vidéo
-ms.openlocfilehash: f34973fee56f9469632b320a62dd441ed32e5805
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 33faa4107c6b44041958f422329d8967958a666606a474949184628abcd12544
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217095"
 ---
 # <a name="locatable-camera"></a>Appareil photo localisable
 
-HoloLens intègre une caméra universelle montée sur l’avant de l’appareil, ce qui permet aux applications de voir ce que l’utilisateur voit. Les développeurs ont accès à l’appareil photo et le contrôle de ce dernier, tout comme pour les caméras couleur sur les smartphones, les ordinateurs portables ou les ordinateurs de bureau. Les mêmes API Universal Windows [Media capture](/uwp/api/Windows.Media.Capture.MediaCapture) et Windows Media Foundation qui fonctionnent sur les appareils mobiles et de bureau sur HoloLens. Unity [a encapsulé ces API Windows sur les](../unity/locatable-camera-in-unity.md) fonctionnalités d’utilisation d’appareil photo abstraites sur HoloLens. Les tâches de fonctionnalités incluent la mise en place de photos et vidéos normales (avec ou sans hologrammes) et la localisation de la caméra dans et la perspective sur la scène.
+HoloLens comprend une caméra universelle montée sur l’avant de l’appareil, ce qui permet aux applications de voir ce que l’utilisateur voit. Les développeurs ont accès à l’appareil photo et le contrôle de ce dernier, tout comme pour les caméras couleur sur les smartphones, les ordinateurs portables ou les ordinateurs de bureau. Les mêmes API Universal Windows [Media capture](/uwp/api/Windows.Media.Capture.MediaCapture) et Windows Media Foundation qui fonctionnent sur les appareils mobiles et de bureau sur HoloLens. Unity [a encapsulé ces API Windows sur les](../unity/locatable-camera-in-unity.md) fonctionnalités d’utilisation d’appareil photo abstraites sur HoloLens. Les tâches de fonctionnalités incluent la mise en place de photos et vidéos normales (avec ou sans hologrammes) et la localisation de la caméra dans et la perspective sur la scène.
 
 ## <a name="device-camera-information"></a>Informations sur l’appareil photo
 
@@ -25,7 +25,7 @@ HoloLens intègre une caméra universelle montée sur l’avant de l’appareil,
 * La lumière blanche sur la confidentialité dans le monde s’illumine quand l’appareil photo est actif
 * L’appareil photo prend en charge les modes suivants (tous les modes sont des proportions 16:9) à 30, 24, 20, 15 et 5 i/s :
 
-  |  Vidéo  |  PRÉVERSION  |  Subsist  |  Champ horizontal de l’affichage (H-angle d’affichage) |  Utilisation suggérée | 
+  |  Vidéo  |  Préversion  |  Subsist  |  Champ horizontal de l’affichage (H-angle d’affichage) |  Utilisation suggérée | 
   |----------|----------|----------|----------|----------|
   |  1280 x 720 |  1280 x 720 |  1280 x 720 |  45 deg  |  (mode par défaut avec stabilisation vidéo) | 
   |  N/A |  N/A |  2048x1152 |  67 deg |  Image toujours la plus haute résolution | 
@@ -40,7 +40,7 @@ HoloLens intègre une caméra universelle montée sur l’avant de l’appareil,
 * HoloLens 2 prend en charge différents profils d’appareil photo. Découvrez comment [découvrir et sélectionner les fonctionnalités de l’appareil photo](/windows/uwp/audio-video-camera/camera-profiles).
 * L’appareil photo prend en charge les profils et résolutions suivants (tous les modes vidéo sont des proportions 16:9) :
   
-  | Profil                                         | Vidéo     | PRÉVERSION   | Subsist     | Fréquences d’images | Champ horizontal de l’affichage (H-angle d’affichage) | Utilisation suggérée                             |
+  | Profil                                         | Vidéo     | Préversion   | Subsist     | Fréquences d’images | Champ horizontal de l’affichage (H-angle d’affichage) | Utilisation suggérée                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
   | Hérité, 0 BalancedVideoAndPhoto, 100             | 2272x1278 | 2272x1278 |           | 15,30       | 64,69                            | Enregistrement vidéo de haute qualité                |
   | Hérité, 0 BalancedVideoAndPhoto, 100             | 896x504   | 896x504   |           | 15,30       | 64,69                            | Aperçu du flux pour la capture de photos de haute qualité |
@@ -65,9 +65,9 @@ HoloLens intègre une caméra universelle montée sur l’avant de l’appareil,
 
 ## <a name="locating-the-device-camera-in-the-world"></a>Localisation de l’appareil photo de l’appareil dans le monde
 
-Lorsque HoloLens prend des photos et des vidéos, les images capturées incluent l’emplacement de la caméra dans le monde et le modèle d’objectif de l’appareil photo. Cela permet aux applications de connaître la position de la caméra dans le monde réel pour les scénarios de création d’images augmentés. Les développeurs peuvent déployer de manière créative leurs propres scénarios à l’aide de leur traitement d’image préféré ou de leurs bibliothèques de vision d’ordinateur personnalisées.
+lorsque HoloLens prend des photos et des vidéos, les frames capturés incluent l’emplacement de la caméra dans le monde et le modèle d’objectif de l’appareil photo. Cela permet aux applications de connaître la position de la caméra dans le monde réel pour les scénarios de création d’images augmentés. Les développeurs peuvent déployer de manière créative leurs propres scénarios à l’aide de leur traitement d’image préféré ou de leurs bibliothèques de vision d’ordinateur personnalisées.
 
-La « caméra » dans la documentation HoloLens peut faire référence à la « caméra de jeu virtuelle » (le frustum rendu de l’application à). Sauf indication contraire, « Camera » sur cette page fait référence à la caméra de couleurs RVB réelle.
+la « caméra », ailleurs dans HoloLens documentation, peut faire référence à la « caméra de jeu virtuelle » (le frustum rendu de l’application à). Sauf indication contraire, « Camera » sur cette page fait référence à la caméra de couleurs RVB réelle.
 
 ### <a name="using-unity"></a>Utilisation de Unity
 
@@ -173,9 +173,9 @@ private:
 
 ### <a name="distortion-error"></a>Erreur de distorsion
 
-Sur HoloLens, les flux vidéo et d’images fixes ne sont pas déformés dans le pipeline de traitement des images du système avant que les frames ne soient mis à disposition de l’application (le flux de préversion contient les images déformées d’origine). Étant donné que seules les CameraIntrinsics sont disponibles, les applications doivent supposer que les images d’images représentent une caméra Pinhole parfaite.
+sur HoloLens, les flux vidéo et d’images fixes ne sont pas déformés dans le pipeline de traitement des images du système avant que les frames ne soient mis à disposition de l’application (le flux de préversion contient les trames distordues d’origine). Étant donné que seules les CameraIntrinsics sont disponibles, les applications doivent supposer que les images d’images représentent une caméra Pinhole parfaite.
 
-Sur HoloLens (première génération), la fonction d’intorsion dans le processeur d’images peut toujours provoquer une erreur pouvant atteindre 10 pixels lors de l’utilisation de CameraIntrinsics dans les métadonnées de frame. Dans de nombreux cas d’utilisation, cette erreur n’a pas d’importance, mais si vous alignez des hologrammes sur des affiches/marqueurs réels, par exemple, et que vous remarquez une <décalage de 10 px (environ 11 mm pour les hologrammes positionnés sur 2 mètres), cette erreur de distorsion peut en être la cause. 
+sur HoloLens (première génération), la fonction d’information dans le processeur d’images peut toujours provoquer une erreur pouvant atteindre 10 pixels lors de l’utilisation de CameraIntrinsics dans les métadonnées de frame. Dans de nombreux cas d’utilisation, cette erreur n’a pas d’importance, mais si vous alignez des hologrammes sur des affiches/marqueurs réels, par exemple, et que vous remarquez une <décalage de 10 px (environ 11 mm pour les hologrammes positionnés sur 2 mètres), cette erreur de distorsion peut en être la cause. 
 
 ## <a name="locatable-camera-usage-scenarios"></a>Scénarios d’utilisation d’appareil photo localisables
 
@@ -185,7 +185,7 @@ Les cadres de l’appareil photo sont fournis avec une transformation « camér
 
 ### <a name="tag--pattern--poster--object-tracking"></a>Étiquette/modèle/affiche/suivi d’objet
 
-De nombreuses applications de réalité mixte utilisent une image ou un modèle visuel identifiable pour créer un point de suivi dans l’espace. Il est ensuite utilisé pour restituer des objets par rapport à ce point ou créer un emplacement connu. Certaines utilisations de HoloLens incluent la recherche d’un objet réel marqué avec des appariés (par exemple, un moniteur TV avec un code QR), le placement d’hologrammes sur des personnes fiduciaires et le couplage visuel avec des appareils non-HoloLens tels que des tablettes qui ont été configurés pour communiquer avec HoloLens via Wi-Fi.
+De nombreuses applications de réalité mixte utilisent une image ou un modèle visuel identifiable pour créer un point de suivi dans l’espace. Il est ensuite utilisé pour restituer des objets par rapport à ce point ou créer un emplacement connu. certaines utilisations de HoloLens incluent la recherche d’un objet réel marqué avec des appariés (par exemple, un moniteur TV avec un code QR), le placement d’hologrammes sur des personnes fiduciaires et le couplage visuel avec des appareils non HoloLens tels que des tablettes qui ont été configurés pour communiquer avec HoloLens via Wi-Fi.
 
 Vous aurez besoin de quelques éléments pour reconnaître un modèle visuel et placer un objet dans l’espace universel des applications :
 1. Boîte à outils de reconnaissance de modèle d’image, telle que le code QR, les balises AR, le Finder de visages, les traceurs de cercle, la reconnaissance optique, etc.

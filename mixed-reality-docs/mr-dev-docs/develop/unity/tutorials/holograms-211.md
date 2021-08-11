@@ -1,22 +1,22 @@
 ---
 title: HoloLens (1ère génération) - Entrées 211 - Geste
-description: Suivez cette procédure pas à pas de codage à l’aide de Unity, Visual Studio et HoloLens pour apprendre les concepts de mouvement.
+description: suivez cette procédure pas à pas de codage à l’aide de unity, Visual Studio et HoloLens pour en savoir plus sur les concepts de mouvement.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, tutorial, geste, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 1431c9b53657e2cec1bd6ade1a3629e628e15917
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, geste, HoloLens, d’académie de la réalité mixte, unity, casque de réalité mixte, casque windows Mixed realisation, casque de réalité virtuelle, Windows 10
+ms.openlocfilehash: 75cfb836e5a9702c1d949ed57450984081db0c5d6ec14c76cae5148edf637e7e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115206421"
 ---
-# <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (1ère génération) entrée 211 : geste
+# <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (1re génération) entrée 211 : geste
 
 >[!IMPORTANT]
->Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
+>les didacticiels d’académie de la réalité mixte ont été conçus avec des HoloLens (1er génération), unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
 Les [gestes](../../../design/gaze-and-commit.md#composite-gestures) transforment l’intention de l’utilisateur en action. En effectuant des mouvements, les utilisateurs peuvent interagir avec des hologrammes. Dans ce cours, nous allons apprendre à suivre les mains de l’utilisateur, à répondre aux entrées de l’utilisateur et à envoyer des commentaires à l’utilisateur en fonction de l’État et de l’emplacement de la main.
 
@@ -32,7 +32,7 @@ Dans les [notions de base de m. 101](../../../develop/unity/tutorials/holograms-
 Dans ce cours, nous allons revisiter l' **Explorateur de modèles** de projet Unity, que nous avons créé dans l' [entrée 210](holograms-210.md)de la m. Notre ami astronautes est en retour pour nous aider dans notre exploration de ces nouveaux concepts de mouvement.
 
 >[!IMPORTANT]
->Les vidéos incorporées dans chacun des chapitres ci-dessous ont été enregistrées à l’aide d’une version antérieure d’Unity et de la réalité mixte Toolkit. Alors que les instructions pas à pas sont précises et actuelles, vous pouvez voir des scripts et des visuels dans les vidéos correspondantes qui sont obsolètes. Les vidéos restent incluses pour l’affiche et les concepts abordés s’appliquent toujours.
+>les vidéos incorporées dans chacun des chapitres ci-dessous ont été enregistrées à l’aide d’une version antérieure d’unity et de la réalité mixte Shared Computer Toolkit. Alors que les instructions pas à pas sont précises et actuelles, vous pouvez voir des scripts et des visuels dans les vidéos correspondantes qui sont obsolètes. Les vidéos restent incluses pour l’affiche et les concepts abordés s’appliquent toujours.
 
 ## <a name="device-support"></a>Prise en charge des appareils
 
@@ -48,11 +48,11 @@ Dans ce cours, nous allons revisiter l' **Explorateur de modèles** de projet Un
 
 ### <a name="prerequisites"></a>Prérequis
 
-* Un PC Windows 10 configuré avec les [outils appropriés installés](../../../develop/install-the-tools.md).
+* un PC Windows 10 configuré avec les [outils appropriés installés](../../../develop/install-the-tools.md).
 * Certaines fonctionnalités de base de la programmation C#.
 * Vous devez avoir terminé les [notions de base de m. 101](../../../develop/unity/tutorials/holograms-101.md).
 * Vous devez avoir terminé l' [entrée 210](holograms-210.md).
-* Un appareil HoloLens [configuré pour le développement](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* un appareil HoloLens [configuré pour le développement](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### <a name="project-files"></a>Fichiers projet
 
@@ -64,7 +64,7 @@ Dans ce cours, nous allons revisiter l' **Explorateur de modèles** de projet Un
 
 ### <a name="errata-and-notes"></a>Errata et notes
 
-* L’option « Activer Uniquement mon code » doit être désactivée (*décochée*) dans Visual Studio sous outils->Options->le débogage pour atteindre les points d’arrêt dans votre code.
+* la case à cocher « activer Uniquement mon code » doit être désactivée (*décochée*) dans Visual Studio sous outils->Options->débogage pour atteindre les points d’arrêt dans votre Code.
 
 ## <a name="chapter-0---unity-setup"></a>Chapitre 0-Configuration Unity
 
@@ -75,42 +75,42 @@ Dans ce cours, nous allons revisiter l' **Explorateur de modèles** de projet Un
 3. Accédez au dossier de **mouvements** que vous avez préalablement désinstallé.
 4. Recherchez et sélectionnez le dossier de **démarrage** de l' / **Explorateur de modèles** .
 5. Cliquez sur le bouton **Sélectionner un dossier** .
-6. Dans le panneau **projet** , développez le dossier **scenes** .
+6. dans le volet **Project** , développez le dossier **scenes** .
 7. Double-cliquez sur **ModelExplorer** Scene pour le charger dans Unity.
 
 ### <a name="building"></a>Génération
 
-1. Dans Unity, sélectionnez **fichier > paramètres de build**.
+1. dans unity, sélectionnez **fichier > Build Paramètres**.
 2. Si **scenes/ModelExplorer** n’est pas listé dans **scenes dans Build**, cliquez sur **Ajouter des scènes ouvertes** pour ajouter la scène.
-3. Si vous développez spécifiquement pour HoloLens, définissez **appareil cible** sur **hololens**. Dans le cas contraire, laissez-le sur **un appareil**.
+3. si vous développez spécifiquement pour HoloLens, définissez l' **appareil cible** sur **HoloLens**. Dans le cas contraire, laissez-le sur **un appareil**.
 4. Vérifiez que le **type de build** est défini sur **D3D** et que le **Kit de développement logiciel (SDK** ) est défini sur le **dernier installé** (qui doit être le SDK 16299 ou une version ultérieure).
 5. Cliquez sur **Générer**.
 6. Créez un **dossier** nommé « App ».
 7. Cliquez sur le dossier de l' **application** .
-8. Appuyez sur **Sélectionner un dossier** et Unity va commencer à générer le projet pour Visual Studio.
+8. Appuyez sur **Sélectionner un dossier** pour que Unity commence à générer le projet pour Visual Studio.
 
 Lorsque Unity est terminé, une fenêtre de l’Explorateur de fichiers s’affiche.
 
 1. Ouvrez le dossier de l' **application** .
-2. Ouvrez la **solution Visual Studio ModelExplorer**.
+2. ouvrez la **Solution Visual Studio ModelExplorer**.
 
-En cas de déploiement dans HoloLens :
+Si vous déployez sur HoloLens :
 
-1. À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
+1. à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
 2. Cliquez sur la flèche déroulante en regard du bouton ordinateur local, puis sélectionnez **ordinateur distant**.
-3. Entrez **l’adresse IP de votre appareil HoloLens** et définissez le mode d’authentification sur **universel (protocole non chiffré)**. Cliquez sur **Sélectionner**. Si vous ne connaissez pas l’adresse IP de votre appareil, accédez à **paramètres > réseau & Internet > options avancées**.
-4. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler à Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+3. entrez **l’adresse IP de votre appareil HoloLens** et définissez le Mode d’authentification sur **universel (protocole non chiffré)**. Cliquez sur **Sélectionner**. si vous ne connaissez pas l’adresse IP de votre appareil, consultez **Paramètres > réseau & Options avancées Internet >**.
+4. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler avec Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 5. Une fois l’application déployée, ignorez le **Fitbox** avec un **mouvement Select**.
 
 En cas de déploiement sur un casque immersif :
 
-1. À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x64**.
+1. à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x64**.
 2. Assurez-vous que la cible de déploiement est définie sur **ordinateur local**.
 3. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
 4. Une fois l’application déployée, Faites disparaître le **Fitbox** en tirant le déclencheur sur un contrôleur de mouvement.
 
 >[!NOTE]
->Vous pouvez remarquer des erreurs rouges dans le panneau erreurs de Visual Studio. Vous pouvez les ignorer en toute sécurité. Basculez vers le panneau sortie pour afficher la progression réelle de la génération. Les erreurs dans le panneau sortie vous obligent à faire un correctif (le plus souvent, elles sont provoquées par une erreur dans un script).
+>vous pouvez remarquer des erreurs rouges dans le panneau Visual Studio errors. Vous pouvez les ignorer en toute sécurité. Basculez vers le panneau sortie pour afficher la progression réelle de la génération. Les erreurs dans le panneau sortie vous obligent à faire un correctif (le plus souvent, elles sont provoquées par une erreur dans un script).
 
 ## <a name="chapter-1---hand-detected-feedback"></a>Chapitre 1-commentaires sur la main détectés
 
@@ -122,7 +122,7 @@ En cas de déploiement sur un casque immersif :
 * Utilisez les commentaires des curseurs pour montrer aux utilisateurs quand une main fait l’objet d’un suivi.
 
 >[!NOTE]
->Sur HoloLens 2, les mains détectées se déclenchent chaque fois que les mains sont visibles (pas seulement lorsqu’un doigt pointe vers le haut).
+>sur HoloLens 2, les mains détectées se déclenchent chaque fois que les mains sont visibles (pas seulement lorsqu’un doigt pointe vers le haut).
 
 ### <a name="instructions"></a>Instructions
 
@@ -138,7 +138,7 @@ Le script **InteractionInputSource. cs** effectue les étapes suivantes :
 Ensuite, nous allons mettre à niveau notre curseur de l' [entrée 210](holograms-210.md) en une qui affiche les commentaires en fonction des actions de l’utilisateur.
 
 1. Dans le volet **hiérarchie** , sélectionnez l’objet **curseur** et supprimez-le.
-2. Dans le panneau **projet** , recherchez **CursorWithFeedback** et faites-le glisser dans le panneau **hiérarchie** .
+2. dans le panneau **Project** , recherchez **CursorWithFeedback** et faites-le glisser dans le panneau de **hiérarchie** .
 3. Cliquez sur **InputManager** dans le **panneau hiérarchie** , puis faites glisser l’objet **CursorWithFeedback** de la **hiérarchie** vers le champ **curseur** du **SimpleSinglePointerSelector** du InputManager, en bas de l' **inspecteur**.
 4. Cliquez sur **CursorWithFeedback** dans la **hiérarchie**.
 5. Dans le volet de l' **inspecteur** , développez **données d’État du curseur** sur le script du curseur de l' **objet** .
@@ -151,12 +151,12 @@ Les **données d’État du curseur** fonctionnent de la manière suivante :
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-* Dans Unity, utilisez les **paramètres de build de > de fichiers** pour régénérer l’application.
+* dans unity, utilisez le **fichier > Build Paramètres** pour régénérer l’application.
 * Ouvrez le dossier de l' **application** .
-* S’il n’est pas déjà ouvert, ouvrez la **solution Visual Studio ModelExplorer**.
-  * (Si vous avez déjà généré/déployé ce projet dans Visual Studio au cours de la configuration, vous pouvez ouvrir cette instance de VS et cliquer sur « recharger tout » lorsque vous y êtes invité).
-* Dans Visual Studio, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
-* Une fois que l’application a été déployée sur HoloLens, Faites disparaître le fitbox à l’aide du geste d’appui sur l’air.
+* s’il n’est pas déjà ouvert, ouvrez la **Solution Visual Studio ModelExplorer**.
+  * (si vous avez déjà généré/déployé ce projet dans Visual Studio pendant l’installation, vous pouvez ouvrir cette instance de VS et cliquer sur « recharger tout » lorsque vous y êtes invité).
+* dans Visual Studio, cliquez sur **déboguer-> exécuter sans débogage** ou appuyez sur **Ctrl + F5**.
+* une fois que l’application a été déployée sur le HoloLens, faites disparaître le fitbox à l’aide du geste d’appui à l’air.
 * Déplacez votre main en vue et pointez votre index vers le ciel pour démarrer le suivi.
 * Déplacez votre main à gauche, à droite, en haut et en aval.
 * Regardez comment le curseur change lorsque votre main est détectée, puis perdu de la vue.
@@ -175,7 +175,7 @@ Les **données d’État du curseur** fonctionnent de la manière suivante :
 Pour utiliser des mouvements de navigation dans notre application, nous allons modifier **GestureAction. cs** pour faire pivoter les objets lorsque le mouvement de navigation se produit. En outre, nous ajouterons des commentaires au curseur à afficher lorsque la navigation est disponible.
 
 1. Dans le volet **hiérarchie** , développez **CursorWithFeedback**.
-2. Dans le dossier **hologrammes** , recherchez la ressource **ScrollFeedback** .
+2. dans le dossier **Hologrammes** , recherchez la ressource **ScrollFeedback** .
 3. Glissez-déplacez le Prefab **ScrollFeedback** sur le gameobject **CursorWithFeedback** dans la **hiérarchie**.
 4. Cliquez sur **CursorWithFeedback**.
 5. Dans le volet de l' **inspecteur** , cliquez sur le bouton **Ajouter un composant** .
@@ -296,13 +296,13 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 }
 ```
 
-Vous remarquerez que les autres événements de navigation sont déjà renseignés avec des informations. Nous envoyons les GameObject dans la pile modale InputSystem’s de la boîte à outils, de sorte que l’utilisateur n’a pas à maintenir le focus sur le astronautes une fois la rotation commencée. En conséquence, nous dépilerons le GameObject de la pile une fois le mouvement terminé.
+Vous remarquerez que les autres événements de navigation sont déjà renseignés avec des informations. nous transmettons le GameObject sur la pile modale de InputSystem de l’Shared Computer Toolkit, de sorte que l’utilisateur n’a pas à conserver le focus sur le astronautes une fois la rotation commencée. En conséquence, nous dépilerons le GameObject de la pile une fois le mouvement terminé.
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-1. Régénérez l’application dans Unity, puis générez et déployez à partir de Visual Studio pour l’exécuter dans HoloLens.
+1. régénérez l’application dans unity, puis générez et déployez à partir de Visual Studio pour l’exécuter dans le HoloLens.
 2. Pointez le curseur sur le astronautes, deux flèches doivent apparaître sur l’un ou l’autre côté du curseur. Ce nouvel visuel indique que le astronautes peut être pivoté.
-3. Placez votre main à la position prête (index Finger pointant vers le ciel) pour que le HoloLens commence à suivre votre main.
+3. placez votre main à la position prête (index finger pointant vers le ciel) pour que le HoloLens commence à suivre votre main.
 4. Pour faire pivoter le astronautes, abaissez votre index à la position de pincement, puis déplacez votre main vers la gauche ou vers la droite pour déclencher le mouvement NavigationX.
 
 ## <a name="chapter-3---hand-guidance"></a>Chapitre 3-Guide de la main
@@ -319,12 +319,12 @@ Vous remarquerez que les autres événements de navigation sont déjà renseign�
 1. Dans le volet **hiérarchie** , sélectionnez l’objet **CursorWithFeedback** .
 2. Dans le volet de l' **inspecteur** , cliquez sur le bouton **Ajouter un composant** .
 3. Dans le menu, tapez dans la zone de recherche Guide de la **main**. Sélectionnez le résultat de la recherche.
-4. Dans le dossier **hologrammes** du panneau **projet** , recherchez la ressource **HandGuidanceFeedback** .
+4. dans le  volet Project **Hologrammes** dossier, recherchez la ressource **HandGuidanceFeedback** .
 5. Faites glisser et déposez la ressource **HandGuidanceFeedback** sur la propriété de l' **indicateur de guide main** dans le panneau **inspecteur** .
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-* Régénérez l’application dans Unity, puis générez et déployez à partir de Visual Studio pour expérimenter l’application sur HoloLens.
+* régénérez l’application dans unity, puis générez et déployez à partir de Visual Studio pour expérimenter l’application sur HoloLens.
 * Affichez votre main et augmentez votre doigt d’index pour obtenir le suivi.
 * Commencez à faire pivoter le astronautes avec le mouvement de navigation (pincez le doigt et le curseur de l’index).
 * Déplacez votre main à gauche, à droite, en haut et en baisse.
@@ -367,7 +367,7 @@ Nous allons maintenant ajouter les commandes vocales requises pour contrôler l�
 
 Ensuite, nous allons configurer les commentaires de manipulation sur le curseur.
 
-1. Dans le dossier **hologrammes** du panneau **projet** , recherchez la ressource **PathingFeedback** .
+1. dans le  volet Project **Hologrammes** dossier, recherchez la ressource **PathingFeedback** .
 2. Glissez-déplacez le Prefab **PathingFeedback** vers l’objet **CursorWithFeedback** dans la **hiérarchie**.
 3. Dans le volet **hiérarchie** , cliquez sur **CursorWithFeedback**.
 4. Faites glisser et déposez l’objet **PathingFeedback** à partir de la **hiérarchie** vers la propriété **d’objet de jeu Pathing détectée** dans le composant de **retour de curseur** de l' **inspecteur**.
@@ -486,8 +486,8 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-* Régénérez dans Unity, puis générez et déployez à partir de Visual Studio pour exécuter l’application dans HoloLens.
-* Déplacez votre main devant le HoloLens et augmentez le doigt de votre index afin qu’il puisse être suivi.
+* régénérez dans unity, puis générez et déployez à partir de Visual Studio pour exécuter l’application dans HoloLens.
+* déplacez votre main devant le HoloLens et augmentez le doigt de votre index afin qu’il puisse être suivi.
 * Focus sur le curseur sur le astronautes.
 * Dites « Move astronautes » pour déplacer le astronautes avec un mouvement de manipulation.
 * Quatre flèches doivent apparaître autour du curseur pour indiquer que le programme va maintenant répondre aux événements de manipulation.
@@ -534,7 +534,7 @@ Pour ce faire, nous allons ajouter deux mots clés supplémentaires à la source
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-* Essayez ! Générez et déployez l’application sur HoloLens.
+* Essayez ! Générez et déployez l’application sur le HoloLens.
 * Par exemple, **développez modèle** pour voir le modèle astronautes développé.
 * Utilisez la **navigation** pour faire pivoter des éléments individuels de la couleur astronautes.
 * Par exemple, vous pouvez **déplacer astronautes** , puis utiliser la **manipulation** pour déplacer des éléments individuels de la couleur astronautes.

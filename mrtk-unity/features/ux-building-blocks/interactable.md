@@ -4,13 +4,13 @@ description: Vue d’ensemble du composant script d’interaction dans MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, interactive, événements,
-ms.openlocfilehash: f141a394ec9395e0a27cc964caeb66654fb6fe08
-ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, événements interactifs, événements,
+ms.openlocfilehash: a0aee99d01ae59a8ebedc4d62a4b0aaf844a7afaa6961bbfd05238dd9d5b673d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107581561"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115206773"
 ---
 # <a name="interactable"></a>Avec interaction
 
@@ -28,7 +28,7 @@ Le composant permet trois principales sections de configuration :
 
 ### <a name="general-input-settings"></a>Paramètres d’entrée généraux
 
-![Paramètres généraux interactifs](../images/interactable/InputFeatures_short.png)
+![Paramètres interactifs générales](../images/interactable/InputFeatures_short.png)
 
 **États**
 
@@ -62,7 +62,7 @@ Une valeur de bit (#) est assignée à l’État en fonction de l’ordre dans l
 > * PhysicalTouch : une entrée tactile est actuellement détectée [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) . Utilisez pour activer.
 > * Manipulation : une main est actuellement saisie dans les limites de l’objet, utilisez [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) pour activer
 
-**Enabled**
+**Activé**
 
 Active ou désactive l’activation d’une opération d’interaction. Cela correspond au [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled) dans le code.
 

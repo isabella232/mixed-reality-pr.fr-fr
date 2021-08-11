@@ -1,19 +1,19 @@
 ---
-title: Contrôleurs de reréverbérations de HP G2 inréel
+title: Contrôleurs HP Reverb G2 dans Unreal
 description: Découvrez comment utiliser les nouveaux contrôleurs de reréverbérations de HP G2 dans OpenXR et SteamVR pour les applications de réalité mixte non réelles.
 author: hferrone
 ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Le moteur non réel, les UE4, les réverbérations, les réverbérations G2, les régressions G2, la réalité mixte, le développement, les contrôleurs de mouvement, les entrées utilisateur, les fonctionnalités, le nouveau projet, l’émulateur, la documentation, les guides, les fonctionnalités, les hologrammes, le développement de jeux, le casque de la réalité mixte, le casque de réalité
-ms.openlocfilehash: 006c70208ec0eaa45447caecf39f799c4be1bfeb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b287a5c7de1ea086b76228d9109cc07a4e1569f5f926cb42dc3e37cc2a3bb916
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582681"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204169"
 ---
-# <a name="hp-reverb-g2-controllers-in-unreal"></a>Contrôleurs de reréverbérations de HP G2 inréel 
+# <a name="hp-reverb-g2-controllers-in-unreal"></a>Contrôleurs HP Reverb G2 dans Unreal 
 
 ## <a name="getting-started"></a>Prise en main
 

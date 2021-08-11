@@ -1,19 +1,19 @@
 ---
-title: Accès à JSON à partir du Web
+title: Accès à JSON à partir du web
 description: Essayez des exemples d’applications Unity qui utilisent maquette.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Windows Mixed Reality, maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
-ms.openlocfilehash: e6d2bb484f4ebccabe0af3cce9a6425b3d5164e0
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, commentaires, Hub de commentaires, bogues
+ms.openlocfilehash: 34eda9189c1c079b63d5c6ff3ac7ba8722e7eefa943397299dace516c479db54
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935363"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202397"
 ---
-# <a name="accessing-json-from-the-web"></a>Accès à JSON à partir du Web
+# <a name="accessing-json-from-the-web"></a>Accès à JSON à partir du web
 
 <!-- TODO(Harrison/Stefan): Need cool header image from tutorial -->
 

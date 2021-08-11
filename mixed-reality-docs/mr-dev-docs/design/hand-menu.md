@@ -5,13 +5,13 @@ author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
-keywords: main, menu, bouton, accès rapide, disposition, casque de la réalité mixte, casque de la réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, boîte à outils de réalité mixte
-ms.openlocfilehash: f007ada2d7a594f141d30a3619d4d80ac74621d8
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: main, menu, button, accès rapide, disposition, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte
+ms.openlocfilehash: 76338f75250054c531560dc0b6cb18aa7130c09fe30a49b4afc3fd409f88fdc0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115201975"
 ---
 # <a name="hand-menu"></a>Menu de la main
 
@@ -27,7 +27,7 @@ Vous trouverez nos meilleures pratiques recommandées pour l’utilisation des m
 
 ---
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>Bonnes pratiques
 
 **Conserver le nombre de boutons petit** 
 
@@ -105,7 +105,7 @@ Vous trouverez ci-dessous deux placements recommandés en fonction de nos explor
         <br>
         Pour des raisons techniques, nous recommandons cet emplacement avec une implémentation obligatoire : le développeur devra geler le menu une fois que la main opposée de l’utilisateur est proche de son interaction. Cela évite à jitteriness de se chevaucher les mains et permet également de cibler plus rapidement les boutons.<br>
         <br>
-        Les caméras HoloLens 2 identifient les mains avec précision lorsqu’elles sont séparées les unes des autres. Les mains qui se chevauchent peuvent entraîner un déplacement des menus manuels hors de l’emplacement d’ancrage.<br>
+        HoloLens 2 caméras identifient les mains avec précision lorsqu’elles sont séparées les unes des autres. Les mains qui se chevauchent peuvent entraîner un déplacement des menus manuels hors de l’emplacement d’ancrage.<br>
     :::column-end:::
 :::row-end:::
 
@@ -166,14 +166,14 @@ Nous avons fait des recherches utilisateur avec différents emplacements et disp
 
 ---
 
-## <a name="hand-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Menu de la main dans MRTK (ensemble d’outils de réalité mixte) pour Unity
+## <a name="hand-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>menu manuel dans MRTK (Shared Computer Toolkit de la réalité mixte) pour unity
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fournit des scripts et des exemples de scènes pour le menu de la main. Le script du solveur HandConstraintPalmUp vous permet de joindre des objets aux mains avec différentes options configurables. Les exemples de menu manuel de MRTK incluent des options utiles, telles que le Palm plat et le point de vue du regard pour empêcher l’activation erronée.
 
 * [Documentation des menus contextuels](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 * [Exemple de scène de menu manuel](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
 
-Vous pouvez essayer des exemples de menu manuel dans HoloLens 2 avec l’application MRTK d’exemples de Hub.
+vous pouvez essayer des exemples de menus manuels dans HoloLens 2 avec l’application MRTK d’exemples de Hub.
 
 * [Scène du menu manuel dans MRTK exemples Hub](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab)
 

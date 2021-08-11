@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Windows Mixed Reality, maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
-ms.openlocfilehash: 322e71c61d77adb03cea87970c21aaf5c965e50b
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Maquette, prototypage, réalité mixte, réalité virtuelle, VR, MR, commentaires, Hub de commentaires, bogues
+ms.openlocfilehash: e4ed6b03f04c5425a215121e912226d71de39387267730df3f32eae5e49dba56
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202387"
 ---
 # <a name="feature-1-tutorial"></a>Didacticiel sur la fonctionnalité 1
 

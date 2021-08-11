@@ -6,28 +6,28 @@ ms.author: daaske
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloTour, HoloLens, Windows Mixed Reality
-ms.openlocfilehash: 3e285988b6027b8c043dea7a4594c21d0bf3370d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7e9bc2078e90b0f0cd98cf0612b583c06b2d51b400d682d3aff71e59eed620a4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009319"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202205"
 ---
 # <a name="case-study---holotour"></a>Étude de cas-HoloTour
 
-HoloTour pour Microsoft HoloLens fournit des présentations personnelles en 3D immersifs d’emplacements sous forme à travers le monde. À mesure que les concepteurs, les artistes, les producteurs, les concepteurs audio et les développeurs qui travaillent sur ce projet, la création d’un rendu 3D convaincant d’un emplacement bien connu prend une fusion unique des encadrement créatives et technologiques. Cette étude de cas vous guidera tout au long du processus de capture et de création du contenu utilisé pour HoloTour.
+HoloTour pour Microsoft HoloLens fournit des présentations personnelles en 3d immersifs d’emplacements sous forme à travers le monde. À mesure que les concepteurs, les artistes, les producteurs, les concepteurs audio et les développeurs qui travaillent sur ce projet, la création d’un rendu 3D convaincant d’un emplacement bien connu prend une fusion unique des encadrement créatives et technologiques. Cette étude de cas vous guidera tout au long du processus de capture et de création du contenu utilisé pour HoloTour.
 
 ## <a name="the-tech"></a>Le Tech
 
-Avec HoloTour, nous souhaitons permettre aux utilisateurs de visiter certaines des destinations les plus étonnantes du monde, comme les [Ruins de Machu Picchu](https://en.wikipedia.org/wiki/Machu_Picchu) au Pérou ou la journée moderne [Piazza Navona](https://en.wikipedia.org/wiki/Piazza_Navona) en Italie, directement à partir de leurs propres salles vivantes. Notre équipe a fait de l’esprit l’objectif de la HoloTour « vous sentir comme vous le faites. » L’expérience était plus qu’une simple image ou une vidéo. En tirant parti de l’affichage unique, du suivi et de la technologie audio de HoloLens, nous avons pensé que nous avions pratiquement pu vous transporter vers un autre emplacement. Nous aurions besoin de capturer les paysages, les sons et la géométrie à trois dimensions de chaque emplacement visité, puis de le recréer dans notre application.
+Avec HoloTour, nous souhaitons permettre aux utilisateurs de visiter certaines des destinations les plus étonnantes du monde, comme les [Ruins de Machu Picchu](https://en.wikipedia.org/wiki/Machu_Picchu) au Pérou ou la journée moderne [Piazza Navona](https://en.wikipedia.org/wiki/Piazza_Navona) en Italie, directement à partir de leurs propres salles vivantes. Notre équipe a fait de l’esprit l’objectif de la HoloTour « vous sentir comme vous le faites. » L’expérience était plus qu’une simple image ou une vidéo. en tirant parti de l’affichage unique, du suivi et de la technologie audio de HoloLens nous avons pensé que nous avions pratiquement pu vous transporter vers un autre emplacement. Nous aurions besoin de capturer les paysages, les sons et la géométrie à trois dimensions de chaque emplacement visité, puis de le recréer dans notre application.
 
-Pour ce faire, nous avons besoin d’une caméra de 360 ° pour la capture audio directionnelle. Elle devait être capturée à une résolution extrêmement élevée, afin que le pied de page apparaisse plus clair lorsqu’il est lu sur un HoloLens et que les caméras doivent être positionnées de manière étroite pour réduire les artefacts d’assemblage. Nous voulions une couverture sphérique complète, pas seulement le long de l’horizon, mais au-dessus et au-dessous. La plate-forme devait également être portable pour que nous puissions l’emporter dans le monde entier. Nous avons évalué les options prêtes à l’emploi et réalisé qu’elles n’étaient tout simplement pas suffisantes pour réaliser notre vision, en raison de la résolution, du coût ou de la taille. Si nous n’avons pas trouvé de plate-forme de caméra qui répond à nos besoins, nous devrions en créer une nous.
+Pour ce faire, nous avons besoin d’une caméra de 360 ° pour la capture audio directionnelle. elle devait être capturée à une résolution extrêmement élevée, afin que le pied de page apparaisse plus clair lorsqu’il est lu sur un HoloLens et que les caméras doivent être positionnées de manière étroite pour réduire les artefacts de regroupement. Nous voulions une couverture sphérique complète, pas seulement le long de l’horizon, mais au-dessus et au-dessous. La plate-forme devait également être portable pour que nous puissions l’emporter dans le monde entier. Nous avons évalué les options prêtes à l’emploi et réalisé qu’elles n’étaient tout simplement pas suffisantes pour réaliser notre vision, en raison de la résolution, du coût ou de la taille. Si nous n’avons pas trouvé de plate-forme de caméra qui répond à nos besoins, nous devrions en créer une nous.
 
 ### <a name="building-the-rig"></a>Génération de la plate-forme de test
 
 La première version, créée à partir de carton, Velcro, bande de conduit et 14 caméras GoPro, était un MacGyver qui aurait été fier. Après avoir examiné tous les aspects des solutions de bas de gamme aux plates-formes personnalisées, les caméras GoPro étaient finalement la meilleure option pour nous car elles étaient petites, abordables et avaient un stockage en mémoire facile à utiliser. Le facteur de forme réduite était particulièrement important, car il nous permettait de placer des caméras relativement proches, plus la distance entre les caméras est petite, plus les artefacts de combinaison seront petits. Notre agencement unique de l’appareil photo nous permettait de bénéficier d’une couverture complète de toutes les sphères, *plus* suffisamment de repiquages pour aligner intelligemment les caméras et lisser certains artefacts pendant le processus de combinaison.
 
-Tirer parti des capacités [spatiales du son](../design/spatial-sound.md) sur HoloLens est essentiel à la création d’une expérience immersive convaincante. Nous avons utilisé un tableau à quatre microphones situé sous les caméras sur le trépied, qui capture le son à partir de l’emplacement de notre caméra dans quatre directions, ce qui nous donne suffisamment d’informations pour créer des sons spatiaux dans nos scènes.
+tirer parti des fonctionnalités de [son spatial](../design/spatial-sound.md) sur HoloLens est essentiel à la création d’une expérience immersive convaincante. Nous avons utilisé un tableau à quatre microphones situé sous les caméras sur le trépied, qui capture le son à partir de l’emplacement de notre caméra dans quatre directions, ce qui nous donne suffisamment d’informations pour créer des sons spatiaux dans nos scènes.
 
 ![Notre plateforme de 360 ° caméra configurée pour la vidéo en dehors du Pantheon.](images/camera-pantheon-200px.png)
 
@@ -85,7 +85,7 @@ Capture d’écran de PTGui montrant le métrage Pantheon.
 
 ### <a name="video-playback"></a>Lecture de vidéo
 
-Une fois le métrage terminé, nous disposons d’une vidéo transparente, mais elle est très importante, avec une résolution de 8 Ko environ. Le décodage de la vidéo est onéreux et il y a très peu d’ordinateurs capables de gérer une vidéo de 8 Ko. par conséquent, le prochain défi consistait à trouver un moyen de relire cette vidéo sur HoloLens. Nous avons développé un certain nombre de stratégies pour éviter le coût du décodage tout en faisant en sorte que l’utilisateur ait l’impression d’afficher l’intégralité de la vidéo.
+Une fois le métrage terminé, nous disposons d’une vidéo transparente, mais elle est très importante, avec une résolution de 8 Ko environ. Le décodage de la vidéo est onéreux et il y a très peu d’ordinateurs capables de gérer une vidéo de 8 Ko. par conséquent, le prochain défi consistait à trouver une méthode de relecture de cette vidéo sur HoloLens. Nous avons développé un certain nombre de stratégies pour éviter le coût du décodage tout en faisant en sorte que l’utilisateur ait l’impression d’afficher l’intégralité de la vidéo.
 
 L’optimisation la plus simple consiste à éviter de décoder des parties de la vidéo qui ne changent pas. Nous avons écrit un outil pour identifier les zones de chaque scène qui n’ont que peu ou pas de mouvement. Pour ces régions, nous affichons une image statique au lieu de décoder une vidéo pour chaque image. Pour que cela soit possible, nous avons divisé la vidéo massive en plus petits segments.
 
@@ -114,7 +114,7 @@ Pour que cette stratégie fonctionne, nous avons développé un système de lect
 
 Les vidéos constituent la plupart des éléments que vous voyez dans HoloTour, mais il existe un certain nombre d’objets en 3D qui s’affichent à proximité, tels que la peinture dans Piazza Navona, la fontaine à l’extérieur du Pantheon ou la bulle d’air chaud dans laquelle vous vous trouvez pour les scènes aériennes. Ces objets 3D sont importants, car la perception de la profondeur humaine est très bonne, mais pas très bonne loin. Nous pouvons sortir de la vidéo dans la distance, mais pour permettre aux utilisateurs de parcourir leur espace et sembler comme étant vraiment là, les objets les plus proches ont besoin de profondeur. Cette technique est similaire à la nature de ce que vous pouvez voir dans un musée de l’historique naturel, à savoir un diorama qui a des plans d’aménagement d’animaux physiques, des plantes et des spécimens animaux au premier plan, mais qui est remplacé par un dessin de Matt masqué de manière intelligente en arrière-plan.
 
-Certains objets sont simplement des ressources 3D que nous avons créées et ajoutées à la scène pour améliorer l’expérience. La peinture et la bulle d’air chaud rentrent dans cette catégorie, car elles n’étaient pas présentes lors de la pellicule. Comme pour les ressources de jeu, elles ont été créées par un artiste en 3D de notre équipe et texturées de manière appropriée. Nous allons les placer dans nos coulisses près de l’endroit où vous vous posez, et le moteur de jeu peut les afficher dans les deux affichages HoloLens pour qu’ils apparaissent sous la forme d’un objet 3D.
+Certains objets sont simplement des ressources 3D que nous avons créées et ajoutées à la scène pour améliorer l’expérience. La peinture et la bulle d’air chaud rentrent dans cette catégorie, car elles n’étaient pas présentes lors de la pellicule. Comme pour les ressources de jeu, elles ont été créées par un artiste en 3D de notre équipe et texturées de manière appropriée. nous allons les placer dans nos coulisses près de l’endroit où vous vous posez, et le moteur de jeu peut les afficher dans les deux HoloLens s’affiche pour qu’ils apparaissent sous la forme d’un objet 3d.
 
 D’autres ressources, comme la fontaine en dehors du Pantheon, sont des objets réels qui existent aux emplacements où nous filmons la vidéo, mais pour mettre ces objets hors de la vidéo et en 3D, nous devons effectuer un certain nombre de choses.
 
@@ -131,7 +131,7 @@ Pantheon le métrage avec la fontaine supprimée. Elle sera remplacée par une r
 
 Évidemment, il y avait plus de création de ce contenu que ce que nous avons abordé ici. Il y a quelques scènes : nous aimerions les appeler « perspectives inactives », y compris la bulle de l’air chaud et la lutte contre la Gladiator dans le Colosseum, qui prenait une approche plus créative. Nous les traiterons dans une prochaine étude de cas.
 
-Nous espérons que les solutions de partage à certains des plus grands défis que nous avions en production sont utiles aux autres développeurs et que vous êtes inspiré de l’utilisation de certaines de ces techniques pour créer vos propres expériences immersifs pour HoloLens. (Et si vous le faites, assurez-vous de le partager avec nous sur le [Forum de développement d’applications HoloLens](https://forums.hololens.com/)!)
+Nous espérons que les solutions de partage à certains des plus grands défis que nous avions en production sont utiles aux autres développeurs et que vous êtes inspiré de l’utilisation de certaines de ces techniques pour créer vos propres expériences immersifs pour HoloLens. (et si vous le faites, assurez-vous de le partager avec nous sur le [HoloLens forum de développement d’applications](https://forums.hololens.com/)!)
 
 ## <a name="about-the-authors"></a>À propos des auteurs
 
@@ -153,4 +153,4 @@ Nous espérons que les solutions de partage à certains des plus grands défis q
 
 
 ## <a name="see-also"></a>Voir aussi
-* [Vidéo : Microsoft HoloLens : HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)
+* [vidéo : Microsoft HoloLens : HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)

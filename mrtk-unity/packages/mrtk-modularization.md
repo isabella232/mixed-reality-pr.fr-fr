@@ -1,18 +1,18 @@
 ---
-title: Modularisation MRTK
+title: Modularisation de MRTK
 description: Décrit la Componentisation dans MRTK.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: eac96e309afc21f9a2b6efe9c3aef5975e4f0dff
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1c32486c83eda9b99540d1719753977b6cdb2d18735e799dcd6c2ca3fcf200ce
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203617"
 ---
-# <a name="mrtk-modularization"></a>Modularisation MRTK
+# <a name="mrtk-modularization"></a>Modularisation de MRTK
 
 l’une des nombreuses nouvelles fonctionnalités de la réalité mixte Shared Computer Toolkit v2 est l’amélioration de la création de composants. Chaque fois que cela est possible, les composants individuels sont isolés de la couche principale de la Fondation.
 
@@ -45,7 +45,7 @@ Il est possible de désactiver les éléments arbitraires pendant l’importatio
 
 ## <a name="upcoming-features"></a>Fonctionnalités à venir
 
-### <a name="application-architecture"></a>Architecture de l’application
+### <a name="application-architecture"></a>Architecture de l'application
 
 Le MRTK prend en charge l’activation des applications à l’aide d’une variété d’architectures, notamment :
 

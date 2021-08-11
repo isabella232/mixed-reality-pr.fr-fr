@@ -1,22 +1,22 @@
 ---
 title: HoloLens (1ère génération) - Entrées 212 - Voix
-description: Suivez cette procédure pas à pas de codage avec Unity, Visual Studio et HoloLens pour apprendre les détails des concepts vocaux.
+description: suivez cette procédure pas à pas de codage à l’aide d’unity, Visual Studio et HoloLens pour en savoir plus sur les concepts vocaux.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, tutorial, voix, HoloLens, Mixed Reality Academy, Unity, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle, Windows 10
-ms.openlocfilehash: 8e36233ff4abd3ac91670dd7d04b6675bec045ff
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, didacticiel, voix, HoloLens,, académie de la réalité mixte, unity, casque de réalité mixte, casque windows Mixed realisation, casque de réalité virtuelle, Windows 10
+ms.openlocfilehash: 75a1d32ae72a07b68fc65c40035109c468adb1080070240827eeb253eb4a03f4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207365"
 ---
 # <a name="hololens-1st-gen-input-212-voice"></a>HoloLens (1ère génération) entrée 212 : voix
 
 >[!IMPORTANT]
->Les didacticiels d’Académie de la réalité mixte ont été conçus avec HoloLens (1ère génération), Unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. Ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’Unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
+>les didacticiels d’académie de la réalité mixte ont été conçus avec des HoloLens (1er génération), unity 2017 et des casques immersifs immersifs de la réalité mixte à l’esprit.  Nous estimons qu’il est important de laisser ces tutoriels à la disposition des développeurs qui recherchent encore des conseils pour développer des applications sur ces appareils. ces didacticiels ne seront **_pas_** mis à jour avec les derniers ensembles d’outils ou interactions utilisés pour HoloLens 2 et peuvent ne pas être compatibles avec les versions plus récentes d’unity.  Ils sont fournis dans le but de fonctionner sur les appareils pris en charge. Une [nouvelle série de tutoriels](mrlearning-base.md) a été publiée pour HoloLens 2.
 
 La [saisie vocale](../../../design/voice-input.md) nous offre une autre manière d’interagir avec nos hologrammes. Les commandes vocales fonctionnent de manière très naturelle et simple. Concevez vos commandes vocales de sorte qu’elles soient :
 
@@ -29,7 +29,7 @@ La [saisie vocale](../../../design/voice-input.md) nous offre une autre manière
 
 Dans les [notions de base de m. 101](../../../develop/unity/tutorials/holograms-101.md), nous avons utilisé le KeywordRecognizer pour créer deux commandes vocales simples. Dans l’entrée d’Monsieur 212, nous allons approfondir et apprendre à :
 
-* Concevez des commandes vocales optimisées pour le moteur de reconnaissance vocale HoloLens.
+* concevez des commandes vocales optimisées pour le moteur de reconnaissance vocale HoloLens.
 * Faites savoir aux utilisateurs quelles commandes vocales sont disponibles.
 * Confirmez que nous avons entendu la commande vocale de l’utilisateur.
 * Comprendre ce que l’utilisateur dit, à l’aide d’un module de reconnaissance de dictée.
@@ -38,7 +38,7 @@ Dans les [notions de base de m. 101](../../../develop/unity/tutorials/holograms-
 Dans ce cours, nous allons revisiter l’Explorateur de modèles, que nous avons créé dans l' [entrée 210](holograms-210.md) et l' [entrée Mr 211](holograms-211.md).
 
 >[!IMPORTANT]
->Les vidéos incorporées dans chacun des chapitres ci-dessous ont été enregistrées à l’aide d’une version antérieure d’Unity et de la réalité mixte Toolkit. Alors que les instructions pas à pas sont précises et actuelles, vous pouvez voir des scripts et des visuels dans les vidéos correspondantes qui sont obsolètes. Les vidéos restent incluses pour l’affiche et les concepts abordés s’appliquent toujours.
+>les vidéos incorporées dans chacun des chapitres ci-dessous ont été enregistrées à l’aide d’une version antérieure d’unity et de la réalité mixte Shared Computer Toolkit. Alors que les instructions pas à pas sont précises et actuelles, vous pouvez voir des scripts et des visuels dans les vidéos correspondantes qui sont obsolètes. Les vidéos restent incluses pour l’affiche et les concepts abordés s’appliquent toujours.
 
 
 ## <a name="device-support"></a>Prise en charge des appareils
@@ -55,12 +55,12 @@ Dans ce cours, nous allons revisiter l’Explorateur de modèles, que nous avons
 
 ### <a name="prerequisites"></a>Prérequis
 
-* Un PC Windows 10 configuré avec les [outils appropriés installés](../../../develop/install-the-tools.md).
+* un PC Windows 10 configuré avec les [outils appropriés installés](../../../develop/install-the-tools.md).
 * Certaines fonctionnalités de base de la programmation C#.
 * Vous devez avoir terminé les [notions de base de m. 101](../../../develop/unity/tutorials/holograms-101.md).
 * Vous devez avoir terminé l' [entrée 210](holograms-210.md).
 * Vous devez avoir terminé l' [entrée 211](holograms-211.md).
-* Un appareil HoloLens [configuré pour le développement](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* un appareil HoloLens [configuré pour le développement](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### <a name="project-files"></a>Fichiers projet
 
@@ -72,7 +72,7 @@ Dans ce cours, nous allons revisiter l’Explorateur de modèles, que nous avons
 
 ### <a name="errata-and-notes"></a>Errata et notes
 
-* L’option « Activer Uniquement mon code » doit être désactivée (*décochée*) dans Visual Studio sous outils->Options->le débogage pour atteindre les points d’arrêt dans votre code.
+* la case à cocher « activer Uniquement mon code » doit être désactivée (*décochée*) dans Visual Studio sous outils->Options->débogage pour atteindre les points d’arrêt dans votre Code.
 
 ## <a name="unity-setup"></a>Configuration de Unity
 
@@ -80,45 +80,45 @@ Dans ce cours, nous allons revisiter l’Explorateur de modèles, que nous avons
 
 1. Démarrez Unity.
 2. Sélectionnez **Ouvrir**.
-3. Accédez au dossier **HolographicAcademy-hologrammees-212-Voice** que vous avez précédemment désinstallé.
+3. accédez au dossier **HolographicAcademy-Hologrammes-212-Voice** que vous avez précédemment désinstallé.
 4. Recherchez et sélectionnez le dossier de **démarrage** de l' / **Explorateur de modèles** .
 5. Cliquez sur le bouton **Sélectionner un dossier** .
-6. Dans le panneau **projet** , développez le dossier **scenes** .
+6. dans le volet **Project** , développez le dossier **scenes** .
 7. Double-cliquez sur **ModelExplorer** Scene pour le charger dans Unity.
 
 ### <a name="building"></a>Génération
 
-1. Dans Unity, sélectionnez **fichier > paramètres de build**.
+1. dans unity, sélectionnez **fichier > Build Paramètres**.
 2. Si **scenes/ModelExplorer** n’est pas listé dans **scenes dans Build**, cliquez sur **Ajouter des scènes ouvertes** pour ajouter la scène.
-3. Si vous développez spécifiquement pour HoloLens, définissez **appareil cible** sur **hololens**. Dans le cas contraire, laissez-le sur **un appareil**.
+3. si vous développez spécifiquement pour HoloLens, définissez l' **appareil cible** sur **HoloLens**. Dans le cas contraire, laissez-le sur **un appareil**.
 4. Vérifiez que le **type de build** est défini sur **D3D** et que le **Kit de développement logiciel (SDK** ) est défini sur le **dernier installé** (qui doit être le SDK 16299 ou une version ultérieure).
 5. Cliquez sur **Générer**.
 6. Créez un **dossier** nommé « App ».
 7. Cliquez sur le dossier de l' **application** .
-8. Appuyez sur **Sélectionner un dossier** et Unity va commencer à générer le projet pour Visual Studio.
+8. Appuyez sur **Sélectionner un dossier** pour que Unity commence à générer le projet pour Visual Studio.
 
 Lorsque Unity est terminé, une fenêtre de l’Explorateur de fichiers s’affiche.
 
 1. Ouvrez le dossier de l' **application** .
-2. Ouvrez la **solution Visual Studio ModelExplorer**.
+2. ouvrez la **Solution Visual Studio ModelExplorer**.
 
-En cas de déploiement dans HoloLens :
+Si vous déployez sur HoloLens :
 
-1. À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
+1. à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x86**.
 2. Cliquez sur la flèche déroulante en regard du bouton ordinateur local, puis sélectionnez **ordinateur distant**.
-3. Entrez **l’adresse IP de votre appareil HoloLens** et définissez le mode d’authentification sur **universel (protocole non chiffré)**. Cliquez sur **Sélectionner**. Si vous ne connaissez pas l’adresse IP de votre appareil, accédez à **paramètres > réseau & Internet > options avancées**.
-4. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler à Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+3. entrez **l’adresse IP de votre appareil HoloLens** et définissez le Mode d’authentification sur **universel (protocole non chiffré)**. Cliquez sur **Sélectionner**. si vous ne connaissez pas l’adresse IP de votre appareil, consultez **Paramètres > réseau & Options avancées Internet >**.
+4. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**. S’il s’agit de la première fois que vous déployez sur votre appareil, vous devrez le [coupler avec Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 5. Une fois l’application déployée, ignorez le **Fitbox** avec un **mouvement Select**.
 
 En cas de déploiement sur un casque immersif :
 
-1. À l’aide de la barre d’outils supérieure dans Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x64**.
+1. à l’aide de la barre d’outils supérieure de Visual Studio, remplacez la cible Debug par **Release** et de ARM par **x64**.
 2. Assurez-vous que la cible de déploiement est définie sur **ordinateur local**.
 3. Dans la barre de menus supérieure, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
 4. Une fois l’application déployée, Faites disparaître le **Fitbox** en tirant le déclencheur sur un contrôleur de mouvement.
 
 >[!NOTE]
->Vous pouvez remarquer des erreurs rouges dans le panneau erreurs de Visual Studio. Vous pouvez les ignorer en toute sécurité. Basculez vers le panneau sortie pour afficher la progression réelle de la génération. Les erreurs dans le panneau sortie vous obligent à faire un correctif (le plus souvent, elles sont provoquées par une erreur dans un script).
+>vous pouvez remarquer des erreurs rouges dans le panneau Visual Studio errors. Vous pouvez les ignorer en toute sécurité. Basculez vers le panneau sortie pour afficher la progression réelle de la génération. Les erreurs dans le panneau sortie vous obligent à faire un correctif (le plus souvent, elles sont provoquées par une erreur dans un script).
 
 ## <a name="chapter-1---awareness"></a>Chapitre 1-sensibilisation
 
@@ -138,7 +138,7 @@ Dans ce chapitre, vous allez apprendre à concevoir des commandes vocales. Lors 
 
 * Créer des commandes concises. Vous ne souhaitez pas utiliser *« Lire la vidéo actuellement sélectionnée »*, car cette commande n’est pas concise et peut facilement être oubliée par l’utilisateur. Au lieu de cela, vous devez utiliser : *« Lire la vidéo »*, car elle est concise et comporte plusieurs syllabes.
 * Utilisez un vocabulaire simple. Essayez toujours d’utiliser des mots et des expressions courants qui sont faciles à découvrir et à mémoriser pour l’utilisateur. Par exemple, si votre application comporte un objet note qui peut être affiché ou masqué, vous n’utiliseriez pas la commande *« Show pancarte »*, car « pancarte » est un terme rarement utilisé. Au lieu de cela, vous devez utiliser la commande : *« Show note »* pour révéler la remarque dans votre application.
-* Soyez cohérent. Les commandes vocales doivent rester cohérentes dans l’ensemble de votre application. Imaginez que vous avez deux scènes dans votre application et que les deux scènes contiennent un bouton pour fermer l’application. Si la première scène a utilisé la commande *« Exit »* pour déclencher le bouton, alors que la deuxième scène a utilisé la commande *« Close App »*, l’utilisateur va être très confus. Si la même fonctionnalité persiste sur plusieurs scènes, la même commande vocale doit être utilisée pour la déclencher.
+* Soyez cohérent. Les commandes vocales doivent rester cohérentes dans l’ensemble de votre application. Imagine que vous avez deux scènes dans votre application et que les deux scènes contiennent un bouton pour fermer l’application. Si la première scène a utilisé la commande *« Exit »* pour déclencher le bouton, alors que la deuxième scène a utilisé la commande *« Close App »*, l’utilisateur va être très confus. Si la même fonctionnalité persiste sur plusieurs scènes, la même commande vocale doit être utilisée pour la déclencher.
 
 #### <a name="dont"></a>Ne pas
 
@@ -157,24 +157,24 @@ Dans ce chapitre, vous allez apprendre à concevoir des commandes vocales. Lors 
 * Dans le panneau de la **hiérarchie** Unity, utilisez l’outil de recherche pour Rechercher l’objet **holoComm_screen_mesh** .
 * Double-cliquez sur l’objet **holoComm_screen_mesh** pour l’afficher dans la **scène**. Il s’agit de la montre de astronautes, qui répondra à nos commandes vocales.
 * Dans le volet de l' **inspecteur** , localisez le composant **source d’entrée vocale (script)** .
-* Développez la section **Mots clés** pour voir la commande vocale prise en charge : **ouvrir Communicator**.
+* Développez la section **Mots clés** pour afficher la commande vocale prise en charge : **ouvrez Communicator**.
 * Cliquez sur le roue dentée situé à droite, puis sélectionnez **modifier le script**.
 * Explorez **SpeechInputSource. cs** pour comprendre comment il utilise **KeywordRecognizer** pour ajouter des commandes vocales.
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-* Dans Unity, utilisez les **paramètres de build de > de fichiers** pour régénérer l’application.
+* dans unity, utilisez le **fichier > Build Paramètres** pour régénérer l’application.
 * Ouvrez le dossier de l' **application** .
-* Ouvrez la **solution Visual Studio ModelExplorer**.
+* ouvrez la **Solution Visual Studio ModelExplorer**.
 
-(Si vous avez déjà généré/déployé ce projet dans Visual Studio au cours de la configuration, vous pouvez ouvrir cette instance de VS et cliquer sur « recharger tout » lorsque vous y êtes invité).
+(si vous avez déjà généré/déployé ce projet dans Visual Studio pendant l’installation, vous pouvez ouvrir cette instance de VS et cliquer sur « recharger tout » lorsque vous y êtes invité).
 
-* Dans Visual Studio, cliquez sur **Déboguer-> exécuter sans débogage** ou appuyez sur **CTRL + F5**.
-* Une fois que l’application a été déployée sur HoloLens, ignorez la zone d’ajustement à l’aide du mouvement d' [appui sur l’air](../../../design/gaze-and-commit.md#composite-gestures) .
+* dans Visual Studio, cliquez sur **déboguer-> exécuter sans débogage** ou appuyez sur **Ctrl + F5**.
+* une fois que l’application a été déployée sur le HoloLens, ignorez la zone d’ajustement en utilisant le mouvement d' [appui sur l’air](../../../design/gaze-and-commit.md#composite-gestures) .
 * Pointez le regard de la montre du astronautes.
 * Lorsque la montre a le focus, vérifiez que le curseur se transforme en microphone. Cela fournit des commentaires que l’application écoute pour les commandes vocales.
-* Vérifiez qu’une info-bulle apparaît sur la montre. Cela aide les utilisateurs à découvrir la commande *« Open Communicator »* .
-* Si Gazing à la montre, dites *« ouvrir Communicator »* pour ouvrir le panneau Communicator.
+* Vérifiez qu’une info-bulle apparaît sur la montre. cela aide les utilisateurs à découvrir la commande *« ouvrir Communicator »* .
+* alors que gazing à la montre, dites *« ouvrir Communicator »* pour ouvrir le panneau communicator.
 
 ## <a name="chapter-2---acknowledgement"></a>Chapitre 2-accusé de réception
 
@@ -188,24 +188,24 @@ Dans ce chapitre, vous allez apprendre à concevoir des commandes vocales. Lors 
 >[!NOTE]
 >La fonctionnalité **microphone** doit être déclarée pour qu’une application soit enregistrée à partir du microphone. Cela est fait pour vous déjà dans une entrée de m. 212, mais gardez cela à l’esprit pour vos propres projets.
 >
->1. Dans l’éditeur Unity, accédez aux paramètres du lecteur en accédant à « modifier les paramètres du projet > > Player ».
->2. Cliquez sur l’onglet « plateforme Windows universelle »
->3. Dans la section « fonctionnalités de > des paramètres de publication », vérifiez la fonctionnalité du **microphone** .
+>1. dans l’éditeur unity, accédez aux paramètres du lecteur en accédant à « modifier les > Project Paramètres > player »
+>2. cliquez sur l’onglet « plateforme Windows universelle »
+>3. dans la section « Paramètres des fonctionnalités de > de publication », vérifiez la fonctionnalité **Microphone**
 
 ### <a name="instructions"></a>Instructions
 
 * Dans le panneau de la **hiérarchie** Unity, vérifiez que l’objet **holoComm_screen_mesh** est sélectionné.
 * Dans le volet de l' **inspecteur** , recherchez le composant **astronautes Watch (script)** .
-* Cliquez sur le petit cube bleu défini comme valeur de la propriété **Communicator Prefab** .
-* Dans le panneau **projet** , le Prefab **Communicator** doit maintenant avoir le focus.
-* Cliquez sur le Prefab **Communicator** dans le panneau **projet** pour afficher ses composants dans l' **inspecteur**.
+* cliquez sur le petit cube bleu qui est défini en tant que valeur de la propriété **Communicator Prefab** .
+* dans le panneau **Project** , le **Communicator** prefab doit maintenant avoir le focus.
+* cliquez sur l' **Communicator** prefab dans le panneau **Project** pour afficher ses composants dans l' **inspecteur**.
 * Examinez le composant du **Gestionnaire de microphone (script)** , ceci nous permettra d’enregistrer la voix de l’utilisateur.
-* Notez que l’objet **Communicator** possède un composant **Gestionnaire d’entrée vocale (script)** pour répondre à la commande **Envoyer un message** .
-* Examinez le composant **Communicator (script)** et double-cliquez sur le script pour l’ouvrir dans Visual Studio.
+* notez que l’objet **Communicator** possède un composant de **gestionnaire d’entrée vocale (Script)** pour répondre à la commande **envoyer un Message** .
+* examinez le composant **Communicator (Script)** et double-cliquez sur le script pour l’ouvrir dans Visual Studio.
 
-Communicator. cs est chargé de définir les États de bouton appropriés sur le périphérique Communicator. Cela permet à nos utilisateurs d’enregistrer un message, de le lire et d’envoyer le message à astronautes. Il démarre et arrête également un formulaire d’onde animée, pour accuser réception à l’utilisateur que sa voix a été entendue.
+Communicator. cs est chargé de définir les états de bouton appropriés sur le périphérique communicator. Cela permet à nos utilisateurs d’enregistrer un message, de le lire et d’envoyer le message à astronautes. Il démarre et arrête également un formulaire d’onde animée, pour accuser réception à l’utilisateur que sa voix a été entendue.
 
-* Dans **Communicator. cs**, supprimez les lignes suivantes (81 et 82) de la méthode **Start** . Cela active le bouton « enregistrer » sur le Communicator.
+* dans **Communicator. cs**, supprimez les lignes suivantes (81 et 82) de la méthode **Start** . Cela active le bouton « enregistrer » sur le Communicator.
 
 ```cs
 // TODO: 2.a Delete the following two lines:
@@ -215,8 +215,8 @@ MessageUIRenderer.gameObject.SetActive(false);
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-* Dans Visual Studio, régénérez votre application et déployez-la sur l’appareil.
-* Pointez le regard du astronautes et dites *« ouvrir Communicator »* pour afficher le Communicator.
+* dans Visual Studio, régénérez votre application et déployez-la sur l’appareil.
+* pointez le regard du astronautes et dites *« ouvrir Communicator »* pour afficher le communicator.
 * Appuyez sur le bouton d' **enregistrement** (microphone) pour démarrer l’enregistrement d’un message verbal pour le astronautes.
 * Commencez à parler et vérifiez que l’animation Wave est jouée sur le Communicator, ce qui fournit des commentaires à l’utilisateur indiquant que sa voix est audible.
 * Appuyez sur le bouton **arrêter** (carré gauche) et vérifiez que l’animation Wave cesse de s’exécuter.
@@ -244,9 +244,9 @@ Dans ce chapitre, nous allons utiliser le module de reconnaissance de dictée po
 >[!NOTE]
 >La fonctionnalité **microphone** doit être déclarée pour qu’une application soit enregistrée à partir du microphone. Cela est fait pour vous déjà dans une entrée de m. 212, mais gardez cela à l’esprit pour vos propres projets.
 >
->1. Dans l’éditeur Unity, accédez aux paramètres du lecteur en accédant à « modifier les paramètres du projet > > Player ».
->2. Cliquez sur l’onglet « plateforme Windows universelle »
->3. Dans la section « fonctionnalités de > des paramètres de publication », vérifiez la fonctionnalité du **microphone** .
+>1. dans l’éditeur unity, accédez aux paramètres du lecteur en accédant à « modifier les > Project Paramètres > player »
+>2. cliquez sur l’onglet « plateforme Windows universelle »
+>3. dans la section « Paramètres des fonctionnalités de > de publication », vérifiez la fonctionnalité **Microphone**
 
 ### <a name="instructions"></a>Instructions
 
@@ -449,7 +449,7 @@ namespace Academy
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-* Régénérez dans Visual Studio et déployez sur votre appareil.
+* reconstruisez dans Visual Studio et déployez sur votre appareil.
 * Faites disparaître la zone d’ajustement avec un mouvement d’appui sur l’air.
 * Pointez le regard du astronautes et dites *« ouvrir Communicator »*.
 * Sélectionnez le bouton d' **enregistrement** (microphone) pour enregistrer votre message.
@@ -471,9 +471,9 @@ namespace Academy
 >[!NOTE]
 >La fonctionnalité **microphone** doit être déclarée pour qu’une application soit enregistrée à partir du microphone. Cela est fait pour vous déjà dans une entrée de m. 212, mais gardez cela à l’esprit pour vos propres projets.
 >
->1. Dans l’éditeur Unity, accédez aux paramètres du lecteur en accédant à « modifier les paramètres du projet > > Player ».
->2. Cliquez sur l’onglet « plateforme Windows universelle »
->3. Dans la section « fonctionnalités de > des paramètres de publication », vérifiez la fonctionnalité du **microphone** .
+>1. dans l’éditeur unity, accédez aux paramètres du lecteur en accédant à « modifier les > Project Paramètres > player »
+>2. cliquez sur l’onglet « plateforme Windows universelle »
+>3. dans la section « Paramètres des fonctionnalités de > de publication », vérifiez la fonctionnalité **Microphone**
 
 ### <a name="instructions"></a>Instructions
 
@@ -492,7 +492,7 @@ Dans notre fichier SRGS, nous avons trois types de règles :
 
 ### <a name="build-and-deploy"></a>Génération et déploiement
 
-* Régénérez l’application dans Unity, puis générez et déployez à partir de Visual Studio pour expérimenter l’application sur HoloLens.
+* régénérez l’application dans unity, puis générez et déployez à partir de Visual Studio pour expérimenter l’application sur HoloLens.
 * Faites disparaître la zone d’ajustement avec un mouvement d’appui sur l’air.
 * Pointez le regard du astronautes et effectuez un mouvement d’appui sur l’air.
 * Commencez à parler. Le module de reconnaissance de la **grammaire** interprète votre discours et modifie les couleurs des formes en fonction de la reconnaissance. Un exemple de commande est « cercle bleu, carré jaune ».

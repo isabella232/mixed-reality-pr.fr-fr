@@ -6,12 +6,12 @@ ms.author: v-qianwen
 ms.date: 07/09/2021
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, hologrammes, conception, interaction, casque de réalité mixte, casque Windows mixed reality, qu’est-ce que la réalité augmente
-ms.openlocfilehash: bef2c378dcba54d3ed3da33262153f35d72c3cba
-ms.sourcegitcommit: b0b49ad27a0d09eb0a3d5df0c766bb4b7bbd8208
+ms.openlocfilehash: e028fe6180bded26263fa47feb5acefc94570222e43f10fe85db5adf90307844
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113634330"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202114"
 ---
 # <a name="what-is-a-hologram"></a>Qu’est-ce qu’un hologramme ?
 

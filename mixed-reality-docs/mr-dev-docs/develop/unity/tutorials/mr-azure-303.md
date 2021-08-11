@@ -1,19 +1,19 @@
 ---
-title: HoloLens (1ère génération) et Azure 303-compréhension du langage naturel (LUIS)
+title: HoloLens (1er génération) et Azure 303-compréhension du langage naturel (LUIS)
 description: Suivez ce cours pour apprendre à implémenter Azure Language Understanding Intelligence Service (LUIS) dans une application de réalité mixte.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, réalité mixte, Académie, Unity, didacticiel, API, Language Understanding Intelligence Service, Luis, hololens, immersifive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 663ac44dbf15ce2db63d7ffe0ecc605d3555857f
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: azure, la réalité mixte, academy, unity, didacticiel, api, language understanding intelligence service, luis, hololens, immersif, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 443b5f2c186fbbb0a3e979b48ccc20b4c3d3b4f0bd9c93950e27e1f86d610c07
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218082"
 ---
-# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens (1ère génération) et Azure 303 : compréhension du langage naturel (LUIS)
+# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens (1re génération) et Azure 303 : compréhension du langage naturel (LUIS)
 
 <br>
 
@@ -26,7 +26,7 @@ Dans ce cours, vous allez apprendre à intégrer Language Understanding dans une
 
 ![Résultat de l’atelier](images/AzureLabs-Lab3-000.png)
 
-*Language Understanding (Luis)* est un service Microsoft Azure, qui permet aux applications de tirer parti de l’entrée utilisateur, par exemple en extrayant ce qu’une personne peut souhaiter, dans ses propres mots. Cela est possible via Machine Learning, qui comprend et apprend les informations d’entrée, puis peut répondre avec des informations détaillées et pertinentes. Pour plus d’informations, visitez la [page Azure Language Understanding (Luis)](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/).
+*Language Understanding (LUIS)* est un service Microsoft Azure, qui permet aux applications de tirer parti de l’entrée utilisateur, par exemple en extrayant ce qu’une personne peut souhaiter, dans ses propres mots. Cela est possible via Machine Learning, qui comprend et apprend les informations d’entrée, puis peut répondre avec des informations détaillées et pertinentes. Pour plus d’informations, visitez la [page Azure Language Understanding (Luis)](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/).
 
 Une fois ce cours terminé, vous disposerez d’une application de casque immersif en réalité mixte, qui sera en mesure d’effectuer les opérations suivantes :
 
@@ -36,7 +36,7 @@ Une fois ce cours terminé, vous disposerez d’une application de casque immers
 
 Le développement inclut la création d’une application dans laquelle l’utilisateur peut utiliser la voix et/ou le point de regard pour modifier la taille et la couleur des objets dans la scène. L’utilisation de contrôleurs de mouvement n’est pas couverte.
 
-Dans votre application, c’est à vous de savoir comment vous allez intégrer les résultats à votre conception. Ce cours est conçu pour vous apprendre à intégrer un service Azure à votre projet Unity. C’est votre travail d’utiliser les connaissances que vous avez acquises dans ce cours pour améliorer votre application de réalité mixte.
+Dans votre application, c’est à vous de savoir comment vous allez intégrer les résultats à votre conception. Ce cours est conçu pour vous apprendre à intégrer un service Azure à votre Project Unity. C’est votre travail d’utiliser les connaissances que vous avez acquises dans ce cours pour améliorer votre application de réalité mixte.
 
 Préparez-vous à former LUIS plusieurs fois, ce qui est abordé dans le [chapitre 12](#chapter-12--improving-your-luis-service). Vous obtiendrez de meilleurs résultats le plus souvent, LUIS a été formé.
 
@@ -51,7 +51,7 @@ Préparez-vous à former LUIS plusieurs fois, ce qui est abordé dans le [chapit
 </table>
 
 > [!NOTE]
-> Bien que ce cours se concentre principalement sur les casques de Windows Mixed Reality (VR), vous pouvez également appliquer ce que vous allez apprendre dans ce cours à Microsoft HoloLens. À mesure que vous suivez le cours, vous verrez des remarques sur les modifications que vous devrez peut-être utiliser pour prendre en charge HoloLens. Lorsque vous utilisez HoloLens, vous remarquerez peut-être un écho pendant la capture vocale.
+> bien que ce cours se concentre principalement sur les casques Windows Mixed Reality immersifs, vous pouvez également appliquer ce que vous avez appris dans ce cours à Microsoft HoloLens. À mesure que vous suivez le cours, vous verrez des remarques sur les modifications que vous devrez peut-être utiliser pour prendre en charge HoloLens. lorsque vous utilisez HoloLens, vous remarquerez peut-être un écho pendant la capture vocale.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -60,19 +60,19 @@ Préparez-vous à former LUIS plusieurs fois, ce qui est abordé dans le [chapit
 
 Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour ce cours :
 
-- Un PC de développement, [compatible avec Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) pour le développement d’écouteurs immersif (VR)
-- [Windows 10 automne Creators Update (ou version ultérieure) avec le mode développeur activé](../../install-the-tools.md)
-- [Le dernier Kit de développement logiciel Windows 10](../../install-the-tools.md)
+- un PC de développement, [compatible avec Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) pour le développement d’écouteurs immersifs (VR)
+- [Windows 10 Fall Creators Update (ou version ultérieure) avec le mode développeur activé](../../install-the-tools.md)
+- [le dernier kit de développement logiciel Windows 10](../../install-the-tools.md)
 - [Unity 2017,4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- Un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
+- un [casque Windows Mixed Reality (VR)](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens](/hololens/hololens1-hardware) avec le mode développeur activé
 - Un jeu de casque avec un microphone intégré (si le casque n’a pas de MIC et de haut-parleurs intégrés)
 - Accès Internet pour l’installation d’Azure et la récupération LUIS
 
 ## <a name="before-you-start"></a>Avant de commencer
 
 1.  Pour éviter de rencontrer des problèmes lors de la création de ce projet, il est fortement recommandé de créer le projet mentionné dans ce didacticiel dans un dossier racine ou dans un dossier racine (les chemins de dossiers longs peuvent entraîner des problèmes au moment de la génération). 
-2.  Pour permettre à votre ordinateur d’activer la dictée, accédez à **Paramètres Windows > confidentialité > reconnaissance vocale, écriture manuscrite & typage** , puis appuyez sur le bouton **activer les services vocaux et les suggestions de saisie**.
+2.  pour permettre à votre ordinateur d’activer la dictée, accédez à **Windows Paramètres > confidentialité > reconnaissance vocale, entrée manuscrite &,** puis appuyez sur le bouton **activer les services vocaux et les suggestions de saisie**.
 3.  Le code de ce didacticiel vous permet d’enregistrer à partir de l’ensemble du **périphérique microphone par défaut** sur votre ordinateur. Assurez-vous que le périphérique microphone par défaut est défini comme celui que vous souhaitez utiliser pour capturer votre voix.
 4.  Si votre casque dispose d’un microphone intégré, assurez-vous que l’option *« lors de l’usure du casque, basculez vers casque MIC »* est activée dans les paramètres du portail de la *réalité mixte* .
 
@@ -109,7 +109,7 @@ Pour utiliser le service de *Language Understanding* dans Azure, vous devez conf
 
     5. Déterminez l' **emplacement** de votre groupe de ressources (si vous créez un groupe de ressources). L’emplacement devrait idéalement se trouver dans la région où l’application s’exécutait. Certaines ressources Azure sont uniquement disponibles dans certaines régions.
     6. Vous devrez également confirmer que vous avez compris les conditions générales appliquées à ce service.
-    7. Sélectionnez **Create** (Créer).
+    7. Sélectionnez **Créer**.
 
         ![Créer un service LUIS-entrée utilisateur](images/AzureLabs-Lab3-03.png)
  
@@ -317,27 +317,27 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
     ![Démarrez le nouveau projet Unity.](images/AzureLabs-Lab3-24.png)
 
-2.  Vous devez maintenant fournir un nom de projet Unity, insérer **MR_LUIS**. Assurez-vous que le type de projet est défini sur **3D**. Définissez l' **emplacement** approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
+2.  vous devez maintenant fournir un nom de Project unity, insérer **MR_LUIS**. Assurez-vous que le type de projet est défini sur **3D**. Définissez l' **emplacement** approprié pour vous (n’oubliez pas que les répertoires racine sont mieux adaptés). Ensuite, cliquez sur **créer un projet**.
 
     ![Fournissez des détails pour le nouveau projet Unity.](images/AzureLabs-Lab3-25.png)
  
-3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à modifier > préférences puis, dans la nouvelle fenêtre, accédez à **outils externes**. Remplacez l' **éditeur de script externe** par **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
+3.  Si Unity est ouvert, il est conseillé de vérifier que l' **éditeur de script** par défaut est défini sur **Visual Studio**. Accédez à modifier > préférences puis, dans la nouvelle fenêtre, accédez à **outils externes**. modifiez l' **éditeur de Script externe** pour **Visual Studio 2017**. Fermez la fenêtre **Préférences** .
 
     ![Mettre à jour la préférence éditeur de script.](images/AzureLabs-Lab3-26.png)
  
-4.  Accédez ensuite à **fichier > paramètres de build** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
+4.  accédez ensuite à **fichier > générer Paramètres** et basculez la plateforme sur **plateforme Windows universelle**, en cliquant sur le bouton **changer de plateforme** .
 
-    ![Fenêtre Paramètres de build, basculez plateforme vers UWP.](images/AzureLabs-Lab3-27.png)
+    ![générez Paramètres fenêtre, basculez la plateforme sur UWP.](images/AzureLabs-Lab3-27.png)
  
-5.  Accédez à **fichier > paramètres de build** et assurez-vous que :
+5.  accédez à **fichier > générer Paramètres** et assurez-vous que :
 
     1. L' **appareil cible** est défini sur **n’importe quel appareil**
 
-        > Pour Microsoft HoloLens, définissez **appareil cible** sur *HoloLens*.
+        > pour le Microsoft HoloLens, définissez **appareil cible** sur *HoloLens*.
 
     2. Le **type de build** est **D3D**
     3. Le **SDK** est configuré sur le **dernier installé**
-    4. **Version de Visual Studio** définie sur le **dernier installé**
+    4. **Visual Studio Version** est définie sur le **plus récent**
     5. La **génération et l’exécution** sont définies sur l' **ordinateur local**
     6. Enregistrez la scène et ajoutez-la à la Build.
 
@@ -353,15 +353,15 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
             ![Donnez un nom à la nouvelle scène.](images/AzureLabs-Lab3-30.png)
 
-    7. Les paramètres restants, dans *paramètres de build*, doivent être laissés par défaut pour le moment.
+    7. dans les *Paramètres de Build*, les paramètres restants doivent être conservés comme valeurs par défaut pour le moment.
 
-6. Dans la fenêtre *paramètres de build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* . 
+6. dans la fenêtre *Paramètres de Build* , cliquez sur le bouton Paramètres du **lecteur** pour ouvrir le panneau correspondant dans l’espace où se trouve l' *inspecteur* . 
 
     ![Ouvrez les paramètres du lecteur.](images/AzureLabs-Lab3-31.png) 
  
 7. Dans ce volet, quelques paramètres doivent être vérifiés :
 
-    1. Sous l’onglet **autres paramètres** :
+    1. dans l' **autre onglet Paramètres** :
 
         1. La **version du runtime de script** doit être **stable** (équivalent .net 3,5).
         2. Le **backend de script** doit être **.net**
@@ -369,20 +369,20 @@ Ce qui suit est une configuration classique pour le développement avec la réal
 
             ![Mettez à jour d’autres paramètres.](images/AzureLabs-Lab3-32.png)
       
-    2. Dans l’onglet **paramètres de publication** , sous **fonctionnalités**, activez la case à cocher :
+    2. dans l’onglet **Paramètres de publication** , sous **fonctionnalités**, vérifiez :
 
         1. **InternetClient**
         2. **Microphone**
 
             ![Mise à jour des paramètres de publication.](images/AzureLabs-Lab3-33.png)
 
-    3. Plus bas dans le volet, dans les **paramètres XR** (situés sous **paramètres de publication**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **Kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
+    3. plus bas dans le volet, dans **XR Paramètres** (situé sous **publier Paramètres**), cochez la **réalité virtuelle prise en charge**, assurez-vous que le **kit de développement logiciel (SDK) Windows Mixed Reality** est ajouté.
 
-        ![Mettez à jour les paramètres X R.](images/AzureLabs-Lab3-34.png)
+        ![mettez à jour le Paramètres X R.](images/AzureLabs-Lab3-34.png)
 
-8.  De retour dans les *paramètres de build* . les projets _C#_ ne sont plus grisés. Cochez la case en regard de cette option. 
+8.  de retour dans la *Build Paramètres* les projets _C# unity_ ne sont plus grisés. Cochez la case en regard de cette option. 
 9.  Fermez la fenêtre Build Settings.
-10. Enregistrez votre scène et votre projet (**fichier > enregistrer la scène/le fichier > enregistrer le projet**).
+10. enregistrez votre scène et Project (**fichier > enregistrer la scène/le fichier > enregistrer le projet**).
 
 ## <a name="chapter-4--create-the-scene"></a>Chapitre 4 : créer la scène
 
@@ -418,7 +418,7 @@ Ce qui suit est une configuration classique pour le développement avec la réal
     2.  La *rotation* est définie sur **0, 0,** 0.
 
     > [!NOTE] 
-    > Pour Microsoft HoloLens, vous devez également modifier les éléments suivants, qui font partie du composant **Camera** , qui se trouve sur votre **caméra principale**:
+    > pour la Microsoft HoloLens, vous devez également modifier les éléments suivants, qui font partie du composant **camera** , qui se trouve sur votre **caméra principale**:
     > - **Indicateurs d’effacement :** Couleur unie.
     > - **Arrière-plan** 'Black, alpha 0 ' – couleur hexadécimale : #00000000.
 
@@ -482,7 +482,7 @@ La classe *MicrophoneManager* est chargée des opérations suivantes :
 
 Pour créer cette classe : 
 
-1.  Cliquez avec le bouton droit dans le *panneau Projet*, puis **créez > dossier**. Appelez le dossier **scripts**. 
+1.  cliquez avec le bouton droit dans le *panneau Project*, puis **créez > dossier**. Appelez le dossier **scripts**. 
 
     ![Créer un dossier de scripts.](images/AzureLabs-Lab3-40.png)
  
@@ -582,7 +582,7 @@ Pour créer cette classe :
     > [!IMPORTANT]
     > Supprimez la méthode *Update ()* puisque cette classe ne l’utilisera pas.
 
-9.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
+9.  veillez à enregistrer les modifications apportées à *Visual Studio* avant de revenir à *unity*.
 
     > [!NOTE]
     > À ce stade, vous remarquerez qu’une erreur s’affiche dans le panneau de la console de l' *éditeur Unity*. Cela est dû au fait que le code fait référence à la classe *LuisManager* que vous allez créer dans le chapitre suivant.
@@ -768,7 +768,7 @@ Pour créer cette classe :
     > [!IMPORTANT]
     > Supprimez les méthodes *Start ()* et *Update ()* puisque cette classe ne les utilise pas.
 
-12. Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
+12. veillez à enregistrer les modifications apportées à *Visual Studio* avant de revenir à *unity*.
 
 > [!NOTE]
 > À ce stade, vous remarquerez que plusieurs erreurs apparaissent dans le panneau de la console de l' *éditeur Unity*. Cela est dû au fait que le code fait référence à la classe des *comportements* que vous allez créer dans le chapitre suivant.
@@ -907,7 +907,7 @@ Pour créer cette classe :
     > [!IMPORTANT]
     > Supprimez les méthodes *Start ()* et *Update ()* puisque cette classe ne les utilise pas.
 
-8.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
+8.  veillez à enregistrer les modifications apportées à *Visual Studio* avant de revenir à *unity*.
 
 ## <a name="chapter-8--create-the-gaze-class"></a>Chapitre 8 : créer la classe en regard
 
@@ -964,7 +964,7 @@ Pour créer cette classe :
         }
     ```
  
-5.  Veillez à enregistrer vos modifications dans *Visual Studio* avant de revenir à *Unity*.
+5.  veillez à enregistrer les modifications apportées à *Visual Studio* avant de revenir à *unity*.
 
 ## <a name="chapter-9--completing-the-scene-setup"></a>Chapitre 9 : fin de la configuration de la scène
 
@@ -1028,11 +1028,11 @@ Une fois que vous avez vérifié que l’application fonctionne dans l’éditeu
 Pour générer :
 
 1.  Enregistrez la scène en cours en cliquant sur **fichier > enregistrer**.
-2.  Accédez à **fichier > paramètres de build**.
+2.  accédez à **fichier > générer Paramètres**.
 3.  Cochez la case **projets Unity C#** (utile pour afficher et déboguer votre code une fois le projet UWP créé.
 4.  Cliquez sur **Ajouter des scènes ouvertes**, puis cliquez sur **générer**.
 
-    ![Fenêtre Paramètres de build](images/AzureLabs-Lab3-43.png)
+    ![fenêtre de Paramètres de Build](images/AzureLabs-Lab3-43.png)
 
 4.  Vous serez invité à sélectionner le dossier dans lequel vous souhaitez générer la solution. 
 
@@ -1046,13 +1046,13 @@ Pour générer :
 
 Pour déployer sur l’ordinateur local :
 
-1.  Dans *Visual Studio*, ouvrez le fichier solution créé dans le [chapitre précédent](#chapter-10--test-in-the-unity-editor).
+1.  dans *Visual Studio*, ouvrez le fichier solution créé dans le [chapitre précédent](#chapter-10--test-in-the-unity-editor).
 2.  Dans la **plateforme** de la solution, sélectionnez **x86**, **ordinateur local**.
 3.  Dans la **configuration** de la solution, sélectionnez **Déboguer**.
 
-    > Pour Microsoft HoloLens, il peut s’avérer plus facile de définir cette valeur sur *machine distante*, afin de ne pas être attaché à votre ordinateur. Toutefois, vous devez également effectuer les opérations suivantes :
-    > - Connaître l' **adresse IP** de votre HoloLens, qui se trouve dans les *paramètres > réseau & Internet > Wi-Fi > options avancées*. IPv4 est l’adresse que vous devez utiliser. 
-    > - Assurez-vous que le **mode développeur** est **activé**; trouvé dans *paramètres > mettre à jour & > de sécurité pour les développeurs*.
+    > pour le Microsoft HoloLens, il peut s’avérer plus facile de définir cette valeur sur *Machine distante*, de sorte que vous n’êtes pas attaché à votre ordinateur. Toutefois, vous devez également effectuer les opérations suivantes :
+    > - identifiez l' **adresse IP** de votre HoloLens, qui se trouve dans le *Paramètres > réseau & Internet > Wi-Fi > options avancées*. IPv4 est l’adresse que vous devez utiliser. 
+    > - Assurez-vous que le **mode développeur** est **activé**; trouvé dans *Paramètres > mettre à jour & > de sécurité pour les développeurs*.
 
     ![Déployer une application](images/AzureLabs-Lab3-46.png)
  

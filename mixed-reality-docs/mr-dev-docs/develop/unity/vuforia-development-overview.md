@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
 keywords: Vuforia, marqueurs, coordonnées, cadre de référence, suivi, casque de réalité mixte, casque de réalité windows mixte, casque de réalité virtuelle, unity, HoloLens, suivi des appareils, mode de performances, portail des développeurs Vuforia
-ms.openlocfilehash: 1a21f4bb441a1ab0706b5916feaac0d691486626
-ms.sourcegitcommit: 7160843723ccd6567490e2f4222219603f184d76
+ms.openlocfilehash: dd5153b5e4986ebf1ecc2c133f3d431de08ce5b923cc7d2327d9cbda4f4df61c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216415"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Utilisation du moteur Vuforia avec Unity
 

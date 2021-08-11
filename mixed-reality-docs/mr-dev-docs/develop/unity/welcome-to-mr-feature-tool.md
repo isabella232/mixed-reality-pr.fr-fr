@@ -7,12 +7,12 @@ ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: à jour, outils, prise en main, principes de base, unity, visual studio, toolkit, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, installation, Windows, HoloLens, émulateur, unreal, openxr
-ms.openlocfilehash: 1244f9cd4da0d6ae0b5c6f92698f87f0edd812e2
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 7db87fdc35f64d57dc03ec607425aeab810608bc0dc0e81a3aeac52feaba444b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757090"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218616"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Bienvenue dans Mixed Reality Feature Tool
 

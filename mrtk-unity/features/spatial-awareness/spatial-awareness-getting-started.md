@@ -1,18 +1,18 @@
 ---
-title: Prise en main de la sensibilisation spatiale
+title: Bien démarrer avec la reconnaissance spatiale
 description: décrit la sensibilisation spatiale dans MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, développement, MRTK
-ms.openlocfilehash: 46bb78bc4e2574fd4da14f19edf52624b7b301c2
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bbe5b923ea7da965424e7fac98adca180c6f91d0c9b4c4ca7a0477e301c362f9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176711"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204326"
 ---
-# <a name="spatial-awareness-getting-started"></a>Prise en main de la sensibilisation spatiale
+# <a name="spatial-awareness-getting-started"></a>Bien démarrer avec la reconnaissance spatiale
 
 ![Reconnaissance spatiale](../images/spatial-awareness/MRTK_SpatialAwareness_Main.png)
 
@@ -37,9 +37,9 @@ la réalité mixte Shared Computer Toolkit est fournie avec quelques profils pr�
 
 | Profil | Système activé par défaut |
 | --- | --- |
-| `DefaultHoloLens1ConfigurationProfile` (Ressources/MRTK/Kit de développement logiciel/profils/HoloLens1) | Faux |
-| `DefaultHoloLens2ConfigurationProfile` (Ressources/MRTK/Kit de développement logiciel/profils/HoloLens2) | Faux |
-| `DefaultMixedRealityToolkitConfigurationProfile` (Ressources/MRTK/Kit de développement logiciel/profils) | Vrai |
+| `DefaultHoloLens1ConfigurationProfile` (Ressources/MRTK/Kit de développement logiciel/profils/HoloLens1) | False |
+| `DefaultHoloLens2ConfigurationProfile` (Ressources/MRTK/Kit de développement logiciel/profils/HoloLens2) | False |
+| `DefaultMixedRealityToolkitConfigurationProfile` (Ressources/MRTK/Kit de développement logiciel/profils) | True |
 
 1. Sélectionnez l’objet MixedRealityToolkit dans la hiérarchie des scènes pour l’ouvrir dans le panneau Inspecteur.
 

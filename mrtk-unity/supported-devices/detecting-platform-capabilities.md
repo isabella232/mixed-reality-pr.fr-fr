@@ -1,18 +1,18 @@
 ---
-title: Détection des fonctionnalités de la plateforme
+title: Détection des fonctionnalités de plateforme
 description: Détails des différentes fonctionnalités prises en charge par MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, fonctionnalités,
-ms.openlocfilehash: 70d320e178f4635d74b5be6a1874eb4254801719
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 0a3ad248e418e10ad1a7105ca5f9ece3e02c62bd7679cfd22d9c4396016d09a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207607"
 ---
-# <a name="detecting-platform-capabilities"></a>Détection des fonctionnalités de la plateforme
+# <a name="detecting-platform-capabilities"></a>Détection des fonctionnalités de plateforme
 
 une question courante posée sur le MRTK consiste à savoir quel périphérique spécifique (par exemple, Microsoft HoloLens 2) est utilisé pour exécuter une application. L’identification du matériel exact peut être difficile sur différentes plateformes. Au lieu de cela, le MRTK offre un moyen d’identifier des fonctionnalités spécifiques au moment de l’exécution (par exemple, si le point de terminaison de l’appareil actuel prend en charge les mains articulées).
 

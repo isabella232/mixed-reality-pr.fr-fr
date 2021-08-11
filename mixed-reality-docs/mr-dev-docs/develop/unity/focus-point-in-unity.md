@@ -1,33 +1,33 @@
 ---
 title: Point de focus dans Unity
-description: Apprenez à ajuster manuellement la stabilité des hologrammes dans Unity en définissant le point de focalisation pour HoloLens et les casques immersif Windows Mixed Reality.
+description: apprenez à ajuster manuellement la stabilité des hologrammes dans unity en définissant le point de focalisation pour HoloLens et Windows Mixed Reality des casques immersifs.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, point de focalisation, plan de focalisation, plan de stabilisation, point de stabilisation, reprojection, LSR, mémoire tampon de profondeur, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 16f359e1742b86c5f12c0c5965ac9e818ea76aee
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 91fba310cf86f145174512c4c1e23d69907d2f57f48f3fe1992b417eb283235f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636221"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203591"
 ---
 # <a name="focus-point-in-unity"></a>Point de focus dans Unity
 
 **Espace de noms :** *UnityEngine. XR. WSA*<br>
 **Type**: *HolographicSettings*
 
-Utilisez le [point de focus](../platform-capabilities-and-apis/hologram-stability.md#reprojection) pour fournir à HoloLens une indication sur la manière de mieux stabiliser les hologrammes actuellement affichés.
+utilisez le [point de focus](../platform-capabilities-and-apis/hologram-stability.md#reprojection) pour fournir à HoloLens une indication sur la manière de mieux stabiliser les hologrammes actuellement affichés.
 
 Si vous souhaitez définir le point de focus dans Unity, vous devez définir chaque frame à l’aide de *HolographicSettings. SetFocusPointForFrame ()*. Lorsque le point de focus n’est pas défini pour un cadre, le plan de stabilisation par défaut est utilisé.
 
 > [!NOTE]
-> Par défaut, l’option « Activer le partage de tampon de profondeur » est définie pour les nouveaux projets Unity.  Avec cette option, une application Unity s’exécutant sur un casque de bureau immersif ou sur un HoloLens exécutant la mise à jour 2018 d’avril de Windows 10 (RS4) ou une version ultérieure envoie votre tampon de profondeur à Windows pour optimiser la stabilité de l’hologramme automatiquement, sans que votre application spécifie un point de focalisation :
+> Par défaut, l’option « Activer le partage de tampon de profondeur » est définie pour les nouveaux projets Unity.  avec cette option, une application unity s’exécutant sur un casque de bureau immersif ou une HoloLens exécutant Windows 10 la mise à jour 2018 d’avril (RS4) ou une version ultérieure envoie votre tampon de profondeur à Windows pour optimiser la stabilité des hologrammes automatiquement, sans que votre application spécifie un point de focalisation :
 > * Sur un casque d’un bureau immersif, cela permet une reprojection basée sur la profondeur par pixel.
-> * Sur un HoloLens exécutant la mise à jour 2018 de Windows 10 avril ou une version ultérieure, le tampon de profondeur est analysé afin de choisir un plan de stabilisation optimal automatiquement.
+> * sur un HoloLens exécutant Windows 10 la mise à jour 2018 d’avril ou une version ultérieure, cette opération analyse le tampon de profondeur pour choisir un plan de stabilisation optimal automatiquement.
 >
-> L’une ou l’autre approche devrait offrir une meilleure qualité d’image sans travail explicite de votre application pour sélectionner un point de focus pour chaque frame.  Notez que si vous fournissez un point de focalisation manuellement, cela remplacera le comportement automatique décrit ci-dessus et réduira généralement la stabilité de l’hologramme.  En règle générale, vous devez uniquement spécifier un point de focus manuel lorsque votre application s’exécute sur un HoloLens qui n’a pas encore été mis à jour vers la mise à jour 2018 d’avril de Windows 10.
+> L’une ou l’autre approche devrait offrir une meilleure qualité d’image sans travail explicite de votre application pour sélectionner un point de focus pour chaque frame.  Notez que si vous fournissez un point de focalisation manuellement, cela remplacera le comportement automatique décrit ci-dessus et réduira généralement la stabilité de l’hologramme.  en règle générale, vous devez uniquement spécifier un point de focus manuel lorsque votre application s’exécute sur un HoloLens qui n’a pas encore été mis à jour vers la Windows 10 mise à jour 2018 d’avril.
 
 ### <a name="example"></a>Exemple
 
@@ -61,7 +61,7 @@ Si vous suivez le parcours de développement Unity que nous avons disposé, vous
 Ou accéder directement au déploiement de votre application sur un appareil ou un émulateur :
 
 > [!div class="nextstepaction"]
-> [Déployer sur HoloLens ou sur des casques immersifs Windows Mixed Reality](../platform-capabilities-and-apis/using-visual-studio.md)
+> [déployez sur HoloLens ou Windows Mixed Reality des casques immersifs](../platform-capabilities-and-apis/using-visual-studio.md)
 
 Vous pouvez revenir aux [points de contrôle de développement Unity](unity-development-overview.md#3-advanced-features) à tout moment.
 

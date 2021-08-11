@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 85792491eb4c349eea3dac4ae227c6736d7a90c2
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: 4dde9dcb34553e1ad39d9c732f32f9d0ef174eaf2a6b6fbe7b59b8fdc9facf8d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638730"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204196"
 ---
 # <a name="all-platforms"></a>[Toutes les plateformes](#tab/all)
 
@@ -18,7 +18,7 @@ Les mêmes mappages d’action et d’axe dans les paramètres de projet d’ent
 
 ![Création d’un pion](../images/reverb-g2-img-12.png)
 
-3. Dans la solution Visual Studio du projet, recherchez la nouvelle classe pion et configurez-la pour l’entrée.
+3. dans la solution Visual Studio du projet, recherchez la nouvelle classe pion et configurez-la pour l’entrée.
 * Tout d’abord, dans le constructeur, définissez AutoPossessPlayer sur le premier joueur pour router l’entrée vers le pion.
 
 ```cpp
@@ -67,7 +67,7 @@ private:
     void LeftGripAxis(float AxisValue);
 ```
 
-4. Compilez à partir de Visual Studio pour lancer l’éditeur avec le nouveau pion. Glissez-déposez le pion du navigateur de contenu dans le jeu et le pion exécutera maintenant les rappels lorsque l’utilisateur appuie sur l’entrée.
+4. compilez à partir de Visual Studio pour lancer l’éditeur avec le nouveau pion. Glissez-déposez le pion du navigateur de contenu dans le jeu et le pion exécutera maintenant les rappels lorsque l’utilisateur appuie sur l’entrée.
 
 # <a name="steamvr"></a>[SteamVR](#tab/steamvr)
 
@@ -75,7 +75,7 @@ Lors de l’utilisation d’événements d’axe Joystick, le nom de l’événe
 
 ![Utilisation d’événements Stick](../images/reverb-g2-img-09.png)
 
-Enfin, enregistrez les actions dans le jeu avec SteamVR à l’aide des boutons **régénérer le manifeste d’action** et **régénérer les liaisons de contrôleur** dans les paramètres du projet > entrée Steam VR.
+enfin, enregistrez les actions dans le jeu avec SteamVR à l’aide des boutons **régénérer le manifeste d’Action** et **régénérer les liaisons de contrôleur** dans Project Paramètres > entrée Steam.
 
 ![Inscription des actions dans les paramètres du projet](../images/reverb-g2-img-10.png)
 

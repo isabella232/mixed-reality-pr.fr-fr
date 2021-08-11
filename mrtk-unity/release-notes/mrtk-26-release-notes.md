@@ -4,18 +4,18 @@ description: Notes de publication pour MRTK version 2,6
 author: polar-kev
 ms.author: kesemple
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK,
-ms.openlocfilehash: c172e5d071bba22626e9c35b2b4318f1ff779335
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK,
+ms.openlocfilehash: 452f0f352443620dea70b1680859bab4e2b3a0818de5f130accdb84c2798cfe0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115206702"
 ---
-# <a name="microsoft-mixed-reality-toolkit-26-release-notes"></a>Notes de publication de Microsoft Mixed Reality Toolkit 2,6
+# <a name="microsoft-mixed-reality-toolkit-26-release-notes"></a>notes de publication de Microsoft Mixed reality Shared Computer Toolkit 2,6
 
 > [!IMPORTANT]
-> Un problème connu du compilateur affecte les applications générées pour Microsoft HoloLens 2 à l’aide de ARM64. Ce problème est résolu par la mise à jour de Visual Studio 2019 vers la version 16,8 ou ultérieure. Si vous ne parvenez pas à mettre à jour Visual Studio, importez le `com.microsoft.mixedreality.toolkit.tools` package pour appliquer une solution de contournement.
+> un problème connu du compilateur affecte les applications générées pour Microsoft HoloLens 2 à l’aide de ARM64. ce problème est résolu par la mise à jour de Visual Studio 2019 vers la version 16,8 ou ultérieure. si vous ne parvenez pas à mettre à jour Visual Studio, importez le `com.microsoft.mixedreality.toolkit.tools` package pour appliquer une solution de contournement.
 
 ## <a name="whats-new-in-262"></a>Nouveautés de 2.6.2
 
@@ -25,7 +25,7 @@ Résout le [problème](https://github.com/microsoft/MixedRealityToolkit-Unity/pu
 
 ## <a name="whats-new-in-261"></a>Nouveautés de 2.6.1
 
-### <a name="fixes-openxr-not-running-on-hololens-2--uwp"></a>Correctifs OpenXR ne s’exécutant pas sur HoloLens 2/UWP
+### <a name="fixes-openxr-not-running-on-hololens-2--uwp"></a>résout OpenXR ne s’exécutant pas sur HoloLens 2/UWP
 
 Résout une régression qui a empêché l’exécution de la prise en charge OpenXR de MRTK sur UWP.
 
@@ -79,13 +79,13 @@ Les utilisateurs peuvent désormais utiliser le geste de télédiffusion pour se
 
 ### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>Compréhension de scène désormais disponible dans MRTK comme observateur expérimental de sensibilisation spatiale
 
-La prise en charge expérimentale de la [compréhension des scènes](/windows/mixed-reality/scene-understanding) est introduite dans MRTK 2,6. Les utilisateurs peuvent incorporer les fonctionnalités de l’analyse de la scène HoloLens 2 comme un observateur de sensibilisation spatiale dans des projets basés sur MRTK. Pour plus d’informations, consultez la documentation sur la compréhension de la [scène](../features/spatial-awareness/scene-understanding.md) .
+La prise en charge expérimentale de la [compréhension des scènes](/windows/mixed-reality/scene-understanding) est introduite dans MRTK 2,6. les utilisateurs peuvent intégrer les fonctionnalités de HoloLens 2 comme un observateur de sensibilisation spatiale dans des projets basés sur MRTK. Pour plus d’informations, consultez la documentation sur la compréhension de la [scène](../features/spatial-awareness/scene-understanding.md) .
 
 > [!IMPORTANT]
-> La compréhension de la scène est uniquement prise en charge sur HoloLens 2 et Unity 2019,4 et versions ultérieures.
+> la compréhension des scènes est uniquement prise en charge sur les HoloLens 2 et unity 2019,4 et versions ultérieures.
 >
 > Cette fonctionnalité nécessite le package de compréhension de scène, qui est désormais disponible via l’outil de la [fonctionnalité de réalité mixte](https://aka.ms/MRFeatureTool).
-> Lors de l’utilisation de l’outil de fonctionnalité de réalité mixte ou de l’importation via UPM, importez l’exemple de démonstrations-SpatialAwareness avant d’importer l’exemple expérimental-SceneUnderstanding en raison d’un problème de dépendance. Pour plus d’informations, consultez [ce problème GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) .
+> Lors de l’utilisation de l’outil de fonctionnalité de réalité mixte ou de l’importation via UPM, importez l’exemple de démonstrations-SpatialAwareness avant d’importer l’exemple expérimental-SceneUnderstanding en raison d’un problème de dépendance. pour plus d’informations, consultez [ce GitHub problème](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) .
 
 ![Compréhension des scènes](images/SceneUnderstanding.gif)
 
@@ -125,11 +125,11 @@ Les scripts du nuanceur d’impulsions ont été dégradés par expérimentation
 
 Ajout de la prise en charge du [mode lecture](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) sur HoloLens 2. Le mode de lecture réduit le champ de vue du système, mais élimine la mise à l’échelle de la sortie d’Unity. Un pixel rendu par Unity correspond à un pixel projeté sur HoloLens 2. Les auteurs d’applications doivent effectuer des tests avec plusieurs personnes pour s’assurer qu’il s’agit d’un compromis qu’ils souhaitent dans leur application.
 
-![Mode de lecture Windows Mixed Reality](images/WMRReadingMode.gif)
+![mode de lecture Windows Mixed Reality](images/WMRReadingMode.gif)
 
 ### <a name="support-for-3d-app-launchers-on-uwp"></a>Prise en charge des lanceurs d’applications en 3D sur UWP
 
-Ajoute la possibilité de définir un [lanceur d’applications 3D](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) pour UWP. Ce paramètre est exposé à la fois dans la fenêtre de génération MRTK et dans les paramètres du projet MRTK, sous paramètres de Build. Il est automatiquement écrit dans le projet pendant la génération dans Unity.
+Ajoute la possibilité de définir un [lanceur d’applications 3D](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) pour UWP. ce paramètre est exposé à la fois dans la fenêtre de génération MRTK et dans le Paramètres de Project MRTK, sous Paramètres de build. Il est automatiquement écrit dans le projet pendant la génération dans Unity.
 
 ![Paramètres de build](images/ProjectBuildSettings.png)
 
@@ -143,9 +143,9 @@ En raison des problèmes liés à la désérialisation, certains champs des obje
 
 Le fichier binaire d’animation d’entrée, utilisé par `InputRecordingService` et `InputPlaybackService` , dispose désormais d’un format de fichier mis à jour pour activer les optimisations effectuées sur ces deux services. Pour plus d’informations sur les nouvelles spécifications de version 1,1, consultez [cette page](../features/input-simulation/input-animation-file-format.md) .
 
-### <a name="msbuild-for-unity-support"></a>Prise en charge de MSBuild pour Unity
+### <a name="msbuild-for-unity-support"></a>MSBuild pour la prise en charge d’unity
 
-La prise en charge de MSBuild pour Unity a été supprimée à partir de la version 2.5.2, afin de s’aligner avec les [nouvelles instructions du package Unity](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/).
+la prise en charge de MSBuild pour unity a été supprimée à partir de la version 2.5.2, afin de s’aligner avec les [nouvelles instructions du package unity](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/).
 
 ## <a name="known-issues"></a>Problèmes connus
 
@@ -154,17 +154,17 @@ La prise en charge de MSBuild pour Unity a été supprimée à partir de la vers
 Il existe actuellement un problème connu avec la communication à distance holographique et OpenXR, où les jointures manuelles ne sont pas constamment disponibles.
 En outre, les scènes des exemples de suivi oculaire ne sont pas compatibles actuellement, bien que le suivi _visuel fonctionne._
 
-### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>Certaines fonctionnalités de nuanceur standard de la boîte à outils de la réalité mixte nécessitent le package de base
+### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>une réalité mixte Shared Computer Toolkit fonctionnalités de nuanceur Standard nécessitent le package de base
 
-Lorsqu’ils sont importés via le gestionnaire de package Unity, les scripts d’utilitaires de nuanceur standard MRTK (ex : HoverLight. cs) ne sont pas colocalisés avec le nuanceur dans le package de ressources standard. Pour accéder à cette fonctionnalité, les applications doivent importer le package de Fondation.
+lors de l’importation via unity Gestionnaire de package, les scripts d’utilitaires de nuanceur standard MRTK (ex : HoverLight. cs) ne sont pas colocalisés avec le nuanceur dans le package de ressources standard. Pour accéder à cette fonctionnalité, les applications doivent importer le package de Fondation.
 
 ### <a name="cameracache-may-create-a-new-camera-on-shutdown"></a>CameraCache peut créer un nouvel appareil photo à l’arrêt
 
 Dans certains cas (par exemple, lorsque vous utilisez le fournisseur LeapMotion dans l’éditeur Unity), CameraCache peut recréer MainCamera lors de l’arrêt. Pour plus d’informations, consultez [ce problème](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8459) .
 
-### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException quand des exemples sont importés via le gestionnaire de package Unity
+### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException quand des exemples sont importés via unity Gestionnaire de package
 
-Selon la longueur du chemin d’accès au projet, l’importation d’exemples par le biais du gestionnaire de package Unity peut générer des messages FileNotFoundException dans la console Unity. La cause est le chemin d’accès au fichier « manquant » qui est plus long que MAX_PATH (256 caractères). Pour résoudre le, raccourcissez la longueur du chemin d’accès au projet.
+en fonction de la longueur du chemin d’accès au projet, l’importation d’exemples via unity Gestionnaire de package peut générer des messages FileNotFoundException dans la Console unity. La cause est le chemin d’accès au fichier « manquant » qui est plus long que MAX_PATH (256 caractères). Pour résoudre le, raccourcissez la longueur du chemin d’accès au projet.
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>Aucun Spatializer n’a été spécifié. L’application ne prend pas en charge le son spatial
 
@@ -172,8 +172,8 @@ Un avertissement « aucun Spatializer n’a été spécifié » s’affiche si
 
 Pour résoudre le, vérifiez les éléments suivants :
 
-- **Fenêtre**  >  Un ou plusieurs packages XR sont installés sur le **Gestionnaire de package**
-- **Boîte à outils**  >  de réalité mixte **Utilitaires**  >  **Configurer un projet Unity** et faire une sélection pour l' **audio Spatializer**
+- **Fenêtre**  >  **Gestionnaire de package** a un ou plusieurs packages XR installés
+- Shared Computer Toolkit de la **réalité mixte**  >  **Utilitaires**  >  **configurer unity Project** et faire une sélection pour l' **Audio Spatializer**
 
   ![Sélectionner les Spatializer audio](images/SpatializerSelection.png)
 

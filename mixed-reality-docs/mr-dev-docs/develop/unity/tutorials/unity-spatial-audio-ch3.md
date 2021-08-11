@@ -5,19 +5,19 @@ author: kegodin
 ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
-keywords: réalité mixte, Unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, importation de vidéos, lecteur vidéo
-ms.openlocfilehash: 60b70fc3b7f49f5b39138a218f93c0b37f29b9d9
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+keywords: réalité mixte, unity, tutorial, hololens2, audio spatial, MRTK, boîte à outils de réalité mixte, UWP, Windows 10, HRTF, fonction de transfert liée aux têtes, réverbération, Microsoft Spatializer, importation de vidéos, lecteur vidéo
+ms.openlocfilehash: 2926301aac9db67d3e72b0511600720c24e5965f52a23faa1230c381a47c9b90
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202895"
 ---
 # <a name="3-spatializing-audio-from-a-video"></a>3. Spatialisation du contenu audio d’une vidéo
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Dans ce didacticiel, vous allez apprendre à spatialiser l’audio à partir d’une source vidéo et à le tester dans l’éditeur Unity et dans HoloLens 2.
+Dans ce didacticiel, vous allez apprendre à spatialiser l’audio à partir d’une source vidéo et à le tester dans l’éditeur Unity et HoloLens 2.
 
 ## <a name="objectives"></a>Objectifs
 
@@ -32,11 +32,11 @@ Pour ce didacticiel, vous pouvez utiliser [cette vidéo](https://github.com/micr
 Pour importer une vidéo dans le projet Unity. dans le menu Unity, sélectionnez **Asset**  >  **Importer un nouvel élément multimédia importer un** 
  élément multimédia ![](images/spatial-audio/spatial-audio-03-section1-step1-1.PNG)
 
-Dans la fenêtre **Importer une nouvelle ressource..** ., sélectionnez le fichier **Microsoft HoloLens-spatial Sound-PTPvx7mDon4** que vous avez téléchargé, puis cliquez sur le bouton **ouvrir** pour importer la ressource dans le projet :
+dans la fenêtre **importer une nouvelle ressource..** ., sélectionnez **Microsoft HoloLens le fichier PTPvx7mDon4-Spatial Sound-** que vous avez téléchargé, puis cliquez sur le bouton **ouvrir** pour importer la ressource dans le projet :
 
 ![Sélection de l’élément multimédia](images/spatial-audio/spatial-audio-03-section1-step1-2.PNG)
 
-L’ajustement des paramètres de qualité sur le clip vidéo peut garantir une lecture douce sur HoloLens 2. Sélectionnez le fichier vidéo dans la fenêtre **projet** et dans la fenêtre Inspecteur du fichier vidéo, **Remplacez** les paramètres pour les **applications du Windows Store** et :
+L’ajustement des paramètres de qualité sur le clip vidéo permet de garantir une lecture fluide sur HoloLens 2. sélectionnez le fichier vidéo dans la fenêtre de **Project** et dans la fenêtre de l’inspecteur du fichier vidéo, **remplacez** les paramètres des **applications du Windows** du windows Store et :
 
 * Activer le **transcodage**
 * Définir le **codec** sur H264 –
@@ -63,24 +63,24 @@ Cliquez avec le bouton droit sur la hiérarchie, sélectionnez **objet 3D**  >  
 
 ![Ajouter un quadruple](images/spatial-audio/spatial-audio-03-section2-step1-1.PNG)
 
-À présent, vous devez texturer le **Quad** avec la vidéo, dans la fenêtre du **projet** , cliquer avec le bouton droit et choisir **créer**  >  une **texture** de rendu pour créer un composant de texture de rendu, entrer un nom approprié pour la texture de rendu, par exemple _texture audio spatiale_:
+à présent, vous devez texturer le **Quad** avec la vidéo, dans la fenêtre de **Project** , cliquez avec le bouton droit et choisissez **créer**  >  une **texture** de rendu pour créer un composant de texture de rendu, entrez un nom approprié à la texture de rendu, par exemple _texture Audio spatiale_:
 
 ![Créer une texture de rendu](images/spatial-audio/spatial-audio-03-section2-step1-2.PNG)
 
-Sélectionnez la **texture de rendu** et, dans la fenêtre de l’inspecteur, définissez la propriété **Size** pour qu’elle corresponde à la résolution native de la vidéo de 1280 x 720. Ensuite, pour garantir de bonnes performances de rendu sur HoloLens 2, affectez à la propriété de la **mémoire tampon de profondeur** une **profondeur d’au moins 16 bits**.
+Sélectionnez la **texture de rendu** et, dans la fenêtre de l’inspecteur, définissez la propriété **Size** pour qu’elle corresponde à la résolution native de la vidéo de 1280 x 720. ensuite, pour garantir des performances de rendu optimales sur HoloLens 2, définissez la propriété de la **mémoire tampon de profondeur** sur **au moins 16 bits de profondeur**.
 
 ![Propriétés de texture de rendu](images/spatial-audio/spatial-audio-03-section2-step1-3.PNG)
 
 Ensuite, utilisez la texture **audio spatiale** de rendu créée comme texture pour le **Quad**:
 
-1. Faites glisser la **texture audio spatiale** de la fenêtre **projet** sur le **quadruple** dans la hiérarchie pour ajouter la texture de rendu au quadruple
-2. Pour garantir de bonnes performances sur HoloLens 2, sélectionnez Quad dans la hiérarchie, puis dans la fenêtre Inspector du nuanceur, sélectionnez le nuanceur standard de la **réalité mixte**  >   .
+1. faites glisser la **texture Audio spatiale** de la fenêtre de **Project** sur le **quadruple** dans la hiérarchie pour ajouter la texture de rendu au quadruple
+2. pour garantir de bonnes performances sur HoloLens 2, sélectionnez Quad dans la hiérarchie et dans la fenêtre Inspector pour shader, sélectionnez la **réalité mixte Shared Computer Toolkit**  >  nuanceur **Standard** .
 
 ![Propriétés de texture Quad](images/spatial-audio/spatial-audio-03-section2-step1-4.PNG)
 
 Pour définir le **lecteur vidéo** et **afficher la texture** pour lire le clip vidéo, sélectionnez le **lecteur vidéo** dans la **hiérarchie** et dans la fenêtre **inspecteur** .
 
-* Définissez la propriété **clip vidéo** sur le fichier vidéo téléchargé « Microsoft HoloLens-spatial Sound-PTPvx7mDon4 »
+* définissez la propriété **Clip vidéo** sur le fichier vidéo téléchargé’Microsoft HoloLens-Spatial Sound-PTPvx7mDon4 '
 * Cochez la case **boucle**
 * Définir la **texture cible** sur la nouvelle texture **audio spatiale** de rendu
 
@@ -92,7 +92,7 @@ Dans la fenêtre hiérarchie, sélectionnez objet **quadruple** , puis dans la f
 
 Dans la **source audio**:
 
-* Définir la **sortie** dans le **mélangeur audio spatial**
+* Définir la **sortie** sur le mixer de l' **audio spatial**
 * Vérifier la zone **spatiale**
 * Déplacez le curseur de **lissage spatial** sur 1 (3d)
 
@@ -110,7 +110,7 @@ Pour configurer le lecteur vidéo de façon à acheminer son audio vers la **sou
 
 ## <a name="congratulations"></a>Félicitations
 
-Dans ce didacticiel, vous avez appris à spatialiser l’audio à partir d’une source vidéo essayer votre application sur un HoloLens 2 ou dans l’éditeur Unity. Vous verrez et entendez la vidéo, et l’audio de la vidéo est spatial.
+dans ce didacticiel, vous avez appris à spatialiser l’audio à partir d’une source vidéo essayer votre application sur un HoloLens 2 ou dans l’éditeur unity. Vous verrez et entendez la vidéo, et l’audio de la vidéo est spatial.
 
 Dans le didacticiel suivant, vous allez apprendre à activer et désactiver des Spatialization au moment de l’exécution.
 

@@ -5,25 +5,25 @@ author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, hologrammes, stabilisation, étude de cas, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 85caee589a5f031f605417639eab2e980cb613c5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Windows Mixed Reality, hologrammes, stabilisation, étude de cas, casque de réalité mixte, casque Windows mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: 4227be39c18e43ad712a14dd61217994a8fc761f41f9416b95b511be5396712a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202356"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Étude de cas : utilisation du plan de stabilisation pour réduire la turbulence holographique
 
-L’utilisation des hologrammes est souvent délicate. Le fait de se déplacer autour d’un espace et d’examiner des hologrammes à partir de tous les angles différents fournit un niveau d’immersion qui n’est pas disponible sur un écran d’ordinateur normal. La mise en place de ces hologrammes et la recherche réaliste sont une fonction technique accomplie par le matériel Microsoft HoloLens et la conception intelligente des applications holographiques.
+L’utilisation des hologrammes est souvent délicate. Le fait de se déplacer autour d’un espace et d’examiner des hologrammes à partir de tous les angles différents fournit un niveau d’immersion qui n’est pas disponible sur un écran d’ordinateur normal. la mise en place de ces hologrammes et la recherche réaliste sont une fonction technique accomplie par le matériel Microsoft HoloLens et par la conception intelligente des applications holographiques.
 
 ## <a name="the-tech"></a>Le Tech
 
-Pour que les hologrammes apparaissent comme s’ils partagent réellement l’espace avec vous, ils doivent s’afficher correctement sans séparation des couleurs. Cela est possible, en partie, par la technologie intégrée au matériel HoloLens, qui permet aux hologrammes d’être ancrés sur ce que nous appelons un [plan de stabilisation](hologram-stability.md#reprojection).
+Pour que les hologrammes apparaissent comme s’ils partagent réellement l’espace avec vous, ils doivent s’afficher correctement sans séparation des couleurs. cela est possible, en partie, par la technologie intégrée au matériel HoloLens, ce qui permet aux hologrammes d’être ancrés sur ce que nous appelons un [plan de stabilisation](hologram-stability.md#reprojection).
 
-Un plan est défini par un point et un normal. Étant donné que nous voulons toujours que le plan fasse face à l’appareil photo, nous sommes soucieux de définir le point du plan. Nous pouvons indiquer à HoloLens le point sur lequel concentrer son traitement pour garder tout ce qui est ancré et stable. Toutefois, la définition de ce point de focus est spécifique à l’application et peut créer ou rompre votre application en fonction du contenu.
+Un plan est défini par un point et un normal. Étant donné que nous voulons toujours que le plan fasse face à l’appareil photo, nous sommes soucieux de définir le point du plan. nous pouvons déterminer HoloLens sur quel point concentrer son traitement pour garder tout ce qui est ancré et stable. Toutefois, la définition de ce point de focus est spécifique à l’application et peut créer ou rompre votre application en fonction du contenu.
 
-Les hologrammes fonctionnent mieux lorsque le plan de stabilisation est correctement appliqué, mais ce qui en fait dépend du type d’application que vous créez. Jetons un coup d’œil sur la façon dont certaines des applications actuellement disponibles pour HoloLens peuvent résoudre ce problème.
+Hologrammes mieux fonctionner lorsque le plan de stabilisation est appliqué correctement, mais que cela dépend en fait du type d’application que vous créez. jetons un coup d’œil sur la façon dont certaines des applications actuellement disponibles pour HoloLens résoudre ce problème.
 
 ## <a name="behind-the-scenes"></a>Dans les coulisses
 
@@ -35,13 +35,13 @@ L' [Explorateur Galaxy](../unity/galaxy-explorer.md) comporte deux éléments ma
 
 La conception de l’Explorateur Galaxy se prête bien à préserver la stabilité des éléments et à réduire l’effet de la séparation des couleurs. L’utilisateur est encouragé à parcourir et à Orbiter le contenu plutôt que de le déplacer d’un côté à l’autre, et les planètes s’orbitent suffisamment lentement pour que la séparation des couleurs ne soit pas perceptible. En outre, une constante de 60 FPS est conservée, ce qui permet d’éviter la séparation des couleurs.
 
-Pour vérifier cela, recherchez un fichier appelé LSRPlaneModifier.cs dans le code de l' [Explorateur Galaxy sur GitHub](https://github.com/Microsoft/GalaxyExplorer/tree/master/Assets/Scripts/Utilities).
+Pour vérifier cela, recherchez un fichier appelé LSRPlaneModifier. cs dans le code de l' [Explorateur Galaxy sur GitHub](https://github.com/Microsoft/GalaxyExplorer/tree/master/Assets/Scripts/Utilities).
 
-### <a name="holostudio-stationary-content-with-a-ui-focus"></a>HoloStudio : contenu stationnaire avec un focus de l’interface utilisateur
+### <a name="holostudio-stationary-content-with-a-ui-focus"></a>HoloStudio : contenu fixe avec le focus de l’interface utilisateur
 
-Dans HoloStudio, vous passez la majeure partie de votre temps à regarder le même modèle que sur lequel vous travaillez. Votre point de regard ne déplace pas un volume significatif, à l’exception de lorsque vous sélectionnez un nouvel outil ou que vous souhaitez naviguer dans l’interface utilisateur, afin de simplifier la logique de définition du plan. Lorsque vous examinez l’interface utilisateur, le plan est défini sur n’importe quel élément d’interface utilisateur. Lorsque vous examinez le modèle, le plan est une distance définie, correspondant à la distance par défaut entre vous et le modèle.
+dans HoloStudio, vous passez la majeure partie de votre temps à regarder le même modèle que sur lequel vous travaillez. Votre point de regard ne déplace pas un volume significatif, à l’exception de lorsque vous sélectionnez un nouvel outil ou que vous souhaitez naviguer dans l’interface utilisateur, afin de simplifier la logique de définition du plan. Lorsque vous examinez l’interface utilisateur, le plan est défini sur n’importe quel élément d’interface utilisateur. Lorsque vous examinez le modèle, le plan est une distance définie, correspondant à la distance par défaut entre vous et le modèle.
 
-![Plan de stabilisation visualisé dans HoloStudio lorsque l’utilisateur est en regard du bouton d’hébergement](images/holostudio-stabilization-plane-500px.png)
+![plan de stabilisation visualisé dans HoloStudio lorsque l’utilisateur est en regard du bouton d’hébergement](images/holostudio-stabilization-plane-500px.png)
 
 ### <a name="holotour-and-3d-viewer-stationary-content-with-animation-and-movies"></a>Visionneuse HoloTour et 3D : contenu stationnaire avec animation et films
 
@@ -65,7 +65,7 @@ Les fragments et les jeunes Conkers vous informent trop loin des hologrammes en 
 
 ## <a name="do-it-yourself"></a>Faites-le vous-même
 
-Si vous avez un HoloLens et que vous souhaitez vous amuser avec les concepts de cet article, vous pouvez télécharger une scène de test pour tester les exercices suivants. La scène de test utilise l’API Gizmo intégrée d’Unity pour vous aider à visualiser l’emplacement où votre plan est défini. Le code était également utilisé pour capturer les captures d’écran dans cette étude de cas.
+si vous avez un HoloLens et que vous souhaitez vous amuser avec les concepts de cet article, vous pouvez télécharger une scène de test pour tester les exercices suivants. La scène de test utilise l’API Gizmo intégrée d’Unity pour vous aider à visualiser l’emplacement où votre plan est défini. Le code était également utilisé pour capturer les captures d’écran dans cette étude de cas.
 1. Synchronisez la dernière version de [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity).
 2. Ouvrez la scène [HoloToolkit-examples/Utilities/scenes/StabilizationPlaneSetting. Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) .
 3. Générez et configurez le projet généré.
@@ -77,7 +77,7 @@ Vous verrez plusieurs points blancs à travers les différentes orientations. En
 
 ### <a name="exercise-2"></a>Exercice 2
 
-À présent, passez à votre droite jusqu’à ce que vous voyez deux points mobiles, l’un oscillant sur un chemin horizontal et l’autre sur un tracé vertical. Une fois encore, appuyez sur l’air pour changer le point sur lequel le plan est défini. Notez la manière dont la séparation des couleurs est atténuée et apparaît sur le point qui est connecté au plan. Appuyez de nouveau pour utiliser la vélocité du point dans la fonction de paramétrage du plan. Ce paramètre donne une indication à HoloLens sur le mouvement prévu de l’objet. Il est important de savoir quand l’utiliser, comme vous pouvez le remarquer lorsque la vélocité est utilisée sur un point, l’autre point mobile affiche une plus grande séparation des couleurs. Gardez cela à l’esprit lors de la conception de vos applications. Si vous avez un flot de mouvements de vos objets, vous pouvez empêcher l’affichage des artefacts.
+À présent, passez à votre droite jusqu’à ce que vous voyez deux points mobiles, l’un oscillant sur un chemin horizontal et l’autre sur un tracé vertical. Une fois encore, appuyez sur l’air pour changer le point sur lequel le plan est défini. Notez la manière dont la séparation des couleurs est atténuée et apparaît sur le point qui est connecté au plan. Appuyez de nouveau pour utiliser la vélocité du point dans la fonction de paramétrage du plan. ce paramètre donne un conseil à HoloLens sur le mouvement prévu de l’objet. Il est important de savoir quand l’utiliser, comme vous pouvez le remarquer lorsque la vélocité est utilisée sur un point, l’autre point mobile affiche une plus grande séparation des couleurs. Gardez cela à l’esprit lors de la conception de vos applications. Si vous avez un flot de mouvements de vos objets, vous pouvez empêcher l’affichage des artefacts.
 
 ### <a name="exercise-3"></a>Exercice 3
 

@@ -6,16 +6,16 @@ ms.author: v-vtieto
 ms.date: 07/27/2021
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, diagnostics, performances
-ms.openlocfilehash: f467b32ddab231286fc916916b0a40f210a66eb1
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 1e286612035a34c1bac174a620c350a91eb2b0fd59c3e808fe3a99368e03f43c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757017"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217141"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
-[Découvrez les principes de base de la communication à distance holographique.](platform-capabilities-and-apis/holographic-remoting-overview.md)
+[Apprenez les bases de la communication à distance holographique.](platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 >[!IMPORTANT]
 >la communication à distance holographique pour HoloLens 2 est une modification majeure de la version. [les applications distantes pour **HoloLens (1re génération)**](add-holographic-remoting.md) doivent utiliser NuGet package version **1. x.** x et [les applications distantes pour **HoloLens 2**](holographic-remoting-create-remote-wmr.md) doivent utiliser **2. x**. x. cela implique que les applications distantes écrites pour HoloLens 2 ne sont pas compatibles avec HoloLens (1er génération) et vice versa.

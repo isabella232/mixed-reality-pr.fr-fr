@@ -1,37 +1,37 @@
 ---
 title: Installation de PIX pour HoloLens 2
-description: Découvrez comment installer PIX pour les appareils HoloLens 2.
+description: découvrez comment installer PIX pour HoloLens 2 appareils.
 author: hferrone
 ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
-keywords: HoloLens, HoloLens 2, PIX, capture, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: 29cb741cd986fbb98dabb1faf2051450fd0286c3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, HoloLens 2, PIX, capture, casque de réalité mixte, casque windows mixed realisation, casque de réalité virtuelle
+ms.openlocfilehash: 2e5e66ea5a1a2b68d91213c38d88d815f54a28fa5328ab3b2d93f1e267f6f994
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217273"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Installation de PIX pour HoloLens 2
 
 [Pix](https://devblogs.microsoft.com/pix) est un outil de réglage et de débogage des performances pour les applications DirectX 12 sur Windows. 
 
-## <a name="setup"></a>Programme d’installation
+## <a name="setup"></a>Installation
 
-1. Prenez la version la plus récente de la [version]( https://devblogs.microsoft.com/pix/download) pix de votre ordinateur hôte et connectez votre HoloLens 2 à votre PC via un câble USB.
+1. prenez la version la plus récente de la [version]( https://devblogs.microsoft.com/pix/download) PIX de votre ordinateur hôte et connectez votre HoloLens 2 à votre pc via un câble USB.
 
-2. Si votre HoloLens 2 est sur une [version de Windows Insider](https://insider.windows.com) ou si elle a une configuration qui interrompt pix,  [reflashez votre appareil](/hololens/hololens-recovery) pour effacer toutes les données.
+2. si votre HoloLens 2 se trouve sur une [version Windows insider](https://insider.windows.com) ou si elle a une configuration qui interrompt PIX, [reflashez votre appareil](/hololens/hololens-recovery) pour effacer toutes les données.
 
 3. Activer le **mode développeur** et le **portail des appareils**:
 
-* Ouvrir les **paramètres** de la page d’hébergement de la réalité mixte :
+* ouvrez **Paramètres** à partir de la page d’hébergement de la réalité mixte :
 
-![Capture d’écran du menu HoloLens avec le bouton paramètres mis en surbrillance](images/pix-img-01.jpg)
+![capture d’écran du menu conHoloLens avec le bouton paramètres mis en surbrillance](images/pix-img-01.jpg)
 
 * Sélectionnez **mettre à jour la sécurité &**:
 
-![Capture d’écran de la fenêtre Paramètres ouverte sur HoloLens avec le bouton mettre à jour et sécurité mis en surbrillance](images/pix-img-02.jpg)
+![capture d’écran de la fenêtre paramètres ouverte sur HoloLens avec le bouton mettre à jour et sécurité mis en surbrillance](images/pix-img-02.jpg)
 
 * Sélectionnez **pour les développeurs**:
 
@@ -46,19 +46,19 @@ ms.locfileid: "98583096"
 * Lorsque l’appareil est toujours connecté, en éveil et avec l’utilisateur connecté, lancez Visual Studio.
 
 > [!IMPORTANT]
-> Assurez-vous que votre appareil n’est pas en mode veille ou en veille. Si vous rencontrez des problèmes avec cette étape, reportez-vous aux [instructions du portail d’appareils Windows](./using-the-windows-device-portal.md).
+> Assurez-vous que votre appareil n’est pas en mode veille ou en veille. si vous rencontrez des problèmes avec cette étape, reportez-vous aux instructions du portail de l' [appareil Windows](./using-the-windows-device-portal.md).
 
 ## <a name="preparing-for-deployment"></a>Préparation du déploiement
 
-1. Dans Visual Studio, définissez **ARM64** en tant que plateforme et **appareil** comme périphérique :
+1. dans Visual Studio, définissez **ARM64** en tant que plateforme et **appareil** comme périphérique :
 
 ![Capture d’écran de la solution Visual Studio avec les paramètres de plateforme et d’appareil mis en surbrillance](images/pix-img-06.png)
 
-2. Lorsque Visual Studio vous invite à entrer un **code confidentiel** sur l’appareil :
+2. lorsque Visual Studio vous invite à entrer un **code confidentiel** à partir de l’appareil :
 
 ![Capture d’écran de la fenêtre contextuelle de Visual Studio demandant le code confidentiel](images/pix-img-07.png)
 
-* Sélectionner des **paramètres** à partir de l’interpréteur de commandes
+* sélectionner **Paramètres** dans l’interpréteur de commandes
 * Sélectionner **mettre à jour la sécurité &**
 * Sélectionnez **pour les développeurs** et appuyez sur paire sous **découverte d’appareil** 
 
@@ -66,17 +66,17 @@ ms.locfileid: "98583096"
 
 ![Capture d’écran de la fenêtre contextuelle de l’appareil payant avec le code d’inscription mis en surbrillance](images/pix-img-09.jpg)
 
-* Entrer le numéro de code confidentiel généré dans Visual Studio
+* Entrez le numéro de code confidentiel généré dans Visual Studio
 
-3. Visual Studio déploie l’application sur le HoloLens 2 connecté, ce qui peut prendre quelques minutes en fonction de l’application.
+3. Visual Studio déploiera l’application sur le HoloLens 2 connecté, ce qui peut prendre quelques minutes en fonction de l’application.
 
 ## <a name="launching-pix"></a>Lancement de PIX
 
-Tout d’abord, utilisez le portail de l’appareil pour vérifier que l’application n’est pas en cours d’exécution sur HoloLens 2. Ensuite, lancez PIX, connectez-vous à votre appareil, puis sélectionnez **page d’hébergement**:
+Tout d’abord, utilisez le portail de l’appareil pour vérifier que l’application n’est pas en cours d’exécution sur le HoloLens 2. Ensuite, lancez PIX, connectez-vous à votre appareil, puis sélectionnez **page d’hébergement**:
 
 ![Capture d’écran de l’écran d’accueil de l’application PIX](images/pix-img-10.png)
 
-* Sélectionnez **se connecter** dans le menu de gauche :
+* sélectionnez **Connecter** dans le menu de gauche :
 
 ![Capture d’écran du menu de gauche de l’application PIX avec le bouton de connexion mis en surbrillance](images/pix-img-11.png)
 
@@ -84,14 +84,14 @@ Tout d’abord, utilisez le portail de l’appareil pour vérifier que l’appli
     * Alias : jusqu’à la discrétion de l’utilisateur
     * Nom d’hôte ou adresse IP : 127.0.0.1
 
-3. Sélectionnez **se connecter** dans le coin inférieur droit de l’onglet **ordinateur** :
+3. sélectionnez **Connecter** dans le coin inférieur droit de l’onglet **ordinateur** :
 
 ![Capture d’écran de la fenêtre de connexion d’application PIX avec l’alias, le nom d’hôte, l’adresse IP et le bouton Ajouter mis en surbrillance](images/pix-img-12.png)
 
 > [!NOTE]
 > La première connexion est toujours plus lente en raison de la copie des fichiers binaires.
 
-4. Quand PIX s’est connecté à HoloLens 2, recherchez votre application dans la section **Sélectionner le processus cible** de l’onglet lancer UWP, puis sélectionnez **lancer**:
+4. quand PIX s’est connecté au HoloLens 2, recherchez votre application dans la section **sélectionner le processus cible** sous l’onglet lancer UWP, puis sélectionnez **lancer**:
 
 ![Capture d’écran de l’application PIX avec la fenêtre Sélectionner le processus cible et le bouton de lancement mis en surbrillance](images/pix-img-13.png)
 
