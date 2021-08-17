@@ -6,14 +6,14 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, canaux de données
-ms.openlocfilehash: 09fea161f9042d7afc59c16d3b5e8a6c69892e84b1de5e9ab4a4808733b4f171
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 1adda10aa7792eaeab0ac32cb37d73dcfd2b58e6
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115217085"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184710"
 ---
-# <a name="custom-holographic-remoting-data-channels"></a>Canaux de données de communication à distance holographique personnalisés
+# <a name="custom-holographic-remoting-data-channels-c"></a>Canaux de données de communication à distance holographiques personnalisés (C++)
 
 >[!NOTE]
 >Ce guide est spécifique à la communication à distance holographique sur HoloLens 2.
@@ -114,6 +114,7 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>Voir aussi
+* [Vue d’ensemble de la communication à distance holographique](holographic-remoting-overview.md)
 * [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)

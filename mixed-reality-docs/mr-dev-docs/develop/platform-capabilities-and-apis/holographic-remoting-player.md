@@ -3,19 +3,20 @@ title: Holographic Remoting Player
 description: découvrez le lecteur de communication à distance holographique et le contenu de diffusion en continu holographique depuis un PC vers votre HoloLens en temps réel via Wi-Fi.
 author: florianbagarmicrosoft
 ms.author: v-vtieto
-ms.date: 07/27/2021
+ms.date: 07/30/2021
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, diagnostics, performances
-ms.openlocfilehash: 1e286612035a34c1bac174a620c350a91eb2b0fd59c3e808fe3a99368e03f43c
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: c5574017c33379248f4bf412cb5b046fdf309d72
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115217141"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184660"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
-[Apprenez les bases de la communication à distance holographique.](platform-capabilities-and-apis/holographic-remoting-overview.md)
+>[!TIP]
+>[Apprenez les bases de la communication à distance holographique.](holographic-remoting-overview.md)
 
 >[!IMPORTANT]
 >la communication à distance holographique pour HoloLens 2 est une modification majeure de la version. [les applications distantes pour **HoloLens (1re génération)**](add-holographic-remoting.md) doivent utiliser NuGet package version **1. x.** x et [les applications distantes pour **HoloLens 2**](holographic-remoting-create-remote-wmr.md) doivent utiliser **2. x**. x. cela implique que les applications distantes écrites pour HoloLens 2 ne sont pas compatibles avec HoloLens (1er génération) et vice versa.
@@ -78,6 +79,7 @@ Dans l’écran principal, vous pouvez indiquer **« Désactiver les diagnostic
 * Nous vous recommandons de connecter votre ordinateur à votre réseau via Ethernet pour réduire le nombre de sauts sans fil.
 
 ## <a name="see-also"></a>Voir aussi
+* [Vue d’ensemble de la communication à distance holographique](holographic-remoting-overview.md)
 * [HoloLens (première génération) : ajouter la communication à distance holographique](add-holographic-remoting.md)
 * [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)

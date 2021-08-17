@@ -1,19 +1,19 @@
 ---
-title: Écriture d’un lecteur de communication à distance holographique
+title: Écriture d’un lecteur de communication à distance holographique personnalisé (C++)
 description: Créez une application de communication à distance hologaphic personnalisée pour afficher le contenu rendu sur une machine distante à votre HoloLens 2.
 author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 12/01/2020
+ms.author: v-vtieto
+ms.date: 7/30/2021
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, NuGet, manifeste de l’application, contexte du lecteur, application distante, casque de la réalité mixte, casque windows mixed realisation, casque de la réalité virtuelle
-ms.openlocfilehash: b395f94f6c98b20f7c0c188f11a718e6da9394de5df3404e7c703558daf526f2
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 37388dc9cbf70cb7fccd742fb45e1e29c0ceb971
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190164"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184730"
 ---
-# <a name="writing-a-custom-holographic-remoting-player-app"></a>Écriture d’une application de lecteur de communication à distance holographique personnalisée
+# <a name="writing-a-custom-holographic-remoting-player-app-c"></a>Écriture d’une application de lecteur de communication à distance holographique personnalisée (C++)
 
 >[!IMPORTANT]
 >Ce document décrit la création d’une application de lecteur personnalisée pour HoloLens 2. les lecteurs personnalisés écrits pour HoloLens 2 ne sont pas compatibles avec les applications distantes écrites pour HoloLens 1. cela implique que les deux applications doivent utiliser NuGet package version **2. x. x**.
@@ -251,6 +251,7 @@ Pour plus d’informations, consultez la ```PlayerFrameStatistics``` documentati
 Les canaux de données personnalisés peuvent être utilisés pour envoyer des données utilisateur sur la connexion de communication à distance déjà établie. Pour plus d’informations, consultez [canaux de données personnalisés](holographic-remoting-custom-data-channels.md) .
 
 ## <a name="see-also"></a>Voir aussi
+* [Vue d’ensemble de la communication à distance holographique](holographic-remoting-overview.md)
 * [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Canaux de données de communication à distance holographique personnalisés](holographic-remoting-custom-data-channels.md)

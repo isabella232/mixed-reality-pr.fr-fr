@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, remoting, accès distant holographique, casque de réalité mixte, casque windows mixed realisation, casque de réalité virtuelle, NuGet
-ms.openlocfilehash: 0d8f7149533de7f3f095761b13feeb91c319cda711c99b9101a13300a591fc2c
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 0c5943ff92ce797e39ec0d2d98c129fa91eb3f14
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115219213"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184720"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>Écriture d’une application distante holographique à distance à l’aide de l’API HolographicSpace
 
@@ -358,6 +358,7 @@ pour vérifier si la reprojection de profondeur fonctionne correctement sur Holo
 Les canaux de données personnalisés peuvent être utilisés pour envoyer des données utilisateur sur la connexion de communication à distance déjà établie. Pour plus d’informations, consultez [canaux de données personnalisés](holographic-remoting-custom-data-channels.md) .
 
 ## <a name="see-also"></a>Voir aussi
+* [Vue d’ensemble de la communication à distance holographique](holographic-remoting-overview.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Canaux de données de communication à distance holographique personnalisés](holographic-remoting-custom-data-channels.md)
 * [Établissement d’une connexion sécurisée avec la communication à distance holographique](holographic-remoting-secure-connection.md)

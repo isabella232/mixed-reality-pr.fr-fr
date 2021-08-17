@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, accès distant holographique, rendu à distance, rendu réseau, HoloLens, hologrammes distants, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: ecfc49477e202b08303160e54ce986577a9d79eb387dc1edb1bc33c63644615f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 3f9d3d23d18f680ce1001310e4ce49089edaae6a
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115198855"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184620"
 ---
 # <a name="add-holographic-remoting-hololens-first-gen"></a>ajouter la communication à distance holographique (HoloLens (première génération))
 
@@ -261,3 +261,11 @@ internal:
 **Exemple de code :** Un exemple complet de [Code de communication à distance holographique](https://github.com/Microsoft/HoloLensCompanionKit) est disponible, qui comprend une vue d’application holographique compatible avec la communication à distance et les projets hôtes de communication à distance pour les ordinateurs de bureau Win32, UWP DirectX et UWP avec XAML. 
 
 **Remarque sur le débogage :** La bibliothèque de communication à distance holographique peut lever des exceptions de première chance. ces exceptions peuvent être visibles dans les sessions de débogage, en fonction de la Visual Studio paramètres d’exception qui sont actifs à ce moment-là. Ces exceptions sont interceptées en interne par la bibliothèque de communication à distance holographique et peuvent être ignorées.
+
+## <a name="see-also"></a>Voir aussi
+* [Vue d’ensemble de la communication à distance holographique](holographic-remoting-overview.md)
+* [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
+* [Établissement d’une connexion sécurisée avec la communication à distance holographique](holographic-remoting-secure-connection.md)
+* [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)
+* [Termes du contrat de licence de la communication à distance holographique](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

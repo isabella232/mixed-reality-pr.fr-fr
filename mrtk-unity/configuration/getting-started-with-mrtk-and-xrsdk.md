@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, XRSDK, kit de développement logiciel (SDK) XR
-ms.openlocfilehash: 1560188d1a69f0083940a37da8c378691ee75a9d569c2c5088e0e3f614a44858
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 681352ff854598ab34bd9521b46ae9f4e6f42f02
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115188233"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905749"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Bien démarrer avec le kit SDK MRTK et XR
 
@@ -18,7 +18,7 @@ Le kit de développement logiciel (SDK) XR est le [nouveau pipeline XR unity 201
 
 ## <a name="prerequisites"></a>Prérequis
 
-pour commencer à utiliser la Shared Computer Toolkit de la réalité mixte, suivez [les étapes fournies](../install-the-tools.md#importing-the-mixed-reality-toolkit) pour ajouter MRTK à un projet.
+pour commencer à utiliser la Shared Computer Toolkit de la réalité mixte, suivez [les étapes fournies](/windows/mixed-reality/develop/install-the-tools#importing-the-mixed-reality-toolkit) pour ajouter MRTK à un projet.
 
 ## <a name="configuring-unity-for-the-xr-sdk-pipeline"></a>Configuration d’Unity pour le pipeline du kit de développement logiciel (SDK) XR
 

@@ -3,27 +3,40 @@ title: Vue d’ensemble de la communication à distance holographique
 description: Découvrez ce qu’est la communication à distance holographique et comment elle peut tirer parti de votre processus de développement.
 author: hferrone
 ms.author: v-vtieto
-ms.date: 07/26/2021
+ms.date: 08/12/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, réalité mixte, MRTK, réalité mixte Shared Computer Toolkit, réalité augmentée, réalité virtuelle, casques de réalité mixte, apprentissage, didacticiel, prise en main, communication à distance holographique, bureau, version préliminaire
-ms.openlocfilehash: 1b20590429b7df209e805ed8e94de5a6010bdbb609edc10fc5854cd4df86f64c
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 52b69f942797b1f0a6a9bcc5276a49d4d2cebba5
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115217115"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184600"
 ---
 # <a name="holographic-remoting-overview"></a>Vue d’ensemble de la communication à distance holographique
 
-lorsque vous ajoutez la prise en charge du rendu holographique à votre application ou à votre jeu de PC, il permet à l’application de diffuser du contenu holographique vers votre HoloLens 2 en temps réel. C’est un excellent moyen de déboguer rapidement votre application sans générer et déployer un projet complet. les entrées de pointage, de mouvement, de voix et de mappage spatial sont envoyées à partir de votre HoloLens 2 sur votre pc, le contenu est affiché dans une vue immersive virtuelle à l’aide des ressources système supérieures du pc, et les frames rendus sont ensuite renvoyés à votre HoloLens 2. la communication à distance holographique est également disponible pour Windows Mixed Reality les casques immersifs.
+vous pouvez utiliser la communication à distance holographique pour diffuser du contenu holographique vers votre HoloLens en temps réel. Pour ce faire, il existe deux utilisations principales et il est important de comprendre la différence :
 
-vous ajoutez la communication à distance holographique à votre application de bureau ou UWP via un package NuGet, et la connexion est établie à l’aide du Wi-Fi standard. Du code supplémentaire est nécessaire pour gérer la connexion et le rendu dans une vue immersive. Une connexion à distance classique aura une latence aussi faible que 50 ms de latence. Votre appareil affiche le contenu diffusé en continu à l’aide d’une application « joueur » qui peut signaler la latence en temps réel.
+1. (Unity ou Unreal) : **vous souhaitez afficher un aperçu et déboguer votre application pendant le processus de développement**: vous pouvez exécuter votre application localement dans l’éditeur Unity sur votre ordinateur en mode Play et diffuser l’expérience sur votre HoloLens. Cela permet de déboguer rapidement votre application sans générer et déployer un projet complet. Nous appelons ce type d’application une _application de lecture de l’accès distant holographique en mode lecture_.
 
-Si vous êtes un développeur Unity, vous pouvez également utiliser la communication à distance holographique en exécutant votre application dans l’éditeur Unity en mode lecture.
+    - [En savoir plus sur l’aperçu et le débogage de votre application dans Unity](../unity/preview-and-debug-your-app.md)
+
+    - [En savoir plus sur l’aperçu et le débogage de votre application dans un environnement inréel](../unreal/unreal-streaming.md)
+
+1. (unity, unreal or C++) : **vous souhaitez que les ressources d’un PC alimentent votre application au lieu de s’appuyer sur les ressources intégrées HoloLens**: vous pouvez créer et générer une application qui dispose d’une fonctionnalité de communication à distance holographique. l’utilisateur rencontre l’application sur le HoloLens, mais l’application s’exécute sur un pc, ce qui lui permet de tirer parti des ressources plus puissantes du pc. Cela peut s’avérer particulièrement utile si votre application a des ressources ou des modèles haute résolution et que vous ne souhaitez pas que la fréquence d’images souffre. Nous appelons ce type d’application une _application distante de communication à distance holographique_.
+
+    - [En savoir plus sur l’utilisation des ressources PC dans Unity](../unity/use-pc-resources.md)
+
+    - [En savoir plus sur l’utilisation des ressources PC dans des conditions inréelles](../unreal/unreal-streaming.md)
+
+    - [écrire une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality (C++)](holographic-remoting-create-remote-wmr.md)
+
+    - [Écrire une application distante de communication à distance holographique à l’aide d’API OpenXR (C++)](holographic-remoting-create-remote-openxr.md)
+
+dans les deux cas, les entrées de la HoloLens--le point de regard, le mouvement, la voix et le mappage spatial sont envoyés au PC, le contenu est affiché dans une vue immersive virtuelle, et les frames rendus sont ensuite envoyés au HoloLens. 
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Holographic Remoting Player](holographic-remoting-player.md)
-* [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
-* [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Didacticiel : prise en main de la communication à distance holographique de PC](../unity/tutorials/mr-learning-pc-holographic-remoting-01.md)
 * [Didacticiel : création d’une application PC de communication à distance holographique](../unity/tutorials/mr-learning-pc-holographic-remoting-02.md)

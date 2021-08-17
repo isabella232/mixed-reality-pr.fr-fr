@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure, réalité mixte, académie, périphérie, iot edge, didacticiel, api, notification, fonctions, tables, hololens, immersif, vr, iot, machine virtuelle, ubuntu, python, Windows 10, Visual Studio
-ms.openlocfilehash: 0a9f1b7c42094b3c441bdb32082f6821f2fd43a1ce3339cf1f58e7bd0fcf8318
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: fbd793a5941a5fa1b236403672680aa7df375f8d
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115194837"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905764"
 ---
 # <a name="hololens-1st-gen-and-azure-313-iot-hub-service"></a>HoloLens (1er génération) et Azure 313 : IoT Hub Service
 
@@ -57,7 +57,7 @@ Ce cours vous apprend à configurer et à utiliser le service IoT Hub, puis à v
 
 ## <a name="prerequisites"></a>Prérequis
 
-pour obtenir les conditions préalables les plus récentes pour le développement avec une réalité mixte, y compris avec la Microsoft HoloLens, consultez l’article [installer les outils](/windows/mixed-reality/install-the-tools) .
+pour obtenir les conditions préalables les plus récentes pour le développement avec une réalité mixte, y compris avec la Microsoft HoloLens, consultez l’article [installer les outils](../../install-the-tools.md) .
 
 > [!NOTE]
 > Ce didacticiel est conçu pour les développeurs qui ont une expérience de base avec Python. Sachez également que les conditions préalables et les instructions écrites dans ce document représentent les éléments qui ont été testés et vérifiés au moment de la rédaction (juillet 2018). Vous êtes libre d’utiliser le logiciel le plus récent, tel qu’indiqué dans l’article [installer les outils](../../install-the-tools.md) , bien qu’il ne soit pas supposé que les informations de ce cours correspondent parfaitement à ce que vous trouverez dans les logiciels plus récents que ceux répertoriés ci-dessous.
@@ -362,7 +362,7 @@ Vous pouvez maintenant passer à la configuration de votre appareil **exécutant
 
 3. Recherchez et installez les extensions suivantes (comme indiqué dans l’image ci-dessous) :
 
-    1. Azure IoT Edge
+    1. Azure IoT Edge
     2. Azure IoT Toolkit
     3. Docker   
 
@@ -1184,7 +1184,7 @@ pour visualiser les données de votre appareil IOT, vous allez configurer **Powe
 
 1.  ouvrez la Microsoft Store sur Windows 10 et recherchez **Power BI Desktop**.
 
-    ![Power BI](images/AzureLabs-Lab313-73.png)
+    ![Power BI](images/AzureLabs-Lab313-73.png)
 
 2.  Téléchargez l’application. Une fois le téléchargement terminé, ouvrez-le.
 
@@ -1192,47 +1192,47 @@ pour visualiser les données de votre appareil IOT, vous allez configurer **Powe
 
 4.  Cliquez sur **obtenir des données** , puis cliquez sur **plus...**.
 
-    ![Power BI](images/AzureLabs-Lab313-74.png)
+    ![Power BI](images/AzureLabs-Lab313-74.png)
 
 5.  cliquez sur **azure**, **Stockage de Table azure**, puis sur **Connecter**.
 
-    ![Power BI](images/AzureLabs-Lab313-75.png)
+    ![Power BI](images/AzureLabs-Lab313-75.png)
 
 6.  Vous serez invité à insérer l’URL de **table** que vous avez collectée précédemment ([à l’étape 13 du chapitre 11](#chapter-11---create-table-service)), lors de la création de votre service de table. Après avoir inséré l’URL, supprimez la partie du chemin d’accès qui fait référence au sous-dossier de la table (qui était IoTMessages, dans ce cours). Le résultat final doit être affiché dans l’image ci-dessous. Cliquez ensuite sur **OK**.
 
-    ![Power BI](images/AzureLabs-Lab313-76.png)
+    ![Power BI](images/AzureLabs-Lab313-76.png)
 
 7.  vous serez invité à insérer la clé de **Stockage** que vous avez notée ([à l’étape 11 du chapitre 11](#chapter-11---create-table-service)) plus tôt lors de la création de votre Table Stockage. Cliquez ensuite sur **connecter**.
 
-    ![Power BI](images/AzureLabs-Lab313-77.png)  
+    ![Power BI](images/AzureLabs-Lab313-77.png)  
 
 8. Un **panneau de navigation** s’affiche. cochez la case en regard de votre table, puis cliquez sur **charger**.
 
-    ![Power BI](images/AzureLabs-Lab313-78.png)  
+    ![Power BI](images/AzureLabs-Lab313-78.png)  
 
 9. votre table est maintenant chargée sur Power BI, mais elle nécessite une requête pour afficher les valeurs qu’elle contient. Pour ce faire, cliquez avec le bouton droit sur le nom de la table situé dans le **volet champs** sur le côté droit de l’écran. Cliquez ensuite sur **modifier la requête**.
 
-    ![Power BI](images/AzureLabs-Lab313-79.png) 
+    ![Power BI](images/AzureLabs-Lab313-79.png) 
 
 10. Un **éditeur de Power Query**  s’ouvre en tant que nouvelle fenêtre, affichant votre tableau. Cliquez sur l' **enregistrement** Word dans la colonne *contenu* de la table pour visualiser le contenu stocké.
 
-    ![Power BI](images/AzureLabs-Lab313-80.png)    
+    ![Power BI](images/AzureLabs-Lab313-80.png)    
 
 11. Cliquez sur dans le **tableau**, en haut à gauche de la fenêtre. 
 
-    ![Power BI](images/AzureLabs-Lab313-81.png)
+    ![Power BI](images/AzureLabs-Lab313-81.png)
 
 12. Cliquez sur **fermer & appliquer**.
 
-    ![Power BI](images/AzureLabs-Lab313-82.png)
+    ![Power BI](images/AzureLabs-Lab313-82.png)
 
 13. Une fois que le chargement de la requête est terminé, dans le **volet champs**, sur le côté droit de l’écran, cochez les cases correspondant aux paramètres **nom** et **valeur**, pour visualiser le contenu de la colonne **MessageContent** .
 
-    ![Power BI](images/AzureLabs-Lab313-83.png)
+    ![Power BI](images/AzureLabs-Lab313-83.png)
 
 14. Cliquez sur l' **icône de disque bleu** en haut à gauche de la fenêtre pour enregistrer votre travail dans un dossier de votre choix.
 
-    ![Power BI](images/AzureLabs-Lab313-84.png)
+    ![Power BI](images/AzureLabs-Lab313-84.png)
 
 15. Vous pouvez maintenant cliquer sur le bouton publier pour charger votre table dans votre espace de travail. Lorsque vous y êtes invité, cliquez sur **mon espace de travail** , puis sur *Sélectionner*. Attendez qu’il affiche le résultat réussi de la soumission.
 
@@ -1265,7 +1265,7 @@ pour visualiser les données de votre appareil IOT, vous allez configurer **Powe
 
 Félicitations, vous avez créé avec succès un service IoT Hub, avec un appareil de périphérie de machine virtuelle simulé. votre appareil peut communiquer les résultats d’un modèle de Machine Learning à un Service de Table azure, facilité par un Function App azure, qui est lu dans Power BI et visualisé dans un Microsoft HoloLens.
  
-![Power BI](images/AzureLabs-Lab313-00.png)
+![Power BI](images/AzureLabs-Lab313-00.png)
 
 ## <a name="bonus-exercises"></a>Exercices bonus
 

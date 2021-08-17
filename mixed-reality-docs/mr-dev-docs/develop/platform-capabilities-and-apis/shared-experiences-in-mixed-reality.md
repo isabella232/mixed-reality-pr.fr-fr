@@ -1,19 +1,19 @@
 ---
-title: Expériences partagées dans la réalité mixte
+title: Expériences partagées dans Mixed Reality
 description: les applications holographiques peuvent partager des ancres spatiales d’un HoloLens à un autre, ce qui permet aux utilisateurs d’afficher un hologramme au même endroit dans le monde réel, sur plusieurs appareils.
 author: thetuvix
 ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: expérience partagée, réalité mixte, hologramme, ancrage spatial, multi-utilisateur, multi
-ms.openlocfilehash: fe738d07e57bd2f62cab8036a09ca6ab31d6544bdd9b6dacc8dde3445fa58214
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 013d30bcbf3818e944eb637a792bdbc82d430f69
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193588"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184740"
 ---
-# <a name="shared-experiences-in-mixed-reality"></a>Expériences partagées dans la réalité mixte
+# <a name="shared-experiences-in-mixed-reality"></a>Expériences partagées dans Mixed Reality
 
 Hologrammes n’avez pas besoin de rester privé pour un seul utilisateur. les applications holographiques peuvent partager des [ancres spatiales](../../design/spatial-anchors.md) d’un appareil HoloLens, iOS ou Android à un autre, ce qui permet aux utilisateurs d’afficher un hologramme au même endroit dans le monde réel sur plusieurs appareils.
 
@@ -171,7 +171,7 @@ Tirez parti de [MixedReality-SpectatorView](https://github.com/microsoft/MixedRe
 **Remarque :** Les images sont prises via la capture d’écran sur les appareils iOS/Android.
 
 ## <a name="multi-user-collaborative-experience"></a>Expérience collaborative multi-utilisateur
-
+<!--Unity Note-->
 Commencez avec notre [didacticiel d’apprentissage multi-utilisateur](../unity/tutorials/mr-learning-sharing-02.md), qui tire parti des [ancres spatiales Azure](/azure/spatial-anchors/) pour les utilisateurs locaux et le [Kit de développement logiciel (SDK) de photons](https://www.photonengine.com/PUN) pour synchroniser le contenu/l’État dans la scène. Créez des applications de collaboration localement, où chaque utilisateur a sa propre perspective sur les hologrammes de la scène et peut interagir entièrement avec les hologrammes.  Les mises à jour sont fournies sur tous les appareils et la gestion des conflits d’interaction est gérée par la photonique.
 
 > [!NOTE]

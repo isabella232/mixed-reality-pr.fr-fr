@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 07/27/2021
 ms.topic: article
 keywords: Windows Mixed Reality, conception, exemple d’application, contrôles, MRTK, Shared Computer Toolkit de réalité mixte, unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité Windows mixte, casque de réalité virtuelle, OpenXR, XR open, unity
-ms.openlocfilehash: ccfd443bb103f6ac051de84d3a321f3ffd5be2f5bafdc6479e9f67a03771d386
-ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
+ms.openlocfilehash: 1c9879872e80ebef3ea51cf3aa7dd4d349327cdf
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "116862594"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905692"
 ---
 # <a name="periodic-table-of-the-elements-20"></a>Tableau périodique des éléments 2.0
 ![Table period de l’application Elements](../images/MRDL_PeriodicTable.jpg)

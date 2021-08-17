@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, vision personnalisée, détection d’objets, réalité mixte, académie, unity, didacticiel, api, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 85a99b676f6765696524bc42adf257b3430c00cc955413b4c299ddb58502cefb
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: b152aaebbd3858140b79133a8f8e551aab06b4f3
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216573"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905742"
 ---
 # <a name="hololens-1st-gen-and-azure-310-object-detection"></a>HoloLens (1er génération) et Azure 310 : détection d’objets
 
@@ -33,12 +33,12 @@ Ce service vous permet d’effectuer l’apprentissage d’un modèle de Machine
 
 À la fin de ce cours, vous disposerez d’une application de réalité mixte qui sera en mesure d’effectuer les opérations suivantes :
 
-1. L’utilisateur *sera en mesure de* pointer vers un objet, qu’il a formé à l’aide du service vision personnalisée Azure, détection d’objet. 
+1. L’utilisateur *sera en mesure de* pointer vers un objet, qu’il a formé à l’aide du service vision personnalisée Azure, détection d’objet.
 2. L’utilisateur utilise le geste *Tap* pour capturer une image de ce qu’il examine.
 3. L’application enverra l’image à la Service Vision personnalisée Azure.
 4. Il y aura une réponse du service qui affichera le résultat de la reconnaissance sous forme de texte d’espace universel. pour ce faire, vous devez utiliser le suivi Spatial Microsoft HoloLens, afin de comprendre la position universelle de l’objet reconnu, puis d’utiliser la *balise* associée à ce qui est détecté dans l’image, pour fournir le texte de l’étiquette.
 
-Ce cours couvre également le chargement manuel d’images, la création de balises et l’apprentissage du service, pour reconnaître différents objets (dans l’exemple fourni, une tasse), en définissant la *zone limite* dans l’image que vous envoyez. 
+Ce cours couvre également le chargement manuel d’images, la création de balises et l’apprentissage du service pour reconnaître des objets différents (dans l’exemple fourni, une tasse) en définissant la *zone de limite* dans l’image que vous envoyez.
 
 > [!IMPORTANT]
 > À la suite de la création et de l’utilisation de l’application, le développeur doit revenir à la Service Vision personnalisée Azure, identifier les prédictions effectuées par le service et déterminer si elles sont correctes ou non (en marquant tout ce que le service a manqué et en ajustant les *zones englobantes*). Le service peut ensuite être réformé, ce qui augmente la probabilité qu’il reconnaisse les objets réels.
@@ -63,10 +63,10 @@ Ce cours vous apprend à obtenir les résultats de la Service Vision personnalis
 Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour ce cours :
 
 - Un PC de développement
-- [Windows 10 Fall Creators Update (ou version ultérieure) avec le mode développeur activé](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [le dernier kit de développement logiciel Windows 10](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Unity 2017,4 LTS](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Visual Studio 2017](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Windows 10 Fall Creators Update (ou version ultérieure) avec le mode développeur activé](../../install-the-tools.md#installation-checklist-for-hololens)
+- [le dernier kit de développement logiciel Windows 10](../../install-the-tools.md#installation-checklist-for-hololens)
+- [Unity 2017,4 LTS](../../install-the-tools.md#installation-checklist-for-hololens)
+- [Visual Studio 2017](../../install-the-tools.md#installation-checklist-for-hololens)
 - [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details) avec le mode développeur activé
 - Accès à Internet pour l’installation d’Azure et la récupération de Service Vision personnalisée
 -  Une série d’au moins quinze (15) images sont requises) pour chaque objet que vous souhaitez que le Custom Vision reconnaître. Si vous le souhaitez, vous pouvez utiliser les images déjà fournies dans ce cours, [une série de tasses](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip)).
@@ -74,8 +74,8 @@ Nous vous recommandons d’utiliser le matériel et les logiciels suivants pour 
 ## <a name="before-you-start"></a>Avant de commencer
 
 1.  Pour éviter de rencontrer des problèmes lors de la création de ce projet, il est fortement recommandé de créer le projet mentionné dans ce didacticiel dans un dossier racine ou dans un dossier racine (les chemins de dossiers longs peuvent entraîner des problèmes au moment de la génération).
-2.  Configurez et testez votre HoloLens. si vous avez besoin de la prise en charge de la configuration de votre HoloLens, [consultez l’article installation de HoloLens](/hololens/hololens-setup). 
-3.  il est judicieux d’effectuer un réglage de l’étalonnage et du capteur lorsque vous commencez à développer une nouvelle HoloLens application (parfois, elle peut aider à effectuer ces tâches pour chaque utilisateur). 
+2.  Configurez et testez votre HoloLens. si vous avez besoin d’aide pour cela, [consultez l’article configuration de HoloLens](/hololens/hololens-setup).
+3.  il est judicieux d’effectuer un réglage de l’étalonnage et du capteur lorsque vous commencez à développer une nouvelle HoloLens application (parfois, elle peut aider à effectuer ces tâches pour chaque utilisateur).
 
 pour obtenir de l’aide sur l’étalonnage, suivez ce [lien vers l’article d’étalonnage de HoloLens](/hololens/hololens-calibration#hololens-2).
 
@@ -1288,7 +1288,7 @@ Vous êtes maintenant prêt à créer votre application en tant que solution UWP
 
 6.  Une fois la génération de Unity terminée (cela peut prendre un certain temps), une fenêtre de l' **Explorateur de fichiers** s’ouvre à l’emplacement de votre Build (Vérifiez la barre des tâches, car elle ne s’affiche pas toujours au-dessus de votre Windows, mais vous informera de l’ajout d’une nouvelle fenêtre).
 
-7.  pour déployer sur Microsoft HoloLens, vous avez besoin de l’adresse IP de cet appareil (pour le déploiement à distance) et de vous assurer qu’il est également défini **en Mode développeur** . Pour ce faire :
+7.  pour déployer sur Microsoft HoloLens, vous avez besoin de l’adresse IP de cet appareil (pour le déploiement à distance) et de vous assurer qu’il est également défini **en Mode développeur** . Pour ce faire :
 
     1.  tout en portant votre HoloLens, ouvrez le **Paramètres**.
 

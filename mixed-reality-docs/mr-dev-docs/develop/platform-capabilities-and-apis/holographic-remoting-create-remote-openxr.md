@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, remoting, accès distant holographique, casque de réalité mixte, casque windows mixed realisation, casque de réalité virtuelle, NuGet
-ms.openlocfilehash: 6cf44bd031aec4b475d7496a999a3c7d4d40cae7cc921ff39cfe61698f3dd532
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 3fd210db1b179cbceff057e25bf451be0e7ca843
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115212067"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184590"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>Écriture d’une application distante holographique à distance à l’aide de l’API OpenXR
 
@@ -206,6 +206,7 @@ L’exemple ci-dessus utilise une texture de chaîne d’échange DX11 et prése
 Si votre application distante utilise DX12, utilisez XrRemotingFrameMirrorImageD3D12MSFT au lieu de XrRemotingFrameMirrorImageD3D11MSFT.
 
 ## <a name="see-also"></a>Voir aussi
+* [Vue d’ensemble de la communication à distance holographique](holographic-remoting-overview.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
 * [Établissement d’une connexion sécurisée avec la communication à distance holographique](holographic-remoting-secure-connection.md)
 * [Résolution des problèmes et limitations de la communication à distance holographique](holographic-remoting-troubleshooting.md)

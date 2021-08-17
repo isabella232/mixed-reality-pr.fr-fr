@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologrammes, accès distant holographique, rendu à distance, rendu réseau, HoloLens, hologrammes distants, dépannage, aide, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: fa984e89fb6eb770917d9a1d62ce7c1007d45fab7fbcb2723f9642ac81814054
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: d49f73f4cbe205e71cb2f76ab02769ddad5f3ed2
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223569"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184610"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Résolution des problèmes de communication à distance holographique
 
@@ -32,7 +32,7 @@ Le lecteur de communication à distance holographique prend en charge une superp
 
 installez le [Extensions vidéo HEVC](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) lors de l’utilisation du codec vidéo H265 dans votre application distante. Si vous rencontrez des problèmes d’installation du codec mais que vous ne pouvez pas les utiliser, consultez le Guide de [Dépannage](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) .
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 les api suivantes ne sont actuellement **pas** prises en charge lors de l’utilisation de la communication à distance holographique pour HoloLens 2 et génèrent une ```ERROR_NOT_SUPPORTED``` erreur sauf indication contraire :
 
@@ -104,6 +104,7 @@ les api suivantes ne sont actuellement **pas** prises en charge lors de l’util
 * [SpatialGraphInteropPreview.TryCreateFrameOfReference](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
 
 ## <a name="see-also"></a>Voir aussi
+* [Vue d’ensemble de la communication à distance holographique](holographic-remoting-overview.md)
 * [Historique des versions de la communication à distance holographique](holographic-remoting-version-history.md)
 * [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)

@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 07/20/2021
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, historique des versions, casque de la réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: 21ba89e477872f5dfa41468f1a7f2d7507affd681556d79843c195d7d5839e7b
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: c474583aacf3872095eaf151f5ab47b617fe0252
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223552"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184750"
 ---
 # <a name="holographic-remoting-version-history"></a>Historique des versions de la communication à distance holographique
 
@@ -166,7 +166,7 @@ ms.locfileid: "115223552"
 * Première version publique de la communication à distance holographique pour HoloLens 2.
 
 ## <a name="see-also"></a>Voir aussi
-
+* [Vue d’ensemble de la communication à distance holographique](holographic-remoting-overview.md)
 * [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)

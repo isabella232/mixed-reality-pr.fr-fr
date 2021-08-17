@@ -6,14 +6,14 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, communication à distance, accès distant holographique, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, sécurité, authentification, serveur à client
-ms.openlocfilehash: fa23994ff4ab49d313fe24a67974bf4d90454e511658e0663c61d7b129b10f9e
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 6ac5284bdf9e5984fcf091b6502fb62a494e4fe8
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223579"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184646"
 ---
-# <a name="enabling-connection-security-for-holographic-remoting"></a>Activation de la sécurité de connexion pour la communication à distance holographique
+# <a name="enabling-connection-security-for-holographic-remoting-c"></a>Activation de la sécurité de connexion pour la communication à distance holographique (C++)
 
 >[!IMPORTANT]
 >Ce guide est spécifique à la communication à distance holographique sur HoloLens 2.
@@ -189,6 +189,7 @@ Ces rappels peuvent être fournis au runtime OpenXR de communication à distance
 Cette API est similaire à l’API basée sur IDL décrite dans implémentation de la sécurité de l' [accès à distance holographique](#implementing-holographic-remoting-security). Toutefois, au lieu d’implémenter des interfaces, vous êtes censé fournir des implémentations de rappel. Vous trouverez un exemple détaillé dans l’exemple d' [application OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 ## <a name="see-also"></a>Voir aussi
+* [Vue d’ensemble de la communication à distance holographique](holographic-remoting-overview.md)
 * [écriture d’une application distante de communication à distance holographique à l’aide d’api Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Écriture d’une application distante de communication à distance holographique à l’aide d’API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Écriture d’une application de lecteur de communication à distance holographique personnalisée](holographic-remoting-create-player.md)
