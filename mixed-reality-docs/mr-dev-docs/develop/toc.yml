@@ -220,7 +220,7 @@
           href: unity/spatial-sound-in-unity.md
     - name: Fonctionnalités avancées
       items:
-        - name: Appareil photo et caméra vidéo dans Unity
+        - name: Caméra photo/vidéo
           href: unity/locatable-camera-in-unity.md
         - name: Point de focus
           href: unity/focus-point-in-unity.md
@@ -234,6 +234,8 @@
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
         - name: Interopérabilité native Mixed Reality dans Unity
           href: unity/unity-xrdevice-advanced.md
+        - name: Utiliser les ressources du PC pour alimenter votre application
+          href: unity/use-pc-resources.md
         - name: Utilisation de Vuforia
           href: unity/vuforia-development-overview.md
     - name: VR immersive
@@ -266,8 +268,8 @@
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Paramètres recommandés pour Unity
           href: unity/recommended-settings-for-unity.md
-        - name: Prévisualiser votre travail avec la communication à distance holographique
-          href: unity/holographic-remoting-in-unity.md
+        - name: Afficher un aperçu et déboguer votre application avec la communication à distance holographique
+          href: unity/preview-and-debug-your-app.md
     - name: Solutions Visual Studio
       items:
         - name: Exportation et création de solutions Unity Visual Studio
@@ -452,21 +454,21 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Communication à distance holographique
       items:
-        - name: Vue d’ensemble
+        - name: Vue d’ensemble de la communication à distance holographique
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
-        - name: Holographic Remoting Player
+        - name: Lecteur de communication à distance holographique
           href: platform-capabilities-and-apis/holographic-remoting-player.md
-        - name: Écriture d’une application de communication à distance holographique
+        - name: Écriture d’une application de communication à distance holographique (C++)
           items:
             - name: API HolographicSpace
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
             - name: API OpenXR
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: Écriture d’une application de lecteur de communication à distance holographique personnalisée
+        - name: Écriture d’une application de lecteur de communication à distance holographique personnalisée (C++)
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: Canaux de données de communication à distance holographique personnalisés
+        - name: Canaux de données de communication à distance holographique personnalisés (C++)
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
-        - name: Connexion sécurisée avec la communication à distance holographique
+        - name: Connexion sécurisée avec la communication à distance holographique (C++)
           href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
         - name: Résolution des problèmes et limitations
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
