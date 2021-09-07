@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: compréhension des scènes, mappage Spatial, Windows Mixed Reality, unity, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, occlusion, kit de développement logiciel (SDK)
-ms.openlocfilehash: 4dd5a2c96478e50b2e9eda35be22c15c1db07f88cfc4d25d753c4860a1283f55
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 6d950fca4211aef659b1f957ca5e7135ac9764ac
+ms.sourcegitcommit: 6b8ccb881fbbdaa5119841eac528e29d7b49bd04
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115213462"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "123557318"
 ---
 # <a name="scene-understanding"></a>Compréhension des scènes
 
@@ -33,7 +33,7 @@ Ce document est destiné à fournir une vue d’ensemble du scénario et à clar
 
 Cet article sert uniquement à présenter la scène présentation du runtime et des concepts. Si vous recherchez de la documentation sur la manière de développer avec la compréhension des scènes, vous pouvez être intéressé par les articles suivants :
 
-[Présentation du SDK présentation de Scene](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+[Présentation du SDK présentation de Scene](../develop/unity/scene-understanding-SDK.md)
 
 vous pouvez télécharger l’exemple d’application understanding Scene à partir de l’exemple de site GitHub :
 
@@ -45,7 +45,7 @@ Si vous n’avez pas d’appareil et que vous souhaitez accéder à des exemples
 
 ### <a name="sdk"></a>Kit SDK
 
-Si vous recherchez des informations spécifiques sur le développement avec la compréhension de la scène, consultez la documentation de [Présentation de Scene Understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) .
+Si vous recherchez des informations spécifiques sur le développement avec la compréhension de la scène, consultez la documentation de [Présentation de Scene Understanding SDK](../develop/unity/scene-understanding-SDK.md) .
 
 ### <a name="sample"></a>Exemple
 
@@ -101,7 +101,7 @@ La compréhension des scènes fournit de nouvelles constructions conçues pour s
 <br>
 
 
-Si votre application envisage de placer des hologrammes 2D ou 3D sur des structures rigides de votre environnement, la simplicité et la commodité de SceneQuads pour le placement sont préférables à la détermination de ces informations à partir du maillage de [mappage spatial](spatial-mapping.md) . Pour plus d’informations sur cette rubrique, consultez la [documentation de référence du kit de développement SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+Si votre application envisage de placer des hologrammes 2D ou 3D sur des structures rigides de votre environnement, la simplicité et la commodité de SceneQuads pour le placement sont préférables à la détermination de ces informations à partir du maillage de [mappage spatial](spatial-mapping.md) . Pour plus d’informations sur cette rubrique, consultez la [documentation de référence du kit de développement SDK](../develop/unity/scene-understanding-SDK.md)
 
 **Remarque** Pour le code de positionnement hérité qui dépend du maillage de mappage spatial, le maillage de mappage spatial peut être calculé avec SceneQuads en définissant le paramètre EnableWorldMesh. Si la compréhension de l’API Scene ne répond pas aux exigences de latence de votre application, nous vous recommandons de continuer à utiliser l' [API de mappage spatial](spatial-mapping.md#placement).
 
@@ -129,5 +129,5 @@ En outre, le nombre total de surfaces retournées par le mappage spatial est lim
 
 ### <a name="see-also"></a>Voir aussi
 
-* [Scène Understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+* [Scène Understanding SDK](../develop/unity/scene-understanding-SDK.md)
 * [Mappage spatial](spatial-mapping.md)
