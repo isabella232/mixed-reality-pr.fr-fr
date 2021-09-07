@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, clavier, souris, contrôleur de jeu, contrôleur xbox, HoloLens, bureau, procédure pas à pas, exemple de code
-ms.openlocfilehash: 2e83fa0a14a24eb98001c7dc88af062202a2ef9a5eee7cd53e9702dbe4eedc8e
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: e7ae65e660fe0348205fabc1c292328912fb1cdc
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115192023"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244167"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Saisie à l’aide de la commande de jeu, du clavier et de la souris dans DirectX
 
@@ -21,7 +21,7 @@ ms.locfileid: "115192023"
 les claviers, les souris et les contrôleurs de jeu peuvent être des formes d’entrée utiles pour les appareils Windows Mixed Reality. Bluetooth claviers et souris sont tous deux pris en charge sur HoloLens, pour une utilisation avec le débogage de votre application ou comme une autre forme d’entrée. Windows Mixed Reality prend également en charge les casques immersifs reliés à des pc, où les souris, les claviers et les contrôleurs de jeu étaient traditionnellement la norme.
 
 pour utiliser l’entrée au clavier sur HoloLens, couplez un clavier Bluetooth à votre appareil ou utilisez une entrée virtuelle via le portail de l’appareil Windows. pour utiliser l’entrée au clavier tout en portant un Windows Mixed Reality casque immersif, affectez le focus d’entrée à la réalité mixte en plaçant sur l’appareil ou en utilisant la combinaison de touches Windows touche + Y. gardez à l’esprit que les applications destinées à HoloLens doivent fournir des fonctionnalités sans que ces appareils soient attachés.
-
+<!--Unity Note: the paragraph below explains that the article provides C++ code snippets. -->
 >[!NOTE]
 >Les extraits de code de cet article illustrent actuellement l’utilisation de C++/CX au lieu des/WinRT C++ conformes à C + +17, tels qu’ils sont utilisés dans le [modèle de projet holographique c++](../native/creating-a-holographic-directx-project.md).  Les concepts sont équivalents pour un projet C++/WinRT, bien que vous deviez traduire le code.
 

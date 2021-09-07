@@ -1,18 +1,20 @@
 ---
-ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 2ab12da2da926d906a5ae57868f152ecc2b13d90
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208853"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244293"
 ---
 # <a name="world-locking-tools-recommended"></a>[Outils de verrouillage universel (recommandé)](#tab/wlt)
 
-Par défaut, les outils de verrouillage universel restaurent le système de coordonnées de l’unité par rapport au monde physique entre les sessions. Cela signifie que pour qu’un hologramme apparaisse au même endroit dans le monde physique après la sortie et la réexécution de l’application, l’hologramme n’a besoin que de la même pose.
+Par défaut, les outils de verrouillage universel restaurent le système de coordonnées de l’unité par rapport au monde physique entre les sessions sur les appareils qui prennent en charge la persistance des ancres spatiales locales. Pour que l’hologramme apparaisse au même endroit dans le monde physique après la sortie et la réexécution de l’application, l’hologramme n’a besoin que de la même pose.
 
 ![Composant de contexte de verrouillage universel dans l’inspecteur Unity](../../images/world-locking-tools-img-02.png)
 
 Si l’application a besoin d’un contrôle plus fin, l' **enregistrement automatique** et le **chargement automatique** peuvent être désactivés dans l’inspecteur et la persistance gérée à partir d’un script, comme décrit dans la [section persistance de la documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
+
+la persistance d’ancrage locale est actuellement prise en charge uniquement sur la famille d’appareils HoloLens. toutefois, sur Android et iOS, ainsi que HoloLens, la persistance des espaces de coordonnées entre les sessions, ainsi que le partage des espaces de coordonnées entre les appareils, est prise en charge via une intégration avec les ancres spatiales Azure. Il existe une multitude d' [informations et d’exemples](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html) sur l’utilisation des outils de verrouillage universel en tandem avec les ancres spatiales Azure.
 
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 

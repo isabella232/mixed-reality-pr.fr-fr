@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Partage, ancrer, WorldAnchor, MR partageant 250, WorldAnchorTransferBatch, SpatialPerception, Azure, ancres spatiales Azure, ASA, casque de réalité mixte, casque Windows Mixed realisation, casque de réalité virtuelle
-ms.openlocfilehash: b9fdd09740dc6197c46a2d017f61e97898f213cd44bb504cbbf306f6a7ae21ec
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f7725c8282d1b5a93d555ac0f55ee936b910ff6c
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115195921"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244191"
 ---
 # <a name="shared-experiences-in-unity"></a>Expériences partagées dans Unity
 
@@ -19,7 +19,15 @@ une expérience partagée permet à plusieurs utilisateurs, chacun disposant de 
 
 ## <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-les <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> créent des ancres spatiales durables sur le cloud, que votre application peut ensuite localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu affiché par rapport à cette ancre dans le même emplacement physique. 
+### <a name="automated-with-world-locking-tools"></a>Automatisé avec les outils de verrouillage du monde
+
+Comme avec les ancres locales, les outils de verrouillage universel peuvent utiliser un groupe d’ancres spatiales Azure pour verrouiller des espaces de coordonnées entiers par rapport au monde physique, plutôt que d’utiliser des ancres individuelles pour verrouiller des objets individuels. Le verrouillage mondial de l’espace est non seulement un environnement qui est plus propice à une mise en page précise, mais il est également plus efficace dans le temps de développement et les ressources d’exécution.
+
+pour plus d’informations et pour obtenir des exemples sur l’utilisation des ancres spatiales Azure pour partager des systèmes de coordonnées entre des appareils HoloLens, Android et iOS, ainsi que la persistance des espaces entre les sessions, consultez la [documentation relative aux outils de verrouillage du monde](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html).
+
+### <a name="manual-configuration-of-azure-spatial-anchors"></a>Configuration manuelle des ancres spatiales Azure
+
+les <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> créent des ancres spatiales durables sur le cloud, que votre application peut localiser sur plusieurs appareils HoloLens, iOS et Android.  En partageant une ancre spatiale commune sur plusieurs appareils, chaque utilisateur peut voir le contenu affiché par rapport à cette ancre dans le même emplacement physique.
 
 vous pouvez également utiliser des <a href="/azure/spatial-anchors/overview" target="_blank">ancres spatiales Azure</a> pour la persistance d’hologrammes asynchrones sur des appareils HoloLens, iOS et Android.  En partageant une ancre spatiale Cloud durable, plusieurs appareils peuvent observer le même hologramme persistant dans le temps, même si ces appareils ne sont pas présents simultanément.
 

@@ -6,14 +6,14 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: rendu, hologramme
-ms.openlocfilehash: d01a5911ad8b479197bd38e8ed7825feef1f69dc51d2c2dc2f8e500e93880955
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 5bd06b9ca521e489a8944a1813b735a0fe1d60a5
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193665"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244230"
 ---
-# <a name="rendering"></a>Rendu
+# <a name="holographic-rendering"></a>Rendu holographique
 
 Le rendu holographique permet à votre application de dessiner un hologramme à un endroit précis dans le monde autour de l’utilisateur, qu’il soit placé précisément dans le monde physique ou dans un domaine virtuel que vous avez créé. [Hologrammes](../../discover/hologram.md) sont des objets de sons et de lumière. Le rendu permet à votre application d’ajouter la lumière.
 

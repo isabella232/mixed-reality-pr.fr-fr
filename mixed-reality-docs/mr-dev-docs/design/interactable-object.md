@@ -2,16 +2,16 @@
 title: Objet avec interaction possible
 description: Découvrez comment déclencher des événements, fournir des signaux visuels et interagir avec des objets dans vos applications de réalité mixte.
 author: cre8ivepark
-ms.author: v-hferrone
+ms.author: dongpark
 ms.date: 06/06/2019
 ms.topic: article
 keywords: réalité mixte, contrôles, interaction, signaux, interface utilisateur, expérience utilisateur, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle, HoloLens, MRTK, Shared Computer Toolkit de réalité mixte, audio
-ms.openlocfilehash: 9ce682de7e400eba6ffbaccbca34065a1f09966f842cffd6853f3a064f146904
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f1fe68c7f35fecb9fbee888893fb15a83a8595ec
+ms.sourcegitcommit: 4f1697b11e5638db9bbd0bd7a671d846d54c6389
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190750"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "122682997"
 ---
 # <a name="interactable-object"></a>Objet avec interaction possible
 
@@ -229,18 +229,6 @@ Vous trouverez ci-dessous les recommandations relatives aux tailles minimales de
 ![Taille cible pour l’interaction directe](images/TargetSizingNear.jpg)<br>
 *Taille cible pour l’interaction directe*
 
-<br>
-
-### <a name="target-size-for-buttons"></a>Taille cible pour les boutons
-
-Lorsque vous créez des boutons pour une interaction directe, nous vous recommandons d’utiliser une taille minimale de 3,2 x 3,2 cm pour garantir qu’il y a suffisamment d’espace pour contenir une icône et éventuellement du texte.
-
-| Distance | Taille minimale |
-|---------|---------|
-| 45 cm  | 3,2 x 3,2 cm |
-
-![Taille cible pour les boutons](images/TargetSizingButtons.png)<br>
-*Taille cible pour les boutons*
 
 <br>
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 04/7/2021
 ms.topic: article
 keywords: unity, ancres spatiales, magasin d’ancrages, HoloLens, casque de réalité mixte, casque de réalité windows mixte, casque de réalité virtuelle, outils de verrouillage universel, hologrammes
-ms.openlocfilehash: 34ef74ab968bff04188b1010eb4c863fd73d76ee6b1dd8a0bd89c7d4232a2be9
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 1de3571d0ad43308acad459021f2c2e9a1a6e1e7
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208846"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244309"
 ---
 # <a name="world-locking-and-spatial-anchors-in-unity"></a>Verrouillage universel et ancrages spatiaux dans Unity
 
@@ -33,12 +33,13 @@ Les **outils de verrouillage universel** vous offrent le meilleur des deux monde
 
 ## <a name="choosing-your-world-locking-approach"></a>Choix de votre approche de verrouillage universel
 
-* **Nous vous recommandons** d’utiliser les **outils de verrouillage universel** pour tous vos besoins en matière de positionnement d’hologramme. 
+* Nous vous recommandons d’utiliser les **outils de verrouillage universel** pour tous vos besoins en matière de positionnement d’hologramme.
     * Les outils de verrouillage universel offrent un système de coordonnées stable qui réduit les incohérences visibles entre les marqueurs virtuels et réels. En d’autres termes, il verrouille l’ensemble de la scène avec un pool partagé d’ancres, au lieu de verrouiller chaque groupe d’objets avec la propre ancre individuelle du groupe.
+    * Les outils de verrouillage universel gèrent automatiquement la création et la gestion des ancres spatiales en interne. Vous n’avez pas besoin d’interagir avec **ARAnchorManager** ou **WorldAnchor** pour que vos hologrammes restent verrouillés.
 * **pour unity 2019/2020 utilisant OpenXR ou le plug-in Windows XR**, vous devez utiliser **ARAnchorManager**
 * **Pour les versions Unity plus anciennes ou les projets WSA** , vous devez utiliser **WorldAnchor**
 
-## <a name="setting-up-world-locking"></a>Configuration du verrouillage universel 
+## <a name="setting-up-world-locking"></a>Configuration du verrouillage universel
 
 [!INCLUDE[](includes/world-locking/world-locking-setup.md)]
 
@@ -51,11 +52,9 @@ Les ancres spatiales enregistrent les hologrammes dans un espace réel entre les
 
 [!INCLUDE[](includes/world-locking/world-locking-persistence.md)]
 
-## <a name="sharing-coordinate-spaces"></a>Partage des espaces de coordonnées 
+## <a name="sharing-coordinate-spaces"></a>Partage des espaces de coordonnées
 
 Si vous souhaitez partager un espace de coordonnées universel, consultez notre documentation complète sur l' [expérience partagée](shared-experiences-in-unity.md).
-
-Notez que les ancres spatiales Azure ne sont pas encore prises en charge directement dans les outils de verrouillage universel, et les expériences partagées vous obligent donc à créer manuellement des ancres spatiales.
 
 ## <a name="next-development-checkpoint"></a>Point de contrôle de développement suivant
 

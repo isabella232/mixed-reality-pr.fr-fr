@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e4ada87db2d9e483758030bf1bbe56dbacd7664ae7e1921540c0c7abfe14a7c7
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 047a77259d78ba8ea68002a5142080971900e305
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208854"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244314"
 ---
 # <a name="world-locking-tools-recommended"></a>[Outils de verrouillage universel (recommandé)](#tab/wlt)
 
@@ -17,7 +17,7 @@ Nous vous recommandons d’installer les outils de verrouillage du monde à l’
 
 ### <a name="automated-setup"></a>Installation automatisée
 
-lorsque votre projet est prêt à l’emploi, exécutez l’utilitaire configurer la scène à partir de la **réalité mixte Shared Computer Toolkit > utilitaires > outils de verrouillage du monde**:
+Lorsque votre projet est prêt à l’emploi, exécutez l’utilitaire configurer la scène à partir de la **réalité mixte > outils de verrouillage du monde**:
 
 ![éditeur unity avec la réalité mixte Shared Computer Toolkit menu sélectionné](../../images/world-locking-configuration-img-01.jpeg)
 

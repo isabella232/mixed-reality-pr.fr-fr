@@ -2,16 +2,16 @@
 title: Comprendre les performances de la réalité mixte
 description: découvrez des informations et des détails avancés sur l’analyse et l’optimisation des performances des applications Windows Mixed Reality.
 author: hferrone
-ms.author: v-hferrone
-ms.date: 3/26/2019
+ms.author: v-vtieto
+ms.date: 08/16/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, performances, optimisation, uc, GPU
-ms.openlocfilehash: 394198011c40f0b90e2c5579f7e0ad8c4019b2a8cefcb1859c544afcbce47df6
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 9304e4cd80f0929b87a29873ad07329700ec463f
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193556"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244200"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Comprendre les performances de la réalité mixte
 
@@ -30,7 +30,7 @@ Les valeurs de fréquence d’images performante pour chaque plateforme cible so
 | [Windows Mixed Reality Ultra Machines](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality Machines](../../discover/immersive-headset-hardware-details.md) | 60 i/s |
 
-Le cadre ci-dessous décrit les meilleures pratiques pour atteindre les fréquences d’images cibles. Nous vous recommandons de lire les [recommandations relatives aux performances de l’article Unity](../unity/performance-recommendations-for-unity.md) pour obtenir des conseils sur la mesure et l’amélioration de la fréquence d’images dans l’environnement Unity.
+Le cadre ci-dessous décrit les meilleures pratiques pour atteindre les fréquences d’images cibles. Pour obtenir des conseils sur la mesure et l’amélioration de la fréquence d’images dans l’environnement Unity, nous vous recommandons de lire les [recommandations relatives aux performances de l’article Unity](../unity/performance-recommendations-for-unity.md) 
 
 ## <a name="understanding-performance-bottlenecks"></a>Comprendre les goulots d’étranglement des performances
 
