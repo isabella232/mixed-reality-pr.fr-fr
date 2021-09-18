@@ -2,20 +2,18 @@
 title: Utilisation de WebXR avec Windows Mixed Reality
 description: découvrez les principes de base de l’utilisation et du développement d’applications WebXR s’exécutant sur Windows Mixed Reality des casques immersifs.
 author: yonet
-ms.author: ayyonet
-ms.date: 04/10/2020
+ms.author: v-vtieto
+ms.date: 09/16/2021
 ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 video, 360 vidéos, 360 photo, 360 photos, 360 content, internet immersif, immersiveweb, IW
-ms.openlocfilehash: e670135cb00db26082b73f8465390a686de6a3e946bbffa561f9df90085970f8
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f99637c79d1147d940bb6a72d68969c99a2482ec
+ms.sourcegitcommit: 645608f33d2d02625484c29586f42d21c442aaa9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216265"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127932524"
 ---
-# <a name="webxr-overview"></a>Présentation de WebXR
-
-## <a name="javascript-development"></a>Développement JavaScript
+# <a name="javascript-development-with-webxr"></a>Développement JavaScript avec WebXR
 
 JavaScript est l’un des langages de programmation les plus populaires au monde ! C’est simple, léger et largement utilisé sur le Web. Tirez parti de la puissance de vos compétences en langage JavaScript et Web pour créer des expériences de réalité mixte plus attrayantes.
 
@@ -60,3 +58,11 @@ La liste suivante répertorie les infrastructures et les API JavaScript pour cr�
 * [glTF](https://www.khronos.org/gltf)
 * [Groupe de communauté Web immersif](https://www.w3.org/community/immersive-web/)
 * [Github du W3C sur le Web immersif](https://github.com/immersive-web)
+
+## <a name="next-steps--tutorials"></a>Étapes suivantes--didacticiels
+
+> [!div class="nextstepaction"]
+> [Créer votre première application WebXR à l’aide de Babylon.js](tutorials/babylonjs-webxr-helloworld/introduction-01.md)
+> [!div class="nextstepaction"]
+
+> [Créez un piano dans WebXR à l’aide de Babylon.js](tutorials/babylonjs-webxr-piano/introduction-01.md)
