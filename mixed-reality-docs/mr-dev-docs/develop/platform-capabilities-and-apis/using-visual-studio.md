@@ -3,16 +3,16 @@ title: Utilisation de Visual Studio pour le déploiement et le débogage
 description: Découvrez comment créer, déboguer et déployer des applications pour HoloLens et Windows Mixed Reality avec Visual Studio.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 04/13/2020
+ms.date: 09/15/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, déboguer, déployer
-ms.openlocfilehash: 43abf7b512d6b01695e2c953df821a608359918c461614e3f94710b57f241db0
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 948ec52dcfe738a28316e9906d473b32454f6d59
+ms.sourcegitcommit: 7dad5bde71d429bb23c72a4074e60b6668a7f091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115221143"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127857506"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Utilisation de Visual Studio pour le déploiement et le débogage
 
@@ -117,21 +117,25 @@ Ensuite, vous devez définir votre connexion à distance. Pour les projets C++ 
 
 5. La première fois que vous déployez une application sur votre HoloLens à partir de votre PC, vous êtes invité à entrer un code PIN. Suivez les instructions de la section **Appairer votre appareil**, plus loin dans cet article.
 
-> [!NOTE]
-> Si vous constatez beaucoup de temps d’attente lors du déploiement de vos applications via une connexion USB, nous vous recommandons d’utiliser les [instructions sur la connexion à distance](#deploying-a-hololens-app-over-wi-fi) dans la section précédente.
+## <a name="deploying-an-app-to-the-hololens-1st-gen-emulator"></a>Déploiement d’une application sur l’émulateur HoloLens (1re génération)
 
-## <a name="deploying-an-app-to-the-hololens-emulator"></a>Déploiement d’une application sur l’émulateur HoloLens
+1. Vérifiez que **[l’émulateur HoloLens est installé](../install-the-tools.md)** .
+2. Sélectionnez une configuration de build **x86** pour votre application</br>
+![Configuration de build x86 dans Visual Studio](images/x86setting.png)</br>
+3. Sélectionnez **Émulateur HoloLens** dans le menu déroulant de la cible de déploiement</br>
+![Cible de l’émulateur dans Visual Studio](images/deployemulator.png)</br>
+4. Sélectionnez **Déboguer > Démarrer le débogage** pour déployer votre application et commencer le débogage</br>
+![Démarrer sans débogage dans Visual Studio](images/deploywithdebugging.png)</br>
 
-1. Assurez-vous d’avoir **[installé l’émulateur HoloLens 2 ou HoloLens (1ère génération)](../install-the-tools.md#installation-checklist)**
-2. Sélectionner votre configuration de build et l’émulateur en fonction de votre appareil
+## <a name="deploying-an-app-to-the-hololens-2-emulator"></a>Déploiement d’une application sur l’émulateur HoloLens 2
 
-[!INCLUDE[](includes/vs-wifi-hl-include.md)]
-
-3. Créer, déployer et déboguer votre application en fonction de vos besoins
-    * Sélectionnez **Déboguer > Démarrer le débogage** pour déployer votre application et commencer le débogage
-    * Sélectionnez **Générer > Déployer** pour générer et déployer sans déboguer
-
-![Démarrer sans débogage dans Visual Studio](images/deploywithdebugging.png)
+1. Vérifiez que **[l’émulateur HoloLens est installé](../install-the-tools.md)** .
+2. Sélectionnez une configuration de build **x86** ou **x64** pour votre application</br>
+![Configuration de build x86 dans Visual Studio](images/x86setting.png)</br>
+3. Sélectionnez **Émulateur HoloLens 2** dans le menu déroulant de la cible de déploiement</br>
+![Cible de l’émulateur dans l’application Visual Studio](images/deployemulator2.png)</br>
+4. Sélectionnez **Déboguer > Démarrer le débogage** pour déployer votre application et commencer le débogage</br>
+![Démarrer sans débogage dans Visual Studio](images/deploywithdebugging.png)</br>
 
 ## <a name="deploying-a-vr-app-to-your-local-pc"></a>Déploiement d’une application VR sur votre PC local 
 
