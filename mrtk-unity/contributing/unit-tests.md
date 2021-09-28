@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: unity, HoloLens, HoloLens 2, réalité mixte, développement, MRTK, UnitTest,
-ms.openlocfilehash: d528b5c16ab39271f9984bdd9e23ebca091efd53ed563149f3933ed31ed656dd
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 85c8a330d9af5b0d91c2b1b838ead7d10d97f981
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216255"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148654"
 ---
 # <a name="writing-and-running-tests"></a>Écriture et exécution de tests
 
@@ -41,13 +41,13 @@ Les tests peuvent également être exécutés par un script [PowerShell](/powers
 Exécuter les tests sur le projet situé dans H:\mrtk.dev, avec Unity 2018,4 (par exemple Unity 2018.4.26 F1)
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
 Exécutez les tests sur le projet situé dans H:\mrtk.dev, avec Unity 2018,4, output results to C:\ playmode_test_out
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
 Il est également possible d’exécuter plusieurs fois les tests playMode via le `run_repeat_tests.ps1` script. Tous les paramètres utilisés dans `run_playmode_tests.ps1` peuvent être utilisés.

@@ -2,16 +2,16 @@
 title: Windows Mixed Reality et le nouveau Microsoft Edge
 description: découvrez les nouvelles Microsoft Edge pour la réalité mixte, y compris les éléments à attendre, les mises à jour à consulter et les problèmes connus.
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/04/2020
+ms.author: v-vtieto
+ms.date: 09/24/2021
 ms.topic: article
 keywords: Edge, nouveau, Web immersif, Microsoft Edge, navigateur, VR, 360, 360 vidéo, 360 Viewer, webxr, webvr
-ms.openlocfilehash: 51efc5c4d3afb4d46ba7722867514f740a9f60a4280652fdbd665134f83af23d
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: ca849f63d2a755639bedba68c47e419528006a6d
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115218821"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148647"
 ---
 # <a name="the-new-microsoft-edge-for-windows-mixed-reality"></a>nouvelle Microsoft Edge pour Windows Mixed Reality
 
@@ -81,7 +81,8 @@ les analyses virtuelles sont désormais allouées lorsque vous tentez de lancer 
 
 ### <a name="other-known-issues"></a>Autres problèmes connus
 
--   les sites web ouverts dans Windows Mixed Reality sont perdus lorsque le portail de réalité mixte se ferme. les fenêtres de Microsoft Edge restent à leur place dans la réalité mixte.
-- Les expériences WebXR, y compris l’extension de visionneuse 360, peuvent ne pas démarrer correctement sur les PC avec une configuration GPU hybride. Vous pouvez contourner ce problème en activant une fonctionnalité en version préliminaire dans le nouveau Microsoft Edge. Accédez à `edge://flags` , recherchez « multi-GPU » et activez l’indicateur appelé **WEBXR multi GPU support**.
 -   l’Audio de Microsoft Edge windows n’est pas spatial.
--   **correction de la version d’extension de visionneuse 360 2.3.8**: l’ouverture d’une vidéo 360 à partir de YouTube dans Windows Mixed Reality peut entraîner la déformation de la vidéo dans le casque. Le redémarrage de Edge doit mettre à jour l’extension de visionneuse 360 de façon invisible pour résoudre ce problème. Vous pouvez vérifier la version de l’extension que vous avez en entrant `edge://system/` dans la barre d’adresses et en sélectionnant le bouton de **développement** en regard de « extensions ».
+
+## <a name="see-also"></a>Voir aussi
+
+* [Présentation de WebXR](../develop/javascript/webxr-overview.md)
