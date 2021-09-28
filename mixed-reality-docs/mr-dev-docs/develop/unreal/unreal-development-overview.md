@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, communication à distance, réalité mixte, développement, démarrage, fonctionnalités, nouveau projet, émulateur, documentation, guides, fonctionnalités, hologrammes, développement de jeux, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, OpenXR
-ms.openlocfilehash: fd9eec18e865910ef4899dfda75661d1edb57eed25a55641cde3ca7ac3f0b3a8
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 90dfb113008e6f8b1162c068ebfc967ed74fd6b4
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115203466"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184667"
 ---
 # <a name="unreal-development-overview"></a>Vue d’ensemble du développement Unreal
 
@@ -110,11 +110,9 @@ Le développement pour la réalité mixte s’accompagne de points de contrôle 
 | Accès à la caméra | 4.23 | ✔️ |
 | Codes QR | 4.23 | ✔️ |
 | Audio spatial | 4.23 | ✔️ |
-| Prise en charge d’un écran de spectateur pour le streaming | 4.24 |
 | LSR plan en streaming | 4.24 |
 | [Exemples d’application](../features-and-samples.md) | 4.24 | ✔️ |
 | Multivue mobile : Les performances atteignent 60 i/s | 4.25 | ✔️ |
-| Rendu 3ème caméra | 4.25 | ✔️ |
 | Streaming partir d’une application de poste de travail empaquetée | 4.25.1 | ✔️ |
 | Azure Spatial Anchors pour HoloLens 2 | 4.25 | ✔️ |
 | Prise en charge de Mixed Reality UX Tools | 4.25 | ✔️ |
