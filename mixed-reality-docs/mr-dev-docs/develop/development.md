@@ -1,49 +1,47 @@
 ---
 title: Découvrir les outils et l’architecture
 description: Découvrez les outils de développement de réalité mixte dont vous aurez besoin pour commencer à créer des applications pour HoloLens et des casques immersifs.
-author: grbury
-ms.author: grbury
-ms.date: 12/9/2020
+author: vtieto
+ms.author: v-vtieto
+ms.date: 9/15/2021
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Réalité mixte, développer, développement, HoloLens, unity, unreal, directx, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, développement de réalité virtuelle, développement de réalité augmentée
-ms.openlocfilehash: 2020ceb898f6badaec56a599348c8633c4cb90ba22eaf53df0e097d4fc3e110e
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: c6a246de87595be7047c7712a2db489c3d87ac39
+ms.sourcegitcommit: 18880591624caa888ade6d7c60bd2b2ee3eadaaa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115195954"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129016799"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Introduction au développement de réalité mixte
 
 ![Sphère 3D abstraite](images/development-hero-image.png)
 
-La réalité mixte est un vaste univers où les mondes réels et virtuels se rencontrent. Les possibilités sont infinies, et tout commence avec vous. Choisissez votre moteur, téléchargez vos outils et dépoussiérez votre clavier. Bienvenue dans l’écosystème Mixed Reality : il est temps de faire marcher votre créativité.
+La réalité mixte est un vaste univers où les mondes réels et virtuels se rencontrent. Les possibilités sont infinies, et tout commence avec vous. Choisissez votre moteur, téléchargez vos outils et dépoussiérez votre clavier. Bienvenue dans l’écosystème de réalité mixte : il est temps de laisser libre cours à votre créativité.
 
-Nous avons trois chemins d’accès possibles pour démarrer dans le développement de la réalité mixte, chacun d’entre eux étant décrit dans sa section ci-après :
-* [Microsoft Learn](#microsoft-learn)
-* [Série de tutoriels Mixed Reality Toolkit](#mixed-reality-toolkit-tutorials)
-* [Exploration auto-guidée](#self-guided-exploration)
+Vous pouvez choisir un point de départ ci-dessous en fonction de votre niveau actuel.
 
-## <a name="microsoft-learn"></a>Microsoft Learn
+## <a name="new-to-mixed-reality-development"></a>Vous débutez dans le développement de réalité mixte ?
 
-Microsoft Learn est l’endroit où tout le monde vient apprendre. Découvrez de nouvelles compétences, trouvez des certifications et évoluez dans votre carrière en quelques minutes avec des parcours de formation pratiques et interactifs.
+### <a name="learn-the-concepts-products-and-services"></a>Découvrez les concepts, les produits et les services
 
-Nos modules Learn vous aident à très bien maîtriser le développement de réalité mixte. En effet, la structure organisée par module vous aide à bien démarrer avec des outils clés tels que Mixed Reality Toolkit, Unity et les services de réalité mixte Azure. Les objectifs de programmation sont plus clairs que jamais, car nous présentons les objectifs d’apprentissage, les prérequis et le temps d’achèvement prévu dans une seule et même interface.
+Commencez par une présentation de la réalité mixte et découvrez en quoi elle diffère de la réalité virtuelle et de la réalité augmentée. Découvrez HoloLens, les casques immersifs et les hologrammes. Explorez les concepts de conception et de développement de base, ainsi que les technologies associées, comme Azure Remote Rendering.
 
 > [!div class="nextstepaction"]
-> [Présentation de la réalité mixte sur Microsoft Learn](/learn/modules/intro-to-mixed-reality)
+> [Présentation de la réalité mixte sur Microsoft Learn](/learn/modules/intro-to-mixed-reality/)
 
-## <a name="mixed-reality-toolkit-tutorials"></a>Tutoriels Mixed Reality Toolkit
+### <a name="start-building-a-mixed-reality-experience"></a>Commencer à créer une expérience de réalité mixte
 
-Si vous préférez apprendre sur le terrain, consultez notre série de tutoriels Mixed Reality Toolkit (MRTK). Vous allez créer une expérience de réalité mixte dans laquelle l’utilisateur peut explorer un hologramme modélisé d’après le rover Curiosity de la NASA qui sillonne Mars et obtenir une bonne compréhension de MRTK et de la façon dont il peut accélérer votre processus de développement.
+Si vous êtes déjà familiarisé avec les concepts de base et que vous souhaitez vous lancer dans le développement, consultez notre série de tutoriels « Principes de base HoloLens 2 ». Vous allez créer une expérience de réalité mixte dans laquelle l’utilisateur pourra explorer un hologramme modélisé d’après le rover Curiosity de la NASA. Vous aurez ainsi une vision claire de MRTK et de la façon dont il peut accélérer votre processus de développement.
 
 > [!div class="nextstepaction"]
-> [Tutoriels sur MRTK](unity/tutorials/mr-learning-base-01.md)
+> [Tutoriels sur les principes de base HoloLens 2](/learn/paths/beginner-hololens-2-tutorials/)
 
-## <a name="self-guided-exploration"></a>Exploration auto-guidée
-
-Si vous êtes un développeur chevronné et que vous souhaitez vous familiariser avec nos documents, commencez par installer les outils nécessaires. Ensuite, choisissez votre configuration de développement Unity et suivez notre chemin de développement Unity organisé avec HoloLens ou parcourez la bibliothèque de contenu.
+## <a name="choose-your-own-development-path"></a>Choisissez votre propre chemin de développement
+Êtes-vous un développeur de niveau intermédiaire à avancé disposant d’une expérience précédente dans la réalité mixte, augmentée ou virtuelle ? Nous allons vous aider à choisir les outils appropriés et à préparer votre configuration si nécessaire, puis nous allons vous diriger vers nos chemins de développement organisés pour les projets Unity, Unreal, Native ou Web.
 
 > [!div class="nextstepaction"]
 > [Installer les outils](install-the-tools.md)
+
+

@@ -10,12 +10,12 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, réalité mixte,
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 77f32cafa84233654ad9e5754d0db9f7b6f9437a
-ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
+ms.openlocfilehash: 091f0876c37756fad47d2d78520adbd526aab24d
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "122184632"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184622"
 ---
 # <a name="streaming-in-unreal"></a>Streaming dans Unreal
 
@@ -93,6 +93,9 @@ Dans Unreal 4.25.1 et versions ultérieures, vous pouvez diffuser votre applica
 
 > [!NOTE]
 > Le nom de l’application dans les paramètres de votre projet doit être utilisé automatiquement pour créer le package Windows. Si les noms diffèrent pour une raison ou une autre, utilisez le nom de l’exécutable Windows à l’invite de commandes.
+
+> [!NOTE]
+> Si le suivi oculaire ne fonctionne pas lors du streaming à partir d’un fichier exécutable empaqueté, désactivez tous les autres plug-ins avec suivi oculaire pris en charge par le PC (par exemple Magic Leap) ou exécutez l’application à partir de la ligne de commande avec l’argument de suivi oculaire approprié (consultez [Options de ligne de commande](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)).
 
 Appuyez sur Entrée ; le streaming de votre application commence.
 

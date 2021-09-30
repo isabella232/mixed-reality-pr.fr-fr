@@ -2,17 +2,17 @@
 title: Vue d’ensemble du module Learn de réalité mixte
 description: Restez informé de tous les modules de réalité mixte disponibles qui sont hébergés sur la plateforme Microsoft Learn.
 author: hferrone
-ms.author: jemccull
-ms.date: 11/30/2020
+ms.author: v-vtieto
+ms.date: 9/27/2021
 ms.topic: article
 keywords: réalité mixte, Unity, tutoriel, hololens, learn, casque de réalité mixte, casque windows mixed reality, casque de réalité virtuelle, qu’est-ce que la réalité virtuelle, qu’est-ce que la réalité augmentée, MRTK, mixed reality toolkit, traduction linguistique, Azure, Azure Cognitive Services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 24584532fca0872a1ec62f6f2381e0aa076da5bb79eea765cb3a0a0f5736f36f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 595aad668e2ff2a1a91fc801981be1d004bc012f
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115204395"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148679"
 ---
 # <a name="mixed-reality-learn-overview"></a>Vue d’ensemble Learn de réalité mixte
 
@@ -23,7 +23,7 @@ Lorsque vous développez pour la réalité mixte, plus vous avez d’outils, mie
 Nos modules Learn vous aident à très bien maîtriser le développement de réalité mixte. En effet, la structure organisée par module vous aide à bien démarrer avec des outils clés tels que Mixed Reality Toolkit, Unity et les services de réalité mixte Azure. Les objectifs de programmation sont plus clairs que jamais, car nous présentons les objectifs d’apprentissage, les prérequis et le temps d’achèvement prévu dans une seule et même interface. 
 
 > [!div class="nextstepaction"]
-> [Bien démarrer avec notre parcours d’apprentissage sur la réalité mixte](/learn/browse/?terms=mixed+reality)
+> [Parcourir les modules Learn sur la réalité mixte](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>Modules généraux
 
