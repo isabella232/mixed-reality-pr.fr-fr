@@ -1,19 +1,19 @@
 ---
 title: Obtenir de l’aide sur la compatibilité des PC
 description: restez à jour avec les ressources permettant de résoudre les problèmes de compatibilité des PC quand vous travaillez avec des applications et des appareils Windows Mixed Reality.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 01/07/2021
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, feedback, Hub de commentaires, bogues
 appliesto:
-- Windows 10
-ms.openlocfilehash: cd5598147823670d1aa00eddda844bea21d7da262339624613f3724cbc5157fa
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 1a07326da871eead6b13fe8350f37a22f8d27c23
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115189211"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436560"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Obtenir de l’aide sur la compatibilité des ordinateurs dans Windows Mixed Reality
 
@@ -51,6 +51,7 @@ si vous voyez le message **prend en charge certaines fonctionnalités** , votre 
 * [Cet ordinateur ne dispose pas de suffisamment d’espace disque pour s’exécuter Windows Mixed Reality](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
 * [ce PC exécute une édition de Windows qui ne prend pas en charge Windows Mixed Reality](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
 * [Ce PC n’exécute pas la dernière version de Windows 10](#this-pc-isnt-running-the-latest-version-of-windows-10)
+* [ce PC n’exécute pas la dernière version de Windows 11](#this-pc-isnt-running-the-latest-version-of-windows-11)
 * [Ce PC n’a pas de port USB 3,0](#this-pc-has-no-usb-30-port)
 * [Vous ne pouvez pas exécuter cette application via le Bureau à distance](#you-cant-run-this-app-via-remote-desktop)
 
@@ -162,11 +163,15 @@ Windows Mixed Reality nécessite 10 go d’espace disque libre pour l’installa
 
 ### <a name="this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality"></a>ce PC exécute une édition de Windows qui ne prend pas en charge Windows Mixed Reality
 
-Windows Mixed Reality fonctionne sur [Windows 10 Famille](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab) et [Windows 10 Professionnel](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab). Vous devez installer l’une de ces éditions pour utiliser Windows Mixed Reality.
+Windows Mixed Reality fonctionne sur [Windows 10 Famille](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab), [Windows 10 Professionnel](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab)et [Windows 11](https://www.microsoft.com/software-download/windows11). Vous devez installer l’une de ces éditions pour utiliser Windows Mixed Reality.
 
 ### <a name="this-pc-isnt-running-the-latest-version-of-windows-10"></a>Ce PC n’exécute pas la dernière version de Windows 10
 
 Windows Mixed Reality requiert le Windows 10 Fall Creators Update. [Mettez à jour votre PC](https://support.microsoft.com/help/4028685) , puis réessayez.
+
+### <a name="this-pc-isnt-running-the-latest-version-of-windows-11"></a>ce PC n’exécute pas la dernière version de Windows 11
+
+Windows Mixed Reality nécessite la dernière version de Windows 11. [Mettez à jour votre PC](https://www.microsoft.com/software-download/windows11) , puis réessayez.
 
 ### <a name="this-pc-has-no-usb-30-port"></a>Ce PC n’a pas de port USB 3,0
 

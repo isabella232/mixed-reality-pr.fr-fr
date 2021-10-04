@@ -1,19 +1,19 @@
 ---
 title: FAQ sur la connectivité du casque
 description: connectivité du casque Windows Mixed Reality la résolution des problèmes de connectivité du casque qui dépasse notre documentation de support technique standard.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianwen
+ms.author: v-qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, dépannage, erreurs, aide, Support, casque
 appliesto:
-- Windows 10
-ms.openlocfilehash: ed8708d39953e79d445f3794d335d9a9451c9bf9fe8c2fca1feb792ee3f9b2a7
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 47c726c5beeac0463fe4286bd7a949e4e4d4cc45
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115189221"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436611"
 ---
 # <a name="headset-connectivity-faqs"></a>FAQ sur la connectivité du casque
 
@@ -64,7 +64,7 @@ quand vous placez sur votre casque, Windows Mixed Reality pouvez avoir besoin de
 > [!NOTE]
 > pour les utilisateurs de surface : les versions antérieures de la station d’accueil de surface et Surface Book logiciel de mise à jour du microprogramme du concentrateur USB ne sont pas compatibles avec les casques de réalité mixte. si vous recevez un message « Connecter votre casque » sur un PC Surface, vérifiez si des appareils signalent une erreur « Code 10 : l’appareil ne peut pas démarrer » dans Gestionnaire de périphériques. Dans ce cas, [supprimez le pilote en conflit](https://support.microsoft.com/en-us/help/4032123/kinect-sensor-is-not-recognized-on-a-surface-book). Vous ne devez effectuer cette opération qu’une seule fois.
 
-remarque pour les utilisateurs Windows 10-n : si votre PC exécute Windows 10 N, vous verrez l’erreur « Code 28 : la classe d’installation n’est pas présente ou n’est pas valide » dans Gestionnaire de périphériques après avoir branché votre casque de réalité mixte. les éditions N de Windows 10 ne sont pas prises en charge par les Windows Mixed Reality. Pour plus d’informations, suivez ces [instructions](headset-display.md#im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager) .
+remarque pour les utilisateurs Windows 10-n et Windows 11-n : si votre PC exécute Windows 10-n ou Windows 11-n, vous verrez une erreur « Code 28 : la classe d’installation n’est pas présente ou n’est pas valide » dans Gestionnaire de périphériques après avoir branché votre casque de réalité mixte. les éditions N de Windows 10 et Windows 11 ne sont pas prises en charge par Windows Mixed Reality. Pour plus d’informations, suivez ces [instructions](headset-display.md#im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager) .
 
 ## <a name="a-message-says-check-your-usb-cable-or-insufficient-usb-speed"></a>Un message indique « vérifier votre câble USB » ou « vitesse USB insuffisante »
 
@@ -94,7 +94,7 @@ Assurez-vous que vous êtes sur le pilote 10.0.19041.2034 ou plus récent.
 
 ## <a name="the-headset-driver-did-not-install-automatically-when-i-plugged-in-the-headset"></a>Le pilote du casque n’a pas été installé automatiquement lorsque je suis connecté au casque
 
-sur les nouveaux pc, ou sur les pc disposant d’une copie de Windows 10 récemment installée, le pilote de casque peut être mis en file d’attente derrière d’autres mises à jour Windows et risque de ne pas s’installer immédiatement.
+sur les nouveaux pc, ou sur les pc avec une copie nouvellement installée de Windows 10 ou Windows 11, le pilote de casque peut être mis en file d’attente derrière d’autres mises à jour Windows et ne peut pas être installé immédiatement.
 
 1. Accédez à **démarrer > gestionnaire de périphériques** et Regardez sous « appareils de réalité mixte » pour votre casque. L’état de l’appareil doit indiquer que « le périphérique fonctionne correctement ».
 2. Cliquez avec le bouton droit sur l’appareil et sélectionnez « mettre à jour le pilote ».
@@ -106,4 +106,4 @@ Si cela n’a pas fonctionné, essayez de désinstaller le pilote :
 3. Dans la nouvelle fenêtre contextuelle qui s’affiche, activez la case à cocher « Supprimer le logiciel du pilote pour cet appareil », puis sélectionnez « Désinstaller ».
 4. Quand cela se termine, débranchez le casque de votre ordinateur et rebranchez-le. Windows Update va maintenant télécharger et installer un nouveau pilote.
 
-remarque : si vous avez une édition N de Windows, vous devez basculer vers une édition standard de Windows 10 pour utiliser Windows Mixed Reality.
+remarque : si vous avez une édition N de Windows, vous devez basculer vers une édition standard de Windows 10 ou Windows 11 pour utiliser Windows Mixed Reality.

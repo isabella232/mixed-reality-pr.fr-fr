@@ -1,17 +1,17 @@
 ---
 title: utilisation de Microsoft Edge dans Windows Mixed Reality
 description: préparez-vous à la nouvelle Microsoft Edge dans Windows Mixed Reality. Comprend les modifications à attendre, les mises à jour pour rechercher et les problèmes connus.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 11/11/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, famille, naviguer, découvrir, applications, jeux, Microsoft Edge, chrome, Edge, 360, 360 vidéo, 360 viewer
-ms.openlocfilehash: 3cdb051e9925338a5f0145e106e2213712eb611e575b9f5d7dd29342a52ff38d
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 2834adc7325f6b600a5cf5f65c74948e0feb2c57
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115199485"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436696"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality et le nouveau Microsoft Edge
 
@@ -20,13 +20,13 @@ le [nouveau Microsoft Edge](https://www.microsoft.com/edge) est disponible au t�
 le nouvel Microsoft Edge [adopte le Chromium projet open source](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) sur le bureau. Cela permet de créer une meilleure compatibilité pour les clients et de réduire la fragmentation pour les développeurs Web. Il prend également en charge WebXR au lancement, qui est la nouvelle norme pour créer des expériences Web immersifs pour les casques VR, à la place de WebVR.
 
 >[!IMPORTANT]
->lorsque vous installez Microsoft Edge sur un appareil Windows 10 à jour, il remplace la version précédente (héritée) sur votre PC.
+>lorsque vous installez Microsoft Edge sur un appareil Windows 10 ou Windows 11 à jour, il remplace la version précédente (héritée) sur votre PC.
 
 ## <a name="installing-the-new-microsoft-edge"></a>Installation du nouveau Microsoft Edge 
 
-avant d’installer le nouveau Microsoft Edge, **effectuez une mise à niveau vers Windows 10 Version 1903 ou ultérieure pour la prise en charge des applications Win32 natives comme la nouvelle Microsoft Edge** dans Windows Mixed Reality. vérifiez Windows Update ou [installez manuellement la dernière version de Windows 10](https://www.microsoft.com/software-download/windows10).
+avant d’installer le nouveau Microsoft Edge, **effectuez une mise à niveau vers Windows 10 Version 1903 ou ultérieure, ou Windows 11 pour la prise en charge des applications Win32 natives comme la nouvelle Microsoft Edge** dans Windows Mixed Reality. vérifiez Windows Update ou [installez manuellement la dernière version de Windows 10](https://www.microsoft.com/software-download/windows10) ou Windows 11.
 
-une fois que vous avez Windows 10 version 1903 ou ultérieure, vous êtes prêt pour la nouvelle Microsoft Edge. le nouveau Microsoft Edge est déployé via Windows Update, mais vous pouvez installer manuellement le nouveau Microsoft Edge à partir du [site web Microsoft Edge](https://www.microsoft.com/edge) , si vous le souhaitez.
+une fois que vous avez Windows 10 version 1903 ou ultérieure ou Windows 11, vous êtes prêt pour le nouveau Microsoft Edge ! le nouveau Microsoft Edge est déployé via Windows Update, mais vous pouvez installer manuellement le nouveau Microsoft Edge à partir du [site web Microsoft Edge](https://www.microsoft.com/edge) , si vous le souhaitez.
 
 >[!IMPORTANT]
 >la nouvelle Microsoft Edge lance avec la prise en charge de WebXR, la nouvelle norme pour créer des expériences web immersifs pour les casques VR. lorsque vous installez le nouveau Microsoft Edge, vous ne pourrez plus lire les expériences WebVR dans Microsoft Edge. 

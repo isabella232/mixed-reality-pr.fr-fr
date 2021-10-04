@@ -1,14 +1,17 @@
 ---
 title: FAQ SteamVR
 description: SteamVR Windows Mixed Reality la résolution des problèmes qui vont au-delà de notre documentation de support technique standard.
+author: qianwen
+ms.author: v-qianwen
+ms.date: 09/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, dépannage, erreurs, aide, Support, SteamVR
-ms.openlocfilehash: 0fb9c07dda8fe354966403bc9c6a21acb600e61cb943c270eb9c87f5ec2fb89a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 17ab1709e8a2fc7e3eee70082aef64f0dc23d318
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115199495"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436798"
 ---
 # <a name="steamvr-faqs"></a>FAQ SteamVR
 
@@ -21,7 +24,7 @@ ms.locfileid: "115199495"
 
 ## <a name="a-message-says-to-use-steamvr-with-windows-mixed-reality-you-need-to-install-the-latest-windows-update-or-windows-developer-mode-required"></a>un message indique « pour utiliser SteamVR avec Windows Mixed Reality, vous devez installer le dernier Windows Update » ou « Windows Mode développeur requis ».
 
-1. Assurez-vous que votre ordinateur exécute la dernière version de Windows 10. accédez à **Paramètres > système > sur** et, sous « spécifications de Windows », vérifiez que « version du système d’exploitation » est 16299,64 ou supérieure.
+1. assurez-vous que votre ordinateur exécute la dernière version de Windows 10 ou Windows 11. accédez à **Paramètres > système > sur** et, sous « spécifications de Windows », vérifiez que « version du système d’exploitation » est 16299,64 ou supérieure.
 2. Assurez-vous que vous n’avez pas de mise à jour en attente de téléchargement ou d’installation. accédez à **Paramètres > mettre à jour & sécurité > Windows Update** et sélectionnez « rechercher les mises à jour ». Vous devrez peut-être vérifier plusieurs fois jusqu’à ce qu’aucune mise à jour supplémentaire ne soit disponible, puis redémarrez votre PC.
 
 ## <a name="steamvr-is-crashing-after-updating-windows"></a>SteamVR se bloque après la mise à jour de Windows

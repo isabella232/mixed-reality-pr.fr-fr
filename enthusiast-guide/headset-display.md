@@ -1,19 +1,19 @@
 ---
 title: Affichage du casque FAQ
 description: affichez les Windows Mixed Reality résolution des problèmes d’affichage du casque qui vont au-delà de notre documentation de support technique standard.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/30/2020
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, dépannage, erreurs, aide, Support
 appliesto:
-- Windows 10
-ms.openlocfilehash: 811b5160c739c8b19fde737e7a61bcef84e0cf60a87927adbe21241e229f3f22
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 5a7c7979c9d93d917633cbfed23dc82597368a43
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115189388"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436679"
 ---
 # <a name="headset-display-faqs"></a>Affichage du casque FAQ
 
@@ -97,7 +97,7 @@ Débranchez le câble HDMI et le câble USB du casque, puis replacez-les.
 
 ## <a name="im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager"></a>J’obtiens une erreur « la classe d’installation n’est pas présente ou n’est pas valide » dans Gestionnaire de périphériques
 
-si vous voyez « capteurs HoloLenss » avec un point d’exclamation jaune dans Gestionnaire de périphériques, sélectionnez l’appareil pour obtenir des détails supplémentaires. Si vous voyez un message indiquant «les pilotes de cet appareil ne sont pas installés. (Code 28)--la classe d’installation n’est pas présente ou n’est pas valide. cela est généralement dû au fait que votre ordinateur exécute [Windows 10 N](https://support.microsoft.com/en-us/help/4039813/media-feature-pack-for-windows-10-n-october-2017). n éditions de Windows 10 ne prennent pas en charge Windows Mixed Reality, et vous devez installer une version non N de Windows 10.
+si vous voyez « capteurs HoloLenss » avec un point d’exclamation jaune dans Gestionnaire de périphériques, sélectionnez l’appareil pour obtenir des détails supplémentaires. Si vous voyez un message indiquant «les pilotes de cet appareil ne sont pas installés. (Code 28)--la classe d’installation n’est pas présente ou n’est pas valide. cela est généralement dû au fait que votre ordinateur exécute [Windows 10 N](https://support.microsoft.com/en-us/help/4039813/media-feature-pack-for-windows-10-n-october-2017). N éditions de Windows 10 et Windows 11 ne prennent pas en charge Windows Mixed Reality, et vous devez installer une version non N de Windows 10 ou Windows 11.
 
 ## <a name="my-wmr-environment-is-jittery-or-stutters-when-i-move-my-head-and-displays-double-vision"></a>Mon environnement WMR est instable ou subit des interruptions lorsque je déplace mon tête et affiche une double vision
 

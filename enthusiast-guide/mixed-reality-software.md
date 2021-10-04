@@ -1,19 +1,19 @@
 ---
 title: Présentation des logiciels et historique des versions
 description: vue d’ensemble des principaux composants logiciels pour Windows Mixed Reality, les casques immersifs et leur historique des versions.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, composants logiciels, historique des versions, notes de publication, historique des versions
 appliesto:
-- Windows 10
-ms.openlocfilehash: 51c13326d2ad8aebe164e64d0bfc380923a91d1be02cea840cec4addd062533f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: e20b2075e45620a7533dbb2d369d00e73b98f9c7
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115219725"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436633"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Vue d’ensemble des logiciels Mixed Reality et historique des versions
 
@@ -24,6 +24,7 @@ Windows Mixed Reality se compose des principaux composants logiciels suivants :
 1. **portail de réalité mixte**, qui offre l’expérience Windows Mixed Reality principale
     * dans Windows 10 versions 1709 et 1803, le portail de réalité mixte est un composant clé du Windows 10 système d’exploitation mis à jour via Windows Update.
     * dans Windows 10 version 1809 et ultérieure, le portail de réalité mixte est mis à jour via l’application Microsoft Store.
+    * dans Windows 11 version 21H2.
 2. Le **package feature-on-demand** (DOM) de la réalité mixte, téléchargé et installé automatiquement lors de la première exécution du portail de réalité mixte. Vous trouverez plus d’informations sur le package DOM [ici](/windows/application-management/manage-windows-mixed-reality) .
 3. le **casque de réalité mixte et le pilote de contrôleur de mouvement**, également connu sous le nom de pilote de capteurs HoloLens, est le package de pilotes de clé qui permet à Windows Mixed Reality casques de fonctionner avec Windows Mixed Reality. il est automatiquement téléchargé et installé via Windows Update la première fois que votre casque de réalité mixte est branché, et est régulièrement mis à jour via Windows Update
 4. Les pilotes de modèle de contrôleur de mouvement de réalité mixte * * contiennent les modèles 3D des contrôleurs de mouvement de réalité mixte et requis pour les expériences de réalité mixte tierces. il est automatiquement téléchargé et installé via Windows Update la première fois que vos contrôleurs de mouvement de réalité mixte sont associés à votre PC et mis à jour via Windows Update
@@ -38,57 +39,35 @@ gestion de votre casque Windows Mixed Reality :
 
 8. l' **application compagnon d’appareils**, développée et gérée par chacun des fabricants de casque, offre une introduction rapide à votre casque Windows Mixed Reality. sur les casques dotés de la fonctionnalité de Bluetooth intégrée, l’application compagnon de l’appareil permet de restaurer les contrôleurs de mouvement à leur Bluetooth d’usine. Certains casques (tels que Samsung Odyssey et Samsung Odyssey +) utilisent également l’application Device Companion pour remettre les mises à jour du microprogramme du casque du fabricant du casque. cette application est téléchargée automatiquement la première fois que votre casque est branché et se trouve dans le Menu démarrer de Windows.
 
-## <a name="windows-10-release-notes---may-2020"></a>notes de publication de Windows 10-mai 2020
+## <a name="windows-11-release-notes---october-2021"></a>notes de publication de Windows 11-octobre 2021
 
-la **Windows 10 mai 2020 Update (v2004)** comprend de nouvelles fonctionnalités pour les casques de Windows Mixed Reality (VR), telles que la possibilité de lancer des applications Win32 dans la réalité mixte. HoloLens (1re génération) est dans LTS (Long Term maintenance), avec les mises à jour de maintenance à publier chaque mois.
+### <a name="infinite-expanse"></a>Étendue infini
 
-en procédant à une mise à niveau vers la dernière version de PC pour les casques Windows Mixed Reality immersifs, ouvrez **Paramètres > mettre à jour & sécurité** et sélectionnez **rechercher les mises à jour**. sur un PC Windows 10, vous pouvez également installer manuellement la **mise à jour Windows 10 2020** à l’aide de l' [outil de création de médias Windows](https://www.microsoft.com/software-download/windows10).
+<img src="images\infinite-expanse-win11.png" alt="The Infinite Explanse environment">
 
-**dernière version de Desktop**: Windows 10 v2004 (10.0.19041.264)
+<br>
 
-### <a name="updates-for-windows-mixed-reality-immersive-headsets"></a>mises à jour pour Windows Mixed Reality les casques immersifs
+* un nouvel environnement d’hébergement virtuel pour les appareils Windows Mixed Reality présentant une réduction significative de l’étendue et de la taille, rationalisé jusqu’à l’étape singulière au lieu des Cliffhouse plus riches en fonctionnalités. 
+* Conçu avec des performances à l’esprit, le étendue infini a été conçu pour répondre aux demandes des clients de longue durée pour un environnement d’hébergement virtuel nécessitant moins de ressources, qui permet aux clients d’obtenir des performances optimales de leurs jeux et expériences. 
+* Ce nouvel environnement d’hébergement virtuel se trouve dans le **panneau broches** , dans le menu **emplacements** . 
 
-#### <a name="introducing-the-new-microsoft-edge"></a>Présentation du nouveau Microsoft Edge
+### <a name="steamvr-boot-with-mixed-reality-portal-launch"></a>Lancement de SteamVR avec le portail de réalité mixte
 
-comme [annoncé précédemment](/windows/mixed-reality/new-microsoft-edge), nous avons apporté des mises à jour pour une meilleure prise en charge de l’utilisation du nouveau navigateur Microsoft Edge dans Windows Mixed Reality. le nouveau Microsoft Edge adopte le Chromium projet open source pour créer une meilleure compatibilité web pour les clients et moins de fragmentation du web pour tous les développeurs web. Il prend également en charge WebXR, la nouvelle norme pour créer des expériences Web immersifs pour les casques VR, à la place de WebVR.
-
-#### <a name="improved-settings-for-wmr"></a>Paramètres amélioré pour WMR
-
-Grâce à vos commentaires, nous avons ajouté et clarifié les paramètres sur la page d’affichage du casque :
-
-* **Qualité visuelle de mon domicile** -la modification de ces paramètres affecte uniquement l’environnement d’hébergement de la réalité mixte (maison et Skyloft de la falaise) :
-
-* **Ajuster le niveau de détail et la qualité des effets dans la vie de la réalité mixte** : cela modifie certains des effets de rendu que nous utilisons dans la page d’hébergement. En particulier, la qualité visuelle des différents matériaux (le bois, le béton, etc.) sera mise à l’échelle à mesure que vous modifiez ce paramètre de faible à élevé.
-
-* **Modifier la résolution** de la fenêtre d’application : par défaut, la plupart des fenêtres 2D lancées à la page d’hébergement sont lancées avec une résolution de 720-p. Si vous pouvez les redimensionner manuellement horizontalement & verticalement, vous pouvez également choisir de les lancer tous sur 1080p à la place. Précédemment, cette option était disponible en tant qu’option très élevée (bêta) sous qualité visuelle. Nous l’avons correctement scindée en tant que paramètre distinct maintenant.
-
-* **Options d’expérience** : ces options permettent d’ajuster l’expérience de la réalité mixte afin de réduire la charge sur les systèmes où le matériel peut éprouver des difficultés à respecter une 90 d’images à une fréquence illimitée. vous pouvez activer ou désactiver explicitement ces paramètres supplémentaires, ou choisir laisser Windows décider et laisser nos heuristiques décider quand les activer ou les désactiver.
-
-* **Résolution** : Si vous avez un casque haute résolution tel que le réverbe HP, nous prenons en charge son exécution à sa résolution native ou à une résolution réduite pour des raisons de performances. Les casques antérieurs, tels que Samsung Odyssey et Odyssey +, ne prennent en charge qu’une seule résolution, vous ne pouvez donc pas modifier ce paramètre sur ces casques.
-
-* **fréquence d’images** : vous pouvez maintenant définir manuellement la fréquence d’images de l’affichage du casque, ou continuer à laisser Windows utiliser ses heuristiques pour déterminer si 60 hz ou 90 hz est plus approprié.
-
-* **Étalonnage** : comme précédemment, vous pouvez ajuster votre IPD (distance interpupillary) si elle est prise en charge par votre casque.
-
-* **Basculement d’entrée** : basculez le comportement de basculement du focus d’entrée (Win + Y) pour qu’il soit automatique (en fonction des commentaires du capteur de présence) ou manuel.
-
-#### <a name="new-cortana-app"></a>nouvelle Cortana application
-
-cette mise à jour de Windows comprend la version la plus récente de l’application Cortana, qui est actuellement en anglais uniquement et qui ne prend plus en charge certaines commandes spécifiques à la réalité mixte comme « prendre une photo » et « prendre une vidéo ». vous pouvez utiliser le nouveau Cortana pour lancer des applications, et il prend également en charge de nouvelles commandes axées sur la productivité comme « quand est-ce que j’ai ma prochaine réunion ? ». ou « envoyez un e-mail à <name> ce que je suis en retard ».
+* Nouveau paramètre disponible pour lancer automatiquement SteamVR lors du lancement de WMR, ce qui vous permet de contourner l’espace de bureau WMR et d’accéder directement à SteamVR.
+   * ce nouveau paramètre se trouve dans l’application **Paramètres** en **> de démarrage et de bureau > démarrage automatique**.
     
-#### <a name="additional-updates-in-available-in-19041546-released-october-2020"></a>Mises à jour supplémentaires disponibles dans 19041,546 (publiée le 2020 octobre)
+### <a name="new-startup-experience-settings"></a>Nouveaux paramètres d’expérience de démarrage
 
-cette mise à jour mensuelle de maintenance des postes de travail comprend les modifications suivantes pour les appareils Windows Mixed Reality : 
-* réduit les distorsions et les aberrations dans Windows Mixed Reality les affichages montés en tête (HMD). 
-* ajoute la prise en charge des contrôleurs de mouvement HP Windows Mixed Reality à venir. 
-* modifie le comportement du paramètre de fréquence d’actualisation de 90 hz dans Windows Mixed Reality de manière à ce qu’il ne repasse plus automatiquement à 60 hz dans certains cas quand 90 hz ne peut pas être atteint. 
-
-#### <a name="help-us-improve"></a>Aidez-nous à améliorer !
-
-Nous cherchons continuellement à améliorer la compatibilité.  si vous trouvez que votre application Win32 classique favorite ne se comporte pas correctement dans Windows Mixed Reality, envoyez vos commentaires via notre [Hub de commentaires](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
+* Nouveaux paramètres disponibles pour mieux configurer votre expérience de démarrage idéale en accroissant votre niveau de contrôle sur le lancement du portail de réalité mixte.
+* Vous pouvez désormais contrôler si le portail de réalité mixte est lancé lorsqu’un appareil est connecté ou lorsque le capteur de présence est activé, ainsi que pour contrôler le mode d’ouverture de l’application de bureau virtuel.
+* ces nouveaux paramètres se trouvent dans l’application **Paramètres** en **réalité mixte > Startup and Desktop**
+    * Basculez vers démarrer le calcul MRP sur le plug-in HMD.
+    * Activez démarrer le calcul MRP en cas de détection de la présence.
+    * Active/désactive l’application de bureau ouverte sur le focus de l’application de bureau.
 
 ### <a name="prior-release-notes"></a>Notes de publication antérieures
 
+* [Notes de publication-mai 2020](release-notes-may-2020.md)
 * [Notes de publication-mai 2019](release-notes-may-2019.md)
 * [Notes de publication - Octobre 2018](release-notes-october-2018.md)
 * [Notes de publication-2018 avril](release-notes-april-2018.md)
@@ -178,7 +157,7 @@ dans Windows 10, version 1809 et plus récent, le [portail de réalité mixte](h
    | 2000.19101.1211.0  | 11 novembre 2019     | <ul><li>Résout un problème qui vous empêche de basculer des éléments visuels de limite de salle.</li><li>Résout un problème qui vous empêche de centrer un casque pendant la configuration de la limite d’espace.</li></ul>  | 
    | 2000.19081.1301.0  | 23 septembre 2019    | <ul><li>Résout un problème où un message d’erreur incorrect s’affiche avec des casques avec des problèmes matériels. Les utilisateurs qui ont reçu un code d’erreur 1-4 sur les versions précédentes peuvent désormais recevoir un code d’erreur plus spécifique pour leur état d’appareil.</li></ul>  |
    | 2000.19071.1302.0  | 13 août 2019     | <ul><li>Prise en charge des applications utilisant [OpenXR](/windows/mixed-reality/openxr) sur les appareils avec la mise à jour 2019 de mai.</li></ul>  | 
-   | 2000.19061.1011.0  | 16 juillet 2019         | <ul><li>Prise en charge des options de configuration JSON pour personnaliser le comportement de l’application. Pour en savoir plus https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup , consultez.</li></ul>  | 
+   | 2000.19061.1011.0  | 16 juillet 2019         | <ul><li>Prise en charge des options de configuration JSON pour personnaliser le comportement de l’application. En savoir plus sur [le programme d’installation pour obtenir des informations sur le lieu de divertissement avec Windows Mixed Reality](/windows/mixed-reality/location-based-experiences#setup).</li></ul>  | 
 
 ### <a name="steamvr-release-history"></a>Historique des versions SteamVR ###
 

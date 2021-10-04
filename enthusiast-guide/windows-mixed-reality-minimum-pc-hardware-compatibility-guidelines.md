@@ -1,19 +1,19 @@
 ---
 title: Windows Mixed Reality Recommandations relatives à la compatibilité des PC
 description: Graphique de vue d’ensemble détaillant la configuration minimale requise pour le système PC pour la compatibilité avec Windows Mixed Reality.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/16/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/22/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, Ultra, compatible, compatibilité, configuration système requise, PC
 appliesto:
-- Windows 10
-ms.openlocfilehash: ed9113c5aa54d74678fcd6f888fa96007533d0d27e921f91aa6feeda459d11b7
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: af3228e76bc9ce54ef877b67e8e85a3bde25e140
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115187854"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436730"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>instructions relatives à la compatibilité minimale du matériel PC Windows Mixed Reality
 
@@ -21,7 +21,7 @@ ms.locfileid: "115187854"
 
 ## <a name="features-and-experiences"></a>Fonctionnalités et expériences
 
-Windows 10 Windows Mixed Reality sur de nombreux casques à travers un ensemble varié de matériel PC.  La puissance de votre ordinateur déterminera les expériences que vous pouvez effectuer.
+Windows 10 et Windows 11 powers Windows Mixed Reality sur de nombreux casques sur un ensemble diversifié de matériel PC.  La puissance de votre ordinateur déterminera les expériences que vous pouvez effectuer.
 Avec les PC plus hauts, vous bénéficiez de fonctionnalités et de fonctionnalités supplémentaires :
 
 * Des visuels plus nets et un taux de rafraîchissement plus élevé.
@@ -51,17 +51,11 @@ Après avoir exécuté l’application, vous obtiendrez l’un des messages suiv
 Vous obtiendrez ensuite une analyse de votre ordinateur par rapport au matériel, aux pilotes et au système d’exploitation requis.
 ![capture d’écran de la vérification de Windows Mixed Reality PC](images/screenshot-mr-pc-check.jpg)
 
-<table>
-<tr>
-<th>Icône</th><th>Signification</th>
-</tr><tr>
-<td> <img alt="Succeeded" width="30" height="30" src="images/glyph-succeeded.png" /></td><td style="vertical-align: middle">Votre PC transmet l’élément requis.</td>
-</tr><tr>
-<td> <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /></td><td style="vertical-align: middle">Il peut y avoir des problèmes avec votre ordinateur pour les besoins donnés. Si vous rencontrez des problèmes, vous devrez peut-être dépanner ou mettre à niveau votre PC.</td>
-</tr><tr>
-<td> <img alt="Error" width="30" height="30" src="images/glyph-error.png" /></td><td style="vertical-align: middle">Votre ordinateur ne remplit pas les conditions requises pour l’élément spécifié.</td>
-</tr>
-</table>
+| Icône | Signification |
+| --- | --- |
+| <img alt="Succeeded" width="30" height="30" src="images/glyph-succeeded.png" /> | Votre PC transmet l’élément requis. |
+| <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /> | Il peut y avoir des problèmes avec votre ordinateur pour les besoins donnés. Si vous rencontrez des problèmes, vous devrez peut-être dépanner ou mettre à niveau votre PC. 
+| <img alt="Error" width="30" height="30" src="images/glyph-error.png" /> | Votre ordinateur ne remplit pas les conditions requises pour l’élément spécifié. |
 
  [Obtenir de l’aide sur les résultats du portail de réalité mixte](get-help-with-pc-compatibility.md)
 
@@ -74,80 +68,30 @@ Vous obtiendrez ensuite une analyse de votre ordinateur par rapport au matériel
 
 En raison de la résolution plus élevée, les exigences suivantes s’appliquent aux gammes de produits de reréverbération, G2 et Omnicept HP, afin de garantir une expérience de résolution optimale de 90 Hz :
 
-<ul>
-<li> Intel Core i5, i7, Intel Xeon E3-1240 V5, équivalent ou mieux. AMD Ryzen 5 équivalent ou plus. </li>
-<li> NVIDIA GeForce GTX 1080, AMD Radeon RX 5700, équivalent ou mieux </li>
-<li> Mémoire : 8 Go de RAM ou plus </li>
-<li> Port d’affichage 1x 1,3 </li>
-<li> 1x USB 3,0 type-C avec distribution de l’alimentation (ou adaptateur d’alimentation inclus)</li>
-<li> Windows 10 2019 mise à jour de mai ou version ultérieure </li>
-</ul>
-
+- Intel Core i5, i7, Intel Xeon E3-1240 V5, équivalent ou mieux. AMD Ryzen 5 équivalent ou plus.  
+- NVIDIA GeForce GTX 1080, AMD Radeon RX 5700, équivalent ou mieux  
+- Mémoire : 8 Go de RAM ou plus  
+- Port d’affichage 1x 1,3  
+- 1x USB 3,0 type-C avec distribution de l’alimentation (ou adaptateur d’alimentation inclus) 
+- Windows 10 2019 mise à jour de mai ou version ultérieure  
+ 
 **Tous les autres casques compatibles WMR** <br>
 Pour tous les autres HMDs, reportez-vous aux spécifications suivantes :
 
-<table>
-<tr>
-    <th style="width:10%"></th><th style="vertical-align: middle; text-align: center; width:30%">pc Windows Mixed Reality 90Hz</th>
-    <th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 60 hz pc</th>
-</tr><tr>
-    <td style="vertical-align: middle">Système d'exploitation</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) ou version ultérieure : famille, Pro, professionnel, éducation.<br/>    (<b>remarque</b>: non pris en charge sur N versions ou Windows 10 Professionnel en Mode S)</td>
-</tr><tr>
-    <td style="vertical-align: middle">Processeur</td>
-    <td style="vertical-align: middle; text-align: center;">Intel Core i5 4590 (4e génération), quadruple cœur (ou supérieur) <br>AMD Ryzen 5 1400 3.4 GHz (Desktop), Quad-Core (ou supérieur)</td>
-    <td style="vertical-align: middle; text-align: center;">Intel Core i5 7200 (7e génération mobile), double cœur avec la technologie Intel Hyper-Threading activée (ou meilleure) <br>AMD Ryzen 5 1400 3.4 GHz (Desktop), Quad-Core (ou supérieur)</td>
-</tr><tr>
-    <td style="vertical-align: middle">RAM</td>
-    <td style="vertical-align: middle; text-align: center;">8 Go DDR3 (ou plus)</td>
-    <td style="vertical-align: middle; text-align: center;">8 canaux DDR3 à deux Go (ou plus)</td>
-</tr><tr>
-    <td style="vertical-align: middle">Espace disque disponible</td>
-    <td style="vertical-align: middle; text-align: center;">Au moins 10 Go</td>
-    <td style="vertical-align: middle; text-align: center;">Au moins 10 Go</td>
-</tr><tr>
-    <td style="vertical-align: middle">Carte graphique</td>
-    <td style="vertical-align: middle; text-align: middle;">
-            <ul>
-            <li>Processeur graphique discret NVIDIA GTX 1060 (ou supérieur) DX12</li>
-            <li>GPU discrète 470/570 (ou supérieur) AMD RX DX12 </li>
-            </ul>
-            <b>Remarque :</b> Le GPU doit être hébergé dans un emplacement de liaison PCIe 3,0 X4 + </td>
-    <td style="vertical-align: middle; text-align: middle;">
-            <li>PROCESSEUR graphique intégré Intel HD Graphics 620 (ou version ultérieure) DX12 <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units">(Vérifiez si votre modèle est plus grand)</a></li>
-        <li>GPU discret NVIDIA MX150 (ou supérieur)</li>
-        <li>GPU NVIDIA GeForce GTX 1050 discret</li>
-        <li>GPU discrète NVIDIA 965M</li>
-        <li>AMD Radeon RX 460/560</li>
-        </ul>
-        <b>Remarque :</b> Les processeurs Intel plus anciens tels que HD Graphics 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx et 6xxx ne sont pas pris en charge.
-    </td>
-</tr><tr>
-    <td style="vertical-align: middle">Pilote graphique</td>
-    <td colspan="3" td style="vertical-align: middle; text-align: center;">Windows Modèle de pilote d’affichage (WDDM) 2,2</td>
-</tr><tr>
-    <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">Port d’affichage graphique</a></td>
-    <td style="vertical-align: middle; text-align: center;">HDMI 2,0 ou DisplayPort 1,2</td>
-    <td style="vertical-align: middle; text-align: center;">HDMI 1,4 ou DisplayPort 1,2</td>
-</tr><tr>
-    <td style="vertical-align: middle">Afficher</td>
-    <td colspan="3" style="vertical-align: middle; text-align: center;">Affichage VGA (800x600) connecté ou externe connecté (ou plus)</td>
-</tr><tr>
-    <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">Connectivité USB</a></td>
-    <td colspan="2" style="vertical-align: middle; text-align: center;">USB 3,0 </td>
-</tr><tr>
-    <td style="vertical-align: middle">connectivité Bluetooth (pour les <a href="controllers-in-wmr.md">contrôleurs de mouvement</a>)</td>
-    <td colspan="3" style="vertical-align: middle; text-align: center;">Bluetooth 4,0</td>
-</tr><tr>
-    <td style="vertical-align: middle">Fréquence d’images du casque attendue</td>
-    <td style="vertical-align: middle; text-align: center;">90 Hz</td>
-    <td style="vertical-align: middle; text-align: center;">60 Hz</td>
-</tr>
-<tr>
-    <td style="vertical-align: middle">Avancé</td>
-    <td style="vertical-align: middle; text-align: center;">Ports USB 3.0</td>
-    <td style="vertical-align: middle; text-align: center;">Ports USB 3.0</td>
-</tr>
-</table>
+| | pc Windows Mixed Reality 90Hz | Windows Mixed Reality 60 hz pc |
+| --- | --- | --- |
+| Système d’exploitation | Windows 10 Fall Creators Update (RS3) ou version ultérieure : famille, Pro, professionnel, éducation. <br/>    (<b>remarque</b>: non pris en charge sur N versions ou Windows 10 Professionnel en Mode S) |
+| Processeur | Intel Core i5 4590 (4e génération), quadruple cœur (ou supérieur) <br> AMD Ryzen 5 1400 3.4 GHz (Desktop), Quad-Core (ou supérieur) | Intel Core i5 7200 (7e génération mobile), double cœur avec la technologie Intel Hyper-Threading activée (ou meilleure) <br> AMD Ryzen 5 1400 3.4 GHz (Desktop), Quad-Core (ou supérieur) |
+| Mémoire vive (RAM) | 8 Go DDR3 (ou plus) | 8 canaux DDR3 à deux Go (ou plus) |
+| Espace disque disponible | Au moins 10 Go | Au moins 10 Go |
+| Carte graphique| <ul> <li>Processeur graphique discret NVIDIA GTX 1060 (ou supérieur) DX12 </li> <li>GPU discrète 470/570 (ou supérieur) AMD RX DX12 </li> </ul> <br> <b>Remarque :</b> Le GPU doit être hébergé dans un emplacement de liaison PCIe 3,0 X4 + |  <ul>  <li>PROCESSEUR graphique intégré Intel HD Graphics 620 (ou version ultérieure) DX12 <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units">(Vérifiez si votre modèle est plus grand)</a></li> <li>GPU discret NVIDIA MX150 (ou supérieur)</li> <li>GPU NVIDIA GeForce GTX 1050 discret</li> <li>GPU discrète NVIDIA 965M</li> <li>AMD Radeon RX 460/560</li> </ul> <b>Remarque :</b> Les processeurs Intel plus anciens tels que HD Graphics 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx et 6xxx ne sont pas pris en charge. |
+| Pilote graphique | Windows Modèle de pilote d’affichage (WDDM) 2,2 |  |
+| [Port d’affichage graphique](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) | HDMI 2,0 ou DisplayPort 1,2 | HDMI 1,4 ou DisplayPort 1,2 |
+| Affichage | Affichage VGA (800x600) connecté ou externe connecté (ou plus) | 
+| [Connectivité USB](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) | USB 3,0 | |
+| connectivité Bluetooth (pour les [contrôleurs de mouvement](controllers-in-wmr.md) | Bluetooth 4,0 | |
+| Fréquence d’images du casque attendue | 90 Hz | 60 Hz |
+| Avancé | Ports USB 3.0 | Ports USB 3.0 |
 
 **Informations complémentaires :**
 

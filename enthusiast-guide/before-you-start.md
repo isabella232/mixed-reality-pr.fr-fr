@@ -1,26 +1,26 @@
 ---
 title: Avant de commencer
 description: découvrez comment vous assurer que votre ordinateur est compatible et prêt pour un large éventail d’expériences d’application Windows Mixed Reality.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, compatible, compatibilité, prise en main, configuration, PC, configuration système requise
 appliesto:
-- Windows 10
-ms.openlocfilehash: 026f36caf3eebaee8f883235284a1beaf870bb89c5bb27eb565abbd89fcf4f21
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 62e0e20045e63fb9d002febaaf1f7666728dc515
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115187959"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436577"
 ---
 # <a name="before-you-start"></a>Avant de commencer
 
 ## <a name="what-youll-need-to-run-windows-mixed-reality"></a>Ce que vous devez exécuter Windows Mixed Reality
 
 * [affichage monté en tête de réalité mixte Windows (HMD)](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices).
-* un nouveau [pc Windows Mixed Reality ready](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) ou un pc compatible Windows Mixed Reality exécutant Windows 10 Version 1709 ou ultérieure.
+* un nouveau [pc Windows Mixed Reality ready](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) ou un pc compatible Windows Mixed Reality exécutant Windows 10 Version 1709 ou ultérieure, ou Windows 11.
 * Une connexion Internet
 * adaptateurs d’affichage, USB et Bluetooth (s’ils ne sont pas intégrés au casque ou à l’ordinateur)
 * Des contrôleurs de mouvement, un contrôleur Xbox ou une souris et un clavier
@@ -44,7 +44,17 @@ vous devez exécuter le Windows 10 Version 1903 ou ultérieure pour utiliser Win
 
 pour voir quelle version de Windows 10 votre appareil est en cours d’exécution, cliquez sur le bouton **démarrer** , puis sélectionnez **Paramètres > système > à propos de**.
 
-pour vous assurer que Windows 10 est à jour sur votre ordinateur, sélectionnez le bouton **démarrer** , puis sélectionnez **Paramètres > mettre à jour & sécurité >** Windows Update.  Sélectionnez **Rechercher les mises à jour**. Si des mises à jour sont disponibles, installez-les.
+pour vous assurer que Windows 10 est à jour sur votre ordinateur, sélectionnez le bouton **démarrer** , puis sélectionnez **Paramètres > mettre à jour & sécurité >** Windows Update.  Sélectionnez **Rechercher des mises à jour**. Si des mises à jour sont disponibles, installez-les.
+
+## <a name="make-sure-you-have-the-windows-11-version-21h2-or-newer-installed"></a>assurez-vous que le Windows 11 Version 21H2 ou plus récent est installé
+
+vous devez exécuter le Windows 11 Version 21H2 ou ultérieure pour utiliser Windows Mixed Reality. les versions compatibles de Windows 11 sont les suivantes :
+
+* Windows 11 Version 21H2
+
+pour connaître la version de Windows 11 sur laquelle votre appareil est en cours d’exécution, cliquez sur le bouton **démarrer** , puis sélectionnez **Paramètres > système > sur**.
+
+pour vous assurer que Windows 11 est à jour sur votre ordinateur, sélectionnez le bouton **démarrer** , puis sélectionnez **Paramètres > mettre à jour & sécurité >** Windows Update.  Sélectionnez **Rechercher des mises à jour**. Si des mises à jour sont disponibles, installez-les.
 
 Pour plus d’informations, consultez [garder votre PC à jour](https://support.microsoft.com/help/12373/windows-update-faq) .
 

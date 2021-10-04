@@ -1,14 +1,17 @@
 ---
 title: Configurer Windows Mixed Reality
 description: comment configurer vos contrôleurs de mouvement Windows Mixed Reality, la voix et l’audio, et définir la limite de votre espace pour un espace de lecture sécurisé.
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, prise en main, configuration, contrôleur de mouvement, contrôleur, voix, audio, assis, debout, limite, pilotes graphiques, Microsoft Edge, chrome
-ms.openlocfilehash: 436818ee662f9beb1c445ea5b22c5d168bb4142a7b49a116a4f5fa138e3a5595
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: e30fe5919bbd1345f413902f8f7acd36eed76bb5
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115221052"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436832"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurer Windows Mixed Reality
 
@@ -106,7 +109,7 @@ vous pouvez activer les commandes Cortana dans la réalité mixte, ce qui vous p
 
 Windows Mixed Reality choisit automatiquement les paramètres d’affichage qui équilibrent la qualité et les performances, en fonction de la configuration matérielle de votre PC. pour ajuster ces paramètres, accédez à **Paramètres > > affichage du casque**.
 
-### <a name="visuals"></a>Objets visuels
+### <a name="visuals"></a>Visuels
 
 Ce paramètre contrôle la qualité visuelle de votre page d’hébergement de la réalité mixte. La valeur par défaut est « Automatic ».
 
@@ -122,7 +125,7 @@ Si vous connectez un casque avec des affichages de plus haute résolution à vot
     * Votre PC ne répond pas à la configuration matérielle minimale requise pour votre casque, avec des affichages de plus haute résolution
     * Vous constatez des problèmes de performances graphiques
 
-ce paramètre est disponible sur Windows 10, version 1903 ou plus récente.
+ce paramètre est disponible sur Windows 10, version 1903 ou ultérieure, et sur Windows 11.
 
 ### <a name="calibration"></a>Étalonnage
 
@@ -146,11 +149,11 @@ ce paramètre contrôle le comportement de Windows Mixed Reality en réponse au 
 * **basculer automatiquement à l’aide du capteur de présence du casque** (par défaut) : Windows dirige automatiquement l’entrée (clavier, souris...) vers Windows Mixed Reality chaque fois que vous enportez votre casque. Vous pouvez le remplacer à tout moment avec Win + Y.
 * **basculer manuellement à l’aide de Windows touche de logo + Y**: Windows n’utilise pas le capteur de présence du casque pour détecter le moment où vous enportez votre casque. Vous devez utiliser Win + Y pour basculer votre entrée entre votre PC de bureau et Windows Mixed Reality.
 
-ce paramètre est disponible sur Windows 10, version 1903 ou plus récente.
+ce paramètre est disponible sur Windows 10, version 1903 ou ultérieure, et sur Windows 11.
 
 ## <a name="installing-microsoft-edge"></a>Installation de Microsoft Edge 
 
-pour utiliser le nouveau Microsoft Edge basé sur le Chromium dans Windows Mixed Reality page d’origine, effectuez une mise à niveau vers Windows 10 Version 1903 ou ultérieure pour la prise en charge native des applications Win32 (comme le nouveau Microsoft Edge) dans Windows Mixed Reality page d’origine. vérifiez Windows Update ou [installez manuellement la dernière version de Windows 10](https://www.microsoft.com/software-download/windows10).
+pour utiliser le nouveau Microsoft Edge basé sur le Chromium dans Windows Mixed Reality famille, effectuez une mise à niveau vers Windows 10 Version 1903 ou ultérieure, ou Windows 11 pour la prise en charge native des applications Win32 (comme le nouveau Microsoft Edge) dans Windows Mixed Reality la page d’hébergement. vérifiez Windows Update, [installez manuellement la dernière version de Windows 10](https://www.microsoft.com/software-download/windows10)ou [installez la dernière version de Windows 11](https://www.microsoft.com/software-download/windows11).
 
 >[!IMPORTANT]
 >la nouvelle Microsoft Edge lance avec la prise en charge de WebXR, la nouvelle norme pour créer des expériences web immersifs pour les casques VR. vous ne pourrez plus lire les expériences WebVR dans Microsoft Edge si vous installez le nouveau Microsoft Edge.
