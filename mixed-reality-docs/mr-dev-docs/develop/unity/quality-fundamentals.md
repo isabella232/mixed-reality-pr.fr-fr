@@ -6,12 +6,12 @@ ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
 keywords: notions de base sur la qualité, étude de cas, projet, exemple, MRTK, réalité mixte Shared Computer Toolkit, unity, exemples d’applications, exemples d’applications, open source, Microsoft Store, HoloLens, casque de réalité mixte, casque de réalité mixte, casque de réalité virtuelle
-ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 69c6a55b95937c0c6af4920f6ffe0929eebe76ee
+ms.sourcegitcommit: 82f7db75d8ecc7ac89c76b0db504126cbcb8f16d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115211954"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129647529"
 ---
 # <a name="quality-fundamentals"></a>Bases de la qualité
 
@@ -60,7 +60,7 @@ Dans cette partie de l’application, nous allons explorer les scénarios utilis
 > * Partage d’une ancre spatiale entre plusieurs collaborateurs à l’aide d’un code QR.
 > * Emplacement d’ancrage pour les objets de très grande taille dans un espace.
 
-Pour plus d’informations, consultez [ancres spatiales](/windows/mixed-reality/design/spatial-anchors) dans la documentation relative à la [réalité mixte](/windows/mixed-reality/design/spatial-anchors) .
+Pour plus d’informations, consultez [ancres spatiales](../../design/spatial-anchors.md) dans la documentation relative à la [réalité mixte](../../design/spatial-anchors.md) .
 
 ## <a name="stability-and-fidelity"></a>Stabilité et fidélité
 
@@ -80,7 +80,7 @@ Pour offrir la meilleure expérience d’hologramme possible, les développeurs 
 
 ![Optimisation du nombre de triangles](images\qf-triangle-count-optimization.png)
 
-Pour plus d’informations, consultez [fréquence d’images](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#frame-rate) dans l’article sur la stabilité des [hologrammes](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability) .
+Pour plus d’informations, consultez [fréquence d’images](../platform-capabilities-and-apis/hologram-stability.md#frame-rate) dans l’article sur la stabilité des [hologrammes](../platform-capabilities-and-apis/hologram-stability.md) .
 
 ### <a name="late-stage-reprojection-lsr"></a>Reprojection en phase tardive (LSR)
 
@@ -88,7 +88,7 @@ La reprojection est utilisée pour stabiliser les hologrammes à mesure que les 
 
 ![Essayez les différentes options de reprojection pour découvrir la différence.](images\qf-lsr-modes.jpg)
 
-Pour plus d’informations, consultez [reprojection](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection) dans l’article sur la [stabilité des hologrammes](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability) .
+Pour plus d’informations, consultez [reprojection](../platform-capabilities-and-apis/hologram-stability.md#reprojection) dans l’article sur la [stabilité des hologrammes](../platform-capabilities-and-apis/hologram-stability.md) .
 
 ### <a name="z-fighting"></a>Z-fighting
 
@@ -96,7 +96,7 @@ Z-combat se produit lorsque l’application de réalité mixte ne peut pas déte
 
 ![Découvrez z-combat avec les placements d’objets.](images\qf-z-fighting.jpg)
 
-Pour plus d’informations sur la lutte z, consultez [activer le partage de mémoire tampon de profondeur](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) dans l’article [paramètres recommandés pour Unity](/windows/mixed-reality/develop/unity/recommended-settings-for-unity) .
+Pour plus d’informations sur la lutte z, consultez [activer le partage de mémoire tampon de profondeur](./recommended-settings-for-unity.md#enable-depth-buffer-sharing) dans l’article [paramètres recommandés pour Unity](./recommended-settings-for-unity.md) .
 
 ### <a name="anti-aliasing"></a>Anticrénelage
 
@@ -120,7 +120,7 @@ Sélectionnez le nombre et la complexité des modèles de bicyclettes pour déco
 
 ![Choisissez des options de comptage des triangles différentes pour voir les effets sur la fréquence d’images.](images\qf-3d-asset-visible-triangles.jpg)
 
-Pour plus d’informations, consultez [processus de création](/windows/mixed-reality/design/asset-creation-process)d’un élément multimédia.
+Pour plus d’informations, consultez [processus de création](../../design/asset-creation-process.md)d’un élément multimédia.
 
 ### <a name="shader-passes"></a>Passes de nuanceur
 
@@ -136,7 +136,7 @@ Les appels de dessin sont des appels gourmands en ressources vers la carte graph
 
 ![Les appels de dessin doivent être optimisés pour améliorer les performances.](images\qf-3d-asset-draw-calls.jpg)
 
-Consultez [recommandations relatives aux performances de l’UC au GPU](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity#cpu-to-gpu-performance-recommendations).
+Consultez [recommandations relatives aux performances de l’UC au GPU](./performance-recommendations-for-unity.md#cpu-to-gpu-performance-recommendations).
 
 ### <a name="finale"></a>Fin
 
