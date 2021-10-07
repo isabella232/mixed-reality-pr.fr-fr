@@ -3,17 +3,17 @@ title: Présentation des logiciels et historique des versions
 description: vue d’ensemble des principaux composants logiciels pour Windows Mixed Reality, les casques immersifs et leur historique des versions.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 09/30/2021
+ms.date: 10/5/2021
 ms.topic: article
 keywords: Windows Mixed Reality, réalité mixte, réalité virtuelle, VR, MR, composants logiciels, historique des versions, notes de publication, historique des versions
 appliesto:
 - Windows 10 and Windows 11
-ms.openlocfilehash: e20b2075e45620a7533dbb2d369d00e73b98f9c7
-ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
+ms.openlocfilehash: b27006790d48107bdb19c7afa59e9c8adbda45b1
+ms.sourcegitcommit: 289cefbe479d6e0f4451a618bf926e4b08b50260
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129436633"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129593376"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Vue d’ensemble des logiciels Mixed Reality et historique des versions
 
@@ -24,7 +24,7 @@ Windows Mixed Reality se compose des principaux composants logiciels suivants :
 1. **portail de réalité mixte**, qui offre l’expérience Windows Mixed Reality principale
     * dans Windows 10 versions 1709 et 1803, le portail de réalité mixte est un composant clé du Windows 10 système d’exploitation mis à jour via Windows Update.
     * dans Windows 10 version 1809 et ultérieure, le portail de réalité mixte est mis à jour via l’application Microsoft Store.
-    * dans Windows 11 version 21H2.
+    * dans Windows 11 version 21H2, le portail de réalité mixte est mis à jour via l’application Microsoft Store.
 2. Le **package feature-on-demand** (DOM) de la réalité mixte, téléchargé et installé automatiquement lors de la première exécution du portail de réalité mixte. Vous trouverez plus d’informations sur le package DOM [ici](/windows/application-management/manage-windows-mixed-reality) .
 3. le **casque de réalité mixte et le pilote de contrôleur de mouvement**, également connu sous le nom de pilote de capteurs HoloLens, est le package de pilotes de clé qui permet à Windows Mixed Reality casques de fonctionner avec Windows Mixed Reality. il est automatiquement téléchargé et installé via Windows Update la première fois que votre casque de réalité mixte est branché, et est régulièrement mis à jour via Windows Update
 4. Les pilotes de modèle de contrôleur de mouvement de réalité mixte * * contiennent les modèles 3D des contrôleurs de mouvement de réalité mixte et requis pour les expériences de réalité mixte tierces. il est automatiquement téléchargé et installé via Windows Update la première fois que vos contrôleurs de mouvement de réalité mixte sont associés à votre PC et mis à jour via Windows Update
